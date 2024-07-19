@@ -1,3 +1,4 @@
+from leia.ontosem.syntax.results import Word, WordCoreference
 from typing import List, Tuple, Union
 from unittest import TestCase
 
@@ -33,3 +34,26 @@ class LEIATestCase(TestCase):
             "TYPES": types if types is not None else [],
             "USE-WITH-TYPES": use_with_types if use_with_types is not None else []
         }
+
+    def mockWord(self, index: int, lemma: str, pos: Union[str, List[str]], token: str=None, char_start: int=None,
+                 char_end: int=None, ner: Union[str, Word.Ner]=None,
+                 coref: List[Union[WordCoreference, Tuple[int, int, float]]]=None,
+                 morphology: dict=None) -> Word:
+
+        if not isinstance(pos, list):
+            pos = [pos]
+        if token is None:
+            token = lemma
+        if char_start is None:
+            char_start = 0
+        if char_end is None:
+            char_end = char_start + len(token)
+        if ner is None:
+            ner = Word.Ner.NONE
+        if coref is None:
+            coref = list()
+        coref = list(map(lambda c: c if isinstance(c, WordCoreference) else WordCoreference(*c), coref))
+        if morphology is None:
+            morphology = dict()
+
+        return Word(index, lemma, pos, token, char_start, char_end, ner, coref, morphology)

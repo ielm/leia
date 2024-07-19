@@ -4,7 +4,7 @@ from leia.ontomem.ontology import Ontology
 from leia.ontosem.analysis import WMLexicon
 from leia.ontosem.config import OntoSemConfig
 from leia.ontosem.syntax.results import ConstituencyNode, Dependency, SynMap, Syntax, Word
-from typing import List
+from typing import List, Union
 
 
 class SynMapper(object):
@@ -65,11 +65,35 @@ class SynMatcher(object):
     def run(self, syntax: Syntax, synstruc: SynStruc, root: Word=None) -> List['SynMatcher.SynMatchResult']:
         raise NotImplementedError
 
-    # [
-    #     {"type": "dependency", "deptype": "nsubjpass", "governor": 0}
-    # ],
-    # [
-    #     {"type": "constituency", "contype": "NP", "children": []},
-    #     {"type": "token", "lemma": ["be"], "pos": null, "morph": {}},
-    #     {"type": "token", "lemma": [], "pos": "V", "var": 0, "morph": {"tense": "past", "verbform": "part"}}
-    # ]
+    def does_root_match(self, element: SynStruc.RootElement, word: Word, specified_root: Union[Word, None]) -> bool:
+        # This matching function is trivial; it takes the candidate word and checks to see if the root specified (if any)
+        # is the same word.  This primarily exists for consistency (all syn-struc element types can have a corresponding
+        # "does_x_match" function), and also as a home for any future complexities if needed.
+
+        return word == specified_root
+
+    def does_token_match(self, element: SynStruc.TokenElement, word: Word) -> bool:
+        # If both lemmas and POS are unspecified, no match is allowed
+        if len(element.lemmas) == 0 and element.pos is None:
+            return False
+
+        # If lemmas are specified, at least one must be a match; case insensitive
+        if len(element.lemmas) > 0:
+            if word.lemma.lower() not in set(map(lambda l: l.lower(), element.lemmas)):
+                return False
+
+        # If POS is specified, at least one must be a match; case insensitive
+        # TODO: Possibly use a hierarchy of POS matching here
+        if element.pos is not None:
+            if element.pos.lower() not in set(map(lambda p: p.lower(), word.pos)):
+                return False
+
+        # If any morphology is specified, each must be a match; case sensitive
+        for k, v in element.morph.items():
+            if k not in word.morphology:
+                return False
+            if word.morphology[k] != v:
+                return False
+
+        # No filtering has occurred; the token is considered a match
+        return True
