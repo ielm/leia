@@ -3,6 +3,7 @@ from leia.ontomem.memory import Memory
 from leia.utils.threads import multiprocess_read_directory
 from typing import Any, Dict, List, Set, Tuple, Union
 
+import copy
 import itertools
 import os
 
@@ -464,7 +465,7 @@ class SemStruc(object):
         return list(filter(lambda e: isinstance(e, SemStruc.Property), self.elements(bound_variable_filter=bound_variable_filter)))
 
     def to_dict(self) -> dict:
-        return self.data
+        return copy.deepcopy(self.data)
 
     def __repr__(self):
         return repr(self.data)
