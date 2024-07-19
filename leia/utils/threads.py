@@ -1,3 +1,6 @@
+from typing import Tuple
+
+import json
 import threading
 
 
@@ -14,3 +17,19 @@ class StoppableThread(threading.Thread):
 
     def stopped(self):
         return self._stop_event.is_set()
+
+
+def multiprocess_read_json_file(directory: str, file_name: str, extension: str) -> Tuple[str, dict]:
+    # This is needed as Pool.starmap requires a function pointer.
+    # This function is a simple wrapper around json.load, returning the file name (without extension) and the
+    # dict contents.
+    # It is used by Ontology.load() and Lexicon.load().
+
+    lenextension = len(extension) + 1
+
+    name = file_name[0:-lenextension]
+    file_name = "%s/%s" % (directory, file_name)
+
+    with open(file_name, "r") as file:
+        contents = json.load(file)
+        return name, contents

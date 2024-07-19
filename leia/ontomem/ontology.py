@@ -2,25 +2,15 @@ from dataclasses import dataclass
 from enum import Enum
 from multiprocessing import Pool
 from leia.ontomem.memory import Memory
+from leia.utils.threads import multiprocess_read_json_file
 from typing import List, Iterable, Set, Type, Tuple, Union
 
-import itertools
 import json
 import os
 
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from leia.ontomem.properties import COMPARATOR, Property, WILDCARD
-
-
-# This is needed as Pool.starmap cannot access self functions, so we make a public function as a wrapper.
-def _read_concept(contents_dir: str, file_name: str) -> Tuple[str, dict]:
-    name = file_name[0:-4]
-    file_name = "%s/%s" % (contents_dir, file_name)
-
-    with open(file_name, "r") as file:
-        contents = json.load(file)
-        return name, contents
 
 
 class Ontology(object):
@@ -41,7 +31,7 @@ class Ontology(object):
         types = map(lambda n: (n, Concept(self.memory, n, contents=None)), names)
         self.cache = dict(types)
 
-        contents = pool.starmap(_read_concept, map(lambda file: (self.contents_dir, file), files))
+        contents = pool.starmap(multiprocess_read_json_file, map(lambda file: (self.contents_dir, file, "ont"), files))
         for c in contents:
             self.cache[c[0]].set_contents(c[1])
 

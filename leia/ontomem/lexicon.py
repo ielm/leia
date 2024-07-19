@@ -1,8 +1,10 @@
 from collections import OrderedDict
 from dataclasses import dataclass
+from multiprocessing.pool import Pool
 from leia.ontomem.memory import Memory
-from typing import Any, List, Set, Tuple, Union
 from leia.utils.formatting import FormatFromLISP
+from leia.utils.threads import multiprocess_read_json_file
+from typing import Any, List, Set, Tuple, Union
 
 import json
 import os
@@ -19,33 +21,22 @@ class Lexicon(object):
             self.load()
 
     def load(self):
-        # This method has been added to mirror the ontology loading pattern; the lexicon is intended to be
-        # lazy loaded, so this method does nothing for now.  In the future, should something be needed as
-        # part of an initial load, it can be placed here.
-        pass
+        pool = Pool(4)
+        files = os.listdir(self.contents_dir)
+
+        contents = pool.starmap(multiprocess_read_json_file, map(lambda file: (self.contents_dir, file, "word"), files))
+        for c in contents:
+            self.cache[c[0]] = Word(self.memory, c[0], contents=c[1])
 
     def word(self, word: str) -> 'Word':
         # 1) Check the cache
         if word in self.cache:
             return self.cache[word]
 
-        # 2) Lazy load from the contents_dir
-        loaded = self.load_word(word)
-        if loaded is not None:
-            self.cache[word] = loaded
-            return loaded
-
-        # 3) Create a new (empty) word
+        # 2) Create a new (empty) word
         created = self.create_word(word)
         self.cache[word] = created
         return created
-
-    def load_word(self, word: str) -> Union['Word', None]:
-        try:
-            with open("%s/%s.word" % (self.contents_dir, word), "r") as f:
-                return Word(self.memory, word, contents=json.load(f))
-        except FileNotFoundError:
-            return None
 
     def create_word(self, word: str) -> 'Word':
         return Word(self.memory, word)
