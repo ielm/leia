@@ -2,7 +2,7 @@ export { Concept } from "./objects/concept.js";
 
 import * as API from "./api.js";
 import * as OntologySidebar from "./sidebars/ontology.js";
-import { tabs } from "./tabs.js";
+import { contentTabs } from "./tabs.js";
 
 class HelpButton extends HTMLButtonElement {
 
@@ -30,7 +30,7 @@ class ContentLink extends HTMLAnchorElement {
         const object = await API.contentIdToLEIAObject(contentId);
 
         // Add the tab, and open it unless the ALT key is held.
-        tabs.addObject(object, !event.altKey);
+        contentTabs.addObject(object, !event.altKey);
     }
 
 }

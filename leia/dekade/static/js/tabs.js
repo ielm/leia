@@ -2,9 +2,9 @@
 
 class LEIATabsViewer {
 
-    constructor() {
-        this.tabPanel = $("#leia-tabs-navigator");
-        this.contentPanel = $("#leia-tabs-content");
+    constructor(tabPanel, contentPanel) {
+        this.tabPanel = $(tabPanel);
+        this.contentPanel = $(contentPanel);
 
         this.index = {};
     }
@@ -49,7 +49,7 @@ class LEIATabsViewer {
     }
 
     _addTab(leiaObject) {
-        const tab = new TabButton(leiaObject);
+        const tab = new TabButton(this, leiaObject);
         this.tabPanel.append(tab);
 
         return tab;
@@ -67,8 +67,10 @@ class LEIATabsViewer {
 
 class TabButton extends HTMLButtonElement {
 
-    constructor(leiaObject) {
+    constructor(tabs, leiaObject) {
         super();
+
+        this.tabs = tabs;
 
         this.name = leiaObject.name();
         this.setAttribute("is", "tab-button");
@@ -92,11 +94,11 @@ class TabButton extends HTMLButtonElement {
     _onClicked(event) {
         if (this.selected) { return; }
 
-        tabs.select(this.name);
+        this.tabs.select(this.name);
     }
 
 }
 
 customElements.define("tab-button", TabButton, { extends: "button" });
 
-export const tabs = new LEIATabsViewer();
+export const contentTabs = new LEIATabsViewer("#leia-tabs-navigator", "#leia-tabs-content");
