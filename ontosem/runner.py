@@ -76,10 +76,10 @@ if __name__ == "__main__":
     runner = OntoSemRunner(config)
     results = runner.run([sentence])
 
-    for frame in results.sentences[0].semantics[0].basic_tmr.frames.values():
-        print(frame.frame_id())
+    for frame in results.sentences[0].semantics[0].basic_tmr.instances.values():
+        print(frame.id())
         for p, fillers in frame.properties.items():
-            print("--%s = %s" % (p, ",".join(map(lambda f: str(f), fillers))))
+            print("--%s = %s" % (p, ",".join(map(lambda f: str(f.value), fillers))))
     print("----")
     print("SCORE: %f" % results.sentences[0].semantics[0].score)
     print("SCORING:")

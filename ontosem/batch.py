@@ -1,3 +1,5 @@
+# NOTE: THIS HAS NOT BEEN PORTED OVER YET
+
 from leia.ontosem.config import OntoSemConfig
 from leia.ontosem.runner import OntoSemRunner
 from leia.ontosem.service.repository import TMRRepository

@@ -1,7 +1,7 @@
 from ontomem.memory import Memory
 from ontomem.ontology import Concept
 from ontomem.properties import Property
-from typing import Any, Dict, Iterable, List, Union
+from typing import Any, Dict, Iterable, List, Type, Union
 
 import time
 
@@ -33,9 +33,12 @@ class EpisodicMemory(object):
     def instances_of(self, concept: Concept, include_descendants: bool=False) -> Iterable['Frame']:
         raise NotImplementedError
 
-    def new_instance(self, concept: Concept) -> 'Frame':
+    def new_instance(self, concept: Union[str, Concept], frame_type: Type['Frame']=None) -> 'Frame':
+        if frame_type is None:
+            frame_type = Frame
+
         index = self._next_instance_for_concept(concept)
-        instance = Frame(self.memory, concept, index)
+        instance = frame_type(self.memory, concept, index)
         self._instances[instance.id()] = instance
         return instance
 
@@ -46,12 +49,15 @@ class EpisodicMemory(object):
         for space in self._spaces.values():
             space.remove_instance(instance)
 
-    def _next_instance_for_concept(self, concept: Concept) -> int:
-        if concept.name not in self._instance_nums_by_concept:
-            self._instance_nums_by_concept[concept.name] = 0
+    def _next_instance_for_concept(self, concept: Union[str, Concept]) -> int:
+        if isinstance(concept, Concept):
+            concept = concept.name
 
-        self._instance_nums_by_concept[concept.name] += 1
-        return self._instance_nums_by_concept[concept.name]
+        if concept not in self._instance_nums_by_concept:
+            self._instance_nums_by_concept[concept] = 0
+
+        self._instance_nums_by_concept[concept] += 1
+        return self._instance_nums_by_concept[concept]
 
     def _next_id_for_xmr(self, xmr: 'XMR') -> str:
         xmr_type = xmr.__class__.__name__
@@ -74,9 +80,9 @@ class Space(object):        # Examples: WM, LTE, ???, etc.
         self.name = name
         self.instances: Dict[str, Frame] = {}
 
-    def new_instance(self, concept: Concept) -> 'Frame':
+    def new_instance(self, concept: Union[str, Concept], frame_type: Type['Frame']=None) -> 'Frame':
         # Calls memory's new_instance method, and then adds the instance to this space
-        instance = self.memory.episodic.new_instance(concept)
+        instance = self.memory.episodic.new_instance(concept, frame_type=frame_type)
         self.instances[instance.id()] = instance
         return instance
 
@@ -84,6 +90,11 @@ class Space(object):        # Examples: WM, LTE, ???, etc.
         # Removes the instance from this space (but does not remove it from memory)
         if instance.id() in self.instances:
             del self.instances[instance.id()]
+
+    def __eq__(self, other):
+        if isinstance(other, Space):
+            return self.instances == other.instances
+        return super().__eq__(other)
 
 
 class XMR(Space):
@@ -158,12 +169,17 @@ class XMR(Space):
         # Return the first (ideally only) candidate
         return self.instances[candidates[0]["frame_id"]]
 
+    def to_dict(self) -> dict:
+        return {
+            "instances": list(map(lambda f: f.to_dict(), self.instances.values()))
+        }
+
 
 class Frame(object):        # TODO: RENAME TO Instance
 
-    def __init__(self, memory: Memory, concept: Concept, index: int):
+    def __init__(self, memory: Memory, concept: Union[str, Concept], index: int):
         self.memory = memory
-        self.concept = concept
+        self.concept = concept if isinstance(concept, Concept) else memory.ontology.concept(concept)
         self.index = index
         self.properties: Dict[str, List[Filler]] = {}
 
@@ -204,6 +220,14 @@ class Frame(object):        # TODO: RENAME TO Instance
 
     def spaces(self) -> List[Space]:
         raise NotImplementedError   # TODO: Lookup in memory; don't maintain the list locally
+
+    def to_dict(self) -> dict:
+        return {
+            "id": self.id(),
+            "concept": str(self.concept),
+            "index": self.index,
+            "properties": dict(map(lambda i: (i[0], list(map(lambda f: str(f.value), i[1]))), self.properties.items())),
+        }
 
     def __repr__(self):
         return "#%s.%d" % (self.concept.name, self.index)

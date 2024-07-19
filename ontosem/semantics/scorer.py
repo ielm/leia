@@ -44,27 +44,24 @@ class SemanticScorer(object):
         relations = self.properties.relations()
         relations = set(map(lambda r: r.name, relations))
 
-        # relations = set(map(lambda f: f.concept, self.ontology.concept("RELATION").descendants()))
-        # relations.add("RELATION")
-
-        for frame in candidate.basic_tmr.frames.values():
+        for frame in candidate.basic_tmr.instances.values():
             for property, fillers in frame.properties.items():
                 # Only score relations
                 if property not in relations:
                     continue
 
                 # Extract the ranges (and their descendants); only consider SEM for now
-                ranges = self.ontology.concept(frame.concept).fillers(property, "SEM")
+                ranges = frame.concept.fillers(property, "SEM")
                 descendants = list(itertools.chain.from_iterable(map(lambda r: r.descendants(), ranges)))
 
                 ranges = set(map(lambda r: r.name, ranges))
                 descendants = set(map(lambda d: d.name, descendants))
 
-                for filler in fillers:
+                for filler in map(lambda f: f.value, fillers):
                     # Only score relations connected to actual frames
-                    if filler not in candidate.basic_tmr.frames:
+                    if filler not in candidate.basic_tmr.instances:
                         continue
-                    filler = candidate.basic_tmr.frames[filler]
+                    filler = candidate.basic_tmr.instances[filler]
 
                     # If there are no ranges, give the minimum score
                     if len(ranges) == 0:
@@ -72,20 +69,20 @@ class SemanticScorer(object):
                         continue
 
                     # If the filler is one of the ranges, or a direct descendant, give the maximum score
-                    if filler.concept in ranges or filler.concept in descendants:
+                    if filler.concept.name in ranges or filler.concept.name in descendants:
                         results.append(RelationRangeScore(1.0, frame, property, filler))
                         continue
 
                     # Otherwise, find the nearest common ancestor to any range, calculate the distance from
                     # the filler to that ancestor, and penalize 0.1 for each step (to a maximum of 9 steps).
-                    common_ancestors = itertools.chain.from_iterable(map(lambda r: self.ontology.common_ancestors(filler.concept, r), ranges))
+                    common_ancestors = itertools.chain.from_iterable(map(lambda r: self.ontology.common_ancestors(filler.concept.name, r), ranges))
                     common_ancestors = list(common_ancestors)
 
                     if len(common_ancestors) == 0:
                         results.append(RelationRangeScore(0.1, frame, property, filler))
                         continue
 
-                    distance = min(map(lambda a: self.ontology.distance_to_ancestor(filler.concept, a), common_ancestors))
+                    distance = min(map(lambda a: self.ontology.distance_to_ancestor(filler.concept.name, a), common_ancestors))
                     distance = min(distance, 9)
                     penalty = distance * 0.1
                     score = 1.0 - penalty
@@ -97,15 +94,15 @@ class SemanticScorer(object):
         results = []
 
         for constraint in candidate.constraints:
-            tmr_frame_concept = self.ontology.concept(constraint.frame.concept)
+            tmr_frame_concept = constraint.frame.concept
             tmr_frame_concept_options = {tmr_frame_concept}
 
             # If the constraints are over a SET, evaluate the constraints over the members of the set instead
-            if constraint.frame.concept == "SET":
+            if constraint.frame.concept.name == "SET":
                 if "MEMBER-TYPE" in constraint.frame.properties:
                     tmr_frame_concept_options = set(map(lambda m: self.ontology.concept(m), constraint.frame.fillers("MEMBER-TYPE")))
                 elif "ELEMENTS" in constraint.frame.properties:
-                    tmr_frame_concept_options = set(map(lambda e: self.ontology.concept(candidate.basic_tmr.frames[e].concept), constraint.frame.fillers("ELEMENTS")))
+                    tmr_frame_concept_options = set(map(lambda e: candidate.basic_tmr.instances[e].concept, constraint.frame.fillers("ELEMENTS")))
 
             scores = []
 

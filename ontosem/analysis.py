@@ -17,15 +17,6 @@ class Analysis(object):
             "sentences": list(map(lambda s: s.to_dict(), self.sentences))
         }
 
-    def to_memory(self, speaker: str=None, listener: str=None) -> Frame:
-        frame = Frame("ANALYSIS.?").add_parent("ANALYSIS")
-        frame["CONFIG"] = self.config.to_dict()
-
-        for sentence in self.sentences:
-            frame["HAS-SENTENCES"] += sentence.to_memory(speaker=speaker, listener=listener)
-
-        return frame
-
 
 class Sentence(object):
 
@@ -40,13 +31,3 @@ class Sentence(object):
             "syntax": self.syntax.to_dict(),
             "candidates": list(map(lambda c: c.to_dict(), self.semantics))
         }
-
-    def to_memory(self, speaker: str=None, listener: str=None) -> Frame:
-        frame = Frame("SENTENCE.?").add_parent("SENTENCE")
-        frame["TEXT"] = self.text
-        frame["HAS-SYNTAX"] = self.syntax.to_dict()
-
-        for candidate in self.semantics:
-            frame["HAS-CANDIDATES"] += candidate.to_memory(self.text, speaker=speaker, listener=listener)
-
-        return frame

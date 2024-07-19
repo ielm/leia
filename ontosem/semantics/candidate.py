@@ -1,5 +1,6 @@
 from ontomem.episodic import Frame
 from ontomem.lexicon import SemStruc
+from ontomem.memory import Memory
 from ontosem.semantics.tmr import TMR, TMRFrame
 from ontosem.syntax.results import SenseMap, Word
 from typing import List, Set, Union
@@ -9,12 +10,12 @@ import uuid
 
 class Candidate(object):
 
-    def __init__(self, *senses: SenseMap):
+    def __init__(self, memory: Memory, *senses: SenseMap):
         self.id = str(uuid.uuid4())
 
         self.senses = senses
-        self.basic_tmr = TMR()
-        self.extended_tmr = TMR()
+        self.basic_tmr = TMR(memory)
+        self.extended_tmr = TMR(memory)
         self.constraints: List[Constraint] = []
         self.scores: List[Score] = []
         self.score = 0.0
@@ -83,27 +84,6 @@ class Candidate(object):
             "final-score": self.score
         }
 
-    def to_memory(self, text: str, speaker: str=None, listener: str=None) -> Frame:
-        frame = Frame("CANDIDATE.?").add_parent("CANDIDATE")
-
-        frame["UUID"] = self.id
-
-        for sense_map in self.senses:
-            frame["SENSES"] += sense_map.to_dict()
-
-        frame["BASIC-TMR"] = self.basic_tmr.to_memory(text, speaker=speaker, listener=listener)
-        frame["EXTENDED-TMR"] = self.extended_tmr.to_memory(text, speaker=speaker, listener=listener)
-
-        for constraint in self.constraints:
-            frame["HAS-CONSTRAINTS"] += constraint.to_dict()
-
-        for score in self.scores:
-            frame["HAS-SCORES"] += score.to_dict()
-
-        frame["SCORE"] = self.score
-
-        return frame
-
     def __eq__(self, other):
         if isinstance(other, Candidate):
             return self.senses == other.senses and self.basic_tmr == other.basic_tmr and self.extended_tmr == other.extended_tmr
@@ -135,7 +115,7 @@ class Constraint(object):
     def to_dict(self) -> dict:
         return {
             "index": self.index,
-            "frame": self.frame.frame_id(),
+            "frame": self.frame.id(),
             "concepts": list(self.concepts),
             "sense-map": self.sense_map.word.index
         }
@@ -146,7 +126,7 @@ class Constraint(object):
         return super().__eq__(other)
 
     def __repr__(self):
-        return "Constraint: %s should be a %s, according to %s." % (self.frame.frame_id(), self.concepts, self.sense_map)
+        return "Constraint: %s should be a %s, according to %s." % (self.frame.id(), self.concepts, self.sense_map)
 
 
 class Score(object):
@@ -200,15 +180,15 @@ class RelationRangeScore(Score):
     def to_dict(self) -> dict:
         out = super().to_dict()
         out.update({
-            "frame": self.frame.frame_id(),
+            "frame": self.frame.id(),
             "property": self.property,
-            "filler": self.filler.frame_id()
+            "filler": self.filler.id()
         })
 
         return out
 
     def __repr__(self):
-        return "Relation range scored %f for %s -[%s]-> %s." % (self.score, self.frame.frame_id(), self.property, self.filler.frame_id())
+        return "Relation range scored %f for %s -[%s]-> %s." % (self.score, self.frame.id(), self.property, self.filler.id())
 
     def __eq__(self, other):
         if isinstance(other, RelationRangeScore):
@@ -231,7 +211,7 @@ class LexicalConstraintScore(Score):
         return out
 
     def __repr__(self):
-        return "Lexical constraint scored %f for constraint %s on %s (from %s)." % (self.score, self.constraint.concepts, self.constraint.frame.frame_id(), self.constraint.sense_map)
+        return "Lexical constraint scored %f for constraint %s on %s (from %s)." % (self.score, self.constraint.concepts, self.constraint.frame.id(), self.constraint.sense_map)
 
     def __eq__(self, other):
         if isinstance(other, LexicalConstraintScore):

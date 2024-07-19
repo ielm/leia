@@ -1,3 +1,4 @@
+from ontomem.memory import Memory
 from ontosem.analysis import Analysis
 from ontosem.config import OntoSemConfig
 from ontosem.semantics.extended import BasicSemanticsMPProcessor
@@ -19,7 +20,7 @@ class BasicSemanticsMPProcessorTestCase(TestCase):
 
         config = OntoSemConfig()
 
-        tmr = TMR()
+        tmr = TMR(config.memory())
 
         analysis = Analysis(config)
         analyzer = BasicSemanticsMPProcessor(config)
@@ -41,15 +42,18 @@ class BasicSemanticsMPProcessorTestCase(TestCase):
 
     def test_parse_lisp_to_frame(self):
         lisp = "((ID @TMR.HUMAN.1) (CONCEPT HUMAN) (INSTANCE 1) (PROPERTIES ((GENDER (MALE)))) (RESOLUTIONS (1.HEAD 0.VAR.1 1.VAR.0 2.VAR.1)))"
-        lisp = [["ID", "@TMR.HUMAN.1"], ["CONCEPT", "HUMAN"], ["INSTANCE", 1], ["PROPERTIES", [["GENDER", "MALE"]]], ["RESOLUTIONS", ["1.HEAD", "0.VAR.1", "1.VAR.0", "2.VAR.1"]]]
+        lisp = [["ID", "@TMR.HUMAN.1"], ["CONCEPT", "HUMAN"], ["INSTANCE", 1], ["PROPERTIES", [["GENDER", ["MALE"]]]], ["RESOLUTIONS", ["1.HEAD", "0.VAR.1", "1.VAR.0", "2.VAR.1"]]]
 
-        frame = TMRFrame("HUMAN", 1)
-        frame.add_filler("GENDER", "MALE")
-        frame.resolutions = {"1.HEAD", "0.VAR.1", "1.VAR.0", "2.VAR.1"}
+        config = OntoSemConfig()
 
-        tmr = TMR()
+        tmr = TMR(config.memory())
 
-        analyzer = BasicSemanticsMPProcessor(OntoSemConfig())
+        analyzer = BasicSemanticsMPProcessor(config)
 
         analyzer._lisp_to_frame(tmr, lisp)
-        self.assertEqual(frame, tmr.frames["@TMR.HUMAN.1"])
+
+        instance: TMRFrame = tmr.instances["@TMR.HUMAN.1"]
+        self.assertEqual(config.memory().ontology.concept("HUMAN"), instance.concept)
+        self.assertEqual(1, instance.index)
+        self.assertEqual(["MALE"], instance.values("GENDER"))
+        self.assertEqual({"1.HEAD", "0.VAR.1", "1.VAR.0", "2.VAR.1"}, instance.resolutions)

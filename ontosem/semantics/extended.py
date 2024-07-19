@@ -61,7 +61,10 @@ class BasicSemanticsMPProcessor(object):
             frames = LispParser.list_key_to_value(tmr_content, "FRAMES")[1]
             scores = LispParser.list_key_to_value(candidate, "SCORES")[1]
 
-            extended_tmr = TMR()
+            extended_tmr = TMR(self.config.memory())
+
+            if frames == "NIL":
+                frames = []
 
             for frame in frames:
                 self._lisp_to_frame(extended_tmr, frame)
@@ -79,8 +82,8 @@ class BasicSemanticsMPProcessor(object):
         concept = LispParser.list_key_to_value(input, "CONCEPT")[1]
         instance = int(LispParser.list_key_to_value(input, "INSTANCE")[1])
 
-        frame = TMRFrame(concept, instance)
-        tmr.frames[fid] = frame
+        frame = TMRFrame(tmr.memory, concept, instance)
+        tmr.instances[fid] = frame
 
         # Now parse the properties
         properties = LispParser.list_key_to_value(input, "PROPERTIES")[1]
