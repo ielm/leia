@@ -35,8 +35,8 @@ class TMRInstance(Instance):
         self.resolutions = set()        # List of ids that this frame resolves to
         self.grounded = grounded        # Ungrounded (default) means a fresh TMR frame; grounded means it already exists in agent memory
 
-    def to_dict(self) -> dict:
-        out = super().to_dict()
+    def to_dict(self, space: Space=None) -> dict:
+        out = super().to_dict(space=space)
         out["resolutions"] = list(self.resolutions)
 
         return out

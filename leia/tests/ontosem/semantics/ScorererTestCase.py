@@ -79,7 +79,7 @@ class SemanticScorerTestCase(TestCase):
         candidate = Candidate(self.m)
         f1 = candidate.basic_tmr.new_instance(e1)
         f2 = candidate.basic_tmr.new_instance(o1)
-        f1.add_filler("REL1", f2.id())
+        f1.add_filler("REL1", f2)
         scores = scorer.score_relation_ranges(candidate)
         self.assertEqual([
             RelationRangeScore(1.0, f1, "REL1", f2)
@@ -89,7 +89,7 @@ class SemanticScorerTestCase(TestCase):
         candidate = Candidate(self.m)
         f1 = candidate.basic_tmr.new_instance("E1-1")
         f2 = candidate.basic_tmr.new_instance("O1-1")
-        f1.add_filler("REL1", f2.id())
+        f1.add_filler("REL1", f2)
         scores = scorer.score_relation_ranges(candidate)
         self.assertEqual([
             RelationRangeScore(1.0, f1, "REL1", f2)
@@ -99,7 +99,7 @@ class SemanticScorerTestCase(TestCase):
         candidate = Candidate(self.m)
         f1 = candidate.basic_tmr.new_instance("E1")
         f2 = candidate.basic_tmr.new_instance("O1")
-        f1.add_filler("REL2", f2.id())
+        f1.add_filler("REL2", f2)
         scores = scorer.score_relation_ranges(candidate)
         self.assertEqual([
             RelationRangeScore(0.1, f1, "REL2", f2)
@@ -109,7 +109,7 @@ class SemanticScorerTestCase(TestCase):
         candidate = Candidate(self.m)
         f1 = candidate.basic_tmr.new_instance("E1")
         f2 = candidate.basic_tmr.new_instance("O2")
-        f1.add_filler("REL1", f2.id())
+        f1.add_filler("REL1", f2)
         scores = scorer.score_relation_ranges(candidate)
         self.assertEqual([
             RelationRangeScore(0.9, f1, "REL1", f2)
@@ -119,7 +119,7 @@ class SemanticScorerTestCase(TestCase):
         candidate = Candidate(self.m)
         f1 = candidate.basic_tmr.new_instance("E1")
         f2 = candidate.basic_tmr.new_instance("O1")
-        f1.add_filler("ATTR1", f2.id())
+        f1.add_filler("ATTR1", f2)
         scores = scorer.score_relation_ranges(candidate)
         self.assertEqual([], scores)
 

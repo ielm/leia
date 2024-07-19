@@ -54,6 +54,6 @@ class BasicSemanticsMPProcessorTestCase(TestCase):
 
         instance: TMRInstance = tmr.instance("HUMAN.1")
         self.assertEqual(config.memory().ontology.concept("HUMAN"), instance.concept)
-        self.assertEqual(1, instance.index)
+        self.assertEqual(1, instance.index(space=tmr))
         self.assertEqual(["MALE"], instance.values("GENDER"))
         self.assertEqual({"1.HEAD", "0.VAR.1", "1.VAR.0", "2.VAR.1"}, instance.resolutions)

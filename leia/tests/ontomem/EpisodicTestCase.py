@@ -1,5 +1,5 @@
 from leia.ontomem.ontology import Concept
-from leia.ontomem.episodic import Filler, Instance, Space, XMR
+from leia.ontomem.episodic import Address, Filler, Instance, Space, XMR
 from leia.ontomem.memory import Memory
 from unittest import TestCase
 from unittest.mock import MagicMock, patch
@@ -11,24 +11,34 @@ class SpaceTestCase(TestCase):
         self.m = Memory("", "", "")
 
     def test_instance(self):
-        space = Space(self.m, "TEST")
-
         # None is returned if the instance is unknown
+        self.assertIsNone(self.m.episodic.instance("C.1"))
+        self.assertFalse(self.m.episodic.has_instance("C.1"))
+
+        # A new instance can be added and returned by id
+        instance1 = self.m.episodic.new_instance("C")
+        self.assertEqual(instance1, self.m.episodic.instance("C.1"))
+        self.assertTrue(self.m.episodic.has_instance("C.1"))
+
+        # A new space does not see other space's instances
+        space = self.m.episodic.new_space("TEST")
         self.assertIsNone(space.instance("C.1"))
         self.assertFalse(space.has_instance("C.1"))
 
-        # A new instance can be returned by id
-        instance = space.new_instance("C")
-        self.assertEqual(instance, space.instance("C.1"))
+        # A new instance added to a new space gets a local and global id
+        instance2 = space.new_instance("C")
+        self.assertEqual(instance2, space.instance("C.1"))
         self.assertTrue(space.has_instance("C.1"))
+        self.assertEqual(instance2, self.m.episodic.instance("C.2"))
+        self.assertTrue(self.m.episodic.has_instance("C.2"))
 
-        # An instance can be assigned / overwritten
-        overwrite = Instance(self.m, "C", 1)
-        space.register_instance(overwrite)
-        self.assertNotEqual(instance, space.instance("C.1"))
+        # An existing instance can be registered into a space
+        space.register_instance(instance1)
+        self.assertEqual(instance1, space.instance("C.2"))
+        self.assertTrue(space.has_instance("C.2"))
 
         # All instances can be returned
-        self.assertEqual([overwrite], space.instances())
+        self.assertEqual([instance2, instance1], space.instances())
 
     def test_spaces(self):
         space = Space(self.m, "TEST")
@@ -36,9 +46,14 @@ class SpaceTestCase(TestCase):
         # An empty list is returned
         self.assertEqual([], space.spaces())
 
-        # Returns all known spaces
+        # New spaces have a link to their parent
         space1 = space.new_space("1")
         space2 = space.new_space("2")
+        self.assertIsNone(space.parent())
+        self.assertEqual(space, space1.parent())
+        self.assertEqual(space, space2.parent())
+
+        # Returns all known spaces
         self.assertEqual({space1.name(), space2.name()}, set(map(lambda s: s.name(), space.spaces())))
 
         # Private spaces are not returned by default
@@ -83,7 +98,7 @@ class SpaceTestCase(TestCase):
 
         instance = em.new_instance(c)
         self.assertEqual(c, instance.concept)
-        self.assertEqual(1234, instance.index)
+        self.assertEqual(1234, instance.index(space=em))
         self.assertEqual(self.m, instance.memory)
 
         em._next_instance_for_concept.assert_called_once()
@@ -123,6 +138,21 @@ class SpaceTestCase(TestCase):
 
         self.assertEqual([f1, f2, f3], self.m.episodic.instances_of(c1, include_descendants=True))
         self.assertEqual([f4, f5], self.m.episodic.instances_of(c2, include_descendants=True))
+
+    def test_address(self):
+        self.assertEqual(Address(self.m.episodic), self.m.episodic.address())
+
+        space1 = self.m.episodic.new_space("TEST1")
+        space2 = self.m.episodic.new_space("TEST2")
+        space3 = space1.new_space("TEST3")
+        space4 = space1.new_space("TEST4")
+        space5 = space3.new_space("TEST5")
+
+        self.assertEqual(Address(self.m.episodic, space1), space1.address())
+        self.assertEqual(Address(self.m.episodic, space2), space2.address())
+        self.assertEqual(Address(self.m.episodic, space1, space3), space3.address())
+        self.assertEqual(Address(self.m.episodic, space1, space4), space4.address())
+        self.assertEqual(Address(self.m.episodic, space1, space3, space5), space5.address())
 
 
 class XMRTestCase(TestCase):
@@ -188,6 +218,22 @@ class InstanceTestCase(TestCase):
         f = Space(self.m, "TEST", private=True).new_instance("C1")
 
         self.assertEqual("C1.1", f.id())
+
+    def test_address(self):
+        f = self.m.episodic.new_instance("C")
+        self.assertEqual(Address(self.m.episodic, f.id()), f.address())
+
+        s = self.m.episodic.new_space("TEST")
+        s.register_instance(f)
+        self.assertEqual(Address(self.m.episodic, s, f.id(space=s)), f.address(space=s))
+
+        x = self.m.episodic.new_space("XYZ")
+        self.assertIsNone(f.address(space=x))
+
+        self.assertEqual([
+            Address(self.m.episodic, f.id()),
+            Address(self.m.episodic, s, f.id(space=s))
+        ], f.addresses())
 
     @patch("leia.ontomem.episodic.time.time")
     def test_fillers(self, mock_time: MagicMock):

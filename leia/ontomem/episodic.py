@@ -10,9 +10,10 @@ import time
 
 class Space(object):
 
-    def __init__(self, memory: Memory, name: str, private: bool=False):
+    def __init__(self, memory: Memory, name: str, parent: 'Space'=None, private: bool=False):
         self.memory = memory
         self._name = name
+        self._parent = parent
         self._private = private
 
         # Contents
@@ -29,6 +30,17 @@ class Space(object):
 
         self._instance_nums_by_concept = {}
         self._instance_nums_by_space = {}
+
+    def address(self) -> 'Address':
+        if self.parent() is not None:
+            address = self.parent().address()
+            address.append(self)
+            return address
+
+        return Address(self)
+
+    def parent(self) -> Union['Space', None]:
+        return self._parent
 
     def instance(self, id: str) -> Union['Instance', None]:
         if id in self._instances:
@@ -52,13 +64,23 @@ class Space(object):
         if instance_type is None:
             instance_type = Instance
 
-        index = self._next_instance_for_concept(concept)
+        index = self.memory.episodic._next_instance_for_concept(concept)
         instance = instance_type(self.memory, concept, index)
-        self.register_instance(instance)
+        self.memory.episodic._instances[instance.id()] = instance
+
+        if self != self.memory.episodic:
+            self.register_instance(instance)
+
         return instance
 
     def register_instance(self, instance: 'Instance'):
-        self._instances[instance.id()] = instance
+        if instance.id(space=self) is not None:
+            return
+
+        index = self._next_instance_for_concept(instance.concept)
+        instance.set_index_for_space(self, index)
+
+        self._instances[instance.id(space=self)] = instance
 
     def remove_instance(self, instance: 'Instance'):
         if instance.id() in self._instances:
@@ -102,7 +124,7 @@ class Space(object):
         if name is None:
             name = self._next_id_for_space(space_type)
 
-        space = space_type(self.memory, name, private=private)
+        space = space_type(self.memory, name, parent=self, private=private)
         self._spaces[name] = space
         return space
 
@@ -111,6 +133,9 @@ class Space(object):
 
     def is_private(self) -> bool:
         return self._private
+
+    def __hash__(self) -> int:
+        return hash(self.address())
 
     def __eq__(self, other):
         if isinstance(other, Space):
@@ -131,8 +156,8 @@ class XMR(Space):
         ASAP = "ASAP"
         INTERRUPT = "INTERRUPT"
 
-    def __init__(self, memory: Memory, name: str=None, private: bool=False, raw: Any=None, timestamp: float=None, status: Status=None, priority: Priority=None):
-        super().__init__(memory, name if name is not None else memory.episodic._next_id_for_space(self.__class__), private=private)
+    def __init__(self, memory: Memory, name: str=None, parent: Space=None, private: bool=False, raw: Any=None, timestamp: float=None, status: Status=None, priority: Priority=None):
+        super().__init__(memory, name if name is not None else memory.episodic._next_id_for_space(self.__class__), parent=parent, private=private)
 
         self._raw = raw
         self.timestmap = timestamp if timestamp is not None else time.time()
@@ -185,7 +210,7 @@ class XMR(Space):
                 "subtree": subtree,
                 "incoming": 0,
                 "outgoing": 0,
-                "instance": frame.index
+                "instance": frame.index(space=self)
             }
 
         # Now modify each score
@@ -226,7 +251,7 @@ class XMR(Space):
 
     def to_dict(self) -> dict:
         return {
-            "instances": list(map(lambda f: f.to_dict(), self.instances()))
+            "instances": list(map(lambda f: f.to_dict(space=self), self.instances()))
         }
 
 
@@ -234,18 +259,53 @@ class Instance(object):
 
     class TooManyFillersError(Exception): pass
 
-    def __init__(self, memory: Memory, concept: Union[str, Concept], index: int, private_to: Space=None):
+    def __init__(self, memory: Memory, concept: Union[str, Concept], index: int):
         self.memory = memory
         self.concept = concept if isinstance(concept, Concept) else memory.ontology.concept(concept)
-        self.index = index
-        self._private_to = private_to
+
+        # A mapping of Space -> int, keeping the unique index number for this instance in each space it
+        # is contained.  Will always include the root (episodic) space.
+        self._indexes = {
+            memory.episodic: index
+        }
+
         self.properties: Dict[str, List[Filler]] = {}
 
-    def id(self) -> str:
-        if self._private_to is not None:
-            return "%s:%s.%d" % (self._private_to.name, self.concept.name, self.index)
+    def index(self, space: Space=None) -> Union[int, None]:
+        if space is None:
+            space = self.memory.episodic
+        if space not in self._indexes:
+            return None
+        return self._indexes[space]
 
-        return "%s.%d" % (self.concept.name, self.index)
+    def set_index_for_space(self, space: Space, index: int):
+        self._indexes[space] = index
+
+    def id(self, space: Space=None) -> Union[str, None]:
+        index = self._indexes[self.memory.episodic]
+
+        if space is not None:
+            if space in self._indexes:
+                index = self._indexes[space]
+            else:
+                return None
+
+        return "%s.%d" % (self.concept.name, index)
+
+    def address(self, space: Space=None) -> Union['Address', None]:
+        if space is None:
+            space = self.memory.episodic
+
+        if space not in self._indexes:
+            return None
+
+        address = space.address()
+        address.append(self.id(space=space))
+
+        return address
+
+    def addresses(self) -> List['Address']:
+        return list(map(lambda space: self.address(space=space), self._indexes.keys()))
 
     def add_filler(self, slot: str, filler: 'Filler.VALUE', timestamp: float=None) -> 'Instance':
         if slot not in self.properties:
@@ -297,22 +357,58 @@ class Instance(object):
     def isa(self, parent: Concept) -> bool:
         return self.concept.isa(parent)
 
-    def private_to(self) -> Union[Space, None]:
-        return self._private_to
-
     def spaces(self) -> List[Space]:
-        raise NotImplementedError   # TODO: Lookup in memory; don't maintain the list locally
+        return list(self._indexes.keys())
 
-    def to_dict(self) -> dict:
+    def to_dict(self, space: Space=None) -> dict:
+        if space is None:
+            space = self.memory.episodic
+
         return {
-            "id": self.id(),
+            "id": self.id(space=space),
             "concept": str(self.concept),
-            "index": self.index,
+            "index": self.index(space=space),
             "properties": dict(map(lambda i: (i[0], list(map(lambda f: str(f.value), i[1]))), self.properties.items())),
         }
 
     def __repr__(self):
-        return "#%s.%d" % (self.concept.name, self.index)
+        return "#%s" % self.id()
+
+
+class Address(object):
+
+    def __init__(self, *start: Union[Space, str]):
+        self._path = []
+
+        for node in start:
+            self.append(node)
+
+    def append(self, node: Union[Space, str]):
+        if isinstance(node, Space):
+            node = {"type": "space", "id": node.name()}
+        elif isinstance(node, Instance):
+            node = {"type": "instance", "id": node.id()}
+
+        self._path.append(node)
+
+    def resolve(self) -> Instance:
+        raise NotImplementedError
+
+    def __repr__(self):
+        symbols = {
+            "space": "&",
+            "instance": "#"
+        }
+
+        return "/".join(map(lambda n: "%s%s" % (symbols[n["type"]], n["id"]), self._path))
+
+    def __hash__(self) -> int:
+        return hash(repr(self))
+
+    def __eq__(self, other):
+        if isinstance(other, Address):
+            return self._path == other._path
+        return super().__eq__(other)
 
 
 class Filler(object):

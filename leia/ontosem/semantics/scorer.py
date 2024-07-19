@@ -1,3 +1,4 @@
+from leia.ontomem.episodic import Instance
 from leia.ontomem.lexicon import Lexicon
 from leia.ontomem.ontology import Ontology
 from leia.ontosem.config import OntoSemConfig
@@ -59,9 +60,8 @@ class SemanticScorer(object):
 
                 for filler in map(lambda f: f.value, fillers):
                     # Only score relations connected to actual frames
-                    if not candidate.basic_tmr.has_instance(filler):
+                    if not isinstance(filler, Instance):
                         continue
-                    filler = candidate.basic_tmr.instance(filler)
 
                     # If there are no ranges, give the minimum score
                     if len(ranges) == 0:
