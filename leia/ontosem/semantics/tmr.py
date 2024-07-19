@@ -1,13 +1,30 @@
 from leia.ontomem.episodic import Instance, Space, XMR
 from leia.ontomem.memory import Memory
 from leia.ontomem.ontology import Concept
-from typing import Type, Union
+from typing import Any, Type, Union
 
 
 class TMR(XMR):
 
+    def __init__(self, memory: Memory, name: str=None, private: bool=False, raw: Any=None, timestamp: float=None, speaker: Instance=None, listener: Instance=None):
+        super().__init__(memory, name=name, private=private, raw=raw, timestamp=timestamp)
+        self._speaker = speaker
+        self._listener = listener
+
     def new_instance(self, concept: Union[str, Concept], frame_type: Type['Instance']=None) -> 'Instance':
         return super().new_instance(concept, instance_type=TMRInstance)
+
+    def speaker(self) -> Union[Instance, None]:
+        return self._speaker
+
+    def set_speaker(self, speaker: Instance):
+        self._speaker = speaker
+
+    def listener(self) -> Union[Instance, None]:
+        return self._listener
+
+    def set_listener(self, listener: Instance):
+        self._listener = listener
 
 
 class TMRInstance(Instance):

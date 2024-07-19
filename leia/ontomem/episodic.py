@@ -267,6 +267,16 @@ class Instance(object):
 
         return self
 
+    def set_filler(self, slot: str, filler: Union['Filler.VALUE', List['Filler.VALUE']], timestamp: float=None) -> 'Instance':
+        if not isinstance(filler, list):
+            filler = [filler]
+
+        filler = list(map(lambda f: Filler(f, timestamp=timestamp), filler))
+
+        self.properties[slot] = filler
+
+        return self
+
     def fillers(self, slot: str) -> List['Filler']:
         if slot not in self.properties:
             return []
@@ -299,7 +309,7 @@ class Instance(object):
 
 class Filler(object):
 
-    VALUE = Union['Frame', Concept, Property, str, float, int, bool]
+    VALUE = Union['Instance', Concept, Property, str, float, int, bool]
 
     def __init__(self, value: VALUE, timestamp: float=None):
         self.value = value

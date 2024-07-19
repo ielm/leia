@@ -441,3 +441,17 @@ class InstanceTestCase(TestCase):
         self.assertEqual([], frame.values("AGENT"))
         self.assertNotIn("AGENT", frame.properties.keys())
         self.assertEqual(["c"], frame.values("XYZ"))
+
+    def test_set_filler(self):
+
+        c = Concept(self.m, "C1")
+        frame = Instance(self.m, c, 1)
+
+        frame.set_filler("AGENT", "a")
+        self.assertEqual(["a"], frame.values("AGENT"))
+
+        frame.set_filler("AGENT", "b")
+        self.assertEqual(["b"], frame.values("AGENT"))
+
+        frame.set_filler("AGENT", ["c", "d"])
+        self.assertEqual(["c", "d"], frame.values("AGENT"))
