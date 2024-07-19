@@ -208,6 +208,9 @@ class Concept(object):
     def definition(self) -> str:
         return self._definition
 
+    def set_definition(self, definition: str):
+        self._definition = definition
+
     def add_parent(self, parent: 'Concept') -> 'Concept':
         self._parents.add(parent)
         return self

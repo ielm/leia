@@ -37,3 +37,31 @@ table.concept-rows > tbody > tr > td > button.concept-edit {
     align-items: center;
     margin-top: -1px;
 }
+
+div.concept-lineage-header {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+div.concept-definition {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+div.concept-definition > button.concept-edit {
+    font-size: 0.7em;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+    margin-top: -2.5px;
+}
+
+input.concept-definition-content {
+    width: calc(100% - 24px);
+}
+
+.concept-definition-content.hidden {
+    display: none;
+}

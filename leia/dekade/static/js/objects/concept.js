@@ -30,11 +30,13 @@ export class Concept extends LEIAObject {
         element.find("button.concept-del-local").click(this._onDelLocalButtonClicked.bind(this));
         element.find("button.concept-block-inherit").click(this._onBlockInheritButtonClicked.bind(this));
         element.find("button.concept-unblock-block").click(this._onUnblockBlockButtonClicked.bind(this));
+        element.find("button.concept-edit-definition").click(this._onEditDefinitionButtonClicked.bind(this));
         element.find("input.concept-toggle-inherited-display").change(this._onToggleInheritedDisplayChanged.bind(this));
         element.find("input.concept-add-local-property").keyup(this._onAddLocalInputChanged.bind(this));
         element.find("input.concept-add-local-facet").keyup(this._onAddLocalInputChanged.bind(this));
         element.find("input.concept-add-local-filler").keyup(this._onAddLocalInputChanged.bind(this));
         element.find("input.concept-add-local-meta").keyup(this._onAddLocalInputChanged.bind(this));
+        element.find("input.concept-definition-content").keyup(this._onConceptDefinitionChanged.bind(this));
     }
 
     templateName() {
@@ -149,6 +151,33 @@ export class Concept extends LEIAObject {
         const response = await API.apiKnowledgeOntologyWriteUnblockFiller(concept, property, facet, filler, type);
         if (response == "OK") {
             await this.refresh();
+        }
+    }
+
+    _onEditDefinitionButtonClicked(event) {
+        this.rendered.find("span.concept-definition-content").addClass("hidden");
+        this.rendered.find("input.concept-definition-content").removeClass("hidden");
+    }
+
+    async _onConceptDefinitionChanged(event) {
+        const field = $(event.currentTarget);
+        const value = field.val();
+
+        if (event.originalEvent.key == "Enter") {
+            const concept = this.name();
+            const response = await API.apiKnowledgeOntologyWriteEditDefinition(concept, value);
+            if (response == "OK") {
+                await this.refresh();
+            }
+            return;
+        }
+
+        if (event.originalEvent.key == "Escape") {
+            const span = this.rendered.find("span.concept-definition-content");
+            span.removeClass("hidden");
+            field.addClass("hidden");
+            field.val(span.text());
+            return;
         }
     }
 

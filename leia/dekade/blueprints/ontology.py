@@ -23,6 +23,7 @@ class DEKADEAPIOntologyBlueprint(Blueprint):
         self.add_url_rule("/api/knowledge/ontology/concept/<concept>/create", endpoint=None, view_func=self.write_create, methods=["POST"])
         self.add_url_rule("/api/knowledge/ontology/concept/<concept>/parent/add", endpoint=None, view_func=self.write_parent_add, methods=["POST"])
         self.add_url_rule("/api/knowledge/ontology/concept/<concept>/parent/remove", endpoint=None, view_func=self.write_parent_remove, methods=["POST"])
+        self.add_url_rule("/api/knowledge/ontology/concept/<concept>/definition/edit", endpoint=None, view_func=self.write_definition_edit, methods=["POST"])
         self.add_url_rule("/api/knowledge/ontology/concept/<concept>/filler/add", endpoint=None, view_func=self.write_filler_add, methods=["POST"])
         self.add_url_rule("/api/knowledge/ontology/concept/<concept>/filler/remove", endpoint=None, view_func=self.write_filler_remove, methods=["POST"])
         self.add_url_rule("/api/knowledge/ontology/concept/<concept>/filler/block", endpoint=None, view_func=self.write_filler_block, methods=["POST"])
@@ -176,6 +177,20 @@ class DEKADEAPIOntologyBlueprint(Blueprint):
 
     def write_parent_remove(self, concept: str):
         raise NotImplementedError
+
+    def write_definition_edit(self, concept: str):
+        if not request.get_json():
+            abort(400)
+
+        data = request.get_json()
+        definition = data["definition"]
+
+        concept = self.app.agent.memory.ontology.concept(concept)
+        concept.set_definition(definition)
+
+        self.app.agent.memory.edits.ontology.note_edited(concept.name, "DEKADE")
+
+        return "OK"
 
     def write_filler_add(self, concept: str):
         if not request.get_json():

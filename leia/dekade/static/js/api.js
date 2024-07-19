@@ -152,6 +152,18 @@ export async function apiKnowledgeOntologyWriteUnblockFiller(concept, property, 
 }
 
 
+export async function apiKnowledgeOntologyWriteEditDefinition(concept, definition) {
+    try {
+        const response = await axios.post("/api/knowledge/ontology/concept/" + concept + "/definition/edit", {
+            definition: definition
+        });
+        return response.data;
+    } catch (error) {
+        return error.data;
+    }
+}
+
+
 export async function apiKnowledgePropertiesChildren(concept) {
     try {
         const response = await axios.get("/api/knowledge/properties/children/" + concept);

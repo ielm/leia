@@ -1,14 +1,19 @@
 <div class="concept">
     <div class="concept-lineage-header">
-        <span class="concept-name">{{name}}</span> isa
+        <span class="concept-name">@{{name}}</span> isa
         {{#each parents}}
             <a is="content-link" data-content-type="ontology.concept" data-content-id="@{{this}}">@{{this}}</a>
             {{#unless @last}}, {{/unless}}
         {{/each}}
     </div>
     <div class="concept-definition">
-        {{definition}}
+        <button class="concept-edit concept-edit-definition">
+            <i class="fas fa-edit"></i>
+        </button>
+        <span class="concept-definition-content">{{definition}}</span>
+        <input type="text" class="concept-definition-content hidden" value="{{definition}}" placeholder="definition" />
     </div>
+    <hr>
     <div>
         <input type="checkbox" class="concept-toggle-inherited-display" checked /> Show Inherited?
     </div>
