@@ -6,7 +6,7 @@ from leia.ontosem.config import OntoSemConfig
 from leia.ontosem.semantics.candidate import Candidate, Constraint
 from leia.ontosem.semantics.compiler import SemanticCompiler
 from leia.ontosem.semantics.tmr import TMRInstance
-from leia.ontosem.syntax.results import SenseMap, SynMap, Syntax, Word
+from leia.ontosem.syntax.results import ConstituencyNode, SenseMap, SynMap, Syntax, Word
 from leia.tests.LEIATestCase import LEIATestCase
 from unittest.mock import call, MagicMock
 
@@ -20,8 +20,11 @@ class SemanticCompilerTestCase(LEIATestCase):
     def test_run(self):
         # Run should expand all candidates, process each, and yield the results.
 
+        constituency = ConstituencyNode("NONE")
+        syntax = Syntax([], "", "", constituency, [])
+
         synmap = SynMap([])
-        syntax = Syntax([], synmap, [], "", "", [], [], [])
+        syntax.synmap = synmap
 
         c1 = Candidate(self.m)
         c2 = Candidate(self.m)
@@ -701,7 +704,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         test = self.m.ontology.concept("TEST")
 
         # Setup the relevant syntax (a word with a synmap)
-        word0 = Word(0, "", [], "", 0, 0, Word.Ner.NONE, [])
+        word0 = Word(0, "", [], "", 0, 0, Word.Ner.NONE, [], {})
         sense_map = SenseMap(word0, "TEST-T1", {}, 0.5)
 
         # Build the candidate and frame; mock a semstruc element head
@@ -732,7 +735,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         test = self.m.ontology.concept("TEST")
 
         # Setup the relevant syntax (a word with a synmap)
-        word0 = Word(0, "", list(), "", 0, 0, Word.Ner.NONE, [])
+        word0 = Word(0, "", list(), "", 0, 0, Word.Ner.NONE, [], {})
         sense_map = SenseMap(word0, "TEST-T1", {}, 0.5)
 
         # Build the candidate and frame; mock a semstruc element head
@@ -763,7 +766,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         test = self.m.ontology.concept("TEST")
 
         # Setup the relevant syntax (a word with a synmap)
-        word0 = Word(0, "", list(), "", 0, 0, Word.Ner.NONE, [])
+        word0 = Word(0, "", list(), "", 0, 0, Word.Ner.NONE, [], {})
         sense_map = SenseMap(word0, "TEST-T1", {}, 0.5)
 
         # Build the candidate and frame; mock a semstruc element head
@@ -796,7 +799,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         test = ontology.concept("TEST")
 
         # Setup the relevant syntax (a word with a synmap)
-        word0 = Word(0, "", list(), "", 0, 0, Word.Ner.NONE, [])
+        word0 = Word(0, "", list(), "", 0, 0, Word.Ner.NONE, [], {})
         sense_map = SenseMap(word0, "TEST-T1", {}, 0.5)
 
         # Build the candidate and frame; mock a semstruc element head

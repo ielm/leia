@@ -22,7 +22,9 @@ class SyntaxTestCase(TestCase):
     @patch("leia.ontosem.syntax.results.Word.parse_lisp_results")
     @patch("leia.ontosem.syntax.results.SynMap.parse_lisp_results")
     @patch("leia.ontosem.syntax.results.Sense.parse_lisp")
-    def test_parse_lisp_results(self, mock_parse_sense: MagicMock, mock_parse_synmap: MagicMock, mock_parse_word: MagicMock):
+    @patch("leia.ontosem.syntax.results.ConstituencyNode.parse_lisp_results")
+    def test_parse_lisp_results(self, mock_parse_constituency: MagicMock, mock_parse_sense: MagicMock, mock_parse_synmap: MagicMock, mock_parse_word: MagicMock):
+        mock_parse_constituency.side_effect = lambda input, words: input
         mock_parse_sense.side_effect = lambda input: input
         mock_parse_synmap.side_effect = lambda input, words: input
         mock_parse_word.side_effect = lambda input: input
@@ -59,27 +61,27 @@ class SyntaxTestCase(TestCase):
         mock_parse_sense.assert_has_calls([call(sense1), call(sense2)])
         mock_parse_synmap.assert_called_once_with(synmap, [word1, word2])
         mock_parse_word.assert_has_calls([call(word1), call(word2)])
+        mock_parse_constituency.assert_called_once_with(parse, [word1, word2])
 
         self.assertEqual([word1, word2], syntax.words)
-        self.assertEqual(basic_deps, syntax.basic_deps)
-        self.assertEqual(enhanced_deps, syntax.enhanced_deps)
+        self.assertEqual(enhanced_deps, syntax.dependencies)
         self.assertEqual("Word1 word2.", syntax.original_sentence)
         self.assertEqual("Word1 word2.", syntax.sentence)
         self.assertEqual(parse, syntax.parse)
         self.assertEqual(synmap, syntax.synmap)
-        self.assertEqual([sense1, sense2], syntax.lex_senses)
 
     @patch("leia.ontosem.syntax.results.Word.parse_lisp_results")
     @patch("leia.ontosem.syntax.results.SynMap.parse_lisp_results")
-    def test_parse_lisp_results_nil_lex_senses(self, mock_parse_synmap: MagicMock, mock_parse_word: MagicMock):
+    @patch("leia.ontosem.syntax.results.ConstituencyNode.parse_lisp_results")
+    def test_parse_lisp_results_nil_lex_senses(self, mock_parse_constituency: MagicMock, mock_parse_synmap: MagicMock, mock_parse_word: MagicMock):
+        mock_parse_constituency.side_effect = lambda input, words: input
         mock_parse_synmap.side_effect = lambda input, words: input
         mock_parse_word.side_effect = lambda input: input
 
         word1 = ["Some mock word1 info here."]
         word2 = ["Some mock word2 info here."]
 
-        basic_deps = [["ROOT", "-1", "0"], ["ART", "2", "1"]]
-        enhanced_deps = [["ROOT", "-1", "0"], ["ART", "2", "1"]]
+        dependencies = [["ROOT", "-1", "0"], ["ART", "2", "1"]]
         parse = ["ROOT", ["S", ["VP", ["V", "Word1", "0"]]]]
         synmap = ["Some mock synmap info here."]
 
@@ -88,30 +90,30 @@ class SyntaxTestCase(TestCase):
                 "STANFORD",
                 [
                     ["WORDS", word1, word2],
-                    ["BASICDEPS", basic_deps],
-                    ["ENHANCEDDEPS", enhanced_deps],
+                    ["BASICDEPS", dependencies],
+                    ["ENHANCEDDEPS", dependencies],
                     ["ORIGINALSENTENCE", "Word1 word2."],
                     ["SENTENCE", "Word1 word2."],
                     ["PARSE", parse],
                 ]
             ],
             ["SYNMAP", synmap],
-            ["LEX-SENSES", "NIL"]
+            ["LEX-SENSES", "NIL"],
+            ["PARSE", parse]
         ]
 
         syntax = Syntax.parse_lisp_results(lisp)
 
+        mock_parse_constituency.assert_called_once_with(parse, [word1, word2])
         mock_parse_synmap.assert_called_once_with(synmap, [word1, word2])
         mock_parse_word.assert_has_calls([call(word1), call(word2)])
 
         self.assertEqual([word1, word2], syntax.words)
-        self.assertEqual(basic_deps, syntax.basic_deps)
-        self.assertEqual(enhanced_deps, syntax.enhanced_deps)
+        self.assertEqual(dependencies, syntax.dependencies)
         self.assertEqual("Word1 word2.", syntax.original_sentence)
         self.assertEqual("Word1 word2.", syntax.sentence)
         self.assertEqual(parse, syntax.parse)
         self.assertEqual(synmap, syntax.synmap)
-        self.assertEqual([], syntax.lex_senses)
 
 
 class SynMapTestCase(TestCase):
@@ -171,7 +173,7 @@ class SenseMapTestCase(TestCase):
 class WordTestCase(TestCase):
 
     def test_parse_lisp_results(self):
-        lisp = [["ID", "0"], ["COREF", "NIL"], ["LEMMA", "KICK"], ["NER", "O"], ["OFFSET", ["0", "4"]], ["POS", ["V", "INFINITIVE"]], ["TOKEN", "Kick"]]
+        lisp = [["ID", "0"], ["COREF", "NIL"], ["LEMMA", "KICK"], ["NER", "NONE"], ["OFFSET", ["0", "4"]], ["POS", ["V", "INFINITIVE"]], ["TOKEN", "Kick"]]
         word = Word.parse_lisp_results(lisp)
 
         self.assertEqual(0, word.index)
@@ -191,7 +193,7 @@ class WordTestCase(TestCase):
                 ["", "", "", "0.7", "", ["3", "2"], "", ""]
             ]],
             ["LEMMA", "KICK"],
-            ["NER", "O"],
+            ["NER", "NONE"],
             ["OFFSET", ["0", "4"]],
             ["POS", ["V", "INFINITIVE"]],
             ["TOKEN", "Kick"]
