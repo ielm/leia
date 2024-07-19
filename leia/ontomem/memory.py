@@ -215,7 +215,7 @@ class OntoMemTCPRequestGetSense(OntoMemTCPRequest):
     def handle(self, details: str) -> str:
         try:
             sense = self.memory.lexicon.sense(details)
-            return json.dumps(sense.contents)
+            return json.dumps(sense.to_dict())
         except:
             return json.dumps({
                 "error": "unknown sense",
@@ -235,7 +235,7 @@ class OntoMemTCPRequestGetWord(OntoMemTCPRequest):
         word = self.memory.lexicon.word(name)
         return json.dumps({
             "name": word.name,
-            "senses": list(map(lambda s: s.contents, word.senses(include_synonyms=include_synonyms)))
+            "senses": list(map(lambda s: s.to_dict(), word.senses(include_synonyms=include_synonyms)))
         })
 
 

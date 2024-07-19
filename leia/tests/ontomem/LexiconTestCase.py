@@ -81,7 +81,7 @@ class LexiconTestCase(TestCase):
         lex.cache["MAN"] = Word(self.m, "MAN", contents={
             "name": "MAN",
             "senses": {
-                "MAN-N1": sense_contents
+                "MAN-N1": Sense(self.m, "MAN-N1", contents=sense_contents)
             }
         })
 
@@ -100,10 +100,10 @@ class WordTestCase(LEIATestCase):
         s1 = Sense(self.m, "s1", contents=self.mockSense("s1"))
         s2 = Sense(self.m, "s2", contents=self.mockSense("s2"))
 
-        word.add_sense(s1.contents)
+        word.add_sense(s1)
         self.assertEqual([s1], word.senses())
 
-        word.add_sense(s2.contents)
+        word.add_sense(s2)
         self.assertEqual([s1, s2], word.senses())
 
     def test_senses_with_synonyms(self):
@@ -112,17 +112,17 @@ class WordTestCase(LEIATestCase):
 
         # Sanity check, senses locally defined will also be included
         local_sense = Sense(self.m, "localsense", contents=self.mockSense("localsense"))
-        word.add_sense(local_sense.contents)
+        word.add_sense(local_sense)
         self.assertEqual([local_sense], word.senses())
 
         # Now add a sense to another word; it will not be included
-        self.m.lexicon.word("other").add_sense(self.mockSense("notincluded"))
+        self.m.lexicon.word("other").add_sense(Sense(self.m, "notincluded", contents=self.mockSense("notincluded")))
         self.assertEqual([local_sense], word.senses())
 
         # Now add a sense to another word with "test" as a synonym; it will be included
         another = self.m.lexicon.word("another")
         syn_sense = Sense(self.m, "synsense", contents=self.mockSense("synsense", synonyms=["test"]))
-        another.add_sense(syn_sense.contents)
+        another.add_sense(syn_sense)
         self.assertEqual([local_sense, syn_sense], word.senses())
 
         # Synonyms can be filtered out

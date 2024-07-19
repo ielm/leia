@@ -1,4 +1,4 @@
-from leia.ontomem.lexicon import Lexicon, SemStruc
+from leia.ontomem.lexicon import Lexicon, SemStruc, Sense
 from leia.ontomem.memory import Memory
 from leia.ontomem.ontology import Ontology
 from leia.ontomem.properties import Property
@@ -137,9 +137,9 @@ class SemanticCompilerTestCase(LEIATestCase):
             "^$VAR4": {"THING": "HUMAN", "AGE": 50},
         })
 
-        lexicon.word("TEST").add_sense(s1)
-        lexicon.word("TEST").add_sense(s2)
-        lexicon.word("TEST").add_sense(s3)
+        lexicon.word("TEST").add_sense(Sense(self.m, "TEST-T1", contents=s1))
+        lexicon.word("TEST").add_sense(Sense(self.m, "TEST-T2", contents=s2))
+        lexicon.word("TEST").add_sense(Sense(self.m, "TEST-T3", contents=s3))
 
         sm1 = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
         sm2 = SenseMap(Word.basic(1), "TEST-T2", {"$VAR1": 123}, 0.5)
@@ -223,8 +223,8 @@ class SemanticCompilerTestCase(LEIATestCase):
             "^$VAR1": {"ABC": "content"}
         })
 
-        lexicon.word("TEST").add_sense(s1)
-        lexicon.word("TEST").add_sense(s2)
+        lexicon.word("TEST").add_sense(Sense(self.m, "TEST-T1", contents=s1))
+        lexicon.word("TEST").add_sense(Sense(self.m, "TEST-T2", contents=s2))
 
         # Create a candidate with two sense maps; word 0 points to TEST-T1 and word 1 points to TEST-T2.
         # The candidate has already bound 0.HEAD, 0.SUB.1, 1.HEAD, and 1.VAR.1.ABC to some frames.
@@ -598,7 +598,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         self.assertEqual([frame1.id()], frame2.fillers("NULL-SEM"))
 
         # If no HEAD exists, the first element can be used instead
-        self.m.lexicon.word("TEST").add_sense(self.mockSense("TEST-T1", semstruc={"REFSEM1": {}}))
+        self.m.lexicon.word("TEST").add_sense(Sense(self.m, "TEST-T1", contents=self.mockSense("TEST-T1", semstruc={"REFSEM1": {}})))
 
         candidate = Candidate(self.m)
         frame1 = TMRInstance(self.m, "TEST", 1)
@@ -910,9 +910,9 @@ class SemanticCompilerTestCase(LEIATestCase):
             ["TESTMP4", "^$VAR1", ["VALUE", "^$VAR2"]]
         ])
 
-        lexicon.word("TEST").add_sense(s1)
-        lexicon.word("TEST").add_sense(s2)
-        lexicon.word("TEST").add_sense(s3)
+        lexicon.word("TEST").add_sense(Sense(self.m, "TEST-T1", contents=s1))
+        lexicon.word("TEST").add_sense(Sense(self.m, "TEST-T2", contents=s2))
+        lexicon.word("TEST").add_sense(Sense(self.m, "TEST-T3", contents=s3))
 
         sm1 = SenseMap(Word.basic(0), "TEST-T1", {"$VAR1": -1, "$VAR2": -1}, 0.5)
         sm2 = SenseMap(Word.basic(1), "TEST-T2", {"$VAR1": -1, "$VAR2": -1}, 0.5)

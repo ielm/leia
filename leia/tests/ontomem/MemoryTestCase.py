@@ -1,3 +1,4 @@
+from leia.ontomem.lexicon import Sense
 from leia.ontomem.memory import Memory, OntoMemEditBuffer, OntoMemTCPClient, OntoMemTCPRequest, OntoMemTCPServer
 from leia.ontomem.memory import OntoMemTCPRequestGetInstance, OntoMemTCPRequestGetSense, OntoMemTCPRequestGetWord
 from leia.tests.LEIATestCase import LEIATestCase
@@ -96,9 +97,9 @@ class OntoMemTCPRequestGetSenseTestCase(TestCase):
             "SENSE": "MAN-N1",
             "WORD": "MAN",
             "CAT": "N",
-            "DEF": "male human being",
-            "EX": "...",
-            "COMMENTS": "...",
+            "DEF": "",
+            "EX": "",
+            "COMMENTS": "",
             "SYNONYMS": ["X", "Y", "Z"],
             "HYPONYMS": ["A", "B", "C"],
             "SYN-STRUC": {
@@ -120,7 +121,7 @@ class OntoMemTCPRequestGetSenseTestCase(TestCase):
         }
 
         man = self.m.lexicon.word("MAN")
-        man.add_sense(man_n1)
+        man.add_sense(Sense(self.m, "MAN-N1", contents=man_n1))
 
         self.assertEqual(man_n1, json.loads(OntoMemTCPRequestGetSense(self.m).handle("MAN-N1")))
 
@@ -142,8 +143,8 @@ class OntoMemTCPRequestGetWordTestCase(LEIATestCase):
         man_n2 = self.mockSense("MAN-N2")
 
         man = self.m.lexicon.word("MAN")
-        man.add_sense(man_n1)
-        man.add_sense(man_n2)
+        man.add_sense(Sense(self.m, "MAN-N1", contents=man_n1))
+        man.add_sense(Sense(self.m, "MAN-N2", contents=man_n2))
 
         self.assertEqual({
             "name": "MAN",
@@ -154,7 +155,7 @@ class OntoMemTCPRequestGetWordTestCase(LEIATestCase):
         other_n1 = self.mockSense("OTHER-N1", synonyms=["MAN"])
 
         other = self.m.lexicon.word("OTHER")
-        other.add_sense(other_n1)
+        other.add_sense(Sense(self.m, "OTHER-N1", contents=other_n1))
 
         self.assertEqual({
             "name": "MAN",

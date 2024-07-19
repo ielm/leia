@@ -62,17 +62,18 @@ class Word(object):
             "senses": {}
         }
 
-    def add_sense(self, sense: dict):
-        self._contents["senses"][sense["SENSE"]] = sense
+    def add_sense(self, sense: 'Sense'):
+        self._contents["senses"][sense.id] = sense
 
     def sense(self, sense: str) -> 'Sense':
         if sense in self._contents["senses"]:
-            return Sense(self.memory, sense, contents=self._contents["senses"][sense])
+            return self._contents["senses"][sense]
+            # return Sense(self.memory, sense, contents=self._contents["senses"][sense])
 
         raise Exception("Unknown sense %s." % sense)
 
     def senses(self, include_synonyms: bool=True) -> List['Sense']:
-        results = list(map(lambda s: Sense(self.memory, s[0], contents=s[1]), self._contents["senses"].items()))
+        results = list(self._contents["senses"].values())
 
         if include_synonyms:
             for word in self.memory.lexicon.words():
@@ -104,7 +105,7 @@ class Sense(object):
     def __init__(self, memory: Memory, id: str, contents: dict=None):
         self.memory = memory
         self.id = id
-        self.contents = contents if contents is not None else {}
+        # self.contents = contents if contents is not None else {}
 
         self.word = None
         self.pos = None
@@ -113,21 +114,45 @@ class Sense(object):
         self.meaning_procedures = []
 
         if contents is not None:
-            self._index()
+            self._index(contents)
 
-    def _index(self):
-        self.word = self.memory.lexicon.word(self.contents["WORD"])
-        self.pos = self.contents["CAT"]
-        self.synstruc = SynStruc(self.contents["SYN-STRUC"])
-        self.semstruc = SemStruc(self.contents["SEM-STRUC"])
-        self.meaning_procedures = list(map(lambda mp: MeaningProcedure(mp), self.contents["MEANING-PROCEDURES"]))
+    def _index(self, contents: dict):
+        self.word = self.memory.lexicon.word(contents["WORD"])
+        self.pos = contents["CAT"]
+        self.synstruc = SynStruc(contents["SYN-STRUC"])
+        self.semstruc = SemStruc(contents["SEM-STRUC"])
+        self.meaning_procedures = list(map(lambda mp: MeaningProcedure(mp), contents["MEANING-PROCEDURES"]))
+        self._synonyms = list(contents["SYNONYMS"]) if "SYNONYMS" in contents else []
+        self._hyponyms = list(contents["HYPONYMS"]) if "HYPONYMS" in contents else []
 
     def synonyms(self) -> List[str]:
-        return list(self.contents["SYNONYMS"]) if "SYNONYMS" in self.contents else []
+        return list(self._synonyms)
+
+    def to_dict(self) -> dict:
+        return {
+            "SENSE": self.id,
+            "WORD": self.word.name,
+            "CAT": self.pos,
+            "SYNONYMS": list(self._synonyms),
+            "HYPONYMS": list(self._hyponyms),
+            "SYN-STRUC": self.synstruc.to_dict(),
+            "SEM-STRUC": self.semstruc.to_dict(),
+            "MEANING-PROCEDURES": list(map(lambda mp: mp.to_dict(), self.meaning_procedures)),
+
+            "COMMENTS": "",
+            "DEF": "",
+            "EX": "",
+            "EXAMPLE-BINDINGS": [],
+            "EXAMPLE-DEPS": [],
+            "OUTPUT-SYNTAX": [],
+            "TMR-HEAD": None,
+            "TYPES": [],
+            "USE-WITH-TYPES": []
+        }
 
     def __eq__(self, other):
         if isinstance(other, Sense):
-            return self.id == other.id and self.contents == other.contents
+            return self.id == other.id
 
 
 class SynStruc(object):
