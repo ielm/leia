@@ -1,9 +1,17 @@
-from coreferee.data_model import Chain
 from enum import Enum
 from leia.ontomem.lexicon import Sense
 from pyparsing import OneOrMore, nestedExpr
-from spacy.tokens import Span, Token
 from typing import Dict, List, Union
+
+
+# We put the following in TYPE_CHECKING as they are only required for signatures,
+# and importing anything from spacy causes a notable lag as data is loaded.  For
+# unit tests, this delay serves no purpose, so we can skip it by not actually
+# loading the modules at all.
+from typing import TYPE_CHECKING
+if TYPE_CHECKING:
+    from coreferee.data_model import Chain
+    from spacy.tokens import Span, Token
 
 
 class Syntax(object):
@@ -49,17 +57,17 @@ class Syntax(object):
         return syntax
 
     @classmethod
-    def from_spacy(cls, sentence: Span) -> 'Syntax':
+    def from_spacy(cls, sentence: 'Span') -> 'Syntax':
 
         # Finds the NER type (as a Span) for the token, if any.  Expected 0 or 1, so the first result is returned.
-        def _ner_span(token: Token) -> Union[Span, None]:
+        def _ner_span(token: 'Token') -> Union['Span', None]:
             for entity in sentence.doc.ents:
                 if token in entity:
                     return entity
             return None
 
         # Finds the coreference chain for the token, if any.  Expected 0 or 1, so the first results is returned.
-        def _coref_chain(token: Token) -> Union[Chain, None]:
+        def _coref_chain(token: 'Token') -> Union['Chain', None]:
             for chain in sentence.doc._.coref_chains:
                 for mention in chain.mentions:
                     if mention.root_index == token.i:
@@ -217,7 +225,7 @@ class Word(object):
         return Word(index, lemma, pos, token, char_start, char_end, ner, coref, {})
 
     @classmethod
-    def from_spacy(cls, token: Token, ner: Union[Span, None], coref: Union[Chain, None]) -> 'Word':
+    def from_spacy(cls, token: 'Token', ner: Union['Span', None], coref: Union['Chain', None]) -> 'Word':
 
         ner = Word.Ner.NONE if ner is None else Word.Ner(ner.label_)
 
