@@ -128,10 +128,9 @@ class MongoConceptExporter(object):
                     unknown_fillers.append((name, prop))
                     continue
 
-                if facet not in {"default", "sem", "relaxable-to", "not"}:
-                    # TODO: value facets need to be dealt with
+                if facet not in {"value", "default", "sem", "relaxable-to", "not"}:
                     unknown_fillers.append((name, prop))
-                    pass
+                    continue
 
                 prop = {
                     "slot": slot,

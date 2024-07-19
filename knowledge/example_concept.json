@@ -8,6 +8,7 @@
     {"slot": "width", "facet": "sem", "filler": ["><", 1, 5], "meta": {"measured-in": "feet"}},
     {"slot": "color", "facet": "sem", "filler": "^", "meta": {"confidence": 0.5}},
     {"slot": "color", "facet": "default", "filler": "brown", "meta": {"required": true}},
+    {"slot": "height", "facet": "value", "filler": 65, "meta": {"measured-in": "feet"}},
     {"slot": "theme", "facet": "sem", "filler": "@private-1"},
     {"slot": "has-object-as-part", "facet": "sem", "filler": "&set-1"},
     {"slot": "measures", "facet": "sem", "filler": "$distance"}
@@ -34,7 +35,7 @@
 }
 
 /*
-  Valid facets: default, sem, relaxable-to, not
+  Valid facets: value, default, sem, relaxable-to, not
   Valid local fillers for sem, relaxable-to, not:
     @concept                A single concept; is OR'd with other concepts, private frames, properties, and sets
     @private-1              A single private frame; is OR'd with other concepts, private frames, properties, and sets
@@ -48,7 +49,7 @@
     !AnyNum                 A special identifier for "any number is valid"
     !AnyType                A special identifier for "any concept or property is valid"
     !AnyBool                A special identifier for "any boolean is valid"
-  Valid local fillers for default:
+  Valid local fillers for value, default:
     @concept                A single concept
     @private-1              A single private frame
     &set-1                  A single set
