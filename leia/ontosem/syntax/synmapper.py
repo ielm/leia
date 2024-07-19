@@ -63,7 +63,10 @@ class SynMatcher(object):
         self.lexicon = lexicon
 
     def run(self, syntax: Syntax, synstruc: SynStruc, root: Word=None) -> List['SynMatcher.SynMatchResult']:
-        raise NotImplementedError
+        elements = synstruc.elements
+        components = self.flatten(syntax)
+
+        return self.match(elements, components, root)
 
     def flatten(self, syntax: Syntax) -> List[Union[Word, Dependency, ConstituencyNode]]:
         # This method flattens the main syntactic elements into an ordered list representing their relative

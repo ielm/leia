@@ -442,5 +442,22 @@ class SynMatcherTestCase(LEIATestCase):
         ], results)
 
     def test_run(self):
-        # TODO: Test calls flatten, calls match, returns results
-        fail()
+        flattened = ["MOCK", "FLATTENED", "SYNTAX"]
+        expected = ["MOCK", "EXPECTED", "RESULTS"]
+
+        syntax = Syntax([], "", "", ConstituencyNode(""), [])
+        synstruc = SynStruc()
+        synstruc.elements = [
+            SynStruc.RootElement(),
+            SynStruc.TokenElement({"A", "B"}, "N", {"x": 1}, 123, False)
+        ]
+        root = self.mockWord(0, "ROOT", "R")
+
+        self.matcher.flatten = MagicMock(return_value=flattened)
+        self.matcher.match = MagicMock(return_value=expected)
+
+        results = self.matcher.run(syntax, synstruc, root=root)
+        self.assertEqual(expected, results)
+
+        self.matcher.flatten.assert_called_once_with(syntax)
+        self.matcher.match.assert_called_once_with(synstruc.elements, flattened, root)
