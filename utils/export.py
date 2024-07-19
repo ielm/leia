@@ -193,6 +193,11 @@ class MongoConceptExporter(object):
                         concept["private"][name] = oi
                         unmapped_onto_instances.remove(oi)
 
+        for concept in output_ontology.values():
+            file = "%s/%s.ont" % (output_dir, concept["name"])
+            with open(file, "w") as f:
+                json.dump(concept, f, indent=2)
+
         print("Total onto-instances with unknown owners: %d" % len(unmapped_onto_instances))
         for oi in unmapped_onto_instances:
             print("-- %s" % oi["name"])
