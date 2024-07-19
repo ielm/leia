@@ -12,19 +12,19 @@ div.ontology-sidebar-header {
     padding-left: 4px;
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    border-bottom-color: #796457;
+    border-bottom-color: var(--ribbon-color-tier-1);
 }
 
 div.ontology-sidebar-tree-viewer-container {
     height: calc(100% - var(--fixed-ontology-sidebar-header-height));
-    background-color: #ccc;
+    background-color: var(--results-color-tier-1);
 }
 
 div.ontology-sidebar-search-results {
     height: calc(100% - var(--fixed-ontology-sidebar-header-height));
     overflow-y: auto;
     padding: 4px;
-    background-color: #ccc;
+    background-color: var(--results-color-tier-1);
 }
 
 div.ontology-sidebar-tree-viewer-container.hidden, div.ontology-sidebar-search-results.hidden {

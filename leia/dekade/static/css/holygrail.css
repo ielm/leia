@@ -8,6 +8,10 @@ html {
     --fixed-footer-height: 20px;
     --fixed-body-padding: 5px;
     --fixed-grid-gap: 1px;
+    --ribbon-color-tier-1: #3b1a16;
+    --ribbon-color-tier-2: #9f8575;
+    --ribbon-color-tier-3: #e1cbc2;
+    --results-color-tier-1: #ccc;
 }
 
 body {
@@ -29,21 +33,21 @@ body {
 
 .page-header {
     grid-column: 1/-1;
-    background: #3b1a16;
+    background: var(--ribbon-color-tier-1);
     height: calc(var(--fixed-header-height));
 }
 
 .page-sidenav {
     grid-column: 1/2;
     grid-row: 2/3;
-    background: #9f8575;
+    background: var(--ribbon-color-tier-2);
     height: calc(var(--fixed-nav-height));
 }
 
 .page-sidebar {
     grid-column: 1/2;
     grid-row: 3/4;
-    background: #e1cbc2;
+    background: var(--ribbon-color-tier-3);
     height: calc(
         100vh
         - (2 * var(--fixed-body-padding))
@@ -56,7 +60,7 @@ body {
 
 .page-nav {
     grid-column: 2/3;
-    background: #9f8575;
+    background: var(--ribbon-color-tier-2);
     height: calc(var(--fixed-nav-height));
 }
 
@@ -78,7 +82,7 @@ body {
 
 .page-footer {
     grid-column: 1/-1;
-    background: #3b1a16;
+    background: var(--ribbon-color-tier-1);
     height: calc(var(--fixed-footer-height));
 }
 
