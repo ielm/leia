@@ -5,6 +5,7 @@ class LEIAHBSTemplates {
             "leia.default.template": "handlebars/_default.html",
             "leia.knowledge.ontology.concept": "handlebars/ontology/concept.html",
             "leia.knowledge.ontology.sidebar.results": "handlebars/ontology/sidebar_results.html",
+            "leia.ontosem.analysis": "handlebars/ontosem/analysis.html",
         };
     }
 
