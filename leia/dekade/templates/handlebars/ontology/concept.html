@@ -35,7 +35,13 @@
                     </td>
                     <td>{{this.property}}</td>
                     <td>{{this.facet}}</td>
-                    <td>{{this.filler}}</td>
+                    <td>
+                        {{#ifeq this.type "concept"}}
+                            <a is="content-link" data-content-type="ontology.concept" data-content-id="{{this.filler}}">{{this.filler}}</a>
+                        {{else}}
+                            {{this.filler}}
+                        {{/ifeq}}
+                    </td>
                     <td>
                         {{#each this.meta}}
                             {{@key}} = {{this}}
@@ -53,7 +59,13 @@
                     </td>
                     <td>{{this.property}}</td>
                     <td>{{this.facet}}</td>
-                    <td>{{this.filler}}</td>
+                    <td>
+                        {{#ifeq this.type "concept"}}
+                            <a is="content-link" data-content-type="ontology.concept" data-content-id="{{this.filler}}">{{this.filler}}</a>
+                        {{else}}
+                            {{this.filler}}
+                        {{/ifeq}}
+                    </td>
                     <td>
                         {{#each this.meta}}
                             {{@key}} = {{this}}
@@ -71,7 +83,13 @@
                     </td>
                     <td>{{this.property}}</td>
                     <td>{{this.facet}}</td>
-                    <td>{{this.filler}}</td>
+                    <td>
+                        {{#ifeq this.type "concept"}}
+                            <a is="content-link" data-content-type="ontology.concept" data-content-id="{{this.filler}}">{{this.filler}}</a>
+                        {{else}}
+                            {{this.filler}}
+                        {{/ifeq}}
+                    </td>
                     <td></td>
                     <td></td>
                 </tr>

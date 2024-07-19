@@ -16,7 +16,15 @@ table.concept-rows > tbody > tr.concept-row-inherit {
     color: grey;
 }
 
+table.concept-rows > tbody > tr.concept-row-inherit a[is=content-link] {
+    color: #56689d;
+}
+
 table.concept-rows > tbody > tr.concept-row-block {
+    color: darkred;
+}
+
+table.concept-rows > tbody > tr.concept-row-block a[is=content-link] {
     color: darkred;
 }
 
