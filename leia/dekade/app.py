@@ -58,153 +58,20 @@ class DEKADEAPIBlueprint(Blueprint):
         self.app = app
 
         # Lexicon API
-        self.add_url_rule("/api/knowledge/lexicon/filter/<substring>", endpoint=None, view_func=self.knowledge_lexicon_filter, methods=["GET"])
-        self.add_url_rule("/api/knowledge/lexicon/sense/<sense>", endpoint=None, view_func=self.knowledge_lexicon_sense, methods=["GET"])
+        from leia.dekade.blueprints.lexicon import DEKADEAPILexiconBlueprint
+        self.register_blueprint(DEKADEAPILexiconBlueprint(self.app))
 
         # Ontology API
-        self.add_url_rule("/api/knowledge/ontology/list", endpoint=None, view_func=self.knowledge_ontology_list, methods=["GET"])
-        self.add_url_rule("/api/knowledge/ontology/filter/<substring>", endpoint=None, view_func=self.knowledge_ontology_filter, methods=["GET"])
-        self.add_url_rule("/api/knowledge/ontology/concept/<concept>", endpoint=None, view_func=self.knowledge_ontology_concept, methods=["GET"])
-        self.add_url_rule("/api/knowledge/ontology/children/<concept>", endpoint=None, view_func=self.knowledge_ontology_children, methods=["GET"])
+        from leia.dekade.blueprints.ontology import DEKADEAPIOntologyBlueprint
+        self.register_blueprint(DEKADEAPIOntologyBlueprint(self.app))
 
         # Properties API
-        self.add_url_rule("/api/knowledge/properties/children/<property>", endpoint=None, view_func=self.knowledge_properties_children, methods=["GET"])
-        self.add_url_rule("/api/knowledge/properties/filter/<substring>", endpoint=None, view_func=self.knowledge_properties_filter, methods=["GET"])
-        self.add_url_rule("/api/knowledge/properties/property/<property>", endpoint=None, view_func=self.knowledge_properties_property, methods=["GET"])
+        from leia.dekade.blueprints.properties import DEKADEAPIPropertiesBlueprint
+        self.register_blueprint(DEKADEAPIPropertiesBlueprint(self.app))
 
         # OntoSem API
-        self.add_url_rule("/api/ontosem/analyze", endpoint=None, view_func=self.ontosem_analyze, methods=["POST"])
-
-    def knowledge_lexicon_filter(self, substring: str):
-        substring = substring.lower()
-
-        senses = self.app.agent.memory.lexicon.senses()
-        senses = map(lambda s: s.id, senses)
-        senses = filter(lambda s: substring in s.lower(), senses)
-
-        return json.dumps(list(sorted(senses)))
-
-    def knowledge_lexicon_sense(self, sense: str):
-        sense = self.app.agent.memory.lexicon.sense(sense)
-
-        return json.dumps(sense.contents)
-
-    def knowledge_ontology_list(self):
-        return json.dumps(list(sorted(self.app.agent.memory.ontology.names())))
-
-    def knowledge_ontology_filter(self, substring: str):
-        substring = substring.lower()
-
-        concepts = self.app.agent.memory.ontology.names()
-        concepts = filter(lambda c: substring in c.lower(), concepts)
-
-        return json.dumps(list(sorted(concepts)))
-
-    def knowledge_ontology_concept(self, concept: str):
-
-        def _format_row(row) -> dict:
-
-            output = {
-                "row": "local",
-                "property": row.property,
-                "facet": row.facet,
-                "filler": _format_filler(row.filler),
-            }
-
-            if isinstance(row, Concept.LocalRow):
-                output["meta"] = row.meta
-                if row.concept != concept:
-                    output["row"] = "inherit"
-                    output["from"] = row.concept.name
-            if isinstance(row, Concept.BlockedRow):
-                output["row"] = "block"
-
-            return output
-
-        def _format_filler(filler):
-            if isinstance(filler, Concept):
-                return str(filler)
-            if isinstance(filler, Property):
-                return str(filler)
-            if isinstance(filler, str):
-                return filler
-            if isinstance(filler, tuple):
-                if len(filler) == 2:
-                    return (filler[0].value, filler[1])
-                if len(filler) == 3:
-                    return (filler[0].value, filler[1], filler[2])
-            if isinstance(filler, WILDCARD):
-                return filler.value
-
-            raise NotImplementedError("Cannot format filler %s in %s" % (str(filler), concept))
-
-        concept = self.app.agent.memory.ontology.concept(concept)
-        output = {
-            "name": concept.name,
-            "definition": concept.definition(),
-            "parents": list(map(lambda p: p.name, concept.parents())),
-            "rows": list(map(lambda r: _format_row(r), concept.rows()))
-        }
-
-        return json.dumps(output)
-
-    def knowledge_ontology_children(self, concept: str):
-        concept = self.app.agent.memory.ontology.concept(concept)
-        children = concept.children()
-        children = sorted(list(map(lambda c: c.name, children)))
-
-        return json.dumps(children)
-
-    def knowledge_properties_children(self, property: str):
-        property = self.app.agent.memory.properties.get_property(property)
-        children = property.contains()
-        children = sorted(list(map(lambda c: c.name, children)))
-
-        return json.dumps(children)
-
-    def knowledge_properties_filter(self, substring: str):
-        substring = substring.lower()
-
-        properties = self.app.agent.memory.properties.all()
-        properties = map(lambda p: p.name, properties)
-        properties = filter(lambda p: substring in p.lower(), properties)
-
-        return json.dumps(list(sorted(properties)))
-
-    def knowledge_properties_property(self, property: str):
-        property = self.app.agent.memory.properties.get_property(property)
-
-        return json.dumps(property.contents)
-
-    def ontosem_analyze(self):
-        if not request.get_json():
-            abort(400)
-
-        data = request.get_json()
-        if "input" not in data:
-            abort(400)
-
-        input = data["input"]
-
-        config_file = "../../ontosem.yaml"
-        config = OntoSemConfig.from_file(config_file)
-        config._memory = self.app.agent.memory
-
-        runner = OntoSemRunner(config)
-
-        try:
-            results = runner.run([input])
-            results = results.to_dict()
-        except Exception as e:
-            results = {
-                "error": str(e),
-                "trace": traceback.format_tb(e.__traceback__)
-            }
-
-        return json.dumps(results)
-
-
-cached_tmr = {'config': {'ontosyn-mem': '/Users/jesse/Documents/RPI/OntoSem/build/ontosem2-new4.mem', 'ontosyn-lexicon': '/Users/jesse/Documents/RPI/OntoSem/build/lexicon.lisp', 'corenlp-host': 'localhost', 'corenlp-port': 9002, 'knowledge-path': 'leia/knowledge/', 'semantics-mp-mem': '/Users/jesse/Documents/RPI/OntoSem/build/post-basic-semantic-MPs.mem', 'ontomem-host': None, 'ontomem-port': None}, 'sentences': [{'text': 'The man hit the building.', 'syntax': {'words': [{'index': 0, 'lemma': 'THE', 'pos': ['ART'], 'token': 'The', 'char-start': 0, 'char-end': 3, 'ner': 'NONE', 'coref': []}, {'index': 1, 'lemma': 'MAN', 'pos': ['N', 'SINGULAR'], 'token': 'man', 'char-start': 4, 'char-end': 7, 'ner': 'NONE', 'coref': []}, {'index': 2, 'lemma': 'HIT', 'pos': ['V', 'PAST'], 'token': 'hit', 'char-start': 8, 'char-end': 11, 'ner': 'NONE', 'coref': []}, {'index': 3, 'lemma': 'THE', 'pos': ['ART'], 'token': 'the', 'char-start': 12, 'char-end': 15, 'ner': 'NONE', 'coref': []}, {'index': 4, 'lemma': 'BUILDING', 'pos': ['N', 'SINGULAR'], 'token': 'building', 'char-start': 16, 'char-end': 24, 'ner': 'NONE', 'coref': []}, {'index': 5, 'lemma': '*PERIOD*', 'pos': ['PUNCT'], 'token': '.', 'char-start': 24, 'char-end': 25, 'ner': 'NONE', 'coref': []}], 'synmap': {'sense-maps': [[{'word': 0, 'sense': 'THE-ART1', 'bindings': {'$VAR0': 0, '$VAR1': 1}, 'preference': 4.0}], [{'word': 1, 'sense': 'MAN-N1', 'bindings': {'$VAR0': 1}, 'preference': 4.0}], [{'word': 2, 'sense': 'HIT-V1', 'bindings': {'$VAR0': 2, '$VAR1': 1, '$VAR2': 4, '$VAR3': None, '$VAR4': None}, 'preference': 4.0}], [{'word': 3, 'sense': 'THE-ART1', 'bindings': {'$VAR0': 3, '$VAR1': 4}, 'preference': 4.0}], [{'word': 4, 'sense': 'BUILDING-N1', 'bindings': {'$VAR0': 4}, 'preference': 4.0}], [{'word': 5, 'sense': '*PERIOD*-PUNCT1', 'bindings': {'$VAR0': 5}, 'preference': 4.0}]]}, 'lex-senses': [], 'sentence': 'The man hit the building.', 'original-sentence': 'The man hit the building.', 'parse': ['ROOT', ['S', ['NP', ['ART', 'THE', '0'], ['N', 'MAN', '1']], ['VP', ['V', 'HIT', '2'], ['NP', ['ART', 'THE', '3'], ['N', 'BUILDING', '4']]], ['PUNCT', '*PERIOD*', '5']]], 'basic-deps': [['ART', '4', '3'], ['SUBJECT', '2', '1'], ['OBJ', '2', '4'], ['ART', '1', '0'], ['ROOT', '-1', '2']], 'enhanced-deps': [['ROOT', '-1', '2'], ['ART', '1', '0'], ['SUBJECT', '2', '1'], ['ART', '4', '3'], ['OBJ', '2', '4']]}, 'candidates': [{'id': 'f1449183-bcea-48a4-8212-f96360f0abe5', 'sense-maps': [{'word': 0, 'sense': 'THE-ART1', 'bindings': {'$VAR0': 0, '$VAR1': 1}, 'preference': 4.0}, {'word': 1, 'sense': 'MAN-N1', 'bindings': {'$VAR0': 1}, 'preference': 4.0}, {'word': 2, 'sense': 'HIT-V1', 'bindings': {'$VAR0': 2, '$VAR1': 1, '$VAR2': 4, '$VAR3': None, '$VAR4': None}, 'preference': 4.0}, {'word': 3, 'sense': 'THE-ART1', 'bindings': {'$VAR0': 3, '$VAR1': 4}, 'preference': 4.0}, {'word': 4, 'sense': 'BUILDING-N1', 'bindings': {'$VAR0': 4}, 'preference': 4.0}, {'word': 5, 'sense': '*PERIOD*-PUNCT1', 'bindings': {'$VAR0': 5}, 'preference': 4.0}], 'basic-tmr': {'instances': [{'id': 'HUMAN.1', 'concept': '@HUMAN', 'index': 1, 'properties': {'GENDER': ['MALE']}, 'resolutions': ['2.VAR.1', '1.HEAD', '0.VAR.1', '1.VAR.0']}, {'id': 'HIT.1', 'concept': '@HIT', 'index': 1, 'properties': {'AGENT': ['HUMAN.1'], 'THEME': ['BUILDING.1']}, 'resolutions': ['2.HEAD', '2.VAR.0']}, {'id': 'BUILDING.1', 'concept': '@BUILDING', 'index': 1, 'properties': {}, 'resolutions': ['4.HEAD', '2.VAR.2', '4.VAR.0', '3.VAR.1']}, {'id': 'MEANING-PROCEDURE.1', 'concept': '@MEANING-PROCEDURE', 'index': 1, 'properties': {'NAME': ['RESOLVE-REFERENCE'], 'PARAMETERS': ['HUMAN.1']}, 'resolutions': []}, {'id': 'MEANING-PROCEDURE.2', 'concept': '@MEANING-PROCEDURE', 'index': 2, 'properties': {'NAME': ['FIX-CASE-ROLE'], 'PARAMETERS': ['HUMAN.1', 'HIT.1']}, 'resolutions': []}, {'id': 'MEANING-PROCEDURE.3', 'concept': '@MEANING-PROCEDURE', 'index': 3, 'properties': {'NAME': ['RESOLVE-REFERENCE'], 'PARAMETERS': ['BUILDING.1']}, 'resolutions': []}]}, 'extended-tmr': {'instances': []}, 'constraints': [], 'scores': [{'type': 'SenseMapPreferenceScore', 'score': 1.0, 'message': '', 'sense-map': 0}, {'type': 'SenseMapPreferenceScore', 'score': 1.0, 'message': '', 'sense-map': 1}, {'type': 'SenseMapPreferenceScore', 'score': 1.0, 'message': '', 'sense-map': 2}, {'type': 'SenseMapPreferenceScore', 'score': 1.0, 'message': '', 'sense-map': 3}, {'type': 'SenseMapPreferenceScore', 'score': 1.0, 'message': '', 'sense-map': 4}, {'type': 'SenseMapPreferenceScore', 'score': 1.0, 'message': '', 'sense-map': 5}, {'type': 'POSTBASICSEMANTICMPSCORE', 'score': 1.0, 'message': 'Test'}], 'final-score': 1.0}]}]}
+        from leia.dekade.blueprints.ontosem import DEKADEAPIOntoSemBlueprint
+        self.register_blueprint(DEKADEAPIOntoSemBlueprint(self.app))
 
 
 if __name__ == "__main__":
