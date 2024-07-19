@@ -12,30 +12,18 @@ import sys
 import time
 
 
-class OntoSemTimedResults(object):
-
-    def __init__(self):
-        self.results = []
-
-    def add(self, message: str, total_time: float):
-        self.results.append((message, total_time))
-
-    def __str__(self):
-        return "\n".join(map(lambda r: "Total time to %s: %f" % (r[0], r[1]), self.results))
-
-
 class OntoSemTimer(object):
 
-    def __init__(self, message: str, timed_results: OntoSemTimedResults):
+    def __init__(self, analysis: Analysis, message: str):
+        self.analysis = analysis
         self.message = message
-        self.timed_results = timed_results
         self.start = None
 
     def __enter__(self):
         self.start = time.time()
 
     def __exit__(self, exc_type, exc_val, exc_tb):
-        self.timed_results.add(self.message, time.time() - self.start)
+        self.analysis.log("Time to process $processor: $time", type="time", processor=self.message, time=time.time() - self.start)
 
 
 timer = OntoSemTimer
@@ -45,7 +33,6 @@ class OntoSemRunner(object):
 
     def __init__(self, config: OntoSemConfig):
         self.config = config
-        self.timed_results = OntoSemTimedResults()
 
         print("WARNING: Overriding ontosyn_lexicon path to '%s'" % "ontosyn/lisp/lexicon.lisp")
         self.config.ontosyn_lexicon = "ontosyn/lisp/lexicon.lisp"
@@ -61,29 +48,45 @@ class OntoSemRunner(object):
     def run(self, sentences: List[str]) -> Analysis:
         analysis = Analysis(self.config)
 
+        if not config.memory().properties.is_loaded():
+            with timer(analysis, "load properties"):
+                config.memory().properties.load()
+
+        if not config.memory().ontology.is_loaded():
+            with timer(analysis, "load ontology"):
+                config.memory().ontology.load()
+
+        if not config.memory().lexicon.is_loaded():
+            with timer(analysis, "load lexicon"):
+                config.memory().lexicon.load()
+
+        if not config.memory().parts_of_speech.is_loaded():
+            with timer(analysis, "load parts of speech"):
+                config.memory().parts_of_speech.load()
+
         sentences = " ".join(sentences)
 
-        with timer("preprocess", self.timed_results):
+        with timer(analysis, "preprocess"):
             pp = Preprocessor(analysis).run(sentences)
 
-        with timer("syntax", self.timed_results):
+        with timer(analysis, "syntax"):
             syntax = SpacyAnalyzer(analysis).run(pp)
             for s in syntax:
                 sentence = Sentence(s.original_sentence)
                 sentence.syntax = s
                 analysis.sentences.append(sentence)
 
-        with timer("build wm-lexicon", self.timed_results):
+        with timer(analysis, "build wm-lexicon"):
             WMLexiconLoader(analysis).run(syntax)
 
         # TODO: Transformations here
 
-        with timer("synmapping", self.timed_results):
+        with timer(analysis, "synmapping"):
             for sentence in analysis.sentences:
                 synmap = SynMapper(analysis).run(sentence.syntax)
                 sentence.syntax.synmap = synmap
 
-        with timer("basic semantic analysis", self.timed_results):
+        with timer(analysis, "basic semantic analysis"):
             for sentence in analysis.sentences:
                 candidates = SemanticCompiler(analysis).run(sentence.syntax)
                 candidates = SemanticScorer(analysis).run(candidates)
@@ -117,15 +120,11 @@ if __name__ == "__main__":
     config.init_ontomem()
 
     runner = OntoSemRunner(config)
-    with timer("load knowledge", runner.timed_results):
-        config.memory().properties.load()
-        config.memory().ontology.load()
-        config.memory().lexicon.load()
-        config.memory().parts_of_speech.load()
 
     results = runner.run([sentence])
+    for log in results.logs:
+        print(log.msg["message"])
 
-    print(runner.timed_results)
     print("----")
 
     for frame in results.sentences[0].semantics[0].basic_tmr.instances():

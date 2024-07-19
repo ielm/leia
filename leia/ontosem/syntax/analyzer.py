@@ -136,6 +136,8 @@ class WMLexiconLoader(object):
             "MEANING-PROCEDURES": []
         })
 
+        self.analysis.log("Generated sense $sense for unknown word #$word", type="knowledge", source=self.__class__, sense=id, word=word.index)
+
         return sense
 
 

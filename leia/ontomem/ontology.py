@@ -18,6 +18,7 @@ class Ontology(object):
         self.memory = memory
         self.contents_dir = contents_dir
         self._cache = {}
+        self._loaded = False
 
         if load_now:
             self.load()
@@ -33,6 +34,11 @@ class Ontology(object):
         contents = pool.starmap(multiprocess_read_json_file, map(lambda file: (self.contents_dir, file, "ont"), files))
         for c in contents:
             self._cache[c[0]].set_contents(c[1])
+
+        self._loaded = True
+
+    def is_loaded(self) -> bool:
+        return self._loaded
 
     def concept(self, name: str) -> Union['Concept', None]:
         if name not in self._cache:

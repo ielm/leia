@@ -160,6 +160,7 @@ class PropertyInventory(object):
         self.memory = memory
         self.contents_dir = contents_dir
         self.cache = {}
+        self._loaded = False
 
         if load_now:
             self.load()
@@ -175,6 +176,11 @@ class PropertyInventory(object):
         contents = pool.starmap(_read_property, map(lambda file: (self.contents_dir, file), files))
         for c in contents:
             self.cache[c[0]].set_contents(c[1])
+
+        self._loaded = True
+
+    def is_loaded(self) -> bool:
+        return self._loaded
 
     def all(self) -> List[Property]:
         return list(self.cache.values())

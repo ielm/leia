@@ -15,6 +15,7 @@ class Lexicon(object):
         self.memory = memory
         self.contents_dir = contents_dir
         self.cache = {}
+        self._loaded = False
 
         if load_now:
             self.load()
@@ -26,6 +27,11 @@ class Lexicon(object):
         contents = pool.starmap(multiprocess_read_json_file, map(lambda file: (self.contents_dir, file, "word"), files))
         for c in contents:
             self.cache[c[0]] = Word(self.memory, c[0], contents=c[1])
+
+        self._loaded = True
+
+    def is_loaded(self) -> bool:
+        return self._loaded
 
     def word(self, word: str) -> 'Word':
         # 1) Check the cache

@@ -1,22 +1,57 @@
-from leia.ontomem.episodic import Instance
 from leia.ontosem.config import OntoSemConfig
 from leia.ontomem.lexicon import Sense
 from leia.ontosem.semantics.candidate import Candidate
 from leia.ontosem.syntax.results import Syntax, Word
-from typing import Dict, List, Union
+from logging import Handler, Logger, LogRecord
+from string import Template
+from typing import Dict, List, Type, Union
+
+import logging
 
 
 class Analysis(object):
+
+    class LogHandler(Handler):
+
+        def __init__(self, logs: List[LogRecord], level="INFO"):
+            super().__init__(level=level)
+            self.logs = logs
+
+        def emit(self, record: LogRecord):
+            self.logs.append(record)
 
     def __init__(self, config: OntoSemConfig=None):
         self.config = config if config is not None else OntoSemConfig()
         self.sentences: List[Sentence] = []
         self.lexicon = WMLexicon()
 
+        self.logs: List[LogRecord] = []
+        self._logger = Logger(Analysis.__name__, level="INFO")
+        self._logger.addHandler(Analysis.LogHandler(self.logs, level="INFO"))
+
+    def log(self, template: str, type: str="std", level: str="INFO", source: Type=None, **details):
+        if source == None:
+            source = Analysis
+
+        level = getattr(logging, level)
+
+        self._logger.log(level, {
+            "type": type,
+            "source": source.__name__,
+            "template": template,
+            "details": dict(**details),
+            "message": Template(template).substitute(**details),
+        })
+
     def to_dict(self) -> dict:
         return {
             "config": self.config.to_dict(),
-            "sentences": list(map(lambda s: s.to_dict(), self.sentences))
+            "sentences": list(map(lambda s: s.to_dict(), self.sentences)),
+            "logs": list(map(lambda l: {
+                "msg": l.msg,
+                "time": l.created,
+                "level": l.levelname,
+            }, self.logs))
         }
 
 

@@ -10,6 +10,7 @@ class POSInventory(object):
         self.memory = memory
         self._contents_file = contents_file
         self._entries = list()
+        self._loaded = False
 
         if load_now:
             self.load()
@@ -38,6 +39,11 @@ class POSInventory(object):
                 pos.names = row["names"]
                 pos.parents = list(map(lambda p: self.get(p), row["isa"]))
                 pos.desc = row["desc"]
+
+        self._loaded = True
+
+    def is_loaded(self) -> bool:
+        return self._loaded
 
 
 class POS(object):
