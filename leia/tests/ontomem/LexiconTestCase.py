@@ -2,10 +2,8 @@ from collections import OrderedDict
 from leia.ontomem.lexicon import Lexicon, MeaningProcedure, SemStruc, Sense, SynStruc, Word
 from leia.ontomem.memory import Memory
 from leia.tests.LEIATestCase import LEIATestCase
-from unittest import TestCase
-from unittest.mock import call, MagicMock, mock_open, patch
-
-import json
+from unittest import skip, TestCase
+from unittest.mock import MagicMock
 
 
 class LexiconTestCase(TestCase):
@@ -54,10 +52,9 @@ class LexiconTestCase(TestCase):
             "COMMENTS": "...",
             "SYNONYMS": ["X", "Y", "Z"],
             "HYPONYMS": ["A", "B", "C"],
-            "SYN-STRUC": {
-                "ROOT": "$VAR0",
-                "CAT": "N"
-            },
+            "SYN-STRUC": [
+                {"type": "root"}
+            ],
             "SEM-STRUC": {
                 "HUMAN": {
                     "GENDER": "MALE"
@@ -144,10 +141,9 @@ class SenseTestCase(TestCase):
             "COMMENTS": "...",
             "SYNONYMS": ["X", "Y", "Z"],
             "HYPONYMS": ["A", "B", "C"],
-            "SYN-STRUC": {
-                "ROOT": "$VAR0",
-                "CAT": "N"
-            },
+            "SYN-STRUC": [
+                {"type": "root"}
+            ],
             "SEM-STRUC": {
                 "HUMAN": {
                     "GENDER": "MALE"
@@ -172,10 +168,7 @@ class SenseTestCase(TestCase):
 
     def test_index_syn_struc(self):
         sense = Sense(self.m, "MAN-N1", contents=self.sample_sense_dict())
-        self.assertEqual(SynStruc(OrderedDict({
-            "ROOT": "$VAR0",
-            "CAT": "N"
-        })), sense.synstruc)
+        self.assertEqual(SynStruc(contents=[{"type": "root"}]), sense.synstruc)
 
     def test_index_sem_struc(self):
         sense = Sense(self.m, "MAN-N1", contents=self.sample_sense_dict())
@@ -189,6 +182,7 @@ class SenseTestCase(TestCase):
         sense = Sense(self.m, "MAN-N1", contents=self.sample_sense_dict())
         self.assertEqual([MeaningProcedure(["TEST-MP", "$VAR0", "$VAR1"])], sense.meaning_procedures)
 
+    @skip("To be removed; this relates to the LISP code exporting senses in the old format, which will no longer be used.")
     def test_parse_lisp(self):
         lisp = [
             "KICK--IMPERATIVE-V1",
@@ -275,3 +269,138 @@ class SenseTestCase(TestCase):
             }
         }), sense.semstruc)
         self.assertEqual([], sense.meaning_procedures)
+
+
+class SynStrucTestCase(TestCase):
+
+    def setUp(self):
+        self.m = Memory("", "", "")
+
+    def test_index_root(self):
+        # Root elements have no parameters
+        synstruc = SynStruc(contents=[
+            {"type": "root"}
+        ])
+
+        self.assertEqual([SynStruc.RootElement()], synstruc.elements)
+
+    def test_index_token(self):
+        # Token elements must define a lemma (set) and/or POS; they can have any arbitrary morphology fields.
+        # No POS is represented by a None.
+        synstruc = SynStruc(contents=[
+            {"type": "token", "lemma": ["A", "B"], "pos": None, "morph": {"a": 1, "b": 2}}
+        ])
+
+        self.assertEqual([SynStruc.TokenElement({"A", "B"}, None, {"a": 1, "b": 2}, None, False)], synstruc.elements)
+
+        # No lemmas is represented with an empty list.
+        synstruc = SynStruc(contents=[
+            {"type": "token", "lemma": [], "pos": "N", "morph": {}}
+        ])
+
+        self.assertEqual([SynStruc.TokenElement(set(), "N", {}, None, False)], synstruc.elements)
+
+        # Both lemmas and POS can be present.
+        synstruc = SynStruc(contents=[
+            {"type": "token", "lemma": ["A", "B"], "pos": "N", "morph": {}}
+        ])
+
+        self.assertEqual([SynStruc.TokenElement({"A", "B"}, "N", {}, None, False)], synstruc.elements)
+
+        # Variables and optionality flags can be present but don't need to be.
+        synstruc = SynStruc(contents=[
+            {"type": "token", "lemma": ["A"], "pos": None, "morph": {}, "var": 3, "opt": True}
+        ])
+
+        self.assertEqual([SynStruc.TokenElement({"A"}, None, {}, 3, True)], synstruc.elements)
+
+    def test_index_dependency(self):
+        # Dependencies must have a type.
+        synstruc = SynStruc(contents=[
+            {"type": "dependency", "deptype": "subject"}
+        ])
+
+        self.assertEqual([SynStruc.DependencyElement("subject", None, False)], synstruc.elements)
+
+        # Dependencies can specify a variable or optionality flag.
+        synstruc = SynStruc(contents=[
+            {"type": "dependency", "deptype": "subject", "var": 3, "opt": True}
+        ])
+
+        self.assertEqual([SynStruc.DependencyElement("subject", 3, True)], synstruc.elements)
+
+    def test_index_constituency(self):
+        # Constituencies must have a type; they can have no children.
+        synstruc = SynStruc(contents=[
+            {"type": "constituency", "contype": "VP", "children": []}
+        ])
+
+        self.assertEqual([SynStruc.ConstituencyElement("VP", [], None, False)], synstruc.elements)
+
+        # Constituencies may have a variable or optionality flag.
+        synstruc = SynStruc(contents=[
+            {"type": "constituency", "contype": "VP", "children": [], "var": 3, "opt": True}
+        ])
+
+        self.assertEqual([SynStruc.ConstituencyElement("VP", [], 3, True)], synstruc.elements)
+
+        # Constituencies can have other constituencies as children.
+        synstruc = SynStruc(contents=[
+            {"type": "constituency", "contype": "VP", "children": [
+                {"type": "constituency", "contype": "NP", "children": []}
+            ]}
+        ])
+
+        self.assertEqual([SynStruc.ConstituencyElement("VP", [
+            SynStruc.ConstituencyElement("NP", [], None, False)
+        ], None, False)], synstruc.elements)
+
+        # Constituencies as children can be recursive.
+        synstruc = SynStruc(contents=[
+            {"type": "constituency", "contype": "VP", "children": [
+                {"type": "constituency", "contype": "NP", "children": [
+                    {"type": "constituency", "contype": "N", "children": []}
+                ]}
+            ]}
+        ])
+
+        self.assertEqual([SynStruc.ConstituencyElement("VP", [
+            SynStruc.ConstituencyElement("NP", [
+                SynStruc.ConstituencyElement("N", [], None, False)
+            ], None, False)
+        ], None, False)], synstruc.elements)
+
+        # Constituencies can have tokens as children.
+        synstruc = SynStruc(contents=[
+            {"type": "constituency", "contype": "VP", "children": [
+                {"type": "token", "lemma": {"BE"}, "pos": None, "morph": {}}
+            ]}
+        ])
+
+        self.assertEqual([SynStruc.ConstituencyElement("VP", [
+            SynStruc.TokenElement({"BE"}, None, {}, None, False)
+        ], None, False)], synstruc.elements)
+
+        # Constituencies can have multiple children.
+        synstruc = SynStruc(contents=[
+            {"type": "constituency", "contype": "VP", "children": [
+                {"type": "token", "lemma": {"BE"}, "pos": None, "morph": {}},
+                {"type": "token", "lemma": {"AT"}, "pos": None, "morph": {}},
+            ]}
+        ])
+
+        self.assertEqual([SynStruc.ConstituencyElement("VP", [
+            SynStruc.TokenElement({"BE"}, None, {}, None, False),
+            SynStruc.TokenElement({"AT"}, None, {}, None, False),
+        ], None, False)], synstruc.elements)
+
+    def test_index_multiple(self):
+        synstruc = SynStruc(contents=[
+            {"type": "token", "lemma": ["A"], "pos": None, "morph": {}},
+            {"type": "token", "lemma": ["B"], "pos": None, "morph": {}},
+        ])
+
+        self.assertEqual([
+            SynStruc.TokenElement({"A"}, None, {}, None, False),
+            SynStruc.TokenElement({"B"}, None, {}, None, False),
+        ], synstruc.elements)

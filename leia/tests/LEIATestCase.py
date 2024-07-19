@@ -23,7 +23,7 @@ class LEIATestCase(TestCase):
             "COMMENTS": comments if comments is not None else "",
             "SYNONYMS": synonyms if synonyms is not None else [],
             "HYPONYMS": hyponyms if hyponyms is not None else [],
-            "SYN-STRUC": synstruc if synstruc is not None else {},
+            "SYN-STRUC": synstruc if synstruc is not None else [],
             "SEM-STRUC": semstruc if semstruc is not None else {},
             "TMR-HEAD": tmrhead,
             "MEANING-PROCEDURES": meaning_procedures if meaning_procedures is not None else [],

@@ -1,10 +1,9 @@
-from collections import OrderedDict
 from dataclasses import dataclass
 from multiprocessing.pool import Pool
 from leia.ontomem.memory import Memory
 from leia.utils.formatting import FormatFromLISP
 from leia.utils.threads import multiprocess_read_json_file
-from typing import Any, List, Set, Tuple, Union
+from typing import Any, Dict, List, Set, Tuple, Union
 
 import itertools
 import os
@@ -68,7 +67,6 @@ class Word(object):
     def sense(self, sense: str) -> 'Sense':
         if sense in self._contents["senses"]:
             return self._contents["senses"][sense]
-            # return Sense(self.memory, sense, contents=self._contents["senses"][sense])
 
         raise Exception("Unknown sense %s." % sense)
 
@@ -105,7 +103,6 @@ class Sense(object):
     def __init__(self, memory: Memory, id: str, contents: dict=None):
         self.memory = memory
         self.id = id
-        # self.contents = contents if contents is not None else {}
 
         self.word = None
         self.pos = None
@@ -119,7 +116,7 @@ class Sense(object):
     def _index(self, contents: dict):
         self.word = self.memory.lexicon.word(contents["WORD"])
         self.pos = contents["CAT"]
-        self.synstruc = SynStruc(contents["SYN-STRUC"])
+        self.synstruc = SynStruc(contents=contents["SYN-STRUC"])
         self.semstruc = SemStruc(contents["SEM-STRUC"])
         self.meaning_procedures = list(map(lambda mp: MeaningProcedure(mp), contents["MEANING-PROCEDURES"]))
         self._synonyms = list(contents["SYNONYMS"]) if "SYNONYMS" in contents else []
@@ -157,15 +154,114 @@ class Sense(object):
 
 class SynStruc(object):
 
-    def __init__(self, data: OrderedDict):
-        self.data = data
+    class Element:
 
-    def to_dict(self) -> dict:
-        return self.data
+        @classmethod
+        def parse(cls, data: dict) -> 'SynStruc.Element':
+            raise NotImplementedError
+
+        def to_dict(self) -> dict:
+            raise NotImplementedError
+
+    @dataclass
+    class RootElement(Element):
+
+        variable: int = 0
+
+        @classmethod
+        def parse(cls, data: dict) -> 'SynStruc.RootElement':
+            return SynStruc.RootElement()
+
+        def to_dict(self) -> dict:
+            return {"type": "root"}
+
+    @dataclass
+    class TokenElement(Element):
+
+        lemmas: Set[str]
+        pos: Union[str, None]
+        morph: Dict[str, str]
+        variable: Union[int, None]
+        optional: bool
+
+        @classmethod
+        def parse(cls, data: dict) -> 'SynStruc.TokenElement':
+            return SynStruc.TokenElement(
+                set(data["lemma"]),
+                data["pos"],
+                data["morph"],
+                data["var"] if "var" in data else None,
+                data["opt"] if "opt" in data else False
+            )
+
+        def to_dict(self) -> dict:
+            return {"type": "token", "lemma": list(self.lemmas), "pos": self.pos, "morph": self.morph, "var": self.variable, "opt": self.optional}
+
+    @dataclass
+    class DependencyElement(Element):
+
+        type: str
+        variable: Union[int, None]
+        optional: bool
+
+        @classmethod
+        def parse(cls, data: dict) -> 'SynStruc.DependencyElement':
+            return SynStruc.DependencyElement(
+                data["deptype"],
+                data["var"] if "var" in data else None,
+                data["opt"] if "opt" in data else False
+            )
+
+        def to_dict(self) -> dict:
+            return {"type": "dependency", "deptype": self.type, "var": self.variable, "opt": self.optional}
+
+    @dataclass
+    class ConstituencyElement(Element):
+
+        type: str
+        children: List[Union['SynStruc.ConstituencyElement', 'SynStruc.TokenElement']]
+        variable: Union[int, None]
+        optional: bool
+
+        @classmethod
+        def parse(cls, data: dict) -> 'SynStruc.ConstituencyElement':
+            element_map = {
+                "token": SynStruc.TokenElement,
+                "constituency": SynStruc.ConstituencyElement
+            }
+
+            return SynStruc.ConstituencyElement(
+                data["contype"],
+                list(map(lambda child: element_map[child["type"]].parse(child), data["children"])),
+                data["var"] if "var" in data else None,
+                data["opt"] if "opt" in data else False
+            )
+
+        def to_dict(self) -> dict:
+            return {"type": "constituency", "children": list(map(lambda child: child.to_dict(), self.children)), "var": self.variable, "opt": self.optional}
+
+    def __init__(self, contents: List[dict]=None):
+        self.elements = []
+
+        if contents is not None:
+            self._index(contents)
+
+    def _index(self, contents: List[dict]):
+        element_map = {
+            "root": SynStruc.RootElement,
+            "token": SynStruc.TokenElement,
+            "dependency": SynStruc.DependencyElement,
+            "constituency": SynStruc.ConstituencyElement
+        }
+
+        self.elements = list(map(lambda element: element_map[element["type"]].parse(element), contents))
+
+    def to_dict(self) -> list:
+        return list(map(lambda e: e.to_dict(), self.elements))
 
     def __eq__(self, other):
         if isinstance(other, SynStruc):
-            return self.data == other.data
+            return self.elements == other.elements
         return super().__eq__(other)
 
 

@@ -10,10 +10,12 @@
       "COMMENTS": "...",
       "SYNONYMS": ["X", "Y", "Z"],
       "HYPONYMS": ["A", "B", "C"],
-      "SYN-STRUC": {
-        "ROOT": "$VAR0",
-        "CAT": "N"
-      },
+      "SYN-STRUC": [
+        {"type": "root"},
+        {"type": "token", "lemma": ["X", "Y", "Z"], "pos": "N", "morph": {"A": "B"}},
+        {"type": "dependency", "deptype": "subject"},
+        {"type": "constituency", "contype": "VP", "children": [{"type": "constituency"}, {"type": "token"}]}
+      ],
       "SEM-STRUC": {
         "HUMAN": {
           "GENDER": "MALE"
@@ -41,7 +43,7 @@
   COMMENTS:           annotator comments
   SYNONYMS:           a list of synonym words; e.g., ["EWE", "RAM"]
   HYPONYMS:           a list of hyponym words; e.g., ["AID", "PHILANTHROPY"]
-  SYN-STRUC:          a complex object representing the entire syn-struc form; documented elsewhere
+  SYN-STRUC:          an ordered list of syntactic elements of four types: root, token, dependency, constituency; see below
   SEM-STRUC:          a single concept (e.g., "HUMAN"), or a complex sem-struc form; documented elsewhere
   TMR-HEAD:           null, or a variable string, e.g. "$VAR1"
   MEANING-PROCEDURES: list of MP calls, each a list containing the call and parameters; e.g., [ ["COREFER", "^$VAR1", "^$VAR0"], [...], ... ]
@@ -50,4 +52,21 @@
   EXAMPLE-BINDINGS:   list of strings with optional binding variable numbers; e.g, ["THEY-2", "DEPRECIATED-0", "THE", "STOCK-1"]
   TYPES:              list of types, e.g., ["A", "B", "C"]
   USE-WITH-TYPES:     list of types to use with, e.g., ["A", "B", "C"]
+
+  The synstruc field is an ordered list of four types of syntactic elements; they are:
+
+  root                this is a shorthand for a token with lemma = word, pos = cat, variable = 0, no morphology
+  token               representing a single token, it must include either 1+ lemmas, or a non-null pos
+    lemma             a list of lemmas to match against; e.g., ["MAN"]
+    pos               a single part of speech or null; e.g., "N"
+    morph             a dictionary of arbitrary morphology tags (string -> string)
+  dependency          representing a single dependency where the governor is the root
+    deptype           the type of the dependency; e.g., "subject"
+  constituency        representing a single constituency
+    contype           the type of constituency; e.g., "VP"
+    children          an ordered list of constituencies (making the structure recursive) and tokens (as defined above)
+
+  In addition to the above, all syntactic elements can also have the following fields:
+    var               the variable they map to as an integer; e.g., 3 (default is null)
+    opt               a boolean signaling the element is optional; e.g., true (default is false)
 */

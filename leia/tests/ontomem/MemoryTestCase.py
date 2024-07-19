@@ -102,10 +102,9 @@ class OntoMemTCPRequestGetSenseTestCase(TestCase):
             "COMMENTS": "",
             "SYNONYMS": ["X", "Y", "Z"],
             "HYPONYMS": ["A", "B", "C"],
-            "SYN-STRUC": {
-                "ROOT": "$VAR0",
-                "CAT": "N"
-            },
+            "SYN-STRUC": [
+                {"type": "root"}
+            ],
             "SEM-STRUC": {
                 "HUMAN": {
                     "GENDER": "MALE"
