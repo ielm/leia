@@ -41,7 +41,7 @@ class Syntax(object):
         if original_sentence.startswith("\"") and original_sentence.endswith("\""):
             original_sentence = original_sentence[1:-1]
 
-        syntax = Syntax(words, sentence, original_sentence, parse, basic_deps, enhanced_deps)
+        syntax = Syntax(words, sentence, original_sentence, parse, enhanced_deps)
         syntax.synmap = synmap
 
         # TODO: Move lex senses into WM lexicon
@@ -76,28 +76,17 @@ class Syntax(object):
 
         words = list(map(lambda token: Word.from_spacy(token, _ner_span(token), _coref_chain(token)), sentence.subtree))
         constituencies = _parse_constituencies(sentence._.parse_string, words)
+        dependencies = list(map(lambda token: Dependency(words[token.head.i], words[token.i], token.dep_), sentence.subtree))
 
-        # print("\nDEPENDENCIES:")
-        # for sent in doc.sents:
-        #     for token in sent.subtree:
-        #         print("GOV(%s-%d)  -[%s]->  DEP(%s-%d)" % (
-        #         token.head.text, token.head.i, token.dep_, token.text, token.i))
-        #
-        # print("\nNOUN PHRASES:")
-        # for chunk in doc.noun_chunks:
-        #     print(list(map(lambda token: "%s-%d" % (token.text, token.i), chunk)))
-        #
-
-        return Syntax(words, sentence.lemma_, sentence.text, constituencies, None, None)
+        return Syntax(words, sentence.lemma_, sentence.text, constituencies, dependencies)
 
 
-    def __init__(self, words: List['Word'], sentence: str, original_sentence: str, parse: 'ConstituencyNode', basic_deps: list, enhanced_deps: list):
+    def __init__(self, words: List['Word'], sentence: str, original_sentence: str, parse: 'ConstituencyNode', dependencies: List['Dependency']):
         self.words = words
         self.sentence = sentence
         self.original_sentence = original_sentence
         self.parse = parse
-        self.basic_deps = basic_deps
-        self.enhanced_deps = enhanced_deps
+        self.dependencies = dependencies
 
         self.synmap: SynMap = None
 
@@ -108,8 +97,7 @@ class Syntax(object):
             "sentence": self.sentence,
             "original-sentence": self.original_sentence,
             "parse": self.parse.to_dict(),
-            "basic-deps": self.basic_deps,
-            "enhanced-deps": self.enhanced_deps
+            "dependencies": list(map(lambda d: d.to_dict(), self.dependencies))
         }
 
 
@@ -335,6 +323,14 @@ class ConstituencyNode(object):
     def __init__(self, label: str):
         self.label = label
         self.children: List[Union[ConstituencyNode, Word]] = []
+
+
+class Dependency(object):
+
+    def __init__(self, governor: Word, dependent: Word, type: str):
+        self.governor = governor
+        self.dependent = dependent
+        self.type = type
 
 
 class LispParser(object):
