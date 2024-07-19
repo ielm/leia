@@ -22,7 +22,16 @@ class SynMapper(object):
         self.lexicon = lexicon
 
     def run(self, syntax: Syntax) -> SynMap:
-        raise NotImplementedError
+        synmap = SynMap([])
+
+        for word in syntax.words:
+            word_sense_maps = []
+            for sense in self.lexicon.senses(word):
+                sense_maps = list(self.build_sense_maps(syntax, word, sense))
+                word_sense_maps += sense_maps
+            synmap.words.append(word_sense_maps)
+
+        return synmap
 
     def build_sense_maps(self, syntax: Syntax, word: Word, sense: Sense) -> Iterable[SenseMap]:
         results = SynMatcher(self.config, self.ontology, self.lexicon).run(syntax, sense.synstruc, root=word)

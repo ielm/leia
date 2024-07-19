@@ -128,6 +128,11 @@ class SynMap(object):
             "sense-maps": list(map(lambda l: list(map(lambda sm: sm.to_dict(), l)), self.words))
         }
 
+    def __eq__(self, other):
+        if isinstance(other, SynMap):
+            return self.words == other.words
+        return super().__eq__(other)
+
     def __repr__(self):
         return "SynMap %s" % repr(self.words)
 

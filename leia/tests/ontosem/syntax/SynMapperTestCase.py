@@ -2,10 +2,11 @@ from leia.ontomem.lexicon import Sense, SynStruc
 from leia.ontomem.memory import Memory
 from leia.ontosem.analysis import WMLexicon
 from leia.ontosem.config import OntoSemConfig
-from leia.ontosem.syntax.results import ConstituencyNode, Dependency, SenseMap, Syntax
+from leia.ontosem.syntax.results import ConstituencyNode, Dependency, SenseMap, SynMap, Syntax, Word
 from leia.ontosem.syntax.synmapper import SynMatcher, SynMapper
 from leia.tests.LEIATestCase import LEIATestCase
-from unittest.mock import MagicMock, patch
+from typing import Iterable
+from unittest.mock import call, MagicMock, patch
 
 
 class SynMapperTestCase(LEIATestCase):
@@ -135,7 +136,63 @@ class SynMapperTestCase(LEIATestCase):
         self.assertEqual(("$VAR3", 123), self.mapper.map_variable(match))
 
     def test_run(self):
-        fail()
+        # First, define some words that will be part of the input
+        word0 = self.mockWord(0, "the", "ART")
+        word1 = self.mockWord(1, "man", "N")
+
+        # Next, the WMLexicon should be populated with senses for each word (possibly transformed) prior to syn-mapping,
+        # so add some now.
+        w0s1 = Sense(self.m, "the-art1", contents=self.mockSense("the-art1"))
+        w0s2 = Sense(self.m, "the-art2", contents=self.mockSense("the-art2"))
+        w1s1 = Sense(self.m, "man-n1", contents=self.mockSense("man-n1"))
+        w1s2 = Sense(self.m, "man-n2", contents=self.mockSense("man-n2"))
+
+        self.mapper.lexicon.add_sense(word0, w0s1)
+        self.mapper.lexicon.add_sense(word0, w0s2)
+        self.mapper.lexicon.add_sense(word1, w1s1)
+        self.mapper.lexicon.add_sense(word1, w1s2)
+
+        # Build the syntax input; only the words matter for this test, as we'll be mocking the results of the matcher.
+        syntax = Syntax([word0, word1], "", "", ConstituencyNode(""), [])
+
+        # Mock the output of build_sense_maps; each call should return an iterable of SenseMap objects.  We'll return
+        # a different one for each expected call.
+        sm_w0s1 = SenseMap(word0, w0s1.id, {}, 1.0)
+        sm_w0s2 = SenseMap(word0, w0s2.id, {}, 1.0)
+        sm_w1s1 = SenseMap(word1, w1s1.id, {}, 1.0)
+        sm_w1s2a = SenseMap(word1, w1s2.id, {}, 0.2)
+        sm_w1s2b = SenseMap(word1, w1s2.id, {}, 0.8)
+
+        def _mock_build_sense_maps(syntax: Syntax, word: Word, sense: Sense) -> Iterable[SenseMap]:
+            return {
+                word0: {
+                    w0s1.id: iter([sm_w0s1]),
+                    w0s2.id: iter([sm_w0s2])
+                },
+                word1: {
+                    w1s1.id: iter([sm_w1s1]),
+                    w1s2.id: iter([sm_w1s2a, sm_w1s2b])
+                }
+            }[word][sense.id]
+
+        self.mapper.build_sense_maps = MagicMock(side_effect=_mock_build_sense_maps)
+
+        # Now run the mapper.  We can test the expected synmap, as well verifying that build_sense_maps was
+        # called properly for each word / sense pair.
+        synmap = self.mapper.run(syntax)
+
+        expected = SynMap([
+            [sm_w0s1, sm_w0s2],             # Word 0 has two possible mappings
+            [sm_w1s1, sm_w1s2a, sm_w1s2b]   # Word 1 has three possible mappings (2 of which are the same sense)
+        ])
+        self.assertEqual(expected, synmap)
+
+        self.mapper.build_sense_maps.assert_has_calls([
+            call(syntax, word0, w0s1),
+            call(syntax, word0, w0s2),
+            call(syntax, word1, w1s1),
+            call(syntax, word1, w1s2),
+        ])
 
 
 class SynMatcherTestCase(LEIATestCase):
