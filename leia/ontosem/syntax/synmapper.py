@@ -97,3 +97,16 @@ class SynMatcher(object):
 
         # No filtering has occurred; the token is considered a match
         return True
+
+    def does_dependency_match(self, element: SynStruc.DependencyElement, dependency: Dependency, root: Union[Word, None]) -> bool:
+        # The type must match
+        if element.type.lower() != dependency.type.lower():
+            return False
+
+        # If a root was provided, it must be the governor
+        if root is not None:
+            if dependency.governor != root:
+                return False
+
+        # No filtering has occurred; the dependency is considered a match
+        return True

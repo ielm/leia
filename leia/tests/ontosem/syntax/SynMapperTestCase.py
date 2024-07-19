@@ -2,6 +2,7 @@ from leia.ontomem.lexicon import SynStruc
 from leia.ontomem.memory import Memory
 from leia.ontosem.analysis import WMLexicon
 from leia.ontosem.config import OntoSemConfig
+from leia.ontosem.syntax.results import Dependency
 from leia.ontosem.syntax.synmapper import SynMatcher, SynMapper
 from leia.tests.LEIATestCase import LEIATestCase
 
@@ -103,6 +104,37 @@ class SynMatcherTestCase(LEIATestCase):
 
         element = SynStruc.TokenElement({"word", "other"}, "V", {"A": 1}, None, False)
         self.assertFalse(self.matcher.does_token_match(element, word))
+
+    def test_does_dependency_match_no_root(self):
+        gov = self.mockWord(0, "gov", "N")
+        dep = self.mockWord(1, "dep", "N")
+
+        dep1 = Dependency(gov, dep, "NSUBJ")
+        dep2 = Dependency(dep, gov, "NSUBJ")
+        dep3 = Dependency(gov, dep, "DOBJ")
+
+        # The only part of the element to match is the type; gov/dep in the element are for variable mapping, and are
+        # not used here in any way.
+        element = SynStruc.DependencyElement("NSUBJ", None, None, None, False)
+
+        self.assertTrue(self.matcher.does_dependency_match(element, dep1, None))
+        self.assertTrue(self.matcher.does_dependency_match(element, dep2, None))
+        self.assertFalse(self.matcher.does_dependency_match(element, dep3, None))
+
+    def test_does_dependency_match_with_root(self):
+        gov = self.mockWord(0, "gov", "N")
+        dep = self.mockWord(1, "dep", "N")
+
+        dep1 = Dependency(gov, dep, "NSUBJ")
+        dep2 = Dependency(dep, gov, "NSUBJ")
+        dep3 = Dependency(gov, dep, "DOBJ")
+
+        element = SynStruc.DependencyElement("NSUBJ", None, None, None, False)
+
+        # In order to match with a specified root, the root must be the governor.
+        self.assertTrue(self.matcher.does_dependency_match(element, dep1, gov))
+        self.assertFalse(self.matcher.does_dependency_match(element, dep2, gov))
+        self.assertFalse(self.matcher.does_dependency_match(element, dep3, gov))
 
     """
     TODO: tests to run:
