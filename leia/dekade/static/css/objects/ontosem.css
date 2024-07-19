@@ -167,3 +167,60 @@ div.tmr-instance > div.properties {
     grid-template-columns: auto auto;
     padding: 2px;
 }
+
+/* *** Logs *** */
+
+div.logs-container {
+
+}
+
+div.log {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: gray;
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 0px;
+    margin-bottom: 2px;
+}
+
+div.log:last-child {
+    margin-bottom: 0px;
+}
+
+div.log.log-NOTSET {
+
+}
+
+div.log.log-DEBUG {
+    background: darkseagreen;
+}
+
+div.log.log-INFO {
+    background: aliceblue;
+}
+
+div.log.log-WARNING {
+    background: khaki;
+}
+
+div.log.log-ERROR {
+    background: lightpink;
+}
+
+div.log.log-CRITICAL {
+    background: lightpink;
+    font-weight: bold;
+}
+
+div.log > div.log-source {
+    color: gray;
+    font-size: x-small;
+    text-transform: uppercase;
+}
+
+div.log > div.log-message {
+
+}

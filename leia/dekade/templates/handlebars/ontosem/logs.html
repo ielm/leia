@@ -1,5 +1,12 @@
+{{#*inline "log"}}
+    <div class="log log-{{level}}">
+        <div class="log-source">{{source}}/{{type}}</div>
+        <div class="log-message">{{message}}</div>
+    </div>
+{{/inline}}
+
 <div class="logs-container">
     {{#each logs}}
-        {{{json this}}}
+        {{> log}}
     {{/each}}
 </div>
