@@ -13,10 +13,6 @@ if TYPE_CHECKING:
 
 # TODO: Following functionalities are needed at a minimum
 #  - handling not
-#  - handling overrides (import, process, assign, remove)
-#  - handling metadata (import, process, assign, remove)
-#  - general editing (assign, remove, update)
-#  - listing of a frame by rows (with inh/block) for the editor
 #  - value facet overrides all other facets (and can't be overridden)
 
 
@@ -170,6 +166,9 @@ class Concept(object):
 
         return a
 
+    def isa(self, concept: 'Concept') -> bool:
+        return concept == self or concept in self.ancestors()
+
     def children(self) -> Set['Concept']:
         raise NotImplementedError
 
@@ -218,6 +217,14 @@ class Concept(object):
 
         self.block[property][facet] = list(filter(lambda f: f != filler, self.block[property][facet]))
 
+    def is_blocking(self, property: str, facet: str, filler: FILLER) -> bool:
+        if property not in self.block:
+            return False
+        if facet not in self.block[property]:
+            return False
+
+        return filler in self.block[property][facet] or "*" in self.block[property][facet]
+
     def rows(self) -> List[FILLER]:
         out = []
 
@@ -234,7 +241,11 @@ class Concept(object):
                     out.append(Concept.BlockedRow(self, slot, facet, filler))
 
         for parent in self.parents():
-            out.extend(parent.rows())
+            parent_rows = parent.rows()
+            parent_rows = filter(lambda r: not isinstance(r, Concept.BlockedRow), parent_rows)
+            parent_rows = filter(lambda r: not self.is_blocking(r.property, r.facet, r.filler), parent_rows)
+
+            out.extend(parent_rows)
 
         return out
 

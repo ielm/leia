@@ -227,7 +227,18 @@ class ConceptTestCase(TestCase):
         fail()
 
     def test_isa(self):
-        fail()
+        grandparent = Concept(self.m, "grandparent")
+        parent = Concept(self.m, "parent")
+        concept = Concept(self.m, "concept")
+        other = Concept(self.m, "other")
+
+        concept.add_parent(parent)
+        parent.add_parent(grandparent)
+
+        self.assertTrue(concept.isa(concept))
+        self.assertTrue(concept.isa(parent))
+        self.assertTrue(concept.isa(grandparent))
+        self.assertFalse(concept.isa(other))
 
     def test_rows_includes_local(self):
         concept = Concept(self.m, "concept")
@@ -309,6 +320,9 @@ class ConceptTestCase(TestCase):
         parent = Concept(self.m, "parent")
         concept = Concept(self.m, "concept")
 
+        concept.add_parent(parent)
+        parent.add_parent(grandparent)
+
         self.assertEqual([], concept.rows())
 
         grandparent.add_local("prop", "sem", ["a"])
@@ -337,7 +351,31 @@ class ConceptTestCase(TestCase):
         ], concept.rows())
 
     def test_rows_respects_blocking_wildcard(self):
-        fail()
+        grandparent = Concept(self.m, "grandparent")
+        parent = Concept(self.m, "parent")
+        concept = Concept(self.m, "concept")
+
+        concept.add_parent(parent)
+        parent.add_parent(grandparent)
+
+        self.assertEqual([], concept.rows())
+
+        grandparent.add_local("prop", "sem", ["a"])
+        parent.add_local("prop", "sem", ["b"])
+        concept.add_local("prop", "sem", ["c"])
+
+        self.assertEqual([
+            Concept.LocalRow(concept, "prop", "sem", ["c"], dict()),
+            Concept.LocalRow(parent, "prop", "sem", ["b"], dict()),
+            Concept.LocalRow(grandparent, "prop", "sem", ["a"], dict()),
+        ], concept.rows())
+
+        concept.add_block("prop", "sem", "*")
+
+        self.assertEqual([
+            Concept.LocalRow(concept, "prop", "sem", ["c"], dict()),
+            Concept.BlockedRow(concept, "prop", "sem", "*"),
+        ], concept.rows())
 
     def test_private_frames(self):
         # Add to parsing above as well (local/block)
