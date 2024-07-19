@@ -33,11 +33,11 @@
 
     <div class="word-section-header">Senses</div>
     <div class="word-senses">
-        {{#each senses}}
-        <div class="word-sense">
-            <div class="word-sense-id">{{this.SENSE}}</div>
-            <div class="word-sense-details">{{{json this}}}</div>
+        <div class="sense-navigation-tabs"></div>
+        <div class="sense-navigation-content">
+            {{#each senses}}
+            <div class="word-sense fixed-tab-content" data-sense-id="{{this.SENSE}}" data-tab-name="{{this.SENSE}}" data-tab-label="{{this.SENSE}}"></div>
+            {{/each}}
         </div>
-        {{/each}}
     </div>
 </div>

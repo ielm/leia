@@ -4,6 +4,10 @@ div.sense {
     height: 100%;
 }
 
+div.sense.imported {
+    overflow-y: unset;
+}
+
 div.sense div.sense-header {
     font-weight: bold;
 }

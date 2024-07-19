@@ -14,7 +14,7 @@
 {{#*inline "token"}}
     <div class="syn-struc-element token">
         <span class="syn-struc-element-content">
-            {{#if pos}}{{pos}}{{/if}}
+            {{#if pos}}>{{pos}}{{/if}}
             {{#if lemma}}
                 "{{#each lemma}}{{this}}{{#unless @last}},{{/unless}}{{/each}}"
             {{/if}}
@@ -167,9 +167,13 @@
 
         <div class="sense-field-label">Meaning Procedures</div>
         <div class="meaning-procedures">
-            {{#each mps}}
-                {{> meaning-procedure}}
-            {{/each}}
+            {{#if mps}}
+                {{#each mps}}
+                    {{> meaning-procedure}}
+                {{/each}}
+            {{else}}
+                <div class="sense-field-content empty">None.</div>
+            {{/if}}
         </div>
     </div>
 

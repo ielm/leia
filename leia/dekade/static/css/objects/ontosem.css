@@ -281,12 +281,8 @@ div.word-senses div.word-sense {
     background: #f0f0f0;
 }
 
-div.word-senses div.word-sense div.word-sense-id {
-    font-weight: bold;
-}
-
-div.word-senses div.word-sense div.word-sense-details {
-
+div.word-senses div.sense-navigation-tabs {
+    margin-top: 2px;
 }
 
 /* *** Constituencies *** */

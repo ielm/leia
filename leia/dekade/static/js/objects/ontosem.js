@@ -1,4 +1,6 @@
 import { LEIAObject } from "./_default.js";
+import { LEIAFixedTabsViewer } from "../tabs.js";
+import { Sense } from "./sense.js";
 
 export class Analysis extends LEIAObject {
 
@@ -313,6 +315,25 @@ export class Word extends LEIAObject {
 
     activateListeners(element) {
 
+    }
+
+    async render() {
+        this.rendered = await super.render();
+
+        for (var senseId in this.senses) {
+            const senseContainer = $(this.rendered).find(`.word-sense[data-sense-id='${senseId}']`);
+            senseContainer.empty();
+
+            const sense = new Sense(this.senses[senseId]);
+            const senseElement = await sense.render();
+            senseElement.find(".sense").addClass("imported");
+
+            senseContainer.append(senseElement);
+        }
+
+        new LEIAFixedTabsViewer($(this.rendered).find("div.sense-navigation-tabs"), $(this.rendered).find("div.sense-navigation-content"));
+
+        return this.rendered;
     }
 
     templateName() {
