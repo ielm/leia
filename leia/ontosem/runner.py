@@ -23,7 +23,7 @@ class OntoSemTimer(object):
         self.start = time.time()
 
     def __exit__(self, exc_type, exc_val, exc_tb):
-        self.analysis.log("Time to process $processor: $time", type="time", processor=self.message, time=time.time() - self.start)
+        self.analysis.log("Time to $processor: $time", type="time", processor=self.message, time=time.time() - self.start)
 
 
 timer = OntoSemTimer
@@ -69,7 +69,7 @@ class OntoSemRunner(object):
         with timer(analysis, "preprocess"):
             pp = Preprocessor(analysis).run(sentences)
 
-        with timer(analysis, "syntax"):
+        with timer(analysis, "run spacy syntax"):
             syntax = SpacyAnalyzer(analysis).run(pp)
             for s in syntax:
                 sentence = Sentence(s.original_sentence)
@@ -81,12 +81,12 @@ class OntoSemRunner(object):
 
         # TODO: Transformations here
 
-        with timer(analysis, "synmapping"):
+        with timer(analysis, "run synmapping"):
             for sentence in analysis.sentences:
                 synmap = SynMapper(analysis).run(sentence.syntax)
                 sentence.syntax.synmap = synmap
 
-        with timer(analysis, "basic semantic analysis"):
+        with timer(analysis, "run basic semantic analysis"):
             for sentence in analysis.sentences:
                 candidates = SemanticCompiler(analysis).run(sentence.syntax)
                 candidates = SemanticScorer(analysis).run(candidates)
