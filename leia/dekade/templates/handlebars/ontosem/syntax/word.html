@@ -1,6 +1,43 @@
 <div class="word-container">
-    <h3>Word Details</h3>
-    {{{json this.word}}}
-    <h3>WMLex Senses</h3>
-    {{{json this.senses}}}
+    <div class="word-id">{{word.lemma}}-{{word.index}}</div>
+
+    <div class="word-section-header">Structural Features</div>
+    <table class="word-structure">
+        <tr><td class="label">lemma</td><td>{{word.lemma}}</td></tr>
+        <tr><td class="label">token</td><td>{{word.token}}</td></tr>
+        <tr><td class="label">index</td><td>{{word.index}}</td></tr>
+        <tr><td class="label">pos</td><td>{{word.pos}}</td></tr>
+        <tr><td class="label">ner</td><td>{{word.ner}}</td></tr>
+        <tr><td class="label">characters</td><td>{{word.char-start}} - {{word.char-end}}</td></tr>
+    </table>
+
+    <div class="word-section-header">Morphological Features</div>
+    <table class="word-morphology">
+        {{#each word.morphology}}
+        <tr><td>{{@key}}</td><td>{{this}}</td></tr>
+        {{/each}}
+    </table>
+
+    <div class="word-section-header">Coreferences</div>
+    <div class="word-coref">
+        {{#if word.coref}}
+        <ul>
+            {{#each word.coref}}
+            <li>Sentence {{this.sentence}}, Word {{this.word}}; confidence={{this.confidence}}</li>
+            {{/each}}
+        </ul>
+        {{else}}
+            <div class="empty-results">None.</div>
+        {{/if}}
+    </div>
+
+    <div class="word-section-header">Senses</div>
+    <div class="word-senses">
+        {{#each senses}}
+        <div class="word-sense">
+            <div class="word-sense-id">{{this.SENSE}}</div>
+            <div class="word-sense-details">{{{json this}}}</div>
+        </div>
+        {{/each}}
+    </div>
 </div>

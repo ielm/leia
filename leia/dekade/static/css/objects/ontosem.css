@@ -233,3 +233,58 @@ div.log > div.log-source {
 div.log > div.log-message {
     font-size: small;
 }
+
+/* *** Words *** */
+
+div.word-id {
+    font-size: larger;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+div.word-section-header {
+    font-size: large;
+    margin-top: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: gray;
+}
+
+table.word-structure {
+    width: 100%;
+    table-layout: fixed;
+}
+
+table.word-structure tr {
+    background: #f0f0f0;
+}
+
+table.word-morphology {
+    width: 100%;
+    table-layout: fixed;
+}
+
+table.word-morphology tr {
+    background: #f0f0f0;
+}
+
+div.word-coref div.empty-results {
+    font-style: italic;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+div.word-senses div.word-sense {
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background: #f0f0f0;
+}
+
+div.word-senses div.word-sense div.word-sense-id {
+    font-weight: bold;
+}
+
+div.word-senses div.word-sense div.word-sense-details {
+
+}
