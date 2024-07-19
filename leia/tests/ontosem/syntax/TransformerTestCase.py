@@ -1,15 +1,109 @@
-from leia.ontomem.lexicon import SynStruc
+from leia.ontomem.lexicon import Sense, SynStruc
+from leia.ontomem.transformations import Transformation
 from leia.ontosem.analysis import Analysis
-from leia.ontosem.syntax.results import ConstituencyNode, Dependency
+from leia.ontosem.syntax.results import ConstituencyNode, Dependency, Syntax
 from leia.ontosem.syntax.synmapper import SynMatcher
 from leia.ontosem.syntax.transformer import LexicalTransformer
 from leia.tests.LEIATestCase import LEIATestCase
+from unittest.mock import MagicMock, patch
 
 
 class LexicalTransformerTestCase(LEIATestCase):
 
     def setUp(self):
         self.analysis = Analysis()
+
+    @patch("leia.ontosem.syntax.transformer.SynMatcher.run")
+    def test_run(self, mock_syn_matcher: MagicMock):
+        # The transformer should test each transformation in memory against the input syntax.
+        # Transformations can have multiple syn-strucs to test against, and each syn-struc can have multiple
+        # matches (per the SynMatcher).
+        # For each such match, the root (var0) must then match against the transformer's root-syn-struc.
+        # If so, the transformation executable can be called.
+
+        transformer = LexicalTransformer(self.analysis)
+
+        # Define two transformations
+        trans1 = Transformation("TRANS1")
+        t1syn1 = SynStruc()
+        t1syn1.elements = ["A"]             # We need to mock something in the elements so the __eq__ of the synstrucs works correctly
+        trans1.input_synstrucs = [t1syn1]
+
+        trans2 = Transformation("TRANS2")
+        t2syn1 = SynStruc()
+        t2syn1.elements = ["B"]
+        t2syn2 = SynStruc()
+        t2syn2.elements = ["C"]
+        trans2.input_synstrucs = [t2syn1, t2syn2]
+
+        mock_executable = MagicMock()
+        mock_executable.run = MagicMock()
+        mock_executable_type = MagicMock()
+        mock_executable_type.return_value = mock_executable
+        trans2.executable = mock_executable_type
+
+        self.analysis.config.memory().transformations.add_transformation(trans1)
+        self.analysis.config.memory().transformations.add_transformation(trans2)
+
+        # Define two words that are "part of the syntax"
+        word1 = self.mockWord(1, "A", "N")
+        word2 = self.mockWord(2, "A", "N")
+
+        # Mock the SynMatcher.run method to return fixed results
+        t2syn1match1 = SynMatcher.SynMatchResult(["A"])     # Bogus input is acceptable; they just need to be different
+        t2syn2match1 = SynMatcher.SynMatchResult(["B"])
+        t2syn2match2 = SynMatcher.SynMatchResult(["C"])
+
+        def _mock_syn_matcher(syntax, synstruc):
+            if synstruc == t1syn1:
+                return []
+            if synstruc == t2syn1:
+                return [t2syn1match1]
+            if synstruc == t2syn2:
+                return [t2syn2match1, t2syn2match2]
+
+        mock_syn_matcher.side_effect = _mock_syn_matcher
+
+        # Mock the transformer.root_for_match to return fixed results
+        def _mock_root_for_match(match):
+            if match == t2syn1match1:
+                return None
+            if match == t2syn2match1:
+                return word1
+            if match == t2syn2match2:
+                return word2
+
+        transformer.root_for_match = MagicMock(side_effect=_mock_root_for_match)
+
+        # Load the analysis WMLexicon with senses for the relevant words
+        w1s1 = Sense(self.analysis.config.memory(), "W1-N1", contents=self.mockSense("W1-N1", synstruc=[{"type": "dependency", "deptype": "A"}]))
+        w2s1 = Sense(self.analysis.config.memory(), "W2-N1", contents=self.mockSense("W2-N1", synstruc=[{"type": "dependency", "deptype": "B"}]))
+        w2s2 = Sense(self.analysis.config.memory(), "W2-N2", contents=self.mockSense("W2-N2", synstruc=[{"type": "dependency", "deptype": "C"}]))
+
+        self.analysis.lexicon.add_sense(word1, w1s1)
+        self.analysis.lexicon.add_sense(word2, w2s1)
+        self.analysis.lexicon.add_sense(word2, w2s2)
+
+        # Mock the transformer.align_syn_strucs to return fixed results
+        alignment1 = [("X", None)]  # These can also be bogus; all that matters is they are unique, and the presence
+        alignment2 = [("Y", "AB")]  # of None as the second item in any tuple
+        alignment3 = [("Z1", "CD"), ("Z2", None)]
+
+        def _mock_align_syn_strucs(synstruc1, synstruc2):
+            if synstruc2 == w1s1.synstruc:
+                return alignment1
+            if synstruc2 == w2s1.synstruc:
+                return alignment2
+            if synstruc2 == w2s2.synstruc:
+                return alignment3
+
+        transformer.align_syn_strucs = MagicMock(side_effect=_mock_align_syn_strucs)
+
+        # Now run the transformer
+        transformer.run(Syntax([], "", "", ConstituencyNode("ABC"), []))
+
+        # Assert that one transformation executable was called with the correct input
+        mock_executable.run.assert_called_once_with(w2s1, t2syn2match2, alignment2)
 
     def test_root_for_match(self):
         transformer = LexicalTransformer(self.analysis)

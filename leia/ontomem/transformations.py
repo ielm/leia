@@ -4,7 +4,7 @@ from leia.ontomem.memory import Memory
 from leia.utils.str2py import import_class
 from leia.utils.threads import multiprocess_read_json_file
 from multiprocessing.pool import Pool
-from typing import List, Union
+from typing import List, Type, Union
 
 import os
 
@@ -15,6 +15,7 @@ class TransformationsCatalogue(object):
         self.memory = memory
         self.contents_dir = contents_dir
         self.cache = {}
+        self._loaded = False
 
         if load_now:
             self.load()
@@ -26,6 +27,11 @@ class TransformationsCatalogue(object):
         contents = pool.starmap(multiprocess_read_json_file, map(lambda file: (self.contents_dir, file, "trans"), files))
         for c in contents:
             self.cache[c[0]] = Transformation(c[0], contents=c[1])
+
+        self._loaded = True
+
+    def is_loaded(self) -> bool:
+        return self._loaded
 
     def add_transformation(self, transformation: 'Transformation'):
         self.cache[transformation.name] = transformation
@@ -52,7 +58,7 @@ class Transformation(object):
         self.example: str = None
         self.input_synstrucs: List[SynStruc] = []
         self.root_synstruc: SynStruc = None
-        self.executable: TransformationExecutable = None
+        self.executable: Type[TransformationExecutable] = None
 
         if contents is not None:
             self._index(contents)

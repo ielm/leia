@@ -57,6 +57,10 @@ class OntoSemRunner(object):
             with timer(analysis, "load lexicon"):
                 self.config.memory().lexicon.load()
 
+        if not self.config.memory().transformations.is_loaded():
+            with timer(analysis, "load transformations"):
+                self.config.memory().transformations.load()
+
         if not self.config.memory().parts_of_speech.is_loaded():
             with timer(analysis, "load parts of speech"):
                 self.config.memory().parts_of_speech.load()

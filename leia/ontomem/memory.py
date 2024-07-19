@@ -12,7 +12,7 @@ class Memory(object):
             self.properties = OntoMemEditBuffer(memory)
             self.lexicon = OntoMemEditBuffer(memory)
 
-    def __init__(self, knowledge_path: str=None, props_path: str=None, ont_path: str=None, lex_path: str=None, pos_file:str=None):
+    def __init__(self, knowledge_path: str=None, props_path: str=None, ont_path: str=None, lex_path: str=None, trans_path: str=None, pos_file:str=None):
         if knowledge_path is None:
             knowledge_path = "%s/knowledge" % importlib.import_module("leia").__path__[0]
 
@@ -22,6 +22,8 @@ class Memory(object):
             ont_path = "%s/concepts" % knowledge_path
         if lex_path is None:
             lex_path = "%s/words" % knowledge_path
+        if trans_path is None:
+            trans_path = "%s/transformations" % knowledge_path
         if pos_file is None:
             pos_file = "%s/grammar/pos.json" % knowledge_path
 
@@ -30,11 +32,13 @@ class Memory(object):
         from leia.ontomem.lexicon import Lexicon
         from leia.ontomem.ontology import Ontology
         from leia.ontomem.properties import PropertyInventory
+        from leia.ontomem.transformations import TransformationsCatalogue
 
         self.episodic = Space(self, "EPISODIC", private=False)
         self.lexicon = Lexicon(self, lex_path, load_now=False)
         self.properties = PropertyInventory(self, props_path, load_now=False)
         self.ontology = Ontology(self, ont_path, load_now=False)
+        self.transformations = TransformationsCatalogue(self, trans_path, load_now=False)
         self.parts_of_speech = POSInventory(self, pos_file, load_now=False)
 
         self.edits = Memory.EditBuffers(self)

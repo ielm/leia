@@ -11,7 +11,7 @@ class LexicalTransformer(object):
         self.analysis = analysis
 
     def run(self, syntax: Syntax):
-        for transformation in self.analysis.config.memory().transformations.all():
+        for transformation in self.analysis.config.memory().transformations.transformations():
             for synstruc in transformation.input_synstrucs:
                 matches = SynMatcher(self.analysis).run(syntax, synstruc)
                 for match in matches:
@@ -21,15 +21,11 @@ class LexicalTransformer(object):
 
                     for sense in self.analysis.lexicon.senses(root):
                         alignment = self.align_syn_strucs(transformation.root_synstruc, sense.synstruc)
-                        if alignment is None:
+                        if None in set(map(lambda a: a[1], alignment)):
                             continue
 
-                        # TODO:
-                        # run transformation (sense, match, alignment)
-                        # mark sense as transformed
-                        # log transformation to analysis
-
-                        raise NotImplementedError
+                        transformation.executable().run(sense, match, alignment)
+                        self.analysis.log("Transformed $sense (of word $word) with $transformation", type="knowledge", source=self.__class__, word=root.index, sense=sense.id, transformation=transformation.name)
 
     def root_for_match(self, match: SynMatcher.SynMatchResult) -> Union[Word, None]:
         root = match.component_for_var(0)
