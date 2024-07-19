@@ -1,6 +1,7 @@
 from collections import OrderedDict
 from leia.ontomem.lexicon import Lexicon, MeaningProcedure, SemStruc, Sense, SynStruc, Word
 from leia.ontomem.memory import Memory
+from leia.tests.LEIATestCase import LEIATestCase
 from unittest import TestCase
 from unittest.mock import call, MagicMock, mock_open, patch
 
@@ -85,6 +86,47 @@ class LexiconTestCase(TestCase):
         })
 
         self.assertEqual(Sense(self.m, "MAN-N1", contents=sense_contents), lex.sense("MAN-N1"))
+
+
+class WordTestCase(LEIATestCase):
+
+    def setUp(self):
+        self.m = Memory("", "", "")
+
+    def test_senses(self):
+        word = self.m.lexicon.word("test")
+        self.assertEqual([], word.senses())
+
+        s1 = Sense(self.m, "s1", contents=self.mockSense("s1"))
+        s2 = Sense(self.m, "s2", contents=self.mockSense("s2"))
+
+        word.add_sense(s1.contents)
+        self.assertEqual([s1], word.senses())
+
+        word.add_sense(s2.contents)
+        self.assertEqual([s1, s2], word.senses())
+
+    def test_senses_with_synonyms(self):
+        word = self.m.lexicon.word("test")
+        self.assertEqual([], word.senses())
+
+        # Sanity check, senses locally defined will also be included
+        local_sense = Sense(self.m, "localsense", contents=self.mockSense("localsense"))
+        word.add_sense(local_sense.contents)
+        self.assertEqual([local_sense], word.senses())
+
+        # Now add a sense to another word; it will not be included
+        self.m.lexicon.word("other").add_sense(self.mockSense("notincluded"))
+        self.assertEqual([local_sense], word.senses())
+
+        # Now add a sense to another word with "test" as a synonym; it will be included
+        another = self.m.lexicon.word("another")
+        syn_sense = Sense(self.m, "synsense", contents=self.mockSense("synsense", synonyms=["test"]))
+        another.add_sense(syn_sense.contents)
+        self.assertEqual([local_sense, syn_sense], word.senses())
+
+        # Synonyms can be filtered out
+        self.assertEqual([local_sense], word.senses(include_synonyms=False))
 
 
 class SenseTestCase(TestCase):

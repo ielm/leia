@@ -5,7 +5,6 @@ from leia.ontomem.memory import Memory
 from leia.utils.threads import multiprocess_read_json_file
 from typing import List, Iterable, Set, Type, Tuple, Union
 
-import json
 import os
 
 from typing import TYPE_CHECKING

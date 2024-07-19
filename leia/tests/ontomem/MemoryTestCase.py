@@ -1,5 +1,6 @@
 from leia.ontomem.memory import Memory, OntoMemTCPClient, OntoMemTCPRequest, OntoMemTCPServer
 from leia.ontomem.memory import OntoMemTCPRequestGetInstance, OntoMemTCPRequestGetSense, OntoMemTCPRequestGetWord
+from leia.tests.LEIATestCase import LEIATestCase
 from unittest import TestCase
 
 import json
@@ -95,7 +96,7 @@ class OntoMemTCPRequestGetSenseTestCase(TestCase):
         self.assertEqual(man_n1, json.loads(OntoMemTCPRequestGetSense(self.m).handle("MAN-N1")))
 
 
-class OntoMemTCPRequestGetWordTestCase(TestCase):
+class OntoMemTCPRequestGetWordTestCase(LEIATestCase):
 
     def setUp(self):
         self.m = Memory("", "", "")
@@ -104,12 +105,12 @@ class OntoMemTCPRequestGetWordTestCase(TestCase):
         # An unknown word can be requested
         self.assertEqual({
             "name": "MAN",
-            "senses": {}
+            "senses": []
         }, json.loads(OntoMemTCPRequestGetWord(self.m).handle("MAN")))
 
         # All senses will be returned
-        man_n1 = {"SENSE": "MAN-N1"}
-        man_n2 = {"SENSE": "MAN-N2"}
+        man_n1 = self.mockSense("MAN-N1")
+        man_n2 = self.mockSense("MAN-N2")
 
         man = self.m.lexicon.word("MAN")
         man.add_sense(man_n1)
@@ -117,13 +118,25 @@ class OntoMemTCPRequestGetWordTestCase(TestCase):
 
         self.assertEqual({
             "name": "MAN",
-            "senses": {
-                "MAN-N1": man_n1,
-                "MAN-N2": man_n2,
-            }
+            "senses": [man_n1, man_n2]
         }, json.loads(OntoMemTCPRequestGetWord(self.m).handle("MAN")))
 
-        # TODO: This should also (optionally) fetch synonyms; but that means the lex has to be fully loaded...
+        # Synonyms will also be returned
+        other_n1 = self.mockSense("OTHER-N1", synonyms=["MAN"])
+
+        other = self.m.lexicon.word("OTHER")
+        other.add_sense(other_n1)
+
+        self.assertEqual({
+            "name": "MAN",
+            "senses": [man_n1, man_n2, other_n1]
+        }, json.loads(OntoMemTCPRequestGetWord(self.m).handle("MAN")))
+
+        # Synonyms can be excluded
+        self.assertEqual({
+            "name": "MAN",
+            "senses": [man_n1, man_n2]
+        }, json.loads(OntoMemTCPRequestGetWord(self.m).handle("MAN synonyms=false")))
 
 
 class OntoMemTCPRequestGetInstanceTestCase(TestCase):

@@ -191,8 +191,18 @@ class OntoMemTCPRequestGetSense(OntoMemTCPRequest):
 class OntoMemTCPRequestGetWord(OntoMemTCPRequest):
 
     def handle(self, details: str) -> str:
-        word = self.memory.lexicon.word(details)
-        return json.dumps(word.contents)
+        name = details
+        include_synonyms = True
+        if "synonyms=" in details:
+            parts = details.split("synonyms=")
+            name = parts[0].strip()
+            include_synonyms = parts[1].strip().lower() == "true"
+
+        word = self.memory.lexicon.word(name)
+        return json.dumps({
+            "name": word.name,
+            "senses": list(map(lambda s: s.contents, word.senses(include_synonyms=include_synonyms)))
+        })
 
 
 class OntoMemTCPRequestGetInstance(OntoMemTCPRequest):

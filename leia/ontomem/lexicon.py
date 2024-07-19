@@ -6,7 +6,6 @@ from leia.utils.formatting import FormatFromLISP
 from leia.utils.threads import multiprocess_read_json_file
 from typing import Any, List, Set, Tuple, Union
 
-import json
 import os
 
 
@@ -38,6 +37,9 @@ class Lexicon(object):
         self.cache[word] = created
         return created
 
+    def words(self) -> List['Word']:
+        return list(self.cache.values())
+
     def create_word(self, word: str) -> 'Word':
         return Word(self.memory, word)
 
@@ -51,23 +53,34 @@ class Word(object):
     def __init__(self, memory: Memory, name: str, contents: dict=None):
         self.memory = memory
         self.name = name
-        self.contents = contents if contents is not None else {
+        self._contents = contents if contents is not None else {
             "name": self.name,
             "senses": {}
         }
 
     def add_sense(self, sense: dict):
-        self.contents["senses"][sense["SENSE"]] = sense
+        self._contents["senses"][sense["SENSE"]] = sense
 
     def sense(self, sense: str) -> 'Sense':
-        if sense in self.contents["senses"]:
-            return Sense(self.memory, sense, contents=self.contents["senses"][sense])
+        if sense in self._contents["senses"]:
+            return Sense(self.memory, sense, contents=self._contents["senses"][sense])
 
         raise Exception("Unknown sense %s." % sense)
 
+    def senses(self, include_synonyms: bool=True) -> List['Sense']:
+        results = list(map(lambda s: Sense(self.memory, s[0], contents=s[1]), self._contents["senses"].items()))
+
+        if include_synonyms:
+            for word in self.memory.lexicon.words():
+                for sense in word.senses(include_synonyms=False):
+                    if self.name in sense.synonyms():
+                        results.append(sense)
+
+        return results
+
     def __eq__(self, other):
         if isinstance(other, Word):
-            return self.name == other.name and self.contents == other.contents
+            return self.name == other.name and self._contents == other._contents
 
 
 class Sense(object):
@@ -104,6 +117,9 @@ class Sense(object):
         self.synstruc = SynStruc(self.contents["SYN-STRUC"])
         self.semstruc = SemStruc(self.contents["SEM-STRUC"])
         self.meaning_procedures = list(map(lambda mp: MeaningProcedure(mp), self.contents["MEANING-PROCEDURES"]))
+
+    def synonyms(self) -> List[str]:
+        return list(self.contents["SYNONYMS"]) if "SYNONYMS" in self.contents else []
 
     def __eq__(self, other):
         if isinstance(other, Sense):
