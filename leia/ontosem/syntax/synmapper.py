@@ -4,7 +4,7 @@ from leia.ontomem.ontology import Ontology
 from leia.ontosem.analysis import WMLexicon
 from leia.ontosem.config import OntoSemConfig
 from leia.ontosem.syntax.results import ConstituencyNode, Dependency, SynMap, Syntax, Word
-from typing import List, Union
+from typing import Iterable, List, Tuple, Type, Union
 
 
 class SynMapper(object):
@@ -111,6 +111,41 @@ class SynMatcher(object):
                 flattened.append(constituency)
 
         return flattened
+
+    def match(self, elements: List[SynStruc.Element], components: List[Union[Word, Dependency, ConstituencyNode]], root: Union[Word, None]) -> List['SynMatcher.SynMatchResult']:
+
+        def _get_match_type(element: SynStruc.Element) -> Type[SynMatcher.SynMatch]:
+            if isinstance(element, SynStruc.RootElement):
+                return SynMatcher.RootMatch
+            if isinstance(element, SynStruc.TokenElement):
+                return SynMatcher.TokenMatch
+            if isinstance(element, SynStruc.DependencyElement):
+                return SynMatcher.DependencyMatch
+            if isinstance(element, SynStruc.ConstituencyElement):
+                return SynMatcher.ConstituencyMatch
+            raise Exception
+
+        def _find_matches(element: SynStruc.Element, components: List[Union[Word, Dependency, ConstituencyNode]]) -> Iterable[Tuple['SynMatcher.SynMatch', List[Union[Word, Dependency, ConstituencyNode]]]]:
+            for i, component in enumerate(components):
+                if self.does_element_match(element, component):
+                    yield _get_match_type(element)(element, component), components[i:]
+
+        def _expand_matches(matches: List[dict]) -> List[dict]:
+            for match in matches:
+                for nm in _find_matches(element, match["remaining"]):
+                    yield {
+                        "match": match["match"] + [nm[0]],
+                        "remaining": nm[1]
+                    }
+
+        element = elements.pop(0)
+        matches = list(map(lambda m: {"match": [m[0]], "remaining": m[1]}, _find_matches(element, components)))
+
+        while len(elements) > 0:
+            element = elements.pop(0)
+            matches = list(_expand_matches(matches))
+
+        return list(map(lambda m: SynMatcher.SynMatchResult(m["match"]), matches))
 
     def does_element_match(self, element: SynStruc.Element, *args) -> bool:
         # Generic matching of any synstruc element to any syntax component(s).  Essentially, this function verifies

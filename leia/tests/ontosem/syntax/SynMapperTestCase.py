@@ -371,11 +371,74 @@ class SynMatcherTestCase(LEIATestCase):
             dep2,
         ], self.matcher.flatten(syntax))
 
-    """
-    TODO: tests to run:
-    - does it match multiple elements in a row
-        - respect ordering (for now, allow gapping)
-        - ordering for constituencies at the top level implies flattening
-        - does it skip optional (or, rather, returns a None in the match column)
-    - does it find multiple possible combinations
-    """
+    def test_match_single_element(self):
+        element = SynStruc.TokenElement({"word"}, "N", dict(), None, False)
+        component1 = self.mockWord(1, "word", "N")
+        component2 = self.mockWord(2, "word", "V")
+
+        # A single component can be matched
+        results = self.matcher.match([element], [component1, component2], None)
+
+        self.assertEqual([SynMatcher.SynMatchResult([
+            SynMatcher.TokenMatch(element, component1)
+        ])], results)
+
+    def test_match_single_element_multiple_times(self):
+        element = SynStruc.TokenElement({"word"}, "N", dict(), None, False)
+        component1 = self.mockWord(1, "word", "N")
+        component2 = self.mockWord(2, "word", "V")
+        component3 = self.mockWord(3, "word", "N")
+
+        # A single component can be matched multiple times
+        results = self.matcher.match([element], [component1, component2, component3], None)
+
+        self.assertEqual([
+            SynMatcher.SynMatchResult([
+                SynMatcher.TokenMatch(element, component1)
+            ]),
+            SynMatcher.SynMatchResult([
+                SynMatcher.TokenMatch(element, component3)
+            ])
+        ], results)
+
+    def test_match_multiple_elements(self):
+        element1 = SynStruc.TokenElement({"word"}, "N", dict(), None, False)
+        element2 = SynStruc.TokenElement({"word"}, "V", dict(), None, False)
+        component1 = self.mockWord(1, "word", "N")
+        component2 = self.mockWord(2, "word", "J")
+        component3 = self.mockWord(3, "word", "V")
+        component4 = self.mockWord(4, "word", "N")
+
+        # Multiple components can be matched; gapping is allowed
+        results = self.matcher.match([element1, element2], [component1, component2, component3], None)
+
+        self.assertEqual([SynMatcher.SynMatchResult([
+            SynMatcher.TokenMatch(element1, component1),
+            SynMatcher.TokenMatch(element2, component3),
+        ])], results)
+
+    def test_match_multiple_elements_multiple_times(self):
+        element1 = SynStruc.TokenElement({"word"}, "N", dict(), None, False)
+        element2 = SynStruc.TokenElement({"word"}, "V", dict(), None, False)
+        component1 = self.mockWord(1, "word", "N")
+        component2 = self.mockWord(2, "word", "N")
+        component3 = self.mockWord(3, "word", "V")
+        component4 = self.mockWord(4, "word", "N")
+
+        # Multiple components can be matched; gapping is allowed
+        results = self.matcher.match([element1, element2], [component1, component2, component3], None)
+
+        self.assertEqual([
+            SynMatcher.SynMatchResult([
+                SynMatcher.TokenMatch(element1, component1),
+                SynMatcher.TokenMatch(element2, component3),
+            ]),
+            SynMatcher.SynMatchResult([
+                SynMatcher.TokenMatch(element1, component2),
+                SynMatcher.TokenMatch(element2, component3),
+            ])
+        ], results)
+
+    def test_run(self):
+        # TODO: Test calls flatten, calls match, returns results
+        fail()
