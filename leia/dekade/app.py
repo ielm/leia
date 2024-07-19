@@ -76,13 +76,10 @@ class DEKADEAPIBlueprint(Blueprint):
 
 if __name__ == "__main__":
 
-    properties_folder = "../knowledge/properties/"
-    concepts_folder = "../knowledge/concepts/"
-    words_folder = "../knowledge/words/"
     static_folder = "static/"
     template_folder = "templates/"
 
-    agent = Agent(memory=Memory(properties_folder, concepts_folder, words_folder))
+    agent = Agent()
     agent.memory.properties.load()
     agent.memory.ontology.load()
     agent.memory.lexicon.load()

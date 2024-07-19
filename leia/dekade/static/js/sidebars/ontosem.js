@@ -10,6 +10,8 @@ $(document).ready(function() {
 
 
 async function _onOntoSemInputButtonClick(event) {
+    $(event.currentTarget).prop("disabled", true);
+
     const input = $(event.currentTarget).closest(".ontosem-sidebar-header").children(".ontosem-input-text").val();
     const results = await API.apiOntoSemAnalyze(input);
 
@@ -23,4 +25,6 @@ async function _onOntoSemInputButtonClick(event) {
 
     const analysis = new OntoSem.Analysis(results);
     contentTabs.addObject(analysis);
+
+    $(event.currentTarget).prop("disabled", false);
 }

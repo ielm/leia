@@ -45,21 +45,21 @@ class OntoSemRunner(object):
     def run(self, sentences: List[str]) -> Analysis:
         analysis = Analysis(self.config)
 
-        if not config.memory().properties.is_loaded():
+        if not self.config.memory().properties.is_loaded():
             with timer(analysis, "load properties"):
-                config.memory().properties.load()
+                self.config.memory().properties.load()
 
-        if not config.memory().ontology.is_loaded():
+        if not self.config.memory().ontology.is_loaded():
             with timer(analysis, "load ontology"):
-                config.memory().ontology.load()
+                self.config.memory().ontology.load()
 
-        if not config.memory().lexicon.is_loaded():
+        if not self.config.memory().lexicon.is_loaded():
             with timer(analysis, "load lexicon"):
-                config.memory().lexicon.load()
+                self.config.memory().lexicon.load()
 
-        if not config.memory().parts_of_speech.is_loaded():
+        if not self.config.memory().parts_of_speech.is_loaded():
             with timer(analysis, "load parts of speech"):
-                config.memory().parts_of_speech.load()
+                self.config.memory().parts_of_speech.load()
 
         sentences = " ".join(sentences)
 

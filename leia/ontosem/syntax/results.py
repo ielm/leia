@@ -60,7 +60,7 @@ class Syntax(object):
     def to_dict(self) -> dict:
         return {
             "words": list(map(lambda w: w.to_dict(), self.words)),
-            "synmap": self.synmap.to_dict(),
+            "synmap": self.synmap.to_dict() if self.synmap is not None else {},
             "sentence": self.sentence,
             "original-sentence": self.original_sentence,
             "parse": self.parse.to_dict(),
