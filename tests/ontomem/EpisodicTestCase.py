@@ -16,18 +16,18 @@ class EpisodicMemoryTestCase(TestCase):
 
         em = EpisodicMemory(self.m)
 
-        self.assertEqual(1, em._next_index_for(c1))
-        self.assertEqual(2, em._next_index_for(c1))
-        self.assertEqual(3, em._next_index_for(c1))
-        self.assertEqual(1, em._next_index_for(c2))
-        self.assertEqual(2, em._next_index_for(c2))
-        self.assertEqual(3, em._next_index_for(c2))
-        self.assertEqual(4, em._next_index_for(c1))
+        self.assertEqual(1, em._next_instance_for_concept(c1))
+        self.assertEqual(2, em._next_instance_for_concept(c1))
+        self.assertEqual(3, em._next_instance_for_concept(c1))
+        self.assertEqual(1, em._next_instance_for_concept(c2))
+        self.assertEqual(2, em._next_instance_for_concept(c2))
+        self.assertEqual(3, em._next_instance_for_concept(c2))
+        self.assertEqual(4, em._next_instance_for_concept(c1))
 
     def test_new_instance(self):
         c = Concept(self.m, "C1")
         em = EpisodicMemory(self.m)
-        em._next_index_for = MagicMock(return_value=1234)
+        em._next_instance_for_concept = MagicMock(return_value=1234)
 
         self.assertIsNone(em.instance("C1.1234"))
 
@@ -36,7 +36,7 @@ class EpisodicMemoryTestCase(TestCase):
         self.assertEqual(1234, instance.index)
         self.assertEqual(self.m, instance.memory)
 
-        em._next_index_for.assert_called_once()
+        em._next_instance_for_concept.assert_called_once()
 
         self.assertIsNotNone(em.instance("C1.1234"))
 
@@ -78,3 +78,57 @@ class FrameTestCase(TestCase):
         self.assertEqual([Filler("ABC", 1234), Filler("DEF", 5678)], f.fillers("S1"))
         self.assertEqual([Filler("GHI", 9012), Filler("JKL", 3456)], f.fillers("S2"))
         self.assertEqual(x, f)
+
+    def test_values(self):
+
+        c = Concept(self.m, "C1")
+        f = Frame(self.m, c, 1)
+
+        self.assertEqual([], f.values("S1"))
+        self.assertEqual([], f.values("S2"))
+
+        f.add_filler("S1", "ABC")
+
+        self.assertEqual(["ABC"], f.values("S1"))
+        self.assertEqual([], f.fillers("S2"))
+
+        f.add_filler("S1", "DEF")
+
+        self.assertEqual(["ABC", "DEF"], f.fillers("S1"))
+        self.assertEqual([], f.fillers("S2"))
+
+        f.add_filler("S2", "GHI")
+
+        self.assertEqual(["ABC", "DEF"], f.fillers("S1"))
+        self.assertEqual(["GHI"], f.fillers("S2"))
+
+        x = f.add_filler("S2", "JKL", timestamp=3456)
+
+        self.assertEqual(["ABC", "DEF"], f.fillers("S1"))
+        self.assertEqual(["GHI", "JKL"], f.fillers("S2"))
+        self.assertEqual(x, f)
+
+    def test_remove_filler(self):
+
+        c = Concept(self.m, "C1")
+        frame = Frame(self.m, c, 1)
+
+        frame.remove_filler("AGENT", "a")   # Nothing happens (no errors are thrown)
+
+        frame.add_filler("AGENT", "a")
+        frame.add_filler("AGENT", "b")
+        frame.add_filler("XYZ", "c")
+
+        self.assertEqual(["a", "b"], frame.values("AGENT"))
+        self.assertEqual(["c"], frame.values("XYZ"))
+
+        frame.remove_filler("AGENT", "a")
+
+        self.assertEqual(["b"], frame.values("AGENT"))
+        self.assertEqual(["c"], frame.values("XYZ"))
+
+        frame.remove_filler("AGENT", "b")
+
+        self.assertEqual([], frame.values("AGENT"))
+        self.assertNotIn("AGENT", frame.properties.keys())
+        self.assertEqual(["c"], frame.values("XYZ"))
