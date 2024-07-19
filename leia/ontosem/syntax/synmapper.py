@@ -65,6 +65,34 @@ class SynMatcher(object):
     def run(self, syntax: Syntax, synstruc: SynStruc, root: Word=None) -> List['SynMatcher.SynMatchResult']:
         raise NotImplementedError
 
+    def does_element_match(self, element: SynStruc.Element, *args) -> bool:
+        # Generic matching of any synstruc element to any syntax component(s).  Essentially, this function verifies
+        # type matching and then calls the specific does_x_match function and returns its results.
+
+        if isinstance(element, SynStruc.RootElement):
+            if len(args) == 2 and isinstance(args[0], Word) and (isinstance(args[1], Word) or args[1] is None):
+                return self.does_root_match(element, args[0], args[1])
+            return False
+
+        if isinstance(element, SynStruc.TokenElement):
+            if len(args) == 1 and isinstance(args[0], Word):
+                return self.does_token_match(element, args[0])
+            return False
+
+        if isinstance(element, SynStruc.DependencyElement):
+            if len(args) == 2 and isinstance(args[0], Dependency) and (isinstance(args[1], Word) or args[1] is None):
+                return self.does_dependency_match(element, args[0], args[1])
+            return False
+
+        if isinstance(element, SynStruc.ConstituencyElement):
+            if len(args) == 1 and isinstance(args[0], ConstituencyNode):
+                return self.does_constituency_match(element, args[0])
+            return False
+
+        # The type is unknown, return False.
+        return False
+
+
     def does_root_match(self, element: SynStruc.RootElement, word: Word, specified_root: Union[Word, None]) -> bool:
         # This matching function is trivial; it takes the candidate word and checks to see if the root specified (if any)
         # is the same word.  This primarily exists for consistency (all syn-struc element types can have a corresponding
@@ -122,14 +150,9 @@ class SynMatcher(object):
         for child in element.children:
             found = False
             for candidate_child in candidate_children:
-                if isinstance(child, SynStruc.ConstituencyElement) and isinstance(candidate_child, ConstituencyNode):
-                    if self.does_constituency_match(child, candidate_child):
-                        found = True
-                        break
-                if isinstance(child, SynStruc.TokenElement) and isinstance(candidate_child, Word):
-                    if self.does_token_match(child, candidate_child):
-                        found = True
-                        break
+                if self.does_element_match(child, candidate_child):
+                    found = True
+                    break
             if not found:
                 return False
 

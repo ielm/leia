@@ -5,6 +5,7 @@ from leia.ontosem.config import OntoSemConfig
 from leia.ontosem.syntax.results import ConstituencyNode, Dependency
 from leia.ontosem.syntax.synmapper import SynMatcher, SynMapper
 from leia.tests.LEIATestCase import LEIATestCase
+from unittest.mock import MagicMock
 
 
 class SynMapperTestCase(LEIATestCase):
@@ -18,6 +19,46 @@ class SynMatcherTestCase(LEIATestCase):
     def setUp(self):
         self.m = Memory("", "", "")
         self.matcher = SynMatcher(OntoSemConfig(), self.m.ontology, WMLexicon())
+
+    def test_does_element_match(self):
+        # This generic function checks to see if a syn-struc element and any syntax component are a match.
+        # If their core types are not compatible, the result is false.  Otherwise, the corresponding does_x_match
+        # function is called, and its result is returned.
+
+        # Incompatible types do not even call the correct function; they just return false.
+        self.matcher.does_root_match = MagicMock(return_value="a")
+        self.matcher.does_token_match = MagicMock(return_value="b")
+        self.matcher.does_dependency_match = MagicMock(return_value="c")
+        self.matcher.does_constituency_match = MagicMock(return_value="d")
+
+        self.assertFalse(self.matcher.does_element_match(SynStruc.RootElement(), None))
+        self.matcher.does_root_match.assert_not_called()
+
+        self.assertFalse(self.matcher.does_element_match(SynStruc.TokenElement(set(), None, dict(), None, False), None))
+        self.matcher.does_token_match.assert_not_called()
+
+        self.assertFalse(self.matcher.does_element_match(SynStruc.DependencyElement("", None, None, None, False), None))
+        self.matcher.does_dependency_match.assert_not_called()
+
+        self.assertFalse(self.matcher.does_element_match(SynStruc.ConstituencyElement("", [], None, False), None))
+        self.matcher.does_constituency_match.assert_not_called()
+
+        # Compatible types call the correct function and return its results.
+        args = [SynStruc.RootElement(), self.mockWord(0, "X", "N"), None]
+        self.assertEqual("a", self.matcher.does_element_match(*args))
+        self.matcher.does_root_match.assert_called_once_with(*args)
+
+        args = [SynStruc.TokenElement(set(), None, dict(), None, False), self.mockWord(0, "X", "N")]
+        self.assertEqual("b", self.matcher.does_element_match(*args))
+        self.matcher.does_token_match.assert_called_once_with(*args)
+
+        args = [SynStruc.DependencyElement("", None, None, None, False), Dependency(self.mockWord(1, "A", "N"), self.mockWord(2, "B", "N"), "Z"), self.mockWord(0, "X", "N")]
+        self.assertEqual("c", self.matcher.does_element_match(*args))
+        self.matcher.does_dependency_match.assert_called_once_with(*args)
+
+        args = [SynStruc.ConstituencyElement("", [], None, False), ConstituencyNode("NP"),]
+        self.assertEqual("d", self.matcher.does_element_match(*args))
+        self.matcher.does_constituency_match.assert_called_once_with(*args)
 
     def test_does_root_match(self):
         root = self.mockWord(0, "root", "N")
