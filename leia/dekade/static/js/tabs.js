@@ -110,14 +110,20 @@ class LEIAObjectTabsViewer extends LEIATabsViewer {
         if (select) {
             this.select(name);
         }
+
+        leiaObject.registerListener("onRefresh", this, this._onLEIAObjectRefresh.bind(this));
     }
 
     async _addContents(leiaObject) {
-        const contents = await leiaObject.html();
+        const contents = await leiaObject.render();
         contents.addClass("tab-contents-hidden");
         this.contentPanel.append(contents);
 
         return contents;
+    }
+
+    _onLEIAObjectRefresh(leiaObject, event) {
+
     }
 
 }

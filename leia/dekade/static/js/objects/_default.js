@@ -7,6 +7,7 @@ export class LEIAObject {
         // Override to include local fields
         // this.myfield = myfield;
         this.rendered = undefined;
+        this.listeners = [];
     }
 
     prepareData() {
@@ -37,16 +38,36 @@ export class LEIAObject {
     }
 
     async html() {
+        // Acquires the template and renders it with the local data.
+
+        const template = await templates.getTemplate(this.templateName());
+        const rendered = $(`<div class="leia-object">${template(this.prepareData())}</div>`);
+
+        return rendered;
+    }
+
+    async render() {
         // Acquires the template, renders it with the local data, activates listeners on the element, and returns
         // the rendered element (for use by the calling method).
 
-        const template = await templates.getTemplate(this.templateName());
-        const rendered = $(template(this.prepareData()));
-        this.rendered = rendered;
+        this.rendered = await this.html();
+        this.activateListeners(this.rendered);
 
-        this.activateListeners(rendered);
+        return this.rendered;
+    }
 
-        return rendered;
+    registerListener(type, listener, callback) {
+        this.listeners.push({
+            type: type,
+            listener: listener,
+            callback: callback
+        });
+    }
+
+    dispatchEvent(event) {
+        for (var listener of this.listeners.filter(x => x.type == event.type)) {
+            listener.callback(this, event);
+        }
     }
 
 }

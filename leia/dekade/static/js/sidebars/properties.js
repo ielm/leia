@@ -48,7 +48,7 @@ async function _onPropertySidebarFilterKeyup(event) {
     }
 
     const resultsElement = new PropertiesSidebarResults(results);
-    container.append(await resultsElement.html());
+    container.append(await resultsElement.render());
 
     treeview.addClass("hidden");
     container.removeClass("hidden");
@@ -73,4 +73,4 @@ export class PropertiesSidebarResults extends LEIAObject {
 }
 
 
-$(".properties-sidebar-tree-viewer-container").append(await new PropertiesTree().html());
+$(".properties-sidebar-tree-viewer-container").append(await new PropertiesTree().render());

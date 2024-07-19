@@ -20,6 +20,10 @@ div.ontology-sidebar-tree-viewer-container {
     background-color: var(--results-color-tier-1);
 }
 
+div.ontology-sidebar-tree-viewer-container > div.leia-object {
+    height: 100%;
+}
+
 div.ontology-sidebar-search-results {
     height: calc(100% - var(--fixed-ontology-sidebar-header-height));
     overflow-y: auto;

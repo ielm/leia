@@ -24,6 +24,10 @@ div.properties-sidebar-tree-viewer-container {
     background-color: var(--results-color-tier-1);
 }
 
+div.properties-sidebar-tree-viewer-container > div.leia-object {
+    height: 100%;
+}
+
 div.properties-sidebar-search-results {
     height: calc(100% - var(--fixed-properties-sidebar-header-height));
     overflow-y: auto;

@@ -42,7 +42,7 @@ export class Analysis extends LEIAObject {
     }
 
     async showContent(content) {
-        const rendered = await content.html();
+        const rendered = await content.render();
 
         this.rendered.find("div.analysis-content").empty();
         this.rendered.find("div.analysis-content").append(rendered);

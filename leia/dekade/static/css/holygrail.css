@@ -80,6 +80,10 @@ body {
     );
 }
 
+.page-main-content > div.leia-object {
+    height: 100%;
+}
+
 .page-footer {
     grid-column: 1/-1;
     background: var(--ribbon-color-tier-1);

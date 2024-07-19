@@ -63,7 +63,7 @@ async function _onOntologySidebarFilterKeyup(event) {
     }
 
     const resultsElement = new OntologySidebarResults(results);
-    container.append(await resultsElement.html());
+    container.append(await resultsElement.render());
 
     treeview.addClass("hidden");
     container.removeClass("hidden");
@@ -88,4 +88,4 @@ export class OntologySidebarResults extends LEIAObject {
 }
 
 
-$(".ontology-sidebar-tree-viewer-container").append(await new OntologyTree().html());
+$(".ontology-sidebar-tree-viewer-container").append(await new OntologyTree().render());

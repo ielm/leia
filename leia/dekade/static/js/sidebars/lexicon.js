@@ -43,7 +43,7 @@ async function _onLexiconSidebarFilterKeyup(event) {
     }
 
     const resultsElement = new LexiconSidebarResults(results);
-    container.append(await resultsElement.html());
+    container.append(await resultsElement.render());
 }
 
 

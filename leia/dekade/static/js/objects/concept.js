@@ -64,6 +64,20 @@ export class Concept extends LEIAObject {
         });
     }
 
+    async refresh() {
+        const concept = this.name();
+        const loaded = await API.apiKnowledgeOntologyConcept(concept);
+        this.content = loaded.content;
+
+        const rendered = await loaded.html();
+        this.rendered.empty();
+        this.rendered.append(rendered.children());
+        this.activateListeners(this.rendered);
+
+        const event = new CustomEvent("onRefresh", {});
+        this.dispatchEvent(event);
+    }
+
     _onAddLocalButtonClicked(event) {
         console.log("TODO: add a local row to " + this.name());
     }
@@ -85,7 +99,10 @@ export class Concept extends LEIAObject {
         const filler = $(event.currentTarget).data("filler");
         const type = $(event.currentTarget).data("type");
 
-        console.log(await API.apiKnowledgeOntologyWriteBlockFiller(concept, property, facet, filler, type));
+        const response = await API.apiKnowledgeOntologyWriteBlockFiller(concept, property, facet, filler, type);
+        if (response == "OK") {
+            await this.refresh();
+        }
     }
 
     _onUnblockBlockButtonClicked(event) {
