@@ -2,7 +2,7 @@ from ontomem.memory import Memory
 from ontosem.analysis import Analysis
 from ontosem.config import OntoSemConfig
 from ontosem.semantics.extended import BasicSemanticsMPProcessor
-from ontosem.semantics.tmr import TMR, TMRFrame
+from ontosem.semantics.tmr import TMR, TMRInstance
 from unittest import TestCase
 from unittest.mock import MagicMock, patch
 
@@ -52,7 +52,7 @@ class BasicSemanticsMPProcessorTestCase(TestCase):
 
         analyzer._lisp_to_frame(tmr, lisp)
 
-        instance: TMRFrame = tmr.instances["@TMR.HUMAN.1"]
+        instance: TMRInstance = tmr.instances["@TMR.HUMAN.1"]
         self.assertEqual(config.memory().ontology.concept("HUMAN"), instance.concept)
         self.assertEqual(1, instance.index)
         self.assertEqual(["MALE"], instance.values("GENDER"))

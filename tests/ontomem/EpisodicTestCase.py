@@ -1,5 +1,5 @@
 from ontomem.ontology import Concept
-from ontomem.episodic import EpisodicMemory, Filler, Frame, Space, XMR
+from ontomem.episodic import EpisodicMemory, Filler, Instance, Space, XMR
 from ontomem.memory import Memory
 from unittest import TestCase
 from unittest.mock import MagicMock, patch
@@ -144,7 +144,7 @@ class XMRTestCase(TestCase):
         self.assertEqual(event1, xmr.root())
 
 
-class FrameTestCase(TestCase):
+class InstanceTestCase(TestCase):
 
     def setUp(self):
         self.m = Memory("", "", "")
@@ -153,7 +153,7 @@ class FrameTestCase(TestCase):
     def test_fillers(self, mock_time: MagicMock):
 
         c = Concept(self.m, "C1")
-        f = Frame(self.m, c, 1)
+        f = Instance(self.m, c, 1)
 
         self.assertEqual([], f.fillers("S1"))
         self.assertEqual([], f.fillers("S2"))
@@ -185,7 +185,7 @@ class FrameTestCase(TestCase):
     def test_values(self):
 
         c = Concept(self.m, "C1")
-        f = Frame(self.m, c, 1)
+        f = Instance(self.m, c, 1)
 
         self.assertEqual([], f.values("S1"))
         self.assertEqual([], f.values("S2"))
@@ -214,7 +214,7 @@ class FrameTestCase(TestCase):
     def test_remove_filler(self):
 
         c = Concept(self.m, "C1")
-        frame = Frame(self.m, c, 1)
+        frame = Instance(self.m, c, 1)
 
         frame.remove_filler("AGENT", "a")   # Nothing happens (no errors are thrown)
 

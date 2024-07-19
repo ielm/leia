@@ -1,4 +1,4 @@
-from ontomem.episodic import Frame
+from ontomem.episodic import Instance
 from ontomem.properties import Property
 from ontosem.config import OntoSemConfig
 from ontosem.semantics.candidate import Candidate, Constraint, Score

@@ -1,7 +1,7 @@
-from ontomem.episodic import Frame
+from ontomem.episodic import Instance
 from ontomem.lexicon import SemStruc
 from ontomem.memory import Memory
-from ontosem.semantics.tmr import TMR, TMRFrame
+from ontosem.semantics.tmr import TMR, TMRInstance
 from ontosem.syntax.results import SenseMap, Word
 from typing import List, Set, Union
 
@@ -55,19 +55,19 @@ class Candidate(object):
 
         return resolution
 
-    def bind(self, word: Union[int, Word], element: Union[SemStruc.Head, SemStruc.Sub, SemStruc.RefSem, SemStruc.Variable, SemStruc.Property], frame: TMRFrame) -> str:
+    def bind(self, word: Union[int, Word], element: Union[SemStruc.Head, SemStruc.Sub, SemStruc.RefSem, SemStruc.Variable, SemStruc.Property], frame: TMRInstance) -> str:
         resolution = self._element_resolution_name(word, element)
         self._frame_resolutions[resolution] = frame
         return resolution
 
-    def resolve(self, word: Union[int, Word], element: Union[SemStruc.Head, SemStruc.Sub, SemStruc.RefSem, SemStruc.Variable, SemStruc.Property]) -> Union[TMRFrame, None]:
+    def resolve(self, word: Union[int, Word], element: Union[SemStruc.Head, SemStruc.Sub, SemStruc.RefSem, SemStruc.Variable, SemStruc.Property]) -> Union[TMRInstance, None]:
         resolution = self._element_resolution_name(word, element)
         if resolution in self._frame_resolutions:
             return self._frame_resolutions[resolution]
 
         return None
 
-    def add_constraint(self, frame: TMRFrame, concept: Union[str, List[str], Set[str]], sense_map: SenseMap) -> 'Constraint':
+    def add_constraint(self, frame: TMRInstance, concept: Union[str, List[str], Set[str]], sense_map: SenseMap) -> 'Constraint':
         self._constraint_index += 1
         c = Constraint(self._constraint_index, frame, concept, sense_map)
         self.constraints.append(c)
@@ -95,7 +95,7 @@ class Candidate(object):
 
 class Constraint(object):
 
-    def __init__(self, index: int, frame: TMRFrame, concepts: Union[str, List[str], Set[str]], sense_map: SenseMap):
+    def __init__(self, index: int, frame: TMRInstance, concepts: Union[str, List[str], Set[str]], sense_map: SenseMap):
         if isinstance(concepts, str):
             concepts = {concepts}
 
@@ -171,7 +171,7 @@ class SenseMapPreferenceScore(Score):
 
 class RelationRangeScore(Score):
 
-    def __init__(self, score: float, frame: TMRFrame, property, filler: TMRFrame):
+    def __init__(self, score: float, frame: TMRInstance, property, filler: TMRInstance):
         super().__init__(score)
         self.frame = frame
         self.property = property

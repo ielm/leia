@@ -2,7 +2,7 @@ from ontomem.lexicon import Lexicon, SemStruc
 from ontomem.ontology import Ontology
 from ontosem.config import OntoSemConfig
 from ontosem.semantics.candidate import Candidate
-from ontosem.semantics.tmr import TMRFrame
+from ontosem.semantics.tmr import TMRInstance
 from ontosem.syntax.results import SenseMap, SynMap, Syntax, Word
 from typing import Iterable, Union
 
@@ -49,7 +49,7 @@ class SemanticCompiler(object):
         # Build MP frames for each MP in each sense in the syn-mapping.
         self.build_mp_frames(candidate)
 
-    def generate_frames(self, candidate: Candidate) -> Iterable[TMRFrame]:
+    def generate_frames(self, candidate: Candidate) -> Iterable[TMRInstance]:
         # Generates all frames needed for the TMR - the heads of the senses, and all refsems.
         # Each is bound in the candidate's index.
 
@@ -130,7 +130,7 @@ class SemanticCompiler(object):
                 if isinstance(element, SemStruc.Head) or isinstance(element, SemStruc.RefSem):
                     self.populate_syntactic_properties(frame, sense_map, element, candidate)
 
-    def populate_semantic_properties(self, frame: TMRFrame, sense_map: SenseMap, element: Union[SemStruc.Head, SemStruc.Sub, SemStruc.RefSem, SemStruc.Variable], candidate: Candidate):
+    def populate_semantic_properties(self, frame: TMRInstance, sense_map: SenseMap, element: Union[SemStruc.Head, SemStruc.Sub, SemStruc.RefSem, SemStruc.Variable], candidate: Candidate):
         # First, if the element is a refsem, use its head
         if isinstance(element, SemStruc.RefSem):
             element = element.semstruc.head()
@@ -277,7 +277,7 @@ class SemanticCompiler(object):
 
         return results
 
-    def populate_syntactic_properties(self, frame: TMRFrame, sense_map: SenseMap, element: Union[SemStruc.Head, SemStruc.RefSem], candidate: Candidate):
+    def populate_syntactic_properties(self, frame: TMRInstance, sense_map: SenseMap, element: Union[SemStruc.Head, SemStruc.RefSem], candidate: Candidate):
         word = sense_map.word
 
         # If the frame is an event, and the head word is a past tense verb...

@@ -5,7 +5,7 @@ from ontomem.properties import Property
 from ontosem.config import OntoSemConfig
 from ontosem.semantics.candidate import Candidate, Constraint
 from ontosem.semantics.compiler import SemanticCompiler
-from ontosem.semantics.tmr import TMRFrame
+from ontosem.semantics.tmr import TMRInstance
 from ontosem.syntax.results import SenseMap, SynMap, Syntax, Word
 from tests.LEIATestCase import LEIATestCase
 from unittest.mock import call, MagicMock
@@ -174,9 +174,9 @@ class SemanticCompilerTestCase(LEIATestCase):
         # All variables mentioned in each sense mapping in the candidate's synmap should be resolved
         # to the existing frames.  If a variable is bound to a frame that does not exist, skip it.
 
-        f0 = TMRFrame(self.m, "TEST", 1)
-        f1 = TMRFrame(self.m, "TEST", 2)
-        f7 = TMRFrame(self.m, "TEST", 3)
+        f0 = TMRInstance(self.m, "TEST", 1)
+        f1 = TMRInstance(self.m, "TEST", 2)
+        f7 = TMRInstance(self.m, "TEST", 3)
 
         sm1 = SenseMap(Word.basic(0), "TEST-T1", {"$VAR3": 0, "$VAR1": 1}, 0.5)
         sm2 = SenseMap(Word.basic(1), "TEST-T2", {"$VAR3": 1, "$VAR2": 7}, 0.5)
@@ -229,10 +229,10 @@ class SemanticCompilerTestCase(LEIATestCase):
         sm1 = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
         sm2 = SenseMap(Word.basic(1), "TEST-T2", {"$VAR1": None}, 0.5)
 
-        f1 = TMRFrame(self.m, "TEST", 1)
-        f2 = TMRFrame(self.m, "TEST", 2)
-        f3 = TMRFrame(self.m, "TEST", 3)
-        f4 = TMRFrame(self.m, "TEST", 4)
+        f1 = TMRInstance(self.m, "TEST", 1)
+        f2 = TMRInstance(self.m, "TEST", 2)
+        f3 = TMRInstance(self.m, "TEST", 3)
+        f4 = TMRInstance(self.m, "TEST", 4)
 
         candidate = Candidate(self.m, sm1, sm2)
         candidate.bind(0, SemStruc.Head(), f1)
@@ -268,7 +268,7 @@ class SemanticCompilerTestCase(LEIATestCase):
 
     def test_populate_semantic_properties(self):
         candidate = Candidate(self.m)
-        frame = TMRFrame(self.m, "TEST", 1)
+        frame = TMRInstance(self.m, "TEST", 1)
         sense_map = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
         element = SemStruc.Head("TEST", {
             "AGENT": "HUMAN",
@@ -294,7 +294,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         # If the element itself is a refsem, the inner head needs to be extracted and used
 
         candidate = Candidate(self.m)
-        frame = TMRFrame(self.m, "TEST", 1)
+        frame = TMRInstance(self.m, "TEST", 1)
         sense_map = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
         element = SemStruc.RefSem(1, SemStruc({
             "HEAD": {
@@ -320,14 +320,14 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         candidate = Candidate(self.m)
 
-        frame = TMRFrame(self.m, "TEST", 1)
+        frame = TMRInstance(self.m, "TEST", 1)
         sense_map = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
         element = SemStruc.Head("TEST", {
             "AGENT": "REFSEM1",
         })
 
-        f1 = TMRFrame(self.m, "REF", 1)
-        f2 = TMRFrame(self.m, "REF", 2)
+        f1 = TMRInstance(self.m, "REF", 1)
+        f2 = TMRInstance(self.m, "REF", 2)
 
         candidate.bind(0, SemStruc.RefSem(1), f1)   # This is REFSEM1 in word 1 (the word that is currently being populated)
         candidate.bind(1, SemStruc.RefSem(1), f2)   # This is REFSEM1 in word 2 (this should be ignored; it is not the correct binding)
@@ -344,14 +344,14 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         candidate = Candidate(self.m)
 
-        frame = TMRFrame(self.m, "TEST", 1)
+        frame = TMRInstance(self.m, "TEST", 1)
         sense_map = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
         element = SemStruc.Head("TEST", {
             "AGENT": "REFSEM1.THEME",
         })
 
-        f1 = TMRFrame(self.m, "REF", 1)
-        f2 = TMRFrame(self.m, "REF", 2)
+        f1 = TMRInstance(self.m, "REF", 1)
+        f2 = TMRInstance(self.m, "REF", 2)
 
         candidate.bind(0, SemStruc.RefSem(1), f1)  # This is REFSEM1 in word 1 (the word that is currently being populated)
         candidate.bind(1, SemStruc.RefSem(1), f2)  # This is REFSEM1 in word 2 (this should be ignored; it is not the correct binding)
@@ -367,7 +367,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         # If the element itself is a variable, resolve it and then populate it
 
         candidate = Candidate(self.m)
-        frame = TMRFrame(self.m, "TEST", 1)
+        frame = TMRInstance(self.m, "TEST", 1)
         sense_map = SenseMap(Word.basic(0), "TEST-T1", {
             "$VAR1": 4,  # This variable points to word 4, and is the variable found in the semstruc
         }, 0.5)
@@ -396,7 +396,7 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         candidate = Candidate(self.m)
 
-        frame = TMRFrame(self.m, "TEST", 1)
+        frame = TMRInstance(self.m, "TEST", 1)
         sense_map = SenseMap(Word.basic(0), "TEST-T1", {
             "$VAR1": 4,     # This variable points to word 4, and is found in the semstruc
             "$VAR2": 5,     # This variable points to word 5, and is found in the semstruc
@@ -410,9 +410,9 @@ class SemanticCompilerTestCase(LEIATestCase):
             }
         })
 
-        f1 = TMRFrame(self.m, "HEAD", 1)
-        f2 = TMRFrame(self.m, "HEAD", 2)
-        f3 = TMRFrame(self.m, "HEAD", 3)
+        f1 = TMRInstance(self.m, "HEAD", 1)
+        f2 = TMRInstance(self.m, "HEAD", 2)
+        f3 = TMRInstance(self.m, "HEAD", 3)
 
         candidate.bind(0, SemStruc.Variable(1), f1) # This is the binding for VAR1 in word 0, pointing to the head frame for word 4
         candidate.bind(0, SemStruc.Variable(2), f2) # This is the binding for VAR2 in word 0, pointing to the head frame for word 5
@@ -432,7 +432,7 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         candidate = Candidate(self.m)
 
-        frame = TMRFrame(self.m, "TEST", 1)
+        frame = TMRInstance(self.m, "TEST", 1)
         sense_map = SenseMap(Word.basic(0), "TEST-T1", {
             "$VAR1": 4,     # This variable points to word 4, and is found in the semstruc
             "$VAR2": 5,     # This variable points to word 5, and is found in the semstruc
@@ -446,9 +446,9 @@ class SemanticCompilerTestCase(LEIATestCase):
             }
         })
 
-        f1 = TMRFrame(self.m, "HEAD", 1)
-        f2 = TMRFrame(self.m, "HEAD", 2)
-        f3 = TMRFrame(self.m, "HEAD", 3)
+        f1 = TMRInstance(self.m, "HEAD", 1)
+        f2 = TMRInstance(self.m, "HEAD", 2)
+        f3 = TMRInstance(self.m, "HEAD", 3)
 
         candidate.bind(0, SemStruc.Variable(1), f1) # This is the binding for VAR1 in word 0, pointing to the head frame for word 4
         candidate.bind(0, SemStruc.Variable(2), f2) # This is the binding for VAR2 in word 0, pointing to the head frame for word 5
@@ -468,7 +468,7 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         candidate = Candidate(self.m)
 
-        frame = TMRFrame(self.m, "TEST", 1)
+        frame = TMRInstance(self.m, "TEST", 1)
         sense_map = SenseMap(Word.basic(0), "TEST-T1", {
             "$VAR1": 4,  # This variable points to word 4, and is found in the semstruc
             "$VAR2": 5,  # This variable points to word 5, and is found in the semstruc
@@ -484,9 +484,9 @@ class SemanticCompilerTestCase(LEIATestCase):
             }
         })
 
-        f1 = TMRFrame(self.m, "HEAD", 1)
-        f2 = TMRFrame(self.m, "HEAD", 2)
-        f3 = TMRFrame(self.m, "HEAD", 3)
+        f1 = TMRInstance(self.m, "HEAD", 1)
+        f2 = TMRInstance(self.m, "HEAD", 2)
+        f3 = TMRInstance(self.m, "HEAD", 3)
 
         candidate.bind(0, SemStruc.Variable(1), f1)  # This is the binding for VAR1 in word 0, pointing to the head frame for word 4
         candidate.bind(0, SemStruc.Variable(2), f2)  # This is the binding for VAR2 in word 0, pointing to the head frame for word 5
@@ -504,7 +504,7 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         candidate = Candidate(self.m)
 
-        frame = TMRFrame(self.m, "TEST", 1)
+        frame = TMRInstance(self.m, "TEST", 1)
         sense_map = SenseMap(Word.basic(0), "TEST-T1", {
             "$VAR1": 4,     # This variable points to word 4
         }, 0.5)
@@ -516,7 +516,7 @@ class SemanticCompilerTestCase(LEIATestCase):
             },
         })
 
-        f1 = TMRFrame(self.m, "HEAD", 1)
+        f1 = TMRInstance(self.m, "HEAD", 1)
 
         candidate.bind(0, SemStruc.Variable(1), f1) # This is the binding for VAR1 in word 0, pointing to the head frame for word 4
 
@@ -530,7 +530,7 @@ class SemanticCompilerTestCase(LEIATestCase):
 
     def test_populate_semantic_properties_as_variable_with_lexical_constraint(self):
         candidate = Candidate(self.m)
-        frame = TMRFrame(self.m, "TEST", 1)
+        frame = TMRInstance(self.m, "TEST", 1)
         sense_map = SenseMap(Word.basic(0), "TEST-T1", {
             "$VAR1": 4,  # This variable points to word 4, and is the variable found in the semstruc
         }, 0.5)
@@ -554,7 +554,7 @@ class SemanticCompilerTestCase(LEIATestCase):
 
     def test_populate_semantic_properties_as_set_with_lexical_constraint(self):
         candidate = Candidate(self.m)
-        frame = TMRFrame(self.m, "TEST", 1)
+        frame = TMRInstance(self.m, "TEST", 1)
         sense_map = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
 
         element = SemStruc.Head("SET", {
@@ -577,8 +577,8 @@ class SemanticCompilerTestCase(LEIATestCase):
         # is responsible for adding it.
 
         candidate = Candidate(self.m)
-        frame1 = TMRFrame(self.m, "TEST", 1)
-        frame2 = TMRFrame(self.m, "TEST", 2)
+        frame1 = TMRInstance(self.m, "TEST", 1)
+        frame2 = TMRInstance(self.m, "TEST", 2)
         candidate.bind(Word.basic(0), SemStruc.Head(), frame1)
 
         sense_map = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
@@ -599,8 +599,8 @@ class SemanticCompilerTestCase(LEIATestCase):
         lexicon.word("TEST").add_sense(self.mockSense("TEST-T1", semstruc={"REFSEM1": {}}))
 
         candidate = Candidate(self.m)
-        frame1 = TMRFrame(self.m, "TEST", 1)
-        frame2 = TMRFrame(self.m, "TEST", 2)
+        frame1 = TMRInstance(self.m, "TEST", 1)
+        frame2 = TMRInstance(self.m, "TEST", 2)
         candidate.bind(Word.basic(0), SemStruc.RefSem(1), frame1)
 
         sense_map = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
@@ -618,8 +618,8 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         # If no elements can be used at all, a "+" is retained
         candidate = Candidate(self.m)
-        frame1 = TMRFrame(self.m, "TEST", 1)
-        frame2 = TMRFrame(self.m, "TEST", 2)
+        frame1 = TMRInstance(self.m, "TEST", 1)
+        frame2 = TMRInstance(self.m, "TEST", 2)
 
         sense_map = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
 
@@ -656,9 +656,9 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         semstruc = [">", ["VALUE", "^$VAR1"], ["XYZ", ["VALUE", "^$VAR2"]], ["NOSUCH", "$VAR4"]]
 
-        f1 = TMRFrame(self.m, "HEAD", 1)
-        f2 = TMRFrame(self.m, "HEAD", 2)
-        f3 = TMRFrame(self.m, "HEAD", 3)
+        f1 = TMRInstance(self.m, "HEAD", 1)
+        f2 = TMRInstance(self.m, "HEAD", 2)
+        f3 = TMRInstance(self.m, "HEAD", 3)
 
         candidate.bind(0, SemStruc.Variable(1), f1)  # This is the binding for VAR1 in word 0, pointing to the head frame for word 4
         candidate.bind(0, SemStruc.Variable(2), f2)  # This is the binding for VAR2 in word 0, pointing to the head frame for word 5
@@ -680,8 +680,8 @@ class SemanticCompilerTestCase(LEIATestCase):
         sense_map = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
         semstruc = [">", ["VALUE", "REFSEM1"], ["XYZ", ["VALUE", "REFSEM2"]], ["NOSUCH", "REFSEM3"]]
 
-        f1 = TMRFrame(self.m, "REF", 1)
-        f2 = TMRFrame(self.m, "REF", 2)
+        f1 = TMRInstance(self.m, "REF", 1)
+        f2 = TMRInstance(self.m, "REF", 2)
 
         candidate.bind(0, SemStruc.RefSem(1), f1)  # This is REFSEM1 in word 1
         candidate.bind(0, SemStruc.RefSem(2), f2)  # This is REFSEM2 in word 1
@@ -707,7 +707,7 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         # Build the candidate and frame; mock a semstruc element head
         candidate = Candidate(self.m)
-        frame = TMRFrame(self.m, "TEST", 1)
+        frame = TMRInstance(self.m, "TEST", 1)
         element = SemStruc.Head()
 
         # Run the populate method
@@ -738,7 +738,7 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         # Build the candidate and frame; mock a semstruc element head
         candidate = Candidate(self.m)
-        frame = TMRFrame(self.m, "TEST", 1)
+        frame = TMRInstance(self.m, "TEST", 1)
         element = SemStruc.Head()
 
         # Run the populate method
@@ -769,7 +769,7 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         # Build the candidate and frame; mock a semstruc element head
         candidate = Candidate(self.m)
-        frame = TMRFrame(self.m, "TEST", 1)
+        frame = TMRInstance(self.m, "TEST", 1)
         element = SemStruc.Head()
 
         # Run the populate method
@@ -802,7 +802,7 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         # Build the candidate and frame; mock a semstruc element head
         candidate = Candidate(self.m)
-        frame = TMRFrame(self.m, "TEST", 1)
+        frame = TMRInstance(self.m, "TEST", 1)
         element = SemStruc.Head()
 
         # Run the populate method

@@ -1,4 +1,4 @@
-from ontomem.episodic import Frame, XMR
+from ontomem.episodic import Instance, XMR
 from ontomem.memory import Memory
 from ontomem.ontology import Concept
 from typing import Type, Union
@@ -6,11 +6,11 @@ from typing import Type, Union
 
 class TMR(XMR):
 
-    def new_instance(self, concept: Union[str, Concept], frame_type: Type['Frame']=None) -> 'Frame':
-        return super().new_instance(concept, frame_type=TMRFrame)
+    def new_instance(self, concept: Union[str, Concept], frame_type: Type['Instance']=None) -> 'Instance':
+        return super().new_instance(concept, instance_type=TMRInstance)
 
 
-class TMRFrame(Frame):
+class TMRInstance(Instance):
 
     def __init__(self, memory: Memory, concept: Union[str, Concept], index: int, grounded: bool=False):
         super().__init__(memory, concept, index)

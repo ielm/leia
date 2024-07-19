@@ -1,7 +1,7 @@
 from ontosem.analysis import Analysis
 from ontosem.config import OntoSemConfig
 from ontosem.semantics.candidate import Score
-from ontosem.semantics.tmr import TMR, TMRFrame
+from ontosem.semantics.tmr import TMR, TMRInstance
 from ontosem.syntax.results import LispParser
 from typing import Dict, List, Tuple
 
@@ -75,14 +75,14 @@ class BasicSemanticsMPProcessor(object):
 
         return results
 
-    def _lisp_to_frame(self, tmr: TMR, input: list) -> TMRFrame:
+    def _lisp_to_frame(self, tmr: TMR, input: list) -> TMRInstance:
 
         # First, parse the id and related components, make the frame, and register it with the TMR
         fid = LispParser.list_key_to_value(input, "ID")[1]
         concept = LispParser.list_key_to_value(input, "CONCEPT")[1]
         instance = int(LispParser.list_key_to_value(input, "INSTANCE")[1])
 
-        frame = TMRFrame(tmr.memory, concept, instance)
+        frame = TMRInstance(tmr.memory, concept, instance)
         tmr.instances[fid] = frame
 
         # Now parse the properties

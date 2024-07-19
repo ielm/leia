@@ -1,4 +1,4 @@
-from ontomem.episodic import Frame
+from ontomem.episodic import Instance
 from ontosem.config import OntoSemConfig
 from ontosem.semantics.candidate import Candidate
 from ontosem.syntax.results import Syntax

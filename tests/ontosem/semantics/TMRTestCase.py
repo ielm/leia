@@ -6,6 +6,6 @@ class TMRTestCase(TestCase):
     pass
 
 
-class TMRFrameTestCase(TestCase):
+class TMRInstanceTestCase(TestCase):
 
     pass

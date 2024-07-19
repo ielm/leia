@@ -10,7 +10,7 @@ class EpisodicMemory(object):
 
     def __init__(self, memory: Memory):
         self.memory = memory
-        self._instances: Dict[str, Frame] = {}
+        self._instances: Dict[str, Instance] = {}
         self._spaces: Dict[str, Space] = {}
         self._xmrs: Dict[str, XMR] = {}
 
@@ -25,24 +25,24 @@ class EpisodicMemory(object):
 
         self._instance_nums_by_concept = {}
 
-    def instance(self, id: str) -> Union['Frame', None]:
+    def instance(self, id: str) -> Union['Instance', None]:
         if id in self._instances:
             return self._instances[id]
         return None
 
-    def instances_of(self, concept: Concept, include_descendants: bool=False) -> Iterable['Frame']:
+    def instances_of(self, concept: Concept, include_descendants: bool=False) -> Iterable['Instance']:
         raise NotImplementedError
 
-    def new_instance(self, concept: Union[str, Concept], frame_type: Type['Frame']=None) -> 'Frame':
-        if frame_type is None:
-            frame_type = Frame
+    def new_instance(self, concept: Union[str, Concept], instance_type: Type['Instance']=None) -> 'Instance':
+        if instance_type is None:
+            instance_type = Instance
 
         index = self._next_instance_for_concept(concept)
-        instance = frame_type(self.memory, concept, index)
+        instance = instance_type(self.memory, concept, index)
         self._instances[instance.id()] = instance
         return instance
 
-    def remove_instance(self, instance: 'Frame'):
+    def remove_instance(self, instance: 'Instance'):
         if instance.id() in self._instances:
             del self._instances[instance.id()]
 
@@ -78,15 +78,15 @@ class Space(object):        # Examples: WM, LTE, ???, etc.
     def __init__(self, memory: Memory, name: str):
         self.memory = memory
         self.name = name
-        self.instances: Dict[str, Frame] = {}
+        self.instances: Dict[str, Instance] = {}
 
-    def new_instance(self, concept: Union[str, Concept], frame_type: Type['Frame']=None) -> 'Frame':
+    def new_instance(self, concept: Union[str, Concept], instance_type: Type['Instance']=None) -> 'Instance':
         # Calls memory's new_instance method, and then adds the instance to this space
-        instance = self.memory.episodic.new_instance(concept, frame_type=frame_type)
+        instance = self.memory.episodic.new_instance(concept, instance_type=instance_type)
         self.instances[instance.id()] = instance
         return instance
 
-    def remove_instance(self, instance: 'Frame'):
+    def remove_instance(self, instance: 'Instance'):
         # Removes the instance from this space (but does not remove it from memory)
         if instance.id() in self.instances:
             del self.instances[instance.id()]
@@ -105,7 +105,7 @@ class XMR(Space):
         self.raw = raw
         self.timestmap = timestamp if timestamp is not None else time.time()
 
-    def root(self) -> Union['Frame', None]:
+    def root(self) -> Union['Instance', None]:
         # Finds the current root of the XMR.
         # The root is the frame that has the least incoming and most outgoing relations.
         # EVENTs take priority over OBJECTs, who take priority over PROPERTYs (that is, a less good matching EVENT
@@ -140,7 +140,7 @@ class XMR(Space):
         for frame in self.instances.values():
             for property in frame.properties.keys():
                 for filler in frame.values(property):
-                    if isinstance(filler, Frame):
+                    if isinstance(filler, Instance):
                         root_scoring[frame.id()]["outgoing"] += 1
                         root_scoring[filler.id()]["incoming"] += 1
 
@@ -175,7 +175,7 @@ class XMR(Space):
         }
 
 
-class Frame(object):        # TODO: RENAME TO Instance
+class Instance(object):
 
     def __init__(self, memory: Memory, concept: Union[str, Concept], index: int):
         self.memory = memory
@@ -186,14 +186,14 @@ class Frame(object):        # TODO: RENAME TO Instance
     def id(self) -> str:
         return "%s.%d" % (self.concept.name, self.index)
 
-    def add_filler(self, slot: str, filler: 'Filler.VALUE', timestamp: float=None) -> 'Frame':
+    def add_filler(self, slot: str, filler: 'Filler.VALUE', timestamp: float=None) -> 'Instance':
         if slot not in self.properties:
             self.properties[slot] = []
 
         self.properties[slot].append(Filler(filler, timestamp=timestamp))
         return self
 
-    def remove_filler(self, slot: str, filler: 'Filler.VALUE') -> 'Frame':
+    def remove_filler(self, slot: str, filler: 'Filler.VALUE') -> 'Instance':
         if slot not in self.properties:
             return self
 

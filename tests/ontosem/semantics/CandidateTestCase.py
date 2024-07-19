@@ -1,7 +1,7 @@
 from ontomem.lexicon import SemStruc
 from ontomem.memory import Memory
 from ontosem.semantics.candidate import Candidate
-from ontosem.semantics.tmr import TMRFrame
+from ontosem.semantics.tmr import TMRInstance
 from ontosem.syntax.results import SenseMap, Word
 from unittest import TestCase
 
@@ -25,7 +25,7 @@ class CandidateTestCase(TestCase):
         self.assertEqual([sm1, sm2, sm4, sm3, sm5, sm0], candidate.words_by_binding_count())
 
     def test_bind_resolve_head(self):
-        f = TMRFrame(self.m, "TEST", 1)
+        f = TMRInstance(self.m, "TEST", 1)
         c = Candidate(self.m)
 
         r = c.bind(1, SemStruc.Head("TEST", {}), f)
@@ -33,7 +33,7 @@ class CandidateTestCase(TestCase):
         self.assertEqual(f, c.resolve(1, SemStruc.Head("TEST", {})))
 
     def test_bind_resolve_sub(self):
-        f = TMRFrame(self.m, "TEST", 1)
+        f = TMRInstance(self.m, "TEST", 1)
         c = Candidate(self.m)
 
         r = c.bind(1, SemStruc.Sub(2, "TEST", {}), f)
@@ -41,7 +41,7 @@ class CandidateTestCase(TestCase):
         self.assertEqual(f, c.resolve(1, SemStruc.Sub(2, "TEST", {})))
 
     def test_bind_resolve_refsem(self):
-        f = TMRFrame(self.m, "TEST", 1)
+        f = TMRInstance(self.m, "TEST", 1)
         c = Candidate(self.m)
 
         r = c.bind(1, SemStruc.RefSem(4, SemStruc({"rs": "test"})), f)
@@ -49,7 +49,7 @@ class CandidateTestCase(TestCase):
         self.assertEqual(f, c.resolve(1, SemStruc.RefSem(4, SemStruc({"rs": "test"}))))
 
     def test_bind_resolve_variable(self):
-        f = TMRFrame(self.m, "TEST", 1)
+        f = TMRInstance(self.m, "TEST", 1)
         c = Candidate(self.m)
 
         r = c.bind(1, SemStruc.Variable(7, {"v7": "test"}), f)
@@ -57,7 +57,7 @@ class CandidateTestCase(TestCase):
         self.assertEqual(f, c.resolve(1, SemStruc.Variable(7, {"v7": "test"})))
 
     def test_bind_resolve_property(self):
-        f = TMRFrame(self.m, "TEST", 1)
+        f = TMRInstance(self.m, "TEST", 1)
         c = Candidate(self.m)
 
         r = c.bind(1, SemStruc.Property(9, "AGENT", {"AGENT": 123}), f)
@@ -72,10 +72,10 @@ class CandidateTestCase(TestCase):
     def test_add_constraint(self):
         c = Candidate(self.m)
 
-        c1 = c.add_constraint(TMRFrame(self.m, "", 1), "", SenseMap(Word.basic(0), "", {}, 0.5))
+        c1 = c.add_constraint(TMRInstance(self.m, "", 1), "", SenseMap(Word.basic(0), "", {}, 0.5))
         self.assertEqual(1, c1.index)
 
-        c2 = c.add_constraint(TMRFrame(self.m, "", 1), "", SenseMap(Word.basic(0), "", {}, 0.5))
+        c2 = c.add_constraint(TMRInstance(self.m, "", 1), "", SenseMap(Word.basic(0), "", {}, 0.5))
         self.assertEqual(2, c2.index)
 
         self.assertIn(c1, c.constraints)
