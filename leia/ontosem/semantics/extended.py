@@ -83,7 +83,7 @@ class BasicSemanticsMPProcessor(object):
         instance = int(LispParser.list_key_to_value(input, "INSTANCE")[1])
 
         frame = TMRInstance(tmr.memory, concept, instance)
-        tmr.instances[fid] = frame
+        tmr.register_instance(frame)
 
         # Now parse the properties
         properties = LispParser.list_key_to_value(input, "PROPERTIES")[1]

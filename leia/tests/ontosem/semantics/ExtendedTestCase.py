@@ -52,7 +52,7 @@ class BasicSemanticsMPProcessorTestCase(TestCase):
 
         analyzer._lisp_to_frame(tmr, lisp)
 
-        instance: TMRInstance = tmr.instances["@TMR.HUMAN.1"]
+        instance: TMRInstance = tmr.instance("HUMAN.1")
         self.assertEqual(config.memory().ontology.concept("HUMAN"), instance.concept)
         self.assertEqual(1, instance.index)
         self.assertEqual(["MALE"], instance.values("GENDER"))

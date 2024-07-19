@@ -297,7 +297,7 @@ class SemanticCompiler(object):
         # Ignore frames that null-sem themselves.
 
         # Find all of the null-semmed frames
-        null_sem_frames = filter(lambda f: len(f.fillers("NULL-SEM")) > 0, candidate.basic_tmr.instances.values())
+        null_sem_frames = filter(lambda f: len(f.fillers("NULL-SEM")) > 0, candidate.basic_tmr.instances())
 
         # Now map each to the frame that null-semmed them; if there is none (or they null-semmed themselves), omit
         # them from the mapping.  If more than one valid frame null-semmed one, select the first.
@@ -312,7 +312,7 @@ class SemanticCompiler(object):
         # Now find each usage of one of the null-semmed frames, and replace it with the responsible frame.
         # Any frames that were null-semmed by themselves only will not be replaced here, but the relations to them
         # will be removed when the null-sems are removed.
-        for frame in candidate.basic_tmr.instances.values():
+        for frame in candidate.basic_tmr.instances():
             for k, v in list(frame.properties.items()):
                 for filler in map(lambda x: x.value, v):
                     if not isinstance(filler, str) or filler not in null_sem_replacements.keys():
@@ -323,21 +323,21 @@ class SemanticCompiler(object):
 
     def remove_null_sems(self, candidate: Candidate):
         # Any frame marked with NULL-SEM + is removed.
-        for frame in list(candidate.basic_tmr.instances.values()):
+        for frame in list(candidate.basic_tmr.instances()):
             if len(frame.fillers("NULL-SEM")) > 0:
                 candidate.basic_tmr.remove_instance(frame)
 
     def fix_inverses(self, candidate: Candidate):
         inverses = self.properties.inverses()
 
-        for frame in candidate.basic_tmr.instances.values():
+        for frame in candidate.basic_tmr.instances():
             for property in list(frame.properties.keys()):
                 if property not in inverses or property == "RELATION":
                     continue
                 for filler in frame.values(property):
-                    if filler not in candidate.basic_tmr.instances:
+                    if not candidate.basic_tmr.has_instance(filler):
                         continue
-                    filler_frame = candidate.basic_tmr.instances[filler]
+                    filler_frame = candidate.basic_tmr.instance(filler)
 
                     filler_frame.add_filler(inverses[property], frame.id())
                     frame.remove_filler(property, filler)

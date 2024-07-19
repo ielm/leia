@@ -855,9 +855,9 @@ class SemanticCompilerTestCase(LEIATestCase):
         analyzer = SemanticCompiler(OntoSemConfig())
         analyzer.remove_null_sems(candidate)
 
-        self.assertEqual(1, len(candidate.basic_tmr.instances))
-        self.assertIn(f1.id(), candidate.basic_tmr.instances)
-        self.assertNotIn(f2.id(), candidate.basic_tmr.instances)
+        self.assertEqual(1, len(candidate.basic_tmr.instances()))
+        self.assertIn(f1, candidate.basic_tmr.instances())
+        self.assertNotIn(f2, candidate.basic_tmr.instances())
 
     def test_fix_inverses(self):
         self.m.properties.add_property(Property(self.m, "RELATION", contents={"type": "relation"}))
@@ -929,12 +929,12 @@ class SemanticCompilerTestCase(LEIATestCase):
         analyzer = SemanticCompiler(OntoSemConfig(), lexicon=lexicon)
         analyzer.build_mp_frames(candidate)
 
-        self.assertEqual(8, len(candidate.basic_tmr.instances))
+        self.assertEqual(8, len(candidate.basic_tmr.instances()))
 
-        mp1frame = list(filter(lambda f: f.fillers("NAME") == ["TESTMP1"], candidate.basic_tmr.instances.values()))[0]
-        mp2frame = list(filter(lambda f: f.fillers("NAME") == ["TESTMP2"], candidate.basic_tmr.instances.values()))[0]
-        mp3frame = list(filter(lambda f: f.fillers("NAME") == ["TESTMP3"], candidate.basic_tmr.instances.values()))[0]
-        mp4frame = list(filter(lambda f: f.fillers("NAME") == ["TESTMP4"], candidate.basic_tmr.instances.values()))[0]
+        mp1frame = list(filter(lambda f: f.fillers("NAME") == ["TESTMP1"], candidate.basic_tmr.instances()))[0]
+        mp2frame = list(filter(lambda f: f.fillers("NAME") == ["TESTMP2"], candidate.basic_tmr.instances()))[0]
+        mp3frame = list(filter(lambda f: f.fillers("NAME") == ["TESTMP3"], candidate.basic_tmr.instances()))[0]
+        mp4frame = list(filter(lambda f: f.fillers("NAME") == ["TESTMP4"], candidate.basic_tmr.instances()))[0]
 
         self.assertEqual(["ABCD", "DEFG"], mp1frame.values("PARAMETERS"))
         self.assertEqual(["ABCD", f1.id()], mp2frame.values("PARAMETERS"))

@@ -107,7 +107,7 @@ class OntoAgentModuleTestCase(TestCase):
         import json
         from urllib.request import Request
 
-        expected_request = Request("http://localhost:1234/%s/signal" % m.name, data={"signal": xmr.name}, headers={"content-type": "application/json"})
+        expected_request = Request("http://localhost:1234/%s/signal" % m.name, data={"signal": xmr.name()}, headers={"content-type": "application/json"})
 
         self.assertEqual(expected_request.full_url, called_request.full_url)
         self.assertEqual(expected_request.data, json.loads(called_request.data))
@@ -204,7 +204,7 @@ class OntoAgentModuleBlueprintTestCase(TestCase):
     def test_signal(self):
         m = OntoAgentModule(self.a, "test")
         bp = m.blueprint()
-        xmr = XMR(self.a.memory)
+        xmr = self.a.memory.episodic.new_space(space_type=XMR)
 
         m.signal = MagicMock()
 
@@ -213,7 +213,7 @@ class OntoAgentModuleBlueprintTestCase(TestCase):
         app.register_blueprint(bp)
 
         import json
-        data = {"signal": xmr.name}
+        data = {"signal": xmr.name()}
         app.test_client().post("/signal", data=json.dumps(data), content_type="application/json")
 
         m.signal.assert_called_once_with(xmr)

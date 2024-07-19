@@ -7,29 +7,39 @@ from typing import Any, Dict, List, Type, Union
 import time
 
 
-class EpisodicMemory(object):
 
-    def __init__(self, memory: Memory):
+class Space(object):
+
+    def __init__(self, memory: Memory, name: str, private: bool=False):
         self.memory = memory
+        self._name = name
+        self._private = private
+
+        # Contents
         self._instances: Dict[str, Instance] = {}
         self._spaces: Dict[str, Space] = {}
-        self._xmrs: Dict[str, XMR] = {}
 
         # Bookkeeping
         self._instance_nums_by_concept: Dict[str, int] = {}
-        self._instance_nums_by_xmr: Dict[str, int] = {}
+        self._instance_nums_by_space: Dict[str, int] = {}
 
     def reset(self):
         self._instances = {}
         self._spaces = {}
-        self._xmrs = {}
 
         self._instance_nums_by_concept = {}
+        self._instance_nums_by_space = {}
 
     def instance(self, id: str) -> Union['Instance', None]:
         if id in self._instances:
             return self._instances[id]
         return None
+
+    def has_instance(self, id: str) -> bool:
+        return id in self._instances
+
+    def instances(self) -> List['Instance']:
+        return list(self._instances.values())
 
     def instances_of(self, concept: Concept, include_descendants: bool=False) -> List['Instance']:
         matches = {concept.name}
@@ -67,91 +77,44 @@ class EpisodicMemory(object):
         self._instance_nums_by_concept[concept] += 1
         return self._instance_nums_by_concept[concept]
 
-    def _next_id_for_xmr(self, xmr: 'XMR') -> str:
-        xmr_type = xmr.__class__.__name__
-        if xmr_type not in self._instance_nums_by_xmr:
-            self._instance_nums_by_xmr[xmr_type] = 0
+    def _next_id_for_space(self, space: Type['Space']) -> str:
+        space_type = space.__name__
+        if space_type not in self._instance_nums_by_space:
+            self._instance_nums_by_space[space_type] = 0
 
-        self._instance_nums_by_xmr[xmr_type] += 1
-        return "%s.%d" % (xmr_type, self._instance_nums_by_xmr[xmr_type])
+        self._instance_nums_by_space[space_type] += 1
+        return "%s.%d" % (space_type, self._instance_nums_by_space[space_type])
 
-    def space(self, name: str) -> 'Space':
-        if name not in self._spaces:
-            self._spaces[name] = Space(self.memory, name)
-        return self._spaces[name]
+    def space(self, name: str) -> Union['Space', None]:
+        if name in self._spaces:
+            return self._spaces[name]
+        return None
 
     def spaces(self, include_private: bool=False) -> List['Space']:
         if include_private:
             return list(self._spaces.values())
         return list(filter(lambda s: not s.is_private(), self._spaces.values()))
 
-    def register_space(self, space: 'Space'):
-        self._spaces[space.name] = space
+    def new_space(self, name: str=None, space_type: Type['Space']=None, private: bool=False) -> 'Space':
+        if space_type is None:
+            space_type = Space
 
+        if name is None:
+            name = self._next_id_for_space(space_type)
 
-class Space(object):        # Examples: WM, LTE, ???, etc.
+        space = space_type(self.memory, name, private=private)
+        self._spaces[name] = space
+        return space
 
-    def __init__(self, memory: Memory, name: str, private: bool=False):
-        self.memory = memory
-        self.name = name
-        self.instances: Dict[str, Instance] = {}
-        self._private = private
-        self._private_instance_index: Dict[str, int] = {}
-
-        self.memory.episodic.register_space(self)
+    def name(self) -> str:
+        return self._name
 
     def is_private(self) -> bool:
         return self._private
 
-    def go_public(self):
-        if not self.is_private():
-            return
-
-        self._private = False
-
-        instances = self.instances.values()
-        for i in instances:
-            i._private_to = None
-            i.index = self.memory.episodic._next_instance_for_concept(i.concept)
-            self.memory.episodic.register_instance(i)
-
-        self.instances = dict(map(lambda i: (i.id(), i), instances))
-
-    def _next_private_index(self, concept: Union[str, Concept]) -> int:
-        if isinstance(concept, Concept):
-            concept = concept.name
-
-        if concept not in self._private_instance_index:
-            self._private_instance_index[concept] = 0
-
-        self._private_instance_index[concept] += 1
-        return self._private_instance_index[concept]
-
-    def new_instance(self, concept: Union[str, Concept], instance_type: Type['Instance']=None) -> 'Instance':
-        if instance_type is None:
-            instance_type = Instance
-
-        # If the space is private, the instance should be as well; meaning its instance number will come from the space,
-        # and not from the main memory index.
-        if self.is_private():
-            index = self._next_private_index(concept)
-            instance = instance_type(self.memory, concept, index, private_to=self)
-            self.instances[instance.id()] = instance
-            return instance
-
-        # Otherwise, with a public space, calls memory's new_instance method, and then adds the instance to this space
-        instance = self.memory.episodic.new_instance(concept, instance_type=instance_type)
-        self.instances[instance.id()] = instance
-        return instance
-
-    def remove_instance(self, instance: 'Instance'):
-        # Removes the instance from this space (but does not remove it from memory)
-        if instance.id() in self.instances:
-            del self.instances[instance.id()]
-
     def __eq__(self, other):
         if isinstance(other, Space):
-            return self.instances == other.instances
+            return self._instances == other._instances
         return super().__eq__(other)
 
 
@@ -169,7 +132,7 @@ class XMR(Space):
         INTERRUPT = "INTERRUPT"
 
     def __init__(self, memory: Memory, name: str=None, private: bool=False, raw: Any=None, timestamp: float=None, status: Status=None, priority: Priority=None):
-        super().__init__(memory, name if name is not None else memory.episodic._next_id_for_xmr(self), private=private)
+        super().__init__(memory, name if name is not None else memory.episodic._next_id_for_space(self.__class__), private=private)
 
         self._raw = raw
         self.timestmap = timestamp if timestamp is not None else time.time()
@@ -201,12 +164,12 @@ class XMR(Space):
         # is still better than any OBJECT).
         # In the case of a tie, the lower instance number wins.  Further ties = select "the first one".
 
-        if len(self.instances) == 0:
+        if len(self.instances()) == 0:
             return None
 
         # Setup the scoring index
         root_scoring = {}
-        for frame in self.instances.values():
+        for frame in self.instances():
             subtree = None
             ancestors = frame.concept.ancestors()
             ancestors.add(frame.concept)
@@ -226,14 +189,14 @@ class XMR(Space):
             }
 
         # Now modify each score
-        for frame in self.instances.values():
+        for frame in self.instances():
             for property in frame.properties.keys():
                 for filler in frame.values(property):
                     if isinstance(filler, Instance):
                         root_scoring[frame.id()]["outgoing"] += 1
 
                         # Update incoming only if the instance is part of the XMR's space.
-                        if filler.id() in self.instances:
+                        if filler in self.instances():
                             root_scoring[filler.id()]["incoming"] += 1
 
         # Now find the best root
@@ -259,11 +222,11 @@ class XMR(Space):
         candidates = list(filter(lambda c: c["instance"] == lowest_instance, candidates))
 
         # Return the first (ideally only) candidate
-        return self.instances[candidates[0]["frame_id"]]
+        return self.instance(candidates[0]["frame_id"])
 
     def to_dict(self) -> dict:
         return {
-            "instances": list(map(lambda f: f.to_dict(), self.instances.values()))
+            "instances": list(map(lambda f: f.to_dict(), self.instances()))
         }
 
 

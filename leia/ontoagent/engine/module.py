@@ -95,7 +95,7 @@ class OntoAgentModule(object):
     def remote_signal(self, xmr: XMR):
         url = self.service()
         data = json.dumps({
-            "signal": xmr.name
+            "signal": xmr.name()
         }).encode("utf8")
         headers = {
             "content-type": "application/json"

@@ -121,7 +121,7 @@ if __name__ == "__main__":
     print(runner.timed_results)
     print("----")
 
-    for frame in results.sentences[0].semantics[0].basic_tmr.instances.values():
+    for frame in results.sentences[0].semantics[0].basic_tmr.instances():
         print(frame.id())
         for p, fillers in frame.properties.items():
             print("--%s = %s" % (p, ",".join(map(lambda f: str(f.value), fillers))))

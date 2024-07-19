@@ -44,7 +44,7 @@ class SemanticScorer(object):
         relations = self.properties.relations()
         relations = set(map(lambda r: r.name, relations))
 
-        for frame in candidate.basic_tmr.instances.values():
+        for frame in candidate.basic_tmr.instances():
             for property, fillers in frame.properties.items():
                 # Only score relations
                 if property not in relations:
@@ -59,9 +59,9 @@ class SemanticScorer(object):
 
                 for filler in map(lambda f: f.value, fillers):
                     # Only score relations connected to actual frames
-                    if filler not in candidate.basic_tmr.instances:
+                    if not candidate.basic_tmr.has_instance(filler):
                         continue
-                    filler = candidate.basic_tmr.instances[filler]
+                    filler = candidate.basic_tmr.instance(filler)
 
                     # If there are no ranges, give the minimum score
                     if len(ranges) == 0:
@@ -102,7 +102,7 @@ class SemanticScorer(object):
                 if "MEMBER-TYPE" in constraint.frame.properties:
                     tmr_frame_concept_options = set(map(lambda m: self.ontology.concept(m), constraint.frame.fillers("MEMBER-TYPE")))
                 elif "ELEMENTS" in constraint.frame.properties:
-                    tmr_frame_concept_options = set(map(lambda e: candidate.basic_tmr.instances[e].concept, constraint.frame.fillers("ELEMENTS")))
+                    tmr_frame_concept_options = set(map(lambda e: candidate.basic_tmr.instance(e).concept, constraint.frame.fillers("ELEMENTS")))
 
             scores = []
 
