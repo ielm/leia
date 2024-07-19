@@ -1,12 +1,14 @@
 from leia.ontomem.lexicon import SemStruc, Sense, SynStruc
 from leia.ontosem.analysis import WMLexicon
 from leia.ontosem.config import OntoSemConfig
-from leia.ontosem.syntax.analyzer import Preprocessor, SyntacticAnalyzer, WMLexiconLoader
+from leia.ontosem.syntax.analyzer import Preprocessor, SpacyAnalyzer, SyntacticAnalyzer, WMLexiconLoader
 from leia.ontosem.syntax.results import ConstituencyNode, Syntax, Word
 from leia.tests.LEIATestCase import LEIATestCase
 from typing import List
 from unittest import TestCase
 from unittest.mock import call, MagicMock, patch
+
+import sys
 
 
 class PreprocessorTestCase(TestCase):
@@ -46,6 +48,63 @@ class SyntacticAnalyzerTestCase(TestCase):
         mock_subprocess.Popen.assert_called_once_with('clisp -q --silent -M %s' % mem_file, shell=True, stdin=mock_subprocess.PIPE, stderr=mock_subprocess.PIPE, stdout=mock_subprocess.PIPE)
         mock_process.communicate.assert_called_once_with(str.encode(lisp_exe))
         mock_syntax.from_lisp_string.assert_called_once_with("(some lisp string)")
+
+
+class SpacyAnalyzerTestCase(TestCase):
+
+    @patch("leia.ontosem.syntax.analyzer.Syntax")
+    def test_run(self, mock_syntax: Syntax):
+        # Spacy is an external general purpose syntactic analyzer; it should produce the following:
+        #   tokenization, sentence splitting, lemmatization, part of speech tagging, morphology
+        #   dependency parsing, constituency parsing, named entity recognition, and coreference resolution
+        # Tests to validate the actual output will be part of the overall throughput / integration testing.
+        # Here we want to verify that spacy is being called properly, and that its output is being passed
+        # into the Syntax object.
+
+        # Start by mocking all of the spacy imports; we don't need or want to import them here as the entire
+        # pipeline will be mocked.  Mocking them here prevents them from being loaded (they are large and slow
+        # to load).
+        sys.modules["benepar"] = MagicMock()
+        sys.modules["coreferee"] = MagicMock()
+        sys.modules["en_core_web_lg"] = MagicMock()
+        sys.modules["spacy"] = MagicMock()
+
+        # Declare two additional mocks - one for the nlp interface, and one for the produced doc object.
+        nlp = MagicMock()
+        doc = MagicMock()
+
+        nlp.add_pipe = MagicMock()
+        nlp.return_value = doc
+
+        sys.modules["en_core_web_lg"].load = MagicMock(return_value=nlp)
+
+        doc.sents = ["sent1", "sent2", "sent3"]
+
+        # Mock the Syntax object's classmethod that is responsible for parsing spacy output
+        mock_syntax.from_spacy = MagicMock(side_effect=lambda input: "syntax-%s" % input)
+
+        # Run the analyzer
+        analyzer = SpacyAnalyzer(OntoSemConfig())
+        results = analyzer.run("Test text.")
+
+        # The benepar and coreferee plugins should have been added to the nlp pipeline
+        nlp.add_pipe.assert_has_calls([
+            call("benepar", config={"model": "benepar_en3"}),
+            call("coreferee"),
+        ])
+
+        # The nlp pipeline should have been called with the input text
+        nlp.assert_called_once_with("Test text.")
+
+        # Syntax objects should be created for all sentences found in the resulting document
+        mock_syntax.from_spacy.assert_has_calls([
+            call("sent1"),
+            call("sent2"),
+            call("sent3"),
+        ])
+
+        # All of the syntax objects should be returned
+        self.assertEqual(["syntax-sent1", "syntax-sent2", "syntax-sent3"], results)
 
 
 class WMLexiconLoaderTestCase(LEIATestCase):

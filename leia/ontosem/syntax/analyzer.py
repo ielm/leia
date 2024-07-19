@@ -43,8 +43,6 @@ class Preprocessor(object):
 
 class SpacyAnalyzer(object):
 
-    # TODO: This class needs tests
-
     def __init__(self, config: OntoSemConfig):
         self.config = config
 
