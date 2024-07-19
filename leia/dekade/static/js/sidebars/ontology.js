@@ -1,5 +1,6 @@
 import * as API from "../api.js";
 import { LEIAObject } from "../objects/_default.js";
+import { OntologyTree } from "../objects/tree.js";
 
 
 const enterSearchTemplate = `
@@ -14,49 +15,18 @@ const noResultsTemplate = `
     </div>
 `;
 
-const treeChildrenTemplate = `
-    <ul class="nested">
-        {{#each children}}
-        <li>
-            <span class="caret" data-concept="{{this}}"></span>
-            <a is="content-link" data-content-id="@{{this}}">@{{this}}</a>
-        </li>
-        {{/each}}
-    </ul>
-`;
-
 
 $(document).ready(function() {
-    $(".ontology-sidebar-tree-viewer").on("click", ".caret", _onCaretClicked);
+    // Note there are other document.ready type calls at the bottom of the script, that require "await".
+
     $(".ontology-sidebar-tree").on("click", _onOntologySidebarTreeClick);
     $(".ontology-sidebar-filter").on("keyup", _onOntologySidebarFilterKeyup);
     $(".ontology-sidebar-search-results").append($(enterSearchTemplate));
 });
 
 
-async function _onCaretClicked(event) {
-    const span = $(event.currentTarget);
-    span.toggleClass("caret-down");
-
-    const concept = span.data("concept");
-
-    if (span.hasClass("caret-down")) {
-        const children = await API.apiKnowledgeOntologyChildren(concept);
-        const template = Handlebars.compile(treeChildrenTemplate);
-        const rendered = $(template({"children": children}));
-
-        span.parent().append(rendered);
-    } else {
-        span.parent().find("ul").remove();
-    }
-
-    const ul = span.siblings();
-    ul.toggleClass("active");
-}
-
-
 async function _onOntologySidebarTreeClick(event) {
-    const treeview = $(".ontology-sidebar-tree-viewer");
+    const treeview = $(".ontology-sidebar-tree-viewer-container");
     const container = $(".ontology-sidebar-search-results");
 
     treeview.removeClass("hidden");
@@ -66,7 +36,7 @@ async function _onOntologySidebarTreeClick(event) {
 
 async function _onOntologySidebarFilterKeyup(event) {
     const filter = $(event.currentTarget).val();
-    const treeview = $(".ontology-sidebar-tree-viewer");
+    const treeview = $(".ontology-sidebar-tree-viewer-container");
     const container = $(".ontology-sidebar-search-results");
     container.empty();
 
@@ -110,3 +80,6 @@ export class OntologySidebarResults extends LEIAObject {
     }
 
 }
+
+
+$(".ontology-sidebar-tree-viewer-container").append(await new OntologyTree().html());

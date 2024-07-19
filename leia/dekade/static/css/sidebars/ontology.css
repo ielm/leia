@@ -29,36 +29,6 @@ div.ontology-sidebar-search-results {
     background-color: #c6a5cc;
 }
 
-div.ontology-sidebar-tree-viewer.hidden, div.ontology-sidebar-search-results.hidden {
+div.ontology-sidebar-tree-viewer-container.hidden, div.ontology-sidebar-search-results.hidden {
     display: none;
-}
-
-div.ontology-sidebar-tree-viewer ul {
-    list-style-type: none;
-}
-
-div.ontology-sidebar-tree-viewer > ul {
-    margin: 0;
-    padding: 0;
-}
-
-div.ontology-sidebar-tree-viewer ul.nested {
-    padding-left: 13px;
-}
-
-div.ontology-sidebar-tree-viewer .caret {
-    cursor: pointer;
-    user-select: none;
-}
-
-div.ontology-sidebar-tree-viewer .caret::before {
-    content: "\25B6";
-    color: black;
-    display: inline-block;
-    margin-right: 6px;
-    font-size: small;
-}
-
-div.ontology-sidebar-tree-viewer .caret-down::before {
-    transform: rotate(90deg);
 }
