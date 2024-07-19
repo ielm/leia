@@ -16,7 +16,6 @@ export class Analysis extends LEIAObject {
 
     activateListeners(element) {
         element.find("span.caret").click(this._onCaretClicked.bind(this));
-        element.find("a.logs-content-link").click(this._onLogsContentLinkClicked.bind(this));
         element.find("a.syntax-content-link").click(this._onSyntaxContentLinkClicked.bind(this));
         element.find("a.candidate-content-link").click(this._onCandidateContentLinkClicked.bind(this));
     }
@@ -42,6 +41,17 @@ export class Analysis extends LEIAObject {
         return this.content.sentences.map(s => s.text).join(" ");
     }
 
+    async render() {
+        const rendered = $(await super.render());
+        const logs = new Logs(this.content.logs);
+        const logsElement = await logs.render();
+
+        rendered.find("div.analysis-logs").empty();
+        rendered.find("div.analysis-logs").append(logsElement);
+
+        return this.rendered;
+    }
+
     async showContent(content) {
         const rendered = await content.render();
 
@@ -55,11 +65,6 @@ export class Analysis extends LEIAObject {
 
         const ul = span.siblings();
         ul.toggleClass("active");
-    }
-
-    async _onLogsContentLinkClicked(event) {
-        const logs = new Logs(this.content.logs);
-        await this.showContent(logs);
     }
 
     async _onSyntaxContentLinkClicked(event) {

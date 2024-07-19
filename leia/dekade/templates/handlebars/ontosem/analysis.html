@@ -1,7 +1,6 @@
 <div class="analysis-container">
     <div class="analysis-navigator">
         <ul>
-            <li><a class="analysis-content-link logs-content-link" data-sentence="{{@index}}">Logs</a></li>
             {{#each analysis.sentences}}
             <li>
                 <span class="caret {{#if @first}}caret-down{{/if}}">{{this.text}}</span>
@@ -23,4 +22,5 @@
         </ul>
     </div>
     <div class="analysis-content"></div>
+    <div class="analysis-logs"></div>
 </div>

@@ -2,7 +2,7 @@
 
 div.analysis-container {
     display: grid;
-    grid-template-columns: 200px auto;
+    grid-template-columns: 200px auto 200px;
     grid-gap: 5px;
     height: 100%;
 }
@@ -17,6 +17,14 @@ div.analysis-container > div.analysis-content {
     overflow-y: scroll;
     height: 100%;
     padding: 4px;
+    padding-left: 0px;
+}
+
+div.analysis-container > div.analysis-logs {
+    overflow-y: scroll;
+    height: 100%;
+    padding: 4px;
+    padding-left: 0px;
 }
 
 div.analysis-navigator ul {
@@ -222,5 +230,5 @@ div.log > div.log-source {
 }
 
 div.log > div.log-message {
-
+    font-size: small;
 }
