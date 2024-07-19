@@ -121,6 +121,7 @@ if __name__ == "__main__":
         config.memory().properties.load()
         config.memory().ontology.load()
         config.memory().lexicon.load()
+        config.memory().parts_of_speech.load()
 
     results = runner.run([sentence])
 
