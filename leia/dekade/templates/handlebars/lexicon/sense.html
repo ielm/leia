@@ -1,3 +1,65 @@
+{{#*inline "synstruc-element"}}
+    {{> (lookup . 'type')}}
+{{/inline}}
+
+{{#*inline "root"}}
+    <div class="syn-struc-element root">
+        <span class="syn-struc-element-content">*ROOT</span>
+        ...
+        <span class="syn-struc-element-variable">$VAR0</span>,
+        <span class="syn-struc-element-optionality">required</span>
+    </div>
+{{/inline}}
+
+{{#*inline "token"}}
+    <div class="syn-struc-element token">
+        <span class="syn-struc-element-content">
+            {{#if pos}}{{pos}}{{/if}}
+            {{#if lemma}}
+                "{{#each lemma}}{{this}}{{#unless @last}},{{/unless}}{{/each}}"
+            {{/if}}
+            {{#each morph}}{{@key}}={{this}}{{#unless @last}},{{/unless}}{{/each}}
+        </span>
+        ...
+        {{#if var}}
+            <span class="syn-struc-element-variable">$VAR{{var}}</span>,
+        {{/if}}
+        <span class="syn-struc-element-optionality {{#if opt}}optional{{/if}}">{{#if opt}}optional{{else}}required{{/if}}</span>
+    </div>
+{{/inline}}
+
+{{#*inline "dependency"}}
+    <div class="syn-struc-element dependency">
+        <span class="syn-struc-element-content">
+            >{{deptype}}
+            {{#if (or gov dep)}}
+                ({{#if gov}}$VAR{{gov}}{{else}}*{{/if}}, {{#if dep}}$VAR{{dep}}{{else}}*{{/if}})
+            {{/if}}
+        </span>
+        ...
+        {{#if var}}
+            <span class="syn-struc-element-variable">$VAR{{var}}</span>,
+        {{/if}}
+        <span class="syn-struc-element-optionality {{#if opt}}optional{{/if}}">{{#if opt}}optional{{else}}required{{/if}}</span>
+    </div>
+{{/inline}}
+
+{{#*inline "constituency"}}
+    <div class="syn-struc-element constituency">
+        <span class="syn-struc-element-content">({{contype}}</span>
+        ...
+        {{#if var}}
+            <span class="syn-struc-element-variable">$VAR{{var}}</span>,
+        {{/if}}
+        <span class="syn-struc-element-optionality {{#if opt}}optional{{/if}}">{{#if opt}}optional{{else}}required{{/if}}</span>
+        <div class="constituency-children">
+            {{#each children}}
+                {{> synstruc-element}}
+            {{/each}}
+        </div>
+    </div>
+{{/inline}}
+
 <div class="sense">
 
     <div class="sense-header">
@@ -57,7 +119,11 @@
 
     <div class="sense-synstruc">
         <div class="sense-field-label">Syn-Struc</div>
-        {{{json synstruc}}}
+        <div class="syn-struc-elements">
+            {{#each synstruc}}
+                {{> synstruc-element}}
+            {{/each}}
+        </div>
     </div>
 
     <hr>

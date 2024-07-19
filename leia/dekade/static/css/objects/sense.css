@@ -23,3 +23,29 @@ div.sense div.sense-field-content {
 div.sense div.sense-field-content.empty {
     font-style: italic;
 }
+
+div.sense div.syn-struc-element {
+    background: #eee;
+    margin-top: 3px;
+}
+
+div.sense span.syn-struc-element-content {
+    font-family: monospace;
+}
+
+div.sense span.syn-struc-element-variable {
+    font-family: monospace;
+}
+
+div.sense span.syn-struc-element-optionality {
+    font-size: small;
+    font-style: italic;
+}
+
+div.sense span.syn-struc-element-optionality.optional {
+    color: cadetblue;
+}
+
+div.sense div.syn-struc-element.constituency div.constituency-children {
+    margin-left: 20px;
+}
