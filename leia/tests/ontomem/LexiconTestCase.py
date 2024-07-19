@@ -1,8 +1,7 @@
-from collections import OrderedDict
 from leia.ontomem.lexicon import Lexicon, MeaningProcedure, SemStruc, Sense, SynStruc, Word
 from leia.ontomem.memory import Memory
 from leia.tests.LEIATestCase import LEIATestCase
-from unittest import skip, TestCase
+from unittest import TestCase
 from unittest.mock import MagicMock
 
 
@@ -181,94 +180,6 @@ class SenseTestCase(TestCase):
     def test_index_meaning_procedures(self):
         sense = Sense(self.m, "MAN-N1", contents=self.sample_sense_dict())
         self.assertEqual([MeaningProcedure(["TEST-MP", "$VAR0", "$VAR1"])], sense.meaning_procedures)
-
-    @skip("To be removed; this relates to the LISP code exporting senses in the old format, which will no longer be used.")
-    def test_parse_lisp(self):
-        lisp = [
-            "KICK--IMPERATIVE-V1",
-            ["CAT", "V"],
-            ["SYN-STRUC", [["ROOT", "$VAR0"], ["CAT", "V"], ["DIRECTOBJECT", [["ROOT", "$VAR2"], ["CAT", "N"]]]]],
-            [
-                "SEM-STRUC",
-                ["KICK", ["THEME", ["VALUE", "^$VAR2"]], ["AGENT", "*HEARER*"]],
-                ["REQUEST-ACTION", ["AGENT", "*SPEAKER*"], ["THEME", ["VALUE", "^$VAR0"]]],
-                ["REFSEM1", ["APPLE"]],
-                ["REFSEM2", ["APPLE", ["THEME", "SOMETHING"]]]
-            ],
-            [
-                "MEANING-PROCEDURES",
-                ["FIX-CASE-ROLE", ["VALUE", "^$VAR1"], ["VALUE", "^$VAR2"]]
-            ]
-        ]
-
-        sense = Sense.parse_lisp(self.m, lisp)
-        self.assertEqual("KICK--IMPERATIVE-V1", sense.id)
-        self.assertEqual("V", sense.pos)
-        self.assertEqual(SynStruc(OrderedDict([
-            ("ROOT", "$VAR0"),
-            ("CAT", "V"),
-            ("DIRECTOBJECT", OrderedDict([
-                ("ROOT", "$VAR2"),
-                ("CAT", "N")
-            ]))
-        ])), sense.synstruc)
-        self.assertEqual(SemStruc({
-            "KICK": {
-                "THEME": {
-                    "VALUE": "^$VAR2",
-                },
-                "AGENT": "*HEARER*"
-            },
-            "REQUEST-ACTION": {
-                "AGENT": "*SPEAKER*",
-                "THEME": {
-                    "VALUE": "^$VAR0"
-                }
-            },
-            "REFSEM1": ["APPLE"],
-            "REFSEM2": {
-                "APPLE": {
-                    "THEME": "SOMETHING"
-                }
-            }
-        }), sense.semstruc)
-        self.assertEqual([
-            MeaningProcedure(["FIX-CASE-ROLE", ["VALUE", "^$VAR1"], ["VALUE", "^$VAR2"]])
-        ], sense.meaning_procedures)
-
-    def test_parse_lisp_missing_fields(self):
-        # Lex senses that come directly from the syntax output (generated) may not have a
-        # synstruc or meaning procedures field attached.
-
-        lisp = [
-            "KICK--IMPERATIVE-V1",
-            ["CAT", "V"],
-            [
-                "SEM-STRUC",
-                ["KICK", ["THEME", ["VALUE", "^$VAR2"]], ["AGENT", "*HEARER*"]],
-                ["REQUEST-ACTION", ["AGENT", "*SPEAKER*"], ["THEME", ["VALUE", "^$VAR0"]]]
-            ]
-        ]
-
-        sense = Sense.parse_lisp(self.m, lisp)
-        self.assertEqual("KICK--IMPERATIVE-V1", sense.id)
-        self.assertEqual("V", sense.pos)
-        self.assertEqual(SynStruc(OrderedDict()), sense.synstruc)
-        self.assertEqual(SemStruc({
-            "KICK": {
-                "THEME": {
-                    "VALUE": "^$VAR2",
-                },
-                "AGENT": "*HEARER*"
-            },
-            "REQUEST-ACTION": {
-                "AGENT": "*SPEAKER*",
-                "THEME": {
-                    "VALUE": "^$VAR0"
-                }
-            }
-        }), sense.semstruc)
-        self.assertEqual([], sense.meaning_procedures)
 
 
 class SynStrucTestCase(TestCase):

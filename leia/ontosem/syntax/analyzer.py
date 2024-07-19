@@ -1,11 +1,9 @@
 from leia.ontomem.grammar import POS
 from leia.ontomem.lexicon import Sense
-from leia.ontosem.analysis import Analysis, WMLexicon
+from leia.ontosem.analysis import Analysis
 from leia.ontosem.config import OntoSemConfig
 from leia.ontosem.syntax.results import Syntax, Word
 from typing import List, Union
-
-import subprocess
 
 
 class Preprocessor(object):
@@ -141,43 +139,9 @@ class WMLexiconLoader(object):
         return sense
 
 
-class SyntacticAnalyzer(object):
-
-    def __init__(self, config: OntoSemConfig):
-        self.config = config
-
-    def run(self, text: str) -> List[Syntax]:
-        # 1) Run syntax
-        syntax = self._run_syntax(text)
-
-        # 2) Parse results
-        syntax = Syntax.from_lisp_string(syntax)
-
-        # 3) Return results
-        return syntax
-
-    def _run_syntax(self, text: str) -> str:
-        host = "localhost"
-        port = 4998
-
-        type = "default"
-        lexicon = "ontosyn/lisp/lexicon.lisp"
-        mem_file = "build/ontosem2-new4.mem"
-
-        lisp_exe = '(run-syntax \'%s \"%s\" \"%s\" \"%s\" %d)' % (type, lexicon, text, host, port)
-
-        cmd = 'clisp -q --silent -M %s' % mem_file
-
-        proc = subprocess.Popen(cmd, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        out, err = proc.communicate(str.encode(lisp_exe))
-
-        out = out.decode('ascii')
-        out = "\n".join(out.split("\n")[1:])
-
-        return out
-
 if __name__ == "__main__":
 
     config = OntoSemConfig()
-    syntax = SyntacticAnalyzer(config).run("Kick the building. The store was hit by the woman.")
+    analysis = Analysis(config)
+    syntax = SpacyAnalyzer(analysis).run("Kick the building. The store was hit by the woman.")
     print(syntax)

@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from leia.ontomem.memory import Memory
-from leia.utils.formatting import FormatFromLISP
+# from leia.utils.formatting import FormatFromLISP
 from leia.utils.threads import multiprocess_read_json_file
 from multiprocessing.pool import Pool
 from typing import Any, Dict, List, Set, Tuple, Union
@@ -94,18 +94,6 @@ class Word(object):
 
 
 class Sense(object):
-
-    @classmethod
-    def parse_lisp(cls, memory: Memory, lisp: list) -> 'Sense':
-        parsed = FormatFromLISP().list_to_sense(lisp)
-        return Sense(memory, parsed["SENSE"], {
-            "SENSE": parsed["SENSE"],
-            "WORD": parsed["WORD"],
-            "CAT": parsed["CAT"],
-            "SYN-STRUC": parsed["SYN-STRUC"],
-            "SEM-STRUC": parsed["SEM-STRUC"],
-            "MEANING-PROCEDURES": parsed["MEANING-PROCEDURES"] if parsed["MEANING-PROCEDURES"] != "NIL" else []
-        })
 
     def __init__(self, memory: Memory, id: str, contents: dict=None):
         self.memory = memory

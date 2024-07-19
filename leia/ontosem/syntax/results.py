@@ -1,6 +1,4 @@
 from enum import Enum
-from leia.ontomem.lexicon import Sense
-from leia.ontosem.score import Score
 from pyparsing import OneOrMore, nestedExpr
 from typing import Dict, List, Union
 
@@ -16,46 +14,6 @@ if TYPE_CHECKING:
 
 
 class Syntax(object):
-
-    @classmethod
-    def from_lisp_string(cls, lisp: str) -> List['Syntax']:
-        data = OneOrMore(nestedExpr()).parseString(lisp)
-        data = data.asList()
-        data = data[0]  # Unwrap the first level; it isn't needed.
-
-        return list(map(lambda s: Syntax.parse_lisp_results(s), data))
-
-    @classmethod
-    def parse_lisp_results(cls, lisp: list) -> 'Syntax':
-        stanford = LispParser.list_key_to_value(lisp, "STANFORD")[1]
-        words = LispParser.list_key_to_value(stanford, "WORDS")
-        words = list(map(lambda w: Word.parse_lisp_results(w), words[1:]))
-        basic_deps = LispParser.list_key_to_value(stanford, "BASICDEPS")[1]
-        enhanced_deps = LispParser.list_key_to_value(stanford, "ENHANCEDDEPS")[1]
-        original_sentence = LispParser.list_key_to_value(stanford, "ORIGINALSENTENCE")[1]
-        sentence = LispParser.list_key_to_value(stanford, "SENTENCE")[1]
-        parse = ConstituencyNode.parse_lisp_results(LispParser.list_key_to_value(stanford, "PARSE")[1], words)
-
-        synmap = LispParser.list_key_to_value(lisp, "SYNMAP")
-        synmap = SynMap.parse_lisp_results(synmap[1], words)
-
-        lex_senses = LispParser.list_key_to_value(lisp, "LEX-SENSES")
-        if lex_senses[1] == "NIL":
-            lex_senses = []
-        else:
-            lex_senses = list(map(lambda s: Sense.parse_lisp(s), lex_senses[1]))
-
-        if sentence.startswith("\"") and sentence.endswith("\""):
-            sentence = sentence[1:-1]
-        if original_sentence.startswith("\"") and original_sentence.endswith("\""):
-            original_sentence = original_sentence[1:-1]
-
-        syntax = Syntax(words, sentence, original_sentence, parse, enhanced_deps)
-        syntax.synmap = synmap
-
-        # TODO: Move lex senses into WM lexicon
-
-        return syntax
 
     @classmethod
     def from_spacy(cls, sentence: 'Span') -> 'Syntax':
@@ -112,15 +70,6 @@ class Syntax(object):
 
 class SynMap(object):
 
-    @classmethod
-    def parse_lisp_results(cls, lisp: list, words: List['Word']) -> 'SynMap':
-        sensemaps = []
-        for i, word in enumerate(lisp):
-            sensemap = list(map(lambda s: SenseMap.parse_lisp_results(s, words[i]), word))
-            sensemaps.append(sensemap)
-
-        return SynMap(sensemaps)
-
     def __init__(self, words: List[List['SenseMap']]):
         self.words = words
 
@@ -139,19 +88,6 @@ class SynMap(object):
 
 
 class SenseMap(object):
-
-    @classmethod
-    def parse_lisp_results(cls, lisp: list, word: 'Word') -> 'SenseMap':
-        sense = lisp[0]
-        if sense.startswith("\"") and sense.endswith("\""):
-            sense = sense[1:-1]
-
-        bindings = {}
-        for variable in lisp[1]:
-            bindings[variable[0]] = int(variable[1]) if variable[1] != "NIL" else None
-        preference = float(lisp[2][1])
-
-        return SenseMap(word, sense, bindings)
 
     def __init__(self, word: 'Word', sense: str, bindings: Dict[str, Union[int, None]]):
         self.word = word
@@ -212,23 +148,6 @@ class Word(object):
         return Word(index, lemma, pos, token, char_start, char_end, ner, coref, morphology)
 
     @classmethod
-    def parse_lisp_results(cls, lisp: list) -> 'Word':
-        index = int(LispParser.list_key_to_value(lisp, "ID")[1])
-        coref = LispParser.list_key_to_value(lisp, "COREF")[1]
-        coref = [] if coref == "NIL" else list(map(lambda c: WordCoreference.parse_lisp_results(c), coref))
-        lemma = LispParser.list_key_to_value(lisp, "LEMMA")[1]
-        ner = Word.Ner(LispParser.list_key_to_value(lisp, "NER")[1].replace("\"", ""))
-        char_start = int(LispParser.list_key_to_value(lisp, "OFFSET")[1][0])
-        char_end = int(LispParser.list_key_to_value(lisp, "OFFSET")[1][1])
-        pos = list(LispParser.list_key_to_value(lisp, "POS")[1])
-        token = LispParser.list_key_to_value(lisp, "TOKEN")[1]
-
-        if token.startswith("\"") and token.endswith("\""):
-            token = token[1:-1]
-
-        return Word(index, lemma, pos, token, char_start, char_end, ner, coref, {})
-
-    @classmethod
     def from_spacy(cls, token: 'Token', ner: Union['Span', None], coref: Union['Chain', None]) -> 'Word':
 
         ner = Word.Ner.NONE if ner is None else Word.Ner(ner.label_)
@@ -285,10 +204,6 @@ class Word(object):
 
 
 class WordCoreference(object):
-
-    @classmethod
-    def parse_lisp_results(cls, lisp: list) -> 'WordCoreference':
-        return WordCoreference(int(lisp[5][0]), int(lisp[5][1]), float(lisp[3]))
 
     def __init__(self, sentence: int, word: int, confidence: float):
         self.sentence = sentence

@@ -3,9 +3,9 @@ from leia.ontosem.config import OntoSemConfig
 from leia.ontosem.semantics.compiler import SemanticCompiler
 from leia.ontosem.semantics.extended import BasicSemanticsMPProcessor
 from leia.ontosem.semantics.scorer import SemanticScorer
-from leia.ontosem.syntax.analyzer import Preprocessor, SpacyAnalyzer, SyntacticAnalyzer, WMLexiconLoader
+from leia.ontosem.syntax.analyzer import Preprocessor, SpacyAnalyzer, WMLexiconLoader
 from leia.ontosem.syntax.synmapper import SynMapper
-from typing import List, Tuple
+from typing import List
 
 import json
 import sys
@@ -33,9 +33,6 @@ class OntoSemRunner(object):
 
     def __init__(self, config: OntoSemConfig):
         self.config = config
-
-        print("WARNING: Overriding ontosyn_lexicon path to '%s'" % "ontosyn/lisp/lexicon.lisp")
-        self.config.ontosyn_lexicon = "ontosyn/lisp/lexicon.lisp"
 
     def run_from_file(self, file: str) -> Analysis:
         f = open(file, "r")
