@@ -1,0 +1,37 @@
+{
+  "word": "NUISANCE",
+  "senses": {
+    "NUISANCE-N1": {
+      "CAT": "N",
+      "DEF": "something annoying",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0.2,
+          "SCOPE": "ALL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ANNOYANCE",
+        "PAIN_IN_THE_NECK",
+        "PAIN_IN_THE_ASS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "NUISANCE-N1",
+      "WORD": "NUISANCE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

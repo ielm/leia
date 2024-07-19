@@ -1,0 +1,27 @@
+{
+  "name": "@PHASMOPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of ghosts",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GHOST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

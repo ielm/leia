@@ -1,0 +1,128 @@
+{
+  "word": "OBJECT",
+  "senses": {
+    "OBJECT-N1": {
+      "CAT": "N",
+      "DEF": "an inanimate thing",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "INANIMATE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OBJECT-N1",
+      "WORD": "OBJECT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "OBJECT-V1": {
+      "CAT": "V",
+      "DEF": "to voice disagreement",
+      "EX": "she objects to the decision",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "TO",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "SUPPORT": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            },
+            "THEME": {
+              "VALUE": "^$VAR3"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOG-1",
+        "OBJECTS-0",
+        "TO-2",
+        "THE",
+        "CURE-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OBJECT-V1",
+      "WORD": "OBJECT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "OBJECT-N401": {
+      "CAT": "N",
+      "COMMENTS": "full sentence example: there is a blue object touching the edge",
+      "EX": "one yellow object",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "GRAPHIC-OBJECT",
+      "SENSE": "OBJECT-N401",
+      "WORD": "OBJECT",
+      "DEF": "NIL",
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "word": "OFFICER",
+  "senses": {
+    "OFFICER-N1": {
+      "CAT": "N",
+      "DEF": "military officer",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "MILITARY-OFFICER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OFFICER-N1",
+      "WORD": "OFFICER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "OFFICER-N2": {
+      "CAT": "N",
+      "DEF": "police officer",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "POLICE-OFFICER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OFFICER-N2",
+      "WORD": "OFFICER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

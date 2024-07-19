@@ -1,0 +1,16 @@
+{
+  "name": "@TELEVISION-SERVICE-CORPORATION",
+  "isa": [
+    "@MEDIA-SERVICE-CORPORATION"
+  ],
+  "def": "a for-profit communication-corporation that provides television programming service to the public",
+  "local": [
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@TELECOMMUNICATION-EQUIPMENT-MANUFACTURING-CORPORATION"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

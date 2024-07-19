@@ -1,0 +1,106 @@
+{
+  "word": "OUST",
+  "senses": {
+    "OUST-V1": {
+      "CAT": "V",
+      "DEF": "to dismiss from a job or position",
+      "EX": "they ousted the vice president",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "DISMISS": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-2",
+        "OUSTED-0",
+        "THE",
+        "PRESIDENT-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OUST-V1",
+      "WORD": "OUST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "OUST-V2": {
+      "CAT": "V",
+      "DEF": "to edject from a place",
+      "EX": "the community ousted the delinquent home owners",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "BANISH": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-2",
+        "OUSTED-0",
+        "THE",
+        "WOMAN-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OUST-V2",
+      "WORD": "OUST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

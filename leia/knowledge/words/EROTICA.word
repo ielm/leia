@@ -1,0 +1,53 @@
+{
+  "word": "EROTICA",
+  "senses": {
+    "EROTICA-N1": {
+      "CAT": "N",
+      "DEF": "literature, film, etc., intended to cause sexual arousal",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CREATIVE-WORK": {
+          "HAS-STYLE": "EROTICA"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EROTICA-N1",
+      "WORD": "EROTICA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EROTICA-N2": {
+      "CAT": "N",
+      "DEF": "a genre of literature, film, etc., intended to cause sexual arousal",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "EROTICA",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EROTICA-N2",
+      "WORD": "EROTICA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

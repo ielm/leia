@@ -1,0 +1,32 @@
+{
+  "name": "@PRESCRIBE",
+  "isa": [
+    "@MEDICAL-PROCEDURE"
+  ],
+  "def": "to order or advise as a medicine or treatment",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@MEDICAL-PROCEDURE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INGESTIBLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DRUG"
+    }
+  ],
+  "block": [
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@PATIENT"
+    }
+  ],
+  "private": {}
+}

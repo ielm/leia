@@ -1,0 +1,38 @@
+{
+  "word": "PRUNING_SAW",
+  "senses": {
+    "PRUNING_SAW-N1": {
+      "CAT": "N",
+      "DEF": "a saw used to cut trees",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SAW": {
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "CARVE": {
+            "THEME": "TREE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRUNING_SAW-N1",
+      "WORD": "PRUNING_SAW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

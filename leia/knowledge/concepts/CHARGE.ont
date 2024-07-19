@@ -1,0 +1,27 @@
+{
+  "name": "@CHARGE",
+  "isa": [
+    "@COMMERCE-EVENT"
+  ],
+  "def": "to ask as a price for a service or product",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@WORK-ROLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MONEY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

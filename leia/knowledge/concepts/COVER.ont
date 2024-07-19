@@ -1,0 +1,21 @@
+{
+  "name": "@COVER",
+  "isa": [
+    "@PHYSICAL-EVENT"
+  ],
+  "def": "to place something on or over something else in order to hide, protect, etc. it",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@HIDE"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@PROTECT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

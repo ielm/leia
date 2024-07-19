@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-LOSER",
+  "def": "the losing side in a match/bout",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$LOSER-OF",
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

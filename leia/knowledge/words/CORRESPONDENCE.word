@@ -1,0 +1,58 @@
+{
+  "word": "CORRESPONDENCE",
+  "senses": {
+    "CORRESPONDENCE-N1": {
+      "CAT": "N",
+      "DEF": "communication by mail",
+      "EX": "his correspondence with her / their correspondence is secret",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR3",
+          "CAT": "N",
+          "POSSESSIVE": "+",
+          "OPT": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "WITH",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "COMMUNICATIVE-EVENT": {
+          "INSTRUMENT": {
+            "LETTER": "EMAIL"
+          },
+          "AGENT": {
+            "VALUE": "^$VAR3"
+          },
+          "AGENT-1": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CORRESPONDENCE-N1",
+      "WORD": "CORRESPONDENCE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

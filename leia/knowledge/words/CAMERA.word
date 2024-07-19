@@ -1,0 +1,37 @@
+{
+  "word": "CAMERA",
+  "senses": {
+    "CAMERA-N2": {
+      "CAT": "N",
+      "DEF": "a device for taking still photographs",
+      "EX": "",
+      "COMMENTS": "[D] marge: is this distinguishable from camera-n1? should these just be hyponyms of camera-n1?",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "STILL-CAMERA",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "BOX_CAMERA",
+        "CAMERA_LUCIDA",
+        "CAMERA_OBSCURA",
+        "FOLDING_CAMERA",
+        "PINHOLE_CAMERA",
+        "POLAROID",
+        "POLARIOD_CAMERA",
+        "PORTRAIT_CAMERA",
+        "DIGITAL_CAMERA"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CAMERA-N2",
+      "WORD": "CAMERA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

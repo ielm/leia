@@ -1,0 +1,34 @@
+{
+  "word": "FRATERNITY_PARTY",
+  "senses": {
+    "FRATERNITY_PARTY-N1": {
+      "CAT": "N",
+      "DEF": "a party at a fraternity house at a college or university",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PARTY": {
+          "LOCATION": "FRATERNITY-HOUSE",
+          "FORMALITY": 0.1
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "FRAT_PARTY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FRATERNITY_PARTY-N1",
+      "WORD": "FRATERNITY_PARTY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

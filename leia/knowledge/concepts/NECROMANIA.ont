@@ -1,0 +1,27 @@
+{
+  "name": "@NECROMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "excessive interest in the dead",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DIE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

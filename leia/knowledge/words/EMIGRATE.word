@@ -1,0 +1,76 @@
+{
+  "word": "EMIGRATE",
+  "senses": {
+    "EMIGRATE-V1": {
+      "CAT": "V",
+      "DEF": "to leave one country for another",
+      "EX": "they emigrated from russia to israel",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "FROM",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "ROOT-WORD": "TO",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR5",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "EMIGRATE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "SOURCE": {
+            "VALUE": "^$VAR3"
+          },
+          "DESTINATION": {
+            "VALUE": "^$VAR5"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "EMIGRATED-0",
+        "FROM-2",
+        "RUSSIA-3",
+        "TO-4",
+        "ISRAEL-5"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EMIGRATE-V1",
+      "WORD": "EMIGRATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

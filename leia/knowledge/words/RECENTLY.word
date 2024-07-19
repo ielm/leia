@@ -1,0 +1,56 @@
+{
+  "word": "RECENTLY",
+  "senses": {
+    "RECENTLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "not long ago",
+      "EX": "I learned recently that hippos are related to whales and dolphins",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TIME": [
+            "COMBINE-TIME",
+            [
+              "FIND-ANCHOR-TIME"
+            ],
+            0.2,
+            "BEFORE"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "RECENTLY-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "LATELY"
+      ],
+      "HYPONYMS": [
+        "MORE_RECENTLY"
+      ],
+      "SENSE": "RECENTLY-ADV1",
+      "WORD": "RECENTLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

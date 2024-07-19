@@ -1,0 +1,153 @@
+{
+  "name": "@ENTERTAIN-EVENT",
+  "isa": [
+    "@SOCIAL-EVENT"
+  ],
+  "def": "social events that are related to entertainment - these are things one would go to, that may have tickets, start times, etc.",
+  "local": [
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@STATE"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@ROAD"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@CITY"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "has-contact-information",
+      "facet": "sem",
+      "filler": "@WEB-ADDRESS"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@COMPASS-POINT"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@NAME"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@WEB-ADDRESS"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@PHONE-NUMBER"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@EMAIL-ADDRESS"
+    },
+    {
+      "slot": "has-web-address",
+      "facet": "sem",
+      "filler": "@WEB-ADDRESS"
+    },
+    {
+      "slot": "has-street-address",
+      "facet": "sem",
+      "filler": "@ROAD"
+    },
+    {
+      "slot": "has-state-address",
+      "facet": "sem",
+      "filler": "@STATE"
+    },
+    {
+      "slot": "has-postal-code",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "has-nation-address",
+      "facet": "sem",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "has-city-address",
+      "facet": "sem",
+      "filler": "@CITY"
+    },
+    {
+      "slot": "has-alias",
+      "facet": "sem",
+      "filler": "@ALIAS"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "has-audience",
+      "facet": "sem",
+      "filler": "@AUDIENCE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

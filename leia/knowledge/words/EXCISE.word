@@ -1,0 +1,50 @@
+{
+  "word": "EXCISE",
+  "senses": {
+    "EXCISE-V1": {
+      "CAT": "V",
+      "DEF": "to remove by cutting",
+      "EX": "they excised the tumor",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "REMOVE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "INSTRUMENT": "CUT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "EXCISED-0",
+        "THE",
+        "TUMOR-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EXCISE-V1",
+      "WORD": "EXCISE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

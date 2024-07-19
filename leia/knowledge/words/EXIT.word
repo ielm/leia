@@ -1,0 +1,151 @@
+{
+  "word": "EXIT",
+  "senses": {
+    "EXIT-N1": {
+      "CAT": "N",
+      "DEF": "the place where one exits",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "DOORWAY": {
+          "LOCATION-OF": "EXIT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EXIT-N1",
+      "WORD": "EXIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EXIT-N2": {
+      "CAT": "N",
+      "DEF": "the act of exiting",
+      "EX": "their exit from the building was rapid",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "FROM",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "EXIT": {
+          "SOURCE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EXIT-0",
+        "FROM-1",
+        "THE",
+        "PLACE-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EXIT-N2",
+      "WORD": "EXIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EXIT-V1": {
+      "CAT": "V",
+      "DEF": "the act of going out",
+      "EX": "they exited quickly; the exited (from) the building quickly",
+      "COMMENTS": "the pp isn't written as such because\\ 'from' is optional",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "FROM",
+          "OPT": "+"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "EXIT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "SOURCE": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "EXITED-0",
+        "FROM-2",
+        "THE",
+        "BUILDING-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "VACATE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "EXIT-V1",
+      "WORD": "EXIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

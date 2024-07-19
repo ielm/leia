@@ -1,0 +1,16 @@
+{
+  "name": "@PILL-BUG",
+  "isa": [
+    "@ISOPOD"
+  ],
+  "def": "A small terrestrial isopod with a segmented flexible body; curls into a ball when disturbed.",
+  "local": [],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BODY-OF-WATER"
+    }
+  ],
+  "private": {}
+}

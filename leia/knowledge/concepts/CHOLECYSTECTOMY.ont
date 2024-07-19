@@ -1,0 +1,22 @@
+{
+  "name": "@CHOLECYSTECTOMY",
+  "isa": [
+    "@SURGICAL-REMOVAL"
+  ],
+  "def": "surgical removal of the gallbladder",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@GALLBLADDER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

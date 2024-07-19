@@ -1,0 +1,51 @@
+{
+  "word": "FLOWERING_PLANT",
+  "senses": {
+    "FLOWERING_PLANT-N1": {
+      "CAT": "N",
+      "DEF": "a plant that produces flowers, fruit and seeds",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FLOWERING-PLANT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "COSMOS",
+        "CONEFLOWER",
+        "ZINNIA",
+        "GENTIAN",
+        "SNAPDRAGON",
+        "PETUNIA",
+        "CHRYSANTHEMUM",
+        "PEONY",
+        "ANEMONE",
+        "COLUMBINE",
+        "DELPHINIUM",
+        "NIGELLA",
+        "CALLA_LILY",
+        "LYCHNIS",
+        "SANDWORT",
+        "SOAPWORD",
+        "SILENE",
+        "CAMPION",
+        "PRAIRIE_ROCKET",
+        "POPPY",
+        "STRAWFLOWER",
+        "CHAMOMILE",
+        "SHASTA_DAISY"
+      ],
+      "SENSE": "FLOWERING_PLANT-N1",
+      "WORD": "FLOWERING_PLANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

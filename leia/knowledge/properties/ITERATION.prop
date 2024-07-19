@@ -1,0 +1,9 @@
+{
+  "name": "$ITERATION",
+  "def": "the iteration of aspect, filled using a literal filler",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$PARAMETRIC-LITERAL-ATTRIBUTE"
+}

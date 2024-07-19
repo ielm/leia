@@ -1,0 +1,107 @@
+{
+  "word": "PAROLE",
+  "senses": {
+    "PAROLE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "the parole of criminals by overly optimistic judges",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "PAROLE": {
+          "AGENT": {
+            "VALUE": "^$VAR4"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PAROLE-N1",
+      "WORD": "PAROLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PAROLE-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "PAROLE": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "JUDGE-2",
+        "PAROLED-0",
+        "THE",
+        "PRISONER-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PAROLE-V1",
+      "WORD": "PAROLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@NUCLEOTIDE-SEQUENCE",
+  "isa": [
+    "@MOLECULAR-SEQUENCE"
+  ],
+  "def": "The sequence of purines and pyrimidines in nucleic acids and polynucleotides. Included here are nucleotide-rich regions, conserved sequence, and DNA transforming region.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@NUCLEIC-ACID"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BIOLOGICAL-MACROMOLECULE"
+    }
+  ],
+  "private": {}
+}

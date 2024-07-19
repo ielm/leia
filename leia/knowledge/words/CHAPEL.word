@@ -1,0 +1,41 @@
+{
+  "word": "CHAPEL",
+  "senses": {
+    "CHAPEL-N1": {
+      "CAT": "N",
+      "DEF": "a place of worship smaller than and subordinate to a church; may be located in another  type of building, like a hospital or prison",
+      "EX": "",
+      "COMMENTS": "[D] I'm not calling it a 'religious building' because it really isn't",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PLACE": {
+          "LOCATION-OF": "RELIGIOUS-ACTIVITY",
+          "LOCATION": {
+            "SEM": [
+              "CHURCH-BUILDING",
+              "PRISON-BUILDING",
+              "HOSPITAL"
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "LADY_CHAPEL",
+        "SIDE_CHAPEL"
+      ],
+      "SENSE": "CHAPEL-N1",
+      "WORD": "CHAPEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "word": "BRIOCHE",
+  "senses": {
+    "BRIOCHE-N1": {
+      "CAT": "N",
+      "DEF": "soft, light-textured bread roll made from eggs, butter,   flour, and yeast",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BREAD-ROLL": {
+          "SOFTNESS": 0.8,
+          "FATTINESS": [
+            "><",
+            0.6,
+            0.8
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BRIOCHE-N1",
+      "WORD": "BRIOCHE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

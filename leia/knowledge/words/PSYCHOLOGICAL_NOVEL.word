@@ -1,0 +1,31 @@
+{
+  "word": "PSYCHOLOGICAL_NOVEL",
+  "senses": {
+    "PSYCHOLOGICAL_NOVEL-N1": {
+      "CAT": "N",
+      "DEF": "A novel which delves deeply into its characters' feelings and motivations",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "NOVEL": {
+          "ABOUT-AS-TOPIC": "PSYCHOLOGY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PSYCHOLOGICAL_NOVEL-N1",
+      "WORD": "PSYCHOLOGICAL_NOVEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

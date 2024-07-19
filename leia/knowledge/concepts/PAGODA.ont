@@ -1,0 +1,53 @@
+{
+  "name": "@PAGODA",
+  "isa": [
+    "@RELIGIOUS-BUILDING"
+  ],
+  "def": "Buddhist shrine",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@TURRET-OF-BUILDING"
+    },
+    {
+      "slot": "number-of-floors",
+      "facet": "sem",
+      "filler": [
+        ">",
+        2
+      ]
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@MONK"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@PILGRIM"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@PRIEST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@RELIGIOUS-ROLE"
+    },
+    {
+      "slot": "number-of-floors",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

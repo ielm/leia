@@ -1,0 +1,65 @@
+{
+  "word": "PARALYSIS",
+  "senses": {
+    "PARALYSIS-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "paralysis of the lower body",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "PARALYSIS": {
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HAD",
+        "PARALYSIS-0",
+        "OF-1",
+        "HIS",
+        "FOOT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PARALYSIS-N1",
+      "WORD": "PARALYSIS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

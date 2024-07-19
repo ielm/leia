@@ -1,0 +1,9 @@
+{
+  "name": "$POLITICAL-PARTY-MEMBERSHIP",
+  "def": "links a person to the political party to which he or she belongs (note: different from political-attribute, which indicates degree of liberalism or conservativism of one*s views)\n\nProbably should be removed and MEMBER-OF should be used instead...",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-OBJECT-ATTRIBUTE"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@ASSIGN",
+  "isa": [
+    "@CONTROL-EVENT-SOCIAL"
+  ],
+  "def": "to set apart or mark for a specific purpose",
+  "local": [],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

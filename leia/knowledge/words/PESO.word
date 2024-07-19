@@ -1,0 +1,41 @@
+{
+  "word": "PESO",
+  "senses": {
+    "PESO-N1": {
+      "CAT": "N",
+      "DEF": "currency of argentina or chile or colombia or cuba or dominican- republic or mexico or philippines or uruguay",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": {
+            "ARGENTINA": [
+              "CHILE",
+              "COLOMBIA",
+              "CUBA",
+              "DOMINICAN_REPUBLIC",
+              "MEXICO",
+              "PHILIPPINES",
+              "URUGUAY"
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PESO-N1",
+      "WORD": "PESO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

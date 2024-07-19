@@ -1,0 +1,44 @@
+{
+  "name": "@MIDDLE-PALAEOLITHIC-PERIOD",
+  "isa": [
+    "@HISTORICAL-PERIOD"
+  ],
+  "def": "middle portion of the Palaeolithic Period (i.e.,Old Stone Age), between 200,000 and 40,000 years ago",
+  "local": [
+    {
+      "slot": "time-begin",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        200000
+      ],
+      "meta": {
+        "measured-in": "year-bc"
+      }
+    },
+    {
+      "slot": "time-end",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        40000
+      ],
+      "meta": {
+        "measured-in": "year-bc"
+      }
+    }
+  ],
+  "block": [
+    {
+      "slot": "time-begin",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "time-end",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    }
+  ],
+  "private": {}
+}

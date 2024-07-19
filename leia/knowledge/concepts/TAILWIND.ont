@@ -1,0 +1,32 @@
+{
+  "name": "@TAILWIND",
+  "isa": [
+    "@WIND"
+  ],
+  "def": "A wind blowing in the same direction as that of the course of an aircraft, a ship, or another vehicle.",
+  "local": [
+    {
+      "slot": "directional-relation",
+      "facet": "sem",
+      "filler": "@SHIP"
+    },
+    {
+      "slot": "directional-relation",
+      "facet": "sem",
+      "filler": "@VEHICLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "directional-relation",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "directional-relation",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

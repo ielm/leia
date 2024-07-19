@@ -1,0 +1,27 @@
+{
+  "name": "@CAGE",
+  "isa": [
+    "@RESTRAINING-ARTIFACT"
+  ],
+  "def": "a structure of wires, bars, etc. for confining animals",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WIRE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

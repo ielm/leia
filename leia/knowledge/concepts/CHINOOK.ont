@@ -1,0 +1,27 @@
+{
+  "name": "@CHINOOK",
+  "isa": [
+    "@WIND"
+  ],
+  "def": "a warm wind in coastal regions Pacific Northwest or the eastern slopes of the Rocky Mountains",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@COAST"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@MOUNTAIN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

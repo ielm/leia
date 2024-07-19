@@ -1,0 +1,40 @@
+{
+  "name": "@BOWLING-ALLEY",
+  "isa": [
+    "@BUILDING"
+  ],
+  "def": "a building specifically designed to host the sport of bowling, complete with individual bowling lanes",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@BOWLING"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@CASHIER"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@CUSTOMER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    }
+  ],
+  "private": {}
+}

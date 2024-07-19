@@ -1,0 +1,203 @@
+{
+  "word": "OPERATE",
+  "senses": {
+    "OPERATE-V1": {
+      "CAT": "V",
+      "DEF": "perform surgery",
+      "EX": "he operated on the patient early in the morning",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "ON",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SURGERY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "NURSE-1",
+        "OPERATES-0",
+        "ON-2",
+        "THE",
+        "MAN-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OPERATE-V1",
+      "WORD": "OPERATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "OPERATE-V3": {
+      "CAT": "V",
+      "DEF": "to cause to function",
+      "EX": "he is operating the tractor",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "FUNCTIONING": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOG-1",
+        "OPERATES-0",
+        "THE",
+        "CAR-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OPERATE-V3",
+      "WORD": "OPERATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "OPERATE-V2": {
+      "CAT": "V",
+      "DEF": "perform surgery",
+      "EX": "he operated on my knee early in the morning",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "ON",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SURGERY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "NURSE-1",
+        "OPERATES-0",
+        "ON-2",
+        "THE",
+        "MAN-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OPERATE-V2",
+      "WORD": "OPERATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

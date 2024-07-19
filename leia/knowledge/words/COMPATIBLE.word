@@ -1,0 +1,74 @@
+{
+  "word": "COMPATIBLE",
+  "senses": {
+    "COMPATIBLE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "(of evidence, new information, a theory, etc.) not showing conflict with something else",
+      "EX": "this theory is compatible with previous ones",
+      "COMMENTS": "if there's no pp, there's semantic ellipsis; not covered yet",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ",
+          "PP": {
+            "ROOT-WORD": "WITH",
+            "ROOT": "$VAR2",
+            "CAT": "PREP",
+            "OBJ": {
+              "ROOT": "$VAR3",
+              "CAT": "N"
+            }
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SUPPORT": {
+          "INSTRUMENT": {
+            "VALUE": "^$VAR1",
+            "SEM": [
+              "NOT",
+              "PHYSICAL-OBJECT"
+            ]
+          },
+          "THEME": {
+            "VALUE": "^$VAR3",
+            "SEM": [
+              "NOT",
+              "PHYSICAL-OBJECT"
+            ]
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "COMPATIBLE-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "CONSISTENT",
+        "CONGRUENT",
+        "CONGRUOUS",
+        "IN_KEEPING"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "COMPATIBLE-ADJ1",
+      "WORD": "COMPATIBLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

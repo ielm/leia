@@ -1,0 +1,9 @@
+{
+  "name": "$SURROUNDS",
+  "def": "to encircle on all or nearly all sides",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$SURROUNDED-BY",
+  "measured-in": [],
+  "container": "$SPATIAL-RELATION"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@DIAMOND-PROCESSING-CORPORATION",
+  "isa": [
+    "@MATERIAL-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a corporation that manufactures diamond products.",
+  "local": [
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@DIAMOND-MINING-CORPORATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@INDUSTRIAL-EQUIPMENT-MANUFACTURING-CORPORATION"
+    }
+  ],
+  "private": {}
+}

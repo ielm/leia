@@ -1,0 +1,9 @@
+{
+  "name": "$PREPAREDNESS",
+  "def": "Indicates to what extent someone or  something is prepared for something; to have met all the preconditions to make the event in question a success",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-OBJECT-ATTRIBUTE"
+}

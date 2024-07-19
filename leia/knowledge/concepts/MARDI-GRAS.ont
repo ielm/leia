@@ -1,0 +1,52 @@
+{
+  "name": "@MARDI-GRAS",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "Shrove Tuesday, celebrated as a holiday in many places with carnivals, masquerade balls, and parades of costumed merrymakers",
+  "local": [
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@TUESDAY"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@PARADE"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@PARTY"
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@COSTUME"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@COMMEMORATE"
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

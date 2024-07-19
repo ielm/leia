@@ -1,0 +1,67 @@
+{
+  "name": "@FASTEN",
+  "isa": [
+    "@PHYSICAL-EVENT"
+  ],
+  "def": "to attach, connect or make secure",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@PIN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@BANDAGE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@CONNECTING-DEVICE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@FASTENER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@STICKY-TAPE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@STRAP"
+    },
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@GLUE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

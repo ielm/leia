@@ -1,0 +1,87 @@
+{
+  "word": "AMBLE",
+  "senses": {
+    "AMBLE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "our amble through the forest was nice",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "WALK": {
+          "VELOCITY": [
+            "<",
+            0.2
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "STROLL",
+        "RAMBLE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "AMBLE-N1",
+      "WORD": "AMBLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "AMBLE-V1": {
+      "CAT": "V",
+      "DEF": "walk slowly and aimlessly",
+      "EX": "they ambled through the park",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "WALK": {
+          "VELOCITY": [
+            "<",
+            0.2
+          ],
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "AMBLED-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "STROLL",
+        "SAUNTER",
+        "RAMBLE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "AMBLE-V1",
+      "WORD": "AMBLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

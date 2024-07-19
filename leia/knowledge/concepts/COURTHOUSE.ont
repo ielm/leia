@@ -1,0 +1,26 @@
+{
+  "name": "@COURTHOUSE",
+  "isa": [
+    "@GOVERNMENT-BUILDING"
+  ],
+  "def": "a building housing law courts",
+  "local": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@LEGAL-WORK-ROLE"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@LITIGANT"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@CHAMBERS"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

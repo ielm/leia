@@ -1,0 +1,42 @@
+{
+  "word": "SLAVONIAN",
+  "senses": {
+    "SLAVONIAN-N1": {
+      "CAT": "N",
+      "DEF": "a citizen of slovenia",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CITIZEN": {
+          "HAS-NATIONALITY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "SLOVENIA"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SLOVENE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SLAVONIAN-N1",
+      "WORD": "SLAVONIAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

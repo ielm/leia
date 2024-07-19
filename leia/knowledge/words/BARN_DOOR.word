@@ -1,0 +1,31 @@
+{
+  "word": "BARN_DOOR",
+  "senses": {
+    "BARN_DOOR-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "DOOR": {
+          "PART-OF-OBJECT": "BARN"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BARN_DOOR-N1",
+      "WORD": "BARN_DOOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

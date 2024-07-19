@@ -1,0 +1,53 @@
+{
+  "word": "WARFARE",
+  "senses": {
+    "WARFARE-N1": {
+      "CAT": "N",
+      "DEF": "armed conflict (literal)",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "WAR-ACTIVITY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WARFARE-N1",
+      "WORD": "WARFARE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WARFARE-N2": {
+      "CAT": "N",
+      "DEF": "hostile argument (metaphorical)",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ARGUE-CONFLICT": {
+          "HOSTILITY": 1
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WARFARE-N2",
+      "WORD": "WARFARE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

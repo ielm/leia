@@ -1,0 +1,142 @@
+{
+  "word": "CAPTURE",
+  "senses": {
+    "CAPTURE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "the capture of the prisoner by the authorities",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "CAPTURE": {
+          "AGENT": {
+            "VALUE": "^$VAR4"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CAPTURE-0",
+        "OF-1",
+        "THE",
+        "ANIMAL-2",
+        "BY-3",
+        "THE",
+        "ANIMAL-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [
+        "SEIZURE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CAPTURE-N1",
+      "WORD": "CAPTURE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CAPTURE-V1": {
+      "CAT": "V",
+      "DEF": "to seize by force",
+      "EX": "he captured a rat in his garage",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "CAPTURE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "CAPTURED-0",
+        "A",
+        "RAT-2",
+        "IN",
+        "HIS",
+        "GARAGE"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SEIZE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CAPTURE-V1",
+      "WORD": "CAPTURE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

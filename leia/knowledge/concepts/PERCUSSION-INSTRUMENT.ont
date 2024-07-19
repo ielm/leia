@@ -1,0 +1,16 @@
+{
+  "name": "@PERCUSSION-INSTRUMENT",
+  "isa": [
+    "@MUSICAL-INSTRUMENT"
+  ],
+  "def": "a musical instrument producing a tone when struck, as a drum, cymbal, etc.",
+  "local": [],
+  "block": [
+    {
+      "slot": "is-consumer-good",
+      "facet": "sem",
+      "filler": "yes"
+    }
+  ],
+  "private": {}
+}

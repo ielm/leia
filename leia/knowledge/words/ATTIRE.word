@@ -1,0 +1,59 @@
+{
+  "word": "ATTIRE",
+  "senses": {
+    "ATTIRE-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "they were strangely attired",
+      "COMMENTS": "usu. in passive, but presented in active for processing reasons",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "WEAR-CLOTHES": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "ATTIRED-0",
+        "THEMSELVES-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ATTIRE-V1",
+      "WORD": "ATTIRE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

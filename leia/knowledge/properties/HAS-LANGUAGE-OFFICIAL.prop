@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-LANGUAGE-OFFICIAL",
+  "def": "languages used officially in the nations",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$OFFICIAL-LANGUAGE-OF",
+  "measured-in": [],
+  "container": "$LANGUAGE-RELATION"
+}

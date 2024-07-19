@@ -1,0 +1,136 @@
+{
+  "word": "QUARTER",
+  "senses": {
+    "QUARTER-N1": {
+      "CAT": "N",
+      "DEF": "1/4 of a year",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": "MONTH",
+          "CARDINALITY": 3
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "QUARTER-N1",
+      "WORD": "QUARTER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "QUARTER-N2": {
+      "CAT": "N",
+      "DEF": "a coin worth 25 cents, a quarter of a dollar",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "COIN": {
+          "MONETARY-VALUE": 0.25
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "QUARTER-N2",
+      "WORD": "QUARTER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "QUARTER-N3": {
+      "CAT": "N",
+      "DEF": "quarters = housing (usually short-term)",
+      "EX": "I'll show you to your quarters",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "NUMBER": "PL"
+      },
+      "SEM-STRUC": "DWELLING",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "QUARTER-N3",
+      "WORD": "QUARTER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "QUARTER-QUANTIFIER3": {
+      "CAT": "QUANTIFIER",
+      "DEF": "1/4 of sth. named",
+      "EX": "1/4 of the profits go to charity",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "AMOUNT": 0.25
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "QUARTER-0",
+        "OF-1",
+        "THE",
+        "MAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "QUARTER-QUANTIFIER3",
+      "WORD": "QUARTER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "name": "@STROKE-ANIMAL",
+  "isa": [
+    "@HUMAN-ONLY-LIVING-EVENT"
+  ],
+  "def": "To stroke or pet an animal, which actually means an external part of an animal. Animals include humans, which is appropriate (e.g., you can stroke a person's hair). We are putting animal itself as a filler for theme because we expect to frequently get inputs like 'stroke the dog' rather than stroke the fur of the dog (fur being its part)",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NON-HUMAN-ANIMAL-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HAIR"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PRINCIPAL-BODY-PART"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

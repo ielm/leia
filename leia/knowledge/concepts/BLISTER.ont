@@ -1,0 +1,22 @@
+{
+  "name": "@BLISTER",
+  "isa": [
+    "@SYMPTOM"
+  ],
+  "def": "a bubbling on the skin",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@SKIN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

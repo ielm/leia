@@ -1,0 +1,307 @@
+{
+  "word": "YELL",
+  "senses": {
+    "YELL-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "a loud speech act",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ASSERTIVE-ACT": {
+          "LOUDNESS": [
+            ">",
+            0.7
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "HOLLER",
+        "SHOUT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "YELL-N1",
+      "WORD": "YELL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "YELL-V2": {
+      "CAT": "V",
+      "DEF": "to scold by yelling at",
+      "EX": "she yelled at the child",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "AT",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "YELL": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          },
+          "PURPOSE": "SCOLD"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "GOD-1",
+        "YELLS-0",
+        "AT-3",
+        "THE",
+        "DOG-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [
+        "SHOUT",
+        "SCREAM",
+        "HOLLER"
+      ],
+      "HYPONYMS": [
+        "SNAP"
+      ],
+      "SENSE": "YELL-V2",
+      "WORD": "YELL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "YELL-V4": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "they yelled to their kids that it was time to leave",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "TO",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        },
+        "COMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "YELL": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "GOD-1",
+        "YELLS-0",
+        "TO-3",
+        "THE",
+        "DOG-4",
+        "THAT",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR2",
+          "$VAR0"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [
+        "SHOUT",
+        "SCREAM",
+        "HOLLER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "YELL-V4",
+      "WORD": "YELL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "YELL-V5": {
+      "CAT": "V",
+      "DEF": "direct quotation",
+      "EX": "he yelled (to them), 'i want to stay'",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": [
+            "TO",
+            "AT"
+          ],
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        },
+        "CL": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "YELL": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "GOD-1",
+        "YELLS-0",
+        "TO-4",
+        "THE",
+        "DOG-3",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "IOBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR4",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR4"
+        ],
+        [
+          "RCMOD",
+          "$VAR3",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "SHOUT",
+        "SCREAM",
+        "HOLLER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "YELL-V5",
+      "WORD": "YELL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

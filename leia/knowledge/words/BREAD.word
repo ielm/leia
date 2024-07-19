@@ -1,0 +1,118 @@
+{
+  "word": "BREAD",
+  "senses": {
+    "BREAD-N1": {
+      "CAT": "N",
+      "DEF": "a baked food made of flour or meal mixed with water, etc-",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BREAD",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BREAD-N1",
+      "WORD": "BREAD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BREAD-N800": {
+      "CAT": "N",
+      "DEF": "That is the greatest thing since sliced bread",
+      "EX": "",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "BE",
+          "CAT": "V"
+        },
+        "ART": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "THE",
+          "CAT": "ART"
+        },
+        "ADJ": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "GREATEST",
+          "CAT": "ADJ"
+        },
+        "N-1": {
+          "ROOT": "$VAR5",
+          "ROOT-WORD": "THING",
+          "CAT": "N"
+        },
+        "PREP": {
+          "ROOT": "$VAR6",
+          "ROOT-WORD": "SINCE",
+          "CAT": "PREP"
+        },
+        "V-1": {
+          "ROOT": "$VAR7",
+          "ROOT-WORD": "SLICE",
+          "CAT": "V"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          },
+          "TYPE": "EVALUATIVE",
+          "VALUE": 1
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR6": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR7": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "THAT-1",
+        "IS-2",
+        "THE-3",
+        "GREATEST-4",
+        "THING-5",
+        "SINCE-6",
+        "SLICED-7",
+        "BREAD-0"
+      ],
+      "SENSE": "BREAD-N800",
+      "WORD": "BREAD",
+      "HYPONYMS": [],
+      "SYNONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

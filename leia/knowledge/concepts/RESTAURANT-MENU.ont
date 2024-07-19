@@ -1,0 +1,32 @@
+{
+  "name": "@RESTAURANT-MENU",
+  "isa": [
+    "@TABLE-SETTING-ARTIFACT"
+  ],
+  "def": "a menu which lists foods and prices",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PAPER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CARDBOARD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

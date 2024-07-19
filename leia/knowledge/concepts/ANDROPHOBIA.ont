@@ -1,0 +1,38 @@
+{
+  "name": "@ANDROPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of men",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HUMAN-1"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {
+    "@HUMAN-1": {
+      "name": "@HUMAN-1",
+      "isa": [
+        "@HUMAN"
+      ],
+      "def": "",
+      "local": [],
+      "block": [],
+      "private": {}
+    }
+  }
+}

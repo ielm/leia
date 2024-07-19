@@ -1,0 +1,19 @@
+{
+  "name": "@GRAM-FORCE",
+  "isa": [
+    "@FORCE-UNIT"
+  ],
+  "def": "the magnitude of the force exerted by one gram of mass by a gravitational field at standard gravity (Wikipedia); 0.0022045*pound",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.001
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@GRAIN",
+  "isa": [
+    "@MASS-WEIGHT-UNIT"
+  ],
+  "def": "a unit of measure traditionally based on a cereal seed, is equivalent to 64.79891 milligrams (Wikipedia); 648E-7",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        6.48e-05
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

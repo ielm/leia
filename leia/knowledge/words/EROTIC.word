@@ -1,0 +1,35 @@
+{
+  "word": "EROTIC",
+  "senses": {
+    "EROTIC-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to the genre of erotica",
+      "EX": "an erotic story",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "HAS-STYLE": "EROTICA"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EROTIC-ADJ1",
+      "WORD": "EROTIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

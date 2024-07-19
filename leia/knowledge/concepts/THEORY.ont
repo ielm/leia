@@ -1,0 +1,29 @@
+{
+  "name": "@THEORY",
+  "isa": [
+    "@ABSTRACT-OBJECT"
+  ],
+  "def": "an explanation for something established by reasoned argument based on known facts",
+  "local": [
+    {
+      "slot": "about-as-topic",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "about-as-topic",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "cogency",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

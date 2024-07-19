@@ -1,0 +1,33 @@
+{
+  "name": "@SCREAM",
+  "isa": [
+    "@HUMAN-NOISE-MAKING"
+  ],
+  "def": "to utter a shrill, piercing cry as in fright, pain, etc.",
+  "local": [
+    {
+      "slot": "loudness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "loudness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "loudness",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "private": {}
+}

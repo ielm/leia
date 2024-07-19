@@ -1,0 +1,43 @@
+{
+  "word": "ETHOLOGY",
+  "senses": {
+    "ETHOLOGY-N1": {
+      "CAT": "N",
+      "DEF": "scientific study of animal behavior",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PSYCHOLOGY": {
+          "FIELD-STUDIES-AREA": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "BEHAVE": {
+            "AGENT": {
+              "SEM": [
+                "NOT",
+                "HUMAN"
+              ]
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ETHOLOGY-N1",
+      "WORD": "ETHOLOGY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

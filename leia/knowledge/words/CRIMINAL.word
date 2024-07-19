@@ -1,0 +1,72 @@
+{
+  "word": "CRIMINAL",
+  "senses": {
+    "CRIMINAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "CAT": "ADJ",
+          "ROOT": "$VAR0"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "LEGALITY-ATTRIBUTE": "NO"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CRIMINAL-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CRIMINAL-ADJ1",
+      "WORD": "CRIMINAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CRIMINAL-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CRIMINAL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "FUGITIVE",
+        "RENEGADE",
+        "BRIGAND",
+        "BANDIT",
+        "OUTLAW"
+      ],
+      "SENSE": "CRIMINAL-N1",
+      "WORD": "CRIMINAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

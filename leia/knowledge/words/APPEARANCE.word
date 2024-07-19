@@ -1,0 +1,65 @@
+{
+  "word": "APPEARANCE",
+  "senses": {
+    "APPEARANCE-N1": {
+      "CAT": "N",
+      "DEF": "how something looks; of physical objects",
+      "EX": "the appearance of the car is odd",
+      "COMMENTS": "The idea is that 'appearance' is the set of values of certain properties having to do with how something looks. These values, however, needs to be inferred from elsewhere.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "DOMAIN-OF": "COLOR",
+          "DOMAIN-OF-1": "SHAPE",
+          "DOMAIN-OF-2": "HEIGHT",
+          "DOMAIN-OF-3": "LENGTH",
+          "DOMAIN-OF-4": "WIDTH",
+          "DOMAIN-OF-5": "MADE-OF"
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "APPEARANCE-0",
+        "OF-1",
+        "THE",
+        "MAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "APPEARANCE-N1",
+      "WORD": "APPEARANCE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

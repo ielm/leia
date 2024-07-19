@@ -1,0 +1,66 @@
+{
+  "word": "EPIDEMIC",
+  "senses": {
+    "EPIDEMIC-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "having properties of an epidemic",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "EPIDEMIC"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EPIDEMIC-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EPIDEMIC-ADJ1",
+      "WORD": "EPIDEMIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EPIDEMIC-N1": {
+      "CAT": "N",
+      "DEF": "an outbreak of a communicable disease that spreads widely and rapidly",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "EPIDEMIC",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EPIDEMIC-N1",
+      "WORD": "EPIDEMIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

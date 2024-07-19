@@ -1,0 +1,38 @@
+{
+  "word": "WHIZ_KID",
+  "senses": {
+    "WHIZ_KID-N1": {
+      "CAT": "N",
+      "DEF": "a very smart young person, usually with special skills",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "AGE": [
+            "<",
+            18
+          ],
+          "INTELLIGENCE": [
+            ">",
+            0.9
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WHIZ_KID-N1",
+      "WORD": "WHIZ_KID",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

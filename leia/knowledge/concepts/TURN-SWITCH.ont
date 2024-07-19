@@ -1,0 +1,27 @@
+{
+  "name": "@TURN-SWITCH",
+  "isa": [
+    "@DEVICE-AS-THEME-EVENT"
+  ],
+  "def": "to turn a switch that turns a mechanism or device off or on",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SWITCH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

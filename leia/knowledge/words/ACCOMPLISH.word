@@ -1,0 +1,58 @@
+{
+  "word": "ACCOMPLISH",
+  "senses": {
+    "ACCOMPLISH-V1": {
+      "CAT": "V",
+      "DEF": "to finish successfully",
+      "EX": "he accomplished the work",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "SEM": "EVENT",
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPITEUCTIC",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "ACCOMPLISHED-0",
+        "THE",
+        "WORK-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "FULFILL"
+      ],
+      "HYPONYMS": [
+        "MEET"
+      ],
+      "SENSE": "ACCOMPLISH-V1",
+      "WORD": "ACCOMPLISH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

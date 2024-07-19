@@ -1,0 +1,359 @@
+{
+  "word": "HEAR",
+  "senses": {
+    "HEAR-V1": {
+      "CAT": "V",
+      "DEF": "experience an auditory event",
+      "EX": "he heard a train whistle in the distance",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "INVOLUNTARY-AUDITORY-EVENT": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "HEARD-0",
+        "A",
+        "WHISTLE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HEAR-V1",
+      "WORD": "HEAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HEAR-V2": {
+      "CAT": "V",
+      "DEF": "phrasal: X hears Y Z-ing",
+      "EX": "She heard him whistling a happy tune",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "NP": {
+          "ROOT": "$VAR3",
+          "CAT": "NP",
+          "V": {
+            "CAT": "V",
+            "FORM": "PROGRESSIVE"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "INVOLUNTARY-AUDITORY-EVENT": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR3": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR2",
+          "^$VAR3"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "HEARD-0",
+        "HIM-2",
+        "WHISTLING-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "NSUBJ",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HEAR-V2",
+      "WORD": "HEAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HEAR-V4": {
+      "CAT": "V",
+      "DEF": "phrasal: hear about X = be informed about X",
+      "EX": "I heard about the bridge collapse on the news; I've never heard of an honest politician",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": [
+            "ABOUT",
+            "OF"
+          ],
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "INFORM": {
+          "BENEFICIARY": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "INFORMATION": {
+            "ABOUT-AS-TOPIC": {
+              "VALUE": "^$VAR3"
+            }
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "HEARD-0",
+        "ABOUT-2",
+        "THE",
+        "BRIDGE",
+        "COLLAPSE-3",
+        "ON",
+        "THE",
+        "NEWS"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HEAR-V4",
+      "WORD": "HEAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HEAR-V5": {
+      "CAT": "V",
+      "DEF": "to find out some information that one cannot be sure is true",
+      "EX": "I heard that John was coming over tonight",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "COMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "SPEECH-ACT": {
+          "BENEFICIARY": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0.5,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "HEARD-0",
+        "THAT",
+        "THE",
+        "DOG",
+        "WON-2",
+        "THE",
+        "RACE"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HEAR-V5",
+      "WORD": "HEAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HEAR-V3": {
+      "CAT": "V",
+      "DEF": "phrasal: hear from x = receive a communication from x",
+      "EX": "he's hoping to hear from her soon",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "FROM",
+          "CAT": "PREP"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "COMMUNICATIVE-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR3"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "HEARD-0",
+        "FROM-2",
+        "HIS",
+        "SON-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HEAR-V3",
+      "WORD": "HEAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

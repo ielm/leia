@@ -1,0 +1,43 @@
+{
+  "name": "@SKI",
+  "isa": [
+    "@HUMAN-PROPELLED-VEHICLE",
+    "@SPORT-ARTIFACT"
+  ],
+  "def": "either of a pair of long runners of wood, etc. fastened to boots for gliding over snow",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@FIBERGLASS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@VINYL"
+    }
+  ],
+  "private": {}
+}

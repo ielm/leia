@@ -1,0 +1,120 @@
+{
+  "word": "LOBBY",
+  "senses": {
+    "LOBBY-N1": {
+      "CAT": "N",
+      "DEF": "lobby (group) - humans that lobby",
+      "EX": "",
+      "COMMENTS": "[D] we had 'lobby group' in texts",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "ROOT-WORD": "GROUP",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": "HUMAN",
+          "AGENT-OF": "LOBBY-FOR"
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "LOBBY-0",
+        "GROUP-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LOBBY-N1",
+      "WORD": "LOBBY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LOBBY-N2": {
+      "CAT": "N",
+      "DEF": "waiting or entrance area in a building",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "WAITING-ROOM",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LOBBY-N2",
+      "WORD": "LOBBY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LOBBY-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "they lobbied for election reform",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "FOR",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "LOBBY-FOR": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "LOBBIED-0",
+        "FOR-2",
+        "ELECTION",
+        "REFORM-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LOBBY-V1",
+      "WORD": "LOBBY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

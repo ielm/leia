@@ -1,0 +1,27 @@
+{
+  "name": "@NEURAXIS",
+  "isa": [
+    "@ANIMAL-ORGAN"
+  ],
+  "def": "the part of the nervous system which in vertebrates consists of the brain and spinal cord, to which sensory impulses are transmitted and from which motor impulses pass out, and which coordinates the activity of the entire nervous system",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@VERTEBRAL-COLUMN"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BRAIN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

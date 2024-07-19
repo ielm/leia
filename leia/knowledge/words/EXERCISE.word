@@ -1,0 +1,181 @@
+{
+  "word": "EXERCISE",
+  "senses": {
+    "EXERCISE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "you should get enough exercise every day",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "EXERCISE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EXERCISE-N1",
+      "WORD": "EXERCISE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EXERCISE-V1": {
+      "CAT": "V",
+      "DEF": "to do physical activity with the goal of bettering the health, etc.",
+      "EX": "john exercises daily",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "EXERCISE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "JOHN-1",
+        "EXERCISES-0",
+        "DAILY"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EXERCISE-V1",
+      "WORD": "EXERCISE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EXERCISE-V2": {
+      "CAT": "V",
+      "DEF": "to make an animal do physical activity",
+      "EX": "john exercises his horse daily",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "EXERCISE": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "EXERCISES-0",
+        "HIS",
+        "HORSE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EXERCISE-V2",
+      "WORD": "EXERCISE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EXERCISE-V3": {
+      "CAT": "V",
+      "DEF": "phrasal: exercise caution = be on the alert",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "ROOT-WORD": "CAUTION"
+        }
+      },
+      "SEM-STRUC": {
+        "BEWARE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "EXERCISED-0",
+        "CAUTION-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EXERCISE-V3",
+      "WORD": "EXERCISE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

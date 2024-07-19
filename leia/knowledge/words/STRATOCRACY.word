@@ -1,0 +1,38 @@
+{
+  "word": "STRATOCRACY",
+  "senses": {
+    "STRATOCRACY-N1": {
+      "CAT": "N",
+      "DEF": "government type with rule by the military",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "GOVERNMENT-TYPE": {
+          "HEADED-BY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": "MILITARY-ROLE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "STRATOCRACY-N1",
+      "WORD": "STRATOCRACY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

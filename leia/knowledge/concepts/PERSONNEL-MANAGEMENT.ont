@@ -1,0 +1,42 @@
+{
+  "name": "@PERSONNEL-MANAGEMENT",
+  "isa": [
+    "@PEOPLE-MANAGING-ACTIVITY"
+  ],
+  "def": "the screening and hiring of workers for business, as well as the maintenanace of workers* performance records",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WORK-ROLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MONEY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

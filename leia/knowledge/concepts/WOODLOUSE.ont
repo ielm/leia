@@ -1,0 +1,16 @@
+{
+  "name": "@WOODLOUSE",
+  "isa": [
+    "@ISOPOD"
+  ],
+  "def": "a small terrestrial isopod with a flat elliptical segmented body",
+  "local": [],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BODY-OF-WATER"
+    }
+  ],
+  "private": {}
+}

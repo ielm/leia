@@ -1,0 +1,21 @@
+{
+  "name": "@REAR-OFFSPRING",
+  "isa": [
+    "@OFFSPRING-EVENT"
+  ],
+  "def": "to educate or train offspring to live independently as they grow",
+  "local": [],
+  "block": [
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

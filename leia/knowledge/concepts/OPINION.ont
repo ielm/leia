@@ -1,0 +1,19 @@
+{
+  "name": "@OPINION",
+  "isa": [
+    "@IDEOLOGY"
+  ],
+  "def": "a belief based on what seems to be true; a viewpoint",
+  "local": [
+    {
+      "slot": "cogency",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,44 @@
+{
+  "word": "VICTORIAN",
+  "senses": {
+    "VICTORIAN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "of the richly ornamented, massive style of architecture, furniture, and decor, popular in England in the 19th-century. ",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "HAS-STYLE": "VICTORIAN"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "VICTORIAN-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "VICTORIAN-ADJ1",
+      "WORD": "VICTORIAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

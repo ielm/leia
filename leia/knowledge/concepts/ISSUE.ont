@@ -1,0 +1,21 @@
+{
+  "name": "@ISSUE",
+  "isa": [
+    "@ABSTRACT-OBJECT"
+  ],
+  "def": "a topic of discussion, debate, etc.",
+  "local": [
+    {
+      "slot": "about-as-topic",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "about-as-topic",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

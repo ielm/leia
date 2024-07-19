@@ -1,0 +1,1007 @@
+{
+  "word": "DO",
+  "senses": {
+    "DO-AUX1": {
+      "CAT": "AUX",
+      "DEF": "does/do (present tense) as an auxiliary to indicate that the epistemic modality is emphatic",
+      "EX": "He does own 3 homes on the seashore!",
+      "COMMENTS": "XCOMP replaces original INF-CL to work with SynMap generator",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "AUX",
+        "XCOMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "DOES-0",
+        "OWN-1",
+        "THREE",
+        "HOMES"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AUX",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DO-AUX1",
+      "WORD": "DO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DO-V2": {
+      "CAT": "V",
+      "DEF": "phrasal: do the dishes",
+      "EX": "she does the dishes every night",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "ROOT-WORD": "DISH",
+          "NUMBER": "PL"
+        }
+      },
+      "SEM-STRUC": {
+        "WASH": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": [
+              "TABLEWARE",
+              "COOKING-EQUIPMENT",
+              "PLACE-SETTING"
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "DOES-0",
+        "THE",
+        "DISHES-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DO-V2",
+      "WORD": "DO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DO-V3": {
+      "CAT": "V",
+      "DEF": "phrasal: do the laundry",
+      "EX": "she does the laundry every night",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "ROOT-WORD": "LAUNDRY"
+        }
+      },
+      "SEM-STRUC": {
+        "WASH": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "CLOTHING-ARTIFACT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "DOES-0",
+        "THE",
+        "LAUNDRY-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DO-V3",
+      "WORD": "DO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DO-V4": {
+      "CAT": "V",
+      "DEF": "phrasal: do s.o.'s hair",
+      "EX": "she does my hair for me",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "ARRANGE-HAIR": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "HAIR"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "DOES-0",
+        "MY",
+        "HAIR-2",
+        "FOR",
+        "ME"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DO-V4",
+      "WORD": "DO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DO-V5": {
+      "CAT": "V",
+      "DEF": "phrasal: do so",
+      "EX": "he asked if I had finished mowing the lawn and I said I had done so",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "ADV": {
+          "ROOT": "$VAR2",
+          "CAT": "ADV",
+          "ROOT-WORD": "SO"
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "EVENT": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "REFSEM1",
+          "REFERENCE-PROCEDURES"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "HAD",
+        "DONE-0",
+        "SO-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "ADVMOD",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DO-V5",
+      "WORD": "DO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DO-V6": {
+      "CAT": "V",
+      "DEF": "do + ing form of the verb",
+      "EX": "She does knitting in the evenings",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "XCOMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "SEM": "EVENT",
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "DID-0",
+        "KNITTING-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DO-V6",
+      "WORD": "DO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DO-V7": {
+      "CAT": "V",
+      "DEF": "do + NP that indicates an event",
+      "EX": "They did a review of the literature = They reviewed the literature",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR2",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "DID-0",
+        "THE",
+        "REVIEW-2",
+        "OF",
+        "THE",
+        "LITERATURE"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DO-V7",
+      "WORD": "DO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DO-V8": {
+      "CAT": "V",
+      "DEF": "phrasal: do the best one can = try hard",
+      "EX": "She didn't know how to grow a garden but she did the best she could",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "ART": {
+          "ROOT": "$VAR2",
+          "CAT": "ART",
+          "ROOT-WORD": "THE"
+        },
+        "ADJ": {
+          "ROOT": "$VAR3",
+          "CAT": "ADJ",
+          "ROOT-WORD": "GOOD",
+          "FORM": "SUPERLATIVE"
+        },
+        "NP": {
+          "ROOT": "$VAR4",
+          "CAT": "NP",
+          "TYPE": "PRO"
+        },
+        "AUX": {
+          "ROOT": "$VAR5",
+          "CAT": "AUX",
+          "ROOT-WORD": "CAN"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EFFORT",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "EVENT": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "REFSEM1",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "COMPANY-1",
+        "DID-0",
+        "THE-2",
+        "BEST-3",
+        "IT-4",
+        "COULD-5"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "RCMOD",
+          "$VAR3",
+          "$VAR5"
+        ],
+        [
+          "DET",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "DEP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR5",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DO-V8",
+      "WORD": "DO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DO-V9": {
+      "CAT": "V",
+      "DEF": "phrasal: do harm to = injure (this sense is of animals only)",
+      "EX": "they didn't do harm to the hostages",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "ROOT-WORD": "HARM"
+        },
+        "PP": {
+          "ROOT-WORD": "TO",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "INJURY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "HUMAN-1",
+        "DID-0",
+        "THE",
+        "HARM-2",
+        "TO-3",
+        "THE",
+        "PATIENT-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DO-V9",
+      "WORD": "DO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DO-V101": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "He does/did",
+      "COMMENTS": "works with VP ellipsis",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 1,
+          "SCOPE": "EVENT-VPE"
+        }
+      },
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-EVENT",
+          "EVENT-VPE",
+          "CASE-ROLE",
+          "^$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DO-V101",
+      "WORD": "DO",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": []
+    },
+    "DO-V1": {
+      "CAT": "V",
+      "DEF": "generalized sense: unspecified event",
+      "EX": "he did the ceiling",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "^$VAR0",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "DOES-0",
+        "THE",
+        "WORK-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DO-V1",
+      "WORD": "DO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DO-V511": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "Do you mind?",
+      "COMMENTS": "indirect speech act",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "MIND",
+          "CAT": "V"
+        },
+        "PUNCT": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "*QUESTION_MARK*",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "EVENT": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        },
+        "REFSEM2": {
+          "ASPECT": {
+            "PHASE": "END",
+            "SCOPE": {
+              "VALUE": "REFSEM1"
+            }
+          }
+        },
+        "REQUEST-ACTION": {
+          "AGENT-1": "*SPEAKER*",
+          "BENEFICIARY": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "REFSEM2"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "DO-0",
+        "YOU-1",
+        "MIND-2",
+        "*QUESTION_MARK*-3"
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DO-V511",
+      "WORD": "DO",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "DO-V510": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "Do you have to hit the building?",
+      "COMMENTS": "Indirect speech act",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "AUX": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "HAVE",
+          "CAT": "V"
+        },
+        "INF": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "TO",
+          "CAT": "INF"
+        },
+        "V": {
+          "ROOT": "$VAR4",
+          "CAT": "V"
+        },
+        "PUNCT": {
+          "ROOT": "$VAR5",
+          "ROOT-WORD": "*QUESTION_MARK*",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "ASPECT": {
+            "PHASE": "END",
+            "SCOPE": {
+              "VALUE": "^$VAR4",
+              "SEM": "EVENT"
+            }
+          }
+        },
+        "REQUEST-ACTION": {
+          "AGENT": "*SPEAKER*",
+          "BENEFICIARY": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "DO-0",
+        "YOU-1",
+        "HAVE-2",
+        "TO-3",
+        "HIT-4",
+        "THE",
+        "BUILDING",
+        "*QUESTION_MARK*-5"
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DO-V510",
+      "WORD": "DO",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "DO-V501": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "Do you mind?",
+      "COMMENTS": "Direct speech act",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "MIND",
+          "CAT": "V"
+        },
+        "PUNCT": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "*QUESTION_MARK*",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "DISTURB": {
+            "PATIENT": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        },
+        "REQUEST-INFO": {
+          "AGENT": "*SPEAKER*",
+          "BENEFICIARY": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "DO-0",
+        "YOU-1",
+        "MIND-2",
+        "*QUESTION_MARK*-3"
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DO-V501",
+      "WORD": "DO",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "DO-V500": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "Do you have to hit the building?",
+      "COMMENTS": "Direct speech act",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "AUX": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "HAVE",
+          "CAT": "V"
+        },
+        "INF": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "TO",
+          "CAT": "INF"
+        },
+        "V": {
+          "ROOT": "$VAR4",
+          "CAT": "V"
+        },
+        "PUNCT": {
+          "ROOT": "$VAR5",
+          "ROOT-WORD": "*QUESTION_MARK*",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "MODALITY": {
+            "TYPE": "OBLIGATIVE",
+            "VALUE": 1,
+            "SCOPE": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "REQUEST-INFO": {
+          "AGENT": "*SPEAKER*",
+          "BENEFICIARY": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "DO-0",
+        "YOU-1",
+        "HAVE-2",
+        "TO-3",
+        "HIT-4",
+        "THE",
+        "BUILDING",
+        "*QUESTION_MARK*-5"
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DO-V500",
+      "WORD": "DO",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

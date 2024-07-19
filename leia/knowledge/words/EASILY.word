@@ -1,0 +1,45 @@
+{
+  "word": "EASILY",
+  "senses": {
+    "EASILY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "without difficulty",
+      "EX": "the trees were easily chopped",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "DIFFICULTY": 0.2
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EASILY-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EASILY-ADV1",
+      "WORD": "EASILY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

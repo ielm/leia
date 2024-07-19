@@ -1,0 +1,31 @@
+{
+  "word": "BANKRUPTCY_PROCESS",
+  "senses": {
+    "BANKRUPTCY_PROCESS-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "FINANCIAL-EVENT": {
+          "RELATION": "BANKRUPT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BANKRUPTCY_PROCESS-N1",
+      "WORD": "BANKRUPTCY_PROCESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

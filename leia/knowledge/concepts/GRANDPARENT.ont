@@ -1,0 +1,33 @@
+{
+  "name": "@GRANDPARENT",
+  "isa": [
+    "@FAMILY-ROLE"
+  ],
+  "def": "a grandmother or grandfather",
+  "local": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "><",
+        130
+      ]
+    },
+    {
+      "slot": "has-grandchild",
+      "facet": "sem",
+      "filler": "@GRANDCHILD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "><",
+        130
+      ]
+    }
+  ],
+  "private": {}
+}

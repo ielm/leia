@@ -1,0 +1,42 @@
+{
+  "word": "PECKISH",
+  "senses": {
+    "PECKISH-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "experiencing slight hunger",
+      "EX": "I'm peckish",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "BENEFICIARY-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "HUNGER": {
+            "INTENSITY": 0.3
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PECKISH-ADJ1",
+      "WORD": "PECKISH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

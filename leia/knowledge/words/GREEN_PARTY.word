@@ -1,0 +1,118 @@
+{
+  "word": "GREEN_PARTY",
+  "senses": {
+    "GREEN_PARTY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "of people: having membership in the green party",
+      "EX": "green party candidates met for a debate on the wearing of fishnet stockings in public",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "HUMAN",
+            "SOCIAL-OBJECT"
+          ],
+          "POLITICAL-PARTY-MEMBERSHIP": "GREEN-PARTY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GREEN_PARTY-ADJ1",
+      "WORD": "GREEN_PARTY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "GREEN_PARTY-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "related to the green party; in cases when the head is not a person or organization",
+      "EX": "the green party convention was held in chicago this year",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": {
+              "VALUE": "REFSEM2"
+            },
+            "COMPLETE": "YES"
+          }
+        },
+        "REFSEM2": {
+          "HUMAN": {
+            "POLITICAL-PARTY-MEMBERSHIP": "GREEN-PARTY"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GREEN_PARTY-ADJ2",
+      "WORD": "GREEN_PARTY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "GREEN_PARTY-N1": {
+      "CAT": "N",
+      "DEF": "the green (political) party",
+      "EX": "the green party won a landslide victory",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "REFSEM1"
+          },
+          "COMPLETE": "YES"
+        },
+        "REFSEM1": {
+          "HUMAN": {
+            "POLITICAL-PARTY-MEMBERSHIP": "GREEN-PARTY"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GREEN_PARTY-N1",
+      "WORD": "GREEN_PARTY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

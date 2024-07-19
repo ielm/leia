@@ -1,0 +1,77 @@
+{
+  "name": "@RADIO-TRANSMISSION",
+  "isa": [
+    "@TELECOMMUNICATION"
+  ],
+  "def": "The wireless transmission through space of electromagnetic waves",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@RADIO-FREQUENCY"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@RADIO-PROGRAM"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@RADIO-RECEIVER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SHORT-WAVE-RADIO"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@RADIO-STATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COMMUNICATION-DEVICE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COMPUTER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TELEGRAM"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TELEVISION-CHANNEL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WEBPAGE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WEBSITE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

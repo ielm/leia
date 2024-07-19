@@ -1,0 +1,72 @@
+{
+  "word": "RELAXED",
+  "senses": {
+    "RELAXED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "of an environment: informal",
+      "EX": "he enjoyed the relaxed atmosphere of the office",
+      "COMMENTS": "[D] one of many imperfect alternative definitions",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "SOCIAL-ENVIRONMENT",
+          "FORMALITY": [
+            "<",
+            0.3
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RELAXED-ADJ1",
+      "WORD": "RELAXED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RELAXED-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "of a person: not anxious",
+      "EX": "he felt relaxed for the first time in weeks",
+      "COMMENTS": "[D] one of many imperfect alternative definitions",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "ANIMAL",
+          "ANXIETY-ATTRIBUTE": 0.2
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "AT_EASE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "RELAXED-ADJ2",
+      "WORD": "RELAXED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

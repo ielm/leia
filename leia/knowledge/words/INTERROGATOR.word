@@ -1,0 +1,31 @@
+{
+  "word": "INTERROGATOR",
+  "senses": {
+    "INTERROGATOR-N1": {
+      "CAT": "N",
+      "DEF": "someone formally questioning someone else",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "AGENT-OF": "INTERROGATE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INTERROGATOR-N1",
+      "WORD": "INTERROGATOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

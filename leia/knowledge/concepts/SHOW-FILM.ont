@@ -1,0 +1,67 @@
+{
+  "name": "@SHOW-FILM",
+  "isa": [
+    "@ENTERTAIN-EVENT"
+  ],
+  "def": "The event of presenting a film in a movie theater.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INFORMATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FILM-MEDIA"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@MOVIE-THEATER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SCREEN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

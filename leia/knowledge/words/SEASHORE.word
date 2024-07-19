@@ -1,0 +1,38 @@
+{
+  "word": "SEASHORE",
+  "senses": {
+    "SEASHORE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "COAST": {
+          "THEME-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "CONVERGE": {
+            "THEME": "SEA"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SEASHORE-N1",
+      "WORD": "SEASHORE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

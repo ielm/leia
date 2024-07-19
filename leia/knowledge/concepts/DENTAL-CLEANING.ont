@@ -1,0 +1,32 @@
+{
+  "name": "@DENTAL-CLEANING",
+  "isa": [
+    "@MEDICAL-PROCEDURE"
+  ],
+  "def": "in dentistry, a cleaning of the teeth to remove tartar and plaque in order to prevent gum disease",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TOOTH"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@DENTIST"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@DENTAL-PRODUCT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MEDICAL-ARTIFACT"
+    }
+  ],
+  "private": {}
+}

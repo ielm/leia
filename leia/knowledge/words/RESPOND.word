@@ -1,0 +1,338 @@
+{
+  "word": "RESPOND",
+  "senses": {
+    "RESPOND-V4": {
+      "CAT": "V",
+      "DEF": "phrasal: respond to a question/inquiry",
+      "EX": "he responded to her question",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "TO",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N",
+            "ROOT-WORD": "QUESTION"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "RESPOND": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "PRECONDITION": "REQUEST-INFO"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "HUMAN-1",
+        "RESPONDED-0",
+        "TO-2",
+        "THE",
+        "QUESTION-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RESPOND-V4",
+      "WORD": "RESPOND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RESPOND-V3": {
+      "CAT": "V",
+      "DEF": "respond to [medical treatment] = react positively as expected",
+      "EX": "he is responding to the adrenaline she did not respond to chemo",
+      "COMMENTS": "typicalness-attribute?",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "TO",
+          "CAT": "PREP"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "HEAL": {
+          "INSTRUMENT": {
+            "VALUE": "^$VAR3",
+            "SEM": [
+              "MEDICAL-PROCEDURE",
+              "DRUG"
+            ]
+          },
+          "THEME": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "RESPONDED-0",
+        "TO-2",
+        "THE",
+        "PROCEDURE-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RESPOND-V3",
+      "WORD": "RESPOND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RESPOND-V1": {
+      "CAT": "V",
+      "DEF": "to reply ",
+      "EX": "he responded (that...)",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "TO",
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        },
+        "COMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "RESPOND": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "RESPONDED-0",
+        "TO-4",
+        "THE",
+        "ECOLOGIST-3",
+        "THAT",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR4"
+        ],
+        [
+          "POBJ",
+          "$VAR4",
+          "$VAR3"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "REPLY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "RESPOND-V1",
+      "WORD": "RESPOND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RESPOND-V2": {
+      "CAT": "V",
+      "DEF": "direct quotation",
+      "EX": "he responded,/: [double-quote]i want to stay[double-quote]",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "TO",
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        },
+        "QUOTED-SPEECH": [
+          [
+            "ROOT",
+            "$VAR2"
+          ],
+          [
+            "CAT",
+            "CL"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "RESPOND": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "GOD-1",
+        "ANSWERED-0",
+        "TO-4",
+        "THE",
+        "AMBASSADOR-3",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR4"
+        ],
+        [
+          "POBJ",
+          "$VAR4",
+          "$VAR3"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "REPLY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "RESPOND-V2",
+      "WORD": "RESPOND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

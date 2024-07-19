@@ -1,0 +1,148 @@
+{
+  "word": "DISCREDIT",
+  "senses": {
+    "DISCREDIT-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "he discredited his partner for what he did",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": "FOR",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "DISCREDIT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "DISCREDITED-0",
+        "HIS",
+        "PARTNER-2",
+        "FOR-3",
+        "HIS",
+        "ACTIONS-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DISCREDIT-V1",
+      "WORD": "DISCREDIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DISCREDIT-V2": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "he discredited his partner's actions",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "DISCREDIT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": [
+              "NOT",
+              "HUMAN"
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "DISCREDITED-0",
+        "HIS",
+        "ACTIONS-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DISCREDIT-V2",
+      "WORD": "DISCREDIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

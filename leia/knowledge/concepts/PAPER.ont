@@ -1,0 +1,32 @@
+{
+  "name": "@PAPER",
+  "isa": [
+    "@PLANT-DERIVED-SUBSTANCE"
+  ],
+  "def": "material for writing and printing on",
+  "local": [
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "opaque"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "translucent"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CELLULOSE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "transparent"
+    }
+  ],
+  "private": {}
+}

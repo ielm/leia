@@ -1,0 +1,36 @@
+{
+  "word": "T_SHIRT",
+  "senses": {
+    "T_SHIRT-N1": {
+      "CAT": "N",
+      "DEF": "an informal garment worn on the upper part of the body",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SHIRT": {
+          "FORMALITY": [
+            "<",
+            0.3
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "TEE_SHIRT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "T_SHIRT-N1",
+      "WORD": "T_SHIRT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@VOLUNTARY-AUDITORY-EVENT",
+  "isa": [
+    "@AUDITORY-EVENT"
+  ],
+  "def": "voluntarily (actively) perceive something by listening",
+  "local": [],
+  "block": [
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

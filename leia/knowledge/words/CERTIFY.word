@@ -1,0 +1,122 @@
+{
+  "word": "CERTIFY",
+  "senses": {
+    "CERTIFY-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "they certified that the job was completed",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "COMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "CERTIFY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "CERTIFIED-0",
+        "THAT",
+        "THE",
+        "JOB",
+        "WAS",
+        "COMPLETED-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "VALIDATE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CERTIFY-V1",
+      "WORD": "CERTIFY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CERTIFY-V2": {
+      "CAT": "V",
+      "DEF": "testify to the genuineness/trustworthiness of sth",
+      "EX": "they certified the check",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "CERTIFY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "CERTIFIED-0",
+        "THE",
+        "CHECK-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "VALIDATE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CERTIFY-V2",
+      "WORD": "CERTIFY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

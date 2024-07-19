@@ -1,0 +1,32 @@
+{
+  "name": "@BICYCLE",
+  "isa": [
+    "@HUMAN-PROPELLED-VEHICLE",
+    "@SPORT-ARTIFACT",
+    "@WHEELED-VEHICLE"
+  ],
+  "def": "a two-wheeled vehicle operated by a human",
+  "local": [
+    {
+      "slot": "number-of-wheels",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        2
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

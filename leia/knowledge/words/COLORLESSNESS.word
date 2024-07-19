@@ -1,0 +1,100 @@
+{
+  "word": "COLORLESSNESS",
+  "senses": {
+    "COLORLESSNESS-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "the glass's colorlessness",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "POSSESSIVE": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "COLOR": "COLORLESS"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COLORLESSNESS-N1",
+      "WORD": "COLORLESSNESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "COLORLESSNESS-N2": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "the colorlessness of the glass",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR1",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "COLOR": "COLORLESS"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COLORLESSNESS-N2",
+      "WORD": "COLORLESSNESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "COLORLESSNESS-N3": {
+      "CAT": "N",
+      "DEF": "with no explicit modifyee",
+      "EX": "some people like colorlessness",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PHYSICAL-OBJECT": {
+          "COLOR": "COLORLESS"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COLORLESSNESS-N3",
+      "WORD": "COLORLESSNESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

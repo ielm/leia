@@ -1,0 +1,52 @@
+{
+  "name": "@CARDIOVASCULAR-SYSTEM",
+  "isa": [
+    "@ORGAN-SYSTEM"
+  ],
+  "def": "Organ system which consists of the heart, the systemic and pulmonary arterial and venous system, the lymphatic and the portal venous system",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SYSTEMIC-ARTERIAL-SYSTEM"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SYSTEMIC-VENOUS-SYSTEM"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PULMONARY-VASCULAR-SYSTEM"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PORTAL-VENOUS-SYSTEM"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@VASCULATURE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@HEART"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LYMPHATIC-SYSTEM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

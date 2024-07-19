@@ -1,0 +1,37 @@
+{
+  "name": "@COLON-CANCER",
+  "isa": [
+    "@CANCER"
+  ],
+  "def": "Cancer of the colon.",
+  "local": [
+    {
+      "slot": "treated-by",
+      "facet": "sem",
+      "filler": "@COLECTOMY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COLON"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    },
+    {
+      "slot": "treated-by",
+      "facet": "sem",
+      "filler": "@MEDICAL-PROCEDURE"
+    },
+    {
+      "slot": "treated-by",
+      "facet": "sem",
+      "filler": "@PHARMACEUTICAL-MATERIAL"
+    }
+  ],
+  "private": {}
+}

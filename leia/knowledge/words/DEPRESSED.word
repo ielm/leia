@@ -1,0 +1,57 @@
+{
+  "word": "DEPRESSED",
+  "senses": {
+    "DEPRESSED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "in a bad emotional state",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "EMOTIONAL-STATE": 0.1
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "DEPRESSED-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "CRESTFALLEN",
+        "DESPONDENT",
+        "DISCONSOLATE",
+        "DOWNHEARTED",
+        "GLUM",
+        "GRIM",
+        "MOROSE",
+        "MISERABLE",
+        "DEJECTED",
+        "FORLORN",
+        "BEREFT",
+        "DESPAIRING"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DEPRESSED-ADJ1",
+      "WORD": "DEPRESSED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

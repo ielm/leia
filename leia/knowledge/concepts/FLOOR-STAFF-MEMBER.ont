@@ -1,0 +1,22 @@
+{
+  "name": "@FLOOR-STAFF-MEMBER",
+  "isa": [
+    "@WORK-ROLE"
+  ],
+  "def": "restaurant employees who deal directly with patrons in a restaurant*s dining-room",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@DINING-ROOM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

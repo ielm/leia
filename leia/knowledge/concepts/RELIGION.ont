@@ -1,0 +1,37 @@
+{
+  "name": "@RELIGION",
+  "isa": [
+    "@ABSTRACT-OBJECT"
+  ],
+  "def": "a personal or institutionalized system of beliefs in a divine power",
+  "local": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@THEOLOGY"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@PERSECUTE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

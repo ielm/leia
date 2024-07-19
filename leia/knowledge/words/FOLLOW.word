@@ -1,0 +1,563 @@
+{
+  "word": "FOLLOW",
+  "senses": {
+    "FOLLOW-V1": {
+      "CAT": "V",
+      "DEF": "of a motion event -- to be moving in the same direction behind s.o. or sth.",
+      "EX": "They all followed the commander. The trucks followed the tanks",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "MOTION-EVENT": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            },
+            "AGENT-1": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "^$VAR2": {
+          "BEHIND": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "REFSEM1"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "FOLLOWED-0",
+        "THE",
+        "COMMANDER-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "CHASE",
+        "PURSUE"
+      ],
+      "SENSE": "FOLLOW-V1",
+      "WORD": "FOLLOW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FOLLOW-V2": {
+      "CAT": "V",
+      "DEF": "to come after in time - of events or temp. units",
+      "EX": "sleeping follows eating.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "EVENT",
+            "TIME-INTERVAL-UNIT"
+          ],
+          "TIME": [
+            ">",
+            [
+              "VALUE",
+              "^$VAR2.TIME"
+            ]
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SLEEPING-1",
+        "FOLLOWS-0",
+        "EATING-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FOLLOW-V2",
+      "WORD": "FOLLOW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FOLLOW-V4": {
+      "CAT": "V",
+      "DEF": "to cause to come after in time - of events or temp. units",
+      "EX": "she followed the lecture with a question period",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": "WITH",
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "SEM": [
+            "EVENT",
+            "TIME-INTERVAL-UNIT"
+          ],
+          "TIME": [
+            "<",
+            [
+              "VALUE",
+              "^$VAR3.TIME"
+            ]
+          ],
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "FOLLOWED-0",
+        "THE",
+        "LECTURE-2",
+        "WITH-4",
+        "A",
+        "QUESTION-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PUNCT",
+          "$VAR0",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FOLLOW-V4",
+      "WORD": "FOLLOW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FOLLOW-V5": {
+      "CAT": "V",
+      "DEF": "phrasal: follow a plan",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "ROOT-WORD": "PLAN"
+        }
+      },
+      "SEM-STRUC": {
+        "FOLLOW-PLAN": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "FOLLOWED-0",
+        "THE",
+        "PLAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "PURSUE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FOLLOW-V5",
+      "WORD": "FOLLOW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FOLLOW-V6": {
+      "CAT": "V",
+      "DEF": "follow some person in their given social role",
+      "EX": "they follow the president blindly",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "YIELD-TO": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "SOCIAL-ROLE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "FOLLOW-0",
+        "THE",
+        "PRESIDENT-2",
+        "BLINDLY"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FOLLOW-V6",
+      "WORD": "FOLLOW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FOLLOW-V7": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "they pursued the criminal",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "PURSUE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "PURSUED-0",
+        "THE",
+        "CRIMINAL-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "CHASE",
+        "PURSUE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FOLLOW-V7",
+      "WORD": "FOLLOW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FOLLOW-V8": {
+      "CAT": "V",
+      "DEF": "to travel along sth. - when the traveler is an agent",
+      "EX": "they followed the road (corridor, etc.) to the end <past the x>",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "MOTION-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "PATH": {
+            "VALUE": "^$VAR2",
+            "DEFAULT": "ROAD-SYSTEM-ARTIFACT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "FOLLOWED-0",
+        "THE",
+        "ROAD-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FOLLOW-V8",
+      "WORD": "FOLLOW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FOLLOW-V9": {
+      "CAT": "V",
+      "DEF": "to travel along sth. - when the traveler is a vehicle or other non- agent",
+      "EX": "the trucks followed the road (corridor, etc.) to the end <past the x>",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "MOTION-EVENT": {
+          "THEME": {
+            "VALUE": "^$VAR1",
+            "SEM": [
+              "NOT",
+              "ANIMAL"
+            ]
+          },
+          "PATH": {
+            "VALUE": "^$VAR2",
+            "DEFAULT": "ROAD-SYSTEM-ARTIFACT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "TRUCKS-1",
+        "FOLLOWED-0",
+        "THE",
+        "ROAD-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FOLLOW-V9",
+      "WORD": "FOLLOW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FOLLOW-V11": {
+      "CAT": "V",
+      "DEF": "to pay attn. to consistently",
+      "EX": "he follows the stock market",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "PAY-ATTENTION": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "FOLLOWS-0",
+        "THE",
+        "STOCK_MARKET-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "TRACK",
+        "OBSERVE"
+      ],
+      "HYPONYMS": [
+        "MONITOR"
+      ],
+      "SENSE": "FOLLOW-V11",
+      "WORD": "FOLLOW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

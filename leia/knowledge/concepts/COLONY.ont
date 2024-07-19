@@ -1,0 +1,16 @@
+{
+  "name": "@COLONY",
+  "isa": [
+    "@LARGE-GEOPOLITICAL-ENTITY"
+  ],
+  "def": "a region claimed by a group of settlers in a distant land, under the jurisdiction of their native land",
+  "local": [
+    {
+      "slot": "in-province",
+      "facet": "sem",
+      "filler": "@PROVINCE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

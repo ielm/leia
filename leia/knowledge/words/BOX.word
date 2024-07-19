@@ -1,0 +1,91 @@
+{
+  "word": "BOX",
+  "senses": {
+    "BOX-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "BOX": {
+          "CONTAINS": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "BOX-0",
+        "OF-1",
+        "THE",
+        "TABLE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BOX-N1",
+      "WORD": "BOX",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BOX-N401": {
+      "CAT": "N",
+      "COMMENTS": "*BLOCKS*",
+      "EX": "two grey boxes",
+      "SYN-STRUC": {
+        "ADJ": {
+          "ROOT": "$VAR1",
+          "ROOT-WORD": "SQUARE",
+          "CAT": "ADJ",
+          "OPT": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "GRAPHIC-OBJECT": {
+          "SHAPE": "BOXLIKE"
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "SENSE": "BOX-N401",
+      "WORD": "BOX",
+      "DEF": "NIL",
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

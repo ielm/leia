@@ -1,0 +1,82 @@
+{
+  "word": "SHOULD_NOT",
+  "senses": {
+    "SHOULD_NOT-AUX1": {
+      "CAT": "AUX",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "AUX",
+        "XCOMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SHOULD_NOT-AUX1",
+      "WORD": "SHOULD_NOT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SHOULD_NOT-AUX101": {
+      "CAT": "AUX",
+      "DEF": "",
+      "EX": "...he should not",
+      "COMMENTS": "works with VP ellipsis",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "AUX"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": "EVENT-VPE"
+        }
+      },
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-EVENT",
+          "EVENT-VPE",
+          "CASE-ROLE",
+          "^$VAR1"
+        ]
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SHOULD_NOT-AUX101",
+      "WORD": "SHOULD_NOT",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": []
+    }
+  }
+}

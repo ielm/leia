@@ -1,0 +1,88 @@
+{
+  "word": "EACH",
+  "senses": {
+    "EACH-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "each fish got caught.",
+      "COMMENTS": "I made the cat of the complement 'n' rather than 'np' because there can't be an article or determiner.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP",
+          "NUMBER": "SING"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "CARDINALITY": 1,
+          "COMPLETE": "YES",
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EACH-0",
+        "FISH-1",
+        "GOT",
+        "CAUGHT"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EACH-QUANTIFIER1",
+      "WORD": "EACH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EACH-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "each got caught in due time.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "CARDINALITY": 1,
+          "COMPLETE": "YES"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          [
+            "SET",
+            1
+          ]
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EACH-N1",
+      "WORD": "EACH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

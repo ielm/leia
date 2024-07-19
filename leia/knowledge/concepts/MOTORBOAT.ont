@@ -1,0 +1,16 @@
+{
+  "name": "@MOTORBOAT",
+  "isa": [
+    "@BOAT"
+  ],
+  "def": "a small motor-driven boat, used for its speed and maneuverability",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ENGINE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

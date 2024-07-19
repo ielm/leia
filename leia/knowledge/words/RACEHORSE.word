@@ -1,0 +1,33 @@
+{
+  "word": "RACEHORSE",
+  "senses": {
+    "RACEHORSE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HORSE": {
+          "AGENT-OF": "RACE-EVENT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "STEEPLECHASER"
+      ],
+      "SENSE": "RACEHORSE-N1",
+      "WORD": "RACEHORSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

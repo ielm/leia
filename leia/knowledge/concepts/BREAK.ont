@@ -1,0 +1,22 @@
+{
+  "name": "@BREAK",
+  "isa": [
+    "@BREAK-DOWN"
+  ],
+  "def": "to split or crack into pieces",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

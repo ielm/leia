@@ -1,0 +1,45 @@
+{
+  "word": "ACCIDENTALLY",
+  "senses": {
+    "ACCIDENTALLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "not intentionally",
+      "EX": "She did it accidentally",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "VOLITIVE",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "BY_ACCIDENT",
+        "BY_A_FLUKE",
+        "BY_MISTAKE",
+        "UNWITTINGLY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ACCIDENTALLY-ADV1",
+      "WORD": "ACCIDENTALLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

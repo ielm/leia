@@ -1,0 +1,47 @@
+{
+  "name": "@PRESERVE",
+  "isa": [
+    "@COMMONPLACE-SERVICE-EVENT"
+  ],
+  "def": "complex events that involve preserving things",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@FOOD-PROCESSING-CORPORATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@COOK"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INGESTIBLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@ASSEMBLY-LINE-WORKER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@WORK-ROLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

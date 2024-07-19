@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-STREET-ADDRESS",
+  "def": "The street number and street name, plus possibly apartment number part of an address.",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": "$ADDRESS-OF",
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

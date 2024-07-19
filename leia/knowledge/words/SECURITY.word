@@ -1,0 +1,30 @@
+{
+  "word": "SECURITY",
+  "senses": {
+    "SECURITY-N1": {
+      "CAT": "N",
+      "DEF": "a security checkpoint",
+      "EX": "He went through security with no problems",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SECURITY-CHECK-FACILITY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SECURITY_CHECKPOINT",
+        "SECURITY_CHECKPOINT_FACILITY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SECURITY-N1",
+      "WORD": "SECURITY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

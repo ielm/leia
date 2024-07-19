@@ -1,0 +1,22 @@
+{
+  "name": "@FIELD-OF-MINING",
+  "isa": [
+    "@FIELD-OF-STUDY"
+  ],
+  "def": "the study of mineral ores and how they are extracted from the earth",
+  "local": [
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@MINING-ACTIVITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@WORK-ACTIVITY"
+    }
+  ],
+  "private": {}
+}

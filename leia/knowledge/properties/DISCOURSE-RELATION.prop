@@ -1,0 +1,9 @@
+{
+  "name": "$DISCOURSE-RELATION",
+  "def": "relations used in language discourse",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$DISCOURSE-RELATION-INVERSE",
+  "measured-in": [],
+  "container": "$RELATION"
+}

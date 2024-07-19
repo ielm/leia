@@ -1,0 +1,19 @@
+{
+  "name": "@PART-PER-MILLION",
+  "isa": [
+    "@PERCENTAGE-UNIT"
+  ],
+  "def": "one part per million parts, a comparative ratio; 1E-6",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1e-06
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

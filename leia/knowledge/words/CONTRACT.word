@@ -1,0 +1,111 @@
+{
+  "word": "CONTRACT",
+  "senses": {
+    "CONTRACT-N1": {
+      "CAT": "N",
+      "DEF": "an agreement written up between two parties, especially one that can be enforced by law  ",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "WITH",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "CONTRACT": {
+          "CAUSED-BY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "AGREE": {
+            "AGENT": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CONTRACT-0",
+        "WITH-1",
+        "THE",
+        "HUMAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONTRACT-N1",
+      "WORD": "CONTRACT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CONTRACT-V1": {
+      "CAT": "V",
+      "DEF": "of a muscle, to engage",
+      "EX": "the ventricle contracts, pumping blood into the arteries",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "CONTRACT-MUSCLE": {
+          "THEME": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MUSCLE-1",
+        "CONTRACTED-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONTRACT-V1",
+      "WORD": "CONTRACT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

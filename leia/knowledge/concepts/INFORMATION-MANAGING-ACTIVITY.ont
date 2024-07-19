@@ -1,0 +1,31 @@
+{
+  "name": "@INFORMATION-MANAGING-ACTIVITY",
+  "isa": [
+    "@MANAGEMENT-ACTIVITY"
+  ],
+  "def": "a business-activity in which various kinds of information (such as writing, marketing, research, etc.) are managed",
+  "local": [],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@FINANCIAL-DIRECTOR"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@MANAGERIAL-ROLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ORGANIZATION"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

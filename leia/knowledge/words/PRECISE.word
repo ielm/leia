@@ -1,0 +1,49 @@
+{
+  "word": "PRECISE",
+  "senses": {
+    "PRECISE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "in detail",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "PRECISION-ATTRIBUTE": 0.8
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EXACT-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "EXACT",
+        "DETAILED"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PRECISE-ADJ1",
+      "WORD": "PRECISE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

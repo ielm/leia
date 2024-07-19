@@ -1,0 +1,57 @@
+{
+  "word": "SUBJECTIVE",
+  "senses": {
+    "SUBJECTIVE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "indicates lack of objectivity",
+      "EX": "That's a subjective judgment",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "OBJECTIVITY": [
+            "<",
+            0.2
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "SUBJECTIVE-0",
+        "IDEA-1",
+        "WAS",
+        "NOT",
+        "POPULAR"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "BIASED",
+        "NONOBJECTIVE",
+        "PERSONAL",
+        "PREJUDICED",
+        "UNOBJECTIVE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SUBJECTIVE-ADJ1",
+      "WORD": "SUBJECTIVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

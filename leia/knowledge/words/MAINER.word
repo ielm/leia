@@ -1,0 +1,42 @@
+{
+  "word": "MAINER",
+  "senses": {
+    "MAINER-N1": {
+      "CAT": "N",
+      "DEF": "resides in the state of Maine",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "HAS-STATE-ADDRESS": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "STATE": {
+            "HAS-NAME": {
+              "VALUE": "MAINE"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "DOWN_EASTER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "MAINER-N1",
+      "WORD": "MAINER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

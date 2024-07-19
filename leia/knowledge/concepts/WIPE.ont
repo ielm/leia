@@ -1,0 +1,47 @@
+{
+  "name": "@WIPE",
+  "isa": [
+    "@RUB"
+  ],
+  "def": "to clean or dry by rubbing; to remove by rubbing",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SPONGE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOP"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@CLEAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

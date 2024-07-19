@@ -1,0 +1,44 @@
+{
+  "word": "FAMILIAL",
+  "senses": {
+    "FAMILIAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "associated to some family",
+      "EX": "familial prejudices",
+      "COMMENTS": "[D] we'll need coreference resolution in texts",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "FAMILY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "FAMILIAL-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FAMILIAL-ADJ1",
+      "WORD": "FAMILIAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

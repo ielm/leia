@@ -1,0 +1,31 @@
+{
+  "word": "INNER_CITY",
+  "senses": {
+    "INNER_CITY-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "a section of a city at its center",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "DISTRICT": {
+          "CENTER-OF": "CITY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INNER_CITY-N1",
+      "WORD": "INNER_CITY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

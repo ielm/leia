@@ -1,0 +1,35 @@
+{
+  "word": "MILK_CHOCOLATE",
+  "senses": {
+    "MILK_CHOCOLATE-N1": {
+      "CAT": "N",
+      "DEF": "Pure cocoa liquor with extra cocoa butter, sugar and milk solids;   more milk than chocolate liquor",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CHOCOLATE": {
+          "HAS-OBJECT-AS-PART": [
+            "SUGAR",
+            "MILK"
+          ],
+          "SWEETNESS": 0.9
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MILK_CHOCOLATE-N1",
+      "WORD": "MILK_CHOCOLATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

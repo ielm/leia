@@ -1,0 +1,158 @@
+{
+  "word": "SMELL",
+  "senses": {
+    "SMELL-N1": {
+      "CAT": "N",
+      "DEF": "a chemical compound in gaseous form that is perceived in a certain way by the olfactory sense of animals ",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "ODOR",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ODOR",
+        "ODOUR"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SMELL-N1",
+      "WORD": "SMELL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SMELL-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "he smelled fire [dinner cooking]",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "ANIMAL",
+          "AGENT-OF": {
+            "VALUE": "REFSEM1"
+          },
+          "EXPERIENCER-OF": {
+            "VALUE": "REFSEM2"
+          }
+        },
+        "REFSEM1": {
+          "VOLUNTARY-OLFACTORY-EVENT": {
+            "THEME": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "INVOLUNTARY-OLFACTORY-EVENT": {
+            "THEME-1": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "SMELLED-0",
+        "FIRE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR2",
+          "$VAR0"
+        ],
+        [
+          "NSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SMELL-V1",
+      "WORD": "SMELL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SMELL-V3": {
+      "CAT": "V",
+      "DEF": "to voluntarily take in a smell",
+      "EX": "He smelled the rose",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "VOLUNTARY-OLFACTORY-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "IS",
+        "SMELLING-0",
+        "THE",
+        "DOG-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "DEP",
+          "$VAR2",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "SNIFF"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SMELL-V3",
+      "WORD": "SMELL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

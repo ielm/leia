@@ -1,0 +1,27 @@
+{
+  "name": "@GIVE-GIFT",
+  "isa": [
+    "@GIVE"
+  ],
+  "def": "to give something to someone voluntarily and without compensation",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@CHARITABLE-ORGANIZATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CONSUMER-GOOD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

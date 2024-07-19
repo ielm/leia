@@ -1,0 +1,27 @@
+{
+  "name": "@CROP",
+  "isa": [
+    "@AGRICULTURAL-PRODUCT"
+  ],
+  "def": "a harvested agricultural product",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@FARM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

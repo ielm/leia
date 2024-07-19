@@ -1,0 +1,36 @@
+{
+  "name": "@VANADIUM",
+  "isa": [
+    "@SOFT-METALLIC-ELEMENT"
+  ],
+  "def": "a bright white soft ductile metallic element found in several minerals, notably vanadinite and carnotite, having good structural strength and used in rust-resistant high-speed tools, as a carbon stabilizer in some steels, etc",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        50
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        23
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

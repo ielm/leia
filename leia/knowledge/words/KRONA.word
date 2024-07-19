@@ -1,0 +1,31 @@
+{
+  "word": "KRONA",
+  "senses": {
+    "KRONA-N1": {
+      "CAT": "N",
+      "DEF": "currency of sweden",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": "SWEDEN"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KRONA-N1",
+      "WORD": "KRONA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

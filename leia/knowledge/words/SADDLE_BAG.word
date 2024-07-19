@@ -1,0 +1,31 @@
+{
+  "word": "SADDLE_BAG",
+  "senses": {
+    "SADDLE_BAG-N1": {
+      "CAT": "N",
+      "DEF": "a bag on a saddle",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BAG": {
+          "LOCATION": "SADDLE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SADDLE_BAG-N1",
+      "WORD": "SADDLE_BAG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "word": "SLED",
+  "senses": {
+    "SLED-N1": {
+      "CAT": "N",
+      "DEF": "a vehicle for use on snow",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SLED-VEHICLE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SLEIGH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SLED-N1",
+      "WORD": "SLED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SLED-V1": {
+      "CAT": "V",
+      "DEF": "travel by sled",
+      "EX": "they sledded down the hill",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "SURFACE-CONTACT-MOTION": {
+          "ON-TOP-OF": "SNOW",
+          "INSTRUMENT": "SLED-VEHICLE",
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "SLEDDED-0"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SLED-V1",
+      "WORD": "SLED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@PERSONAL-COMPUTER",
+  "isa": [
+    "@COMPUTER"
+  ],
+  "def": "a small, inexpensive computer used in the home",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@OUTPUT-DEVICE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

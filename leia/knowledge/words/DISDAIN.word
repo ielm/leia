@@ -1,0 +1,118 @@
+{
+  "word": "DISDAIN",
+  "senses": {
+    "DISDAIN-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "my disdain for him is great",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR3",
+          "CAT": "N",
+          "POSSESSIVE": "+",
+          "OPT": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "FOR",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          },
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SCORN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DISDAIN-N1",
+      "WORD": "DISDAIN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DISDAIN-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "I disdain his opinion",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          },
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "I-1",
+        "DISDAIN-0",
+        "HIS",
+        "OPINION-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "SCORN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DISDAIN-V1",
+      "WORD": "DISDAIN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

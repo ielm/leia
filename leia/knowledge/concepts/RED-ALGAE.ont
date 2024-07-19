@@ -1,0 +1,22 @@
+{
+  "name": "@RED-ALGAE",
+  "isa": [
+    "@ALGA"
+  ],
+  "def": "marine algae in which red or purplish pigments are masking the cholorophyll",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "red"
+    }
+  ],
+  "block": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "green"
+    }
+  ],
+  "private": {}
+}

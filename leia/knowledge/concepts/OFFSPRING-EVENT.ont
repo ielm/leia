@@ -1,0 +1,22 @@
+{
+  "name": "@OFFSPRING-EVENT",
+  "isa": [
+    "@NORMAL-BIOLOGIC-FUNCTION"
+  ],
+  "def": "Events having to do with offspring",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OFFSPRING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

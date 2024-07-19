@@ -1,0 +1,36 @@
+{
+  "word": "CHOWDER",
+  "senses": {
+    "CHOWDER-N1": {
+      "CAT": "N",
+      "DEF": "A soup made from fish, seafood, and vegetables on a milk or tomato base.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SOUP": {
+          "HAS-OBJECT-AS-PART": [
+            "FISH-MEAT",
+            "TOMATO",
+            "LIQUID-DAIRY-PRODUCT",
+            "CELERY"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CHOWDER-N1",
+      "WORD": "CHOWDER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

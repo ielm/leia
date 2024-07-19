@@ -1,0 +1,9 @@
+{
+  "name": "$MEET",
+  "def": "when two objects come into contact with one another",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$MEET-INVERSE",
+  "measured-in": [],
+  "container": "$SPATIAL-RELATION"
+}

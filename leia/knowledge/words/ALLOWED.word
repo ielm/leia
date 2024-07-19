@@ -1,0 +1,229 @@
+{
+  "word": "ALLOWED",
+  "senses": {
+    "ALLOWED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "students allowed to arrive late are spoiled.",
+      "COMMENTS": "this sense isn't strictly necessary because the analyzer deals with past parts. productively unless the meaning is idiomatic; but having them overt saves a bit of processing",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "XCOMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "MODALITY": {
+          "TYPE": "PERMISSIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "BALL-1",
+        "ALLOWED-0",
+        "TO-7",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "XCOMP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "XSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ALLOWED-ADJ1",
+      "WORD": "ALLOWED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ALLOWED-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "he'll be allowed to finish late.",
+      "COMMENTS": "takes xcomp complement",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT-WORD": "*BE*",
+        "ROOT": "$VAR3",
+        "CAT": "V",
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "XCOMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "MODALITY": {
+          "TYPE": "PERMISSIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "WAS-3",
+        "ALLOWED-0",
+        "TO-7",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "COP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "XCOMP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ALLOWED-ADJ2",
+      "WORD": "ALLOWED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ALLOWED-ADJ3": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "smoking is allowed.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT-WORD": "*BE*",
+        "ROOT": "$VAR2",
+        "CAT": "V",
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "PERMISSIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "EVENT-1",
+        "WAS-2",
+        "ALLOWED-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AUXPASS",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "COP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJPASS",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ALLOWED-ADJ3",
+      "WORD": "ALLOWED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

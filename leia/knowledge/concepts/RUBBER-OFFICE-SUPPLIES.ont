@@ -1,0 +1,17 @@
+{
+  "name": "@RUBBER-OFFICE-SUPPLIES",
+  "isa": [
+    "@RUBBER-PRODUCT",
+    "@OFFICE-SUPPLIES"
+  ],
+  "def": "office supplies made of rubber",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

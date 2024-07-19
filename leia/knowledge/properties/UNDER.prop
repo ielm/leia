@@ -1,0 +1,9 @@
+{
+  "name": "$UNDER",
+  "def": "to be located underneath something else",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SPATIAL-RELATION"
+}

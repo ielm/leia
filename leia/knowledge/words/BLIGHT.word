@@ -1,0 +1,56 @@
+{
+  "word": "BLIGHT",
+  "senses": {
+    "BLIGHT-N1": {
+      "CAT": "N",
+      "DEF": "something that impairs growth or impedes progress",
+      "EX": "the people are tired of the blight associated with the economic downturn",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "EVENT": {
+          "STATE-OF-AFFAIRS": [
+            "<",
+            0.4
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BLIGHT-N1",
+      "WORD": "BLIGHT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BLIGHT-N2": {
+      "CAT": "N",
+      "DEF": "plant disease",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BLIGHT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BLIGHT-N2",
+      "WORD": "BLIGHT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

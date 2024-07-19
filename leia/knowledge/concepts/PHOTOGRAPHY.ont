@@ -1,0 +1,22 @@
+{
+  "name": "@PHOTOGRAPHY",
+  "isa": [
+    "@FINE-ARTS"
+  ],
+  "def": "the art of producing pictorial images on a surface sensitive to light or another radiant source, as on film in a camera",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@PHOTOGRAPHER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@ARTISTIC-ROLE"
+    }
+  ],
+  "private": {}
+}

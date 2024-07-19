@@ -1,0 +1,33 @@
+{
+  "word": "EPITHALAMIUM",
+  "senses": {
+    "EPITHALAMIUM-N1": {
+      "CAT": "N",
+      "DEF": "A song, ode or poem in honor of a bride and bridegroom.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LITERARY-COMPOSITION": {
+          "HAS-STYLE": "POEM",
+          "ABOUT-AS-TOPIC": "BRIDE",
+          "ABOUT-AS-TOPIC-1": "GROOM"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EPITHALAMIUM-N1",
+      "WORD": "EPITHALAMIUM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

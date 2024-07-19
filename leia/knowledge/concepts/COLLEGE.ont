@@ -1,0 +1,32 @@
+{
+  "name": "@COLLEGE",
+  "isa": [
+    "@ACADEMIC-ORGANIZATION"
+  ],
+  "def": "A academic organization for higher learning that is not a university department but may be affiliated with a university.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@DEPARTMENT-ACADEMIC"
+    }
+  ],
+  "block": [
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ACADEMIC-BUILDING"
+    },
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

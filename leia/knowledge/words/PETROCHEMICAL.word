@@ -1,0 +1,34 @@
+{
+  "word": "PETROCHEMICAL",
+  "senses": {
+    "PETROCHEMICAL-N1": {
+      "CAT": "N",
+      "DEF": "a chemical derived from natural gas or petroleum",
+      "EX": "",
+      "COMMENTS": "made-of isn't quite right, but close enough for now",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CHEMICAL-COMPOUND": {
+          "STATE-OF-MATTER": "LIQUID",
+          "MADE-OF": {
+            "OIL": "NATURAL-GAS"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PETROCHEMICAL-N1",
+      "WORD": "PETROCHEMICAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

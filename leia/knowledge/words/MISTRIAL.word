@@ -1,0 +1,38 @@
+{
+  "word": "MISTRIAL",
+  "senses": {
+    "MISTRIAL-N1": {
+      "CAT": "N",
+      "DEF": "a legal trial that fails to reach a verdict",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "REFSEM1": [
+          "TRIAL"
+        ],
+        "MODALITY": {
+          "TYPE": "EPITEUCTIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MISTRIAL-N1",
+      "WORD": "MISTRIAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

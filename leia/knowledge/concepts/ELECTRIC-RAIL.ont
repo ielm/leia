@@ -1,0 +1,22 @@
+{
+  "name": "@ELECTRIC-RAIL",
+  "isa": [
+    "@RAIL"
+  ],
+  "def": "a metal track designed to carry an electric vehicle the motor of which is connected to an underground conductor, an overhead wire, or a third rail",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ASPHALT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PAVING-MATERIAL"
+    }
+  ],
+  "private": {}
+}

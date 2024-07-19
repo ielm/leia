@@ -1,0 +1,22 @@
+{
+  "name": "@JERSEY-BARRIER",
+  "isa": [
+    "@BARRIER-ARTIFACT"
+  ],
+  "def": "A strip of concrete at the center or side of a highway that divides oncoming traffic",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CONCRETE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

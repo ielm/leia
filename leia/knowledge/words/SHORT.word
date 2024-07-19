@@ -1,0 +1,127 @@
+{
+  "word": "SHORT",
+  "senses": {
+    "SHORT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "not tall",
+      "EX": "a short man",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "HUMAN",
+          "HEIGHT": 0.3
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHORT-0",
+        "HUMAN-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SHORT-ADJ1",
+      "WORD": "SHORT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SHORT-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "not long",
+      "EX": "a short stick",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "NOT",
+            "HUMAN"
+          ],
+          "LENGTH": 0.3
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHORT-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SHORT-ADJ2",
+      "WORD": "SHORT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SHORT-ADJ3": {
+      "CAT": "ADJ",
+      "DEF": "of not long duration",
+      "EX": "a short concert",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "DURATION": 0.3
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHORT-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SHORT-ADJ3",
+      "WORD": "SHORT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@QUARRY",
+  "isa": [
+    "@EARTH-RESOURCE-ARTIFACT"
+  ],
+  "def": "An open excavation or pit from which stone is obtained by digging, cutting, or blasting.",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ROCK"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

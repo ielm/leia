@@ -1,0 +1,56 @@
+{
+  "word": "MODERN",
+  "senses": {
+    "MODERN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "an object or event existing or occurring at or slightly before the current time",
+      "EX": "a modern building; modern values",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TIME-BEGIN": [
+            "COMBINE-TIME",
+            [
+              "FIND-ANCHOR-TIME"
+            ],
+            0.1,
+            "BEFORE"
+          ],
+          "TIME-END": [
+            "FIND-ANCHOR-TIME"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MODERN-0",
+        "CURE-1",
+        "WORKS"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MODERN-ADJ1",
+      "WORD": "MODERN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

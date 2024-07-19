@@ -1,0 +1,103 @@
+{
+  "word": "ARMED",
+  "senses": {
+    "ARMED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "(event) using weapons",
+      "EX": "armed rebellion, armed robbery",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "INSTRUMENT": "WEAPON"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ARMED-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ARMED-ADJ1",
+      "WORD": "ARMED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ARMED-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "phrasal: armed with x : carrying x as a weapon",
+      "EX": "the men were armed with shotguns armed soldiers accosted us",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ",
+          "PP": {
+            "ROOT": "$VAR3",
+            "CAT": "PREP",
+            "ROOT-WORD": "WITH",
+            "OPT": "+",
+            "OBJ": {
+              "ROOT": "$VAR2",
+              "CAT": "N"
+            }
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "CARRY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "WEAPON"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ARMED-0",
+        "ANIMAL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ARMED-ADJ2",
+      "WORD": "ARMED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

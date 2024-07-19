@@ -1,0 +1,29 @@
+{
+  "word": "RAM",
+  "senses": {
+    "RAM-N1": {
+      "CAT": "N",
+      "DEF": "a memory device in which information can be accessed in any order-",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "RANDOM-ACCESS-MEMORY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "RANDOM_ACCESS_MEMORY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "RAM-N1",
+      "WORD": "RAM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

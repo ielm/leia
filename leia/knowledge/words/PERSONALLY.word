@@ -1,0 +1,41 @@
+{
+  "word": "PERSONALLY",
+  "senses": {
+    "PERSONALLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "mainly a discourse function in this usage",
+      "EX": "I personally think they should abolish the death penalty",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "PERSONALLY-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PERSONALLY-ADV1",
+      "WORD": "PERSONALLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

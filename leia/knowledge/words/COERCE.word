@@ -1,0 +1,64 @@
+{
+  "word": "COERCE",
+  "senses": {
+    "COERCE-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "INDIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        },
+        "XCOMP": {
+          "ROOT": "$VAR4",
+          "CAT": "V",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "IMPEL": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-2",
+        "COERCED-0",
+        "THE",
+        "DOG-3",
+        "TO",
+        "HIT-4",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "DRAGOON"
+      ],
+      "SENSE": "COERCE-V1",
+      "WORD": "COERCE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

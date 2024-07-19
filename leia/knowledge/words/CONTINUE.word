@@ -1,0 +1,330 @@
+{
+  "word": "CONTINUE",
+  "senses": {
+    "CONTINUE-V1": {
+      "CAT": "V",
+      "DEF": "continue",
+      "EX": "she continued reading",
+      "COMMENTS": "[D] compl. is -ing participle, so var1 is agent",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "XCOMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "CONTINUE",
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR2": {
+          "SEM": "EVENT",
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "CONTINUED-0",
+        "READING-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONTINUE-V1",
+      "WORD": "CONTINUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CONTINUE-V2": {
+      "CAT": "V",
+      "DEF": "continue",
+      "EX": "they continued the debates",
+      "COMMENTS": "[D] this refers to a caused-by relation; see continue-v4 for the elliptical counterpart involving an agent",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "CONTINUE",
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR2": {
+          "SEM": "EVENT",
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "CONTINUED-0",
+        "THE",
+        "DEBATES-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "XCOMP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "XSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONTINUE-V2",
+      "WORD": "CONTINUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CONTINUE-V4": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "they continue that nonsense all evening",
+      "COMMENTS": "[D] refers to an event - this is elliptical",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "CONTINUE",
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "EVENT": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            },
+            "THEME": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "REFSEM1",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "CONTINUED-0",
+        "THAT",
+        "NONSENSE-2",
+        "ALL",
+        "EVENING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONTINUE-V4",
+      "WORD": "CONTINUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CONTINUE-V5": {
+      "CAT": "V",
+      "DEF": "continue",
+      "EX": "the debate continued for years",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "CONTINUE",
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR1": {
+          "SEM": "EVENT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DEBATE-1",
+        "CONTINUED-0",
+        "FOR",
+        "YEARS"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONTINUE-V5",
+      "WORD": "CONTINUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CONTINUE-V6": {
+      "CAT": "V",
+      "DEF": "phrasal: continue (on) in sth. = keep doing sth.",
+      "EX": "she continued on in business even after her father told her it was an immoral profession",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT-WORD": "ON",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OPT": "+"
+        },
+        "PP": {
+          "ROOT-WORD": "IN",
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "CONTINUE",
+          "SCOPE": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR3": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "CONTINUED-0",
+        "ON-2",
+        "IN-4",
+        "THE",
+        "OBJECT-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR2",
+          "$VAR4"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR4",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONTINUE-V6",
+      "WORD": "CONTINUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

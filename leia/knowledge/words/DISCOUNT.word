@@ -1,0 +1,62 @@
+{
+  "word": "DISCOUNT",
+  "senses": {
+    "DISCOUNT-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "after 5/15, the store will discount unsold items",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "DISCOUNT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "STORE-1",
+        "WILL",
+        "DISCOUNT-0",
+        "UNSOLD",
+        "ITEMS-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DISCOUNT-V1",
+      "WORD": "DISCOUNT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

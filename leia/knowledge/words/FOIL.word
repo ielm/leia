@@ -1,0 +1,116 @@
+{
+  "word": "FOIL",
+  "senses": {
+    "FOIL-N1": {
+      "CAT": "N",
+      "DEF": "instrument used in fencing",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FOIL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FOIL-N1",
+      "WORD": "FOIL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FOIL-N2": {
+      "CAT": "N",
+      "DEF": "aluminum foil",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "COOKING-EQUIPMENT": {
+          "MADE-OF": "ALUMINUM",
+          "THICKNESS": 0.2
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FOIL-N2",
+      "WORD": "FOIL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FOIL-V1": {
+      "CAT": "V",
+      "DEF": "prevent from being successful",
+      "EX": "this thwarted their plan",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPITEUCTIC",
+          "SCOPE": {
+            "VALUE": "^$VAR2",
+            "SEM": "EVENT"
+          },
+          "VALUE": 0.7,
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "THWARTED-0",
+        "THEIR",
+        "PLAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "THWART",
+        "FRUSTRATE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FOIL-V1",
+      "WORD": "FOIL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

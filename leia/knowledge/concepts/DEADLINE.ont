@@ -1,0 +1,16 @@
+{
+  "name": "@DEADLINE",
+  "isa": [
+    "@ABSTRACT-OBJECT"
+  ],
+  "def": "The time at which something is due, such as a document, or by which something must be done",
+  "local": [
+    {
+      "slot": "relation",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

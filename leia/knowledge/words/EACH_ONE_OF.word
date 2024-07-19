@@ -1,0 +1,40 @@
+{
+  "word": "EACH_ONE_OF",
+  "senses": {
+    "EACH_ONE_OF-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "I made the cat of the complement 'np' because there can be an article or determiner",
+      "EX": "each one of the/my fish died.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP",
+          "NUMBER": "PL"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "CARDINALITY": 1,
+          "COMPLETE": "YES",
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EACH_ONE_OF-QUANTIFIER1",
+      "WORD": "EACH_ONE_OF",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

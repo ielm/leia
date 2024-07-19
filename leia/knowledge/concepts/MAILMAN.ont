@@ -1,0 +1,22 @@
+{
+  "name": "@MAILMAN",
+  "isa": [
+    "@CIVIL-SERVICE-ROLE"
+  ],
+  "def": "a civil servant who sorts and delivers mail",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@POST-OFFICE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

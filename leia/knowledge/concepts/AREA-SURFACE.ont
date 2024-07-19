@@ -1,0 +1,19 @@
+{
+  "name": "@AREA-SURFACE",
+  "isa": [
+    "@AREA-UNIT"
+  ],
+  "def": "the two-dimensional size of a surface",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        100.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

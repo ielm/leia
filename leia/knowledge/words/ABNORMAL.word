@@ -1,0 +1,198 @@
+{
+  "word": "ABNORMAL",
+  "senses": {
+    "ABNORMAL-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "this sense is used for cases when we do have a specific scalar-attribute whose range can be ontologically determined: e.g., abnormal height of the building",
+      "EX": "abnormal height of the building",
+      "COMMENTS": "if the object whose property we're talking about isn't explicity in the clause  it must be sought out using reference procedures",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "SCALAR-ATTRIBUTE",
+          "DOMAIN": {
+            "VALUE": "^$VAR3"
+          },
+          "RANGE": [
+            "OR",
+            [
+              "<",
+              [
+                "MINIMUM",
+                [
+                  "SEM",
+                  "^$VAR3.",
+                  "^$VAR1"
+                ]
+              ]
+            ],
+            [
+              ">",
+              [
+                "MAXIMUM",
+                [
+                  "SEM",
+                  "^$VAR3.",
+                  "^$VAR1"
+                ]
+              ]
+            ]
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "^$VAR3",
+          "REFERENCE-PROCEDURES"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "ABNORMAL-0",
+        "HEIGHT-1",
+        "OF-2",
+        "THE",
+        "BUILDING-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ABNORMAL-ADJ2",
+      "WORD": "ABNORMAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ABNORMAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "this sense is used for cases when we do not have a specific attribute or a set of   attributes whose range can be determined ontologically: e.g., abnormal behavior",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TYPICALNESS-ATTRIBUTE": [
+            "<",
+            0.2
+          ],
+          "SEM": [
+            "NOT",
+            "ATTRIBUTE"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ABNORMAL-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "ATYPICAL"
+      ],
+      "HYPONYMS": [
+        "INAPPROPRIATE"
+      ],
+      "SENSE": "ABNORMAL-ADJ1",
+      "WORD": "ABNORMAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ABNORMAL-ADJ3": {
+      "CAT": "ADJ",
+      "DEF": "pathological",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "CAUSED-BY": "PATHOLOGIC-FUNCTION"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ABNORMAL-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "PATHOLOGICAL"
+      ],
+      "HYPONYMS": [
+        "IRREGULAR"
+      ],
+      "SENSE": "ABNORMAL-ADJ3",
+      "WORD": "ABNORMAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

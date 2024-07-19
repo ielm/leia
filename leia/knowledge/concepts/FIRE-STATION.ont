@@ -1,0 +1,32 @@
+{
+  "name": "@FIRE-STATION",
+  "isa": [
+    "@SERVICE-BUILDING"
+  ],
+  "def": "a service building housing fire engines and firefighters",
+  "local": [
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@FIRE-ENGINE"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@FIREFIGHTER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@CUSTOMER"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

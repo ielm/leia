@@ -1,0 +1,37 @@
+{
+  "name": "@KWANZAA",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "a festival celebrated between Christmas and New Year and featuring African-American culture",
+  "local": [
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@DECEMBER"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ETHNIC-GROUP"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "private": {}
+}

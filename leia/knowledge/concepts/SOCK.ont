@@ -1,0 +1,26 @@
+{
+  "name": "@SOCK",
+  "isa": [
+    "@FOOTWEAR"
+  ],
+  "def": "A short stocking reaching a point between the ankle and the knee.",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@LEATHER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SYNTHETIC-RUBBER"
+    }
+  ],
+  "private": {}
+}

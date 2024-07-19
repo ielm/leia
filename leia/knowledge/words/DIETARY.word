@@ -1,0 +1,44 @@
+{
+  "word": "DIETARY",
+  "senses": {
+    "DIETARY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to food consumption",
+      "EX": "",
+      "COMMENTS": "it's not clear whether the relation should be to FOOD, INGEST, or something medical",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "FOOD"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "DIETARY-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DIETARY-ADJ1",
+      "WORD": "DIETARY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

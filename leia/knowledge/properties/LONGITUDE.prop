@@ -1,0 +1,11 @@
+{
+  "name": "$LONGITUDE",
+  "def": "the position on the earth*s surface indicating the distance east or west of Greenwich, England, the prime meridian",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@GEOGRAPHICAL-DEGREE"
+  ],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

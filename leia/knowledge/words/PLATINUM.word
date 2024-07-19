@@ -1,0 +1,92 @@
+{
+  "word": "PLATINUM",
+  "senses": {
+    "PLATINUM-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "MADE-OF": "PLATINUM"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "PLATINUM-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PLATINUM-ADJ1",
+      "WORD": "PLATINUM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PLATINUM-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PHYSICAL-OBJECT": {
+          "MADE-OF": "PLATINUM"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PLATINUM-N1",
+      "WORD": "PLATINUM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PLATINUM-N2": {
+      "CAT": "N",
+      "DEF": "a silver-white metallic element occurring worldwide, usually mixed with other metals such as iridium, osmium, or nickel- it is ductile and malleable, does not oxidize in air, and is used in electrical components, jewelry, dentistry, electroplating, and as a catalyst",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PLATINUM",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PLATINUM-N2",
+      "WORD": "PLATINUM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

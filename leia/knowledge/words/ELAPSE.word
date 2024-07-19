@@ -1,0 +1,49 @@
+{
+  "word": "ELAPSE",
+  "senses": {
+    "ELAPSE-V1": {
+      "CAT": "V",
+      "DEF": "time goes by, where the subject is a time interval",
+      "EX": "12 seconds elapsed between the flash and the bang",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "ABSENCE-OF-CHANGE-EVENT": {
+          "DURATION": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "2",
+        "SECONDS-1",
+        "ELAPSED-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "PASS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ELAPSE-V1",
+      "WORD": "ELAPSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

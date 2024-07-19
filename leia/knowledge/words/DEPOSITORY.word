@@ -1,0 +1,31 @@
+{
+  "word": "DEPOSITORY",
+  "senses": {
+    "DEPOSITORY-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PLACE": {
+          "LOCATION-OF": "DEPOSIT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DEPOSITORY-N1",
+      "WORD": "DEPOSITORY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

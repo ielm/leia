@@ -1,0 +1,27 @@
+{
+  "word": "SOMEBODY",
+  "senses": {
+    "SOMEBODY-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "somebody bumped into me. I need somebody to help me.",
+      "COMMENTS": "in some instances, 'somebody' has a specific referent (somebody  bumped into me),  whereas in others it does not (i need somebody to help me). in the first case,    we need to create an instance of human in the fr and treat it like any other  reference - e.g.,  there could be coreference relations later in the text, etc.: somebody bumped  into me and I   elbowed him back. the only difference between this known-to-exist 'somebody' and  any other np is   that there is no need to look for an antecedent for 'somebody' because there  won't be one. in the second   case, 'somebody'is more like an object with potential modality (i know that can't  exist formally, but   that's the jist). that is, there may never exist a real-world object that  corresponds to this 'somebody',   as in: I needed somebody to help me but no one could so I did it myself. *if* we  could make this   distinction automatically (i don't think we can), we should put the 'somebody' in  'somebody bumped into  me' both in the tmr and in the fr, whereas the 'somebody' in 'can somebody help  me' should go only in the  tmr and not in the fr. however, this distinction is probably moot since I can't  think of any way to determine  which is which.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "HUMAN",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SOMEBODY-N1",
+      "WORD": "SOMEBODY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

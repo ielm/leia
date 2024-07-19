@@ -1,0 +1,36 @@
+{
+  "name": "@BERYLLIUM",
+  "isa": [
+    "@LIGHT-METALLIC-ELEMENT"
+  ],
+  "def": "a high-melting, lightweight, corrosion-resistant, rigid, steel gray metallic element",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        9
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        4
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

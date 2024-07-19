@@ -1,0 +1,32 @@
+{
+  "word": "SHOWBOAT",
+  "senses": {
+    "SHOWBOAT-N1": {
+      "CAT": "N",
+      "DEF": "a river boat where theatrical performances take place",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BOAT": {
+          "LOCATION": "RIVER",
+          "LOCATION-OF": "ENTERTAIN-EVENT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SHOWBOAT-N1",
+      "WORD": "SHOWBOAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

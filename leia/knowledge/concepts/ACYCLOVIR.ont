@@ -1,0 +1,24 @@
+{
+  "name": "@ACYCLOVIR",
+  "isa": [
+    "@DRUG"
+  ],
+  "def": "a synthetic powder used to treat certain viral infections, such as herpes",
+  "local": [],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,73 @@
+{
+  "word": "REMIND",
+  "senses": {
+    "REMIND-V1": {
+      "CAT": "V",
+      "DEF": "to cause to remember",
+      "EX": "He reminded me of/about my dentist appointment",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": [
+            "OF",
+            "ABOUT"
+          ],
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "DECLARE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          },
+          "EFFECT": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "REMEMBER": {
+            "THEME": {
+              "VALUE": "^$VAR4"
+            },
+            "EXPERIENCER": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "REMIND-V1",
+      "WORD": "REMIND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

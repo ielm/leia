@@ -1,0 +1,16 @@
+{
+  "name": "@EMIRATE",
+  "isa": [
+    "@LARGE-GEOPOLITICAL-ENTITY"
+  ],
+  "def": "the jurisdiction or government of an emir",
+  "local": [],
+  "block": [
+    {
+      "slot": "in-nation",
+      "facet": "sem",
+      "filler": "@NATION"
+    }
+  ],
+  "private": {}
+}

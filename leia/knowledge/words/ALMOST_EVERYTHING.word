@@ -1,0 +1,55 @@
+{
+  "word": "ALMOST_EVERYTHING",
+  "senses": {
+    "ALMOST_EVERYTHING-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "almost everything is done.",
+      "COMMENTS": "the meaning procedure here is a bit different since there's no explicit set involved that can be recovered from the context. needs special attention",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "CARDINALITY": [
+            ">",
+            0.9
+          ],
+          "DETERMINATE": "NO",
+          "MEMBER-TYPE": {
+            "SEM": [
+              "NOT",
+              "ANIMATE"
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          [
+            "SET",
+            1
+          ]
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "NEARLY_EVERYTHING",
+        "VIRTUALLY_EVERYTHING",
+        "PRACTICALLY_EVERYTHING",
+        "PRETTY_MUCH_EVERYTHING",
+        "JUST_ABOUT_EVERYTHING"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ALMOST_EVERYTHING-N1",
+      "WORD": "ALMOST_EVERYTHING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@COLD-CUT",
+  "isa": [
+    "@PREPARED-FOOD"
+  ],
+  "def": "sliced cold meat and, often, cheeses",
+  "local": [],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    }
+  ],
+  "private": {}
+}

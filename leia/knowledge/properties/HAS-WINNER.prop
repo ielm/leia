@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-WINNER",
+  "def": "A relation between a competition and\nwho wins it.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$WINNER-OF",
+  "measured-in": [],
+  "container": "$RELATION"
+}

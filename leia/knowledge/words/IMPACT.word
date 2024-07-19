@@ -1,0 +1,97 @@
+{
+  "word": "IMPACT",
+  "senses": {
+    "IMPACT-N1": {
+      "CAT": "N",
+      "DEF": "changes brought about",
+      "EX": "the impact of drinking bad water on children",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT-WORD": "ON",
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "CHANGE-EVENT": {
+          "THEME": {
+            "VALUE": "^$VAR3"
+          },
+          "CAUSED-BY": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR3",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "IMPACT-0",
+        "OF-1",
+        "THE",
+        "MAN-2",
+        "ON-4",
+        "THE",
+        "OBJECT-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR4",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "IMPACT-N1",
+      "WORD": "IMPACT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

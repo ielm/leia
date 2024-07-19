@@ -1,0 +1,34 @@
+{
+  "word": "DRY_MILK",
+  "senses": {
+    "DRY_MILK-N1": {
+      "CAT": "N",
+      "DEF": "milk from which moisture has been removed, leaving a powder",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MILK": {
+          "WETNESS": 0
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "DRIED_MILK",
+        "POWDERED_MILK"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DRY_MILK-N1",
+      "WORD": "DRY_MILK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

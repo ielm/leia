@@ -1,0 +1,88 @@
+{
+  "name": "@BITE",
+  "isa": [
+    "@APPLY-FORCE",
+    "@FEEDING-EVENT"
+  ],
+  "def": "to seize or pierce with or as with the teeth",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BODY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BACK-ANIMAL-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PRINCIPAL-BODY-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SUBDIVISION-OF-PRINCIPAL-BODY-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EXTERNAL-PLANT-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PLANT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TOOTH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

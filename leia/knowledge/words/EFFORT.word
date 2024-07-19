@@ -1,0 +1,85 @@
+{
+  "word": "EFFORT",
+  "senses": {
+    "EFFORT-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "efforts by/of the diplomats to cool down relations",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": [
+            "OF",
+            "BY"
+          ],
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "XCOMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EFFORT",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR3",
+            "SEM": "EVENT"
+          },
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EFFORT-0",
+        "OF-1",
+        "THE",
+        "GIRL-2",
+        "TO-7",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "INFMOD",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EFFORT-N1",
+      "WORD": "EFFORT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

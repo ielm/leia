@@ -1,0 +1,99 @@
+{
+  "word": "UNITED_STATES",
+  "senses": {
+    "UNITED_STATES-N1": {
+      "CAT": "N",
+      "DEF": "a country",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "NATION": {
+          "HAS-NAME": {
+            "VALUE": "USA"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "U.S.",
+        "AMERICA",
+        "UNITED_STATES_OF_AMERICA",
+        "U.S.A",
+        "USA",
+        "US"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "UNITED_STATES-N1",
+      "WORD": "UNITED_STATES",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "UNITED_STATES-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to usa",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "USA"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "UNITED_STATES-0",
+        "MAN-1",
+        "HIT",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "U.S.",
+        "AMERICA",
+        "UNITED_STATES_OF_AMERICA",
+        "U.S.A",
+        "USA",
+        "US"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "UNITED_STATES-ADJ1",
+      "WORD": "UNITED_STATES",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

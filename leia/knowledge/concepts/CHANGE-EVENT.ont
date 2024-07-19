@@ -1,0 +1,21 @@
+{
+  "name": "@CHANGE-EVENT",
+  "isa": [
+    "@EVENT"
+  ],
+  "def": "An event that represents a change in state, quality, etc., and that can be described in terms of preconditions and after-effects. CHANGE-EVENT is a placeholder that signals that the meaning of the event is expressed in terms of its preconditions and effects. Nothing should be mapped to CHANGE-EVENT that is not described in terms of preconditions and/or effects.",
+  "local": [],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

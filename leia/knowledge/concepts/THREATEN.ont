@@ -1,0 +1,22 @@
+{
+  "name": "@THREATEN",
+  "isa": [
+    "@OPPOSITION-EVENT"
+  ],
+  "def": "To express a threat against; to be a source of danger to; menace.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@DESTROY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

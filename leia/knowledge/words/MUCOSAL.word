@@ -1,0 +1,35 @@
+{
+  "word": "MUCOSAL",
+  "senses": {
+    "MUCOSAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to the mucosa",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "MUCOSA"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MUCOSAL-ADJ1",
+      "WORD": "MUCOSAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

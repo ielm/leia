@@ -1,0 +1,34 @@
+{
+  "word": "HANDOUT",
+  "senses": {
+    "HANDOUT-N1": {
+      "CAT": "N",
+      "DEF": "short, informal document",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "DOCUMENT": {
+          "FORMALITY": 0.2
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "CHEAT_SHEET",
+        "FACT_SHEET"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "HANDOUT-N1",
+      "WORD": "HANDOUT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

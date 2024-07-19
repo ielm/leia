@@ -1,0 +1,9 @@
+{
+  "name": "$FIRST-NAME-OF",
+  "def": "the relation between a first name and the person to whom it belongs",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

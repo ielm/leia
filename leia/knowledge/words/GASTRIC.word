@@ -1,0 +1,44 @@
+{
+  "word": "GASTRIC",
+  "senses": {
+    "GASTRIC-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to the stomach",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "STOMACH"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "GASTRIC-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GASTRIC-ADJ1",
+      "WORD": "GASTRIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

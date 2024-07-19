@@ -1,0 +1,27 @@
+{
+  "name": "@FIELD-OF-STUDY",
+  "isa": [
+    "@ABSTRACT-OBJECT"
+  ],
+  "def": "a realm of knowledge or study in which a person may pursue expertise",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@ACADEMIC-SPECIALIST"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@WORK-ACTIVITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    }
+  ],
+  "private": {}
+}

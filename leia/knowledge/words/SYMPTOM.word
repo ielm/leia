@@ -1,0 +1,66 @@
+{
+  "word": "SYMPTOM",
+  "senses": {
+    "SYMPTOM-N1": {
+      "CAT": "N",
+      "DEF": "a sign of a disease or disorder",
+      "EX": "symptom of heart disease",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SYMPTOM": {
+          "SYMPTOM-OF-DISEASE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "SYMPTOMS-0",
+        "OF-1",
+        "THE",
+        "DOG-2",
+        "WORSENED"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "COMPLAINT"
+      ],
+      "SENSE": "SYMPTOM-N1",
+      "WORD": "SYMPTOM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "word": "*QUOTE*S",
+  "senses": {
+    "*QUOTE*S-POSSESSIVE1": {
+      "CAT": "POSSESSIVE",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "SYN-STRUC": {
+        "NMOD_POSS": [
+          [
+            "ROOT",
+            "$VAR1"
+          ],
+          [
+            "CAT",
+            "N"
+          ],
+          [
+            "CASE",
+            [
+              [
+                "ROOT",
+                "$VAR0"
+              ],
+              [
+                "CAT",
+                "POSSESSIVE"
+              ]
+            ]
+          ]
+        ],
+        "ROOT": "$VAR2",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "RELATION": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "MEANING-PROCEDURES": [
+        [
+          "CONSIDER-POSSESSIVE-CHANGE",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "*QUOTE*S-POSSESSIVE1",
+      "WORD": "*QUOTE*S",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": []
+    }
+  }
+}

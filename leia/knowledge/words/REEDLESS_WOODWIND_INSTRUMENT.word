@@ -1,0 +1,33 @@
+{
+  "word": "REEDLESS_WOODWIND_INSTRUMENT",
+  "senses": {
+    "REEDLESS_WOODWIND_INSTRUMENT-N1": {
+      "CAT": "N",
+      "DEF": "a woodwind instrument without a reed",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "REEDLESS-WOODWIND",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "REEDLESS_WOODWIND"
+      ],
+      "HYPONYMS": [
+        "FIPPLE_PIPE",
+        "RECORDER",
+        "VERTICAL_FLUTE"
+      ],
+      "SENSE": "REEDLESS_WOODWIND_INSTRUMENT-N1",
+      "WORD": "REEDLESS_WOODWIND_INSTRUMENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "name": "@VOMIT",
+  "isa": [
+    "@BACKWARDS-MOTION-OF-INGESTED-SUBSTANCE"
+  ],
+  "def": "The ejection of all or part of the contents of the stomach through the mouth, usually in a series of involuntary spasmic movements.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@CHYME"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@BARRETTS-ESOPHAGUS"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@HYPERCALCEMIA"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@CHOLERA"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ULCER"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ZOLLINGER-ELLISON-SYNDROME"
+    }
+  ],
+  "block": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ALIMENTARY-SYSTEM"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@DISEASE"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@BOLUS"
+    }
+  ],
+  "private": {}
+}

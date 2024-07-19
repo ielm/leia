@@ -1,0 +1,11 @@
+{
+  "name": "@SPEEDING-EVENT",
+  "isa": [
+    "@TRAFFIC-INFRACTION-EVENT",
+    "@CRIMINAL-ACTIVITY"
+  ],
+  "def": "going over the speed limit",
+  "local": [],
+  "block": [],
+  "private": {}
+}

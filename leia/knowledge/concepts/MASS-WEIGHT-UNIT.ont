@@ -1,0 +1,32 @@
+{
+  "name": "@MASS-WEIGHT-UNIT",
+  "isa": [
+    "@MEASURING-UNIT"
+  ],
+  "def": "Units for measuring mass or weight",
+  "local": [
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@MEASURING-SCALE"
+    },
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@KILOGRAM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "sem",
+      "filler": "@MEASURING-UNIT"
+    },
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@MEASURING-ARTIFACT"
+    }
+  ],
+  "private": {}
+}

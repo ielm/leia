@@ -1,0 +1,31 @@
+{
+  "word": "REFRIGERATOR_CAR",
+  "senses": {
+    "REFRIGERATOR_CAR-N1": {
+      "CAT": "N",
+      "DEF": "a refrigerated railroad car",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "RAILROAD-CAR": {
+          "FUNCTIONS-LIKE": "REFRIGERATOR"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "REFRIGERATOR_CAR-N1",
+      "WORD": "REFRIGERATOR_CAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

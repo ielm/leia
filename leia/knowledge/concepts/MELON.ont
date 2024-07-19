@@ -1,0 +1,22 @@
+{
+  "name": "@MELON",
+  "isa": [
+    "@VINE-FRUIT"
+  ],
+  "def": "the large, juicy, thick-skinned, many-seeded fruit of certain trailing plants, as the watermelon or cantaloupe",
+  "local": [
+    {
+      "slot": "diameter",
+      "facet": "sem",
+      "filler": [
+        "><",
+        35
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    }
+  ],
+  "block": [],
+  "private": {}
+}

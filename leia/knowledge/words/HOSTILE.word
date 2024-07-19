@@ -1,0 +1,87 @@
+{
+  "word": "HOSTILE",
+  "senses": {
+    "HOSTILE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "extremely uncooperative",
+      "EX": "the child was hostile to everyone",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "HOSTILITY": 0.8
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "BELLIGERENT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "HOSTILE-ADJ1",
+      "WORD": "HOSTILE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HOSTILE-ADJ3": {
+      "CAT": "ADJ",
+      "DEF": "opposed to a concept",
+      "EX": "many americans are hostile to the idea of mandatory drug tests",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ",
+          "PP": {
+            "ROOT-WORD": "TO",
+            "ROOT": "$VAR3",
+            "CAT": "PREP",
+            "OBJ": {
+              "ROOT": "$VAR2",
+              "CAT": "N"
+            }
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "^$VAR2",
+            "SEM": "ABSTRACT-OBJECT"
+          },
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HOSTILE-ADJ3",
+      "WORD": "HOSTILE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

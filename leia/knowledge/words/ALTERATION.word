@@ -1,0 +1,46 @@
+{
+  "word": "ALTERATION",
+  "senses": {
+    "ALTERATION-N1": {
+      "CAT": "N",
+      "DEF": "adjustment",
+      "EX": "this alteration in plans was unexpected",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "IN",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ADJUST": {
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ALTERATION-N1",
+      "WORD": "ALTERATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

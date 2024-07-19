@@ -1,0 +1,71 @@
+{
+  "word": "ANYBODY",
+  "senses": {
+    "ANYBODY-N1": {
+      "CAT": "N",
+      "DEF": "'anybody' used in declarative clauses with potential modality; means 'everybody'",
+      "EX": "anybody can do this.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "TYPE": "PRO",
+        "NOT-IN-CONTEXT": "INTERROGATIVE"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": "HUMAN",
+          "CARDINALITY": 1,
+          "COMPLETE": "YES"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ANYONE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ANYBODY-N1",
+      "WORD": "ANYBODY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ANYBODY-N2": {
+      "CAT": "N",
+      "DEF": "'anybody' used in interrogative clauses",
+      "EX": "is anybody here?",
+      "COMMENTS": "when 'anybody' is used in an interrogative clause, it should be represented in  the tmr as a human with cardinality >= 1, but it should not be stored in the fr because there's no real person yet.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "TYPE": "PRO",
+        "IN-CONTEXT": "INTERROGATIVE"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": "HUMAN",
+          "CARDINALITY": [
+            ">=",
+            1
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ANYONE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ANYBODY-N2",
+      "WORD": "ANYBODY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

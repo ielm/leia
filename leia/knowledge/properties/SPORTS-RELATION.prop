@@ -1,0 +1,9 @@
+{
+  "name": "$SPORTS-RELATION",
+  "def": "The relation between sports events or objects",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$RELATION"
+}

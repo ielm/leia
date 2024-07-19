@@ -1,0 +1,44 @@
+{
+  "word": "COMPARATIVE",
+  "senses": {
+    "COMPARATIVE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "in terms of comparing",
+      "EX": "The comparative incomes of these groups of people reflects their educational background",
+      "COMMENTS": "A deeper treatment of the meaning of comparative will require full development of the microtheory of comparison. Predicting what, precisely, is compared in each case is very difficult.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "THEME-OF": "COMPARE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "COMPARATIVE-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COMPARATIVE-ADJ1",
+      "WORD": "COMPARATIVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

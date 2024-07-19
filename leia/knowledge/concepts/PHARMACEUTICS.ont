@@ -1,0 +1,22 @@
+{
+  "name": "@PHARMACEUTICS",
+  "isa": [
+    "@FIELD-OF-STUDY"
+  ],
+  "def": "the art or profession of preparing drugs and medicines",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@PHARMACIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    }
+  ],
+  "private": {}
+}

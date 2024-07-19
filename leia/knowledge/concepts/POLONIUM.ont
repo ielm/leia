@@ -1,0 +1,36 @@
+{
+  "name": "@POLONIUM",
+  "isa": [
+    "@RADIOACTIVE-METAL"
+  ],
+  "def": "a naturally radioactive metallic element that occurs in minute quantities as a product of radium disintegration and is produced by bombarding bismuth or lead with neutrons",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        84
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        210
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

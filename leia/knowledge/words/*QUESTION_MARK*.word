@@ -1,0 +1,170 @@
+{
+  "word": "*QUESTION_MARK*",
+  "senses": {
+    "*QUESTION_MARK*-PUNCT1002": {
+      "CAT": "PUNCT",
+      "DEF": "",
+      "EX": "Is the man hitting the building?",
+      "COMMENTS": "",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "V": {
+          "ROOT": "$VAR1",
+          "ROOT-WORD": "BE",
+          "CAT": "V"
+        },
+        "V-1": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "PUNCT"
+      },
+      "SEM-STRUC": {
+        "REQUEST-INFO": {
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "IS-1",
+        "THE",
+        "MAN",
+        "HITTING-2",
+        "THE",
+        "BUILDING",
+        "?-0"
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "*QUESTION_MARK*-PUNCT1002",
+      "WORD": "*QUESTION_MARK*",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": []
+    },
+    "*QUESTION_MARK*-PUNCT1001": {
+      "CAT": "PUNCT",
+      "DEF": "",
+      "EX": "Will the man hit the building?",
+      "COMMENTS": "",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "AUX": {
+          "ROOT": "$VAR1",
+          "ROOT-WORD": "WILL",
+          "CAT": "AUX"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "PUNCT"
+      },
+      "SEM-STRUC": {
+        "REQUEST-INFO": {
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "WILL-1",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING",
+        "?-0"
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "*QUESTION_MARK*-PUNCT1001",
+      "WORD": "*QUESTION_MARK*",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": []
+    },
+    "*QUESTION_MARK*-PUNCT1000": {
+      "CAT": "PUNCT",
+      "DEF": "",
+      "EX": "Did the man hit the building?",
+      "COMMENTS": "",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "V": {
+          "ROOT": "$VAR1",
+          "ROOT-WORD": "DO",
+          "CAT": "V"
+        },
+        "V-1": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "PUNCT"
+      },
+      "SEM-STRUC": {
+        "REQUEST-INFO": {
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "DID-1",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING",
+        "?-0"
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "*QUESTION_MARK*-PUNCT1000",
+      "WORD": "*QUESTION_MARK*",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": []
+    },
+    "*QUESTION_MARK*-PUNCT1": {
+      "CAT": "PUNCT",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "PUNCT"
+      },
+      "SEM-STRUC": "",
+      "MEANING-PROCEDURES": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "*QUESTION_MARK*-PUNCT1",
+      "WORD": "*QUESTION_MARK*",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": []
+    }
+  }
+}

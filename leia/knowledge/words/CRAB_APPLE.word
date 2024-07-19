@@ -1,0 +1,38 @@
+{
+  "word": "CRAB_APPLE",
+  "senses": {
+    "CRAB_APPLE-N1": {
+      "CAT": "N",
+      "DEF": "a small, tart apple, sometimes used in preserves",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "APPLE": {
+          "SIZE": [
+            "<",
+            0.3
+          ],
+          "SWEETNESS": [
+            "<",
+            0.3
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CRAB_APPLE-N1",
+      "WORD": "CRAB_APPLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

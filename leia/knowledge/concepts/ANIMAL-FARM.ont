@@ -1,0 +1,32 @@
+{
+  "name": "@ANIMAL-FARM",
+  "isa": [
+    "@AGRICULTURAL-CORPORATION",
+    "@FARM"
+  ],
+  "def": "an agricultural corporation manufacturing live animals and animal products",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ANIMAL-DERIVED-SUBSTANCE"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ANIMAL-PRODUCT"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ANIMAL-DERIVED-FOODSTUFF"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

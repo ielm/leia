@@ -1,0 +1,34 @@
+{
+  "word": "ACCOMMODATIONS",
+  "senses": {
+    "ACCOMMODATIONS-N1": {
+      "CAT": "N",
+      "DEF": "a place to stay",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "NUMBER": "PL"
+      },
+      "SEM-STRUC": {
+        "ROOM": {
+          "LOCATION": "LODGING-CORPORATION"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "LODGINGS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ACCOMMODATIONS-N1",
+      "WORD": "ACCOMMODATIONS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

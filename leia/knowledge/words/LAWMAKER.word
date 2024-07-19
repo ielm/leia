@@ -1,0 +1,35 @@
+{
+  "word": "LAWMAKER",
+  "senses": {
+    "LAWMAKER-N1": {
+      "CAT": "N",
+      "DEF": "part of a legislative body",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "POLITICAL-ROLE": {
+          "AGENT-OF": "MAKE-LAW"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "LAWGIVER",
+        "LAW-MAKER",
+        "LAW_MAKER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "LAWMAKER-N1",
+      "WORD": "LAWMAKER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

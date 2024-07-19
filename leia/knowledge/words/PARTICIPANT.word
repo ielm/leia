@@ -1,0 +1,63 @@
+{
+  "word": "PARTICIPANT",
+  "senses": {
+    "PARTICIPANT-N1": {
+      "CAT": "N",
+      "DEF": "an animal or person who participates in something",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "IN",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ANIMAL": {
+          "CASE-ROLE-OF": {
+            "VALUE": "^$VAR2",
+            "SEM": "EVENT"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "PARTICIPANT-0",
+        "IN-1",
+        "THE",
+        "MAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PARTICIPANT-N1",
+      "WORD": "PARTICIPANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

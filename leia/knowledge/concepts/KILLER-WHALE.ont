@@ -1,0 +1,16 @@
+{
+  "name": "@KILLER-WHALE",
+  "isa": [
+    "@WHALE"
+  ],
+  "def": "A black and white predatory whale that feeds on large fish, squid, and sometimes dolphins and seals.",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FIN"
+    }
+  ],
+  "private": {}
+}

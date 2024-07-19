@@ -1,0 +1,32 @@
+{
+  "name": "@CAULIFLOWER",
+  "isa": [
+    "@CRUCIFEROUS-VEGETABLE"
+  ],
+  "def": "the compact, whitish edible flower of the cauliflower plant",
+  "local": [
+    {
+      "slot": "diameter",
+      "facet": "sem",
+      "filler": [
+        "><",
+        22
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "white"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "off-white"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

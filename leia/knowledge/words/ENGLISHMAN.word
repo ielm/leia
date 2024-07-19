@@ -1,0 +1,40 @@
+{
+  "word": "ENGLISHMAN",
+  "senses": {
+    "ENGLISHMAN-N1": {
+      "CAT": "N",
+      "DEF": "a citizen of england",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CITIZEN": {
+          "HAS-NATIONALITY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "ENGLAND"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ENGLISHMAN-N1",
+      "WORD": "ENGLISHMAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

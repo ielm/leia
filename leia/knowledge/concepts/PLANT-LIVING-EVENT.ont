@@ -1,0 +1,32 @@
+{
+  "name": "@PLANT-LIVING-EVENT",
+  "isa": [
+    "@LIVING-EVENT"
+  ],
+  "def": "physical-events which involve the functioning of a plant",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@PLANT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

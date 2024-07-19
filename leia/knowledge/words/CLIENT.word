@@ -1,0 +1,53 @@
+{
+  "word": "CLIENT",
+  "senses": {
+    "CLIENT-N1": {
+      "CAT": "N",
+      "DEF": "a person to whom service is rendered",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "BENEFICIARY-OF": "PROFESSIONAL-SERVICE-EVENT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CLIENT-N1",
+      "WORD": "CLIENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CLIENT-N2": {
+      "CAT": "N",
+      "DEF": "a network client",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "NETWORK-CLIENT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CLIENT-N2",
+      "WORD": "CLIENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

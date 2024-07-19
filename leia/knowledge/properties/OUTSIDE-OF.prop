@@ -1,0 +1,9 @@
+{
+  "name": "$OUTSIDE-OF",
+  "def": "an object is located or an event takes place outside of another object",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$INSIDE-OF",
+  "measured-in": [],
+  "container": "$SPATIAL-RELATION"
+}

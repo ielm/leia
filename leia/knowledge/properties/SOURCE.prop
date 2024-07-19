@@ -1,0 +1,9 @@
+{
+  "name": "$SOURCE",
+  "def": "a starting point for actions involving change of state or location. The range\nincludes 'relaxable-to event' in case one gets an input like \"he went from the play\nto the restaurant\" (which is sort of extended usage but is very common). What the latter really means is that one goes from the place where the play is located to the restaurant",
+  "type": "case_role",
+  "range": "!AnyType",
+  "inverse": "$SOURCE-OF",
+  "measured-in": [],
+  "container": "$CASE-ROLE"
+}

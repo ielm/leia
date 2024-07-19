@@ -1,0 +1,74 @@
+{
+  "word": "BLIND",
+  "senses": {
+    "BLIND-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "incapable of seeing",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "ANIMAL",
+          "AGENT-OF": {
+            "VALUE": "REFSEM1"
+          },
+          "EXPERIENCER-OF": {
+            "VALUE": "REFSEM2"
+          }
+        },
+        "REFSEM1": [
+          "VOLUNTARY-VISUAL-EVENT"
+        ],
+        "MODALITY": {
+          "TYPE": "POTENTIAL",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM2": [
+          "INVOLUNTARY-VISUAL-EVENT"
+        ],
+        "MODALITY-1": {
+          "TYPE": "POTENTIAL",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "BLIND-0",
+        "MAN-1",
+        "HIT",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PUNCT",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BLIND-ADJ1",
+      "WORD": "BLIND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "word": "HARD_HAT",
+  "senses": {
+    "HARD_HAT-N1": {
+      "CAT": "N",
+      "DEF": "hard helmets used in construction",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HELMET": {
+          "RELATION": "CONSTRUCTION-ACTIVITY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SAFETY_HAT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "HARD_HAT-N1",
+      "WORD": "HARD_HAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

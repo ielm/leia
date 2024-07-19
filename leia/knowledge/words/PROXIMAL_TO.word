@@ -1,0 +1,45 @@
+{
+  "word": "PROXIMAL_TO",
+  "senses": {
+    "PROXIMAL_TO-PREP1": {
+      "CAT": "PREP",
+      "DEF": "closer to the head of, in a human body",
+      "EX": "the stomach is proximal to the colon",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "OBJECT",
+          "PROXIMAL-TO": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PROXIMAL_TO-PREP1",
+      "WORD": "PROXIMAL_TO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

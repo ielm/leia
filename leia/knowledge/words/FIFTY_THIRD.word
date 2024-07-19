@@ -1,0 +1,46 @@
+{
+  "word": "FIFTY_THIRD",
+  "senses": {
+    "FIFTY_THIRD-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "ORDINALITY": 53
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "53",
+        "RD-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "53RD"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FIFTY_THIRD-ADJ1",
+      "WORD": "FIFTY_THIRD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

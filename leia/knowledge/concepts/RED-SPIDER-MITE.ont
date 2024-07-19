@@ -1,0 +1,22 @@
+{
+  "name": "@RED-SPIDER-MITE",
+  "isa": [
+    "@SPIDER-MITE"
+  ],
+  "def": "a tiny web-spinning mite which is damaging orchards",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@ORCHARD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

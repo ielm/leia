@@ -1,0 +1,21 @@
+{
+  "name": "@WESTER",
+  "isa": [
+    "@WIND"
+  ],
+  "def": "A strong wind coming from the west.",
+  "local": [],
+  "block": [
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "northwestward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "southwestward"
+    }
+  ],
+  "private": {}
+}

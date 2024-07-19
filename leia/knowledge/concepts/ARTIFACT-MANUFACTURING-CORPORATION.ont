@@ -1,0 +1,16 @@
+{
+  "name": "@ARTIFACT-MANUFACTURING-CORPORATION",
+  "isa": [
+    "@FOR-PROFIT-MANUFACTURING-CORPORATION"
+  ],
+  "def": "any for profit manufacturing corporation that produces artifacts",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,47 @@
+{
+  "word": "DISABLED",
+  "senses": {
+    "DISABLED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "having a disability",
+      "EX": "",
+      "COMMENTS": "marge: use has-disease-current relation?",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "HUMAN",
+          "MEDICAL-RELATION": {
+            "VALUE": "DISABILITY"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "DISABLED-0",
+        "HUMAN-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DISABLED-ADJ1",
+      "WORD": "DISABLED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

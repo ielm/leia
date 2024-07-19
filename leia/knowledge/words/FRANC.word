@@ -1,0 +1,63 @@
+{
+  "word": "FRANC",
+  "senses": {
+    "FRANC-N1": {
+      "CAT": "N",
+      "DEF": "currency of benin or burkina-faso or burundi or cameroon or central-african-republic or chad or comoros or congo or cote-d'ivoire or democratic-republic-of-congo or djibouti or equatorial-guinea or french- polynesia or gabon or guinea or guinea-bissau or ivory-coast or liechtenstein   or mali or new_caledonia or niger or rwanda or senegal or switzerland or tahiti or togo or upper_volta or wallis_and_futuna_islands or zaire",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": {
+            "BENIN": [
+              "BURKINA_FASO",
+              "BURUNDI",
+              "CAMEROON",
+              "CENTRAL_AFRICAN_REPUBLIC",
+              "CHAD",
+              "COMOROS",
+              "CONGO",
+              "COTE_D'IVOIRE",
+              "DEMOCRATIC_REPUBLIC_OF_CONGO",
+              "DJIBOUTI",
+              "EQUATORIAL_GUINEA",
+              "FRENCH",
+              "POLYNESIA",
+              "GABON",
+              "GUINEA",
+              "GUINEA_BISSAU",
+              "IVORY_COAST",
+              "LIECHTENSTEIN",
+              "MALI",
+              "NEW_CALEDONIA",
+              "NIGER",
+              "RWANDA",
+              "SENEGAL",
+              "SWITZERLAND",
+              "TAHITI",
+              "TOGO",
+              "UPPER_VOLTA",
+              "WALLIS_AND_FUTUNA_ISLANDS",
+              "ZAIRE"
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FRANC-N1",
+      "WORD": "FRANC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

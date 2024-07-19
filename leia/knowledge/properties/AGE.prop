@@ -1,0 +1,12 @@
+{
+  "name": "$AGE",
+  "def": "How long something has existed",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@TIME-INTERVAL-UNIT",
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-OBJECT-ATTRIBUTE"
+}

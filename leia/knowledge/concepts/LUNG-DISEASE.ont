@@ -1,0 +1,22 @@
+{
+  "name": "@LUNG-DISEASE",
+  "isa": [
+    "@NON-COMMUNICABLE-DISEASE"
+  ],
+  "def": "a disease that affects the lungs",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@LUNG"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

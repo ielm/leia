@@ -1,0 +1,26 @@
+{
+  "name": "@TRANSUDATE",
+  "isa": [
+    "@BODY-SUBSTANCE"
+  ],
+  "def": "Body substance in liquid state, which is derived from plasma by passage through the (intact) wall of capillaries without further processing by secretory cells or glands.",
+  "local": [],
+  "block": [
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@GAS"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "semi-solid"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "solid"
+    }
+  ],
+  "private": {}
+}

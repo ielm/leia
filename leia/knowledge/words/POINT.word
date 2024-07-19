@@ -1,0 +1,664 @@
+{
+  "word": "POINT",
+  "senses": {
+    "POINT-N1": {
+      "CAT": "N",
+      "DEF": "in finance",
+      "EX": "the market rose 5 points",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FINANCIAL-POINT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "POINT-N1",
+      "WORD": "POINT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "POINT-N2": {
+      "CAT": "N",
+      "DEF": "elliptical for a point in time",
+      "EX": "after that point, ...",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "TIME-INTERVAL-UNIT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "POINT-N2",
+      "WORD": "POINT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "POINT-N3": {
+      "CAT": "N",
+      "DEF": "geometrical object",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "POINT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "POINT-N3",
+      "WORD": "POINT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "POINT-N4": {
+      "CAT": "N",
+      "DEF": "place",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PLACE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "POINT-N4",
+      "WORD": "POINT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "POINT-N5": {
+      "CAT": "N",
+      "DEF": "a point in a game",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "GAME-POINT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "POINT-N5",
+      "WORD": "POINT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "POINT-N6": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "the point is that this film is worthless",
+      "COMMENTS": "[D] this use of 'point' - as well as 'main thing', etc., are matters of coreference - the saliency has to be attributed to sth. much more specific than abstract-object, which I'm currently using as a stopgap.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "SALIENCY",
+          "VALUE": 1,
+          "SCOPE": "ABSTRACT-OBJECT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "POINT-N6",
+      "WORD": "POINT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "POINT-N7": {
+      "CAT": "N",
+      "DEF": "(Wikipedia) the smallest unit of measure in typography; inch/72",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "POINT-AS-MEASURE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "POINT-N7",
+      "WORD": "POINT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "POINT-V1": {
+      "CAT": "V",
+      "DEF": "point sth. at s.o./sth.",
+      "EX": "he pointed the gun at her",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": "AT",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "AIM": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR4",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "POINTED-0",
+        "THE",
+        "GUN-2",
+        "AT-3",
+        "THE",
+        "WOMAN-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "POINT-V1",
+      "WORD": "POINT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "POINT-V2": {
+      "CAT": "V",
+      "DEF": "phrasal 'point out' - to indicate",
+      "EX": "he pointed out to me the right answer",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT-WORD": "OUT",
+          "ROOT": "$VAR2",
+          "CAT": "PREP"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR4",
+          "CAT": "NP"
+        },
+        "PP": {
+          "ROOT-WORD": "TO",
+          "ROOT": "$VAR5",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "INDICATE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "POINTED-0",
+        "OUT-2",
+        "THE",
+        "PROBLEM-4",
+        "TO-5",
+        "THE",
+        "WOMAN-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "POINT-V2",
+      "WORD": "POINT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "POINT-V3": {
+      "CAT": "V",
+      "DEF": "to point out - phrasal",
+      "EX": "he pointed out [to me] that it was time to go",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "OUT"
+        },
+        "PP": {
+          "ROOT-WORD": "TO",
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR5",
+            "CAT": "N"
+          }
+        },
+        "COMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "INDICATE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR5"
+          }
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "POINTED-0",
+        "OUT-2",
+        "TO-4",
+        "THE",
+        "DOG-5",
+        "THAT",
+        "THE",
+        "WOMAN",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "POINT-V3",
+      "WORD": "POINT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "POINT-V4": {
+      "CAT": "V",
+      "DEF": "to point up - phrasal [+ NP] - emphasize",
+      "EX": "he pointed up the problems with that plan",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "UP"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "EMPHASIZE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "POINTED-0",
+        "OUT-2",
+        "THE",
+        "PROBLEM-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "PRT",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "POINT-V4",
+      "WORD": "POINT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "POINT-V5": {
+      "CAT": "V",
+      "DEF": "to point up - phrasal [+ comp] - emphasize",
+      "EX": "he pointed up that the plan wouldn't work",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "UP"
+        },
+        "COMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "EMPHASIZE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "POINTED-0",
+        "OUT-2",
+        "THAT",
+        "THE",
+        "WOMAN",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "PRT",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "POINT-V5",
+      "WORD": "POINT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "POINT-V6": {
+      "CAT": "V",
+      "DEF": "to indicate by a gesture; with 'to' or 'at'",
+      "EX": "he pointed to/at the tree",
+      "COMMENTS": "[D] in this sense, no instrument in indicated and finger is the default",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": [
+            "TO",
+            "AT"
+          ],
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "INDICATE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          },
+          "INSTRUMENT": "FINGER"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "POINTED-0",
+        "AT-2",
+        "THE",
+        "BUILDING-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "POINT-V6",
+      "WORD": "POINT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "POINT-V7": {
+      "CAT": "V",
+      "DEF": "to indicate by a gesture",
+      "EX": "he pointed to the tree with the pointer",
+      "COMMENTS": "[D] in this sense, an instrument in indicated",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": [
+            "TO",
+            "AT"
+          ],
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT-WORD": "WITH",
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR5",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "INDICATE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          },
+          "INSTRUMENT": {
+            "VALUE": "^$VAR5"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "POINTED-0",
+        "AT-2",
+        "THE",
+        "BUILDING-3",
+        "WITH-4",
+        "HIS",
+        "FINGER-5"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "POINT-V7",
+      "WORD": "POINT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

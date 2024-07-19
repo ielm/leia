@@ -1,0 +1,49 @@
+{
+  "word": "SIGNAL",
+  "senses": {
+    "SIGNAL-N1": {
+      "CAT": "N",
+      "DEF": "electrical impulses transmitted or received",
+      "EX": "The signal coming from the radio was strong",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SIGNAL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SIGNAL-N1",
+      "WORD": "SIGNAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SIGNAL-N3": {
+      "CAT": "N",
+      "DEF": "an indication -- a gesture or other event -- that indicates something",
+      "EX": "When he gives the signal, charge the doors.",
+      "COMMENTS": "[D] A signal has to always be an event. When one says, e.g., that a  light is a signal, it's actually a semantic ellipsis for the blinking, turning on, etc., of the light. ",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "INDICATE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SIGNAL-N3",
+      "WORD": "SIGNAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

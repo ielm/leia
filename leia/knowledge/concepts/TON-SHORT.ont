@@ -1,0 +1,19 @@
+{
+  "name": "@TON-SHORT",
+  "isa": [
+    "@MASS-WEIGHT-UNIT"
+  ],
+  "def": "a short ton is a unit of weight equal to 2000 pounds; 907.2",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        907.2
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

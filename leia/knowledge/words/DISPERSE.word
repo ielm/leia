@@ -1,0 +1,63 @@
+{
+  "word": "DISPERSE",
+  "senses": {
+    "DISPERSE-V1": {
+      "CAT": "V",
+      "DEF": "to break up and scatter",
+      "EX": "disperse the grass seed; the police dispersed the crowd",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "DISPERSE": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-2",
+        "DISPERSED-0",
+        "THE",
+        "GRASS",
+        "SEED-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "SPREAD"
+      ],
+      "SENSE": "DISPERSE-V1",
+      "WORD": "DISPERSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

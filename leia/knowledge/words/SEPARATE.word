@@ -1,0 +1,361 @@
+{
+  "word": "SEPARATE",
+  "senses": {
+    "SEPARATE-V1": {
+      "CAT": "V",
+      "DEF": "to perceive or show the difference between",
+      "EX": "they separated the functional and the theoretical problems",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "DIFFERENTIATE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "SET"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "SEPARATED-0",
+        "THE",
+        "PROBLEMS-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SEPARATE-V1",
+      "WORD": "SEPARATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SEPARATE-V2": {
+      "CAT": "V",
+      "DEF": "to perceive or show the difference between",
+      "EX": "they separated the functional problems from the theoretical ones",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "FROM",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "DIFFERENTIATE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME-1": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "SEPARATED-0",
+        "THE",
+        "DOG-2",
+        "FROM-3",
+        "THE",
+        "CAT-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SEPARATE-V2",
+      "WORD": "SEPARATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SEPARATE-V3": {
+      "CAT": "V",
+      "DEF": "phrasal: 'separate X from Y', to select X and omit Y",
+      "EX": "they separated the good vegetables from the spoiled ones",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR4",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "FROM",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SELECT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "REFSEM1": {
+          "SELECT": {
+            "AGENT-1": {
+              "VALUE": "^$VAR1"
+            },
+            "THEME-1": {
+              "VALUE": "^$VAR3"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "SEPARATED-0",
+        "THE",
+        "VEGETABLES-4",
+        "FROM-2",
+        "THE",
+        "FRUIT-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SEPARATE-V3",
+      "WORD": "SEPARATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SEPARATE-V4": {
+      "CAT": "V",
+      "DEF": "phrasal: 'separate out', to select",
+      "EX": "they separated out the good vegetables",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "OUT"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "SELECT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "SEPARATED-0",
+        "OUT-2",
+        "THE",
+        "BAD-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SEPARATE-V4",
+      "WORD": "SEPARATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SEPARATE-V5": {
+      "CAT": "V",
+      "DEF": "place distance between",
+      "EX": "they separated the good vegetables from the spoiled ones; they separated the work area from the living area",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR4",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "FROM",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SEPARATE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4"
+          },
+          "THEME-1": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "SEPARATED-0",
+        "THE",
+        "GOOD-4",
+        "FROM-2",
+        "THE",
+        "BAD-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [
+        "DIVIDE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SEPARATE-V5",
+      "WORD": "SEPARATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

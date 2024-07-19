@@ -1,0 +1,47 @@
+{
+  "word": "DAY_LONG",
+  "senses": {
+    "DAY_LONG-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "lasting a full work-day",
+      "EX": "he attended a day-long conference on forensic entomology",
+      "COMMENTS": "marge: should a work-day (8 hours) be distinguished from a day (24 hours)?",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "DURATION": "DAY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ALL-DAY-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "DAY_LONG",
+        "ALL-DAY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DAY_LONG-ADJ1",
+      "WORD": "DAY_LONG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

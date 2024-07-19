@@ -1,0 +1,56 @@
+{
+  "word": "DISCORDANCE",
+  "senses": {
+    "DISCORDANCE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "AMONG",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "AGREE": {
+            "AGENT": {
+              "VALUE": "^$VAR2",
+              "SEM": "SET"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DISCORDANCE-N1",
+      "WORD": "DISCORDANCE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

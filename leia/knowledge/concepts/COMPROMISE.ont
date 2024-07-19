@@ -1,0 +1,22 @@
+{
+  "name": "@COMPROMISE",
+  "isa": [
+    "@YIELD-TO"
+  ],
+  "def": "to adjust by settling on an agreement in which both sides make concessions",
+  "local": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@AGREE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

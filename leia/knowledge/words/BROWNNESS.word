@@ -1,0 +1,100 @@
+{
+  "word": "BROWNNESS",
+  "senses": {
+    "BROWNNESS-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "the dirt's brownness",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "POSSESSIVE": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "COLOR": "BROWN"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BROWNNESS-N1",
+      "WORD": "BROWNNESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BROWNNESS-N2": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "the brownness of the dirt",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR1",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "COLOR": "BROWN"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BROWNNESS-N2",
+      "WORD": "BROWNNESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BROWNNESS-N3": {
+      "CAT": "N",
+      "DEF": "with no explicit modifyee",
+      "EX": "some people like brownness",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PHYSICAL-OBJECT": {
+          "COLOR": "BROWN"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BROWNNESS-N3",
+      "WORD": "BROWNNESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

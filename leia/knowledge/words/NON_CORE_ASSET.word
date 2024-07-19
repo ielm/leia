@@ -1,0 +1,33 @@
+{
+  "word": "NON_CORE_ASSET",
+  "senses": {
+    "NON_CORE_ASSET-N1": {
+      "CAT": "N",
+      "DEF": "assets that a company can sell off and still maintain operations",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "SALIENCY",
+          "VALUE": 0.5,
+          "SCOPE": "ASSET"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NON_CORE_ASSET-N1",
+      "WORD": "NON_CORE_ASSET",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

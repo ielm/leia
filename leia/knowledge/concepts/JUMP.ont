@@ -1,0 +1,47 @@
+{
+  "name": "@JUMP",
+  "isa": [
+    "@MOTION-EVENT"
+  ],
+  "def": "to spring or leap from the ground, a height, etc.",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@GRASSHOPPER"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@CHANGE-POSITION"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PARACHUTE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TAIL"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@KANGAROO"
+    }
+  ],
+  "block": [
+    {
+      "slot": "effect",
+      "facet": "default",
+      "filler": "@CHANGE-LOCATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,39 @@
+{
+  "word": "COFFEE_FILTER",
+  "senses": {
+    "COFFEE_FILTER-N1": {
+      "CAT": "N",
+      "DEF": "sth. used for filtering coffee",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "FILTER-OBJECT": {
+          "MADE-OF": "PAPER-PRODUCT",
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "FILTER": {
+            "THEME": "COFFEE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COFFEE_FILTER-N1",
+      "WORD": "COFFEE_FILTER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

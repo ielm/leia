@@ -1,0 +1,16 @@
+{
+  "name": "@FILM-FOR-CAMERA",
+  "isa": [
+    "@FILM-ARTIFACT"
+  ],
+  "def": "The film medium used in photo cameras on which pictures are taken, and from which they are later developed.",
+  "local": [
+    {
+      "slot": "about-as-topic",
+      "facet": "sem",
+      "filler": "@*NOTHING*"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

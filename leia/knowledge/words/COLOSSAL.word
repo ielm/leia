@@ -1,0 +1,35 @@
+{
+  "word": "COLOSSAL",
+  "senses": {
+    "COLOSSAL-N1": {
+      "CAT": "N",
+      "DEF": "An extremely large sculpture, larger than heroic.",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SCULPTURE": {
+          "SIZE": [
+            "><",
+            0.8,
+            1
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COLOSSAL-N1",
+      "WORD": "COLOSSAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

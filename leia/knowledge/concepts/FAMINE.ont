@@ -1,0 +1,42 @@
+{
+  "name": "@FAMINE",
+  "isa": [
+    "@NATURAL-HAZARD"
+  ],
+  "def": "a case of very serious lack of food",
+  "local": [
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@DROUGHT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

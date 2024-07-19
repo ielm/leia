@@ -1,0 +1,32 @@
+{
+  "name": "@ELASTIC",
+  "isa": [
+    "@SEWING-MATERIAL"
+  ],
+  "def": "A flexible stretchable fabric or thread made with interwoven strands of rubber or an imitative synthetic fiber.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SYNTHETIC-RUBBER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@COTTON-FIBER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SILK"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOL"
+    }
+  ],
+  "private": {}
+}

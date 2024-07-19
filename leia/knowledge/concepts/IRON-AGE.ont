@@ -1,0 +1,28 @@
+{
+  "name": "@IRON-AGE",
+  "isa": [
+    "@HISTORICAL-PERIOD"
+  ],
+  "def": "period following Bronze Age, in which humankind learned to smelt iron for tools and weapons, beginning around 2000 B.C. in the Near East; there is no defined end date",
+  "local": [
+    {
+      "slot": "time-begin",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        2000
+      ],
+      "meta": {
+        "measured-in": "year-bc"
+      }
+    }
+  ],
+  "block": [
+    {
+      "slot": "time-begin",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    }
+  ],
+  "private": {}
+}

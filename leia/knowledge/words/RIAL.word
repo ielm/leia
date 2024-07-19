@@ -1,0 +1,36 @@
+{
+  "word": "RIAL",
+  "senses": {
+    "RIAL-N1": {
+      "CAT": "N",
+      "DEF": "currency of iran or oman or yemen",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": {
+            "IRAN": [
+              "OMAN",
+              "YEMEN"
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RIAL-N1",
+      "WORD": "RIAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

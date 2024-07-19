@@ -1,0 +1,55 @@
+{
+  "word": "UNPROVEN",
+  "senses": {
+    "UNPROVEN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "not proved",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "PROVE": {
+            "THEME": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "UNPROVEN-0",
+        "STANDARD-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "UNPROVEN-ADJ1",
+      "WORD": "UNPROVEN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

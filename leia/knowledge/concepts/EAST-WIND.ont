@@ -1,0 +1,21 @@
+{
+  "name": "@EAST-WIND",
+  "isa": [
+    "@WIND"
+  ],
+  "def": "a wind from the east",
+  "local": [],
+  "block": [
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "northeastward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "southeastward"
+    }
+  ],
+  "private": {}
+}

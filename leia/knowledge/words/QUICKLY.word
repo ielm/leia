@@ -1,0 +1,98 @@
+{
+  "word": "QUICKLY",
+  "senses": {
+    "QUICKLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "indicates the degree of rapidity with which an event is carried out or finished",
+      "EX": "Do your work fast",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-POST-VERB-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RAPIDITY": 0.8,
+          "SEM": [
+            "NOT",
+            "MOTION-EVENT"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "QUICKLY-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "SPEEDILY",
+        "EXPEDITIOUSLY",
+        "RAPIDLY",
+        "SWIFTLY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "QUICKLY-ADV1",
+      "WORD": "QUICKLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "QUICKLY-ADV2": {
+      "CAT": "ADV",
+      "DEF": "physical speed of a motion event or object in motion",
+      "EX": "He runs quickly",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-POST-VERB-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "VELOCITY": 0.8,
+          "SEM": "MOTION-EVENT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "QUICKLY-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "RAPIDLY",
+        "SWIFTLY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "QUICKLY-ADV2",
+      "WORD": "QUICKLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "name": "@BED-AND-BREAKFAST",
+  "isa": [
+    "@LODGING-CORPORATION"
+  ],
+  "def": "a small house where a one or more meals are included in the daily rent",
+  "local": [
+    {
+      "slot": "relation",
+      "facet": "default",
+      "filler": "@MEAL"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@KITCHEN"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@DINING-ROOM"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@KITCHEN-STAFF"
+    },
+    {
+      "slot": "number-of-floors",
+      "facet": "sem",
+      "filler": [
+        "><",
+        2
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@WORK-ROLE"
+    },
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "number-of-floors",
+      "facet": "sem",
+      "filler": [
+        "><",
+        200
+      ]
+    }
+  ],
+  "private": {}
+}

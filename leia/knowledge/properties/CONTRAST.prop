@@ -1,0 +1,9 @@
+{
+  "name": "$CONTRAST",
+  "def": "indicates any kind of contrast between propositions in discourse",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$DISCOURSE-RELATION"
+}

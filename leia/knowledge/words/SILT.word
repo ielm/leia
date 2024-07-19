@@ -1,0 +1,32 @@
+{
+  "word": "SILT",
+  "senses": {
+    "SILT-N1": {
+      "CAT": "N",
+      "DEF": "soil composed largely of sediment carried by moving water, with particles larger than clay but  smaller than sand",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SOIL": {
+          "LOCATION": "RIVER-BANK",
+          "LOCATION-1": "RIVER-BED"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SILT-N1",
+      "WORD": "SILT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

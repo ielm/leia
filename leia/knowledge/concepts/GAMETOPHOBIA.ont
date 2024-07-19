@@ -1,0 +1,27 @@
+{
+  "name": "@GAMETOPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of marriage",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MARRY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

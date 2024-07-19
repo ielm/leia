@@ -1,0 +1,72 @@
+{
+  "word": "SIXTY_THREE",
+  "senses": {
+    "SIXTY_THREE-NUM1": {
+      "CAT": "NUM",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "NUM"
+      },
+      "SEM-STRUC": {
+        "PHYSICAL-OBJECT": {
+          "CARDINALITY": {
+            "VALUE": 63
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "63"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SIXTY_THREE-NUM1",
+      "WORD": "SIXTY_THREE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SIXTY_THREE-NUM2": {
+      "CAT": "NUM",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NUM": {
+          "ROOT": "$VAR0",
+          "CAT": "NUM"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "NUMBER": "PL"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "CARDINALITY": 63
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "63"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SIXTY_THREE-NUM2",
+      "WORD": "SIXTY_THREE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

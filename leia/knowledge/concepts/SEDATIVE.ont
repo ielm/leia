@@ -1,0 +1,24 @@
+{
+  "name": "@SEDATIVE",
+  "isa": [
+    "@DRUG"
+  ],
+  "def": "An agent or a drug that produces a soothing, calming, or tranquilizing effect. (http://medical-dictionary.thefreedictionary.com/sedative)",
+  "local": [],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,62 @@
+{
+  "name": "@POLITICAL-COLLAPSE",
+  "isa": [
+    "@GOVERNMENT-ACTIVITY"
+  ],
+  "def": "(for a government) to break down suddenly",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GOVERNMENTAL-ORGANIZATION"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@LARGE-GEOPOLITICAL-ENTITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@GOVERNMENTAL-ROLE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

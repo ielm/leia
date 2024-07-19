@@ -1,0 +1,69 @@
+{
+  "word": "MESS",
+  "senses": {
+    "MESS-N1": {
+      "CAT": "N",
+      "DEF": "an untidy place (it's actually the state of untidiness in a place, but that's complex and I'm going simple)",
+      "EX": "Look at this mess!",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PLACE": {
+          "ORDERLINESS": 0
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "SWAMP",
+        "PIT",
+        "PIGSTY"
+      ],
+      "SENSE": "MESS-N1",
+      "WORD": "MESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MESS-N2": {
+      "CAT": "N",
+      "DEF": "shows low evaluative modality of something ",
+      "EX": "This dissertation is a mess.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "SCOPE": {
+            "SEM": "OBJECT",
+            "SEM-1": [
+              "NOT",
+              "PLACE"
+            ]
+          },
+          "VALUE": 0
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MESS-N2",
+      "WORD": "MESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

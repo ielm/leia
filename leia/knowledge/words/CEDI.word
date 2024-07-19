@@ -1,0 +1,31 @@
+{
+  "word": "CEDI",
+  "senses": {
+    "CEDI-N1": {
+      "CAT": "N",
+      "DEF": "currency of ghana",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": "GHANA"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CEDI-N1",
+      "WORD": "CEDI",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

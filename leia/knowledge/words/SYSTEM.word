@@ -1,0 +1,47 @@
+{
+  "word": "SYSTEM",
+  "senses": {
+    "SYSTEM-N1": {
+      "CAT": "N",
+      "DEF": "phrasal: the system = governmental workings",
+      "EX": "he was in the system from age 3; his paperwork got lot somewhere in the system",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ART": {
+          "ROOT": "$VAR1",
+          "ROOT-WORD": "THE",
+          "CAT": "ART"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "GOVERNMENT-ACTIVITY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "BLOCK-COREFERENCE"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE-1",
+        "SYSTEM-0",
+        "TOOK",
+        "OVER"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SYSTEM-N1",
+      "WORD": "SYSTEM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

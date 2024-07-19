@@ -1,0 +1,65 @@
+{
+  "name": "@BAKED-FOOD",
+  "isa": [
+    "@PREPARED-FOOD"
+  ],
+  "def": "any food whose ingredients usually include flour and leavening and is baked in an oven",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@FLOUR"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@LEAVENING"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SALT"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SUGAR"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WATER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@FOODSTUFF"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,31 @@
+{
+  "word": "KAHLUA",
+  "senses": {
+    "KAHLUA-N1": {
+      "CAT": "N",
+      "DEF": "A Mexican liqueur with a coffee flavor.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LIQUOR": {
+          "HAS-OBJECT-AS-PART": "COFFEE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KAHLUA-N1",
+      "WORD": "KAHLUA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

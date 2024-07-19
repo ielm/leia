@@ -1,0 +1,22 @@
+{
+  "name": "@FLAG",
+  "isa": [
+    "@VISUAL-MEDIA-ARTIFACT"
+  ],
+  "def": "a cloth with patterns, colors, etc. used as a symbol of a nation or as a signal",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SEWING-MATERIAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

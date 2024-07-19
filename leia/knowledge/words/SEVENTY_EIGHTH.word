@@ -1,0 +1,46 @@
+{
+  "word": "SEVENTY_EIGHTH",
+  "senses": {
+    "SEVENTY_EIGHTH-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "ORDINALITY": 78
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "78",
+        "TH-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "78TH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SEVENTY_EIGHTH-ADJ1",
+      "WORD": "SEVENTY_EIGHTH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

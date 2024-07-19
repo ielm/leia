@@ -1,0 +1,19 @@
+{
+  "name": "@POST-DOCTORATE-STUDENT",
+  "isa": [
+    "@UNIVERSITY-STUDENT"
+  ],
+  "def": "relating to studies beyond the doctorate",
+  "local": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "><",
+        100
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

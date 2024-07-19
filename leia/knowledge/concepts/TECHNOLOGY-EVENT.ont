@@ -1,0 +1,32 @@
+{
+  "name": "@TECHNOLOGY-EVENT",
+  "isa": [
+    "@PHYSICAL-EVENT"
+  ],
+  "def": "events that involve the use of technology or technological artifacts / devices",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    }
+  ],
+  "private": {}
+}

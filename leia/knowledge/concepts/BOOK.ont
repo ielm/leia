@@ -1,0 +1,80 @@
+{
+  "name": "@BOOK",
+  "isa": [
+    "@BOOK-DOCUMENT"
+  ],
+  "def": "a volume made up of pages fastened along one edge and enclosed within protective covers",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PAGE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PARCHMENT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@LIBRARY"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@OFFICE-BUILDING"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PRIVATE-HOME"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@STORE"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@INK"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PAPER"
+    }
+  ],
+  "private": {}
+}

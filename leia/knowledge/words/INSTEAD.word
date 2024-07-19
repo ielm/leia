@@ -1,0 +1,46 @@
+{
+  "word": "INSTEAD",
+  "senses": {
+    "INSTEAD-ADV1": {
+      "CAT": "ADV",
+      "DEF": "shows sth. has been chosen",
+      "EX": "I'll walk instead; I'll have the chicken instead",
+      "COMMENTS": "I think this is practically always clause final;   this sense assumes it is so. no sem-struc , effectively giving null semantics  to 'instead'. it has discourse function of showing a choice has been made. ",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "V"
+        },
+        "ADV": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        }
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "INSTEAD-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INSTEAD-ADV1",
+      "WORD": "INSTEAD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "word": "FIGHTER_PILOT",
+  "senses": {
+    "FIGHTER_PILOT-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PILOT": {
+          "AGENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "FLY-AIR-VEHICLE": {
+            "THEME": "FIGHTER-PLANE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FIGHTER_PILOT-N1",
+      "WORD": "FIGHTER_PILOT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "word": "TRIGGER",
+  "senses": {
+    "TRIGGER-N1": {
+      "CAT": "N",
+      "DEF": "a cause",
+      "EX": "the trigger for the fighting was a nasty argument",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "FOR",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "EVENT": {
+          "EFFECT": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "TRIGGER-0",
+        "FOR-1",
+        "THE",
+        "EVENT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TRIGGER-N1",
+      "WORD": "TRIGGER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "TRIGGER-N2": {
+      "CAT": "N",
+      "DEF": "part of a firearm",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "TRIGGER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TRIGGER-N2",
+      "WORD": "TRIGGER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "TRIGGER-V1": {
+      "CAT": "V",
+      "DEF": "to cause",
+      "EX": "this incident triggered open aggressions",
+      "COMMENTS": "'trigger' is actually slightly different than just 'caused-by' - it's more like it's an immediate cause but there may be other causes in a chain of causal events; but that's a bit too deep for now I think",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "INCIDENT-1",
+        "TRIGGERED-0",
+        "AGGRESSION-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "STIMULATE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "TRIGGER-V1",
+      "WORD": "TRIGGER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

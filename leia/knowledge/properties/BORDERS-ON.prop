@@ -1,0 +1,9 @@
+{
+  "name": "$BORDERS-ON",
+  "def": "the geographical entities that border other geographical entities",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$BORDERS",
+  "measured-in": [],
+  "container": "$GEOPOLITICAL-RELATION"
+}

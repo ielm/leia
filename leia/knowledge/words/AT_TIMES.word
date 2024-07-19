@@ -1,0 +1,103 @@
+{
+  "word": "AT_TIMES",
+  "senses": {
+    "AT_TIMES-ADV1": {
+      "CAT": "ADV",
+      "DEF": "occasionally, modifying a verb",
+      "EX": "at times it seems... it seems at times that",
+      "COMMENTS": "a large value of time-interval means a less frequent event",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-POST-VERB-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "ITERATION": "MULTIPLE",
+          "TIME-INTERVAL": 0.7,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "AT_TIMES-0",
+        "OBJECTED-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "ON_OCCASION",
+        "EVERY_SO_OFTEN",
+        "NOW_AND_THEN",
+        "NOW_AND_AGAIN",
+        "ONCE_IN_A_WHILE",
+        "EVERY_SO_OFTEN",
+        "EVERY_ONCE_IN_A_WHILE"
+      ],
+      "HYPONYMS": [
+        "AT_INTERVALS",
+        "BY_ROTATION"
+      ],
+      "SENSE": "AT_TIMES-ADV1",
+      "WORD": "AT_TIMES",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "AT_TIMES-ADV2": {
+      "CAT": "ADV",
+      "DEF": "occasionally, modifying an adj",
+      "EX": "at times serious",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ADV": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "ADJ"
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "ITERATION": "MULTIPLE",
+          "TIME-INTERVAL": 0.7,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "AT_TIMES-0",
+        "MEN-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AT_TIMES-ADV2",
+      "WORD": "AT_TIMES",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

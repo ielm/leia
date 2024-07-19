@@ -1,0 +1,21 @@
+{
+  "name": "@OX",
+  "isa": [
+    "@CATTLE"
+  ],
+  "def": "An adult castrated bull used chiefly as a draft animal.",
+  "local": [],
+  "block": [
+    {
+      "slot": "gender",
+      "facet": "sem",
+      "filler": "female"
+    },
+    {
+      "slot": "gender",
+      "facet": "sem",
+      "filler": "female"
+    }
+  ],
+  "private": {}
+}

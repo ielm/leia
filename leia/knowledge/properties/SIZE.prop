@@ -1,0 +1,9 @@
+{
+  "name": "$SIZE",
+  "def": "classifies spatial measurement attributes",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

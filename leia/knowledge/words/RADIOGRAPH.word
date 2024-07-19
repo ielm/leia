@@ -1,0 +1,116 @@
+{
+  "word": "RADIOGRAPH",
+  "senses": {
+    "RADIOGRAPH-V1": {
+      "CAT": "V",
+      "DEF": "To produce a picture by use of x-ray, gamma ray, etc.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "RADIOGRAPHY-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "RADIOGRAPHED-0",
+        "THE",
+        "BOOK-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RADIOGRAPH-V1",
+      "WORD": "RADIOGRAPH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RADIOGRAPH-N1": {
+      "CAT": "N",
+      "DEF": "An image produced on a radiosensitive surface, such as a photographic film, by radiation other than visible light, especially by x-rays passed through an object or by photographing a fluoroscopic image ",
+      "EX": "radiograph of some body part",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "RADIOGRAPH-OBJECT": {
+          "DEPICTS": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "RADIOGRAPH-0",
+        "OF-1",
+        "THE",
+        "BOOK-2",
+        "WAS",
+        "BROADCAST"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RADIOGRAPH-N1",
+      "WORD": "RADIOGRAPH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

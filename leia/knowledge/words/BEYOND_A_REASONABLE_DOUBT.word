@@ -1,0 +1,40 @@
+{
+  "word": "BEYOND_A_REASONABLE_DOUBT",
+  "senses": {
+    "BEYOND_A_REASONABLE_DOUBT-ADV1": {
+      "CAT": "ADV",
+      "DEF": "phrasal: beyond a reasonable doubt = virtually certain",
+      "EX": "they determined beyond a reasonable doubt that he had stolen the tarts",
+      "COMMENTS": "often implies a legal setting but not always",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-POST-VERB-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BEYOND_A_REASONABLE_DOUBT-ADV1",
+      "WORD": "BEYOND_A_REASONABLE_DOUBT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

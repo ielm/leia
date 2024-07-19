@@ -1,0 +1,68 @@
+{
+  "name": "@WALK",
+  "isa": [
+    "@MOTION-EVENT"
+  ],
+  "def": "to move over a surface by taking steps with the feet at a pace slower than a run; to go or travel on foot",
+  "local": [
+    {
+      "slot": "velocity",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "velocity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FOOT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PAW"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HOOF"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "velocity",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    }
+  ],
+  "private": {}
+}

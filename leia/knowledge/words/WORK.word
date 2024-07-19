@@ -1,0 +1,400 @@
+{
+  "word": "WORK",
+  "senses": {
+    "WORK-N1": {
+      "CAT": "N",
+      "DEF": "labor",
+      "EX": "how do you like your work?",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "WORK",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WORK-N1",
+      "WORD": "WORK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WORK-N2": {
+      "CAT": "N",
+      "DEF": "work activity",
+      "EX": "his work at the orphanage occupies most of his weekends",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "WORK-ACTIVITY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "JOB",
+        "ASSIGNMENT"
+      ],
+      "SENSE": "WORK-N2",
+      "WORD": "WORK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WORK-N4": {
+      "CAT": "N",
+      "DEF": "phrasal: hard at work",
+      "EX": "He has been hard at work all day",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "$VAR0",
+      "SYN-STRUC": {
+        "ADJ": {
+          "ROOT": "$VAR1",
+          "CAT": "ADJ",
+          "ROOT-WORD": "HARD"
+        },
+        "PREP": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "AT"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EFFORT",
+          "VALUE": 1,
+          "SCOPE": "WORK-ACTIVITY"
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "IS",
+        "HARD-1",
+        "AT-2",
+        "WORK-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AUX",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "JOB",
+        "ASSIGNMENT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "WORK-N4",
+      "WORD": "WORK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WORK-V1": {
+      "CAT": "V",
+      "DEF": "to labor",
+      "EX": "he works (on engines) (at the garage)",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "ON",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT-WORD": [
+            "AT",
+            "IN"
+          ],
+          "ROOT": "$VAR5",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "WORK-ACTIVITY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "LOCATION": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DEALERSHIP-1",
+        "WORKS-0",
+        "ON-3",
+        "THE",
+        "CURE-2",
+        "AT-5",
+        "THE",
+        "LOBBY-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PUNCT",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WORK-V1",
+      "WORD": "WORK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WORK-V3": {
+      "CAT": "V",
+      "DEF": "sth. is successful",
+      "EX": "This plan worked",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT"
+        },
+        "MODALITY": {
+          "TYPE": "EPITEUCTIC",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "CURE-1",
+        "WORKS-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WORK-V3",
+      "WORD": "WORK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WORK-V4": {
+      "CAT": "V",
+      "DEF": "phrasal: work together = cooperate",
+      "EX": "we must all work together (to get this finished in time)",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "NUMBER": "PL"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "ADV": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "TOGETHER",
+          "CAT": "ADV"
+        },
+        "XCOMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "COOPERATIVE-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "PURPOSE": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOG-1",
+        "WORKS-0",
+        "TOGETHER-2",
+        "TO-7",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "XCOMP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "XSUBJ",
+          "$VAR3",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WORK-V4",
+      "WORD": "WORK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WORK-V2": {
+      "CAT": "V",
+      "DEF": "phrasal: work as ",
+      "EX": "he works as a night watchman",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "AS",
+          "CAT": "PREP"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "HAS-SOCIAL-ROLE": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOG-1",
+        "WORKS-0",
+        "AS-2",
+        "THE",
+        "MAN-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WORK-V2",
+      "WORD": "WORK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

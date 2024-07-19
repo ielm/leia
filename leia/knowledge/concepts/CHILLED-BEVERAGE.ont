@@ -1,0 +1,33 @@
+{
+  "name": "@CHILLED-BEVERAGE",
+  "isa": [
+    "@NONALCOHOLIC-BEVERAGE"
+  ],
+  "def": "any beverage chilled to below room temperature when served, or served over ice",
+  "local": [
+    {
+      "slot": "temperature",
+      "facet": "sem",
+      "filler": [
+        "><",
+        20
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "temperature",
+      "facet": "sem",
+      "filler": [
+        "><",
+        99
+      ]
+    },
+    {
+      "slot": "temperature",
+      "facet": "sem",
+      "filler": "@DEGREE-CELSIUS"
+    }
+  ],
+  "private": {}
+}

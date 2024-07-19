@@ -1,0 +1,33 @@
+{
+  "word": "TANKA",
+  "senses": {
+    "TANKA-N1": {
+      "CAT": "N",
+      "DEF": "A Japanese verse form in five lines, the first and third composed of five syllables and the rest of seven.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LITERARY-COMPOSITION": {
+          "HAS-STYLE": "POEM",
+          "LOCATION": "JAPAN",
+          "LENGTH": 5
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TANKA-N1",
+      "WORD": "TANKA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

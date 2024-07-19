@@ -1,0 +1,67 @@
+{
+  "name": "@INSURE",
+  "isa": [
+    "@EVERYDAY-FINANCIAL-EVENT"
+  ],
+  "def": "to take out or issue a contract that guarantees compensation in the event of loss",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@INSURANCE-POLICY"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@GUARANTEE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@BUILDING"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@AUTOMOBILE"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@FINANCIAL-CORPORATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@FINANCIAL-WORK-ROLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

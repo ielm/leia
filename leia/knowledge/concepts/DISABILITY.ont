@@ -1,0 +1,47 @@
+{
+  "name": "@DISABILITY",
+  "isa": [
+    "@PATHOLOGIC-FUNCTION"
+  ],
+  "def": "the condition of being unable to perform as a consequence of physical or mental unfitness",
+  "local": [
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@ACCIDENT"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-ABNORMALITY"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@MENTAL-DISORDER"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@PSYCHOLOGICAL-DISORDER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PSYCHOLOGICAL-DISORDER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

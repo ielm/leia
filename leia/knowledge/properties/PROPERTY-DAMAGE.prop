@@ -1,0 +1,11 @@
+{
+  "name": "$PROPERTY-DAMAGE",
+  "def": "the amount of property damage measured in a monetary unit",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@MONETARY-UNIT"
+  ],
+  "container": "$CATASTROPHE-ATTRIBUTE"
+}

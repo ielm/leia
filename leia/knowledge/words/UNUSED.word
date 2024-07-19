@@ -1,0 +1,46 @@
+{
+  "word": "UNUSED",
+  "senses": {
+    "UNUSED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "something that has not been used in its designed capacity",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "EVENT": {
+            "THEME": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "UNUSED-ADJ1",
+      "WORD": "UNUSED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

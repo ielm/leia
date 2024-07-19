@@ -1,0 +1,16 @@
+{
+  "name": "@TINE",
+  "isa": [
+    "@INDEPENDENT-DEVICE"
+  ],
+  "def": "a prong on an implement, as a fork or a pitchfork",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,39 @@
+{
+  "word": "HOLSTER",
+  "senses": {
+    "HOLSTER-N1": {
+      "CAT": "N",
+      "DEF": "a belt for a carrying a pistol",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BELT": {
+          "HAS-OBJECT-AS-PART": "POCKET",
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "CARRY": {
+            "THEME": "PISTOL"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HOLSTER-N1",
+      "WORD": "HOLSTER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "word": "RECTANGLE",
+  "senses": {
+    "RECTANGLE-N1": {
+      "CAT": "N",
+      "DEF": "a rectangular object",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PHYSICAL-OBJECT": {
+          "SHAPE": "RECTANGULAR"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RECTANGLE-N1",
+      "WORD": "RECTANGLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

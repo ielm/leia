@@ -1,0 +1,53 @@
+{
+  "word": "THRILLER",
+  "senses": {
+    "THRILLER-N1": {
+      "CAT": "N",
+      "DEF": "A literary or theatrical work that is suspenseful.",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CREATIVE-WORK": {
+          "HAS-STYLE": "THRILLER"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "THRILLER-N1",
+      "WORD": "THRILLER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "THRILLER-N2": {
+      "CAT": "N",
+      "DEF": "the genre of thriller",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "THRILLER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "THRILLER-N2",
+      "WORD": "THRILLER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

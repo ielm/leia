@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-PARTNER",
+  "def": "a relation between an organization or person and another organization or person that is the former*s partner",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$PARTNER-OF",
+  "measured-in": [],
+  "container": "$BUSINESS-RELATION"
+}

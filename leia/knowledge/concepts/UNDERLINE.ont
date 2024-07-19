@@ -1,0 +1,22 @@
+{
+  "name": "@UNDERLINE",
+  "isa": [
+    "@DRAW"
+  ],
+  "def": "to draw a line beneath",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TEXT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DRAWING"
+    }
+  ],
+  "private": {}
+}

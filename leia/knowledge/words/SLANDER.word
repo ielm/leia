@@ -1,0 +1,58 @@
+{
+  "word": "SLANDER",
+  "senses": {
+    "SLANDER-V1": {
+      "CAT": "V",
+      "DEF": "to make harmful, often false accusations against someone",
+      "EX": "He slandered his former boss",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "SLANDER": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "SLANDERED-0",
+        "HIS",
+        "FORMER",
+        "BOSS-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "MALIGN",
+        "DEFAME",
+        "TRADUCE",
+        "VILIFY",
+        "ASPERSE",
+        "CALUMNIATE",
+        "LIBEL"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SLANDER-V1",
+      "WORD": "SLANDER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "word": "OUT_OF_PRINT",
+  "senses": {
+    "OUT_OF_PRINT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "this book is out of print",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "THEME-OF": {
+            "VALUE": "REFSEM1"
+          },
+          "THEME-OF-1": {
+            "VALUE": "REFSEM2"
+          }
+        },
+        "REFSEM1": {
+          "PRINTING-ACTIVITY": {
+            "TIME": [
+              "<",
+              [
+                "FIND-ANCHOR-TIME"
+              ]
+            ]
+          }
+        },
+        "REFSEM2": {
+          "PRINTING-ACTIVITY": {
+            "TIME-1": [
+              "FIND-ANCHOR-TIME"
+            ]
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "BRAIN-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "OUT_OF_PRINT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "OUT_OF_PRINT-ADJ1",
+      "WORD": "OUT_OF_PRINT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

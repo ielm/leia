@@ -1,0 +1,22 @@
+{
+  "name": "@CEILING",
+  "isa": [
+    "@BUILDING-ARTIFACT-PART"
+  ],
+  "def": "the upper interior surface of a room or part of a building",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@DRYWALL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

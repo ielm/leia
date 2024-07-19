@@ -1,0 +1,27 @@
+{
+  "name": "@AX",
+  "isa": [
+    "@CUTTING-IMPLEMENT"
+  ],
+  "def": "a tool with a long handle and a bladed head, used for chopping wood, etc.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BLADE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@HANDLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

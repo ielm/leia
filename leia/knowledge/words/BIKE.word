@@ -1,0 +1,49 @@
+{
+  "word": "BIKE",
+  "senses": {
+    "BIKE-N1": {
+      "CAT": "N",
+      "DEF": "bicycle",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BICYCLE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BIKE-N1",
+      "WORD": "BIKE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BIKE-N2": {
+      "CAT": "N",
+      "DEF": "motorcycle",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "MOTORCYCLE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BIKE-N2",
+      "WORD": "BIKE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

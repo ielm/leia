@@ -1,0 +1,31 @@
+{
+  "word": "AIRFOIL",
+  "senses": {
+    "AIRFOIL-N1": {
+      "CAT": "N",
+      "DEF": "an artifact part used for stabilizing things",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ARTIFACT-PART": {
+          "PURPOSE": "STABILIZE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AIRFOIL-N1",
+      "WORD": "AIRFOIL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

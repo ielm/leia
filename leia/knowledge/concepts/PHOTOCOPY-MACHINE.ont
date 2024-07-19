@@ -1,0 +1,16 @@
+{
+  "name": "@PHOTOCOPY-MACHINE",
+  "isa": [
+    "@MACHINE"
+  ],
+  "def": "a machine that reproduces documents photographically",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@PRINTED-MEDIA"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

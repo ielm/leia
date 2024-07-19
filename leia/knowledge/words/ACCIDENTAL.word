@@ -1,0 +1,51 @@
+{
+  "word": "ACCIDENTAL",
+  "senses": {
+    "ACCIDENTAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "not intentional",
+      "EX": "an accidental mistake",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "VOLITIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ACCIDENTAL-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "UNWITTING",
+        "FLUKE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ACCIDENTAL-ADJ1",
+      "WORD": "ACCIDENTAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

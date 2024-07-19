@@ -1,0 +1,84 @@
+{
+  "name": "@AMPUTATE",
+  "isa": [
+    "@SURGERY"
+  ],
+  "def": "to surgically cut off a limb",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@REMOVE-1"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIMB"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIMB-SEGMENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SURGICAL-KNIFE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SURGICAL-INSTRUMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {
+    "@REMOVE-1": {
+      "name": "@REMOVE-1",
+      "isa": [
+        "@REMOVE"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "theme",
+          "facet": "sem",
+          "filler": "@LIMB"
+        },
+        {
+          "slot": "theme",
+          "facet": "sem",
+          "filler": "@LIMB-SEGMENT"
+        },
+        {
+          "slot": "experiencer",
+          "facet": "sem",
+          "filler": "@ANIMAL"
+        },
+        {
+          "slot": "agent",
+          "facet": "default",
+          "filler": "@SURGEON"
+        },
+        {
+          "slot": "agent",
+          "facet": "sem",
+          "filler": "@PHYSICIAN"
+        },
+        {
+          "slot": "agent",
+          "facet": "relaxable-to",
+          "filler": "@HUMAN"
+        }
+      ],
+      "block": [],
+      "private": {}
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "word": "HOSPITAL",
+  "senses": {
+    "HOSPITAL-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "HOSPITAL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "HEALTH_FACILITY",
+        "INFIRMARY"
+      ],
+      "SENSE": "HOSPITAL-N1",
+      "WORD": "HOSPITAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

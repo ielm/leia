@@ -1,0 +1,22 @@
+{
+  "name": "@BIOLOGY",
+  "isa": [
+    "@SCIENCE"
+  ],
+  "def": "the science that deals with the origin, history, characteristics, habits, etc. of plants and animals",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@BIOLOGIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SCIENTIST"
+    }
+  ],
+  "private": {}
+}

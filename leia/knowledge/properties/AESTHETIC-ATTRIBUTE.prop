@@ -1,0 +1,9 @@
+{
+  "name": "$AESTHETIC-ATTRIBUTE",
+  "def": "the degree to which an object is perceived as aesthetically good or appealing",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-OBJECT-ATTRIBUTE"
+}

@@ -1,0 +1,36 @@
+{
+  "name": "@FERMIUM",
+  "isa": [
+    "@ACTINIDE"
+  ],
+  "def": "a synthetic transuranic metallic element having 10 isotopes with mass numbers ranging from 248 to 257 and corresponding half-lives ranging from 0.6 minute to approximately 100 days",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        257
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        100
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

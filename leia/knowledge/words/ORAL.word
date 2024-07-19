@@ -1,0 +1,88 @@
+{
+  "word": "ORAL",
+  "senses": {
+    "ORAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to the mouth",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "NOT",
+            "DISEASE"
+          ],
+          "RELATION": "MOUTH"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ORAL-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ORAL-ADJ1",
+      "WORD": "ORAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ORAL-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "refers to any disease affecting the mouth",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "DISEASE",
+          "THEME": "MOUTH"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ORAL-0",
+        "DISEASE-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ORAL-ADJ2",
+      "WORD": "ORAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

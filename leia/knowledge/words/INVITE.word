@@ -1,0 +1,261 @@
+{
+  "word": "INVITE",
+  "senses": {
+    "INVITE-V1": {
+      "CAT": "V",
+      "DEF": "offer an action",
+      "EX": "she invited him to stay over the night",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "INDIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "XCOMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "INVITE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR3": {
+          "AGENT-1": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "INVITED-0",
+        "HIM-2",
+        "TO",
+        "STAY-3",
+        "OVERNIGHT"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "XCOMP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INVITE-V1",
+      "WORD": "INVITE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "INVITE-V2": {
+      "CAT": "V",
+      "DEF": "invite to a location",
+      "EX": "she invited him to Paris <into her office, onto her boat>",
+      "COMMENTS": "we're lexicalizing the semantic ellipsis of 'to come'; I think that destination is close enough no matter which prep. is used; no need to compose meaning using mps",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": [
+            "TO",
+            "ONTO",
+            "INTO",
+            "ON"
+          ],
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "INVITE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "COME": {
+            "DESTINATION": {
+              "VALUE": "^$VAR4"
+            },
+            "AGENT-1": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "ASKED-0",
+        "THE",
+        "WOMAN-2",
+        "TO-3",
+        "THE",
+        "DANCE-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "ASK"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "INVITE-V2",
+      "WORD": "INVITE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "INVITE-V3": {
+      "CAT": "V",
+      "DEF": "direct quotation",
+      "EX": "'Come over here!' she invited him.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "N": {
+          "ROOT": "$VAR3",
+          "CAT": "N",
+          "OPT": "+"
+        },
+        "QUOTED-SPEECH": [
+          [
+            "ROOT",
+            "$VAR2"
+          ],
+          [
+            "CAT",
+            "CL"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "INVITE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "*QUOTE*",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING",
+        "*QUOTE*",
+        "*COMMA*",
+        "HE-1",
+        "INVITED-0",
+        "HER-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INVITE-V3",
+      "WORD": "INVITE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

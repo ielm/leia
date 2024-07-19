@@ -1,0 +1,11 @@
+{
+  "name": "$DURATION",
+  "def": "The length of time that something takes (an event takes to occur; using SEM) , or how long the given type of event typically lasts (using the DEFAULT) facet",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@TIME-INTERVAL-UNIT"
+  ],
+  "container": "$SCALAR-EVENT-ATTRIBUTE"
+}

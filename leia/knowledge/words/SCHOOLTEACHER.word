@@ -1,0 +1,31 @@
+{
+  "word": "SCHOOLTEACHER",
+  "senses": {
+    "SCHOOLTEACHER-N1": {
+      "CAT": "N",
+      "DEF": "a person who teaches in a primary or secondary school",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "TEACHER": {
+          "LOCATION": "SCHOOL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SCHOOLTEACHER-N1",
+      "WORD": "SCHOOLTEACHER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

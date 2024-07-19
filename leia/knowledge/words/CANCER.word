@@ -1,0 +1,74 @@
+{
+  "word": "CANCER",
+  "senses": {
+    "CANCER-N1": {
+      "CAT": "N",
+      "DEF": "a disease",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "OPT": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CANCER": {
+          "LOCATION": {
+            "VALUE": "^$VAR1",
+            "SEM": "ANATOMICAL-STRUCTURE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CERVICAL-1",
+        "CANCER-0",
+        "KILLS",
+        "PEOPLE"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "CARCINOMA"
+      ],
+      "SENSE": "CANCER-N1",
+      "WORD": "CANCER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CANCER-N2": {
+      "CAT": "N",
+      "DEF": "a sign of the zodiac",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CANCER-ZODIAC",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CANCER-N2",
+      "WORD": "CANCER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

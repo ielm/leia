@@ -1,0 +1,19 @@
+{
+  "name": "@CALORIE-20",
+  "isa": [
+    "@ENERGY-UNIT"
+  ],
+  "def": "(Wikipedia) the amount of energy required to warm one gram of air-free water from 19.5 degrees Celsius to 20.5 degrees Celsius at standard atmospheric pressure. abbreviated cal 20.",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        4.1819
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

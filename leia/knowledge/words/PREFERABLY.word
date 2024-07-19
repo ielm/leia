@@ -1,0 +1,40 @@
+{
+  "word": "PREFERABLY",
+  "senses": {
+    "PREFERABLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "X is desirable",
+      "EX": "make sure you show up by noon, preferably sober",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "VOLITIVE",
+          "VALUE": 0.7,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PREFERABLY-ADV1",
+      "WORD": "PREFERABLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

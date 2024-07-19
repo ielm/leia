@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-PERSONAL-NAME",
+  "def": "links a person with its personal name; a person can have more than one of these",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": "$FIRST-NAME-OF",
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

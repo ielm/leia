@@ -1,0 +1,33 @@
+{
+  "word": "MOLECULE",
+  "senses": {
+    "MOLECULE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "MOLECULE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "DIPOLE_MOLECULE",
+        "PROTEIN_MOLECULE",
+        "COENZYME",
+        "MACROMOLECULE",
+        "SUPERMOLECULE"
+      ],
+      "SENSE": "MOLECULE-N1",
+      "WORD": "MOLECULE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

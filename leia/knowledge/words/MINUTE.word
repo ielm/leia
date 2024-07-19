@@ -1,0 +1,51 @@
+{
+  "word": "MINUTE",
+  "senses": {
+    "MINUTE-N3": {
+      "CAT": "N",
+      "DEF": "60 arc minutes are one arc degree; 1/60*degree-angular",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "MINUTE-ANGULAR",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MINUTE-N3",
+      "WORD": "MINUTE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MINUTE-N1": {
+      "CAT": "N",
+      "DEF": "a unit of time equal to 60 seconds",
+      "EX": "",
+      "COMMENTS": "the hyponym 'minute of the day' is for contexts like ^you've got to watch him every minute of the day^; another option would have been to make 'every minute of the day' a hyp of 'always'",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "MINUTE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "MINUTE_OF_THE_DAY"
+      ],
+      "SENSE": "MINUTE-N1",
+      "WORD": "MINUTE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

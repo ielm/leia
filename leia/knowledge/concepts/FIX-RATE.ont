@@ -1,0 +1,37 @@
+{
+  "name": "@FIX-RATE",
+  "isa": [
+    "@NATIONAL-ECONOMIC-EVENT"
+  ],
+  "def": "to set a price or rate according to a government regulation, based on an expected fair return on investment",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@FINANCIAL-CORPORATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@FINANCIAL-WORK-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

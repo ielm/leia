@@ -1,0 +1,53 @@
+{
+  "word": "YEAR_AFTER_YEAR",
+  "senses": {
+    "YEAR_AFTER_YEAR-ADV1": {
+      "CAT": "ADV",
+      "DEF": "",
+      "EX": "year after year she complains about...",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-POST-VERB-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "CONTINUE",
+          "ITERATION": "MULTIPLE",
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "YEAR_AFTER_YEAR-0",
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "YEAR_AFTER_YEAR-ADV1",
+      "WORD": "YEAR_AFTER_YEAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

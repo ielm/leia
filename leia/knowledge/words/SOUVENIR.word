@@ -1,0 +1,95 @@
+{
+  "word": "SOUVENIR",
+  "senses": {
+    "SOUVENIR-N1": {
+      "CAT": "N",
+      "DEF": "item that serves as a reminder",
+      "EX": "",
+      "COMMENTS": "marge: correct use of represents?",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "NP"
+          }
+        },
+        "PP-1": {
+          "ROOT-WORD": "FROM",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SOUVENIR": {
+          "SOURCE": {
+            "VALUE": "^$VAR4"
+          },
+          "REPRESENTS": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SOUVENIR-0",
+        "OF-1",
+        "THE",
+        "OBJECT-2",
+        "FROM-3",
+        "THE",
+        "MAN-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [
+        "MEMENTO",
+        "KEEPSAKE",
+        "TOKEN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SOUVENIR-N1",
+      "WORD": "SOUVENIR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

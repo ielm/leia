@@ -1,0 +1,106 @@
+{
+  "word": "MAKER",
+  "senses": {
+    "MAKER-N2": {
+      "CAT": "N",
+      "DEF": "phrasal: X maker, where X is an object",
+      "EX": "necklace maker",
+      "COMMENTS": "[D] this will not cover peace maker; we need to work on how we can express 'cause something to come into being' without defying the selectional  constraints for causation (i.e., requires an event)",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": [
+            "HUMAN",
+            "ORGANIZATION"
+          ],
+          "CARDINALITY": 1,
+          "AGENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "PRODUCE": {
+            "THEME": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "TABLE-1",
+        "MAKER-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MAKER-N2",
+      "WORD": "MAKER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MAKER-N1": {
+      "CAT": "N",
+      "DEF": "phrasal: X maker, where X is an event",
+      "EX": "deal maker",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": [
+            "HUMAN",
+            "ORGANIZATION"
+          ],
+          "CARDINALITY": 1,
+          "AGENT-OF": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "MAKER-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MAKER-N1",
+      "WORD": "MAKER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

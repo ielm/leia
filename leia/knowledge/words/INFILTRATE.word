@@ -1,0 +1,238 @@
+{
+  "word": "INFILTRATE",
+  "senses": {
+    "INFILTRATE-V1": {
+      "CAT": "V",
+      "DEF": "enter (a place) for the purpose of spying",
+      "EX": "spies infiltrated the city through the river",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "ENTER": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "DESTINATION": {
+            "VALUE": "^$VAR2"
+          },
+          "PURPOSE": "SPY-ON"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "SPIES-1",
+        "INFILTRATED-0",
+        "THE",
+        "BASE-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INFILTRATE-V1",
+      "WORD": "INFILTRATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "INFILTRATE-V2": {
+      "CAT": "V",
+      "DEF": "join (an organization) for the purpose of spying",
+      "EX": "spies infiltrated the highest levels of the government",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "AFFILIATE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2",
+            "SEM": "ORGANIZATION"
+          },
+          "PURPOSE": "SPY-ON"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "SPIES-1",
+        "INFILTRATED-0",
+        "THE",
+        "BASE-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INFILTRATE-V2",
+      "WORD": "INFILTRATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "INFILTRATE-V3": {
+      "CAT": "V",
+      "DEF": "cause to enter (a place) for the purpose of spying",
+      "EX": "the enemy infiltrated spies into the city through the river",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": [
+            "INTO",
+            "WITHIN"
+          ],
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ENTER": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "DESTINATION": {
+            "VALUE": "^$VAR4"
+          },
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1"
+          },
+          "PURPOSE": "SPY-ON"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "INFILTRATES-0",
+        "THE",
+        "BASE-2",
+        "WITHIN-3",
+        "THE",
+        "COUNTRY-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "PLANT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "INFILTRATE-V3",
+      "WORD": "INFILTRATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "INFILTRATE-V4": {
+      "CAT": "V",
+      "DEF": "cause to join (an organization) for the purpose of spying",
+      "EX": "the enemy infiltrated spies into the highest levels of the government",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": [
+            "INTO",
+            "WITHIN"
+          ],
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "AFFILIATE": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR4",
+            "SEM": "ORGANIZATION"
+          },
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1"
+          },
+          "PURPOSE": "SPY-ON"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "INFILTRATES-0",
+        "THE",
+        "BASE-2",
+        "WITHIN-3",
+        "THE",
+        "COUNTRY-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "PLANT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "INFILTRATE-V4",
+      "WORD": "INFILTRATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

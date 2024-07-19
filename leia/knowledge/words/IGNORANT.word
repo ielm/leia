@@ -1,0 +1,38 @@
+{
+  "word": "IGNORANT",
+  "senses": {
+    "IGNORANT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "not knowledgeable",
+      "EX": "they were completely ignorant of local customs",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "EXPERTISE-ATTRIBUTE": [
+            "<",
+            0.3
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "IGNORANT-ADJ1",
+      "WORD": "IGNORANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

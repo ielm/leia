@@ -1,0 +1,31 @@
+{
+  "word": "BRATWURST",
+  "senses": {
+    "BRATWURST-N1": {
+      "CAT": "N",
+      "DEF": "small sausage of highly seasoned fresh pork, usually  served fried",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SAUSAGE": {
+          "SPICINESS": 0.8
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BRATWURST-N1",
+      "WORD": "BRATWURST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

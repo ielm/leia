@@ -1,0 +1,22 @@
+{
+  "name": "@FRUIT-TREE",
+  "isa": [
+    "@TREE"
+  ],
+  "def": "trees that bear edible fruit, including berries",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@TREE-FRUIT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@PLANT-DERIVED-FOODSTUFF"
+    }
+  ],
+  "private": {}
+}

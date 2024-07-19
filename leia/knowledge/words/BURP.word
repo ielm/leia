@@ -1,0 +1,127 @@
+{
+  "word": "BURP",
+  "senses": {
+    "BURP-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BURP",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "BELCH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BURP-N1",
+      "WORD": "BURP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BURP-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "he burped",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "BURP": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "BURPED-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "BELCH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BURP-V1",
+      "WORD": "BURP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BURP-V2": {
+      "CAT": "V",
+      "DEF": "to cause to burp",
+      "EX": "he burped the child",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "BURP": {
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1"
+          },
+          "EXPERIENCER": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "BURPED-0",
+        "THE",
+        "CHILD-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BURP-V2",
+      "WORD": "BURP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

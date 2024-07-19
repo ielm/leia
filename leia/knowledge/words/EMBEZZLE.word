@@ -1,0 +1,61 @@
+{
+  "word": "EMBEZZLE",
+  "senses": {
+    "EMBEZZLE-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "colombian ministers embezzle bank funds.those who embezzle eventually get caught",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "EMBEZZLE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "EMBEZZLED-0",
+        "MONEY-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EMBEZZLE-V1",
+      "WORD": "EMBEZZLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

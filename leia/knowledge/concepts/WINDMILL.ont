@@ -1,0 +1,29 @@
+{
+  "name": "@WINDMILL",
+  "isa": [
+    "@ENGINEERED-ARTIFACT"
+  ],
+  "def": "a mill operated by the wind*s rotation of large vanes radiating from a shaft",
+  "local": [
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ELECTRICITY"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

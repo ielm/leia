@@ -1,0 +1,21 @@
+{
+  "name": "@CHEMIST",
+  "isa": [
+    "@SCIENTIST"
+  ],
+  "def": "a scientist specializing in chemistry",
+  "local": [
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@GRADUATED-CYLINDER"
+    },
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@PIPETTE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

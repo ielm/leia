@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-ACTIVE-INGREDIENT",
+  "def": "links a drug to the active ingredient in it",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$ACTIVE-INGREDIENT-IN",
+  "measured-in": [],
+  "container": "$MEDICAL-RELATION"
+}

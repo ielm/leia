@@ -1,0 +1,92 @@
+{
+  "word": "YEMENITE",
+  "senses": {
+    "YEMENITE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to yemen",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "YEMEN"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "YEMENI-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "YEMENI"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "YEMENITE-ADJ1",
+      "WORD": "YEMENITE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "YEMENITE-N1": {
+      "CAT": "N",
+      "DEF": "a citizen of yemen",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CITIZEN": {
+          "HAS-NATIONALITY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "YEMEN"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "YEMENI"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "YEMENITE-N1",
+      "WORD": "YEMENITE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "@MUD",
+  "isa": [
+    "@SOIL"
+  ],
+  "def": "wet, sticky, soft earth",
+  "local": [
+    {
+      "slot": "softness",
+      "facet": "sem",
+      "filler": [
+        "><=",
+        1.0
+      ]
+    },
+    {
+      "slot": "wetness",
+      "facet": "sem",
+      "filler": [
+        "><",
+        0.8
+      ]
+    },
+    {
+      "slot": "viscosity",
+      "facet": "sem",
+      "filler": [
+        "><",
+        0.9
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "softness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "wetness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

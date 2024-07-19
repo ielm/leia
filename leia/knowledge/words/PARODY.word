@@ -1,0 +1,63 @@
+{
+  "word": "PARODY",
+  "senses": {
+    "PARODY-N1": {
+      "CAT": "N",
+      "DEF": "a literary work, movie or play that has the genre of parody",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CREATIVE-WORK": {
+          "HAS-STYLE": "PARODY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SPOOF",
+        "CARICATURE",
+        "SATIRE",
+        "LAMPOON"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PARODY-N1",
+      "WORD": "PARODY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PARODY-N2": {
+      "CAT": "N",
+      "DEF": "the literary genre of parody",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PARODY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SPOOF",
+        "CARICATURE",
+        "SATIRE",
+        "LAMPOON"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PARODY-N2",
+      "WORD": "PARODY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

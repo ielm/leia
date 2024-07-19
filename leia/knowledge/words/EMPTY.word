@@ -1,0 +1,183 @@
+{
+  "word": "EMPTY",
+  "senses": {
+    "EMPTY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "FULLNESS": 0
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EMPTY-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EMPTY-ADJ1",
+      "WORD": "EMPTY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EMPTY-V1": {
+      "CAT": "V",
+      "DEF": "to remove the contents of",
+      "EX": "they emptied the jug (of water) (into the sink)",
+      "COMMENTS": "[D] doesn't handle: they emptied the water into the sink",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT-WORD": "INTO",
+          "ROOT": "$VAR6",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR5",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "REMOVE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "SOURCE": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          },
+          "DESTINATION": {
+            "VALUE": "^$VAR5"
+          }
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR6": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "EMPTIED-0",
+        "THE",
+        "JUG-2",
+        "OF-4",
+        "WATER-3",
+        "INTO-6",
+        "THE",
+        "OCEAN-5"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "STRIP"
+      ],
+      "SENSE": "EMPTY-V1",
+      "WORD": "EMPTY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EMPTY-V2": {
+      "CAT": "V",
+      "DEF": "intransitive, of an inanimate",
+      "EX": "the river empties into the ocean; the tub took forever to empty",
+      "COMMENTS": "[D] theme is usually unspecified",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "INTO",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "REMOVE": {
+          "SOURCE": {
+            "VALUE": "^$VAR1"
+          },
+          "DESTINATION": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "WATER-1",
+        "EMPTIED-0",
+        "INTO-3",
+        "THE",
+        "OCEAN-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EMPTY-V2",
+      "WORD": "EMPTY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "@SHRINK",
+  "isa": [
+    "@APPLY-FORCE"
+  ],
+  "def": "to shorten, narrow or constrict",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@IMPLEMENT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "$temperature"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

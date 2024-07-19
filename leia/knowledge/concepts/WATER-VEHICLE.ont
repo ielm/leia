@@ -1,0 +1,32 @@
+{
+  "name": "@WATER-VEHICLE",
+  "isa": [
+    "@VEHICLE"
+  ],
+  "def": "ALL VEHICLES FOR TRANSPORTATION ON OR UNDER WATER",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@WATER-VEHICLE-PART"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@VEHICLE-PART"
+    }
+  ],
+  "private": {}
+}

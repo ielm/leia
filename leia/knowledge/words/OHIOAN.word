@@ -1,0 +1,79 @@
+{
+  "word": "OHIOAN",
+  "senses": {
+    "OHIOAN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to Ohio",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "STATE": {
+            "HAS-NAME": {
+              "VALUE": "OHIO"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OHIOAN-ADJ1",
+      "WORD": "OHIOAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "OHIOAN-N1": {
+      "CAT": "N",
+      "DEF": "resides in the state of Ohio",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "HAS-STATE-ADDRESS": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "STATE": {
+            "HAS-NAME": {
+              "VALUE": "OHIO"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OHIOAN-N1",
+      "WORD": "OHIOAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

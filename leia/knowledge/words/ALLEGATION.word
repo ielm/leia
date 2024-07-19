@@ -1,0 +1,139 @@
+{
+  "word": "ALLEGATION",
+  "senses": {
+    "ALLEGATION-N1": {
+      "CAT": "N",
+      "DEF": "a statement without proof",
+      "EX": "the allegation by the defendant that he was not at the scene of the crime",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "COMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "DECLARE": {
+          "EPISTEMIC": 0.5,
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ALLEGATION-0",
+        "BY-1",
+        "THE",
+        "HUMAN-2",
+        "THAT",
+        "THE",
+        "MAN",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR3",
+          "$VAR0"
+        ],
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ALLEGATION-N1",
+      "WORD": "ALLEGATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ALLEGATION-N2": {
+      "CAT": "N",
+      "DEF": "a statement without proof",
+      "EX": "the allegation of wrongdoing",
+      "COMMENTS": "no-adjunct variant taken care of in n1",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "DECLARE": {
+          "EPISTEMIC": 0.5,
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ALLEGATION-0",
+        "OF-1",
+        "THE",
+        "CRIME-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ALLEGATION-N2",
+      "WORD": "ALLEGATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

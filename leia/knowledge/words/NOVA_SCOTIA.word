@@ -1,0 +1,33 @@
+{
+  "word": "NOVA_SCOTIA",
+  "senses": {
+    "NOVA_SCOTIA-N1": {
+      "CAT": "N",
+      "DEF": "a nation",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PROVINCE": {
+          "HAS-NAME": {
+            "VALUE": "NOVA_SCOTIA"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NOVA_SCOTIA-N1",
+      "WORD": "NOVA_SCOTIA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

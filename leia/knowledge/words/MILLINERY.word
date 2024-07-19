@@ -1,0 +1,45 @@
+{
+  "word": "MILLINERY",
+  "senses": {
+    "MILLINERY-N1": {
+      "CAT": "N",
+      "DEF": "a shop that sells women's hats ",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "STORE": {
+          "LOCATION-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "HAT": {
+            "USED-BY": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "HUMAN": {
+            "GENDER": "FEMALE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MILLINERY-N1",
+      "WORD": "MILLINERY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

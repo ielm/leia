@@ -1,0 +1,88 @@
+{
+  "word": "DEBATE",
+  "senses": {
+    "DEBATE-N1": {
+      "CAT": "N",
+      "DEF": "a discussion with people taking different sides",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ASSERTIVE-ACT": {
+          "HAS-EVENT-AS-PART": "ARGUE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DEBATE-N1",
+      "WORD": "DEBATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DEBATE-V1": {
+      "CAT": "V",
+      "DEF": "to discuss, with people taking opposing sides",
+      "EX": "they debated (the issue)",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "ASSERTIVE-ACT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "HAS-EVENT-AS-PART": "ARGUE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "DEBATED-0",
+        "THE",
+        "ISSUE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DEBATE-V1",
+      "WORD": "DEBATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "word": "VINDICATE",
+  "senses": {
+    "VINDICATE-V1": {
+      "CAT": "V",
+      "DEF": "to free from blame, suspicion, etc.",
+      "EX": "He vindicated his brother / his strategy",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "VINDICATE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "VINDICATED-0",
+        "HIS",
+        "BROTHER-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "VINDICATE-V1",
+      "WORD": "VINDICATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

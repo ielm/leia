@@ -1,0 +1,46 @@
+{
+  "word": "SINCERE",
+  "senses": {
+    "SINCERE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SINCERITY": 0.8
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "GENUINE-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "GENUINE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SINCERE-ADJ1",
+      "WORD": "SINCERE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "@CUTANEOUS-ANTHRAX",
+  "isa": [
+    "@ANTHRAX"
+  ],
+  "def": "Cutaneous anthrax appears as boils or lesions on the skin. They are painless, and populate the skin within 2-5 days. Cutaneous anthrax is typically not fatal if treated, but untreated is fatal in 20% of cases.",
+  "local": [
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@ITCHING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BODY"
+    }
+  ],
+  "private": {}
+}

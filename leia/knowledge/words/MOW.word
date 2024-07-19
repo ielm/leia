@@ -1,0 +1,109 @@
+{
+  "word": "MOW",
+  "senses": {
+    "MOW-V1": {
+      "CAT": "V",
+      "DEF": "to cut grass",
+      "EX": "I mowed the lawn this morning",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "CUT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": [
+              "GRASS",
+              "CROP-PLANT"
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "MOWED-0",
+        "THE",
+        "LAWN-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MOW-V1",
+      "WORD": "MOW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MOW-V2": {
+      "CAT": "V",
+      "DEF": "phrasal: mow down = shoot and kill",
+      "EX": "they mowed down the enemy",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "DOWN"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "KILL": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "HAS-EVENT-AS-PART": "DISCHARGE-WEAPON"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "IS",
+        "MOWING-0",
+        "DOWN-3",
+        "THE",
+        "ENEMY-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MOW-V2",
+      "WORD": "MOW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

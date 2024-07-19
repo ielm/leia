@@ -1,0 +1,38 @@
+{
+  "word": "PROTHALAMION",
+  "senses": {
+    "PROTHALAMION-N1": {
+      "CAT": "N",
+      "DEF": "a song in celebration of a wedding",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SONG": {
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "COMMEMORATE": {
+            "THEME": "WEDDING"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PROTHALAMION-N1",
+      "WORD": "PROTHALAMION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

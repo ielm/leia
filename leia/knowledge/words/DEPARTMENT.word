@@ -1,0 +1,54 @@
+{
+  "word": "DEPARTMENT",
+  "senses": {
+    "DEPARTMENT-N1": {
+      "CAT": "N",
+      "DEF": "an academic department",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "DEPARTMENT-ACADEMIC",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DEPARTMENT-N1",
+      "WORD": "DEPARTMENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DEPARTMENT-N2": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "ORGANIZATION-DIVISION",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "BRANCH",
+        "OFFICE",
+        "SECTION",
+        "UNIT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DEPARTMENT-N2",
+      "WORD": "DEPARTMENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

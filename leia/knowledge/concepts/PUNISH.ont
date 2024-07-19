@@ -1,0 +1,52 @@
+{
+  "name": "@PUNISH",
+  "isa": [
+    "@CONTROL-EVENT-SOCIAL"
+  ],
+  "def": "to inflict pain, loss, etc., in response to a wrongdoing",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@POLICE-OFFICER"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@JUDGE"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@COURT"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@CRIMINAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

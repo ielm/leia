@@ -1,0 +1,86 @@
+{
+  "word": "RIPPLE",
+  "senses": {
+    "RIPPLE-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "wind rippled the water.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "RIPPLE": {
+          "INSTRUMENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "WIND-1",
+        "RIPPLED-0",
+        "THE",
+        "WATER-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RIPPLE-V1",
+      "WORD": "RIPPLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RIPPLE-V2": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "[if you throw a stone] the water will ripple",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "RIPPLE": {
+          "THEME": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "WAVE-1",
+        "RIPPLED-0"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RIPPLE-V2",
+      "WORD": "RIPPLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

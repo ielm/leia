@@ -1,0 +1,30 @@
+{
+  "word": "HERNIA",
+  "senses": {
+    "HERNIA-N1": {
+      "CAT": "N",
+      "DEF": "protrusion of a portion of an organ or tissue through an abnormal opening",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "HERNIA",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "HIATAL_HERNIA",
+        "HIATUS_HERNIA"
+      ],
+      "SENSE": "HERNIA-N1",
+      "WORD": "HERNIA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

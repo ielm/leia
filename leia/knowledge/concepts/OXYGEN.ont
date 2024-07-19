@@ -1,0 +1,36 @@
+{
+  "name": "@OXYGEN",
+  "isa": [
+    "@GASEOUS-ELEMENT"
+  ],
+  "def": "a colorless, odorless, tasteless gaseous element that constitutes 21 per cent of the atmosphere by volume",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        8
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        15
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

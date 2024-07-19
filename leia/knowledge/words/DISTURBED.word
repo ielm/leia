@@ -1,0 +1,40 @@
+{
+  "word": "DISTURBED",
+  "senses": {
+    "DISTURBED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "in a bad emotional state",
+      "EX": "He is a troubled man",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "EMOTIONAL-STATE": [
+            "<",
+            0.2
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "TROUBLED"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DISTURBED-ADJ1",
+      "WORD": "DISTURBED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

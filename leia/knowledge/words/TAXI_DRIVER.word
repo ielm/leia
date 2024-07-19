@@ -1,0 +1,30 @@
+{
+  "word": "TAXI_DRIVER",
+  "senses": {
+    "TAXI_DRIVER-N1": {
+      "CAT": "N",
+      "DEF": "one who drives taxicabs",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "TAXI-DRIVER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "CAB_DRIVER",
+        "CABBIE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "TAXI_DRIVER-N1",
+      "WORD": "TAXI_DRIVER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "word": "BY_THE_TIME",
+  "senses": {
+    "BY_THE_TIME-CONJ1": {
+      "CAT": "CONJ",
+      "DEF": "a temporal relation",
+      "EX": "she had finished her homework by the time he came",
+      "COMMENTS": "this sense covers when 'by the time' is between the given clauses",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "CONJ",
+        "CL-1": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "TIME": [
+            "<",
+            [
+              "VALUE",
+              "^$VAR2"
+            ]
+          ]
+        },
+        "^$VAR2": {
+          "SEM-1": "EVENT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "BY_THE_TIME-0",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CC",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "CONJ",
+          "$VAR1",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BY_THE_TIME-CONJ1",
+      "WORD": "BY_THE_TIME",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BY_THE_TIME-CONJ2": {
+      "CAT": "CONJ",
+      "DEF": "a temporal relation",
+      "EX": "by the time he came (,) she had finished her homework",
+      "COMMENTS": "this sense covers when 'by the time' precedes both clauses",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CONJ": {
+          "ROOT": "$VAR0",
+          "CAT": "CONJ"
+        },
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "PUNCT": {
+          "OPT": "+",
+          "ROOT-WORD": "*COMMA*",
+          "ROOT": "$VAR3",
+          "CAT": "PUNCT"
+        },
+        "CL-1": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "SEM": "EVENT",
+          "TIME": [
+            "<",
+            [
+              "VALUE",
+              "^$VAR1"
+            ]
+          ]
+        },
+        "^$VAR1": {
+          "SEM-1": "EVENT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "BY_THE_TIME-0",
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "*COMMA*-3",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CC",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BY_THE_TIME-CONJ2",
+      "WORD": "BY_THE_TIME",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

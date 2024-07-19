@@ -1,0 +1,49 @@
+{
+  "word": "DESERVE",
+  "senses": {
+    "DESERVE-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "he deserved what he got",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "DESERVE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "DESERVED-0",
+        "THE",
+        "REWARD-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DESERVE-V1",
+      "WORD": "DESERVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

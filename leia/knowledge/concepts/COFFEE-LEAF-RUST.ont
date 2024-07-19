@@ -1,0 +1,22 @@
+{
+  "name": "@COFFEE-LEAF-RUST",
+  "isa": [
+    "@PLANT-DISEASE"
+  ],
+  "def": "a plant disease",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@COFFEA-BUSH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

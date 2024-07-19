@@ -1,0 +1,9 @@
+{
+  "name": "$AGENT",
+  "def": "the entity responsible for intentionally causing or driving an event; non-intentional causes are instruments; note that the relation caused-by connects two events, not an object and an event",
+  "type": "case_role",
+  "range": "!AnyType",
+  "inverse": "$AGENT-OF",
+  "measured-in": [],
+  "container": "$CASE-ROLE"
+}

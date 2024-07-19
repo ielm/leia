@@ -1,0 +1,34 @@
+{
+  "word": "WHIM",
+  "senses": {
+    "WHIM-N1": {
+      "CAT": "N",
+      "DEF": "impulse",
+      "EX": "he had a sudden whim to go fly a kite",
+      "COMMENTS": "an approximation of what can really be a very broad meaning; on a whim is treated separately",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "DECIDE": {
+          "PRUDENCE": [
+            "<",
+            0.5
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WHIM-N1",
+      "WORD": "WHIM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

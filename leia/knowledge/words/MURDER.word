@@ -1,0 +1,134 @@
+{
+  "word": "MURDER",
+  "senses": {
+    "MURDER-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        },
+        "PP": {
+          "ROOT-WORD": "WITH",
+          "OPT": "+",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "KILL": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3",
+            "SEM": "HUMAN"
+          },
+          "INSTRUMENT": {
+            "VALUE": "^$VAR4"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-2",
+        "MURDERED-0",
+        "THE",
+        "DOG-3",
+        "WITH-1",
+        "THE",
+        "CANDLESTICK-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MURDER-V1",
+      "WORD": "MURDER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MURDER-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "the murder of police officers by gang members",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "KILL": {
+          "AGENT": {
+            "VALUE": "^$VAR4"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "HUMAN"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "MURDER-0",
+        "OF-1",
+        "THE",
+        "GIRL-2",
+        "BY-3",
+        "THE",
+        "CRIMINAL-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "ASSASSINATION"
+      ],
+      "SENSE": "MURDER-N1",
+      "WORD": "MURDER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

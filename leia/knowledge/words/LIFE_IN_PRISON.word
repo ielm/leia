@@ -1,0 +1,34 @@
+{
+  "word": "LIFE_IN_PRISON",
+  "senses": {
+    "LIFE_IN_PRISON-N1": {
+      "CAT": "N",
+      "DEF": "a punishment to spend the rest of one's life in prison",
+      "EX": "the judge sentenced him to life in prison",
+      "COMMENTS": "expressed as never-ending time in prison, which is easier for now than 'until you die'",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PUNISH": {
+          "LOCATION": "PRISON",
+          "TIME-END": "*NOTHING*"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "LIFE_SENTENCE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "LIFE_IN_PRISON-N1",
+      "WORD": "LIFE_IN_PRISON",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

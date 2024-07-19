@@ -1,0 +1,38 @@
+{
+  "word": "PERFUMERY",
+  "senses": {
+    "PERFUMERY-N1": {
+      "CAT": "N",
+      "DEF": "a store that sells perfumes ",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "STORE": {
+          "LOCATION-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SELL": {
+            "THEME": "PERFUME"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PERFUMERY-N1",
+      "WORD": "PERFUMERY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

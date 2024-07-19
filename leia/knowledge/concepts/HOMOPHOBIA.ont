@@ -1,0 +1,38 @@
+{
+  "name": "@HOMOPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear or dislike of homosexuals",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HUMAN-3"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {
+    "@HUMAN-3": {
+      "name": "@HUMAN-3",
+      "isa": [
+        "@HUMAN"
+      ],
+      "def": "",
+      "local": [],
+      "block": [],
+      "private": {}
+    }
+  }
+}

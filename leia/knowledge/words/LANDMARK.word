@@ -1,0 +1,39 @@
+{
+  "word": "LANDMARK",
+  "senses": {
+    "LANDMARK-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "very important",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "SALIENCY",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LANDMARK-ADJ1",
+      "WORD": "LANDMARK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

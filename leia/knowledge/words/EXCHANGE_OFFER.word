@@ -1,0 +1,33 @@
+{
+  "word": "EXCHANGE_OFFER",
+  "senses": {
+    "EXCHANGE_OFFER-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "POTENTIAL",
+          "VALUE": 0.5,
+          "SCOPE": "EXCHANGE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EXCHANGE_OFFER-N1",
+      "WORD": "EXCHANGE_OFFER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

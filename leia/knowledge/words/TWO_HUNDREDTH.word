@@ -1,0 +1,46 @@
+{
+  "word": "TWO_HUNDREDTH",
+  "senses": {
+    "TWO_HUNDREDTH-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "ORDINALITY": 200
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "200",
+        "TH-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "200TH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "TWO_HUNDREDTH-ADJ1",
+      "WORD": "TWO_HUNDREDTH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "@PARENT",
+  "isa": [
+    "@FAMILY-ROLE"
+  ],
+  "def": "an organism that produces or generates another",
+  "local": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "><",
+        130
+      ]
+    },
+    {
+      "slot": "has-offspring",
+      "facet": "sem",
+      "filler": "@OFFSPRING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "><",
+        130
+      ]
+    }
+  ],
+  "private": {}
+}

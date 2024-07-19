@@ -1,0 +1,22 @@
+{
+  "name": "@NEUROLOGY",
+  "isa": [
+    "@MEDICINE"
+  ],
+  "def": "The branch of medical science that deals with the nervous system and disorders affecting it.",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@NEUROLOGIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@MEDICAL-WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

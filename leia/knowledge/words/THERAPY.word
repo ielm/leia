@@ -1,0 +1,48 @@
+{
+  "word": "THERAPY",
+  "senses": {
+    "THERAPY-N1": {
+      "CAT": "N",
+      "DEF": "N-N compound: drug/treatment + therapy; therapy  with a given drug or other treatment",
+      "EX": "She started aspirin therapy last year.",
+      "COMMENTS": "there's a non-N-N compound sense as a syn. of treatment",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "TREAT-MEDICALLY": {
+          "INSTRUMENT": {
+            "VALUE": "^$VAR1",
+            "SEM": "DRUG"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MEDICAL-ARTIFACT-1",
+        "THERAPY-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "THERAPY-N1",
+      "WORD": "THERAPY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

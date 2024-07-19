@@ -1,0 +1,43 @@
+{
+  "word": "KRONE",
+  "senses": {
+    "KRONE-N1": {
+      "CAT": "N",
+      "DEF": "currency of bouvet-island or denmark or dronning-maud- land or faeroe-islands or foroyar or greenland or norway or svalbard-and-jan-mayen- islands",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": {
+            "BOUVET_ISLAND": [
+              "DENMARK",
+              "DRONNING_MAUD_LAND",
+              "FAEROE_ISLANDS",
+              "FOROYAR",
+              "GREENLAND",
+              "NORWAY",
+              "SVALBARD",
+              "AND",
+              "JAN_MAYEN_ISLANDS"
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KRONE-N1",
+      "WORD": "KRONE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

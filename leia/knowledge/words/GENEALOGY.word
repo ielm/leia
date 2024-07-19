@@ -1,0 +1,49 @@
+{
+  "word": "GENEALOGY",
+  "senses": {
+    "GENEALOGY-N1": {
+      "CAT": "N",
+      "DEF": "pedigree",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PEDIGREE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GENEALOGY-N1",
+      "WORD": "GENEALOGY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "GENEALOGY-N2": {
+      "CAT": "N",
+      "DEF": "the study of family descent",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "GENEALOGY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GENEALOGY-N2",
+      "WORD": "GENEALOGY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "word": "BY_THE_WAY",
+  "senses": {
+    "BY_THE_WAY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "discourse function only",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "BY_THE_WAY-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BY_THE_WAY-ADV1",
+      "WORD": "BY_THE_WAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@ASTRONOMY",
+  "isa": [
+    "@SCIENCE"
+  ],
+  "def": "the science that deals with the motion, size, origin, etc. of the stars and planets",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@ASTRONOMER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SCIENTIST"
+    }
+  ],
+  "private": {}
+}

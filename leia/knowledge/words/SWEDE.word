@@ -1,0 +1,40 @@
+{
+  "word": "SWEDE",
+  "senses": {
+    "SWEDE-N1": {
+      "CAT": "N",
+      "DEF": "a citizen of sweden",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CITIZEN": {
+          "HAS-NATIONALITY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "SWEDEN"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SWEDE-N1",
+      "WORD": "SWEDE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

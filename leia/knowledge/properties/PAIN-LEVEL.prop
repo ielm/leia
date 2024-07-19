@@ -1,0 +1,9 @@
+{
+  "name": "$PAIN-LEVEL",
+  "def": "The degree of pain one experiences due to an event.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

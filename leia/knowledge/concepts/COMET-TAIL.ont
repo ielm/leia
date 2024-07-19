@@ -1,0 +1,27 @@
+{
+  "name": "@COMET-TAIL",
+  "isa": [
+    "@CELESTIAL-OBJECT"
+  ],
+  "def": "as a comet nears the sun, it vaporizes, forming a long, luminous tail",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@DUST"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GAS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@NATURAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

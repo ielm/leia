@@ -1,0 +1,19 @@
+{
+  "name": "@CHAIN-UK",
+  "isa": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "def": "(Wikipedia) Used in the UK. a unit of length equal to 66 feet, was first used by Gunter as a method for surveying land; 792*inch",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        20.1168
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

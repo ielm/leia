@@ -1,0 +1,22 @@
+{
+  "name": "@BREWERY",
+  "isa": [
+    "@BEVERAGE-PROCESSING-CORPORATION"
+  ],
+  "def": "a place where beer, etc. is brewed",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@BEER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@BEVERAGE"
+    }
+  ],
+  "private": {}
+}

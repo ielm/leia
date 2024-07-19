@@ -1,0 +1,122 @@
+{
+  "word": "IN_THE_PAST",
+  "senses": {
+    "IN_THE_PAST-ADV1": {
+      "CAT": "ADV",
+      "DEF": "earlier in time",
+      "EX": "in the past, everything was good.",
+      "COMMENTS": "semantically same as 'behind' in 'the worst is behind us'",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ADV": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        },
+        "PUNCT": {
+          "ROOT-WORD": "*COMMA*",
+          "ROOT": "$VAR2",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        },
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "TIME": [
+            "<",
+            [
+              "FIND-ANCHOR-TIME"
+            ]
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "IN_THE_PAST-0",
+        "*COMMA*-2",
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "PUNCT",
+          "$VAR1",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "IN_THE_PAST-ADV1",
+      "WORD": "IN_THE_PAST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "IN_THE_PAST-ADV2": {
+      "CAT": "ADV",
+      "DEF": "later in time",
+      "EX": "everything will be good",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "ADV": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "TIME": [
+            "<",
+            [
+              "FIND-ANCHOR-TIME"
+            ]
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "IN_THE_PAST-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "IN_THE_PAST-ADV2",
+      "WORD": "IN_THE_PAST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

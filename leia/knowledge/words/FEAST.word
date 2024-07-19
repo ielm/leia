@@ -1,0 +1,110 @@
+{
+  "word": "FEAST",
+  "senses": {
+    "FEAST-N1": {
+      "CAT": "N",
+      "DEF": "a large meal",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MEAL": {
+          "SIZE": [
+            ">",
+            0.8
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FEAST-N1",
+      "WORD": "FEAST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FEAST-V1": {
+      "CAT": "V",
+      "DEF": "to eat a large meal",
+      "EX": "We feasted on crepes with cream",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "ON",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "INGEST": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR3": {
+          "AMOUNT": [
+            ">",
+            0.8
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "WE-1",
+        "FEASTED-0",
+        "ON-2",
+        "THE",
+        "FOOD-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FEAST-V1",
+      "WORD": "FEAST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

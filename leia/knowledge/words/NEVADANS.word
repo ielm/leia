@@ -1,0 +1,49 @@
+{
+  "word": "NEVADANS",
+  "senses": {
+    "NEVADANS-N1": {
+      "CAT": "N",
+      "DEF": "the set of residents of nevada",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "NUMBER": "PL"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "REFSEM1"
+          },
+          "QUANT": 1
+        },
+        "REFSEM1": {
+          "HUMAN": {
+            "HAS-STATE-ADDRESS": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "STATE": {
+            "HAS-NAME": {
+              "VALUE": "NEVADA"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NEVADANS-N1",
+      "WORD": "NEVADANS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

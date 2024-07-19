@@ -1,0 +1,54 @@
+{
+  "word": "HOW_MUCH",
+  "senses": {
+    "HOW_MUCH-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "'how much' used in an interrogative with a nominal complement",
+      "EX": "How much water did you use?",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "UNCONNECTED": [
+          [
+            "ROOT",
+            "$VAR2"
+          ],
+          [
+            "ROOT",
+            "*QUESTION_MARK*"
+          ],
+          [
+            "CAT",
+            "PUNCT"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "REQUEST-INFO": {
+          "THEME": {
+            "VALUE": "^$VAR1.AMOUNT"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "MEANING-PROCEDURES": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HOW_MUCH-ADJ1",
+      "WORD": "HOW_MUCH",
+      "COMMENTS": "NIL",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": []
+    }
+  }
+}

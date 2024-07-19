@@ -1,0 +1,21 @@
+{
+  "name": "@HAY",
+  "isa": [
+    "@GRASS"
+  ],
+  "def": "Grass or other plants, such as clover or alfalfa, cut and dried for fodder.",
+  "local": [],
+  "block": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "green"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "yellow"
+    }
+  ],
+  "private": {}
+}

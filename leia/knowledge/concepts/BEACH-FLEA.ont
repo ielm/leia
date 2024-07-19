@@ -1,0 +1,16 @@
+{
+  "name": "@BEACH-FLEA",
+  "isa": [
+    "@CRUSTACEAN"
+  ],
+  "def": "a small jumping crustacean living at the tide line on sandy beaches. A beach flea bites, much like a mosquito.",
+  "local": [
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

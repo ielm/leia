@@ -1,0 +1,46 @@
+{
+  "word": "NINETY_FIFTH",
+  "senses": {
+    "NINETY_FIFTH-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "ORDINALITY": 95
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "95",
+        "TH-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "95TH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "NINETY_FIFTH-ADJ1",
+      "WORD": "NINETY_FIFTH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

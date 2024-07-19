@@ -1,0 +1,52 @@
+{
+  "name": "@ELECTION-DAY-USA",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "in the U.S., the 1st Tuesday after the 1st Monday in November, a day set aside for elections",
+  "local": [
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@TUESDAY"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@NOVEMBER"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@ELECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@CELEBRATE"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@COMMEMORATE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,39 @@
+{
+  "word": "SAFRANINE",
+  "senses": {
+    "SAFRANINE-N1": {
+      "CAT": "N",
+      "DEF": "dye based on phenazine, used in the textile industry and as a biological stain",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "DYESTUFF": {
+          "USED-BY": "BIOLOGIST",
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "DYE": {
+            "THEME": "FABRIC"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SAFRANINE-N1",
+      "WORD": "SAFRANINE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

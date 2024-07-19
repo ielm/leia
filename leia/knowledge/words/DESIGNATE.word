@@ -1,0 +1,272 @@
+{
+  "word": "DESIGNATE",
+  "senses": {
+    "DESIGNATE-V2": {
+      "CAT": "V",
+      "DEF": "phrasal: designate X to Y (xcomp) = set aside X for the purpose of Y",
+      "EX": "they designated an area to park",
+      "COMMENTS": "[D] normal subject/object control ambiguity",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "XCOMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "ASSIGN": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "PURPOSE": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "YOU-1",
+        "DESIGNATE-0",
+        "THE",
+        "BOY-2",
+        "TO",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "INFMOD",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "APPOINT",
+        "INDICATE",
+        "MARK",
+        "RESERVE",
+        "STIPULATE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DESIGNATE-V2",
+      "WORD": "DESIGNATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DESIGNATE-V3": {
+      "CAT": "V",
+      "DEF": "phrasal: designate X for Y (object) = set aside X for some purpose involving Y",
+      "EX": "they designated an area for visitors",
+      "COMMENTS": "[D] elliptical",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "PP": {
+          "ROOT-WORD": "FOR",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ASSIGN": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "PURPOSE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "EVENT": {
+            "THEME-1": {
+              "VALUE": "^$VAR4",
+              "SEM": "OBJECT"
+            }
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "REFSEM1"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "YOU-1",
+        "DESIGNATE-0",
+        "THE",
+        "BOOK-2",
+        "FOR-3",
+        "THE",
+        "BOY-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [
+        "APPOINT",
+        "INDICATE",
+        "MARK",
+        "RESERVE",
+        "STIPULATE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DESIGNATE-V3",
+      "WORD": "DESIGNATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DESIGNATE-V1": {
+      "CAT": "V",
+      "DEF": "phrasal: designate X for Y (event) = set aside X for the purpose of Y",
+      "EX": "they designated an area for parking",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "PP": {
+          "ROOT-WORD": "FOR",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ASSIGN": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "PURPOSE": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "DESIGNATED-0",
+        "AN",
+        "AREA-2",
+        "FOR-3",
+        "PLANNING-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [
+        "APPOINT",
+        "INDICATE",
+        "RESERVE",
+        "STIPULATE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DESIGNATE-V1",
+      "WORD": "DESIGNATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

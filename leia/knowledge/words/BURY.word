@@ -1,0 +1,113 @@
+{
+  "word": "BURY",
+  "senses": {
+    "BURY-V1": {
+      "CAT": "V",
+      "DEF": "to put a dead body in the ground",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "BURY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "BURIED-0",
+        "THE",
+        "BODY-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "INTER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BURY-V1",
+      "WORD": "BURY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BURY-V2": {
+      "CAT": "V",
+      "DEF": "to hide",
+      "EX": "they buried the evidence, the landslide buried the village",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "HIDE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "INANIMATE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "BURIED-0",
+        "THE",
+        "EVIDENCE-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BURY-V2",
+      "WORD": "BURY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

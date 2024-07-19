@@ -1,0 +1,29 @@
+{
+  "word": "MEDICAL_PROBLEM",
+  "senses": {
+    "MEDICAL_PROBLEM-N1": {
+      "CAT": "N",
+      "DEF": "illness, disease, etc.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PATHOLOGIC-FUNCTION",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "PATHOLOGY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "MEDICAL_PROBLEM-N1",
+      "WORD": "MEDICAL_PROBLEM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

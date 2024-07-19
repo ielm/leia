@@ -1,0 +1,53 @@
+{
+  "word": "SPEW",
+  "senses": {
+    "SPEW-V1": {
+      "CAT": "V",
+      "DEF": "to eject forcefully",
+      "EX": "the volcano spewed lava",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "EXPEL": {
+          "INTENSITY": [
+            ">",
+            0.8
+          ],
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "VOLCANO-2",
+        "SPEWED-0",
+        "LAVA-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SPEW-V1",
+      "WORD": "SPEW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

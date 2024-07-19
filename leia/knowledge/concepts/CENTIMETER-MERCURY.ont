@@ -1,0 +1,19 @@
+{
+  "name": "@CENTIMETER-MERCURY",
+  "isa": [
+    "@PRESSURE-UNIT"
+  ],
+  "def": "the pressure that is exerted to the base of a 1cm column of fluid, with a certain fixed density of fluid and acceleration of gravity; atmosphere (Wikipedia)/76",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1333.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

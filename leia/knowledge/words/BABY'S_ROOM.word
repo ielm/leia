@@ -1,0 +1,51 @@
+{
+  "word": "BABY'S_ROOM",
+  "senses": {
+    "BABY'S_ROOM-N1": {
+      "CAT": "N",
+      "DEF": "the baby's bedroom",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BEDROOM": {
+          "LOCATION-OF": "CRIB",
+          "LOCATION-OF-1": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SLEEP": {
+            "EXPERIENCER": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "HUMAN": {
+            "AGE": [
+              "<",
+              3
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "NURSERY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BABY'S_ROOM-N1",
+      "WORD": "BABY'S_ROOM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

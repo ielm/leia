@@ -1,0 +1,22 @@
+{
+  "name": "@ORGAN-FAILURE",
+  "isa": [
+    "@PATHOLOGIC-FUNCTION"
+  ],
+  "def": "a condition in which an organ does not perform its expected function",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMAL-ORGAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

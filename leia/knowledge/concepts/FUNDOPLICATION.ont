@@ -1,0 +1,27 @@
+{
+  "name": "@FUNDOPLICATION",
+  "isa": [
+    "@SURGERY"
+  ],
+  "def": "mobilization of the lower end of the esophagus and plication of the fundus of the stomach up around it. \n(http://medical-dictionary.thefreedictionary.com/fundoplication)",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ESOPHAGUS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@STOMACH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

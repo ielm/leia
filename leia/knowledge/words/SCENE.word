@@ -1,0 +1,105 @@
+{
+  "word": "SCENE",
+  "senses": {
+    "SCENE-N1": {
+      "CAT": "N",
+      "DEF": "scene of X [=event] = location of the event",
+      "EX": "scene of the crime",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "PLACE": {
+          "LOCATION-OF": {
+            "VALUE": "^$VAR2",
+            "SEM": "EVENT"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SCENE-0",
+        "OF-1",
+        "THE",
+        "MAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SCENE-N1",
+      "WORD": "SCENE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SCENE-N2": {
+      "CAT": "N",
+      "DEF": "+ event = location",
+      "EX": "crime scene",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PLACE": {
+          "LOCATION-OF": {
+            "VALUE": "^$VAR1",
+            "SEM": "EVENT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "BALL-1",
+        "SCENE-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SCENE-N2",
+      "WORD": "SCENE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

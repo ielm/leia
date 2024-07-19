@@ -1,0 +1,43 @@
+{
+  "word": "ALMOST_IMPOSSIBLE",
+  "senses": {
+    "ALMOST_IMPOSSIBLE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "practically impossible",
+      "EX": "It is practically impossible to make good time on the highways on Thanksgiving weekend",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "POTENTIAL",
+          "VALUE": 0.1,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "PRACTICALLY_IMPOSSIBLE",
+        "VIRTUALLY_IMPOSSIBLE",
+        "NEAR_IMPOSSIBLE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ALMOST_IMPOSSIBLE-ADJ1",
+      "WORD": "ALMOST_IMPOSSIBLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

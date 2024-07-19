@@ -1,0 +1,22 @@
+{
+  "name": "@TOMATO-SAUCE",
+  "isa": [
+    "@SAUCE"
+  ],
+  "def": "sauce made of a tomato base and often used over pasta",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@TOMATO"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@HOOD-OF-VEHICLE",
+  "isa": [
+    "@VEHICLE-PART"
+  ],
+  "def": "the front part of a vehicle that covers the engine",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SYNTHETICS"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

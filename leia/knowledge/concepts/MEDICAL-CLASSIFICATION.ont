@@ -1,0 +1,22 @@
+{
+  "name": "@MEDICAL-CLASSIFICATION",
+  "isa": [
+    "@CLASSIFICATION"
+  ],
+  "def": "Classifications as they relate to the medical field.",
+  "local": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@MEDICINE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    }
+  ],
+  "private": {}
+}

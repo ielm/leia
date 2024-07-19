@@ -1,0 +1,45 @@
+{
+  "word": "GIFT_SHOP",
+  "senses": {
+    "GIFT_SHOP-N1": {
+      "CAT": "N",
+      "DEF": "a shop that sells generally non-essential items, meant to be gotten as gifts",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "STORE": {
+          "LOCATION-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SELL": {
+            "THEME": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "CONSUMER-GOOD": {
+            "THEME-OF": "GIVE-GIFT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GIFT_SHOP-N1",
+      "WORD": "GIFT_SHOP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

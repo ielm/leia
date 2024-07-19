@@ -1,0 +1,66 @@
+{
+  "word": "APPROACH",
+  "senses": {
+    "APPROACH-V1": {
+      "CAT": "V",
+      "DEF": "to come near to (physical sense only)",
+      "EX": "we finally approached home; the runner approached the plate; Mars approached the Earth",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "APPROACH": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "DESTINATION": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "APPROACHED-0",
+        "THE",
+        "DOG-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "APPROACH-V1",
+      "WORD": "APPROACH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

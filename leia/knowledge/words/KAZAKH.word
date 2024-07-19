@@ -1,0 +1,79 @@
+{
+  "word": "KAZAKH",
+  "senses": {
+    "KAZAKH-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to kazakhstan",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "KAZAKHSTAN"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KAZAKH-ADJ1",
+      "WORD": "KAZAKH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "KAZAKH-N1": {
+      "CAT": "N",
+      "DEF": "a citizen of kazakhstan",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CITIZEN": {
+          "HAS-NATIONALITY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "KAZAKHSTAN"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KAZAKH-N1",
+      "WORD": "KAZAKH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

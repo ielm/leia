@@ -1,0 +1,29 @@
+{
+  "word": "DAY_PAYROLL",
+  "senses": {
+    "DAY_PAYROLL-N1": {
+      "CAT": "N",
+      "DEF": "an interval of time equal to one full day of work (8 hours); 8*hour",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "DAY-PAYROLL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "PAYROLL_DAY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DAY_PAYROLL-N1",
+      "WORD": "DAY_PAYROLL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "word": "INDULGE",
+  "senses": {
+    "INDULGE-V1": {
+      "CAT": "V",
+      "DEF": "to give s.o. what they want",
+      "EX": "he indulges his children",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "INDULGE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "INDULGES-0",
+        "HIS",
+        "CHILDREN-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "OBLIGE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "INDULGE-V1",
+      "WORD": "INDULGE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

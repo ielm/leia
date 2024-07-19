@@ -1,0 +1,48 @@
+{
+  "word": "AFRAID",
+  "senses": {
+    "AFRAID-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "experiencing fear",
+      "EX": "the dog was afraid of us",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "FEAR": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "AFRAID-0",
+        "ANIMAL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "SCARED"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "AFRAID-ADJ1",
+      "WORD": "AFRAID",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

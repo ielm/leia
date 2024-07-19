@@ -1,0 +1,142 @@
+{
+  "word": "ADVISABLE",
+  "senses": {
+    "ADVISABLE-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "some event is advised by the speaker",
+      "EX": "Taking vitamins is advisable",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        }
+      },
+      "SEM-STRUC": {
+        "ADVISE": {
+          "AGENT": "*SPEAKER*",
+          "THEME": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "YOU-1",
+        "ARE-2",
+        "ADVISABLE-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "COP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "RECOMMENDED"
+      ],
+      "HYPONYMS": [
+        "INDICATED"
+      ],
+      "SENSE": "ADVISABLE-ADJ2",
+      "WORD": "ADVISABLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ADVISABLE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "phrasal: it is advisable to X",
+      "EX": "It is advisable to properly maintain your pool from the outset.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "TYPE": "PRO",
+          "ROOT-WORD": "IT"
+        },
+        "ROOT": "$VAR2",
+        "CAT": "V",
+        "ROOT-WORD": "*BE*",
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ",
+          "XCOMP": {
+            "ROOT": "$VAR3",
+            "CAT": "V"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ADVISE": {
+          "AGENT": "*SPEAKER*",
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "IT-1",
+        "IS-2",
+        "ADVISABLE-0",
+        "THAT",
+        "YOU",
+        "RUN-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "COP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "XCOMP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [
+        "RECOMMENDED"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ADVISABLE-ADJ1",
+      "WORD": "ADVISABLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

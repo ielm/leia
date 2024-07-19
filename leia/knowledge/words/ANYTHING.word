@@ -1,0 +1,49 @@
+{
+  "word": "ANYTHING",
+  "senses": {
+    "ANYTHING-N1": {
+      "CAT": "N",
+      "DEF": "refers to some inanimate object that may or may not exist",
+      "EX": "Can you give me anything for the pain? She doesn't like anything. Anything will help",
+      "COMMENTS": "[D] We experimented with constructing syntactic heuristics for what 'anything' means in different contexts but they turned out to be too defeasible so we have not included them.  The complexity lies in the interaction of negation and quantification. ",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "INANIMATE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ANYTHING-N1",
+      "WORD": "ANYTHING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ANYTHING-N2": {
+      "CAT": "N",
+      "DEF": "refers to an event",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "EVENT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ANYTHING-N2",
+      "WORD": "ANYTHING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "word": "THIRTY_FIRST",
+  "senses": {
+    "THIRTY_FIRST-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "ORDINALITY": 31
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "31",
+        "ST-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "31ST"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "THIRTY_FIRST-ADJ1",
+      "WORD": "THIRTY_FIRST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

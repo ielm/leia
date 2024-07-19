@@ -1,0 +1,22 @@
+{
+  "name": "@BATISTE",
+  "isa": [
+    "@NATURAL-FABRIC"
+  ],
+  "def": "a thin, fine fabric made from cotton, rayon, etc.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@RAYON"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT-DERIVED-SUBSTANCE"
+    }
+  ],
+  "private": {}
+}

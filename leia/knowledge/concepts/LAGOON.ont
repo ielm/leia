@@ -1,0 +1,34 @@
+{
+  "name": "@LAGOON",
+  "isa": [
+    "@BODY-OF-WATER"
+  ],
+  "def": "a shallow coastal waterbody, completely or partly separated from a larger body of water by a barrier island, coral reef or other depositional feature",
+  "local": [],
+  "block": [
+    {
+      "slot": "available",
+      "facet": "sem",
+      "filler": "yes no"
+    },
+    {
+      "slot": "has-name-non-human",
+      "facet": "sem",
+      "filler": "@NAME-NON-HUMAN"
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@BOX-OFFICE",
+  "isa": [
+    "@STORE"
+  ],
+  "def": "a place where admission tickets are sold, as in a theater",
+  "local": [
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@TICKET"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

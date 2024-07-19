@@ -1,0 +1,31 @@
+{
+  "name": "@BOX-WALL",
+  "isa": [
+    "@RELATIVE-PART-OF-PHYSICAL-OBJECT"
+  ],
+  "def": "upright parts of buildings",
+  "local": [
+    {
+      "slot": "box-wall-orientation",
+      "facet": "sem",
+      "filler": "absolute-right"
+    },
+    {
+      "slot": "box-wall-orientation",
+      "facet": "sem",
+      "filler": "absolute-left"
+    },
+    {
+      "slot": "box-wall-orientation",
+      "facet": "sem",
+      "filler": "absolute-top"
+    },
+    {
+      "slot": "box-wall-orientation",
+      "facet": "sem",
+      "filler": "absolute-bottom"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

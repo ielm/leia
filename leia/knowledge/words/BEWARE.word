@@ -1,0 +1,63 @@
+{
+  "word": "BEWARE",
+  "senses": {
+    "BEWARE-V1": {
+      "CAT": "V",
+      "DEF": "phrasal: 'beware of', to be on the alert, exercise caution",
+      "EX": "they warned their allies to beware of smugglers",
+      "COMMENTS": "[D] this verb has an impoverished paradigm: e.g., *i beware. it must be in the infin or after a modal/aspectual.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "OF",
+          "CAT": "PREP"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "BEWARE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "WARNED",
+        "HIS",
+        "FRIEND-1",
+        "TO",
+        "BEWARE-0",
+        "OF-2",
+        "THE",
+        "DOG-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BEWARE-V1",
+      "WORD": "BEWARE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

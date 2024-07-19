@@ -1,0 +1,22 @@
+{
+  "name": "@BLOOD-TEST",
+  "isa": [
+    "@DIAGNOSTIC-PROCEDURE"
+  ],
+  "def": "a test performed on a sample of blood",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BLOOD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

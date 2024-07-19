@@ -1,0 +1,22 @@
+{
+  "name": "@OLIVE-OIL",
+  "isa": [
+    "@COOKING-OIL"
+  ],
+  "def": "cooking or salad oil made of olives",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@OLIVE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

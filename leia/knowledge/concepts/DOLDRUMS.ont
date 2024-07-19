@@ -1,0 +1,32 @@
+{
+  "name": "@DOLDRUMS",
+  "isa": [
+    "@WIND"
+  ],
+  "def": "the weather at certain regions of the ocean near the equator, characterized by calms, light winds and squalls",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@SQUALL"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@EQUATOR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

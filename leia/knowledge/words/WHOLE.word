@@ -1,0 +1,157 @@
+{
+  "word": "WHOLE",
+  "senses": {
+    "WHOLE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "all of an object",
+      "EX": "She ate the whole cookie",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "PHYSICAL-OBJECT",
+          "AMOUNT": 1
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "ATE",
+        "THE",
+        "WHOLE-0",
+        "APPLE-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "ENTIRE",
+        "COMPLETE",
+        "FULL"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "WHOLE-ADJ1",
+      "WORD": "WHOLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WHOLE-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "all of an event",
+      "EX": "She ran the whole marathon",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT"
+        },
+        "MODALITY": {
+          "TYPE": "EPITEUCTIC",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "ATE",
+        "THE",
+        "WHOLE-0",
+        "APPLE-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "ENTIRE",
+        "COMPLETE",
+        "FULL"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "WHOLE-ADJ2",
+      "WORD": "WHOLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WHOLE-ADJ3": {
+      "CAT": "ADJ",
+      "DEF": "in one piece, not broken",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "BREAK-DOWN": {
+            "THEME": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "WHOLE-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WHOLE-ADJ3",
+      "WORD": "WHOLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@PRESIDENT-CORPORATION",
+  "isa": [
+    "@EXECUTIVE"
+  ],
+  "def": "The highest executive officer of a company.",
+  "local": [
+    {
+      "slot": "authority-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0.9
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

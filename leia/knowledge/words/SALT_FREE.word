@@ -1,0 +1,35 @@
+{
+  "word": "SALT_FREE",
+  "senses": {
+    "SALT_FREE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "a taste",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SALTINESS": 0
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SALT_FREE-ADJ1",
+      "WORD": "SALT_FREE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

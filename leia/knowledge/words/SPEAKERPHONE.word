@@ -1,0 +1,31 @@
+{
+  "word": "SPEAKERPHONE",
+  "senses": {
+    "SPEAKERPHONE-N1": {
+      "CAT": "N",
+      "DEF": "a phone with a speaker",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PHONE": {
+          "HAS-OBJECT-AS-PART": "SPEAKER"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SPEAKERPHONE-N1",
+      "WORD": "SPEAKERPHONE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

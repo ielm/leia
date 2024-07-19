@@ -1,0 +1,36 @@
+{
+  "name": "@PLUTONIUM",
+  "isa": [
+    "@ACTINIDE"
+  ],
+  "def": "a naturally radioactive, silvery, metallic transuranic element, occurring in uranium ores and produced artificially by neutron bombardment of uranium, having 15 isotopes with masses ranging from 232 to 246 and half-lives from 20 minutes to 76 million years",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        244
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        94
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

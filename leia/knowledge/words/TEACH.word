@@ -1,0 +1,522 @@
+{
+  "word": "TEACH",
+  "senses": {
+    "TEACH-V2": {
+      "CAT": "V",
+      "DEF": "instruct",
+      "EX": "he taught his son (how) to make cookies",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "INDIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "ADV": {
+          "ROOT-WORD": "HOW",
+          "CAT": "ADV",
+          "ROOT": "$VAR4",
+          "OPT": "+"
+        },
+        "XCOMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "TEACH": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          },
+          "EFFECT": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "MODALITY": {
+            "TYPE": "POTENTIAL",
+            "SCOPE": {
+              "VALUE": "^$VAR3"
+            },
+            "VALUE-1": 1
+          }
+        },
+        "^$VAR3": {
+          "AGENT-1": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR2",
+          "^$VAR3"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "TAUGHT-0",
+        "THE",
+        "DOG-2",
+        "HOW-4",
+        "TO",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PUNCT",
+          "$VAR0",
+          "$VAR4"
+        ],
+        [
+          "XCOMP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "XSUBJ",
+          "$VAR3",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "TRAIN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "TEACH-V2",
+      "WORD": "TEACH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "TEACH-V3": {
+      "CAT": "V",
+      "DEF": "instruct",
+      "EX": "he taught his son about bugs",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "INDIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": "ABOUT",
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "TEACH": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "REFSEM1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "REFSEM1": {
+          "INFORMATION": {
+            "ABOUT-AS-TOPIC": {
+              "VALUE": "^$VAR3"
+            }
+          }
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "TEACHER-1",
+        "TAUGHT-0",
+        "THE",
+        "STUDENT-2",
+        "ABOUT-4",
+        "THE",
+        "OBJECT-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "IOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "XSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TEACH-V3",
+      "WORD": "TEACH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "TEACH-V4": {
+      "CAT": "V",
+      "DEF": "direct quotation",
+      "EX": "He taught them, 'Turn the other cheek.'",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "N": {
+          "ROOT": "$VAR3",
+          "CAT": "N",
+          "OPT": "+"
+        },
+        "QUOTED-SPEECH": [
+          [
+            "ROOT",
+            "$VAR2"
+          ],
+          [
+            "CAT",
+            "CL"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "TEACH": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "TAUGHT-0",
+        "THEM-3",
+        "*COMMA*",
+        "*QUOTE*",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING",
+        "*QUOTE*"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVCL",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "ADVMOD",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "INSTRUCT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "TEACH-V4",
+      "WORD": "TEACH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "TEACH-V1": {
+      "CAT": "V",
+      "DEF": "instruct",
+      "EX": "he taught his daughter biology",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "INDIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "N",
+          "OPT": "+"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "TEACH": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "TAUGHT-0",
+        "THE",
+        "STUDENT-3",
+        "ALGEBRA-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "IOBJ",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "XSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TEACH-V1",
+      "WORD": "TEACH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "TEACH-V800": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "You can't teach an old dog new tricks.",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "AUX": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "CAN",
+          "CAT": "AUX"
+        },
+        "NEG": [
+          [
+            "ROOT",
+            "$VAR3"
+          ],
+          [
+            "ROOT",
+            "NOT"
+          ],
+          [
+            "CAT",
+            "NEG"
+          ]
+        ],
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "ART": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": [
+            "A",
+            "AN"
+          ],
+          "CAT": "ART"
+        },
+        "ADJ": {
+          "ROOT": "$VAR5",
+          "ROOT-WORD": "OLD",
+          "CAT": "ADJ"
+        },
+        "N-1": {
+          "ROOT": "$VAR6",
+          "ROOT-WORD": "DOG",
+          "CAT": "N"
+        },
+        "ADJ-1": {
+          "ROOT": "$VAR7",
+          "ROOT-WORD": "NEW",
+          "CAT": "ADJ"
+        },
+        "N-2": {
+          "ROOT": "$VAR8",
+          "ROOT-WORD": "TRICK",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "TEACH": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "REFSEM1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "REFSEM2"
+          }
+        },
+        "REFSEM1": {
+          "EVENT": {
+            "AGENT-1": {
+              "VALUE": "REFSEM2"
+            },
+            "NOVELTY": 0.8
+          }
+        },
+        "REFSEM2": {
+          "ANIMAL": {
+            "AGE": [
+              ">",
+              0.7
+            ],
+            "COREFER": "SEEK-CONTEXTUAL-SPONSOR"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR6": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR7": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR8": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "YOU-1",
+        "CAN-2",
+        "NOT-3",
+        "TEACH-0",
+        "AN-4",
+        "OLD-5",
+        "DOG-6",
+        "NEW-7",
+        "TRICKS-8"
+      ],
+      "SENSE": "TEACH-V800",
+      "WORD": "TEACH",
+      "HYPONYMS": [],
+      "SYNONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

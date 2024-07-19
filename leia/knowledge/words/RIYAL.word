@@ -1,0 +1,33 @@
+{
+  "word": "RIYAL",
+  "senses": {
+    "RIYAL-N1": {
+      "CAT": "N",
+      "DEF": "currency of qatar or saudi-arabia",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": {
+            "QATAR": "SAUDI_ARABIA"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RIYAL-N1",
+      "WORD": "RIYAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

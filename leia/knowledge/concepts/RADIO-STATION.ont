@@ -1,0 +1,55 @@
+{
+  "name": "@RADIO-STATION",
+  "isa": [
+    "@BUILDING"
+  ],
+  "def": "a place equipped for radio transmission",
+  "local": [
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@RADIO-RECEIVER"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@RADIO-FREQUENCY"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@BROADCASTER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@EMAIL-ADDRESS"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@PHONE-NUMBER"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@WEB-ADDRESS"
+    }
+  ],
+  "private": {}
+}

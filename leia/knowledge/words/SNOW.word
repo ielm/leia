@@ -1,0 +1,78 @@
+{
+  "word": "SNOW",
+  "senses": {
+    "SNOW-N1": {
+      "CAT": "N",
+      "DEF": "frozen particles of water vapor that fall to the earth as soft, white flakes",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SNOW",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SNOW-N1",
+      "WORD": "SNOW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SNOW-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "it's snowing (out/outside); it snows a lot here",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "ROOT-WORD": "IT"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "ADV": {
+          "ROOT": "$VAR2",
+          "CAT": "ADV",
+          "ROOT-WORD": [
+            "OUT",
+            "OUTSIDE"
+          ],
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": "SNOWSTORM",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "IT-1",
+        "SNOWED-0",
+        "OUTSIDE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "ADVMOD",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SNOW-V1",
+      "WORD": "SNOW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

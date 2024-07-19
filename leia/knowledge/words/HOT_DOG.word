@@ -1,0 +1,59 @@
+{
+  "word": "HOT_DOG",
+  "senses": {
+    "HOT_DOG-N1": {
+      "CAT": "N",
+      "DEF": "a type of sausage",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "HOT-DOG",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "HOTDOG",
+        "HOT_DOG"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "HOT_DOG-N1",
+      "WORD": "HOT_DOG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HOT_DOG-N2": {
+      "CAT": "N",
+      "DEF": "a sandwich containing a hot dog",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SANDWICH": {
+          "HAS-OBJECT-AS-PART": "HOT-DOG"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "HOTDOG",
+        "HOT_DOG"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "HOT_DOG-N2",
+      "WORD": "HOT_DOG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "word": "IMPOVERISHED",
+  "senses": {
+    "IMPOVERISHED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "having no or practically no money",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "WEALTH-ATTRIBUTE": [
+            "<",
+            0.1
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "IMPOVERISHED-ADJ1",
+      "WORD": "IMPOVERISHED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

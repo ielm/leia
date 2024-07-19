@@ -1,0 +1,32 @@
+{
+  "name": "@SYNTHETIC-RESIN",
+  "isa": [
+    "@SYNTHETICS"
+  ],
+  "def": "a resin-like product made by polymerization or condensation; distinguished from natural resin",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CELLULOSE"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "yellow"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

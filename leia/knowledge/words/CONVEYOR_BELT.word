@@ -1,0 +1,30 @@
+{
+  "word": "CONVEYOR_BELT",
+  "senses": {
+    "CONVEYOR_BELT-N1": {
+      "CAT": "N",
+      "DEF": "a device which is used to move solid objects which are placed on a belt strip which moves",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CONVEYOR-BELT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "CONVEYOR",
+        "CONVEYER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CONVEYOR_BELT-N1",
+      "WORD": "CONVEYOR_BELT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

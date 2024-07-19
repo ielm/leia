@@ -1,0 +1,36 @@
+{
+  "name": "@THALLIUM",
+  "isa": [
+    "@SOFT-METALLIC-ELEMENT"
+  ],
+  "def": "a soft, malleable, highly toxic metallic element, used in rodent and ant poisons, in photocells, infrared detectors, and low-melting glass",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        204
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        81
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

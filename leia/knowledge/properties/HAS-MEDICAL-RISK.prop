@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-MEDICAL-RISK",
+  "def": "the risk that a medical procedure will result in some damage to the patient. the fillers are concepts that can be associated with probabilities via reification",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$MEDICAL-RISK-OF",
+  "measured-in": [],
+  "container": "$MEDICAL-RELATION"
+}

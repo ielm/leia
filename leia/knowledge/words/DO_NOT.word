@@ -1,0 +1,82 @@
+{
+  "word": "DO_NOT",
+  "senses": {
+    "DO_NOT-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "XCOMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DO_NOT-V1",
+      "WORD": "DO_NOT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DO_NOT-V101": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "works with VP ellipsis",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": "EVENT-VPE"
+        }
+      },
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-EVENT",
+          "EVENT-VPE",
+          "CASE-ROLE",
+          "^$VAR1"
+        ]
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DO_NOT-V101",
+      "WORD": "DO_NOT",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": []
+    }
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "word": "PRIVATE",
+  "senses": {
+    "PRIVATE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "secret, not public; of events, abstract objects, etc. - not of physical objects",
+      "EX": "secret conversation",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "ABSTRACT-OBJECT",
+            "SOCIAL-OBJECT",
+            "EVENT"
+          ],
+          "SECRECY-ATTRIBUTE": 0.8
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "PRIVATE-0",
+        "ABSTRACT-OBJECT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRIVATE-ADJ1",
+      "WORD": "PRIVATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PRIVATE-ADJ3": {
+      "CAT": "ADJ",
+      "DEF": "related to a private-sector organization, not controlled by the government",
+      "EX": "you're eligible for either Medicare or private insurance",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "PUBLIC-PRIVATE": "PRIVATE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "PRIVATE-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRIVATE-ADJ3",
+      "WORD": "PRIVATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PRIVATE-ADJ4": {
+      "CAT": "ADJ",
+      "DEF": "not shared; of physical objects",
+      "EX": "the master bedroom has a private bath; he works in a private office; he has a private secretary/chef/bodyguard",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SHARE-EVENT": {
+            "THEME": {
+              "VALUE": "^$VAR1",
+              "SEM": "PHYSICAL-OBJECT"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "PRIVATE-0",
+        "CURE-1",
+        "WORKS"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "PERSONAL",
+        "OWN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PRIVATE-ADJ4",
+      "WORD": "PRIVATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

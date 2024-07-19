@@ -1,0 +1,27 @@
+{
+  "name": "@NOCTIMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "intense fascination with night",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NIGHT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

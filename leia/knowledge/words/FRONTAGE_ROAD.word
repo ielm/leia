@@ -1,0 +1,33 @@
+{
+  "word": "FRONTAGE_ROAD",
+  "senses": {
+    "FRONTAGE_ROAD-N1": {
+      "CAT": "N",
+      "DEF": "local road parallel to highway",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SURFACE-STREET": {
+          "BESIDE": "HIGHWAY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SERVICE_ROAD"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FRONTAGE_ROAD-N1",
+      "WORD": "FRONTAGE_ROAD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

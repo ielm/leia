@@ -1,0 +1,22 @@
+{
+  "name": "@ACCELERATOR",
+  "isa": [
+    "@VEHICLE-PART"
+  ],
+  "def": "a device, like a brake pedal, that makes a vehicle go faster",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

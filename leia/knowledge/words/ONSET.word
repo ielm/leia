@@ -1,0 +1,68 @@
+{
+  "word": "ONSET",
+  "senses": {
+    "ONSET-N1": {
+      "CAT": "N",
+      "DEF": "the beginning of a disease or symptom",
+      "EX": "the onset of achalasia",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "BEGIN",
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR2": {
+          "SEM": "PATHOLOGIC-FUNCTION"
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ONSET-0",
+        "OF-1",
+        "THE",
+        "OBJECT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "INDUCTION"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ONSET-N1",
+      "WORD": "ONSET",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

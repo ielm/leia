@@ -1,0 +1,37 @@
+{
+  "name": "@ADDICTION-EVENT",
+  "isa": [
+    "@SUBSTANCE-USE-EVENT"
+  ],
+  "def": "to give oneself up to a strong habit",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@SMOKING-MATERIAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ALCOHOLIC-BEVERAGE"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@DRUG"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

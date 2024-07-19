@@ -1,0 +1,52 @@
+{
+  "word": "CONTENT",
+  "senses": {
+    "CONTENT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "in a pretty good state of mind",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "EMOTIONAL-STATE": [
+            "><",
+            0.6,
+            0.7
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CONTENT-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "CONTENTED",
+        "SATISFIED",
+        "COMPLACENT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CONTENT-ADJ1",
+      "WORD": "CONTENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

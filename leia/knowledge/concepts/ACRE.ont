@@ -1,0 +1,19 @@
+{
+  "name": "@ACRE",
+  "isa": [
+    "@AREA-UNIT"
+  ],
+  "def": "a unit for measuring land",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        4046.86
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

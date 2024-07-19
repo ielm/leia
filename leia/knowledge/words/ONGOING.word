@@ -1,0 +1,50 @@
+{
+  "word": "ONGOING",
+  "senses": {
+    "ONGOING-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "ongoing controversy",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "ADJ",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "CONTINUE",
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR1": {
+          "SEM": "EVENT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ONGOING-0",
+        "OBJECT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ONGOING-ADJ1",
+      "WORD": "ONGOING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

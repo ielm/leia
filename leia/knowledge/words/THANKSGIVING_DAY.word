@@ -1,0 +1,53 @@
+{
+  "word": "THANKSGIVING_DAY",
+  "senses": {
+    "THANKSGIVING_DAY-N1": {
+      "CAT": "N",
+      "DEF": "a Canadian holiday, the second Monday of October, marked by giving of thanks to God for harvest and health ",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "THANKSGIVING-DAY-CANADA",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "THANKSGIVING"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "THANKSGIVING_DAY-N1",
+      "WORD": "THANKSGIVING_DAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "THANKSGIVING_DAY-N2": {
+      "CAT": "N",
+      "DEF": "a legal U.S. holiday, the fourth Thursday of November, commemorating the feast held at Plymouth in 1621",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "THANKSGIVING-DAY-USA",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "THANKSGIVING"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "THANKSGIVING_DAY-N2",
+      "WORD": "THANKSGIVING_DAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

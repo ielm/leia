@@ -1,0 +1,21 @@
+{
+  "name": "@PIANO",
+  "isa": [
+    "@KEYBOARD-INSTRUMENT"
+  ],
+  "def": "a large, stringed keyboard instrument: each key operates a felt-covered hammer that strikes a corresponding steel wire or wires",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@IVORY"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@SHARE-BROKERAGE-CORPORATION",
+  "isa": [
+    "@INVESTMENT-CORPORATION"
+  ],
+  "def": "A financial institution doing brokerage in company shares.",
+  "local": [],
+  "block": [
+    {
+      "slot": "area-of-business-activity",
+      "facet": "sem",
+      "filler": "@INVESTMENT-EVENT"
+    }
+  ],
+  "private": {}
+}

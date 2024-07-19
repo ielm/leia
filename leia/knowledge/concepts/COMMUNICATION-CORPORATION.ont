@@ -1,0 +1,16 @@
+{
+  "name": "@COMMUNICATION-CORPORATION",
+  "isa": [
+    "@FOR-PROFIT-SERVICE-CORPORATION"
+  ],
+  "def": "a corporation that provides service for the public in the communication areas such as television, radio, telephone, etc.",
+  "local": [
+    {
+      "slot": "area-of-business-activity",
+      "facet": "sem",
+      "filler": "@COMMUNICATION-SERVE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

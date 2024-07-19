@@ -1,0 +1,47 @@
+{
+  "word": "ON_STANDBY",
+  "senses": {
+    "ON_STANDBY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "waiting",
+      "EX": "the officers on standby slept in the tents",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "AGENT-OF": "WAIT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "ON_STANDBY-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ON_STANDBY-ADJ1",
+      "WORD": "ON_STANDBY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

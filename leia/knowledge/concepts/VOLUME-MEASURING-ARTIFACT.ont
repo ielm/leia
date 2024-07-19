@@ -1,0 +1,22 @@
+{
+  "name": "@VOLUME-MEASURING-ARTIFACT",
+  "isa": [
+    "@MEASURING-ARTIFACT"
+  ],
+  "def": "any artifact used to measure volume",
+  "local": [
+    {
+      "slot": "measures-property",
+      "facet": "sem",
+      "filler": "$volume"
+    }
+  ],
+  "block": [
+    {
+      "slot": "measures-property",
+      "facet": "sem",
+      "filler": "$property"
+    }
+  ],
+  "private": {}
+}

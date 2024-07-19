@@ -1,0 +1,72 @@
+{
+  "word": "SOUTH_OF",
+  "senses": {
+    "SOUTH_OF-PREP1": {
+      "CAT": "PREP",
+      "DEF": "",
+      "EX": "Baltimore is south of NYC",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "OBJECT",
+            "EVENT"
+          ],
+          "SOUTH-OF": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "SOUTH_OF-0",
+        "THE",
+        "OBJECT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "TO_THE_SOUTH_OF"
+      ],
+      "HYPONYMS": [
+        "DUE_SOUTH_OF"
+      ],
+      "SENSE": "SOUTH_OF-PREP1",
+      "WORD": "SOUTH_OF",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

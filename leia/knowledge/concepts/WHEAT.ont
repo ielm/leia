@@ -1,0 +1,16 @@
+{
+  "name": "@WHEAT",
+  "isa": [
+    "@GRAIN-FOODSTUFF"
+  ],
+  "def": "the grain of a wheat plant, ground to produce flour used in breadstuffs and pasta products",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "tan"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

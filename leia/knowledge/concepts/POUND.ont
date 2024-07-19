@@ -1,0 +1,19 @@
+{
+  "name": "@POUND",
+  "isa": [
+    "@MASS-WEIGHT-UNIT"
+  ],
+  "def": "a unit of mass and weight equal to 16 ounces or 0.453 kilograms",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.453592
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$TIME",
+  "def": "any time representation",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": "$TIME-OF",
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

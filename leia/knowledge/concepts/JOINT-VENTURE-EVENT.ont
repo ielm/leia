@@ -1,0 +1,27 @@
+{
+  "name": "@JOINT-VENTURE-EVENT",
+  "isa": [
+    "@CORPORATE-EVENT"
+  ],
+  "def": "when two companies work together to accomplish a specific business goal",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PROJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

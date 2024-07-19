@@ -1,0 +1,32 @@
+{
+  "name": "@LENT",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "the 40-weekday season of fasting and penitence between Ash Wednesday and Easter",
+  "local": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@CHRISTIANITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@CELEBRATE"
+    }
+  ],
+  "private": {}
+}

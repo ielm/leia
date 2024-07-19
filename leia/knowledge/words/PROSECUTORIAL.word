@@ -1,0 +1,35 @@
+{
+  "word": "PROSECUTORIAL",
+  "senses": {
+    "PROSECUTORIAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "with the goal of prosecuting",
+      "EX": "prosecutorial technique",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "PURPOSE": "PROSECUTE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PROSECUTORIAL-ADJ1",
+      "WORD": "PROSECUTORIAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

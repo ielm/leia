@@ -1,0 +1,31 @@
+{
+  "word": "ORANGE_LIQUEUR",
+  "senses": {
+    "ORANGE_LIQUEUR-N1": {
+      "CAT": "N",
+      "DEF": "A liqueur flavored with orange",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LIQUOR": {
+          "HAS-OBJECT-AS-PART": "ORANGE-FRUIT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ORANGE_LIQUEUR-N1",
+      "WORD": "ORANGE_LIQUEUR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

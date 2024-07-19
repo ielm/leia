@@ -1,0 +1,16 @@
+{
+  "name": "@OTHER-TBD",
+  "isa": [
+    "@ANIMATE-PART"
+  ],
+  "def": "This category contains various anatomical which are not in FM or are in FM but in a weird place. This concept is a temporary place holder.",
+  "local": [],
+  "block": [
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@GAS"
+    }
+  ],
+  "private": {}
+}

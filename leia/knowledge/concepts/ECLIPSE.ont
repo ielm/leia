@@ -1,0 +1,16 @@
+{
+  "name": "@ECLIPSE",
+  "isa": [
+    "@NATURAL-EVENT"
+  ],
+  "def": "when one celestial body obscures another",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CELESTIAL-OBJECT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

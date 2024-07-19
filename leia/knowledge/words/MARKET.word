@@ -1,0 +1,86 @@
+{
+  "word": "MARKET",
+  "senses": {
+    "MARKET-N1": {
+      "CAT": "N",
+      "DEF": "a forum for trading",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "MARKET",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "MARKETPLACE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "MARKET-N1",
+      "WORD": "MARKET",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MARKET-V1": {
+      "CAT": "V",
+      "DEF": "engage in activities related to moving goods and services from producer to consumer",
+      "EX": "that company markets dry goods",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "MARKETING": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THAT",
+        "COMPANY-1",
+        "MARKETS-0",
+        "FOOD-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "PROMOTE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "MARKET-V1",
+      "WORD": "MARKET",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

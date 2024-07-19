@@ -1,0 +1,59 @@
+{
+  "word": "PERJURE",
+  "senses": {
+    "PERJURE-V1": {
+      "CAT": "V",
+      "DEF": "to commit perjury",
+      "EX": "he perjured himself during the trial",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "ROOT-WORD": [
+            "MYSELF",
+            "YOURSELF",
+            "HIMSELF",
+            "HERSELF",
+            "ONESELF",
+            "OURSELVES",
+            "THEMSELVES",
+            "YOURSELVES"
+          ]
+        }
+      },
+      "SEM-STRUC": {
+        "PERJURY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "PERJURED-0",
+        "HIMSELF-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PERJURE-V1",
+      "WORD": "PERJURE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

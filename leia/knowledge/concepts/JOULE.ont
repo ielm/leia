@@ -1,0 +1,19 @@
+{
+  "name": "@JOULE",
+  "isa": [
+    "@ENERGY-UNIT"
+  ],
+  "def": "The SI derived unit of energy (work). kg*m^2*s^-2 (^ means power, kg means kilogram, m means meter, s means second, * means multiplication)",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

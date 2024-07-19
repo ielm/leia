@@ -1,0 +1,11 @@
+{
+  "name": "$YEAR-FOUNDED",
+  "def": "the year in which an organization or city was founded",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@YEAR"
+  ],
+  "container": "$SCALAR-SOCIAL-OBJECT-ATTRIBUTE"
+}

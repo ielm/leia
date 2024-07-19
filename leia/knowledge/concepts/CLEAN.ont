@@ -1,0 +1,72 @@
+{
+  "name": "@CLEAN",
+  "isa": [
+    "@COMMONPLACE-SERVICE-EVENT"
+  ],
+  "def": "to make clean or free from dirt, grime, and so on",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@JANITOR"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CLEANING-APPLIANCE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CLEANING-ARTIFACT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CLEANSING-MATERIAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@STEEL-WOOL"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@HOUSEKEEPER"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@DISHWASHER"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@MAINTENANCE-WORKER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WATER"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@MAID"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@WORK-ROLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    }
+  ],
+  "private": {}
+}

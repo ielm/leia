@@ -1,0 +1,32 @@
+{
+  "name": "@SPY-ON",
+  "isa": [
+    "@POLITICAL-EVENT"
+  ],
+  "def": "to watch secretly and closely, often to learn information about a competitor or opponent;\nbeneficiary = target of spying;\ntheme = information gained",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INTELLIGENCE-INFO"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@SPY-INTELLIGENCE-AGENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

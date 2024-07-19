@@ -1,0 +1,27 @@
+{
+  "name": "@SLEEP-APNEA",
+  "isa": [
+    "@APNEA"
+  ],
+  "def": "transient attacks of apnea during sleep, resulting in acidosis and pulmonary arteriolar vasoconstriction and hypertension\n(http://medical-dictionary.thefreedictionary.com/obstructive+sleep+apnea)",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@SLEEP"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

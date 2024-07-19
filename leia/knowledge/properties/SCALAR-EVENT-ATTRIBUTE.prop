@@ -1,0 +1,9 @@
+{
+  "name": "$SCALAR-EVENT-ATTRIBUTE",
+  "def": "attributes that apply to events, whether social, mental, or physical",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-ATTRIBUTE"
+}

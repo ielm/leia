@@ -1,0 +1,42 @@
+{
+  "name": "@CABBAGE",
+  "isa": [
+    "@CRUCIFEROUS-VEGETABLE",
+    "@LEAF-VEGETABLE"
+  ],
+  "def": "a vegetable with thick leaves formed into a round, compact head",
+  "local": [
+    {
+      "slot": "diameter",
+      "facet": "sem",
+      "filler": [
+        "><",
+        22
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "off-white"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "violet"
+    }
+  ],
+  "block": [
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,31 @@
+{
+  "word": "BAGEL",
+  "senses": {
+    "BAGEL-N1": {
+      "CAT": "N",
+      "DEF": "ring-shaped roll with a tough, chewy texture, made from   plain yeast dough that is dropped briefly into nearly boiling water and then baked",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BREAD-ROLL": {
+          "SOFTNESS": 0.3
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BAGEL-N1",
+      "WORD": "BAGEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

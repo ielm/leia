@@ -1,0 +1,40 @@
+{
+  "word": "ASSASSIN_BUG",
+  "senses": {
+    "ASSASSIN_BUG-N1": {
+      "CAT": "N",
+      "DEF": "a predatory bug of the Reduviidae family with short powerful beaks which it uses to prey on other insects or to suck blood from mammals ",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ASSASSIN-BUG": {
+          "AGENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "INGEST": {
+            "THEME": "BLOOD"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "REDUVIID"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ASSASSIN_BUG-N1",
+      "WORD": "ASSASSIN_BUG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

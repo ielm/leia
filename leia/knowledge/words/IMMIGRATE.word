@@ -1,0 +1,58 @@
+{
+  "word": "IMMIGRATE",
+  "senses": {
+    "IMMIGRATE-V1": {
+      "CAT": "V",
+      "DEF": "to leave one country for another",
+      "EX": "they immigrated to israel",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "TO",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "EMIGRATE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "DESTINATION": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "IMMIGRATED-0",
+        "TO-2",
+        "ISRAEL-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "IMMIGRATE-V1",
+      "WORD": "IMMIGRATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

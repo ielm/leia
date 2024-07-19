@@ -1,0 +1,132 @@
+{
+  "word": "UNIMPORTANT",
+  "senses": {
+    "UNIMPORTANT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "an unimportant decision, event, book",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "IMPORTANCE": [
+            "<",
+            0.2
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "UNIMPORTANT-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "IRRELEVANT"
+      ],
+      "HYPONYMS": [
+        "NEGLIGIBLE"
+      ],
+      "SENSE": "UNIMPORTANT-ADJ1",
+      "WORD": "UNIMPORTANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "UNIMPORTANT-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "in the phrase 'it is/was, etc. unimportant that...",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "ROOT-WORD": "IT"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "COMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR3": {
+          "IMPORTANCE": [
+            "<",
+            0.2
+          ]
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "IT-1",
+        "WAS-2",
+        "UNIMPORTANT-0",
+        "THAT",
+        "THE",
+        "MAN",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR3",
+          "$VAR0"
+        ],
+        [
+          "COP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "IRRELEVANT"
+      ],
+      "HYPONYMS": [
+        "NEGLIGIBLE"
+      ],
+      "SENSE": "UNIMPORTANT-ADJ2",
+      "WORD": "UNIMPORTANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

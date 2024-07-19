@@ -1,0 +1,32 @@
+{
+  "name": "@PASTEURIZE",
+  "isa": [
+    "@PREPARE-INGESTIBLE"
+  ],
+  "def": "to heat food to a specific temperature to kill bacteria that could cause disease",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SAUCEPAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@STOVE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@COOK"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COOKING-EQUIPMENT"
+    }
+  ],
+  "private": {}
+}

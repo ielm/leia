@@ -1,0 +1,44 @@
+{
+  "word": "GENERALLY",
+  "senses": {
+    "GENERALLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "imprecisely",
+      "EX": "she's interested in painting in general, and neo-impressionism in particular",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "IN_GENERAL-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "IN_GENERAL",
+        "GENERALLY_SPEAKING"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "GENERALLY-ADV1",
+      "WORD": "GENERALLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

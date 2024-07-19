@@ -1,0 +1,57 @@
+{
+  "name": "@POLIOMYELITIS",
+  "isa": [
+    "@VIRUS-DISEASE"
+  ],
+  "def": "a viral disease that affects the central nervous system\nand can cause paralysis",
+  "local": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@PARALYSIS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NERVOUS-SYSTEM"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

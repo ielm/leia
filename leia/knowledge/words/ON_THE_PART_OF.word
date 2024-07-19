@@ -1,0 +1,124 @@
+{
+  "word": "ON_THE_PART_OF",
+  "senses": {
+    "ON_THE_PART_OF-PREP1": {
+      "CAT": "PREP",
+      "DEF": "indicates an experiencer of a property ontologically represented as a scalar attribute",
+      "EX": "Shyness on the part of kindergarten children can be overcome with time and patience.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "SCALAR-ANIMAL-ATTRIBUTE",
+          "DOMAIN": {
+            "VALUE": "^$VAR2"
+          },
+          "RANGE": [
+            ">",
+            0
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SCALAR-ANIMAL-ATTRIBUTE-1",
+        "ON_THE_PART_OF-0",
+        "THE",
+        "SCALAR-ANIMAL-ATTRIBUTE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ON_THE_PART_OF-PREP1",
+      "WORD": "ON_THE_PART_OF",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ON_THE_PART_OF-PREP2": {
+      "CAT": "PREP",
+      "DEF": "indicates an agent or experiencer (via fix-case-role) of an event",
+      "EX": "Bad behavior on the part of teenagers can get them expelled from school. Worry on the part of dog owners can be sensed by their dogs.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "NOT",
+            "SCALAR-ANIMAL-ATTRIBUTE"
+          ],
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR2",
+          "^$VAR1"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "BALL-1",
+        "ON_THE_PART_OF-0",
+        "THE",
+        "MAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ON_THE_PART_OF-PREP2",
+      "WORD": "ON_THE_PART_OF",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

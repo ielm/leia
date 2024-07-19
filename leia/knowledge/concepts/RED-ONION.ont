@@ -1,0 +1,21 @@
+{
+  "name": "@RED-ONION",
+  "isa": [
+    "@ONION"
+  ],
+  "def": "A flat onion with purple tunics and mild taste used in salads and as garnish.",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "purple"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "red"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

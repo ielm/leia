@@ -1,0 +1,82 @@
+{
+  "name": "@PEEL",
+  "isa": [
+    "@DEVICE-AS-INSTRUMENT-EVENT"
+  ],
+  "def": "to cut away or shed skin, rind, etc.",
+  "local": [
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@REPTILE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PEELER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@KNIFE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@PRIMATE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SKIN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TREE-FRUIT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NUT-FOODSTUFF"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ONION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ARTICHOKE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ROOT-VEGETABLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VINE-FRUIT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@DEVICE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

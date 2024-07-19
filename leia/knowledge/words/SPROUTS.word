@@ -1,0 +1,31 @@
+{
+  "word": "SPROUTS",
+  "senses": {
+    "SPROUTS-N1": {
+      "CAT": "N",
+      "DEF": "a vegetable",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "NUMBER": "PL"
+      },
+      "SEM-STRUC": "SPROUTS-FOODSTUFF",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "BEAN_SPROUTS",
+        "ALFALFA_SPROUTS"
+      ],
+      "SENSE": "SPROUTS-N1",
+      "WORD": "SPROUTS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

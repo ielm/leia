@@ -1,0 +1,9 @@
+{
+  "name": "$WORN-ON",
+  "def": "A relation to indicate what part of the body a particular garment is typically worn",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$LOCATION-OF-WEARING",
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

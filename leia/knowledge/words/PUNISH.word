@@ -1,0 +1,78 @@
+{
+  "word": "PUNISH",
+  "senses": {
+    "PUNISH-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "they punished the child for speaking out of turn",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": "FOR",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "PUNISH": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "CAUSED-BY": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR4": {
+          "SEM": "EVENT",
+          "AGENT-1": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "PUNISHED-0",
+        "THE",
+        "CHILD-2",
+        "FOR-3",
+        "HITTING-4",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "DISCIPLINE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PUNISH-V1",
+      "WORD": "PUNISH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

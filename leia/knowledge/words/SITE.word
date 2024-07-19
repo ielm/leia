@@ -1,0 +1,60 @@
+{
+  "word": "SITE",
+  "senses": {
+    "SITE-N1": {
+      "CAT": "N",
+      "DEF": "place (of something)",
+      "EX": "They built a memorial on the site of the battle.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "PLACE": {
+          "LOCATION-OF": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "SITE-0",
+        "OF-1",
+        "THE",
+        "PICTURE-2",
+        "INTERESTS",
+        "ME"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SITE-N1",
+      "WORD": "SITE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "word": "DINNER_PARTY",
+  "senses": {
+    "DINNER_PARTY-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PARTY": {
+          "HAS-EVENT-AS-PART": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "EAT-MEAL": {
+            "THEME": "DINNER"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DINNER_PARTY-N1",
+      "WORD": "DINNER_PARTY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

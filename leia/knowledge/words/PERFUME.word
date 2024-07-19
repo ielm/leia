@@ -1,0 +1,72 @@
+{
+  "word": "PERFUME",
+  "senses": {
+    "PERFUME-N1": {
+      "CAT": "N",
+      "DEF": "A substance that emits and diffuses a fragrant odor, especially a volatile liquid distilled from flowers or prepared synthetically ",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PERFUME",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PERFUME-N1",
+      "WORD": "PERFUME",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PERFUME-V1": {
+      "CAT": "V",
+      "DEF": "to put perfume on",
+      "EX": "She perfumed herself before the party",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "PUT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": "PERFUME",
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "PERFUMED-0",
+        "THE",
+        "DOG-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PERFUME-V1",
+      "WORD": "PERFUME",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

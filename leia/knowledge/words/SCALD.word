@@ -1,0 +1,76 @@
+{
+  "word": "SCALD",
+  "senses": {
+    "SCALD-V1": {
+      "CAT": "V",
+      "DEF": "to burn with hot liquid or steam",
+      "EX": "She scalded her arm",
+      "COMMENTS": "the instrument should be either hot liquid   or hot gas -- but we don't have that representation  methodology yet",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "BURN": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "INSTRUMENT": {
+            "VALUE": "REFSEM1"
+          },
+          "INSTRUMENT-1": {
+            "VALUE": "REFSEM2"
+          }
+        },
+        "REFSEM1": {
+          "LIQUID": {
+            "TEMPERATURE": 1
+          }
+        },
+        "REFSEM2": {
+          "GAS": {
+            "TEMPERATURE-1": 1
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "SCALDED-0",
+        "HER",
+        "ARM-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SCALD-V1",
+      "WORD": "SCALD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

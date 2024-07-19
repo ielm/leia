@@ -1,0 +1,27 @@
+{
+  "word": "SECURITY_CHECK_DEVICE",
+  "senses": {
+    "SECURITY_CHECK_DEVICE-N1": {
+      "CAT": "N",
+      "DEF": "an dependent device that can check whether a system is functioning or not",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SECURITY-CHECK-DEVICE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SECURITY_CHECK_DEVICE-N1",
+      "WORD": "SECURITY_CHECK_DEVICE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "word": "HITCHHIKE",
+  "senses": {
+    "HITCHHIKE-V1": {
+      "CAT": "V",
+      "DEF": "to travel for free by requesting passage in a vehicle (typically by car or truck)",
+      "EX": "john hitchhiked",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "HITCHHIKE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HITCHHIKE-V1",
+      "WORD": "HITCHHIKE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

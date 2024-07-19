@@ -1,0 +1,22 @@
+{
+  "name": "@PRIME-MINISTER",
+  "isa": [
+    "@MINISTER"
+  ],
+  "def": "in some countries, the chief executive of the government",
+  "local": [
+    {
+      "slot": "rules",
+      "facet": "sem",
+      "filler": "@LARGE-GEOPOLITICAL-ENTITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "rules",
+      "facet": "sem",
+      "filler": "@GEOGRAPHICAL-ENTITY"
+    }
+  ],
+  "private": {}
+}

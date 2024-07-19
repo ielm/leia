@@ -1,0 +1,221 @@
+{
+  "word": "BENEFIT",
+  "senses": {
+    "BENEFIT-V1": {
+      "CAT": "V",
+      "DEF": "to affect in a good way",
+      "EX": "his invention benefits everyone",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "BENEFIT-FROM": {
+          "INSTRUMENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "INVENTION-1",
+        "BENEFITS-0",
+        "EVERYONE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BENEFIT-V1",
+      "WORD": "BENEFIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BENEFIT-V2": {
+      "CAT": "V",
+      "DEF": "'benefit from', to affect in a good way",
+      "EX": "john benefits from his employer's generosity",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "FROM",
+          "CAT": "PREP"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "BENEFIT-FROM": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          },
+          "INSTRUMENT": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "BENEFITED-0",
+        "FROM-3",
+        "THE",
+        "EVENT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BENEFIT-V2",
+      "WORD": "BENEFIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BENEFIT-N1": {
+      "CAT": "N",
+      "DEF": "sth that affects s.o. or sth. in a good way",
+      "EX": "the benefits of industrialization are everywhere; his invention brings benefits to everyone",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": [
+            "TO",
+            "FOR"
+          ],
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "BENEFIT-FROM": {
+          "INSTRUMENT": {
+            "VALUE": "^$VAR2"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "BENEFIT-0",
+        "OF-1",
+        "THE",
+        "EVENT-2",
+        "TO-3",
+        "THE",
+        "GIRL-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "ADVANTAGE"
+      ],
+      "SENSE": "BENEFIT-N1",
+      "WORD": "BENEFIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

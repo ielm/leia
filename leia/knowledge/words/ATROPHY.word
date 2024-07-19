@@ -1,0 +1,89 @@
+{
+  "word": "ATROPHY",
+  "senses": {
+    "ATROPHY-N1": {
+      "CAT": "N",
+      "DEF": "the wasting away, loss of strength, etc.,  of a body part, e.g., as a result of paralysis",
+      "EX": "He is experiencing atrophy of his leg muscles",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ATROPHY": {
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "ANIMAL-ORGAN"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "WITHERING_AWAY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ATROPHY-N1",
+      "WORD": "ATROPHY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ATROPHY-V1": {
+      "CAT": "V",
+      "DEF": "the wasting away, loss of strength, etc.,  of a body part, e.g., as a result of paralysis",
+      "EX": "His leg muscles atrophied",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "ATROPHY": {
+          "THEME": {
+            "VALUE": "^$VAR1",
+            "SEM": "ANIMAL-ORGAN"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HIS",
+        "LEG",
+        "MUSCLES-1",
+        "ATROPHIED-0"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "WITHER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ATROPHY-V1",
+      "WORD": "ATROPHY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

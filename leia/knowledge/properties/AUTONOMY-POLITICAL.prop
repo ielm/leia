@@ -1,0 +1,9 @@
+{
+  "name": "$AUTONOMY-POLITICAL",
+  "def": "the degree to which a geopolitical entity governs itself; the values can be 0, 1 or anywhere in between if there is partial autonomy",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-OBJECT-ATTRIBUTE"
+}

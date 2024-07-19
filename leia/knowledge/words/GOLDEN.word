@@ -1,0 +1,42 @@
+{
+  "word": "GOLDEN",
+  "senses": {
+    "GOLDEN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "highly evaluated",
+      "EX": "golden opportunity",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "ABSTRACT-OBJECT"
+        },
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GOLDEN-ADJ1",
+      "WORD": "GOLDEN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

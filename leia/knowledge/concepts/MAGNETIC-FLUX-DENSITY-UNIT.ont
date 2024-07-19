@@ -1,0 +1,22 @@
+{
+  "name": "@MAGNETIC-FLUX-DENSITY-UNIT",
+  "isa": [
+    "@MEASURING-UNIT"
+  ],
+  "def": "unit used to describe the numeric value of a changing magnetic field.",
+  "local": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@TESLA"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "sem",
+      "filler": "@MEASURING-UNIT"
+    }
+  ],
+  "private": {}
+}

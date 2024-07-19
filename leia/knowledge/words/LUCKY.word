@@ -1,0 +1,35 @@
+{
+  "word": "LUCKY",
+  "senses": {
+    "LUCKY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "the lucky winner, a lucky escape",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "LUCK"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LUCKY-ADJ1",
+      "WORD": "LUCKY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

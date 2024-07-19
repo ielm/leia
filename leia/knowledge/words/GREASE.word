@@ -1,0 +1,48 @@
+{
+  "word": "GREASE",
+  "senses": {
+    "GREASE-V1": {
+      "CAT": "V",
+      "DEF": "to apply grease to something",
+      "EX": "Dawn greased the tracks for her garage doors",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "APPLY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": "LUBRICANT",
+          "LOCATION": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "LUBRICATE",
+        "LUBE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "GREASE-V1",
+      "WORD": "GREASE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

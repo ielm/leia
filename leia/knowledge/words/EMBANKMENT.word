@@ -1,0 +1,40 @@
+{
+  "word": "EMBANKMENT",
+  "senses": {
+    "EMBANKMENT-N1": {
+      "CAT": "N",
+      "DEF": "a mound of earth or stone built to hold back water or to support a roadway",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "DAM": {
+          "INSTRUMENT-OF": {
+            "DAM-EVENT": {
+              "VALUE": "REFSEM1"
+            }
+          }
+        },
+        "REFSEM1": {
+          "SUPPORT-PHYSICALLY": {
+            "THEME": "ROAD-SYSTEM-ARTIFACT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EMBANKMENT-N1",
+      "WORD": "EMBANKMENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

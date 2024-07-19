@@ -1,0 +1,50 @@
+{
+  "word": "REMARKABLY",
+  "senses": {
+    "REMARKABLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "on the very high end of the given scale",
+      "EX": "they have a remarkably dangerous job",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        },
+        "ROOT": "$VAR1",
+        "CAT": [
+          "ADJ",
+          "ADV"
+        ]
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "DELIMIT-SCALE",
+          "^$VAR1",
+          "EXTREME",
+          0.3
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "REMARKABLY-0",
+        "GOOD-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "REMARKABLY-ADV1",
+      "WORD": "REMARKABLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

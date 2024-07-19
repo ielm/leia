@@ -1,0 +1,81 @@
+{
+  "name": "@COTTAGE_CHEESE",
+  "isa": [
+    "@CHEESE"
+  ],
+  "def": "mild white cheese made from curds of soured skim milk",
+  "local": [
+    {
+      "slot": "fattiness",
+      "facet": "sem",
+      "filler": [
+        ">=<",
+        0.25
+      ]
+    },
+    {
+      "slot": "wetness",
+      "facet": "sem",
+      "filler": [
+        "><",
+        0.7
+      ]
+    },
+    {
+      "slot": "sourness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0.1
+      ]
+    },
+    {
+      "slot": "bitterness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0.1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "bitterness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "fattiness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "fattiness",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "sourness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "wetness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$STOCKHOLDER-EQUITY",
+  "def": "how much the stock value is, in any kind of organization",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$EQUITY-VALUE"
+}

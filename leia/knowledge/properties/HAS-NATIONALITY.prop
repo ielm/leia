@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-NATIONALITY",
+  "def": "the status of belonging to a nation by birth or naturalization",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$NATIONALITY-OF",
+  "measured-in": [],
+  "container": "$GEOPOLITICAL-RELATION"
+}

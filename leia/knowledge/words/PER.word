@@ -1,0 +1,73 @@
+{
+  "word": "PER",
+  "senses": {
+    "PER-PREP1": {
+      "CAT": "PREP",
+      "DEF": "# per time unit",
+      "EX": "People eat, on average, 12 pizzas per year.",
+      "COMMENTS": "we ultimately need a MP to calculate what the time interval is",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "CARDINALITY": {
+            "MEASURED-IN": {
+              "VALUE": "REFSEM1"
+            }
+          }
+        },
+        "REFSEM1": [
+          "CARDINALITY-PER-MEASURING-UNIT"
+        ]
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "REFSEM1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "PER-0",
+        "THE",
+        "DOG-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PER-PREP1",
+      "WORD": "PER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

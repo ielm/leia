@@ -1,0 +1,204 @@
+{
+  "word": "THANK",
+  "senses": {
+    "THANK-V1": {
+      "CAT": "V",
+      "DEF": "express gratitude",
+      "EX": "everyone thanked him (for his generosity); thank you (for the coffee)",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": "FOR",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "THANK": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EVERYONE-1",
+        "THANKED-0",
+        "HIM-2",
+        "FOR-3",
+        "HIS",
+        "GENEROSITY-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "THANK-V1",
+      "WORD": "THANK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "THANK-V2": {
+      "CAT": "V",
+      "DEF": "express gratitude; imperative only; requires a for-PP indicating the speaker or some other person who  is passing on thanks (otherwise thank-v1 should be used)",
+      "EX": "Thank him (for the lillies) for me.",
+      "COMMENTS": "Imperative is singled out because when there's a 'for me' etc. PP, it means that the thanking is caused by a request-action.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "FORM": "IMPERATIVE",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": "FOR",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT-WORD": "FOR",
+          "ROOT": "$VAR5",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR6",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "THANK": {
+            "THEME": {
+              "VALUE": "^$VAR4"
+            },
+            "BENEFICIARY": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "CAUSED-BY": {
+          "DOMAIN": {
+            "VALUE": "REFSEM1"
+          },
+          "RANGE": {
+            "VALUE": "REFSEM2"
+          }
+        },
+        "REFSEM2": {
+          "REQUEST-ACTION": {
+            "AGENT": {
+              "VALUE": "^$VAR6",
+              "SEM": [
+                "HUMAN",
+                "ORGANIZATION"
+              ]
+            }
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THANK-0",
+        "HIM-2",
+        "FOR-3",
+        "THE",
+        "LILIES-4",
+        "FOR-5",
+        "ME-6"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "POBJ",
+          "$VAR5",
+          "$VAR6"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR5"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "THANK-V2",
+      "WORD": "THANK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

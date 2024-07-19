@@ -1,0 +1,69 @@
+{
+  "word": "ABSTRACT",
+  "senses": {
+    "ABSTRACT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "not concrete",
+      "EX": "an abstract painting",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "ABSTRACTNESS": [
+            ">",
+            0.7
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ABSTRACT-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ABSTRACT-ADJ1",
+      "WORD": "ABSTRACT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ABSTRACT-N1": {
+      "CAT": "N",
+      "DEF": "a summary at the beginning of a book or article",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "ABSTRACT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ABSTRACT-N1",
+      "WORD": "ABSTRACT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

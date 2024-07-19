@@ -1,0 +1,32 @@
+{
+  "name": "@TEXT-MANUAL",
+  "isa": [
+    "@BOOK-DOCUMENT"
+  ],
+  "def": "a group of text that tells someone how to do something",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CHAPTER"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SECTION-OF-DOCUMENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

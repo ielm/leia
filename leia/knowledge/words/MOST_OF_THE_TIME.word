@@ -1,0 +1,54 @@
+{
+  "word": "MOST_OF_THE_TIME",
+  "senses": {
+    "MOST_OF_THE_TIME-ADV1": {
+      "CAT": "ADV",
+      "DEF": "",
+      "EX": "My throat hurst most of the time.",
+      "COMMENTS": "Since it doesn't hurt all the time, I'm considering instances of it hurting as iterate-able things.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "ITERATION": "MULTIPLE",
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "FREQUENCY": 0.9
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "MOST_OF_THE_TIME-0",
+        "OBJECTED-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "PRACTICALLY_ALWAYS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "MOST_OF_THE_TIME-ADV1",
+      "WORD": "MOST_OF_THE_TIME",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

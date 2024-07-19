@@ -1,0 +1,9 @@
+{
+  "name": "$OBJECT-RELATION",
+  "def": "relations between objects",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$OBJECT-RELATION-INVERSE",
+  "measured-in": [],
+  "container": "$RELATION"
+}

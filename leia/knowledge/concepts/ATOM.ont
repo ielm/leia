@@ -1,0 +1,35 @@
+{
+  "name": "@ATOM",
+  "isa": [
+    "@MOLECULE"
+  ],
+  "def": "any of the smallest particles of an element that combine with similar particles of other elements",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ATOMIC-PARTICLE"
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ATOM"
+    }
+  ],
+  "private": {}
+}

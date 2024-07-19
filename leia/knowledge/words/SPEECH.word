@@ -1,0 +1,121 @@
+{
+  "word": "SPEECH",
+  "senses": {
+    "SPEECH-N1": {
+      "CAT": "N",
+      "DEF": "lecture",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": [
+            "ON",
+            "ABOUT"
+          ],
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "LECTURE": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "WE",
+        "LISTENED",
+        "TO",
+        "A",
+        "SPEECH-0",
+        "BY-1",
+        "THE",
+        "MAN-2",
+        "ABOUT-3",
+        "THE",
+        "WAR-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "COLLOQUIUM",
+        "LECTURE",
+        "PRESENTATION",
+        "SEMINAR",
+        "TALK"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SPEECH-N1",
+      "WORD": "SPEECH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SPEECH-N2": {
+      "CAT": "N",
+      "DEF": "speaking, in some general sense",
+      "EX": "",
+      "COMMENTS": "[D] I'm not getting deeply into this: the ability to speak, the act of speaking...",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SPEECH-ACT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SPEECH-N2",
+      "WORD": "SPEECH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

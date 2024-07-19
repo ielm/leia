@@ -1,0 +1,16 @@
+{
+  "name": "@LOOM",
+  "isa": [
+    "@MACHINE"
+  ],
+  "def": "a machine used for weaving yarn or thread into cloth",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

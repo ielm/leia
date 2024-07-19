@@ -1,0 +1,187 @@
+{
+  "word": "REPEAT",
+  "senses": {
+    "REPEAT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "not the first in a series",
+      "EX": "Her repeat test didn't go well",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "ORDINALITY": [
+            ">",
+            1
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "REPEAT-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "REPEAT-ADJ1",
+      "WORD": "REPEAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "REPEAT-V1": {
+      "CAT": "V",
+      "DEF": "to cause to happen again",
+      "EX": "They repeated the experiment",
+      "COMMENTS": "I'm making a simple semantic representation until corpus evidence tells us it has to be more complex. I'm making the subject of repeat not an agent, but rather a caused-by, since it may or may not be agentive (e.g., in 'They repeated the study', the people carrying it out could be the same or different). And I'm assuming that placing cardinality > 1 on the event is enough information about repetition. It might not be, eventually, but for now it should be.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR2"
+          },
+          "ORDINALITY": [
+            ">",
+            1
+          ]
+        },
+        "^$VAR2": {
+          "SEM": "EVENT",
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "REPEATED-0",
+        "THE",
+        "EXPERIMENT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "REPLICATE",
+        "DUPLICATE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "REPEAT-V1",
+      "WORD": "REPEAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "REPEAT-V2": {
+      "CAT": "V",
+      "DEF": "to say again",
+      "EX": "He repeated the statement",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "REFSEM1",
+            "ORDINALITY": [
+              ">",
+              1
+            ]
+          }
+        },
+        "REFSEM1": {
+          "SPEECH-ACT": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            },
+            "THEME": {
+              "VALUE": "^$VAR2",
+              "SEM": [
+                "NOT",
+                "EVENT"
+              ]
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "REPEATED-0",
+        "THE",
+        "STATEMENT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "REPEAT-V2",
+      "WORD": "REPEAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

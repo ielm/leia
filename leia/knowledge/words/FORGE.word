@@ -1,0 +1,201 @@
+{
+  "word": "FORGE",
+  "senses": {
+    "FORGE-V1": {
+      "CAT": "V",
+      "DEF": "to imitate documents illegally",
+      "EX": "he forged her signature",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "FORGERY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "FORGED-0",
+        "HER",
+        "SIGNATURE-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FORGE-V1",
+      "WORD": "FORGE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FORGE-V3": {
+      "CAT": "V",
+      "DEF": "phrasal: forge ahead (with x)",
+      "EX": "he forged ahead (with the work)",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "AHEAD"
+        },
+        "PP": {
+          "ROOT-WORD": "WITH",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "CONTINUE",
+          "SCOPE": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR4": {
+          "SEM": "EVENT",
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "IS",
+        "FORGING-0",
+        "AHEAD-2",
+        "WITH-3",
+        "THE",
+        "WORK-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FORGE-V3",
+      "WORD": "FORGE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FORGE-V2": {
+      "CAT": "V",
+      "DEF": "to form by heating in a forge and hammering",
+      "EX": "he forged a horseshoe",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "FORM-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "HAS-EVENT-AS-PART": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "HIT": {
+            "INSTRUMENT": "HAMMER"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "FORGED-0",
+        "A",
+        "HORSESHOE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FORGE-V2",
+      "WORD": "FORGE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

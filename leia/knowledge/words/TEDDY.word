@@ -1,0 +1,47 @@
+{
+  "word": "TEDDY",
+  "senses": {
+    "TEDDY-N1": {
+      "CAT": "N",
+      "DEF": "an undergarment worn by women that includes a camisole top and panties",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "UNDERGARMENT": {
+          "HAS-OBJECT-AS-PART": "UNDERPANTS",
+          "HAS-OBJECT-AS-PART-1": {
+            "VALUE": "REFSEM2"
+          },
+          "USED-BY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "HUMAN": {
+            "GENDER": "FEMALE"
+          }
+        },
+        "REFSEM2": {
+          "UNDERGARMENT": {
+            "WORN-ON": "TRUNK-OF-BODY"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TEDDY-N1",
+      "WORD": "TEDDY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

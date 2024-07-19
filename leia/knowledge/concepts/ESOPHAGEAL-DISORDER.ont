@@ -1,0 +1,22 @@
+{
+  "name": "@ESOPHAGEAL-DISORDER",
+  "isa": [
+    "@NON-COMMUNICABLE-DISEASE"
+  ],
+  "def": "a disease or disorder of the esophagus",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ESOPHAGUS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

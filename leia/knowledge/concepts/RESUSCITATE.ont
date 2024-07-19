@@ -1,0 +1,57 @@
+{
+  "name": "@RESUSCITATE",
+  "isa": [
+    "@MEDICAL-PROCEDURE"
+  ],
+  "def": "to bring back to life or consciousness",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@PATIENT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@CARDIAC-ARREST"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@RESPIRATORY-ARREST"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@AIR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MEDICAL-ARTIFACT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

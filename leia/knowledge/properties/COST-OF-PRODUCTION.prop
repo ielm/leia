@@ -1,0 +1,9 @@
+{
+  "name": "$COST-OF-PRODUCTION",
+  "def": "the total sum of what it costs to produce a marketable item",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

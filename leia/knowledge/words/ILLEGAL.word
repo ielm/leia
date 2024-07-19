@@ -1,0 +1,46 @@
+{
+  "word": "ILLEGAL",
+  "senses": {
+    "ILLEGAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "not legal",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "LEGALITY-ATTRIBUTE": 0
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ILLEGAL-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "LAWLESS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ILLEGAL-ADJ1",
+      "WORD": "ILLEGAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

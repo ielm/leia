@@ -1,0 +1,19 @@
+{
+  "name": "@DRAM-APOTHECARIES",
+  "isa": [
+    "@MASS-WEIGHT-UNIT"
+  ],
+  "def": "a unit of apothecaries* weight equal to 3.89 grams; ounce-troy/8",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.00388794
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

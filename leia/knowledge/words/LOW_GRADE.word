@@ -1,0 +1,49 @@
+{
+  "word": "LOW_GRADE",
+  "senses": {
+    "LOW_GRADE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "of medium quality",
+      "EX": "we buy low-grade gas",
+      "COMMENTS": "low-grade is hyphenated",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "QUALITY": 0.2
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HAS",
+        "LOW-GRADE-0",
+        "AMNESIA-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "LOW_GRADE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "LOW_GRADE-ADJ1",
+      "WORD": "LOW_GRADE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

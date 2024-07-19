@@ -1,0 +1,32 @@
+{
+  "name": "@CREMNOPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of precipices",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CLIFF"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@RIDGE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

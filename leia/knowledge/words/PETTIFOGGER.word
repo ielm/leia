@@ -1,0 +1,31 @@
+{
+  "word": "PETTIFOGGER",
+  "senses": {
+    "PETTIFOGGER-N1": {
+      "CAT": "N",
+      "DEF": "unethical lawyer who engages in petty arguments and obstruction of justice",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ATTORNEY": {
+          "AGENT-OF": "CRIMINAL-ACTIVITY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PETTIFOGGER-N1",
+      "WORD": "PETTIFOGGER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

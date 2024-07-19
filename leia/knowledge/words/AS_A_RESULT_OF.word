@@ -1,0 +1,74 @@
+{
+  "word": "AS_A_RESULT_OF",
+  "senses": {
+    "AS_A_RESULT_OF-CONJ1": {
+      "CAT": "CONJ",
+      "DEF": "",
+      "EX": "as a result of the program(,) students got better grades",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CONJ": {
+          "ROOT": "$VAR0",
+          "CAT": "CONJ"
+        },
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "PUNCT": {
+          "ROOT": "$VAR3",
+          "CAT": "PUNCT",
+          "ROOT-WORD": "*COMMA*"
+        },
+        "CL": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "AS_A_RESULT_OF-0",
+        "THE",
+        "DECISION-1",
+        "*COMMA*-3",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AS_A_RESULT_OF-CONJ1",
+      "WORD": "AS_A_RESULT_OF",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

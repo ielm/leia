@@ -1,0 +1,39 @@
+{
+  "word": "TENTH_RANKING",
+  "senses": {
+    "TENTH_RANKING-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "the 10th ranked",
+      "EX": "She's the tenth-ranking tennis player on the East Coast",
+      "COMMENTS": "ultimately, -ranking and -ranked need to become a meaning  procedure to cover all numbers",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RANK": 10
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "TENTH_RANKING",
+        "TENTH_RANKED",
+        "TENTH-RANKED"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "TENTH_RANKING-ADJ1",
+      "WORD": "TENTH_RANKING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

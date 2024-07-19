@@ -1,0 +1,9 @@
+{
+  "name": "$NOT-EQUALS",
+  "def": "a mathematical property that indicates non-equality; for non-mathematical cases, use the property similarity",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$COMPARISON-RELATION"
+}

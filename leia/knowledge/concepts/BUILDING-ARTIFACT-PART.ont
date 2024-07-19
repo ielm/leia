@@ -1,0 +1,16 @@
+{
+  "name": "@BUILDING-ARTIFACT-PART",
+  "isa": [
+    "@BUILDING-ARTIFACT"
+  ],
+  "def": "A part of a building that is not a place - i.e. to differentiate ",
+  "local": [],
+  "block": [
+    {
+      "slot": "is-consumer-good",
+      "facet": "sem",
+      "filler": "yes"
+    }
+  ],
+  "private": {}
+}

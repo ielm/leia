@@ -1,0 +1,16 @@
+{
+  "name": "@CROUCH",
+  "isa": [
+    "@POSITION-BODY"
+  ],
+  "def": "to stoop, especially with knees bent; can apply to animals and people",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@KNEE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

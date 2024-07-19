@@ -1,0 +1,56 @@
+{
+  "word": "RELATIVELY",
+  "senses": {
+    "RELATIVELY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "toward the middle of the given scale",
+      "EX": "they have a relatively large house",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        },
+        "ROOT": "$VAR1",
+        "CAT": [
+          "ADJ",
+          "ADV"
+        ]
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "DELIMIT-SCALE",
+          "^$VAR1",
+          "MEAN",
+          0.1
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "FAIRLY-0",
+        "GOOD-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "FAIRLY",
+        "MODERATELY",
+        "SOMEWHAT"
+      ],
+      "HYPONYMS": [
+        "SEMI"
+      ],
+      "SENSE": "RELATIVELY-ADV1",
+      "WORD": "RELATIVELY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "word": "SHOTGUN",
+  "senses": {
+    "SHOTGUN-N1": {
+      "CAT": "N",
+      "DEF": "a smooth-bore firearm for firing round shot",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SHOTGUN",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "SAWED_OFF_SHOTGUN"
+      ],
+      "SENSE": "SHOTGUN-N1",
+      "WORD": "SHOTGUN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

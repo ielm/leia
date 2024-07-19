@@ -1,0 +1,41 @@
+{
+  "word": "EXTRAORDINARILY",
+  "senses": {
+    "EXTRAORDINARILY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "on the very high end of the given scale",
+      "EX": "they have an extremely big house",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        },
+        "ROOT": "$VAR1",
+        "CAT": [
+          "ADJ",
+          "ADV"
+        ]
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "DELIMIT-SCALE",
+          "^$VAR1",
+          "EXTREME",
+          0.3
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EXTRAORDINARILY-ADV1",
+      "WORD": "EXTRAORDINARILY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "word": "TERMINATION",
+  "senses": {
+    "TERMINATION-N1": {
+      "CAT": "N",
+      "DEF": "cessation",
+      "EX": "the termination of the exchange program by the administration",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "END",
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR2": {
+          "SEM": "EVENT",
+          "AGENT": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "DISCONTINUATION"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "TERMINATION-N1",
+      "WORD": "TERMINATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@CORAL-REEF",
+  "isa": [
+    "@REEF"
+  ],
+  "def": "An erosion-resistant marine ridge or mound consisting chiefly of compacted coral together with algal material and biochemically deposited magnesium and calcium carbonates",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CORAL-ANIMAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    }
+  ],
+  "private": {}
+}

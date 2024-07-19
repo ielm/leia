@@ -1,0 +1,32 @@
+{
+  "name": "@SLEET",
+  "isa": [
+    "@PRECIPITATION"
+  ],
+  "def": "precipitation made up of frozen or partially frozen raindrops, or a mixture of rain and snow or hail",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@HAIL"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@SNOW"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@RAIN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,52 @@
+{
+  "name": "@SPORTS-DISCIPLINE",
+  "isa": [
+    "@PLAY-GAME-SPORT"
+  ],
+  "def": "this concept refers to types of sports, understood as events",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GYMNASIUM"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@RECREATION-AREA"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BOWLING-ALLEY"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BEACH"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@SUBACTIVITY-OF-GAME-SPORT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@SPORTS-ARENA"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,94 @@
+{
+  "word": "DOLLAR",
+  "senses": {
+    "DOLLAR-N1": {
+      "CAT": "N",
+      "DEF": "currency of american-samoa or anguilla or antigua or barbuda or   australia or bahamas or barbados or belize or bermuda or british-indian-ocean-  territory or british-virgin-islands or brunei or canada or canton-and-enderbury-  islands or cayman-islands or christmas-island or cocos-islands or cook-islands   or dominica or ecuador or fiji or grenada or guam or guyana or heard-and-  mcdonald-islands or hong-kong or jamaica or johnston-island or keeling-islands   or kiribati or liberia or micronesia or midway-islands or montserrat or namibia   or nauru or new-zealand or niue or norfolk-island or palau or panama-canal-zone   or pitcairn-island or puerto-rico or samoa or singapore or solomon-island or   st.-kitts-and-nevis or st.-lucia or st.-vincent-and-the-grenadines or taiwan or   tokelau or trinidad-and-tobago or turks-and caicos-islands or tuvalu or united-  states-of-america or virgin-islands or wake-island or zimbabwe",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": {
+            "AMERICAN_SAMOA": [
+              "ANGUILLA",
+              "ANTIGUA",
+              "BARBUDA",
+              "AUSTRALIA",
+              "BAHAMAS",
+              "BARBADOS",
+              "BELIZE",
+              "BERMUDA",
+              "BRITISH_INDIAN_OCEAN_TERRITORY",
+              "BRITISH_VIRGIN_ISLANDS",
+              "BRUNEI",
+              "CANADA",
+              "CANTON_AND_ENDERBURY_ISLANDS",
+              "CAYMAN_ISLANDS",
+              "CHRISTMAS_ISLAND",
+              "COCOS_ISLANDS",
+              "COOK_ISLANDS",
+              "DOMINICA",
+              "ECUADOR",
+              "FIJI",
+              "GRENADA",
+              "GUAM",
+              "GUYANA",
+              "HEARD_AND_MCDONALD_ISLANDS",
+              "HONG_KONG",
+              "JAMAICA",
+              "JOHNSTON_ISLAND",
+              "KEELING_ISLANDS",
+              "KIRIBATI",
+              "LIBERIA",
+              "MICRONESIA",
+              "MIDWAY_ISLANDS",
+              "MONTSERRAT",
+              "NAMIBIA",
+              "NAURU",
+              "NEW_ZEALAND",
+              "NIUE",
+              "NORFOLK_ISLAND",
+              "PALAU",
+              "PANAMA_CANAL_ZONE",
+              "PITCAIRN_ISLAND",
+              "PUERTO_RICO",
+              "SAMOA",
+              "SINGAPORE",
+              "SOLOMON_ISLAND",
+              "ST._KITTS_AND_NEVIS",
+              "ST._LUCIA",
+              "ST._VINCENT_AND_THE_GRENADINES",
+              "TAIWAN",
+              "TOKELAU",
+              "TRINIDAD_AND_TOBAGO",
+              "TURKS_AND_CAICOS_ISLANDS",
+              "TUVALU",
+              "UNITED_STATES_OF_AMERICA",
+              "VIRGIN_ISLANDS",
+              "WAKE_ISLAND",
+              "ZIMBABWE"
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "BUCK",
+        "SMACKER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DOLLAR-N1",
+      "WORD": "DOLLAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

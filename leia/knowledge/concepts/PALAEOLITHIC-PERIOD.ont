@@ -1,0 +1,87 @@
+{
+  "name": "@PALAEOLITHIC-PERIOD",
+  "isa": [
+    "@HISTORICAL-PERIOD"
+  ],
+  "def": "the earliest portion of the Stone Age, also known as the Old Stone Age; from two million B.C. through 10,000 B.C.; characterized by hunting-gathering society and use of increasingly sophisticated stone tools, divided into Lower, Middle, and Upper Paleolithic periods",
+  "local": [
+    {
+      "slot": "time-end",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        10000
+      ],
+      "meta": {
+        "measured-in": "year-bc"
+      }
+    },
+    {
+      "slot": "time-begin",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        2000000
+      ],
+      "meta": {
+        "measured-in": "year-bc"
+      }
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@IMPLEMENT-3"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@WEAPON-3"
+    }
+  ],
+  "block": [
+    {
+      "slot": "time-begin",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "time-end",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    }
+  ],
+  "private": {
+    "@IMPLEMENT-3": {
+      "name": "@IMPLEMENT-3",
+      "isa": [
+        "@IMPLEMENT"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "made-of",
+          "facet": "sem",
+          "filler": "@STONE"
+        }
+      ],
+      "block": [],
+      "private": {}
+    },
+    "@WEAPON-3": {
+      "name": "@WEAPON-3",
+      "isa": [
+        "@WEAPON"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "made-of",
+          "facet": "sem",
+          "filler": "@STONE"
+        }
+      ],
+      "block": [],
+      "private": {}
+    }
+  }
+}

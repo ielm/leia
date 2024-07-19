@@ -1,0 +1,34 @@
+{
+  "word": "TRIAL_LAWYER",
+  "senses": {
+    "TRIAL_LAWYER-N1": {
+      "CAT": "N",
+      "DEF": "lawyer who participates in trials",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ATTORNEY": {
+          "AGENT-OF": "PROSECUTE",
+          "AGENT-OF-1": "DEFEND-LEGAL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "LITIGATOR"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "TRIAL_LAWYER-N1",
+      "WORD": "TRIAL_LAWYER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

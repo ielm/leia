@@ -1,0 +1,21 @@
+{
+  "name": "@NEGOTIATE-TRANSACTION",
+  "isa": [
+    "@FINANCIAL-EVENT"
+  ],
+  "def": "to work out the terms of a transaction in order to reach an agreement",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@FINANCIAL-CORPORATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@FINANCIAL-WORK-ROLE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

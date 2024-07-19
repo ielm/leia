@@ -1,0 +1,102 @@
+{
+  "word": "OCCASIONALLY",
+  "senses": {
+    "OCCASIONALLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "modifying a verb",
+      "EX": "she occasionally smokes <smokes occasionally; occasionally, she smokes>",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-PRE-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "ITERATION": "MULTIPLE",
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR1": {
+          "FREQUENCY": 0.3
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "OCCASIONALLY-0",
+        "OBJECTED-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "INTERMITTENTLY",
+        "IRREGULARLY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "OCCASIONALLY-ADV1",
+      "WORD": "OCCASIONALLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "OCCASIONALLY-ADV2": {
+      "CAT": "ADV",
+      "DEF": "modifying an adj",
+      "EX": "occasionally funny",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ADV": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "ADJ"
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "ITERATION": "MULTIPLE",
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR1": {
+          "TIME-INTERVAL": 0.7
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "OCCASIONALLY-0",
+        "OBJECT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "INTERMITTENTLY",
+        "IRREGULARLY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "OCCASIONALLY-ADV2",
+      "WORD": "OCCASIONALLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "word": "RICKEY",
+  "senses": {
+    "RICKEY-N1": {
+      "CAT": "N",
+      "DEF": "A beverage made of lime or lemon juice, sugar, soda water and liquor.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MIXED-DRINK": {
+          "HAS-OBJECT-AS-PART": "FRUIT-JUICE",
+          "HAS-OBJECT-AS-PART-1": "SUGAR"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RICKEY-N1",
+      "WORD": "RICKEY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

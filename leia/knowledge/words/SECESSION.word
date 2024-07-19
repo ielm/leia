@@ -1,0 +1,62 @@
+{
+  "word": "SECESSION",
+  "senses": {
+    "SECESSION-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "the secession of the state from the union",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "FROM",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SECEDE": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "SOURCE": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SECESSION-N1",
+      "WORD": "SECESSION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

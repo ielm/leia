@@ -1,0 +1,27 @@
+{
+  "name": "@RENOVATE",
+  "isa": [
+    "@CHANGE-EVENT"
+  ],
+  "def": "to change a building to update, improve, etc. it",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BUILDING-ARTIFACT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

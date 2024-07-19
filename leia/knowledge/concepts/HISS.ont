@@ -1,0 +1,77 @@
+{
+  "name": "@HISS",
+  "isa": [
+    "@ANIMAL-NOISE-MAKING"
+  ],
+  "def": "to make the sound of a snake or an angry cat",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@SNAKE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@GOOSE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@FELINE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@GOOSE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SNAKE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@FELINE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "not",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "not",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

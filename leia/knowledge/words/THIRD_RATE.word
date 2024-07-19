@@ -1,0 +1,73 @@
+{
+  "word": "THIRD_RATE",
+  "senses": {
+    "THIRD_RATE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "of quite low quality; of physical objects",
+      "EX": "third-rate wood",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "PHYSICAL-OBJECT",
+          "QUALITY": [
+            "<",
+            0.3
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "THIRD_RATE-ADJ1",
+      "WORD": "THIRD_RATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "THIRD_RATE-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "of quite low quality; of events",
+      "EX": "a third-rate race",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0.2,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "THIRD_RATE-ADJ2",
+      "WORD": "THIRD_RATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

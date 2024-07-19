@@ -1,0 +1,74 @@
+{
+  "word": "CHARITABLE",
+  "senses": {
+    "CHARITABLE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "(of people and organizations) providing financial support without personal gain",
+      "EX": "charitable foundation",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "HUMAN",
+            "ORGANIZATION"
+          ],
+          "AGENT-OF": "CHARITABLE-GIVING"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "PHILANTHROPIC"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CHARITABLE-ADJ1",
+      "WORD": "CHARITABLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CHARITABLE-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "(of events) providing financial support without personal gain",
+      "EX": "charitable works",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "HAS-EVENT-AS-PART": "CHARITABLE-GIVING"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "PHILANTHROPIC"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CHARITABLE-ADJ2",
+      "WORD": "CHARITABLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

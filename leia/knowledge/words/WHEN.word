@@ -1,0 +1,485 @@
+{
+  "word": "WHEN",
+  "senses": {
+    "WHEN-CONJ1": {
+      "CAT": "CONJ",
+      "DEF": "a temporal relation: clause1 when/as clause2",
+      "EX": "she came when I was making dinner",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "CONJ",
+        "CL-1": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "TIME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE",
+        "RAN-1",
+        "WHEN-0",
+        "FORBIDDEN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVCL",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "MARK",
+          "$VAR2",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "AS"
+      ],
+      "HYPONYMS": [
+        "WHENEVER",
+        "AS_SOON_AS",
+        "ANYTIME"
+      ],
+      "SENSE": "WHEN-CONJ1",
+      "WORD": "WHEN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WHEN-CONJ2": {
+      "CAT": "CONJ",
+      "DEF": "a temporal relation: when/as/while clause 1 (,) clause 2",
+      "EX": "when I was making dinner (,) she came",
+      "COMMENTS": "this sense covers when 'after' precedes both clauses",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "CONJ",
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "PUNCT": {
+          "ROOT-WORD": "*COMMA*",
+          "ROOT": "$VAR3",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        },
+        "CL-1": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "SEM": "EVENT",
+          "TIME": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "WHEN-0",
+        "YOU",
+        "RUN-1",
+        "*COMMA*-3",
+        "BREATHE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVCL",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "PUNCT",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [
+        "WHILE",
+        "AS"
+      ],
+      "HYPONYMS": [
+        "WHENEVER",
+        "AS_SOON_AS"
+      ],
+      "SENSE": "WHEN-CONJ2",
+      "WORD": "WHEN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WHEN-ADV5": {
+      "CAT": "ADV",
+      "DEF": "phrasal: When did X begin/start?",
+      "EX": "When did your pain begin?",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ADV": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        },
+        "V": {
+          "ROOT": "$VAR1",
+          "CAT": "V",
+          "ROOT-WORD": [
+            "DO",
+            "BE",
+            "HAVE"
+          ]
+        },
+        "N": {
+          "ROOT": "$VAR4",
+          "CAT": "N"
+        },
+        "CL": {
+          "ROOT": "$VAR3",
+          "CAT": "CL",
+          "ROOT-WORD": [
+            "BEGIN",
+            "START"
+          ]
+        },
+        "UNCONNECTED": [
+          [
+            "ROOT",
+            "$VAR2"
+          ],
+          [
+            "CAT",
+            "PUNCT"
+          ],
+          [
+            "ROOT",
+            "*QUESTION_MARK*"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "REQUEST-INFO": {
+          "THEME": {
+            "VALUE": "^$VAR4.TIME-BEGIN"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "WHEN-0",
+        "DID-1",
+        "IT-4",
+        "BEGIN-3",
+        "?-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "COP",
+          "$VAR3",
+          "$VAR1"
+        ],
+        [
+          "NSUBJ",
+          "$VAR3",
+          "$VAR0"
+        ],
+        [
+          "PREP",
+          "$VAR3",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WHEN-ADV5",
+      "WORD": "WHEN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WHEN-ADV1": {
+      "CAT": "ADV",
+      "DEF": "",
+      "EX": "THE MAN HIT THE BUILDING WHEN?",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "ADV",
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "UNCONNECTED": [
+          [
+            "ROOT",
+            "$VAR2"
+          ],
+          [
+            "ROOT",
+            "*QUESTION_MARK*"
+          ],
+          [
+            "CAT",
+            "PUNCT"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "REQUEST-INFO": {
+          "THEME": {
+            "VALUE": "^$VAR1.TIME"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WHEN-ADV1",
+      "WORD": "WHEN",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": []
+    },
+    "WHEN-ADV4": {
+      "CAT": "ADV",
+      "EX": "WHEN WILL THE MAN GO?",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "ADV": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        },
+        "AUX": {
+          "ROOT": "$VAR1",
+          "ROOT-WORD": "WILL",
+          "CAT": "AUX"
+        },
+        "V": {
+          "ROOT": "$VAR2"
+        },
+        "UNCONNECTED": [
+          [
+            "ROOT",
+            "$VAR3"
+          ],
+          [
+            "ROOT",
+            "*QUESTION_MARK*"
+          ],
+          [
+            "CAT",
+            "PUNCT"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "REQUEST-INFO": {
+          "THEME": {
+            "VALUE": "^$VAR2.TIME"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "WHEN-0",
+        "WILL-1",
+        "THE",
+        "MAN",
+        "GO-2",
+        "*QUESTION_MARK*-3"
+      ],
+      "SENSE": "WHEN-ADV4",
+      "WORD": "WHEN",
+      "DEF": "",
+      "HYPONYMS": [],
+      "SYNONYMS": [],
+      "COMMENTS": "NIL",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "WHEN-ADV3": {
+      "CAT": "ADV",
+      "EX": "WHEN IS THE MAN GOING?",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "ADV": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        },
+        "AUX": {
+          "ROOT": "$VAR1",
+          "ROOT-WORD": "BE",
+          "CAT": "AUX"
+        },
+        "V": {
+          "ROOT": "$VAR2"
+        },
+        "UNCONNECTED": [
+          [
+            "ROOT",
+            "$VAR3"
+          ],
+          [
+            "ROOT",
+            "*QUESTION_MARK*"
+          ],
+          [
+            "CAT",
+            "PUNCT"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "REQUEST-INFO": {
+          "THEME": {
+            "VALUE": "^$VAR2.TIME"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "WHEN-0",
+        "IS-1",
+        "THE",
+        "MAN",
+        "GOING-2",
+        "*QUESTION_MARK*-3"
+      ],
+      "SENSE": "WHEN-ADV3",
+      "WORD": "WHEN",
+      "DEF": "",
+      "HYPONYMS": [],
+      "SYNONYMS": [],
+      "COMMENTS": "NIL",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "WHEN-ADV2": {
+      "CAT": "ADV",
+      "EX": "WHEN DID THE MAN GO?",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "ADV": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        },
+        "AUX": {
+          "ROOT": "$VAR1",
+          "ROOT-WORD": "DO",
+          "CAT": "AUX"
+        },
+        "V": {
+          "ROOT": "$VAR2"
+        },
+        "UNCONNECTED": [
+          [
+            "ROOT",
+            "$VAR3"
+          ],
+          [
+            "ROOT",
+            "*QUESTION_MARK*"
+          ],
+          [
+            "CAT",
+            "PUNCT"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "REQUEST-INFO": {
+          "THEME": {
+            "VALUE": "^$VAR2.TIME"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "WHEN-0",
+        "DID-1",
+        "THE",
+        "MAN",
+        "GO-2",
+        "*QUESTION_MARK*-3"
+      ],
+      "SENSE": "WHEN-ADV2",
+      "WORD": "WHEN",
+      "DEF": "",
+      "HYPONYMS": [],
+      "SYNONYMS": [],
+      "COMMENTS": "NIL",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

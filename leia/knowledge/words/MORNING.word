@@ -1,0 +1,80 @@
+{
+  "word": "MORNING",
+  "senses": {
+    "MORNING-N1": {
+      "CAT": "N",
+      "DEF": "before noon",
+      "EX": "a morning meeting",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "DAY-DIVISION": {
+          "ABSOLUTE-TIME": [
+            "><",
+            5,
+            12
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MORNING-N1",
+      "WORD": "MORNING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MORNING-N2": {
+      "CAT": "N",
+      "DEF": "happening during the morning",
+      "EX": "a morning meeting",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TIME": [
+            "><",
+            5,
+            12
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "MORNING-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MORNING-N2",
+      "WORD": "MORNING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,336 @@
+{
+  "word": "LONG",
+  "senses": {
+    "LONG-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "indicates length, spatially",
+      "EX": "the field is 20 feet long.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT-WORD": "*BE*",
+        "ROOT": "$VAR2",
+        "CAT": "V",
+        "NP": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "LENGTH": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOG-1",
+        "IS-2",
+        "INCHES-3",
+        "LONG-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "NSUBJ",
+          "$VAR3",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LONG-ADJ1",
+      "WORD": "LONG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LONG-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "not short, of things",
+      "EX": "a long stick",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "PHYSICAL-OBJECT",
+          "LENGTH": 0.7
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "LONG-0",
+        "DOG-1",
+        "HIT",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LONG-ADJ2",
+      "WORD": "LONG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LONG-ADV2": {
+      "CAT": "ADV",
+      "DEF": "indicates length, temporally",
+      "EX": "the concert was 2 hours long",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "V": {
+          "ROOT-WORD": "*BE*",
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        },
+        "NP": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        },
+        "ADV": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "DURATION": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "WAR-1",
+        "IS-2",
+        "MINUTES-3",
+        "LONG-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR3",
+          "$VAR0"
+        ],
+        [
+          "COP",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR3",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LONG-ADV2",
+      "WORD": "LONG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LONG-ADJ3": {
+      "CAT": "ADJ",
+      "DEF": "indicates length, temporally",
+      "EX": "the two hour long concert",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "N-1": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "DURATION": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MINUTE-3",
+        "LONG-0",
+        "WAR-1",
+        "AMAZED",
+        "MANY",
+        "PEOPLE"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR3"
+        ],
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LONG-ADJ3",
+      "WORD": "LONG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LONG-ADV3": {
+      "CAT": "ADV",
+      "DEF": "for a long time",
+      "EX": "They long feared that it would turn out badly",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "DURATION": [
+            ">",
+            0.7
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "LONG-0",
+        "WAR-1",
+        "HIT",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LONG-ADV3",
+      "WORD": "LONG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LONG-ADJ4": {
+      "CAT": "ADJ",
+      "DEF": "not short",
+      "EX": "a long concert",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "DURATION": 0.7
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "LONG-0",
+        "WAR-1",
+        "HIT",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "LENGTHY",
+        "EXTENDED"
+      ],
+      "HYPONYMS": [
+        "LONGSTANDING",
+        "LONG-STANDING",
+        "LONG_STANDING",
+        "LONGTIME"
+      ],
+      "SENSE": "LONG-ADJ4",
+      "WORD": "LONG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

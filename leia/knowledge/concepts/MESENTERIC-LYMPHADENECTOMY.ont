@@ -1,0 +1,27 @@
+{
+  "name": "@MESENTERIC-LYMPHADENECTOMY",
+  "isa": [
+    "@SURGICAL-REMOVAL"
+  ],
+  "def": "Excision of lymph nodes located in the mesentery.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@LYMPH-NODE"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@MESENTERY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

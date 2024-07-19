@@ -1,0 +1,9 @@
+{
+  "name": "$ALTERNATIVE",
+  "def": "a relation used to indicate an alternative",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$DISCOURSE-RELATION"
+}

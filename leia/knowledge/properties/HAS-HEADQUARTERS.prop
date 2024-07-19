@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-HEADQUARTERS",
+  "def": "the main office or center of operations for an organization",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$HEADQUARTERS-OF",
+  "measured-in": [],
+  "container": "$BUSINESS-RELATION"
+}

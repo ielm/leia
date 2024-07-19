@@ -1,0 +1,183 @@
+{
+  "word": "PIECE",
+  "senses": {
+    "PIECE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "piece can mean a lot of things - an art object, a musicial composition, a piece of furniture, written work, etc. there will be no way for teh analyzer to disambiguate, so I'm making all 'piece' that are not specialized the single sense object. in texts, there should be coreference relations or other clues to help constrain the interpretation. this will be a good word to work on when testing our dynamic tightening of selectional restrictions",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "OBJECT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PIECE-N1",
+      "WORD": "PIECE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PIECE-N2": {
+      "CAT": "N",
+      "DEF": "piece + of-pp",
+      "EX": "piece of cake, piece of wood, etc.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "OBJECT": {
+          "PART-OF-OBJECT": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "PIECE-0",
+        "OF-1",
+        "THE",
+        "MAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PIECE-N2",
+      "WORD": "PIECE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PIECE-N3": {
+      "CAT": "N",
+      "DEF": "a small artifact used in a game",
+      "EX": "if you can't find all the pieces we can't play the game",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PLAYING-PIECE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PIECE-N3",
+      "WORD": "PIECE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PIECE-N800": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "That is a pice of cake.",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "BE",
+          "CAT": "V"
+        },
+        "ART": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "A",
+          "CAT": "ART"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PREP": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "OF",
+          "CAT": "PREP"
+        },
+        "N-1": {
+          "ROOT": "$VAR5",
+          "ROOT-WORD": [
+            "CAKE",
+            "PIE"
+          ],
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "DIFFICULTY-ATTRIBUTE": {
+          "DOMAIN": {
+            "VALUE": "^$VAR1"
+          },
+          "RANGE": [
+            "<",
+            0.2
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "THAT-1",
+        "IS-2",
+        "A-3",
+        "PIECE-0",
+        "OF-4",
+        "CAKE-5"
+      ],
+      "SENSE": "PIECE-N800",
+      "WORD": "PIECE",
+      "HYPONYMS": [],
+      "SYNONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

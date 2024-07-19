@@ -1,0 +1,57 @@
+{
+  "word": "NEAT",
+  "senses": {
+    "NEAT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "orderly",
+      "EX": "Your room is so neat!",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "ORDERLINESS": [
+            "<",
+            0.8
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "NEAT-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "ORDERLY",
+        "ORGANIZED",
+        "SYSTEMATIZED",
+        "SYSTEMATIC",
+        "METHODIC",
+        "METHODICAL",
+        "UNCLUTTERED",
+        "TIDY",
+        "SHIPSHAPE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "NEAT-ADJ1",
+      "WORD": "NEAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

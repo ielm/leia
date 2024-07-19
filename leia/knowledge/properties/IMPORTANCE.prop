@@ -1,0 +1,9 @@
+{
+  "name": "$IMPORTANCE",
+  "def": "Gives the value of how an object or an event are important. This is a rather vague notion but it is difficult to make it more precise. Thus, for example, the \"attributed-to\" of the importance will have to be calculated by a meaning procedure during analysis.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-ATTRIBUTE"
+}

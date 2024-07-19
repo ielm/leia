@@ -1,0 +1,34 @@
+{
+  "word": "BOUTIQUE",
+  "senses": {
+    "BOUTIQUE-N1": {
+      "CAT": "N",
+      "DEF": "a small retail shop that specializes in gifts, fashionable clothes,   accessories, etc.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "STORE": {
+          "SIZE": [
+            "<",
+            0.3
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BOUTIQUE-N1",
+      "WORD": "BOUTIQUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

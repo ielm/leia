@@ -1,0 +1,22 @@
+{
+  "name": "@OBSTETRICS",
+  "isa": [
+    "@MEDICINE"
+  ],
+  "def": "The branch of medicine that deals with the care of women during pregnancy, childbirth, and the recuperative period following delivery.",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@OBSTETRICIAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@MEDICAL-WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,131 @@
+{
+  "word": "CAPTAIN",
+  "senses": {
+    "CAPTAIN-N1": {
+      "CAT": "N",
+      "DEF": "an officer of rank 8/22 in the US army",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MILITARY-OFFICER": {
+          "CITIZEN-OF": "USA",
+          "MEMBER-OF": "ARMY",
+          "RANK": [
+            8,
+            22
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CAPTAIN-N1",
+      "WORD": "CAPTAIN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CAPTAIN-N2": {
+      "CAT": "N",
+      "DEF": "an officer of rank 8/16 in the US air force",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MILITARY-OFFICER": {
+          "CITIZEN-OF": "USA",
+          "MEMBER-OF": "AIR-FORCES",
+          "RANK": [
+            8,
+            16
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CAPTAIN-N2",
+      "WORD": "CAPTAIN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CAPTAIN-N3": {
+      "CAT": "N",
+      "DEF": "an officer of rank 8/17 in the US marines",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MILITARY-OFFICER": {
+          "CITIZEN-OF": "USA",
+          "MEMBER-OF": "MARINES",
+          "RANK": [
+            8,
+            17
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CAPTAIN-N3",
+      "WORD": "CAPTAIN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CAPTAIN-N4": {
+      "CAT": "N",
+      "DEF": "an officer of rank 5/21 in the US Navy or Coast Guard",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MILITARY-OFFICER": {
+          "CITIZEN-OF": "USA",
+          "MEMBER-OF": {
+            "NAVY": "COAST-GUARD"
+          },
+          "RANK": [
+            5,
+            21
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CAPTAIN-N4",
+      "WORD": "CAPTAIN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

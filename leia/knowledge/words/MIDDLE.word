@@ -1,0 +1,56 @@
+{
+  "word": "MIDDLE",
+  "senses": {
+    "MIDDLE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "used with numbers - indicates that the value is a range between the stated number and a number that is 10 more than it",
+      "EX": "the mid 1920s",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "NUMBER": "PL"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "POSITIVE-NUMBER"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "NUMBER-TO-RANGE",
+          "^$VAR1"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MID-0",
+        "FIGURE-1",
+        "HIT",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "MID"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "MIDDLE-ADJ1",
+      "WORD": "MIDDLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

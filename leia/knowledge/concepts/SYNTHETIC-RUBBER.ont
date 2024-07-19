@@ -1,0 +1,37 @@
+{
+  "name": "@SYNTHETIC-RUBBER",
+  "isa": [
+    "@SYNTHETICS"
+  ],
+  "def": "rubber synthesized from petroleum-derived monomers",
+  "local": [
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "opaque"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "translucent"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@OIL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "transparent"
+    }
+  ],
+  "private": {}
+}

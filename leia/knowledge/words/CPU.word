@@ -1,0 +1,29 @@
+{
+  "word": "CPU",
+  "senses": {
+    "CPU-N1": {
+      "CAT": "N",
+      "DEF": "central processing unit",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CPU",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "CENTRAL_PROCESSING_UNIT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CPU-N1",
+      "WORD": "CPU",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

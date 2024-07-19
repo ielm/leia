@@ -1,0 +1,51 @@
+{
+  "word": "HARDLY_ANY",
+  "senses": {
+    "HARDLY_ANY-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "hardly any dignitaries came.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "CARDINALITY": [
+            "<",
+            0.1
+          ],
+          "DETERMINATE": "NO",
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HARDLY_ANY-0",
+        "OBJECT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HARDLY_ANY-QUANTIFIER1",
+      "WORD": "HARDLY_ANY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

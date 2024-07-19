@@ -1,0 +1,58 @@
+{
+  "word": "HANDPICK",
+  "senses": {
+    "HANDPICK-V1": {
+      "CAT": "V",
+      "DEF": "to choose carefully",
+      "EX": "they handpicked the candidates",
+      "COMMENTS": "Marge: 'carefully' needs to factor in somehow, but right now PRUDENCE only modifies animals.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "SELECT": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            },
+            "THEME": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "SALIENCY",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "HANDPICKED-0",
+        "THE",
+        "CANDIDATES-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HANDPICK-V1",
+      "WORD": "HANDPICK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

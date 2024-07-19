@@ -1,0 +1,45 @@
+{
+  "word": "KNOWLEDGE",
+  "senses": {
+    "KNOWLEDGE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": [
+            "OF",
+            "ABOUT"
+          ],
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "KNOW": {
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KNOWLEDGE-N1",
+      "WORD": "KNOWLEDGE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@CICERO",
+  "isa": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "def": "French unit of measure for the field of typography, similar to the English pica; corresponds to the pica",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.00452
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,104 @@
+{
+  "word": "BAPTISM",
+  "senses": {
+    "BAPTISM-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "the baptism of little johnny by the Parish priest",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "BAPTISM": {
+          "AGENT": {
+            "VALUE": "^$VAR4"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BAPTISM-N1",
+      "WORD": "BAPTISM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BAPTISM-N2": {
+      "CAT": "N",
+      "DEF": "phrasal 'baptism of fire'; an extremely difficult ordeal",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N",
+            "ROOT-WORD": "FIRE"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "EVENT": {
+          "DIFFICULTY": 1
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BAPTISM-N2",
+      "WORD": "BAPTISM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

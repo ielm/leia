@@ -1,0 +1,32 @@
+{
+  "word": "PORTHOLE",
+  "senses": {
+    "PORTHOLE-N1": {
+      "CAT": "N",
+      "DEF": "a small, usually circular window in a ship's side",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "WINDOW": {
+          "LOCATION": "SHIP",
+          "SHAPE": "CIRCULAR"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PORTHOLE-N1",
+      "WORD": "PORTHOLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

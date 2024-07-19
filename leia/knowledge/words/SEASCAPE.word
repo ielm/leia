@@ -1,0 +1,31 @@
+{
+  "word": "SEASCAPE",
+  "senses": {
+    "SEASCAPE-N1": {
+      "CAT": "N",
+      "DEF": "a painting of the sea",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PAINTING": {
+          "DEPICTS": "SEA"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SEASCAPE-N1",
+      "WORD": "SEASCAPE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

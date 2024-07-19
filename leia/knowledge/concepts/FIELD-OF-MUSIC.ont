@@ -1,0 +1,42 @@
+{
+  "name": "@FIELD-OF-MUSIC",
+  "isa": [
+    "@FINE-ARTS"
+  ],
+  "def": "the art of combining tones to form expressive compositions",
+  "local": [
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@COMPOSE"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@PLAY-MUSICAL-INSTRUMENT"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@SING"
+    },
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@MUSICIAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@ARTISTIC-ROLE"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@WORK-ACTIVITY"
+    }
+  ],
+  "private": {}
+}

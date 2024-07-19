@@ -1,0 +1,54 @@
+{
+  "word": "SANCTIFY",
+  "senses": {
+    "SANCTIFY-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "he poured some oil on his head to sanctify him; the holy building sanctified the land",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "SANCTIFY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "SANCTIFIED-0",
+        "HIMSELF-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SANCTIFY-V1",
+      "WORD": "SANCTIFY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

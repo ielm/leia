@@ -1,0 +1,60 @@
+{
+  "word": "UNANIMOUS",
+  "senses": {
+    "UNANIMOUS-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "agreed upon by everyone in the set of people who vote, decide, etc.",
+      "EX": "unanimous decision",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "AGENT": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": "HUMAN",
+            "AGENT-OF": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "OPPOSITION-EVENT": {
+            "RELATION": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "UNANIMOUS-ADJ1",
+      "WORD": "UNANIMOUS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

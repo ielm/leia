@@ -1,0 +1,54 @@
+{
+  "word": "STIPULATION",
+  "senses": {
+    "STIPULATION-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "stipulation by the buyer that no replacements were acceptable",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "COMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "STIPULATE": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "STIPULATION-N1",
+      "WORD": "STIPULATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

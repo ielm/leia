@@ -1,0 +1,141 @@
+{
+  "word": "SWEEP",
+  "senses": {
+    "SWEEP-V1": {
+      "CAT": "V",
+      "DEF": "to clean using a broom",
+      "EX": "she swept the garage",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "CLEAN": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "INSTRUMENT": "BROOM"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "SWEPT-0",
+        "THE",
+        "GARAGE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SWEEP-V1",
+      "WORD": "SWEEP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SWEEP-V800": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "He wants to sweep the shit under the rug",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "ART": {
+          "ROOT": "$VAR1",
+          "ROOT-WORD": "THE",
+          "CAT": "ART"
+        },
+        "N": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PREP": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "UNDER",
+          "CAT": "PREP"
+        },
+        "ART-1": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "THE",
+          "CAT": "ART"
+        },
+        "N-1": {
+          "ROOT": "$VAR5",
+          "ROOT-WORD": "RUG",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "HIDE": {
+          "AGENT": "SEEK-CONTEXTUAL-SPONSOR",
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": [
+              "NOT",
+              "PHYSICAL-OBJECT"
+            ]
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "HE",
+        "WANTS",
+        "TO",
+        "SWEEP-0",
+        "THE-1",
+        "SHIT-2",
+        "UNDER-3",
+        "THE-4",
+        "RUG-5"
+      ],
+      "SENSE": "SWEEP-V800",
+      "WORD": "SWEEP",
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

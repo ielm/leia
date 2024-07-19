@@ -1,0 +1,41 @@
+{
+  "word": "ICEBREAKER",
+  "senses": {
+    "ICEBREAKER-N1": {
+      "CAT": "N",
+      "DEF": "a sturdy ship for breaking a path through ice",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SHIP": {
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "BREAK": {
+            "THEME": "ICE",
+            "LOCATION": "SEA"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ICEBOAT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ICEBREAKER-N1",
+      "WORD": "ICEBREAKER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

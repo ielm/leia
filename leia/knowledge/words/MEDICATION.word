@@ -1,0 +1,98 @@
+{
+  "word": "MEDICATION",
+  "senses": {
+    "MEDICATION-N1": {
+      "CAT": "N",
+      "DEF": "the act of administering medicine",
+      "EX": "the medication of the patient by the doctor with morphine (caused a stir)",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        },
+        "PP-2": {
+          "ROOT": "$VAR5",
+          "CAT": "PREP",
+          "ROOT-WORD": "WITH",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR6",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ADMINISTER-MEDICINE": {
+          "AGENT": {
+            "VALUE": "^$VAR4"
+          },
+          "EXPERIENCER": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR6"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE",
+        "SAW",
+        "THE",
+        "MEDICATION-0",
+        "OF-1",
+        "THE",
+        "MAN-2",
+        "BY-3",
+        "THE",
+        "DOCTOR-4",
+        "WITH-5",
+        "THE",
+        "DRUG-6"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MEDICATION-N1",
+      "WORD": "MEDICATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

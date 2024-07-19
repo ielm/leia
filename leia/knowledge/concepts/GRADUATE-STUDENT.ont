@@ -1,0 +1,28 @@
+{
+  "name": "@GRADUATE-STUDENT",
+  "isa": [
+    "@UNIVERSITY-STUDENT"
+  ],
+  "def": "relating to studies beyond a bachelor*s degree",
+  "local": [
+    {
+      "slot": "age",
+      "facet": "default",
+      "filler": [
+        "><",
+        32
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "age",
+      "facet": "default",
+      "filler": [
+        "><",
+        32
+      ]
+    }
+  ],
+  "private": {}
+}

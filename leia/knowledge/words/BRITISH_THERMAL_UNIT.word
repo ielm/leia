@@ -1,0 +1,115 @@
+{
+  "word": "BRITISH_THERMAL_UNIT",
+  "senses": {
+    "BRITISH_THERMAL_UNIT-N1": {
+      "CAT": "N",
+      "DEF": "(Wikipedia) The amount of heat required to raise the temperature of one pound of liquid water by one degree at a constant pressure of one atmosphere. This variant uses the calorie value of water at its maximum density of 4 degrees Celsius.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BRITISH-THERMAL-UNIT-39",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BRITISH_THERMAL_UNIT-N1",
+      "WORD": "BRITISH_THERMAL_UNIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BRITISH_THERMAL_UNIT-N2": {
+      "CAT": "N",
+      "DEF": "(Wikipedia) The amount of heat required to raise the temperature of one pound of liquid water by one degree at a constant pressure of one atmosphere. This variant is chiefly American, and uses the 15 degree Celsius calorie.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BRITISH-THERMAL-UNIT-59",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BRITISH_THERMAL_UNIT-N2",
+      "WORD": "BRITISH_THERMAL_UNIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BRITISH_THERMAL_UNIT-N3": {
+      "CAT": "N",
+      "DEF": "(Wikipedia) The amount of heat required to raise the temperature of one pound of liquid water by one degree at a constant pressure of one atmosphere. This variant is chiefly Canadian.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BRITISH-THERMAL-UNIT-60",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BRITISH_THERMAL_UNIT-N3",
+      "WORD": "BRITISH_THERMAL_UNIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BRITISH_THERMAL_UNIT-N4": {
+      "CAT": "N",
+      "DEF": "(Wikipedia) The most widespread BTU, uses the International Table (IT) calorie, 4.1868 J (joule)",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BRITISH-THERMAL-UNIT-IT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BRITISH_THERMAL_UNIT-N4",
+      "WORD": "BRITISH_THERMAL_UNIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BRITISH_THERMAL_UNIT-N5": {
+      "CAT": "N",
+      "DEF": "(Wikipedia) uses the thermochemical calorie of exactly 4.184 J (joule)",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BRITISH-THERMAL-UNIT-THERMOCHEMICAL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BRITISH_THERMAL_UNIT-N5",
+      "WORD": "BRITISH_THERMAL_UNIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

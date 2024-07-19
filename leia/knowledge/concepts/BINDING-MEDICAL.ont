@@ -1,0 +1,27 @@
+{
+  "name": "@BINDING-MEDICAL",
+  "isa": [
+    "@NORMAL-BIOLOGIC-FUNCTION"
+  ],
+  "def": "a medical process by which one entity binds to another, e.g., kit stain binding to a kit protein",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BODY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

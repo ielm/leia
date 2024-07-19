@@ -1,0 +1,17 @@
+{
+  "name": "@PLANT-FARM",
+  "isa": [
+    "@AGRICULTURAL-CORPORATION",
+    "@FARM"
+  ],
+  "def": "an agricultural corporation engaged in growing plants",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

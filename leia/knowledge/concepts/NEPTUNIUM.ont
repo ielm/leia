@@ -1,0 +1,36 @@
+{
+  "name": "@NEPTUNIUM",
+  "isa": [
+    "@ACTINIDE"
+  ],
+  "def": "a silvery, metallic, naturally radioactive element, atomic number 93, the first of the transuranium elements, having thirteen isotopes with mass numbers from 231 to 241 and half-lives ranging from 7.3 minutes to 2.2 million years. it is found in trace quantities in uranium ores and is produced synthetically by nuclear reactions",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        237
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        93
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

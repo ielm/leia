@@ -1,0 +1,27 @@
+{
+  "name": "@ESOPHAGEAL-PHASE-OF-SWALLOWING",
+  "isa": [
+    "@PHASE-OF-SWALLOWING"
+  ],
+  "def": "the non-agentive phase of swallowing",
+  "local": [
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

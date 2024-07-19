@@ -1,0 +1,21 @@
+{
+  "name": "@ENGINEERING-CORPORATION",
+  "isa": [
+    "@FOR-PROFIT-SERVICE-CORPORATION"
+  ],
+  "def": "a service-corporation that provides the planning, designing and construction of machines, bridges, roads and other parts of the infrastructure to its clients",
+  "local": [
+    {
+      "slot": "area-of-business-activity",
+      "facet": "sem",
+      "filler": "@BUILD"
+    },
+    {
+      "slot": "area-of-business-activity",
+      "facet": "sem",
+      "filler": "@DESIGN-ARTIFACT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

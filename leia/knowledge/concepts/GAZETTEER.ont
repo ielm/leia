@@ -1,0 +1,16 @@
+{
+  "name": "@GAZETTEER",
+  "isa": [
+    "@BOOK"
+  ],
+  "def": "dictionary of geographical terms",
+  "local": [
+    {
+      "slot": "about-as-topic",
+      "facet": "sem",
+      "filler": "@GEOGRAPHY"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

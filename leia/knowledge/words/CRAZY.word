@@ -1,0 +1,53 @@
+{
+  "word": "CRAZY",
+  "senses": {
+    "CRAZY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "not mentally sound",
+      "EX": "That crazy driver nearly killed me",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SANITY-ATTRIBUTE": 0
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CRAZY-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "FANATICAL",
+        "BARMY",
+        "BATTY",
+        "BERSERK",
+        "BONKERS",
+        "DAFT",
+        "UNHINGED",
+        "BONKERS"
+      ],
+      "SENSE": "CRAZY-ADJ1",
+      "WORD": "CRAZY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

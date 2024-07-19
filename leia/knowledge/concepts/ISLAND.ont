@@ -1,0 +1,52 @@
+{
+  "name": "@ISLAND",
+  "isa": [
+    "@GEOLOGICAL-ENTITY"
+  ],
+  "def": "a land mass, especially one smaller than a continent, entirely surrounded by water",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@EARTH-MATERIAL"
+    },
+    {
+      "slot": "borders-on",
+      "facet": "sem",
+      "filler": "@STRAIT"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ROCK"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@COAST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "borders-on",
+      "facet": "sem",
+      "filler": "@GEOGRAPHICAL-ENTITY"
+    },
+    {
+      "slot": "borders-on",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    }
+  ],
+  "private": {}
+}

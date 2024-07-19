@@ -1,0 +1,123 @@
+{
+  "word": "THAI",
+  "senses": {
+    "THAI-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to thailand",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "THAILAND"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "THAI-ADJ1",
+      "WORD": "THAI",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "THAI-N1": {
+      "CAT": "N",
+      "DEF": "a citizen of thailand",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CITIZEN": {
+          "HAS-NATIONALITY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "THAILAND"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "THAI-N1",
+      "WORD": "THAI",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "THAI-N2": {
+      "CAT": "N",
+      "DEF": "the set of citizens of thailand",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "REFSEM1"
+          },
+          "CARDINALITY": 1,
+          "COMPLETE": "YES"
+        },
+        "REFSEM1": {
+          "CITIZEN": {
+            "HAS-NATIONALITY": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "THAILAND"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "THAI-N2",
+      "WORD": "THAI",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

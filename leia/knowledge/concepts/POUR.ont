@@ -1,0 +1,252 @@
+{
+  "name": "@POUR",
+  "isa": [
+    "@FLOW"
+  ],
+  "def": "to cause to flow in a continuous stream",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SEED-EDIBLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COIN"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@COOKING-CONTAINER"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@PLACE-SETTING-CONTAINER"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@RIGID-MANUFACTURED-CONTAINER"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@BASKET"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@BAG"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@BOX"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@VOLUME-MEASURING-ARTIFACT"
+    },
+    {
+      "slot": "source",
+      "facet": "not",
+      "filler": "@CARTRIDGE"
+    },
+    {
+      "slot": "source",
+      "facet": "not",
+      "filler": "@COFFIN"
+    },
+    {
+      "slot": "source",
+      "facet": "not",
+      "filler": "@SHIPPING-CONTAINER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ALCOHOL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HYDROGEN-PEROXIDE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SHAMPOO"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EARTH-MATERIAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GRAIN-FOODSTUFF"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SAUCE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FLAVORING"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@CHOCOLATE"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PICKLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MARINADE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PET-FOOD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMAL-FEED"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COCOA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COFFEE-BEAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BEAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PAVING-MATERIAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PIGMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@POWDER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "source",
+      "facet": "relaxable-to",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@AQUEOUS-HUMOR-OF-EYEBALL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BLOOD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CHLOROPHYLL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INTRAVENOUS-FLUID"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LAVA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PLASMA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SECRETION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TAR"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TRANSUDATE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@URINE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VACCINE"
+    }
+  ],
+  "private": {}
+}

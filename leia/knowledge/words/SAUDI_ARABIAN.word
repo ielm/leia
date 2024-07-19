@@ -1,0 +1,46 @@
+{
+  "word": "SAUDI_ARABIAN",
+  "senses": {
+    "SAUDI_ARABIAN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "SAUDI_ARABIA"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SAUDI-ARABIAN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SAUDI_ARABIAN-ADJ1",
+      "WORD": "SAUDI_ARABIAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

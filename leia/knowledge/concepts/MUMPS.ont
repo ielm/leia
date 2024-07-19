@@ -1,0 +1,22 @@
+{
+  "name": "@MUMPS",
+  "isa": [
+    "@VIRUS-DISEASE"
+  ],
+  "def": "a contagious and infectious viral disease causing swelling of the parotid salivary glands",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@MUMPS.INFLAMMATION-RE1"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

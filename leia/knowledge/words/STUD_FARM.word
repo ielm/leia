@@ -1,0 +1,38 @@
+{
+  "word": "STUD_FARM",
+  "senses": {
+    "STUD_FARM-N1": {
+      "CAT": "N",
+      "DEF": "a farm where horses are bred",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "FARM": {
+          "LOCATION-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "OFFSPRING-EVENT": {
+            "EXPERIENCER": "HORSE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "STUD_FARM-N1",
+      "WORD": "STUD_FARM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

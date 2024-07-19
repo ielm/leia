@@ -1,0 +1,39 @@
+{
+  "word": "TEA_TRAY",
+  "senses": {
+    "TEA_TRAY-N1": {
+      "CAT": "N",
+      "DEF": "a tray used to carry a tea service",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "TRAY": {
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "CARRY": {
+            "THEME": "TEACUP",
+            "THEME-1": "COFFEE-TEA-POT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TEA_TRAY-N1",
+      "WORD": "TEA_TRAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

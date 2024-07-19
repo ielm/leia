@@ -1,0 +1,86 @@
+{
+  "word": "CARPET",
+  "senses": {
+    "CARPET-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CARPET",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "RUG"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CARPET-N1",
+      "WORD": "CARPET",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CARPET-V1": {
+      "CAT": "V",
+      "DEF": "to cover with carpet",
+      "EX": "they carpeted the bedroom floor",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "COVER": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "FLOOR"
+          },
+          "INSTRUMENT": "CARPET"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "CARPETED-0",
+        "THE",
+        "FLOOR-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CARPET-V1",
+      "WORD": "CARPET",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

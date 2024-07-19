@@ -1,0 +1,126 @@
+{
+  "word": "HIGHLY_UNLIKELY",
+  "senses": {
+    "HIGHLY_UNLIKELY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "a highly unlikely explanation; it seems very unlikely",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HIGHLY_UNLIKELY-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HIGHLY_UNLIKELY-ADJ1",
+      "WORD": "HIGHLY_UNLIKELY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HIGHLY_UNLIKELY-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "it is highly unlikely (that) ...",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "TYPE": "PRO",
+          "ROOT-WORD": "IT"
+        },
+        "ROOT": "$VAR2",
+        "CAT": "V",
+        "ROOT-WORD": "*BE*",
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "COMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "IT-1",
+        "WAS-2",
+        "HIGHLY_UNLIKELY-0",
+        "THAT",
+        "THE",
+        "MAN",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR3",
+          "$VAR0"
+        ],
+        [
+          "COP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HIGHLY_UNLIKELY-ADJ2",
+      "WORD": "HIGHLY_UNLIKELY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

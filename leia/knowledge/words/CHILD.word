@@ -1,0 +1,32 @@
+{
+  "word": "CHILD",
+  "senses": {
+    "CHILD-N1": {
+      "CAT": "N",
+      "DEF": "a human; can refer to a young one or can refer to a person in relationship to his parent. Since we can't disambiguate very well, we'll be more general and not put an age constraint.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "OFFSPRING",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "YOUNGSTER",
+        "KIDDIE",
+        "TOT",
+        "TYKE"
+      ],
+      "SENSE": "CHILD-N1",
+      "WORD": "CHILD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

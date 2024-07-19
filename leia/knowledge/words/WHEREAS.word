@@ -1,0 +1,157 @@
+{
+  "word": "WHEREAS",
+  "senses": {
+    "WHEREAS-CONJ1": {
+      "CAT": "CONJ",
+      "DEF": "",
+      "EX": "Whereas he studied hard (,) she didn't study at all",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR2",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "CONJ",
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "PUNCT": {
+          "ROOT-WORD": "*COMMA*",
+          "ROOT": "$VAR3",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        },
+        "CL-1": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "CONTRAST": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "WHEREAS-0",
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "*COMMA*-3",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CC",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "CCOMP",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "PUNCT",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WHEREAS-CONJ1",
+      "WORD": "WHEREAS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WHEREAS-CONJ2": {
+      "CAT": "CONJ",
+      "DEF": "",
+      "EX": "She studied hard (,) whereas he didn't study at all",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "PUNCT": {
+          "ROOT-WORD": "*COMMA*",
+          "ROOT": "$VAR3",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "CONJ",
+        "CL-1": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "CONTRAST": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "*COMMA*-3",
+        "WHEREAS-0",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CC",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "CONJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PUNCT",
+          "$VAR1",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WHEREAS-CONJ2",
+      "WORD": "WHEREAS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

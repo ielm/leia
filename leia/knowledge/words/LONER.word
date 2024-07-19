@@ -1,0 +1,36 @@
+{
+  "word": "LONER",
+  "senses": {
+    "LONER-N1": {
+      "CAT": "N",
+      "DEF": "a highly unsociable person",
+      "EX": "He's a loner",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "SOCIABILITY": [
+            "<",
+            0.2
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "LONE_WOLF"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "LONER-N1",
+      "WORD": "LONER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

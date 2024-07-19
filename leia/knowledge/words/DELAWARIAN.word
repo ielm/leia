@@ -1,0 +1,42 @@
+{
+  "word": "DELAWARIAN",
+  "senses": {
+    "DELAWARIAN-N1": {
+      "CAT": "N",
+      "DEF": "resides in the state of delaware",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "HAS-STATE-ADDRESS": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "STATE": {
+            "HAS-NAME": {
+              "VALUE": "DELAWARE"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "DELAWAREAN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DELAWARIAN-N1",
+      "WORD": "DELAWARIAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

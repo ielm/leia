@@ -1,0 +1,61 @@
+{
+  "word": "RIVAL",
+  "senses": {
+    "RIVAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "of an animal competing for someting",
+      "EX": "rival runners; rival foragers",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "AGENT-OF": "COMPETE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RIVAL-ADJ1",
+      "WORD": "RIVAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RIVAL-N1": {
+      "CAT": "N",
+      "DEF": "someone (a person or animal) competing for something",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ANIMAL": {
+          "AGENT-OF": "COMPETE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RIVAL-N1",
+      "WORD": "RIVAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

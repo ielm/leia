@@ -1,0 +1,32 @@
+{
+  "name": "@DISTRICT",
+  "isa": [
+    "@SMALL-GEOPOLITICAL-ENTITY"
+  ],
+  "def": "a territorial division marked off or defined for electoral or other purposes. A district can be large as a county, or small as in the shopping district of a particular city.",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@CITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "in-district",
+      "facet": "sem",
+      "filler": "@DISTRICT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@CRICKET",
+  "isa": [
+    "@INSECT"
+  ],
+  "def": "Insects with long antennae and legs adapted for leaping; the males of many species produce a shrill chirping sound by rubbing the front wings together.",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "green"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@PROTECT-SERVE",
+  "isa": [
+    "@PROFESSIONAL-SERVICE-EVENT"
+  ],
+  "def": "A service event which involves protecting people or things from various forms of danger",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@PROTECTION-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@WORK-ROLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    }
+  ],
+  "private": {}
+}

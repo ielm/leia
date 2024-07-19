@@ -1,0 +1,29 @@
+{
+  "word": "INTENSIVE_CARE_UNIT",
+  "senses": {
+    "INTENSIVE_CARE_UNIT-N1": {
+      "CAT": "N",
+      "DEF": "a place in a hospital where intensive care is administered",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "INTENSIVE-CARE-UNIT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ICU"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "INTENSIVE_CARE_UNIT-N1",
+      "WORD": "INTENSIVE_CARE_UNIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

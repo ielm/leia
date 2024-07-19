@@ -1,0 +1,47 @@
+{
+  "name": "@GAS-ELECTRIC-POWER-SERVE",
+  "isa": [
+    "@PROFESSIONAL-SERVICE-EVENT"
+  ],
+  "def": "any service-event of providing gas and electricity",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NATURAL-GAS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ELECTRICITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WATER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

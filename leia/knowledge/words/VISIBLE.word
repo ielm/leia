@@ -1,0 +1,45 @@
+{
+  "word": "VISIBLE",
+  "senses": {
+    "VISIBLE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "capable of being seen",
+      "EX": "a town was barely visible in the distance; there was no visible solution to their dilemma",
+      "COMMENTS": "marge: does this handle either of these examples?",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "VISIBILITY": [
+            ">",
+            0.6
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "VISIBLE-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "IN_SIGHT"
+      ],
+      "HYPONYMS": [
+        "EXPOSED"
+      ],
+      "SENSE": "VISIBLE-ADJ1",
+      "WORD": "VISIBLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$MONOPOLY-ATTRIBUTE",
+  "def": "whether or not a corporation has exclusive control of a commodity in a given market",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-OBJECT-ATTRIBUTE"
+}

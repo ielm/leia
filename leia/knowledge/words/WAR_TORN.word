@@ -1,0 +1,43 @@
+{
+  "word": "WAR_TORN",
+  "senses": {
+    "WAR_TORN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "war-torn + physical location",
+      "EX": "war-torn Somalia; war-torn countryside",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "GEOPOLITICAL-ENTITY",
+          "THEME-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "DESTROY": {
+            "INSTRUMENT": "WAR-ACTIVITY"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WAR_TORN-ADJ1",
+      "WORD": "WAR_TORN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

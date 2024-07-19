@@ -1,0 +1,22 @@
+{
+  "name": "@HAIRDRESSER",
+  "isa": [
+    "@WORK-ROLE"
+  ],
+  "def": "one whose work is cutting and styling hair",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@HAIRDRESSING-SHOP"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

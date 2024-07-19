@@ -1,0 +1,22 @@
+{
+  "name": "@ENGINE-BLOCK",
+  "isa": [
+    "@ENGINE-PART"
+  ],
+  "def": "a metal casting that contains the cylinders and cooling ducts of an internal combustion engine",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ENGINE-CYLINDER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

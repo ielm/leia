@@ -1,0 +1,44 @@
+{
+  "word": "PET_SHOP",
+  "senses": {
+    "PET_SHOP-N1": {
+      "CAT": "N",
+      "DEF": "a store where pets and/or pet supplies are sold ",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "STORE": {
+          "LOCATION-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SELL": {
+            "THEME": "PET-FOOD",
+            "THEME-1": "BIRD",
+            "THEME-2": "FISH",
+            "THEME-3": "CANINE",
+            "THEME-4": "FELINE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "PET_STORE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PET_SHOP-N1",
+      "WORD": "PET_SHOP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "$GUSTATORY-ATTRIBUTE",
+  "def": "how something tastes",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

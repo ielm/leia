@@ -1,0 +1,103 @@
+{
+  "word": "CROP",
+  "senses": {
+    "CROP-N1": {
+      "CAT": "N",
+      "DEF": "a harvested agricultural product",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CROP",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CROP-N1",
+      "WORD": "CROP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CROP-N2": {
+      "CAT": "N",
+      "DEF": "a plant that yields a harvested agricultural product",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CROP-PLANT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CROP-N2",
+      "WORD": "CROP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CROP-V1": {
+      "CAT": "V",
+      "DEF": "phrasal: crop up = happen",
+      "EX": "This [some event] cropped up for the following reasons ... ",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "UP",
+          "CAT": "PREP"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "PROBLEMS-1",
+        "CROPPED-0",
+        "UP-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PRT",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CROP-V1",
+      "WORD": "CROP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

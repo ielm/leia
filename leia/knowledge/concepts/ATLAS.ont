@@ -1,0 +1,16 @@
+{
+  "name": "@ATLAS",
+  "isa": [
+    "@BOOK"
+  ],
+  "def": "a book of maps",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MAP"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

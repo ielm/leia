@@ -1,0 +1,33 @@
+{
+  "word": "GENERATOR",
+  "senses": {
+    "GENERATOR-N1": {
+      "CAT": "N",
+      "DEF": "a device that converts mechanical energy to electrical energy",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "GENERATOR",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "TURBOGENERATOR",
+        "AEROGENERATOR",
+        "MAGNETOELECTRIC_MACHINE",
+        "MAGNETO",
+        "WIND_GENERATOR"
+      ],
+      "SENSE": "GENERATOR-N1",
+      "WORD": "GENERATOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

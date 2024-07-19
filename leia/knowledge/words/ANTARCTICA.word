@@ -1,0 +1,33 @@
+{
+  "word": "ANTARCTICA",
+  "senses": {
+    "ANTARCTICA-N1": {
+      "CAT": "N",
+      "DEF": "the continent",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CONTINENT": {
+          "HAS-NAME": {
+            "VALUE": "ANTARCTICA"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ANTARCTICA-N1",
+      "WORD": "ANTARCTICA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

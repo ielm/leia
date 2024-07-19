@@ -1,0 +1,63 @@
+{
+  "word": "MEMBER",
+  "senses": {
+    "MEMBER-N2": {
+      "CAT": "N",
+      "DEF": "a social object that belongs to some organization",
+      "EX": "he is a member of the Boy Scouts; France is a member of the EU",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SOCIAL-OBJECT": {
+          "MEMBER-OF": {
+            "VALUE": "^$VAR2",
+            "SEM": "ORGANIZATION"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "MEMBER-0",
+        "OF-1",
+        "THE",
+        "MAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MEMBER-N2",
+      "WORD": "MEMBER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

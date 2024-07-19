@@ -1,0 +1,16 @@
+{
+  "name": "@SCHAEDLER-RULE",
+  "isa": [
+    "@RULER"
+  ],
+  "def": "a ruler marked in points, picas, and agate-lines used by graphic designers, typesetters, and printers",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "private": {}
+}

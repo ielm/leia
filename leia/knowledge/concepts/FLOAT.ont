@@ -1,0 +1,22 @@
+{
+  "name": "@FLOAT",
+  "isa": [
+    "@MOTION-EVENT"
+  ],
+  "def": "To remain on the surface of a liquid.",
+  "local": [
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

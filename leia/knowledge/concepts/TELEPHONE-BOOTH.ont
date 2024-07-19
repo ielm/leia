@@ -1,0 +1,22 @@
+{
+  "name": "@TELEPHONE-BOOTH",
+  "isa": [
+    "@PLACE"
+  ],
+  "def": "a small structure to house a public telephone",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PHONE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$NAMING-DATA",
+  "def": "the root of the tree that includes relations \ndescribing the names of people, animals, \norganizations, procedures, etc.; includes \nproperties related to contact information, \nbirth information, etc.",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

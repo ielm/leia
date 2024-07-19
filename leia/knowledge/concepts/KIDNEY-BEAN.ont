@@ -1,0 +1,21 @@
+{
+  "name": "@KIDNEY-BEAN",
+  "isa": [
+    "@BEAN"
+  ],
+  "def": "The pod or seed of a plant Phaseolus vulgaris so named from its shape.",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "red"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

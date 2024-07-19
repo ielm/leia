@@ -1,0 +1,19 @@
+{
+  "name": "@FLUID-DRAM",
+  "isa": [
+    "@LIQUID-MEASURING-UNIT"
+  ],
+  "def": "1/8 of a fluid ounce. informally, a small amount of liquid; ounce-fluid/8",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        3.69668e-06
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

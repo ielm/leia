@@ -1,0 +1,57 @@
+{
+  "name": "@ENDOCRINE-SYSTEM",
+  "isa": [
+    "@SET-OF-HETEROGENOUS-CLUSTERS"
+  ],
+  "def": "the system of glands that produce endocrine secretions that help to control bodily metabolic activity",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PITUITARY-GLAND"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@THYROID-GLAND"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SUPERIOR-PARATHYROID-GLAND"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INFERIOR-PARATHYROID-GLAND"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ACCESSORY-PARATHYROID-GLAND"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ADRENAL-GLAND"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PARATHYROID-GLAND"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PINEAL-BODY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

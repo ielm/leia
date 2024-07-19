@@ -1,0 +1,136 @@
+{
+  "word": "JOINT",
+  "senses": {
+    "JOINT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "cooperative",
+      "EX": "joint work",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "CAUSED-BY": "COLLABORATE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "JOINT-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "JOINT-ADJ1",
+      "WORD": "JOINT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "JOINT-N1": {
+      "CAT": "N",
+      "DEF": "a place where two things are attached",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "JOINT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "BALL_AND_SOCKET_JOINT",
+        "BUTT_JOINT",
+        "FISH_JOINT",
+        "KNUCKLE_JOINT",
+        "LAP_JOINT",
+        "SPLICE",
+        "MITER_JOINT",
+        "MOTRE_JOINT",
+        "MORTISE_JOINT",
+        "MORTISE_AND_TENDON_JOINT",
+        "DOVETAIL_JOINT",
+        "DOVETAIL",
+        "TONGUE_AND_GROOVE_JOINT",
+        "RABBET_JOINT",
+        "SCARF_JOINT",
+        "TOGGLE_JOINT",
+        "JUNCTION",
+        "JUNCTION_BARRIER",
+        "SPLICE"
+      ],
+      "SENSE": "JOINT-N1",
+      "WORD": "JOINT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "JOINT-N2": {
+      "CAT": "N",
+      "DEF": "marijuana",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "MARIJUANA",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "JOINT-N2",
+      "WORD": "JOINT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "JOINT-N3": {
+      "CAT": "N",
+      "DEF": "disreputable gathering place",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0.2,
+          "SCOPE": "RESTAURANT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "JOINT-N3",
+      "WORD": "JOINT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

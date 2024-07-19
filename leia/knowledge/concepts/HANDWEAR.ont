@@ -1,0 +1,22 @@
+{
+  "name": "@HANDWEAR",
+  "isa": [
+    "@CLOTHING-ACCESSORY"
+  ],
+  "def": "clothing that goes on the hands",
+  "local": [
+    {
+      "slot": "worn-on",
+      "facet": "sem",
+      "filler": "@HAND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "worn-on",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

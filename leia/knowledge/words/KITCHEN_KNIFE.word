@@ -1,0 +1,34 @@
+{
+  "word": "KITCHEN_KNIFE",
+  "senses": {
+    "KITCHEN_KNIFE-N1": {
+      "CAT": "N",
+      "DEF": "a knife used in the kitchen",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "KNIFE": {
+          "USED-BY": "COOK"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "PARING_KNIFE",
+        "CHOPPING_KNIFE"
+      ],
+      "SENSE": "KITCHEN_KNIFE-N1",
+      "WORD": "KITCHEN_KNIFE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

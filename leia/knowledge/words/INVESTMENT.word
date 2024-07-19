@@ -1,0 +1,89 @@
+{
+  "word": "INVESTMENT",
+  "senses": {
+    "INVESTMENT-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "investment of money in stock by investors",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR5",
+          "CAT": "PREP",
+          "ROOT-WORD": "IN",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR6",
+            "CAT": "N"
+          }
+        },
+        "PP-2": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "INVESTMENT-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR4"
+          },
+          "THEME": {
+            "VALUE": "^$VAR6"
+          },
+          "INSTRUMENT": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "INVESTMENT-0",
+        "OF-1",
+        "THE",
+        "MONEY-2",
+        "IN-5",
+        "THE",
+        "INVESTMENT-6",
+        "BY-3",
+        "THE",
+        "INVESTMENT-CORPORATION-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INVESTMENT-N1",
+      "WORD": "INVESTMENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

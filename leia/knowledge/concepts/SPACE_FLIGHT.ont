@@ -1,0 +1,32 @@
+{
+  "name": "@SPACE_FLIGHT",
+  "isa": [
+    "@FLIGHT"
+  ],
+  "def": "traveling by air in outer space",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@OUTER-SPACE"
+    },
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@OUTER-SPACE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

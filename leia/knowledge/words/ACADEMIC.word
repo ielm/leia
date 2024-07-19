@@ -1,0 +1,107 @@
+{
+  "word": "ACADEMIC",
+  "senses": {
+    "ACADEMIC-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "relating to a university, the work or the people there",
+      "EX": "academic aspirations, environment",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "OBJECT",
+          "RELATION": "ACADEMIC-ACTIVITY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ACADEMIC-0",
+        "MEN-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ACADEMIC-ADJ2",
+      "WORD": "ACADEMIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ACADEMIC-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "relating to a university, the work or the people there",
+      "EX": "academic work, pursuits",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "RELATION": "ACADEMIC-ACTIVITY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ACADEMIC-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ACADEMIC-ADJ1",
+      "WORD": "ACADEMIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ACADEMIC-N1": {
+      "CAT": "N",
+      "DEF": "a professor or other member of a college or university",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "ACADEMIC-SPECIALIST",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ACADEMIC-N1",
+      "WORD": "ACADEMIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

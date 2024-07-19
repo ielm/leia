@@ -1,0 +1,39 @@
+{
+  "word": "RUPEE",
+  "senses": {
+    "RUPEE-N1": {
+      "CAT": "N",
+      "DEF": "currency of india or mauritius or nepal or pakistan or seychelles or sri-lanka",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": {
+            "INDIA": [
+              "MAURITIUS",
+              "NEPAL",
+              "PAKISTAN",
+              "SEYCHELLES",
+              "SRI_LANKA"
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RUPEE-N1",
+      "WORD": "RUPEE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

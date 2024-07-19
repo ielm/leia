@@ -1,0 +1,35 @@
+{
+  "word": "MOORISH",
+  "senses": {
+    "MOORISH-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "Related to a Spanish architectural style of the 8th-16th centuries, which was characterized by the horseshoe arch and ornate decoration. ",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "HAS-STYLE": "MOORISH"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MOORISH-ADJ1",
+      "WORD": "MOORISH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "word": "PLANT",
+  "senses": {
+    "PLANT-N1": {
+      "CAT": "N",
+      "DEF": "factory",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FACTORY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PLANT-N1",
+      "WORD": "PLANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PLANT-N2": {
+      "CAT": "N",
+      "DEF": "organism",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PLANT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PLANT-N2",
+      "WORD": "PLANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PLANT-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "they planted wheat",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "PLANT-CROP": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "PLANTS-0",
+        "THE",
+        "FLOWER-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NN",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "SOW"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PLANT-V1",
+      "WORD": "PLANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

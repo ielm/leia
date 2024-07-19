@@ -1,0 +1,22 @@
+{
+  "name": "@KEYBOARD",
+  "isa": [
+    "@INPUT-DEVICE"
+  ],
+  "def": "an input device that converts keystrokes to electrical impulses in ASCII format",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@KEYBOARD-KEY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

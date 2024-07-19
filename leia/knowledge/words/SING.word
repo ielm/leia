@@ -1,0 +1,60 @@
+{
+  "word": "SING",
+  "senses": {
+    "SING-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "she sings arias. she sings well.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "SING": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "SINGS-0",
+        "ARIAS-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SING-V1",
+      "WORD": "SING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

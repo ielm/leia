@@ -1,0 +1,53 @@
+{
+  "word": "BIOGRAPHY",
+  "senses": {
+    "BIOGRAPHY-N1": {
+      "CAT": "N",
+      "DEF": "A book that tells the story of another's life",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LITERARY-COMPOSITION": {
+          "HAS-STYLE": "BIOGRAPHY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BIOGRAPHY-N1",
+      "WORD": "BIOGRAPHY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BIOGRAPHY-N2": {
+      "CAT": "N",
+      "DEF": "A literary genre in which one tells the story of another's life",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BIOGRAPHY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BIOGRAPHY-N2",
+      "WORD": "BIOGRAPHY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

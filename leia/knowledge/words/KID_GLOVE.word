@@ -1,0 +1,32 @@
+{
+  "word": "KID_GLOVE",
+  "senses": {
+    "KID_GLOVE-N1": {
+      "CAT": "N",
+      "DEF": "a very soft leather glove",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "GLOVE": {
+          "MADE-OF": "LEATHER",
+          "SOFTNESS": 0.9
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KID_GLOVE-N1",
+      "WORD": "KID_GLOVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

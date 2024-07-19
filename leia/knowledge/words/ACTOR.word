@@ -1,0 +1,49 @@
+{
+  "word": "ACTOR",
+  "senses": {
+    "ACTOR-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "ACTOR-DRAMATIC",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ACTOR-N1",
+      "WORD": "ACTOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ACTOR-N2": {
+      "CAT": "N",
+      "DEF": "participant",
+      "EX": "",
+      "COMMENTS": "I'm mapping just to human because there's no good way to express 'participant' without having an action to hook the participant to",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "HUMAN",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ACTOR-N2",
+      "WORD": "ACTOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

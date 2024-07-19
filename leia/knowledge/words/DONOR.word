@@ -1,0 +1,43 @@
+{
+  "word": "DONOR",
+  "senses": {
+    "DONOR-N1": {
+      "CAT": "N",
+      "DEF": "one who gives sth. voluntarily",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "AGENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": [
+          "GIVE"
+        ],
+        "MODALITY": {
+          "TYPE": "OBLIGATIVE",
+          "VALUE": 0.5,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DONOR-N1",
+      "WORD": "DONOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

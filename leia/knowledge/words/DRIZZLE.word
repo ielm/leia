@@ -1,0 +1,68 @@
+{
+  "word": "DRIZZLE",
+  "senses": {
+    "DRIZZLE-V1": {
+      "CAT": "V",
+      "DEF": "to rain lightly",
+      "EX": "It drizzles every day. It is drizzling (out/outside)",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "ADV": {
+          "ROOT": "$VAR2",
+          "CAT": "ADV",
+          "OPT": "+",
+          "ROOT-WORD": [
+            "OUT",
+            "OUTSIDE"
+          ]
+        }
+      },
+      "SEM-STRUC": {
+        "RAINSTORM": {
+          "INTENSITY": [
+            "<",
+            0.2
+          ]
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "IT-1",
+        "DRIZZLED-0",
+        "OUT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PRT",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DRIZZLE-V1",
+      "WORD": "DRIZZLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

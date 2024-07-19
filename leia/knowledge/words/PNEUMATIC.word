@@ -1,0 +1,35 @@
+{
+  "word": "PNEUMATIC",
+  "senses": {
+    "PNEUMATIC-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to air",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "AIR"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PNEUMATIC-ADJ1",
+      "WORD": "PNEUMATIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

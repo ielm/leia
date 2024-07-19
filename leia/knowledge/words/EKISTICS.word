@@ -1,0 +1,41 @@
+{
+  "word": "EKISTICS",
+  "senses": {
+    "EKISTICS-N1": {
+      "CAT": "N",
+      "DEF": "scientific study of human settlements and communities",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SOCIOLOGY": {
+          "FIELD-STUDIES-AREA": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": "HUMAN",
+            "CARDINALITY": 1,
+            "COMPLETE": "YES",
+            "LOCATION": "SMALL-GEOPOLITICAL-ENTITY"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EKISTICS-N1",
+      "WORD": "EKISTICS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

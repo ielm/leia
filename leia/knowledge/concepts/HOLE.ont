@@ -1,0 +1,22 @@
+{
+  "name": "@HOLE",
+  "isa": [
+    "@OPENING"
+  ],
+  "def": "A hollowed place in something solid; a cavity or pit",
+  "local": [
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "cylindrical"
+    }
+  ],
+  "block": [
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "circular"
+    }
+  ],
+  "private": {}
+}

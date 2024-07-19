@@ -1,0 +1,147 @@
+{
+  "name": "@ROAR",
+  "isa": [
+    "@ANIMAL-NOISE-MAKING"
+  ],
+  "def": "to make a lion*s sound",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@LION"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "default",
+      "filler": "@LION"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@BISON"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ELEPHANT-SEAL"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@GORILLA"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ELEPHANT"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@RHINOCEROS"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@BEAR"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@TIGER"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@LEOPARD"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@JAGUAR"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@GORILLA"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ELEPHANT-SEAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@BISON"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ELEPHANT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@RHINOCEROS"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@BEAR"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@TIGER"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@LEOPARD"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@JAGUAR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "not",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "not",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

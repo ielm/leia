@@ -1,0 +1,178 @@
+{
+  "word": "SERIOUS",
+  "senses": {
+    "SERIOUS-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "intense, large",
+      "EX": "serious casualities; serious damage; serious drop in temperature; serious breach of protocol",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "INTENSITY": 0.8
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT",
+        "THE",
+        "SERIOUS-0",
+        "BUILDING-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SERIOUS-ADJ1",
+      "WORD": "SERIOUS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SERIOUS-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "solemn, grave, humorless",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SERIOUSNESS-ATTRIBUTE": 0.9
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT",
+        "THE",
+        "SERIOUS-0",
+        "BUILDING-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SERIOUS-ADJ2",
+      "WORD": "SERIOUS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SERIOUS-ADJ3": {
+      "CAT": "ADJ",
+      "DEF": "phrasal: X is serious about Y = X really wants Y",
+      "EX": "If you're serious about ",
+      "COMMENTS": "this mapping is a bit vague - there's also something about being willing to expend effort",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "PP": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "ABOUT",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "VOLITIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR4"
+          },
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "GIRL-1",
+        "HIT-2",
+        "SERIOUS-0",
+        "ABOUT-3",
+        "THE",
+        "EVENT-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ACOMP",
+          "$VAR2",
+          "$VAR0"
+        ],
+        [
+          "NSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SERIOUS-ADJ3",
+      "WORD": "SERIOUS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

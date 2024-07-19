@@ -1,0 +1,83 @@
+{
+  "word": "RAFFLE",
+  "senses": {
+    "RAFFLE-N1": {
+      "CAT": "N",
+      "DEF": "to offer a prize in a lottery in which each participant buys a chance to win",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "RAFFLE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RAFFLE-N1",
+      "WORD": "RAFFLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RAFFLE-V1": {
+      "CAT": "V",
+      "DEF": "to give away by means of a raffle",
+      "EX": "They raffled off a refrigerator. A refrigerator was raffled last weekend.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "ROOT-WORD": "OFF"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "TRANSFER-POSSESSION": {
+          "INSTRUMENT": "RAFFLE",
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOG-1",
+        "RAFFLES-0",
+        "OFF-3",
+        "THE",
+        "CURE-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RAFFLE-V1",
+      "WORD": "RAFFLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

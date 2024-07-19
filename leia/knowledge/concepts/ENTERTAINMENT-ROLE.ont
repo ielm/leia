@@ -1,0 +1,50 @@
+{
+  "name": "@ENTERTAINMENT-ROLE",
+  "isa": [
+    "@ARTISTIC-ROLE"
+  ],
+  "def": "a social-role in which a person performs for the public as an amateur or a professional",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ENTERTAIN-EVENT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@ENTERTAINMENT-BUILDING"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@CONCERT-HALL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "><",
+        130
+      ]
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CREATIVE-WORK"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@FOODSTUFF"
+    }
+  ],
+  "private": {}
+}

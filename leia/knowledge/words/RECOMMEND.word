@@ -1,0 +1,312 @@
+{
+  "word": "RECOMMEND",
+  "senses": {
+    "RECOMMEND-V1": {
+      "CAT": "V",
+      "DEF": "advise + np that indicates an event",
+      "EX": "he recommends buying a house <the purchase of a home> before the rates go up",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "ADVISE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "EVENT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "RECOMMENDED-0",
+        "A",
+        "PURCHASE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "SUGGEST",
+        "ADVISE"
+      ],
+      "HYPONYMS": [
+        "ADVOCATE"
+      ],
+      "SENSE": "RECOMMEND-V1",
+      "WORD": "RECOMMEND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RECOMMEND-V2": {
+      "CAT": "V",
+      "DEF": "advise + np that indicates an object",
+      "EX": "he recommends the fish",
+      "COMMENTS": "includes semantic ellipsis of what the person should do with the object",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "ADVISE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "EVENT": {
+            "AGENT-1": {
+              "VALUE": "^$VAR1"
+            },
+            "THEME-1": {
+              "VALUE": "^$VAR2",
+              "SEM": [
+                "NOT",
+                "EVENT"
+              ]
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "REFSEM1",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "RECOMMENDED-0",
+        "THE",
+        "TREATMENT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "ADVISE",
+        "SUGGEST"
+      ],
+      "HYPONYMS": [
+        "ADVOCATE"
+      ],
+      "SENSE": "RECOMMEND-V2",
+      "WORD": "RECOMMEND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RECOMMEND-V3": {
+      "CAT": "V",
+      "DEF": "advise + comp",
+      "EX": "he recommends that we be on time",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "COMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "ADVISE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "I-1",
+        "RECOMMEND-0",
+        "YOU",
+        "EAT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "ADVISE",
+        "SUGGEST"
+      ],
+      "HYPONYMS": [
+        "ADVOCATE"
+      ],
+      "SENSE": "RECOMMEND-V3",
+      "WORD": "RECOMMEND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RECOMMEND-V4": {
+      "CAT": "V",
+      "DEF": "phrasal: it *be* recommended that...",
+      "EX": "It was recommended that he see a doctor",
+      "COMMENTS": "in pleonastic 'it' construction",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "FORM": "PRO",
+          "ROOT-WORD": "IT"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "V-1": {
+          "ROOT": "$VAR0",
+          "CAT": "V",
+          "FORM": "PAST-PARTICIPLE"
+        },
+        "CONTENT-MARKER": {
+          "ROOT": "$VAR3",
+          "CAT": "CONTENT-MARKER"
+        },
+        "SMALL-CL": [
+          [
+            "ROOT",
+            "$VAR4"
+          ],
+          [
+            "CAT",
+            "SMALL-CL"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "ADVISE": {
+          "AGENT": {
+            "VALUE": "REFSEM1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": "HUMAN"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "IT-1",
+        "IS-2",
+        "RECOMMENDED-0",
+        "THAT-3",
+        "HE",
+        "SEE-4",
+        "A",
+        "DOCTOR"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AUXPASS",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR4"
+        ],
+        [
+          "COMPLM",
+          "$VAR4",
+          "$VAR3"
+        ],
+        [
+          "NSUBJPASS",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RECOMMEND-V4",
+      "WORD": "RECOMMEND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

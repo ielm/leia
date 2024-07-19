@@ -1,0 +1,118 @@
+{
+  "word": "ENDURE",
+  "senses": {
+    "ENDURE-V1": {
+      "CAT": "V",
+      "DEF": "survive against",
+      "EX": "the sturdy walls endured against the harsh winter",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "AGAINST",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "OVERCOME": {
+          "INSTRUMENT": {
+            "VALUE": "^$VAR1",
+            "SEM": [
+              "NOT",
+              "ANIMATE"
+            ]
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "WALLS-1",
+        "ENDURED-0",
+        "AGAINST-2",
+        "THE",
+        "WINTER-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "STAND",
+        "SURVIVE"
+      ],
+      "HYPONYMS": [
+        "SUSTAIN"
+      ],
+      "SENSE": "ENDURE-V1",
+      "WORD": "ENDURE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ENDURE-V2": {
+      "CAT": "V",
+      "DEF": "to survive against, with experiential subject",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "AGAINST",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "OVERCOME": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1",
+            "SEM": "ANIMATE"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ENDURE-V2",
+      "WORD": "ENDURE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "word": "OUTGROW",
+  "senses": {
+    "OUTGROW-V1": {
+      "CAT": "V",
+      "DEF": "X outgrow Y = X changes such that Y is no longer applicable",
+      "EX": "he finally outgrew his temper trantrums",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "ASPECT": {
+            "PHASE": "END",
+            "SCOPE": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "CHANGE-EVENT": {
+          "THEME": {
+            "VALUE": "^$VAR1"
+          },
+          "EFFECT": {
+            "VALUE": "REFSEM1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "OUTGREW-0",
+        "HIS",
+        "BEARD-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OUTGROW-V1",
+      "WORD": "OUTGROW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

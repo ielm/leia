@@ -1,0 +1,19 @@
+{
+  "name": "@TAXPAYER",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "An individual who pays taxes.",
+  "local": [],
+  "block": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

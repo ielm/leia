@@ -1,0 +1,16 @@
+{
+  "name": "@CASH-REGISTER",
+  "isa": [
+    "@INDEPENDENT-DEVICE"
+  ],
+  "def": "a device, usually with a money drawer, used for registering visibly the amount of sale",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@PRESSED-KEY"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

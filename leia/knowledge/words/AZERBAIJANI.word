@@ -1,0 +1,126 @@
+{
+  "word": "AZERBAIJANI",
+  "senses": {
+    "AZERBAIJANI-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to azerbaijan",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "AZERBAIJAN"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "AZERI"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "AZERBAIJANI-ADJ1",
+      "WORD": "AZERBAIJANI",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "AZERBAIJANI-N1": {
+      "CAT": "N",
+      "DEF": "a citizen of azerbaijan",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CITIZEN": {
+          "HAS-NATIONALITY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "AZERBAIJAN"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AZERBAIJANI-N1",
+      "WORD": "AZERBAIJANI",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "AZERBAIJANI-N2": {
+      "CAT": "N",
+      "DEF": "the set of citizens of azerbaijan",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "NUMBER": "PL"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "REFSEM1"
+          },
+          "CARDINALITY": 1,
+          "COMPLETE": "YES"
+        },
+        "REFSEM1": {
+          "CITIZEN": {
+            "HAS-NATIONALITY": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "AZERBAIJAN"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AZERBAIJANI-N2",
+      "WORD": "AZERBAIJANI",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

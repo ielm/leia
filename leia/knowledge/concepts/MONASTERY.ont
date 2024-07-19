@@ -1,0 +1,16 @@
+{
+  "name": "@MONASTERY",
+  "isa": [
+    "@RELIGIOUS-ORGANIZATION"
+  ],
+  "def": "a religious community of monks, who have withdrawn from the world for religious reasons",
+  "local": [
+    {
+      "slot": "has-member",
+      "facet": "default",
+      "filler": "@MONK"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

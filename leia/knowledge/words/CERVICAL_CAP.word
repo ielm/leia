@@ -1,0 +1,38 @@
+{
+  "word": "CERVICAL_CAP",
+  "senses": {
+    "CERVICAL_CAP-N1": {
+      "CAT": "N",
+      "DEF": "a contraceptive device used by women",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CONTRACEPTIVE-DEVICE": {
+          "USED-BY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "HUMAN": {
+            "GENDER": "FEMALE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CERVICAL_CAP-N1",
+      "WORD": "CERVICAL_CAP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

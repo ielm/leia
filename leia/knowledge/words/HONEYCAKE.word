@@ -1,0 +1,31 @@
+{
+  "word": "HONEYCAKE",
+  "senses": {
+    "HONEYCAKE-N1": {
+      "CAT": "N",
+      "DEF": "a cake made with honey",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CAKE": {
+          "HAS-OBJECT-AS-PART": "HONEY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HONEYCAKE-N1",
+      "WORD": "HONEYCAKE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

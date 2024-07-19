@@ -1,0 +1,48 @@
+{
+  "word": "OUT_THERE",
+  "senses": {
+    "OUT_THERE-ADV1": {
+      "CAT": "ADV",
+      "DEF": "essentially means 'in the world'; that's how it's mapped but it could also have been  null semmed",
+      "EX": "There are people out there who drink coffee like crazy",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "POST-VERB-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "LOCATION": "WORLD"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THERE",
+        "ARE-1",
+        "PEOPLE",
+        "OUT_THERE-0",
+        "WHO",
+        "DRINK",
+        "COFFEE",
+        "LIKE",
+        "CRAZY"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "IN_THE_WORLD"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "OUT_THERE-ADV1",
+      "WORD": "OUT_THERE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

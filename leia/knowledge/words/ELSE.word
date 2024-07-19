@@ -1,0 +1,47 @@
+{
+  "word": "ELSE",
+  "senses": {
+    "ELSE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "an entity other than the salient entity",
+      "EX": "can we have something else for supper? is there anywhere else you can go?",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        }
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          [
+            "BLOCK-COREFERENCE"
+          ]
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "BALL-1",
+        "ELSE-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ELSE-ADJ1",
+      "WORD": "ELSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

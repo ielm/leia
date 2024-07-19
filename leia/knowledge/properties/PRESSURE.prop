@@ -1,0 +1,11 @@
+{
+  "name": "$PRESSURE",
+  "def": "Force applied to an object in any direction (outward, inward, etc.)",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@PRESSURE-UNIT"
+  ],
+  "container": "$SCALAR-ATTRIBUTE"
+}

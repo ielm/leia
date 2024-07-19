@@ -1,0 +1,57 @@
+{
+  "word": "STONE_AGE",
+  "senses": {
+    "STONE_AGE-N1": {
+      "CAT": "N",
+      "DEF": "period in history from 2 million B.C. to 4000 B.C.; characterized by use of increasingly sophisticated stone tools and weapons and, in latter ages, by development of food clutivation, villages, and crafts; usually divided into Paleolithic, Mesolithic, and Neolithic periods and ending with the dawn of civilization in the Bronze Age around 4000 B.C.",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "STONE-AGE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "STONE_AGE-N1",
+      "WORD": "STONE_AGE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "STONE_AGE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to the Stone Age",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "STONE-AGE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "STONE_AGE-ADJ1",
+      "WORD": "STONE_AGE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

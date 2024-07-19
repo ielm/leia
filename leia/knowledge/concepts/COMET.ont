@@ -1,0 +1,27 @@
+{
+  "name": "@COMET",
+  "isa": [
+    "@CELESTIAL-OBJECT"
+  ],
+  "def": "a small frozen mass of dust and gas revolving around the sun",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@DUST"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GAS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@NATURAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

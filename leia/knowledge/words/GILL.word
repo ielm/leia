@@ -1,0 +1,73 @@
+{
+  "word": "GILL",
+  "senses": {
+    "GILL-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "GILL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GILL-N1",
+      "WORD": "GILL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "GILL-N2": {
+      "CAT": "N",
+      "DEF": "unit of volume equivalent to 1/4 of a pint; 4*fluid-ounce",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "GILL-FLUID",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GILL-N2",
+      "WORD": "GILL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "GILL-N3": {
+      "CAT": "N",
+      "DEF": "a unit of volume, equivalent to 5 imperial fluid ounces; 5*fluid-ounce",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "GILL-IMPERIAL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "IMPERIAL_GILL"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "GILL-N3",
+      "WORD": "GILL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

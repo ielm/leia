@@ -1,0 +1,57 @@
+{
+  "word": "UNIQUE",
+  "senses": {
+    "UNIQUE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "alone of its type",
+      "EX": "he collects unique artifacts",
+      "COMMENTS": "represented as a member of a set with cardinality 1",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "ELEMENTS": {
+            "VALUE": "^$VAR1"
+          },
+          "SIMILARITY": 1,
+          "CARDINALITY": 1,
+          "COMPLETE": "YES",
+          "DETERMINATE": "YES"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "UNIQUE-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "INDIVIDUAL",
+        "ONE-OF-A-KIND"
+      ],
+      "HYPONYMS": [
+        "CUSTOM"
+      ],
+      "SENSE": "UNIQUE-ADJ1",
+      "WORD": "UNIQUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

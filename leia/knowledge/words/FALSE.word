@@ -1,0 +1,86 @@
+{
+  "word": "FALSE",
+  "senses": {
+    "FALSE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TRUTH-VALUE": 0
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "FALSE-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FALSE-ADJ1",
+      "WORD": "FALSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FALSE-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "phrasal: false + body part = prosthesis for that body part",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PROSTHESIS": {
+          "FUNCTIONS-LIKE": {
+            "VALUE": "^$VAR1",
+            "SEM": "ANATOMICAL-STRUCTURE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "FALSE-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FALSE-ADJ2",
+      "WORD": "FALSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

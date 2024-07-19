@@ -1,0 +1,19 @@
+{
+  "name": "@QUART",
+  "isa": [
+    "@LIQUID-MEASURING-UNIT"
+  ],
+  "def": "a fourth of a gallon in liquid measure; gallon/4",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.00094635
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-SOCIAL-ROLE",
+  "def": "A way to link a person and the social role they have",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$SOCIAL-ROLE-OF",
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

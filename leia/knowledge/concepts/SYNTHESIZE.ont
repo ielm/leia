@@ -1,0 +1,22 @@
+{
+  "name": "@SYNTHESIZE",
+  "isa": [
+    "@CREATIVE-COGNITIVE-EVENT"
+  ],
+  "def": "to combine parts or elements so as to form a whole, compound, etc.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ABSTRACT-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

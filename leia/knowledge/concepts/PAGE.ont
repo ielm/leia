@@ -1,0 +1,21 @@
+{
+  "name": "@PAGE",
+  "isa": [
+    "@PRINTED-MEDIA"
+  ],
+  "def": "part of a printed media",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@NAME"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@HOURGLASS",
+  "isa": [
+    "@TIMEPIECE"
+  ],
+  "def": "An instrument for measuring time, consisting of two glass chambers connected by a narrow neck and containing a quantity of sand, mercury, or another flowing substance that trickles from the upper chamber to the lower in a fixed amount of time, often one hour.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SAND"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "private": {}
+}

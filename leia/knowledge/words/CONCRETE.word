@@ -1,0 +1,69 @@
+{
+  "word": "CONCRETE",
+  "senses": {
+    "CONCRETE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "not abstract",
+      "EX": "a concrete idea of how to do it",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "ABSTRACTNESS": [
+            "<",
+            0.2
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CONCRETE-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONCRETE-ADJ1",
+      "WORD": "CONCRETE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CONCRETE-N1": {
+      "CAT": "N",
+      "DEF": "a construction material",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CONCRETE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONCRETE-N1",
+      "WORD": "CONCRETE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

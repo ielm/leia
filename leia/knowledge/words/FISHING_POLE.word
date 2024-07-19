@@ -1,0 +1,29 @@
+{
+  "word": "FISHING_POLE",
+  "senses": {
+    "FISHING_POLE-N1": {
+      "CAT": "N",
+      "DEF": "the rod used by humans to catch fish",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FISHING-POLE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "POLE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FISHING_POLE-N1",
+      "WORD": "FISHING_POLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

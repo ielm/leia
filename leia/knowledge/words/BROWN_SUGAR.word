@@ -1,0 +1,35 @@
+{
+  "word": "BROWN_SUGAR",
+  "senses": {
+    "BROWN_SUGAR-N1": {
+      "CAT": "N",
+      "DEF": "sugar that is processed less than white sugar and contains some molasses",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SUGAR": {
+          "COLOR": "BROWN",
+          "HAS-OBJECT-AS-PART": "MOLASSES"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "RAW_SUGAR",
+        "SUGAR_IN_THE_RAW"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BROWN_SUGAR-N1",
+      "WORD": "BROWN_SUGAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

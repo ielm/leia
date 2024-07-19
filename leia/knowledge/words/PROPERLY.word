@@ -1,0 +1,55 @@
+{
+  "word": "PROPERLY",
+  "senses": {
+    "PROPERLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "producing the desired result",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPITEUCTIC",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CORRECTLY-0",
+        "EVENTED-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "CORRECTLY",
+        "SUFFICIENTLY",
+        "ADEQUATELY"
+      ],
+      "HYPONYMS": [
+        "AMPLY"
+      ],
+      "SENSE": "PROPERLY-ADV1",
+      "WORD": "PROPERLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

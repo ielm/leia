@@ -1,0 +1,35 @@
+{
+  "word": "RESIDENTIAL_DEVELOPMENT",
+  "senses": {
+    "RESIDENTIAL_DEVELOPMENT-N1": {
+      "CAT": "N",
+      "DEF": "an area with private homes",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "RESIDENTIAL-DEVELOPMENT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "NEIGHBORHOOD",
+        "RESIDENTIAL_AREA",
+        "DEVELOPMENT",
+        "HOUSING_DEVELOPMENT"
+      ],
+      "HYPONYMS": [
+        "PROJECT",
+        "HOUSING_PROJECT"
+      ],
+      "SENSE": "RESIDENTIAL_DEVELOPMENT-N1",
+      "WORD": "RESIDENTIAL_DEVELOPMENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

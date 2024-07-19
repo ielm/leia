@@ -1,0 +1,30 @@
+{
+  "word": "PHONE_NUMBER",
+  "senses": {
+    "PHONE_NUMBER-N1": {
+      "CAT": "N",
+      "DEF": "the series of numbers one must dial on a phone to reach s.o.",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PHONE-NUMBER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "TELEPHONE_NUMBER",
+        "NUMBER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PHONE_NUMBER-N1",
+      "WORD": "PHONE_NUMBER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

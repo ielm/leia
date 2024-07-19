@@ -1,0 +1,47 @@
+{
+  "name": "@OXYGENATE",
+  "isa": [
+    "@CHANGE-EVENT"
+  ],
+  "def": "to treat or combine with oxygen",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OXYGEN"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

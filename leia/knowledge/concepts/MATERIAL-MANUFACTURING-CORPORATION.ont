@@ -1,0 +1,16 @@
+{
+  "name": "@MATERIAL-MANUFACTURING-CORPORATION",
+  "isa": [
+    "@FOR-PROFIT-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a for-profit corporation that produces materials or manufactures products from raw materials",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-CREDITOR",
+  "def": "The relation between an organization and its creditor(s).",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$CREDITOR-OF",
+  "measured-in": [],
+  "container": "$BUSINESS-RELATION"
+}

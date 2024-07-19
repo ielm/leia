@@ -1,0 +1,53 @@
+{
+  "word": "BAPTIST",
+  "senses": {
+    "BAPTIST-N1": {
+      "CAT": "N",
+      "DEF": "the religion of the christian church who believes that baptism should be only for people old enough to understand its meaning and that they should be covered completely with water",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BAPTIST",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BAPTIST-N1",
+      "WORD": "BAPTIST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BAPTIST-N2": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "HAS-RELIGION": "BAPTIST"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BAPTIST-N2",
+      "WORD": "BAPTIST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

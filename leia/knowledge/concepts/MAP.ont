@@ -1,0 +1,45 @@
+{
+  "name": "@MAP",
+  "isa": [
+    "@DOCUMENT"
+  ],
+  "def": "a representation of all or part of the earth*s surface, showing countries, bodies of water, etc. or of the sky showing the location of stars",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@INK"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PAPER"
+    }
+  ],
+  "private": {}
+}

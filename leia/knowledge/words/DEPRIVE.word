@@ -1,0 +1,76 @@
+{
+  "word": "DEPRIVE",
+  "senses": {
+    "DEPRIVE-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "they deprived the children of nutritious food",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "GIVE": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            },
+            "THEME": {
+              "VALUE": "^$VAR4"
+            },
+            "BENEFICIARY": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "DEPRIVED-0",
+        "THE",
+        "CHILDREN-2",
+        "OF-3",
+        "NUTRITIOUS",
+        "FOOD-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DEPRIVE-V1",
+      "WORD": "DEPRIVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

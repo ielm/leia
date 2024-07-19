@@ -1,0 +1,27 @@
+{
+  "name": "@GOLF-CLUB",
+  "isa": [
+    "@SPORT-ARTIFACT"
+  ],
+  "def": "a stick with a specially shaped head used in the game of golf",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SYNTHETIC-RUBBER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

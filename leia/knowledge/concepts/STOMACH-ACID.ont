@@ -1,0 +1,16 @@
+{
+  "name": "@STOMACH-ACID",
+  "isa": [
+    "@ACID-COMPOUND"
+  ],
+  "def": "acid in the stomach",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@STOMACH"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

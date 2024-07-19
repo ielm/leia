@@ -1,0 +1,16 @@
+{
+  "name": "@COMMITTEE",
+  "isa": [
+    "@ORGANIZATION-DIVISION"
+  ],
+  "def": "A group of persons, often with specific social roles, chosen to perform some service or function",
+  "local": [
+    {
+      "slot": "has-member",
+      "facet": "default",
+      "filler": "@SOCIAL-ROLE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

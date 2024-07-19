@@ -1,0 +1,55 @@
+{
+  "word": "THEATER",
+  "senses": {
+    "THEATER-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "MOVIE-THEATER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "MOVIE_THEATER",
+        "THEATRE",
+        "MOVIE_THEATRE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "THEATER-N1",
+      "WORD": "THEATER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "THEATER-N2": {
+      "CAT": "N",
+      "DEF": "a building where plays are performed",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "THEATER-DRAMATIC",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "THEATRE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "THEATER-N2",
+      "WORD": "THEATER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@SEMINARY",
+  "isa": [
+    "@RELIGIOUS-ORGANIZATION",
+    "@ACADEMIC-ORGANIZATION"
+  ],
+  "def": "a school where priests, ministers, or rabbis are trained",
+  "local": [],
+  "block": [
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "operating",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "operating",
+      "facet": "sem",
+      "filler": "yes"
+    }
+  ],
+  "private": {}
+}

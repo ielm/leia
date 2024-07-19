@@ -1,0 +1,99 @@
+{
+  "word": "ALWAYS",
+  "senses": {
+    "ALWAYS-ADV1": {
+      "CAT": "ADV",
+      "DEF": "of iterative events, indicates a high frequency",
+      "EX": "He is always burning himself. She is always complaining.",
+      "COMMENTS": "how frequent the event occurs depends upon the context: always burning oneself might be  twice a year (most people never burn themselves), whereas always complaining might be twice a day,  and always coughing might be every few minutes",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB"
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "ITERATION": "MULTIPLE",
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          },
+          "TIME-INTERVAL": 0.1
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CONSTANTLY-0",
+        "EVENTED-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "CONSTANTLY",
+        "INCESSANTLY",
+        "FOREVER",
+        "ALL_THE_TIME"
+      ],
+      "HYPONYMS": [
+        "EVERY_STEP_OF_THE_WAY"
+      ],
+      "SENSE": "ALWAYS-ADV1",
+      "WORD": "ALWAYS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ALWAYS-ADV2": {
+      "CAT": "ADV",
+      "DEF": "when used in the configuration 'can always X', 'always' essentially has only pragmatic force; null-sem'd here",
+      "EX": "You can always quit if you don't like your job",
+      "COMMENTS": "The MP here is a check that constrains the use of this sense to cases that include a modal like 'can' (which is mapped to 'potential' modality). So, this sense should cover 'You can always quit' but should not cover 'He always sneezes'. ",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "CHECK-THAT-EVENT-IS-SCOPED-BY-POTENTIAL-MODALITY",
+          "^$VAR1"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "YOU",
+        "CAN",
+        "ALWAYS-0",
+        "QUIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ALWAYS-ADV2",
+      "WORD": "ALWAYS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

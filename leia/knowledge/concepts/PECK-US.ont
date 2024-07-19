@@ -1,0 +1,19 @@
+{
+  "name": "@PECK-US",
+  "isa": [
+    "@VOLUME-UNIT"
+  ],
+  "def": "a unit of dry volume measure in the US system equalling 8 dry quarts; 8*dry-quart",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.00880969
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

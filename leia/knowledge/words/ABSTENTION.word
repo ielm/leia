@@ -1,0 +1,89 @@
+{
+  "word": "ABSTENTION",
+  "senses": {
+    "ABSTENTION-N1": {
+      "CAT": "N",
+      "DEF": "In voting contexts, which is the default",
+      "EX": "his abstention (from casting a vote) was surprising",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "FROM",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "SEM": "VOTE"
+        },
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ABSTENTION-N1",
+      "WORD": "ABSTENTION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ABSTENTION-N2": {
+      "CAT": "N",
+      "DEF": "in non-voting contexts, in which case the pp should be overt (at least usually)",
+      "EX": "his abstention from voicing an opinion was shocking",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "FROM",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "EPISTEMIC": 0
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ABSTENTION-N2",
+      "WORD": "ABSTENTION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

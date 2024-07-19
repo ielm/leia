@@ -1,0 +1,52 @@
+{
+  "word": "TOMORROW",
+  "senses": {
+    "TOMORROW-ADV1": {
+      "CAT": "ADV",
+      "DEF": "",
+      "EX": "tomorrow he will come",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TIME": [
+            "COMBINE-TIME",
+            [
+              "FIND-ANCHOR-TIME"
+            ],
+            "DAY",
+            "AFTER"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "TOMORROW-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TOMORROW-ADV1",
+      "WORD": "TOMORROW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

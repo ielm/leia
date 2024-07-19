@@ -1,0 +1,27 @@
+{
+  "name": "@ELECTRON",
+  "isa": [
+    "@ATOMIC-PARTICLE"
+  ],
+  "def": "a stable, negatively charged elementary particle that forms a part of all atoms",
+  "local": [
+    {
+      "slot": "electric-charge",
+      "facet": "sem",
+      "filler": "negative"
+    }
+  ],
+  "block": [
+    {
+      "slot": "electric-charge",
+      "facet": "sem",
+      "filler": "neutral"
+    },
+    {
+      "slot": "electric-charge",
+      "facet": "sem",
+      "filler": "positive"
+    }
+  ],
+  "private": {}
+}

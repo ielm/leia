@@ -1,0 +1,46 @@
+{
+  "word": "LAWLESS",
+  "senses": {
+    "LAWLESS-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "of people or organizations: acting in an unlawful way",
+      "EX": "lawless politicians",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "HUMAN",
+            "SOCIAL-OBJECT"
+          ],
+          "AGENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "EVENT": {
+            "LEGALITY-ATTRIBUTE": "NO"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LAWLESS-ADJ1",
+      "WORD": "LAWLESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

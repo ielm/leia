@@ -1,0 +1,795 @@
+{
+  "word": "FIND",
+  "senses": {
+    "FIND-N1": {
+      "CAT": "N",
+      "DEF": "something found, especially if valuable",
+      "EX": "that was a real find!",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "PHYSICAL-OBJECT": {
+            "THEME-OF": "FIND"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "DISCOVERY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FIND-N1",
+      "WORD": "FIND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FIND-V1": {
+      "CAT": "V",
+      "DEF": "to come upon (either by accident or after searching)",
+      "EX": "I finally found the keys",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "FIND": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "FOUND-0",
+        "HER-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "LOCATE",
+        "DISCOVER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FIND-V1",
+      "WORD": "FIND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FIND-V2": {
+      "CAT": "V",
+      "DEF": "find X Y (adj) = view X as Y",
+      "EX": "I find this absurd, he finds her silly",
+      "COMMENTS": "I'm avoiding the concept believe, which should be removed",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ADJ": {
+          "ROOT": "$VAR3",
+          "CAT": "ADJ"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "BELIEF",
+          "VALUE": 1,
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          },
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "PROPERTY": {
+            "DOMAIN": {
+              "VALUE": "^$VAR2"
+            },
+            "RANGE": {
+              "VALUE": "^$VAR3"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "REFSEM1",
+          "^$VAR2",
+          "^$VAR3"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "FOUND-0",
+        "THE",
+        "WORK-2",
+        "BAD-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "NSUBJ",
+          "$VAR3",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "CONSIDER",
+        "DEEM"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FIND-V2",
+      "WORD": "FIND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FIND-V3": {
+      "CAT": "V",
+      "DEF": "to understand",
+      "EX": "I find that people aren't always as shallow as they might first seem",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "COMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "BELIEF",
+          "VALUE": 1,
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          },
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "FOUND-0",
+        "THAT",
+        "SHE",
+        "ATE-2",
+        "WELL"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FIND-V3",
+      "WORD": "FIND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FIND-V4": {
+      "CAT": "V",
+      "DEF": "phrasal: find s.o. innocent",
+      "EX": "the jury found him innocent",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ADJ": {
+          "ROOT": "$VAR3",
+          "CAT": "ADJ",
+          "ROOT-WORD": "INNOCENT"
+        }
+      },
+      "SEM-STRUC": {
+        "DECLARE": {
+          "AGENT": {
+            "VALUE": "REFSEM1"
+          },
+          "THEME": {
+            "VALUE": "REFSEM2"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": {
+              "VALUE": "^$VAR1",
+              "SEM": [
+                "JURY-MEMBER",
+                "JUDGE"
+              ]
+            }
+          }
+        },
+        "REFSEM2": {
+          "CRIMINAL-ACTIVITY": {
+            "AGENT-1": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "JUDGE-1",
+        "FOUND-0",
+        "HIM-2",
+        "INNOCENT-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "NSUBJ",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "XCOMP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FIND-V4",
+      "WORD": "FIND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FIND-V5": {
+      "CAT": "V",
+      "DEF": "phrasal: find s.o. not guilty",
+      "EX": "the jury found him not guilty",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "VERB-NEG": {
+          "ROOT": "$VAR4",
+          "CAT": "VERB-NEG",
+          "ROOT-WORD": "NOT"
+        },
+        "ADJ": {
+          "ROOT": "$VAR3",
+          "CAT": "ADJ",
+          "ROOT-WORD": "GUILTY"
+        }
+      },
+      "SEM-STRUC": {
+        "DECLARE": {
+          "AGENT": {
+            "VALUE": "REFSEM1"
+          },
+          "THEME": {
+            "VALUE": "REFSEM2"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": {
+              "VALUE": "^$VAR1",
+              "SEM": [
+                "JURY-MEMBER",
+                "JUDGE"
+              ]
+            }
+          }
+        },
+        "REFSEM2": {
+          "CRIMINAL-ACTIVITY": {
+            "AGENT-1": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM2"
+          }
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "JUDGE-1",
+        "FOUND-0",
+        "HIM-2",
+        "NOT-4",
+        "GUILTY-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "NEG",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "NSUBJ",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "XCOMP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FIND-V5",
+      "WORD": "FIND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FIND-V6": {
+      "CAT": "V",
+      "DEF": "phrasal: find s.o. guilty",
+      "EX": "the jury found him guilty",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ADJ": {
+          "ROOT": "$VAR3",
+          "CAT": "ADJ",
+          "ROOT-WORD": "GUILTY"
+        }
+      },
+      "SEM-STRUC": {
+        "DECLARE": {
+          "AGENT": {
+            "VALUE": "REFSEM1"
+          },
+          "THEME": {
+            "VALUE": "REFSEM2"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": {
+              "VALUE": "^$VAR1",
+              "SEM": [
+                "JURY-MEMBER",
+                "JUDGE"
+              ]
+            }
+          }
+        },
+        "REFSEM2": {
+          "CRIMINAL-ACTIVITY": {
+            "AGENT-1": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "REFSEM2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "JUDGE-1",
+        "FOUND-0",
+        "HIM-2",
+        "GUILTY-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR2",
+          "$VAR0"
+        ],
+        [
+          "DOBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FIND-V6",
+      "WORD": "FIND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FIND-V7": {
+      "CAT": "V",
+      "DEF": "phrasal: to find out about = to discover, learn; with optional PP complement",
+      "EX": "they found out about the change in plans too late",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "OUT"
+        },
+        "PP": {
+          "ROOT-WORD": "ABOUT",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "LEARN": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "IS",
+        "FINDING-0",
+        "OUT-2",
+        "ABOUT-3",
+        "THE",
+        "CAR-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR4",
+          "$VAR3"
+        ],
+        [
+          "DET",
+          "$VAR4",
+          "$VAR3"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR4"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PRT",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "XSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FIND-V7",
+      "WORD": "FIND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FIND-V8": {
+      "CAT": "V",
+      "DEF": "phrasal: find out = to discover (with clausal complement)",
+      "EX": "they found out that it was too late",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "OUT"
+        },
+        "COMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "LEARN": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "FOUND-0",
+        "OUT-2",
+        "THAT",
+        "SHE",
+        "DIED-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PRT",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FIND-V8",
+      "WORD": "FIND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FIND-V9": {
+      "CAT": "V",
+      "DEF": "phrasal: find o.s. doing sth. = do sth.",
+      "EX": "I find myself going to bed before 9 lately. ",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "ROOT-WORD": [
+            "MYSELF",
+            "YOURSELF",
+            "HIMSELF",
+            "HERSELF",
+            "ITSELF",
+            "OURSELVES",
+            "THEMSELVES",
+            "YOURSELVES"
+          ]
+        },
+        "NP": {
+          "ROOT": "$VAR3",
+          "CAT": "NP",
+          "V": {
+            "CAT": "V",
+            "FORM": "PROGRESSIVE"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR3": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR3"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "FOUND-0",
+        "HIMSELF-2",
+        "EATING-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PARTMOD",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FIND-V9",
+      "WORD": "FIND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

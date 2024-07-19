@@ -1,0 +1,505 @@
+{
+  "name": "@PNEUMATIC-DILATION",
+  "isa": [
+    "@ENDOSCOPY"
+  ],
+  "def": "Effective nonsurgical treatment for achalasia using air pressure in a balloon dilator, placed with fluoroscopic guidance, to intraluminally dilate and disrupt the muscle fibers of the LES",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LES"
+    },
+    {
+      "slot": "has-medical-risk",
+      "facet": "sem",
+      "filler": "@TEAR-EVENT-1"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@GASTROENTEROLOGIST"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PNEUMATIC-BALLOON"
+    },
+    {
+      "slot": "creates-image-of",
+      "facet": "sem",
+      "filler": "@LES"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        31
+      ]
+    },
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        31
+      ]
+    },
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        31
+      ]
+    },
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        31
+      ]
+    },
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@PATIENT"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@PATIENT"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@PATIENT"
+    },
+    {
+      "slot": "capacity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "capacity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "capacity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "capacity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "capacity",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "capacity",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "capacity",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "capacity",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "creates-image-of",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@PATIENT"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@PATIENT"
+    },
+    {
+      "slot": "extra-ontological",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "extra-ontological",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "extra-ontological",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "extra-ontological",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "extra-ontological",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "extra-ontological",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "extra-ontological",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "extra-ontological",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "fr-property",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "fr-property",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "fr-property",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "fr-property",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "fr-property",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "fr-property",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "fr-property",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "fr-property",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ENDOSCOPE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@OFFICE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@OFFICE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@OFFICE"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "safety-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "safety-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "safety-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "safety-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "temporal-attribute",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "temporal-attribute",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "temporal-attribute",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "temporal-attribute",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "temporal-attribute",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "temporal-attribute",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "temporal-attribute",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "temporal-attribute",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BONE-JOINT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CARDIOVASCULAR-SYSTEM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FEMALE-INTERNAL-GENITALIA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GASTROINTESTINAL-SYSTEM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LARYNX"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LUNG"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NOSE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHARYNX"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TRACHEOBRONCHIAL-TREE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@URINARY-SYSTEM"
+    },
+    {
+      "slot": "time-begin",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "time-begin",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "time-begin",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "time-begin",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "time-end",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "time-end",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "time-end",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "time-end",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    }
+  ],
+  "private": {
+    "@TEAR-EVENT-1": {
+      "name": "@TEAR-EVENT-1",
+      "isa": [
+        "@TEAR-EVENT"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "theme",
+          "facet": "sem",
+          "filler": "@ESOPHAGUS"
+        }
+      ],
+      "block": [],
+      "private": {}
+    }
+  }
+}

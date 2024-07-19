@@ -1,0 +1,27 @@
+{
+  "name": "@NON-COMMUNICABLE-DISEASE",
+  "isa": [
+    "@DISEASE"
+  ],
+  "def": "Diseases that don*t spread from one being to another, and/or don*t cause infection",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@BIOLOGICAL-WEAPON"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@GENE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    }
+  ],
+  "private": {}
+}

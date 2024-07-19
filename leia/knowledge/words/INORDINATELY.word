@@ -1,0 +1,41 @@
+{
+  "word": "INORDINATELY",
+  "senses": {
+    "INORDINATELY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "excessively, more than expected, desired, etc.",
+      "EX": "inordinately strict",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        },
+        "ROOT": "$VAR1",
+        "CAT": [
+          "ADJ",
+          "ADV"
+        ]
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATIVE-TO-NORM": [
+            ">",
+            0.8
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INORDINATELY-ADV1",
+      "WORD": "INORDINATELY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

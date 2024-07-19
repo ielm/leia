@@ -1,0 +1,16 @@
+{
+  "name": "@ACCUMULATE",
+  "isa": [
+    "@TRANSFER-OBJECT"
+  ],
+  "def": "to pile up or collect a number of objects",
+  "local": [],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    }
+  ],
+  "private": {}
+}

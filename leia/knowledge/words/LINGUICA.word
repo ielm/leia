@@ -1,0 +1,34 @@
+{
+  "word": "LINGUICA",
+  "senses": {
+    "LINGUICA-N1": {
+      "CAT": "N",
+      "DEF": "highly seasoned Portuguese   pork sausage flavored with garlic, onions, and pepper",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SAUSAGE": {
+          "MADE-OF": "PORK",
+          "MADE-OF-1": "GARLIC",
+          "MADE-OF-2": "ONION",
+          "MADE-OF-3": "PEPPER-VEGETABLE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LINGUICA-N1",
+      "WORD": "LINGUICA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

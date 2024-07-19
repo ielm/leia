@@ -1,0 +1,45 @@
+{
+  "word": "MEANDER",
+  "senses": {
+    "MEANDER-V1": {
+      "CAT": "V",
+      "DEF": "travel aimlessly",
+      "EX": "they meandered (through the park) (for hours)",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "TRAVEL-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "URGENCY": [
+            "<",
+            0.3
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "MEANDERED-0",
+        "AROUND"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MEANDER-V1",
+      "WORD": "MEANDER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

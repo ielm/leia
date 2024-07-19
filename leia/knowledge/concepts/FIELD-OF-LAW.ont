@@ -1,0 +1,27 @@
+{
+  "name": "@FIELD-OF-LAW",
+  "isa": [
+    "@FIELD-OF-STUDY"
+  ],
+  "def": "The field of study which concerns the rules of conduct established by the authority of any form of government.",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@ATTORNEY"
+    },
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@LEGAL-WORK-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    }
+  ],
+  "private": {}
+}

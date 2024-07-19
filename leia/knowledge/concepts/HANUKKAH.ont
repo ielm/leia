@@ -1,0 +1,37 @@
+{
+  "name": "@HANUKKAH",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "an eight-day Jewish holiday commemorating the victory of the Maccabees over Antiochus Epiphanes and the rededication of the Jerusalem Temple (begins on the 25th day of Kislev)",
+  "local": [
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@DECEMBER"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@JUDAISM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "private": {}
+}

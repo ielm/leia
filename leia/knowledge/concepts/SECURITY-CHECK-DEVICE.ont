@@ -1,0 +1,22 @@
+{
+  "name": "@SECURITY-CHECK-DEVICE",
+  "isa": [
+    "@DEPENDENT-DEVICE"
+  ],
+  "def": "a dependent-device that can check as to whether a system is functioning or not",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CONVEYOR-BELT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

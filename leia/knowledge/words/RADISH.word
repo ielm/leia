@@ -1,0 +1,32 @@
+{
+  "word": "RADISH",
+  "senses": {
+    "RADISH-N1": {
+      "CAT": "N",
+      "DEF": "a root vegetable, typically with white flesh",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "RADISH",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "DAIKON",
+        "CHINESE_RADISH",
+        "JAPANESE_RADISH",
+        "ORIENTAL_RADISH"
+      ],
+      "SENSE": "RADISH-N1",
+      "WORD": "RADISH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

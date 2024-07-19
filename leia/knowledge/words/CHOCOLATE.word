@@ -1,0 +1,55 @@
+{
+  "word": "CHOCOLATE",
+  "senses": {
+    "CHOCOLATE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CHOCOLATE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CHOCOLATE-N1",
+      "WORD": "CHOCOLATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CHOCOLATE-N2": {
+      "CAT": "N",
+      "DEF": "chocolate candy",
+      "EX": "she ate a whole box of chocolates",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CANDY": {
+          "MADE-OF": "CHOCOLATE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "CHOCOLATE_CANDY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CHOCOLATE-N2",
+      "WORD": "CHOCOLATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

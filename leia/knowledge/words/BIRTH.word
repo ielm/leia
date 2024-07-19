@@ -1,0 +1,61 @@
+{
+  "word": "BIRTH",
+  "senses": {
+    "BIRTH-N1": {
+      "CAT": "N",
+      "DEF": "being born",
+      "EX": "the birth of their first child was a joyous occasion",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "BEAR-OFFSPRING": {
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "BIRTH-0",
+        "OF-1",
+        "THE",
+        "OFFSPRING-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BIRTH-N1",
+      "WORD": "BIRTH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

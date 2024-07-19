@@ -1,0 +1,27 @@
+{
+  "name": "@EDEMA",
+  "isa": [
+    "@SYMPTOM"
+  ],
+  "def": "an abnormal accumulation of fluid in intercellular spaces of the body\n(http://medical-dictionary.thefreedictionary.com/edema)",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TISSUE-FLUID"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

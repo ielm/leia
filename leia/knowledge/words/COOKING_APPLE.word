@@ -1,0 +1,36 @@
+{
+  "word": "COOKING_APPLE",
+  "senses": {
+    "COOKING_APPLE-N1": {
+      "CAT": "N",
+      "DEF": "a less sweet apple usu. used for cooking",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "APPLE": {
+          "SWEETNESS": [
+            "<",
+            0.6
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "PIE_APPLE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "COOKING_APPLE-N1",
+      "WORD": "COOKING_APPLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

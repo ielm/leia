@@ -1,0 +1,41 @@
+{
+  "word": "LEAD_ACETATE",
+  "senses": {
+    "LEAD_ACETATE-N1": {
+      "CAT": "N",
+      "DEF": "a poisonous white solid used in dyeing cotton and in making enamels and varnishes",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "DYESTUFF": {
+          "COLOR": "WHITE",
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "DYE": {
+            "THEME": "COTTON"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SUGAR_OF_LEAD"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "LEAD_ACETATE-N1",
+      "WORD": "LEAD_ACETATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

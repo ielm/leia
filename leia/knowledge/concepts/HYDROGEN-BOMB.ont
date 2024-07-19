@@ -1,0 +1,41 @@
+{
+  "name": "@HYDROGEN-BOMB",
+  "isa": [
+    "@NUCLEAR-WEAPON",
+    "@BOMB"
+  ],
+  "def": "weapon deriving a large portion of its energy from the nuclear fusion of hydrogen isotopes",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@HYDROGEN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

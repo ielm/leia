@@ -1,0 +1,22 @@
+{
+  "name": "@OOPHORECTOMY",
+  "isa": [
+    "@SURGICAL-REMOVAL"
+  ],
+  "def": "Surgical removal of one or both ovaries. Also called ovariectomy.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@OVARY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

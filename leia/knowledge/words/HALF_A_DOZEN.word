@@ -1,0 +1,132 @@
+{
+  "word": "HALF_A_DOZEN",
+  "senses": {
+    "HALF_A_DOZEN-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "give me half a dozen bagels",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "NUMBER": "PL"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "CARDINALITY": 6,
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HALF_A_DOZEN-0",
+        "OBJECT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HALF_A_DOZEN-QUANTIFIER1",
+      "WORD": "HALF_A_DOZEN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HALF_A_DOZEN-QUANTIFIER2": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "give me half a dozen of your best bagels.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "CAT": "PREP",
+          "ROOT": "$VAR2",
+          "OBJ": {
+            "ROOT": "$VAR1",
+            "CAT": "NP",
+            "NUMBER": "PL"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "CARDINALITY": 6,
+          "DETERMINATE": "NO",
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HALF_A_DOZEN-0",
+        "OF-2",
+        "THE",
+        "OBJECT-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HALF_A_DOZEN-QUANTIFIER2",
+      "WORD": "HALF_A_DOZEN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HALF_A_DOZEN-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "i'd like half a dozen, please.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "CARDINALITY": 6
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          [
+            "SET",
+            1
+          ]
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HALF_A_DOZEN-N1",
+      "WORD": "HALF_A_DOZEN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

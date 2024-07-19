@@ -1,0 +1,49 @@
+{
+  "word": "GRASS",
+  "senses": {
+    "GRASS-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "GRASS",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GRASS-N1",
+      "WORD": "GRASS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "GRASS-N2": {
+      "CAT": "N",
+      "DEF": "marijuana",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "MARIJUANA",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GRASS-N2",
+      "WORD": "GRASS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

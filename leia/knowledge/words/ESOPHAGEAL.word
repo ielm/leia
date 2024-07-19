@@ -1,0 +1,86 @@
+{
+  "word": "ESOPHAGEAL",
+  "senses": {
+    "ESOPHAGEAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to the esophagus",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "NOT",
+            "DISEASE"
+          ],
+          "RELATION": "ESOPHAGUS"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "OESOPHAGEAL"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ESOPHAGEAL-ADJ1",
+      "WORD": "ESOPHAGEAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ESOPHAGEAL-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "esophageal + disease - the esophagus is the theme of the disease,  not just related to it (as for esophageal-adj1)",
+      "EX": "You have an esophageal disease",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "DISEASE",
+          "THEME": "ESOPHAGUS"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "OESOPHAGEAL"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ESOPHAGEAL-ADJ2",
+      "WORD": "ESOPHAGEAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

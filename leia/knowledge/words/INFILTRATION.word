@@ -1,0 +1,240 @@
+{
+  "word": "INFILTRATION",
+  "senses": {
+    "INFILTRATION-N1": {
+      "CAT": "N",
+      "DEF": "entering (a place) for the purpose of spying",
+      "EX": "lax border patrols allowed infiltration of the country by insurgents",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ENTER": {
+          "AGENT": {
+            "VALUE": "^$VAR4"
+          },
+          "DESTINATION": {
+            "VALUE": "^$VAR2"
+          },
+          "PURPOSE": "SPY-ON"
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INFILTRATION-N1",
+      "WORD": "INFILTRATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "INFILTRATION-N2": {
+      "CAT": "N",
+      "DEF": "joining (an organization) for the purpose of spying",
+      "EX": "counter-terrorism efforts were plagued by the infiltration of top secret agencies by enemy agents",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "AFFILIATE": {
+          "AGENT": {
+            "VALUE": "^$VAR4"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2",
+            "SEM": "ORGANIZATION"
+          },
+          "PURPOSE": "SPY-ON"
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INFILTRATION-N2",
+      "WORD": "INFILTRATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "INFILTRATION-N3": {
+      "CAT": "N",
+      "DEF": "entering (a place) for the purpose of spying",
+      "EX": "lax border patrols allowed infiltration of insurgents into the country",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": [
+            "INTO",
+            "WITHIN"
+          ],
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ENTER": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "DESTINATION": {
+            "VALUE": "^$VAR4"
+          },
+          "PURPOSE": "SPY-ON"
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INFILTRATION-N3",
+      "WORD": "INFILTRATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "INFILTRATION-N4": {
+      "CAT": "N",
+      "DEF": "joining (an organization) for the purpose of spying",
+      "EX": "counter-terrorism efforts were plagued by the infiltration of enemy agents into top secret agencies",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": [
+            "INTO",
+            "WITHIN"
+          ],
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "AFFILIATE": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR4",
+            "SEM": "ORGANIZATION"
+          },
+          "PURPOSE": "SPY-ON"
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INFILTRATION-N4",
+      "WORD": "INFILTRATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

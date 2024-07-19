@@ -1,0 +1,16 @@
+{
+  "name": "@THREAD",
+  "isa": [
+    "@SEWING-MATERIAL"
+  ],
+  "def": "a fine stringlike length of spun silk, cotton, nylon, etc. used in sewing",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOL"
+    }
+  ],
+  "private": {}
+}

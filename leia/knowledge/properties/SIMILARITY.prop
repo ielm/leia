@@ -1,0 +1,9 @@
+{
+  "name": "$SIMILARITY",
+  "def": "the degree to which things are (towards 1) or are not (towards 0) similar \n(note: this will need to become a microtheory in which we seek the values of salient properties that are implicity compared). \nThe domain will generally be a set, so if X and Y are similar, then the set [X,Y] has similarity of, say, < .7. The property\nthat makes them similar is a second-order property\n",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-ATTRIBUTE"
+}

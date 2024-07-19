@@ -1,0 +1,409 @@
+{
+  "word": "FOR_EXAMPLE",
+  "senses": {
+    "FOR_EXAMPLE-CONJ1": {
+      "CAT": "CONJ",
+      "DEF": "",
+      "EX": "Good grades, for example, A and A-, are hard to get. [An example from a   dictionary: Wear something simple; for example, a skirt and blouse.",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "PUNCT": {
+          "ROOT-WORD": [
+            "*COMMA*",
+            "*DASH*"
+          ],
+          "CAT": "PUNCT",
+          "ROOT": "$VAR3"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "CONJ",
+        "PUNCT-1": {
+          "ROOT-WORD": "*COMMA*",
+          "CAT": "PUNCT",
+          "ROOT": "$VAR4",
+          "OPT": "+"
+        },
+        "NP-1": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "PUNCT-2": {
+          "ROOT-WORD": [
+            "*COMMA*",
+            "*DASH*"
+          ],
+          "CAT": "PUNCT",
+          "ROOT": "$VAR5"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "ELEMENTS": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "OBJECT-1",
+        "*COMMA*-3",
+        "FOR_EXAMPLE-0",
+        "*COMMA*-4",
+        "THE",
+        "EVENT-2",
+        "*COMMA*-5"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR2",
+          "$VAR0"
+        ],
+        [
+          "DEP",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PUNCT",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PUNCT",
+          "$VAR2",
+          "$VAR4"
+        ],
+        [
+          "PUNCT",
+          "$VAR2",
+          "$VAR5"
+        ]
+      ],
+      "SYNONYMS": [
+        "FOR_INSTANCE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FOR_EXAMPLE-CONJ1",
+      "WORD": "FOR_EXAMPLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FOR_EXAMPLE-CONJ2": {
+      "CAT": "CONJ",
+      "DEF": "",
+      "EX": "To make a mistake, for example, to zig where you should have zagged, is ...",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "INF-CL": {
+          "ROOT": "$VAR1",
+          "CAT": "INF-CL"
+        },
+        "PUNCT": {
+          "ROOT-WORD": [
+            "*COMMA*",
+            "*DASH*"
+          ],
+          "CAT": "PUNCT",
+          "ROOT": "$VAR3"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "CONJ",
+        "PUNCT-1": {
+          "ROOT-WORD": "*COMMA*",
+          "CAT": "PUNCT",
+          "ROOT": "$VAR4",
+          "OPT": "+"
+        },
+        "INF-CL-1": {
+          "ROOT": "$VAR2",
+          "CAT": "INF-CL"
+        },
+        "PUNCT-2": {
+          "ROOT-WORD": [
+            "*COMMA*",
+            "*DASH*"
+          ],
+          "CAT": "PUNCT",
+          "ROOT": "$VAR5"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "ELEMENTS": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "INF-CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "*COMMA*-3",
+        "FOR_EXAMPLE-0",
+        "*COMMA*-4",
+        "HIT-2",
+        "THE",
+        "BUILDING",
+        "*COMMA*-5"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PUNCT",
+          "$VAR2",
+          "$VAR4"
+        ],
+        [
+          "PUNCT",
+          "$VAR2",
+          "$VAR5"
+        ]
+      ],
+      "SYNONYMS": [
+        "FOR_INSTANCE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FOR_EXAMPLE-CONJ2",
+      "WORD": "FOR_EXAMPLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FOR_EXAMPLE-CONJ3": {
+      "CAT": "CONJ",
+      "DEF": "",
+      "EX": "I tried many things, for example, I ...",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "PUNCT": {
+          "ROOT-WORD": [
+            "*COMMA*",
+            "*SEMICOLON*",
+            "*COLON*",
+            "*DASH*"
+          ],
+          "CAT": "PUNCT",
+          "ROOT": "$VAR3"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "CONJ",
+        "PUNCT-1": {
+          "ROOT-WORD": "*COMMA*",
+          "CAT": "PUNCT",
+          "ROOT": "$VAR4",
+          "OPT": "+"
+        },
+        "CL-1": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "ELEMENTS": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "*COMMA*-3",
+        "FOR_EXAMPLE-0",
+        "*COMMA*-4",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CC",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "CCOMP",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "CONJ",
+          "$VAR1",
+          "$VAR4"
+        ],
+        [
+          "CONJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PUNCT",
+          "$VAR1",
+          "$VAR3"
+        ],
+        [
+          "PUNCT",
+          "$VAR1",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [
+        "FOR_INSTANCE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FOR_EXAMPLE-CONJ3",
+      "WORD": "FOR_EXAMPLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FOR_EXAMPLE-CONJ4": {
+      "CAT": "CONJ",
+      "DEF": "",
+      "EX": "Big rivers -- the Rio Grande, for example -- are...",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "PUNCT": {
+          "ROOT-WORD": "*DASH*",
+          "CAT": "PUNCT",
+          "ROOT": "$VAR3"
+        },
+        "NP-1": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "PUNCT-1": {
+          "ROOT-WORD": "*COMMA*",
+          "CAT": "PUNCT",
+          "ROOT": "$VAR4",
+          "OPT": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "CONJ",
+        "PUNCT-2": {
+          "ROOT-WORD": "*DASH*",
+          "CAT": "PUNCT",
+          "ROOT": "$VAR5",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "ELEMENTS": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "OBJECT-1",
+        "|--3|",
+        "THE",
+        "EVENT-2",
+        "*COMMA*-4",
+        "FOR_EXAMPLE-0",
+        "|--5|"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR4"
+        ],
+        [
+          "PUNCT",
+          "$VAR1",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "FOR_INSTANCE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FOR_EXAMPLE-CONJ4",
+      "WORD": "FOR_EXAMPLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

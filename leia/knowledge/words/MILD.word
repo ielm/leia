@@ -1,0 +1,85 @@
+{
+  "word": "MILD",
+  "senses": {
+    "MILD-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "not spicy",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SPICINESS": 0.2
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "MILD-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MILD-ADJ1",
+      "WORD": "MILD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MILD-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "not intense",
+      "EX": "mild discomfort",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "INTENSITY": 0.2
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "MILD-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "NOT_TOO_BAD"
+      ],
+      "SENSE": "MILD-ADJ2",
+      "WORD": "MILD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

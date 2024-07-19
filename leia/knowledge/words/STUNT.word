@@ -1,0 +1,34 @@
+{
+  "word": "STUNT",
+  "senses": {
+    "STUNT-N1": {
+      "CAT": "N",
+      "DEF": "something unusual done to attract attention",
+      "EX": "That actress's fake wedding was just a publicity stunt",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "EVENT": {
+          "PURPOSE": {
+            "VALUE": "REFSEM2"
+          },
+          "SURPRISE": 0.8
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "STUNT-N1",
+      "WORD": "STUNT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

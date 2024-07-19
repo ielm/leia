@@ -1,0 +1,62 @@
+{
+  "word": "DEMOBILIZE",
+  "senses": {
+    "DEMOBILIZE-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "they demobilized her brother last march",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "DEMOBILIZE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "DEMOBILIZED-0",
+        "HER",
+        "BROTHER-2",
+        "LAST",
+        "MARCH"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "IOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DEMOBILIZE-V1",
+      "WORD": "DEMOBILIZE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

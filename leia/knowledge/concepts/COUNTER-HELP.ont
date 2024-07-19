@@ -1,0 +1,22 @@
+{
+  "name": "@COUNTER-HELP",
+  "isa": [
+    "@WORK-ROLE"
+  ],
+  "def": "employees in a fast food restaurant who hand food to customers over the counter",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@FAST-FOOD-RESTAURANT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

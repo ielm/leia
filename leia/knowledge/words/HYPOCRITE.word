@@ -1,0 +1,36 @@
+{
+  "word": "HYPOCRITE",
+  "senses": {
+    "HYPOCRITE-N1": {
+      "CAT": "N",
+      "DEF": "a person who claims to have moral standards but does not act according to them",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "SINCERITY": {
+            "VALUE": [
+              "<",
+              0.3
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HYPOCRITE-N1",
+      "WORD": "HYPOCRITE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

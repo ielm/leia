@@ -1,0 +1,22 @@
+{
+  "name": "@TETANUS",
+  "isa": [
+    "@COMMUNICABLE-DISEASE"
+  ],
+  "def": "a bacterial disease characterized by rigidity and muscle spasms",
+  "local": [
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SPASM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@ICE-STORM",
+  "isa": [
+    "@STORM"
+  ],
+  "def": "A storm in which rain freezes on contact, forming a coat of ice on the surfaces it touches.",
+  "local": [
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@CLOUD"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@RAIN"
+    },
+    {
+      "slot": "location",
+      "facet": "not",
+      "filler": "@TROPICAL-RAIN-FOREST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@NATURAL-EVENT"
+    }
+  ],
+  "private": {}
+}

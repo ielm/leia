@@ -1,0 +1,16 @@
+{
+  "name": "@NUCLEAR-ENERGY",
+  "isa": [
+    "@ENERGY"
+  ],
+  "def": "the energy released from an atom in nuclear reactions, especially in nuclear fission or nuclear fusion",
+  "local": [
+    {
+      "slot": "relation",
+      "facet": "sem",
+      "filler": "@ATOM"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

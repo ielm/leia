@@ -1,0 +1,22 @@
+{
+  "name": "@SIGMOIDECTOMY",
+  "isa": [
+    "@SURGICAL-REMOVAL"
+  ],
+  "def": "Excision of the sigmoid colon.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@SIGMOID-COLON"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

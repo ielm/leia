@@ -1,0 +1,38 @@
+{
+  "word": "CLINICAL_PSYCHOLOGY",
+  "senses": {
+    "CLINICAL_PSYCHOLOGY-N1": {
+      "CAT": "N",
+      "DEF": "branch of psychology that focuses on human development and interaction and supports therapeutic intervention to aid the problem solving of individuals, couples, families, and groups",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PSYCHOLOGY": {
+          "FIELD-STUDIES-AREA": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "MEDICAL-PROCEDURE": {
+            "THEME": "MENTAL-DISORDER"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CLINICAL_PSYCHOLOGY-N1",
+      "WORD": "CLINICAL_PSYCHOLOGY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

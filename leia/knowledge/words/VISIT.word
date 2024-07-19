@@ -1,0 +1,376 @@
+{
+  "word": "VISIT",
+  "senses": {
+    "VISIT-N2": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "the visit of the president with the senator",
+      "COMMENTS": "[D]  The pps are not optional because if they are, there's no way to disambiguate between n1 and n2. N1 should be used as the default for this word.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "WITH",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MEETING": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "AGENT-1": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "VISIT-0",
+        "OF-1",
+        "THE",
+        "DOG-2",
+        "WITH-3",
+        "THE",
+        "DOG-4",
+        "CONFUSED",
+        "MANY",
+        "PEOPLE"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "VISIT-N2",
+      "WORD": "VISIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "VISIT-V1": {
+      "CAT": "V",
+      "DEF": "to come to see",
+      "EX": "Mary visited her mother.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "MEETING": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "AGENT-1": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOG-1",
+        "VISITS-0",
+        "THE",
+        "COMPANY-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "VISIT-V1",
+      "WORD": "VISIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "VISIT-V2": {
+      "CAT": "V",
+      "DEF": "to go to some place",
+      "EX": "he visited cairo",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "COME": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "DESTINATION": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "GOD-1",
+        "VISITS-0",
+        "THE",
+        "LOBBY-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "VISIT-V2",
+      "WORD": "VISIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "VISIT-V3": {
+      "CAT": "V",
+      "DEF": "to read a webpage",
+      "EX": "visit the webpage to learn more about dysphagia",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "READ": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": [
+              "WEBSITE",
+              "WEBPAGE"
+            ]
+          },
+          "INTENSITY": [
+            "<",
+            0.2
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "HUMAN-1",
+        "VISITED-0",
+        "THE",
+        "WEBSITE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "IOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "XSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "CONSULT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "VISIT-V3",
+      "WORD": "VISIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "VISIT-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "the visit of the president to cairo",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": [
+            "OF",
+            "BY"
+          ],
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "TO",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "COME": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "DESTINATION": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "DISCUSSED",
+        "THE",
+        "VISIT-0",
+        "OF-1",
+        "THE",
+        "GOD-2",
+        "TO-3",
+        "THE",
+        "LOBBY-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "TRIP"
+      ],
+      "SENSE": "VISIT-N1",
+      "WORD": "VISIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

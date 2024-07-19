@@ -1,0 +1,44 @@
+{
+  "word": "BOND",
+  "senses": {
+    "BOND-N1": {
+      "CAT": "N",
+      "DEF": "an interest-bearing certificate",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BOND",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "BOND_CERTIFICATE"
+      ],
+      "HYPONYMS": [
+        "BOND_ISSUE",
+        "CONVERTIBLE_BOND",
+        "COUPON_BOND",
+        "BEARER_BOND",
+        "JUNK_BOND",
+        "HIGH-YIELD_BOND",
+        "NONCALLABLE_BOND",
+        "PERFORMANCE_BOND",
+        "REGISTERED_BOND",
+        "REVENUE_BOND",
+        "SECURED_BOND",
+        "UNSECURED_BOND",
+        "DEBENTURE",
+        "DEBENTURE_BOND"
+      ],
+      "SENSE": "BOND-N1",
+      "WORD": "BOND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@HYSTERECTOMY",
+  "isa": [
+    "@SURGICAL-REMOVAL"
+  ],
+  "def": "Surgical removal of part or all of the uterus.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@UTERUS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

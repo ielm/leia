@@ -1,0 +1,32 @@
+{
+  "name": "@CULTIVATE-CROP",
+  "isa": [
+    "@CULTIVATE-PLANT"
+  ],
+  "def": "cultivation specific to growing crops -- i.e., large-scale growing of specific type of plants, like corn, wheat, etc.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CROP"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GARDEN"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GREENHOUSE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

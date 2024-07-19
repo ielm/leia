@@ -1,0 +1,31 @@
+{
+  "word": "DISTAL_DYSPHAGIA",
+  "senses": {
+    "DISTAL_DYSPHAGIA-N1": {
+      "CAT": "N",
+      "DEF": "difficulty swallowing with the food getting caught in the distal esophagus",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "DYSPHAGIA": {
+          "LOCATION": "DISTAL-ESOPHAGUS"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DISTAL_DYSPHAGIA-N1",
+      "WORD": "DISTAL_DYSPHAGIA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

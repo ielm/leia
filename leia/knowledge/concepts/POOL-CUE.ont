@@ -1,0 +1,22 @@
+{
+  "name": "@POOL-CUE",
+  "isa": [
+    "@GAME-ARTIFACT"
+  ],
+  "def": "a long tapering rod used in billiards and pool to strike the ball",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

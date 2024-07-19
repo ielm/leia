@@ -1,0 +1,9 @@
+{
+  "name": "$IS-CONSUMER-GOOD",
+  "def": "A binary property to define whether an artifact is a consumer good - goods such as food and clothing that satisfy human wants through their direct consumption or use - or not.",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-OBJECT-ATTRIBUTE"
+}

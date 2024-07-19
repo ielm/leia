@@ -1,0 +1,82 @@
+{
+  "word": "DUE",
+  "senses": {
+    "DUE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "phrasal: x [be] [due] ([to arrive]) [in place y] = will come",
+      "EX": "the president is due (to arrive) in china in three days",
+      "COMMENTS": "pps will be done compositionally, although they are usually expected; I null-semmed the xcomp 'arrive' rather than let it head the sem-struc in case it's not overt",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "XCOMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V",
+          "ROOT-WORD": "ARRIVE",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "COME": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "TIME": [
+            ">",
+            [
+              "FIND-ANCHOR-TIME"
+            ]
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "ANIMAL-1",
+        "WAS-2",
+        "DUE-0",
+        "TO-7",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CC",
+          "$VAR2",
+          "$VAR0"
+        ],
+        [
+          "NSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DUE-ADJ1",
+      "WORD": "DUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@PERICARDIAL-FLUID",
+  "isa": [
+    "@SEROUS-FLUID"
+  ],
+  "def": "Transudate contained in the pericardial cavity",
+  "local": [
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@PERICARDIAL-CAVITY"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

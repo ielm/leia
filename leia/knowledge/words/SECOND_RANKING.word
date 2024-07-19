@@ -1,0 +1,39 @@
+{
+  "word": "SECOND_RANKING",
+  "senses": {
+    "SECOND_RANKING-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "the 2nd ranked",
+      "EX": "She's the second-ranking tennis player on the East Coast",
+      "COMMENTS": "ultimately, -ranking and -ranked need to become a meaning  procedure to cover all numbers",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RANK": 2
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SECOND_RANKING",
+        "SECOND_RANKED",
+        "SECOND-RANKED"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SECOND_RANKING-ADJ1",
+      "WORD": "SECOND_RANKING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

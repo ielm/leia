@@ -1,0 +1,33 @@
+{
+  "word": "DORM_ROOM",
+  "senses": {
+    "DORM_ROOM-N1": {
+      "CAT": "N",
+      "DEF": "a room in a dormitory, used for sleeping",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BEDROOM": {
+          "LOCATION": "DORMITORY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "DORMITORY_ROOM"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DORM_ROOM-N1",
+      "WORD": "DORM_ROOM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

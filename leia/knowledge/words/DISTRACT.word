@@ -1,0 +1,78 @@
+{
+  "word": "DISTRACT",
+  "senses": {
+    "DISTRACT-V1": {
+      "CAT": "V",
+      "DEF": "to cause to not to pay attention",
+      "EX": "[she / the noise] is distracting him from his work",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": "FROM",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          },
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "REFSEM1": {
+          "PAY-ATTENTION": {
+            "AGENT": {
+              "VALUE": "^$VAR2"
+            },
+            "THEME": {
+              "VALUE": "^$VAR4"
+            }
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "IS",
+        "DISTRACTING-0",
+        "THE",
+        "DOG-2",
+        "FROM-3",
+        "THE",
+        "OPERA-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DISTRACT-V1",
+      "WORD": "DISTRACT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

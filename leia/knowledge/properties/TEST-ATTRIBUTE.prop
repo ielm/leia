@@ -1,0 +1,9 @@
+{
+  "name": "$TEST-ATTRIBUTE",
+  "def": "this is for testing interface functionality",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-ATTRIBUTE"
+}

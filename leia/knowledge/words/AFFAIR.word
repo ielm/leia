@@ -1,0 +1,79 @@
+{
+  "word": "AFFAIR",
+  "senses": {
+    "AFFAIR-N1": {
+      "CAT": "N",
+      "DEF": "this sense is broad, covering social, business, etc., events; no way to disambiguate, probably, so I'm bunching them",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "EVENT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AFFAIR-N1",
+      "WORD": "AFFAIR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "AFFAIR-N2": {
+      "CAT": "N",
+      "DEF": "a romantic, sexual relationship",
+      "EX": "his affair with his secretary was scandalous",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "WITH",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SEX-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "DISCUSSED",
+        "THE",
+        "WOMAN-3",
+        "*QUOTE*S-4",
+        "AFFAIR-0",
+        "WITH-1",
+        "THE",
+        "MAN-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AFFAIR-N2",
+      "WORD": "AFFAIR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

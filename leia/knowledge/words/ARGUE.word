@@ -1,0 +1,409 @@
+{
+  "word": "ARGUE",
+  "senses": {
+    "ARGUE-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "they argued [about money]",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "NUMBER": "PL"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": [
+            "ABOUT",
+            "OVER"
+          ],
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ARGUE-CONFLICT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "ARGUED-0",
+        "ABOUT-2",
+        "THE",
+        "ISSUE-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ARGUE-V1",
+      "WORD": "ARGUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ARGUE-V2": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "he argued with me [about sports]",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "WITH",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT-WORD": [
+            "ABOUT",
+            "OVER"
+          ],
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR5",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ARGUE-CONFLICT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "AGENT-1": {
+            "VALUE": "^$VAR3"
+          },
+          "THEME": {
+            "VALUE": "^$VAR5"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "ARGUED-0",
+        "WITH-2",
+        "THE",
+        "WOMAN-3",
+        "ABOUT-4",
+        "THE",
+        "ISSUE-5"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "POBJ",
+          "$VAR4",
+          "$VAR5"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ARGUE-V2",
+      "WORD": "ARGUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ARGUE-V3": {
+      "CAT": "V",
+      "DEF": "to give reasons for or against",
+      "EX": "he argued that there was a better way to do this",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "COMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "ARGUE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "ARGUED-0",
+        "THAT",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ARGUE-V3",
+      "WORD": "ARGUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ARGUE-V4": {
+      "CAT": "V",
+      "DEF": "phrasal: argue against = oppose",
+      "EX": "he argued against the proposition",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "AGAINST",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "OPPOSITION-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3",
+            "SEM": [
+              "NOT",
+              "HUMAN"
+            ]
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "ARGUED-0",
+        "AGAINST-2",
+        "THE",
+        "JUDGE-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ARGUE-V4",
+      "WORD": "ARGUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ARGUE-V5": {
+      "CAT": "V",
+      "DEF": "direct quotation",
+      "EX": "'We'll never finish in time,' he argued (with them).",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "WITH",
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        },
+        "QUOTED-SPEECH": [
+          [
+            "ROOT",
+            "$VAR2"
+          ],
+          [
+            "CAT",
+            "CL"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "ARGUE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "ARGUED-0",
+        "WITH-4",
+        "THEM-3",
+        "*COMMA*",
+        "*QUOTE*",
+        "THE",
+        "DOG",
+        "WON-2",
+        "*QUOTE*"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR4"
+        ],
+        [
+          "POBJ",
+          "$VAR4",
+          "$VAR3"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ARGUE-V5",
+      "WORD": "ARGUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

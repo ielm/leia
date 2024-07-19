@@ -1,0 +1,54 @@
+{
+  "name": "@ICE",
+  "isa": [
+    "@SOLID-CHEMICAL-COMPOUND"
+  ],
+  "def": "water reduced to the solid state by cooling and when pure constituting a nearly colorless, brittle substance that in freezing expands about one eleventh in volume, that has a specific gravity of 0.9166 as compared with 1.0 for water at 4 degrees C., that under normal atmospheric pressure is formed at and has melting point of 0 degrees C.",
+  "local": [
+    {
+      "slot": "temperature",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0
+      ],
+      "meta": {
+        "measured-in": "degree-celsius"
+      }
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WATER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "temperature",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "temperature",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "temperature",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "temperature",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "private": {}
+}

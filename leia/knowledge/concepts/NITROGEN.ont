@@ -1,0 +1,36 @@
+{
+  "name": "@NITROGEN",
+  "isa": [
+    "@GASEOUS-ELEMENT"
+  ],
+  "def": "a nonmetallic element that constitutes nearly four-fifths of the air by volume, occurring as an almost inert gas in various minerals and in all proteins",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        14
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        7
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

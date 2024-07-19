@@ -1,0 +1,9 @@
+{
+  "name": "$OWNERSHIP-PERCENT",
+  "def": "The percentage of a company*s shares owned by a company\nor an individual",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

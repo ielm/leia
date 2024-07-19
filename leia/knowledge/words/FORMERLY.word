@@ -1,0 +1,41 @@
+{
+  "word": "FORMERLY",
+  "senses": {
+    "FORMERLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "happening before the current time",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TIME": [
+            "<",
+            [
+              "FIND-ANCHOR-TIME"
+            ]
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FORMERLY-ADV1",
+      "WORD": "FORMERLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "word": "EXPIRATION",
+  "senses": {
+    "EXPIRATION-N1": {
+      "CAT": "N",
+      "DEF": "sth.'s running out of time, no longer being valid; with mandatory pp",
+      "EX": "expiration of an offer",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "END",
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR2": {
+          "SEM": "EVENT"
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EXPIRATION-0",
+        "OF-1",
+        "THE",
+        "OBJECT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EXPIRATION-N1",
+      "WORD": "EXPIRATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EXPIRATION-N2": {
+      "CAT": "N",
+      "DEF": "sth.'s running out of time, no longer being valid; with possessive modifier",
+      "EX": "the agreement's expiration is growing near",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "POSSESSIVE": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "END",
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "OBJECT-1",
+        "EXPIRATION-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EXPIRATION-N2",
+      "WORD": "EXPIRATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

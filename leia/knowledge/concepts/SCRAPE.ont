@@ -1,0 +1,52 @@
+{
+  "name": "@SCRAPE",
+  "isa": [
+    "@RUB"
+  ],
+  "def": "to make smooth and clean or to abrade with an instrument",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "not",
+      "filler": "@SNAKE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FOOT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HOOF"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@BEAK"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CLAW"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PAW"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

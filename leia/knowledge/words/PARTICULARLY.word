@@ -1,0 +1,97 @@
+{
+  "word": "PARTICULARLY",
+  "senses": {
+    "PARTICULARLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "indicates saliency, which can scope over an adj, adv or v",
+      "EX": "particularly exciting, (run) particularly fast, (he) particularly wanted to sleep",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "V",
+          "ADV",
+          "ADJ"
+        ],
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        }
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "RAN",
+        "PARTICULARLY-0",
+        "FAST-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "ESPECIALLY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PARTICULARLY-ADV1",
+      "WORD": "PARTICULARLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PARTICULARLY-ADV2": {
+      "CAT": "ADV",
+      "DEF": "precisely",
+      "EX": "she's particularly interested in painting",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "SALIENCY",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SPECIFICALLY-0",
+        "EVENTED-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "SPECIFICALLY",
+        "IN_PARTICULAR",
+        "IN_SPECIFIC"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PARTICULARLY-ADV2",
+      "WORD": "PARTICULARLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "@BARIUM-SWALLOW",
+  "isa": [
+    "@RADIOGRAPHY-EVENT"
+  ],
+  "def": "A medical imaging procedure used to examine the upper GI tract",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@BARIUM"
+    },
+    {
+      "slot": "creates-image-of",
+      "facet": "sem",
+      "filler": "@UPPER-GASTROINTESTINAL-TRACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@UPPER-GASTROINTESTINAL-TRACT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "creates-image-of",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@LABORATORY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

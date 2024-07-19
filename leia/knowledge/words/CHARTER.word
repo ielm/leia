@@ -1,0 +1,106 @@
+{
+  "word": "CHARTER",
+  "senses": {
+    "CHARTER-N1": {
+      "CAT": "N",
+      "DEF": "a statement by which a corporation is legally recognized",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CHARTER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CHARTER-N1",
+      "WORD": "CHARTER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CHARTER-N2": {
+      "CAT": "N",
+      "DEF": "a document outlining the principles, functions, organizations, etc., of a corporation or organization",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CONSTITUTION",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CHARTER-N2",
+      "WORD": "CHARTER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CHARTER-V1": {
+      "CAT": "V",
+      "DEF": "to hire for the temporary use of a group",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "HIRE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "VEHICLE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "CHARTERED-0",
+        "THE",
+        "SHIP-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CHARTER-V1",
+      "WORD": "CHARTER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

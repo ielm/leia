@@ -1,0 +1,47 @@
+{
+  "name": "@BAZAAR",
+  "isa": [
+    "@SPECIAL-OCCASION"
+  ],
+  "def": "a benefit sale for a social organization, church, etc.",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@BUY"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@SELL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@NON-PROFIT-ORGANIZATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    }
+  ],
+  "private": {}
+}

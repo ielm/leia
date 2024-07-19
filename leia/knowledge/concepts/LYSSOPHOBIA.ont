@@ -1,0 +1,27 @@
+{
+  "name": "@LYSSOPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of madness",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MENTAL-DISORDER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,106 @@
+{
+  "word": "CHALLENGE",
+  "senses": {
+    "CHALLENGE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "the challenge is to finish on time",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "EVENT": {
+          "DIFFICULTY": [
+            ">",
+            0.7
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "HURDLE",
+        "ROADBLOCK"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CHALLENGE-N1",
+      "WORD": "CHALLENGE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CHALLENGE-N2": {
+      "CAT": "N",
+      "DEF": "challenges + to + -ing participle",
+      "EX": "there are challenges to completing the transaction",
+      "COMMENTS": "[D] the -ing participle is covered by the n complement",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": [
+            "IN",
+            "TO"
+          ],
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "SEM": "EVENT",
+          "HAS-EVENT-AS-PART": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "EVENT": {
+            "DIFFICULTY": [
+              ">",
+              0.7
+            ]
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CHALLENGE-0",
+        "IN-1",
+        "THE",
+        "EVENT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CHALLENGE-N2",
+      "WORD": "CHALLENGE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

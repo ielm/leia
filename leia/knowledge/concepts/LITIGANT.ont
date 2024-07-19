@@ -1,0 +1,19 @@
+{
+  "name": "@LITIGANT",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "Party to a lawsuit",
+  "local": [],
+  "block": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

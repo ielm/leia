@@ -1,0 +1,21 @@
+{
+  "name": "@INVOLUNTARY-VISUAL-EVENT",
+  "isa": [
+    "@VISUAL-EVENT"
+  ],
+  "def": "involuntarily (passively) perceive something by seeing",
+  "local": [],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

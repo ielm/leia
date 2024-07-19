@@ -1,0 +1,38 @@
+{
+  "word": "UN",
+  "senses": {
+    "UN-N1": {
+      "CAT": "N",
+      "DEF": "the United Nations",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "INTERNATIONAL-GOVERNMENTAL-ORGANIZATION": {
+          "HAS-NAME": {
+            "VALUE": "UNITED_NATIONS"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "U.N.",
+        "THE_U.N.",
+        "THE_UN",
+        "THE_UNITED_NATIONS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "UN-N1",
+      "WORD": "UN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

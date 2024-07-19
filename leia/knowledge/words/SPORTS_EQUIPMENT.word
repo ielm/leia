@@ -1,0 +1,35 @@
+{
+  "word": "SPORTS_EQUIPMENT",
+  "senses": {
+    "SPORTS_EQUIPMENT-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": "SPORT-ARTIFACT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SPORTING_EQUIPMENT",
+        "SPORTING_GOODS",
+        "SPORTING_GEAR"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SPORTS_EQUIPMENT-N1",
+      "WORD": "SPORTS_EQUIPMENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

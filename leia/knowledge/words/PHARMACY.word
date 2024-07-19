@@ -1,0 +1,32 @@
+{
+  "word": "PHARMACY",
+  "senses": {
+    "PHARMACY-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "DRUGSTORE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "DRUG_STORE",
+        "APOTHECARY",
+        "apothecary's_shop",
+        "chemist's"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PHARMACY-N1",
+      "WORD": "PHARMACY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@MOLASSES",
+  "isa": [
+    "@SWEETENER"
+  ],
+  "def": "a thick syrup produced in refining sugar",
+  "local": [
+    {
+      "slot": "sweetness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0.9
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

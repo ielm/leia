@@ -1,0 +1,32 @@
+{
+  "word": "OVER_TIME",
+  "senses": {
+    "OVER_TIME-ADV1": {
+      "CAT": "ADV",
+      "DEF": "discourse function only",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OVER_TIME-ADV1",
+      "WORD": "OVER_TIME",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

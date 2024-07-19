@@ -1,0 +1,36 @@
+{
+  "word": "OCEAN",
+  "senses": {
+    "OCEAN-N1": {
+      "CAT": "N",
+      "DEF": "a big sea",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SEA": {
+          "SIZE": [
+            ">",
+            0.7
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "THE_HIGH_SEAS"
+      ],
+      "SENSE": "OCEAN-N1",
+      "WORD": "OCEAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

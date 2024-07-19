@@ -1,0 +1,19 @@
+{
+  "name": "@DECADE",
+  "isa": [
+    "@TIME-INTERVAL-UNIT"
+  ],
+  "def": "a unit of time equal to ten years",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        315360000
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

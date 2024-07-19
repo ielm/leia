@@ -1,0 +1,22 @@
+{
+  "name": "@AMBASSADOR",
+  "isa": [
+    "@DIPLOMAT"
+  ],
+  "def": "the highest ranking diplomatic representative from one country to another",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@EMBASSY-BUILDING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GOVERNMENT-BUILDING"
+    }
+  ],
+  "private": {}
+}

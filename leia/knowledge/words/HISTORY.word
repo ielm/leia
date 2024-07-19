@@ -1,0 +1,167 @@
+{
+  "word": "HISTORY",
+  "senses": {
+    "HISTORY-N1": {
+      "CAT": "N",
+      "DEF": "the field of study that deals systematically with the past",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "HISTORY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HISTORY-N1",
+      "WORD": "HISTORY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HISTORY-N2": {
+      "CAT": "N",
+      "DEF": "phrasal: history of + personal health or behavioral experience",
+      "EX": "He has a history of heart trouble, sudden outbursts",
+      "COMMENTS": "[D] the PP is optional as 'history' is often used by itself",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "SEM": [
+            "PATHOLOGIC-FUNCTION",
+            "BEHAVE"
+          ],
+          "TIME": [
+            "<",
+            [
+              "FIND-ANCHOR-TIME"
+            ]
+          ]
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "HISTORY-0",
+        "OF-1",
+        "THE",
+        "DOG-2",
+        "WAS",
+        "PRESERVED"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HISTORY-N2",
+      "WORD": "HISTORY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HISTORY-N3": {
+      "CAT": "N",
+      "DEF": "phrasal: history of, when not of a person's health, behavior, etc., which is covered in a different sense",
+      "EX": "He told us the history of this building",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "INFORMATION": {
+          "ABOUT-AS-TOPIC": {
+            "VALUE": "^$VAR2",
+            "SEM": [
+              "NOT",
+              "SYMPTOM",
+              "DISEASE",
+              "BEHAVE"
+            ]
+          }
+        },
+        "^$VAR2": {
+          "TIME": [
+            "<",
+            [
+              "FIND-ANCHOR-TIME"
+            ]
+          ]
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "HISTORY-0",
+        "OF-1",
+        "THE",
+        "PAINTING-2",
+        "WAS",
+        "PRESERVED"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HISTORY-N3",
+      "WORD": "HISTORY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "@RETURN-OBJECT",
+  "isa": [
+    "@TRANSFER-OBJECT"
+  ],
+  "def": "to bring, send or put (an object) back",
+  "local": [
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@REMOVE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

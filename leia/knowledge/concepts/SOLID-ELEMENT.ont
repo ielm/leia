@@ -1,0 +1,32 @@
+{
+  "name": "@SOLID-ELEMENT",
+  "isa": [
+    "@ELEMENT-MATERIAL"
+  ],
+  "def": "an element solid at room temperature, or one commonly thought of as a solid",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@EARTH-MATERIAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@GAS"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "semi-solid"
+    }
+  ],
+  "private": {}
+}

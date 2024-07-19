@@ -1,0 +1,43 @@
+{
+  "word": "PANTIES",
+  "senses": {
+    "PANTIES-N1": {
+      "CAT": "N",
+      "DEF": "an undergarment for the lower body for women",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "NUMBER": "PL"
+      },
+      "SEM-STRUC": {
+        "UNDERPANTS": {
+          "USED-BY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "HUMAN": {
+            "GENDER": "FEMALE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "HIP_HUGGERS",
+        "BIKINIS",
+        "KNICKERS"
+      ],
+      "SENSE": "PANTIES-N1",
+      "WORD": "PANTIES",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

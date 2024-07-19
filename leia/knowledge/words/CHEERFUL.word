@@ -1,0 +1,59 @@
+{
+  "word": "CHEERFUL",
+  "senses": {
+    "CHEERFUL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "quite happy",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "EMOTIONAL-STATE": 0.8
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HAPPY-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "CHEERY",
+        "HAPPY",
+        "CHIPPER",
+        "GAY",
+        "GLAD",
+        "MERRY",
+        "PEPPY",
+        "PERKY",
+        "UPBEAT",
+        "JOYFUL",
+        "JOLLY",
+        "LIVELY",
+        "TICKLED",
+        "JOYOUS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CHEERFUL-ADJ1",
+      "WORD": "CHEERFUL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "word": "INTERACTION",
+  "senses": {
+    "INTERACTION-N1": {
+      "CAT": "N",
+      "DEF": "dealings between/among",
+      "EX": "the interaction between/among employees is always friendly",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": [
+            "BETWEEN",
+            "AMONG"
+          ],
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N",
+            "NUMBER": "PL"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "INTERACT": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "INTERACTION-0",
+        "WITH-1",
+        "THE",
+        "HUMAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "CONTACT"
+      ],
+      "SENSE": "INTERACTION-N1",
+      "WORD": "INTERACTION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

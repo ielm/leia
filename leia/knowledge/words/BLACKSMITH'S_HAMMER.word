@@ -1,0 +1,31 @@
+{
+  "word": "BLACKSMITH'S_HAMMER",
+  "senses": {
+    "BLACKSMITH'S_HAMMER-N1": {
+      "CAT": "N",
+      "DEF": "a hammer used by blacksmiths",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HAMMER": {
+          "USED-BY": "BLACKSMITH"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BLACKSMITH'S_HAMMER-N1",
+      "WORD": "BLACKSMITH'S_HAMMER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

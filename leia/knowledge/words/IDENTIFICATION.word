@@ -1,0 +1,88 @@
+{
+  "word": "IDENTIFICATION",
+  "senses": {
+    "IDENTIFICATION-N1": {
+      "CAT": "N",
+      "DEF": "a document that proves one's identification",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "DOCUMENT": {
+          "INSTRUMENT-OF": "IDENTIFY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "IDENTIFICATION-N1",
+      "WORD": "IDENTIFICATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "IDENTIFICATION-N2": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "OF",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "NP"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR5",
+          "ROOT-WORD": "BY",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "IDENTIFY": {
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "AGENT": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "IDENTIFICATION-N2",
+      "WORD": "IDENTIFICATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

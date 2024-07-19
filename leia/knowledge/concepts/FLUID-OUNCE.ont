@@ -1,0 +1,19 @@
+{
+  "name": "@FLUID-OUNCE",
+  "isa": [
+    "@LIQUID-MEASURING-UNIT"
+  ],
+  "def": "a unit of volume measure equivalent to one-sixteenth of a pint or 1/128th of a gallon, this is the US fluid ounce; gal/4/32",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        2.95734e-05
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

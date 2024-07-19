@@ -1,0 +1,112 @@
+{
+  "word": "CONVICTION",
+  "senses": {
+    "CONVICTION-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "conviction of drug runners by the tribunal for violating federal law",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        },
+        "PP-2": {
+          "ROOT": "$VAR5",
+          "CAT": "PREP",
+          "ROOT-WORD": "FOR",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR6",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "CONVICT": {
+          "AGENT": {
+            "VALUE": "^$VAR4",
+            "SEM": "JURY-MEMBER"
+          },
+          "THEME": {
+            "VALUE": "^$VAR6",
+            "SEM": "CRIMINAL-ACTIVITY"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CONVICTION-0",
+        "OF-1",
+        "THE",
+        "LEGAL-CLIENT-2",
+        "BY-3",
+        "THE",
+        "JUDGE-4",
+        "FOR-5",
+        "THE",
+        "CRIMINAL-ACTIVITY-6"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "DET",
+          "$VAR5",
+          "$VAR4"
+        ],
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONVICTION-N1",
+      "WORD": "CONVICTION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

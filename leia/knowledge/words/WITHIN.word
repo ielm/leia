@@ -1,0 +1,127 @@
+{
+  "word": "WITHIN",
+  "senses": {
+    "WITHIN-PREP1": {
+      "CAT": "PREP",
+      "DEF": "at some point before the stated period ends",
+      "EX": "I'll stop by within a week",
+      "COMMENTS": "this is glossed as 'there's an event whose time is before   time-end of the stated period",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TIME": [
+            "<",
+            [
+              "VALUE",
+              "^$VAR2.TIME-END"
+            ]
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "ATE-1",
+        "WITHIN-0",
+        "THE",
+        "PARK-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "IN"
+      ],
+      "HYPONYMS": [
+        "AS_EARLY_AS"
+      ],
+      "SENSE": "WITHIN-PREP1",
+      "WORD": "WITHIN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WITHIN-PREP2": {
+      "CAT": "PREP",
+      "DEF": "location",
+      "EX": "the hard drive is found within the computer",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "OBJECT",
+            "EVENT"
+          ],
+          "INSIDE-OF": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT",
+        "THE",
+        "BUILDING-1",
+        "WITHIN-0",
+        "THE",
+        "PARK-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WITHIN-PREP2",
+      "WORD": "WITHIN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

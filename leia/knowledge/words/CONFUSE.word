@@ -1,0 +1,69 @@
+{
+  "word": "CONFUSE",
+  "senses": {
+    "CONFUSE-V1": {
+      "CAT": "V",
+      "DEF": "to confuse",
+      "EX": "my son confuses me; the way this organization works confuses me",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "CONFUSE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "EXPERIENCER": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "CONFUSED-0",
+        "THE",
+        "DOG-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ADDLE",
+        "BAFFLE",
+        "BEFUDDLE",
+        "BEMUSE",
+        "BEWILDER",
+        "CONFOUND",
+        "MYSTIFY",
+        "NONPLUS",
+        "PERPLEX",
+        "PUZZLE"
+      ],
+      "HYPONYMS": [
+        "FRUSTRATE"
+      ],
+      "SENSE": "CONFUSE-V1",
+      "WORD": "CONFUSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

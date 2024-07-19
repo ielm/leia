@@ -1,0 +1,36 @@
+{
+  "name": "@TITANIUM",
+  "isa": [
+    "@LIGHT-METALLIC-ELEMENT"
+  ],
+  "def": "a strong, low-density, highly corrosion-resistant, lustrous white metallic element that occurs widely in igneous rocks and is used to alloy aircraft metals for low weight, strength, and high-temperature stability",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        22
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        47
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

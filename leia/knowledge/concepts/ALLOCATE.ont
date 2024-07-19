@@ -1,0 +1,52 @@
+{
+  "name": "@ALLOCATE",
+  "isa": [
+    "@HUMAN-ONLY-LIVING-EVENT"
+  ],
+  "def": "to set something (money, etc.) aside for a specific purpose",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INGESTIBLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ASSET"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

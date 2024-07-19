@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-STATE-ADDRESS",
+  "def": "The state part of an address.",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": "$STATE-ADDRESS-OF",
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

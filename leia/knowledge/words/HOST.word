@@ -1,0 +1,86 @@
+{
+  "word": "HOST",
+  "senses": {
+    "HOST-N1": {
+      "CAT": "N",
+      "DEF": "a person who entertains guests",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "HOST",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HOST-N1",
+      "WORD": "HOST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HOST-V1": {
+      "CAT": "V",
+      "DEF": "to serve as host of something",
+      "EX": "He hosted the dinner party",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "SEM": "ENTERTAIN-EVENT",
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR1": {
+          "COREFER": "HOST"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "THROWS-0",
+        "THE",
+        "BALL-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "THROW"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "HOST-V1",
+      "WORD": "HOST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

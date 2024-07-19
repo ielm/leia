@@ -1,0 +1,52 @@
+{
+  "word": "BUSINESS",
+  "senses": {
+    "BUSINESS-N1": {
+      "CAT": "N",
+      "DEF": "business activity",
+      "EX": "he takes care of business diligently",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BUSINESS-ACTIVITY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BUSINESS-N1",
+      "WORD": "BUSINESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BUSINESS-N2": {
+      "CAT": "N",
+      "DEF": "a corporation",
+      "EX": "he started a business selling chocolate roosters",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FOR-PROFIT-CORPORATION",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "COMPANY",
+        "FIRM"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BUSINESS-N2",
+      "WORD": "BUSINESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

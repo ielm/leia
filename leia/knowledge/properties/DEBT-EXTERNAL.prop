@@ -1,0 +1,9 @@
+{
+  "name": "$DEBT-EXTERNAL",
+  "def": "debts to foreign organizations",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

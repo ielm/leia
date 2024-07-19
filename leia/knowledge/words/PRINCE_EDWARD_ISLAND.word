@@ -1,0 +1,33 @@
+{
+  "word": "PRINCE_EDWARD_ISLAND",
+  "senses": {
+    "PRINCE_EDWARD_ISLAND-N1": {
+      "CAT": "N",
+      "DEF": "a nation",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PROVINCE": {
+          "HAS-NAME": {
+            "VALUE": "PRINCE_EDWARD_ISLAND"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRINCE_EDWARD_ISLAND-N1",
+      "WORD": "PRINCE_EDWARD_ISLAND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

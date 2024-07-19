@@ -1,0 +1,38 @@
+{
+  "word": "CARPET_KNIFE",
+  "senses": {
+    "CARPET_KNIFE-N1": {
+      "CAT": "N",
+      "DEF": "a knife for cutting carpet",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "KNIFE": {
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "CUT": {
+            "THEME": "CARPET"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CARPET_KNIFE-N1",
+      "WORD": "CARPET_KNIFE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

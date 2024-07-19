@@ -1,0 +1,57 @@
+{
+  "name": "@COTTON-PLANT",
+  "isa": [
+    "@CROP-PLANT"
+  ],
+  "def": "any plant of the genus gossypium whose long, thin fibers can be woven into fabrics",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@COTTON-GINNING-CORPORATION"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@COTTON-FIBER"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@CHLOROPHYLL"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@COTTON"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CROP"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@FRUIT-FOODSTUFF"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@GRAIN-FOODSTUFF"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@NUT-FOODSTUFF"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@VEGETABLE-FOODSTUFF"
+    }
+  ],
+  "private": {}
+}

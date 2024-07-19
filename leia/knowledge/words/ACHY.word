@@ -1,0 +1,38 @@
+{
+  "word": "ACHY",
+  "senses": {
+    "ACHY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "of pain - one of the four descriptors of pain",
+      "EX": "She is experiencing an achy pain in her shoulder.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "PAIN",
+          "PAIN-TYPE": "ACHING"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ACHING"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ACHY-ADJ1",
+      "WORD": "ACHY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

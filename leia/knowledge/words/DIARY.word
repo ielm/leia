@@ -1,0 +1,53 @@
+{
+  "word": "DIARY",
+  "senses": {
+    "DIARY-N1": {
+      "CAT": "N",
+      "DEF": "daily record of one's thoughts and experiences",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LITERARY-COMPOSITION": {
+          "HAS-STYLE": "DIARY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DIARY-N1",
+      "WORD": "DIARY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DIARY-N2": {
+      "CAT": "N",
+      "DEF": "literary genre in which one records one's thoughts and experiences",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "DIARY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DIARY-N2",
+      "WORD": "DIARY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@CIRCLE",
+  "isa": [
+    "@GEOMETRICAL-OBJECT"
+  ],
+  "def": "a round plane figure",
+  "local": [
+    {
+      "slot": "circumference",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "circumference",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

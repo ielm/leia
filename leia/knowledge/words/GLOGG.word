@@ -1,0 +1,36 @@
+{
+  "word": "GLOGG",
+  "senses": {
+    "GLOGG-N1": {
+      "CAT": "N",
+      "DEF": "A hot Scandinavian punch made of aquavit, red wine, and sherry with sugar, spices, raisins, and orange peel.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ALCOHOLIC-BEVERAGE": {
+          "HAS-OBJECT-AS-PART": [
+            "WINE",
+            "SUGAR",
+            "SPICE",
+            "RAISIN"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GLOGG-N1",
+      "WORD": "GLOGG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

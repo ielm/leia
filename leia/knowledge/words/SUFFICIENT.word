@@ -1,0 +1,47 @@
+{
+  "word": "SUFFICIENT",
+  "senses": {
+    "SUFFICIENT-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "sufficient money was spent on this.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "RELATIVE-TO-NORM": 0.5,
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SUFFICIENT-0",
+        "OBJECT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SUFFICIENT-QUANTIFIER1",
+      "WORD": "SUFFICIENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

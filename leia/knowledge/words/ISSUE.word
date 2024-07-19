@@ -1,0 +1,331 @@
+{
+  "word": "ISSUE",
+  "senses": {
+    "ISSUE-N1": {
+      "CAT": "N",
+      "DEF": "a matter under discussion, debate, etc.",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "ISSUE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "TOPIC",
+        "MATTER",
+        "CONCERN",
+        "POINT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ISSUE-N1",
+      "WORD": "ISSUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ISSUE-N2": {
+      "CAT": "N",
+      "DEF": "issue of a journal, magazine, etc.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PERIODICAL-ISSUE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "INSTALLMENT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ISSUE-N2",
+      "WORD": "ISSUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ISSUE-N3": {
+      "CAT": "N",
+      "DEF": "a set of financial items (often for sale)",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": "FINANCIAL-OBJECT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ISSUE-N3",
+      "WORD": "ISSUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ISSUE-V1": {
+      "CAT": "V",
+      "DEF": "phrasal: issue forth = emanate",
+      "EX": "many of the rumors issued forth from party headquarters",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "ADV": {
+          "ROOT": "$VAR4",
+          "CAT": "ADV",
+          "ROOT-WORD": "FORTH"
+        },
+        "PP": {
+          "ROOT-WORD": "FROM",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "EMANATE": {
+          "THEME": {
+            "VALUE": "^$VAR1"
+          },
+          "SOURCE": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOG-1",
+        "ISSUED-0",
+        "FORTH-4",
+        "FROM-2",
+        "THE",
+        "CAVE-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PRT",
+          "$VAR0",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ISSUE-V1",
+      "WORD": "ISSUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ISSUE-V2": {
+      "CAT": "V",
+      "DEF": "to issue a financial object",
+      "EX": "they issued the stock",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "ISSUE-FINANCIAL-OBJECT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "ISSUED-0",
+        "THE",
+        "STOCK-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ISSUE-V2",
+      "WORD": "ISSUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ISSUE-V3": {
+      "CAT": "V",
+      "DEF": "send a communication, or announce something; when the DO cannot be understood as an event",
+      "EX": "issue an ultimatum; issue a verdict",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "COMMUNICATIVE-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "ABSTRACT-OBJECT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "ISSUED-0",
+        "AN",
+        "ULTIMATUM-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ISSUE-V3",
+      "WORD": "ISSUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ISSUE-V4": {
+      "CAT": "V",
+      "DEF": "when used as a light verb with an object that indicates an event",
+      "EX": "issue a warning = warn; issue a threat = threaten; etc.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "SEM": "EVENT",
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "POLICE-1",
+        "ISSUED-0",
+        "A",
+        "WARNING-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ISSUE-V4",
+      "WORD": "ISSUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

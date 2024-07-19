@@ -1,0 +1,37 @@
+{
+  "word": "LECTURE_HALL",
+  "senses": {
+    "LECTURE_HALL-N1": {
+      "CAT": "N",
+      "DEF": "a large room where lectures are presented",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CLASSROOM": {
+          "SIZE": [
+            "><",
+            0.7,
+            0.9
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "LECTURE_ROOM"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "LECTURE_HALL-N1",
+      "WORD": "LECTURE_HALL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

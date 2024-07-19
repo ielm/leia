@@ -1,0 +1,42 @@
+{
+  "word": "CONCUSSION",
+  "senses": {
+    "CONCUSSION-N1": {
+      "CAT": "N",
+      "DEF": "a head trauma caused by the head being struck, results in unconsciousness",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "INJURY": {
+          "PRECONDITION": {
+            "VALUE": "REFSEM1"
+          },
+          "EFFECT": {
+            "CONSCIOUS": "NO"
+          }
+        },
+        "REFSEM1": {
+          "HIT": {
+            "THEME": "HEAD",
+            "CONSCIOUS": "YES"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONCUSSION-N1",
+      "WORD": "CONCUSSION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

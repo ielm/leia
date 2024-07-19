@@ -1,0 +1,66 @@
+{
+  "word": "MAJORITY",
+  "senses": {
+    "MAJORITY-N1": {
+      "CAT": "N",
+      "DEF": "more than half",
+      "EX": "the majority of students want fewer exams",
+      "COMMENTS": "if the 'of' is missing, it's ellipsis",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR2"
+          },
+          "CARDINALITY": [
+            ">",
+            0.5
+          ]
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "MAJORITY-0",
+        "OF-1",
+        "THE",
+        "OBJECT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MAJORITY-N1",
+      "WORD": "MAJORITY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "word": "SEARCH",
+  "senses": {
+    "SEARCH-V1": {
+      "CAT": "V",
+      "DEF": "to examine a location methodically",
+      "EX": "they searched the entire house (for the drugs) but didn't find them",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": "FOR",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SEARCH": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "LOCATION": {
+            "VALUE": "^$VAR2",
+            "SEM": "PLACE"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "COMB",
+        "FRISK",
+        "SCOUR"
+      ],
+      "SENSE": "SEARCH-V1",
+      "WORD": "SEARCH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SEARCH-V2": {
+      "CAT": "V",
+      "DEF": "to examine methodically, where one of the arguments is a beneficiary",
+      "EX": "they searched everyone (for weapons) before letting them board the plane",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "FOR",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SEARCH": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MILITARY-ORGANIZATION-1",
+        "SEARCHED-0",
+        "THE",
+        "GIRL-3",
+        "FOR-2",
+        "THE",
+        "TABLE-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "NN",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SEARCH-V2",
+      "WORD": "SEARCH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

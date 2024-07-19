@@ -1,0 +1,22 @@
+{
+  "name": "@FILTER-OBJECT",
+  "isa": [
+    "@DEPENDENT-DEVICE"
+  ],
+  "def": "A porous material through which a liquid or gas is passed in order to separate the fluid from suspended particulate matter, or a device containing such a material.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PAPER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "private": {}
+}

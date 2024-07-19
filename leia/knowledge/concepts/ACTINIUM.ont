@@ -1,0 +1,36 @@
+{
+  "name": "@ACTINIUM",
+  "isa": [
+    "@ACTINIDE"
+  ],
+  "def": "a radioactive element found in uranium ores, used in equilibrium with its decay products as a source of alpha rays. its longest lived isotope is ac 227 with a half-life of 21.7 years",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        89
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        227
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

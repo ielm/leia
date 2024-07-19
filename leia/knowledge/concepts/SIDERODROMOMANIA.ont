@@ -1,0 +1,37 @@
+{
+  "name": "@SIDERODROMOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "intense fascination with railroad travel",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@RAILROAD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TRAIN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TRAVEL-EVENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,37 @@
+{
+  "name": "@LICHEN",
+  "isa": [
+    "@FUNGUS"
+  ],
+  "def": "a fungus that grows symbiotically with algae",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ALGA"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@ROCK"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@WALL"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@TREE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

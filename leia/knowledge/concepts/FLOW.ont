@@ -1,0 +1,117 @@
+{
+  "name": "@FLOW",
+  "isa": [
+    "@CHANGE-LOCATION"
+  ],
+  "def": "A continuous change of location of a fluid.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BEVERAGE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@AQUEOUS-HUMOR-OF-EYEBALL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INTRAVENOUS-FLUID"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COOKING-OIL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LUBRICANT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LINSEED-OIL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VACCINE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TAR"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LAVA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TRANSUDATE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SECRETION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BLOOD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@URINE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PLASMA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CHLOROPHYLL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

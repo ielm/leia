@@ -1,0 +1,38 @@
+{
+  "word": "GOAT_CHEESE",
+  "senses": {
+    "GOAT_CHEESE-N1": {
+      "CAT": "N",
+      "DEF": "cheese made of goat's milk",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CHEESE": {
+          "MADE-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "MILK": {
+            "PRODUCED-BY": "GOAT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GOAT_CHEESE-N1",
+      "WORD": "GOAT_CHEESE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

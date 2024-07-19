@@ -1,0 +1,52 @@
+{
+  "name": "@BOTTLE-EVENT",
+  "isa": [
+    "@PRESERVE"
+  ],
+  "def": "to put something into bottles",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BEVERAGE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@BOTTLE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BEVERAGE-PROCESSING-CORPORATION"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@DAIRY-FARM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@FOOD-PROCESSING-CORPORATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INGESTIBLE"
+    }
+  ],
+  "private": {}
+}

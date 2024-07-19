@@ -1,0 +1,38 @@
+{
+  "word": "SEWAGE_DISPOSAL_PLANT",
+  "senses": {
+    "SEWAGE_DISPOSAL_PLANT-N1": {
+      "CAT": "N",
+      "DEF": "a plant for disposing of sewage",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "FACTORY": {
+          "LOCATION-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "DISPOSE-OF": {
+            "THEME": "WASTE-MATERIAL"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SEWAGE_DISPOSAL_PLANT-N1",
+      "WORD": "SEWAGE_DISPOSAL_PLANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

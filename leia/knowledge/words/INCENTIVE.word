@@ -1,0 +1,53 @@
+{
+  "word": "INCENTIVE",
+  "senses": {
+    "INCENTIVE-N1": {
+      "CAT": "N",
+      "DEF": "an object that a person benefits from due to the fact that the person does something specific",
+      "EX": "The incentive for handing in one's paper early was an increase in score by 10 points.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "OBJECT": {
+          "THEME-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "BENEFIT-FROM": {
+            "BENEFICIARY": {
+              "VALUE": "REFSEM2"
+            },
+            "ENABLED-BY": {
+              "VALUE": "REFSEM3"
+            }
+          }
+        },
+        "REFSEM3": {
+          "EVENT": {
+            "AGENT": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": [
+          "HUMAN"
+        ]
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INCENTIVE-N1",
+      "WORD": "INCENTIVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

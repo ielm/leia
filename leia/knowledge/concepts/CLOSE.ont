@@ -1,0 +1,212 @@
+{
+  "name": "@CLOSE",
+  "isa": [
+    "@CHANGE-POSITION"
+  ],
+  "def": "to close an object that can be opened or closed",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DOOR"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WINDOW"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@OPEN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FASTENER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PLANT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EYE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FLOWER"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@PRIMATE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DRAWER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VALVE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GLOVE-COMPARTMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HOOD-OF-VEHICLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TRUNK-OF-VEHICLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MAILBOX"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LID"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DAM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GATE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BAG"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BASKET"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BOX"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@POCKET"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@RIGID-MANUFACTURED-CONTAINER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TRASH-CAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@VASE"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PAIL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COFFEE-TEA-POT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BOOK"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WINDOW-COVERING"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PACKAGE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ENVELOPE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PERIODICAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NEWSPAPER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BROCHURE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CATALOG-OF-GOODS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DIRECTORY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

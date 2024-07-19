@@ -1,0 +1,35 @@
+{
+  "word": "BOILING",
+  "senses": {
+    "BOILING-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "of a person or climate, very hot",
+      "EX": "it's boiling in here",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TEMPERATURE": 1
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BOILING-ADJ1",
+      "WORD": "BOILING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@SAFFLOWER-OIL",
+  "isa": [
+    "@COOKING-OIL"
+  ],
+  "def": "oil from the safflower",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SAFFLOWER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

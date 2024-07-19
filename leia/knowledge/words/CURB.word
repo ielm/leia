@@ -1,0 +1,128 @@
+{
+  "word": "CURB",
+  "senses": {
+    "CURB-N2": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SIDEWALK": {
+          "HAS-OBJECT-AS-PART": "SIDE-OF-OBJECT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CURB-N2",
+      "WORD": "CURB",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CURB-V2": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "John curbed his anger.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "RESTRICT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOG-1",
+        "CURBED-0",
+        "HIS",
+        "HUNGER-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CURB-V2",
+      "WORD": "CURB",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CURB-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "John curbed the horse, the gift curbed Susan's anger",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "RESTRAIN": {
+          "INSTRUMENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3",
+            "SEM": "PHYSICAL-OBJECT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR2",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "GIFT-2",
+        "CURBED-0",
+        "HIS",
+        "ANGER-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CURB-V1",
+      "WORD": "CURB",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

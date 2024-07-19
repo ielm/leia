@@ -1,0 +1,45 @@
+{
+  "word": "ON_ACCOUNT_OF",
+  "senses": {
+    "ON_ACCOUNT_OF-PREP1": {
+      "CAT": "PREP",
+      "DEF": "Because of; for the sake of",
+      "EX": "They got married on account of the baby.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "CAUSED-BY": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ON_ACCOUNT_OF-PREP1",
+      "WORD": "ON_ACCOUNT_OF",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

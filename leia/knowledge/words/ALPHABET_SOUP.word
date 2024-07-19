@@ -1,0 +1,31 @@
+{
+  "word": "ALPHABET_SOUP",
+  "senses": {
+    "ALPHABET_SOUP-N1": {
+      "CAT": "N",
+      "DEF": "A soup made of broth with pasta shaped like alphabet letters",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SOUP": {
+          "HAS-OBJECT-AS-PART": "PASTA"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ALPHABET_SOUP-N1",
+      "WORD": "ALPHABET_SOUP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

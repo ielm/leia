@@ -1,0 +1,38 @@
+{
+  "word": "FIGHTER_PLANE",
+  "senses": {
+    "FIGHTER_PLANE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FIGHTER-PLANE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "FIGHTER",
+        "FIGHTER_AIRCRAFT",
+        "ATTACK_AIRCRAFT",
+        "WARPLANE"
+      ],
+      "HYPONYMS": [
+        "PURSUIT_PLANE",
+        "B_52",
+        "INTERCEPTOR",
+        "KAMIKAZE",
+        "STEALTH_FIGHTER"
+      ],
+      "SENSE": "FIGHTER_PLANE-N1",
+      "WORD": "FIGHTER_PLANE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "word": "SILVER_MINE",
+  "senses": {
+    "SILVER_MINE-N1": {
+      "CAT": "N",
+      "DEF": "an excavation made in the earth from which silver is extracted",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MINE": {
+          "LOCATION-OF": "SILVER"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SILVER_MINE-N1",
+      "WORD": "SILVER_MINE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

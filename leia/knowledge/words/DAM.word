@@ -1,0 +1,71 @@
+{
+  "word": "DAM",
+  "senses": {
+    "DAM-N1": {
+      "CAT": "N",
+      "DEF": "a barrier built to hold back flowing water",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "DAM",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DAM-N1",
+      "WORD": "DAM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DAM-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "they dammed the river three years ago",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "DAM-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "DAMMED-0",
+        "THE",
+        "RIVER-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DAM-V1",
+      "WORD": "DAM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

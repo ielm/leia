@@ -1,0 +1,37 @@
+{
+  "name": "@DRAW",
+  "isa": [
+    "@GRAPHIC-EVENT"
+  ],
+  "def": "to make lines, pictures, etc., as with a pencil",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DRAWING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FILM-ARTIFACT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHOTOGRAPHIC-DEVICE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PRINTER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

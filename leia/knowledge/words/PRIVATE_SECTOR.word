@@ -1,0 +1,48 @@
+{
+  "word": "PRIVATE_SECTOR",
+  "senses": {
+    "PRIVATE_SECTOR-N1": {
+      "CAT": "N",
+      "DEF": "the part of the nation's economy not controlled by the government",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ABSTRACT-OBJECT": {
+          "PART-OF-OBJECT": "ECONOMY",
+          "THEME-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "MODALITY": {
+            "TYPE": "EPISTEMIC",
+            "VALUE": 0,
+            "SCOPE": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "CONTROL-EVENT-SOCIAL": {
+            "AGENT": "GOVERNMENTAL-ORGANIZATION"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRIVATE_SECTOR-N1",
+      "WORD": "PRIVATE_SECTOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

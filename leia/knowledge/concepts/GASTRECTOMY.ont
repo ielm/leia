@@ -1,0 +1,22 @@
+{
+  "name": "@GASTRECTOMY",
+  "isa": [
+    "@SURGICAL-REMOVAL"
+  ],
+  "def": "Surgical excision of part or all of the stomach.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@STOMACH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

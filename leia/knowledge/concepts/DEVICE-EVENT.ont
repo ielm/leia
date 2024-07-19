@@ -1,0 +1,22 @@
+{
+  "name": "@DEVICE-EVENT",
+  "isa": [
+    "@PHYSICAL-EVENT"
+  ],
+  "def": "events concerning the operation of devices",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

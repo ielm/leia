@@ -1,0 +1,40 @@
+{
+  "name": "@RESURRECT",
+  "isa": [
+    "@HUMAN-ONLY-LIVING-EVENT",
+    "@SUPERNATURAL-EVENT"
+  ],
+  "def": "to bring back into use, notice, etc; also can be used in the supernatural sense, as in resurrecting someone from the dead",
+  "local": [],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "autonomy",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

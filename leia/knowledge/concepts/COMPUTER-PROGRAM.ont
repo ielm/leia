@@ -1,0 +1,22 @@
+{
+  "name": "@COMPUTER-PROGRAM",
+  "isa": [
+    "@SOFTWARE"
+  ],
+  "def": "series of instructions that a computer can interpret and execute; programs are also called software to distinguish them from hardware",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@COMPUTER-PROGRAM-FUNCTION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ABSTRACT-OBJECT"
+    }
+  ],
+  "private": {}
+}

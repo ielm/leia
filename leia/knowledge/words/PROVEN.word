@@ -1,0 +1,44 @@
+{
+  "word": "PROVEN",
+  "senses": {
+    "PROVEN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "something that has been proved",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "THEME-OF": "PROVE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "PROVEN-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PROVEN-ADJ1",
+      "WORD": "PROVEN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

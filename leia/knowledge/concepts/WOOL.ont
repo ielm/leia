@@ -1,0 +1,17 @@
+{
+  "name": "@WOOL",
+  "isa": [
+    "@ANIMAL-DERIVED-SUBSTANCE",
+    "@NATURAL-FABRIC"
+  ],
+  "def": "the fine, soft, wavy hair that forms all or part of the protective coat of domestic sheep, that is characterized by absorbency, insulation, resiliency, a tendency to shrink in hot water, and ability to take and hold dyes well and that may be spun into woolen or worsted yarn or used for felt, flock, or stuffing",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT-DERIVED-SUBSTANCE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,139 @@
+{
+  "word": "CONTEND",
+  "senses": {
+    "CONTEND-V2": {
+      "CAT": "V",
+      "DEF": "to argue (that)",
+      "EX": "the defendant contends that he was out of town when it happened",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "COMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "DECLARE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DEFENDANT-1",
+        "CONTENDS-0",
+        "THAT",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONTEND-V2",
+      "WORD": "CONTEND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CONTEND-V1": {
+      "CAT": "V",
+      "DEF": "phrasal: contend with = to strive in opposition to",
+      "EX": "they have to contend with long lines at the supermarket",
+      "COMMENTS": "the meaning is basically: there is an event, the person who has to contend with it is forced to participate in it or experience it, and the event is evaluated negatively. the necessity of dealing with it is not in the verb 'contend' itself, it is added by the modal verb that it's usually used with (they have to contend...)",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "WITH",
+          "CAT": "PREP"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0.2,
+          "SCOPE": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR3": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "CONTENDED-0",
+        "WITH-2",
+        "THE",
+        "DOG-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONTEND-V1",
+      "WORD": "CONTEND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

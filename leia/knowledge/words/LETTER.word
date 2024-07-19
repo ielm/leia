@@ -1,0 +1,53 @@
+{
+  "word": "LETTER",
+  "senses": {
+    "LETTER-N1": {
+      "CAT": "N",
+      "DEF": "written or printed message",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "LETTER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LETTER-N1",
+      "WORD": "LETTER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LETTER-N2": {
+      "CAT": "N",
+      "DEF": "a letter of the alphabet",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LETTER-OF-ALPHABET": {
+          "PART-OF-OBJECT": "ALPHABET"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LETTER-N2",
+      "WORD": "LETTER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

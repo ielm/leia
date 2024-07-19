@@ -1,0 +1,39 @@
+{
+  "name": "@PH-MONITORING",
+  "isa": [
+    "@DIAGNOSTIC-PROCEDURE"
+  ],
+  "def": "a procedure for measuring the reflux (regurgitation or backwash) of acid from the stomach into the esophagus",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GASTRIC-JUICE-1"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {
+    "@GASTRIC-JUICE-1": {
+      "name": "@GASTRIC-JUICE-1",
+      "isa": [
+        "@GASTRIC-JUICE"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "location",
+          "facet": "sem",
+          "filler": "@ESOPHAGUS"
+        }
+      ],
+      "block": [],
+      "private": {}
+    }
+  }
+}

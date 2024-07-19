@@ -1,0 +1,34 @@
+{
+  "word": "FOOD",
+  "senses": {
+    "FOOD-N1": {
+      "CAT": "N",
+      "DEF": "a substance taken in and assimilated by an organism to maintain life and growth- nourishment",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FOOD",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "FOOD_SUBSTANCE",
+        "SOLID_FOOD",
+        "SOLID"
+      ],
+      "HYPONYMS": [
+        "SOLID_FOOD",
+        "SOLID"
+      ],
+      "SENSE": "FOOD-N1",
+      "WORD": "FOOD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

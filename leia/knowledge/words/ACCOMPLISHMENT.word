@@ -1,0 +1,47 @@
+{
+  "word": "ACCOMPLISHMENT",
+  "senses": {
+    "ACCOMPLISHMENT-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPITEUCTIC",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "MODALITY-1": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": [
+          "EVENT"
+        ]
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ACHIEVEMENT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ACCOMPLISHMENT-N1",
+      "WORD": "ACCOMPLISHMENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

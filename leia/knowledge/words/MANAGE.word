@@ -1,0 +1,207 @@
+{
+  "word": "MANAGE",
+  "senses": {
+    "MANAGE-V1": {
+      "CAT": "V",
+      "DEF": "to engage in management activities",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "MANAGEMENT-ACTIVITY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "MANAGED-0",
+        "THE",
+        "OFFICE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MANAGE-V1",
+      "WORD": "MANAGE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MANAGE-V2": {
+      "CAT": "V",
+      "DEF": "to be able to do sth., with effort implied, the event is explicit",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "XCOMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "SEM": "EVENT",
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPITEUCTIC",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "MODALITY-1": {
+          "TYPE": "EFFORT",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "MANAGED-0",
+        "TO",
+        "WIN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "XCOMP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "XSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MANAGE-V2",
+      "WORD": "MANAGE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MANAGE-V3": {
+      "CAT": "V",
+      "DEF": "to be able to do sth., with effort implied, with the event elided",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "EVENT": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPITEUCTIC",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "MODALITY-1": {
+          "TYPE": "EFFORT",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "REFSEM1",
+          "COREFERENCE-PROCEDURES"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "MANAGED-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MANAGE-V3",
+      "WORD": "MANAGE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

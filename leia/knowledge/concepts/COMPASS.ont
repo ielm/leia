@@ -1,0 +1,22 @@
+{
+  "name": "@COMPASS",
+  "isa": [
+    "@MEASURING-ARTIFACT"
+  ],
+  "def": "an instrument for showing direction, especially one with a swinging magnetic needle pointing north",
+  "local": [
+    {
+      "slot": "measures-property",
+      "facet": "sem",
+      "filler": "$direction-of-motion"
+    }
+  ],
+  "block": [
+    {
+      "slot": "measures-property",
+      "facet": "sem",
+      "filler": "$property"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,36 @@
+{
+  "word": "DOUBLE_CREAM",
+  "senses": {
+    "DOUBLE_CREAM-N1": {
+      "CAT": "N",
+      "DEF": "soft french cheese containing at least 60% butterfat",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CHEESE": {
+          "FATTINESS": [
+            ">=",
+            0.6
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "DOUBLE_CREME"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DOUBLE_CREAM-N1",
+      "WORD": "DOUBLE_CREAM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

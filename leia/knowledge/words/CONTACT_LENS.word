@@ -1,0 +1,34 @@
+{
+  "word": "CONTACT_LENS",
+  "senses": {
+    "CONTACT_LENS-N1": {
+      "CAT": "N",
+      "DEF": "funtions in place of eyeglasses",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LENS": {
+          "FUNCTIONS-LIKE": "EYEGLASSES"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "SOFT_CONTACT_LENS",
+        "HARD_CONTACT_LENS"
+      ],
+      "SENSE": "CONTACT_LENS-N1",
+      "WORD": "CONTACT_LENS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "word": "IMMEDIATELY",
+  "senses": {
+    "IMMEDIATELY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "indicates urgency",
+      "EX": "stop what you're doing immediately! he left and went immediately home",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "URGENCY",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "ATE-1",
+        "IMMEDIATELY-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "AT_ONCE",
+        "RIGHT_AWAY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "IMMEDIATELY-ADV1",
+      "WORD": "IMMEDIATELY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

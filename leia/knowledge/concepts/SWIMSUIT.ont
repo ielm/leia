@@ -1,0 +1,17 @@
+{
+  "name": "@SWIMSUIT",
+  "isa": [
+    "@CLOTHING-ARTIFACT",
+    "@SPORT-ARTIFACT"
+  ],
+  "def": "A garment worn while swimming.",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

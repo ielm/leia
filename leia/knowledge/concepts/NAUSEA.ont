@@ -1,0 +1,77 @@
+{
+  "name": "@NAUSEA",
+  "isa": [
+    "@SYMPTOM"
+  ],
+  "def": "a feeling of sickness characterized by an urge to vomit",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@UPPER-GASTROINTESTINAL-TRACT"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ULCER"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@HYPOCHLORHYDRIA"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@HYPERCALCEMIA"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@PULMONARY-ANTHRAX"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@GASTROESOPHAGEAL-REFLUX-DISEASE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@DISEASE"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

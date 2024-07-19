@@ -1,0 +1,182 @@
+{
+  "word": "ALLY",
+  "senses": {
+    "ALLY-N1": {
+      "CAT": "N",
+      "DEF": "a human who is an ally",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "AGENT-OF": "ALLY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ALLY-N1",
+      "WORD": "ALLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ALLY-N2": {
+      "CAT": "N",
+      "DEF": "an organization who is an ally",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ORGANIZATION": {
+          "AGENT-OF": "ALLY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ALLY-N2",
+      "WORD": "ALLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ALLY-V1": {
+      "CAT": "V",
+      "DEF": "to join in friendly association",
+      "EX": "we allied (ourselves) with them",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "OPT": "+",
+          "ROOT-WORD": [
+            "MYSELF",
+            "YOURSELF",
+            "HIMSELF",
+            "HERSELF",
+            "ITSELF",
+            "OURSELVES",
+            "YOURSELVES",
+            "THEMSELVES",
+            "ONESELF"
+          ]
+        },
+        "PP": {
+          "ROOT-WORD": "WITH",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ALLY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOG-1",
+        "ALLIED-0",
+        "HIMSELF-2",
+        "WITH-3",
+        "THE",
+        "COMPANY-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SIDE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ALLY-V1",
+      "WORD": "ALLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ALLY-V2": {
+      "CAT": "V",
+      "DEF": "to place in friendly association",
+      "EX": "the groups allied to better use their resources",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "NUMBER": "PL"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "XCOMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "ALLY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "PURPOSE": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MEN-1",
+        "ALLIED-0",
+        "TO",
+        "WIN-2",
+        "THE",
+        "WAR"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ALLY-V2",
+      "WORD": "ALLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

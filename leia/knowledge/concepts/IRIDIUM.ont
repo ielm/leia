@@ -1,0 +1,50 @@
+{
+  "name": "@IRIDIUM",
+  "isa": [
+    "@HARD-METALLIC-ELEMENT",
+    "@NON-DUCTILE-METAL"
+  ],
+  "def": "a very hard and brittle, exceptionally corrosion-resistant, whitish-yellow metallic element occurring in platinum ores and used principally to harden platinum and in high-temperature materials, electrical contacts, and wear-resistant bearings",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@ORE"
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        192
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        77
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

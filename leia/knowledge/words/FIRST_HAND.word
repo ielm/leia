@@ -1,0 +1,41 @@
+{
+  "word": "FIRST_HAND",
+  "senses": {
+    "FIRST_HAND-ADV1": {
+      "CAT": "ADV",
+      "DEF": "direct perception",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "POST-VERB-CLAUSE"
+        }
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HIT-1",
+        "FIRST-HAND-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FIRST_HAND-ADV1",
+      "WORD": "FIRST_HAND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

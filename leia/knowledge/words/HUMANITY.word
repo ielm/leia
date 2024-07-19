@@ -1,0 +1,33 @@
+{
+  "word": "HUMANITY",
+  "senses": {
+    "HUMANITY-N1": {
+      "CAT": "N",
+      "DEF": "mankind",
+      "EX": "in the history of humanity, such things happen all the time",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": "HUMAN",
+          "CARDINALITY": 1,
+          "COMPLETE": "YES"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HUMANITY-N1",
+      "WORD": "HUMANITY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

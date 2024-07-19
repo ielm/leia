@@ -1,0 +1,32 @@
+{
+  "name": "@MONSOON",
+  "isa": [
+    "@STORM"
+  ],
+  "def": "a heavy rain storm in southeast Asia caused by a wind from the southeast",
+  "local": [
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@WIND"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@RAIN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@NATURAL-EVENT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@BODY-OF-WATER"
+    }
+  ],
+  "private": {}
+}

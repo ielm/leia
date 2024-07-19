@@ -1,0 +1,19 @@
+{
+  "name": "@DRY-BARREL",
+  "isa": [
+    "@VOLUME-UNIT"
+  ],
+  "def": "unit of volume that is 7056 cubic inches (Wikipedia); 7056*I^3",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.115627
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

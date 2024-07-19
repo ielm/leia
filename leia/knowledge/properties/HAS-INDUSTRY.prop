@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-INDUSTRY",
+  "def": "the relation between geopolitical entities and industries",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$INDUSTRY-OF",
+  "measured-in": [],
+  "container": "$RELATION"
+}

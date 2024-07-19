@@ -1,0 +1,16 @@
+{
+  "name": "@ABSTRACT-SOCIAL-ACTIVITY",
+  "isa": [
+    "@SOCIAL-EVENT"
+  ],
+  "def": "any social-event that shows no tangible result",
+  "local": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@ABSTRACT-IDEA"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

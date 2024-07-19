@@ -1,0 +1,9 @@
+{
+  "name": "$MADE-OF",
+  "def": "what physical objects, typically materials, are used in this object",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$MATERIAL-OF",
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

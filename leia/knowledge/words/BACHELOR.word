@@ -1,0 +1,63 @@
+{
+  "word": "BACHELOR",
+  "senses": {
+    "BACHELOR-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "unmarried male",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "GENDER": "MALE",
+          "MARITAL-STATUS": "SINGLE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BACHELOR-ADJ1",
+      "WORD": "BACHELOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BACHELOR-N1": {
+      "CAT": "N",
+      "DEF": "unmarried male",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "GENDER": "MALE",
+          "MARITAL-STATUS": "SINGLE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BACHELOR-N1",
+      "WORD": "BACHELOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

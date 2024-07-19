@@ -1,0 +1,84 @@
+{
+  "word": "TELEPHONE",
+  "senses": {
+    "TELEPHONE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PHONE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "PHONE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "TELEPHONE-N1",
+      "WORD": "TELEPHONE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "TELEPHONE-V1": {
+      "CAT": "V",
+      "DEF": "to call on the phone",
+      "EX": "she telephoned him last night",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "INDIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "COMMUNICATIVE-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          },
+          "INSTRUMENT": "PHONE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "TELEPHONED-0",
+        "HIM-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TELEPHONE-V1",
+      "WORD": "TELEPHONE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

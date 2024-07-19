@@ -1,0 +1,53 @@
+{
+  "word": "MOURN",
+  "senses": {
+    "MOURN-V1": {
+      "CAT": "V",
+      "DEF": "to grieve",
+      "EX": "she mourned the death of her dog",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "OPT": "+",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "GRIEVE": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE-2",
+        "MOURNED-0",
+        "THE",
+        "DEATH-3",
+        "OF",
+        "HER",
+        "DOG"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MOURN-V1",
+      "WORD": "MOURN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

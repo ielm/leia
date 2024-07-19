@@ -1,0 +1,36 @@
+{
+  "name": "@SHIP",
+  "isa": [
+    "@SURFACE-WATER-VEHICLE"
+  ],
+  "def": "any large vessel navigating deep waters",
+  "local": [
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "><",
+        1000
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

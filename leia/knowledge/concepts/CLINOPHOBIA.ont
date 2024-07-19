@@ -1,0 +1,27 @@
+{
+  "name": "@CLINOPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of going to bed",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GO-TO-BED"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

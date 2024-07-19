@@ -1,0 +1,202 @@
+{
+  "word": "FACE",
+  "senses": {
+    "FACE-N1": {
+      "CAT": "N",
+      "DEF": "part of the body",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FACE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FACE-N1",
+      "WORD": "FACE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FACE-V1": {
+      "CAT": "V",
+      "DEF": "confront",
+      "EX": "he faced his problems",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "CONFRONT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "FACED-0",
+        "HIS",
+        "FATHER-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "CONFRONT",
+        "TACKLE",
+        "ATTACK"
+      ],
+      "HYPONYMS": [
+        "DRIVE_OFF"
+      ],
+      "SENSE": "FACE-V1",
+      "WORD": "FACE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FACE-V2": {
+      "CAT": "V",
+      "DEF": "phrasal: face up to = confront",
+      "EX": "he faced up to his problems",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "UP"
+        },
+        "PP": {
+          "ROOT-WORD": "TO",
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "CONFRONT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "FACED-0",
+        "UP-3",
+        "TO-4",
+        "THE",
+        "DOG-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FACE-V2",
+      "WORD": "FACE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FACE-V3": {
+      "CAT": "V",
+      "DEF": "to be positioned toward",
+      "EX": "he faced (toward) the building",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "TOWARD",
+          "OPT": "+"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "FACE-TOWARD": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "DESTINATION": {
+            "VALUE": "^$VAR2",
+            "SEM": "PLACE"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "FACED-0",
+        "TOWARD-3",
+        "THE",
+        "DOG-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FACE-V3",
+      "WORD": "FACE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

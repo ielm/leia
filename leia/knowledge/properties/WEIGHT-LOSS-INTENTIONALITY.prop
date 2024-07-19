@@ -1,0 +1,9 @@
+{
+  "name": "$WEIGHT-LOSS-INTENTIONALITY",
+  "def": "Whether or not weight loss has been intentional.",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-OBJECT-ATTRIBUTE"
+}

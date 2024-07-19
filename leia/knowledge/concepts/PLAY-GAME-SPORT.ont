@@ -1,0 +1,426 @@
+{
+  "name": "@PLAY-GAME-SPORT",
+  "isa": [
+    "@NON-WORK-ACTIVITY"
+  ],
+  "def": "A subtree that includes the playing of both sports and games, which have many properties in common",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SPORTS-DISCIPLINE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GAME-ACTIVITY"
+    },
+    {
+      "slot": "individual-or-team",
+      "facet": "sem",
+      "filler": "individual"
+    },
+    {
+      "slot": "individual-or-team",
+      "facet": "sem",
+      "filler": "team"
+    },
+    {
+      "slot": "has-loser",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "has-loser",
+      "facet": "default",
+      "filler": "@SPORTS-TEAM"
+    },
+    {
+      "slot": "has-loser",
+      "facet": "default",
+      "filler": "@ATHLETE"
+    },
+    {
+      "slot": "has-loser",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "has-winner",
+      "facet": "default",
+      "filler": "@SPORTS-TEAM"
+    },
+    {
+      "slot": "has-winner",
+      "facet": "default",
+      "filler": "@ATHLETE"
+    },
+    {
+      "slot": "has-winner",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "has-winner",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@ATHLETE"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@SPORTS-TEAM"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SPORT-ARTIFACT"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@CATCH"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@COLLIDE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@ELEVATE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@OBSTRUCT"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@RESTRAIN"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@RUN"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@CLIMB"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@DISCHARGE-WEAPON"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@DIVE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@HIT"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@HOLD"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@JUMP"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@KICK"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@MOVE-WATER-VEHICLE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@PULL"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@PUSH"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@ROLL"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@ROTATE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@SKI-EVENT"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@SWIM"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@SYNCHRONIZE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@THROW"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@WALK"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@WHIP"
+    },
+    {
+      "slot": "has-referee",
+      "facet": "sem",
+      "filler": "@REFEREE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "attribute",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "before",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "between-temporal",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "change-in-frequency-relative",
+      "facet": "sem",
+      "filler": "less-frequent"
+    },
+    {
+      "slot": "change-in-frequency-relative",
+      "facet": "sem",
+      "filler": "more-frequent"
+    },
+    {
+      "slot": "change-in-frequency-relative",
+      "facet": "sem",
+      "filler": "no-change"
+    },
+    {
+      "slot": "compatibility",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "complexity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "business"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "casual"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "formal"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "sport"
+    },
+    {
+      "slot": "duration",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "duration",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "enablement",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "enablement",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "importance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "language-relation",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "legality-attribute",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "legality-attribute",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "literal-attribute",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "literal-event-attribute",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "orderliness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "probability",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-event-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-event-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "similarity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

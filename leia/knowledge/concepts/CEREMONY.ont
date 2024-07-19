@@ -1,0 +1,21 @@
+{
+  "name": "@CEREMONY",
+  "isa": [
+    "@SPECIAL-OCCASION"
+  ],
+  "def": "a set of formal acts, proper to a special occasion",
+  "local": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

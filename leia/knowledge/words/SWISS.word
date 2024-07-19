@@ -1,0 +1,132 @@
+{
+  "word": "SWISS",
+  "senses": {
+    "SWISS-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to switzerland",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "SWITZERLAND"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SWISS-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SWISS-ADJ1",
+      "WORD": "SWISS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SWISS-N1": {
+      "CAT": "N",
+      "DEF": "a citizen of switzerland",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CITIZEN": {
+          "HAS-NATIONALITY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "SWITZERLAND"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SWISS-N1",
+      "WORD": "SWISS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SWISS-N2": {
+      "CAT": "N",
+      "DEF": "the set of citizens of switzerland",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "REFSEM1"
+          },
+          "CARDINALITY": 1,
+          "COMPLETE": "YES"
+        },
+        "REFSEM1": {
+          "CITIZEN": {
+            "HAS-NATIONALITY": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "SWITZERLAND"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SWISS-N2",
+      "WORD": "SWISS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

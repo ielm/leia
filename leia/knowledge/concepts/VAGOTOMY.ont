@@ -1,0 +1,44 @@
+{
+  "name": "@VAGOTOMY",
+  "isa": [
+    "@SURGERY"
+  ],
+  "def": "interruption of the impulses carried by the vagus nerve or nerves\n(http://medical-dictionary.thefreedictionary.com/vagotomy)",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VAGUS-NERVE"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@REMOVE-2"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {
+    "@REMOVE-2": {
+      "name": "@REMOVE-2",
+      "isa": [
+        "@REMOVE"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "theme",
+          "facet": "sem",
+          "filler": "@VAGUS-NERVE"
+        }
+      ],
+      "block": [],
+      "private": {}
+    }
+  }
+}

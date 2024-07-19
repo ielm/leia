@@ -1,0 +1,16 @@
+{
+  "name": "@HARVEST-MITE",
+  "isa": [
+    "@MITE"
+  ],
+  "def": "a larval bloodsucking mite causing intense irritation in humans and animals",
+  "local": [
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

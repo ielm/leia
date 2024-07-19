@@ -1,0 +1,16 @@
+{
+  "name": "@FRIJOLE",
+  "isa": [
+    "@BEAN"
+  ],
+  "def": "An important food of Spanish-Americans - an edible bean, usually red and dried.",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "red"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

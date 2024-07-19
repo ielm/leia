@@ -1,0 +1,20 @@
+{
+  "name": "@FAX-MACHINE",
+  "isa": [
+    "@COMMUNICATION-DEVICE",
+    "@MACHINE"
+  ],
+  "def": "a machine which transmits copies of documents from one place to another",
+  "local": [],
+  "block": [
+    {
+      "slot": "autonomy-technological",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

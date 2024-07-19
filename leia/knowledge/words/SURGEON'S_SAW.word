@@ -1,0 +1,31 @@
+{
+  "word": "SURGEON'S_SAW",
+  "senses": {
+    "SURGEON'S_SAW-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SAW": {
+          "USED-BY": "SURGEON"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SURGEON'S_SAW-N1",
+      "WORD": "SURGEON'S_SAW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

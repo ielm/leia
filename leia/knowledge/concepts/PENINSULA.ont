@@ -1,0 +1,47 @@
+{
+  "name": "@PENINSULA",
+  "isa": [
+    "@GEOLOGICAL-ENTITY"
+  ],
+  "def": "a long projection of land into water, connected with the mainland by an isthmus",
+  "local": [
+    {
+      "slot": "borders-on",
+      "facet": "sem",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ISTHMUS"
+    },
+    {
+      "slot": "borders-on",
+      "facet": "sem",
+      "filler": "@CONTINENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "borders-on",
+      "facet": "sem",
+      "filler": "@GEOGRAPHICAL-ENTITY"
+    },
+    {
+      "slot": "borders-on",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,118 @@
+{
+  "word": "CONVICT",
+  "senses": {
+    "CONVICT-N1": {
+      "CAT": "N",
+      "DEF": "a criminal found guilty, usu. serving in prison",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CRIMINAL": {
+          "LOCATION": "PRISON-BUILDING"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONVICT-N1",
+      "WORD": "CONVICT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CONVICT-V1": {
+      "CAT": "V",
+      "DEF": "to find guilty",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "CONVICT": {
+          "AGENT": {
+            "VALUE": "^$VAR1",
+            "SEM": "JURY-MEMBER"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4",
+            "SEM": "CRIMINAL-ACTIVITY"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "JUDGE-1",
+        "CONVICTED-0",
+        "THE",
+        "CRIMINAL-2",
+        "OF-3",
+        "THE",
+        "CRIMES-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONVICT-V1",
+      "WORD": "CONVICT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

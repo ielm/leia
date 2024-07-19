@@ -1,0 +1,27 @@
+{
+  "name": "@PSYCHIATRY",
+  "isa": [
+    "@MEDICINE"
+  ],
+  "def": "the branch of medicine dealing with disorders of the mind, including psychoses and neuroses",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@PSYCHIATRIST"
+    },
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@PHYSICIAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@MEDICAL-WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

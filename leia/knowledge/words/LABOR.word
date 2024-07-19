@@ -1,0 +1,100 @@
+{
+  "word": "LABOR",
+  "senses": {
+    "LABOR-N1": {
+      "CAT": "N",
+      "DEF": "physical or mental exertion",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "WORK-ACTIVITY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "LABOUR"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "LABOR-N1",
+      "WORD": "LABOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LABOR-N2": {
+      "CAT": "N",
+      "DEF": "workers considered as a group",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": "WORK-ROLE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "LABOUR"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "LABOR-N2",
+      "WORD": "LABOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LABOR-V1": {
+      "CAT": "V",
+      "DEF": "to work",
+      "EX": "he labors in the fields",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "WORK-ACTIVITY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "LABORS-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "LABOUR"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "LABOR-V1",
+      "WORD": "LABOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

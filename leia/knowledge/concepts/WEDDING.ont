@@ -1,0 +1,72 @@
+{
+  "name": "@WEDDING",
+  "isa": [
+    "@CEREMONY"
+  ],
+  "def": "the marriage ceremony",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@MARRY"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@PRIEST"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@RABBI"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@RELIGIOUS-LEADER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@RELIGIOUS-BUILDING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

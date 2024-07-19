@@ -1,0 +1,32 @@
+{
+  "name": "@COMB",
+  "isa": [
+    "@PERSONAL-GROOMING-ARTIFACT"
+  ],
+  "def": "a thin strip of rubber, plastic, etc., with teeth, used to clean or arrange the hair",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SYNTHETIC-RUBBER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

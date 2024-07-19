@@ -1,0 +1,67 @@
+{
+  "name": "@COMMON-COLD",
+  "isa": [
+    "@COMMUNICABLE-DISEASE"
+  ],
+  "def": "a respiratory disease characterized by sneezing, sore throat, coughing, etc., caused by an allergic reaction or by a viral, bacterial, or mixed infection.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HEAD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@THROAT"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@CHILLS"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@COUGH"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SNEEZE"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@MAMMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@MAMMAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

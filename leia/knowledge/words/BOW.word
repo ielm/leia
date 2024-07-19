@@ -1,0 +1,31 @@
+{
+  "word": "BOW",
+  "senses": {
+    "BOW-N1": {
+      "CAT": "N",
+      "DEF": "instrument for archery",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BOW",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "CROSSBOW",
+        "HADBOW",
+        "LONGBOW"
+      ],
+      "SENSE": "BOW-N1",
+      "WORD": "BOW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "word": "CYBERCAFE",
+  "senses": {
+    "CYBERCAFE-N1": {
+      "CAT": "N",
+      "DEF": "a cafe that has computers and provides internet access.",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CAFE": {
+          "LOCATION-OF": "COMPUTER",
+          "LOCATION-OF-1": "ACCESS-COMPUTER-NETWORK"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "INTERNET_CAFE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CYBERCAFE-N1",
+      "WORD": "CYBERCAFE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

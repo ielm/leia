@@ -1,0 +1,49 @@
+{
+  "word": "FORMER",
+  "senses": {
+    "FORMER-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "happening before the current time",
+      "EX": "",
+      "COMMENTS": "this is a rather loose representation that doesn't specifically say that the state of affairs is no longer in existence",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TIME": [
+            "<",
+            [
+              "FIND-ANCHOR-TIME"
+            ]
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "FORMER-0",
+        "N-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FORMER-ADJ1",
+      "WORD": "FORMER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

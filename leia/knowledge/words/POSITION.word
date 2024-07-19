@@ -1,0 +1,75 @@
+{
+  "word": "POSITION",
+  "senses": {
+    "POSITION-N2": {
+      "CAT": "N",
+      "DEF": "a sports term",
+      "EX": "what position does he play?",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SPORTS-ROLE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "POSITION-N2",
+      "WORD": "POSITION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "POSITION-N3": {
+      "CAT": "N",
+      "DEF": "an opinion",
+      "EX": "they tried to make him change his position on the environment",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "OPINION",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "POSITION-N3",
+      "WORD": "POSITION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "POSITION-N4": {
+      "CAT": "N",
+      "DEF": "position within a social organization",
+      "EX": "he likes to be in a position of power; he remained at the same rank for over ten years",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SOCIAL-ROLE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "RANK",
+        "LEVEL",
+        "TITLE"
+      ],
+      "SENSE": "POSITION-N4",
+      "WORD": "POSITION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "word": "TOYBOX",
+  "senses": {
+    "TOYBOX-N1": {
+      "CAT": "N",
+      "DEF": "a box for toys",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BOX": {
+          "CONTAINS": "TOY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "TOY_CHEST"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "TOYBOX-N1",
+      "WORD": "TOYBOX",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

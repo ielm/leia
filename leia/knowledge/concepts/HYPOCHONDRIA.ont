@@ -1,0 +1,37 @@
+{
+  "name": "@HYPOCHONDRIA",
+  "isa": [
+    "@MENTAL-DISORDER"
+  ],
+  "def": "an abnormal fear that one has a disease or is sick",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PATHOLOGIC-FUNCTION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

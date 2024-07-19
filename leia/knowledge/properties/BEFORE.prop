@@ -1,0 +1,9 @@
+{
+  "name": "$BEFORE",
+  "def": "for two events X and Y, if (before X Y) then X\ntakes place earlier in time than Y; e.g.,\nMonday is before Tuesday; the game will\ntake place before next month; the game is\nbefore the party\n",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$AFTER",
+  "measured-in": [],
+  "container": "$TEMPORAL-RELATION"
+}

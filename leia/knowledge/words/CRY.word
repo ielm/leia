@@ -1,0 +1,504 @@
+{
+  "word": "CRY",
+  "senses": {
+    "CRY-V1": {
+      "CAT": "V",
+      "DEF": "to shed tears",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "SHED-TEAR": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "CRIED-0"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "BLUBBER",
+        "WHIMPER",
+        "WHINE"
+      ],
+      "SENSE": "CRY-V1",
+      "WORD": "CRY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CRY-V2": {
+      "CAT": "V",
+      "DEF": "phrasal: cry out = scream",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "OUT"
+        },
+        "COMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "SCREAM": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "CRIED-0",
+        "OUT-2",
+        "THAT",
+        "THE",
+        "DOG",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "PRT",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CRY-V2",
+      "WORD": "CRY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CRY-V805": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "POSS": [
+          [
+            "ROOT",
+            "$VAR2"
+          ],
+          [
+            "ROOT",
+            "YOUR"
+          ],
+          [
+            "CAT",
+            "POSS"
+          ]
+        ],
+        "N-1": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "HEAD",
+          "CAT": "N"
+        },
+        "PREP": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "OFF",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "ANGRY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "INTENSITY": 1,
+          "DURATION": [
+            ">",
+            0.8
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "YOU-1",
+        "SCREAMED-0",
+        "YOUR-2",
+        "HEAD-3",
+        "OFF-4"
+      ],
+      "SYNONYMS": [
+        "SOB",
+        "WEEP",
+        "BAWL"
+      ],
+      "SENSE": "CRY-V805",
+      "WORD": "CRY",
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "CRY-V802": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "POSS": [
+          [
+            "ROOT",
+            "$VAR2"
+          ],
+          [
+            "ROOT",
+            "YOUR"
+          ],
+          [
+            "CAT",
+            "POSS"
+          ]
+        ],
+        "N-1": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "EYE",
+          "CAT": "N"
+        },
+        "PREP": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "OUT",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "CRY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "INTENSITY": 1,
+          "DURATION": [
+            ">",
+            0.8
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "YOU-1",
+        "CRIES-0",
+        "YOUR-2",
+        "EYES-3",
+        "OUT-4"
+      ],
+      "SYNONYMS": [
+        "SOB",
+        "WEEP",
+        "BAWL"
+      ],
+      "SENSE": "CRY-V802",
+      "WORD": "CRY",
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "CRY-V801": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "POSS": [
+          [
+            "ROOT",
+            "$VAR2"
+          ],
+          [
+            "ROOT",
+            [
+              "HER",
+              "MY"
+            ]
+          ],
+          [
+            "CAT",
+            "POSS"
+          ]
+        ],
+        "N-1": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "EYE",
+          "CAT": "N"
+        },
+        "PREP": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "OUT",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "CRY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "INTENSITY": 1,
+          "DURATION": [
+            ">",
+            0.8
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "CRIES-0",
+        "HER-2",
+        "EYES-3",
+        "OUT-4"
+      ],
+      "SYNONYMS": [
+        "SOB",
+        "WEEP",
+        "BAWL"
+      ],
+      "SENSE": "CRY-V801",
+      "WORD": "CRY",
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "CRY-V800": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "He cries his eyes out",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "POSS": [
+          [
+            "ROOT",
+            "$VAR2"
+          ],
+          [
+            "ROOT",
+            "HIS"
+          ],
+          [
+            "CAT",
+            "POSS"
+          ]
+        ],
+        "N-1": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "EYE",
+          "CAT": "N"
+        },
+        "PREP": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "OUT",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "CRY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "INTENSITY": 1,
+          "DURATION": [
+            ">",
+            0.8
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "CRIES-0",
+        "HIS-2",
+        "EYES-3",
+        "OUT-4"
+      ],
+      "SYNONYMS": [
+        "SOB",
+        "WEEP",
+        "BAWL"
+      ],
+      "SENSE": "CRY-V800",
+      "WORD": "CRY",
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "CRY-V803": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "There is no use crying over spilled milk",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP": {
+          "ROOT": "$VAR1",
+          "ROOT-WORD": "OVER",
+          "CAT": "PREP"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": [
+            "SPILL",
+            "SPOIL"
+          ],
+          "CAT": "V"
+        },
+        "N": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "MILK",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "REGRET": {
+          "EXPERIENCER": "SEEK-CONTEXTUAL-SPONSOR"
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "THERE",
+        "IS",
+        "NO",
+        "USE",
+        "CRYING-0",
+        "OVER-1",
+        "SPILLED-2",
+        "MILK-3"
+      ],
+      "SENSE": "CRY-V803",
+      "WORD": "CRY",
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

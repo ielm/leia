@@ -1,0 +1,22 @@
+{
+  "name": "@MICROPROCESSOR",
+  "isa": [
+    "@DEPENDENT-DEVICE"
+  ],
+  "def": "an integrated circuit that controls the operation of a microcomputer (usually personal computer)",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MICROCHIP"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

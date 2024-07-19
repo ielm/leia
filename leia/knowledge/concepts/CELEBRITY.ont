@@ -1,0 +1,36 @@
+{
+  "name": "@CELEBRITY",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "A celebrated person; a famous person.",
+  "local": [
+    {
+      "slot": "reputation-attribute",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0.9
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "reputation-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

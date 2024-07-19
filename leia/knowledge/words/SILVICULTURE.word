@@ -1,0 +1,38 @@
+{
+  "word": "SILVICULTURE",
+  "senses": {
+    "SILVICULTURE-N1": {
+      "CAT": "N",
+      "DEF": "cultivation of forest trees",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SCIENCE": {
+          "FIELD-STUDIES-AREA": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "TREE": {
+            "LOCATION": "FOREST"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SILVICULTURE-N1",
+      "WORD": "SILVICULTURE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@COMMUNICABLE-DISEASE",
+  "isa": [
+    "@DISEASE"
+  ],
+  "def": "Diseases that spread from one being to another, usually through contact, and cause infection.",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ALLERGY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    }
+  ],
+  "private": {}
+}

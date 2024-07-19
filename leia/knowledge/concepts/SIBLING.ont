@@ -1,0 +1,16 @@
+{
+  "name": "@SIBLING",
+  "isa": [
+    "@FAMILY-ROLE"
+  ],
+  "def": "brother or sister",
+  "local": [
+    {
+      "slot": "has-sibling",
+      "facet": "sem",
+      "filler": "@SIBLING"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

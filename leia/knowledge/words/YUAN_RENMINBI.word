@@ -1,0 +1,31 @@
+{
+  "word": "YUAN_RENMINBI",
+  "senses": {
+    "YUAN_RENMINBI-N1": {
+      "CAT": "N",
+      "DEF": "currency of china",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": "CHINA"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "YUAN_RENMINBI-N1",
+      "WORD": "YUAN_RENMINBI",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "@TRAFFIC",
+  "isa": [
+    "@DRIVE"
+  ],
+  "def": "The movement of vehicles on roads. Will be different from other kinds of motion events when we ultimately describe this using reification because the theme will have to be a set of vehicles, with velocity and location being key properties.",
+  "local": [],
+  "block": [],
+  "private": {}
+}

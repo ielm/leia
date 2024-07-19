@@ -1,0 +1,109 @@
+{
+  "word": "INCONGRUOUS",
+  "senses": {
+    "INCONGRUOUS-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "(of evidence, new information, a theory, etc.) showing conflict with something else",
+      "EX": "this theory is incongruous with previous ones",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "PP": {
+          "ROOT-WORD": "WITH",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "SUPPORT": {
+            "THEME": {
+              "VALUE": "^$VAR4",
+              "SEM": "ABSTRACT-OBJECT"
+            },
+            "INSTRUMENT": {
+              "VALUE": "^$VAR1",
+              "SEM": [
+                "NOT",
+                "PHYSICAL-OBJECT"
+              ]
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "EVENT-1",
+        "WAS-2",
+        "INCONSISTENT-0",
+        "WITH-3",
+        "THE",
+        "EVENT-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "COP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [
+        "INCOMPATIBLE",
+        "INCONSISTENT",
+        "INCONGRUENT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "INCONGRUOUS-ADJ1",
+      "WORD": "INCONGRUOUS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

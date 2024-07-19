@@ -1,0 +1,30 @@
+{
+  "name": "@NECTAR",
+  "isa": [
+    "@LIQUID"
+  ],
+  "def": "a sugary fluid secreted by flowers.",
+  "local": [
+    {
+      "slot": "sweetness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SUGAR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    }
+  ],
+  "private": {}
+}

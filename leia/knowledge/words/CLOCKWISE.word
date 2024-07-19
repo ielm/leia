@@ -1,0 +1,37 @@
+{
+  "word": "CLOCKWISE",
+  "senses": {
+    "CLOCKWISE-ADV1": {
+      "CAT": "ADV",
+      "DEF": "in the direction a clock's hand moves",
+      "EX": "She ran around the track clockwise",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "DIRECTION-OF-MOTION": "CLOCKWISE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CLOCKWISE-ADV1",
+      "WORD": "CLOCKWISE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

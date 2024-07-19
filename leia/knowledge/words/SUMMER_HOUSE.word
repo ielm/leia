@@ -1,0 +1,34 @@
+{
+  "word": "SUMMER_HOUSE",
+  "senses": {
+    "SUMMER_HOUSE-N1": {
+      "CAT": "N",
+      "DEF": "a private house located in the country, generally where people go to in the summertime",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PRIVATE-HOME": {
+          "LOCATION": "COUNTRYSIDE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SUMMER_HOME",
+        "DACHA"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SUMMER_HOUSE-N1",
+      "WORD": "SUMMER_HOUSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "word": "TUMOR",
+  "senses": {
+    "TUMOR-N1": {
+      "CAT": "N",
+      "DEF": "an abnormal growth of new tissue, independent of its surrounding structures",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "TUMOR",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "GROWTH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "TUMOR-N1",
+      "WORD": "TUMOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

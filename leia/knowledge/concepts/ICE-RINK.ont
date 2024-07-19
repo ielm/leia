@@ -1,0 +1,22 @@
+{
+  "name": "@ICE-RINK",
+  "isa": [
+    "@RECREATION-AREA"
+  ],
+  "def": "an expanse of ice for skating",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ICE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

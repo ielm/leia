@@ -1,0 +1,31 @@
+{
+  "name": "@CONTROL-EVENT-SOCIAL",
+  "isa": [
+    "@SOCIAL-EVENT"
+  ],
+  "def": "to exercise authority (over someone or something); to direct",
+  "local": [],
+  "block": [
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "business"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "casual"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "formal"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "sport"
+    }
+  ],
+  "private": {}
+}

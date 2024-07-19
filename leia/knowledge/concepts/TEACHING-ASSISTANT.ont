@@ -1,0 +1,61 @@
+{
+  "name": "@TEACHING-ASSISTANT",
+  "isa": [
+    "@UNIVERSITY-FACULTY",
+    "@UNIVERSITY-STUDENT"
+  ],
+  "def": "one who assists a teacher",
+  "local": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "<",
+        0.3
+      ]
+    },
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "><",
+        30
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "age",
+      "facet": "default",
+      "filler": [
+        "><",
+        32
+      ]
+    },
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "><",
+        130
+      ]
+    },
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    }
+  ],
+  "private": {}
+}

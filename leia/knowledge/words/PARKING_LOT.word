@@ -1,0 +1,30 @@
+{
+  "word": "PARKING_LOT",
+  "senses": {
+    "PARKING_LOT-N1": {
+      "CAT": "N",
+      "DEF": "a place to park numerous cars",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PARKING-LOT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "CAR_PARK",
+        "PARKING_AREA"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PARKING_LOT-N1",
+      "WORD": "PARKING_LOT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "name": "@TIE",
+  "isa": [
+    "@PHYSICAL-EVENT"
+  ],
+  "def": "to bind in any way",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CONSTRUCTION-MATERIAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMAL-DERIVED-SUBSTANCE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FOOD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@METAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PLANT-DERIVED-SUBSTANCE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FABRIC"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SYNTHETICS"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ROPE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@STRING"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@KNOT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

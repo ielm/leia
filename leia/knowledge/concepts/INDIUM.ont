@@ -1,0 +1,36 @@
+{
+  "name": "@INDIUM",
+  "isa": [
+    "@SOFT-METALLIC-ELEMENT"
+  ],
+  "def": "a soft, malleable, silvery-white metallic element found primarily in ores of zinc and tin, used as a plating over silver in making mirrors, in plating aircraft bearings, and in compounds for making transistors",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        49
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        114
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

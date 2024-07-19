@@ -1,0 +1,34 @@
+{
+  "word": "CONTROL_PANEL",
+  "senses": {
+    "CONTROL_PANEL-N1": {
+      "CAT": "N",
+      "DEF": "a plank or board where devices are stored",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BOARD-FOR-CONSTRUCTION": {
+          "LOCATION-OF": "DEVICE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "CONSOLE",
+        "PANEL"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CONTROL_PANEL-N1",
+      "WORD": "CONTROL_PANEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

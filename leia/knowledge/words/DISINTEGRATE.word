@@ -1,0 +1,47 @@
+{
+  "word": "DISINTEGRATE",
+  "senses": {
+    "DISINTEGRATE-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "because of poor management, the company disintegrated a year later",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "DISINTEGRATE": {
+          "THEME": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "COMPANY-1",
+        "DISINTEGRATED-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DISINTEGRATE-V1",
+      "WORD": "DISINTEGRATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

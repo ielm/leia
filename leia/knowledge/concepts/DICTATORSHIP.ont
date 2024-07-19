@@ -1,0 +1,22 @@
+{
+  "name": "@DICTATORSHIP",
+  "isa": [
+    "@GOVERNMENT-TYPE"
+  ],
+  "def": "a governmental ideology in which an individual rules with absolute power",
+  "local": [
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@DICTATOR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    }
+  ],
+  "private": {}
+}

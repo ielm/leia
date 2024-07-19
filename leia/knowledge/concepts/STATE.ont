@@ -1,0 +1,16 @@
+{
+  "name": "@STATE",
+  "isa": [
+    "@LARGE-GEOPOLITICAL-ENTITY"
+  ],
+  "def": "one of the more or less internally autonomous territorial and political units composing a federation under a sovereign government",
+  "local": [
+    {
+      "slot": "in-province",
+      "facet": "sem",
+      "filler": "@PROVINCE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

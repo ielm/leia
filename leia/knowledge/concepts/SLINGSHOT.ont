@@ -1,0 +1,32 @@
+{
+  "name": "@SLINGSHOT",
+  "isa": [
+    "@WEAPON"
+  ],
+  "def": "a Y-shaped stick having an elastic strap attached to the prongs, used for flinging small stone",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SYNTHETICS"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@RUBBERBAND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

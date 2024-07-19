@@ -1,0 +1,31 @@
+{
+  "word": "CARREFOUR",
+  "senses": {
+    "CARREFOUR-N1": {
+      "CAT": "N",
+      "DEF": "a place where roads intersect",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PLACE": {
+          "LOCATION-OF": "INTERSECTION"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CARREFOUR-N1",
+      "WORD": "CARREFOUR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

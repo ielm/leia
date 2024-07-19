@@ -1,0 +1,47 @@
+{
+  "name": "@MONEY-LAUNDERING",
+  "isa": [
+    "@CRIMINAL-ACTIVITY"
+  ],
+  "def": "To disguise the source of illegal money by routing it abroad through a foreign bank",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MONEY"
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@BANK"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

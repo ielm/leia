@@ -1,0 +1,22 @@
+{
+  "name": "@TEA-PLANT",
+  "isa": [
+    "@BUSH"
+  ],
+  "def": "the plant that yields tea leaves",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@TEA-LEAF"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@BUSH-FRUIT"
+    }
+  ],
+  "private": {}
+}

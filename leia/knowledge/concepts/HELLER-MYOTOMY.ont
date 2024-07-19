@@ -1,0 +1,32 @@
+{
+  "name": "@HELLER-MYOTOMY",
+  "isa": [
+    "@MYOTOMY"
+  ],
+  "def": "a surgical procedure that cuts the LES",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LES"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SURGICAL-KNIFE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SURGICAL-INSTRUMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

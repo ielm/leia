@@ -1,0 +1,164 @@
+{
+  "word": "EXCEPT",
+  "senses": {
+    "EXCEPT-PREP1": {
+      "CAT": "PREP",
+      "DEF": "",
+      "EX": "Everyone except (for) me.",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR0",
+      "SYN-STRUC": {
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "PREP",
+        "PREP": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "FOR",
+          "OPT": "+"
+        },
+        "NP-1": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "ELEMENTS": {
+            "VALUE": "^$VAR1"
+          },
+          "NOT-ELEMENTS": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "EVENT-1",
+        "EXCEPT-0",
+        "FOR-3",
+        "THE",
+        "EVENT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EXCEPT-PREP1",
+      "WORD": "EXCEPT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EXCEPT-PREP2": {
+      "CAT": "PREP",
+      "DEF": "",
+      "EX": "Except for me, everyone went.",
+      "COMMENTS": "I don't think the without-for variant sounds right with this word order",
+      "TMR-HEAD": "$VAR0",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "PREP",
+        "PREP": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "FOR"
+        },
+        "NP": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "PUNCT": {
+          "ROOT": "$VAR4",
+          "CAT": "PUNCT",
+          "ROOT-WORD": "*COMMA*"
+        },
+        "NP-1": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "ELEMENTS": {
+            "VALUE": "^$VAR1"
+          },
+          "NOT-ELEMENTS": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EXCEPT-0",
+        "FOR-3",
+        "THE",
+        "EVENT-2",
+        "*COMMA*-4",
+        "THE",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "APPOS",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "DEP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "PUNCT",
+          "$VAR2",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EXCEPT-PREP2",
+      "WORD": "EXCEPT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "@CONSTIPATION",
+  "isa": [
+    "@DISCOMFORT"
+  ],
+  "def": "Difficult, incomplete, or infrequent evacuation of dry hardened feces from the bowels.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FECES"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@HYPERCALCEMIA"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@INTESTINE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@DISEASE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

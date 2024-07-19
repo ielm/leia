@@ -1,0 +1,9 @@
+{
+  "name": "$AVERAGE",
+  "def": "identical to mean",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

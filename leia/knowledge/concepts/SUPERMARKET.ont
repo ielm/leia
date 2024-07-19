@@ -1,0 +1,26 @@
+{
+  "name": "@SUPERMARKET",
+  "isa": [
+    "@STORE"
+  ],
+  "def": "a large, self-service, retail food store or market",
+  "local": [
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@FOOD"
+    },
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@BEVERAGE"
+    },
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@BEVERAGE-PROCESSING-CORPORATION"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

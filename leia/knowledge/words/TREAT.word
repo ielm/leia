@@ -1,0 +1,229 @@
+{
+  "word": "TREAT",
+  "senses": {
+    "TREAT-N1": {
+      "CAT": "N",
+      "DEF": "something pleasant, desirable",
+      "EX": "traveling <ice cream> is a real treat",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 1,
+          "SCOPE": "ALL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TREAT-N1",
+      "WORD": "TREAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "TREAT-V1": {
+      "CAT": "V",
+      "DEF": "to treat s.o. for an illness",
+      "EX": "that doctor treated her brother for appendicitis",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": "FOR",
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "TREAT-MEDICALLY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOCTOR-1",
+        "TREATS-0",
+        "THE",
+        "BOY-2",
+        "FOR-4",
+        "CANCER-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR4",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TREAT-V1",
+      "WORD": "TREAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "TREAT-V2": {
+      "CAT": "V",
+      "DEF": "to treat an illness",
+      "EX": "that doctor treats cancer",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "TREAT-MEDICALLY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THAT",
+        "DOCTOR-1",
+        "TREATS-0",
+        "CANCER-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TREAT-V2",
+      "WORD": "TREAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "TREAT-V3": {
+      "CAT": "V",
+      "DEF": "phrasal: treat someone well",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "MODS": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "WELL",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "BEHAVE": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            },
+            "BENEFICIARY": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          },
+          "VALUE": 1
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TREAT-V3",
+      "WORD": "TREAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

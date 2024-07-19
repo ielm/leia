@@ -1,0 +1,45 @@
+{
+  "word": "TOWNSFOLK",
+  "senses": {
+    "TOWNSFOLK-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "HUMAN": {
+            "AGENT-OF": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "INHABIT": {
+            "THEME": "TOWN"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TOWNSFOLK-N1",
+      "WORD": "TOWNSFOLK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

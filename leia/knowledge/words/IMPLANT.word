@@ -1,0 +1,116 @@
+{
+  "word": "IMPLANT",
+  "senses": {
+    "IMPLANT-N1": {
+      "CAT": "N",
+      "DEF": "something that is inserted surgically",
+      "EX": "they gave him an implant to aid with his digestion",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MEDICAL-ARTIFACT": {
+          "THEME-OF": "IMPLANT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "IMPLANT-N1",
+      "WORD": "IMPLANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "IMPLANT-V1": {
+      "CAT": "V",
+      "DEF": "to insert surgically",
+      "EX": "they implanted a pacemaker in his chest",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        },
+        "PP": {
+          "ROOT-WORD": [
+            "IN",
+            "INTO"
+          ],
+          "ROOT": "$VAR1",
+          "OPT": "+",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "IMPLANT": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          },
+          "INSIDE-OF": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOCTOR-2",
+        "IMPLANTED-0",
+        "A",
+        "PACEMAKER-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "IMPLANT-V1",
+      "WORD": "IMPLANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

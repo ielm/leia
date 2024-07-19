@@ -1,0 +1,87 @@
+{
+  "name": "@COPPER-AGE",
+  "isa": [
+    "@HISTORICAL-PERIOD"
+  ],
+  "def": "cultural period between Neolithic and Bronze ages, characterized by ability to extract copper for use in making tools; from 6,000 B.C. to 4,500 B.C. in Southwest Asia, and from 2,400 B.C. to 500 B.C. in Europe (note: this concept covers the superset of these time periods)",
+  "local": [
+    {
+      "slot": "time-begin",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        6000
+      ],
+      "meta": {
+        "measured-in": "year-bc"
+      }
+    },
+    {
+      "slot": "time-end",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        500
+      ],
+      "meta": {
+        "measured-in": "year-bc"
+      }
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@IMPLEMENT-2"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@WEAPON-2"
+    }
+  ],
+  "block": [
+    {
+      "slot": "time-begin",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "time-end",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    }
+  ],
+  "private": {
+    "@IMPLEMENT-2": {
+      "name": "@IMPLEMENT-2",
+      "isa": [
+        "@IMPLEMENT"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "made-of",
+          "facet": "sem",
+          "filler": "@COPPER"
+        }
+      ],
+      "block": [],
+      "private": {}
+    },
+    "@WEAPON-2": {
+      "name": "@WEAPON-2",
+      "isa": [
+        "@WEAPON"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "made-of",
+          "facet": "sem",
+          "filler": "@COPPER"
+        }
+      ],
+      "block": [],
+      "private": {}
+    }
+  }
+}

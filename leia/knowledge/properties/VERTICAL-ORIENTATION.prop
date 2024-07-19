@@ -1,0 +1,9 @@
+{
+  "name": "$VERTICAL-ORIENTATION",
+  "def": "an orientation of an object in space",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-OBJECT-ATTRIBUTE"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$APPLIES-TO",
+  "def": "Indicates the scope of application of a rule, law, generalization, etc.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$WITHIN-SCOPE-OF-APPLICATION-OF",
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$TREATED-BY",
+  "def": "indicates the relationship between a disease and (a) the medicine that treats it or (b) the vaccine that prevents it (combined under PHARMACEUTICAL-MATERIAL) or (c) the surgical procedure that treats it. NOTE: the expected OBJECT filler for the range was overridden to permit surgery (an event) here too.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$TREATMENT-FOR",
+  "measured-in": [],
+  "container": "$MEDICAL-RELATION"
+}

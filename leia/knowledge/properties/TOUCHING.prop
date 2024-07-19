@@ -1,0 +1,9 @@
+{
+  "name": "$TOUCHING",
+  "def": "be tangent to a surface",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$TOUCHING",
+  "measured-in": [],
+  "container": "$SPATIAL-RELATION"
+}

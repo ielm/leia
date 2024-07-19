@@ -1,0 +1,31 @@
+{
+  "word": "VIDEO_SCULPTURE",
+  "senses": {
+    "VIDEO_SCULPTURE-N1": {
+      "CAT": "N",
+      "DEF": "A three-dimensional sculpture incorporating prerecorded videotape",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SCULPTURE": {
+          "HAS-OBJECT-AS-PART": "FILM-MEDIA"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "VIDEO_SCULPTURE-N1",
+      "WORD": "VIDEO_SCULPTURE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

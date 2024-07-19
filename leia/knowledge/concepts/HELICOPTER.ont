@@ -1,0 +1,21 @@
+{
+  "name": "@HELICOPTER",
+  "isa": [
+    "@AIR-VEHICLE"
+  ],
+  "def": "an aircraft supported by aerodynamic forces acting on one or more rotors turning about vertical axes",
+  "local": [],
+  "block": [
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    }
+  ],
+  "private": {}
+}

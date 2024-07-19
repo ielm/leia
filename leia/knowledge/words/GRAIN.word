@@ -1,0 +1,51 @@
+{
+  "word": "GRAIN",
+  "senses": {
+    "GRAIN-N1": {
+      "CAT": "N",
+      "DEF": "a foodstuff",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "GRAIN-FOODSTUFF",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "COUSCOUS"
+      ],
+      "SENSE": "GRAIN-N1",
+      "WORD": "GRAIN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "GRAIN-N2": {
+      "CAT": "N",
+      "DEF": "a unit of measure traditionally based on a cereal seed, is equivalent to 64.79891 milligrams (Wikipedia); 648E-7",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "GRAIN",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GRAIN-N2",
+      "WORD": "GRAIN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

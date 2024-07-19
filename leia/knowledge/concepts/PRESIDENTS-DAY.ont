@@ -1,0 +1,37 @@
+{
+  "name": "@PRESIDENTS-DAY",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "a legal U.S. holiday commemorating the birthdays of George Washington and Abraham Lincoln (third Monday in February)",
+  "local": [
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@FEBRUARY"
+    },
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@MONDAY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "private": {}
+}

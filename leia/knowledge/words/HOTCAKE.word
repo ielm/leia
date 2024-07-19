@@ -1,0 +1,78 @@
+{
+  "word": "HOTCAKE",
+  "senses": {
+    "HOTCAKE-N800": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "They are selling like hotcakes.",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": [
+            "SELL",
+            "GO"
+          ],
+          "CAT": "N"
+        },
+        "PREP": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "LIKE",
+          "CAT": "PREP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "NUMBER": "PLURAL"
+      },
+      "SEM-STRUC": {
+        "SELL": {
+          "THEME": {
+            "VALUE": "REFSEM1"
+          },
+          "RAPIDITY": 1
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": {
+              "VALUE": "^$VAR1"
+            },
+            "QUANT": [
+              ">",
+              0.7
+            ]
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "CARS-1",
+        "SOLD-2",
+        "LIKE-3",
+        "HOTCAKES-0"
+      ],
+      "SYNONYMS": [
+        "WILDFIRE",
+        "GANGBUSTERS"
+      ],
+      "SENSE": "HOTCAKE-N800",
+      "WORD": "HOTCAKE",
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

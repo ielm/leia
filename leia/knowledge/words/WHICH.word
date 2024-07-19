@@ -1,0 +1,67 @@
+{
+  "word": "WHICH",
+  "senses": {
+    "WHICH-DET1": {
+      "CAT": "DET",
+      "DEF": "'which' used in an interrogative with a nominal complement",
+      "EX": "Which entree did you choose?",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "DET": {
+          "ROOT": "$VAR0",
+          "CAT": "DET"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "UNCONNECTED": [
+          [
+            "ROOT",
+            "$VAR2"
+          ],
+          [
+            "ROOT",
+            "*QUESTION_MARK*"
+          ],
+          [
+            "CAT",
+            "PUNCT"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "REQUEST-INFO-TRACE": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "WHAT-0",
+        "MAN-1",
+        "HIT",
+        "THE",
+        "BUILDING",
+        "*QUESTION_MARK*"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "WHAT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "WHICH-DET1",
+      "WORD": "WHICH",
+      "COMMENTS": "NIL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

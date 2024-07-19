@@ -1,0 +1,22 @@
+{
+  "name": "@DEVICE-AS-INSTRUMENT-EVENT",
+  "isa": [
+    "@DEVICE-EVENT"
+  ],
+  "def": "The instrument of the event is DEVICE",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@DEVICE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

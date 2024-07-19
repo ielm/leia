@@ -1,0 +1,302 @@
+{
+  "word": "KILL",
+  "senses": {
+    "KILL-V1": {
+      "CAT": "V",
+      "DEF": "to cause to die; with an agent",
+      "EX": "the intruder killed him; Stalin killed millions of people",
+      "COMMENTS": "[D] I'm leaving 'kill' here for now although our current thinking suggests we should use 'cause to die' instead",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "KILL": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "TERRORIST-1",
+        "KILLS-0",
+        "THE",
+        "DOG-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "SLAY",
+        "MURDER",
+        "ASSASSINATE"
+      ],
+      "SENSE": "KILL-V1",
+      "WORD": "KILL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "KILL-V2": {
+      "CAT": "V",
+      "DEF": "to cause to die; with the subject being an event, including disease, of course",
+      "EX": "that disease killed him",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "DIE": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR2"
+          },
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1",
+            "SEM": "EVENT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "KILLS-0",
+        "THE",
+        "FLY-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KILL-V2",
+      "WORD": "KILL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "KILL-V3": {
+      "CAT": "V",
+      "DEF": "to cause to die; with the subject being the instrument, an object, that is",
+      "EX": "the bullet killed him",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "KILL": {
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "INSTRUMENT": {
+            "VALUE": "^$VAR1",
+            "SEM": "OBJECT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "TOXIN-1",
+        "KILLS-0",
+        "THE",
+        "DOG-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KILL-V3",
+      "WORD": "KILL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "KILL-V4": {
+      "CAT": "V",
+      "DEF": "to cause to cease operating; of a device - equivalent to 'turn off'",
+      "EX": "he killed the motor",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "END",
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "OPERATE-DEVICE": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            },
+            "THEME": {
+              "VALUE": "^$VAR2",
+              "DEFAULT": "ENGINE",
+              "SEM": "ARTIFACT"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOG-1",
+        "KILLS-0",
+        "THE",
+        "MAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KILL-V4",
+      "WORD": "KILL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "KILL-V5": {
+      "CAT": "V",
+      "DEF": "to vote down a bill",
+      "EX": "they killed this bill",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "VETO": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "BILL-LEGISLATIVE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "SENATOR-1",
+        "KILLS-0",
+        "THE",
+        "FLY-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KILL-V5",
+      "WORD": "KILL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "word": "RADIOPAQUE_DYE",
+  "senses": {
+    "RADIOPAQUE_DYE-N1": {
+      "CAT": "N",
+      "DEF": "dye that does not allow the passage of X rays or other radiation;   used to outline organs during X-ray examination",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "DYESTUFF": {
+          "RELATION": "X-RAY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RADIOPAQUE_DYE-N1",
+      "WORD": "RADIOPAQUE_DYE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

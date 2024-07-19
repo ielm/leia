@@ -1,0 +1,22 @@
+{
+  "name": "@IDENTIFICATION-NUMBER",
+  "isa": [
+    "@NAME"
+  ],
+  "def": "number used to identify an OBJECT",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

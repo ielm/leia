@@ -1,0 +1,19 @@
+{
+  "name": "@REVOLUTION-ANGLE",
+  "isa": [
+    "@ANGLE-UNIT"
+  ],
+  "def": "one full circle, can be measured in degrees, radian, etc; 360*degree-angular",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        6.28319
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

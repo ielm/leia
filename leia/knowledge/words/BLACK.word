@@ -1,0 +1,183 @@
+{
+  "word": "BLACK",
+  "senses": {
+    "BLACK-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "a color",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "NOT",
+            "HUMAN"
+          ],
+          "COLOR": "BLACK"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "BLACK-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BLACK-ADJ1",
+      "WORD": "BLACK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BLACK-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "a race",
+      "EX": "2 white professors and three black ones work in this department",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "HUMAN",
+          "RACE": "BLACK"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "BLACK-0",
+        "HUMAN-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "AFRICAN_AMERICAN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BLACK-ADJ2",
+      "WORD": "BLACK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BLACK-N1": {
+      "CAT": "N",
+      "DEF": "with no explicit modifyee",
+      "EX": "some people like black",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PHYSICAL-OBJECT": {
+          "COLOR": "BLACK"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BLACK-N1",
+      "WORD": "BLACK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BLACK-N2": {
+      "CAT": "N",
+      "DEF": "a black person",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "RACE": "BLACK"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "AFRICAN_AMERICAN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BLACK-N2",
+      "WORD": "BLACK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BLACK-ADJ401": {
+      "CAT": "ADJ",
+      "COMMENTS": "*BLOCKS*",
+      "EX": "",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "PHYSICAL-OBJECT",
+          "COLOR": "BLACK"
+        }
+      },
+      "SYNONYMS": [],
+      "EXAMPLE-BINDINGS": [
+        "THERE",
+        "IS",
+        "A",
+        "BLACK-0",
+        "BLOCK-1"
+      ],
+      "SENSE": "BLACK-ADJ401",
+      "WORD": "BLACK",
+      "DEF": "",
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

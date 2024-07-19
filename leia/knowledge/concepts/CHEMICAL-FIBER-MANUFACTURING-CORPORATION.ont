@@ -1,0 +1,22 @@
+{
+  "name": "@CHEMICAL-FIBER-MANUFACTURING-CORPORATION",
+  "isa": [
+    "@TEXTILE-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a corporation that produces synthetic textiles and related products",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@SYNTHETIC-FABRIC"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

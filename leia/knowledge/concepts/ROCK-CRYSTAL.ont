@@ -1,0 +1,21 @@
+{
+  "name": "@ROCK-CRYSTAL",
+  "isa": [
+    "@QUARTZ"
+  ],
+  "def": "colorless transparent quartz used as a semiprecious gem and in optical instruments",
+  "local": [],
+  "block": [
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "opaque"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "translucent"
+    }
+  ],
+  "private": {}
+}

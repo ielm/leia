@@ -1,0 +1,12 @@
+{
+  "name": "$USABLE-LIFE",
+  "def": "the length of time an artifact or a material can be expected to be useful -\ncompare with LIFESPAN for animates",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@TIME-INTERVAL-UNIT",
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

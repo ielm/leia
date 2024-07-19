@@ -1,0 +1,36 @@
+{
+  "word": "SENIOR_MASTER_SERGEANT",
+  "senses": {
+    "SENIOR_MASTER_SERGEANT-N1": {
+      "CAT": "N",
+      "DEF": "an officer of rank 13/16 in the US air force",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MILITARY-OFFICER": {
+          "CITIZEN-OF": "USA",
+          "MEMBER-OF": "AIR-FORCES",
+          "RANK": [
+            13,
+            16
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SENIOR_MASTER_SERGEANT-N1",
+      "WORD": "SENIOR_MASTER_SERGEANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "word": "WAIT_STAFF",
+  "senses": {
+    "WAIT_STAFF-N1": {
+      "CAT": "N",
+      "DEF": "waiters and waitresses in a restaurant",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": "SERVER"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "WAITSTAFF"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "WAIT_STAFF-N1",
+      "WORD": "WAIT_STAFF",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

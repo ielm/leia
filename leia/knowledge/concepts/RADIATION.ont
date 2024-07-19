@@ -1,0 +1,21 @@
+{
+  "name": "@RADIATION",
+  "isa": [
+    "@ENERGY"
+  ],
+  "def": "Energy radiated or transmitted as rays, waves, in the form of particles.",
+  "local": [],
+  "block": [
+    {
+      "slot": "relation",
+      "facet": "sem",
+      "filler": "@CELESTIAL-OBJECT"
+    },
+    {
+      "slot": "relation",
+      "facet": "sem",
+      "filler": "@NATURAL-RESOURCE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,44 @@
+{
+  "word": "WHERE_REL",
+  "senses": {
+    "WHERE_REL-PRO1": {
+      "CAT": "PRO",
+      "DEF": "a spatial relation; for NP when cl",
+      "EX": "The place where I buy coffee is Trader Joe's",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "CONJ",
+        "CL": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "PHYSICAL-OBJECT",
+          "LOCATION-OF": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WHERE_REL-PRO1",
+      "WORD": "WHERE_REL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

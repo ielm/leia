@@ -1,0 +1,21 @@
+{
+  "name": "@LEGISLATIVE-BRANCH",
+  "isa": [
+    "@GOVERNMENT-BRANCH"
+  ],
+  "def": "part of a government responsible for creating new laws and changing and discarding old ones",
+  "local": [
+    {
+      "slot": "has-member",
+      "facet": "default",
+      "filler": "@ELECTED-GOVERNMENTAL-ROLE"
+    },
+    {
+      "slot": "has-member",
+      "facet": "default",
+      "filler": "@APPOINTED-GOVERNMENTAL-ROLE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

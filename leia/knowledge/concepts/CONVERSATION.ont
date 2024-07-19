@@ -1,0 +1,21 @@
+{
+  "name": "@CONVERSATION",
+  "isa": [
+    "@SPEECH-ACT"
+  ],
+  "def": "informal talk between or among individuals",
+  "local": [],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

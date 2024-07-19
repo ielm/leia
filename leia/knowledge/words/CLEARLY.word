@@ -1,0 +1,90 @@
+{
+  "word": "CLEARLY",
+  "senses": {
+    "CLEARLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "with full visibility",
+      "EX": "his glasses help him see more clearly",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "PERCEPTUAL-EVENT",
+          "VISIBILITY": 0.8
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CLEARLY-0",
+        "PERCEPTUAL-EVENTED-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CLEARLY-ADV1",
+      "WORD": "CLEARLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CLEARLY-ADV2": {
+      "CAT": "ADV",
+      "DEF": "discourse function; saliency",
+      "EX": "he was clearly in the wrong; we saw clearly that it was time to leave",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-POST-VERB-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "SALIENCY",
+          "VALUE": 0.7,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CLEARLY-0",
+        "EVENTED-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CLEARLY-ADV2",
+      "WORD": "CLEARLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

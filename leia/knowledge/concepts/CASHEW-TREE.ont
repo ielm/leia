@@ -1,0 +1,22 @@
+{
+  "name": "@CASHEW-TREE",
+  "isa": [
+    "@NUT-TREE"
+  ],
+  "def": "tree that produces cashew nuts",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CASHEW-NUT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@NUT-FOODSTUFF"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,83 @@
+{
+  "word": "REFUSAL",
+  "senses": {
+    "REFUSAL-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "the refusal of the committee to give in caused trouble",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "XCOMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "ACCEPT": {
+            "AGENT": {
+              "VALUE": "^$VAR2"
+            },
+            "THEME": {
+              "VALUE": "^$VAR3"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "REFUSAL-0",
+        "OF-1",
+        "THE",
+        "HUMAN-2",
+        "TO-7",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "REFUSAL-N1",
+      "WORD": "REFUSAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

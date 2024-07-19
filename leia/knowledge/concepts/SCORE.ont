@@ -1,0 +1,16 @@
+{
+  "name": "@SCORE",
+  "isa": [
+    "@ABSTRACT-OBJECT"
+  ],
+  "def": "A usually numerical record of a competitive event or the result, usually expressed numerically, of a test or examination.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

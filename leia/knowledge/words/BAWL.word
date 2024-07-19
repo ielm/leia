@@ -1,0 +1,47 @@
+{
+  "word": "BAWL",
+  "senses": {
+    "BAWL-V1": {
+      "CAT": "V",
+      "DEF": "to shed tears intensely",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "SHED-TEAR": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          },
+          "INTENSITY": [
+            ">",
+            0.7
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "BAWLED-0"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "SOB"
+      ],
+      "SENSE": "BAWL-V1",
+      "WORD": "BAWL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

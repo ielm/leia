@@ -1,0 +1,42 @@
+{
+  "word": "CONFECTIONERY",
+  "senses": {
+    "CONFECTIONERY-N1": {
+      "CAT": "N",
+      "DEF": "a store that sells candies ",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "STORE": {
+          "LOCATION-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SELL": {
+            "THEME": "CANDY"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "CANDY_STORE",
+        "CANDY_SHOP",
+        "confectioner's_shop"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CONFECTIONERY-N1",
+      "WORD": "CONFECTIONERY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

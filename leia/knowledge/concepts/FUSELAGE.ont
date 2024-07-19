@@ -1,0 +1,32 @@
+{
+  "name": "@FUSELAGE",
+  "isa": [
+    "@AIR-VEHICLE-PART"
+  ],
+  "def": "the body of an airplane, exclusive of the wings, tail assembly, and engines",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@AIRPLANE-WING"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@ENGINE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@HULL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

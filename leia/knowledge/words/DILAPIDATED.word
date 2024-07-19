@@ -1,0 +1,35 @@
+{
+  "word": "DILAPIDATED",
+  "senses": {
+    "DILAPIDATED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "falling apart, in bad repair",
+      "EX": "dilapidated",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "STATE-OF-REPAIR": 0.1
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DILAPIDATED-ADJ1",
+      "WORD": "DILAPIDATED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

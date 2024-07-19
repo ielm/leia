@@ -1,0 +1,12 @@
+{
+  "name": "$HAS-DISEASE-HISTORY-DURATION",
+  "def": "The duration of time for which a medical patient has had a particular disease or symptom",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@TIME-INTERVAL-UNIT",
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-ANIMAL-ATTRIBUTE"
+}

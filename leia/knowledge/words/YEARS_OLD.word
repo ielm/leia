@@ -1,0 +1,74 @@
+{
+  "word": "YEARS_OLD",
+  "senses": {
+    "YEARS_OLD-N1": {
+      "CAT": "N",
+      "DEF": "indicates age; used with more than one in a predicative construction",
+      "EX": "the child is two years old",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "NUM": {
+          "ROOT": "$VAR3",
+          "CAT": "NUM"
+        },
+        "N": {
+          "ROOT": "$VAR0",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "AGE": {
+            "VALUE": "^$VAR3",
+            "MEASURED-IN": "YEAR"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "WAS-2",
+        "TEN-3",
+        "YEARS_OLD-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "COP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "NUM",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "YEARS_OLD-N1",
+      "WORD": "YEARS_OLD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

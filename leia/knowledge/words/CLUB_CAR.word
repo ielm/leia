@@ -1,0 +1,34 @@
+{
+  "word": "CLUB_CAR",
+  "senses": {
+    "CLUB_CAR-N1": {
+      "CAT": "N",
+      "DEF": "a railroad car with lounge chairs, a buffet or bar, and other comforts",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "RAILROAD-CAR": {
+          "HAS-OBJECT-AS-PART": "ARMCHAIR",
+          "LOCATION-OF": "CAFE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "LOUNGE_CAR"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CLUB_CAR-N1",
+      "WORD": "CLUB_CAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

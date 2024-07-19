@@ -1,0 +1,49 @@
+{
+  "word": "DILIGENT",
+  "senses": {
+    "DILIGENT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "we need a diligent support team",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "DILIGENCE": 0.2
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "DILIGENT-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "HARD_WORKING",
+        "ASSIDUOUS",
+        "PERSEVERING",
+        "TIRELESS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DILIGENT-ADJ1",
+      "WORD": "DILIGENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

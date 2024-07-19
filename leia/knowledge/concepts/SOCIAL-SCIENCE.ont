@@ -1,0 +1,22 @@
+{
+  "name": "@SOCIAL-SCIENCE",
+  "isa": [
+    "@FIELD-OF-STUDY"
+  ],
+  "def": "a field of study, such as economics, anthropology, or sociology, that deals with the structure of society",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-SCIENTIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    }
+  ],
+  "private": {}
+}

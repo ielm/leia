@@ -1,0 +1,38 @@
+{
+  "word": "OXTAIL_SOUP",
+  "senses": {
+    "OXTAIL_SOUP-N1": {
+      "CAT": "N",
+      "DEF": "Soup made from an ox tail",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SOUP": {
+          "HAS-OBJECT-AS-PART": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "TAIL": {
+            "PART-OF-OBJECT": "OX"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OXTAIL_SOUP-N1",
+      "WORD": "OXTAIL_SOUP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

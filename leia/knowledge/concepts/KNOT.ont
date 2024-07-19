@@ -1,0 +1,16 @@
+{
+  "name": "@KNOT",
+  "isa": [
+    "@DEPENDENT-DEVICE"
+  ],
+  "def": "A fastening made by tying together lengths of material, such as rope, in a prescribed way.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ROPE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

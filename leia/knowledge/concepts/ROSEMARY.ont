@@ -1,0 +1,16 @@
+{
+  "name": "@ROSEMARY",
+  "isa": [
+    "@HERB"
+  ],
+  "def": "an evergreen herb of the mint family, with fragrant leaves used in cooking",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "green"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

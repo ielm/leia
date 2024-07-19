@@ -1,0 +1,71 @@
+{
+  "word": "WITHHOLD",
+  "senses": {
+    "WITHHOLD-V1": {
+      "CAT": "V",
+      "DEF": "to keep back, not give",
+      "EX": "They withheld part of our salaries",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "GIVE": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            },
+            "THEME": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "WITHHELD-0",
+        "OUR",
+        "SALARIES-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "DENY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "WITHHOLD-V1",
+      "WORD": "WITHHOLD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

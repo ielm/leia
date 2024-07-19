@@ -1,0 +1,70 @@
+{
+  "word": "COLLATERAL",
+  "senses": {
+    "COLLATERAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "secondary",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "SALIENCY",
+          "VALUE": 0.7,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "COLLATERAL-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COLLATERAL-ADJ1",
+      "WORD": "COLLATERAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "COLLATERAL-N1": {
+      "CAT": "N",
+      "DEF": "security designated in the form of a third party loan, a deed, or stocks as a pledge for the repayment of a loan",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "COLLATERAL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COLLATERAL-N1",
+      "WORD": "COLLATERAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@ENCOUNTER",
+  "isa": [
+    "@ANIMAL-LIVING-EVENT"
+  ],
+  "def": "to meet unexpectedly",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

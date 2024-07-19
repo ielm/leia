@@ -1,0 +1,50 @@
+{
+  "word": "HIGHLY",
+  "senses": {
+    "HIGHLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "on the very high end of the given scale",
+      "EX": "they have a highly dangerous job",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        },
+        "ROOT": "$VAR1",
+        "CAT": [
+          "ADJ",
+          "ADV"
+        ]
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "DELIMIT-SCALE",
+          "^$VAR1",
+          "EXTREME",
+          0.2
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "HIGHLY-0",
+        "GOOD-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HIGHLY-ADV1",
+      "WORD": "HIGHLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

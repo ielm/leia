@@ -1,0 +1,33 @@
+{
+  "word": "RUPIAH",
+  "senses": {
+    "RUPIAH-N1": {
+      "CAT": "N",
+      "DEF": "currency of east-timor or indonesia",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": {
+            "EAST_TIMOR": "INDONESIA"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RUPIAH-N1",
+      "WORD": "RUPIAH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

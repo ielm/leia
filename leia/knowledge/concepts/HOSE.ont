@@ -1,0 +1,16 @@
+{
+  "name": "@HOSE",
+  "isa": [
+    "@TUBE"
+  ],
+  "def": "a flexible tube used to convey fluids",
+  "local": [],
+  "block": [
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@GAS"
+    }
+  ],
+  "private": {}
+}

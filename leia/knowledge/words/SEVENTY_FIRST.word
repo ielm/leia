@@ -1,0 +1,46 @@
+{
+  "word": "SEVENTY_FIRST",
+  "senses": {
+    "SEVENTY_FIRST-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "ORDINALITY": 71
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "71",
+        "ST-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "71ST"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SEVENTY_FIRST-ADJ1",
+      "WORD": "SEVENTY_FIRST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "@CRAMP",
+  "isa": [
+    "@PAIN"
+  ],
+  "def": "A symptom involving the involuntary cramping of muscle; this can be slightly or extremely painful.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MUSCLE-ORGAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MUSCLE-TISSUE"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@CHOLERA"
+    }
+  ],
+  "block": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@CANCER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

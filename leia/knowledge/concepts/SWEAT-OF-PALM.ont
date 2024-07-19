@@ -1,0 +1,16 @@
+{
+  "name": "@SWEAT-OF-PALM",
+  "isa": [
+    "@SWEAT-LIQUID"
+  ],
+  "def": "sweat excreted by the palm of the hand",
+  "local": [
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@PALM"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

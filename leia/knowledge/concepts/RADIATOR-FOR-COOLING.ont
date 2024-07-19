@@ -1,0 +1,22 @@
+{
+  "name": "@RADIATOR-FOR-COOLING",
+  "isa": [
+    "@ENGINE-PART"
+  ],
+  "def": "part of an engine used for cooling",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@HOSE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

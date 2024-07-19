@@ -1,0 +1,39 @@
+{
+  "word": "MONEY_BELT",
+  "senses": {
+    "MONEY_BELT-N1": {
+      "CAT": "N",
+      "DEF": "a belt with a compartment for holding money",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BELT": {
+          "HAS-OBJECT-AS-PART": "POCKET",
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "CARRY": {
+            "THEME": "MONEY"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MONEY_BELT-N1",
+      "WORD": "MONEY_BELT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

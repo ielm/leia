@@ -1,0 +1,27 @@
+{
+  "name": "@BIOPSY",
+  "isa": [
+    "@DIAGNOSTIC-PROCEDURE"
+  ],
+  "def": "an examination of tissue to determine the cause of disease, etc.",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@PATHOLOGIST"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMAL-TISSUE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

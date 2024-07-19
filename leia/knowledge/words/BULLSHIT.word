@@ -1,0 +1,89 @@
+{
+  "word": "BULLSHIT",
+  "senses": {
+    "BULLSHIT-N1": {
+      "CAT": "N",
+      "DEF": "something said that is untrue or ridiculous",
+      "EX": "that's bullshit",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "INFORMATION": {
+          "TRUTH-VALUE": 0
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "BS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BULLSHIT-N1",
+      "WORD": "BULLSHIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BULLSHIT-V1": {
+      "CAT": "V",
+      "DEF": "To talk or write something ridiculous or untrue",
+      "EX": "He's just bullshitting (you)",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "SPEECH-ACT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "INFORMATION": {
+            "TRUTH-VALUE": 0
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "BULLSHITTED-0",
+        "THE",
+        "DOG-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "BS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BULLSHIT-V1",
+      "WORD": "BULLSHIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

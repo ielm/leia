@@ -1,0 +1,54 @@
+{
+  "word": "ARMORER",
+  "senses": {
+    "ARMORER-N1": {
+      "CAT": "N",
+      "DEF": "maker and repairer of armor and arms",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "TRADE-ROLE": {
+          "AGENT-OF": {
+            "VALUE": "REFSEM1"
+          },
+          "AGENT-OF-1": {
+            "VALUE": "REFSEM2"
+          },
+          "AGENT-OF-2": {
+            "VALUE": "REFSEM3"
+          }
+        },
+        "REFSEM1": {
+          "CREATE-ARTIFACT": {
+            "THEME": "GUN"
+          }
+        },
+        "REFSEM2": {
+          "CREATE-ARTIFACT-1": {
+            "THEME-1": "SWORD"
+          }
+        },
+        "REFSEM3": {
+          "CREATE-ARTIFACT-2": {
+            "THEME-2": "ARMOR-PLATE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ARMORER-N1",
+      "WORD": "ARMORER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "word": "CASHBOX",
+  "senses": {
+    "CASHBOX-N1": {
+      "CAT": "N",
+      "DEF": "a box for money",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BOX": {
+          "CONTAINS": "MONEY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "TILL"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CASHBOX-N1",
+      "WORD": "CASHBOX",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

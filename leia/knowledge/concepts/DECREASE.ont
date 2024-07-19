@@ -1,0 +1,10 @@
+{
+  "name": "@DECREASE",
+  "isa": [
+    "@CHANGE-EVENT"
+  ],
+  "def": "indicates the range of a property value being lower in the effect than in the precondition of the event",
+  "local": [],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@OASIS",
+  "isa": [
+    "@GEOLOGICAL-ENTITY"
+  ],
+  "def": "A fertile or green spot in a desert or wasteland, made so by the presence of water.",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@DESERT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

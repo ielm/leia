@@ -1,0 +1,41 @@
+{
+  "word": "NECESSARILY",
+  "senses": {
+    "NECESSARILY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "with certainty",
+      "EX": "Building the tunnel will necessarily involve several years of effort",
+      "COMMENTS": "occurs most often as 'not necessarily'",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "NECESSARILY-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NECESSARILY-ADV1",
+      "WORD": "NECESSARILY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

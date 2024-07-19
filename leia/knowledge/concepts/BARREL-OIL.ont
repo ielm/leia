@@ -1,0 +1,19 @@
+{
+  "name": "@BARREL-OIL",
+  "isa": [
+    "@LIQUID-MEASURING-UNIT"
+  ],
+  "def": "unit of volume for a barrel of oil; 42*gallon",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.158987
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

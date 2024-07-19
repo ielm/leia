@@ -1,0 +1,31 @@
+{
+  "word": "SPRITZER",
+  "senses": {
+    "SPRITZER-N1": {
+      "CAT": "N",
+      "DEF": "A mixture of wine and sparkling water.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MIXED-DRINK": {
+          "HAS-OBJECT-AS-PART": "WINE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SPRITZER-N1",
+      "WORD": "SPRITZER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

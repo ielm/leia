@@ -1,0 +1,33 @@
+{
+  "word": "PLANE_SEAT",
+  "senses": {
+    "PLANE_SEAT-N1": {
+      "CAT": "N",
+      "DEF": "a seat in an airplane",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SEAT": {
+          "LOCATION": "AIRPLANE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "AIRPLANE_SEAT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PLANE_SEAT-N1",
+      "WORD": "PLANE_SEAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

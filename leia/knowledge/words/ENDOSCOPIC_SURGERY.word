@@ -1,0 +1,30 @@
+{
+  "word": "ENDOSCOPIC_SURGERY",
+  "senses": {
+    "ENDOSCOPIC_SURGERY-N1": {
+      "CAT": "N",
+      "DEF": "Surgery using small incisions and an endoscope.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "ENDOSCOPIC-SURGERY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "ARTHROSCOPIC_SURGERY",
+        "LAPAROSCOPIC_SURGERY"
+      ],
+      "SENSE": "ENDOSCOPIC_SURGERY-N1",
+      "WORD": "ENDOSCOPIC_SURGERY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

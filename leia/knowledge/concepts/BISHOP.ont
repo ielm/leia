@@ -1,0 +1,22 @@
+{
+  "name": "@BISHOP",
+  "isa": [
+    "@RELIGIOUS-ROLE"
+  ],
+  "def": "a high-ranking member of the Christian clergy, governing a diocese or a church district",
+  "local": [
+    {
+      "slot": "has-religion",
+      "facet": "sem",
+      "filler": "@CHRISTIANITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-religion",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "private": {}
+}

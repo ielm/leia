@@ -1,0 +1,36 @@
+{
+  "name": "@POTASSIUM",
+  "isa": [
+    "@ALKALI-METAL"
+  ],
+  "def": "a soft, silver-white, light, highly or explosively reactive metallic element",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        19
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        39
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

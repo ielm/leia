@@ -1,0 +1,49 @@
+{
+  "word": "FOOTBALL",
+  "senses": {
+    "FOOTBALL-N1": {
+      "CAT": "N",
+      "DEF": "the American sport",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FOOTBALL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FOOTBALL-N1",
+      "WORD": "FOOTBALL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FOOTBALL-N2": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FOOTBALL-BALL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FOOTBALL-N2",
+      "WORD": "FOOTBALL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

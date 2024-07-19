@@ -1,0 +1,16 @@
+{
+  "name": "@IN-LAW",
+  "isa": [
+    "@FAMILY-ROLE"
+  ],
+  "def": "a relative by marriage",
+  "local": [
+    {
+      "slot": "has-in-law",
+      "facet": "sem",
+      "filler": "@IN-LAW"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

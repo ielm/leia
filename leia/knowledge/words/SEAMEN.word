@@ -1,0 +1,36 @@
+{
+  "word": "SEAMEN",
+  "senses": {
+    "SEAMEN-N1": {
+      "CAT": "N",
+      "DEF": "plural of seaman",
+      "EX": "Seamen don't get seasick",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "NUMBER": "PL"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": "SAILOR",
+          "CARDINALITY": [
+            ">",
+            1
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SEAMEN-N1",
+      "WORD": "SEAMEN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

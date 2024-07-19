@@ -1,0 +1,38 @@
+{
+  "word": "HAND_GRENADE",
+  "senses": {
+    "HAND_GRENADE-N1": {
+      "CAT": "N",
+      "DEF": "a bomb that a person throws",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BOMB": {
+          "THEME-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "THROW": {
+            "AGENT": "HUMAN"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HAND_GRENADE-N1",
+      "WORD": "HAND_GRENADE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

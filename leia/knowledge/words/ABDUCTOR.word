@@ -1,0 +1,33 @@
+{
+  "word": "ABDUCTOR",
+  "senses": {
+    "ABDUCTOR-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "AGENT-OF": "ABDUCT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "CAPTOR"
+      ],
+      "SENSE": "ABDUCTOR-N1",
+      "WORD": "ABDUCTOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

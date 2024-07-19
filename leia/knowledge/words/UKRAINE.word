@@ -1,0 +1,35 @@
+{
+  "word": "UKRAINE",
+  "senses": {
+    "UKRAINE-N1": {
+      "CAT": "N",
+      "DEF": "a nation",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "NATION": {
+          "HAS-NAME": {
+            "VALUE": "UKRAINE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "THE_UKRAINE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "UKRAINE-N1",
+      "WORD": "UKRAINE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

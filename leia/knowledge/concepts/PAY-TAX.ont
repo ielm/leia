@@ -1,0 +1,42 @@
+{
+  "name": "@PAY-TAX",
+  "isa": [
+    "@PAY"
+  ],
+  "def": "15",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@TAXPAYER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TAX"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "default",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "default",
+      "filler": "@STATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "default",
+      "filler": "@CORPORATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MONEY"
+    }
+  ],
+  "private": {}
+}

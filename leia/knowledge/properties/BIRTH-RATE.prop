@@ -1,0 +1,11 @@
+{
+  "name": "$BIRTH-RATE",
+  "def": "the number of births per year per certain number of people in a given area, group, etc.;  the solution suggested (the range between 0 and 1) requires a procedural attachment in the lexicon that will derive this number from a phrase text (e.g., ",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$DEMOGRAPHICS-ATTRIBUTE"
+}

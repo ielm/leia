@@ -1,0 +1,29 @@
+{
+  "word": "CD_PLAYER",
+  "senses": {
+    "CD_PLAYER-N1": {
+      "CAT": "N",
+      "DEF": "a device in which a compact disc can played",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "COMPACT-DISC-PLAYER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "COMPACT_DISC_PLAYER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CD_PLAYER-N1",
+      "WORD": "CD_PLAYER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

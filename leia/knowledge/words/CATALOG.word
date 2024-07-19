@@ -1,0 +1,76 @@
+{
+  "word": "CATALOG",
+  "senses": {
+    "CATALOG-N1": {
+      "CAT": "N",
+      "DEF": "a book filled with lists of goods for sale",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CATALOG-OF-GOODS",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CATALOG-N1",
+      "WORD": "CATALOG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CATALOG-V1": {
+      "CAT": "V",
+      "DEF": "to arrange in a list or catalog with  numbers or symbols assigned to each object",
+      "EX": "He catalogued the documents",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "CATALOG-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "CATALOGED-0",
+        "THE",
+        "BOOKS-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "CATALOGUE",
+        "ARCHIVE",
+        "INDEX"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CATALOG-V1",
+      "WORD": "CATALOG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

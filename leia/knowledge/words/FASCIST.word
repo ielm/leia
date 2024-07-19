@@ -1,0 +1,38 @@
+{
+  "word": "FASCIST",
+  "senses": {
+    "FASCIST-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "POLITICAL-ROLE": {
+          "AGENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SUPPORT": {
+            "THEME": "FASCISM"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FASCIST-N1",
+      "WORD": "FASCIST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

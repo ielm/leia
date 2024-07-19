@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-AGRICULTURAL-PRODUCT",
+  "def": "the relation between geopolitical entities and agricultural products they produce",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$AGRICULTURAL-PRODUCT-OF",
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

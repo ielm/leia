@@ -1,0 +1,35 @@
+{
+  "word": "SALAD_NICOISE",
+  "senses": {
+    "SALAD_NICOISE-N1": {
+      "CAT": "N",
+      "DEF": "A salad made of tomatoes, anchovies, black olives, and capers.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SALAD": {
+          "HAS-OBJECT-AS-PART": "SALAD-DRESSING",
+          "HAS-OBJECT-AS-PART-1": "OLIVE",
+          "HAS-OBJECT-AS-PART-2": "TOMATO",
+          "HAS-OBJECT-AS-PART-3": "LETTUCE",
+          "HAS-OBJECT-AS-PART-4": "CAPER"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SALAD_NICOISE-N1",
+      "WORD": "SALAD_NICOISE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

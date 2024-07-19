@@ -1,0 +1,50 @@
+{
+  "word": "DISBAND",
+  "senses": {
+    "DISBAND-V1": {
+      "CAT": "V",
+      "DEF": "to voluntarily stop affiliating, of an organization",
+      "EX": "the militia disbanded once the war was over",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "END",
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "AFFILIATE": {
+            "AGENT": {
+              "VALUE": "^$VAR1",
+              "SEM": "ORGANIZATION"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MILITIA-1",
+        "DISBANDED-0"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DISBAND-V1",
+      "WORD": "DISBAND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

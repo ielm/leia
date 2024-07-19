@@ -1,0 +1,34 @@
+{
+  "word": "REFUGEE",
+  "senses": {
+    "REFUGEE-N1": {
+      "CAT": "N",
+      "DEF": "a person who flees to a foreign country for refuge or safety, especially in times of war",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "REFUGEE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ALIEN",
+        "DISPLACED_PERSON",
+        "EXILE"
+      ],
+      "HYPONYMS": [
+        "BOAT_PERSON",
+        "DEFECTOR"
+      ],
+      "SENSE": "REFUGEE-N1",
+      "WORD": "REFUGEE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "word": "LOG",
+  "senses": {
+    "LOG-N1": {
+      "CAT": "N",
+      "DEF": "cylindrical object, usually wood",
+      "EX": "she put another log on the fire; he made a cheddar cheese log for the party",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PHYSICAL-OBJECT": {
+          "SHAPE": "CYLINDRICAL",
+          "MADE-OF": {
+            "WOOD": "INGESTIBLE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LOG-N1",
+      "WORD": "LOG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

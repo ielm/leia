@@ -1,0 +1,91 @@
+{
+  "word": "PROGRESSION",
+  "senses": {
+    "PROGRESSION-N1": {
+      "CAT": "N",
+      "DEF": "a sequence of events",
+      "EX": "a progression from anger to depression is not uncommon",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "FROM",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "TO",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "CHANGE-EVENT": {
+          "PRECONDITION": {
+            "VALUE": "^$VAR4"
+          },
+          "EFFECT": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "PROGRESSION-0",
+        "FROM-1",
+        "THE",
+        "OBJECT-2",
+        "TO-3",
+        "THE",
+        "OBJECT-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PROGRESSION-N1",
+      "WORD": "PROGRESSION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

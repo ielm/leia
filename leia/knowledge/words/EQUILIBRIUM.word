@@ -1,0 +1,51 @@
+{
+  "word": "EQUILIBRIUM",
+  "senses": {
+    "EQUILIBRIUM-N1": {
+      "CAT": "N",
+      "DEF": "a chemical state of balance",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CHEMICAL-EQUILIBRIUM",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "CHEMICAL_EQUILIBRIUM"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "EQUILIBRIUM-N1",
+      "WORD": "EQUILIBRIUM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EQUILIBRIUM-N2": {
+      "CAT": "N",
+      "DEF": "a state of balance between forces",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "EQUILIBRIUM",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EQUILIBRIUM-N2",
+      "WORD": "EQUILIBRIUM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

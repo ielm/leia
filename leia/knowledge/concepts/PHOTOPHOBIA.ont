@@ -1,0 +1,27 @@
+{
+  "name": "@PHOTOPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of light",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIGHT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

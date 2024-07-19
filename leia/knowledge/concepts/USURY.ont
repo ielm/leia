@@ -1,0 +1,37 @@
+{
+  "name": "@USURY",
+  "isa": [
+    "@BANKING-EVENT"
+  ],
+  "def": "the lending of money at an excessive rate of interest",
+  "local": [
+    {
+      "slot": "beneficiary",
+      "facet": "default",
+      "filler": "@PATRON"
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@LOAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@PATRON"
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,31 @@
+{
+  "word": "SLAVE_TRADER",
+  "senses": {
+    "SLAVE_TRADER-N1": {
+      "CAT": "N",
+      "DEF": "an agent of slave trading",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CRIMINAL": {
+          "AGENT-OF": "SLAVE-TRADE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SLAVE_TRADER-N1",
+      "WORD": "SLAVE_TRADER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

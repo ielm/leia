@@ -1,0 +1,38 @@
+{
+  "word": "RIVER_PRAWN",
+  "senses": {
+    "RIVER_PRAWN-N1": {
+      "CAT": "N",
+      "DEF": "a prawn that lives in a river",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PRAWN": {
+          "AGENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "INHABIT": {
+            "LOCATION": "RIVER"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RIVER_PRAWN-N1",
+      "WORD": "RIVER_PRAWN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

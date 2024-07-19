@@ -1,0 +1,40 @@
+{
+  "word": "TELEPHONE_WIRE",
+  "senses": {
+    "TELEPHONE_WIRE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "TELEPHONE-WIRE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "PHONE_WIRE",
+        "TELEPHONE_LINE",
+        "PHONE_LINE",
+        "TELEPHONE_CORD",
+        "PHONE_CORD"
+      ],
+      "HYPONYMS": [
+        "DIGITAL_SUBSCRIBER_LINE",
+        "DSL",
+        "LAND_LINE",
+        "LANDLINE",
+        "PARTY_LINE",
+        "TOLL_LINE"
+      ],
+      "SENSE": "TELEPHONE_WIRE-N1",
+      "WORD": "TELEPHONE_WIRE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

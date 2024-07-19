@@ -1,0 +1,26 @@
+{
+  "name": "@SEARCH",
+  "isa": [
+    "@PHYSICAL-EVENT"
+  ],
+  "def": "to actively search for or seek",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@LAMP"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@MILITARY-ORGANIZATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@POLICE-DEPARTMENT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

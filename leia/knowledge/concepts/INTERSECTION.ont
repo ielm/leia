@@ -1,0 +1,26 @@
+{
+  "name": "@INTERSECTION",
+  "isa": [
+    "@ROAD"
+  ],
+  "def": "a place where multiple roads intersect, branch, etc.",
+  "local": [
+    {
+      "slot": "intersection-shape",
+      "facet": "sem",
+      "filler": "y-intersection"
+    },
+    {
+      "slot": "intersection-shape",
+      "facet": "sem",
+      "filler": "t-intersection"
+    },
+    {
+      "slot": "intersection-shape",
+      "facet": "sem",
+      "filler": "four-way-intersection"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,39 @@
+{
+  "word": "SHOEBOX",
+  "senses": {
+    "SHOEBOX-N1": {
+      "CAT": "N",
+      "DEF": "a box for a pair of shoes",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BOX": {
+          "CONTAINS": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": "SHOE",
+            "CARDINALITY": 2
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SHOEBOX-N1",
+      "WORD": "SHOEBOX",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

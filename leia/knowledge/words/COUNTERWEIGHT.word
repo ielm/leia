@@ -1,0 +1,33 @@
+{
+  "word": "COUNTERWEIGHT",
+  "senses": {
+    "COUNTERWEIGHT-N1": {
+      "CAT": "N",
+      "DEF": "factor that produces balance",
+      "EX": "her equanimity was a counterweight to his pugnacity",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ALL": {
+          "INSTRUMENT-OF": "EQUILIBRIUM"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "COUNTER_WEIGHT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "COUNTERWEIGHT-N1",
+      "WORD": "COUNTERWEIGHT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

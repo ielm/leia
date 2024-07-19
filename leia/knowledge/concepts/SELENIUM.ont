@@ -1,0 +1,51 @@
+{
+  "name": "@SELENIUM",
+  "isa": [
+    "@NONMETALLIC-SOLID-ELEMENT"
+  ],
+  "def": "a nonmetallic element red in powder form black in vitreous form and metallic gray in crystalline form resembling sulfur and obtained primarily as a by product of electrolytic copper refining it is widely used in rectifiers as a semiconductor and in xerography and certain forms exhibit photovoltaic and photoconductive action making it useful in photocells photographic exposure meters and solar cells",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "black"
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        34
+      ]
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "red"
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        78
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "private": {}
+}

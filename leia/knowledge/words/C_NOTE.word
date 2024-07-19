@@ -1,0 +1,34 @@
+{
+  "word": "C_NOTE",
+  "senses": {
+    "C_NOTE-N1": {
+      "CAT": "N",
+      "DEF": "100-dollar bill",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BILL-MONETARY": {
+          "MONETARY-VALUE": 100
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "100-DOLLAR_BILL",
+        "HUNDRED-DOLLAR_BILL"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "C_NOTE-N1",
+      "WORD": "C_NOTE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

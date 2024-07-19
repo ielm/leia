@@ -1,0 +1,53 @@
+{
+  "word": "CERTAINLY",
+  "senses": {
+    "CERTAINLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "emphasis",
+      "EX": "the invasion of Iraq has certainly had an impact the invasion of iraq has almost certainly hurt the republicans",
+      "COMMENTS": "sometimes it's clearly epistemic, other times merely rhetorical, but not easy to distinguish",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE",
+        "RAN-1",
+        "CERTAINLY-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "SURELY",
+        "SURE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CERTAINLY-ADV1",
+      "WORD": "CERTAINLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

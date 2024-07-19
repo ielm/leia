@@ -1,0 +1,44 @@
+{
+  "word": "FATAL",
+  "senses": {
+    "FATAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "causing death",
+      "EX": "fatal accident",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "EFFECT": "DIE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "FATAL-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FATAL-ADJ1",
+      "WORD": "FATAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

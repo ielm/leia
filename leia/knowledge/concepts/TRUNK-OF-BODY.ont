@@ -1,0 +1,22 @@
+{
+  "name": "@TRUNK-OF-BODY",
+  "isa": [
+    "@PRINCIPAL-BODY-PART"
+  ],
+  "def": "the trunk or main part of a living creature*s body, in contrast to its head or limbs",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ABDOMEN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,54 @@
+{
+  "word": "CHESTNUT",
+  "senses": {
+    "CHESTNUT-N1": {
+      "CAT": "N",
+      "DEF": "a smooth reddish-brown nut that stays enclosed in a prickly case until ripe, eaten raw or cooked",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CHESTNUT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CHESTNUT-N1",
+      "WORD": "CHESTNUT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CHESTNUT-N2": {
+      "CAT": "N",
+      "DEF": "a deciduous tree native to northern temperate regions, that has alternate simple toothed leaves, and nuts that are enclosed in a prickly husk  ",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CHESTNUT-TREE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "AMERICAN_CHESTNUT",
+        "EUROPEAN_CHESTNUT",
+        "CHINESE_CHESTNUT",
+        "JAPANESE_CHESTNUT"
+      ],
+      "SENSE": "CHESTNUT-N2",
+      "WORD": "CHESTNUT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

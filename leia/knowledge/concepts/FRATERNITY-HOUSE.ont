@@ -1,0 +1,21 @@
+{
+  "name": "@FRATERNITY-HOUSE",
+  "isa": [
+    "@DWELLING"
+  ],
+  "def": "The dwelling of a social club for male undergraduates at a college or university.",
+  "local": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@SOCIETY"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@UNDERGRADUATE-STUDENT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

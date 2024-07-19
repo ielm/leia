@@ -1,0 +1,126 @@
+{
+  "word": "BATTERY",
+  "senses": {
+    "BATTERY-N1": {
+      "CAT": "N",
+      "DEF": "a power source",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BATTERY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ELECTRIC_BATTERY"
+      ],
+      "HYPONYMS": [
+        "A_BATTERY",
+        "B_BATTERY",
+        "AA_BATTERY",
+        "DOUBLE_A_BATTERY",
+        "C_BATTERY",
+        "VOLTAIC_BATTERY",
+        "GALVANIC_BATTERY",
+        "DRY_BATTERY",
+        "LEAD_ACID_BATTERY",
+        "FLASHLIGHT_BATTERY"
+      ],
+      "SENSE": "BATTERY-N1",
+      "WORD": "BATTERY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BATTERY-N2": {
+      "CAT": "N",
+      "DEF": "an array of similar things",
+      "EX": "a battery of achievement tests",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "BATTERY-0",
+        "OF-1",
+        "THE",
+        "OBJECT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BATTERY-N2",
+      "WORD": "BATTERY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BATTERY-N3": {
+      "CAT": "N",
+      "DEF": "a group of weapons, usu. guns",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": "WEAPON",
+          "CARDINALITY": [
+            ">",
+            1
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BATTERY-N3",
+      "WORD": "BATTERY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

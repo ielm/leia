@@ -1,0 +1,35 @@
+{
+  "word": "RETRIAL",
+  "senses": {
+    "RETRIAL-N1": {
+      "CAT": "N",
+      "DEF": "a second trial",
+      "EX": "the defense attorney asked for a retrial in federal court",
+      "COMMENTS": "this could get very complex to describe since the first one could have been a mistrial, could have been overturned, etc. I'm being general here.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": "TRIAL",
+          "ORDINALITY": [
+            ">=",
+            2
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RETRIAL-N1",
+      "WORD": "RETRIAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

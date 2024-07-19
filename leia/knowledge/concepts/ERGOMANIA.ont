@@ -1,0 +1,27 @@
+{
+  "name": "@ERGOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "inordinate obsession with work",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WORK"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

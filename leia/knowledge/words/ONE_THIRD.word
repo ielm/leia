@@ -1,0 +1,62 @@
+{
+  "word": "ONE_THIRD",
+  "senses": {
+    "ONE_THIRD-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "1/3 of sth. named",
+      "EX": "1/3 of the profits go to charity",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "AMOUNT": 0.333
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "A_THIRD-0",
+        "OF-1",
+        "THE",
+        "GRAPHITE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "A_THIRD"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ONE_THIRD-QUANTIFIER1",
+      "WORD": "ONE_THIRD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

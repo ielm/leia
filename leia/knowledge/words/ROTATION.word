@@ -1,0 +1,86 @@
+{
+  "word": "ROTATION",
+  "senses": {
+    "ROTATION-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "rotation of the crank by the mechanic",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ROTATE": {
+          "AGENT": {
+            "VALUE": "^$VAR4"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ROTATION-0",
+        "OF-1",
+        "THE",
+        "TABLE-2",
+        "BY-3",
+        "THE",
+        "ANIMAL-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ROTATION-N1",
+      "WORD": "ROTATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "word": "RINGGIT",
+  "senses": {
+    "RINGGIT-N1": {
+      "CAT": "N",
+      "DEF": "currency of brunei or malaysia",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": {
+            "BRUNEI": "MALAYSIA"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RINGGIT-N1",
+      "WORD": "RINGGIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "word": "PENNY",
+  "senses": {
+    "PENNY-N1": {
+      "CAT": "N",
+      "DEF": "a coin worth 1/100 dollar",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "COIN": {
+          "MONETARY-VALUE": 0.01
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PENNY-N1",
+      "WORD": "PENNY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PENNY-N800": {
+      "CAT": "N",
+      "EX": "A penny for your thoughts",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "ART": {
+          "ROOT": "$VAR1",
+          "ROOT-WORD": "A",
+          "CAT": "ART"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PREP": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "FOR",
+          "CAT": "PREP"
+        },
+        "PRO": [
+          [
+            "ROOT",
+            "$VAR3"
+          ],
+          [
+            "ROOT",
+            "YOUR"
+          ],
+          [
+            "CAT",
+            "PRO"
+          ]
+        ],
+        "N": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "THOUGHT",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "REQUEST-INFO": {
+          "AGENT": "*SPEAKER*",
+          "BENEFICIARY": "*HEARER*",
+          "THEME": {
+            "VALUE": "REFSEM1.THEME"
+          }
+        },
+        "REFSEM1": {
+          "THINK": {
+            "AGENT-1": "*HEARER*"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "A-1",
+        "PENNY-0",
+        "FOR-2",
+        "YOUR-3",
+        "THOUGHTS-5"
+      ],
+      "SENSE": "PENNY-N800",
+      "WORD": "PENNY",
+      "DEF": "",
+      "HYPONYMS": [],
+      "SYNONYMS": [],
+      "COMMENTS": "NIL",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "word": "BIOPSY",
+  "senses": {
+    "BIOPSY-N1": {
+      "CAT": "N",
+      "DEF": "the removal and examination of a tissue sample",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BIOPSY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BIOPSY-N1",
+      "WORD": "BIOPSY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BIOPSY-N2": {
+      "CAT": "N",
+      "DEF": "the tissue sample returned by a biopsy",
+      "EX": "they examined the biopsy under a microscope",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ANIMAL-TISSUE": {
+          "THEME-OF": "BIOPSY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BIOPSY-N2",
+      "WORD": "BIOPSY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

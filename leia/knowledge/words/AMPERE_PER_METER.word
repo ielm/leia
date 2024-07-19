@@ -1,0 +1,29 @@
+{
+  "word": "AMPERE_PER_METER",
+  "senses": {
+    "AMPERE_PER_METER-N1": {
+      "CAT": "N",
+      "DEF": "the standard unit in the ontology for measuring magnetic field strength.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "AMPERE-PER-METER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "AMPERE_PER_METRE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "AMPERE_PER_METER-N1",
+      "WORD": "AMPERE_PER_METER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

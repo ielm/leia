@@ -1,0 +1,46 @@
+{
+  "word": "ALMOST_NOTHING",
+  "senses": {
+    "ALMOST_NOTHING-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "almost nothing works.",
+      "COMMENTS": "there's no meaning procedure here because there's no set to be sought. maybe just cardinality .1?",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "CARDINALITY": [
+            "<",
+            0.1
+          ],
+          "MEMBER-TYPE": {
+            "SEM": "OBJECT",
+            "SEM-1": [
+              "NOT",
+              "ANIMATE"
+            ]
+          },
+          "DETERMINATE": "NO"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "JUST_ABOUT_NOTHING",
+        "PRACTICALLY_NOTHING",
+        "VIRUTUALLY_NOTHING"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ALMOST_NOTHING-N1",
+      "WORD": "ALMOST_NOTHING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

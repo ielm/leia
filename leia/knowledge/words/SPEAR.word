@@ -1,0 +1,77 @@
+{
+  "word": "SPEAR",
+  "senses": {
+    "SPEAR-N1": {
+      "CAT": "N",
+      "DEF": "a weapon",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SPEAR",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "LANCE",
+        "TRIDENT"
+      ],
+      "SENSE": "SPEAR-N1",
+      "WORD": "SPEAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SPEAR-V1": {
+      "CAT": "V",
+      "DEF": "to pierce with a spear",
+      "EX": "he speared the animal",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "PIERCE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "INSTRUMENT": "SPEAR"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "SPEARED-0",
+        "THE",
+        "ANIMAL-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "STAB"
+      ],
+      "SENSE": "SPEAR-V1",
+      "WORD": "SPEAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

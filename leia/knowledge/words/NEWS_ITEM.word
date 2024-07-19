@@ -1,0 +1,33 @@
+{
+  "word": "NEWS_ITEM",
+  "senses": {
+    "NEWS_ITEM-N2": {
+      "CAT": "N",
+      "DEF": "piece of information received from news media",
+      "EX": "the announcer said that the next news item after the commercial would involve clowns and super glue",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "INFORMATION": {
+          "SOURCE": "COMMUNICATION-SERVE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "STORY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "NEWS_ITEM-N2",
+      "WORD": "NEWS_ITEM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

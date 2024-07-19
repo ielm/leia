@@ -1,0 +1,9 @@
+{
+  "name": "$COMPATIBILITY",
+  "def": "The extent to which two things jibe, are not in conflict;\nthis is a very high-level scale that does not specify\nthe nature of what is being considered compatible;\nso quite diverse things can be explained with it.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-ATTRIBUTE"
+}

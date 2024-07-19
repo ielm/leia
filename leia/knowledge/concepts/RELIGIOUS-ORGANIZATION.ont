@@ -1,0 +1,16 @@
+{
+  "name": "@RELIGIOUS-ORGANIZATION",
+  "isa": [
+    "@NON-PROFIT-ORGANIZATION"
+  ],
+  "def": "an organization operated for worship, religious training or study, government or administration of an organized religion, or for promotion of religious activities",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@RELIGIOUS-BUILDING"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

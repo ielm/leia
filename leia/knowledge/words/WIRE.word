@@ -1,0 +1,195 @@
+{
+  "word": "WIRE",
+  "senses": {
+    "WIRE-N1": {
+      "CAT": "N",
+      "DEF": "a string of metal",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "WIRE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "BALING_WIRE",
+        "PIANO_WIRE",
+        "TRIP_WIRE",
+        "FILAMENT"
+      ],
+      "SENSE": "WIRE-N1",
+      "WORD": "WIRE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WIRE-N2": {
+      "CAT": "N",
+      "DEF": "a message sent by telegraph, a telegram",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "TELEGRAM",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WIRE-N2",
+      "WORD": "WIRE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WIRE-V1": {
+      "CAT": "V",
+      "DEF": "to assemble an electronic device",
+      "EX": "al qaeda operatives wired the explosives themselves",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "ASSEMBLE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "ELECTRONIC-MACHINE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "WIRED-0",
+        "THE",
+        "EXPLOSIVES-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WIRE-V1",
+      "WORD": "WIRE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WIRE-V2": {
+      "CAT": "V",
+      "DEF": "to send by telegraph",
+      "EX": "she wired her son money",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "INDIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "SEND": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": [
+              "MONEY",
+              "TELEGRAM"
+            ]
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          },
+          "INSTRUMENT": "TELEGRAPH-MACHINE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "WIRED-0",
+        "THE",
+        "DOG-3",
+        "SOME",
+        "MONEY-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "IOBJ",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "XSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WIRE-V2",
+      "WORD": "WIRE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

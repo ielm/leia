@@ -1,0 +1,79 @@
+{
+  "word": "DIVIDE",
+  "senses": {
+    "DIVIDE-V1": {
+      "CAT": "V",
+      "DEF": "to break into sections",
+      "EX": "they divided the profits",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "UP",
+          "OPT": "+"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "DIVIDE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "SPLITS-0",
+        "UP-2",
+        "THE",
+        "EARNINGS-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "DIVVY",
+        "SPLIT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DIVIDE-V1",
+      "WORD": "DIVIDE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

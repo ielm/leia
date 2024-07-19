@@ -1,0 +1,43 @@
+{
+  "word": "HAD_BETTER",
+  "senses": {
+    "HAD_BETTER-AUX1": {
+      "CAT": "AUX",
+      "DEF": "obligative <> .8 .9",
+      "EX": "he had better come over",
+      "COMMENTS": "Steve removed the (^$var2 (agent ^$var1)) and the MP because stanford now puts in the link directly.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "AUX",
+        "INF-CL": {
+          "ROOT": "$VAR2",
+          "CAT": "INF-CL"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "OBLIGATIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HAD_BETTER-AUX1",
+      "WORD": "HAD_BETTER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

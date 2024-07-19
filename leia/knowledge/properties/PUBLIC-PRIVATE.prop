@@ -1,0 +1,9 @@
+{
+  "name": "$PUBLIC-PRIVATE",
+  "def": "indicates whether a corporation, place, event, etc., \nis owned by or open to the public or whether it is private. This is\na shorthand for an involved representation about ownership,\nadmittance, etc.",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

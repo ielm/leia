@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-SPORTS-ACTIVITY",
+  "def": "The relation between a sports discipline and its activities",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$SPORTS-ACTIVITY-OF",
+  "measured-in": [],
+  "container": "$SPORTS-RELATION"
+}

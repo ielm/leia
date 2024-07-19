@@ -1,0 +1,57 @@
+{
+  "name": "@CHOLERA",
+  "isa": [
+    "@COMMUNICABLE-DISEASE"
+  ],
+  "def": "An acute infectious disease of the small intestine, caused by the bacterium Vibrio cholerae and characterized by profuse watery diarrhea, vomiting, muscle cramps, severe dehydration, and depletion of electrolytes.",
+  "local": [
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@DIARRHEA"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@CRAMP"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@VOMIT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SMALL-INTESTINE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@STOMACH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ALLERGY"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@VIRUS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

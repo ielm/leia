@@ -1,0 +1,21 @@
+{
+  "name": "@TEA-LEAF",
+  "isa": [
+    "@PLANT-DERIVED-FOODSTUFF"
+  ],
+  "def": "the leaves of tea plants, used to prepare the beverage tea",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "black"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

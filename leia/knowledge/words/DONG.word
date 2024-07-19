@@ -1,0 +1,31 @@
+{
+  "word": "DONG",
+  "senses": {
+    "DONG-N1": {
+      "CAT": "N",
+      "DEF": "currency of vietnam",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": "VIETNAM"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DONG-N1",
+      "WORD": "DONG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

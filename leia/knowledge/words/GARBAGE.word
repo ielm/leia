@@ -1,0 +1,34 @@
+{
+  "word": "GARBAGE",
+  "senses": {
+    "GARBAGE-N1": {
+      "CAT": "N",
+      "DEF": "trash, waste",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "TRASH",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "TRASH",
+        "REFUSE",
+        "WASTE",
+        "DEBRIS"
+      ],
+      "HYPONYMS": [
+        "LITTER"
+      ],
+      "SENSE": "GARBAGE-N1",
+      "WORD": "GARBAGE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

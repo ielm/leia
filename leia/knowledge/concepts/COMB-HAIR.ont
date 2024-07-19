@@ -1,0 +1,16 @@
+{
+  "name": "@COMB-HAIR",
+  "isa": [
+    "@ARRANGE-HAIR"
+  ],
+  "def": "to style or neaten hair with a comb",
+  "local": [],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAIR-BRUSH"
+    }
+  ],
+  "private": {}
+}

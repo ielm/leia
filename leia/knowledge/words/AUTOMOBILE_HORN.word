@@ -1,0 +1,34 @@
+{
+  "word": "AUTOMOBILE_HORN",
+  "senses": {
+    "AUTOMOBILE_HORN-N1": {
+      "CAT": "N",
+      "DEF": "a horn in a car",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "WARNING-DEVICE": {
+          "LOCATION": "AUTOMOBILE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "HORN",
+        "CAR_HORN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "AUTOMOBILE_HORN-N1",
+      "WORD": "AUTOMOBILE_HORN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

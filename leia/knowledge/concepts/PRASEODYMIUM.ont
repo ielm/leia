@@ -1,0 +1,36 @@
+{
+  "name": "@PRASEODYMIUM",
+  "isa": [
+    "@RARE-EARTH-ELEMENT"
+  ],
+  "def": "a soft, silvery, malleable, ductile rare-earth element that develops a characteristic green tarnish in air. it occurs naturally with other rare earths in monazite and is used to color glass yellow, as a core material for carbon arcs, and in metallic alloys",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        59
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        140
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        72
+      ]
+    }
+  ],
+  "private": {}
+}

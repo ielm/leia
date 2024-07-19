@@ -1,0 +1,28 @@
+{
+  "name": "@SCHOOL-STUDENT",
+  "isa": [
+    "@STUDENT"
+  ],
+  "def": "one who attends a school, pre-university level",
+  "local": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "><",
+        19
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "><",
+        100
+      ]
+    }
+  ],
+  "private": {}
+}

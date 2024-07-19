@@ -1,0 +1,46 @@
+{
+  "word": "NINETY_THOUSANDTH",
+  "senses": {
+    "NINETY_THOUSANDTH-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "ORDINALITY": 90000
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "90000",
+        "TH-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "90000TH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "NINETY_THOUSANDTH-ADJ1",
+      "WORD": "NINETY_THOUSANDTH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

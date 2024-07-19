@@ -1,0 +1,9 @@
+{
+  "name": "$ABOUT-AS-TOPIC",
+  "def": "Used to show the topic of something - like a book - in cases when there is no THEME case-role available",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$TOPIC-OF",
+  "measured-in": [],
+  "container": "$RELATION"
+}

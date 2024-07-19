@@ -1,0 +1,42 @@
+{
+  "word": "DELICATESSEN",
+  "senses": {
+    "DELICATESSEN-N1": {
+      "CAT": "N",
+      "DEF": "a store that sells foodstuffs such as salads, cooked meats, etc. ",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "STORE": {
+          "LOCATION-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SELL": {
+            "THEME": "SANDWICH",
+            "THEME-1": "SALAD",
+            "THEME-2": "COLD-CUT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "DELI"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DELICATESSEN-N1",
+      "WORD": "DELICATESSEN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

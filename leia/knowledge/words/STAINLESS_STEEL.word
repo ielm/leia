@@ -1,0 +1,92 @@
+{
+  "word": "STAINLESS_STEEL",
+  "senses": {
+    "STAINLESS_STEEL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "MADE-OF": "STAINLESS-STEEL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "STAINLESS_STEEL-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "STAINLESS_STEEL-ADJ1",
+      "WORD": "STAINLESS_STEEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "STAINLESS_STEEL-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PHYSICAL-OBJECT": {
+          "MADE-OF": "STAINLESS-STEEL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "STAINLESS_STEEL-N1",
+      "WORD": "STAINLESS_STEEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "STAINLESS_STEEL-N2": {
+      "CAT": "N",
+      "DEF": "any of various iron-based alloys that have a high resistance to rusting and corrosion because of their chromium content, which is greater than that found in other types of steel- nickel, molybdenum and other elements are also used in addition to chromium",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "STAINLESS-STEEL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "STAINLESS_STEEL-N2",
+      "WORD": "STAINLESS_STEEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

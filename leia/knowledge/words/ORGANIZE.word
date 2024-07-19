@@ -1,0 +1,114 @@
+{
+  "word": "ORGANIZE",
+  "senses": {
+    "ORGANIZE-V1": {
+      "CAT": "V",
+      "DEF": "to arrange in a specific way or provide structure for",
+      "EX": "he organized his papers",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "ORGANIZE": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-2",
+        "ORGANIZED-0",
+        "THE",
+        "BOXES-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ORGANIZE-V1",
+      "WORD": "ORGANIZE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ORGANIZE-V2": {
+      "CAT": "V",
+      "DEF": "to arrange some event",
+      "EX": "they organized a strike/a track meet/a german club",
+      "COMMENTS": "if the d.o. is an object, then causing it means causing its existence",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "ORGANIZED-0",
+        "THE",
+        "PARTY-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ORGANIZE-V2",
+      "WORD": "ORGANIZE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

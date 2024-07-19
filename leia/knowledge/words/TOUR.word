@@ -1,0 +1,214 @@
+{
+  "word": "TOUR",
+  "senses": {
+    "TOUR-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "tour of europe",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "TRAVEL-EVENT": {
+          "LOCATION": {
+            "VALUE": "^$VAR2",
+            "SEM": [
+              "NOT",
+              "BUILDING"
+            ]
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "TOUR-0",
+        "OF-1",
+        "THE",
+        "PLACE-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TOUR-N1",
+      "WORD": "TOUR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "TOUR-N2": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "tour of the premises",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "INSPECT": {
+          "LOCATION": {
+            "VALUE": "^$VAR2",
+            "SEM": "BUILDING"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "TOUR-0",
+        "OF-1",
+        "THE",
+        "PLACE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TOUR-N2",
+      "WORD": "TOUR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "TOUR-V1": {
+      "CAT": "V",
+      "DEF": "to take a tour of some places",
+      "EX": "they toured europe",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "TRAVEL-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "LOCATION": {
+            "VALUE": "^$VAR2",
+            "SEM": [
+              "NOT",
+              "BUILDING"
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "TOURED-0",
+        "EUROPE-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TOUR-V1",
+      "WORD": "TOUR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "TOUR-V2": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "they toured the premises",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "INSPECT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "LOCATION": {
+            "VALUE": "^$VAR2",
+            "SEM": "BUILDING"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "TOURED-0",
+        "THE",
+        "PREMISES-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TOUR-V2",
+      "WORD": "TOUR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

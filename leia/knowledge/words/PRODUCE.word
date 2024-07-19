@@ -1,0 +1,276 @@
+{
+  "word": "PRODUCE",
+  "senses": {
+    "PRODUCE-V1": {
+      "CAT": "V",
+      "DEF": "to bring into being a physical thing by an anatomical part, or more generally by an inanimate",
+      "EX": "the pancreas produces insulin",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "PRODUCE": {
+          "INSTRUMENT": {
+            "VALUE": "^$VAR1",
+            "SEM": [
+              "NOT",
+              "ANIMATE"
+            ]
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "PRODUCED-0",
+        "THE",
+        "GOODS-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "SECRETE"
+      ],
+      "SENSE": "PRODUCE-V1",
+      "WORD": "PRODUCE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PRODUCE-V2": {
+      "CAT": "V",
+      "DEF": "to bring into being, of abstract things or other non-artifact things, like energy",
+      "EX": "poverty produces social ills",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "SEM": [
+            "EVENT",
+            "ABSTRACT-OBJECT",
+            "INTANGIBLE-OBJECT"
+          ],
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "POVERTY-1",
+        "PRODUCES-0",
+        "CRIME-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRODUCE-V2",
+      "WORD": "PRODUCE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PRODUCE-V3": {
+      "CAT": "V",
+      "DEF": "to sponsor, provide money for",
+      "EX": "do you know who produced this play?",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "SPONSOR": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "SOCIAL-EVENT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "PRODUCED-0",
+        "THE",
+        "FILM-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRODUCE-V3",
+      "WORD": "PRODUCE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PRODUCE-V4": {
+      "CAT": "V",
+      "DEF": "to bring into being, when the subject is agentive",
+      "EX": "John produces records. the company produces cars",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "PRODUCE": {
+          "AGENT": {
+            "VALUE": "^$VAR1",
+            "SEM": [
+              "HUMAN",
+              "SOCIAL-OBJECT"
+            ]
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "PRODUCED-0",
+        "THE",
+        "GOODS-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRODUCE-V4",
+      "WORD": "PRODUCE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PRODUCE-N1": {
+      "CAT": "N",
+      "DEF": "fruits and vegatables",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": [
+            "FRUIT-FOODSTUFF",
+            "VEGETABLE-FOODSTUFF"
+          ],
+          "TYPE": "CONJUNCTIVE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRODUCE-N1",
+      "WORD": "PRODUCE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

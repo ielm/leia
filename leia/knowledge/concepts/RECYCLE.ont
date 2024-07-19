@@ -1,0 +1,87 @@
+{
+  "name": "@RECYCLE",
+  "isa": [
+    "@CHANGE-EVENT"
+  ],
+  "def": "to process and use again, as with plastic or paper",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@METAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MACHINE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GLASS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WATER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PAPER"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@RECYCLING-CENTER"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

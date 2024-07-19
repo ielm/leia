@@ -1,0 +1,67 @@
+{
+  "word": "LEEWAY",
+  "senses": {
+    "LEEWAY-N1": {
+      "CAT": "N",
+      "DEF": "freedom, lack of restriction",
+      "EX": " they give the students considerable leeway (in selecting their own projects)",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "IN",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "NP",
+            "V": {
+              "CAT": "V",
+              "FORM": "PROGRESSIVE"
+            }
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "PERMISSIVE",
+          "SCOPE": {
+            "VALUE": "^$VAR2",
+            "SEM": "EVENT"
+          },
+          "VALUE": 0.7
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "FREEDOM-0",
+        "IN-1",
+        "HIT"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "FREEDOM",
+        "LATITUDE",
+        "DISCRETION"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "LEEWAY-N1",
+      "WORD": "LEEWAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

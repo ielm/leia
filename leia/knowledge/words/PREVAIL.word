@@ -1,0 +1,41 @@
+{
+  "word": "PREVAIL",
+  "senses": {
+    "PREVAIL-V1": {
+      "CAT": "V",
+      "DEF": "to overcome",
+      "EX": "The opposition prevailed",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "CONQUER": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "ARMY-1",
+        "PREVAILED-0"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PREVAIL-V1",
+      "WORD": "PREVAIL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

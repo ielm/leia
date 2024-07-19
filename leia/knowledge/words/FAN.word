@@ -1,0 +1,30 @@
+{
+  "word": "FAN",
+  "senses": {
+    "FAN-N1": {
+      "CAT": "N",
+      "DEF": "a device that circulates air",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FAN",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "EXHAUST_FAN",
+        "ELECTRIC_FAN"
+      ],
+      "SENSE": "FAN-N1",
+      "WORD": "FAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

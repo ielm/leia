@@ -1,0 +1,16 @@
+{
+  "name": "@DISINFECT",
+  "isa": [
+    "@CLEAN"
+  ],
+  "def": "to destroy harmful bacteria, viruses, etc. in; sterilize",
+  "local": [],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@STEEL-WOOL"
+    }
+  ],
+  "private": {}
+}

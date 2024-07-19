@@ -1,0 +1,27 @@
+{
+  "name": "@CHRONIC-PAIN-SYNDROME",
+  "isa": [
+    "@PATHOLOGIC-FUNCTION"
+  ],
+  "def": "a disorder characterized by chronic pain",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@PAIN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

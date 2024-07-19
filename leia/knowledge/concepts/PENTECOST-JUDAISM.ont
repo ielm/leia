@@ -1,0 +1,27 @@
+{
+  "name": "@PENTECOST-JUDAISM",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "a Jewish holiday celebrating Moses receiving the Ten commandments, on the 6th of Sivan",
+  "local": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@JUDAISM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "private": {}
+}

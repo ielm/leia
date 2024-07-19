@@ -1,0 +1,65 @@
+{
+  "name": "@PINEAPPLE",
+  "isa": [
+    "@TREE-FRUIT"
+  ],
+  "def": "a juicy edible fruit that somewhat resembles a pine cone",
+  "local": [
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "><",
+        32
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    }
+  ],
+  "block": [
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "egglike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "spherical"
+    }
+  ],
+  "private": {}
+}

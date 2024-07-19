@@ -1,0 +1,31 @@
+{
+  "word": "FISH_MEAL",
+  "senses": {
+    "FISH_MEAL-N1": {
+      "CAT": "N",
+      "DEF": "fertilizer made of ground dried fish",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "FERTILIZER": {
+          "MADE-OF": "FISH"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FISH_MEAL-N1",
+      "WORD": "FISH_MEAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

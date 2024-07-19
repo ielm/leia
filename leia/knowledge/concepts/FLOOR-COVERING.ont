@@ -1,0 +1,37 @@
+{
+  "name": "@FLOOR-COVERING",
+  "isa": [
+    "@FURNITURE",
+    "@SURFACE-BUILDING-PART"
+  ],
+  "def": "any covering meant to cover a bare floor, such as carpeting, a throw rug, etc.",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "is-consumer-good",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GLASS"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,11 @@
+{
+  "name": "$AREA",
+  "def": "this is the product of the 2 dimensions in 2 dimensional objects. it is important for the concept of size when the separate dimensions have not been specified",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@AREA-UNIT"
+  ],
+  "container": "$SIZE"
+}

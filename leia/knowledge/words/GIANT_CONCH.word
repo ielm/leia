@@ -1,0 +1,31 @@
+{
+  "word": "GIANT_CONCH",
+  "senses": {
+    "GIANT_CONCH-N1": {
+      "CAT": "N",
+      "DEF": "a large type of conch",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CONCH": {
+          "SIZE": 0.9
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GIANT_CONCH-N1",
+      "WORD": "GIANT_CONCH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "word": "TEASHOP",
+  "senses": {
+    "TEASHOP-N1": {
+      "CAT": "N",
+      "DEF": "a cafe that serves a generally large variety of teas",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CAFE": {
+          "LOCATION-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "INGEST": {
+            "THEME": "HERBAL-TEA"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "TEAHOUSE",
+        "TEAROOM",
+        "TEA_PARLOR"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "TEASHOP-N1",
+      "WORD": "TEASHOP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

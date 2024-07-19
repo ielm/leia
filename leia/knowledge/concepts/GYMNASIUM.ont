@@ -1,0 +1,31 @@
+{
+  "name": "@GYMNASIUM",
+  "isa": [
+    "@INSTITUTIONAL-BUILDING"
+  ],
+  "def": "a room or building equipped for physical training and sports",
+  "local": [
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@SPORT-ARTIFACT"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@SPORTS-DISCIPLINE"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@SPORTS-COMPETITION"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@SPORTS-ROLE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

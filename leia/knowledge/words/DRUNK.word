@@ -1,0 +1,69 @@
+{
+  "word": "DRUNK",
+  "senses": {
+    "DRUNK-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "under the influence of alcohol, at least to a moderate extent",
+      "EX": "",
+      "COMMENTS": "only predicative",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "INTOXICATION": [
+            ">",
+            0.4
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "BALL-1",
+        "WAS-2",
+        "UNDER_THE_INFLUENCE-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "COP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "PISSED",
+        "FLYING",
+        "SLOSHED",
+        "SOUSED",
+        "UNDER_THE_INFLUENCE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DRUNK-ADJ1",
+      "WORD": "DRUNK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

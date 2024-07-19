@@ -1,0 +1,92 @@
+{
+  "word": "MOP",
+  "senses": {
+    "MOP-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "MOP",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "SPONGE_MOP",
+        "DUSTMOP",
+        "DRY_MOP"
+      ],
+      "SENSE": "MOP-N1",
+      "WORD": "MOP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MOP-V1": {
+      "CAT": "V",
+      "DEF": "to clean using a mop",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "CLEAN": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "DEFAULT": "FLOOR"
+          },
+          "INSTRUMENT": "MOP"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "MOPPED-0",
+        "THE",
+        "FLOOR-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "SPONGE_MOP",
+        "DUSTMOP",
+        "DRY_MOP"
+      ],
+      "SENSE": "MOP-V1",
+      "WORD": "MOP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "word": "LIGHT",
+  "senses": {
+    "LIGHT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "not heavy, of physical objects",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "PHYSICAL-OBJECT",
+          "WEIGHT": [
+            "<",
+            0.3
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "LIGHT-0",
+        "DOG-1",
+        "HIT",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LIGHT-ADJ1",
+      "WORD": "LIGHT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LIGHT-N1": {
+      "CAT": "N",
+      "DEF": "the natural entity that makes things visible",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "LIGHT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ILLUMINATION"
+      ],
+      "HYPONYMS": [
+        "INCANDESCENCE",
+        "LUSTER",
+        "SHIMMER",
+        "LUMINOSITY"
+      ],
+      "SENSE": "LIGHT-N1",
+      "WORD": "LIGHT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

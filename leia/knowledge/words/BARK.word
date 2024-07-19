@@ -1,0 +1,93 @@
+{
+  "word": "BARK",
+  "senses": {
+    "BARK-N1": {
+      "CAT": "N",
+      "DEF": "tree bark",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "TREE-BARK",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BARK-N1",
+      "WORD": "BARK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BARK-N2": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "the dog's bark is loud",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BARK",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BARK-N2",
+      "WORD": "BARK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BARK-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "that dog barks a lot",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "BARK": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THAT",
+        "DOG-1",
+        "BARKS-0",
+        "A",
+        "LOT"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BARK-V1",
+      "WORD": "BARK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

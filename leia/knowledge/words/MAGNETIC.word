@@ -1,0 +1,91 @@
+{
+  "word": "MAGNETIC",
+  "senses": {
+    "MAGNETIC-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "charming, of people, personalities, etc.",
+      "EX": "a magnetic personality, a magnetic lecturer",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "ANIMAL",
+            "ABSTRACT-OBJECT"
+          ],
+          "CHARISMA": 0.8
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "MAGNETIC-0",
+        "ANIMAL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MAGNETIC-ADJ1",
+      "WORD": "MAGNETIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MAGNETIC-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "associated with magnets, etc.",
+      "EX": "a magnetic force",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "PHYSICAL-OBJECT",
+            "INTANGIBLE-OBJECT"
+          ],
+          "RELATION": "MAGNETISM"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "MAGNETIC-0",
+        "TABLE-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MAGNETIC-ADJ2",
+      "WORD": "MAGNETIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

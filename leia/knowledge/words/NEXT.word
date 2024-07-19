@@ -1,0 +1,141 @@
+{
+  "word": "NEXT",
+  "senses": {
+    "NEXT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "+ time expression - in the future",
+      "EX": "the package should arive sometime next week",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "TIME-INTERVAL-UNIT",
+          "TIME": [
+            ">",
+            [
+              "FIND-ANCHOR-TIME"
+            ]
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "NEXT-0",
+        "TIME-INTERVAL-UNIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NEXT-ADJ1",
+      "WORD": "NEXT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "NEXT-ADV1": {
+      "CAT": "ADV",
+      "DEF": "+ # + time expression - ",
+      "EX": "the next 10 weeks will be fun",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR2",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        },
+        "NUM": {
+          "ROOT": "$VAR1",
+          "CAT": "NUM"
+        },
+        "ROOT": "$VAR2",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "SEM": "TIME-INTERVAL-UNIT",
+          "TIME": [
+            ">",
+            [
+              "FIND-ANCHOR-TIME"
+            ]
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "NEXT-0",
+        "TIME-INTERVAL-UNIT-1",
+        "TIME-INTERVAL-UNIT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "NSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NEXT-ADV1",
+      "WORD": "NEXT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "NEXT-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "IN SPATIAL SENSE \u2013 INDICATES ORDINALITY",
+      "EX": "THE NEXT HOUSE",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "HAS-ELEMENTS": {
+            "VALUE": "^$VAR1",
+            "SEM": "PHYSICAL-OBJECT"
+          },
+          "ORDINALITY": 1
+        }
+      },
+      "SENSE": "NEXT-ADJ2",
+      "WORD": "NEXT",
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

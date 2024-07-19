@@ -1,0 +1,49 @@
+{
+  "word": "SERVER",
+  "senses": {
+    "SERVER-N1": {
+      "CAT": "N",
+      "DEF": "someone who serves food and drink",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SERVER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SERVER-N1",
+      "WORD": "SERVER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SERVER-N2": {
+      "CAT": "N",
+      "DEF": "network server",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "NETWORK-SERVER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SERVER-N2",
+      "WORD": "SERVER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

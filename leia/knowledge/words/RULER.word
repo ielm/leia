@@ -1,0 +1,53 @@
+{
+  "word": "RULER",
+  "senses": {
+    "RULER-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "GOVERNMENTAL-ROLE": {
+          "AUTHORITY-ATTRIBUTE": 0.9
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RULER-N1",
+      "WORD": "RULER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RULER-N2": {
+      "CAT": "N",
+      "DEF": "a device for measuring",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "RULER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RULER-N2",
+      "WORD": "RULER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

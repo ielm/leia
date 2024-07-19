@@ -1,0 +1,159 @@
+{
+  "word": "KNOT",
+  "senses": {
+    "KNOT-N2": {
+      "CAT": "N",
+      "DEF": "a speed unit used in navigation, equal to one nautical mile per hour; nautical-mile/hour",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "NAUTICAL-KNOTS-PER-HOUR",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KNOT-N2",
+      "WORD": "KNOT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "KNOT-V1": {
+      "CAT": "V",
+      "DEF": "to tie with a knot",
+      "EX": "He knotted the rope",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "TIE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "INSTRUMENT": "KNOT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "KNOTTED-0",
+        "THE",
+        "ROPE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KNOT-V1",
+      "WORD": "KNOT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "KNOT-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "KNOT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "cat's_paw",
+        "fisherman's_bend",
+        "fisherman's_knot",
+        "lover's_knot",
+        "lubber's_knot",
+        "stevedore's_knot",
+        "surgeon's_knot",
+        "weaver's_hitch",
+        "weaver's_knot",
+        "ANCHOR_KNOT",
+        "BARREL_KNOT",
+        "BLOOD_KNOT",
+        "BOWLINE_KNOT",
+        "CLOVE_HITCH",
+        "DIAMOND_KNOT",
+        "FIGURE_EIGHT",
+        "FIGURE_OF_EIGHT",
+        "FLAT_KNOT",
+        "GORDIAN_KNOT",
+        "GRANNY_KNOT",
+        "HALF_HITCH",
+        "HARNESS_HITCH",
+        "HAWSER_BEND",
+        "HEAVING-LINE_BEND",
+        "INSIDE_CLINCH",
+        "LANYARD_KNOT",
+        "LOOP_KNOT",
+        "LOVE_KNOT",
+        "MANROPE_KNOT",
+        "MARLINESPIKE_HITCH",
+        "MARLING_HITCH",
+        "MESH_KNOT",
+        "NETTING_KNOT",
+        "NOOSE",
+        "OPEN_HAND_KNOT",
+        "OUTSIDE_CLINCH",
+        "OVERHAND_KNOT",
+        "PROLONGE_KNOT",
+        "REEF_KNOT",
+        "ROLLING_HITCH",
+        "ROPE-YARN_KNOT",
+        "RUNNING_KNOT",
+        "SHEET_BEND",
+        "SINGLE_KNOT",
+        "SLIPKNOT",
+        "SLIPNOOSE",
+        "SQUARE_KNOT",
+        "STOPPER_KNOT",
+        "TIMBER_HITCH",
+        "TRUELOVE_KNOT",
+        "TUMB_KNOT",
+        "WALL_KNOT",
+        "WINDSOR_KNOT"
+      ],
+      "SENSE": "KNOT-N1",
+      "WORD": "KNOT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

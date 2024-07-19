@@ -1,0 +1,30 @@
+{
+  "name": "@MONTH",
+  "isa": [
+    "@TIME-INTERVAL-UNIT"
+  ],
+  "def": "a unit of time equal to any of the twelve divisions of the calendar year; year/12",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        2629743.0
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

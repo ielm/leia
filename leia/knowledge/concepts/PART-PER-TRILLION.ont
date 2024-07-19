@@ -1,0 +1,19 @@
+{
+  "name": "@PART-PER-TRILLION",
+  "isa": [
+    "@PERCENTAGE-UNIT"
+  ],
+  "def": "one part per trillion parts, a comparative ratio; 1E-12",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1e-12
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

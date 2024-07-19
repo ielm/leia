@@ -1,0 +1,32 @@
+{
+  "word": "FOLKS",
+  "senses": {
+    "FOLKS-N1": {
+      "CAT": "N",
+      "DEF": "a group of people (colloquial)",
+      "EX": "These folks are nice.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "NUMBER": "PL"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": "HUMAN"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FOLKS-N1",
+      "WORD": "FOLKS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

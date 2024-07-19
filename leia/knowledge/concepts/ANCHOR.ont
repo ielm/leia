@@ -1,0 +1,22 @@
+{
+  "name": "@ANCHOR",
+  "isa": [
+    "@WATER-VEHICLE-PART"
+  ],
+  "def": "a heavy object, usually an iron weight with flukes, lowered from a vessel, as by cable, to prevent drifting",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@IRON"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

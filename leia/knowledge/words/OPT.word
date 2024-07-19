@@ -1,0 +1,114 @@
+{
+  "word": "OPT",
+  "senses": {
+    "OPT-V2": {
+      "CAT": "V",
+      "DEF": "opt + infinitival complement",
+      "EX": "he opted to take the bus (instead of the train)",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "XCOMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "SELECT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR2": {
+          "SEM": "EVENT",
+          "AGENT-1": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "OPTED-0",
+        "TO",
+        "TAKE-2",
+        "THE",
+        "BUS"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "CHOOSE",
+        "SELECT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "OPT-V2",
+      "WORD": "OPT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "OPT-V1": {
+      "CAT": "V",
+      "DEF": "phrasal 'opt for' = select",
+      "EX": "he opted for a desk job",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "FOR",
+          "CAT": "PREP"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "SELECT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "OPTED-0",
+        "FOR-2",
+        "THE",
+        "HOUSE-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OPT-V1",
+      "WORD": "OPT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

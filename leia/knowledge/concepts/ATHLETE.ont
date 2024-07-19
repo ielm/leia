@@ -1,0 +1,33 @@
+{
+  "name": "@ATHLETE",
+  "isa": [
+    "@SPORTS-ROLE"
+  ],
+  "def": "a person trained in exercises or games requiring strength, speed, skill, stamina, etc.",
+  "local": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "><",
+        100
+      ]
+    },
+    {
+      "slot": "has-coach",
+      "facet": "sem",
+      "filler": "@SPORTS-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "><",
+        130
+      ]
+    }
+  ],
+  "private": {}
+}

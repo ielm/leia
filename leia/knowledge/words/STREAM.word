@@ -1,0 +1,39 @@
+{
+  "word": "STREAM",
+  "senses": {
+    "STREAM-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "RIVER": {
+          "SIZE": [
+            "<",
+            0.3
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "CREEK",
+        "BROOK"
+      ],
+      "HYPONYMS": [
+        "TIDEWATER_STREAM"
+      ],
+      "SENSE": "STREAM-N1",
+      "WORD": "STREAM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

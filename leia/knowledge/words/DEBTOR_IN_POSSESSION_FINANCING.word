@@ -1,0 +1,38 @@
+{
+  "word": "DEBTOR_IN_POSSESSION_FINANCING",
+  "senses": {
+    "DEBTOR_IN_POSSESSION_FINANCING-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "FINANCING": {
+          "BENEFICIARY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "CORPORATION": {
+            "AGENT-OF": "CHAPTER-11-BANKRUPTCY-PROTECTION"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DEBTOR_IN_POSSESSION_FINANCING-N1",
+      "WORD": "DEBTOR_IN_POSSESSION_FINANCING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

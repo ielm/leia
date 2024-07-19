@@ -1,0 +1,42 @@
+{
+  "name": "@SEAFOOD",
+  "isa": [
+    "@MEAT"
+  ],
+  "def": "Edible fish or shellfish.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@FISH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@FOODSTUFF"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

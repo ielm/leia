@@ -1,0 +1,107 @@
+{
+  "word": "DISAPPROVAL",
+  "senses": {
+    "DISAPPROVAL-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "his disapproval of everything I do irks me",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NMOD_POSS": [
+          [
+            "ROOT",
+            "$VAR1"
+          ],
+          [
+            "CAT",
+            [
+              "N",
+              "DET"
+            ]
+          ],
+          [
+            "POSSESSIVE",
+            "+"
+          ],
+          [
+            "OPT",
+            "+"
+          ],
+          [
+            "CASE",
+            [
+              [
+                "ROOT",
+                "$VAR9"
+              ],
+              [
+                "ROOT",
+                "*QUOTE*S"
+              ],
+              [
+                "CAT",
+                "POSSESSIVE"
+              ],
+              [
+                "OPT",
+                "+"
+              ]
+            ]
+          ]
+        ],
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          },
+          "SCOPE": {
+            "VALUE": "^$VAR3"
+          },
+          "VALUE": 0.2
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR9": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "DISCUSSED",
+        "THE",
+        "WOMAN-1",
+        "*QUOTE*S-9",
+        "DISAPPROVAL-0",
+        "OF-2",
+        "THE",
+        "DOG-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DISAPPROVAL-N1",
+      "WORD": "DISAPPROVAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

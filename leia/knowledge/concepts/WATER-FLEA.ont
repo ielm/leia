@@ -1,0 +1,22 @@
+{
+  "name": "@WATER-FLEA",
+  "isa": [
+    "@CRUSTACEAN"
+  ],
+  "def": "a small aquatic crustacean swimming with jerking motions.",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BODY-OF-WATER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@VEHICLE-MANUFACTURING-CORPORATION",
+  "isa": [
+    "@ARTIFACT-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a for-profit manufacturing corporation that produces vehicles",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@VEHICLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    }
+  ],
+  "private": {}
+}

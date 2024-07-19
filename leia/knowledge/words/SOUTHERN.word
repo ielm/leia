@@ -1,0 +1,52 @@
+{
+  "word": "SOUTHERN",
+  "senses": {
+    "SOUTHERN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "a place within another place, to its south",
+      "EX": "",
+      "COMMENTS": "[D] semantically = the south of X",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PLACE": {
+          "PART-OF-OBJECT": {
+            "VALUE": "^$VAR1",
+            "SEM": "PLACE"
+          },
+          "SOUTH-OF": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SOUTH-0",
+        "PHYSICAL-EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "SOUTH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SOUTHERN-ADJ1",
+      "WORD": "SOUTHERN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

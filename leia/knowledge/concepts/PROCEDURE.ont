@@ -1,0 +1,32 @@
+{
+  "name": "@PROCEDURE",
+  "isa": [
+    "@MENTAL-EVENT"
+  ],
+  "def": "a procedure is information about how to do a certain event",
+  "local": [
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "has-alias",
+      "facet": "sem",
+      "filler": "@ALIAS"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

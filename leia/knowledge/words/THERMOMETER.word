@@ -1,0 +1,44 @@
+{
+  "word": "THERMOMETER",
+  "senses": {
+    "THERMOMETER-N1": {
+      "CAT": "N",
+      "DEF": "an instrument for measuring temperature, especially one having a graduated glass tube with a bulb containing a liquid, typically mercury, that expands and rises in the tube as the temperature increases",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "THERMOMETER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "CRYOMETER",
+        "MAXIMUM_AND_MINIMUM_THERMOMETER",
+        "PYROMETER",
+        "PYROMETRIC_CONE",
+        "RADIATION_PYROMETER",
+        "RESISTANCE_PYROMETER",
+        "RESISTANCE_THERMOMETER",
+        "REVERSING_THERMOMETER",
+        "SELF_REGULATING_THERMOMETER",
+        "TELETHERMOMETER",
+        "THERMOCOUPLE",
+        "THERMOELECTRIC_THERMOMETER",
+        "THERMOGRAPH",
+        "WET_BULB_THERMOMETER",
+        "OPTICAL_PYROMETER",
+        "ELECTRIC_THERMOMETER"
+      ],
+      "SENSE": "THERMOMETER-N1",
+      "WORD": "THERMOMETER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

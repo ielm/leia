@@ -1,0 +1,728 @@
+{
+  "word": "KEEP",
+  "senses": {
+    "KEEP-V1": {
+      "CAT": "V",
+      "DEF": "continue",
+      "EX": "she kept (on) reading",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT-WORD": "ON",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OPT": "+"
+        },
+        "NP": {
+          "ROOT": "$VAR3",
+          "CAT": "NP",
+          "V": {
+            "CAT": "V",
+            "FORM": "PROGRESSIVE"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "CONTINUE",
+          "SCOPE": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR3": {
+          "SEM": "EVENT",
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR3"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "KEPT-0",
+        "ON-2",
+        "READING-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KEEP-V1",
+      "WORD": "KEEP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "KEEP-V4": {
+      "CAT": "V",
+      "DEF": "cause to be",
+      "EX": "parents keep their children in school; I keep my favorite knife in this drawer",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "PP": {
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "PROPERTY": {
+            "DOMAIN": {
+              "VALUE": "^$VAR2"
+            },
+            "RANGE": {
+              "VALUE": "^$VAR3"
+            },
+            "CAUSED-BY": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "REFSEM1",
+          "^$VAR2",
+          "^$VAR3",
+          "^$VAR4"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "PARENTS-1",
+        "KEEP-0",
+        "THEIR",
+        "CHILDREN-2",
+        "IN-4",
+        "SCHOOL-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR4",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KEEP-V4",
+      "WORD": "KEEP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "KEEP-V6": {
+      "CAT": "V",
+      "DEF": "phrasal 'keep records'",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "ROOT-WORD": "RECORD",
+          "NUMBER": "PL"
+        }
+      },
+      "SEM-STRUC": {
+        "RECORD-INFORMATION": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "IS",
+        "KEEPING-0",
+        "THE",
+        "RECORDS-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR2",
+          "$VAR0"
+        ],
+        [
+          "NSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "XSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KEEP-V6",
+      "WORD": "KEEP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "KEEP-V7": {
+      "CAT": "V",
+      "DEF": "(an ingestible) doesn't spoil",
+      "EX": "peanut butter keeps without refrigeration",
+      "COMMENTS": "we should add the idea of time here eventually, but that'll be a script",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "FRESHNESS": [
+            ">",
+            0.8
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ROCKS-1",
+        "KEEP-0",
+        "INDEFINITELY"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KEEP-V7",
+      "WORD": "KEEP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "KEEP-V8": {
+      "CAT": "V",
+      "DEF": "phrasal: keep sth. under wraps = not divulge",
+      "EX": "they kept the prime minister's visit under wraps",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": "UNDER",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N",
+            "ROOT-WORD": "WRAP",
+            "NUMBER": "PL"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "INFORM": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            },
+            "THEME": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "KEPT-0",
+        "THE",
+        "VISIT-2",
+        "UNDER-3",
+        "WRAPS-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DET",
+          "$VAR3",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KEEP-V8",
+      "WORD": "KEEP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "KEEP-V9": {
+      "CAT": "V",
+      "DEF": "phrasal: keep (the) peace",
+      "EX": "They're trying to keep peace in the Middle East",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "PEACE",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "KEEP-PEACE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "KEPT-0",
+        "THE",
+        "PEACE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR2",
+          "$VAR0"
+        ],
+        [
+          "NSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KEEP-V9",
+      "WORD": "KEEP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "KEEP-V11": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "john kept studying chemistry",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "XCOMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "CONTINUE",
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR2": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOG-1",
+        "STARTS-0",
+        "TO-7",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KEEP-V11",
+      "WORD": "KEEP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "KEEP-V10": {
+      "CAT": "V",
+      "DEF": "phrasal: keep distance (from X) - not come near",
+      "EX": "She keeps her distance from coughing people.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "ROOT-WORD": "DISTANCE"
+        },
+        "PP": {
+          "ROOT-WORD": "FROM",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "APPROACH": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            },
+            "THEME": {
+              "VALUE": "^$VAR4"
+            }
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "ANIMAL-1",
+        "KEPT-0",
+        "THE",
+        "DISTANCE-2",
+        "FROM-3",
+        "THE",
+        "TABLE-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR2",
+          "$VAR0"
+        ],
+        [
+          "NSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KEEP-V10",
+      "WORD": "KEEP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "KEEP-V3": {
+      "CAT": "V",
+      "DEF": "maintain or retain",
+      "EX": "they kept the same car (the same address, the same tel. #, the same bank) for many years",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "ABSENCE-OF-CHANGE-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "^$VAR0",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "KEPT-0",
+        "THE",
+        "SAME",
+        "CAR-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KEEP-V3",
+      "WORD": "KEEP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "KEEP-V5": {
+      "CAT": "V",
+      "DEF": "cause a state",
+      "EX": "x keeps y happy",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        },
+        "ADJ": {
+          "ROOT": "$VAR2",
+          "CAT": "ADJ"
+        }
+      },
+      "SEM-STRUC": {
+        "PROPERTY": {
+          "DOMAIN": {
+            "VALUE": "^$VAR3"
+          },
+          "RANGE": {
+            "VALUE": "^$VAR2"
+          },
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "^$VAR0",
+          "^$VAR3",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOG-1",
+        "HAS",
+        "KEPT-0",
+        "THE",
+        "DOG-3",
+        "HAPPY-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "NSUBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "XCOMP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KEEP-V5",
+      "WORD": "KEEP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

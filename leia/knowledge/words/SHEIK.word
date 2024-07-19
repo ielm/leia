@@ -1,0 +1,35 @@
+{
+  "word": "SHEIK",
+  "senses": {
+    "SHEIK-N1": {
+      "CAT": "N",
+      "DEF": "ruler of an Arab people group",
+      "EX": "",
+      "COMMENTS": "marge: is it worth making a new onto concept?",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SOVEREIGN": {
+          "HAS-NAME": {
+            "VALUE": "SHEIK"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SHEIKH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SHEIK-N1",
+      "WORD": "SHEIK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

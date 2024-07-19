@@ -1,0 +1,72 @@
+{
+  "word": "RECONSIDERATION",
+  "senses": {
+    "RECONSIDERATION-N21": {
+      "CAT": "N",
+      "DEF": "reanalysis of a previously taken decision",
+      "EX": "reconsideration of the proposal by the committee",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT-WORD": "BY",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "CONSIDER": {
+          "AGENT": {
+            "VALUE": "^$VAR4"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "PRECONDITION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "DECIDE": {
+            "THEME-1": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RECONSIDERATION-N21",
+      "WORD": "RECONSIDERATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

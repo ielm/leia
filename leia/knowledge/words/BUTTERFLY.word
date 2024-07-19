@@ -1,0 +1,79 @@
+{
+  "word": "BUTTERFLY",
+  "senses": {
+    "BUTTERFLY-N2": {
+      "CAT": "N",
+      "DEF": "a swim stroke",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BUTTERFLY-SWIMMING",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BUTTERFLY-N2",
+      "WORD": "BUTTERFLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BUTTERFLY-N1": {
+      "CAT": "N",
+      "DEF": "an animal",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BUTTERFLY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "NYMPHALID",
+        "MOURNING_CLOAK_BUTTERFLY",
+        "TORTOISESHELL_BUTTERFLY",
+        "PAINTER_BEAUTY",
+        "ADMIRAL_BUTTERFLY",
+        "READ_ADMIRAL_BUTTERFLY",
+        "WHITE_ADMIRAL_BUTTERFLY",
+        "BANDED_PURPLE_BUTTERFLY",
+        "RED-SPOTTED_PURPLE",
+        "VICEROY_BUTTERFLY",
+        "ANGLEWING_BUTTERFLY",
+        "COMMA_BUTTERFLY",
+        "FRITILLARY",
+        "SILVERSPOT_BUTTERFLY",
+        "EMPEROR_BUTTERFLY",
+        "PURPLE_EMPEROR",
+        "PEACOCK_BUTTERFLY",
+        "RINGLET_BUTTERFLY",
+        "DANAID_BUTTERFLY",
+        "MONARCH_BUTTERFLY",
+        "MILKWEED_BUTTERFLY",
+        "PIERID_BUTTERFLY",
+        "CABBAGE_BUTTERFLY",
+        "SMALL_WHITE_BUTTERFLY",
+        "LARGE_WHITE_BUTTERFLY",
+        "SOUTHERN_CABBAGE_BUTTERFLY",
+        "SULPHUR_BUTTERFLY",
+        "LYCAENID_BUTTERFLY",
+        "HAIRSTREAK_BUTTERFLY"
+      ],
+      "SENSE": "BUTTERFLY-N1",
+      "WORD": "BUTTERFLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

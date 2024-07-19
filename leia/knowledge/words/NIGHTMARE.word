@@ -1,0 +1,85 @@
+{
+  "word": "NIGHTMARE",
+  "senses": {
+    "NIGHTMARE-N1": {
+      "CAT": "N",
+      "DEF": "a very scary dream",
+      "EX": "he awoke in a cold sweat from his nightmare",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "OPT": "+",
+          "POSSESSIVE": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "DREAM": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          },
+          "EFFECT": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "FEAR": {
+            "EXPERIENCER": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ANIMAL-1",
+        "NIGHTMARE-0"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NIGHTMARE-N1",
+      "WORD": "NIGHTMARE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "NIGHTMARE-N2": {
+      "CAT": "N",
+      "DEF": "a terrible experience",
+      "EX": "his dissertation defense was a nightmare; the project was an administrative nightmare",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0,
+          "SCOPE": "EVENT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NIGHTMARE-N2",
+      "WORD": "NIGHTMARE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

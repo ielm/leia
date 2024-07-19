@@ -1,0 +1,32 @@
+{
+  "name": "@RADIO-PROGRAM",
+  "isa": [
+    "@ENTERTAIN-EVENT"
+  ],
+  "def": "Listening to the radio",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@RADIO-RECEIVER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    }
+  ],
+  "private": {}
+}

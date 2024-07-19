@@ -1,0 +1,70 @@
+{
+  "word": "SECOND_RATE",
+  "senses": {
+    "SECOND_RATE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "of not very high quality; of physical objects",
+      "EX": "second-rate wood",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "PHYSICAL-OBJECT",
+          "QUALITY": 0.5
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SECOND_RATE-ADJ1",
+      "WORD": "SECOND_RATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SECOND_RATE-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "of not very high quality; of events",
+      "EX": "a second-rate race",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0.5,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SECOND_RATE-ADJ2",
+      "WORD": "SECOND_RATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

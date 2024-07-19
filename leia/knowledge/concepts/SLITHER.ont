@@ -1,0 +1,32 @@
+{
+  "name": "@SLITHER",
+  "isa": [
+    "@MOTION-EVENT"
+  ],
+  "def": "to slide like a reptile",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@REPTILE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

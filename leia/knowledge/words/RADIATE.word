@@ -1,0 +1,41 @@
+{
+  "word": "RADIATE",
+  "senses": {
+    "RADIATE-V1": {
+      "CAT": "V",
+      "DEF": "to move from or as if from a central point",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "RADIATE": {
+          "THEME": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOG-1",
+        "RADIATED-0"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RADIATE-V1",
+      "WORD": "RADIATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

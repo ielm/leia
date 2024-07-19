@@ -1,0 +1,9 @@
+{
+  "name": "$PRECISION-ATTRIBUTE",
+  "def": "an attribute that indicates the precision of something - whether it is precise, approximate, etc. Note that this is not the same as accuracy, which says whether it*s right or wrong (something can be, for example, correct but at a coarse grain size so therefore imprecise)",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-ATTRIBUTE"
+}

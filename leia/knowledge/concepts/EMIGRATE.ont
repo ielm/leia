@@ -1,0 +1,57 @@
+{
+  "name": "@EMIGRATE",
+  "isa": [
+    "@POLITICAL-EVENT"
+  ],
+  "def": "to leave one country or region to settle in another, often for political reasons",
+  "local": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@IMMIGRANT"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@LARGE-GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@LARGE-GEOPOLITICAL-ENTITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,178 @@
+{
+  "word": "COMPARISON",
+  "senses": {
+    "COMPARISON-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "the comParison between their progress and ours is ungrounded",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "BETWEEN",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "AND",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "COMPARE": {
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME-1": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "COMPARISON-0",
+        "BETWEEN-1",
+        "THE",
+        "EVENT-2",
+        "AND-3",
+        "THE",
+        "EVENT-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CC",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "CONJ",
+          "$VAR2",
+          "$VAR4"
+        ],
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COMPARISON-N1",
+      "WORD": "COMPARISON",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "COMPARISON-N2": {
+      "CAT": "N",
+      "DEF": "comparision + of pp (by pp)",
+      "EX": "the comparision of output by the programmers was sufficient",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "COMPARE": {
+          "AGENT": {
+            "VALUE": "^$VAR4"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "MATCH-0",
+        "OF-1",
+        "THE",
+        "EVENT-2",
+        "BY-3",
+        "THE",
+        "HUMAN-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "MATCH"
+      ],
+      "SENSE": "COMPARISON-N2",
+      "WORD": "COMPARISON",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

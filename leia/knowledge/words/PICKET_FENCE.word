@@ -1,0 +1,31 @@
+{
+  "word": "PICKET_FENCE",
+  "senses": {
+    "PICKET_FENCE-N1": {
+      "CAT": "N",
+      "DEF": "a fence made of wooden slats, or pickets",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "FENCE": {
+          "MADE-OF": "WOOD"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PICKET_FENCE-N1",
+      "WORD": "PICKET_FENCE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

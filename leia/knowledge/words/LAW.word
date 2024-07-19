@@ -1,0 +1,70 @@
+{
+  "word": "LAW",
+  "senses": {
+    "LAW-N1": {
+      "CAT": "N",
+      "DEF": "rules of conduct",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "LAW",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "RULE",
+        "REGULATION",
+        "ARTICLE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "LAW-N1",
+      "WORD": "LAW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LAW-N2": {
+      "CAT": "N",
+      "DEF": "law as a field of study",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FIELD-OF-LAW",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "ADJECTIVE_LAW",
+        "ADMINISTRATIVE_LAW",
+        "MARITIME_LAW",
+        "CANON_LAW",
+        "CASE_LAW",
+        "CIVIL_LAW",
+        "COMMERCIAL_LAW",
+        "CONSTITUTIONAL_LAW",
+        "CRIMINAL_LAW",
+        "INTERNATIONAL_LAW",
+        "MILITARY_LAW",
+        "PATENT_LAW",
+        "PROCEDURAL_LAW",
+        "SUBSTANTIVE_LAW",
+        "TORT_LAW",
+        "TORT_LAW"
+      ],
+      "SENSE": "LAW-N2",
+      "WORD": "LAW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

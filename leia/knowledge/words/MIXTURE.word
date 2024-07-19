@@ -1,0 +1,110 @@
+{
+  "word": "MIXTURE",
+  "senses": {
+    "MIXTURE-N1": {
+      "CAT": "N",
+      "DEF": "a combination of different materials",
+      "EX": "That mixture is dangerous",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PHYSICAL-OBJECT": {
+          "HAS-OBJECT-AS-PART": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": "PHYSICAL-OBJECT",
+            "CARDINALITY": [
+              ">",
+              1
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MIXTURE-N1",
+      "WORD": "MIXTURE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MIXTURE-N2": {
+      "CAT": "N",
+      "DEF": "a combination of materials; in the structure 'the mixture of X and Y'",
+      "EX": "The mixture of coffee and cream is delicious",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OBJ": {
+            "NP": {
+              "ROOT": "$VAR4",
+              "CAT": "NP"
+            },
+            "CONJ": {
+              "ROOT": "$VAR3",
+              "CAT": "CONJ",
+              "ROOT-WORD": "AND"
+            },
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "PHYSICAL-OBJECT": {
+          "HAS-OBJECT-AS-PART": {
+            "VALUE": "^$VAR2"
+          },
+          "HAS-OBJECT-AS-PART-1": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "MIXTURE-0",
+        "OF-1",
+        "THE",
+        "OBJECT-2",
+        "AND-3",
+        "THE",
+        "OBJECT-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MIXTURE-N2",
+      "WORD": "MIXTURE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

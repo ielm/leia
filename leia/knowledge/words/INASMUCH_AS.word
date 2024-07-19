@@ -1,0 +1,98 @@
+{
+  "word": "INASMUCH_AS",
+  "senses": {
+    "INASMUCH_AS-CONJ1": {
+      "CAT": "CONJ",
+      "DEF": "expresses a circumstance or reason",
+      "EX": "Inasmuch as he can't come, we should cancel the party",
+      "COMMENTS": "I'm using 'caused-by' as the mapping even though this is a bit weaker than  a direct 'caused by'; at our grain size, all strengths of causes will reduce to the same",
+      "TMR-HEAD": "$VAR2",
+      "SYN-STRUC": {
+        "CONJ": {
+          "ROOT": "$VAR0",
+          "CAT": "CONJ"
+        },
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "PUNCT": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "*COMMA*",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        },
+        "CL-1": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "INSOFAR_AS",
+        "IN_SO_FAR_AS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "INASMUCH_AS-CONJ1",
+      "WORD": "INASMUCH_AS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "INASMUCH_AS-CONJ2": {
+      "CAT": "CONJ",
+      "DEF": "",
+      "EX": "She likes him inasmuch as he's nice.",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "CONJ",
+        "CL-1": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "CAUSED-BY": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "IN_SO_FAR_AS",
+        "INSOFAR_AS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "INASMUCH_AS-CONJ2",
+      "WORD": "INASMUCH_AS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

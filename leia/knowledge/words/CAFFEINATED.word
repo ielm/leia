@@ -1,0 +1,45 @@
+{
+  "word": "CAFFEINATED",
+  "senses": {
+    "CAFFEINATED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "containing caffeine - typically of food and drink, possibly of medicines",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "INGESTIBLE",
+          "HAS-OBJECT-AS-PART": "CAFFEINE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CAFFEINATED-0",
+        "INGESTIBLE-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CAFFEINATED-ADJ1",
+      "WORD": "CAFFEINATED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

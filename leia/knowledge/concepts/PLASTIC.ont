@@ -1,0 +1,22 @@
+{
+  "name": "@PLASTIC",
+  "isa": [
+    "@SYNTHETICS"
+  ],
+  "def": "the prototypical artificial material made from petroleum",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@OIL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,34 @@
+{
+  "word": "METHYL_ORANGE",
+  "senses": {
+    "METHYL_ORANGE-N1": {
+      "CAT": "N",
+      "DEF": "a basic azo dye; used chiefly as an acid-base indicator;   dilute solution is yellow when neutral and pink when acid",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "DYESTUFF": {
+          "COLOR": [
+            "PINK",
+            "YELLOW"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "METHYL_ORANGE-N1",
+      "WORD": "METHYL_ORANGE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

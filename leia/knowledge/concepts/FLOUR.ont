@@ -1,0 +1,26 @@
+{
+  "name": "@FLOUR",
+  "isa": [
+    "@GRAIN-FOODSTUFF"
+  ],
+  "def": "a fine, powdery substance obtained by grinding grain, especially wheat",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "white"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "off-white"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "tan"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

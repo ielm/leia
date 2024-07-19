@@ -1,0 +1,39 @@
+{
+  "word": "CLOVERLEAF",
+  "senses": {
+    "CLOVERLEAF-N1": {
+      "CAT": "N",
+      "DEF": "intersection of two highways where traffic is routed from one highway onto branches leading in a circle to another highway",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "INTERSECTION": {
+          "PART-OF-OBJECT": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": "ROAD",
+            "CARDINALITY": 2
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CLOVERLEAF-N1",
+      "WORD": "CLOVERLEAF",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

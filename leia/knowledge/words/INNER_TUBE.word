@@ -1,0 +1,32 @@
+{
+  "word": "INNER_TUBE",
+  "senses": {
+    "INNER_TUBE-N1": {
+      "CAT": "N",
+      "DEF": "part of a wheel, made of rubber",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ARTIFACT-PART": {
+          "PART-OF-OBJECT": "WHEEL",
+          "MADE-OF": "SYNTHETIC-RUBBER"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INNER_TUBE-N1",
+      "WORD": "INNER_TUBE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "word": "OUR",
+  "senses": {
+    "OUR-DET2": {
+      "CAT": "DET",
+      "DEF": "possessive use of the 1SG pronoun, referring to body part",
+      "EX": "our backs hurt; I can't see our toes",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "DET": {
+          "ROOT": "$VAR0",
+          "CAT": "DET"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "ANIMATE-PART",
+          "PART-OF-OBJECT": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "HUMAN": {
+            "CARDINALITY": [
+              ">",
+              1
+            ],
+            "COREF": "*SPEAKER*"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          "REFSEM1",
+          [
+            "SG-1-ALGORITHM"
+          ]
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "OUR-0",
+        "DOG-1",
+        "HIT",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OUR-DET2",
+      "WORD": "OUR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "OUR-DET1": {
+      "CAT": "DET",
+      "DEF": "possessive use of the pronoun 'we'",
+      "EX": "our house; our kids; our opinion",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "DET": {
+          "ROOT": "$VAR0",
+          "CAT": "DET",
+          "TYPE": "POSS-PRO"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": "HUMAN",
+            "CARDINALITY": [
+              ">",
+              1
+            ]
+          }
+        }
+      },
+      "MEANING-PROCEDURES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": [
+        "OUR-0",
+        "CURE-1",
+        "WORKS"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OUR-DET1",
+      "WORD": "OUR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

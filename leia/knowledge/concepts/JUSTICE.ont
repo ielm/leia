@@ -1,0 +1,16 @@
+{
+  "name": "@JUSTICE",
+  "isa": [
+    "@ABSTRACT-IDEA"
+  ],
+  "def": "fairness or righteousness in judgment or decision-making",
+  "local": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-LAW"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

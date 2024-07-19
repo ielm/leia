@@ -1,0 +1,50 @@
+{
+  "word": "LOOT",
+  "senses": {
+    "LOOT-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "to steal things from a place: they looted the village",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "STEAL": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "LOCATION": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "LOOTED-0",
+        "THE",
+        "TOWN-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LOOT-V1",
+      "WORD": "LOOT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

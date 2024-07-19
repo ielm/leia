@@ -1,0 +1,48 @@
+{
+  "word": "LEAN",
+  "senses": {
+    "LEAN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "a lean person; lean meat",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "ANIMATE",
+            "INGESTIBLE"
+          ],
+          "FATTINESS": 0.2
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "LEAN-0",
+        "GIRL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LEAN-ADJ1",
+      "WORD": "LEAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

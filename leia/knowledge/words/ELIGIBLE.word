@@ -1,0 +1,210 @@
+{
+  "word": "ELIGIBLE",
+  "senses": {
+    "ELIGIBLE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "phrasal: eligible for X (event) = have the potential to do X",
+      "EX": "he will be eligible for parole after six months",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ",
+          "PP": {
+            "ROOT-WORD": "FOR",
+            "ROOT": "$VAR2",
+            "CAT": "PREP",
+            "OBJ": {
+              "ROOT": "$VAR3",
+              "CAT": "N"
+            }
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR3": {
+          "SEM": "EVENT",
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "MODALITY": {
+          "TYPE": "POTENTIAL",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR3"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR2",
+          "$VAR0"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ELIGIBLE-ADJ1",
+      "WORD": "ELIGIBLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ELIGIBLE-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "phrasal: eligible to X (event) = have the potential to do X",
+      "EX": "employees are eligible to take vacation after six months",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ",
+          "XCOMP": {
+            "ROOT": "$VAR2",
+            "CAT": "V"
+          }
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "AGENT-OF": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "MODALITY": {
+          "TYPE": "POTENTIAL",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "ELIGIBLE-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ELIGIBLE-ADJ2",
+      "WORD": "ELIGIBLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ELIGIBLE-ADJ3": {
+      "CAT": "ADJ",
+      "DEF": "phrasal: eligible for X (object) = has the potential to receive X",
+      "EX": "those eligible for benefits will receive a letter in the mail (implied: to receive); those eligible for tickets (implied: to buy tickets) will be informed next week",
+      "COMMENTS": "[D] includes semantic ellipsis - the EVENT will need to be specified, if possible, by the analyzer",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ",
+          "PP": {
+            "ROOT-WORD": "FOR",
+            "ROOT": "$VAR2",
+            "CAT": "PREP",
+            "OBJ": {
+              "ROOT": "$VAR3",
+              "CAT": "N"
+            }
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "EVENT": {
+            "THEME": {
+              "VALUE": "^$VAR3",
+              "SEM": "OBJECT"
+            },
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "POTENTIAL",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "REFSEM1",
+          "^$VAR3",
+          "^$VAR1"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "ELIGIBLE-0",
+        "ANIMAL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ELIGIBLE-ADJ3",
+      "WORD": "ELIGIBLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

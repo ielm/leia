@@ -1,0 +1,15 @@
+{
+  "name": "$BULB-COLOR",
+  "def": "indicates the color of light bulbs; used especially but not only for traffic lights; some of the values are specific to traffic lights, such as blinking-yellow",
+  "type": "literal",
+  "range": [
+    "blinking-red",
+    "blinking-yellow",
+    "green",
+    "red",
+    "yellow"
+  ],
+  "inverse": null,
+  "measured-in": [],
+  "container": "$COLOR"
+}

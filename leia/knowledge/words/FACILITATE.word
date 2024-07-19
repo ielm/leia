@@ -1,0 +1,55 @@
+{
+  "word": "FACILITATE",
+  "senses": {
+    "FACILITATE-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "the project will facilitate change among educators.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "FACILITATE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "PROJECT-1",
+        "FACILITATED-0",
+        "EDUCATORS-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FACILITATE-V1",
+      "WORD": "FACILITATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

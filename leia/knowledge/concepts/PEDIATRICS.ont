@@ -1,0 +1,22 @@
+{
+  "name": "@PEDIATRICS",
+  "isa": [
+    "@MEDICINE"
+  ],
+  "def": "the branch of medicine dealing with the care and treatment of infants and children",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@PEDIATRICIAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@MEDICAL-WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

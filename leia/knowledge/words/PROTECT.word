@@ -1,0 +1,154 @@
+{
+  "word": "PROTECT",
+  "senses": {
+    "PROTECT-V1": {
+      "CAT": "V",
+      "DEF": "to defend or shield from danger",
+      "EX": "he protected his family from harm",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": [
+            "FROM",
+            "AGAINST"
+          ],
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "PROTECT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "PURPOSE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "PREVENT": {
+            "THEME-1": {
+              "VALUE": "^$VAR4"
+            }
+          }
+        },
+        "^$VAR4": {
+          "THEME-2": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "PROTECTED-0",
+        "THE",
+        "DOG-2",
+        "FROM-3",
+        "THE",
+        "EXPLOSION-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SHIELD"
+      ],
+      "HYPONYMS": [
+        "SECURE"
+      ],
+      "SENSE": "PROTECT-V1",
+      "WORD": "PROTECT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PROTECT-V2": {
+      "CAT": "V",
+      "DEF": "in phrasal 'protect assets'",
+      "EX": "a wise investor protects his assets",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "ROOT-WORD": "ASSET",
+          "NUMBER": "PL"
+        }
+      },
+      "SEM-STRUC": {
+        "PROTECT-ASSETS": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "PROTECTED-0",
+        "THE",
+        "JEWELS-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "SAFEGUARD"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PROTECT-V2",
+      "WORD": "PROTECT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

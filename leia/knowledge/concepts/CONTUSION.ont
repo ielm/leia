@@ -1,0 +1,22 @@
+{
+  "name": "@CONTUSION",
+  "isa": [
+    "@INJURY"
+  ],
+  "def": "a bruising that does not break the skin",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SKIN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

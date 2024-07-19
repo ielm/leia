@@ -1,0 +1,42 @@
+{
+  "name": "@CHUTNEY",
+  "isa": [
+    "@FLAVORING"
+  ],
+  "def": "Chopped fruits or tomatoes cooked with vinegar, sugar, ginger, and various spices.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@FRUIT-FOODSTUFF"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GINGER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SPICE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SUGAR"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@VINEGAR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,35 @@
+{
+  "word": "READING_LAMP",
+  "senses": {
+    "READING_LAMP-N1": {
+      "CAT": "N",
+      "DEF": "a smallish lamp used for reading",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LAMP": {
+          "SIZE": [
+            "<",
+            0.5
+          ],
+          "INSTRUMENT-OF": "READ"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "READING_LAMP-N1",
+      "WORD": "READING_LAMP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

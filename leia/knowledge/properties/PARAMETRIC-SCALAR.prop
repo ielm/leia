@@ -1,0 +1,9 @@
+{
+  "name": "$PARAMETRIC-SCALAR",
+  "def": "scalar attributes used with parametric\ndomains, like modality",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-ATTRIBUTE"
+}

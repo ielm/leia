@@ -1,0 +1,56 @@
+{
+  "word": "DECENTRALIZE",
+  "senses": {
+    "DECENTRALIZE-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "russia decentralized banks during perestroika",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "DECENTRALIZE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR2",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "RUSSIA-1",
+        "DECENTRALIZED-0",
+        "BANKS-2",
+        "DURING",
+        "PERESTROIKA"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DECENTRALIZE-V1",
+      "WORD": "DECENTRALIZE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

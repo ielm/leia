@@ -1,0 +1,600 @@
+{
+  "word": "WAIT",
+  "senses": {
+    "WAIT-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "the wait for the bus was too long",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "FOR",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "WAIT": {
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "WAIT-0",
+        "FOR-1",
+        "THE",
+        "DOG-2",
+        "WAS",
+        "HARD"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WAIT-N1",
+      "WORD": "WAIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WAIT-V1": {
+      "CAT": "V",
+      "DEF": "phrasal: x waited for y = x awaited event y",
+      "EX": "x is waiting (for the bus) (for the start of the play)",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "FOR",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "WAIT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "WAITED-0",
+        "FOR-2",
+        "HIS",
+        "BRIDE-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WAIT-V1",
+      "WORD": "WAIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WAIT-V2": {
+      "CAT": "V",
+      "DEF": "X wait for Y to Z",
+      "EX": "x is waiting for me to arrive",
+      "COMMENTS": "the for-PP and xcomp are obligatory",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "FOR",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        },
+        "XCOMP": {
+          "ROOT": "$VAR4",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "WAIT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR4": {
+          "SEM": "EVENT",
+          "AGENT-1": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR3",
+          "^$VAR4"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "WAITED-0",
+        "FOR-2",
+        "THE",
+        "DOG-3",
+        "TO",
+        "HIT-4",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "XCOMP",
+          "$VAR0",
+          "$VAR4"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "XSUBJ",
+          "$VAR4",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WAIT-V2",
+      "WORD": "WAIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WAIT-V3": {
+      "CAT": "V",
+      "DEF": "phrasal: wait on tables [s.o.'s table] = act as a server",
+      "EX": "x waits on tables",
+      "COMMENTS": "[D] 'wait tables' permits there to be no 'on', whereas 'wait on s.o.'s table' does not;  I did not split senses, however, since this will be important only when we get to generation",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "ON",
+          "OPT": "+"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "ROOT-WORD": "TABLE"
+        }
+      },
+      "SEM-STRUC": {
+        "WORK-ACTIVITY": {
+          "AGENT": {
+            "VALUE": "^$VAR1",
+            "SEM": "SERVER"
+          },
+          "LOCATION": "WAITERED-RESTAURANT"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "TRAINEE-1",
+        "WAITED-0",
+        "ON-3",
+        "MY",
+        "TABLE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WAIT-V3",
+      "WORD": "WAIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WAIT-V5": {
+      "CAT": "V",
+      "DEF": "phrasal: x waited to y = x postponed action y",
+      "EX": "let's wait to order",
+      "COMMENTS": "[D] usage without an xcomp - e.g., let's wait - is covered by wait-v1",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "XCOMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "POSTPONE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR2": {
+          "SEM": "EVENT",
+          "AGENT-1": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "WAITED-0",
+        "TO",
+        "ORDER-2",
+        "THE",
+        "FOOD"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "XCOMP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "XSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WAIT-V5",
+      "WORD": "WAIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WAIT-V6": {
+      "CAT": "V",
+      "DEF": "phrasal: x waited to y = x awaited a perception event y",
+      "EX": "he waited to see the plane leave the runway",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "XCOMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "WAIT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR2": {
+          "SEM": "PERCEPTUAL-EVENT",
+          "AGENT-1": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "WAITED-0",
+        "TO",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WAIT-V6",
+      "WORD": "WAIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WAIT-V7": {
+      "CAT": "V",
+      "DEF": "phrasal: wait out X (event) = wait for X to stop",
+      "EX": "they decided to wait out the rain",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT-WORD": "OUT",
+          "ROOT": "$VAR2",
+          "CAT": "PREP"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "WAIT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "ASPECT": {
+            "PHASE": "END",
+            "SCOPE": {
+              "VALUE": "^$VAR3"
+            }
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "WAITED-0",
+        "OUT-2",
+        "THE",
+        "RAIN-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "DET",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "NSUBJ",
+          "$VAR2",
+          "$VAR0"
+        ],
+        [
+          "XCOMP",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "XSUBJ",
+          "$VAR3",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WAIT-V7",
+      "WORD": "WAIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WAIT-V4": {
+      "CAT": "V",
+      "DEF": "to act as a server for customers",
+      "EX": "x waited on them",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "ON",
+          "CAT": "PREP"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "SERVE": {
+          "AGENT": {
+            "VALUE": "^$VAR1",
+            "SEM": "SERVER"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          },
+          "LOCATION": "WAITERED-RESTAURANT"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "SERVER-1",
+        "WAITED-0",
+        "ON-2",
+        "THEM-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WAIT-V4",
+      "WORD": "WAIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

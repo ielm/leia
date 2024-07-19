@@ -1,0 +1,53 @@
+{
+  "word": "TRAFFIC",
+  "senses": {
+    "TRAFFIC-N1": {
+      "CAT": "N",
+      "DEF": "the movement of vechicles on roads",
+      "EX": "How's traffic on 695 today?",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "TRAFFIC",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TRAFFIC-N1",
+      "WORD": "TRAFFIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "TRAFFIC-N2": {
+      "CAT": "N",
+      "DEF": "the slow movement of vehicles on roads",
+      "EX": "Oh, the traffic out there!",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "TRAFFIC-CONGESTION",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "BAD_TRAFFIC",
+        "HEAVY_TRAFFIC",
+        "CONGESTION"
+      ],
+      "SENSE": "TRAFFIC-N2",
+      "WORD": "TRAFFIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

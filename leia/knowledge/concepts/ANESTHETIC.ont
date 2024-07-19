@@ -1,0 +1,24 @@
+{
+  "name": "@ANESTHETIC",
+  "isa": [
+    "@DRUG"
+  ],
+  "def": "An agent that causes loss of sensation with or without the loss of consciousness.",
+  "local": [],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    }
+  ],
+  "private": {}
+}

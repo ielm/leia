@@ -1,0 +1,11 @@
+{
+  "name": "@BUY",
+  "isa": [
+    "@ACQUIRE",
+    "@EVERYDAY-FINANCIAL-EVENT"
+  ],
+  "def": "A transfer of possession event (buying or selling) that involves the exchange of money for merchandise.",
+  "local": [],
+  "block": [],
+  "private": {}
+}

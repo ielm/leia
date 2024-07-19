@@ -1,0 +1,49 @@
+{
+  "word": "FIBER",
+  "senses": {
+    "FIBER-N1": {
+      "CAT": "N",
+      "DEF": "coarse, indigestible plant matter, consisting primarily of polysaccharides such as cellulose, that when eaten stimulates intestinal peristalsis. also called bulk, roughage. ",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PLANT-DERIVED-FOODSTUFF",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FIBER-N1",
+      "WORD": "FIBER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FIBER-N2": {
+      "CAT": "N",
+      "DEF": "essential character;basic strength or toughness",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CHARACTERISTIC",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FIBER-N2",
+      "WORD": "FIBER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

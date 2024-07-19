@@ -1,0 +1,31 @@
+{
+  "word": "CHEMICAL_WARFARE",
+  "senses": {
+    "CHEMICAL_WARFARE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "WAR-ACTIVITY": {
+          "INSTRUMENT": "CHEMICAL-WEAPON"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CHEMICAL_WARFARE-N1",
+      "WORD": "CHEMICAL_WARFARE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

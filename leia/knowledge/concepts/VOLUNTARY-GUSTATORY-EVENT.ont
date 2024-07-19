@@ -1,0 +1,21 @@
+{
+  "name": "@VOLUNTARY-GUSTATORY-EVENT",
+  "isa": [
+    "@GUSTATORY-EVENT"
+  ],
+  "def": "voluntarily (actively) perceive something by tasting",
+  "local": [],
+  "block": [
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,62 @@
+{
+  "word": "RESISTANT",
+  "senses": {
+    "RESISTANT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "demonstrating opposition",
+      "EX": "the workers were resistant to the plan",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ",
+          "PP": {
+            "ROOT": "$VAR3",
+            "CAT": "PREP",
+            "ROOT-WORD": "TO",
+            "OPT": "+",
+            "OBJ": {
+              "ROOT": "$VAR2",
+              "CAT": "N"
+            }
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "OPPOSITION-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "RESISTANT-0",
+        "HUMAN-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RESISTANT-ADJ1",
+      "WORD": "RESISTANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@COMMODITY-EXCHANGE-CORPORATION",
+  "isa": [
+    "@INVESTMENT-CORPORATION"
+  ],
+  "def": "special open markets where commodity futures as well as current or spot futures are traded",
+  "local": [],
+  "block": [
+    {
+      "slot": "area-of-business-activity",
+      "facet": "sem",
+      "filler": "@INVESTMENT-EVENT"
+    }
+  ],
+  "private": {}
+}

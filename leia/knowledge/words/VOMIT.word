@@ -1,0 +1,80 @@
+{
+  "word": "VOMIT",
+  "senses": {
+    "VOMIT-V1": {
+      "CAT": "V",
+      "DEF": "To eject part or all of the contents of the stomach through the mouth, usually in a series of involuntary spasmic movements ",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "UP",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "VOMIT": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOG-1",
+        "VOMITED-0",
+        "UP-3",
+        "THE",
+        "BONE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [
+        "BARF",
+        "PUKE",
+        "PURGE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "VOMIT-V1",
+      "WORD": "VOMIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

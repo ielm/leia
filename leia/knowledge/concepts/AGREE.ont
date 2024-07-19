@@ -1,0 +1,22 @@
+{
+  "name": "@AGREE",
+  "isa": [
+    "@SPEECH-ACT"
+  ],
+  "def": "The event of establishing a contract to do something.",
+  "local": [
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@CONTRACT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

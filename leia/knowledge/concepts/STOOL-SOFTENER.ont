@@ -1,0 +1,24 @@
+{
+  "name": "@STOOL-SOFTENER",
+  "isa": [
+    "@DRUG"
+  ],
+  "def": "a drug that makes stools softer",
+  "local": [],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,541 @@
+{
+  "word": "HOPE",
+  "senses": {
+    "HOPE-N2": {
+      "CAT": "N",
+      "DEF": "desire",
+      "EX": "the hope of every boy is to be a professional ball player",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OBJ": {
+            "ROOT": "$VAR1",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "VOLITIVE",
+          "VALUE": 1,
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "MODALITY-1": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0.5,
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "HOPE-0",
+        "OF-2",
+        "THE",
+        "MAN-1",
+        "DISAPPOINTS"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "ASPIRATION"
+      ],
+      "HYPONYMS": [
+        "AMBITION",
+        "DREAM"
+      ],
+      "SENSE": "HOPE-N2",
+      "WORD": "HOPE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HOPE-V3": {
+      "CAT": "V",
+      "DEF": "want something uncertain, with xcomp",
+      "EX": "she hopes to go to Paris",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "XCOMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "VOLITIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          },
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "SEM": "EVENT",
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOG-1",
+        "HOPES-0",
+        "TO",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "XCOMP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "XSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HOPE-V3",
+      "WORD": "HOPE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HOPE-V4": {
+      "CAT": "V",
+      "DEF": "phrasal: it is hoped that X = unspecified subject wants something uncertain, X",
+      "EX": "she hopes to go to Paris",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "TYPE": "PRO",
+          "ROOT-WORD": "IT"
+        },
+        "ROOT": "$VAR3",
+        "CAT": "V",
+        "ROOT-WORD": "*BE*",
+        "V": {
+          "ROOT": "$VAR0",
+          "CAT": "V",
+          "FORM": "PAST-PARTICIPLE"
+        },
+        "COMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "VOLITIVE",
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          },
+          "VALUE": 1
+        },
+        "MODALITY-1": {
+          "TYPE": "EPISTEMIC",
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          },
+          "VALUE": 0.5
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "IT-1",
+        "IS-3",
+        "HOPED-0",
+        "THAT",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AUXPASS",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "NSUBJPASS",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HOPE-V4",
+      "WORD": "HOPE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HOPE-N1": {
+      "CAT": "N",
+      "DEF": "desire",
+      "EX": "her hope is to study law",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NMOD_POSS": [
+          [
+            "ROOT",
+            "$VAR1"
+          ],
+          [
+            "CAT",
+            [
+              "N",
+              "DET"
+            ]
+          ],
+          [
+            "POSSESSIVE",
+            "+"
+          ],
+          [
+            "OPT",
+            "+"
+          ],
+          [
+            "CASE",
+            [
+              [
+                "ROOT",
+                "$VAR9"
+              ],
+              [
+                "ROOT",
+                "*QUOTE*S"
+              ],
+              [
+                "CAT",
+                "POSSESSIVE"
+              ],
+              [
+                "OPT",
+                "+"
+              ]
+            ]
+          ]
+        ],
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "VOLITIVE",
+          "VALUE": 1,
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "MODALITY-1": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0.5,
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR9": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "DISCUSSED",
+        "THE",
+        "WOMAN-1",
+        "*QUOTE*S-9",
+        "HOPE-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "ASPIRATION"
+      ],
+      "HYPONYMS": [
+        "AMBITION",
+        "DREAM"
+      ],
+      "SENSE": "HOPE-N1",
+      "WORD": "HOPE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HOPE-V1": {
+      "CAT": "V",
+      "DEF": "want something uncertain, with comp",
+      "EX": "she hopes (that) he'll come",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "COMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "VOLITIVE",
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          },
+          "VALUE": 1,
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "HOPES-0",
+        "THAT",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HOPE-V1",
+      "WORD": "HOPE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HOPE-V2": {
+      "CAT": "V",
+      "DEF": "want something uncertain, with 'for' pp",
+      "EX": "we hoped for rain",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "FOR",
+          "CAT": "PREP"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "VOLITIVE",
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          },
+          "VALUE": 1,
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "HOPES-0",
+        "FOR-3",
+        "THE",
+        "WAR-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HOPE-V2",
+      "WORD": "HOPE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HOPE-V101": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "...I hope to.",
+      "COMMENTS": "works with VP ellipsis",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDINGS": "T",
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "TO": [
+          [
+            "ROOT",
+            "$VAR2"
+          ],
+          [
+            "CAT",
+            "TO"
+          ],
+          [
+            "ROOT",
+            "TO"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0.5,
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "I-1",
+        "HOPE-0",
+        "TO-2"
+      ],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-EVENT",
+          "EVENT-VPE",
+          "CASE-ROLE",
+          "^$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HOPE-V101",
+      "WORD": "HOPE",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": []
+    }
+  }
+}

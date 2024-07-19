@@ -1,0 +1,139 @@
+{
+  "word": "HOMOSEXUAL",
+  "senses": {
+    "HOMOSEXUAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "describes a person with homosexual sexual orientation",
+      "EX": "Her teacher is homosexual",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "HUMAN",
+          "SEXUAL-ORIENTATION": "HOMOSEXUAL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "GAY-0",
+        "HUMAN-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "HOMOEROTIC",
+        "GAY",
+        "QUEER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "HOMOSEXUAL-ADJ1",
+      "WORD": "HOMOSEXUAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HOMOSEXUAL-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "related to people who are homosexual; applied to non-humans",
+      "EX": "a homosexual bar",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": {
+              "VALUE": "REFSEM2"
+            },
+            "CARDINALITY": [
+              ">=",
+              1
+            ]
+          }
+        },
+        "REFSEM2": {
+          "HUMAN": {
+            "SEXUAL-ORIENTATION": "HOMOSEXUAL"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "GAY-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "GAY",
+        "QUEER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "HOMOSEXUAL-ADJ2",
+      "WORD": "HOMOSEXUAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HOMOSEXUAL-N1": {
+      "CAT": "N",
+      "DEF": "a person who is has homosexual sexual orientation",
+      "EX": "He is a homosexual",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "SEXUAL-ORIENTATION": "HOMOSEXUAL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "GAY",
+        "QUEER",
+        "FAG"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "HOMOSEXUAL-N1",
+      "WORD": "HOMOSEXUAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

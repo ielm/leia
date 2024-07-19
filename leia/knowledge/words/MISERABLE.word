@@ -1,0 +1,39 @@
+{
+  "word": "MISERABLE",
+  "senses": {
+    "MISERABLE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "miserable result",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MISERABLE-ADJ1",
+      "WORD": "MISERABLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "word": "NOVEL",
+  "senses": {
+    "NOVEL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "of a high degree of novelty",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "NOVELTY": [
+            ">",
+            0.7
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "NOVEL-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NOVEL-ADJ1",
+      "WORD": "NOVEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "NOVEL-N1": {
+      "CAT": "N",
+      "DEF": "a relatively long fictional prose narrative; also the style of such a narrative, in which the plot is unfolded by the actions, speech, and thoughts of the characters",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LITERARY-COMPOSITION": {
+          "HAS-STYLE": "NOVEL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "HISTORICAL_NOVEL"
+      ],
+      "SENSE": "NOVEL-N1",
+      "WORD": "NOVEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "NOVEL-N2": {
+      "CAT": "N",
+      "DEF": "the literary genre novel -- i.e., relatively long fictional prose   in the style of a narrative",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "NOVEL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "HISTORICAL_NOVEL"
+      ],
+      "SENSE": "NOVEL-N2",
+      "WORD": "NOVEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

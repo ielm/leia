@@ -1,0 +1,67 @@
+{
+  "name": "@GROWL",
+  "isa": [
+    "@ANIMAL-NOISE-MAKING"
+  ],
+  "def": "to make the vibrant, angry sound of a canine",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@CANINE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@FELINE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@FELINE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@CANINE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "not",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "not",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

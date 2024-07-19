@@ -1,0 +1,27 @@
+{
+  "name": "@TYPESET",
+  "isa": [
+    "@PRINTING-ACTIVITY"
+  ],
+  "def": "Work activity which involves setting things in type",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@TYPESETTER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@WORK-ROLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@IMPLEMENT"
+    }
+  ],
+  "private": {}
+}

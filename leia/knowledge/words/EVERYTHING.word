@@ -1,0 +1,49 @@
+{
+  "word": "EVERYTHING",
+  "senses": {
+    "EVERYTHING-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "everything is done.",
+      "COMMENTS": "[D] the meaning procedure here is a bit different since there's no explicit set involved that can be recovered from the context. needs special attention",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "CARDINALITY": 1,
+          "COMPLETE": "YES",
+          "MEMBER-TYPE": {
+            "SEM": "OBJECT",
+            "SEM-1": [
+              "NOT",
+              "ANIMATE"
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          [
+            "SET",
+            1
+          ]
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "EVERY_SINGLE_THING"
+      ],
+      "SENSE": "EVERYTHING-N1",
+      "WORD": "EVERYTHING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

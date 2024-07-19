@@ -1,0 +1,16 @@
+{
+  "name": "@STEER",
+  "isa": [
+    "@DRIVE"
+  ],
+  "def": "to direct the course of a vehicle",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@CONTROL-EVENT-SOCIAL"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

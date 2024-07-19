@@ -1,0 +1,21 @@
+{
+  "name": "@TRANSPORTATION-LOCATION",
+  "isa": [
+    "@PLACE"
+  ],
+  "def": "a place where vehicles park, pick up passengers, etc.",
+  "local": [
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

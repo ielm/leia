@@ -1,0 +1,32 @@
+{
+  "word": "SEMI_SWEET_CHOCOLATE",
+  "senses": {
+    "SEMI_SWEET_CHOCOLATE-N1": {
+      "CAT": "N",
+      "DEF": "Pure cocoa liquor with extra cocoa butter and some sugar",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CHOCOLATE": {
+          "HAS-OBJECT-AS-PART": "SUGAR",
+          "SWEETNESS": 0.8
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SEMI_SWEET_CHOCOLATE-N1",
+      "WORD": "SEMI_SWEET_CHOCOLATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

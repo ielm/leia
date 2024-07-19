@@ -1,0 +1,46 @@
+{
+  "word": "INNOCENT",
+  "senses": {
+    "INNOCENT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "not guilty of any crime",
+      "EX": "the judge found him innocent",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "CRIMINAL-ACTIVITY": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INNOCENT-ADJ1",
+      "WORD": "INNOCENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

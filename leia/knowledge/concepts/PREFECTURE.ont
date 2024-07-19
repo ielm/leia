@@ -1,0 +1,41 @@
+{
+  "name": "@PREFECTURE",
+  "isa": [
+    "@SMALL-GEOPOLITICAL-ENTITY"
+  ],
+  "def": "in japan, the largest unit of government below the national level--there are 47 of these in all. They are larger than cities, towns, and villages, and typically also larger than counties and provinces.",
+  "local": [],
+  "block": [
+    {
+      "slot": "in-city",
+      "facet": "sem",
+      "filler": "@CITY"
+    },
+    {
+      "slot": "in-county",
+      "facet": "sem",
+      "filler": "@COUNTY"
+    },
+    {
+      "slot": "in-province",
+      "facet": "sem",
+      "filler": "@PROVINCE"
+    },
+    {
+      "slot": "in-state",
+      "facet": "sem",
+      "filler": "@STATE"
+    },
+    {
+      "slot": "in-town",
+      "facet": "sem",
+      "filler": "@TOWN"
+    },
+    {
+      "slot": "in-village",
+      "facet": "sem",
+      "filler": "@VILLAGE"
+    }
+  ],
+  "private": {}
+}

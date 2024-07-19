@@ -1,0 +1,27 @@
+{
+  "name": "@DIRECTORY",
+  "isa": [
+    "@BOOK-DOCUMENT"
+  ],
+  "def": "a book listing the names, addresses, etc. of a specific group of persons, businesses, etc.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@NAME-HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

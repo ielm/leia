@@ -1,0 +1,31 @@
+{
+  "word": "SMUGGLER",
+  "senses": {
+    "SMUGGLER-N1": {
+      "CAT": "N",
+      "DEF": "person who smuggles",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CRIMINAL": {
+          "AGENT-OF": "SMUGGLE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SMUGGLER-N1",
+      "WORD": "SMUGGLER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

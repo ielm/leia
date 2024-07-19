@@ -1,0 +1,35 @@
+{
+  "name": "@AGRICULTURAL-PRODUCT",
+  "isa": [
+    "@MATERIAL"
+  ],
+  "def": "products produced on a farm such as crops or livestock, before they become ingestibles or derived-substances",
+  "local": [
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@GAS"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "semi-solid"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,38 @@
+{
+  "word": "CONSTABULARY",
+  "senses": {
+    "CONSTABULARY-N1": {
+      "CAT": "N",
+      "DEF": "the district where given peace officers work",
+      "EX": "",
+      "COMMENTS": "[D] I'm mapping directly to area where police-officers work; don't think the difference in power is relevant for our grain size",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "DISTRICT": {
+          "LOCATION-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "WORK-ACTIVITY": {
+            "AGENT": "POLICE-OFFICER"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONSTABULARY-N1",
+      "WORD": "CONSTABULARY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

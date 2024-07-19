@@ -1,0 +1,21 @@
+{
+  "name": "@TISSUE",
+  "isa": [
+    "@ANATOMICAL-STRUCTURE"
+  ],
+  "def": "Anatomical structure, which consists of similarly specialized cells and intercellular matrix, aggregated according to genetically determined spatial relationships",
+  "local": [
+    {
+      "slot": "tissue-type",
+      "facet": "sem",
+      "filler": "benign"
+    },
+    {
+      "slot": "tissue-type",
+      "facet": "sem",
+      "filler": "malignant"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@MONGOOSE",
+  "isa": [
+    "@MAMMAL"
+  ],
+  "def": "Any of various Old World carnivorous mammals having a slender agile body and a long tail and noted for the ability to seize and kill venomous snakes.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PAW"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

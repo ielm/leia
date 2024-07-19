@@ -1,0 +1,21 @@
+{
+  "name": "@RIPPLE",
+  "isa": [
+    "@NATURAL-EVENT"
+  ],
+  "def": "to have or form little waves on the surface of",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

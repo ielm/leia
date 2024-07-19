@@ -1,0 +1,240 @@
+{
+  "word": "PERIOD",
+  "senses": {
+    "PERIOD-N1": {
+      "CAT": "N",
+      "DEF": "refers to time - no complement of any kind",
+      "EX": "during this period, he created good art; may you live in interesting times",
+      "COMMENTS": "hyponym saga: ex. a four-month saga",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "TIME-INTERVAL-UNIT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "PERIOD_OF_TIME",
+        "TIME"
+      ],
+      "HYPONYMS": [
+        "SAGA"
+      ],
+      "SENSE": "PERIOD-N1",
+      "WORD": "PERIOD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PERIOD-N2": {
+      "CAT": "N",
+      "DEF": "refers to time - an 'of' complement",
+      "EX": "during periods of growth, people buy more",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "TIME-INTERVAL-UNIT": {
+          "TIME-OF": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "PERIOD-0",
+        "OF-1",
+        "GROWTH-2",
+        "ENDED"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "NSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "TIME"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PERIOD-N2",
+      "WORD": "PERIOD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PERIOD-N3": {
+      "CAT": "N",
+      "DEF": "refers to time - a 'when' complement",
+      "EX": "during the period when this all started, ...",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "CONJ": {
+          "ROOT-WORD": "WHEN",
+          "ROOT": "$VAR1",
+          "CAT": "CONJ"
+        },
+        "CL": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "TIME-INTERVAL-UNIT": {
+          "TIME-OF": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "PERIOD-0",
+        "WHEN-1",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING",
+        "WAS",
+        "SHORT"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "PERIOD_OF_TIME",
+        "TIME"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PERIOD-N3",
+      "WORD": "PERIOD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PERIOD-N4": {
+      "CAT": "N",
+      "DEF": "a punctuation mark",
+      "EX": "you forgot the period at the end of this sentence",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "TEXT-CHARACTER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PERIOD-N4",
+      "WORD": "PERIOD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PERIOD-N5": {
+      "CAT": "N",
+      "DEF": "phrasal: a period of + X (temporal object) = X",
+      "EX": "He thought about it for a period of ten minutes",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR3",
+      "SYN-STRUC": {
+        "ART": {
+          "ROOT": "$VAR1",
+          "CAT": "ART",
+          "ROOT-WORD": "A"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "A-1",
+        "PERIOD-0",
+        "OF-2",
+        "THE",
+        "MAN-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PERIOD-N5",
+      "WORD": "PERIOD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

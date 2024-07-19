@@ -1,0 +1,9 @@
+{
+  "name": "$GEOPOLITICAL-RELATION",
+  "def": "relations which pertain to geographical entities",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$RELATION"
+}

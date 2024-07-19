@@ -1,0 +1,46 @@
+{
+  "word": "REVOLVING",
+  "senses": {
+    "REVOLVING-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "changing at regular intervals",
+      "EX": "revolving schedule",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "ITERATION": "MULTIPLE",
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR1": {
+          "THEME-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": [
+          "CHANGE-EVENT"
+        ]
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "REVOLVING-ADJ1",
+      "WORD": "REVOLVING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

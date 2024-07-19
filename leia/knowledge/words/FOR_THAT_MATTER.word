@@ -1,0 +1,41 @@
+{
+  "word": "FOR_THAT_MATTER",
+  "senses": {
+    "FOR_THAT_MATTER-ADV1": {
+      "CAT": "ADV",
+      "DEF": "rhetorical use; no sem-struc for now",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "FOR_THAT_MATTER-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FOR_THAT_MATTER-ADV1",
+      "WORD": "FOR_THAT_MATTER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

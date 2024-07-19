@@ -1,0 +1,31 @@
+{
+  "word": "MANUFACTURER",
+  "senses": {
+    "MANUFACTURER-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CORPORATION": {
+          "AGENT-OF": "MANUFACTURING-ACTIVITY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MANUFACTURER-N1",
+      "WORD": "MANUFACTURER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

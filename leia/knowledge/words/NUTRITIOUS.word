@@ -1,0 +1,36 @@
+{
+  "word": "NUTRITIOUS",
+  "senses": {
+    "NUTRITIOUS-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "something providing nourishment",
+      "EX": "",
+      "COMMENTS": "[D] protein, minerals, good carbs, etc. are also nutrients - but I won't develop the whole subtree yet",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "INGESTIBLE",
+          "HAS-OBJECT-AS-PART": "VITAMIN"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NUTRITIOUS-ADJ1",
+      "WORD": "NUTRITIOUS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

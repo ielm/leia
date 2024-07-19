@@ -1,0 +1,153 @@
+{
+  "word": "PRODUCTION",
+  "senses": {
+    "PRODUCTION-N2": {
+      "CAT": "N",
+      "DEF": "a play, show, etc.",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "ENTERTAIN-EVENT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRODUCTION-N2",
+      "WORD": "PRODUCTION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PRODUCTION-N1": {
+      "CAT": "N",
+      "DEF": "the bringing into being of physical things",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "PRODUCE": {
+          "AGENT": {
+            "VALUE": "^$VAR4"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SECRETION-0",
+        "OF-1",
+        "THE",
+        "TABLE-2",
+        "BY-3",
+        "THE",
+        "WORK-ROLE-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "SECRETION"
+      ],
+      "SENSE": "PRODUCTION-N1",
+      "WORD": "PRODUCTION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PRODUCTION-N3": {
+      "CAT": "N",
+      "DEF": "in the compound N + production",
+      "EX": "steel production",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PRODUCE": {
+          "THEME": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "TABLE-1",
+        "SECRETION-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "SECRETION"
+      ],
+      "SENSE": "PRODUCTION-N3",
+      "WORD": "PRODUCTION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

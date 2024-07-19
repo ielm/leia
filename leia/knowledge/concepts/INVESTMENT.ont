@@ -1,0 +1,22 @@
+{
+  "name": "@INVESTMENT",
+  "isa": [
+    "@ASSET"
+  ],
+  "def": "any venture in which money is invested",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MONEY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

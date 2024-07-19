@@ -1,0 +1,122 @@
+{
+  "name": "@ATTEND",
+  "isa": [
+    "@COOPERATIVE-EVENT"
+  ],
+  "def": "to be present at a function or gathering",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DEMONSTRATE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ENTERTAIN-EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EXAMINATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MEETING"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EAT-MEAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OUTING-EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SPORTS-COMPETITION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SPECIAL-OCCASION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COMPETE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HEARING"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CORONATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@STRIKE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@AUCTION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@RELEASE-MEDIA-WORK"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PLANNING-EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GATHER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ACADEMIC-ORGANIZATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@RELIGIOUS-ORGANIZATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

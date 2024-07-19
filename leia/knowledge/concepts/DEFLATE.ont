@@ -1,0 +1,92 @@
+{
+  "name": "@DEFLATE",
+  "isa": [
+    "@EXTRACT"
+  ],
+  "def": "to remove a gas from",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TIRE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SWIMMING-POOL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BALLOON"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PNEUMATIC-BALLOON"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LUNG"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIFE-PRESERVER"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@EGO"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@IMPLEMENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ROPE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@STRING"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TOOTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TWEEZERS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

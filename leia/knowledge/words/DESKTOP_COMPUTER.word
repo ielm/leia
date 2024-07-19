@@ -1,0 +1,36 @@
+{
+  "word": "DESKTOP_COMPUTER",
+  "senses": {
+    "DESKTOP_COMPUTER-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PERSONAL-COMPUTER": {
+          "WEIGHT": {
+            ">": 20,
+            "MEASURING-UNIT": "POUND"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "DESKTOP"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DESKTOP_COMPUTER-N1",
+      "WORD": "DESKTOP_COMPUTER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

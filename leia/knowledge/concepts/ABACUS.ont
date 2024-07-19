@@ -1,0 +1,16 @@
+{
+  "name": "@ABACUS",
+  "isa": [
+    "@CALCULATOR"
+  ],
+  "def": "a device to help people add and subtract; made of a set of beads strung on rods",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

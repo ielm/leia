@@ -1,0 +1,33 @@
+{
+  "word": "JEWELBOX",
+  "senses": {
+    "JEWELBOX-N1": {
+      "CAT": "N",
+      "DEF": "a box for jewelry",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BOX": {
+          "CONTAINS": "JEWELRY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "JEWELRY_BOX"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "JEWELBOX-N1",
+      "WORD": "JEWELBOX",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "word": "RUBBER",
+  "senses": {
+    "RUBBER-N1": {
+      "CAT": "N",
+      "DEF": "natural rubber",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "RUBBER-NATURAL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "NATURAL_RUBBER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "RUBBER-N1",
+      "WORD": "RUBBER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RUBBER-N2": {
+      "CAT": "N",
+      "DEF": "synthetic rubber",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SYNTHETIC-RUBBER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RUBBER-N2",
+      "WORD": "RUBBER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

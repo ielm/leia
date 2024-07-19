@@ -1,0 +1,9 @@
+{
+  "name": "$EXPORT-AMOUNT",
+  "def": "the price of goods that are exported out of a country to be sold",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

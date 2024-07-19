@@ -1,0 +1,31 @@
+{
+  "word": "ATTIC_FAN",
+  "senses": {
+    "ATTIC_FAN-N1": {
+      "CAT": "N",
+      "DEF": "a device that blows hot air out of an attic",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "FAN": {
+          "LOCATION": "ATTIC"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ATTIC_FAN-N1",
+      "WORD": "ATTIC_FAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "word": "TWO_MILLIONTH",
+  "senses": {
+    "TWO_MILLIONTH-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "ORDINALITY": 2000000
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "2000000TH-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "2000000TH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "TWO_MILLIONTH-ADJ1",
+      "WORD": "TWO_MILLIONTH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

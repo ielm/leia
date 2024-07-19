@@ -1,0 +1,68 @@
+{
+  "word": "EAVESDROP",
+  "senses": {
+    "EAVESDROP-V1": {
+      "CAT": "V",
+      "DEF": "to spy on, listening to conversations secretly",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "ON",
+          "CAT": "PREP",
+          "OPT": "+",
+          "ROOT": "$VAR2",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SPY-ON": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          },
+          "INSTRUMENT": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "VOLUNTARY-AUDITORY-EVENT": {
+            "SECRECY-ATTRIBUTE": 1
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "SPY-1",
+        "EAVESDROPPED-0",
+        "ON-2",
+        "THE",
+        "MAN-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EAVESDROP-V1",
+      "WORD": "EAVESDROP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

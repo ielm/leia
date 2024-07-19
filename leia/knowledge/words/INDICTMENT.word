@@ -1,0 +1,87 @@
+{
+  "word": "INDICTMENT",
+  "senses": {
+    "INDICTMENT-N1": {
+      "CAT": "N",
+      "DEF": "action of indicting someone",
+      "EX": "the vote was an indictment (against the current administration) (for mismanagement) (by the voters)",
+      "COMMENTS": "resulting legal accusation is a distinct sense",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": [
+            "OF",
+            "AGAINST"
+          ],
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "FOR",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        },
+        "PP-2": {
+          "ROOT": "$VAR5",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR6",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "INDICT": {
+          "AGENT": {
+            "VALUE": "^$VAR6"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          },
+          "CAUSED-BY": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR4": {
+          "SEM": "CRIMINAL-ACTIVITY",
+          "AGENT-1": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INDICTMENT-N1",
+      "WORD": "INDICTMENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

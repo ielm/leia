@@ -1,0 +1,69 @@
+{
+  "word": "FINDING",
+  "senses": {
+    "FINDING-N1": {
+      "CAT": "N",
+      "DEF": "a conclusion reached after analysis, etc.",
+      "EX": "the findings (of the investigation) are listed in the report",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "INFORMATION": {
+          "THEME-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "DETERMINE": {
+            "AGENT": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE",
+        "READ",
+        "THE",
+        "FINDINGS-0",
+        "OF-1",
+        "THE",
+        "PROFESSOR-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "CONCLUSION"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FINDING-N1",
+      "WORD": "FINDING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

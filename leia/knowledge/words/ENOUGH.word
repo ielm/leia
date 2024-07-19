@@ -1,0 +1,50 @@
+{
+  "word": "ENOUGH",
+  "senses": {
+    "ENOUGH-ADV1": {
+      "CAT": "ADV",
+      "DEF": "modifying an adjective, of sufficient degree",
+      "EX": "he is strong enough to return to work",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "ADJ",
+        "ADV": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATIVE-TO-NORM": [
+            ">",
+            0.4
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "RAN",
+        "FAST-0",
+        "ENOUGH-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ENOUGH-ADV1",
+      "WORD": "ENOUGH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

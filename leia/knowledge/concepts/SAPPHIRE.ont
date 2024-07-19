@@ -1,0 +1,27 @@
+{
+  "name": "@SAPPHIRE",
+  "isa": [
+    "@GEMSTONE"
+  ],
+  "def": "a clear hard variety of corundum used as a gemstone; usually blue but may be any color except red",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "default",
+      "filler": "blue"
+    },
+    {
+      "slot": "color",
+      "facet": "not",
+      "filler": "red"
+    }
+  ],
+  "block": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "blue"
+    }
+  ],
+  "private": {}
+}

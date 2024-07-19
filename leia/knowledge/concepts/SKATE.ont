@@ -1,0 +1,27 @@
+{
+  "name": "@SKATE",
+  "isa": [
+    "@SPORT-ARTIFACT"
+  ],
+  "def": "shoes covered on the bottom by wheels or thin blades, used for transportation on cement or ice.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BLADE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SHOE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

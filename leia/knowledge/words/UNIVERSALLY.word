@@ -1,0 +1,47 @@
+{
+  "word": "UNIVERSALLY",
+  "senses": {
+    "UNIVERSALLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "done, used, etc., by everyone",
+      "EX": "This opinion is not universally accepted",
+      "COMMENTS": "I used case-role rather than agent + fix-case-role because I couldn't get the validator to accept the structure (^$var1 (refsem1 (agent ...))), since I needed to refer to namely the agent case-role in the MP, but there was no associated variable. Eventually we need to actually add the MP",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "CASE-ROLE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": "HUMAN",
+            "TYPE": "COMPLETE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "BY_EVERYONE",
+        "BY_EVERYBODY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "UNIVERSALLY-ADV1",
+      "WORD": "UNIVERSALLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

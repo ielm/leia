@@ -1,0 +1,72 @@
+{
+  "name": "@WHIRLWIND",
+  "isa": [
+    "@STORM"
+  ],
+  "def": "A rapidly rotating, generally vertical column of air, such as a tornado, dust devil, or waterspout.",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@WIND"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@CLOUD"
+    },
+    {
+      "slot": "destination",
+      "facet": "sem",
+      "filler": "@GEOLOGICAL-ENTITY"
+    },
+    {
+      "slot": "destination",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "destination",
+      "facet": "not",
+      "filler": "@EARTH-CORE"
+    },
+    {
+      "slot": "destination",
+      "facet": "not",
+      "filler": "@EARTH-SURFACE"
+    },
+    {
+      "slot": "destination",
+      "facet": "not",
+      "filler": "@SEA"
+    },
+    {
+      "slot": "destination",
+      "facet": "not",
+      "filler": "@TRANSNATIONAL-ENTITY"
+    },
+    {
+      "slot": "destination",
+      "facet": "not",
+      "filler": "@UNDERWATER-GEOLOGICAL-ENTITY"
+    },
+    {
+      "slot": "destination",
+      "facet": "not",
+      "filler": "@WATER-TABLE"
+    },
+    {
+      "slot": "destination",
+      "facet": "not",
+      "filler": "@WORLD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@NATURAL-EVENT"
+    }
+  ],
+  "private": {}
+}

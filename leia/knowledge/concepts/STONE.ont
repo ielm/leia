@@ -1,0 +1,19 @@
+{
+  "name": "@STONE",
+  "isa": [
+    "@MASS-WEIGHT-UNIT"
+  ],
+  "def": "unit of weight in the Imperial system of weights and measures, equivalent to 6.35 kilograms; 14*pound",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        6.35029318
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,157 @@
+{
+  "word": "BEHAVIOR",
+  "senses": {
+    "BEHAVIOR-N2": {
+      "CAT": "N",
+      "DEF": "conduct",
+      "EX": "the behavior of his children is admirable",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "BEHAVE": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "BEHAVIOR-0",
+        "OF-1",
+        "THE",
+        "HUMAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "CONDUCT"
+      ],
+      "HYPONYMS": [
+        "LIFESTYLE"
+      ],
+      "SENSE": "BEHAVIOR-N2",
+      "WORD": "BEHAVIOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BEHAVIOR-N1": {
+      "CAT": "N",
+      "DEF": "conduct",
+      "EX": "his children's conduct is admirable",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NMOD_POSS": [
+          [
+            "ROOT",
+            "$VAR1"
+          ],
+          [
+            "CAT",
+            [
+              "N",
+              "DET"
+            ]
+          ],
+          [
+            "POSSESSIVE",
+            "+"
+          ],
+          [
+            "OPT",
+            "+"
+          ],
+          [
+            "CASE",
+            [
+              [
+                "ROOT",
+                "$VAR9"
+              ],
+              [
+                "ROOT",
+                "*QUOTE*S"
+              ],
+              [
+                "CAT",
+                "POSSESSIVE"
+              ],
+              [
+                "OPT",
+                "+"
+              ]
+            ]
+          ]
+        ],
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BEHAVE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR9": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "DISCUSSED",
+        "THE",
+        "WOMAN-1",
+        "*QUOTE*S-9",
+        "BEHAVIOR-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "MANNER",
+        "CONDUCT"
+      ],
+      "HYPONYMS": [
+        "LIFESTYLE"
+      ],
+      "SENSE": "BEHAVIOR-N1",
+      "WORD": "BEHAVIOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

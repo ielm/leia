@@ -1,0 +1,31 @@
+{
+  "word": "SUGAR_WATER",
+  "senses": {
+    "SUGAR_WATER-N1": {
+      "CAT": "N",
+      "DEF": "water with sugar",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "WATER": {
+          "HAS-OBJECT-AS-PART": "SUGAR"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SUGAR_WATER-N1",
+      "WORD": "SUGAR_WATER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

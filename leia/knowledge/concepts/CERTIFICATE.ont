@@ -1,0 +1,21 @@
+{
+  "name": "@CERTIFICATE",
+  "isa": [
+    "@BIT-STRING"
+  ],
+  "def": "an electronic document which is acceptable proof of identification",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "value",
+      "filler": "@PASSWORD"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "value",
+      "filler": "@USER-NAME"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

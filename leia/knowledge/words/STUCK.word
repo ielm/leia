@@ -1,0 +1,128 @@
+{
+  "word": "STUCK",
+  "senses": {
+    "STUCK-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "physically, difficult to move",
+      "EX": "my car is stuck in the mud; he's stuck in the doorway",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "POTENTIAL",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "CHANGE-LOCATION": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "REFSEM1"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "STUCK-0",
+        "ANIMAL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "JAMMED",
+        "IMMOVABLE",
+        "IMMOBILE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "STUCK-ADJ1",
+      "WORD": "STUCK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "STUCK-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "phrasal: stuck (with) Xing = restricted to doing X",
+      "EX": "my friends are out partying and I'm stuck (with) watching my sister",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ",
+          "PREP": {
+            "ROOT-WORD": "WITH",
+            "ROOT": "$VAR3",
+            "CAT": "PREP",
+            "OPT": "+"
+          },
+          "V": {
+            "ROOT": "$VAR2",
+            "CAT": "V",
+            "FORM": "PROGRESSIVE"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "RESTRICT": {
+          "BENEFICIARY": {
+            "VALUE": "^$VAR1"
+          },
+          "EFFECT": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR2": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "STUCK-0",
+        "GIRL-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "STUCK-ADJ2",
+      "WORD": "STUCK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

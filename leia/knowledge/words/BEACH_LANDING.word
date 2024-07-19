@@ -1,0 +1,33 @@
+{
+  "word": "BEACH_LANDING",
+  "senses": {
+    "BEACH_LANDING-N1": {
+      "CAT": "N",
+      "DEF": "arrival on a beach from the sea",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "COME": {
+          "SOURCE": "SEA",
+          "DESTINATION": "BEACH",
+          "INSTRUMENT": "WATER-VEHICLE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BEACH_LANDING-N1",
+      "WORD": "BEACH_LANDING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

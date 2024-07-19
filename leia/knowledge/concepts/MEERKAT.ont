@@ -1,0 +1,16 @@
+{
+  "name": "@MEERKAT",
+  "isa": [
+    "@MAMMAL"
+  ],
+  "def": "South African mongoose-like viverrine having a face like a lemur and only four toes.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PAW"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@ANIMATED-FILM",
+  "isa": [
+    "@FILM-MEDIA"
+  ],
+  "def": "a film made by photographing a series of drawings so that the figures in them seem to move",
+  "local": [],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    }
+  ],
+  "private": {}
+}

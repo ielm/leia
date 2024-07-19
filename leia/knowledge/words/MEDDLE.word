@@ -1,0 +1,59 @@
+{
+  "word": "MEDDLE",
+  "senses": {
+    "MEDDLE-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "IN",
+          "ROOT": "$VAR1",
+          "OPT": "+",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "INTERFERE": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-2",
+        "MEDDLED-0",
+        "IN-1",
+        "THE",
+        "MATCH-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MEDDLE-V1",
+      "WORD": "MEDDLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

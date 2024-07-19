@@ -1,0 +1,22 @@
+{
+  "name": "@GASOLINE",
+  "isa": [
+    "@OIL"
+  ],
+  "def": "a volatile, flammable liquid distilled from petroleum, used chiefly as fuel in internal-combustion engines",
+  "local": [
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "translucent"
+    }
+  ],
+  "block": [
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "opaque"
+    }
+  ],
+  "private": {}
+}

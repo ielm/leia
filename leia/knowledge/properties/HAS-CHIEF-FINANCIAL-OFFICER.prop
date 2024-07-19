@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-CHIEF-FINANCIAL-OFFICER",
+  "def": "The relation between an organization and its chief financial officer",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$CHIEF-FINANCIAL-OFFICER-OF",
+  "measured-in": [],
+  "container": "$BUSINESS-RELATION"
+}

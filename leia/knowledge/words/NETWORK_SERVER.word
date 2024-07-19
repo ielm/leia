@@ -1,0 +1,34 @@
+{
+  "word": "NETWORK_SERVER",
+  "senses": {
+    "NETWORK_SERVER-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "NETWORK-SERVER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "HOST",
+        "FILE_SERVER"
+      ],
+      "HYPONYMS": [
+        "DEDICATED_FILE_SERVER",
+        "WEB_SERVER",
+        "MAIL_SERVER"
+      ],
+      "SENSE": "NETWORK_SERVER-N1",
+      "WORD": "NETWORK_SERVER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "word": "DNA_FINGERPRINT",
+  "senses": {
+    "DNA_FINGERPRINT-N1": {
+      "CAT": "N",
+      "DEF": "an individual's dna pattern",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "DNA-FINGERPRINT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "GENETIC_FINGERPRINT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DNA_FINGERPRINT-N1",
+      "WORD": "DNA_FINGERPRINT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DNA_FINGERPRINT-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "(not actually used transitively, it seems, but used in nominals using the productive rules) the genetic fingerprinting of suspects",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "CREATE-ARTIFACT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "REFSEM1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "REFSEM1": {
+          "DNA-FINGERPRINT": {
+            "PART-OF-OBJECT": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "DNA_FINGERPRINTED-0",
+        "THE",
+        "CRIMINAL-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "GENETIC_FINGERPRINT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DNA_FINGERPRINT-V1",
+      "WORD": "DNA_FINGERPRINT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

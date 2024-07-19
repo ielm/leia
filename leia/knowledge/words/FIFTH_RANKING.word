@@ -1,0 +1,39 @@
+{
+  "word": "FIFTH_RANKING",
+  "senses": {
+    "FIFTH_RANKING-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "the 5th ranked",
+      "EX": "She's the fifth-ranking tennis player on the East Coast",
+      "COMMENTS": "ultimately, -ranking and -ranked need to become a meaning  procedure to cover all numbers",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RANK": 5
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "FIFTH_RANKING",
+        "FIFTH_RANKED",
+        "FIFTH-RANKED"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FIFTH_RANKING-ADJ1",
+      "WORD": "FIFTH_RANKING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

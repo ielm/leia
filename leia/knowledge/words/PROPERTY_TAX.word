@@ -1,0 +1,33 @@
+{
+  "word": "PROPERTY_TAX",
+  "senses": {
+    "PROPERTY_TAX-N1": {
+      "CAT": "N",
+      "DEF": "tax paid by owner of real property based on assessed value",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "TAX": {
+          "RELATION": "REAL-ESTATE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "REAL_ESTATE_TAX"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PROPERTY_TAX-N1",
+      "WORD": "PROPERTY_TAX",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

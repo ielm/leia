@@ -1,0 +1,16 @@
+{
+  "name": "@BOAR",
+  "isa": [
+    "@PIG"
+  ],
+  "def": "An uncastrated male pig.",
+  "local": [],
+  "block": [
+    {
+      "slot": "gender",
+      "facet": "sem",
+      "filler": "female"
+    }
+  ],
+  "private": {}
+}

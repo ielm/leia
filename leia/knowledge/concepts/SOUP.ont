@@ -1,0 +1,32 @@
+{
+  "name": "@SOUP",
+  "isa": [
+    "@APPETIZER"
+  ],
+  "def": "a liquid food made by cooking meat, vegetables, etc. in water or milk",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MEAT"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@VEGETABLE-FOODSTUFF"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@WATER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

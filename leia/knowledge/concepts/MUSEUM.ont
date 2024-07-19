@@ -1,0 +1,16 @@
+{
+  "name": "@MUSEUM",
+  "isa": [
+    "@INSTITUTIONAL-BUILDING"
+  ],
+  "def": "a building for preserving and exhibiting artistic or historical objects",
+  "local": [
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@FRIENDSHIP",
+  "isa": [
+    "@ABSTRACT-IDEA"
+  ],
+  "def": "the bond among two or more people",
+  "local": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@SOCIOLOGY"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@ANTHROPOLOGY"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

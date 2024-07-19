@@ -1,0 +1,27 @@
+{
+  "name": "@PHARMACOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "chronic fascination with medicines",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHARMACEUTICAL-MATERIAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

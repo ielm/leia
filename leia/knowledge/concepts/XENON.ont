@@ -1,0 +1,36 @@
+{
+  "name": "@XENON",
+  "isa": [
+    "@GASEOUS-ELEMENT"
+  ],
+  "def": "a colorless, odorless, highly unreactive gaseous element found in minute quantities in the atmosphere, extracted commercially from liquefied air, and used in stroboscopic, bactericidal, and laser-pumping lamps",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        131
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        54
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

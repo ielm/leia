@@ -1,0 +1,22 @@
+{
+  "name": "@COPRA-PROCESSING-CORPORATION",
+  "isa": [
+    "@PLANT-FARM"
+  ],
+  "def": "a corporation produces the coconut, from which oil is pressed for making products.",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@COCONUT-OIL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

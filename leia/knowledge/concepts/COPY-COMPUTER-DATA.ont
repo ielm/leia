@@ -1,0 +1,22 @@
+{
+  "name": "@COPY-COMPUTER-DATA",
+  "isa": [
+    "@DUPLICATE",
+    "@TRANSFER-DATA"
+  ],
+  "def": "to make a copy of computer-data for various purposes",
+  "local": [],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PRINTER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    }
+  ],
+  "private": {}
+}

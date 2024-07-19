@@ -1,0 +1,137 @@
+{
+  "word": "CHEAT",
+  "senses": {
+    "CHEAT-N1": {
+      "CAT": "N",
+      "DEF": "a person who cheats",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "AGENT-OF": "CHEAT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CHEAT-N1",
+      "WORD": "CHEAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CHEAT-V1": {
+      "CAT": "V",
+      "DEF": "to deceive by trickery",
+      "EX": "he cheated his clients",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "CHEAT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "CHEATED-0",
+        "HIS",
+        "CLIENTS-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SNOOKER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CHEAT-V1",
+      "WORD": "CHEAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CHEAT-V2": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "he cheated at cards (on his exam)",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": [
+            "AT",
+            "ON",
+            "IN"
+          ],
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "CHEAT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "EVENT"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "CRIMINAL-1",
+        "CHEATED-0",
+        "AT-3",
+        "THE",
+        "EXAMINATION-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CHEAT-V2",
+      "WORD": "CHEAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

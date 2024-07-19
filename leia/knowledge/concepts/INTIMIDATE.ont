@@ -1,0 +1,142 @@
+{
+  "name": "@INTIMIDATE",
+  "isa": [
+    "@CONTROL-EVENT-SOCIAL"
+  ],
+  "def": "to make afraid, as by threats",
+  "local": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@FEAR"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@THREATEN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CONVERSATION"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SLANDER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CRITICIZE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@INFORM"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COMMAND"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@INTERROGATE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@DEMAND"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MAKE-GESTURE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TEASE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBSTRUCT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "attribute",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "before",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "between-temporal",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "enablement",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

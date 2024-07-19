@@ -1,0 +1,76 @@
+{
+  "word": "DRUG",
+  "senses": {
+    "DRUG-N1": {
+      "CAT": "N",
+      "DEF": "a material used as a medicine to cure or get relief from ailments",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "DRUG",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "MEDICINE",
+        "MEDICATION"
+      ],
+      "HYPONYMS": [
+        "ANTIARRHYTHMIC",
+        "ANTIBACTERIAL",
+        "ANTIDEPRESSANT",
+        "ANTIDIABETIC",
+        "ANTIDIURETIC",
+        "ANTIHYPERTENSIVE",
+        "ANTIPROTOZOAL",
+        "ANTISEPTIC",
+        "ANTISPASMODIC",
+        "ANTIVIRAL",
+        "BLOCKER",
+        "BLOCKING_AGENT",
+        "BRONCHODILATOR",
+        "CODEINE",
+        "CYTOTOXIC_DRUG",
+        "DECONGESTANT",
+        "DILATOR",
+        "DIURETIC_DRUG",
+        "MORPHINE",
+        "SULFA_DRUG",
+        "CALCIUM_CHANNEL_BLOCKER",
+        "BETA_CLOCKER",
+        "VIOXX"
+      ],
+      "SENSE": "DRUG-N1",
+      "WORD": "DRUG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DRUG-N2": {
+      "CAT": "N",
+      "DEF": "a drug that is illegal to sell or possess, such as certain narcotics",
+      "EX": "leaders from the Americas met to discuss the drug problem",
+      "COMMENTS": "marge: differentiation from drug-n1 is difficult; should we just dispense with this?",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "ILLEGAL-DRUG",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DRUG-N2",
+      "WORD": "DRUG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

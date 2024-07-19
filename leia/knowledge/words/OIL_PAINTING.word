@@ -1,0 +1,38 @@
+{
+  "word": "OIL_PAINTING",
+  "senses": {
+    "OIL_PAINTING-N1": {
+      "CAT": "N",
+      "DEF": "a painting created using oil paint",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PAINTING": {
+          "THEME-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "PAINT": {
+            "INSTRUMENT": "OIL-PAINT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OIL_PAINTING-N1",
+      "WORD": "OIL_PAINTING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

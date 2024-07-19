@@ -1,0 +1,60 @@
+{
+  "word": "HATRED",
+  "senses": {
+    "HATRED-N1": {
+      "CAT": "N",
+      "DEF": "strong dislike",
+      "EX": "his hatred for/of all things worldly strikes me as odd",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR3",
+          "CAT": "N",
+          "POSSESSIVE": "+",
+          "OPT": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": [
+            "OF",
+            "FOR"
+          ],
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          },
+          "TYPE": "EVALUATIVE",
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR3"
+          },
+          "VALUE": 0
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HATRED-N1",
+      "WORD": "HATRED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

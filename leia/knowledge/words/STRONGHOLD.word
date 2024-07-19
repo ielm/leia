@@ -1,0 +1,35 @@
+{
+  "word": "STRONGHOLD",
+  "senses": {
+    "STRONGHOLD-N1": {
+      "CAT": "N",
+      "DEF": "a fortified position that is currently or was at one point stationed with troops. ",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FORT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "FORTIFICATION",
+        "FORTRESS",
+        "FORT",
+        "GARRISON",
+        "BASTION",
+        "PRESIDIO",
+        "CITADEL"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "STRONGHOLD-N1",
+      "WORD": "STRONGHOLD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

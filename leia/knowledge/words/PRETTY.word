@@ -1,0 +1,50 @@
+{
+  "word": "PRETTY",
+  "senses": {
+    "PRETTY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "relatively",
+      "EX": "he's pretty smart",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        },
+        "ROOT": "$VAR1",
+        "CAT": [
+          "ADJ",
+          "ADV"
+        ]
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "DELIMIT-SCALE",
+          "^$VAR1",
+          "MEAN",
+          0.1
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "PRETTY-0",
+        "GOOD-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRETTY-ADV1",
+      "WORD": "PRETTY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "word": "REPEATED",
+  "senses": {
+    "REPEATED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "occurring more than once",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "ITERATION": "MULTIPLE",
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "REPEATED-0",
+        "DISCUSSION-1",
+        "BORED",
+        "THE",
+        "MAN"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PARTMOD",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "RECURRENT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "REPEATED-ADJ1",
+      "WORD": "REPEATED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

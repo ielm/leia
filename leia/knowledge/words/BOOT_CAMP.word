@@ -1,0 +1,41 @@
+{
+  "word": "BOOT_CAMP",
+  "senses": {
+    "BOOT_CAMP-N1": {
+      "CAT": "N",
+      "DEF": "a training camp for military recruits",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "TRAINING": {
+          "BENEFICIARY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "MILITARY-ROLE": {
+            "EXPERTISE-ATTRIBUTE": [
+              "<",
+              0.1
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BOOT_CAMP-N1",
+      "WORD": "BOOT_CAMP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

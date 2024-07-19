@@ -1,0 +1,67 @@
+{
+  "name": "@WALL",
+  "isa": [
+    "@BUILDING-ARTIFACT-PART"
+  ],
+  "def": "upright parts of buildings",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@DRYWALL"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MOLDING"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CEMENT"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GLASS"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ROCK"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@BRICK"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CONCRETE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ELECTRICAL-OUTLET"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

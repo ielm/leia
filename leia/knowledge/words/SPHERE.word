@@ -1,0 +1,31 @@
+{
+  "word": "SPHERE",
+  "senses": {
+    "SPHERE-N1": {
+      "CAT": "N",
+      "DEF": "an object with a spherical shape",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PHYSICAL-OBJECT": {
+          "SHAPE": "SPHERICAL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SPHERE-N1",
+      "WORD": "SPHERE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

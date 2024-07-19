@@ -1,0 +1,47 @@
+{
+  "name": "@CONCERT-HALL",
+  "isa": [
+    "@ENTERTAINMENT-BUILDING"
+  ],
+  "def": "a building specifically designed for musical performances",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@SING"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@CONCERT"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@PLAY-MUSICAL-INSTRUMENT"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@MUSICIAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@ENTERTAINMENT-ROLE"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@ENTERTAIN-EVENT"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@SPORTS-COMPETITION"
+    }
+  ],
+  "private": {}
+}

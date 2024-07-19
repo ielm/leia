@@ -1,0 +1,108 @@
+{
+  "word": "WIDE",
+  "senses": {
+    "WIDE-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "WIDTH": 0.8
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "WIDE-0",
+        "RIVER-1",
+        "FLOWED"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WIDE-ADJ2",
+      "WORD": "WIDE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WIDE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "the field is 20 feet wide.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT-WORD": "*BE*",
+        "ROOT": "$VAR2",
+        "CAT": "V",
+        "NP": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "WIDTH": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "RIVER-1",
+        "IS-2",
+        "20",
+        "FEET-3",
+        "WIDE-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "NSUBJ",
+          "$VAR3",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WIDE-ADJ1",
+      "WORD": "WIDE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

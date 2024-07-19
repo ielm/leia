@@ -1,0 +1,16 @@
+{
+  "name": "@SHIPYARD",
+  "isa": [
+    "@FACTORY"
+  ],
+  "def": "a place where ships are built and repaired",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@SHIP"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

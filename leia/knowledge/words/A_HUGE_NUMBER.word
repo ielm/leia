@@ -1,0 +1,57 @@
+{
+  "word": "A_HUGE_NUMBER",
+  "senses": {
+    "A_HUGE_NUMBER-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "a huge number of cars are in the parking lot.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "CAT": "PREP",
+          "ROOT": "$VAR2",
+          "OBJ": {
+            "ROOT": "$VAR1",
+            "CAT": "NP",
+            "NUMBER": "PL"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "CARDINALITY": [
+            "><",
+            0.9,
+            1
+          ],
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "DETERMINATE": "NO"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "A_HUGE_NUMBER-0",
+        "OF-2",
+        "THE",
+        "MEN-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "A_HUGE_NUMBER-QUANTIFIER1",
+      "WORD": "A_HUGE_NUMBER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

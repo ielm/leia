@@ -1,0 +1,30 @@
+{
+  "word": "MISSILE",
+  "senses": {
+    "MISSILE-N1": {
+      "CAT": "N",
+      "DEF": "an object propelled at a target",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "MISSILE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "SHELL",
+        "BALLISTIC_MISSILE"
+      ],
+      "SENSE": "MISSILE-N1",
+      "WORD": "MISSILE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

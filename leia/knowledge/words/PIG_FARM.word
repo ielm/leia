@@ -1,0 +1,40 @@
+{
+  "word": "PIG_FARM",
+  "senses": {
+    "PIG_FARM-N1": {
+      "CAT": "N",
+      "DEF": "a farm where pigs are raised",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ANIMAL-FARM": {
+          "LOCATION-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "OFFSPRING-EVENT": {
+            "EXPERIENCER": "PIG"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "PIGGERY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PIG_FARM-N1",
+      "WORD": "PIG_FARM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

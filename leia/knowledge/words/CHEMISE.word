@@ -1,0 +1,45 @@
+{
+  "word": "CHEMISE",
+  "senses": {
+    "CHEMISE-N1": {
+      "CAT": "N",
+      "DEF": "loose undergarment worn on the torso by women",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "UNDERGARMENT": {
+          "WORN-ON": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "TRUNK-OF-BODY": {
+            "PART-OF-OBJECT": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "HUMAN": {
+            "GENDER": "FEMALE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CHEMISE-N1",
+      "WORD": "CHEMISE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$CELEBRATED-IN",
+  "def": "links a holiday or ceremony to the country or religion in which it is celebrated",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$CELEBRATES",
+  "measured-in": [],
+  "container": "$RELATION"
+}

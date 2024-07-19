@@ -1,0 +1,21 @@
+{
+  "name": "@POST-OFFICE",
+  "isa": [
+    "@GOVERNMENT-BUILDING"
+  ],
+  "def": "a place that is operated by the government where mail is sorted, stamps are sold, etc.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MAIL-ARTIFACT"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@MAILMAN"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

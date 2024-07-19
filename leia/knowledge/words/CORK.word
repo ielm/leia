@@ -1,0 +1,53 @@
+{
+  "word": "CORK",
+  "senses": {
+    "CORK-N1": {
+      "CAT": "N",
+      "DEF": "a type of tree",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CORK",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CORK-N1",
+      "WORD": "CORK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CORK-N2": {
+      "CAT": "N",
+      "DEF": "a stopper made of cork, esp. for wine bottles, etc.",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "STOPPER": {
+          "MADE-OF": "CORK"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CORK-N2",
+      "WORD": "CORK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

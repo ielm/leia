@@ -1,0 +1,81 @@
+{
+  "word": "DIET",
+  "senses": {
+    "DIET-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "of food or drink, containing fewer calories and/or less sugar or fat than normal",
+      "EX": "she has a whole file of diet desserts",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "FOOD",
+            "BEVERAGE"
+          ],
+          "FATTINESS": [
+            "<",
+            0.3
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "DIET-0",
+        "FOOD-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DIET-ADJ1",
+      "WORD": "DIET",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DIET-N1": {
+      "CAT": "N",
+      "DEF": "food and liquid eaten/drunk",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": [
+            "AND",
+            "BEVERAGE",
+            "FOOD"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DIET-N1",
+      "WORD": "DIET",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

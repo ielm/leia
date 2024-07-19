@@ -1,0 +1,49 @@
+{
+  "word": "AUTHENTICATE",
+  "senses": {
+    "AUTHENTICATE-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "experts authenticated the picture",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "AUTHENTICATE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EXPERTS-1",
+        "AUTHENTICATED-0",
+        "THE",
+        "PICTURE-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AUTHENTICATE-V1",
+      "WORD": "AUTHENTICATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

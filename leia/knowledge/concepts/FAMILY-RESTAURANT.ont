@@ -1,0 +1,28 @@
+{
+  "name": "@FAMILY-RESTAURANT",
+  "isa": [
+    "@WAITERED-RESTAURANT"
+  ],
+  "def": "an inexpensive waitered restaurant where street clothes are acceptable",
+  "local": [
+    {
+      "slot": "formality",
+      "facet": "sem",
+      "filler": [
+        "<",
+        0.5
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "formality",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

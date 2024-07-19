@@ -1,0 +1,19 @@
+{
+  "name": "@AMPERE-PER-METER",
+  "isa": [
+    "@MAGNETIC-FIELD-STRENGTH-UNIT"
+  ],
+  "def": "the standard unit in the ontology for measuring magnetic field strength.",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

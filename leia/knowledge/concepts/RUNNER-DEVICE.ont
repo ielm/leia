@@ -1,0 +1,16 @@
+{
+  "name": "@RUNNER-DEVICE",
+  "isa": [
+    "@INDEPENDENT-DEVICE"
+  ],
+  "def": "either of long narrow pieces on which a sled, etc. slides",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

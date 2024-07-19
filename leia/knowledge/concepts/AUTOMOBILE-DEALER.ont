@@ -1,0 +1,16 @@
+{
+  "name": "@AUTOMOBILE-DEALER",
+  "isa": [
+    "@STORE"
+  ],
+  "def": "a retail establishment whose business is selling automobiles",
+  "local": [
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@AUTOMOBILE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

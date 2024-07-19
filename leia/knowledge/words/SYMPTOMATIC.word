@@ -1,0 +1,45 @@
+{
+  "word": "SYMPTOMATIC",
+  "senses": {
+    "SYMPTOMATIC-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "displaying symptoms",
+      "EX": "symptomatic typhoid is easily detected and treated",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "DISEASE",
+          "HAS-EVENT-AS-PART": "SYMPTOM"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SYMPTOMATIC-0",
+        "DISEASE-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SYMPTOMATIC-ADJ1",
+      "WORD": "SYMPTOMATIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

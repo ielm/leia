@@ -1,0 +1,50 @@
+{
+  "word": "RURAL",
+  "senses": {
+    "RURAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "characteristic of the countryside rather than a town",
+      "EX": "rural area; rural lifestyle",
+      "COMMENTS": "described as a place with low population density",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "COUNTRYSIDE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "RURAL-0",
+        "CURE-1",
+        "SCARED",
+        "SOME",
+        "PEOPLE"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "COUNTRY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "RURAL-ADJ1",
+      "WORD": "RURAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

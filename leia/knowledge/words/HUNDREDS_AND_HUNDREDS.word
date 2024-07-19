@@ -1,0 +1,53 @@
+{
+  "word": "HUNDREDS_AND_HUNDREDS",
+  "senses": {
+    "HUNDREDS_AND_HUNDREDS-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "hundreds and hundreds of dollars",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "CAT": "PREP",
+          "ROOT": "$VAR2",
+          "OBJ": {
+            "ROOT": "$VAR1",
+            "CAT": "NP",
+            "NUMBER": "PL"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "CARDINALITY": [
+            "><",
+            400,
+            900
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HUNDREDS_AND_HUNDREDS-QUANTIFIER1",
+      "WORD": "HUNDREDS_AND_HUNDREDS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

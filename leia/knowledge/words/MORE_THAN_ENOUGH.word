@@ -1,0 +1,38 @@
+{
+  "word": "MORE_THAN_ENOUGH",
+  "senses": {
+    "MORE_THAN_ENOUGH-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "more than enough time was spent on this.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "RELATIVE-TO-NORM": 0.6,
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MORE_THAN_ENOUGH-QUANTIFIER1",
+      "WORD": "MORE_THAN_ENOUGH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

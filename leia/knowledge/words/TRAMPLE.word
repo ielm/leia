@@ -1,0 +1,50 @@
+{
+  "word": "TRAMPLE",
+  "senses": {
+    "TRAMPLE-V1": {
+      "CAT": "V",
+      "DEF": "to crush with the feet",
+      "EX": "they trampled the dry leaves",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "CRUSH": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "INSTRUMENT": "FOOT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "TRAMPLED-0",
+        "THE",
+        "LEAVES-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TRAMPLE-V1",
+      "WORD": "TRAMPLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

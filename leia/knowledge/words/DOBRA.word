@@ -1,0 +1,31 @@
+{
+  "word": "DOBRA",
+  "senses": {
+    "DOBRA-N1": {
+      "CAT": "N",
+      "DEF": "currency of sao-tome-&-principe",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": "SAO_TOME_AND_PRINCIPE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DOBRA-N1",
+      "WORD": "DOBRA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

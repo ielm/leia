@@ -1,0 +1,37 @@
+{
+  "name": "@MOLECULAR-FUNCTION",
+  "isa": [
+    "@NORMAL-BIOLOGIC-FUNCTION"
+  ],
+  "def": "A physiologic function occurring at the molecular level, such as glycolysis, electron transport, etc.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CELL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BIOLOGICAL-MACROMOLECULE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

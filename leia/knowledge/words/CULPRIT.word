@@ -1,0 +1,33 @@
+{
+  "word": "CULPRIT",
+  "senses": {
+    "CULPRIT-N1": {
+      "CAT": "N",
+      "DEF": "'culprit' can be either someone charged with a crime or s.o. guilty of it; impossible to disambiguate automatically; I'm setting the epistimc to less than 1 as an approximation",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0.7,
+          "SCOPE": "CRIMINAL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CULPRIT-N1",
+      "WORD": "CULPRIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

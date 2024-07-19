@@ -1,0 +1,315 @@
+{
+  "word": "AROUND",
+  "senses": {
+    "AROUND-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "in circumference",
+      "EX": "her waist is 30 inches around",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT-WORD": "*BE*",
+        "ROOT": "$VAR2",
+        "CAT": "V",
+        "NP": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "CIRCUMFERENCE": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "WAS-2",
+        "THE",
+        "MAN-3",
+        "AROUND-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR3",
+          "$VAR0"
+        ],
+        [
+          "COP",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR3",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AROUND-ADJ1",
+      "WORD": "AROUND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "AROUND-PREP1": {
+      "CAT": "PREP",
+      "DEF": "in multiple places that, together, make up the place named",
+      "EX": "they traveled around europe; restaurants around europe serve lattes.",
+      "COMMENTS": "[D] I used inside-of for now; a more specific semantic representation - i.e., that includes the idea of multiple locations within a place name - is postoponed till later, if at all. this entry is copied at round.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "PLACE",
+            "CHANGE-LOCATION"
+          ],
+          "INSIDE-OF": {
+            "VALUE": "^$VAR2",
+            "SEM": "PHYSICAL-OBJECT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "RAN-1",
+        "AROUND-0",
+        "THE",
+        "BUILDING-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "ABOUT",
+        "ROUND"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "AROUND-PREP1",
+      "WORD": "AROUND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "AROUND-PREP2": {
+      "CAT": "PREP",
+      "DEF": "in a circular path or encircling. This is the directional relation; the static relation counterpart is around-v3",
+      "EX": "the earth travels around the sun",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "CHANGE-LOCATION",
+          "PATH": {
+            "VALUE": "^$VAR2",
+            "SEM": "PHYSICAL-OBJECT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "AROUND-0",
+        "THE",
+        "CHANGE-LOCATION-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "ROUND"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "AROUND-PREP2",
+      "WORD": "AROUND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "AROUND-PREP3": {
+      "CAT": "PREP",
+      "DEF": "on all sides of; surrounding. This is the static relation; the directional relation counterpart is around-prep2",
+      "EX": "I found an english garden all around me; a ribbon around the box",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "PHYSICAL-OBJECT",
+          "SURROUNDS": {
+            "VALUE": "^$VAR2",
+            "SEM": "PHYSICAL-OBJECT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "ENJOYED",
+        "HIS",
+        "RUN-1",
+        "AROUND-0",
+        "THE",
+        "BUILDING-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "ABOUT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "AROUND-PREP3",
+      "WORD": "AROUND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "AROUND-PREP4": {
+      "CAT": "PREP",
+      "DEF": "to encircle",
+      "EX": "The snake is sleeping around the pillar",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "DIRECTION-OF-MOTION": {
+            "VALUE": [
+              "CLOCKWISE",
+              "COUNTERCLOCKWISE"
+            ]
+          },
+          "PATH": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "AROUND-0",
+        "THE",
+        "EVENT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AROUND-PREP4",
+      "WORD": "AROUND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

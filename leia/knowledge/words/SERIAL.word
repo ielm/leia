@@ -1,0 +1,123 @@
+{
+  "word": "SERIAL",
+  "senses": {
+    "SERIAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "indicates a series or set of criminal activities",
+      "EX": "the headlines were dominated by the serial arsons",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1",
+            "SEM": "CRIMINAL-ACTIVITY"
+          },
+          "CARDINALITY": [
+            ">",
+            2
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SERIAL-0",
+        "OBJECT-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SERIAL-ADJ1",
+      "WORD": "SERIAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SERIAL-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "of criminals: perpetrator of multiple related crimes",
+      "EX": "an entire squad was dedicated to catching the serial rapist",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "CRIMINAL",
+          "AGENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": {
+              "VALUE": "REFSEM2"
+            },
+            "CARDINALITY": [
+              ">",
+              2
+            ]
+          }
+        },
+        "REFSEM2": [
+          "CRIMINAL-ACTIVITY"
+        ]
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "REFSEM2",
+          "^$VAR1"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "SERIAL-0",
+        "CRIMINAL-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SERIAL-ADJ2",
+      "WORD": "SERIAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SERIAL-N1": {
+      "CAT": "N",
+      "DEF": "something published in series of continuout segments at regular intervals",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SERIAL-PUBLICATION",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SERIAL-N1",
+      "WORD": "SERIAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

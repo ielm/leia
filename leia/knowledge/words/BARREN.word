@@ -1,0 +1,86 @@
+{
+  "word": "BARREN",
+  "senses": {
+    "BARREN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "a barren woman",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "CONCEIVE-OFFSPRING": {
+            "EXPERIENCER": {
+              "VALUE": "^$VAR1",
+              "SEM": "ANIMAL",
+              "GENDER": "FEMALE"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "POTENTIAL",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BARREN-ADJ1",
+      "WORD": "BARREN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BARREN-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "lacking vegetation",
+      "EX": "barren land",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR1": {
+          "SEM": "GEOLOGICAL-ENTITY",
+          "HAS-OBJECT-AS-PART": "PLANT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BARREN-ADJ2",
+      "WORD": "BARREN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

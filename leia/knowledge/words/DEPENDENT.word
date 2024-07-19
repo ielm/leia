@@ -1,0 +1,61 @@
+{
+  "word": "DEPENDENT",
+  "senses": {
+    "DEPENDENT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "not showing autonomy",
+      "EX": "Don't be so dependent!",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "AUTONOMY": 0.3
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "WAS-2",
+        "DEPENDENT-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "COP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DEPENDENT-ADJ1",
+      "WORD": "DEPENDENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

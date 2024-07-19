@@ -1,0 +1,22 @@
+{
+  "name": "@ORCHIDECTOMY",
+  "isa": [
+    "@SURGICAL-REMOVAL"
+  ],
+  "def": "Surgical removal of one or both testes.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@TESTIS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

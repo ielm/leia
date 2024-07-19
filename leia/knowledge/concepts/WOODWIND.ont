@@ -1,0 +1,16 @@
+{
+  "name": "@WOODWIND",
+  "isa": [
+    "@MUSICAL-INSTRUMENT"
+  ],
+  "def": "any of a family of wind instruments especially made of wood: clarinet, oboe, flute, English horn, and bassoonboe,",
+  "local": [],
+  "block": [
+    {
+      "slot": "is-consumer-good",
+      "facet": "sem",
+      "filler": "yes"
+    }
+  ],
+  "private": {}
+}

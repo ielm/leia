@@ -1,0 +1,130 @@
+{
+  "word": "ELECTRONIC",
+  "senses": {
+    "ELECTRONIC-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "electronic X (artifact) = X is an electronic-machine",
+      "EX": "an electronic toy; an electronic gate",
+      "COMMENTS": "[D] since we can't use IS-A as a descriptor, I'm using relation for now",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "ARTIFACT",
+          "RELATION": "ELECTRONIC-MACHINE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ELECTRIC-0",
+        "ARTIFACT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "ELECTRIC"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ELECTRONIC-ADJ1",
+      "WORD": "ELECTRONIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ELECTRONIC-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "electronic X (physical-event) = X has an electronic-machine as an instrument",
+      "EX": "her car uses electronic propulsion; they spent a fortune on electronic security",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "PHYSICAL-EVENT",
+          "INSTRUMENT": "ELECTRONIC-MACHINE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ELECTRONIC-0",
+        "PHYSICAL-EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ELECTRONIC-ADJ2",
+      "WORD": "ELECTRONIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ELECTRONIC-ADJ3": {
+      "CAT": "ADJ",
+      "DEF": "electronic X (neither artifact nor physical-event) = X has some relation to electronic-machine",
+      "EX": "he likes to hang around the electronic district; she likes electronic music",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "NOT",
+            "PHYSICAL-EVENT"
+          ],
+          "RELATION": "ELECTRONIC-MACHINE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ELECTRONIC-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ELECTRONIC-ADJ3",
+      "WORD": "ELECTRONIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

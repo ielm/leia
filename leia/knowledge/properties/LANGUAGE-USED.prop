@@ -1,0 +1,9 @@
+{
+  "name": "$LANGUAGE-USED",
+  "def": "A relation that links an event or thing with the language that it uses.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$LANGUAGE-OF",
+  "measured-in": [],
+  "container": "$LANGUAGE-RELATION"
+}

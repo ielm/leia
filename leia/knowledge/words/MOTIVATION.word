@@ -1,0 +1,44 @@
+{
+  "word": "MOTIVATION",
+  "senses": {
+    "MOTIVATION-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "he gives her the motivation to work hard",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "XCOMP": {
+          "ROOT": "$VAR1",
+          "CAT": "V",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "MOTIVATE": {
+          "THEME": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "MOTIVATION-0",
+        "TO-7",
+        "HIT-1",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MOTIVATION-N1",
+      "WORD": "MOTIVATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

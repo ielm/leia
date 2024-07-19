@@ -1,0 +1,33 @@
+{
+  "word": "PETRARCHAN_SONNET",
+  "senses": {
+    "PETRARCHAN_SONNET-N1": {
+      "CAT": "N",
+      "DEF": "A 14-line rhyming verse form usually having one of several conventional rhyme schemes; as used by Petrarch",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LITERARY-COMPOSITION": {
+          "HAS-STYLE": "POEM",
+          "USED-BY": "PETRARCH",
+          "LENGTH": 14
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PETRARCHAN_SONNET-N1",
+      "WORD": "PETRARCHAN_SONNET",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

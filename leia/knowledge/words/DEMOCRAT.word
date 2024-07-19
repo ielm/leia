@@ -1,0 +1,31 @@
+{
+  "word": "DEMOCRAT",
+  "senses": {
+    "DEMOCRAT-N1": {
+      "CAT": "N",
+      "DEF": "a person whose political affiliation is the democratic party",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "POLITICAL-ROLE": {
+          "POLITICAL-PARTY-MEMBERSHIP": "DEMOCRAT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DEMOCRAT-N1",
+      "WORD": "DEMOCRAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

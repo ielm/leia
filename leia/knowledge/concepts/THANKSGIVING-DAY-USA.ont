@@ -1,0 +1,37 @@
+{
+  "name": "@THANKSGIVING-DAY-USA",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "a legal U.S. holiday, the fourth Thursday of November, commemorating the feast held at Plymouth in 1621",
+  "local": [
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@NOVEMBER"
+    },
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@THURSDAY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "private": {}
+}

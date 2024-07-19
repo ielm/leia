@@ -1,0 +1,16 @@
+{
+  "name": "@FOAM-EVENT",
+  "isa": [
+    "@NATURAL-EVENT"
+  ],
+  "def": "to produce the whitish mass of bubbles on or in liquids as a result of shaking, etc.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

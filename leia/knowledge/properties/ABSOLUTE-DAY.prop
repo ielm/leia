@@ -1,0 +1,11 @@
+{
+  "name": "$ABSOLUTE-DAY",
+  "def": "links an event, special occasion, holiday, etc., to the day of the month (i.e, 1-31) on which it occurs",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@DAY"
+  ],
+  "container": "$LITERAL-ATTRIBUTE"
+}

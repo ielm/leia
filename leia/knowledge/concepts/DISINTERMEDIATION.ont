@@ -1,0 +1,52 @@
+{
+  "name": "@DISINTERMEDIATION",
+  "isa": [
+    "@INVESTMENT-EVENT"
+  ],
+  "def": "to withdraw funds from banks to invest them at higher rates, as in government securities",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MONEY"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@WITHDRAW"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BANK"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@CREDIT-UNION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MONEY"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INVESTMENT"
+    }
+  ],
+  "private": {}
+}

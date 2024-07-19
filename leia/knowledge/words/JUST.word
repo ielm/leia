@@ -1,0 +1,54 @@
+{
+  "word": "JUST",
+  "senses": {
+    "JUST-ADV1": {
+      "CAT": "ADV",
+      "DEF": "in the very close past",
+      "EX": "I just finished my paper",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TIME": [
+            "COMBINE-TIME",
+            [
+              "FIND-ANCHOR-TIME"
+            ],
+            0.1,
+            "BEFORE"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "JUST-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "JUST_THIS_SECOND"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "JUST-ADV1",
+      "WORD": "JUST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

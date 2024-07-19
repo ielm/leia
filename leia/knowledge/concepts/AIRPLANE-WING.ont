@@ -1,0 +1,22 @@
+{
+  "name": "@AIRPLANE-WING",
+  "isa": [
+    "@AIR-VEHICLE-PART"
+  ],
+  "def": "the main lateral supporting surface of an airplane",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

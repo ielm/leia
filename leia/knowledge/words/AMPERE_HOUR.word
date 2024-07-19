@@ -1,0 +1,30 @@
+{
+  "word": "AMPERE_HOUR",
+  "senses": {
+    "AMPERE_HOUR-N1": {
+      "CAT": "N",
+      "DEF": "(Wikipedia) One ampere-hour is equal to 3600 coulombs (ampere-seconds), the electric charge transferred by a steady current of one ampere for one hour.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "AMPERE-HOUR",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "AMPERE-HOUR",
+        "AMP-HOUR"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "AMPERE_HOUR-N1",
+      "WORD": "AMPERE_HOUR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

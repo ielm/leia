@@ -1,0 +1,16 @@
+{
+  "name": "@NAVY-BEAN",
+  "isa": [
+    "@BEAN"
+  ],
+  "def": "The dried white bean of commerce named so probably since it is an important article of food in the navy.",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "white"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

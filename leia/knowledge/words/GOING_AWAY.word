@@ -1,0 +1,37 @@
+{
+  "word": "GOING_AWAY",
+  "senses": {
+    "GOING_AWAY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "associated with departing",
+      "EX": "a going-away party",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "CHANGE-LOCATION"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "GOING-AWAY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "GOING_AWAY-ADJ1",
+      "WORD": "GOING_AWAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

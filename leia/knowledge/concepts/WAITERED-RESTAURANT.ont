@@ -1,0 +1,55 @@
+{
+  "name": "@WAITERED-RESTAURANT",
+  "isa": [
+    "@RESTAURANT"
+  ],
+  "def": "a restaurant in which one is served by a waiter or waitress",
+  "local": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@SERVER"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@KITCHEN-STAFF"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@FLOOR-STAFF-MEMBER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

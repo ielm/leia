@@ -1,0 +1,35 @@
+{
+  "word": "SEWER",
+  "senses": {
+    "SEWER-N1": {
+      "CAT": "N",
+      "DEF": "a pipe or drain for carrying away water and waste matter",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SEWER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "DRAINPIPE",
+        "WASTE_PIPE",
+        "DISCHARGE_PIPE",
+        "SOIL_PIPE",
+        "GUTTER",
+        "SEWER_MAIN",
+        "SEWER_LINE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SEWER-N1",
+      "WORD": "SEWER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

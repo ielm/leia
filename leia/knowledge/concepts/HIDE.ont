@@ -1,0 +1,16 @@
+{
+  "name": "@HIDE",
+  "isa": [
+    "@CHANGE-LOCATION"
+  ],
+  "def": "to put or to keep out of sight",
+  "local": [],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

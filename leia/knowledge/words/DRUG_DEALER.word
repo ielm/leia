@@ -1,0 +1,31 @@
+{
+  "word": "DRUG_DEALER",
+  "senses": {
+    "DRUG_DEALER-N1": {
+      "CAT": "N",
+      "DEF": "someone who deals drugs",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CRIMINAL": {
+          "AGENT-OF": "DRUG-DEALING"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DRUG_DEALER-N1",
+      "WORD": "DRUG_DEALER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

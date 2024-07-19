@@ -1,0 +1,142 @@
+{
+  "word": "FRIGHTEN",
+  "senses": {
+    "FRIGHTEN-V1": {
+      "CAT": "V",
+      "DEF": "to induce fear, referring to an event cause",
+      "EX": "loud noises frighten him",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "FEAR": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR2"
+          },
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1",
+            "SEM": "EVENT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "FRIGHTENED-0",
+        "THE",
+        "DOG-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "ALARM",
+        "SCARE",
+        "SPOOK"
+      ],
+      "HYPONYMS": [
+        "PANIC"
+      ],
+      "SENSE": "FRIGHTEN-V1",
+      "WORD": "FRIGHTEN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FRIGHTEN-V3": {
+      "CAT": "V",
+      "DEF": "past-part: feeling fear, optionally with a cause",
+      "EX": "he is frightened (of loud noises | spiders)",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "V": {
+          "ROOT": "$VAR4",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "V-1": {
+          "ROOT": "$VAR0",
+          "CAT": "V",
+          "FORM": "PAST-PARTICIPLE"
+        },
+        "PP": {
+          "ROOT-WORD": [
+            "OF",
+            "BY"
+          ],
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "FEAR": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          },
+          "CAUSED-BY": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "WAS-4",
+        "SCARED-0",
+        "OF-3",
+        "THE",
+        "DOG-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SCARE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FRIGHTEN-V3",
+      "WORD": "FRIGHTEN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

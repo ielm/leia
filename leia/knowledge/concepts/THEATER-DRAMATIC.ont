@@ -1,0 +1,42 @@
+{
+  "name": "@THEATER-DRAMATIC",
+  "isa": [
+    "@ENTERTAINMENT-BUILDING"
+  ],
+  "def": "a building in which plays are performed",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@PLAY-THEATER"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@DIRECTOR-DRAMATIC"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@ACTOR-DRAMATIC"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@ENTERTAINMENT-ROLE"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@ENTERTAIN-EVENT"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@SPORTS-COMPETITION"
+    }
+  ],
+  "private": {}
+}

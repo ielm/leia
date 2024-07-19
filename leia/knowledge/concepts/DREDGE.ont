@@ -1,0 +1,47 @@
+{
+  "name": "@DREDGE",
+  "isa": [
+    "@CONSTRUCTION-ACTIVITY"
+  ],
+  "def": "to enlarge or clean up (channels) as with an apparatus such as a dredge or backhoe",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CHANNEL-MARINE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@RIVER-BED"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CONSTRUCTION-MATERIAL"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

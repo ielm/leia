@@ -1,0 +1,31 @@
+{
+  "word": "GREENBACK",
+  "senses": {
+    "GREENBACK-N1": {
+      "CAT": "N",
+      "DEF": "a note of us currency",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BILL-MONETARY": {
+          "CURRENCY-OF": "UNITED_STATES_OF_AMERICA"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GREENBACK-N1",
+      "WORD": "GREENBACK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

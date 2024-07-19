@@ -1,0 +1,47 @@
+{
+  "word": "UNPUNISHED",
+  "senses": {
+    "UNPUNISHED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "not resulting in punishment",
+      "EX": "",
+      "COMMENTS": "[D] usu. 'go unpunished', as a phrasal in 'go'",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "EFFECT": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": [
+          "PUNISH"
+        ],
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "UNPUNISHED-ADJ1",
+      "WORD": "UNPUNISHED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

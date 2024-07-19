@@ -1,0 +1,22 @@
+{
+  "name": "@TEMPLE",
+  "isa": [
+    "@RELIGIOUS-BUILDING"
+  ],
+  "def": "a building for the worship of God or gods",
+  "local": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@RABBI"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@RELIGIOUS-ROLE"
+    }
+  ],
+  "private": {}
+}

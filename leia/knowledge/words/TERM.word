@@ -1,0 +1,80 @@
+{
+  "word": "TERM",
+  "senses": {
+    "TERM-N1": {
+      "CAT": "N",
+      "DEF": "an unspecified - at least without modifiers - period of time",
+      "EX": "during his term in office he'll have to work hard",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "TIME-INTERVAL-UNIT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TERM-N1",
+      "WORD": "TERM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "TERM-N2": {
+      "CAT": "N",
+      "DEF": "an element of a proposed or concluded agreement, contract, etc.; for our  purposes, basically the agreement, contract, etc. itself",
+      "EX": "",
+      "COMMENTS": "usually plural, but perhaps not always, so listed as sg.",
+      "TMR-HEAD": "$VAR2",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "TERM-0",
+        "OF-1",
+        "THE",
+        "MAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TERM-N2",
+      "WORD": "TERM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

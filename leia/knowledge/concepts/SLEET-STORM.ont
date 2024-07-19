@@ -1,0 +1,37 @@
+{
+  "name": "@SLEET-STORM",
+  "isa": [
+    "@STORM"
+  ],
+  "def": "a storm where sleet comes out of the sky",
+  "local": [
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@SKY"
+    },
+    {
+      "slot": "location",
+      "facet": "not",
+      "filler": "@SEA"
+    },
+    {
+      "slot": "location",
+      "facet": "not",
+      "filler": "@TROPICAL-RAIN-FOREST"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@SLEET"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@NATURAL-EVENT"
+    }
+  ],
+  "private": {}
+}

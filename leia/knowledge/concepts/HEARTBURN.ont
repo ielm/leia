@@ -1,0 +1,52 @@
+{
+  "name": "@HEARTBURN",
+  "isa": [
+    "@DISCOMFORT"
+  ],
+  "def": "A burning sensation, usually centered in the middle of the chest near the sternum, caused by the reflux of acidic stomach fluids that enter the lower end of the esophagus.",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@BARRETTS-ESOPHAGUS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CHEST"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@GASTROESOPHAGEAL-REFLUX-DISEASE"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@HYPOCHLORHYDRIA"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@REGURGITATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@DISEASE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

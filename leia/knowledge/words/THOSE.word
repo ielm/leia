@@ -1,0 +1,68 @@
+{
+  "word": "THOSE",
+  "senses": {
+    "THOSE-DET1": {
+      "CAT": "DET",
+      "DEF": "indicates coreference",
+      "EX": "Those cakes are good",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "DET": {
+          "ROOT": "$VAR0",
+          "CAT": "DET"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THOSE-0",
+        "MEN-1",
+        "HIT",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "THOSE-DET1",
+      "WORD": "THOSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "THOSE-N1": {
+      "CAT": "N",
+      "DEF": "indicates coreference",
+      "EX": "Those are good ideas",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "TYPE": "PRO"
+      },
+      "SEM-STRUC": "ALL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "THOSE-N1",
+      "WORD": "THOSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "word": "PRESS_RELEASE",
+  "senses": {
+    "PRESS_RELEASE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "INFORM": {
+          "INSTRUMENT": {
+            "REPORTER": "DOCUMENT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRESS_RELEASE-N1",
+      "WORD": "PRESS_RELEASE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

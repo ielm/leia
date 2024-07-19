@@ -1,0 +1,34 @@
+{
+  "word": "STABLE",
+  "senses": {
+    "STABLE-N1": {
+      "CAT": "N",
+      "DEF": "the place where horses are kept",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BARN": {
+          "LOCATION-OF": "HORSE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "LIVERY_STABLE",
+        "HORSE_BARN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "STABLE-N1",
+      "WORD": "STABLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

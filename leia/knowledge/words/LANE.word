@@ -1,0 +1,58 @@
+{
+  "word": "LANE",
+  "senses": {
+    "LANE-N1": {
+      "CAT": "N",
+      "DEF": "narrow country road",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SURFACE-STREET": {
+          "SIZE": [
+            "<",
+            0.2
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LANE-N1",
+      "WORD": "LANE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LANE-N2": {
+      "CAT": "N",
+      "DEF": "one strip in a highway",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "TRAFFIC-LANE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "LANE_OF_TRAFFIC"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "LANE-N2",
+      "WORD": "LANE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

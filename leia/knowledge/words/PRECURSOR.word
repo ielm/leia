@@ -1,0 +1,61 @@
+{
+  "word": "PRECURSOR",
+  "senses": {
+    "PRECURSOR-N1": {
+      "CAT": "N",
+      "DEF": "something which comes before",
+      "EX": "the mammoth was a precursor of modern elephants; a sore throat is often a precursor to a cold",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT-WORD": "*BE*",
+        "ROOT": "$VAR2",
+        "CAT": "V",
+        "N": {
+          "ROOT": "$VAR0",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "CHANGE-EVENT": {
+          "PRECONDITION": {
+            "VALUE": "^$VAR1"
+          },
+          "EFFECT": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRECURSOR-N1",
+      "WORD": "PRECURSOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

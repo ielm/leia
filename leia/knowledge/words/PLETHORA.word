@@ -1,0 +1,51 @@
+{
+  "word": "PLETHORA",
+  "senses": {
+    "PLETHORA-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "I have a plethora of books. in that store I saw a plethora of the best books ever written.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "CAT": "PREP",
+          "ROOT": "$VAR2",
+          "OBJ": {
+            "ROOT": "$VAR1",
+            "CAT": "NP",
+            "NUMBER": "PL"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "CARDINALITY": [
+            ">",
+            0.9
+          ],
+          "DETERMINATE": "NO",
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PLETHORA-N1",
+      "WORD": "PLETHORA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

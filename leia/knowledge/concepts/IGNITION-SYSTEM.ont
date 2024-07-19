@@ -1,0 +1,27 @@
+{
+  "name": "@IGNITION-SYSTEM",
+  "isa": [
+    "@VEHICLE-PART"
+  ],
+  "def": "the system in a vehicle that ignites the fuel to start the vehicle",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@GASOLINE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ENGINE-OIL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

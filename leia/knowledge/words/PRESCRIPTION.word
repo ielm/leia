@@ -1,0 +1,146 @@
+{
+  "word": "PRESCRIPTION",
+  "senses": {
+    "PRESCRIPTION-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "distributed only by prescription",
+      "EX": "he's on prescription pain-killers",
+      "COMMENTS": "simplified definition",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "DISTRIBUTE": {
+          "THEME": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "REFSEM2"
+          },
+          "PRECONDITION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "PRESCRIBE": {
+            "THEME-1": {
+              "VALUE": "^$VAR1"
+            },
+            "BENEFICIARY": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": [
+          "HUMAN"
+        ]
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [
+        [
+          "PUNCT",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRESCRIPTION-ADJ1",
+      "WORD": "PRESCRIPTION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PRESCRIPTION-N1": {
+      "CAT": "N",
+      "DEF": "a document indicating that a treatment has been prescribed by a physician",
+      "EX": "he wrote her a prescription for pain-killers; do you have your prescription with you?; they called in the prescription",
+      "COMMENTS": "the event meaning, if needed, will be another sense",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "FOR",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "FROM",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": [
+          "DOCUMENT"
+        ],
+        "PRESCRIBE": {
+          "AGENT": {
+            "VALUE": "^$VAR4"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "INSTRUMENT": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRESCRIPTION-N1",
+      "WORD": "PRESCRIPTION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

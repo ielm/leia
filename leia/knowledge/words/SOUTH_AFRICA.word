@@ -1,0 +1,33 @@
+{
+  "word": "SOUTH_AFRICA",
+  "senses": {
+    "SOUTH_AFRICA-N1": {
+      "CAT": "N",
+      "DEF": "a nation",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "NATION": {
+          "HAS-NAME": {
+            "VALUE": "SOUTH_AFRICA"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SOUTH_AFRICA-N1",
+      "WORD": "SOUTH_AFRICA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

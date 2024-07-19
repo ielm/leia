@@ -1,0 +1,49 @@
+{
+  "word": "CAPITAL",
+  "senses": {
+    "CAPITAL-N1": {
+      "CAT": "N",
+      "DEF": "financial capital",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CAPITAL-ASSET",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CAPITAL-N1",
+      "WORD": "CAPITAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CAPITAL-N2": {
+      "CAT": "N",
+      "DEF": "capital city",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CAPITAL-CITY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CAPITAL-N2",
+      "WORD": "CAPITAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

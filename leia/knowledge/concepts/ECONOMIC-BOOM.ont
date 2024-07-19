@@ -1,0 +1,63 @@
+{
+  "name": "@ECONOMIC-BOOM",
+  "isa": [
+    "@NATIONAL-ECONOMIC-EVENT"
+  ],
+  "def": "a period of rapid expansion of the economic activity as a whole or part of it, which manifests itself in rising production, prices, employment, salaries, and profits",
+  "local": [
+    {
+      "slot": "rapidity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ECONOMY"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@NATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "rapidity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

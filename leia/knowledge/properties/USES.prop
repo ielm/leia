@@ -1,0 +1,9 @@
+{
+  "name": "$USES",
+  "def": "relates an agent and object that he in some way uses: e.g., horsemen use spurs (when we have full scripts for everything this relation should no longer be necessary)\nIt is not quite clear how narrowly we understand this: for example, do philosophers use logic?",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$USED-BY",
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

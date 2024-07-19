@@ -1,0 +1,33 @@
+{
+  "word": "MASONRY_CHISEL",
+  "senses": {
+    "MASONRY_CHISEL-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CHISEL": {
+          "USED-BY": "MASON"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "mason's_chisel"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "MASONRY_CHISEL-N1",
+      "WORD": "MASONRY_CHISEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

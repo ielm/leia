@@ -1,0 +1,51 @@
+{
+  "word": "DEPOSE",
+  "senses": {
+    "DEPOSE-V1": {
+      "CAT": "V",
+      "DEF": "remove from a governmental position",
+      "EX": "the deposed the prime minister",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "DEPOSE": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-2",
+        "DEPOSED-0",
+        "THE",
+        "PRIME_MINISTER-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "TOPPLE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DEPOSE-V1",
+      "WORD": "DEPOSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "word": "TYCOON",
+  "senses": {
+    "TYCOON-N1": {
+      "CAT": "N",
+      "DEF": "a very rich businessman",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "AGENT-OF": "BUSINESS-ACTIVITY",
+          "AGENT-OF-1": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "OWN": {
+            "THEME": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "MONEY": {
+            "AMOUNT": [
+              ">",
+              0.9
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TYCOON-N1",
+      "WORD": "TYCOON",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

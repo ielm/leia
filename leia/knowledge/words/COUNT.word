@@ -1,0 +1,197 @@
+{
+  "word": "COUNT",
+  "senses": {
+    "COUNT-N1": {
+      "CAT": "N",
+      "DEF": "a number or range that is the result of counting; in this sense, no theme of the counting is indicated",
+      "EX": "A count by foreign observers suggests that Iran has enough plutonium to make 7 bombs",
+      "COMMENTS": "There is, of course, an implied semantic head, but it can be very hard to reconstruct directly from the text *as part of this TMR*. Typically, in another TMR it will be indicated what was counted. I don't want to try to do too much fancy recovery if we'll get the information elsewhere.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "REPORT": {
+          "ABOUT-AS-TOPIC": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "MATHEMATICAL-OBJECT": {
+            "CAUSED-BY": "COUNT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "TALLY",
+        "RECKONING"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "COUNT-N1",
+      "WORD": "COUNT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "COUNT-V1": {
+      "CAT": "V",
+      "DEF": "to measure using numbers",
+      "EX": "the bus driver counted the passengers - one was missing",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "COUNT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DRIVER-1",
+        "COUNTED-0",
+        "THE",
+        "PASSENGERS-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COUNT-V1",
+      "WORD": "COUNT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "COUNT-V2": {
+      "CAT": "V",
+      "DEF": "phrasal: count on = be dependent on for support or help",
+      "EX": "the manager relied on his assistant for keeping the books in order",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "ON"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": "FOR",
+          "ROOT": "$VAR5",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "RELY-ON": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "RELIED-0",
+        "ON-3",
+        "THE",
+        "DOG-2",
+        "FOR-5",
+        "SUPPORT-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR5",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR5"
+        ]
+      ],
+      "SYNONYMS": [
+        "DEPEND",
+        "RELY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "COUNT-V2",
+      "WORD": "COUNT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

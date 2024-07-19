@@ -1,0 +1,111 @@
+{
+  "word": "RECEIPT",
+  "senses": {
+    "RECEIPT-N1": {
+      "CAT": "N",
+      "DEF": "a written acknowledgment that goods or services have been received",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "RECEIPT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RECEIPT-N1",
+      "WORD": "RECEIPT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RECEIPT-N2": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "receipt of goods by the buyer from the seller",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        },
+        "PP-2": {
+          "ROOT": "$VAR5",
+          "CAT": "PREP",
+          "ROOT-WORD": "FROM",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR6",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "TRANSFER-OBJECT": {
+          "AGENT": {
+            "VALUE": "^$VAR6"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "RECEIPT-0",
+        "OF-1",
+        "THE",
+        "TABLE-2",
+        "BY-3",
+        "THE",
+        "SOCIAL-OBJECT-4",
+        "FROM-5",
+        "THE",
+        "ANIMAL-6"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RECEIPT-N2",
+      "WORD": "RECEIPT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "word": "PARTIAL",
+  "senses": {
+    "PARTIAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "incomplete, of an event",
+      "EX": "",
+      "COMMENTS": "there are actually quite a number of meanings of partial - e.g., a partial solution can mean a full solution to part of the problem or an incomplete solution to the whole problem. Often, the use of 'partial' in texts involves various types of ellipsis.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPITEUCTIC",
+          "VALUE": 0.5,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "PARTIAL-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "INCOMPLETE",
+        "UNFINISHED",
+        "SEMI",
+        "SEMI-"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PARTIAL-ADJ1",
+      "WORD": "PARTIAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

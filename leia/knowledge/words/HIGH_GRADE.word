@@ -1,0 +1,46 @@
+{
+  "word": "HIGH_GRADE",
+  "senses": {
+    "HIGH_GRADE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "high quality",
+      "EX": "we buy high-grade gas",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "QUALITY": 0.8
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HIGH-GRADE-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "HIGH_GRADE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "HIGH_GRADE-ADJ1",
+      "WORD": "HIGH_GRADE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

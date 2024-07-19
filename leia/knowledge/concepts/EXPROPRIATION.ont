@@ -1,0 +1,125 @@
+{
+  "name": "@EXPROPRIATION",
+  "isa": [
+    "@GOVERNMENT-ACTIVITY"
+  ],
+  "def": "the action or process by which private property is taken over and transferred to public use, usually by a government, with or without compensation to its owner",
+  "local": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@LAND-ACREAGE-2"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "default",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LAND-ACREAGE-1"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@COMPENSATE"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@GOVERNMENTAL-ORGANIZATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {
+    "@LAND-ACREAGE-2": {
+      "name": "@LAND-ACREAGE-2",
+      "isa": [
+        "@LAND-ACREAGE"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "public-private",
+          "facet": "sem",
+          "filler": "public"
+        }
+      ],
+      "block": [],
+      "private": {}
+    },
+    "@LAND-ACREAGE-1": {
+      "name": "@LAND-ACREAGE-1",
+      "isa": [
+        "@LAND-ACREAGE"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "public-private",
+          "facet": "sem",
+          "filler": "private"
+        }
+      ],
+      "block": [],
+      "private": {}
+    }
+  }
+}

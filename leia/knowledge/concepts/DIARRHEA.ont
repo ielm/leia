@@ -1,0 +1,77 @@
+{
+  "name": "@DIARRHEA",
+  "isa": [
+    "@SYMPTOM"
+  ],
+  "def": "Excessive and frequent evacuation of watery feces, usually indicating gastrointestinal distress or disorder.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FECES"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ZOLLINGER-ELLISON-SYNDROME"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@CHOLERA"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@HYPOCHLORHYDRIA"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ULCERATIVE-COLITIS"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@RECTUM"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@DISEASE"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

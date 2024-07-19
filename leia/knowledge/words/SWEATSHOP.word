@@ -1,0 +1,38 @@
+{
+  "word": "SWEATSHOP",
+  "senses": {
+    "SWEATSHOP-N1": {
+      "CAT": "N",
+      "DEF": "a shop or factory in which employees work long hours at low wages under   poor conditions.",
+      "EX": "",
+      "COMMENTS": "[D] we need a script to get any further into the semantic details of this notion",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "FACTORY": {
+          "LOCATION-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "WORK-ACTIVITY": {
+            "INTENSITY": 0.9
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SWEATSHOP-N1",
+      "WORD": "SWEATSHOP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

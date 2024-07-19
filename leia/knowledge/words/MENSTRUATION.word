@@ -1,0 +1,65 @@
+{
+  "word": "MENSTRUATION",
+  "senses": {
+    "MENSTRUATION-N1": {
+      "CAT": "N",
+      "DEF": "discharging the menses--the monthly flow of blood and cellular debris from the uterus of women and other primiate females  ",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MENSTRUATE": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "PERIOD-0",
+        "BY-1",
+        "THE",
+        "PRIMATE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "CATAMENIA",
+        "PERIOD"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "MENSTRUATION-N1",
+      "WORD": "MENSTRUATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$SUBSET",
+  "def": "relates a set to another set that is its subset",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$SUBSET-OF",
+  "measured-in": [],
+  "container": "$PARAMETRIC-RELATION"
+}

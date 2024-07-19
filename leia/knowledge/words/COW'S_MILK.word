@@ -1,0 +1,31 @@
+{
+  "word": "COW'S_MILK",
+  "senses": {
+    "COW'S_MILK-N1": {
+      "CAT": "N",
+      "DEF": "the milk of cows",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MILK": {
+          "PRODUCED-BY": "COW"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COW'S_MILK-N1",
+      "WORD": "COW'S_MILK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

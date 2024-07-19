@@ -1,0 +1,34 @@
+{
+  "word": "BROMEOSIN",
+  "senses": {
+    "BROMEOSIN-N1": {
+      "CAT": "N",
+      "DEF": "a red fluorescent dye;    used in cosmetics and as a biological stain for studing cell structures",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "DYESTUFF": {
+          "PART-OF-OBJECT": "COSMETIC",
+          "USED-BY": "BIOLOGIST"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "EOSIN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BROMEOSIN-N1",
+      "WORD": "BROMEOSIN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

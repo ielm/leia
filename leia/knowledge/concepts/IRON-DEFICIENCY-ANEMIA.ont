@@ -1,0 +1,16 @@
+{
+  "name": "@IRON-DEFICIENCY-ANEMIA",
+  "isa": [
+    "@ANEMIA"
+  ],
+  "def": "Anemia characterized by decreased or absent iron stores.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@IRON"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

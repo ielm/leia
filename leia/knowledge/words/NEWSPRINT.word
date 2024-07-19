@@ -1,0 +1,56 @@
+{
+  "word": "NEWSPRINT",
+  "senses": {
+    "NEWSPRINT-N1": {
+      "CAT": "N",
+      "DEF": "inexpensive paper made from wood pulp, used chiefly for printing newspapers",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "NEWSPRINT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NEWSPRINT-N1",
+      "WORD": "NEWSPRINT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "NEWSPRINT-N2": {
+      "CAT": "N",
+      "DEF": "inexpensive paper used for making newspapers",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PAPER-PRODUCT": {
+          "QUALITY": [
+            "<",
+            0.5
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NEWSPRINT-N2",
+      "WORD": "NEWSPRINT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

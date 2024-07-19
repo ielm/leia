@@ -1,0 +1,321 @@
+{
+  "word": "READY",
+  "senses": {
+    "READY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "prepared, all set + xcomp or no complement",
+      "EX": "Are you ready (to leave)? My thesis is finally ready (to defend).",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT-WORD": "*BE*",
+        "ROOT": "$VAR2",
+        "CAT": "V",
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "XCOMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "PREPAREDNESS": 1,
+          "AGENT-OF": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR3"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "IS-2",
+        "READY-0",
+        "TO",
+        "EAT-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SET",
+        "ALL_SET",
+        "PREPARED",
+        "ALL_READY"
+      ],
+      "HYPONYMS": [
+        "POISED"
+      ],
+      "SENSE": "READY-ADJ1",
+      "WORD": "READY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "READY-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "prepared, all set + pp headed by for",
+      "EX": "Are you ready for the test? My thesis is finally ready for my defense.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT-WORD": "*BE*",
+        "ROOT": "$VAR2",
+        "CAT": "V",
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "PP": {
+          "ROOT-WORD": "FOR",
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "PREPAREDNESS": 1,
+          "AGENT-OF": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR3"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "IS-2",
+        "READY-0",
+        "FOR-4",
+        "FOOD-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "COP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR4",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [
+        "SET",
+        "ALL_SET",
+        "PREPARED",
+        "READY_TO_GO",
+        "ALL_READY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "READY-ADJ2",
+      "WORD": "READY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "READY-ADJ3": {
+      "CAT": "ADJ",
+      "DEF": "ready for X =  ready to take or receive X (physical)",
+      "EX": "She is ready for dessert",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT-WORD": "*BE*",
+        "ROOT": "$VAR2",
+        "CAT": "V",
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "PP": {
+          "ROOT-WORD": "FOR",
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "PREPAREDNESS": 1,
+          "BENEFICIARY-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "TRANSFER-OBJECT": {
+            "THEME": {
+              "VALUE": "^$VAR3"
+            }
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "IS-2",
+        "READY-0",
+        "FOR-4",
+        "THE",
+        "CURE-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ALL_READY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "READY-ADJ3",
+      "WORD": "READY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "READY-ADJ4": {
+      "CAT": "ADJ",
+      "DEF": "phrasal: ready for X = willing to be informed about X (topic)",
+      "EX": "I'm ready for some new ideas. Are you ready for my opinion?",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT-WORD": "*BE*",
+        "ROOT": "$VAR2",
+        "CAT": "V",
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "PP": {
+          "ROOT-WORD": "FOR",
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "PREPAREDNESS": 1,
+          "BENEFICIARY-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "INFORM": {
+            "THEME": {
+              "VALUE": "^$VAR3"
+            }
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "IS-2",
+        "READY-0",
+        "FOR-4",
+        "THE",
+        "MAN-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "COP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR4",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "READY-ADJ4",
+      "WORD": "READY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

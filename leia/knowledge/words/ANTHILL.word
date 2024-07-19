@@ -1,0 +1,35 @@
+{
+  "word": "ANTHILL",
+  "senses": {
+    "ANTHILL-N1": {
+      "CAT": "N",
+      "DEF": "a small hill created by ants",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HILL": {
+          "SIZE": [
+            "<",
+            0.1
+          ],
+          "CREATED-BY": "ANT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ANTHILL-N1",
+      "WORD": "ANTHILL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

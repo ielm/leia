@@ -1,0 +1,140 @@
+{
+  "name": "@GYMNASTICS",
+  "isa": [
+    "@SPORTS-DISCIPLINE"
+  ],
+  "def": "Physical exercises designed to develop and display strength, balance, and agility, performed on or with specialized apparatus, or with music.",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GYMNASIUM"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SPORTS-OUTFIT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HORSE-GYM"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@UNEVEN-BARS"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@BALANCE-BEAM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@CATCH"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@CLIMB"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@COLLIDE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@DISCHARGE-WEAPON"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@DIVE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@HIT"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@MOVE-WATER-VEHICLE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@OBSTRUCT"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@RESTRAIN"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@SKI-EVENT"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@SWIM"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@THROW"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@WALK"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@WHIP"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SPORT-ARTIFACT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BEACH"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BOWLING-ALLEY"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@RECREATION-AREA"
+    },
+    {
+      "slot": "typicalness-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

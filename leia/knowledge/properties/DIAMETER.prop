@@ -1,0 +1,9 @@
+{
+  "name": "$DIAMETER",
+  "def": "The length of a straight line segment passing through the center of a figure, especially of a circle or sphere, and terminating at the periphery.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LINEAR-SIZE"
+}

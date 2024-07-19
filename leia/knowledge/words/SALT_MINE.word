@@ -1,0 +1,31 @@
+{
+  "word": "SALT_MINE",
+  "senses": {
+    "SALT_MINE-N1": {
+      "CAT": "N",
+      "DEF": "an excavation made in the earth from which salt is extracted",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MINE": {
+          "LOCATION-OF": "SALT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SALT_MINE-N1",
+      "WORD": "SALT_MINE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@DISLOCATE",
+  "isa": [
+    "@INJURY"
+  ],
+  "def": "to displace a bone from its normal location",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BONE-ORGAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SUBDIVISION-OF-SKELETAL-SYSTEM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

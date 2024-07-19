@@ -1,0 +1,386 @@
+{
+  "word": "THROUGH",
+  "senses": {
+    "THROUGH-PREP1": {
+      "CAT": "PREP",
+      "DEF": "from one end to the other, spatially; of events. This is the directional relation; the spatial relation counterpart is through-prep2",
+      "EX": "he ran through the forest",
+      "COMMENTS": "use a similar approach as for 'along' - path for events, whereas for objects it will be 'inside-of' [D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "CHANGE-LOCATION",
+          "PATH": {
+            "VALUE": "^$VAR2",
+            "SEM": "PHYSICAL-OBJECT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "THROUGH-0",
+        "THE",
+        "CHANGE-LOCATION-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "THROUGH-PREP1",
+      "WORD": "THROUGH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "THROUGH-PREP3": {
+      "CAT": "PREP",
+      "DEF": "by means of",
+      "EX": "succeed through hard work",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "CAUSED-BY": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "THROUGH-0",
+        "THE",
+        "EVENT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "THROUGH-PREP3",
+      "WORD": "THROUGH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "THROUGH-PREP4": {
+      "CAT": "PREP",
+      "DEF": "until the end of; temporal",
+      "EX": "the play runs through december <through december 29>",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "TIME-END": {
+            "VALUE": "^$VAR2",
+            "SEM": "TIME-INTERVAL-UNIT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "THROUGH-0",
+        "THE",
+        "EVENT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "THROUGH-PREP4",
+      "WORD": "THROUGH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "THROUGH-PREP5": {
+      "CAT": "PREP",
+      "DEF": "phrasal: from x through y[temporal]",
+      "EX": "the play runs from september through december <through december 29>",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "PP": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "FROM",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "TIME-BEGIN": {
+            "VALUE": "^$VAR4",
+            "SEM": "TIME-INTERVAL-UNIT"
+          },
+          "TIME-END": {
+            "VALUE": "^$VAR2",
+            "SEM": "TIME-INTERVAL-UNIT"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "V"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EVENTED-1",
+        "FROM-3",
+        "THE",
+        "EVENT-4",
+        "THROUGH-0",
+        "THE",
+        "EVENT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "THROUGH-PREP5",
+      "WORD": "THROUGH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "THROUGH-PREP6": {
+      "CAT": "PREP",
+      "DEF": "phrasal: Through X, clause...",
+      "EX": "Through hard work(,) they succeeded",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PUNCT": {
+          "ROOT": "$VAR3",
+          "CAT": "PUNCT",
+          "ROOT-WORD": "COMMA",
+          "OPT": "+"
+        },
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "INSTRUMENT": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THROUGH-0",
+        "THE",
+        "MAN-2",
+        "COMMA-3",
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR3",
+          "$VAR0"
+        ],
+        [
+          "CCOMP",
+          "$VAR3",
+          "$VAR1"
+        ],
+        [
+          "NSUBJ",
+          "$VAR3",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "THROUGH-PREP6",
+      "WORD": "THROUGH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "THROUGH-PREP2": {
+      "CAT": "PREP",
+      "DEF": "located inside of and running from one end to the other; this is the spatial relation; the directional counterpart is through-prep1",
+      "EX": "the path through the forest",
+      "COMMENTS": "[D] use a similar approach as for 'along' - path for events, whereas for objects it will be 'inside-of'",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "PHYSICAL-OBJECT",
+          "SPATIAL-RELATION": {
+            "VALUE": "^$VAR2",
+            "SEM": "PHYSICAL-OBJECT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "TABLE-1",
+        "THROUGH-0",
+        "THE",
+        "TABLE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "THROUGH-PREP2",
+      "WORD": "THROUGH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

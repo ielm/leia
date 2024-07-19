@@ -1,0 +1,34 @@
+{
+  "word": "TOSSED_SALAD",
+  "senses": {
+    "TOSSED_SALAD-N1": {
+      "CAT": "N",
+      "DEF": "A salad tossed with a dressing",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SALAD": {
+          "HAS-OBJECT-AS-PART": "LEAF-VEGETABLE",
+          "HAS-OBJECT-AS-PART-1": "SALAD-DRESSING"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "GREEN_SALAD"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "TOSSED_SALAD-N1",
+      "WORD": "TOSSED_SALAD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

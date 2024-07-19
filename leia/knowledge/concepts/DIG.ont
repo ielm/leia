@@ -1,0 +1,97 @@
+{
+  "name": "@DIG",
+  "isa": [
+    "@TRANSFER-OBJECT"
+  ],
+  "def": "to turn up or remove (ground, etc.) with a shovel, hands, etc.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HUMUS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CLAY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SAND"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@RUBBLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HOLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PAW"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HOOF"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SPADE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SHOVEL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SNOW"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SOIL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ROCK"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "source",
+      "facet": "relaxable-to",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

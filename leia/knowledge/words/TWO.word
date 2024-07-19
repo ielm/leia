@@ -1,0 +1,122 @@
+{
+  "word": "TWO",
+  "senses": {
+    "TWO-NUM402": {
+      "COMMENTS": "*BLOCKS*",
+      "CAT": "NUM",
+      "DEF": "the quantity 2",
+      "EX": "she bought two eggs",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "NUM": {
+          "ROOT": "$VAR0",
+          "CAT": "NUM"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "CARDINALITY": 2
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT",
+        "TWO-0",
+        "BLOCKS-1"
+      ],
+      "SYNONYMS": [
+        "2",
+        "EXACTLY_TWO"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "TWO-NUM402",
+      "WORD": "TWO",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "EXAMPLE-DEPS": []
+    },
+    "TWO-NUM1": {
+      "CAT": "NUM",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "NUM"
+      },
+      "SEM-STRUC": {
+        "PHYSICAL-OBJECT": {
+          "CARDINALITY": {
+            "VALUE": 2
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "2"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "TWO-NUM1",
+      "WORD": "TWO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "TWO-NUM2": {
+      "CAT": "NUM",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NUM": {
+          "ROOT": "$VAR0",
+          "CAT": "NUM"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "NUMBER": "PL"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "CARDINALITY": 2
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "TWO-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NUM",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "2"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "TWO-NUM2",
+      "WORD": "TWO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

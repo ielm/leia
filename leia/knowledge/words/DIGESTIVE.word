@@ -1,0 +1,46 @@
+{
+  "word": "DIGESTIVE",
+  "senses": {
+    "DIGESTIVE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to digestion or the digestive system",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "ALIMENTARY-SYSTEM"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "DIGESTIVE-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "PEPTIC"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DIGESTIVE-ADJ1",
+      "WORD": "DIGESTIVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

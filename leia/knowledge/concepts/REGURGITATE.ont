@@ -1,0 +1,42 @@
+{
+  "name": "@REGURGITATE",
+  "isa": [
+    "@BACKWARDS-MOTION-OF-INGESTED-SUBSTANCE"
+  ],
+  "def": "the process of a content moving from the stomach to the esophagus or higher; this is the same as reflux",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ESOPHAGUS"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@HYPOCHLORHYDRIA"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ACHALASIA"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@GASTROESOPHAGEAL-REFLUX-DISEASE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ALIMENTARY-SYSTEM"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@DISEASE"
+    }
+  ],
+  "private": {}
+}

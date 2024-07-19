@@ -1,0 +1,44 @@
+{
+  "word": "URGENT",
+  "senses": {
+    "URGENT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "demanding immediate action",
+      "EX": "it is urgent that you reply today",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "URGENCY": 1
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "URGENT-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "URGENT-ADJ1",
+      "WORD": "URGENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

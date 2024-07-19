@@ -1,0 +1,237 @@
+{
+  "name": "@OVERFLOW",
+  "isa": [
+    "@FLOW"
+  ],
+  "def": "to flow or run over; to flood",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@BEVERAGE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PLACE-SETTING-CONTAINER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@RESERVOIR"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SEWER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SWIMMING-POOL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COOKING-CONTAINER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@RIVER-BANK"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VEHICLE-PART"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@LINSEED-OIL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ALCOHOL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@LIQUID-ELEMENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HYDROGEN-PEROXIDE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OIL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COOKING-OIL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@JAR"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BOTTLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BARREL-CONTAINER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PAIL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VASE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BATHTUB"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TOILET"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SINK-FIXTURE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FOUNTAIN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WELL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VOLUME-MEASURING-ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DAM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@AQUEOUS-HUMOR-OF-EYEBALL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BEVERAGE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BLOOD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CHLOROPHYLL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COOKING-OIL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INTRAVENOUS-FLUID"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LAVA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LINSEED-OIL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LUBRICANT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PLASMA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SECRETION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TAR"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TRANSUDATE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@URINE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VACCINE"
+    }
+  ],
+  "private": {}
+}

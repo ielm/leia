@@ -1,0 +1,34 @@
+{
+  "word": "BUS",
+  "senses": {
+    "BUS-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BUS",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "MOTORBUS",
+        "MOTORCOACH",
+        "COACH",
+        "AUTOBUS"
+      ],
+      "HYPONYMS": [
+        "DOUBLE_DECKER_BUS"
+      ],
+      "SENSE": "BUS-N1",
+      "WORD": "BUS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

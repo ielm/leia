@@ -1,0 +1,44 @@
+{
+  "word": "URBAN",
+  "senses": {
+    "URBAN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to a city",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "CITY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "URBAN-0",
+        "CURE-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "URBAN-ADJ1",
+      "WORD": "URBAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

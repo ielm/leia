@@ -1,0 +1,22 @@
+{
+  "name": "@TASSEL",
+  "isa": [
+    "@DECORATIVE-ARTIFACT"
+  ],
+  "def": "an ornamental tuft of threads, etc., usually hanging loosely from a knob",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SEWING-MATERIAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

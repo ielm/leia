@@ -1,0 +1,21 @@
+{
+  "name": "@SHINGLE",
+  "isa": [
+    "@CONSTRUCTION-MATERIAL"
+  ],
+  "def": "A thin oblong piece of material, such as wood or slate, that is laid in overlapping rows to cover the roof or sides of a building",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SLATE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

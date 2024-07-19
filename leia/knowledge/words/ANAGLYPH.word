@@ -1,0 +1,34 @@
+{
+  "word": "ANAGLYPH",
+  "senses": {
+    "ANAGLYPH-N1": {
+      "CAT": "N",
+      "DEF": "An ornament carved or sculpted in low relief",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SCULPTURE": {
+          "SCULPTURAL-RELIEF": [
+            "<",
+            0.4
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ANAGLYPH-N1",
+      "WORD": "ANAGLYPH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

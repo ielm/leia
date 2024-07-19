@@ -1,0 +1,93 @@
+{
+  "word": "BOOZE",
+  "senses": {
+    "BOOZE-N1": {
+      "CAT": "N",
+      "DEF": "alcoholic beverages - derogatorily",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": [
+          "ALCOHOLIC-BEVERAGE"
+        ]
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BOOZE-N1",
+      "WORD": "BOOZE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BOOZE-V1": {
+      "CAT": "V",
+      "DEF": "to drink too much alcohol",
+      "EX": "he boozes on saturday nights",
+      "COMMENTS": "the evaluative is attributed to the speaker - the idea is to convey criticism, but I'm not sure if this is sufficient",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "INGEST": {
+            "THEME": {
+              "VALUE": "REFSEM2"
+            },
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        },
+        "REFSEM2": {
+          "ALCOHOLIC-BEVERAGE": {
+            "AMOUNT": [
+              ">",
+              0.8
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "BOOZES-0"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BOOZE-V1",
+      "WORD": "BOOZE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "@PALM-SUNDAY",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "A Christian holiday celebrated on the Sunday before Easter in commemoration of Jesus*s entry into Jerusalem, when the multitude strewed palm branches in the way",
+  "local": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@CHRISTIANITY"
+    },
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@SUNDAY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "private": {}
+}

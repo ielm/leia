@@ -1,0 +1,24 @@
+{
+  "name": "@INTRAVENOUS-FLUID",
+  "isa": [
+    "@DRUG"
+  ],
+  "def": "a fluid delivered to patients through the veins",
+  "local": [],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    }
+  ],
+  "private": {}
+}

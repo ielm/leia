@@ -1,0 +1,61 @@
+{
+  "word": "ROOM",
+  "senses": {
+    "ROOM-N1": {
+      "CAT": "N",
+      "DEF": "area set off by walls within a building",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "ROOM",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "ANTEROOM",
+        "ANTECHAMBER",
+        "ENTRANCE_HALL",
+        "FOYER",
+        "VESTIBULE",
+        "BACK_ROOM",
+        "CLUBROOM",
+        "STUDY",
+        "SUN_ROOM"
+      ],
+      "SENSE": "ROOM-N1",
+      "WORD": "ROOM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ROOM-N2": {
+      "CAT": "N",
+      "DEF": "space",
+      "EX": "is there room for my bags here?",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SPACE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SPACE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ROOM-N2",
+      "WORD": "ROOM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

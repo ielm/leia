@@ -1,0 +1,43 @@
+{
+  "name": "@FOUL",
+  "isa": [
+    "@SUBACTIVITY-OF-GAME-SPORT"
+  ],
+  "def": "to comit an activity contrary to the rules of the game or sport",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@ACQUIRE-2"
+    }
+  ],
+  "block": [],
+  "private": {
+    "@ACQUIRE-2": {
+      "name": "@ACQUIRE-2",
+      "isa": [
+        "@ACQUIRE"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "theme",
+          "facet": "sem",
+          "filler": "@PENALTY-ATHLETIC"
+        },
+        {
+          "slot": "agent",
+          "facet": "default",
+          "filler": "@ATHLETE"
+        },
+        {
+          "slot": "agent",
+          "facet": "default",
+          "filler": "@SPORTS-TEAM"
+        }
+      ],
+      "block": [],
+      "private": {}
+    }
+  }
+}

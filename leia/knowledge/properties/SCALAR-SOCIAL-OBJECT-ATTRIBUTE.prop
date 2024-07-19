@@ -1,0 +1,9 @@
+{
+  "name": "$SCALAR-SOCIAL-OBJECT-ATTRIBUTE",
+  "def": "An attribute with a numerical range which describes some socially-related phenomena, such as salary, cost-of-living, price, population, cost-of-education, etc.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-OBJECT-ATTRIBUTE"
+}

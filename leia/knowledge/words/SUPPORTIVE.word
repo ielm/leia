@@ -1,0 +1,45 @@
+{
+  "word": "SUPPORTIVE",
+  "senses": {
+    "SUPPORTIVE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "intended to provide assistance",
+      "EX": "Supportive care can speed recovery.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "PURPOSE": "HELP"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "SUPPORTIVE-0",
+        "FRIENDS-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SUPPORTIVE-ADJ1",
+      "WORD": "SUPPORTIVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

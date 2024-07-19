@@ -1,0 +1,137 @@
+{
+  "word": "PROHIBIT",
+  "senses": {
+    "PROHIBIT-V1": {
+      "CAT": "V",
+      "DEF": "to ban",
+      "EX": "the dean prohibited smoking in offices",
+      "COMMENTS": "I'm not using the concept prohibit, which should be removed",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "PERMISSIVE",
+          "VALUE": 0,
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          },
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "PROHIBITED-0",
+        "TALKING-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PROHIBIT-V1",
+      "WORD": "PROHIBIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PROHIBIT-V2": {
+      "CAT": "V",
+      "DEF": "ban",
+      "EX": "the dean prohibited us from smoking in our offices",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": "FROM",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "PERMISSIVE",
+          "VALUE": 0,
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          },
+          "SCOPE": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR4": {
+          "SEM": "EVENT",
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR2",
+          "^$VAR4"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "PROHIBITED-0",
+        "THE",
+        "WOMAN-2",
+        "FROM-3",
+        "HITTING-4",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PROHIBIT-V2",
+      "WORD": "PROHIBIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@SUPPOSITORY",
+  "isa": [
+    "@DRUG-FORM"
+  ],
+  "def": "A small plug of medication designed to melt at body temperature within a body cavity other than the mouth, especially the rectum or vagina",
+  "local": [],
+  "block": [
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,35 @@
+{
+  "word": "INTOLERANT",
+  "senses": {
+    "INTOLERANT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "PATIENCE-ATTRIBUTE": 0.2
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INTOLERANT-ADJ1",
+      "WORD": "INTOLERANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

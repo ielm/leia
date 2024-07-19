@@ -1,0 +1,36 @@
+{
+  "word": "CREWMEN",
+  "senses": {
+    "CREWMEN-N1": {
+      "CAT": "N",
+      "DEF": "more than one sailor (added in case preprocessor didn't recognize the form)",
+      "EX": "The crewmen were tired after the storm",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "NUMBER": "PL"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": "SAILOR",
+          "CARDINALITY": [
+            ">",
+            1
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CREWMEN-N1",
+      "WORD": "CREWMEN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

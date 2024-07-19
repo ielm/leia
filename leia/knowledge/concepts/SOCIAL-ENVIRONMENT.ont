@@ -1,0 +1,16 @@
+{
+  "name": "@SOCIAL-ENVIRONMENT",
+  "isa": [
+    "@SOCIAL-OBJECT"
+  ],
+  "def": "the ambiance, feeling, atmosphere, as understood in a social context",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@NAME"
+    }
+  ],
+  "private": {}
+}

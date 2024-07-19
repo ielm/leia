@@ -1,0 +1,17 @@
+{
+  "name": "@GOVERNMENT-RESIDENTIAL-BUILDING",
+  "isa": [
+    "@GOVERNMENT-BUILDING",
+    "@DWELLING"
+  ],
+  "def": "A governmental building where a governmental role lives.",
+  "local": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@GOVERNMENTAL-ROLE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

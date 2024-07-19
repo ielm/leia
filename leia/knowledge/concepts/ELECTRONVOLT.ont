@@ -1,0 +1,19 @@
+{
+  "name": "@ELECTRONVOLT",
+  "isa": [
+    "@ENERGY-UNIT"
+  ],
+  "def": "(Wikipedia) equal to the amount of energy gained by a single unbound electron when it accelerates through an electrostatic potential difference of one volt.",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.602176462e-19
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

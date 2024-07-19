@@ -1,0 +1,92 @@
+{
+  "word": "APT",
+  "senses": {
+    "APT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "x is apt to y",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR2",
+        "CAT": "V",
+        "ROOT-WORD": "*BE*",
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "XCOMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR3": {
+          "TIME": [
+            ">",
+            [
+              "FIND-ANCHOR-TIME"
+            ]
+          ],
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "EPISTEMIC": 0.7
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR3"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "WAS-2",
+        "LIKELY-0",
+        "TO-7",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "COP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "XCOMP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [
+        "LIABLE",
+        "LIKELY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "APT-ADJ1",
+      "WORD": "APT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

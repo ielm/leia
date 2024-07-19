@@ -1,0 +1,70 @@
+{
+  "word": "VICTORY",
+  "senses": {
+    "VICTORY-N1": {
+      "CAT": "N",
+      "DEF": "winning",
+      "EX": "the victory of the russians over the swedes",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "OVER",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "WIN": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "HAS-LOSER": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "VICTORY-0",
+        "OF-1",
+        "THE",
+        "HUMAN-2",
+        "OVER-3",
+        "THE",
+        "SOCIAL-OBJECT-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "VICTORY-N1",
+      "WORD": "VICTORY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

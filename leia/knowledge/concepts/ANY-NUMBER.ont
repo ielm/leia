@@ -1,0 +1,26 @@
+{
+  "name": "@ANY-NUMBER",
+  "isa": [
+    "@MATHEMATICAL-OBJECT"
+  ],
+  "def": "a mathematical symbol or word denoting quantity",
+  "local": [
+    {
+      "slot": "numeric-type",
+      "facet": "sem",
+      "filler": "real"
+    },
+    {
+      "slot": "numeric-type",
+      "facet": "sem",
+      "filler": "imaginary"
+    },
+    {
+      "slot": "numeric-type",
+      "facet": "sem",
+      "filler": "decimal"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,53 @@
+{
+  "word": "MYTH",
+  "senses": {
+    "MYTH-N1": {
+      "CAT": "N",
+      "DEF": "a literary composition of the genre myth",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LITERARY-COMPOSITION": {
+          "HAS-STYLE": "MYTH"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MYTH-N1",
+      "WORD": "MYTH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MYTH-N2": {
+      "CAT": "N",
+      "DEF": "the literary genre myth",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "MYTH",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MYTH-N2",
+      "WORD": "MYTH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

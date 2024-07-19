@@ -1,0 +1,56 @@
+{
+  "word": "ANECDOTAL",
+  "senses": {
+    "ANECDOTAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "based on scattered observations rather than systematic study",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "RESEARCH": {
+            "THEME": {
+              "VALUE": "^$VAR1",
+              "SEM": "ABSTRACT-OBJECT"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ANECDOTAL-0",
+        "ABSTRACT-MEN-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ANECDOTAL-ADJ1",
+      "WORD": "ANECDOTAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

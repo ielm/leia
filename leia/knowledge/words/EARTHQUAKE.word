@@ -1,0 +1,37 @@
+{
+  "word": "EARTHQUAKE",
+  "senses": {
+    "EARTHQUAKE-N1": {
+      "CAT": "N",
+      "DEF": "a trembling of the earth's crust, caused by underground volcanic forces or shifting of rock",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "EARTHQUAKE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "QUAKE",
+        "SEISMIC_DISTURBANCE",
+        "EARTH_TREMOR"
+      ],
+      "HYPONYMS": [
+        "TREMOR",
+        "SHICK",
+        "MICROSEISM",
+        "AFTERSHOCK",
+        "FORESHOCK"
+      ],
+      "SENSE": "EARTHQUAKE-N1",
+      "WORD": "EARTHQUAKE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

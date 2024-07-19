@@ -1,0 +1,24 @@
+{
+  "name": "@SACCHARIN",
+  "isa": [
+    "@SWEETENER"
+  ],
+  "def": "an artificial sweetener",
+  "local": [
+    {
+      "slot": "sweetness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0.9
+      ]
+    },
+    {
+      "slot": "genuineness",
+      "facet": "sem",
+      "filler": "no"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

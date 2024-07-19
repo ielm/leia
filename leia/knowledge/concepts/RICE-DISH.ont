@@ -1,0 +1,30 @@
+{
+  "name": "@RICE-DISH",
+  "isa": [
+    "@PREPARED-FOOD"
+  ],
+  "def": "a cooked dish which consists mainly of rice but may also have vegetables, fish, meat, etc.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "default",
+      "filler": "@RICE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    }
+  ],
+  "private": {}
+}

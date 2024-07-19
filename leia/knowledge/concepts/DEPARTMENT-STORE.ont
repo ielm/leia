@@ -1,0 +1,16 @@
+{
+  "name": "@DEPARTMENT-STORE",
+  "isa": [
+    "@STORE"
+  ],
+  "def": "a large retail store for the sale of many kinds of goods arranged in departments",
+  "local": [
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@CONSUMER-GOOD"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

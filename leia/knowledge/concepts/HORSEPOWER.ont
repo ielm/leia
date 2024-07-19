@@ -1,0 +1,19 @@
+{
+  "name": "@HORSEPOWER",
+  "isa": [
+    "@POWER-UNIT"
+  ],
+  "def": "(Wikipedia) a  unit of measurement of the maximum power output of internal-combustion engines of automobiles, and often of trucks, buses, and ships.",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        745.7
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

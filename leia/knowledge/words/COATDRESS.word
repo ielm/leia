@@ -1,0 +1,44 @@
+{
+  "word": "COATDRESS",
+  "senses": {
+    "COATDRESS-N1": {
+      "CAT": "N",
+      "DEF": "a dress that buttons up the front",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "DRESS": {
+          "HAS-OBJECT-AS-PART": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": "BUTTON",
+            "CARDINALITY": [
+              ">",
+              4
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SHIRTDRESS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "COATDRESS-N1",
+      "WORD": "COATDRESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

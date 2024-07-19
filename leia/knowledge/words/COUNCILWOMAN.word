@@ -1,0 +1,35 @@
+{
+  "word": "COUNCILWOMAN",
+  "senses": {
+    "COUNCILWOMAN-N1": {
+      "CAT": "N",
+      "DEF": "a minor politician",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "POLITICIAN": {
+          "GENDER": "FEMALE",
+          "AUTHORITY-ATTRIBUTE": [
+            "<",
+            0.3
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COUNCILWOMAN-N1",
+      "WORD": "COUNCILWOMAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

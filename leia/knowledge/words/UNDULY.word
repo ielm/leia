@@ -1,0 +1,41 @@
+{
+  "word": "UNDULY",
+  "senses": {
+    "UNDULY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "excessively, more than expected, desired, etc.",
+      "EX": "unduly strict",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        },
+        "ROOT": "$VAR1",
+        "CAT": [
+          "ADJ",
+          "ADV"
+        ]
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATIVE-TO-NORM": [
+            ">",
+            0.7
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "UNDULY-ADV1",
+      "WORD": "UNDULY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

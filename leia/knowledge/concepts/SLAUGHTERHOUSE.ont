@@ -1,0 +1,22 @@
+{
+  "name": "@SLAUGHTERHOUSE",
+  "isa": [
+    "@FOOD-PROCESSING-CORPORATION"
+  ],
+  "def": "a place where animals are butchered for food",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@MEAT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@INGESTIBLE"
+    }
+  ],
+  "private": {}
+}

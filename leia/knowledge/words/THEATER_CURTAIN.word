@@ -1,0 +1,36 @@
+{
+  "word": "THEATER_CURTAIN",
+  "senses": {
+    "THEATER_CURTAIN-N1": {
+      "CAT": "N",
+      "DEF": "the curtain on a stage in a theater",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CURTAIN": {
+          "SIZE": [
+            ">",
+            0.8
+          ],
+          "ABOVE": "STAGE",
+          "LOCATION": "THEATER-DRAMATIC"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "THEATER_CURTAIN-N1",
+      "WORD": "THEATER_CURTAIN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

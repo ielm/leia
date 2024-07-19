@@ -1,0 +1,37 @@
+{
+  "name": "@T5-SEGMENT-OF-ESOPHAGUS",
+  "isa": [
+    "@SEGMENT-OF-ESOPHAGUS"
+  ],
+  "def": "segment distal to T4 and proximal to T6",
+  "local": [
+    {
+      "slot": "distal-to",
+      "facet": "sem",
+      "filler": "@T4-SEGMENT-OF-ESOPHAGUS"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@WALL-OF-ESOPHAGUS"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LUMEN-OF-ESOPHAGUS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "distal-to",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

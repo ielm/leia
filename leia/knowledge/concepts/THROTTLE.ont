@@ -1,0 +1,33 @@
+{
+  "name": "@THROTTLE",
+  "isa": [
+    "@VEHICLE-PART",
+    "@VALVE"
+  ],
+  "def": "a valve that regulates the flow of fluid, e.g., in a combustion engine",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

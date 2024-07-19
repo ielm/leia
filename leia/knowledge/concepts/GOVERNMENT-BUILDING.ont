@@ -1,0 +1,45 @@
+{
+  "name": "@GOVERNMENT-BUILDING",
+  "isa": [
+    "@BUILDING"
+  ],
+  "def": "a building in which governmental activities are conducted",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@GOVERNMENT-ACTIVITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@EMAIL-ADDRESS"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@PHONE-NUMBER"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@WEB-ADDRESS"
+    }
+  ],
+  "private": {}
+}

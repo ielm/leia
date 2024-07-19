@@ -1,0 +1,22 @@
+{
+  "name": "@DELTA",
+  "isa": [
+    "@GEOLOGICAL-ENTITY"
+  ],
+  "def": "a deposit of soil, often triangular, formed at the mouth of some rivers",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SOIL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@EARTH-MATERIAL"
+    }
+  ],
+  "private": {}
+}

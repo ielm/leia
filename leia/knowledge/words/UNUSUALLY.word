@@ -1,0 +1,50 @@
+{
+  "word": "UNUSUALLY",
+  "senses": {
+    "UNUSUALLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "on the very high end of the given scale",
+      "EX": "they have an unusually dangerous job",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        },
+        "ROOT": "$VAR1",
+        "CAT": [
+          "ADJ",
+          "ADV"
+        ]
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "DELIMIT-SCALE",
+          "^$VAR1",
+          "EXTREME",
+          0.2
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "UNUSUALLY-0",
+        "GOOD-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "UNUSUALLY-ADV1",
+      "WORD": "UNUSUALLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

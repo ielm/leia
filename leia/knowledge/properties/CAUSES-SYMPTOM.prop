@@ -1,0 +1,9 @@
+{
+  "name": "$CAUSES-SYMPTOM",
+  "def": "Used to specify which symptoms are associated with which diseases.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$SYMPTOM-OF-DISEASE",
+  "measured-in": [],
+  "container": "$MEDICAL-RELATION"
+}

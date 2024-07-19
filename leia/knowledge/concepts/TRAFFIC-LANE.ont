@@ -1,0 +1,31 @@
+{
+  "name": "@TRAFFIC-LANE",
+  "isa": [
+    "@ROAD"
+  ],
+  "def": "A strip of roadway designated for single row of vehicles",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@EARTH-MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@STEEL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    }
+  ],
+  "private": {}
+}

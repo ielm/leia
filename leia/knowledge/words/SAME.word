@@ -1,0 +1,49 @@
+{
+  "word": "SAME",
+  "senses": {
+    "SAME-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "indicates coreference",
+      "EX": "The same girl asked if we were ready to check out.",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          "^$VAR1"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "SAME-0",
+        "DOG-1",
+        "HIT",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SAME-ADJ1",
+      "WORD": "SAME",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

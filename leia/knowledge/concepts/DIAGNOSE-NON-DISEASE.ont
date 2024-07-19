@@ -1,0 +1,62 @@
+{
+  "name": "@DIAGNOSE-NON-DISEASE",
+  "isa": [
+    "@ANALYTIC-COGNITIVE-EVENT"
+  ],
+  "def": "to search for and, if successful, positively identify the cause of a problem - \nlike a disease or bug in a program",
+  "local": [
+    {
+      "slot": "effect",
+      "facet": "default",
+      "filler": "@DIAGNOSIS-NON-MEDICAL"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@ENGINEER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PROBLEM"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@MECHANIC"
+    }
+  ],
+  "block": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

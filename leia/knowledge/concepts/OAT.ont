@@ -1,0 +1,21 @@
+{
+  "name": "@OAT",
+  "isa": [
+    "@GRAIN-FOODSTUFF"
+  ],
+  "def": "a hardy cereal grass",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "off-white"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "tan"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

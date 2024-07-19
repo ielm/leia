@@ -1,0 +1,86 @@
+{
+  "word": "COIN",
+  "senses": {
+    "COIN-N1": {
+      "CAT": "N",
+      "DEF": "a piece of money or metal money considered as a whole",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "COIN",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SPECIE",
+        "CHANGE",
+        "COINAGE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "COIN-N1",
+      "WORD": "COIN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "COIN-V1": {
+      "CAT": "V",
+      "DEF": "to invent",
+      "EX": "she coined the phrase xxxx ",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "INVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE-2",
+        "COINED-0",
+        "THE",
+        "PHRASE-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COIN-V1",
+      "WORD": "COIN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

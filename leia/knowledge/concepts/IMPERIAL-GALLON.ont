@@ -1,0 +1,19 @@
+{
+  "name": "@IMPERIAL-GALLON",
+  "isa": [
+    "@VOLUME-UNIT"
+  ],
+  "def": "a unit of volume used in the UK; 1.20095*gallon-liquid & 1.03206*dry-gallon",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.00454609
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

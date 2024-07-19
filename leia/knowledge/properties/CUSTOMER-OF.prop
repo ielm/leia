@@ -1,0 +1,9 @@
+{
+  "name": "$CUSTOMER-OF",
+  "def": "Relation between customers and the service-corporations they support.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$HAS-CUSTOMER",
+  "measured-in": [],
+  "container": "$BUSINESS-RELATION"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@SOLVE",
+  "isa": [
+    "@DETERMINE"
+  ],
+  "def": "to find the answer to a problem",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PROBLEM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PUZZLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

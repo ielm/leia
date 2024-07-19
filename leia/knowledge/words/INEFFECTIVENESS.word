@@ -1,0 +1,128 @@
+{
+  "word": "INEFFECTIVENESS",
+  "senses": {
+    "INEFFECTIVENESS-N2": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "the ineffectiveness of x",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPITEUCTIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "INEFFICACY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "INEFFECTIVENESS-N2",
+      "WORD": "INEFFECTIVENESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "INEFFECTIVENESS-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "(x's) ineffectiveness",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR0",
+      "SYN-STRUC": {
+        "NMOD_POSS": [
+          [
+            "ROOT",
+            "$VAR1"
+          ],
+          [
+            "CAT",
+            [
+              "N",
+              "DET"
+            ]
+          ],
+          [
+            "POSSESSIVE",
+            "+"
+          ],
+          [
+            "OPT",
+            "+"
+          ],
+          [
+            "CASE",
+            [
+              [
+                "ROOT",
+                "$VAR9"
+              ],
+              [
+                "ROOT",
+                "*QUOTE*S"
+              ],
+              [
+                "CAT",
+                "POSSESSIVE"
+              ],
+              [
+                "OPT",
+                "+"
+              ]
+            ]
+          ]
+        ],
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPITEUCTIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR9": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "INEFFICACY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "INEFFECTIVENESS-N1",
+      "WORD": "INEFFECTIVENESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

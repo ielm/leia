@@ -1,0 +1,16 @@
+{
+  "name": "@MILLET",
+  "isa": [
+    "@GRAIN-FOODSTUFF"
+  ],
+  "def": "a cereal grass whose grain is used for food for Europe and Asia",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "yellow"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

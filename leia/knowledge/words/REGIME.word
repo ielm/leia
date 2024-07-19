@@ -1,0 +1,49 @@
+{
+  "word": "REGIME",
+  "senses": {
+    "REGIME-N1": {
+      "CAT": "N",
+      "DEF": "military regime, a governmental type",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "MILITARY-REGIME",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "REGIME-N1",
+      "WORD": "REGIME",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "REGIME-N2": {
+      "CAT": "N",
+      "DEF": "any governmental organization",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "GOVERNMENTAL-ORGANIZATION",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "REGIME-N2",
+      "WORD": "REGIME",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "word": "STARVATION",
+  "senses": {
+    "STARVATION-N1": {
+      "CAT": "N",
+      "DEF": "dying from hunger",
+      "EX": "starvation (of children) should be a thing of the past",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "STARVE": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "STARVATION-0",
+        "OF-1",
+        "THE",
+        "ANIMAL-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "STARVATION-N1",
+      "WORD": "STARVATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

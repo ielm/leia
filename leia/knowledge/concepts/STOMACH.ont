@@ -1,0 +1,74 @@
+{
+  "name": "@STOMACH",
+  "isa": [
+    "@ANIMAL-ORGAN"
+  ],
+  "def": "The enlarged, saclike portion of the alimentary canal, one of the principal organs of digestion, located in vertebrates between the esophagus and the small intestine.",
+  "local": [
+    {
+      "slot": "pressure-from-ingestible-quantity",
+      "facet": "sem",
+      "filler": [
+        "><",
+        10
+      ]
+    },
+    {
+      "slot": "pressure-from-gravity",
+      "facet": "sem",
+      "filler": [
+        "><",
+        10
+      ]
+    },
+    {
+      "slot": "pressure-basic-gastric",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "ph",
+      "facet": "sem",
+      "filler": [
+        "><",
+        7
+      ]
+    },
+    {
+      "slot": "distal-to",
+      "facet": "sem",
+      "filler": "@T10-SEGMENT-OF-ESOPHAGUS"
+    },
+    {
+      "slot": "distal-to",
+      "facet": "sem",
+      "filler": "@ESOPHAGUS"
+    },
+    {
+      "slot": "pressure-from-gravity",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "pressure-from-ingestible-quantity",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "pressure-basic-gastric",
+      "facet": "sem",
+      "filler": [
+        "><",
+        10
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "distal-to",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

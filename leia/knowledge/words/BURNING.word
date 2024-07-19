@@ -1,0 +1,45 @@
+{
+  "word": "BURNING",
+  "senses": {
+    "BURNING-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "of pain - one of the descriptors of pain",
+      "EX": "The pain she is feeling is burning, not dull.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "PAIN",
+          "TYPE": "BURNING"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "BURNING-0",
+        "PAIN-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BURNING-ADJ1",
+      "WORD": "BURNING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

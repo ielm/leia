@@ -1,0 +1,53 @@
+{
+  "word": "A_LONG_TIME",
+  "senses": {
+    "A_LONG_TIME-ADV1": {
+      "CAT": "ADV",
+      "DEF": "",
+      "EX": "It takes a long time to do that. How long does it take? The concert went on a long time.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "DURATION": 0.8
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "LONG-0",
+        "WAR-1",
+        "AMAZED",
+        "SOME",
+        "PEOPLE"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "LONG",
+        "FOR_A_LONG_TIME",
+        "LONG_TERM"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "A_LONG_TIME-ADV1",
+      "WORD": "A_LONG_TIME",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

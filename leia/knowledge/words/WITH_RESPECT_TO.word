@@ -1,0 +1,44 @@
+{
+  "word": "WITH_RESPECT_TO",
+  "senses": {
+    "WITH_RESPECT_TO-PREP1": {
+      "CAT": "PREP",
+      "DEF": "when joining two nouns, shows they are related",
+      "EX": "the problems with respect to our recent move",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WITH_RESPECT_TO-PREP1",
+      "WORD": "WITH_RESPECT_TO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

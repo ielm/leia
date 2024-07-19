@@ -1,0 +1,16 @@
+{
+  "name": "@WASTE-MATERIAL",
+  "isa": [
+    "@MATERIAL"
+  ],
+  "def": "disposable material that is to be gotten rid or; is usually some sort of by-product, as of manufacturing, cooking, or even human digestion",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

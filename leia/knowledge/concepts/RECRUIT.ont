@@ -1,0 +1,16 @@
+{
+  "name": "@RECRUIT",
+  "isa": [
+    "@PERSONNEL-MANAGEMENT"
+  ],
+  "def": "to enlist personnel to work in a business",
+  "local": [],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MONEY"
+    }
+  ],
+  "private": {}
+}

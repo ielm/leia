@@ -1,0 +1,102 @@
+{
+  "word": "LIMITED",
+  "senses": {
+    "LIMITED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "phrasal: X is limited to Y - X is a set composed only of Y",
+      "EX": "The staff is limited to the cook, the housekeeper and the gardener.",
+      "COMMENTS": "Not sure if we want to use member-type + elements here, or has-elements and a coreference relationship between the set and the ^$var1. ",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "PP": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "TO",
+          "OBJ": {
+            "CAT": "NP",
+            "ROOT": "$VAR4"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "ELEMENTS": {
+            "VALUE": "^$VAR4"
+          },
+          "COMPLETE": "YES"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "EVENT-1",
+        "WAS-2",
+        "LIMITED-0",
+        "TO-3",
+        "THE",
+        "EVENT-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AUXPASS",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "IOBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "NSUBJPASS",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LIMITED-ADJ1",
+      "WORD": "LIMITED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

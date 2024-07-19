@@ -1,0 +1,32 @@
+{
+  "name": "@BRONTOPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of thunder",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@THUNDERSTORM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@THUNDER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

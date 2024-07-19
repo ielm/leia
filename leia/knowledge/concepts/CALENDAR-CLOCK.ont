@@ -1,0 +1,33 @@
+{
+  "name": "@CALENDAR-CLOCK",
+  "isa": [
+    "@INDEPENDENT-DEVICE",
+    "@TIMEPIECE"
+  ],
+  "def": "a clock that also shows a calendar",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CALENDAR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@TIMEPIECE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "is-consumer-good",
+      "facet": "sem",
+      "filler": "no"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,34 @@
+{
+  "word": "BALLROOM",
+  "senses": {
+    "BALLROOM-N1": {
+      "CAT": "N",
+      "DEF": "a more formal place to go dancing",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "NIGHTCLUB": {
+          "FORMALITY": [
+            ">",
+            0.6
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BALLROOM-N1",
+      "WORD": "BALLROOM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

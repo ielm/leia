@@ -1,0 +1,123 @@
+{
+  "word": "NEPALESE",
+  "senses": {
+    "NEPALESE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to nepal",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "NEPAL"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NEPALESE-ADJ1",
+      "WORD": "NEPALESE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "NEPALESE-N1": {
+      "CAT": "N",
+      "DEF": "a citizen of nepal",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CITIZEN": {
+          "HAS-NATIONALITY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "NEPAL"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NEPALESE-N1",
+      "WORD": "NEPALESE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "NEPALESE-N2": {
+      "CAT": "N",
+      "DEF": "the set of citizens of nepal",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "REFSEM1"
+          },
+          "CARDINALITY": 1,
+          "COMPLETE": "YES"
+        },
+        "REFSEM1": {
+          "CITIZEN": {
+            "HAS-NATIONALITY": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "NEPAL"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NEPALESE-N2",
+      "WORD": "NEPALESE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

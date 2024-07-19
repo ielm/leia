@@ -1,0 +1,53 @@
+{
+  "word": "UNSTABLE",
+  "senses": {
+    "UNSTABLE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "lacking stability",
+      "EX": "an unstable chair",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "STABILITY": [
+            "<",
+            0.4
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "UNSTEADY-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "INCONSISTENT",
+        "PLIANT",
+        "PRECARIOUS",
+        "SHAKY",
+        "UNSTEADY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "UNSTABLE-ADJ1",
+      "WORD": "UNSTABLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

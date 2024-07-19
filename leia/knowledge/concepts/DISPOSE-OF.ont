@@ -1,0 +1,67 @@
+{
+  "name": "@DISPOSE-OF",
+  "isa": [
+    "@PHYSICAL-EVENT"
+  ],
+  "def": "To throw something away, or otherwise dispose of it.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@WASTE-MATERIAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@TRASH"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INGESTIBLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NATURAL-RESOURCE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@HAND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

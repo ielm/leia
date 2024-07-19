@@ -1,0 +1,83 @@
+{
+  "word": "ECUADORIAN",
+  "senses": {
+    "ECUADORIAN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to ecuador",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "ECUADOR"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ECUADOREAN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ECUADORIAN-ADJ1",
+      "WORD": "ECUADORIAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ECUADORIAN-N1": {
+      "CAT": "N",
+      "DEF": "a citizen of ecuador",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CITIZEN": {
+          "HAS-NATIONALITY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "ECUADOR"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ECUADOREAN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ECUADORIAN-N1",
+      "WORD": "ECUADORIAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

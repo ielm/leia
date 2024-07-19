@@ -1,0 +1,52 @@
+{
+  "name": "@CARDIAC-CATHETERIZATION",
+  "isa": [
+    "@MEDICAL-SCOPING"
+  ],
+  "def": "Passage of a small catheter through a vein in an arm or leg or the neck and into the heart, permitting the securing of blood samples, determination of intracardiac pressure, detection of cardiac anomalies, planning of operative approaches, and determination, implementation, or evaluation of appropriate therapy.",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CATHETER"
+    },
+    {
+      "slot": "creates-image-of",
+      "facet": "sem",
+      "filler": "@HEART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VEIN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HEART"
+    }
+  ],
+  "block": [
+    {
+      "slot": "creates-image-of",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MEDICAL-SCOPE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

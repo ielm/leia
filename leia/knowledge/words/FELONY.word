@@ -1,0 +1,31 @@
+{
+  "word": "FELONY",
+  "senses": {
+    "FELONY-N1": {
+      "CAT": "N",
+      "DEF": "legally, a serious crime such as armed robbery, arson, murder",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CRIMINAL-ACTIVITY": {
+          "CRIME-TYPE": "FELONY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FELONY-N1",
+      "WORD": "FELONY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

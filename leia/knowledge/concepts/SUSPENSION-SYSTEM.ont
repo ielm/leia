@@ -1,0 +1,27 @@
+{
+  "name": "@SUSPENSION-SYSTEM",
+  "isa": [
+    "@VEHICLE-PART"
+  ],
+  "def": "a mechanical system of springs or shock absorbers connecting the wheels and axles to the chassis of a wheeled vehicle",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SHOCK-ABSORBER"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SPRING-DEVICE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

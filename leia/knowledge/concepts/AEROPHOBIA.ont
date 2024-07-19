@@ -1,0 +1,27 @@
+{
+  "name": "@AEROPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of drafts",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WIND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

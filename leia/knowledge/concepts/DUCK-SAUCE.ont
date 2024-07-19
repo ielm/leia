@@ -1,0 +1,28 @@
+{
+  "name": "@DUCK-SAUCE",
+  "isa": [
+    "@FLAVORING"
+  ],
+  "def": "A thick sweet and pungent condiment of Chinese origin.",
+  "local": [
+    {
+      "slot": "sweetness",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0.7
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "sweetness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

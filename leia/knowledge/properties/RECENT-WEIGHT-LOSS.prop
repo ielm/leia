@@ -1,0 +1,9 @@
+{
+  "name": "$RECENT-WEIGHT-LOSS",
+  "def": "Whether or not there has been recent weight loss, for a medical patient.",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-OBJECT-ATTRIBUTE"
+}

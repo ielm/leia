@@ -1,0 +1,64 @@
+{
+  "name": "@SEWER",
+  "isa": [
+    "@ENGINEERED-ARTIFACT",
+    "@PIPELINE"
+  ],
+  "def": "a pipe or drain, usually underground, to carry away water and waste matter",
+  "local": [
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@WATER"
+    },
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@WASTE-MATERIAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "autonomy-technological",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@GAS"
+    },
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "is-consumer-good",
+      "facet": "sem",
+      "filler": "no"
+    }
+  ],
+  "private": {}
+}

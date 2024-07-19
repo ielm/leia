@@ -1,0 +1,52 @@
+{
+  "name": "@ACHALASIA",
+  "isa": [
+    "@ESOPHAGEAL-MOTILITY-DISORDER"
+  ],
+  "def": "an esophageal disease caused by a hypertensive lower esophageal sphincter",
+  "local": [
+    {
+      "slot": "treated-by",
+      "facet": "sem",
+      "filler": "@HELLER-MYOTOMY"
+    },
+    {
+      "slot": "treated-by",
+      "facet": "sem",
+      "filler": "@PNEUMATIC-DILATION"
+    },
+    {
+      "slot": "treated-by",
+      "facet": "sem",
+      "filler": "@BOTOX-INJECTION"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@REGURGITATE"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@DYSPHAGIA"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@CHEST-PAIN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    },
+    {
+      "slot": "treated-by",
+      "facet": "sem",
+      "filler": "@MEDICAL-PROCEDURE"
+    }
+  ],
+  "private": {}
+}

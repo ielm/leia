@@ -1,0 +1,42 @@
+{
+  "name": "@FILTER",
+  "isa": [
+    "@PHYSICAL-EVENT"
+  ],
+  "def": "to pass through or remove with a device for straining out particles, impurities, etc.",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@SEPARATE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FILTER-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SIEVE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

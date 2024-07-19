@@ -1,0 +1,42 @@
+{
+  "name": "@CHILE-PLANT",
+  "isa": [
+    "@CROP-PLANT"
+  ],
+  "def": "a plant that produces red pepper pods, used as spices in cooking",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CHILI-PEPPER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CROP"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@FRUIT-FOODSTUFF"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@GRAIN-FOODSTUFF"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@NUT-FOODSTUFF"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@VEGETABLE-FOODSTUFF"
+    }
+  ],
+  "private": {}
+}

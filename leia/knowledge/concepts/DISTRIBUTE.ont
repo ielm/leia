@@ -1,0 +1,27 @@
+{
+  "name": "@DISTRIBUTE",
+  "isa": [
+    "@TRANSFER-OBJECT"
+  ],
+  "def": "to give (something out) in portions to several individuals",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    }
+  ],
+  "private": {}
+}

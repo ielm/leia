@@ -1,0 +1,31 @@
+{
+  "word": "CHEESECAKE",
+  "senses": {
+    "CHEESECAKE-N1": {
+      "CAT": "N",
+      "DEF": "a cake made with cheese",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CAKE": {
+          "HAS-OBJECT-AS-PART": "CHEESE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CHEESECAKE-N1",
+      "WORD": "CHEESECAKE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

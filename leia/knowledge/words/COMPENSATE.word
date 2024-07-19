@@ -1,0 +1,92 @@
+{
+  "word": "COMPENSATE",
+  "senses": {
+    "COMPENSATE-V1": {
+      "CAT": "V",
+      "DEF": "to make up for, as in time or money",
+      "EX": "he compensated (his teacher) (for having missed the exam) (by writing a paper/with a bribe)",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "OPT": "+"
+        },
+        "PP": {
+          "ROOT-WORD": "FOR",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT-WORD": [
+            "BY",
+            "WITH"
+          ],
+          "ROOT": "$VAR5",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR6",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "COMPENSATE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4"
+          },
+          "INSTRUMENT": {
+            "VALUE": "^$VAR6"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "COMPENSATED-0",
+        "THE",
+        "DOG-2",
+        "FOR-3",
+        "THE",
+        "TROUBLE-4",
+        "BY-5",
+        "THE",
+        "MONEY-6"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COMPENSATE-V1",
+      "WORD": "COMPENSATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

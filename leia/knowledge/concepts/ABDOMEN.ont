@@ -1,0 +1,45 @@
+{
+  "name": "@ABDOMEN",
+  "isa": [
+    "@SUBDIVISION-OF-TRUNK"
+  ],
+  "def": "The part of the body that lies between the thorax and the pelvis and encloses the stomach, intestines, liver,  spleen, and pancreas. Also called belly.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@GUT"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANIMAL-TISSUE"
+    },
+    {
+      "slot": "abdominal-pressure",
+      "facet": "sem",
+      "filler": [
+        "><",
+        50
+      ]
+    },
+    {
+      "slot": "abdominal-pressure",
+      "facet": "sem",
+      "filler": "@TORR"
+    },
+    {
+      "slot": "abdominal-pressure",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

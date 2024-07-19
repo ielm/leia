@@ -1,0 +1,16 @@
+{
+  "name": "@CONFUSE",
+  "isa": [
+    "@PASSIVE-COGNITIVE-EVENT"
+  ],
+  "def": "to mix up; to put into disorder",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

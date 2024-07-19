@@ -1,0 +1,22 @@
+{
+  "name": "@SEA-EARTHQUAKE",
+  "isa": [
+    "@EARTHQUAKE"
+  ],
+  "def": "a huge sea wave, caused by an undersea earthquake, volcanic eruption, etc.",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@SEA"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

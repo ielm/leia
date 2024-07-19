@@ -1,0 +1,36 @@
+{
+  "word": "TRIPLE_CREAM",
+  "senses": {
+    "TRIPLE_CREAM-N1": {
+      "CAT": "N",
+      "DEF": "soft french cheese containing at least 72% butterfat",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CHEESE": {
+          "FATTINESS": [
+            ">=",
+            0.72
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "TRIPLE_CREME"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "TRIPLE_CREAM-N1",
+      "WORD": "TRIPLE_CREAM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

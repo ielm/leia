@@ -1,0 +1,26 @@
+{
+  "name": "@TUNE-MUSICAL-INSTRUMENT",
+  "isa": [
+    "@TUNE-ARTIFACT"
+  ],
+  "def": "Tuning a musical instrument",
+  "local": [],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@MECHANIC"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DEVICE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VEHICLE"
+    }
+  ],
+  "private": {}
+}

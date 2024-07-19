@@ -1,0 +1,22 @@
+{
+  "name": "@SPECULATE",
+  "isa": [
+    "@INVESTMENT-EVENT"
+  ],
+  "def": "to take part in a business venture (as in buying and selling certain stocks) on the chance of making huge profits",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MONEY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MONEY"
+    }
+  ],
+  "private": {}
+}

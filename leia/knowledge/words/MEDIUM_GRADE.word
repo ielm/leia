@@ -1,0 +1,37 @@
+{
+  "word": "MEDIUM_GRADE",
+  "senses": {
+    "MEDIUM_GRADE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "of medium quality",
+      "EX": "we buy medium-grade gas",
+      "COMMENTS": "medium-grade is hyphenated",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "QUALITY": 0.5
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "MEDIUM_GRADE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "MEDIUM_GRADE-ADJ1",
+      "WORD": "MEDIUM_GRADE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

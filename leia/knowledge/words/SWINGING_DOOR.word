@@ -1,0 +1,33 @@
+{
+  "word": "SWINGING_DOOR",
+  "senses": {
+    "SWINGING_DOOR-N1": {
+      "CAT": "N",
+      "DEF": "a door that swings through the doorway",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "DOOR": {
+          "THEME-OF": "SWAY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SWING_DOOR"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SWINGING_DOOR-N1",
+      "WORD": "SWINGING_DOOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

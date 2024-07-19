@@ -1,0 +1,22 @@
+{
+  "name": "@PANCREATECTOMY",
+  "isa": [
+    "@SURGICAL-REMOVAL"
+  ],
+  "def": "Surgical removal of all or part of the pancreas.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@PANCREAS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

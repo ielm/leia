@@ -1,0 +1,101 @@
+{
+  "word": "A_LITTLE_BIT",
+  "senses": {
+    "A_LITTLE_BIT-ADV1": {
+      "CAT": "ADV",
+      "DEF": "when applied to events - for a short duration\\\\t",
+      "EX": "",
+      "COMMENTS": "[D] If one moves a little bit, it's for a short duration and - by reasoning - also a short distance; having both a distance and a duration meaning would be impossible to disambiguate between the duration and distance senses",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "POST-VERB-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "DURATION": 0.1
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "RAN-1",
+        "A_LITTLE_BIT-0",
+        "*PERIOD*"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "A_LITTLE_BIT-ADV1",
+      "WORD": "A_LITTLE_BIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "A_LITTLE_BIT-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "when applied to non-count objects: a small amount",
+      "EX": "a little bit of that cake would be nice.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "CAT": "PREP",
+          "ROOT": "$VAR2",
+          "OBJ": {
+            "ROOT": "$VAR1",
+            "CAT": "NP",
+            "NUMBER": "SING"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "OBJECT",
+          "AMOUNT": 0.1
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "A_LITTLE_BIT-0",
+        "OF-2",
+        "THE",
+        "GRAPHITE-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "A_LITTLE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "A_LITTLE_BIT-QUANTIFIER1",
+      "WORD": "A_LITTLE_BIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

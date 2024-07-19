@@ -1,0 +1,40 @@
+{
+  "word": "NEW_ZEALANDER",
+  "senses": {
+    "NEW_ZEALANDER-N1": {
+      "CAT": "N",
+      "DEF": "a citizen of new zealand",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CITIZEN": {
+          "HAS-NATIONALITY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "NEW_ZEALAND"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NEW_ZEALANDER-N1",
+      "WORD": "NEW_ZEALANDER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

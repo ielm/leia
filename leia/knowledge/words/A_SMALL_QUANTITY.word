@@ -1,0 +1,52 @@
+{
+  "word": "A_SMALL_QUANTITY",
+  "senses": {
+    "A_SMALL_QUANTITY-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "a small quantity of goods arrived at the airport.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "CAT": "PREP",
+          "ROOT": "$VAR2",
+          "OBJ": {
+            "ROOT": "$VAR1",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "AMOUNT": [
+            "><",
+            0.1,
+            0.2
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "A_SMALL_QUANTITY-0",
+        "OF-2",
+        "THE",
+        "GRAPHITE-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "A_SMALL_QUANTITY-QUANTIFIER1",
+      "WORD": "A_SMALL_QUANTITY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

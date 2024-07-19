@@ -1,0 +1,22 @@
+{
+  "name": "@PRESSURE-UNIT",
+  "isa": [
+    "@MEASURING-UNIT"
+  ],
+  "def": "a measuring unit for pressure; also called millimeters of mercury or mmhg",
+  "local": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@PASCAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "sem",
+      "filler": "@MEASURING-UNIT"
+    }
+  ],
+  "private": {}
+}

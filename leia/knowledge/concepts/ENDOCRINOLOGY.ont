@@ -1,0 +1,22 @@
+{
+  "name": "@ENDOCRINOLOGY",
+  "isa": [
+    "@MEDICINE"
+  ],
+  "def": "the branch of medicine dealing with the endocrine glands and their secretions",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@ENDOCRINOLOGIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@MEDICAL-WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

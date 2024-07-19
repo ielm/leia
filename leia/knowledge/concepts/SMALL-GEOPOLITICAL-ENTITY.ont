@@ -1,0 +1,44 @@
+{
+  "name": "@SMALL-GEOPOLITICAL-ENTITY",
+  "isa": [
+    "@GEOPOLITICAL-ENTITY"
+  ],
+  "def": "a geopolitical-entity that is smaller than a state or province in geographical size and/or population",
+  "local": [],
+  "block": [
+    {
+      "slot": "autonomy-political",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@EMAIL-ADDRESS"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@PHONE-NUMBER"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@WEB-ADDRESS"
+    }
+  ],
+  "private": {}
+}

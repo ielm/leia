@@ -1,0 +1,33 @@
+{
+  "word": "WARRIOR",
+  "senses": {
+    "WARRIOR-N1": {
+      "CAT": "N",
+      "DEF": "one who engages in warlike activity",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SOCIAL-ROLE": {
+          "AGENT-OF": "WAR-ACTIVITY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "FIGHTER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "WARRIOR-N1",
+      "WORD": "WARRIOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

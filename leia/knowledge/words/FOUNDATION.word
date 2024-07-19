@@ -1,0 +1,182 @@
+{
+  "word": "FOUNDATION",
+  "senses": {
+    "FOUNDATION-N1": {
+      "CAT": "N",
+      "DEF": "a special type of financial institution",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FOUNDATION",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FOUNDATION-N1",
+      "WORD": "FOUNDATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FOUNDATION-N2": {
+      "CAT": "N",
+      "DEF": "structural support",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "STRUCTURAL-SUPPORT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FOUNDATION-N2",
+      "WORD": "FOUNDATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FOUNDATION-N3": {
+      "CAT": "N",
+      "DEF": "abstract basis",
+      "EX": "deterrence by strength is the foundation of his foreign policy",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "FOUNDATIONAL-PRINCIPLE": {
+          "RELATION": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "BASIS-0",
+        "OF-1",
+        "THE",
+        "OBJECT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "BASIS",
+        "CORNERSTONE",
+        "KEYSTONE",
+        "BACKBONE",
+        "CRUX"
+      ],
+      "HYPONYMS": [
+        "BOTTOM_LINE"
+      ],
+      "SENSE": "FOUNDATION-N3",
+      "WORD": "FOUNDATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FOUNDATION-N4": {
+      "CAT": "N",
+      "DEF": "establishment of an organization",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "FOUND-ORGANIZATION": {
+          "AGENT": {
+            "VALUE": "^$VAR4"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "FOUNDATION-0",
+        "OF-1",
+        "THE",
+        "ORGANIZATION-2",
+        "BY-3",
+        "THE",
+        "HUMAN-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ESTABLISHMENT",
+        "INAUGURATION"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FOUNDATION-N4",
+      "WORD": "FOUNDATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

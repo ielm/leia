@@ -1,0 +1,48 @@
+{
+  "word": "COMMONLY",
+  "senses": {
+    "COMMONLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "frequently",
+      "EX": "He commonly ate pasta.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "FREQUENCY": 0.7
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MEDICINE",
+        "COMMONLY-0",
+        "CURES-1",
+        "DISEASES"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COMMONLY-ADV1",
+      "WORD": "COMMONLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

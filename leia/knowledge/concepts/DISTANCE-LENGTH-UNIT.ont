@@ -1,0 +1,37 @@
+{
+  "name": "@DISTANCE-LENGTH-UNIT",
+  "isa": [
+    "@MEASURING-UNIT"
+  ],
+  "def": "measuring units for distance or length",
+  "local": [
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@ODOMETER"
+    },
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@RULER"
+    },
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@METER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "sem",
+      "filler": "@MEASURING-UNIT"
+    },
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@MEASURING-ARTIFACT"
+    }
+  ],
+  "private": {}
+}

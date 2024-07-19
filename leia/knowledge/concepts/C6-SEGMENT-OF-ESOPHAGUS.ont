@@ -1,0 +1,37 @@
+{
+  "name": "@C6-SEGMENT-OF-ESOPHAGUS",
+  "isa": [
+    "@SEGMENT-OF-ESOPHAGUS"
+  ],
+  "def": "most proximal segment of esophagus",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@WALL-OF-ESOPHAGUS"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LUMEN-OF-ESOPHAGUS"
+    },
+    {
+      "slot": "distal-to",
+      "facet": "sem",
+      "filler": "@LARYNX"
+    }
+  ],
+  "block": [
+    {
+      "slot": "distal-to",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@CASHEW-NUT",
+  "isa": [
+    "@NUT-FOODSTUFF"
+  ],
+  "def": "a kidney shape dry fruit with a seed surrounded by a hard shell consisting of parts which is eaten",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "tan"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

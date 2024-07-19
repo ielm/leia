@@ -1,0 +1,102 @@
+{
+  "word": "COMPREHENSION",
+  "senses": {
+    "COMPREHENSION-N1": {
+      "CAT": "N",
+      "DEF": "understanding",
+      "EX": "his comprehension of human relationships leaves something to be desired",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NMOD_POSS": [
+          [
+            "ROOT",
+            "$VAR1"
+          ],
+          [
+            "CAT",
+            [
+              "N",
+              "DET"
+            ]
+          ],
+          [
+            "POSSESSIVE",
+            "+"
+          ],
+          [
+            "OPT",
+            "+"
+          ],
+          [
+            "CASE",
+            [
+              [
+                "ROOT",
+                "$VAR9"
+              ],
+              [
+                "ROOT",
+                "*QUOTE*S"
+              ],
+              [
+                "CAT",
+                "POSSESSIVE"
+              ],
+              [
+                "OPT",
+                "+"
+              ]
+            ]
+          ]
+        ],
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "UNDERSTAND": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR9": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HUMAN-1",
+        "UNDERSTANDING-0",
+        "OF-3",
+        "THE",
+        "EVENT-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "UNDERSTANDING"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "COMPREHENSION-N1",
+      "WORD": "COMPREHENSION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

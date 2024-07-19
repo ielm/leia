@@ -1,0 +1,78 @@
+{
+  "name": "@SAVE-COMPUTER-DATA",
+  "isa": [
+    "@TECHNOLOGY-EVENT",
+    "@STORE-FOR-FUTURE"
+  ],
+  "def": "the process of saving computer data to a disk",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COMPUTER-DATA"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@COMPUTER-DISK"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@COMPUTER-MEMORY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COMPUTER-FILE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COMPUTER-MEDIA-ARTIFACT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FORMULA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LEGAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MEDIA-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MUSIC-RELATED-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WORK"
+    }
+  ],
+  "private": {}
+}

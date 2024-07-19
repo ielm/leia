@@ -1,0 +1,79 @@
+{
+  "word": "ILLINOISAN",
+  "senses": {
+    "ILLINOISAN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to illinois",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "STATE": {
+            "HAS-NAME": {
+              "VALUE": "ILLINOIS"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ILLINOISAN-ADJ1",
+      "WORD": "ILLINOISAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ILLINOISAN-N1": {
+      "CAT": "N",
+      "DEF": "resides in the state of illinois",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "HAS-STATE-ADDRESS": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "STATE": {
+            "HAS-NAME": {
+              "VALUE": "ILLINOIS"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ILLINOISAN-N1",
+      "WORD": "ILLINOISAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

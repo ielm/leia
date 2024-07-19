@@ -1,0 +1,31 @@
+{
+  "word": "CONSPIRATOR",
+  "senses": {
+    "CONSPIRATOR-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SOCIAL-ROLE": {
+          "AGENT-OF": "CONSPIRE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONSPIRATOR-N1",
+      "WORD": "CONSPIRATOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

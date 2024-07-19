@@ -1,0 +1,72 @@
+{
+  "name": "@CHURCH-BUILDING",
+  "isa": [
+    "@RELIGIOUS-BUILDING"
+  ],
+  "def": "a building used for public worship",
+  "local": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@BISHOP"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@CARDINAL"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@CHAPLAIN"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@MISSIONARY"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@MONK"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@NUN"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@PILGRIM"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@PRIEST"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@SAINT"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@POPE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ALTAR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@RELIGIOUS-ROLE"
+    }
+  ],
+  "private": {}
+}

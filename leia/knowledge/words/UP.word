@@ -1,0 +1,127 @@
+{
+  "word": "UP",
+  "senses": {
+    "UP-PREP1": {
+      "CAT": "PREP",
+      "DEF": "in an upwards direction",
+      "EX": "She went up the stairs.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "OBJECT",
+            "EVENT"
+          ],
+          "UP-DIRECTIONAL": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "BOOK",
+        "RUNS-1",
+        "UP-0",
+        "THE",
+        "WALL-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "PRT",
+          "$VAR2",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "UP-PREP1",
+      "WORD": "UP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "UP-PREP2": {
+      "CAT": "PREP",
+      "DEF": "indicates spatial path, not 'up' in a literal sense",
+      "EX": "She ran up the street",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "OBJECT",
+            "EVENT"
+          ],
+          "PATH": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "BOOK",
+        "RUNS-1",
+        "UP-0",
+        "THE",
+        "WALL-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "PRT",
+          "$VAR2",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "UP-PREP2",
+      "WORD": "UP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

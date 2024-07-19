@@ -1,0 +1,69 @@
+{
+  "word": "ABSENCE",
+  "senses": {
+    "ABSENCE-N1": {
+      "CAT": "N",
+      "DEF": "non-existence",
+      "EX": "absence of movement",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR2",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "LACK-0",
+        "OF-1",
+        "THE",
+        "CURE-2",
+        "HURTS"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "LACK",
+        "DEARTH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ABSENCE-N1",
+      "WORD": "ABSENCE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

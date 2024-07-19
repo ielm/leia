@@ -1,0 +1,42 @@
+{
+  "name": "@HALLWAY",
+  "isa": [
+    "@INTERIOR-BUILDING-PART"
+  ],
+  "def": "a corridor in a building",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@WINDOW"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@WALL"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@FLOOR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@CEILING"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@WALL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BUILDING-ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@CONFERENCE-ROOM",
+  "isa": [
+    "@PUBLIC-ROOM"
+  ],
+  "def": "room where meetings are held",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CHAIR"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,33 @@
+{
+  "word": "BAROMETER",
+  "senses": {
+    "BAROMETER-N1": {
+      "CAT": "N",
+      "DEF": "an instrument for measuring atmospheric pressure and thus forecasting weather",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BAROMETER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ANEROID_BAROMETER",
+        "ANEROID",
+        "BAROGRAPH",
+        "MERCURY_BAROMETER",
+        "WEATHERGLASS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BAROMETER-N1",
+      "WORD": "BAROMETER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

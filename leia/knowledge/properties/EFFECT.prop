@@ -1,0 +1,9 @@
+{
+  "name": "$EFFECT",
+  "def": "The result of a causing act, state change, force application, etc.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$CAUSED-BY",
+  "measured-in": [],
+  "container": "$REASON"
+}

@@ -1,0 +1,85 @@
+{
+  "word": "MULCH",
+  "senses": {
+    "MULCH-N1": {
+      "CAT": "N",
+      "DEF": "A protective covering, usually made of organic matter like leaves, straw, or peat; it is placed around plants to prevent the evaporation of moisture, the freezing of roots, and the growth of weeds  ",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "MULCH",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MULCH-N1",
+      "WORD": "MULCH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MULCH-V1": {
+      "CAT": "V",
+      "DEF": "to cover with mulch",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "COVER": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "DEFAULT": "SOIL"
+          },
+          "INSTRUMENT": "MULCH"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "MULCHED-0",
+        "HIS",
+        "GARDEN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MULCH-V1",
+      "WORD": "MULCH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

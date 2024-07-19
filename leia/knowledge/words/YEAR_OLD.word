@@ -1,0 +1,129 @@
+{
+  "word": "YEAR_OLD",
+  "senses": {
+    "YEAR_OLD-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "indicates age; used with a number",
+      "EX": "a 4 year-old child; a ten year-old policy",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NUM": {
+          "ROOT": "$VAR1",
+          "CAT": "NUM"
+        },
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR2",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "AGE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "TEN-1",
+        "YEAR-OLD-0",
+        "BALL-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR2",
+          "$VAR0"
+        ],
+        [
+          "DEP",
+          "$VAR1",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "YEAR_OLD"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "YEAR_OLD-ADJ1",
+      "WORD": "YEAR_OLD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "YEAR_OLD-N1": {
+      "CAT": "N",
+      "DEF": "indicates age; used with one or less in a predicative construction",
+      "EX": "the child is one year old",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "NUM": {
+          "ROOT": "$VAR3",
+          "CAT": "NUM"
+        },
+        "N": {
+          "ROOT": "$VAR0",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "AGE": {
+            "VALUE": "^$VAR3",
+            "MEASURED-IN": "YEAR"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "WAS-2",
+        "TEN-3",
+        "YEAR-OLD-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "COP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "MEASURE",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "YEAR_OLD"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "YEAR_OLD-N1",
+      "WORD": "YEAR_OLD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

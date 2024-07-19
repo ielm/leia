@@ -1,0 +1,16 @@
+{
+  "name": "@EMPIRE",
+  "isa": [
+    "@LARGE-GEOPOLITICAL-ENTITY"
+  ],
+  "def": "a government ruled by an emperor or empress",
+  "local": [],
+  "block": [
+    {
+      "slot": "in-nation",
+      "facet": "sem",
+      "filler": "@NATION"
+    }
+  ],
+  "private": {}
+}

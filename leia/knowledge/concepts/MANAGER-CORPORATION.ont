@@ -1,0 +1,19 @@
+{
+  "name": "@MANAGER-CORPORATION",
+  "isa": [
+    "@BUSINESS-ROLE"
+  ],
+  "def": "A company role in which the holder manages some aspect of the company.",
+  "local": [
+    {
+      "slot": "authority-attribute",
+      "facet": "sem",
+      "filler": [
+        "><",
+        0.7
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

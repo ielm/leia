@@ -1,0 +1,24 @@
+{
+  "name": "@ADVERTISEMENT",
+  "isa": [
+    "@MEDIA-OBJECT"
+  ],
+  "def": "public notice, often paid for",
+  "local": [
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

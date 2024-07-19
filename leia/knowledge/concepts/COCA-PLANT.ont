@@ -1,0 +1,48 @@
+{
+  "name": "@COCA-PLANT",
+  "isa": [
+    "@BUSH",
+    "@CROP-PLANT"
+  ],
+  "def": "a tropical shrub from whose leaves cocaine is extracted",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@COCAINE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@BUSH-FRUIT"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CROP"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@FRUIT-FOODSTUFF"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@GRAIN-FOODSTUFF"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@NUT-FOODSTUFF"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@VEGETABLE-FOODSTUFF"
+    }
+  ],
+  "private": {}
+}

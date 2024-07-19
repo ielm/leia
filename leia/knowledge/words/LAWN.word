@@ -1,0 +1,38 @@
+{
+  "word": "LAWN",
+  "senses": {
+    "LAWN-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PLACE": {
+          "HAS-OBJECT-AS-PART": "GRASS",
+          "BESIDE": {
+            "DEFAULT": "PRIVATE-HOME",
+            "SEM-1": "BUILDING"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "BACKYARD",
+        "YARD"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "LAWN-N1",
+      "WORD": "LAWN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

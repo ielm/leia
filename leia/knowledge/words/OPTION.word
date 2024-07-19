@@ -1,0 +1,57 @@
+{
+  "word": "OPTION",
+  "senses": {
+    "OPTION-N1": {
+      "CAT": "N",
+      "DEF": "a possible action",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "POTENTIAL",
+          "VALUE": 1,
+          "SCOPE": "EVENT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "THING_TO_DO"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "OPTION-N1",
+      "WORD": "OPTION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "OPTION-N2": {
+      "CAT": "N",
+      "DEF": "the right to buy or sell sth. at a specified price at a specified time",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FINANCIAL-OPTION",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OPTION-N2",
+      "WORD": "OPTION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

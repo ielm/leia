@@ -1,0 +1,31 @@
+{
+  "word": "SALAMI",
+  "senses": {
+    "SALAMI-N1": {
+      "CAT": "N",
+      "DEF": " highly spiced and salted sausages,   made from beef or a mixture of pork and beef",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SAUSAGE": {
+          "SPICINESS": 0.7
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SALAMI-N1",
+      "WORD": "SALAMI",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

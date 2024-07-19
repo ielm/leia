@@ -1,0 +1,41 @@
+{
+  "word": "MINISTER_OF_DEFENCE",
+  "senses": {
+    "MINISTER_OF_DEFENCE-N1": {
+      "CAT": "N",
+      "DEF": "a person appointed to handle the national security efforts of a government",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "REFSEM1": [
+          "MINISTER"
+        ],
+        "SUPERVISE": {
+          "AGENT": {
+            "VALUE": "REFSEM1"
+          },
+          "THEME": "PROTECT-SERVE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "MINISTER_OF_DEFENSE",
+        "DEFENCE_MINISTER",
+        "DEFENSE_MINISTER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "MINISTER_OF_DEFENCE-N1",
+      "WORD": "MINISTER_OF_DEFENCE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

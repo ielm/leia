@@ -1,0 +1,33 @@
+{
+  "word": "VICHYSSOISE",
+  "senses": {
+    "VICHYSSOISE-N1": {
+      "CAT": "N",
+      "DEF": "A cooled creamy potato soup with onions and leeks",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SOUP": {
+          "HAS-OBJECT-AS-PART": "LEEK",
+          "HAS-OBJECT-AS-PART-1": "POTATO",
+          "HAS-OBJECT-AS-PART-2": "ONION"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "VICHYSSOISE-N1",
+      "WORD": "VICHYSSOISE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

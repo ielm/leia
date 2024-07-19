@@ -1,0 +1,71 @@
+{
+  "word": "DAMP",
+  "senses": {
+    "DAMP-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "humid",
+      "EX": "a damp day, climate",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "WEATHER",
+            "GEOGRAPHICAL-ENTITY",
+            "TIME-INTERVAL-UNIT"
+          ],
+          "HUMIDITY": 0.7
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DAMP-ADJ1",
+      "WORD": "DAMP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DAMP-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "a bit wet",
+      "EX": "the grass is still damp",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "PHYSICAL-OBJECT",
+          "WETNESS": 0.5
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DAMP-ADJ2",
+      "WORD": "DAMP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "word": "BARGAIN",
+  "senses": {
+    "BARGAIN-N1": {
+      "CAT": "N",
+      "DEF": "an agreement",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": [
+            "AMONG",
+            "BETWEEN"
+          ],
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "AGREE": {
+          "AGENT": {
+            "VALUE": "^$VAR2",
+            "SEM": "SET"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "BARGAIN-0",
+        "AMONG-1",
+        "THE",
+        "HUMAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BARGAIN-N1",
+      "WORD": "BARGAIN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BARGAIN-N2": {
+      "CAT": "N",
+      "DEF": "a purchase at a price advantageous to the buyer",
+      "EX": "at $20 the racquet was a bargain",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "REFSEM1": [
+          "PHYSICAL-OBJECT"
+        ],
+        "REFSEM2": {
+          "BUY": {
+            "AGENT": {
+              "VALUE": "REFSEM3"
+            },
+            "THEME": {
+              "VALUE": "REFSEM1"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "POTENTIAL",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "REFSEM2"
+          }
+        },
+        "REFSEM3": [
+          "HUMAN"
+        ],
+        "BENEFIT-FROM": {
+          "BENEFICIARY": {
+            "VALUE": "REFSEM3"
+          },
+          "THEME-1": {
+            "VALUE": "REFSEM2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "DEAL"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BARGAIN-N2",
+      "WORD": "BARGAIN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BARGAIN-V1": {
+      "CAT": "V",
+      "DEF": "to negotiate, barter",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "WITH",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "NEGOTIATE-TRANSACTION": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "AGENT-1": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "BARGAINED-0",
+        "WITH-2",
+        "THE",
+        "DOG-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "DICKER",
+        "DEAL"
+      ],
+      "SENSE": "BARGAIN-V1",
+      "WORD": "BARGAIN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

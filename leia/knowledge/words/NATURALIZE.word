@@ -1,0 +1,44 @@
+{
+  "word": "NATURALIZE",
+  "senses": {
+    "NATURALIZE-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "France naturalized the lost boy",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "NATURALIZE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NATURALIZE-V1",
+      "WORD": "NATURALIZE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

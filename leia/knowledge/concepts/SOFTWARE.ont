@@ -1,0 +1,16 @@
+{
+  "name": "@SOFTWARE",
+  "isa": [
+    "@COMPUTER-DATA"
+  ],
+  "def": "representational-objects in computer-readable form",
+  "local": [
+    {
+      "slot": "goal",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

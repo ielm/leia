@@ -1,0 +1,37 @@
+{
+  "name": "@DRUG-CARTEL",
+  "isa": [
+    "@CARTEL"
+  ],
+  "def": "a cartel that deals in drugs",
+  "local": [
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@DRUG-LORD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    },
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    },
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    },
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    }
+  ],
+  "private": {}
+}

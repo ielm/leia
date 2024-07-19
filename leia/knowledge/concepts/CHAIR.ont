@@ -1,0 +1,42 @@
+{
+  "name": "@CHAIR",
+  "isa": [
+    "@SEATING-FURNITURE"
+  ],
+  "def": "a piece of furniture consisting of a seat, legs, back, and often arms, designed to accommodate one person",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@VINYL"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-LEG"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CHAIR-ARM"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SEAT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FURNITURE-PART"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SYNTHETICS"
+    }
+  ],
+  "private": {}
+}

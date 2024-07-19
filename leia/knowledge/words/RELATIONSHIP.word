@@ -1,0 +1,65 @@
+{
+  "word": "RELATIONSHIP",
+  "senses": {
+    "RELATIONSHIP-N1": {
+      "CAT": "N",
+      "DEF": "ongoing social events",
+      "EX": "Their relationship is nice. The relationship between my cat and my dog is friendly.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "BETWEEN",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "INTERACT-SOCIALLY": {
+          "AGENT": {
+            "VALUE": "^$VAR2",
+            "SEM": "SET"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "RELATIONSHIP-0",
+        "BETWEEN-1",
+        "THE",
+        "HUMAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "RELATION"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "RELATIONSHIP-N1",
+      "WORD": "RELATIONSHIP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

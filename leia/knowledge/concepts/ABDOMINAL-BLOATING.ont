@@ -1,0 +1,27 @@
+{
+  "name": "@ABDOMINAL-BLOATING",
+  "isa": [
+    "@SYMPTOM"
+  ],
+  "def": "swelling, or increase in diameter of abdominal area",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ABDOMEN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

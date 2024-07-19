@@ -1,0 +1,22 @@
+{
+  "name": "@ARTERIOGRAM-OBJECT",
+  "isa": [
+    "@X-RAY-OBJECT"
+  ],
+  "def": "an x-ray of arteries after the injection of a radiopaque substance",
+  "local": [
+    {
+      "slot": "depicts",
+      "facet": "sem",
+      "filler": "@ARTERY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "depicts",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,35 @@
+{
+  "word": "WOMAN",
+  "senses": {
+    "WOMAN-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "AGE": [
+            ">",
+            15
+          ],
+          "GENDER": "FEMALE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WOMAN-N1",
+      "WORD": "WOMAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

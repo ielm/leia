@@ -1,0 +1,44 @@
+{
+  "name": "@PILL",
+  "isa": [
+    "@DRUG-FORM"
+  ],
+  "def": "small flat pellet of medication to be taken orally",
+  "local": [
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "><",
+        25
+      ],
+      "meta": {
+        "measured-in": "millimeter"
+      }
+    }
+  ],
+  "block": [
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    }
+  ],
+  "private": {}
+}

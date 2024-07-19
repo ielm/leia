@@ -1,0 +1,35 @@
+{
+  "word": "FRANKFURTER",
+  "senses": {
+    "FRANKFURTER-N1": {
+      "CAT": "N",
+      "DEF": "smoked sausage of beef or beef and pork made in long reddish links",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SAUSAGE": {
+          "SPICINESS": [
+            "><",
+            0.5,
+            0.7
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FRANKFURTER-N1",
+      "WORD": "FRANKFURTER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

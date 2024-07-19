@@ -1,0 +1,92 @@
+{
+  "word": "NOT_LONG_AGO",
+  "senses": {
+    "NOT_LONG_AGO-ADV1": {
+      "CAT": "ADV",
+      "DEF": "recently",
+      "EX": "She died not long ago",
+      "COMMENTS": "Interesting: we have a way to express 'long ago' but we don't really have a way to   express 'not long ago', since < means only 'in the past' with no mention of how far. This isn't very  good.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "ADV": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TIME": [
+            "COMBINE-TIME",
+            [
+              "FIND-ANCHOR-TIME"
+            ],
+            0.2,
+            "BEFORE"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NOT_LONG_AGO-ADV1",
+      "WORD": "NOT_LONG_AGO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "NOT_LONG_AGO-ADV2": {
+      "CAT": "ADV",
+      "DEF": "recently",
+      "EX": "Not long ago (,) she died",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ADV": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        },
+        "PUNCT": {
+          "ROOT-WORD": "*COMMA*",
+          "ROOT": "$VAR2",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        },
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TIME": [
+            "COMBINE-TIME",
+            [
+              "FIND-ANCHOR-TIME"
+            ],
+            0.2,
+            "BEFORE"
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NOT_LONG_AGO-ADV2",
+      "WORD": "NOT_LONG_AGO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

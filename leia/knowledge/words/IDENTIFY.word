@@ -1,0 +1,96 @@
+{
+  "word": "IDENTIFY",
+  "senses": {
+    "IDENTIFY-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "he identified her as the killer",
+      "COMMENTS": "Hyponyms added to treat exs like: anorexia is characterized by irrational fear of weight gain.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "CONJ": {
+          "ROOT": "$VAR3",
+          "CAT": "CONJ",
+          "ROOT-WORD": "AS",
+          "OPT": "+"
+        },
+        "NP": {
+          "ROOT": "$VAR4",
+          "CAT": "NP",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "IDENTIFY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "COREFER",
+          "^$VAR2",
+          "^$VAR4"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "IDENTIFIED-0",
+        "HER-2",
+        "AS-3",
+        "THE",
+        "KILLER-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "CALL",
+        "DIFFERENTIATE",
+        "CHARACTERIZE"
+      ],
+      "SENSE": "IDENTIFY-V1",
+      "WORD": "IDENTIFY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

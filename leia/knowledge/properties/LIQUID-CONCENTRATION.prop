@@ -1,0 +1,9 @@
+{
+  "name": "$LIQUID-CONCENTRATION",
+  "def": "the relative amount of a given substance in a liquid solution",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": "$",
+  "measured-in": [],
+  "container": "$AMOUNT"
+}

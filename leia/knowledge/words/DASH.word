@@ -1,0 +1,197 @@
+{
+  "word": "DASH",
+  "senses": {
+    "DASH-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "the dash from the train to the bus is never fun",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "FROM",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "TO",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "RUN": {
+          "SOURCE": {
+            "VALUE": "^$VAR2"
+          },
+          "DESTINATION": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "DASH-0",
+        "FROM-1",
+        "THE",
+        "PLACE-2",
+        "TO-3",
+        "THE",
+        "PLACE-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DASH-N1",
+      "WORD": "DASH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DASH-V1": {
+      "CAT": "V",
+      "DEF": "to run",
+      "EX": "they dashed to the train",
+      "COMMENTS": "I added some opt. pps only because they're really the overwhelmingly most common for this verb",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": [
+            "FROM",
+            "OUT_OF"
+          ],
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT-WORD": [
+            "TO",
+            "INTO"
+          ],
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR5",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "RUN": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "SOURCE": {
+            "VALUE": "^$VAR3"
+          },
+          "DESTINATION": {
+            "VALUE": "^$VAR5"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "DASHED-0",
+        "FROM-2",
+        "THE",
+        "HOUSE-3",
+        "TO-4",
+        "THE",
+        "CAR-5"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR4"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR4",
+          "$VAR5"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DASH-V1",
+      "WORD": "DASH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

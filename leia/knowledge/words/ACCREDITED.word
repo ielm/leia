@@ -1,0 +1,35 @@
+{
+  "word": "ACCREDITED",
+  "senses": {
+    "ACCREDITED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "recognized as maintaining a certain standard",
+      "EX": "only consider going to accredited colleges",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "ACCREDITED": "YES"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ACCREDITED-ADJ1",
+      "WORD": "ACCREDITED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

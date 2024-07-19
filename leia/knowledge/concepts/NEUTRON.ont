@@ -1,0 +1,21 @@
+{
+  "name": "@NEUTRON",
+  "isa": [
+    "@ATOMIC-PARTICLE"
+  ],
+  "def": "an elementary particle with 0 charge and mass about equal to a proton",
+  "local": [],
+  "block": [
+    {
+      "slot": "electric-charge",
+      "facet": "sem",
+      "filler": "negative"
+    },
+    {
+      "slot": "electric-charge",
+      "facet": "sem",
+      "filler": "positive"
+    }
+  ],
+  "private": {}
+}

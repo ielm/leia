@@ -1,0 +1,52 @@
+{
+  "name": "@TABLE-LINEN",
+  "isa": [
+    "@TABLE-SETTING-ARTIFACT"
+  ],
+  "def": "napkins, place-mats, and tablecloths used in setting a table for a meal",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@NAPKIN"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PLACE-MAT"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@TABLECLOTH"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PAPER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@FABRIC"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

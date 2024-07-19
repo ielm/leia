@@ -1,0 +1,32 @@
+{
+  "word": "BITTERSWEET_CHOCOLATE",
+  "senses": {
+    "BITTERSWEET_CHOCOLATE-N1": {
+      "CAT": "N",
+      "DEF": "slightly bitter deep-brown chocolate with no added milk",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CHOCOLATE": {
+          "SWEETNESS": 0.6,
+          "BITTERNESS": 0.6
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BITTERSWEET_CHOCOLATE-N1",
+      "WORD": "BITTERSWEET_CHOCOLATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

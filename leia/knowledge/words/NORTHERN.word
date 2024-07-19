@@ -1,0 +1,58 @@
+{
+  "word": "NORTHERN",
+  "senses": {
+    "NORTHERN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "a place within another place, to its north",
+      "EX": "",
+      "COMMENTS": "[D] semantically = the north of X",
+      "TMR-HEAD": "$VAR0",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PLACE": {
+          "PART-OF-OBJECT": {
+            "VALUE": "^$VAR1",
+            "SEM": "PLACE"
+          },
+          "NORTH-OF": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT",
+        "THE",
+        "NORTHERN-0",
+        "BUILDING-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "NORTH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "NORTHERN-ADJ1",
+      "WORD": "NORTHERN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

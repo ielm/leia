@@ -1,0 +1,49 @@
+{
+  "word": "BROKEN",
+  "senses": {
+    "BROKEN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "in less than perfect repair",
+      "EX": "The broken vase is discounted",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "STATE-OF-REPAIR": [
+            "<",
+            0.7
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "BROKEN-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "DAMAGED"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BROKEN-ADJ1",
+      "WORD": "BROKEN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

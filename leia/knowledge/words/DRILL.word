@@ -1,0 +1,166 @@
+{
+  "word": "DRILL",
+  "senses": {
+    "DRILL-N2": {
+      "CAT": "N",
+      "DEF": "a military drill",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "MILITARY-DRILL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DRILL-N2",
+      "WORD": "DRILL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DRILL-N3": {
+      "CAT": "N",
+      "DEF": "training by means of repeated exercises. this sense is used for academics.",
+      "EX": "The children haven't quite mastered the drill yet",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "ACADEMIC-ACTIVITY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DRILL-N3",
+      "WORD": "DRILL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DRILL-V1": {
+      "CAT": "V",
+      "DEF": "to bore a hole using a drill",
+      "EX": "he drilled a hole in the wall",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": [
+            "IN",
+            "INTO"
+          ],
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "DRILL": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "LOCATION": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "DRILLED-0",
+        "THE",
+        "OIL-2",
+        "IN-3",
+        "THE",
+        "COAST-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DRILL-V1",
+      "WORD": "DRILL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DRILL-N1": {
+      "CAT": "N",
+      "DEF": "a tool",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "DRILL-DEVICE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "POWER_DRILL",
+        "ELECTRIC_DRILL",
+        "PENUMATIC_DRILL",
+        "BENCH_DRILL",
+        "BOW_DRILL",
+        "BREAST_DRILL",
+        "CORDLESS_DRILL",
+        "DRILL_PRESS",
+        "EGGBEATER_DRILL",
+        "HAND_DRILL",
+        "JACKHAMMER",
+        "PUSH_DRILL",
+        "AIR_DRILL",
+        "ANGLE_DRILL",
+        "AUTOMATIC_DRILL",
+        "DIAMOND_DRILL",
+        "DISK_DRILL",
+        "FLAT_DRILL",
+        "KEYWAY_DRILL",
+        "PORTABLE_DRILL",
+        "PUNCH_DRILL",
+        "PUMP_DRILL",
+        "RATCHET_DRILL",
+        "ROTARY_DRILL",
+        "SHELL_DRILL",
+        "SPADE-HANDLE_DRILL",
+        "TAPER_DRILL"
+      ],
+      "SENSE": "DRILL-N1",
+      "WORD": "DRILL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

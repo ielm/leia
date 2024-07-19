@@ -1,0 +1,17 @@
+{
+  "name": "@TELEPHONE-SERVICE-CORPORATION",
+  "isa": [
+    "@COMMUNICATION-CORPORATION",
+    "@UTILITY-CORPORATION"
+  ],
+  "def": "a communication-corporation that provides telephone service for the public",
+  "local": [
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@TELECOMMUNICATION-EQUIPMENT-MANUFACTURING-CORPORATION"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,174 @@
+{
+  "word": "RIGHT_UNDER",
+  "senses": {
+    "RIGHT_UNDER-PREP403": {
+      "CAT": "PREP",
+      "COMMENTS": "*BLOCKS*",
+      "EX": "",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "THERE",
+          "CAT": "N"
+        },
+        "V": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "BE",
+          "CAT": "V"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "V-1": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "BE",
+          "CAT": "V"
+        },
+        "PREP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP"
+        },
+        "OBJ": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "BELOW-AND-TOUCHING": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "THERE-4",
+        "IS-3",
+        "A",
+        "BLOCK-1",
+        "RIGHT_UNDER-0",
+        "THE",
+        "TOWER-2"
+      ],
+      "SYNONYMS": [
+        "RIGHT_BELOW",
+        "DIRECTLY_UNDER"
+      ],
+      "SENSE": "RIGHT_UNDER-PREP403",
+      "WORD": "RIGHT_UNDER",
+      "DEF": "",
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "RIGHT_UNDER-PREP402": {
+      "CAT": "PREP",
+      "COMMENTS": "*BLOCKS*",
+      "EX": "",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "V": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "BE",
+          "CAT": "V"
+        },
+        "PREP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP"
+        },
+        "OBJ": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "BELOW-AND-TOUCHING": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "BLOCK-1",
+        "IS-3",
+        "RIGHT_UNDER-0",
+        "THE",
+        "TOWER-2"
+      ],
+      "SYNONYMS": [
+        "RIGHT_BELOW",
+        "DIRECTLY_UNDER"
+      ],
+      "SENSE": "RIGHT_UNDER-PREP402",
+      "WORD": "RIGHT_UNDER",
+      "DEF": "",
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "RIGHT_UNDER-PREP401": {
+      "CAT": "PREP",
+      "COMMENTS": "*BLOCKS*",
+      "EX": "",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "PREP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP"
+        },
+        "OBJ": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "BELOW-AND-TOUCHING": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "THERE",
+        "IS",
+        "A",
+        "BLOCK-1",
+        "RIGHT_UNDER-0",
+        "THE",
+        "TOWER-2"
+      ],
+      "SYNONYMS": [
+        "RIGHT_BELOW",
+        "DIRECTLY_UNDER"
+      ],
+      "SENSE": "RIGHT_UNDER-PREP401",
+      "WORD": "RIGHT_UNDER",
+      "DEF": "",
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

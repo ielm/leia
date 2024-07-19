@@ -1,0 +1,155 @@
+{
+  "word": "REPLACE",
+  "senses": {
+    "REPLACE-V2": {
+      "CAT": "V",
+      "DEF": "to put in former position",
+      "EX": "replace the dictionary when you're done, please",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "RETURN-OBJECT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "REPLACED-0",
+        "THE",
+        "BOOK-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "REPLACE-V2",
+      "WORD": "REPLACE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "REPLACE-V3": {
+      "CAT": "V",
+      "DEF": "stop using one procedure in favor of another",
+      "EX": "the university has largely replaced essay tests with multiple choice",
+      "COMMENTS": "often passive",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": [
+            "WITH",
+            "BY"
+          ],
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "CHANGE-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "PRECONDITION": {
+            "VALUE": "^$VAR2"
+          },
+          "EFFECT": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "ASPECT": {
+          "PHASE-1": "BEGIN",
+          "SCOPE": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "REPLACED-0",
+        "THE",
+        "DOG-2",
+        "WITH-4",
+        "THE",
+        "CAT-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR4",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "REPLACE-V3",
+      "WORD": "REPLACE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

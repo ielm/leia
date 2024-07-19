@@ -1,0 +1,47 @@
+{
+  "word": "OUTWARD",
+  "senses": {
+    "OUTWARD-ADV1": {
+      "CAT": "ADV",
+      "DEF": "in a direction toward the outside of something",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "DIRECTION-OF-MOTION": "OUTWARD"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "OUTWARD-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "OUTWARDS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "OUTWARD-ADV1",
+      "WORD": "OUTWARD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

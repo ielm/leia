@@ -1,0 +1,45 @@
+{
+  "name": "@TANTALUM",
+  "isa": [
+    "@HEAVY-METALLIC-ELEMENT",
+    "@HARD-METALLIC-ELEMENT"
+  ],
+  "def": "a very hard, heavy gray metallic element that is exceptionally resistant to chemical attack below 150 degrees c. it is used to make electric-light-bulb filaments, electrolytic capacitors, lightning arresters, nuclear reactor parts, and some surgical instruments",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        180
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        73
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

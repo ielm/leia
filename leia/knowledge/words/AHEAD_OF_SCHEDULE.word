@@ -1,0 +1,41 @@
+{
+  "word": "AHEAD_OF_SCHEDULE",
+  "senses": {
+    "AHEAD_OF_SCHEDULE-ADV1": {
+      "CAT": "ADV",
+      "DEF": "earlier than planned",
+      "EX": "they finished up ahead of schedule",
+      "COMMENTS": "simplified representation; mp later",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "POST-CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TIME": {
+            "RELATIVE-TO-NORM": [
+              "<",
+              0.5
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AHEAD_OF_SCHEDULE-ADV1",
+      "WORD": "AHEAD_OF_SCHEDULE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

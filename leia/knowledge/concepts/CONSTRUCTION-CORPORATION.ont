@@ -1,0 +1,21 @@
+{
+  "name": "@CONSTRUCTION-CORPORATION",
+  "isa": [
+    "@FOR-PROFIT-SERVICE-CORPORATION"
+  ],
+  "def": "a for-profit-service-corporation that constructs buildings and other structures",
+  "local": [
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@CONSTRUCTION-EQUIPMENT-MANUFACTURING-CORPORATION"
+    },
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@CONSTRUCTION-MATERIAL-MANUFACTURING-CORPORATION"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

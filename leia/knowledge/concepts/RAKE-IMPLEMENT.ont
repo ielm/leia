@@ -1,0 +1,32 @@
+{
+  "name": "@RAKE-IMPLEMENT",
+  "isa": [
+    "@IMPLEMENT"
+  ],
+  "def": "a long-handled tool with with teeth at one end, for gathering leaves, hay, etc.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

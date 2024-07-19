@@ -1,0 +1,21 @@
+{
+  "name": "@STAY",
+  "isa": [
+    "@ANIMAL-LIVING-EVENT"
+  ],
+  "def": "To live temporarily in a place, such as in a lodging organization.",
+  "local": [],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,67 @@
+{
+  "word": "SERGEANT",
+  "senses": {
+    "SERGEANT-N1": {
+      "CAT": "N",
+      "DEF": "an officer of rank 21/22 in the US army",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MILITARY-OFFICER": {
+          "CITIZEN-OF": "USA",
+          "MEMBER-OF": "ARMY",
+          "RANK": [
+            21,
+            22
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SERGEANT-N1",
+      "WORD": "SERGEANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SERGEANT-N2": {
+      "CAT": "N",
+      "DEF": "an officer of rank 17/17 in the US marines",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MILITARY-OFFICER": {
+          "CITIZEN-OF": "USA",
+          "MEMBER-OF": "MARINES",
+          "RANK": [
+            17,
+            17
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SERGEANT-N2",
+      "WORD": "SERGEANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

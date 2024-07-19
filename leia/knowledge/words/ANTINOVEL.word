@@ -1,0 +1,35 @@
+{
+  "word": "ANTINOVEL",
+  "senses": {
+    "ANTINOVEL-N1": {
+      "CAT": "N",
+      "DEF": "A piece of prose fiction characterized by the absence of traditional elements of the novel, such as coherent plot structure, consistent point of view, and realistic character portrayal.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LITERARY-COMPOSITION": {
+          "HAS-STYLE": "NOVEL",
+          "TYPICALNESS-ATTRIBUTE": [
+            "<",
+            0.2
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ANTINOVEL-N1",
+      "WORD": "ANTINOVEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

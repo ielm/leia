@@ -1,0 +1,19 @@
+{
+  "name": "@BIWEEK-PAYROLL",
+  "isa": [
+    "@TIME-INTERVAL-UNIT"
+  ],
+  "def": "a interval of time equivalent to 10 working days (two full weeks); 10*day-payroll",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        288000.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@MAMMOGRAM-OBJECT",
+  "isa": [
+    "@X-RAY-OBJECT"
+  ],
+  "def": "x-ray of breast tissue",
+  "local": [
+    {
+      "slot": "depicts",
+      "facet": "sem",
+      "filler": "@BREAST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "depicts",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

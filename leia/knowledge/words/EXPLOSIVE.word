@@ -1,0 +1,29 @@
+{
+  "word": "EXPLOSIVE",
+  "senses": {
+    "EXPLOSIVE-N1": {
+      "CAT": "N",
+      "DEF": "a substance, especially a prepared chemical, that explodes or causes explosion.",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "EXPLOSIVE-DEVICE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "DETONATOR"
+      ],
+      "SENSE": "EXPLOSIVE-N1",
+      "WORD": "EXPLOSIVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

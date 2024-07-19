@@ -1,0 +1,32 @@
+{
+  "name": "@CONCEIVE-OFFSPRING",
+  "isa": [
+    "@OFFSPRING-EVENT"
+  ],
+  "def": "to become pregnant with",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MALE-GENITAL-SYSTEM"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FEMALE-GENITAL-SYSTEM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

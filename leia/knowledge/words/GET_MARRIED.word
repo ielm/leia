@@ -1,0 +1,50 @@
+{
+  "word": "GET_MARRIED",
+  "senses": {
+    "GET_MARRIED-V1": {
+      "CAT": "V",
+      "DEF": "to marry",
+      "EX": "John and Susie get married on Saturday",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "ROOT-WORD": "AND",
+        "CAT": "V",
+        "NP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "MARRY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "AGENT-1": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "GOT_MARRIED"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "GET_MARRIED-V1",
+      "WORD": "GET_MARRIED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

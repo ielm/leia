@@ -1,0 +1,152 @@
+{
+  "word": "*COMMA*",
+  "senses": {
+    "*COMMA*-PUNCT3": {
+      "CAT": "PUNCT",
+      "DEF": "used after adverbials of time to link them to the main proposition",
+      "EX": "Yesterday, the man hit the building.",
+      "COMMENTS": "until we fundamentally do the microtheory of time, it's not clear what exactly the semantic restriction on the value of $var1 is supposed to be. Here I made it clear what it is supposed to be for people; for the analyzer, it might be different in the end",
+      "TMR-HEAD": "$VAR2",
+      "SYN-STRUC": {
+        "ADV": {
+          "ROOT": "$VAR1",
+          "CAT": "ADV"
+        },
+        "PUNCT": {
+          "ROOT": "$VAR0",
+          "CAT": "PUNCT"
+        },
+        "CL": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "TIME": {
+            "VALUE": "^$VAR1",
+            "SEM": "TIME-INTERVAL-UNIT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "YESTERDAY-1",
+        "*COMMA*-0",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "PUNCT",
+          "$VAR2",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "*COMMA*-PUNCT3",
+      "WORD": "*COMMA*",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "*COMMA*-PUNCT2": {
+      "CAT": "PUNCT",
+      "DEF": "used for appositives",
+      "EX": "Mr. Jones, the head of Jim's Landscaping, called today. I called  Mr. Jones, the head of Jim's landscaping",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "PUNCT": {
+          "ROOT": "$VAR0",
+          "CAT": "PUNCT"
+        },
+        "NP": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "PUNCT-1": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "*COMMA*",
+          "CAT": "PUNCT"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "COREFER": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "I",
+        "CALLED",
+        "THE",
+        "MAN-1",
+        "*COMMA*-0",
+        "THE",
+        "HEAD-2",
+        "OF",
+        "LANDSCAPING",
+        "*COMMA*-3",
+        "TO",
+        "HELP",
+        "HIM"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PUNCT",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "*COMMA*-PUNCT2",
+      "WORD": "*COMMA*",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "*COMMA*-PUNCT1": {
+      "CAT": "PUNCT",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "PUNCT"
+      },
+      "SEM-STRUC": "",
+      "MEANING-PROCEDURES": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "*COMMA*-PUNCT1",
+      "WORD": "*COMMA*",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": []
+    }
+  }
+}

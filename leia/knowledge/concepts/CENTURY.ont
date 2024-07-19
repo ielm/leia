@@ -1,0 +1,19 @@
+{
+  "name": "@CENTURY",
+  "isa": [
+    "@TIME-INTERVAL-UNIT"
+  ],
+  "def": "a unit of time equal to 100 years",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        -1141367296
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

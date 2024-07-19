@@ -1,0 +1,52 @@
+{
+  "name": "@USE-RESOURCE",
+  "isa": [
+    "@MANUFACTURING-ACTIVITY"
+  ],
+  "def": "to make use of natural resources for manufacturing purposes",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@LEATHER-MANUFACTURING-CORPORATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@AGRICULTURAL-CORPORATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@MATERIAL-MANUFACTURING-CORPORATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NATURAL-RESOURCE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@IMPLEMENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@METAL"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@FACTORY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

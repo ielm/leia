@@ -1,0 +1,347 @@
+{
+  "word": "PROVE",
+  "senses": {
+    "PROVE-V1": {
+      "CAT": "V",
+      "DEF": "to establish as true (+ np)",
+      "EX": "prove a theorem ",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "PROVE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "OBJECT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "PROVED-0",
+        "THE",
+        "THEORY-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "DEP",
+          "$VAR2",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "SHOW",
+        "DEMONSTRATE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PROVE-V1",
+      "WORD": "PROVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PROVE-V2": {
+      "CAT": "V",
+      "DEF": "to give an assurance (that...)",
+      "EX": "I'll prove (to you) (that) I'm right",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "TO",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        },
+        "COMP": {
+          "ROOT": "$VAR4",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "PROVE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "PROVED-0",
+        "TO-2",
+        "THE",
+        "WOMAN-3",
+        "THAT",
+        "HE",
+        "HIT-4",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PROVE-V2",
+      "WORD": "PROVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PROVE-V3": {
+      "CAT": "V",
+      "DEF": "x proves to be adj ;s out to be = is)",
+      "EX": "this scheme proved (to be) ridiculous",
+      "COMMENTS": "I did't go after the semantics 'it was thought at the outset that things would be different but in the end it turned out this way'",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "INF": {
+          "ROOT-WORD": "TO",
+          "ROOT": "$VAR4",
+          "CAT": "INF"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "BE",
+          "FORM": "INFINITIVE",
+          "OPT": "+"
+        },
+        "ADJ": {
+          "ROOT": "$VAR3",
+          "CAT": "ADJ"
+        }
+      },
+      "SEM-STRUC": {
+        "PROPERTY": {
+          "DOMAIN": {
+            "VALUE": "^$VAR1"
+          },
+          "RANGE": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "^$VAR0",
+          "^$VAR1",
+          "^$VAR3"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "PROVED-0",
+        "TO-4",
+        "BE-2",
+        "SILLY-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "XSUBJ",
+          "$VAR3",
+          "$VAR1"
+        ],
+        [
+          "XCOMP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "COP",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "AUX",
+          "$VAR3",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PROVE-V3",
+      "WORD": "PROVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PROVE-V4": {
+      "CAT": "V",
+      "DEF": "x proves (to be) np (turns out to be = is)",
+      "EX": "this scheme proved (to be) a bad idea",
+      "COMMENTS": "I did't go after the semantics 'it was thought at the outset that things would be different but in the end it turned out this way'",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "INF": {
+          "ROOT-WORD": "TO",
+          "ROOT": "$VAR4",
+          "CAT": "INF"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "BE",
+          "FORM": "INFINITIVE",
+          "OPT": "+"
+        },
+        "NP": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "PROPERTY": {
+          "DOMAIN": {
+            "VALUE": "^$VAR1"
+          },
+          "RANGE": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "^$VAR0",
+          "^$VAR1",
+          "^$VAR3"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "PROVED-0",
+        "TO-4",
+        "BE-2",
+        "THE",
+        "WINNER-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "XSUBJ",
+          "$VAR3",
+          "$VAR1"
+        ],
+        [
+          "XCOMP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "COP",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "AUX",
+          "$VAR3",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PROVE-V4",
+      "WORD": "PROVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

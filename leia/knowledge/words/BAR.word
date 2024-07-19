@@ -1,0 +1,301 @@
+{
+  "word": "BAR",
+  "senses": {
+    "BAR-N1": {
+      "CAT": "N",
+      "DEF": "a place where alcoholic beverages are sold",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BARROOM",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "BARROOM",
+        "PUB",
+        "SALOON",
+        "BEER_GARDEN",
+        "COCTAIL_LOUNGE",
+        "PUBLIC_HOUSE",
+        "TAVERN",
+        "WATERING_HOLE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BAR-N1",
+      "WORD": "BAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BAR-N2": {
+      "CAT": "N",
+      "DEF": "lawyers' association",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ORGANIZATION": {
+          "HAS-MEMBER": "ATTORNEY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BAR-N2",
+      "WORD": "BAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BAR-N3": {
+      "CAT": "N",
+      "DEF": "an internationally accepted unit of pressure, nearly equivalent to atmospheric pressure",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BAR-PRESSURE-UNIT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BAR-N3",
+      "WORD": "BAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BAR-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "they barred the use of federal funds",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "PREVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "EVENT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "BARRED-0",
+        "THE",
+        "ACTION-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BAR-V1",
+      "WORD": "BAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BAR-V2": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "they barred them from using federal funds",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "INDIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": "FROM",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "PERMISSIVE",
+          "VALUE": 0,
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          },
+          "SCOPE": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR4": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "BARRED-0",
+        "THE",
+        "DOG-2",
+        "FROM-3",
+        "THE",
+        "PARTY-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BAR-V2",
+      "WORD": "BAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BAR-V3": {
+      "CAT": "V",
+      "DEF": "not permit to enter",
+      "EX": "they barred her from the church after she caused a riot",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "INDIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": "FROM",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "PERMISSIVE",
+          "VALUE": 0,
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          },
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "COME": {
+            "AGENT": {
+              "VALUE": "^$VAR2"
+            },
+            "DESTINATION": {
+              "VALUE": "^$VAR4"
+            }
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "BARRED-0",
+        "THE",
+        "DOG-2",
+        "FROM-3",
+        "THE",
+        "PARTY-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BAR-V3",
+      "WORD": "BAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

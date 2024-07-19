@@ -1,0 +1,9 @@
+{
+  "name": "$SCALAR-OBJECT-ATTRIBUTE",
+  "def": "Attributes that apply to objects, whether social, physical or mental",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-ATTRIBUTE"
+}

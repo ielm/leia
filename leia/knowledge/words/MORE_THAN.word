@@ -1,0 +1,138 @@
+{
+  "word": "MORE_THAN",
+  "senses": {
+    "MORE_THAN-ADV1": {
+      "CAT": "ADV",
+      "DEF": "higher in number; in existential construction",
+      "EX": "Ten is more than 5",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "ADV",
+        "NP": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "CONSTRAINT": [
+          "<",
+          [
+            "VALUE",
+            "^$VAR3"
+          ],
+          [
+            "VALUE",
+            "^$VAR1"
+          ]
+        ],
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOG-1",
+        "IS-2",
+        "MORE_THAN-0",
+        "THE",
+        "CAT-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "PUNCT",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MORE_THAN-ADV1",
+      "WORD": "MORE_THAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MORE_THAN-ADV2": {
+      "CAT": "ADV",
+      "DEF": "higher in number; in when followed by a quantified NP",
+      "EX": "More than 5 people won prizes.",
+      "COMMENTS": "We should probably do this differently syntactically, but that means making the  analyzer gibe with this and I'm not doing that now",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "ADV",
+        "NUM": {
+          "ROOT": "$VAR1",
+          "CAT": "NUM"
+        },
+        "N": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR2"
+          },
+          "CARDINALITY": [
+            ">",
+            [
+              "VALUE",
+              "^$VAR1"
+            ]
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "MORE_THAN-0",
+        "FIVE-1",
+        "PEOPLE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NUM",
+          "$VAR2",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "GREATER_THAN",
+        "IN_EXCESS_OF"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "MORE_THAN-ADV2",
+      "WORD": "MORE_THAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

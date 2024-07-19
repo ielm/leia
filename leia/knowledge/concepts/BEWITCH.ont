@@ -1,0 +1,22 @@
+{
+  "name": "@BEWITCH",
+  "isa": [
+    "@SORCERY"
+  ],
+  "def": "to influence or affect especially injuriously by witchcraft: to cast a spell over",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SPELL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

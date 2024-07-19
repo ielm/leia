@@ -1,0 +1,42 @@
+{
+  "name": "@KNIT",
+  "isa": [
+    "@CREATE-FABRIC-MATERIAL-ARTIFACT"
+  ],
+  "def": "to make a fabric by looping yarn or thread together with special needles",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BLANKET"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CLOTHING-ARTIFACT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@YARN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@LOOM"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SEWING-MATERIAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    }
+  ],
+  "private": {}
+}

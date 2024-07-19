@@ -1,0 +1,44 @@
+{
+  "name": "@NEOLITHIC-PERIOD",
+  "isa": [
+    "@HISTORICAL-PERIOD"
+  ],
+  "def": "a historical period from 9,000 B.C. to 6,000 B.C. in Southwest Asia, and from 4,000 to 2,400 in Europe; a time of primitive crop growing and stock rearing (note: this concept covers the superset of these periods in the different locales)",
+  "local": [
+    {
+      "slot": "time-begin",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        9000
+      ],
+      "meta": {
+        "measured-in": "year-bc"
+      }
+    },
+    {
+      "slot": "time-end",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        2400
+      ],
+      "meta": {
+        "measured-in": "year-bc"
+      }
+    }
+  ],
+  "block": [
+    {
+      "slot": "time-begin",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "time-end",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    }
+  ],
+  "private": {}
+}

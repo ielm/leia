@@ -1,0 +1,28 @@
+{
+  "name": "@RARE-EARTH-ELEMENT",
+  "isa": [
+    "@METALLIC-SOLID-ELEMENT"
+  ],
+  "def": "any of the abundant metallic elements of atomic number 57 through 71",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        72
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

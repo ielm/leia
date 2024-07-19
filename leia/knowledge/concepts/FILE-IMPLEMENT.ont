@@ -1,0 +1,22 @@
+{
+  "name": "@FILE-IMPLEMENT",
+  "isa": [
+    "@IMPLEMENT"
+  ],
+  "def": "a steel tool with a rough, ridged surface for smoothing and grinding",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@STEEL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

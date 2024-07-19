@@ -1,0 +1,60 @@
+{
+  "word": "DARE",
+  "senses": {
+    "DARE-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "they dared me to jump off the roof",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "INDIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "XCOMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "DARE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "DARED-0",
+        "ME-2",
+        "TO",
+        "JUMP-3",
+        "OFF",
+        "THE",
+        "ROOF"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DARE-V1",
+      "WORD": "DARE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

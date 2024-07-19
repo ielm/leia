@@ -1,0 +1,53 @@
+{
+  "word": "TRIM",
+  "senses": {
+    "TRIM-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "a trim man",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "ANIMATE",
+          "FATTINESS": 0.2
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "TRIM-0",
+        "DOG-1",
+        "HIT",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "SLIM",
+        "SLENDER",
+        "THIN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "TRIM-ADJ1",
+      "WORD": "TRIM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

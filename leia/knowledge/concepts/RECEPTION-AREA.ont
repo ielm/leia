@@ -1,0 +1,52 @@
+{
+  "name": "@RECEPTION-AREA",
+  "isa": [
+    "@INTERIOR-BUILDING-PART"
+  ],
+  "def": "usually the front room of a house or service-building where guests or patrons are greeted",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@WINDOW"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@DOOR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@WALL"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@FLOOR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@CEILING"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@SERVICE-BUILDING"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PRIVATE-HOME"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

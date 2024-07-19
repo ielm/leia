@@ -1,0 +1,156 @@
+{
+  "word": "ARRIVE",
+  "senses": {
+    "ARRIVE-V1": {
+      "CAT": "V",
+      "DEF": "to come to a location; of an agent",
+      "EX": "he arrived in london (at heathrow) this morning",
+      "COMMENTS": "[D] 'in' and 'at' are the most common preps; I'm listing them explicitly to promote analysis. it won't help too much to leave the prep completely open then add a mp - if there's a different prep of destination, it needs to be analyzed anyway",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": [
+            "IN",
+            "AT"
+          ],
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "COME": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "DESTINATION": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "BOOK-1",
+        "ARRIVED-0",
+        "IN-2",
+        "THE",
+        "BOX-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ARRIVE-V1",
+      "WORD": "ARRIVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ARRIVE-V2": {
+      "CAT": "V",
+      "DEF": "to come to a location; of a non-agent",
+      "EX": "the goods arrived in london (at heathrow) this morning",
+      "COMMENTS": "'in' and 'at' are the most common preps; I'm listing them explicitly to promote analysis. it won't help too much to leave the prep completely open then add a mp - if there's a different prep of destination, it needs to be analyzed anyway",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": [
+            "IN",
+            "AT"
+          ],
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "COME": {
+          "THEME": {
+            "VALUE": "^$VAR1",
+            "SEM": "INANIMATE"
+          },
+          "DESTINATION": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "GOODS-1",
+        "ARRIVED-0",
+        "AT-2",
+        "THE",
+        "AIRPORT-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "GET"
+      ],
+      "SENSE": "ARRIVE-V2",
+      "WORD": "ARRIVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

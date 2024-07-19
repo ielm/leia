@@ -1,0 +1,885 @@
+{
+  "word": "WHAT",
+  "senses": {
+    "WHAT-PRO7": {
+      "CAT": "PRO",
+      "DEF": "phrasal: What seems to be the problem?, meaning 'Describe your symptoms'",
+      "EX": "What seems to be the problem?",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "TYPE": "PRO",
+        "V": {
+          "ROOT": "$VAR1",
+          "CAT": "V",
+          "ROOT-WORD": "SEEM"
+        },
+        "INF": {
+          "ROOT": "$VAR2",
+          "CAT": "INF",
+          "ROOT-WORD": "TO"
+        },
+        "V-1": {
+          "ROOT": "$VAR3",
+          "CAT": "V",
+          "ROOT-WORD": "BE",
+          "FORM": "INFINITIVE"
+        },
+        "NP": {
+          "ROOT": "$VAR4",
+          "CAT": "NP",
+          "ROOT-WORD": "PROBLEM"
+        },
+        "UNCONNECTED": [
+          [
+            "ROOT",
+            "$VAR5"
+          ],
+          [
+            "ROOT",
+            "*QUESTION_MARK*"
+          ],
+          [
+            "CAT",
+            "PUNCT"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "REQUEST-INFO": {
+          "THEME": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": [
+          "SYMPTOM"
+        ],
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "WHAT-0",
+        "SEEMS-1",
+        "TO-2",
+        "BE-3",
+        "THE",
+        "PROBLEM-4",
+        "?-5"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AUX",
+          "$VAR4",
+          "$VAR2"
+        ],
+        [
+          "CCOMP",
+          "$VAR1",
+          "$VAR4"
+        ],
+        [
+          "COP",
+          "$VAR4",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "PUNCT",
+          "$VAR1",
+          "$VAR5"
+        ],
+        [
+          "XCOMP",
+          "$VAR1",
+          "$VAR4"
+        ],
+        [
+          "XSUBJ",
+          "$VAR4",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WHAT-PRO7",
+      "WORD": "WHAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WHAT-PRO6": {
+      "CAT": "PRO",
+      "DEF": "phrasal: What kinds of X are you having?",
+      "EX": "What kinds of symptoms are you having?",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "TYPE": "PRO",
+        "NP": {
+          "ROOT": "$VAR2",
+          "CAT": "NP",
+          "ROOT-WORD": "KIND"
+        },
+        "PP": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "OF",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR5",
+            "CAT": "NP"
+          }
+        },
+        "V": {
+          "ROOT": "$VAR1",
+          "CAT": "V",
+          "ROOT-WORD": [
+            "BE",
+            "DO",
+            "HAVE"
+          ]
+        },
+        "NP-1": {
+          "ROOT": "$VAR6",
+          "CAT": "NP"
+        },
+        "V-1": {
+          "ROOT": "$VAR7",
+          "CAT": "V",
+          "ROOT-WORD": [
+            "HAVE",
+            "EXPERIENCE"
+          ]
+        },
+        "UNCONNECTED": [
+          [
+            "ROOT",
+            "$VAR3"
+          ],
+          [
+            "ROOT",
+            "*QUESTION_MARK*"
+          ],
+          [
+            "CAT",
+            "PUNCT"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "REQUEST-ACTION": {
+          "THEME": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "DESCRIBE": {
+            "THEME-1": {
+              "VALUE": "^$VAR5"
+            }
+          }
+        },
+        "^$VAR5": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR6"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR6": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR7": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "WHAT-0",
+        "KINDS-2",
+        "OF-4",
+        "SYMPTOMS-5",
+        "ARE-1",
+        "YOU-6",
+        "HAVING-7",
+        "?-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR2",
+          "$VAR0"
+        ],
+        [
+          "CCOMP",
+          "$VAR1",
+          "$VAR7"
+        ],
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR7",
+          "$VAR6"
+        ],
+        [
+          "POBJ",
+          "$VAR4",
+          "$VAR5"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR4"
+        ],
+        [
+          "PUNCT",
+          "$VAR1",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WHAT-PRO6",
+      "WORD": "WHAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WHAT-PRO5": {
+      "CAT": "PRO",
+      "DEF": "phrasal: What is X?, meaning 'Describe X'",
+      "EX": "What is the pain of a heller myotomy?",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "TYPE": "PRO",
+        "V": {
+          "ROOT": "$VAR1",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "NP": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "UNCONNECTED": [
+          [
+            "ROOT",
+            "$VAR3"
+          ],
+          [
+            "ROOT",
+            "*QUESTION_MARK*"
+          ],
+          [
+            "CAT",
+            "PUNCT"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "REQUEST-ACTION": {
+          "THEME": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "DESCRIBE": {
+            "THEME-1": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "WHAT-0",
+        "IS-1",
+        "THE",
+        "PAIN-2",
+        "OF",
+        "A",
+        "HELLER_MYOTOMY",
+        "?-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ATTR",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "DEP",
+          "$VAR1",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WHAT-PRO5",
+      "WORD": "WHAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WHAT-PRO4": {
+      "CAT": "PRO",
+      "DEF": "phrasal: (so(,)) what is <has been> going on?",
+      "EX": "(So(,)) what's going on? What has been going on?",
+      "COMMENTS": "we ultimately need to parameterize this such that a MP checks that the speaker is an MD and that the hearer is a patient",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ADV": {
+          "ROOT": "$VAR3",
+          "CAT": "ADV",
+          "ROOT-WORD": "SO",
+          "OPT": "+"
+        },
+        "PUNCT": {
+          "ROOT": "$VAR4",
+          "CAT": "PUNCT",
+          "ROOT-WORD": "*COMMA*",
+          "OPT": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "TYPE": "PRO",
+        "V": {
+          "ROOT": "$VAR1",
+          "CAT": "V",
+          "ROOT-WORD": "GO"
+        },
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "ON"
+        },
+        "UNCONNECTED": [
+          [
+            "ROOT",
+            "$VAR5"
+          ],
+          [
+            "CAT",
+            "PUNCT"
+          ],
+          [
+            "ROOT",
+            "*QUESTION_MARK*"
+          ],
+          [
+            "OPT",
+            "+"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "REQUEST-INFO": {
+          "THEME": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": [
+          "SYMPTOM"
+        ],
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SO-3",
+        "*COMMA*-4",
+        "WHAT-0",
+        "IS",
+        "GOING-1",
+        "ON-2",
+        "?-5"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR3"
+        ],
+        [
+          "DEP",
+          "$VAR1",
+          "$VAR5"
+        ],
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "PRT",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PUNCT",
+          "$VAR1",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WHAT-PRO4",
+      "WORD": "WHAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WHAT-PRO3": {
+      "CAT": "PRO",
+      "DEF": "phrasal: What is X like?, meaning 'Describe X'",
+      "EX": "What is your college like?",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "TYPE": "PRO",
+        "V": {
+          "ROOT": "$VAR1",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "NP": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "V-1": {
+          "ROOT": "$VAR3",
+          "CAT": "V",
+          "ROOT-WORD": "LIKE"
+        },
+        "UNCONNECTED": [
+          [
+            "ROOT",
+            "$VAR4"
+          ],
+          [
+            "CAT",
+            "PUNCT"
+          ],
+          [
+            "ROOT",
+            "*QUESTION-MARK*"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "REQUEST-ACTION": {
+          "THEME": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "DESCRIBE": {
+            "THEME-1": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "WHAT-0",
+        "IS-1",
+        "THE",
+        "PAIN-2",
+        "LIKE-3",
+        "?-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WHAT-PRO3",
+      "WORD": "WHAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WHAT-PRO1": {
+      "CAT": "PRO",
+      "DEF": "phrasal: (so(,)) what is up (what's up)?, when asked by a doctor to a patient",
+      "EX": "(So(,)) what's up?",
+      "COMMENTS": "we ultimately need to parameterize this such that a MP checks that the speaker is an MD and that the hearer is a patient",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ADV": {
+          "ROOT": "$VAR3",
+          "CAT": "ADV",
+          "ROOT-WORD": "SO",
+          "OPT": "+"
+        },
+        "PUNCT": {
+          "ROOT": "$VAR4",
+          "CAT": "PUNCT",
+          "ROOT-WORD": "*COMMA*",
+          "OPT": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "TYPE": "PRO",
+        "V": {
+          "ROOT": "$VAR1",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "UP"
+        },
+        "UNCONNECTED": [
+          [
+            "ROOT",
+            "$VAR5"
+          ],
+          [
+            "CAT",
+            "PUNCT"
+          ],
+          [
+            "ROOT",
+            "*QUESTION_MARK*"
+          ],
+          [
+            "OPT",
+            "+"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "REQUEST-INFO": {
+          "THEME": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": [
+          "SYMPTOM"
+        ],
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SO-3",
+        "*COMMA*-4",
+        "WHAT-0",
+        "IS-1",
+        "UP-2",
+        "?-5"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR3"
+        ],
+        [
+          "ATTR",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "DEP",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "DEP",
+          "$VAR1",
+          "$VAR5"
+        ],
+        [
+          "PUNCT",
+          "$VAR1",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WHAT-PRO1",
+      "WORD": "WHAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WHAT-PRO8": {
+      "CAT": "PRO",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "TYPE": "PRO",
+        "NP": {
+          "ROOT": "$VAR2",
+          "CAT": "NP",
+          "ROOT-WORD": "SYMPTOM"
+        },
+        "V": {
+          "ROOT": "$VAR1",
+          "CAT": "V",
+          "ROOT-WORD": [
+            "BE",
+            "DO",
+            "HAVE"
+          ]
+        },
+        "NP-1": {
+          "ROOT": "$VAR6",
+          "CAT": "NP"
+        },
+        "V-1": {
+          "ROOT": "$VAR7",
+          "CAT": "V",
+          "ROOT-WORD": [
+            "HAVE",
+            "EXPERIENCE"
+          ]
+        },
+        "UNCONNECTED": [
+          [
+            "ROOT",
+            "$VAR3"
+          ],
+          [
+            "ROOT",
+            "*QUESTION_MARK*"
+          ],
+          [
+            "CAT",
+            "PUNCT"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "REQUEST-INFO": {
+          "AGENT": "*SPEAKER*",
+          "THEME": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SYMPTOM": {
+            "EXPERIENCER": {
+              "VALUE": "^$VAR6"
+            }
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR7": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "WHAT-0",
+        "SYMPTOMS-2",
+        "HAVE-1",
+        "YOU-6",
+        "EXPERIENCED-7",
+        "?-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR1",
+          "$VAR7"
+        ],
+        [
+          "DET",
+          "$VAR2",
+          "$VAR0"
+        ],
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR7",
+          "$VAR6"
+        ],
+        [
+          "PUNCT",
+          "$VAR1",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WHAT-PRO8",
+      "WORD": "WHAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WHAT-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "UNCONNECTED": [
+          [
+            "ROOT",
+            "$VAR2"
+          ],
+          [
+            "ROOT",
+            "*QUESTION_MARK*"
+          ],
+          [
+            "CAT",
+            "PUNCT"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "OBJECT": {
+          "REQUEST-INFO-TRACE": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WHAT-N1",
+      "WORD": "WHAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WHAT-N5000": {
+      "SENSE": "WHAT-N5000",
+      "DEF": "",
+      "EX": "Tell me what he hit.",
+      "COMMENTS": "",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PHYSICAL-OBJECT",
+      "MEANING-PROCEDURES": [
+        [
+          "REPLACE-ASSOCIATED-EVENT-WITH-DOT-CASE-ROLE"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "WORD": "WHAT",
+      "CAT": "N",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": []
+    }
+  }
+}

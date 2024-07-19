@@ -1,0 +1,17 @@
+{
+  "name": "@MUSIC-PAPER",
+  "isa": [
+    "@PAPER",
+    "@MUSIC-RELATED-OBJECT"
+  ],
+  "def": "specially lined paper for writing music",
+  "local": [],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

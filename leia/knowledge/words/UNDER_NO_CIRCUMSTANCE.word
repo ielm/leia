@@ -1,0 +1,42 @@
+{
+  "word": "UNDER_NO_CIRCUMSTANCE",
+  "senses": {
+    "UNDER_NO_CIRCUMSTANCE-ADV1": {
+      "CAT": "ADV",
+      "DEF": "prohibited",
+      "EX": "under no circumstance should you let anyone in the room",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "PERMISSIVE",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "UNDER_NO_CIRCUMSTANCES"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "UNDER_NO_CIRCUMSTANCE-ADV1",
+      "WORD": "UNDER_NO_CIRCUMSTANCE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

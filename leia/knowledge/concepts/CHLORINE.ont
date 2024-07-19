@@ -1,0 +1,24 @@
+{
+  "name": "@CHLORINE",
+  "isa": [
+    "@HALOGEN"
+  ],
+  "def": "a highly irritating, greenish-yellow gaseous element, used to purify water, as a disinfectant, a bleaching agent, and in the manufacture of chloroform and carbon tetrachloride",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        35
+      ]
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "green"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

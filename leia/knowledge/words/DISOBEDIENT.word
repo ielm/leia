@@ -1,0 +1,67 @@
+{
+  "word": "DISOBEDIENT",
+  "senses": {
+    "DISOBEDIENT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "not submissive to rules or authority",
+      "EX": "he is disobedient to his teachers",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ",
+          "PP": {
+            "ROOT": "$VAR3",
+            "CAT": "PREP",
+            "ROOT-WORD": "TO",
+            "OPT": "+",
+            "OBJ": {
+              "ROOT": "$VAR2",
+              "CAT": "N"
+            }
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "OBEY": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            },
+            "THEME": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "DEFIANT",
+        "INSUBORDINATE",
+        "OBSTINATE",
+        "REBELLIOUS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DISOBEDIENT-ADJ1",
+      "WORD": "DISOBEDIENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

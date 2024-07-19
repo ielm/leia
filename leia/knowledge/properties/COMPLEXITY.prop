@@ -1,0 +1,9 @@
+{
+  "name": "$COMPLEXITY",
+  "def": "How complex or simple something is (0 = totally simple; 1 = v. complex)",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-ATTRIBUTE"
+}

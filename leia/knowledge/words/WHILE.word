@@ -1,0 +1,294 @@
+{
+  "word": "WHILE",
+  "senses": {
+    "WHILE-CONJ1": {
+      "CAT": "CONJ",
+      "DEF": "",
+      "EX": "While she talked I read a book.",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR2",
+      "SYN-STRUC": {
+        "CONJ": {
+          "ROOT": "$VAR0",
+          "CAT": "CONJ"
+        },
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "PUNCT": {
+          "ROOT-WORD": "*COMMA*",
+          "ROOT": "$VAR3",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        },
+        "CL-1": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "SEM": "EVENT",
+          "TIME": {
+            "VALUE": "^$VAR1.TIME"
+          }
+        },
+        "^$VAR1": {
+          "SEM-1": "EVENT"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "WHILE-0",
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "*COMMA*-3",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVCL",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "MARK",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "PUNCT",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WHILE-CONJ1",
+      "WORD": "WHILE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WHILE-CONJ2": {
+      "CAT": "CONJ",
+      "DEF": "",
+      "EX": "I read a book while she talked.",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "CONJ": {
+          "ROOT": "$VAR0",
+          "CAT": "CONJ"
+        },
+        "CL-1": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "TIME": {
+            "VALUE": "^$VAR2.TIME"
+          }
+        },
+        "^$VAR2": {
+          "SEM-1": "EVENT"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "WHILE-0",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "EVEN_AS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "WHILE-CONJ2",
+      "WORD": "WHILE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WHILE-CONJ3": {
+      "CAT": "CONJ",
+      "DEF": "",
+      "EX": "While horses won't eat chocolate, dogs will",
+      "COMMENTS": "this use syntactic structure for 'while' very often has ellipsis  and it's a good clue of where to find the antecedent the soldiers captured pirates in coming to the rescue of the ship.",
+      "TMR-HEAD": "$VAR2",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "CONJ",
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "PUNCT": {
+          "ROOT-WORD": "*COMMA*",
+          "ROOT": "$VAR3",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        },
+        "CL-1": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "CONTRAST": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "WHILE-0",
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "*COMMA*-3",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "IN"
+      ],
+      "SENSE": "WHILE-CONJ3",
+      "WORD": "WHILE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WHILE-CONJ4": {
+      "CAT": "CONJ",
+      "DEF": "",
+      "EX": "Dogs will eat chocolate (,) while horses won't",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "PUNCT": {
+          "ROOT-WORD": "*COMMA*",
+          "ROOT": "$VAR3",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "CONJ",
+        "CL-1": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR1": {
+          "CONTRAST": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "*COMMA*-3",
+        "WHILE-0",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WHILE-CONJ4",
+      "WORD": "WHILE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WHILE-N1": {
+      "CAT": "N",
+      "DEF": "an indeterminate time period",
+      "EX": "we haven't gotten together in a while; I saw him a little while ago; he kept talking all the while",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "TIME-INTERVAL": {
+          "DETERMINATE": "NO",
+          "AMOUNT": 0.5
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WHILE-N1",
+      "WORD": "WHILE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

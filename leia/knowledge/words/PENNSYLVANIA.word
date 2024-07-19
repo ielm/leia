@@ -1,0 +1,33 @@
+{
+  "word": "PENNSYLVANIA",
+  "senses": {
+    "PENNSYLVANIA-N1": {
+      "CAT": "N",
+      "DEF": "a state",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "STATE": {
+          "HAS-NAME": {
+            "VALUE": "PENNSYLVANIA"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PENNSYLVANIA-N1",
+      "WORD": "PENNSYLVANIA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

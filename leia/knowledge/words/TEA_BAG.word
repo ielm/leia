@@ -1,0 +1,50 @@
+{
+  "word": "TEA_BAG",
+  "senses": {
+    "TEA_BAG-N1": {
+      "CAT": "N",
+      "DEF": "a bag containing tea leaves, for brewing tea",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BAG": {
+          "CONTAINS": {
+            "VALUE": "REFSEM1"
+          },
+          "LENGTH": [
+            "><",
+            4,
+            6
+          ],
+          "MEASURING-UNIT": "CENTIMETER",
+          "WIDTH": [
+            "><",
+            4,
+            6
+          ],
+          "MEASURING-UNIT-1": "CENTIMETER"
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": "TEA-LEAF"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TEA_BAG-N1",
+      "WORD": "TEA_BAG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

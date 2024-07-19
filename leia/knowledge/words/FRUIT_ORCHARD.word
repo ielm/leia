@@ -1,0 +1,32 @@
+{
+  "word": "FRUIT_ORCHARD",
+  "senses": {
+    "FRUIT_ORCHARD-N1": {
+      "CAT": "N",
+      "DEF": "a place where fruit trees are grown",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ORCHARD": {
+          "LOCATION-OF": "TREE",
+          "LOCATION-OF-1": "FRUIT-FOODSTUFF"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FRUIT_ORCHARD-N1",
+      "WORD": "FRUIT_ORCHARD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

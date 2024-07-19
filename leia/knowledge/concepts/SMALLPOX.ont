@@ -1,0 +1,16 @@
+{
+  "name": "@SMALLPOX",
+  "isa": [
+    "@VIRUS-DISEASE"
+  ],
+  "def": "a contagious viral disease with fever and pustules",
+  "local": [
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@FEVER"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

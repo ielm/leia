@@ -1,0 +1,172 @@
+{
+  "word": "GRANT",
+  "senses": {
+    "GRANT-N1": {
+      "CAT": "N",
+      "DEF": "money, the result of a grant",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "PRECONDITION": "GRANT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GRANT-N1",
+      "WORD": "GRANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "GRANT-V2": {
+      "CAT": "V",
+      "DEF": "phrasal: grant a request = fulfill it, do the given action",
+      "EX": "they granted (him) an extension",
+      "COMMENTS": "[D] this will necessarily have semantic ellipsis; let's see if this semantic representation gets us far enough to start with",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "INDIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "N",
+          "OPT": "+"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          },
+          "EFFECT": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "MODALITY": {
+            "TYPE": "EPITEUCTIC",
+            "VALUE": 1,
+            "SCOPE": {
+              "VALUE": "^$VAR2",
+              "SEM": "REQUEST"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "GRANTED-0",
+        "HIM-3",
+        "AN",
+        "EXTENSION-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "IOBJ",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "XSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GRANT-V2",
+      "WORD": "GRANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "GRANT-V1": {
+      "CAT": "V",
+      "DEF": "to give s.o. sth. by legal proceedings",
+      "EX": "they granted them 10 million for biomedical research",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "INDIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "GRANT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "GRANTED-0",
+        "THEM-3",
+        "10",
+        "_MILLION-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GRANT-V1",
+      "WORD": "GRANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

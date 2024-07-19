@@ -1,0 +1,27 @@
+{
+  "name": "@NUCLEUS",
+  "isa": [
+    "@ATOMIC-PARTICLE"
+  ],
+  "def": "the central part of an atom",
+  "local": [
+    {
+      "slot": "electric-charge",
+      "facet": "sem",
+      "filler": "positive"
+    }
+  ],
+  "block": [
+    {
+      "slot": "electric-charge",
+      "facet": "sem",
+      "filler": "negative"
+    },
+    {
+      "slot": "electric-charge",
+      "facet": "sem",
+      "filler": "neutral"
+    }
+  ],
+  "private": {}
+}

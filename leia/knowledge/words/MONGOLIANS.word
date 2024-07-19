@@ -1,0 +1,48 @@
+{
+  "word": "MONGOLIANS",
+  "senses": {
+    "MONGOLIANS-N1": {
+      "CAT": "N",
+      "DEF": "the set of citizens of mongolia",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "REFSEM1"
+          },
+          "QUANT": 1
+        },
+        "REFSEM1": {
+          "CITIZEN": {
+            "HAS-NATIONALITY": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "MONGOLIA"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MONGOLIANS-N1",
+      "WORD": "MONGOLIANS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

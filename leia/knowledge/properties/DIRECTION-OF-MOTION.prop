@@ -1,0 +1,9 @@
+{
+  "name": "$DIRECTION-OF-MOTION",
+  "def": "an attribute indicating the direction of a physical motion.",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-EVENT-ATTRIBUTE"
+}

@@ -1,0 +1,37 @@
+{
+  "name": "@ELECTRICAL-SYSTEM",
+  "isa": [
+    "@VEHICLE-PART"
+  ],
+  "def": "equipment in a vehicle that provides electricity to start the engine, ignite the fuel, operate the lights, etc.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@DISTRIBUTOR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ALTERNATOR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CAPACITOR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BATTERY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

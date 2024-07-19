@@ -1,0 +1,45 @@
+{
+  "word": "CHEMICALLY",
+  "senses": {
+    "CHEMICALLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "using chemicals",
+      "EX": "they analyzed the evidence chemically",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "INSTRUMENT": "CHEMICAL-COMPOUND"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CHEMICALLY-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CHEMICALLY-ADV1",
+      "WORD": "CHEMICALLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

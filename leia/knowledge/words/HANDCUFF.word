@@ -1,0 +1,78 @@
+{
+  "word": "HANDCUFF",
+  "senses": {
+    "HANDCUFF-N1": {
+      "CAT": "N",
+      "DEF": "a restraining device",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "HANDCUFFS",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "HANDLOCK",
+        "MANACLE",
+        "SHACKLE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "HANDCUFF-N1",
+      "WORD": "HANDCUFF",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HANDCUFF-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "they handcuffed the suspect",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "RESTRAIN": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "INSTRUMENT": "HANDCUFFS"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "HANDCUFFED-0",
+        "THE",
+        "SUSPECT-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "MANACLE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "HANDCUFF-V1",
+      "WORD": "HANDCUFF",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

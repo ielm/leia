@@ -1,0 +1,31 @@
+{
+  "word": "PROSECUTOR",
+  "senses": {
+    "PROSECUTOR-N1": {
+      "CAT": "N",
+      "DEF": "a lawyer who prosecutes a legal case",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ATTORNEY": {
+          "AGENT-OF": "PROSECUTE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PROSECUTOR-N1",
+      "WORD": "PROSECUTOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

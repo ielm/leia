@@ -1,0 +1,31 @@
+{
+  "name": "@AUCTION",
+  "isa": [
+    "@TRANSFER-POSSESSION"
+  ],
+  "def": "a public sale of items to the highest bidders",
+  "local": [
+    {
+      "slot": "has-loser",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "has-winner",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "has-winner",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "has-loser",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@CHAIN-US",
+  "isa": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "def": "(Wikipedia) A unit of length used by American surveyors, is equal to 100 feet, and is known as Ramsden's chain; 1200*inch",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        30.48
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

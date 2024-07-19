@@ -1,0 +1,48 @@
+{
+  "name": "@NYMPHOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "obsessive and uncontrollable desire for sex in females",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SEX-EVENT"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN-5"
+    }
+  ],
+  "block": [
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {
+    "@HUMAN-5": {
+      "name": "@HUMAN-5",
+      "isa": [
+        "@HUMAN"
+      ],
+      "def": "",
+      "local": [],
+      "block": [],
+      "private": {}
+    }
+  }
+}

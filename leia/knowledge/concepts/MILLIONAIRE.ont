@@ -1,0 +1,19 @@
+{
+  "name": "@MILLIONAIRE",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "a person whose wealth comes to at least a million dollars, pounds, francs, etc.",
+  "local": [],
+  "block": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

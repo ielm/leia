@@ -1,0 +1,160 @@
+{
+  "word": "DEPEND",
+  "senses": {
+    "DEPEND-V2": {
+      "CAT": "V",
+      "DEF": "expresses the precondition for an event that is expressed in text in terms of its agent or instrument",
+      "EX": "the smooth running of an organization depends upon/on its leader",
+      "COMMENTS": "[D] for fix-case-role: even though we can't know what the event is, the ontology says that a non-animal can't be an agent, so if we have 'The running of a plane depends upon its engine', then the engine can't be an agent, it must be an instrument.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": [
+            "ON",
+            "UPON"
+          ],
+          "CAT": "PREP"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "PRECONDITION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "EVENT": {
+            "AGENT": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR2",
+          "REFSEM1"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "DEPENDEND-0",
+        "ON-3",
+        "THE",
+        "DOG-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [
+        "RELY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DEPEND-V2",
+      "WORD": "DEPEND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DEPEND-V1": {
+      "CAT": "V",
+      "DEF": "expresses the precondition for an event",
+      "EX": "the smooth running of an organization depends upon/on the coordinated efforts of all concerned",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": [
+            "ON",
+            "UPON"
+          ],
+          "CAT": "PREP"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "PRECONDITION": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SMOOTH",
+        "OPERATION-1",
+        "DEPENDS-0",
+        "UPON-3",
+        "COORDINATED",
+        "EFFORT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DEPEND-V1",
+      "WORD": "DEPEND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

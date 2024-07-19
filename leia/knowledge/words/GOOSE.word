@@ -1,0 +1,100 @@
+{
+  "word": "GOOSE",
+  "senses": {
+    "GOOSE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "GOOSE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GOOSE-N1",
+      "WORD": "GOOSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "GOOSE-N800": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "That is a wild goose chase.",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "ART": {
+          "ROOT": "$VAR1",
+          "ROOT-WORD": "A",
+          "CAT": "ART"
+        },
+        "ADJ": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "WILD",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "N": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "CHASE",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "POTENTIAL",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "MODALITY": {
+            "TYPE": "EPITEUCTIC",
+            "VALUE": 1,
+            "SCOPE": "REFSEM2"
+          }
+        },
+        "REFSEM2": {
+          "EVENT": {
+            "COREF": "SEEK-CONTEXTUAL-SPONSOR"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "THAT",
+        "IS",
+        "A-1",
+        "WILD-2",
+        "GOOSE-0",
+        "CHASE-3"
+      ],
+      "SENSE": "GOOSE-N800",
+      "WORD": "GOOSE",
+      "HYPONYMS": [],
+      "SYNONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

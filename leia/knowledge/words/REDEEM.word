@@ -1,0 +1,231 @@
+{
+  "word": "REDEEM",
+  "senses": {
+    "REDEEM-V1": {
+      "CAT": "V",
+      "DEF": "to recover possession or ownership of",
+      "EX": "he redeemed his property",
+      "COMMENTS": "see notes at recovery-n1",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "RETURN-OBJECT": {
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "REDEEMED-0",
+        "THE",
+        "PROPERTY-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "REDEEM-V1",
+      "WORD": "REDEEM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "REDEEM-V2": {
+      "CAT": "V",
+      "DEF": "to turn coupons, vouchers, etc., into cash",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "COUPON",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "REDEEM": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "REDEEMED-0",
+        "THE",
+        "COUPON-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "REDEEM-V2",
+      "WORD": "REDEEM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "REDEEM-V3": {
+      "CAT": "V",
+      "DEF": "to make someone's evaluation of one improve",
+      "EX": "after offending his fiancee's parents, he redeemed himself by humbly apologizing to them",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "ROOT-WORD": [
+            "MYSELF",
+            "YOURSELF",
+            "HIMSELF",
+            "HERSELF",
+            "OURSELVES",
+            "THEMSELVES",
+            "ONESELF",
+            "ITSELF"
+          ]
+        }
+      },
+      "SEM-STRUC": {
+        "EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "EFFECT": {
+            "VALUE": "REFSEM2"
+          },
+          "PRECONDITION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "MODALITY": {
+            "TYPE": "EVALUATIVE",
+            "SCOPE": {
+              "VALUE": "^$VAR1"
+            },
+            "VALUE-1": 0.2
+          }
+        },
+        "REFSEM2": {
+          "MODALITY": {
+            "TYPE": "EVALUATIVE",
+            "SCOPE": {
+              "VALUE": "^$VAR1"
+            },
+            "VALUE-1": 0.7
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "REDEEMED-0",
+        "HIMSELF-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "REDEEM-V3",
+      "WORD": "REDEEM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "REDEEM-V4": {
+      "CAT": "V",
+      "DEF": "to repay at the maturity date",
+      "EX": "we redeemed our stocks",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "REDEEM": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "INVESTMENT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "REDEEMED-0",
+        "THE",
+        "COUPON-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "REDEEM-V4",
+      "WORD": "REDEEM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

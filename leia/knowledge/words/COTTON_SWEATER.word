@@ -1,0 +1,31 @@
+{
+  "word": "COTTON_SWEATER",
+  "senses": {
+    "COTTON_SWEATER-N1": {
+      "CAT": "N",
+      "DEF": "a sweater made of cotton",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SWEATER": {
+          "MADE-OF": "COTTON"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COTTON_SWEATER-N1",
+      "WORD": "COTTON_SWEATER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

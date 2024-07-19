@@ -1,0 +1,48 @@
+{
+  "word": "CORDLESS_MOUSE",
+  "senses": {
+    "CORDLESS_MOUSE-N1": {
+      "CAT": "N",
+      "DEF": "a mouse without a connecting device",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "COMPUTER-MOUSE": {
+          "DOMAIN-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "HAS-OBJECT-AS-PART": [
+            "RANGE",
+            "ELECTRICAL-CORD"
+          ]
+        },
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "OPTICAL_MOUSE"
+      ],
+      "SENSE": "CORDLESS_MOUSE-N1",
+      "WORD": "CORDLESS_MOUSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

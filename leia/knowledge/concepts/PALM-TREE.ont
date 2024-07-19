@@ -1,0 +1,22 @@
+{
+  "name": "@PALM-TREE",
+  "isa": [
+    "@TREE"
+  ],
+  "def": "any of a large group of tropical or subtropical trees or shrubs with a branchless trunk and a bunch of large leaves at the top",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@COCONUT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@PLANT-DERIVED-FOODSTUFF"
+    }
+  ],
+  "private": {}
+}

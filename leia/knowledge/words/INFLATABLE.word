@@ -1,0 +1,36 @@
+{
+  "word": "INFLATABLE",
+  "senses": {
+    "INFLATABLE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "capable of being inflated and deflated",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "ARTIFACT",
+          "THEME-OF": "INFLATE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INFLATABLE-ADJ1",
+      "WORD": "INFLATABLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

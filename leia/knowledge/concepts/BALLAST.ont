@@ -1,0 +1,37 @@
+{
+  "name": "@BALLAST",
+  "isa": [
+    "@VEHICLE-PART"
+  ],
+  "def": "anything heavy carried in a ship or vehicle to give stability, typically sand or gravel, iron, lead - anything that can be used as a weight and potentially eliminated later.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SAND"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GRAVEL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@IRON"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@LEAD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

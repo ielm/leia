@@ -1,0 +1,37 @@
+{
+  "name": "@YOM-KIPPUR",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "A Jewish holiday marked by fasting and prayer for the atonement of sins and observed on the 10th of Tishri",
+  "local": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@JUDAISM"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@PRAY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@CELEBRATE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@ARMADILLO",
+  "isa": [
+    "@MAMMAL"
+  ],
+  "def": "Any of several omnivorous, burrowing, edentate mammals native to southern North America and South America and characterized by an armorlike covering consisting of jointed bony plates.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@FUR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@HAIR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FUR"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,41 @@
+{
+  "word": "PETTY_LARCENY",
+  "senses": {
+    "PETTY_LARCENY-N1": {
+      "CAT": "N",
+      "DEF": "theft of personal property of less than a specified value",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "STEAL": {
+          "THEME": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "PHYSICAL-OBJECT": {
+            "COST": [
+              "<",
+              0.2
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PETTY_LARCENY-N1",
+      "WORD": "PETTY_LARCENY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

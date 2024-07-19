@@ -1,0 +1,51 @@
+{
+  "word": "PRESTIGIOUS",
+  "senses": {
+    "PRESTIGIOUS-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "receiving great social respect and honor",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "PRESTIGE": [
+            ">=",
+            0.8
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "GRAND-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "EMINENT",
+        "ILLUSTRIOUS",
+        "GRAND"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PRESTIGIOUS-ADJ1",
+      "WORD": "PRESTIGIOUS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

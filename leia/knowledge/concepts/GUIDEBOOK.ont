@@ -1,0 +1,16 @@
+{
+  "name": "@GUIDEBOOK",
+  "isa": [
+    "@BOOK"
+  ],
+  "def": "listing of directions and information for particular place, especially for tourists",
+  "local": [
+    {
+      "slot": "about-as-topic",
+      "facet": "sem",
+      "filler": "@TRAVEL-EVENT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,47 @@
+{
+  "word": "SLOVENE",
+  "senses": {
+    "SLOVENE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to slovenia",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "SLOVENIA"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SLAVONIAN",
+        "SLOVENIAN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SLOVENE-ADJ1",
+      "WORD": "SLOVENE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

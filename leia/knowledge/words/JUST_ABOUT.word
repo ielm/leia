@@ -1,0 +1,48 @@
+{
+  "word": "JUST_ABOUT",
+  "senses": {
+    "JUST_ABOUT-ADV1": {
+      "CAT": "ADV",
+      "DEF": "almost, nearly - in reference to trying to do something and not quite succeeding yet",
+      "EX": "I just about finished my paper",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0.7,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "JUST_ABOUT-0",
+        "EVENTED-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "JUST_ABOUT-ADV1",
+      "WORD": "JUST_ABOUT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

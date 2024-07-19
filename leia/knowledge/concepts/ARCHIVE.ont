@@ -1,0 +1,21 @@
+{
+  "name": "@ARCHIVE",
+  "isa": [
+    "@GOVERNMENT-BUILDING"
+  ],
+  "def": "a place where public records and documentary material are kept",
+  "local": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@CIVIL-SERVICE-ROLE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@DOCUMENT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,120 @@
+{
+  "word": "INVOLVEMENT",
+  "senses": {
+    "INVOLVEMENT-N2": {
+      "CAT": "N",
+      "DEF": "X's involvement (in Y) - X's taking part in Y as one of the agents",
+      "EX": "The police's involvement in the situation didn't help at all",
+      "COMMENTS": "when 'in Y' is omitted, it's semantic ellipsis; EVEN THOUGH THE VALIDATOR IS REJECTING THIS STRUCTURE BECAUSE IT SAYS THAT A SET CAN'T BE AGENT-OF ANYTHING, I THINK IT'S A VALIDATOR OVERSIGHT, NOT AN INCORRECT STRUCTURE",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP",
+          "POSSESSIVE": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "IN",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "MEMBER-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "COMPLETE": "NO",
+            "AGENT-OF": {
+              "VALUE": "^$VAR3"
+            }
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INVOLVEMENT-N2",
+      "WORD": "INVOLVEMENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "INVOLVEMENT-N1": {
+      "CAT": "N",
+      "DEF": "taking an agentive role in something",
+      "EX": "The involvement of the police in the situation made things worse",
+      "COMMENTS": "another sense deals with X's involvement; when 'in Y' is omitted, it's semantic ellipsis; EVEN THOUGH THE VALIDATOR IS REJECTING THIS STRUCTURE BECAUSE IT SAYS THAT A SET CAN'T BE AGENT-OF ANYTHING, I THINK IT'S A VALIDATOR OVERSIGHT, NOT AN INCORRECT STRUCTURE",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "IN",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "MEMBER-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "COMPLETE": "NO",
+            "AGENT-OF": {
+              "VALUE": "^$VAR4"
+            }
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INVOLVEMENT-N1",
+      "WORD": "INVOLVEMENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "word": "SWINDLE",
+  "senses": {
+    "SWINDLE-V1": {
+      "CAT": "V",
+      "DEF": "to steal from",
+      "EX": "They swindled the tourists",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "STEAL": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": "MONEY",
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "SWINDLED-0",
+        "THE",
+        "TOURISTS-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "FLEECE",
+        "GAZUMP"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SWINDLE-V1",
+      "WORD": "SWINDLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

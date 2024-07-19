@@ -1,0 +1,27 @@
+{
+  "name": "@ECONOMICS",
+  "isa": [
+    "@SOCIAL-SCIENCE"
+  ],
+  "def": "the science that deals with the production, distribution and consumption of wealth",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@FED-RESERVE-EMPLOYEE"
+    },
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@ECONOMIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-SCIENTIST"
+    }
+  ],
+  "private": {}
+}

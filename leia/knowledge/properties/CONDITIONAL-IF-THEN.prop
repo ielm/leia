@@ -1,0 +1,9 @@
+{
+  "name": "$CONDITIONAL-IF-THEN",
+  "def": "the domain is the meaning of an if proposition and the range is the meaning of a then proposition - in the inverse, the domain and range are switched",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$CONDITIONAL-THEN-IF",
+  "measured-in": [],
+  "container": "$DISCOURSE-RELATION"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@UNICYCLE",
+  "isa": [
+    "@WHEELED-VEHICLE"
+  ],
+  "def": "A one-wheeled vehicle ridden by a human",
+  "local": [
+    {
+      "slot": "number-of-wheels",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,53 @@
+{
+  "word": "PHOTOGRAPHER",
+  "senses": {
+    "PHOTOGRAPHER-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "STUDIES-FIELD": "PHOTOGRAPHY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PHOTOGRAPHER-N1",
+      "WORD": "PHOTOGRAPHER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PHOTOGRAPHER-N2": {
+      "CAT": "N",
+      "DEF": "a person who takes and develops pictures by way of photography",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PHOTOGRAPHER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PHOTOGRAPHER-N2",
+      "WORD": "PHOTOGRAPHER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

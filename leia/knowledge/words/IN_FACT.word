@@ -1,0 +1,54 @@
+{
+  "word": "IN_FACT",
+  "senses": {
+    "IN_FACT-ADV1": {
+      "CAT": "ADV",
+      "DEF": "used for emphasis that something is true",
+      "EX": "in fact, we'll be taking two cars",
+      "COMMENTS": "impliies that previous statement or some likely assumption, etc., was false or incomplete edk: use contrary-to-expectation-because-of ?",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-POST-VERB-CL"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "REALLY-0",
+        "EVENTED-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "ACTUALLY",
+        "IN_ACTUAL_FACT",
+        "REALLY",
+        "TRULY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "IN_FACT-ADV1",
+      "WORD": "IN_FACT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

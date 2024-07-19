@@ -1,0 +1,45 @@
+{
+  "word": "BOOMING",
+  "senses": {
+    "BOOMING-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "successful and flourishing",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "INTENSITY": 0.8
+        },
+        "MODALITY": {
+          "TYPE": "EPITEUCTIC",
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          },
+          "VALUE": 1
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "FLOURISHING",
+        "THRIVING"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BOOMING-ADJ1",
+      "WORD": "BOOMING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

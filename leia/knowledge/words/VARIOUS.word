@@ -1,0 +1,55 @@
+{
+  "word": "VARIOUS",
+  "senses": {
+    "VARIOUS-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "indicates that the members of a set are different from each other",
+      "EX": "we eat various fruits throuhout the year",
+      "COMMENTS": "really understanding this sem-struc requires a reasoning rule that applies properties to individual members of the set; we're not there yet",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "SIMILARITY": [
+            "<",
+            1
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "A_RANGE_OF-0",
+        "THINGS-1",
+        "HIT",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "A_RANGE_OF"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "VARIOUS-ADJ1",
+      "WORD": "VARIOUS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

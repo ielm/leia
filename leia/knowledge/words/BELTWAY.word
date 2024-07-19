@@ -1,0 +1,34 @@
+{
+  "word": "BELTWAY",
+  "senses": {
+    "BELTWAY-N1": {
+      "CAT": "N",
+      "DEF": "a highway encircling an urban area",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HIGHWAY": {
+          "SHAPE": "CIRCULAR",
+          "SURROUNDS": "CITY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "RING_ROAD"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BELTWAY-N1",
+      "WORD": "BELTWAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

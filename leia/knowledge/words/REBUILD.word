@@ -1,0 +1,73 @@
+{
+  "word": "REBUILD",
+  "senses": {
+    "REBUILD-V1": {
+      "CAT": "V",
+      "DEF": "to build again after its destruction",
+      "EX": "they must now rebuild iraq (a bit extended usage, but not really metaphorical)",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "BUILD": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "PRECONDITION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "DESTROY": {
+            "THEME-1": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "REBUILT-0",
+        "THE",
+        "HOUSE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "RECONSTRUCT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "REBUILD-V1",
+      "WORD": "REBUILD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

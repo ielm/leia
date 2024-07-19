@@ -1,0 +1,79 @@
+{
+  "word": "FLORIDIAN",
+  "senses": {
+    "FLORIDIAN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to florida",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "STATE": {
+            "HAS-NAME": {
+              "VALUE": "FLORIDA"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FLORIDIAN-ADJ1",
+      "WORD": "FLORIDIAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FLORIDIAN-N1": {
+      "CAT": "N",
+      "DEF": "resides in the state of florida",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "HAS-STATE-ADDRESS": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "STATE": {
+            "HAS-NAME": {
+              "VALUE": "FLORIDA"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FLORIDIAN-N1",
+      "WORD": "FLORIDIAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

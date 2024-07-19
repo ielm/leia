@@ -1,0 +1,16 @@
+{
+  "name": "@FOOD-ADDITIVE",
+  "isa": [
+    "@PLANT-DERIVED-FOODSTUFF"
+  ],
+  "def": "a natural or synthetic ingredient added to food to preserve or flavor it",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@FOOD-PROCESSING-CORPORATION"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

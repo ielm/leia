@@ -1,0 +1,80 @@
+{
+  "word": "AFTERNOON",
+  "senses": {
+    "AFTERNOON-N1": {
+      "CAT": "N",
+      "DEF": "the time between 12pm and 5pm",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "DAY-DIVISION": {
+          "ABSOLUTE-TIME": [
+            "><",
+            12,
+            17
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AFTERNOON-N1",
+      "WORD": "AFTERNOON",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "AFTERNOON-N2": {
+      "CAT": "N",
+      "DEF": "happening during the afternoon",
+      "EX": "an afternoon party",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "ABSOLUTE-TIME": [
+            "><",
+            12,
+            17
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "AFTERNOON-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AFTERNOON-N2",
+      "WORD": "AFTERNOON",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

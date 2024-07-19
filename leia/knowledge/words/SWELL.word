@@ -1,0 +1,62 @@
+{
+  "word": "SWELL",
+  "senses": {
+    "SWELL-V1": {
+      "CAT": "V",
+      "DEF": "to become inflamed",
+      "EX": "His knee swelled (up)",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "UP",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "INFLAMMATION": {
+          "THEME": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HIS",
+        "KNEE-1",
+        "SWELLED-0",
+        "UP-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PRT",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SWELL-V1",
+      "WORD": "SWELL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

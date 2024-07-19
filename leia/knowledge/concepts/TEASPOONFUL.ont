@@ -1,0 +1,19 @@
+{
+  "name": "@TEASPOONFUL",
+  "isa": [
+    "@VOLUME-UNIT"
+  ],
+  "def": "a unit of volume, used in cooking; liter/200",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        5e-06
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

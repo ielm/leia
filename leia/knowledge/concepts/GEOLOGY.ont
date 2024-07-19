@@ -1,0 +1,22 @@
+{
+  "name": "@GEOLOGY",
+  "isa": [
+    "@SCIENCE"
+  ],
+  "def": "the science dealing with the development of the earth*s crust, its history, its rocks and fossils",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@GEOLOGIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SCIENTIST"
+    }
+  ],
+  "private": {}
+}

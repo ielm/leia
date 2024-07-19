@@ -1,0 +1,9 @@
+{
+  "name": "$FUNCTIONS-LIKE",
+  "def": "when one object functions like another",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$FUNCTIONS-ALIKE",
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

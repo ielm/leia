@@ -1,0 +1,54 @@
+{
+  "word": "HOW_MANY",
+  "senses": {
+    "HOW_MANY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "'how many' used in an interrogative with a nominal complement",
+      "EX": "How many men did you choose?",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "UNCONNECTED": [
+          [
+            "ROOT",
+            "$VAR2"
+          ],
+          [
+            "ROOT",
+            "*QUESTION_MARK*"
+          ],
+          [
+            "CAT",
+            "PUNCT"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "REQUEST-INFO": {
+          "THEME": {
+            "VALUE": "^$VAR1.CARDINALITY"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "MEANING-PROCEDURES": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HOW_MANY-ADJ1",
+      "WORD": "HOW_MANY",
+      "COMMENTS": "NIL",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": []
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "word": "INITIALLY",
+  "senses": {
+    "INITIALLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "before some other, to be determined by context, action/event",
+      "EX": "Initially they thought it was the flu; later they realized it was cancer",
+      "COMMENTS": "It's the MP that will do most of the work here; it needs to   go in our list of MPs. The algorithm is sort of fuzzy: seek some event  associated with a meaning like 'later', etc.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-POST-VERB-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TIME": [
+            "<",
+            [
+              "FIND-ANCHOR-TIME"
+            ]
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE",
+        "RAN-1",
+        "INITIALLY-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "ORIGINALLY",
+        "AT_FIRST",
+        "AT_THE_OUTSET"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "INITIALLY-ADV1",
+      "WORD": "INITIALLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

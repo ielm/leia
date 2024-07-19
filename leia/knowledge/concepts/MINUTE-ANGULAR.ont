@@ -1,0 +1,19 @@
+{
+  "name": "@MINUTE-ANGULAR",
+  "isa": [
+    "@ANGLE-UNIT"
+  ],
+  "def": "60 arc minutes are one arc degree; 1/60*degree-angular",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.000290888208665722
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

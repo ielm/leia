@@ -1,0 +1,31 @@
+{
+  "word": "FARMER",
+  "senses": {
+    "FARMER-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SOCIAL-ROLE": {
+          "AGENT-OF": "FARMING-ACTIVITY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FARMER-N1",
+      "WORD": "FARMER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

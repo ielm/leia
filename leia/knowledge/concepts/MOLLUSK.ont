@@ -1,0 +1,30 @@
+{
+  "name": "@MOLLUSK",
+  "isa": [
+    "@INVERTEBRATE"
+  ],
+  "def": "any of a group of invertebrates, such as snails, oysters, squiqs, etc., with a soft body often enclosed by a shell",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SHELL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "diligence",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

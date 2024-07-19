@@ -1,0 +1,132 @@
+{
+  "word": "OKAY",
+  "senses": {
+    "OKAY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "acceptable",
+      "EX": "he got an okay score on the test it's okay (with the teacher) if you need to leave if anyone needs to go home now that's okay (with me) I'm sorry; that's okay",
+      "COMMENTS": "could also be permissive, but no way to distinguish",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ",
+          "PP": {
+            "ROOT-WORD": "WITH",
+            "ROOT": "$VAR3",
+            "CAT": "PREP",
+            "OBJ": {
+              "ROOT": "$VAR2",
+              "CAT": "N"
+            }
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0.5,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          },
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "OKAY-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OKAY-ADJ1",
+      "WORD": "OKAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "OKAY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "acceptably",
+      "EX": "he scored okay on the test",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0.5,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "OKAY-0",
+        "EVENTED-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OKAY-ADV1",
+      "WORD": "OKAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "OKAY-INTERJECTION1": {
+      "CAT": "INTERJECTION",
+      "DEF": "discourse filler",
+      "EX": "okay, now, where were we?",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CAT": "INTERJECTION",
+        "ROOT": "$VAR0"
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ALL_RIGHT",
+        "ALRIGHT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "OKAY-INTERJECTION1",
+      "WORD": "OKAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

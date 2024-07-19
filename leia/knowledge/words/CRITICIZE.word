@@ -1,0 +1,180 @@
+{
+  "word": "CRITICIZE",
+  "senses": {
+    "CRITICIZE-V1": {
+      "CAT": "V",
+      "DEF": "to find fault with",
+      "EX": "they criticized the President for his handling of the war",
+      "COMMENTS": "redundancy in sem representation ok",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "ROOT-WORD": "FOR",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "CRITICIZE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "MODALITY": {
+          "SCOPE": {
+            "VALUE": "^$VAR3"
+          },
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0.2,
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "CRITICIZED-0",
+        "THE",
+        "DOG-2",
+        "FOR-4",
+        "THE",
+        "PARTY-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR4",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CRITICIZE-V1",
+      "WORD": "CRITICIZE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CRITICIZE-V2": {
+      "CAT": "V",
+      "DEF": "direct quotation",
+      "EX": "'You always cook it too long,' he criticized her.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "N": {
+          "ROOT": "$VAR3",
+          "CAT": "N",
+          "OPT": "+"
+        },
+        "QUOTED-SPEECH": [
+          [
+            "ROOT",
+            "$VAR2"
+          ],
+          [
+            "CAT",
+            "CL"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "CRITICIZE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "*QUOTE*",
+        "YOU",
+        "HIT-2",
+        "THE",
+        "BUILDING",
+        "*QUOTE*",
+        "*COMMA*",
+        "SHE-1",
+        "CRITICIZED-0",
+        "HIM-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CRITICIZE-V2",
+      "WORD": "CRITICIZE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

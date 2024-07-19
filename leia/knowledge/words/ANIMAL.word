@@ -1,0 +1,62 @@
+{
+  "word": "ANIMAL",
+  "senses": {
+    "ANIMAL-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "ANIMAL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "GRYPHON"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ANIMAL-N1",
+      "WORD": "ANIMAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ANIMAL-N2": {
+      "CAT": "N",
+      "DEF": "human who acts brutishly",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "REFSEM1": [
+          "HUMAN"
+        ],
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ANIMAL-N2",
+      "WORD": "ANIMAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

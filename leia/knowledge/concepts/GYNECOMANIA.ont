@@ -1,0 +1,48 @@
+{
+  "name": "@GYNECOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "obsessive desire for sex in males",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SEX-EVENT"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN-4"
+    }
+  ],
+  "block": [
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {
+    "@HUMAN-4": {
+      "name": "@HUMAN-4",
+      "isa": [
+        "@HUMAN"
+      ],
+      "def": "",
+      "local": [],
+      "block": [],
+      "private": {}
+    }
+  }
+}

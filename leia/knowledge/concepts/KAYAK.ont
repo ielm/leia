@@ -1,0 +1,16 @@
+{
+  "name": "@KAYAK",
+  "isa": [
+    "@BOAT"
+  ],
+  "def": "a boat used in canoe-kayak competitions",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@PADDLE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

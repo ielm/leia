@@ -1,0 +1,53 @@
+{
+  "word": "AGENT",
+  "senses": {
+    "AGENT-N1": {
+      "CAT": "N",
+      "DEF": "a person with the authority to act",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "AGENT-OF": "EVENT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AGENT-N1",
+      "WORD": "AGENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "AGENT-N2": {
+      "CAT": "N",
+      "DEF": "a force or substance that causes a change",
+      "EX": "an infectious agent, a chemical agent",
+      "COMMENTS": "[D] I'm simplifying now to just inanimate because the modifiers should provide most of the other information we need. it would be messy to write that this is an inanimate substance that has the potential of causing certain reactions by certain of its behaviors",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "INANIMATE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AGENT-N2",
+      "WORD": "AGENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

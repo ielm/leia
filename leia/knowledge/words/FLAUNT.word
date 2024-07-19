@@ -1,0 +1,61 @@
+{
+  "word": "FLAUNT",
+  "senses": {
+    "FLAUNT-V1": {
+      "CAT": "V",
+      "DEF": "to exhibit shamelessly",
+      "EX": "he flaunts his talents",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "DISPLAY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "PURPOSE": "BOAST"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "FLAUNTS-0",
+        "HIS",
+        "TALENTS-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FLAUNT-V1",
+      "WORD": "FLAUNT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

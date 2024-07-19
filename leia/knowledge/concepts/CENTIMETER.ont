@@ -1,0 +1,19 @@
+{
+  "name": "@CENTIMETER",
+  "isa": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "def": "centimeter is a unit of measure, one-hundredth of a meter; .01",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.01
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

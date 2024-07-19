@@ -1,0 +1,27 @@
+{
+  "name": "@SECURITY-CHECK-FACILITY",
+  "isa": [
+    "@AIRPORT-ARTIFACT"
+  ],
+  "def": "the place where the passengers are checked for undesirable items",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@AIRPORT-SECURITY-PERSONNEL"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SECURITY-CHECK-DEVICE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

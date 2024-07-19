@@ -1,0 +1,22 @@
+{
+  "name": "@ANGIOGRAM-OBJECT",
+  "isa": [
+    "@X-RAY-OBJECT"
+  ],
+  "def": "an image of the blood vessels made after the injection of a radiopaque substance",
+  "local": [
+    {
+      "slot": "depicts",
+      "facet": "sem",
+      "filler": "@VEIN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "depicts",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

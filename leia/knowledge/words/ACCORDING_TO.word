@@ -1,0 +1,66 @@
+{
+  "word": "ACCORDING_TO",
+  "senses": {
+    "ACCORDING_TO-PREP1": {
+      "CAT": "PREP",
+      "DEF": "phrasal: according to x, when x is a person = as stated or indicated by",
+      "EX": "according to the witness, the car veered off the road.",
+      "COMMENTS": "for now, interpreted as 'X said'. Of course there's actually the speaker who says  'according to' who adds an epistemic or belief modality < 1, but we'll leave that till later, till we have a good attribution method set up in the FR ",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ASSERTIVE-ACT": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "ACCORDING_TO-0",
+        "HIS",
+        "ORDERS-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ACCORDING_TO-PREP1",
+      "WORD": "ACCORDING_TO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

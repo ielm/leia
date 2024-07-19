@@ -1,0 +1,92 @@
+{
+  "word": "LONG_AGO",
+  "senses": {
+    "LONG_AGO-ADV1": {
+      "CAT": "ADV",
+      "DEF": "indicates a time in the distant past",
+      "EX": "She died long ago",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "ADV": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TIME": [
+            "COMBINE-TIME",
+            [
+              "FIND-ANCHOR-TIME"
+            ],
+            0.8,
+            "BEFORE"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LONG_AGO-ADV1",
+      "WORD": "LONG_AGO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LONG_AGO-ADV2": {
+      "CAT": "ADV",
+      "DEF": "indicates a time in the distant past",
+      "EX": "Long ago, she died",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ADV": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        },
+        "PUNCT": {
+          "ROOT-WORD": "*COMMA*",
+          "ROOT": "$VAR2",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        },
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TIME": [
+            "COMBINE-TIME",
+            [
+              "FIND-ANCHOR-TIME"
+            ],
+            0.8,
+            "BEFORE"
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LONG_AGO-ADV2",
+      "WORD": "LONG_AGO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

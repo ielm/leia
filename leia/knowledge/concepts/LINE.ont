@@ -1,0 +1,19 @@
+{
+  "name": "@LINE",
+  "isa": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "def": "(Wikipedia) an archaic pre-metric and pre-decimal unit of measurement; 1/12*inch",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.00211666666666667
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

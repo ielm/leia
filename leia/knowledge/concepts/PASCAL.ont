@@ -1,0 +1,19 @@
+{
+  "name": "@PASCAL",
+  "isa": [
+    "@PRESSURE-UNIT"
+  ],
+  "def": "(Wikipedia) The SI derived unit of pressure. It measures perpendicular force per unit area, and is equivalent to one newton per square meter or one joule per cubic meter. kg*m^-1*s^-2 (^ means power, kg means kilogram, m means meter, s means second, * means multiplication)",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,47 @@
+{
+  "name": "@CANCEL-OBLIGATION",
+  "isa": [
+    "@BANKING-EVENT"
+  ],
+  "def": "to make a financial obligation (such as a loan) invalid",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIABILITY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COLLATERAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PROMISSORY-NOTE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "default",
+      "filler": "@PATRON"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@PATRON"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@MONEY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

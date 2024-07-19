@@ -1,0 +1,9 @@
+{
+  "name": "$BOOK-VALUE",
+  "def": "the value of an object (such as an automobile) according to a printed standard for such things",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

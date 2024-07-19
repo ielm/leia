@@ -1,0 +1,22 @@
+{
+  "name": "@TIME-MEASURING-ARTIFACT",
+  "isa": [
+    "@MEASURING-ARTIFACT"
+  ],
+  "def": "any artifact used to measure time",
+  "local": [
+    {
+      "slot": "measures-property",
+      "facet": "sem",
+      "filler": "$time"
+    }
+  ],
+  "block": [
+    {
+      "slot": "measures-property",
+      "facet": "sem",
+      "filler": "$property"
+    }
+  ],
+  "private": {}
+}

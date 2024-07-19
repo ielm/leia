@@ -1,0 +1,21 @@
+{
+  "name": "@MATHEMATICIAN",
+  "isa": [
+    "@ACADEMIC-SPECIALIST"
+  ],
+  "def": "an academic specialist whose focus is mathematics",
+  "local": [],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@ZOOLOGY"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@BIOLOGY"
+    }
+  ],
+  "private": {}
+}

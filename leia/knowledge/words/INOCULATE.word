@@ -1,0 +1,129 @@
+{
+  "word": "INOCULATE",
+  "senses": {
+    "INOCULATE-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "they inoculated the children (with a serum) (against polio)",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": "WITH",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT-WORD": "AGAINST",
+          "ROOT": "$VAR5",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR6",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "INOCULATE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4",
+            "SEM": "VACCINE"
+          },
+          "PURPOSE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "PREVENT": {
+            "THEME-1": {
+              "VALUE": "^$VAR6"
+            }
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "INOCULATED-0",
+        "THE",
+        "DOG-2",
+        "WITH-3",
+        "THE",
+        "VACCINE-4",
+        "AGAINST-5",
+        "THE",
+        "DISEASE-6"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "POBJ",
+          "$VAR5",
+          "$VAR6"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR5"
+        ]
+      ],
+      "SYNONYMS": [
+        "VACCINATE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "INOCULATE-V1",
+      "WORD": "INOCULATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

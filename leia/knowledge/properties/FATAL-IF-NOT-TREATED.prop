@@ -1,0 +1,9 @@
+{
+  "name": "$FATAL-IF-NOT-TREATED",
+  "def": "nd",
+  "type": "boolean",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

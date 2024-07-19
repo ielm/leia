@@ -1,0 +1,40 @@
+{
+  "word": "HIGH_TEA",
+  "senses": {
+    "HIGH_TEA-N1": {
+      "CAT": "N",
+      "DEF": "A meal served in the late afternoon or early evening that includes tea and light refreshments, usually sandwiches, cakes, etc.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MEAL": {
+          "AMOUNT": [
+            "><",
+            0.3,
+            0.6
+          ],
+          "HAS-OBJECT-AS-PART": [
+            "TEA",
+            "SANDWICH",
+            "CAKE"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HIGH_TEA-N1",
+      "WORD": "HIGH_TEA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

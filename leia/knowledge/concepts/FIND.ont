@@ -1,0 +1,27 @@
+{
+  "name": "@FIND",
+  "isa": [
+    "@ANIMAL-LIVING-EVENT"
+  ],
+  "def": "to discover a thing either by accident or after searching for it",
+  "local": [
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@SEARCH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

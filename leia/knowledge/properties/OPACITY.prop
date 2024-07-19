@@ -1,0 +1,9 @@
+{
+  "name": "$OPACITY",
+  "def": "describes how well a physical object transmits light",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-OBJECT-ATTRIBUTE"
+}

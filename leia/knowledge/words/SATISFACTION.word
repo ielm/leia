@@ -1,0 +1,55 @@
+{
+  "word": "SATISFACTION",
+  "senses": {
+    "SATISFACTION-N1": {
+      "CAT": "N",
+      "DEF": "fulfillment of plans, wishes, etc. The direct object cannot be an object.",
+      "EX": "satisfaction of one's desires",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SATISFY": {
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": [
+              "NOT",
+              "OBJECT"
+            ]
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SATISFACTION-0",
+        "OF-1",
+        "THE",
+        "HUMAN-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SATISFACTION-N1",
+      "WORD": "SATISFACTION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

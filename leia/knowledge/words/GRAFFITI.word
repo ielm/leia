@@ -1,0 +1,32 @@
+{
+  "word": "GRAFFITI",
+  "senses": {
+    "GRAFFITI-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PAINTING": {
+          "LOCATION": "EXTERIOR-BUILDING-PART",
+          "LEGALITY-ATTRIBUTE": "NO"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GRAFFITI-N1",
+      "WORD": "GRAFFITI",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

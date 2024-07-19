@@ -1,0 +1,16 @@
+{
+  "name": "@SPERM-WHALE",
+  "isa": [
+    "@WHALE"
+  ],
+  "def": "Any of several large, toothed whales of tropical and temperate oceans, whose massive head has a cavity containing sperm oil and spermaceti and whose long intestines often contain ambergris.",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FIN"
+    }
+  ],
+  "private": {}
+}

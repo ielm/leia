@@ -1,0 +1,106 @@
+{
+  "word": "DEMOCRATIC",
+  "senses": {
+    "DEMOCRATIC-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "having membership in the democratic party; of people",
+      "EX": "democratic (party) candidates met for a debate on the wearing of fishnet stockings in public",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "HUMAN",
+            "SOCIAL-OBJECT"
+          ],
+          "POLITICAL-PARTY-MEMBERSHIP": "DEMOCRAT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "DEMOCRATIC-0",
+        "HUMAN-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "DEMOCRATIC_PARTY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DEMOCRATIC-ADJ1",
+      "WORD": "DEMOCRATIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DEMOCRATIC-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "related to the democratic party; in cases when the head is not a person or organization",
+      "EX": "the democratic (party) convention was held in chicago this year",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": {
+              "VALUE": "REFSEM2"
+            },
+            "COMPLETE": "YES"
+          }
+        },
+        "REFSEM2": {
+          "HUMAN": {
+            "POLITICAL-PARTY-MEMBERSHIP": "DEMOCRAT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "DEMOCRATIC-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "DEMOCRATIC_PARTY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DEMOCRATIC-ADJ2",
+      "WORD": "DEMOCRATIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

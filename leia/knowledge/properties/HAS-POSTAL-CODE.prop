@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-POSTAL-CODE",
+  "def": "The relation between an individual, corporation, etc., and the postal code to which mail to him/it should be sent",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": "$POSTAL-CODE-OF",
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

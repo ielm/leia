@@ -1,0 +1,37 @@
+{
+  "name": "@REMAIN",
+  "isa": [
+    "@TRANSFER-OBJECT"
+  ],
+  "def": "to be left over when the rest is taken away",
+  "local": [
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@REMOVE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

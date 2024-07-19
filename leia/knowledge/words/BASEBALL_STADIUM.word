@@ -1,0 +1,31 @@
+{
+  "word": "BASEBALL_STADIUM",
+  "senses": {
+    "BASEBALL_STADIUM-N1": {
+      "CAT": "N",
+      "DEF": "a stadium where baseball is played",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SPORTS-ARENA": {
+          "LOCATION-OF": "BASEBALL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BASEBALL_STADIUM-N1",
+      "WORD": "BASEBALL_STADIUM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

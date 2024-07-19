@@ -1,0 +1,40 @@
+{
+  "word": "BENEFICIAL",
+  "senses": {
+    "BENEFICIAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "producing positive effects",
+      "EX": "",
+      "COMMENTS": "[D] should this be an attribute, e.g. 'very beneficial'?",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BENEFIT-FROM": {
+          "INSTRUMENT": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "BENEFICIAL-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BENEFICIAL-ADJ1",
+      "WORD": "BENEFICIAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

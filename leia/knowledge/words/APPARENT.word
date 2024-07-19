@@ -1,0 +1,48 @@
+{
+  "word": "APPARENT",
+  "senses": {
+    "APPARENT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "less than certain",
+      "EX": "the apparent cause of death was heart attack; the apparent motive was jealousy",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0.5,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "APPARENT-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "APPARENT-ADJ1",
+      "WORD": "APPARENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

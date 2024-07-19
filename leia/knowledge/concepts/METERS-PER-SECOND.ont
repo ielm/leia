@@ -1,0 +1,19 @@
+{
+  "name": "@METERS-PER-SECOND",
+  "isa": [
+    "@SPEED-UNIT"
+  ],
+  "def": "an SI derived unit of speed and velocity (Wikipedia).",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,47 @@
+{
+  "name": "@BLOW",
+  "isa": [
+    "@ANIMAL-LIVING-EVENT"
+  ],
+  "def": "To expel a current of air (or water, in the case of a whale), as from the mouth (or blowhole)",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@AIR"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WATER"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@BLOWHOLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@STRAW-DRINKING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

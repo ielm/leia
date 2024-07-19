@@ -1,0 +1,56 @@
+{
+  "word": "BACKFLOW",
+  "senses": {
+    "BACKFLOW-N1": {
+      "CAT": "N",
+      "DEF": "flowing upstream",
+      "EX": "the valve closes immediately to prevent backflow",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "FLOW": {
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "EFFECT": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "RETURN-OBJECT": {
+            "THEME-1": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BACKFLOW-N1",
+      "WORD": "BACKFLOW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

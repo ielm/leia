@@ -1,0 +1,9 @@
+{
+  "name": "$RADIOACTIVITY",
+  "def": "the amount of radiant energy given off in the form of particles or rays by the disintegration of atomic nuclei",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

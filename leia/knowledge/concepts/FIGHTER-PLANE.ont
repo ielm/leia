@@ -1,0 +1,16 @@
+{
+  "name": "@FIGHTER-PLANE",
+  "isa": [
+    "@AIRPLANE"
+  ],
+  "def": "a fast, highly maneuverable combat airplane",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@AIR-VEHICLE-PART"
+    }
+  ],
+  "private": {}
+}

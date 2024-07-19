@@ -1,0 +1,31 @@
+{
+  "word": "DEVIL'S_FOOD_CAKE",
+  "senses": {
+    "DEVIL'S_FOOD_CAKE-N1": {
+      "CAT": "N",
+      "DEF": "a type of light chocolate cake",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CAKE": {
+          "HAS-OBJECT-AS-PART": "CHOCOLATE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DEVIL'S_FOOD_CAKE-N1",
+      "WORD": "DEVIL'S_FOOD_CAKE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

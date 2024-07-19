@@ -1,0 +1,22 @@
+{
+  "name": "@NORTHERN-CONIFEROUS-FOREST",
+  "isa": [
+    "@FOREST"
+  ],
+  "def": "an environment in the northern regions that has pine trees",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PINE-TREE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@TREE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@KEEP-PEACE",
+  "isa": [
+    "@MILITARY-ACTIVITY"
+  ],
+  "def": "to work to keep a peace - as opposed to allowing for conflict to happen or continue",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,42 @@
+{
+  "name": "@WASH",
+  "isa": [
+    "@CLEAN"
+  ],
+  "def": "to clean by using water and soap",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SOAP"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WASHER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WATER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CLEANING-APPLIANCE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CLEANSING-MATERIAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@STEEL-WOOL"
+    }
+  ],
+  "private": {}
+}

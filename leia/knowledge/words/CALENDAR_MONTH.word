@@ -1,0 +1,29 @@
+{
+  "word": "CALENDAR_MONTH",
+  "senses": {
+    "CALENDAR_MONTH-N1": {
+      "CAT": "N",
+      "DEF": "a temporal unit",
+      "EX": "what month is it? January",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "MONTH",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "MONTH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CALENDAR_MONTH-N1",
+      "WORD": "CALENDAR_MONTH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

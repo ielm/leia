@@ -1,0 +1,93 @@
+{
+  "word": "DRAMA",
+  "senses": {
+    "DRAMA-N1": {
+      "CAT": "N",
+      "DEF": "a literary composition, play, or film  of the genre drama",
+      "EX": "",
+      "COMMENTS": "[D] not a great mapping -- it needs ref.  resolution to find out what kind of rep. object this is",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CREATIVE-WORK": {
+          "HAS-STYLE": "DRAMA"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "MELODRAMA"
+      ],
+      "SENSE": "DRAMA-N1",
+      "WORD": "DRAMA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DRAMA-N2": {
+      "CAT": "N",
+      "DEF": "the genre -- of film, literature, etc. -- of drama",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "DRAMA",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "MELODRAMA"
+      ],
+      "SENSE": "DRAMA-N2",
+      "WORD": "DRAMA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DRAMA-N3": {
+      "CAT": "N",
+      "DEF": "a series of events that are unexpected, emotional, intense, etc. - it's really very broad; this mapping is quite generalized",
+      "EX": "This snowstorm turned into a drama",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "EVENT": {
+            "INTENSITY": [
+              ">",
+              0.7
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DRAMA-N3",
+      "WORD": "DRAMA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

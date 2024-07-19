@@ -1,0 +1,22 @@
+{
+  "name": "@ENABLE",
+  "isa": [
+    "@HELP"
+  ],
+  "def": "to provide with the means, power, etc. (to do something)",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ABSTRACT-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

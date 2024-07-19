@@ -1,0 +1,49 @@
+{
+  "word": "ESTRANGE",
+  "senses": {
+    "ESTRANGE-V1": {
+      "CAT": "V",
+      "DEF": "to alienate",
+      "EX": "she estranges her colleagues",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "ALIENATE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "ESTRANGES-0",
+        "HER",
+        "COLLEAGUES-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ESTRANGE-V1",
+      "WORD": "ESTRANGE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "word": "CONSCIOUS",
+  "senses": {
+    "CONSCIOUS-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "mentally perceptive, not unconscious",
+      "EX": "he remained conscious during the operation",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "CONSCIOUS": "YES"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "DIAGNOSED",
+        "THE",
+        "CONSCIOUS-0",
+        "DOG-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONSCIOUS-ADJ1",
+      "WORD": "CONSCIOUS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

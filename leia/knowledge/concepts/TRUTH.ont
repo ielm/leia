@@ -1,0 +1,54 @@
+{
+  "name": "@TRUTH",
+  "isa": [
+    "@ABSTRACT-IDEA"
+  ],
+  "def": "that which is true; actual existence; conformity with fact",
+  "local": [
+    {
+      "slot": "truth-value",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "corefer",
+      "facet": "sem",
+      "filler": "@FACT"
+    },
+    {
+      "slot": "cogency",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "objectivity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "corefer",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "objectivity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

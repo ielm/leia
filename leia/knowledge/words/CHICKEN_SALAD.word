@@ -1,0 +1,34 @@
+{
+  "word": "CHICKEN_SALAD",
+  "senses": {
+    "CHICKEN_SALAD-N1": {
+      "CAT": "N",
+      "DEF": "A salad with contains mostly chopped chicken meat",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SALAD": {
+          "HAS-OBJECT-AS-PART": [
+            "SALAD-DRESSING",
+            "POULTRY-MEAT"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CHICKEN_SALAD-N1",
+      "WORD": "CHICKEN_SALAD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

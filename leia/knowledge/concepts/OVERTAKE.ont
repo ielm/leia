@@ -1,0 +1,21 @@
+{
+  "name": "@OVERTAKE",
+  "isa": [
+    "@MOTION-EVENT"
+  ],
+  "def": "To come from behind and through greater speed end up in front, as in one car overtaking another",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@VEHICLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FOOT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

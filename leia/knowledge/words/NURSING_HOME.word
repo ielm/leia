@@ -1,0 +1,52 @@
+{
+  "word": "NURSING_HOME",
+  "senses": {
+    "NURSING_HOME-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "DWELLING": {
+          "LOCATION-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "INHABIT": {
+            "AGENT": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "HUMAN": {
+            "AGE": [
+              ">",
+              65
+            ],
+            "HEALTH-ATTRIBUTE": [
+              "<",
+              0.4
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NURSING_HOME-N1",
+      "WORD": "NURSING_HOME",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

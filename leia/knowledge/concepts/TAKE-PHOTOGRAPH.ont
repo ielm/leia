@@ -1,0 +1,62 @@
+{
+  "name": "@TAKE-PHOTOGRAPH",
+  "isa": [
+    "@GRAPHIC-EVENT"
+  ],
+  "def": "to take a photograph of (something or someone)",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@PHOTOGRAPHER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FILM-FOR-CAMERA"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@STILL-CAMERA"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@PHOTOGRAPH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FILM-ARTIFACT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PAPER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHOTOGRAPHIC-DEVICE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PRINTER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WRITING-IMPLEMENT"
+    }
+  ],
+  "private": {}
+}

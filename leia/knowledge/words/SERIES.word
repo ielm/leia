@@ -1,0 +1,45 @@
+{
+  "word": "SERIES",
+  "senses": {
+    "SERIES-N1": {
+      "CAT": "N",
+      "DEF": "ordered sequence of similar events",
+      "EX": "he went through a series of bad relationships",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "REFSEM1"
+          },
+          "CARDINALITY": [
+            ">",
+            2
+          ]
+        },
+        "REFSEM1": [
+          "EVENT"
+        ]
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "REFSEM1"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SERIES-N1",
+      "WORD": "SERIES",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

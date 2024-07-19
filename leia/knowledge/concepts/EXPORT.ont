@@ -1,0 +1,68 @@
+{
+  "name": "@EXPORT",
+  "isa": [
+    "@HUMAN-ONLY-LIVING-EVENT",
+    "@COMMERCE-EVENT"
+  ],
+  "def": "to send goods to another country, especially for sale",
+  "local": [
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@CORPORATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@LARGE-GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@FOR-PROFIT-ORGANIZATION"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@VEHICLE"
+    },
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@CORPORATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

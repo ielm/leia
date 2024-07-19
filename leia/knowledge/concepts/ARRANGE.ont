@@ -1,0 +1,22 @@
+{
+  "name": "@ARRANGE",
+  "isa": [
+    "@CHANGE-LOCATION"
+  ],
+  "def": "move around with relation to other objects--futz with",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

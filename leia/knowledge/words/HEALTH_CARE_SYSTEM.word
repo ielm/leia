@@ -1,0 +1,44 @@
+{
+  "word": "HEALTH_CARE_SYSTEM",
+  "senses": {
+    "HEALTH_CARE_SYSTEM-N1": {
+      "CAT": "N",
+      "DEF": "everything organizationally associated with health care",
+      "EX": "",
+      "COMMENTS": "this is a REALLY COARSE mapping",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "REFSEM1"
+          },
+          "CARDINALITY": [
+            ">",
+            1
+          ]
+        },
+        "REFSEM1": {
+          "ORGANIZATION": {
+            "RELATION": "MEDICAL-EVENT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "MEDICAL_ESTABLISHMENT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "HEALTH_CARE_SYSTEM-N1",
+      "WORD": "HEALTH_CARE_SYSTEM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

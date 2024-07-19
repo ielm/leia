@@ -1,0 +1,35 @@
+{
+  "word": "NO_ONE",
+  "senses": {
+    "NO_ONE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "no one thinks it's crazy.",
+      "COMMENTS": "see comments for nobody",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": "HUMAN",
+          "CARDINALITY": 0,
+          "COMPLETE": "YES"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "NOBODY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "NO_ONE-N1",
+      "WORD": "NO_ONE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@ORANGE-TREE",
+  "isa": [
+    "@FRUIT-TREE"
+  ],
+  "def": "tree that produces oranges",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ORANGE-FRUIT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@TREE-FRUIT"
+    }
+  ],
+  "private": {}
+}

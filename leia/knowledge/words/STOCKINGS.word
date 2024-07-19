@@ -1,0 +1,38 @@
+{
+  "word": "STOCKINGS",
+  "senses": {
+    "STOCKINGS-N1": {
+      "CAT": "N",
+      "DEF": "garment worn by women on the legs, usually under  dresses or skirts",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "NUMBER": "PL"
+      },
+      "SEM-STRUC": "STOCKING",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "NYLONS"
+      ],
+      "HYPONYMS": [
+        "FISHNET_STOCKINGS",
+        "MESH_STOCKINGS",
+        "NYLONS",
+        "TIGHTS",
+        "SHEERS",
+        "SHEER_STOCKINGS",
+        "SILK_STOCKINGS"
+      ],
+      "SENSE": "STOCKINGS-N1",
+      "WORD": "STOCKINGS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

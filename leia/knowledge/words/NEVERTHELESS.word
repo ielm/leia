@@ -1,0 +1,83 @@
+{
+  "word": "NEVERTHELESS",
+  "senses": {
+    "NEVERTHELESS-CONJ1": {
+      "CAT": "CONJ",
+      "DEF": "",
+      "EX": "She studied hard (. , ;) nevertheless (,) she failed the test <but she failed  the test nevertheless, and she failed the test nevertheless",
+      "COMMENTS": "I'm null-semming 'nevertheless' in every context for now",
+      "TMR-HEAD": "$VAR3",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "PUNCT": {
+          "ROOT": "$VAR2",
+          "CAT": "PUNCT"
+        },
+        "CONJ": {
+          "ROOT": "$VAR0",
+          "CAT": "CONJ"
+        },
+        "CL-1": {
+          "ROOT": "$VAR3",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR3": {
+          "CONTRARY-TO-EXPECTATION-BECAUSE-OF": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "PUNCT-2",
+        "NEVERTHELESS-0",
+        "THE",
+        "MAN",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CC",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "CONJ",
+          "$VAR1",
+          "$VAR3"
+        ],
+        [
+          "DOBJ",
+          "$VAR1",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "STILL"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "NEVERTHELESS-CONJ1",
+      "WORD": "NEVERTHELESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

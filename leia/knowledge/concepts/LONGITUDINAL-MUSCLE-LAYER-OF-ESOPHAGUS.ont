@@ -1,0 +1,22 @@
+{
+  "name": "@LONGITUDINAL-MUSCLE-LAYER-OF-ESOPHAGUS",
+  "isa": [
+    "@OUTER-MUSCLE-LAYER-OF-ORGAN"
+  ],
+  "def": "nd",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SEGMENT-OF-NEURAL-TREE-ORGAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

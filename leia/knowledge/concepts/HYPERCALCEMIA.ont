@@ -1,0 +1,82 @@
+{
+  "name": "@HYPERCALCEMIA",
+  "isa": [
+    "@NON-COMMUNICABLE-DISEASE"
+  ],
+  "def": "An abnormally high concentration of calcium in the blood.\n(http://medical-dictionary.thefreedictionary.com/Hypercalcemia)",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CALCIUM"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@BLOOD"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@NAUSEA"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@VOMIT"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@CONSTIPATION"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@BACTERIA"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@BIOLOGICAL-WEAPON"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@VIRUS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

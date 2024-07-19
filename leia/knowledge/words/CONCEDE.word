@@ -1,0 +1,369 @@
+{
+  "word": "CONCEDE",
+  "senses": {
+    "CONCEDE-V1": {
+      "CAT": "V",
+      "DEF": "admit defeat",
+      "EX": "the losing candidate conceded at midnight",
+      "COMMENTS": "conveyed as 's.o. asserts that he didn't win'",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "ROOT-WORD": "VICTORY",
+          "OPT": "+"
+        },
+        "PP": {
+          "ROOT-WORD": "TO",
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "DECLARE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "WIN": {
+            "AGENT-1": {
+              "VALUE": "^$VAR3"
+            },
+            "HAS-LOSER": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "CONCEDED-0",
+        "VICTORY-2",
+        "TO-4",
+        "THE",
+        "DOG-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR4"
+        ],
+        [
+          "POBJ",
+          "$VAR4",
+          "$VAR3"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONCEDE-V1",
+      "WORD": "CONCEDE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CONCEDE-V2": {
+      "CAT": "V",
+      "DEF": "to acknowledge, admit",
+      "EX": "she conceded that she failed to live up to expectations",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "COMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "CONFESS": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "CONCEDED-0",
+        "THAT",
+        "SHE",
+        "FAILED-2",
+        "TO",
+        "LIVE",
+        "UP",
+        "TO",
+        "EXPECTATIONS"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONCEDE-V2",
+      "WORD": "CONCEDE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CONCEDE-V3": {
+      "CAT": "V",
+      "DEF": "to acknowledge, admit",
+      "EX": "she conceded the failure of the current policy",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "CONFESS": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "EVENT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "CONCEDED-0",
+        "THE",
+        "FAILURE-2",
+        "OF",
+        "THE",
+        "CURRENT",
+        "POLICY"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONCEDE-V3",
+      "WORD": "CONCEDE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CONCEDE-V4": {
+      "CAT": "V",
+      "DEF": "to permit a goal or point to occur in sport",
+      "EX": "they conceded two goals in the second half",
+      "COMMENTS": "[D] represented as 'x did was the agent of an event, the result of which was the opponent scoring a goal or point",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": [
+            "GOAL",
+            "POINT"
+          ],
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "EFFECT": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SCORE-GOAL": {
+            "AGENT-1": {
+              "VALUE": "OPPONENT"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "PERMISSIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          },
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "CONCEDED-0",
+        "THE",
+        "POINT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONCEDE-V4",
+      "WORD": "CONCEDE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CONCEDE-V5": {
+      "CAT": "V",
+      "DEF": "direct quotation",
+      "EX": "[double-quote]you can't always be perfect,[double-quote] conceded Jones",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "QUOTED-SPEECH": [
+          [
+            "ROOT",
+            "$VAR2"
+          ],
+          [
+            "CAT",
+            "CL"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "ASSERTIVE-ACT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "*QUOTE*",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING",
+        "*QUOTE*",
+        "*COMMA*",
+        "CONCEDED-0",
+        "JONES-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONCEDE-V5",
+      "WORD": "CONCEDE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

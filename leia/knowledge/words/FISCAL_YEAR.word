@@ -1,0 +1,27 @@
+{
+  "word": "FISCAL_YEAR",
+  "senses": {
+    "FISCAL_YEAR-N1": {
+      "CAT": "N",
+      "DEF": "usu. jan 1 - dec 31, but can be different for diff. companies",
+      "EX": "",
+      "COMMENTS": "for generation, we'd need more detail",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FISCAL-YEAR",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FISCAL_YEAR-N1",
+      "WORD": "FISCAL_YEAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

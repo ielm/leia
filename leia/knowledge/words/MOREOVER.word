@@ -1,0 +1,85 @@
+{
+  "word": "MOREOVER",
+  "senses": {
+    "MOREOVER-CONJ1": {
+      "CAT": "CONJ",
+      "DEF": "indicates that two clauses are connected by a discourse relation",
+      "EX": "He has a lot of money in the bank;/, moreover, he has plenty of stocks",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "V"
+        },
+        "PUNCT": {
+          "ROOT": "$VAR2",
+          "CAT": "PUNCT",
+          "ROOT-WORD": [
+            "*COMMA*",
+            "*SEMICOLON*"
+          ]
+        },
+        "CONJ": {
+          "ROOT": "$VAR0",
+          "CAT": "CONJ"
+        },
+        "CL-1": {
+          "ROOT": "$VAR3",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "DISCOURSE-RELATION": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "*COMMA*-2",
+        "MOREOVER-0",
+        "THE",
+        "MAN",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CC",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "CONJ",
+          "$VAR1",
+          "$VAR3"
+        ],
+        [
+          "PUNCT",
+          "$VAR1",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MOREOVER-CONJ1",
+      "WORD": "MOREOVER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

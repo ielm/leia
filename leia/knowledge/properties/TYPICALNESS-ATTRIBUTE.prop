@@ -1,0 +1,9 @@
+{
+  "name": "$TYPICALNESS-ATTRIBUTE",
+  "def": "An attribute of an object/event indicating how typical it is as a member of its class.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-ATTRIBUTE"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@OINOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "inordinate fascination with wine",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WINE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

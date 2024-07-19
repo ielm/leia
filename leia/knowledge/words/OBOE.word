@@ -1,0 +1,34 @@
+{
+  "word": "OBOE",
+  "senses": {
+    "OBOE-N1": {
+      "CAT": "N",
+      "DEF": "a slim woodwind instrument with a conical bore and a double-reed mouthpiece; has 3-octave range",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "OBOE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "HAUTBOY",
+        "HAUTBOIS",
+        "oboe_d'amore"
+      ],
+      "HYPONYMS": [
+        "BASSET_OBOE",
+        "MUSETTE_PIPE"
+      ],
+      "SENSE": "OBOE-N1",
+      "WORD": "OBOE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

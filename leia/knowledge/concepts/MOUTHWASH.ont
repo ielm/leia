@@ -1,0 +1,32 @@
+{
+  "name": "@MOUTHWASH",
+  "isa": [
+    "@DRUG-FORM",
+    "@PERSONAL-GROOMING-ARTIFACT"
+  ],
+  "def": "a flavored, often antiseptic liquid for rinsing the mouth",
+  "local": [],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "is-consumer-good",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "solid"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "solid"
+    }
+  ],
+  "private": {}
+}

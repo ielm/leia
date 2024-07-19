@@ -1,0 +1,16 @@
+{
+  "name": "@GOVERNMENT-TYPE",
+  "isa": [
+    "@FEDERAL-ORGANIZATION"
+  ],
+  "def": "type of distribution of governmental power among geographical regions, individuals, institutions and social groups",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@GOVERNMENTAL-IDEOLOGY"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

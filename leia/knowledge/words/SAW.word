@@ -1,0 +1,137 @@
+{
+  "word": "SAW",
+  "senses": {
+    "SAW-V1": {
+      "CAT": "V",
+      "DEF": "to cut with a saw",
+      "EX": "She sawed the board in half",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "SAW-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "SAWED-0",
+        "THE",
+        "BOARD-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SAW-V1",
+      "WORD": "SAW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SAW-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SAW",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "POWER_SAW",
+        "BANDSAW",
+        "CHAIN_SAW",
+        "CHAINSAW",
+        "BUZZ_SAW",
+        "PORTABLE_SAW",
+        "GANGSAW",
+        "JIGSAW",
+        "SCROLL_SAW",
+        "RECIPROCATING_SAW",
+        "BACKSAW",
+        "BAND_SAW",
+        "BAYONET",
+        "BENCH_SAW",
+        "BUCKSAW",
+        "CIRCULAR_SAW",
+        "COMPASS_SAW",
+        "COPING_SAW",
+        "CROSSCUT_SAW",
+        "CROWN_SAW",
+        "DIAL_SAW",
+        "DOZUKI",
+        "FLUSH_CUT_SAW",
+        "FRAME_SAW",
+        "FRICTION_SAW",
+        "HACKSAW",
+        "HANDSAW",
+        "KEYHOLE_SAW",
+        "LOG_SAW",
+        "PANEL_SAW",
+        "MITER_SAW",
+        "POWER_SAW",
+        "RADIAL_ARM_SAW",
+        "RIPSAW",
+        "RYOBA",
+        "SABER_SAW",
+        "SCROLL_SAW",
+        "STATIONARY_CIRCULAR_SAW",
+        "TABLE_SAW",
+        "VENEER_SAW",
+        "WHIPSAW",
+        "AZIBIKI",
+        "BELT_SAW",
+        "BOARD_SAW",
+        "BOW_SAW",
+        "builder's_saw",
+        "CORDWOOD_SAW",
+        "CUTOFF_SAW",
+        "CYLINDER_SAW",
+        "DIAMOND_SAW",
+        "DOUBLE-CUT_SAW",
+        "DOVETAIL_SAW",
+        "FRET_SAW",
+        "HELICOIDAL_SAW",
+        "HOLE_SAW",
+        "KERF_SAW",
+        "MARQUETRY_SAW",
+        "MILL_SAW",
+        "SCRIBE_SAW",
+        "SKEWBACK_SAW",
+        "SPLITSAW",
+        "TRIM_SAW",
+        "TWO-HANDED_SAW",
+        "UTILITY_SAW",
+        "VERTICAL_SAW"
+      ],
+      "SENSE": "SAW-N1",
+      "WORD": "SAW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

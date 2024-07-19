@@ -1,0 +1,21 @@
+{
+  "name": "@PEACH",
+  "isa": [
+    "@TREE-FRUIT"
+  ],
+  "def": "a sweet tree fruit with fuzzy skin",
+  "local": [],
+  "block": [
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "cylindrical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "egglike"
+    }
+  ],
+  "private": {}
+}

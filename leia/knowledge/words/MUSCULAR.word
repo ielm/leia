@@ -1,0 +1,126 @@
+{
+  "word": "MUSCULAR",
+  "senses": {
+    "MUSCULAR-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "containing much muscle; not of animals",
+      "EX": "muscular arm",
+      "COMMENTS": "[D] split from animals because the idea of being strong is interent in the animal one and not necessarily here -- e.g., here we could have muscular meat",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "NOT",
+            "ANIMAL"
+          ],
+          "HAS-OBJECT-AS-PART": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "MUSCLE-LAYER-OF-ORGAN": {
+            "AMOUNT": [
+              ">",
+              0.8
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "MUSCULAR-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "SINEWY",
+        "FIBROUS"
+      ],
+      "SENSE": "MUSCULAR-ADJ1",
+      "WORD": "MUSCULAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MUSCULAR-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "of people, having a lot of muscles, being strong due to muscle mass",
+      "EX": "Her boyfriend is very muscular",
+      "COMMENTS": "[D] separated from body parts as head words due to different synonym sets and this sense including the idea of a strong person/animal",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "ANIMAL",
+          "STRENGTH": [
+            ">",
+            0.7
+          ],
+          "HAS-OBJECT-AS-PART": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "MUSCLE-LAYER-OF-ORGAN": {
+            "SIZE": [
+              ">",
+              0.8
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "POWERFUL-0",
+        "ANIMAL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "BRAWNY",
+        "MUSCLY",
+        "POWERFULLY_BUILT",
+        "WELL_MUSCLED",
+        "HARD-BODIED",
+        "BURLY",
+        "STRAPPING",
+        "STURDY",
+        "POWERFUL",
+        "MUSCLE-BOUND"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "MUSCULAR-ADJ2",
+      "WORD": "MUSCULAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

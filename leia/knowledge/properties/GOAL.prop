@@ -1,0 +1,9 @@
+{
+  "name": "$GOAL",
+  "def": "links a person, animal, software agent or anything else that can be interpreted as having goals with his or its goals - represented\nas states, that is, objects with properties.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$GOAL-OF",
+  "measured-in": [],
+  "container": "$RELATION"
+}

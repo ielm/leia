@@ -1,0 +1,21 @@
+{
+  "name": "@ITCH-MITE",
+  "isa": [
+    "@MITE"
+  ],
+  "def": "a parasitic mite causing scabies by burrowing into the skin",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@SKIN"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

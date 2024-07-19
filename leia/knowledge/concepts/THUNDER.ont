@@ -1,0 +1,86 @@
+{
+  "name": "@THUNDER",
+  "isa": [
+    "@NATURAL-EVENT",
+    "@EMIT-SOUND"
+  ],
+  "def": "a crashing or booming sound produced by rapidly expanding air along the path of the electrical discharge of lightning",
+  "local": [
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@INCREASE-1"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "autonomy",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {
+    "@INCREASE-1": {
+      "name": "@INCREASE-1",
+      "isa": [
+        "@INCREASE"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "urgency",
+          "facet": "sem",
+          "filler": [
+            "=>=<",
+            1
+          ]
+        },
+        {
+          "slot": "theme",
+          "facet": "sem",
+          "filler": "@AIR"
+        }
+      ],
+      "block": [],
+      "private": {}
+    }
+  }
+}

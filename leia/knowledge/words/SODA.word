@@ -1,0 +1,33 @@
+{
+  "word": "SODA",
+  "senses": {
+    "SODA-N1": {
+      "CAT": "N",
+      "DEF": "a beverage charged with carbon dioxide",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CARBONATED-NON-ALCOHOLIC-BEVERAGE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "CARBONATED_SOFT_DRINK",
+        "POP",
+        "SODA_POP",
+        "SOFT_DRINK",
+        "SOFTDRINK"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SODA-N1",
+      "WORD": "SODA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

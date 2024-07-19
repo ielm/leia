@@ -1,0 +1,52 @@
+{
+  "name": "@SEA-MAMMAL",
+  "isa": [
+    "@MAMMAL"
+  ],
+  "def": "any mammal that lives in or by the sea and that depends upon it for survival",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@FUR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@HAIR"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@SEA"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BAY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FUR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LIMB"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

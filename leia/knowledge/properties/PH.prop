@@ -1,0 +1,9 @@
+{
+  "name": "$PH",
+  "def": "The negative logarithm of the effective hydrogen-ion concentration or activity in gram equivalents per liter;\nthe domain needs fixing - we need to know what can and cannot have a pH",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

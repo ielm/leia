@@ -1,0 +1,22 @@
+{
+  "name": "@BRAIN-DAMAGE",
+  "isa": [
+    "@PATHOLOGIC-FUNCTION"
+  ],
+  "def": "damage to the brain",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@BRAIN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

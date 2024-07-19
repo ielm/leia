@@ -1,0 +1,104 @@
+{
+  "word": "NASTY",
+  "senses": {
+    "NASTY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "unjustifiably hostile, used with animal or social event",
+      "EX": "a nasty secretary; a nasty courtroom battle",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "ANIMAL",
+            "SOCIAL-EVENT"
+          ],
+          "HOSTILITY": [
+            ">",
+            0.7
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "NASTY-0",
+        "ANIMAL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NASTY-ADJ1",
+      "WORD": "NASTY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "NASTY-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "intense and unpleasant, figurative use",
+      "EX": "a nasty cold; a nasty storm",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "NOT",
+            "SOCIAL-EVENT"
+          ],
+          "INTENSITY": [
+            ">",
+            0.7
+          ]
+        },
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "NASTY-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NASTY-ADJ2",
+      "WORD": "NASTY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

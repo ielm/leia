@@ -1,0 +1,46 @@
+{
+  "word": "EFFERVESCENT",
+  "senses": {
+    "EFFERVESCENT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "in an extremely high emotional state",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "EMOTIONAL-STATE": 1
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "BLISSFUL",
+        "ELATED",
+        "ENRAPTURED",
+        "EUPHORIC",
+        "THRILLED",
+        "GLEEFUL",
+        "EXULTANT",
+        "JUBILANT",
+        "OVERJOYED",
+        "MIRTHFUL"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "EFFERVESCENT-ADJ1",
+      "WORD": "EFFERVESCENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

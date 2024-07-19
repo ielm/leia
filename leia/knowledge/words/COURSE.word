@@ -1,0 +1,114 @@
+{
+  "word": "COURSE",
+  "senses": {
+    "COURSE-N1": {
+      "CAT": "N",
+      "DEF": "a part of a meal",
+      "EX": "the first course was delicious",
+      "COMMENTS": "needs to be expanded in a dinner script",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "FOOD": {
+          "PART-OF-OBJECT": "MEAL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COURSE-N1",
+      "WORD": "COURSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "COURSE-N2": {
+      "CAT": "N",
+      "DEF": "class in college, etc.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SCHOOL-CLASS",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "CLASS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "COURSE-N2",
+      "WORD": "COURSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "COURSE-N3": {
+      "CAT": "N",
+      "DEF": "phrasal - course of sth. (business, negotiations, etc.)",
+      "EX": "",
+      "COMMENTS": "the word 'course' just adds (phase continue) to the event in question",
+      "TMR-HEAD": "$VAR2",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "CONTINUE",
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "COURSE-0",
+        "OF-1",
+        "THE",
+        "OBJECT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COURSE-N3",
+      "WORD": "COURSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "word": "HELPFUL",
+  "senses": {
+    "HELPFUL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "USEFULNESS": 0.7
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "CHOSE",
+        "THE",
+        "HELPFUL-0",
+        "EMPLOYEE-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HELPFUL-ADJ1",
+      "WORD": "HELPFUL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$INCREASE-IN-VALUE",
+  "def": "used for the description of event-of-change concepts",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-OBJECT-ATTRIBUTE"
+}

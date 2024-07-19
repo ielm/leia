@@ -1,0 +1,9 @@
+{
+  "name": "$VISIBILITY",
+  "def": "How visible something is.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-ATTRIBUTE"
+}

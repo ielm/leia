@@ -1,0 +1,32 @@
+{
+  "word": "PASTA_SALAD",
+  "senses": {
+    "PASTA_SALAD-N1": {
+      "CAT": "N",
+      "DEF": "A salad with any pastas as its base.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SALAD": {
+          "HAS-OBJECT-AS-PART": "PASTA",
+          "HAS-OBJECT-AS-PART-1": "SALAD-DRESSING"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PASTA_SALAD-N1",
+      "WORD": "PASTA_SALAD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

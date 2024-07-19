@@ -1,0 +1,31 @@
+{
+  "word": "BED_PILLOW",
+  "senses": {
+    "BED_PILLOW-N1": {
+      "CAT": "N",
+      "DEF": "a usually small pillow used primarily for decoration on a bed or couch",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PILLOW": {
+          "ON-TOP-OF": "BED"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BED_PILLOW-N1",
+      "WORD": "BED_PILLOW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "name": "@ESTROUS-CYCLE",
+  "isa": [
+    "@NORMAL-BIOLOGIC-FUNCTION"
+  ],
+  "def": "The regular process by which the uterine lining of a female mammal (not primates) is absorbed back into the body; this is equivalent to menstruation in humans, but applies to animals. Often involves bleeding.",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@UTERUS"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@MAMMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "not",
+      "filler": "@PRIMATE"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@MAMMAL"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "not",
+      "filler": "@PRIMATE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BLOOD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

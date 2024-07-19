@@ -1,0 +1,38 @@
+{
+  "word": "FAR_FROM_ENOUGH",
+  "senses": {
+    "FAR_FROM_ENOUGH-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "far from enough money was spent on the program.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "RELATIVE-TO-NORM": 0.2,
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FAR_FROM_ENOUGH-QUANTIFIER1",
+      "WORD": "FAR_FROM_ENOUGH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

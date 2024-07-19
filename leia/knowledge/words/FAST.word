@@ -1,0 +1,191 @@
+{
+  "word": "FAST",
+  "senses": {
+    "FAST-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "the degree of quickness with which an event is carried out or completed; not of motion-events",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RAPIDITY": 0.8,
+          "SEM": [
+            "NOT",
+            "MOTION-EVENT"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "CHOSE",
+        "THE",
+        "FAST-0",
+        "DOG-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "SPEEDY",
+        "QUICK",
+        "RAPID",
+        "BRISK",
+        "SWIFT",
+        "SNAPPY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FAST-ADJ1",
+      "WORD": "FAST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FAST-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "physical speed of a motion event or object in motion",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "VELOCITY": 0.8,
+          "SEM": "MOTION-EVENT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "CHOSE",
+        "THE",
+        "FAST-0",
+        "DOG-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "SPEEDY",
+        "QUICK",
+        "BRISK",
+        "SWIFT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FAST-ADJ2",
+      "WORD": "FAST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FAST-ADV2": {
+      "CAT": "ADV",
+      "DEF": "physical speed of a motion event or object in motion",
+      "EX": "He runs fast",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "VELOCITY": 0.8,
+          "SEM": "MOTION-EVENT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "ATE-1",
+        "FAST-0"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "AS_FAST_AS_POSSIBLE"
+      ],
+      "SENSE": "FAST-ADV2",
+      "WORD": "FAST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FAST-ADV1": {
+      "CAT": "ADV",
+      "DEF": "indicates the degree of quickness with which an event is carried out or finished",
+      "EX": "Do your work fast",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RAPIDITY": 0.8,
+          "SEM": [
+            "NOT",
+            "MOTION-EVENT"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "ATE-1",
+        "FAST-0"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "LICKETY-SPLIT"
+      ],
+      "HYPONYMS": [
+        "AS_FAST_AS_POSSIBLE"
+      ],
+      "SENSE": "FAST-ADV1",
+      "WORD": "FAST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

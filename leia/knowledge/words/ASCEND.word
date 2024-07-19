@@ -1,0 +1,49 @@
+{
+  "word": "ASCEND",
+  "senses": {
+    "ASCEND-V1": {
+      "CAT": "V",
+      "DEF": "to go up",
+      "EX": "he ascended the stairs",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "ASCEND": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "PATH": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "ASCENDED-0",
+        "THE",
+        "STAIRS-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ASCEND-V1",
+      "WORD": "ASCEND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

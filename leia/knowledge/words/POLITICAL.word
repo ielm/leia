@@ -1,0 +1,44 @@
+{
+  "word": "POLITICAL",
+  "senses": {
+    "POLITICAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to politics",
+      "EX": "political purge",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "POLITICAL-EVENT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "POLITICAL-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "POLITICAL-ADJ1",
+      "WORD": "POLITICAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

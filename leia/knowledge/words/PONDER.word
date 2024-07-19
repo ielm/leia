@@ -1,0 +1,52 @@
+{
+  "word": "PONDER",
+  "senses": {
+    "PONDER-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "CONSIDER": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-2",
+        "PONDERED-0",
+        "THE",
+        "STORY-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "EXCOGITATE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PONDER-V1",
+      "WORD": "PONDER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

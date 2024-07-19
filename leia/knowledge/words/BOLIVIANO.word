@@ -1,0 +1,31 @@
+{
+  "word": "BOLIVIANO",
+  "senses": {
+    "BOLIVIANO-N1": {
+      "CAT": "N",
+      "DEF": "currency of bolivia",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": "BOLIVIA"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BOLIVIANO-N1",
+      "WORD": "BOLIVIANO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@PHYSICS",
+  "isa": [
+    "@SCIENCE"
+  ],
+  "def": "the science dealing with the properties, changes, interactions, etc. of matter and energy",
+  "local": [
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@RESEARCH"
+    },
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@PHYSICIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SCIENTIST"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@WORK-ACTIVITY"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,44 @@
+{
+  "word": "AM_NOT",
+  "senses": {
+    "AM_NOT-V101": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "...I am not",
+      "COMMENTS": "works with VP ellipsis",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": "EVENT-VPE"
+        }
+      },
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-EVENT",
+          "EVENT-VPE",
+          "CASE-ROLE",
+          "^$VAR1"
+        ]
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AM_NOT-V101",
+      "WORD": "AM_NOT",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": []
+    }
+  }
+}

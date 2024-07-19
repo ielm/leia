@@ -1,0 +1,26 @@
+{
+  "name": "@WORLD",
+  "isa": [
+    "@LARGE-GEOPOLITICAL-ENTITY"
+  ],
+  "def": "the earth as it is made up of all geopolitical entities",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-compass-point",
+      "facet": "sem",
+      "filler": "@COMPASS-POINT"
+    },
+    {
+      "slot": "in-nation",
+      "facet": "sem",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "in-region",
+      "facet": "sem",
+      "filler": "@REGION"
+    }
+  ],
+  "private": {}
+}

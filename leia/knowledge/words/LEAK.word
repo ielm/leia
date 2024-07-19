@@ -1,0 +1,191 @@
+{
+  "word": "LEAK",
+  "senses": {
+    "LEAK-N1": {
+      "CAT": "N",
+      "DEF": "an opening through which fluid leaks",
+      "EX": "we seem to have a leak in our roof",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "OPENING": {
+          "LOCATION-OF": "LEAK-OUT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LEAK-N1",
+      "WORD": "LEAK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LEAK-V2": {
+      "CAT": "V",
+      "DEF": "phrasal: leak out (of) = to escape, of liquid or gas",
+      "EX": "Water is leaking out (of the pipe)",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "OUT_OF",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "LEAK-OUT": {
+          "THEME": {
+            "VALUE": "^$VAR1"
+          },
+          "SOURCE": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "LIQUID-1",
+        "SEEPED-0",
+        "OUT_OF-3",
+        "THE",
+        "JUG-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [
+        "SEEP"
+      ],
+      "HYPONYMS": [
+        "OOZE"
+      ],
+      "SENSE": "LEAK-V2",
+      "WORD": "LEAK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LEAK-V3": {
+      "CAT": "V",
+      "DEF": "phrasal: leak back (into somewhere)",
+      "EX": "Gas is leaking back into the room",
+      "COMMENTS": "Not dealing with the script aspect of this: the entity was in place A, went to place  B, then went to coreferenced place A again",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "BACK"
+        },
+        "PP": {
+          "ROOT-WORD": "INTO",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "LEAK-OUT": {
+          "THEME": {
+            "VALUE": "^$VAR1"
+          },
+          "DESTINATION": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "GAS-1",
+        "IS",
+        "LEAKING-0",
+        "BACK-2",
+        "INTO-3",
+        "THE",
+        "ROOM-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "PRT",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LEAK-V3",
+      "WORD": "LEAK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

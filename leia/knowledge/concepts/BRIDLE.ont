@@ -1,0 +1,27 @@
+{
+  "name": "@BRIDLE",
+  "isa": [
+    "@ANIMAL-RELATED-ARTIFACT"
+  ],
+  "def": "the headdress used to control a horse",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@LEATHER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

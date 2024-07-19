@@ -1,0 +1,42 @@
+{
+  "word": "POLICE_VAN",
+  "senses": {
+    "POLICE_VAN-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "VAN": {
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "TRANSPORTATION-SERVE": {
+            "AGENT": "POLICE-OFFICER",
+            "THEME": "CRIMINAL"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "POLICE_WAGON",
+        "PADDY_WAGON"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "POLICE_VAN-N1",
+      "WORD": "POLICE_VAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

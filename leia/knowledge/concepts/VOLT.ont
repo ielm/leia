@@ -1,0 +1,19 @@
+{
+  "name": "@VOLT",
+  "isa": [
+    "@ELECTRIC-POTENTIAL-UNIT"
+  ],
+  "def": "The SI derived unit of electric potential. kg*m^2*s^-3*A^-1 (^ means power, kg means kilogram, m means meter, s means second, A means ampere, * means multiplication)",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

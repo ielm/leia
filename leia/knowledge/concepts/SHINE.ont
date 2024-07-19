@@ -1,0 +1,21 @@
+{
+  "name": "@SHINE",
+  "isa": [
+    "@NATURAL-EVENT"
+  ],
+  "def": "to emit or reflect light - as it pertains to a natural object",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CELESTIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIGHT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

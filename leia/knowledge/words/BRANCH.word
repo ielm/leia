@@ -1,0 +1,85 @@
+{
+  "word": "BRANCH",
+  "senses": {
+    "BRANCH-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "TREE-BRANCH",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BRANCH-N1",
+      "WORD": "BRANCH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BRANCH-N2": {
+      "CAT": "N",
+      "DEF": "a part of something that splits off in a separate direction",
+      "EX": "they took the left branch at the fork",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "PHYSICAL-OBJECT": {
+          "PART-OF-OBJECT": {
+            "VALUE": "^$VAR2"
+          },
+          "SHAPE": "LINEAR"
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "BRANCH-0",
+        "OF-1",
+        "THE",
+        "MAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BRANCH-N2",
+      "WORD": "BRANCH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

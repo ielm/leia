@@ -1,0 +1,43 @@
+{
+  "name": "@FULL-PROFESSOR",
+  "isa": [
+    "@PROFESSOR"
+  ],
+  "def": "a teacher of the highest rank in an institution of higher learning",
+  "local": [
+    {
+      "slot": "tenure",
+      "facet": "sem",
+      "filler": "full"
+    },
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0.8
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0.5
+      ]
+    },
+    {
+      "slot": "tenure",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "tenure",
+      "facet": "sem",
+      "filler": "yes"
+    }
+  ],
+  "private": {}
+}

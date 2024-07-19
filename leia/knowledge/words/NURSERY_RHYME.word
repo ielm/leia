@@ -1,0 +1,53 @@
+{
+  "word": "NURSERY_RHYME",
+  "senses": {
+    "NURSERY_RHYME-N1": {
+      "CAT": "N",
+      "DEF": "A short, simple, rhymed poem for children",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LITERARY-COMPOSITION": {
+          "HAS-STYLE": "POEM",
+          "THEME-OF": {
+            "VALUE": "REFSEM1"
+          },
+          "COMPLEXITY": [
+            "<",
+            0.1
+          ]
+        },
+        "REFSEM1": {
+          "READ": {
+            "BENEFICIARY": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "HUMAN": {
+            "AGE": [
+              "<",
+              7
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NURSERY_RHYME-N1",
+      "WORD": "NURSERY_RHYME",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

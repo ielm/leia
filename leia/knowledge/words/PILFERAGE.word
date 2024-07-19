@@ -1,0 +1,80 @@
+{
+  "word": "PILFERAGE",
+  "senses": {
+    "PILFERAGE-N1": {
+      "CAT": "N",
+      "DEF": "theft of small amounts of goods over time to avoid detection",
+      "EX": "pilferage of petty cash by the clerk",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "REFSEM1"
+          },
+          "CARDINALITY": [
+            ">",
+            1
+          ]
+        },
+        "REFSEM1": {
+          "STEAL": {
+            "AGENT": {
+              "VALUE": "^$VAR4"
+            },
+            "THEME": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "^$VAR2": {
+          "SEM": "PHYSICAL-OBJECT",
+          "COST": [
+            "<",
+            0.2
+          ]
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PILFERAGE-N1",
+      "WORD": "PILFERAGE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

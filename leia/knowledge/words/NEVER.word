@@ -1,0 +1,51 @@
+{
+  "word": "NEVER",
+  "senses": {
+    "NEVER-ADV1": {
+      "CAT": "ADV",
+      "DEF": "not at any time",
+      "EX": "he never smokes ",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "NEVER-0",
+        "RUNS-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NEG",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NEVER-ADV1",
+      "WORD": "NEVER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

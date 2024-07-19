@@ -1,0 +1,95 @@
+{
+  "word": "GOLD",
+  "senses": {
+    "GOLD-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PHYSICAL-OBJECT": {
+          "MADE-OF": "GOLD"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GOLD-N1",
+      "WORD": "GOLD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "GOLD-N2": {
+      "CAT": "N",
+      "DEF": "a soft yellow corrosion resistant element the most malleable and ductile metal occurring in veins and alluvial deposits and recovered by mining or by panning or sluicing it is a good thermal and electrical conductor is generally alloyed to increase its strength and is used as an international monetary standard in jewelry for decoration and as a plated coating on a wide variety of electrical and mechanical components",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "GOLD",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GOLD-N2",
+      "WORD": "GOLD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "GOLD-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "PHYSICAL-OBJECT",
+          "MADE-OF": "GOLD"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "GOLD-0",
+        "TABLE-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "GOLDEN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "GOLD-ADJ1",
+      "WORD": "GOLD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

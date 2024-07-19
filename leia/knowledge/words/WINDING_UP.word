@@ -1,0 +1,67 @@
+{
+  "word": "WINDING_UP",
+  "senses": {
+    "WINDING_UP-N1": {
+      "CAT": "N",
+      "DEF": "completion",
+      "EX": "the winding-up of the work (by the administrator) took no time at all",
+      "COMMENTS": "again - phase: end (as always, it seems!) is tricky with respect to tense/aspect",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT-WORD": "BY",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "END",
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR2": {
+          "SEM": "EVENT",
+          "AGENT": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "WINDING_UP"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "WINDING_UP-N1",
+      "WORD": "WINDING_UP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "word": "COINCIDE",
+  "senses": {
+    "COINCIDE-V1": {
+      "CAT": "V",
+      "DEF": "to happen at the same time",
+      "EX": "his visit coincided with the festival ['with' is oblig. in this sense]",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "WITH",
+          "CAT": "PREP"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "TIME": {
+            "VALUE": "^$VAR3.TIME"
+          }
+        },
+        "^$VAR3": {
+          "SEM-1": "EVENT"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HIS",
+        "VISIT-1",
+        "COINCIDED-0",
+        "WITH-2",
+        "THE",
+        "FESTIVAL-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COINCIDE-V1",
+      "WORD": "COINCIDE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "COINCIDE-V2": {
+      "CAT": "V",
+      "DEF": "to happen at the same time",
+      "EX": "their visits to Paris coincided",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": {
+              "VALUE": "^$VAR1"
+            },
+            "CARDINALITY": [
+              ">",
+              1
+            ]
+          }
+        },
+        "EQUAL-TO": {
+          "DOMAIN": {
+            "VALUE": "REFSEM1.ELEMENT1.TIME"
+          },
+          "RANGE": {
+            "VALUE": "REFSEM1.ELEMENT2.TIME"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "VISITS-1",
+        "COINCIDED-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COINCIDE-V2",
+      "WORD": "COINCIDE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

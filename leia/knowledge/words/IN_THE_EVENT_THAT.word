@@ -1,0 +1,54 @@
+{
+  "word": "IN_THE_EVENT_THAT",
+  "senses": {
+    "IN_THE_EVENT_THAT-CONJ1": {
+      "CAT": "CONJ",
+      "DEF": "if",
+      "EX": "In the event that it rains(,) we'll go to a movie",
+      "COMMENTS": "synonym of 'if', but with fewer syntactic possibilities",
+      "TMR-HEAD": "$VAR2",
+      "SYN-STRUC": {
+        "CONJ": {
+          "ROOT": "$VAR0",
+          "CAT": "CONJ"
+        },
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "PUNCT": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "*COMMA*",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        },
+        "CL-1": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "PRECONDITION": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "IN_THE_EVENT_THAT-CONJ1",
+      "WORD": "IN_THE_EVENT_THAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

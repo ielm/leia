@@ -1,0 +1,27 @@
+{
+  "name": "@REPORTER",
+  "isa": [
+    "@WORK-ROLE"
+  ],
+  "def": "The person who collects information and gives it to the editor for publication.",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@NEWSPAPER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CREATIVE-WORK"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@FOODSTUFF"
+    }
+  ],
+  "private": {}
+}

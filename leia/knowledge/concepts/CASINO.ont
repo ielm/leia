@@ -1,0 +1,16 @@
+{
+  "name": "@CASINO",
+  "isa": [
+    "@SERVICE-BUILDING"
+  ],
+  "def": "a building for gambling, dancing, etc.",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@GAMBLE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

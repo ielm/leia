@@ -1,0 +1,38 @@
+{
+  "word": "SEA_SCALLOP",
+  "senses": {
+    "SEA_SCALLOP-N1": {
+      "CAT": "N",
+      "DEF": "a free-swimming mollusk that lives in the sea",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SCALLOP": {
+          "AGENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "INHABIT": {
+            "LOCATION": "SEA"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SEA_SCALLOP-N1",
+      "WORD": "SEA_SCALLOP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

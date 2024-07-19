@@ -1,0 +1,91 @@
+{
+  "word": "GEORGIANS",
+  "senses": {
+    "GEORGIANS-N1": {
+      "CAT": "N",
+      "DEF": "the set of citizens of the country of georgia",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "REFSEM1"
+          },
+          "QUANT": 1
+        },
+        "REFSEM1": {
+          "CITIZEN": {
+            "HAS-NATIONALITY": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "GEORGIA"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GEORGIANS-N1",
+      "WORD": "GEORGIANS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "GEORGIANS-N2": {
+      "CAT": "N",
+      "DEF": "the set of residents of the state of georgia",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "REFSEM1"
+          },
+          "QUANT": 1
+        },
+        "REFSEM1": {
+          "HUMAN": {
+            "HAS-STATE-ADDRESS": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "STATE": {
+            "HAS-NAME": {
+              "VALUE": "GEORGIA"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GEORGIANS-N2",
+      "WORD": "GEORGIANS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

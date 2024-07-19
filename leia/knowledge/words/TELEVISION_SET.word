@@ -1,0 +1,39 @@
+{
+  "word": "TELEVISION_SET",
+  "senses": {
+    "TELEVISION_SET-N1": {
+      "CAT": "N",
+      "DEF": "the instrument on which television programs are viewed",
+      "EX": "he turned on the television and sat down to watch his favorite show",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "TELEVISION",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "TELEVISION",
+        "TELEVISION_RECEIVER",
+        "TELLY",
+        "TUBE",
+        "IDIOT_BOX",
+        "BOOB_TUBE",
+        "TV",
+        "TV_SET"
+      ],
+      "HYPONYMS": [
+        "CLOSED_CIRCUIT_TELEVISION",
+        "CLOSED_CIRCUIT_TV"
+      ],
+      "SENSE": "TELEVISION_SET-N1",
+      "WORD": "TELEVISION_SET",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

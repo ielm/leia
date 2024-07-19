@@ -1,0 +1,11 @@
+{
+  "name": "$DIFFICULTY",
+  "def": "the degree of difficulty in carrying out an event [should be narrowed down to events with agents but it is not possible in this implementation]",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-EVENT-ATTRIBUTE"
+}

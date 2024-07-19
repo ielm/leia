@@ -1,0 +1,43 @@
+{
+  "name": "@ARAB-LEAGUE-DAY",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "a holiday, celebrated on March 22nd in most Arab nations",
+  "local": [
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MARCH"
+    },
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        22
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        31
+      ]
+    },
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    }
+  ],
+  "private": {}
+}

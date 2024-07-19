@@ -1,0 +1,50 @@
+{
+  "word": "EXPEL",
+  "senses": {
+    "EXPEL-V1": {
+      "CAT": "V",
+      "DEF": "to drive out by force",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "EXPEL": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "GOVERNMENT-2",
+        "EXPELLED-0",
+        "THE",
+        "CARTELS-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EXPEL-V1",
+      "WORD": "EXPEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

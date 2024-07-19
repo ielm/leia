@@ -1,0 +1,22 @@
+{
+  "name": "@TRANSFER-POSSESSION",
+  "isa": [
+    "@POSSESSION-EVENT"
+  ],
+  "def": "an event involving the transfer of ownership of objects",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@TRANSFER-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,58 @@
+{
+  "word": "ATTEMPTED",
+  "senses": {
+    "ATTEMPTED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "undertaken, tried unsuccessfully",
+      "EX": "the attempted heist",
+      "COMMENTS": "[D] Although the verb 'attempt' does not necessarily include the notion that the attempt failed, the adjective 'attempted' does imply that the attempt failed. E.g., 'the attempted murder' must mean that there was no murder.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EFFORT",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "MODALITY-1": {
+          "TYPE": "EPITEUCTIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR1": {
+          "SEM": "EVENT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ATTEMPTED-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ATTEMPTED-ADJ1",
+      "WORD": "ATTEMPTED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "word": "HE",
+  "senses": {
+    "HE-N1": {
+      "CAT": "N",
+      "DEF": "the pronoun 'he' when it refers to a human",
+      "EX": "he ate a piece of pie.",
+      "COMMENTS": "",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "TYPE": "PRO"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "GENDER": "MALE"
+        }
+      },
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HE-N1",
+      "WORD": "HE",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

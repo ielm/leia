@@ -1,0 +1,75 @@
+{
+  "name": "@NUT-FOODSTUFF",
+  "isa": [
+    "@PLANT-DERIVED-FOODSTUFF"
+  ],
+  "def": "a dry, one-seeded fruit, consisting of a kernel, often edible, in a woody shell, as the walnut",
+  "local": [
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "><",
+        7
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    },
+    {
+      "slot": "effect",
+      "facet": "relaxable-to",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "default",
+      "filler": "@ALLERGY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

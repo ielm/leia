@@ -1,0 +1,47 @@
+{
+  "word": "PERSISTENT",
+  "senses": {
+    "PERSISTENT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "a persistent problem",
+      "COMMENTS": "we'll have semantic ellipsis problems here, since, e.g., a problem - in persistent problem - is an object, so its existence is continuing. there's usually the connotation of negative evaluation, but this needs to be tested against a corpus before listing it",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "CONTINUE",
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "PERSISTENT-0",
+        "OBJECT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PERSISTENT-ADJ1",
+      "WORD": "PERSISTENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

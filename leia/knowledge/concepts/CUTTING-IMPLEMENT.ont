@@ -1,0 +1,22 @@
+{
+  "name": "@CUTTING-IMPLEMENT",
+  "isa": [
+    "@IMPLEMENT"
+  ],
+  "def": "all implements used for cutting or separating",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

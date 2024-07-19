@@ -1,0 +1,16 @@
+{
+  "name": "@CONSORTIUM",
+  "isa": [
+    "@PRIVATE-ORGANIZATION"
+  ],
+  "def": "a group of persons or companies that combine their resources to undertake some enterprises",
+  "local": [
+    {
+      "slot": "has-member",
+      "facet": "default",
+      "filler": "@BUSINESS-ROLE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

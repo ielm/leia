@@ -1,0 +1,71 @@
+{
+  "word": "UPLOAD",
+  "senses": {
+    "UPLOAD-V1": {
+      "CAT": "V",
+      "DEF": "to transfer data or programs from a peripheral computer to a central computer",
+      "EX": "He uploaded his dissertation (onto/to the server)",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": [
+            "TO",
+            "ONTO"
+          ],
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "TRANSFER-DATA": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "DESTINATION": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "UPLOADED-0",
+        "THE",
+        "FILE-2",
+        "TO-3",
+        "THE",
+        "SERVER-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "UPLOAD-V1",
+      "WORD": "UPLOAD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

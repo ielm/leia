@@ -1,0 +1,27 @@
+{
+  "name": "@OOPHOROSALPINGECTOMY",
+  "isa": [
+    "@SURGICAL-REMOVAL"
+  ],
+  "def": "Operative removal of an ovary and the corresponding Fallopian tube.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@UTERINE-TUBE"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@OVARY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

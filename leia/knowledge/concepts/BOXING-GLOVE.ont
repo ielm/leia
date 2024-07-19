@@ -1,0 +1,16 @@
+{
+  "name": "@BOXING-GLOVE",
+  "isa": [
+    "@SPORTS-GLOVE"
+  ],
+  "def": "padded leather mittens used in the sport of boxing",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@LEATHER"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

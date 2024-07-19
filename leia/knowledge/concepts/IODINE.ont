@@ -1,0 +1,49 @@
+{
+  "name": "@IODINE",
+  "isa": [
+    "@HALOGEN"
+  ],
+  "def": "a lustrous, grayish-black, corrosive, poisonous halogen element having radioactive isotopes, especially i 131, used as tracers and in thyroid disease diagnosis and therapy, and compounds used as germicides, antiseptics, and dyes",
+  "local": [
+    {
+      "slot": "toxicity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "black"
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        126
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "toxicity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "toxicity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

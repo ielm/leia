@@ -1,0 +1,16 @@
+{
+  "name": "@KAOLIN",
+  "isa": [
+    "@CLAY"
+  ],
+  "def": "a white clay used in porcelain",
+  "local": [],
+  "block": [
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "transparent"
+    }
+  ],
+  "private": {}
+}

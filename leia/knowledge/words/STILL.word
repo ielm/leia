@@ -1,0 +1,45 @@
+{
+  "word": "STILL",
+  "senses": {
+    "STILL-ADV1": {
+      "CAT": "ADV",
+      "DEF": "continuing unchanged",
+      "EX": "I ate my soup, but I'm still hungry; are you still taking your medication?",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "CONTINUE",
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "STILL-ADV1",
+      "WORD": "STILL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

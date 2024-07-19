@@ -1,0 +1,16 @@
+{
+  "name": "@BARLEY",
+  "isa": [
+    "@GRAIN-FOODSTUFF"
+  ],
+  "def": "a cereal grass, often grown in cooler climates",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "off-white"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,45 @@
+{
+  "word": "STATISTICALLY",
+  "senses": {
+    "STATISTICALLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "using statistical methods",
+      "EX": "They determined statistically that the plan would not benefit the majority",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-CLAUSE-POST-VERB-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "INSTRUMENT": "STATISTICS"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "STATISTICALLY-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "STATISTICALLY-ADV1",
+      "WORD": "STATISTICALLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

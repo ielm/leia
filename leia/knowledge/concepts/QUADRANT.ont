@@ -1,0 +1,19 @@
+{
+  "name": "@QUADRANT",
+  "isa": [
+    "@ANGLE-UNIT"
+  ],
+  "def": "one-fourth of a circle; equivalent to 100 gon; 3.14159265/2",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.5708
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

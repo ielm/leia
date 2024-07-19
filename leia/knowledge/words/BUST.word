@@ -1,0 +1,40 @@
+{
+  "word": "BUST",
+  "senses": {
+    "BUST-N1": {
+      "CAT": "N",
+      "DEF": "A sculpture representing head, shoulders, and upper chest",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SCULPTURE": {
+          "DEPICTS": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "ELEMENTS": {
+              "HEAD": "TRUNK-OF-BODY"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BUST-N1",
+      "WORD": "BUST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

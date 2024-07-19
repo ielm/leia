@@ -1,0 +1,16 @@
+{
+  "name": "@AUDIO-MEDIA-ARTIFACT",
+  "isa": [
+    "@MEDIA-ARTIFACT"
+  ],
+  "def": "media artifacts that are used for listening",
+  "local": [],
+  "block": [
+    {
+      "slot": "is-consumer-good",
+      "facet": "sem",
+      "filler": "yes"
+    }
+  ],
+  "private": {}
+}

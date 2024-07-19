@@ -1,0 +1,19 @@
+{
+  "name": "@OUNCE-APOTHECARIES",
+  "isa": [
+    "@MASS-WEIGHT-UNIT"
+  ],
+  "def": "ounce used by apothecaries, is now obsolete. the modern variant is the troy ounce.",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.03083
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

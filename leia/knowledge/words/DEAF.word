@@ -1,0 +1,70 @@
+{
+  "word": "DEAF",
+  "senses": {
+    "DEAF-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "incapable of hearing",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "ANIMAL",
+          "EXPERIENCER-OF": {
+            "VALUE": "REFSEM1"
+          },
+          "AGENT-OF": {
+            "VALUE": "REFSEM2"
+          }
+        },
+        "REFSEM1": [
+          "INVOLUNTARY-AUDITORY-EVENT"
+        ],
+        "MODALITY": {
+          "TYPE": "POTENTIAL",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM2": [
+          "VOLUNTARY-AUDITORY-EVENT"
+        ],
+        "MODALITY-1": {
+          "TYPE": "POTENTIAL",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "DEAF-0",
+        "ANIMAL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DEAF-ADJ1",
+      "WORD": "DEAF",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

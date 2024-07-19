@@ -1,0 +1,31 @@
+{
+  "name": "@FARM-MACHINE",
+  "isa": [
+    "@WHEELED-ENGINE-VEHICLE",
+    "@FARM-EQUIPMENT"
+  ],
+  "def": "any wheeled engine vehicle used in farming: thresher, farm tractor, etc.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MACHINE-PART"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "number-of-wheels",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        8
+      ]
+    }
+  ],
+  "private": {}
+}

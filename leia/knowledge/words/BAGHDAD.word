@@ -1,0 +1,33 @@
+{
+  "word": "BAGHDAD",
+  "senses": {
+    "BAGHDAD-N1": {
+      "CAT": "N",
+      "DEF": "the capital of Iraq",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CITY": {
+          "HAS-NAME": {
+            "VALUE": "BAGHDAD"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BAGHDAD-N1",
+      "WORD": "BAGHDAD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

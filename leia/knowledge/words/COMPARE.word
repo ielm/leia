@@ -1,0 +1,395 @@
+{
+  "word": "COMPARE",
+  "senses": {
+    "COMPARE-V1": {
+      "CAT": "V",
+      "DEF": "to examine for similarities or differences - with 'with' or 'to' as binder",
+      "EX": "she compared shakespeare with/to milton",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": [
+            "TO",
+            "WITH"
+          ],
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "COMPARE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME-1": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "COMPARED-0",
+        "THE",
+        "DOG-2",
+        "TO-3",
+        "THE",
+        "CAT-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COMPARE-V1",
+      "WORD": "COMPARE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "COMPARE-V2": {
+      "CAT": "V",
+      "DEF": "to examine for similarities or differences - with 'and' as binder",
+      "EX": "she compared shakespeare and milton",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP",
+          "CONJ": [
+            [
+              "ROOT",
+              "$VAR3"
+            ],
+            [
+              "CAT",
+              "CONJ"
+            ],
+            [
+              "ROOT",
+              "AND"
+            ],
+            [
+              "NP",
+              [
+                [
+                  "ROOT",
+                  "$VAR4"
+                ],
+                [
+                  "CAT",
+                  "NP"
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      "SEM-STRUC": {
+        "COMPARE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME-1": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "COMPARED-0",
+        "THE",
+        "DOG-2",
+        "AND-3",
+        "THE",
+        "CAT-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "CONJ",
+          "$VAR2",
+          "$VAR4"
+        ],
+        [
+          "CC",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COMPARE-V2",
+      "WORD": "COMPARE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "COMPARE-V802": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "N": {
+          "ROOT": "$VAR1",
+          "ROOT-WORD": "APPLES",
+          "CAT": "N"
+        },
+        "PREP": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "TO",
+          "CAT": "PREP"
+        },
+        "N-1": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "ORANGE",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "COMPARE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "ELEMENTS": "SEEK-SPONSOR-IN-TEXT",
+          "SIMILARITY-ATTRIBUTE": [
+            "<",
+            0.2
+          ],
+          "CARDINALTIY": 2
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "YOU",
+        "ARE",
+        "COMPARING-0",
+        "APPLES-1",
+        "TO-2",
+        "ORANGES-3"
+      ],
+      "SENSE": "COMPARE-V802",
+      "WORD": "COMPARE",
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "COMPARE-V801": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "N": {
+          "ROOT": "$VAR1",
+          "ROOT-WORD": "APPLES",
+          "CAT": "N"
+        },
+        "PREP": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "WITH",
+          "CAT": "PREP"
+        },
+        "N-1": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "ORANGE",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "COMPARE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "ELEMENTS": "SEEK-SPONSOR-IN-TEXT",
+          "SIMILARITY-ATTRIBUTE": [
+            "<",
+            0.2
+          ],
+          "CARDINALTIY": 2
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "YOU",
+        "ARE",
+        "COMPARING-0",
+        "APPLES-1",
+        "WITH-2",
+        "ORANGES-3"
+      ],
+      "SENSE": "COMPARE-V801",
+      "WORD": "COMPARE",
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "COMPARE-V800": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "You are comparing apples and oranges",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "N": {
+          "ROOT": "$VAR1",
+          "ROOT-WORD": "APPLES",
+          "CAT": "N"
+        },
+        "CONJ": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "AND",
+          "CAT": "CONJ"
+        },
+        "N-1": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "ORANGE",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "COMPARE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "ELEMENTS": "SEEK-SPONSOR-IN-TEXT",
+          "SIMILARITY-ATTRIBUTE": [
+            "<",
+            0.2
+          ],
+          "CARDINALTIY": 2
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "YOU",
+        "ARE",
+        "COMPARING-0",
+        "APPLES-1",
+        "AND-2",
+        "ORANGES-3"
+      ],
+      "SENSE": "COMPARE-V800",
+      "WORD": "COMPARE",
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "word": "UNARMED",
+  "senses": {
+    "UNARMED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "unarmed soldiers",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "CARRY": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            },
+            "THEME": {
+              "SEM": "WEAPON"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "UNARMED-ADJ1",
+      "WORD": "UNARMED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

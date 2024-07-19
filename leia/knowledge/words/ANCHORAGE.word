@@ -1,0 +1,44 @@
+{
+  "word": "ANCHORAGE",
+  "senses": {
+    "ANCHORAGE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PLACE": {
+          "LOCATION-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "FASTEN": {
+            "AGENT": {
+              "SEM": "HUMAN"
+            },
+            "THEME": {
+              "SEM-1": "SURFACE-WATER-VEHICLE"
+            },
+            "INSTRUMENT": "ANCHOR"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ANCHORAGE-N1",
+      "WORD": "ANCHORAGE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

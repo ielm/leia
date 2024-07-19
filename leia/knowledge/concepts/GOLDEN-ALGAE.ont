@@ -1,0 +1,37 @@
+{
+  "name": "@GOLDEN-ALGAE",
+  "isa": [
+    "@ALGA"
+  ],
+  "def": "algae that contain the pigments carotene, xanthophyll, and chlorophyll",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CHLOROPHYLL"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CAROTENE"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "yellow"
+    }
+  ],
+  "block": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "green"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PLANT-PART"
+    }
+  ],
+  "private": {}
+}

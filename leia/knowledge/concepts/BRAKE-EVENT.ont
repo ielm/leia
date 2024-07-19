@@ -1,0 +1,22 @@
+{
+  "name": "@BRAKE-EVENT",
+  "isa": [
+    "@DRIVE"
+  ],
+  "def": "to slow down or stop with a brake",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@BRAKE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@VEHICLE-PART"
+    }
+  ],
+  "private": {}
+}

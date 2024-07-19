@@ -1,0 +1,58 @@
+{
+  "word": "TRAVELING",
+  "senses": {
+    "TRAVELING-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "a work-role that involves traveling, usu. over a broad area",
+      "EX": "he became a traveling salesman/speaker/reporter",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "ITERATION": "MULTIPLE",
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "^$VAR1": {
+          "SEM": "WORK-ROLE",
+          "AGENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "TRAVEL-EVENT": {
+            "TIME-INTERVAL": 0.3
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "TRAVELING-0",
+        "WORK-ROLE-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TRAVELING-ADJ1",
+      "WORD": "TRAVELING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "word": "RONDEL",
+  "senses": {
+    "RONDEL-N1": {
+      "CAT": "N",
+      "DEF": "A short poem similar to a rondeau, with 13 or 14 lines and two rhymes throughout. The first and second lines reappear in the middle and at the end, although sometimes only the first line appears at the end.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LITERARY-COMPOSITION": {
+          "HAS-STYLE": "POEM",
+          "LOCATION": "FRANCE",
+          "LENGTH": [
+            "OR",
+            13,
+            14
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RONDEL-N1",
+      "WORD": "RONDEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

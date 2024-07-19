@@ -1,0 +1,98 @@
+{
+  "word": "COLONEL",
+  "senses": {
+    "COLONEL-N1": {
+      "CAT": "N",
+      "DEF": "an officer of rank 5/22 in the US army",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MILITARY-OFFICER": {
+          "CITIZEN-OF": "USA",
+          "MEMBER-OF": "ARMY",
+          "RANK": [
+            5,
+            22
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COLONEL-N1",
+      "WORD": "COLONEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "COLONEL-N2": {
+      "CAT": "N",
+      "DEF": "an officer of rank 5/16 in the US air force",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MILITARY-OFFICER": {
+          "CITIZEN-OF": "USA",
+          "MEMBER-OF": "AIR-FORCES",
+          "RANK": [
+            5,
+            16
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COLONEL-N2",
+      "WORD": "COLONEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "COLONEL-N3": {
+      "CAT": "N",
+      "DEF": "an officer of rank 5/17 in the US marines",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MILITARY-OFFICER": {
+          "CITIZEN-OF": "USA",
+          "MEMBER-OF": "MARINES",
+          "RANK": [
+            5,
+            17
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COLONEL-N3",
+      "WORD": "COLONEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

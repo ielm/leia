@@ -1,0 +1,42 @@
+{
+  "name": "@ENTER-LEDGER",
+  "isa": [
+    "@ACCOUNTING"
+  ],
+  "def": "to enter debits and credits in a book of final entry",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DEBIT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CREDIT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FINANCIAL-BOOKS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,241 @@
+{
+  "word": "LITTLE",
+  "senses": {
+    "LITTLE-ADV1": {
+      "CAT": "ADV",
+      "DEF": "with verbs of change - to a small extent",
+      "EX": "Her behavior has changed little",
+      "COMMENTS": "We might ultimately need to split this up into senses for different types of subjects; cf. treatment of 'increase'",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "EXTENT-OF-CHANGE": 0.2
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE",
+        "RUNS-1",
+        "LITTLE-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "SLIGHTLY",
+        "A_LITTLE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "LITTLE-ADV1",
+      "WORD": "LITTLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LITTLE-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "+ object -- not much of a non-count object",
+      "EX": "little thinking went into this.",
+      "COMMENTS": "the complement is a 'n' since it can't have a determiner or article.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "NUMBER": "SING"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "AMOUNT": [
+            "><",
+            0.1,
+            0.2
+          ],
+          "DETERMINATE": "NO",
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1",
+            "SEM": "OBJECT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "TAKE",
+        "A",
+        "LITTLE",
+        "FLOUR-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SO_LITTLE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "LITTLE-QUANTIFIER1",
+      "WORD": "LITTLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LITTLE-QUANTIFIER2": {
+      "CAT": "QUANTIFIER",
+      "DEF": "little of X - a small amount of some non-count OBJECT",
+      "EX": "little of the flour has been used.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "CAT": "PREP",
+          "ROOT": "$VAR2",
+          "OBJ": {
+            "ROOT": "$VAR1",
+            "CAT": "NP",
+            "NUMBER": "SING"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "AMOUNT": [
+            "><",
+            0.1,
+            0.2
+          ],
+          "DETERMINATE": "NO",
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1",
+            "SEM": "OBJECT"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "TAKE",
+        "A",
+        "LITTLE-0",
+        "OF-2",
+        "THE",
+        "FLOUR-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SO_LITTLE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "LITTLE-QUANTIFIER2",
+      "WORD": "LITTLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LITTLE-QUANTIFIER3": {
+      "CAT": "QUANTIFIER",
+      "DEF": "+ symptom - indicates low intensity",
+      "EX": "She had little pain after the operation",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "NUMBER": "PL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "SYMPTOM",
+          "INTENSITY": [
+            "<",
+            0.2
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "TAKE",
+        "LITTLE-0",
+        "ROUTERS-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LITTLE-QUANTIFIER3",
+      "WORD": "LITTLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LITTLE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "little has been written about it.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "AMOUNT": [
+            "><",
+            0.1,
+            0.2
+          ],
+          "DETERMINATE": "NO"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          [
+            "SET",
+            1
+          ]
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SO_LITTLE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "LITTLE-N1",
+      "WORD": "LITTLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

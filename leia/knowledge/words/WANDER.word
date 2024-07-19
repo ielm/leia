@@ -1,0 +1,48 @@
+{
+  "word": "WANDER",
+  "senses": {
+    "WANDER-V1": {
+      "CAT": "V",
+      "DEF": "travel aimlessly",
+      "EX": "they wandered around the forest for hours",
+      "COMMENTS": "[D] path PP's (from, to, around, etc.) are handled compositionally",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "TRAVEL-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "URGENCY": [
+            "<",
+            0.3
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "WANDERED-0",
+        "AROUND"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ROAM",
+        "ROVE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "WANDER-V1",
+      "WORD": "WANDER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

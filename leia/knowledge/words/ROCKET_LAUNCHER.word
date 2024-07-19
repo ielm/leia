@@ -1,0 +1,38 @@
+{
+  "word": "ROCKET_LAUNCHER",
+  "senses": {
+    "ROCKET_LAUNCHER-N1": {
+      "CAT": "N",
+      "DEF": "something that launches rockets",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "DEVICE": {
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "LAUNCH": {
+            "THEME": "ROCKET"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ROCKET_LAUNCHER-N1",
+      "WORD": "ROCKET_LAUNCHER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

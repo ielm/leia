@@ -1,0 +1,82 @@
+{
+  "name": "@DUST-STORM",
+  "isa": [
+    "@STORM"
+  ],
+  "def": "A storm composed of a very strong wind with sand/soil/dust particles; also called a sand storm.",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@WIND"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@DUST"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SAND"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SOIL"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@DESERT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@NATURAL-EVENT"
+    },
+    {
+      "slot": "location",
+      "facet": "not",
+      "filler": "@EARTH-CORE"
+    },
+    {
+      "slot": "location",
+      "facet": "not",
+      "filler": "@TRANSNATIONAL-ENTITY"
+    },
+    {
+      "slot": "location",
+      "facet": "not",
+      "filler": "@UNDERWATER-GEOLOGICAL-ENTITY"
+    },
+    {
+      "slot": "location",
+      "facet": "not",
+      "filler": "@WATER-TABLE"
+    },
+    {
+      "slot": "location",
+      "facet": "not",
+      "filler": "@WORLD"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@GEOLOGICAL-ENTITY"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    }
+  ],
+  "private": {}
+}

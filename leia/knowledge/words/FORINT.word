@@ -1,0 +1,31 @@
+{
+  "word": "FORINT",
+  "senses": {
+    "FORINT-N1": {
+      "CAT": "N",
+      "DEF": "currency of hungary",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": "HUNGARY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FORINT-N1",
+      "WORD": "FORINT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

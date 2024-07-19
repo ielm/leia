@@ -1,0 +1,42 @@
+{
+  "name": "@POSITION-BODY",
+  "isa": [
+    "@ANIMAL-LIVING-EVENT"
+  ],
+  "def": "attitude of the (typically human) body, e.g. standing, sitting",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    },
+    {
+      "slot": "agent",
+      "facet": "not",
+      "filler": "@FISH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

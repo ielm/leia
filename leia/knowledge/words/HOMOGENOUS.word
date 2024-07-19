@@ -1,0 +1,51 @@
+{
+  "word": "HOMOGENOUS",
+  "senses": {
+    "HOMOGENOUS-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "completely or extremely similar; with the modified is a simple noun reflecting a set, not a pp",
+      "EX": "A homogenous student body",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "SET"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EXACTLY_THE_SAME-0",
+        "SET-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "IDENTICAL",
+        "EXACTLY_THE_SAME",
+        "VIRTUALLY_THE_SAME",
+        "VIRTUALLY_IDENTICAL",
+        "PRETTY_MUCH_THE_SAME",
+        "PRETTY_MUCH_IDENTICAL"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "HOMOGENOUS-ADJ1",
+      "WORD": "HOMOGENOUS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

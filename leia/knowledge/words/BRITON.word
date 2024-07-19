@@ -1,0 +1,40 @@
+{
+  "word": "BRITON",
+  "senses": {
+    "BRITON-N1": {
+      "CAT": "N",
+      "DEF": "a citizen of great britain",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CITIZEN": {
+          "HAS-NATIONALITY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "GREAT_BRITAIN"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BRITON-N1",
+      "WORD": "BRITON",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

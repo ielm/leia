@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-REFEREE",
+  "def": "The relation between a competition (or result) and the person who referees",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$REFEREE-OF",
+  "measured-in": [],
+  "container": "$SPORTS-RELATION"
+}

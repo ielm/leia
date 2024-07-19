@@ -1,0 +1,33 @@
+{
+  "word": "MURAL",
+  "senses": {
+    "MURAL-N1": {
+      "CAT": "N",
+      "DEF": "a large painting directly on a wall or ceiling",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PAINTING": {
+          "LOCATION": {
+            "WALL": "CEILING"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MURAL-N1",
+      "WORD": "MURAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

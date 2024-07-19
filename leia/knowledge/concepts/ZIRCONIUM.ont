@@ -1,0 +1,45 @@
+{
+  "name": "@ZIRCONIUM",
+  "isa": [
+    "@LIGHT-METALLIC-ELEMENT",
+    "@DUCTILE-METALLIC-ELEMENT"
+  ],
+  "def": "a lustrous, grayish-white, strong, ductile metallic element obtained primarily from zircon and used chiefly in ceramic and refractory compounds, as an alloying agent, and in nuclear reactors",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        91
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        40
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

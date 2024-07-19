@@ -1,0 +1,25 @@
+{
+  "name": "@ATOMIC-BOMB",
+  "isa": [
+    "@BOMB",
+    "@NUCLEAR-WEAPON"
+  ],
+  "def": "an extremely destructive bomb whose power results from a chain reaction of nuclear fission",
+  "local": [],
+  "block": [
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "private": {}
+}

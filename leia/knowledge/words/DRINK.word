@@ -1,0 +1,91 @@
+{
+  "word": "DRINK",
+  "senses": {
+    "DRINK-N1": {
+      "CAT": "N",
+      "DEF": "a beverage",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BEVERAGE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DRINK-N1",
+      "WORD": "DRINK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DRINK-V1": {
+      "CAT": "V",
+      "DEF": "to consume a liquid",
+      "EX": "she drank her tea quietly",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "OPT": "+",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "INGEST": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "BEVERAGE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "DRANK-0",
+        "HER",
+        "TEA-2",
+        "QUIETLY"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "IMBIBE"
+      ],
+      "HYPONYMS": [
+        "SLURP",
+        "SWIG",
+        "SWILL"
+      ],
+      "SENSE": "DRINK-V1",
+      "WORD": "DRINK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

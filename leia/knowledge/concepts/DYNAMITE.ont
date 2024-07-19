@@ -1,0 +1,16 @@
+{
+  "name": "@DYNAMITE",
+  "isa": [
+    "@EXPLOSIVE-DEVICE"
+  ],
+  "def": "dynamite explosive made from nitroglyserin and various amounts of an inert, absorbent filler, e.g., sawdust.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@DUST"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

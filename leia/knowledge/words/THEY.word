@@ -1,0 +1,36 @@
+{
+  "word": "THEY",
+  "senses": {
+    "THEY-N1": {
+      "CAT": "N",
+      "DEF": "the pronoun 'they', which can refer to any objects, events or properties",
+      "EX": "they eat all day [= human/animal]. they [the cars] move at 90 mph along the highway [object]. they [hurricaines] are dangerous [event]. they [swimming and biking] make me feel good, etc.",
+      "COMMENTS": "[D] 'they' can have a definite referent (of many types) or it can refer to generalized humans (they say it will rain today). we will use the generalized-human sense if:   1. the category can or must be human, based on selectional restrictions;   2. there is no *very accessible* antecedent available. this means that if the category can or must be human, we need to inspect the list of candidate antecedents and impose on them a more demanding threshold of acceptability than we use in most instances. that is, since we have the option here of not choosing any of them - and using the generalized meaning instead - we're going to be picky. precisely what 'picky' means will require some testing. nb - I'm not dealing, yet, with the matter of using 'they' in reference to a singular 'if someone... they ...' that *should* be edited out of newspaper texts...",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "TYPE": "PRO"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": "ALL",
+          "CARDINALITY": [
+            ">",
+            1
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "THEY-N1",
+      "WORD": "THEY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

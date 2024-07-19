@@ -1,0 +1,11 @@
+{
+  "name": "$TEMPERATURE",
+  "def": "a specific degree of hotness or coldness as indicated on or referred to a standard scale. If the filler is on the abstract scale 0-1 then 1 is very hot and 0 is very cold.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@TEMPERATURE-UNIT"
+  ],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

@@ -1,0 +1,44 @@
+{
+  "word": "WAS_NOT",
+  "senses": {
+    "WAS_NOT-V101": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "...he is not",
+      "COMMENTS": "works with VP ellipsis",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": "EVENT-VPE"
+        }
+      },
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-EVENT",
+          "EVENT-VPE",
+          "CASE-ROLE",
+          "^$VAR1"
+        ]
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WAS_NOT-V101",
+      "WORD": "WAS_NOT",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": []
+    }
+  }
+}

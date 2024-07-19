@@ -1,0 +1,9 @@
+{
+  "name": "$MEASURES-PROPERTY",
+  "def": "this property is used to specify which \nmeasuring-artifacts are used to measure which\nproperties. ",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$PROPERTY-MEASURED",
+  "measured-in": [],
+  "container": "$RELATION"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@FORCE-UNIT",
+  "isa": [
+    "@MEASURING-UNIT"
+  ],
+  "def": "a measuring unit that measures force, defined as (Wikipedia):  that which can cause an object with mass to accelerate. Force has both magnitude and direction, making it a vector quantity.",
+  "local": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@KILOGRAM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "sem",
+      "filler": "@MEASURING-UNIT"
+    }
+  ],
+  "private": {}
+}

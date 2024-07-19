@@ -1,0 +1,42 @@
+{
+  "name": "@TICKET",
+  "isa": [
+    "@PRINTED-MEDIA"
+  ],
+  "def": "the piece of paper one needs to buy in order to take a trip by boat, train or plane, or to get into a play or concert, etc.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PAPER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CARDBOARD"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@NAME"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@INK"
+    }
+  ],
+  "private": {}
+}

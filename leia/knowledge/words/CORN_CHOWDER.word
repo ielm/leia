@@ -1,0 +1,35 @@
+{
+  "word": "CORN_CHOWDER",
+  "senses": {
+    "CORN_CHOWDER-N1": {
+      "CAT": "N",
+      "DEF": "A chowder made with corn",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SOUP": {
+          "HAS-OBJECT-AS-PART": [
+            "CORN",
+            "LIQUID-DAIRY-PRODUCT",
+            "BACON"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CORN_CHOWDER-N1",
+      "WORD": "CORN_CHOWDER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

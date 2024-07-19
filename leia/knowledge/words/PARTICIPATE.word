@@ -1,0 +1,49 @@
+{
+  "word": "PARTICIPATE",
+  "senses": {
+    "PARTICIPATE-V1": {
+      "CAT": "V",
+      "DEF": "to take part in, to do sth. If the 'in X' is not there, it is elided and requires ellipsis processing",
+      "EX": "She participates in afterschool sports.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "IN",
+          "CAT": "PREP"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR3": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PARTICIPATE-V1",
+      "WORD": "PARTICIPATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

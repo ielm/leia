@@ -1,0 +1,49 @@
+{
+  "word": "SALT",
+  "senses": {
+    "SALT-N1": {
+      "CAT": "N",
+      "DEF": "for flavoring food",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SALT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SALT-N1",
+      "WORD": "SALT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SALT-N2": {
+      "CAT": "N",
+      "DEF": "a chemical compound derived from an acid",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CHEMICAL-COMPOUND-SALT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SALT-N2",
+      "WORD": "SALT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

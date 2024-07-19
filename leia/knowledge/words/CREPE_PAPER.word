@@ -1,0 +1,36 @@
+{
+  "word": "CREPE_PAPER",
+  "senses": {
+    "CREPE_PAPER-N1": {
+      "CAT": "N",
+      "DEF": "colored tissue paper for decorating",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PAPER": {
+          "THICKNESS": [
+            "><",
+            0.1,
+            0.2
+          ],
+          "INSTRUMENT-OF": "DECORATE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CREPE_PAPER-N1",
+      "WORD": "CREPE_PAPER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

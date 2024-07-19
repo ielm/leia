@@ -1,0 +1,19 @@
+{
+  "name": "@COACH",
+  "isa": [
+    "@HORSE-DRIVEN-VEHICLE"
+  ],
+  "def": "A large horse-drawn, four wheeled carriage, usually enclosed",
+  "local": [
+    {
+      "slot": "number-of-wheels",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        4
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

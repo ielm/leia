@@ -1,0 +1,336 @@
+{
+  "word": "BETTER",
+  "senses": {
+    "BETTER-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "phrasal: it is better that X (event) = X is desirable",
+      "EX": "it would be better that you see for yourself",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "TYPE": "PRO",
+          "ROOT-WORD": "IT"
+        },
+        "ROOT": "$VAR2",
+        "CAT": "V",
+        "ROOT-WORD": "*BE*",
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "COMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "VOLITIVE",
+          "VALUE": 0.7,
+          "SCOPE": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "IT-1",
+        "WAS-2",
+        "BETTER-0",
+        "THAT",
+        "THE",
+        "MAN",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR3",
+          "$VAR0"
+        ],
+        [
+          "COP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "DESIRABLE",
+        "PREFERABLE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BETTER-ADJ1",
+      "WORD": "BETTER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BETTER-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "phrasal: it is better (for Y) to X (event) = X is desirable",
+      "EX": "it would be better (for you) to see for yourself",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "TYPE": "PRO",
+          "ROOT-WORD": "IT"
+        },
+        "ROOT": "$VAR2",
+        "CAT": "V",
+        "ROOT-WORD": "*BE*",
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "PP": {
+          "ROOT-WORD": "FOR",
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR5",
+            "CAT": "N"
+          }
+        },
+        "XCOMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "VOLITIVE",
+          "VALUE": 0.7,
+          "SCOPE": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR3": {
+          "SEM": "EVENT",
+          "AGENT": {
+            "VALUE": "^$VAR5"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR5",
+          "^$VAR3"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "IT-1",
+        "WAS-2",
+        "BETTER-0",
+        "FOR-4",
+        "THE",
+        "MAN-5",
+        "TO-7",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR2",
+          "$VAR0"
+        ],
+        [
+          "INFMOD",
+          "$VAR5",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR4",
+          "$VAR5"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [
+        "DESIRABLE",
+        "PREFERABLE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BETTER-ADJ2",
+      "WORD": "BETTER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BETTER-ADJ3": {
+      "CAT": "ADJ",
+      "DEF": "phrasal: X (is) better than Y = X has higher evaluative modality than Y",
+      "EX": "apples are better than oranges; a treat better than chocolate is hard to find",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ",
+          "PP": {
+            "ROOT-WORD": "THAN",
+            "ROOT": "$VAR2",
+            "CAT": "PREP",
+            "OPT": "+",
+            "OBJ": {
+              "ROOT": "$VAR3",
+              "CAT": "N"
+            }
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          },
+          "GREATER-THAN": {
+            "VALUE": "REFSEM2"
+          }
+        },
+        "REFSEM2": {
+          "MODALITY": {
+            "TYPE": "EVALUATIVE",
+            "SCOPE": {
+              "VALUE": "^$VAR3"
+            }
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "BETTER-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BETTER-ADJ3",
+      "WORD": "BETTER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BETTER-ADV1": {
+      "CAT": "ADV",
+      "DEF": "more effectively, where the object of comparison is not specified",
+      "EX": "you see better with glasses; piano lessons help you play better",
+      "COMMENTS": "hopefully we can figure out the trigger event from context",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "EVENT": {
+          "PRECONDITION-OF": {
+            "VALUE": "REFSEM2"
+          },
+          "ALTERNATIVE": {
+            "VALUE": "REFSEM3"
+          }
+        },
+        "REFSEM2": {
+          "MODALITY": {
+            "TYPE": "EVALUATIVE",
+            "SCOPE": {
+              "VALUE": "^$VAR1"
+            },
+            "GREATER-THAN": {
+              "VALUE": "REFSEM3"
+            }
+          }
+        },
+        "REFSEM3": {
+          "MODALITY": {
+            "TYPE": "EVALUATIVE",
+            "SCOPE": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "BETTER-0",
+        "EVENTED-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BETTER-ADV1",
+      "WORD": "BETTER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

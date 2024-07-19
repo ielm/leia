@@ -1,0 +1,27 @@
+{
+  "name": "@DRAGON",
+  "isa": [
+    "@MYTHICAL-ANIMAL"
+  ],
+  "def": "a mythical monster, often depicted as a large, winged reptile breathing out fire",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@NON-HUMAN-ANIMAL-PART"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

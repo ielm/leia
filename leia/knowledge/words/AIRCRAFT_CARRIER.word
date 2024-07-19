@@ -1,0 +1,50 @@
+{
+  "word": "AIRCRAFT_CARRIER",
+  "senses": {
+    "AIRCRAFT_CARRIER-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SHIP": {
+          "SIZE": [
+            ">",
+            0.7
+          ],
+          "LOCATION-OF": {
+            "VALUE": "REFSEM1"
+          },
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM2"
+          }
+        },
+        "REFSEM1": {
+          "TAKE-OFF": {
+            "THEME": "AIRPLANE"
+          }
+        },
+        "REFSEM2": {
+          "TRANSPORTATION-SERVE": {
+            "THEME-1": "AIRPLANE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AIRCRAFT_CARRIER-N1",
+      "WORD": "AIRCRAFT_CARRIER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

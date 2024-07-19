@@ -1,0 +1,77 @@
+{
+  "name": "@BLEAT",
+  "isa": [
+    "@ANIMAL-NOISE-MAKING"
+  ],
+  "def": "to make the sound of a sheep",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@SHEEP"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@GIRAFFE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@GOAT"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@GIRAFFE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@GOAT"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SHEEP"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "not",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "not",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,61 @@
+{
+  "word": "GRAB",
+  "senses": {
+    "GRAB-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "BEGIN",
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "HOLD": {
+            "AGENT": {
+              "VALUE": "^$VAR2"
+            },
+            "THEME": {
+              "VALUE": "^$VAR3"
+            },
+            "INTENSITY": 0.8
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-2",
+        "GRABBED-0",
+        "THE",
+        "BOOK-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "GRASP"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "GRAB-V1",
+      "WORD": "GRAB",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

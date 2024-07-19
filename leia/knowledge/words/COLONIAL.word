@@ -1,0 +1,35 @@
+{
+  "word": "COLONIAL",
+  "senses": {
+    "COLONIAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to a style of architecture and furniture prevalent in the American colonies immediately before and during the Revolution ",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "HAS-STYLE": "COLONIAL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COLONIAL-ADJ1",
+      "WORD": "COLONIAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

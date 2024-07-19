@@ -1,0 +1,235 @@
+{
+  "word": "LAST",
+  "senses": {
+    "LAST-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "+ time expression - in the past",
+      "EX": "last week, the past 20 years",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "TIME-INTERVAL-UNIT",
+          "TIME": [
+            "<",
+            [
+              "FIND-ANCHOR-TIME"
+            ]
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "LAST-0",
+        "TIME-INTERVAL-UNIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "PAST"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "LAST-ADJ1",
+      "WORD": "LAST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LAST-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "+ cardinal number + noun",
+      "EX": "the last two people we interviewed were nice",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "NUM": {
+          "ROOT": "$VAR1",
+          "CAT": "NUM"
+        },
+        "ROOT": "$VAR2",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR2"
+          },
+          "CARDINALITY": {
+            "VALUE": "^$VAR1"
+          },
+          "ORDINALITY": [
+            "SELECT-FROM-END",
+            [
+              "VALUE",
+              "^$VAR1"
+            ]
+          ],
+          "COMPLETE": "NO"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "LAST-0",
+        "TEN-1",
+        "OBJECT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "NSUBJ",
+          "$VAR2",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LAST-ADJ2",
+      "WORD": "LAST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LAST-ADJ3": {
+      "CAT": "ADJ",
+      "DEF": "+ noun, not time expression",
+      "EX": "the last person we interviewed was nice",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR2",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR2"
+          },
+          "CARDINALITY": 1,
+          "ORDINALITY": [
+            "SELECT-FROM-END",
+            1
+          ],
+          "COMPLETE": "NO"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "LAST-0",
+        "OBJECT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR2",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "FINAL"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "LAST-ADJ3",
+      "WORD": "LAST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LAST-ADJ4": {
+      "CAT": "ADJ",
+      "DEF": "ordinal + to + last + noun",
+      "EX": "the second to last person we interviewed was nice",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NUM": {
+          "ROOT": "$VAR1",
+          "CAT": "NUM"
+        },
+        "PREP": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "TO"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR2",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR2"
+          },
+          "ORDINALITY": [
+            "SELECT-FROM-END",
+            [
+              "VALUE",
+              "^$VAR1"
+            ]
+          ]
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "TEN-1",
+        "TO-3",
+        "LAST-0",
+        "OBJECT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR2",
+          "$VAR0"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LAST-ADJ4",
+      "WORD": "LAST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

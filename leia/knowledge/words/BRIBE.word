@@ -1,0 +1,86 @@
+{
+  "word": "BRIBE",
+  "senses": {
+    "BRIBE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "if you give him a bribe he might agree",
+      "COMMENTS": "[D] a bribe can be something other than money, but it usually is money and we're going for the general case here",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "INSTRUMENT-OF": "BRIBERY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BRIBE-N1",
+      "WORD": "BRIBE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BRIBE-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "he bribed his colleague to cover for him",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "INDIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "XCOMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "BRIBERY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "BRIBED-0",
+        "THE",
+        "MAN-2",
+        "TO",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BRIBE-V1",
+      "WORD": "BRIBE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

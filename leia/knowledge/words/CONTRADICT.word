@@ -1,0 +1,162 @@
+{
+  "word": "CONTRADICT",
+  "senses": {
+    "CONTRADICT-V2": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "in his statement, bill contradicted what he had said earlier",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "CONTRADICT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": [
+              "NOT",
+              "HUMAN"
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "BILL-1",
+        "CONTRADICTED-0",
+        "HIS",
+        "EARLIER",
+        "STATEMENT-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONTRADICT-V2",
+      "WORD": "CONTRADICT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CONTRADICT-V3": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "in his statement, bill contradicted john",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "CONTRADICT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "BILL-1",
+        "CONTRADICTED-0",
+        "JOHN-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONTRADICT-V3",
+      "WORD": "CONTRADICT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CONTRADICT-V4": {
+      "CAT": "V",
+      "DEF": "direct quotation",
+      "EX": "'You're wrong!' he contradicted her.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "N": {
+          "ROOT": "$VAR3",
+          "CAT": "N",
+          "OPT": "+"
+        },
+        "QUOTED-SPEECH": [
+          [
+            "ROOT",
+            "$VAR2"
+          ],
+          [
+            "CAT",
+            "CL"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "CONTRADICT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "*QUOTE*",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING",
+        "*QUOTE*",
+        "*COMMA*",
+        "HE-1",
+        "CONTRADICTED-0",
+        "HER-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONTRADICT-V4",
+      "WORD": "CONTRADICT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

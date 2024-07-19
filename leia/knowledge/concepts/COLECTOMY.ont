@@ -1,0 +1,22 @@
+{
+  "name": "@COLECTOMY",
+  "isa": [
+    "@SURGICAL-REMOVAL"
+  ],
+  "def": "Surgical removal of part or all of the colon.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@COLON"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

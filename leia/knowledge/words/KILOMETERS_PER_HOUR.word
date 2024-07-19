@@ -1,0 +1,29 @@
+{
+  "word": "KILOMETERS_PER_HOUR",
+  "senses": {
+    "KILOMETERS_PER_HOUR-N1": {
+      "CAT": "N",
+      "DEF": "a unit of speed",
+      "EX": "He runs at 15 kilometers per hour",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "KILOMETERS-PER-HOUR",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "KILOMETRES_PER_HOUR"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "KILOMETERS_PER_HOUR-N1",
+      "WORD": "KILOMETERS_PER_HOUR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@TRIBE",
+  "isa": [
+    "@SOCIAL-OBJECT"
+  ],
+  "def": "A unit of sociopolitical organization consisting of a number of families, clans, or other groups who share a common ancestry and culture and among whom leadership is typically neither formalized nor permanent",
+  "local": [
+    {
+      "slot": "has-member",
+      "facet": "sem",
+      "filler": "@FAMILY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@NAME"
+    }
+  ],
+  "private": {}
+}

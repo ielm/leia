@@ -1,0 +1,52 @@
+{
+  "name": "@INVENT",
+  "isa": [
+    "@CREATIVE-COGNITIVE-EVENT"
+  ],
+  "def": "to think out or produce (a new device, process, etc.)",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DEMONSTRATE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ABSTRACT-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PROCEDURE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANALYTIC-COGNITIVE-EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CREATE-ARTIFACT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

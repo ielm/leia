@@ -1,0 +1,83 @@
+{
+  "word": "RUMANIAN",
+  "senses": {
+    "RUMANIAN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to rumania",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "RUMANIA"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ROUMANIAN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "RUMANIAN-ADJ1",
+      "WORD": "RUMANIAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RUMANIAN-N1": {
+      "CAT": "N",
+      "DEF": "a citizen of rumania",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CITIZEN": {
+          "HAS-NATIONALITY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "RUMANIA"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ROUMANIAN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "RUMANIAN-N1",
+      "WORD": "RUMANIAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

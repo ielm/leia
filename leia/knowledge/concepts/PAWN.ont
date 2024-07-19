@@ -1,0 +1,27 @@
+{
+  "name": "@PAWN",
+  "isa": [
+    "@TRANSFER-POSSESSION"
+  ],
+  "def": "to give (something) as security",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

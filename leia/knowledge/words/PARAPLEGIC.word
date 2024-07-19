@@ -1,0 +1,102 @@
+{
+  "word": "PARAPLEGIC",
+  "senses": {
+    "PARAPLEGIC-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "paralyzed from the waist down",
+      "EX": "a paraplegic gas station attendant ",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "EXPERIENCER-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "PARALYSIS": {
+            "LOCATION": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "SET": {
+            "CARDINALITY": 2,
+            "MEMBER-TYPE": "LEG"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "PARAPLEGIC-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "QUADRIPLEGIC"
+      ],
+      "SENSE": "PARAPLEGIC-ADJ1",
+      "WORD": "PARAPLEGIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PARAPLEGIC-N1": {
+      "CAT": "N",
+      "DEF": "a person with paralyzed legs",
+      "EX": "Her son is a paraplegic",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "EXPERIENCER-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "PARALYSIS": {
+            "LOCATION": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "SET": {
+            "CARDINALITY": 2,
+            "MEMBER-TYPE": "LEG"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PARAPLEGIC-N1",
+      "WORD": "PARAPLEGIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "word": "SHIPMENT",
+  "senses": {
+    "SHIPMENT-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "the shipment was heavy",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PHYSICAL-OBJECT": {
+          "THEME-OF": "SUPPLY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SHIPMENT-N1",
+      "WORD": "SHIPMENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SHIPMENT-N3": {
+      "CAT": "N",
+      "DEF": "the act of sending sth.",
+      "EX": "the shipment of the package (to france) (by the secretary)",
+      "COMMENTS": "I'm requiring that there be an of-PP because otherwise there's no way to disambiguate  with the 'object that is shipped' meaning. I'm ignoring the fact that the means of conveyance might be a ship; there's no way to autmomatically know",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT-WORD": "TO",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        },
+        "PP-2": {
+          "ROOT-WORD": "BY",
+          "ROOT": "$VAR5",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR6",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SEND": {
+          "AGENT": {
+            "VALUE": "^$VAR6"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "DESTINATION": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHIPMENT-0",
+        "OF-1",
+        "THE",
+        "WEBSITE-2",
+        "TO-3",
+        "THE",
+        "PLACE-4",
+        "BY-5",
+        "THE",
+        "HUMAN-6"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SHIPMENT-N3",
+      "WORD": "SHIPMENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

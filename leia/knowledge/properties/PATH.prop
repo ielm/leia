@@ -1,0 +1,9 @@
+{
+  "name": "$PATH",
+  "def": "the route from one point to another - for physical objects involved in physical events only",
+  "type": "case_role",
+  "range": "!AnyType",
+  "inverse": "$PATH-OF",
+  "measured-in": [],
+  "container": "$DIRECTIONAL-RELATION"
+}

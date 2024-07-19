@@ -1,0 +1,54 @@
+{
+  "word": "CORNER",
+  "senses": {
+    "CORNER-N2": {
+      "CAT": "N",
+      "DEF": "a street corner, corner of a room, etc.",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CORNER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ANGLE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CORNER-N2",
+      "WORD": "CORNER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CORNER-N401": {
+      "CAT": "N",
+      "COMMENTS": "*BLOCKS*",
+      "EX": "",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BOX-CORNER",
+      "SYNONYMS": [
+        "CORNER_OF_THE_BOX",
+        "CORNER_OF_A_BOX",
+        "BOX_CORNER"
+      ],
+      "SENSE": "CORNER-N401",
+      "WORD": "CORNER",
+      "DEF": "",
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "word": "IN_EXCHANGE_FOR",
+  "senses": {
+    "IN_EXCHANGE_FOR-PREP1": {
+      "CAT": "PREP",
+      "DEF": "indicates a trade, but often not of commodities",
+      "EX": "He mowed Jack's lawn in exchange for help with his math homework.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "EXCHANGE": {
+          "THEME": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME-1": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "IN_EXCHANGE_FOR-PREP1",
+      "WORD": "IN_EXCHANGE_FOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

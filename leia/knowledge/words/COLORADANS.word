@@ -1,0 +1,51 @@
+{
+  "word": "COLORADANS",
+  "senses": {
+    "COLORADANS-N1": {
+      "CAT": "N",
+      "DEF": "the set of citizens of colorado",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "NUMBER": "PL"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "REFSEM1"
+          },
+          "QUANT": 1
+        },
+        "REFSEM1": {
+          "HUMAN": {
+            "HAS-STATE-ADDRESS": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "STATE": {
+            "HAS-NAME": {
+              "VALUE": "COLORADO"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "COLORADOANS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "COLORADANS-N1",
+      "WORD": "COLORADANS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

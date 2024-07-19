@@ -1,0 +1,19 @@
+{
+  "name": "@PER-MILL",
+  "isa": [
+    "@PERCENTAGE-UNIT"
+  ],
+  "def": "one part per thousand parts, a comparative ratio; .001",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.001
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

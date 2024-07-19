@@ -1,0 +1,33 @@
+{
+  "word": "WRITING_PAPER",
+  "senses": {
+    "WRITING_PAPER-N1": {
+      "CAT": "N",
+      "DEF": "paper used for writing",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PAPER": {
+          "INSTRUMENT-OF": "WRITE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "STATIONARY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "WRITING_PAPER-N1",
+      "WORD": "WRITING_PAPER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

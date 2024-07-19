@@ -1,0 +1,32 @@
+{
+  "name": "@OTALGIA",
+  "isa": [
+    "@PAIN"
+  ],
+  "def": "an ache localized in the middle or inner ear",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INTERNAL-EAR"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MIDDLE-EAR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@CANCER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

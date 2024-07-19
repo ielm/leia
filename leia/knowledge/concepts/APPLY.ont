@@ -1,0 +1,187 @@
+{
+  "name": "@APPLY",
+  "isa": [
+    "@PHYSICAL-EVENT"
+  ],
+  "def": "to put or spread (something) on",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CREAM-MED"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SAUCE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TAR"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FLAVORING"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MARINADE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LUBRICANT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GLUE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PERFUME"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TOOTHPASTE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@STICKY-TAPE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CLEANING-CLOTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOP"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@KNIFE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SPOON"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@BRUSH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SHOVEL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@RAKE-IMPLEMENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TOWEL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TOOTHBRUSH"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CEMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LINIMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PAINT-LIQUID"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FERTILIZER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FRUIT-PRESERVE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CLEANSING-MATERIAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SHAVING-CREAM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MUD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BUTTER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CREAM-CHEESE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COOKING-OIL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

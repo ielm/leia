@@ -1,0 +1,9 @@
+{
+  "name": "$NET-LOSS-ATTRIBUTE",
+  "def": "Financial loss.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

@@ -1,0 +1,31 @@
+{
+  "word": "PILL",
+  "senses": {
+    "PILL-N1": {
+      "CAT": "N",
+      "DEF": "a small pellet or tablet of medicine, often coated, taken by swallowing whole or by chewing. ",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PILL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "CAPSULE",
+        "TAB",
+        "TABLET"
+      ],
+      "SENSE": "PILL-N1",
+      "WORD": "PILL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

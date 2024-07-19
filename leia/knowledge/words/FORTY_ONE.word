@@ -1,0 +1,72 @@
+{
+  "word": "FORTY_ONE",
+  "senses": {
+    "FORTY_ONE-NUM1": {
+      "CAT": "NUM",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "NUM"
+      },
+      "SEM-STRUC": {
+        "PHYSICAL-OBJECT": {
+          "CARDINALITY": {
+            "VALUE": 41
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "41"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FORTY_ONE-NUM1",
+      "WORD": "FORTY_ONE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FORTY_ONE-NUM2": {
+      "CAT": "NUM",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NUM": {
+          "ROOT": "$VAR0",
+          "CAT": "NUM"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "NUMBER": "PL"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "CARDINALITY": 41
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "41"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FORTY_ONE-NUM2",
+      "WORD": "FORTY_ONE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

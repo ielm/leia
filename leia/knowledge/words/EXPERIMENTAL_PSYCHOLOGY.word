@@ -1,0 +1,39 @@
+{
+  "word": "EXPERIMENTAL_PSYCHOLOGY",
+  "senses": {
+    "EXPERIMENTAL_PSYCHOLOGY-N1": {
+      "CAT": "N",
+      "DEF": "research aimed at better knowledge of learning, memory, perception, and other basic mental processes",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PSYCHOLOGY": {
+          "FIELD-STUDIES-AREA": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "EXPERIMENT-EVENT": {
+            "THEME": "MEMORY",
+            "THEME-1": "LEARN"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EXPERIMENTAL_PSYCHOLOGY-N1",
+      "WORD": "EXPERIMENTAL_PSYCHOLOGY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

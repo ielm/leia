@@ -1,0 +1,42 @@
+{
+  "word": "HIGH_RANKING",
+  "senses": {
+    "HIGH_RANKING-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "having a high rank",
+      "EX": "She's a high-ranking tennis player She's the high-ranking tennis player on the East Coast",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RANK": [
+            ">",
+            0.8
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "HIGH-RANKED",
+        "HIGH_RANKED",
+        "HIGH_RANKING"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "HIGH_RANKING-ADJ1",
+      "WORD": "HIGH_RANKING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "@DEFECATE",
+  "isa": [
+    "@EXCRETE"
+  ],
+  "def": "To void feces from the bowels.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@FECES"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@WASTE-MATERIAL"
+    }
+  ],
+  "private": {}
+}

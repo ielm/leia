@@ -1,0 +1,54 @@
+{
+  "word": "PAINFUL",
+  "senses": {
+    "PAINFUL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "causing pain",
+      "EX": "a painful injury",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PAIN": {
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1",
+            "SEM": [
+              "NOT",
+              "ANIMATE-PART"
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "RAW-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "SORE"
+      ],
+      "HYPONYMS": [
+        "RAW"
+      ],
+      "SENSE": "PAINFUL-ADJ1",
+      "WORD": "PAINFUL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

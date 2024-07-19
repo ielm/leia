@@ -1,0 +1,32 @@
+{
+  "word": "SOMETHING",
+  "senses": {
+    "SOMETHING-N1": {
+      "CAT": "N",
+      "DEF": "refers to some inanimate object or event",
+      "EX": "can you give me something for the pain? he gave me something for the pain. I know something you don't know. something [= event] made her cry.",
+      "COMMENTS": "[D] The idea is 'go instantiate an instance of a ALL (an object, event or property value), then use a meaning procedure to determine what is being referred to more closely. The meaning procedure should:  1. determine which predicate this is an argument of;  2. check the lexicon and ontology for semantic  restrictions on the given argument for the given predicate;  3. if the given argument is supposed to be an   object with given semantic features [e.g., 'edible' in 'i want to eat something'], instantiate an inanimate   object with those semantic features;  4. else, if the given argument is supposed  to be an event, instantiate   an event with the given - if any are determinable - semantic features.   ",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "ALL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SOMETHING-N1",
+      "WORD": "SOMETHING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

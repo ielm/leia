@@ -1,0 +1,35 @@
+{
+  "word": "COASTAL",
+  "senses": {
+    "COASTAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "on the coast",
+      "EX": "coastal waters, coastal fowl",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "LOCATION": "COAST"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COASTAL-ADJ1",
+      "WORD": "COASTAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

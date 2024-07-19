@@ -1,0 +1,126 @@
+{
+  "word": "INTO",
+  "senses": {
+    "INTO-PREP1": {
+      "CAT": "PREP",
+      "DEF": "indicates destination",
+      "EX": "they went into the restaurant",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "MOTION-EVENT",
+            "CHANGE-LOCATION"
+          ],
+          "DESTINATION": {
+            "VALUE": "^$VAR2",
+            "SEM": [
+              "NOT",
+              "ANIMATE-PART"
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE",
+        "WENT-1",
+        "INTO-0",
+        "THE",
+        "STORE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "IN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "INTO-PREP1",
+      "WORD": "INTO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "INTO-PREP2": {
+      "CAT": "PREP",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "DESTINATION": {
+            "VALUE": "^$VAR2"
+          },
+          "SEM": "ANIMATE-PART"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "INTO-0",
+        "THE",
+        "ANIMATE-PART-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INTO-PREP2",
+      "WORD": "INTO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

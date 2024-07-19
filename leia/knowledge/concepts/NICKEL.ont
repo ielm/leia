@@ -1,0 +1,45 @@
+{
+  "name": "@NICKEL",
+  "isa": [
+    "@HARD-METALLIC-ELEMENT",
+    "@DUCTILE-METALLIC-ELEMENT"
+  ],
+  "def": "a silvery, hard, ductile, ferromagnetic metallic element used in alloys, in corrosion-resistant surfaces and batteries, and for electroplating",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        28
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        58
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

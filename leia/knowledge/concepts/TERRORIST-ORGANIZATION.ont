@@ -1,0 +1,16 @@
+{
+  "name": "@TERRORIST-ORGANIZATION",
+  "isa": [
+    "@POLITICAL-ENTITY"
+  ],
+  "def": "An organization that perpetrates acts of terrorism -the unlawful use or threatened use of force or violence against people or property with the intention of intimidating or coercing societies or governments, often for ideological or political reasons.",
+  "local": [
+    {
+      "slot": "has-member",
+      "facet": "default",
+      "filler": "@TERRORIST"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

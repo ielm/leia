@@ -1,0 +1,19 @@
+{
+  "name": "@PINT-IMPERIAL",
+  "isa": [
+    "@VOLUME-UNIT"
+  ],
+  "def": "a unit of volume dry or liquid measure, equivalent to about 1.2 US liquid pints or 1.03 US dry pints.",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.00056826126
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

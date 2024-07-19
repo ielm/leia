@@ -1,0 +1,32 @@
+{
+  "name": "@THUNDERSTORM",
+  "isa": [
+    "@STORM"
+  ],
+  "def": "a storm accompanied by thunder and lightning",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@THUNDER"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@LIGHTNING"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@SKY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@NATURAL-EVENT"
+    }
+  ],
+  "private": {}
+}

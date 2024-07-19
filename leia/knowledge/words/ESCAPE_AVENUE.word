@@ -1,0 +1,32 @@
+{
+  "word": "ESCAPE_AVENUE",
+  "senses": {
+    "ESCAPE_AVENUE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "For the driving corpus, we decided to 'strong-arm' these names instead of trying to get a full named-entity recognizer working.",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SURFACE-STREET": {
+          "HAS-NAME": {
+            "VALUE": "ESCAPE_AVENUE"
+          }
+        }
+      },
+      "SENSE": "ESCAPE_AVENUE-N1",
+      "WORD": "ESCAPE_AVENUE",
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

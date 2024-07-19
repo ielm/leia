@@ -1,0 +1,22 @@
+{
+  "name": "@CALCULATE",
+  "isa": [
+    "@MATHEMATICAL-OPERATION"
+  ],
+  "def": "to determine by using mathematical operations",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MATHEMATICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

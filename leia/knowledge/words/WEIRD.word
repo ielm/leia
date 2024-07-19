@@ -1,0 +1,63 @@
+{
+  "word": "WEIRD",
+  "senses": {
+    "WEIRD-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "strange, odd; rather derogatory",
+      "EX": "This movie is weird. Your neighbor is weird.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0.2,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR1": {
+          "TYPICALNESS-ATTRIBUTE": [
+            "<",
+            0.3
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "KOOKY-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "BIZARRE",
+        "DEVIANT",
+        "ERRANT",
+        "FREAKISH",
+        "KOOKY",
+        "ODD",
+        "ODDBALL",
+        "QUEER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "WEIRD-ADJ1",
+      "WORD": "WEIRD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

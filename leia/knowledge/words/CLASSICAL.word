@@ -1,0 +1,73 @@
+{
+  "word": "CLASSICAL",
+  "senses": {
+    "CLASSICAL-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "related to traditional genre of music conforming to an established   form and appealing to critical interest and developed musical taste",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "HAS-STYLE": "CLASSICAL-MUSIC"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CLASSICAL-ADJ2",
+      "WORD": "CLASSICAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CLASSICAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "Related to the ancient Greeks and Romans, their art, literature, and architecture",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "HAS-STYLE": "CLASSICAL-STYLE",
+          "SEM": [
+            "NOT",
+            "MUSICAL-COMPOSITION"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "HELLENIC",
+        "GRECO-ROMAN",
+        "HELLENISTIC"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CLASSICAL-ADJ1",
+      "WORD": "CLASSICAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

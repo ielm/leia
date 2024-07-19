@@ -1,0 +1,9 @@
+{
+  "name": "$BUSINESS-CAPACITY",
+  "def": "the maximum volume of goods or services that a corporation can produce under given conditions",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-ATTRIBUTE"
+}

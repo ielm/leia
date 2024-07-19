@@ -1,0 +1,179 @@
+{
+  "name": "@RESEARCH",
+  "isa": [
+    "@INVESTIGATE",
+    "@ANALYTIC-COGNITIVE-EVENT",
+    "@WORK-ACTIVITY"
+  ],
+  "def": "Conduct studies to develop a new object, method, or technology, or to explain natural or artificial phenomena.",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@RESEARCHER"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@ANALYST"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@ACADEMIC-BUILDING"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@GRADUATE-STUDENT"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@ACADEMIC-SPECIALIST"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@PROFESSOR"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@LABORATORY"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@TEACHER"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@STUDENT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@OFFICE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@DETECTIVE"
+    },
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ORGANIZATION"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "business"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "casual"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "formal"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "sport"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

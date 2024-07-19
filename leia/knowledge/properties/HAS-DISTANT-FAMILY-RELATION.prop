@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-DISTANT-FAMILY-RELATION",
+  "def": "a generalized concept for family relations outside of the most common and close family relations; more relations that further specify other family relations (e.g., second cousin, second cousin twice removed, etc.) can be added later if necessary for reasoning",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$DISTANT-FAMILY-RELATION-OF",
+  "measured-in": [],
+  "container": "$FAMILY-RELATION"
+}

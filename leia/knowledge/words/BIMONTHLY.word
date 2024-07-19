@@ -1,0 +1,96 @@
+{
+  "word": "BIMONTHLY",
+  "senses": {
+    "BIMONTHLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "occurring every 2 months -- 6 times per year",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "POST-VERB-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "ITERATION": "MULTIPLE",
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR1": {
+          "FREQUENCY": {
+            "VALUE": 2,
+            "MEASURING-UNIT": "MONTH"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "OBJECTED-1",
+        "BIMONTHLY-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BIMONTHLY-ADV1",
+      "WORD": "BIMONTHLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BIMONTHLY-N1": {
+      "CAT": "N",
+      "DEF": "a periodical published every 2 months  -- 6 times per year",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PERIODICAL": {
+          "THEME-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "ASPECT": {
+          "ITERATION": "MULTIPLE",
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "PUBLISH": {
+            "FREQUENCY": {
+              "VALUE": 2,
+              "MEASURING-UNIT": "MONTH"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BIMONTHLY-N1",
+      "WORD": "BIMONTHLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

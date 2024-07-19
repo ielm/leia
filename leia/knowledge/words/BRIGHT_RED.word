@@ -1,0 +1,61 @@
+{
+  "word": "BRIGHT_RED",
+  "senses": {
+    "BRIGHT_RED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "a color; esp. important in medicine",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "COLOR": "BRIGHT-RED"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BRIGHT_RED-ADJ1",
+      "WORD": "BRIGHT_RED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BRIGHT_RED-N1": {
+      "CAT": "N",
+      "DEF": "with no explicit modifyee",
+      "EX": "some people like bright red",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PHYSICAL-OBJECT": {
+          "COLOR": "BRIGHT-RED"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BRIGHT_RED-N1",
+      "WORD": "BRIGHT_RED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

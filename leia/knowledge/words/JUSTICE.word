@@ -1,0 +1,49 @@
+{
+  "word": "JUSTICE",
+  "senses": {
+    "JUSTICE-N1": {
+      "CAT": "N",
+      "DEF": "fairness or righteousness in judgment or decision-making",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "JUSTICE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "JUSTICE-N1",
+      "WORD": "JUSTICE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "JUSTICE-N2": {
+      "CAT": "N",
+      "DEF": "a judge",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "JUDGE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "JUSTICE-N2",
+      "WORD": "JUSTICE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "word": "WON",
+  "senses": {
+    "WON-N1": {
+      "CAT": "N",
+      "DEF": "currency of korea or korean-democratic-republic or north-korea or south-korea",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": {
+            "KOREA": [
+              "KOREAN_DEMOCRATIC_REPUBLIC",
+              "NORTH_KOREA",
+              "SOUTH_KOREA"
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WON-N1",
+      "WORD": "WON",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

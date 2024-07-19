@@ -1,0 +1,9 @@
+{
+  "name": "$EXPENDITURE",
+  "def": "money spent from a budget",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

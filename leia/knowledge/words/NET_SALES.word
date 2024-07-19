@@ -1,0 +1,28 @@
+{
+  "word": "NET_SALES",
+  "senses": {
+    "NET_SALES-N1": {
+      "CAT": "N",
+      "DEF": " Gross sales for a period after cash discounts, returns, and freight expenses have been deducted",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "NUMBER": "PL"
+      },
+      "SEM-STRUC": "NET-SALES",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NET_SALES-N1",
+      "WORD": "NET_SALES",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "word": "BOLOGNA",
+  "senses": {
+    "BOLOGNA-N1": {
+      "CAT": "N",
+      "DEF": "seasoned smoked sausage made of   mixed meats, such as beef, pork, and veal",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SAUSAGE": {
+          "SPICINESS": [
+            "><",
+            0.5,
+            0.7
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "BOLONEY",
+        "BALONEY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BOLOGNA-N1",
+      "WORD": "BOLOGNA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

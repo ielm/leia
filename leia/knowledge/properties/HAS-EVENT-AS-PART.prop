@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-EVENT-AS-PART",
+  "def": "relations between an event and its parts",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$PART-OF-EVENT",
+  "measured-in": [],
+  "container": "$RELATION"
+}

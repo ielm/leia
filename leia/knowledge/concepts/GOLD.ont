@@ -1,0 +1,36 @@
+{
+  "name": "@GOLD",
+  "isa": [
+    "@PRECIOUS-METAL"
+  ],
+  "def": "a soft yellow corrosion resistant element the most malleable and ductile metal occurring in veins and alluvial deposits and recovered by mining or by panning or sluicing it is a good thermal and electrical conductor is generally alloyed to increase its strength and is used as an international monetary standard in jewelry for decoration and as a plated coating on a wide variety of electrical and mechanical components",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        79
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        196
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

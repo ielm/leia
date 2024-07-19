@@ -1,0 +1,21 @@
+{
+  "name": "@CITRUS-FRUIT",
+  "isa": [
+    "@TREE-FRUIT"
+  ],
+  "def": "sectioned, pulpy fruit which grow on evergreen trees which are cultivated in tropical and subtropical regions",
+  "local": [],
+  "block": [
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "cylindrical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "egglike"
+    }
+  ],
+  "private": {}
+}

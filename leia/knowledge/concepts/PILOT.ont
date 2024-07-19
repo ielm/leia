@@ -1,0 +1,38 @@
+{
+  "name": "@PILOT",
+  "isa": [
+    "@AIRPLANE-STAFF",
+    "@VEHICLE-ROLE"
+  ],
+  "def": "A qualified operator of an aircraft",
+  "local": [
+    {
+      "slot": "operator-of",
+      "facet": "sem",
+      "filler": "@AIRPLANE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "operator-of",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "operator-of",
+      "facet": "sem",
+      "filler": "@DEVICE"
+    },
+    {
+      "slot": "operator-of",
+      "facet": "sem",
+      "filler": "@VEHICLE"
+    }
+  ],
+  "private": {}
+}

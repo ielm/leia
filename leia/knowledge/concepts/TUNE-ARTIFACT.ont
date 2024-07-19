@@ -1,0 +1,52 @@
+{
+  "name": "@TUNE-ARTIFACT",
+  "isa": [
+    "@TECHNOLOGY-EVENT"
+  ],
+  "def": "Adjust, calibrate a device or an instrument for proper functioning",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@IMPLEMENT"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@MECHANIC"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@MUSICIAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MUSICAL-INSTRUMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DEVICE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VEHICLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

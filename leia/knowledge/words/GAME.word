@@ -1,0 +1,79 @@
+{
+  "word": "GAME",
+  "senses": {
+    "GAME-N1": {
+      "CAT": "N",
+      "DEF": "a game artifact",
+      "EX": "His father bought him a new game for his birthday",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "GAME-ARTIFACT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GAME-N1",
+      "WORD": "GAME",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "GAME-N2": {
+      "CAT": "N",
+      "DEF": "wild birds, animals or fish hunted for food or sport",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "ELEMENTS": [
+            "FISH",
+            "MAMMAL",
+            "BIRD"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GAME-N2",
+      "WORD": "GAME",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "GAME-N3": {
+      "CAT": "N",
+      "DEF": "a game as an activity",
+      "EX": "We played a game",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "GAME-ACTIVITY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GAME-N3",
+      "WORD": "GAME",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

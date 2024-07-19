@@ -1,0 +1,22 @@
+{
+  "name": "@SAW",
+  "isa": [
+    "@CUTTING-IMPLEMENT"
+  ],
+  "def": "a cutting tool consisting of a thin metal blade or disk with sharp teeth",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BLADE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

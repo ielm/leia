@@ -1,0 +1,74 @@
+{
+  "word": "ACQUAINTED",
+  "senses": {
+    "ACQUAINTED-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "familar with (factual information)",
+      "EX": "are you acquainted with relativity? he became acquainted with english royalty for the exam",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ",
+          "PP": {
+            "ROOT-WORD": "WITH",
+            "ROOT": "$VAR2",
+            "CAT": "PREP",
+            "OBJ": {
+              "ROOT": "$VAR3",
+              "CAT": "N"
+            }
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "EXPERIENCER-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "KNOW": {
+            "THEME": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "INFORMATION": {
+            "ABOUT-AS-TOPIC": {
+              "VALUE": "^$VAR3"
+            }
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "FAMILIAR-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "FAMILIAR"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ACQUAINTED-ADJ2",
+      "WORD": "ACQUAINTED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

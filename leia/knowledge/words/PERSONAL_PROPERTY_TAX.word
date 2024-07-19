@@ -1,0 +1,31 @@
+{
+  "word": "PERSONAL_PROPERTY_TAX",
+  "senses": {
+    "PERSONAL_PROPERTY_TAX-N1": {
+      "CAT": "N",
+      "DEF": "tax paid on movable items such as automobiles, furniture, or machinery used in business",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "TAX": {
+          "RELATION": "PERSONAL-PROPERTY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PERSONAL_PROPERTY_TAX-N1",
+      "WORD": "PERSONAL_PROPERTY_TAX",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

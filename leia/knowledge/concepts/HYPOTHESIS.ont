@@ -1,0 +1,19 @@
+{
+  "name": "@HYPOTHESIS",
+  "isa": [
+    "@ABSTRACT-OBJECT"
+  ],
+  "def": "a supposition used as the basis for further investigation",
+  "local": [
+    {
+      "slot": "cogency",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

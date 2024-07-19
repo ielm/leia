@@ -1,0 +1,47 @@
+{
+  "word": "INCREASED",
+  "senses": {
+    "INCREASED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "greater than normal",
+      "EX": "",
+      "COMMENTS": "stepped_up level of attacks",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "PROPERTY",
+          "RANGE": {
+            "RELATIVE-TO-NORM": [
+              ">",
+              0.5
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "INCREASED-0",
+        "PROPERTY-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "UP",
+        "STEPPED_UP"
+      ],
+      "SENSE": "INCREASED-ADJ1",
+      "WORD": "INCREASED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

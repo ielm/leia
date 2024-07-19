@@ -1,0 +1,45 @@
+{
+  "word": "PENSIONER",
+  "senses": {
+    "PENSIONER-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "AGENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "RETIRE": {
+            "TIME": [
+              "<",
+              [
+                "FIND-ANCHOR-TIME"
+              ]
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "RETIREE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PENSIONER-N1",
+      "WORD": "PENSIONER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

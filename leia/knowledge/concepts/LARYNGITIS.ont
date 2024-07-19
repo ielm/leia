@@ -1,0 +1,37 @@
+{
+  "name": "@LARYNGITIS",
+  "isa": [
+    "@INFLAMMATION"
+  ],
+  "def": "inflammation of the larynx",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LARYNX"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@PNEUMONIA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,304 @@
+{
+  "word": "CONTROL",
+  "senses": {
+    "CONTROL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "place where management activities are conducted",
+      "EX": "control room; control tower",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CONTROL-EVENT-SOCIAL": {
+          "LOCATION": "^$VAR1"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CONTROL-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONTROL-ADJ1",
+      "WORD": "CONTROL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CONTROL-N1": {
+      "CAT": "N",
+      "DEF": "authority or power",
+      "EX": "he regained control of the airplane he lost control over the meeting you need to get control of yourself",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": [
+            "OF",
+            "OVER"
+          ],
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "CONTROL-EVENT-SOCIAL": {
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CONTROL-0",
+        "OF-1",
+        "THE",
+        "OBJECT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONTROL-N1",
+      "WORD": "CONTROL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CONTROL-N2": {
+      "CAT": "N",
+      "DEF": "restriction of something",
+      "EX": "diet and exercise were all that were needed for control of his high blood pressure",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "RESTRICT": {
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CONTROL-0",
+        "OF-1",
+        "THE",
+        "OBJECT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONTROL-N2",
+      "WORD": "CONTROL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CONTROL-N3": {
+      "CAT": "N",
+      "DEF": "an artifact used to control something, like a machine",
+      "EX": "Take hold of the controls before you hit the gas.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "IMPLEMENT": {
+          "INSTRUMENT-OF": "CONTROL-EVENT-SOCIAL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONTROL-N3",
+      "WORD": "CONTROL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CONTROL-V1": {
+      "CAT": "V",
+      "DEF": "to exercise authority (over someone or something); to direct",
+      "EX": "she's controlling the entire operation you need to control immigration over the border she's always trying to control me he controls the armed forces his forces control the southern half of the country",
+      "COMMENTS": "[D] focus on the activity of control; compare run-v9 (supervise)",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "CONTROL-EVENT-SOCIAL": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOG-1",
+        "CONTROLS-0",
+        "THE",
+        "HOUSE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONTROL-V1",
+      "WORD": "CONTROL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CONTROL-V2": {
+      "CAT": "V",
+      "DEF": "used to indicate an animate part as having some effect on another object",
+      "EX": "the nervous system controls many parts of the body",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "CONTROL-EVENT-PHYSICAL": {
+          "INSTRUMENT": {
+            "VALUE": "^$VAR1",
+            "SEM": "ANIMATE-PART"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": [
+              "ANIMATE",
+              "ANIMATE-PART"
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "CONTROLLED-0",
+        "THE",
+        "LEGS-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PARTMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONTROL-V2",
+      "WORD": "CONTROL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

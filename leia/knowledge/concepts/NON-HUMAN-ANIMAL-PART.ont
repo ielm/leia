@@ -1,0 +1,32 @@
+{
+  "name": "@NON-HUMAN-ANIMAL-PART",
+  "isa": [
+    "@ANIMATE-PART"
+  ],
+  "def": "all external parts of all animals",
+  "local": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@ZOOLOGY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@GAS"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "semi-solid"
+    }
+  ],
+  "private": {}
+}

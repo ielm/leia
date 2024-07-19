@@ -1,0 +1,39 @@
+{
+  "word": "NINTH_RANKING",
+  "senses": {
+    "NINTH_RANKING-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "the 9th ranked",
+      "EX": "She's the ninth-ranking tennis player on the East Coast",
+      "COMMENTS": "ultimately, -ranking and -ranked need to become a meaning  procedure to cover all numbers",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RANK": 9
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "NINTH_RANKING",
+        "NINTH_RANKED",
+        "NINTH-RANKED"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "NINTH_RANKING-ADJ1",
+      "WORD": "NINTH_RANKING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

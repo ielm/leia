@@ -1,0 +1,109 @@
+{
+  "word": "BIG",
+  "senses": {
+    "BIG-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "important; not about physical object",
+      "EX": "",
+      "COMMENTS": "",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "NOT",
+            "PHYSICAL-OBJECT"
+          ],
+          "IMPORTANCE": 0.7
+        }
+      },
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BIG-ADJ2",
+      "WORD": "BIG",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "BIG-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "of big size",
+      "EX": "",
+      "COMMENTS": "",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "PHYSICAL-OBJECT",
+          "SIZE": 0.7
+        }
+      },
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BIG-ADJ1",
+      "WORD": "BIG",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "BIG-ADJ401": {
+      "CAT": "ADJ",
+      "COMMENTS": "*BLOCKS*",
+      "EX": "",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "PHYSICAL-OBJECT",
+          "SIZE": 0.8
+        }
+      },
+      "SYNONYMS": [
+        "LARGE"
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THERE",
+        "IS",
+        "A",
+        "BIG-0",
+        "BLOCK-1"
+      ],
+      "SENSE": "BIG-ADJ401",
+      "WORD": "BIG",
+      "DEF": "NIL",
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

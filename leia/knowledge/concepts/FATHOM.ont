@@ -1,0 +1,19 @@
+{
+  "name": "@FATHOM",
+  "isa": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "def": "an imperial/US unit for measuring the depth of water; 6*foot",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.828804
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

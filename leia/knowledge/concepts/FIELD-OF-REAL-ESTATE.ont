@@ -1,0 +1,22 @@
+{
+  "name": "@FIELD-OF-REAL-ESTATE",
+  "isa": [
+    "@FIELD-OF-STUDY"
+  ],
+  "def": "The field of study of real estate development, business, etc.",
+  "local": [
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@REAL-ESTATE-SERVICE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@WORK-ACTIVITY"
+    }
+  ],
+  "private": {}
+}

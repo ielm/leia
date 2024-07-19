@@ -1,0 +1,62 @@
+{
+  "name": "@FINANCING",
+  "isa": [
+    "@EVERYDAY-FINANCIAL-EVENT"
+  ],
+  "def": "to supply or get money, especially for loans and providing credit",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@UNDERWRITER"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@LENDING-CORPORATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@BANK"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@FOUNDATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LOAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CREDIT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MONEY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

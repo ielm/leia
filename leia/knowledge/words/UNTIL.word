@@ -1,0 +1,202 @@
+{
+  "word": "UNTIL",
+  "senses": {
+    "UNTIL-CONJ1": {
+      "CAT": "CONJ",
+      "DEF": "a temporal relation",
+      "EX": "she worked until she had finished her homework",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "CONJ",
+        "CL-1": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "TIME": [
+            "<",
+            [
+              "VALUE",
+              "^$VAR2.TIME"
+            ]
+          ]
+        },
+        "^$VAR2": {
+          "SEM-1": "EVENT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "UNTIL-0",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVCL",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "MARK",
+          "$VAR2",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "TILL"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "UNTIL-CONJ1",
+      "WORD": "UNTIL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "UNTIL-PREP1": {
+      "CAT": "PREP",
+      "DEF": "used to show the end point in time",
+      "EX": "work until 5; study until january; a class until 6:00",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "TIME-END": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "UNTIL-0",
+        "SIX-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "TILL"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "UNTIL-PREP1",
+      "WORD": "UNTIL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "UNTIL-PREP2": {
+      "CAT": "PREP",
+      "DEF": "a temporal relation; absolute time, not time span",
+      "EX": "I won't go until he calls.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "TIME": [
+            "<",
+            [
+              "VALUE",
+              "^$VAR2.TIME"
+            ]
+          ]
+        },
+        "^$VAR2": {
+          "SEM-1": "EVENT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "UNTIL-0",
+        "THE",
+        "CURE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "TILL"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "UNTIL-PREP2",
+      "WORD": "UNTIL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

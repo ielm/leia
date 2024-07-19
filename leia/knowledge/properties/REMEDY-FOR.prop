@@ -1,0 +1,9 @@
+{
+  "name": "$REMEDY-FOR",
+  "def": "A remedy for a disease.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$MEDICAL-RELATION"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "@PROFESSOR",
+  "isa": [
+    "@UNIVERSITY-FACULTY"
+  ],
+  "def": "a teacher or instructor in an institution of higher learning",
+  "local": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0.5
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    }
+  ],
+  "private": {}
+}

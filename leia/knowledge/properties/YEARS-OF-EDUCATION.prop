@@ -1,0 +1,11 @@
+{
+  "name": "$YEARS-OF-EDUCATION",
+  "def": "years of education required to complete a particular college degree",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@MEASURING-UNIT"
+  ],
+  "container": "$SCALAR-HUMAN-ATTRIBUTE"
+}

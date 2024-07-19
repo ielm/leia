@@ -1,0 +1,49 @@
+{
+  "word": "CARDINAL",
+  "senses": {
+    "CARDINAL-N1": {
+      "CAT": "N",
+      "DEF": "a high church official, ranking just below the pope",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CARDINAL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CARDINAL-N1",
+      "WORD": "CARDINAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CARDINAL-N2": {
+      "CAT": "N",
+      "DEF": "a bird",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CARDINAL-BIRD",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CARDINAL-N2",
+      "WORD": "CARDINAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

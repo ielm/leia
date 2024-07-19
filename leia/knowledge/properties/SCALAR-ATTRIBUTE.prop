@@ -1,0 +1,11 @@
+{
+  "name": "$SCALAR-ATTRIBUTE",
+  "def": "An attribute whose range has a scalar value.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@MEASURING-UNIT"
+  ],
+  "container": "$ATTRIBUTE"
+}

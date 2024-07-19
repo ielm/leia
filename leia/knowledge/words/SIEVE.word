@@ -1,0 +1,91 @@
+{
+  "word": "SIEVE",
+  "senses": {
+    "SIEVE-N1": {
+      "CAT": "N",
+      "DEF": "a metal object used for filtering, straining",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SIEVE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "STRAINER",
+        "SIFTER",
+        "COLANDER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SIEVE-N1",
+      "WORD": "SIEVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SIEVE-V1": {
+      "CAT": "V",
+      "DEF": "to pass through a sieve",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "FILTER": {
+          "INSTRUMENT": "SIEVE",
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "SIEVED-0",
+        "THE",
+        "GRAIN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "STRAIN",
+        "SIFT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SIEVE-V1",
+      "WORD": "SIEVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

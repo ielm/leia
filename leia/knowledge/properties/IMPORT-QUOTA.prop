@@ -1,0 +1,9 @@
+{
+  "name": "$IMPORT-QUOTA",
+  "def": "the maximum value of goods and services which can be taken into a country (from specific other country)",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

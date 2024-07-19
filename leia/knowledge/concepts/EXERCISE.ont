@@ -1,0 +1,67 @@
+{
+  "name": "@EXERCISE",
+  "isa": [
+    "@ANIMAL-LIVING-EVENT"
+  ],
+  "def": "activity for developing the body or for maintaining the health of an animal such as a horse",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GYMNASIUM"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SPORTS-ARENA"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@BICYCLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SWIMMING-POOL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MUSCLE-ORGAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BODY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

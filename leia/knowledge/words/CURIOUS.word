@@ -1,0 +1,40 @@
+{
+  "word": "CURIOUS",
+  "senses": {
+    "CURIOUS-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "the curious child; she's curious about her grades",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BE-CURIOUS": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CURIOUS-0",
+        "ANIMAL-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CURIOUS-ADJ1",
+      "WORD": "CURIOUS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

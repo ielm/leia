@@ -1,0 +1,62 @@
+{
+  "word": "AMASS",
+  "senses": {
+    "AMASS-V1": {
+      "CAT": "V",
+      "DEF": "gather in large quantities",
+      "EX": "they amassed guns before the start of the fighting",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "HOARD": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-2",
+        "AMASSED-0",
+        "FOOD-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "STOCKPILE"
+      ],
+      "SENSE": "AMASS-V1",
+      "WORD": "AMASS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

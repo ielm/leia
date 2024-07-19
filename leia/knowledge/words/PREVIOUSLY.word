@@ -1,0 +1,57 @@
+{
+  "word": "PREVIOUSLY",
+  "senses": {
+    "PREVIOUSLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "indicates that some event happened in the past",
+      "EX": "She went there previously three times",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-CL-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TIME": [
+            "<",
+            [
+              "FIND-ANCHOR-TIME"
+            ]
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "PREVIOUSLY-0",
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "BEFORE",
+        "EARLIER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PREVIOUSLY-ADV1",
+      "WORD": "PREVIOUSLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

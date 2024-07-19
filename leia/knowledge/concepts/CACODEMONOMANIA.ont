@@ -1,0 +1,32 @@
+{
+  "name": "@CACODEMONOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "inordinate obsession with demonic possession",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MYTHICAL-ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SUPERNATURAL-EVENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

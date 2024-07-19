@@ -1,0 +1,31 @@
+{
+  "word": "RACE_CAR",
+  "senses": {
+    "RACE_CAR-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "COUPE": {
+          "INSTRUMENT-OF": "RACE-EVENT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RACE_CAR-N1",
+      "WORD": "RACE_CAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

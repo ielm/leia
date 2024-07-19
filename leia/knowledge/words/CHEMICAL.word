@@ -1,0 +1,116 @@
+{
+  "word": "CHEMICAL",
+  "senses": {
+    "CHEMICAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to chemistry",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "CHEMICAL-REACTION"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CHEMICAL-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CHEMICAL-ADJ1",
+      "WORD": "CHEMICAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CHEMICAL-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "related to chemical weapons",
+      "EX": "chemical warfare, chemical attack, chemical sabotage; chemical weapon, chemical warhead, chemical payload, chemical agent",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "MILITARY-ACTIVITY",
+            "WEAPON",
+            "SABOTAGE"
+          ],
+          "RELATION": "CHEMICAL-WEAPON"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CHEMICAL-0",
+        "MILITARY-ACTIVITY-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CHEMICAL-ADJ2",
+      "WORD": "CHEMICAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CHEMICAL-N1": {
+      "CAT": "N",
+      "DEF": "a chemical compound",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CHEMICAL-COMPOUND",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "AGENT",
+        "CHEMICAL_AGENT",
+        "CHEMICAL_COMPOUND"
+      ],
+      "HYPONYMS": [
+        "CHEMICAL_MESSENGER"
+      ],
+      "SENSE": "CHEMICAL-N1",
+      "WORD": "CHEMICAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

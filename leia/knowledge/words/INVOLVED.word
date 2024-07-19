@@ -1,0 +1,165 @@
+{
+  "word": "INVOLVED",
+  "senses": {
+    "INVOLVED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "phrasal: X is involved in Y",
+      "EX": "That man was involved in the robbery.",
+      "COMMENTS": "Later we might want to make a meaning procedure out of this. We could first search to see if the entity could fill a case-role of the event. If not, then default to RELATION.",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "PP": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "IN",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "WAS-2",
+        "INVOLVED-0",
+        "IN-3",
+        "THE",
+        "MAN-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AUXPASS",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "IOBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "NSUBJPASS",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INVOLVED-ADJ1",
+      "WORD": "INVOLVED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "INVOLVED-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "taking part in something; in the configuration 'The X involved in Y' (no copula)",
+      "EX": "The man involved in the robbery got away.",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "ADJ": {
+            "ROOT": "$VAR0",
+            "CAT": "ADJ"
+          },
+          "PP": {
+            "ROOT": "$VAR2",
+            "CAT": "PREP",
+            "ROOT-WORD": "IN",
+            "OBJ": {
+              "ROOT": "$VAR3",
+              "CAT": "N"
+            }
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "INVOLVED-0",
+        "IN-2",
+        "THE",
+        "MAN-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INVOLVED-ADJ2",
+      "WORD": "INVOLVED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

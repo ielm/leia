@@ -1,0 +1,16 @@
+{
+  "name": "@LUCK",
+  "isa": [
+    "@ABSTRACT-IDEA"
+  ],
+  "def": "good fortune; success caused by seemingly random events",
+  "local": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

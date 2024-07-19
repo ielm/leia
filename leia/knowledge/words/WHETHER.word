@@ -1,0 +1,54 @@
+{
+  "word": "WHETHER",
+  "senses": {
+    "WHETHER-ADV1": {
+      "CAT": "ADV",
+      "DEF": "implies lack of certainty and high saliency",
+      "EX": "I don't know whether the train will arrive on time",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0.5,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "WHETHER-0",
+        "*COMMA*",
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WHETHER-ADV1",
+      "WORD": "WHETHER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

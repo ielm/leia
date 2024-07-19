@@ -1,0 +1,161 @@
+{
+  "word": "THING",
+  "senses": {
+    "THING-N1": {
+      "CAT": "N",
+      "DEF": "an entity, event or property -- anything",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "ALL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "THING-N1",
+      "WORD": "THING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "THING-N800": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "There is no such thing as a free lunch",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "X": [
+          [
+            "ROOT",
+            "$VAR1"
+          ],
+          [
+            "ROOT",
+            "THERE"
+          ],
+          [
+            "CAT",
+            "X"
+          ]
+        ],
+        "V": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "BE",
+          "CAT": "V"
+        },
+        "NEG": [
+          [
+            "ROOT",
+            "$VAR3"
+          ],
+          [
+            "ROOT",
+            "NO"
+          ],
+          [
+            "CAT",
+            "NEG"
+          ]
+        ],
+        "ADV": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "SUCH",
+          "CAT": "ADV",
+          "OPT": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PREP": {
+          "ROOT": "$VAR5",
+          "ROOT-WORD": "AS",
+          "CAT": "PREP"
+        },
+        "ART": {
+          "ROOT": "$VAR6",
+          "ROOT-WORD": "A",
+          "CAT": "ART"
+        },
+        "ADJ": {
+          "ROOT": "$VAR7",
+          "ROOT-WORD": "FREE",
+          "CAT": "ADJ"
+        },
+        "NP": {
+          "ROOT": "$VAR8",
+          "ROOT-WORD": "LUNCH",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": [
+              "OBJECT",
+              "EVENT"
+            ],
+            "TYPE": "CONJUNCTIVE",
+            "COMPLETE": "YES",
+            "COST": 0
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR6": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR7": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR8": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "THERE-1",
+        "IS-2",
+        "NO-3",
+        "SUCH-4",
+        "THING-0",
+        "AS-5",
+        "A-6",
+        "FREE-7",
+        "LUNCH-8"
+      ],
+      "SENSE": "THING-N800",
+      "WORD": "THING",
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

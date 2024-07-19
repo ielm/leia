@@ -1,0 +1,24 @@
+{
+  "name": "@WARNING-DEVICE",
+  "isa": [
+    "@COMMUNICATION-DEVICE"
+  ],
+  "def": "A device used for warning someone of danger, generally using sound or light",
+  "local": [
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,61 @@
+{
+  "word": "SMACK",
+  "senses": {
+    "SMACK-V1": {
+      "CAT": "V",
+      "DEF": "to hit with an open hand",
+      "EX": "he slapped him in the knee",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "HIT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "INSTRUMENT": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "HAND": {
+            "OPENNESS": 1
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "SMACKED-0",
+        "HIS",
+        "KNEE-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SLAP",
+        "WHACK",
+        "SWAT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SMACK-V1",
+      "WORD": "SMACK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@RUBBER-PRODUCT-MANUFACTURING-CORPORATION",
+  "isa": [
+    "@MATERIAL-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a corporation involved in manufacturing industrial rubber products and miscellaneous rubber sundries",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@RUBBER-PRODUCT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

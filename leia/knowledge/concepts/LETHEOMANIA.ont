@@ -1,0 +1,27 @@
+{
+  "name": "@LETHEOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "obsessive fascination with narcotics",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ILLEGAL-DRUG"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

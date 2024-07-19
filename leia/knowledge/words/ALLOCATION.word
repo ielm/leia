@@ -1,0 +1,96 @@
+{
+  "word": "ALLOCATION",
+  "senses": {
+    "ALLOCATION-N1": {
+      "CAT": "N",
+      "DEF": "setting aside",
+      "EX": "the allocation of funds for the new building project",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT-WORD": "BY",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        },
+        "PP-2": {
+          "ROOT-WORD": "TO",
+          "ROOT": "$VAR5",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR6",
+            "CAT": "N"
+          }
+        },
+        "PP-3": {
+          "ROOT-WORD": "FOR",
+          "ROOT": "$VAR7",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR8",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ALLOCATE": {
+          "AGENT": {
+            "VALUE": "^$VAR4"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR6"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "PURPOSE": {
+            "VALUE": "^$VAR8"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR7": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ALLOTMENT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ALLOCATION-N1",
+      "WORD": "ALLOCATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

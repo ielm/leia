@@ -1,0 +1,125 @@
+{
+  "word": "SUPERVISION",
+  "senses": {
+    "SUPERVISION-N2": {
+      "CAT": "N",
+      "DEF": "supervising event, genitive = agent",
+      "EX": "under the supervision of the parents",
+      "COMMENTS": "[D] 'the supervision of the youth' (no by-X) is unavoidably ambiguous with -n1",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SUPERVISE": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "GUIDANCE-0",
+        "OF-1",
+        "THE",
+        "MANAGERIAL-ROLE-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "GUIDANCE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SUPERVISION-N2",
+      "WORD": "SUPERVISION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SUPERVISION-N1": {
+      "CAT": "N",
+      "DEF": "supervising event, genitive = theme",
+      "EX": "supervision (of the toddlers) (by their parents)",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SUPERVISE": {
+          "AGENT": {
+            "VALUE": "^$VAR4"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR2",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "GUIDANCE-0",
+        "OF-1",
+        "THE",
+        "GIRL-2",
+        "BY-3",
+        "THE",
+        "MANAGERIAL-ROLE-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "GUIDANCE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SUPERVISION-N1",
+      "WORD": "SUPERVISION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "word": "LYMPHOCYTE",
+  "senses": {
+    "LYMPHOCYTE-N1": {
+      "CAT": "N",
+      "DEF": "a type of white blood cell involved in immunity",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "LYMPHOCYTE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "LYMPH_CELL"
+      ],
+      "HYPONYMS": [
+        "B_CELL",
+        "B_LYMPHOCYTE",
+        "T_CELL",
+        "T_LYMPHOCYTE",
+        "LYMPHOBLAST",
+        "PLASMA_CELL",
+        "PLASMACYTE"
+      ],
+      "SENSE": "LYMPHOCYTE-N1",
+      "WORD": "LYMPHOCYTE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

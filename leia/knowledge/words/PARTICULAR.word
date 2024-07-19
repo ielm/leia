@@ -1,0 +1,37 @@
+{
+  "word": "PARTICULAR",
+  "senses": {
+    "PARTICULAR-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "precise",
+      "EX": "her particular interest is in neo-impressionism",
+      "COMMENTS": "the real meaning is at a level of nuance that we won't do just now",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THIS",
+        "PARTICULAR-0",
+        "HOUSE"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SPECIFIC"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PARTICULAR-ADJ1",
+      "WORD": "PARTICULAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

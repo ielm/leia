@@ -1,0 +1,54 @@
+{
+  "word": "CONTRACTION",
+  "senses": {
+    "CONTRACTION-N1": {
+      "CAT": "N",
+      "DEF": "engagement of a muscle",
+      "EX": "the contraction of the ventricle pumps blood into the arteries",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "CONTRACT-MUSCLE": {
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "MUSCLE_CONTRACTION"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CONTRACTION-N1",
+      "WORD": "CONTRACTION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

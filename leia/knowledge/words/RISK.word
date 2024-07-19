@@ -1,0 +1,392 @@
+{
+  "word": "RISK",
+  "senses": {
+    "RISK-N1": {
+      "CAT": "N",
+      "DEF": "medical risk",
+      "EX": "(the doctor suggests a pneumatic dilation) Are there any risks?",
+      "COMMENTS": "this entry is weird because this question is usually elliptical. If it's not  elliptical, there are lots of very different syntactic structures that could surround it: 'Are there any risks associated with this procedure?' 'Does this procedure involve risks?' etc.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "EVENT": {
+          "MEDICAL-RISK-OF": "EVENT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RISK-N1",
+      "WORD": "RISK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RISK-N2": {
+      "CAT": "N",
+      "DEF": "medical risk of doing something; the pp is required in this sense",
+      "EX": "there is a risk of esophageal perforation",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "MEDICAL-RISK-OF": "MEDICAL-PROCEDURE"
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY",
+        "DISCUSSED",
+        "THE",
+        "RISK-0",
+        "OF-1",
+        "THE",
+        "PLAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RISK-N2",
+      "WORD": "RISK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RISK-N3": {
+      "CAT": "N",
+      "DEF": "phrasal: slight/very low risk of X = very low medical risk of doing something; the pp is required in this sense",
+      "EX": "there is a slight/very low risk of esophageal perforation",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "MODS": {
+          "ROOT": "$VAR3",
+          "CAT": "ADJ",
+          "ROOT-WORD": [
+            "SLIGHT",
+            "VERY_LOW",
+            "VERY_SMALL"
+          ]
+        },
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "MEDICAL-RISK-OF": "MEDICAL-PROCEDURE",
+          "PROBABILITY": [
+            "<=",
+            0.1
+          ]
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE",
+        "RAN",
+        "A",
+        "VERY_SMALL-3",
+        "RISK-0",
+        "OF-1",
+        "DANGER-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR3",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RISK-N3",
+      "WORD": "RISK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RISK-N4": {
+      "CAT": "N",
+      "DEF": "phrasal: small/low risk of X = low medical risk of doing something; the pp is required in this sense",
+      "EX": "there is a small/low risk of esophageal perforation",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "MODS": {
+          "ROOT": "$VAR3",
+          "CAT": "ADJ",
+          "ROOT-WORD": [
+            "SMALL",
+            "LOW"
+          ]
+        },
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "MEDICAL-RISK-OF": "MEDICAL-PROCEDURE",
+          "PROBABILITY": [
+            ">=<",
+            0.1,
+            0.3
+          ]
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE",
+        "RAN",
+        "A",
+        "LOW-3",
+        "RISK-0",
+        "OF-1",
+        "DANGER-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RISK-N4",
+      "WORD": "RISK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RISK-N5": {
+      "CAT": "N",
+      "DEF": "phrasal: moderate risk of X = moderate medical risk of doing something; the pp is required in this sense",
+      "EX": "there is a moderate risk of esophageal perforation",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "MODS": {
+          "ROOT": "$VAR3",
+          "CAT": "ADJ",
+          "ROOT-WORD": "MODERATE"
+        },
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "MEDICAL-RISK-OF": "MEDICAL-PROCEDURE",
+          "PROBABILITY": [
+            ">=<",
+            0.3,
+            0.6
+          ]
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE",
+        "RAN",
+        "A",
+        "MODERATE-3",
+        "RISK-0",
+        "OF-1",
+        "DANGER-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RISK-N5",
+      "WORD": "RISK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RISK-N6": {
+      "CAT": "N",
+      "DEF": "phrasal: high/large/great risk of X = high medical risk of doing something; the pp is required in this sense",
+      "EX": "there is a moderate risk of esophageal perforation",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "MODS": {
+          "ROOT": "$VAR3",
+          "CAT": "ADJ",
+          "ROOT-WORD": [
+            "HIGH",
+            "LARGE",
+            "GREAT"
+          ]
+        },
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "MEDICAL-RISK-OF": "MEDICAL-PROCEDURE",
+          "PROBABILITY": [
+            ">",
+            0.6
+          ]
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE",
+        "RAN",
+        "A",
+        "LARGE-3",
+        "RISK-0",
+        "OF-1",
+        "DANGER-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RISK-N6",
+      "WORD": "RISK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

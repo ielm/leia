@@ -1,0 +1,9 @@
+{
+  "name": "$THEME",
+  "def": "A THEME of an event is most commonly \nan object that is acted upon, typically a \ndirect object. Many events also take event \nthemes.",
+  "type": "case_role",
+  "range": "!AnyType",
+  "inverse": "$THEME-OF",
+  "measured-in": [],
+  "container": "$CASE-ROLE"
+}

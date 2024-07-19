@@ -1,0 +1,31 @@
+{
+  "word": "DRYER",
+  "senses": {
+    "DRYER-N1": {
+      "CAT": "N",
+      "DEF": "an appliance for drying clothes",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "DRYER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "CLOTHES_DRYER",
+        "TUMBLE_DRYER",
+        "SPIN_DRYER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DRYER-N1",
+      "WORD": "DRYER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

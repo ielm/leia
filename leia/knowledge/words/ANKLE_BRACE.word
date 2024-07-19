@@ -1,0 +1,38 @@
+{
+  "word": "ANKLE_BRACE",
+  "senses": {
+    "ANKLE_BRACE-N1": {
+      "CAT": "N",
+      "DEF": "a brace for the ankle",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BRACE-MEDICAL": {
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SUPPORT-PHYSICALLY": {
+            "THEME": "ANKLE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ANKLE_BRACE-N1",
+      "WORD": "ANKLE_BRACE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

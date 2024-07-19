@@ -1,0 +1,137 @@
+{
+  "word": "METHOD",
+  "senses": {
+    "METHOD-N1": {
+      "CAT": "N",
+      "DEF": "an organized way of doing anything",
+      "EX": "do you know of a method to clean out gutters?",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "XCOMP": {
+          "ROOT": "$VAR1",
+          "CAT": "V",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "METHOD": {
+          "PURPOSE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "APPROACH-0",
+        "TO-7",
+        "HIT-1",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "XCOMP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "APPROACH",
+        "FASHION",
+        "PROCEDURE",
+        "TECHNIQUE",
+        "WAY"
+      ],
+      "HYPONYMS": [
+        "METHODOLOGY",
+        "PATTERN",
+        "PLAN",
+        "PROCESS",
+        "PROGRAM",
+        "STRATEGY",
+        "SYSTEM"
+      ],
+      "SENSE": "METHOD-N1",
+      "WORD": "METHOD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "METHOD-N2": {
+      "CAT": "N",
+      "DEF": "an organized way of doing anything",
+      "EX": "do you know of a method of/for cleaning out gutters?",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": [
+            "OF",
+            "FOR"
+          ],
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "METHOD": {
+          "PURPOSE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "APPROACH-0",
+        "OF-1",
+        "THE",
+        "MAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "APPROACH",
+        "FASHION",
+        "PROCEDURE",
+        "TECHNIQUE",
+        "WAY"
+      ],
+      "HYPONYMS": [
+        "METHODOLOGY",
+        "PATTERN",
+        "PLAN",
+        "PROCESS",
+        "PROGRAM",
+        "STRATEGY",
+        "SYSTEM"
+      ],
+      "SENSE": "METHOD-N2",
+      "WORD": "METHOD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

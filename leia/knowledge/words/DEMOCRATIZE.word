@@ -1,0 +1,62 @@
+{
+  "word": "DEMOCRATIZE",
+  "senses": {
+    "DEMOCRATIZE-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "they democratized russia, sort of",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "DEMOCRATIZE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "DEMOCRATIZED-0",
+        "RUSSIA-2",
+        "*COMMA*",
+        "SORT",
+        "OF"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DEMOCRATIZE-V1",
+      "WORD": "DEMOCRATIZE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "word": "EVERYWHERE",
+  "senses": {
+    "EVERYWHERE-ADV1": {
+      "CAT": "ADV",
+      "DEF": "in every possible place",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "LOCATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": "PLACE",
+            "CARDINALITY": 1,
+            "COMPLETE": "YES"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "EVERYWHERE-0"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "IN_EVERY_POSSIBLE_PLACE",
+        "ALL_OVER",
+        "ALL_OVER_THE_PLACE"
+      ],
+      "HYPONYMS": [
+        "WORLDWIDE"
+      ],
+      "SENSE": "EVERYWHERE-ADV1",
+      "WORD": "EVERYWHERE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

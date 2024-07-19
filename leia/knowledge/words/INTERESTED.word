@@ -1,0 +1,73 @@
+{
+  "word": "INTERESTED",
+  "senses": {
+    "INTERESTED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "phrasal: X is interested in Y",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "$VAR0",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "PP": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "IN",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N",
+            "OPT": "+"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SHOW-INTEREST": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "HUMAN-1",
+        "WAS-2",
+        "INTERESTED-0",
+        "IN-3",
+        "THE",
+        "EVENT-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INTERESTED-ADJ1",
+      "WORD": "INTERESTED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

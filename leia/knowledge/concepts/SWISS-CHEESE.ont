@@ -1,0 +1,64 @@
+{
+  "name": "@SWISS-CHEESE",
+  "isa": [
+    "@CHEESE"
+  ],
+  "def": "a hard pale yellow cheese with holes",
+  "local": [
+    {
+      "slot": "softness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0.2
+      ]
+    },
+    {
+      "slot": "bitterness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0.2
+      ]
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@HOLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "bitterness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "softness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

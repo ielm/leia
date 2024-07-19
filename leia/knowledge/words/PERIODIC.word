@@ -1,0 +1,51 @@
+{
+  "word": "PERIODIC",
+  "senses": {
+    "PERIODIC-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "of iterative events, indicates a medium frequency",
+      "EX": "he takes periodic trips to Asia",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "ITERATION": "MULTIPLE",
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "TIME-INTERVAL": 0.5
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "PERIODIC-0",
+        "OBJECT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PERIODIC-ADJ1",
+      "WORD": "PERIODIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

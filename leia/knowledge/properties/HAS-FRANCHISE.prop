@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-FRANCHISE",
+  "def": "relation between a corporation and businesses or people licensed to operated using its name",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$FRANCHISE-OF",
+  "measured-in": [],
+  "container": "$BUSINESS-RELATION"
+}

@@ -1,0 +1,70 @@
+{
+  "word": "ALTERNATIVE",
+  "senses": {
+    "ALTERNATIVE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "not the most usual or typical",
+      "EX": "he enrolled his child in an alternative school",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TYPICALNESS-ATTRIBUTE": [
+            "><",
+            0.1,
+            0.4
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ALTERNATIVE-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ALTERNATIVE-ADJ1",
+      "WORD": "ALTERNATIVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ALTERNATIVE-N1": {
+      "CAT": "N",
+      "DEF": "an opportunity",
+      "EX": "financing alternative",
+      "COMMENTS": "[D] eventually we might want a mp to block coreference with other prior head-matching entities",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "OPPORTUNITY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ALTERNATIVE-N1",
+      "WORD": "ALTERNATIVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "name": "@ALLERGY",
+  "isa": [
+    "@PATHOLOGIC-FUNCTION"
+  ],
+  "def": "An abnormally high sensitivity to certain substances, like pollens, certain foods, or microorganisms. Common indications of allergy may include sneezing, itching, and skin rashes",
+  "local": [
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@FEVER"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SNEEZE"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@COUGH"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@WHEEZE"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@VOMIT"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@ITCHING"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@ABDOMINAL-PAIN"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@INFLAMMATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FOOD"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@GENE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DUST"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MICRO-ORGANISM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@POLLEN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PLANT"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "$set-2"
+    },
+    {
+      "slot": "precondition",
+      "facet": "relaxable-to",
+      "filler": "@EVENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

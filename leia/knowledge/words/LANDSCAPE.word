@@ -1,0 +1,31 @@
+{
+  "word": "LANDSCAPE",
+  "senses": {
+    "LANDSCAPE-N1": {
+      "CAT": "N",
+      "DEF": "a painting of the countryside",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PAINTING": {
+          "DEPICTS": "COUNTRYSIDE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LANDSCAPE-N1",
+      "WORD": "LANDSCAPE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

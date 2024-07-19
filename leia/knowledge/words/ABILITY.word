@@ -1,0 +1,72 @@
+{
+  "word": "ABILITY",
+  "senses": {
+    "ABILITY-N1": {
+      "CAT": "N",
+      "DEF": "capacity, power",
+      "EX": "(his) ability to learn quickly is astounding",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR0",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "XCOMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "POTENTIAL",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "HE",
+        "HAS",
+        "THE",
+        "MAN",
+        "*QUOTE*S",
+        "ABILITY-0",
+        "TO",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "RCMOD",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "CAPACITY",
+        "POWER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ABILITY-N1",
+      "WORD": "ABILITY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

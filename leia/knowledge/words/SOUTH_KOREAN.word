@@ -1,0 +1,79 @@
+{
+  "word": "SOUTH_KOREAN",
+  "senses": {
+    "SOUTH_KOREAN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to south korea",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "SOUTH_KOREA"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SOUTH_KOREAN-ADJ1",
+      "WORD": "SOUTH_KOREAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SOUTH_KOREAN-N1": {
+      "CAT": "N",
+      "DEF": "a citizen of south korea",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CITIZEN": {
+          "HAS-NATIONALITY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "SOUTH_KOREA"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SOUTH_KOREAN-N1",
+      "WORD": "SOUTH_KOREAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "word": "AFP",
+  "senses": {
+    "AFP-N1": {
+      "CAT": "N",
+      "DEF": "Agence France-Press, a prominent news agency",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MEDIA-SERVICE-CORPORATION": {
+          "HAS-NAME": {
+            "VALUE": "AGENCE_FRANCE-PRESS"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "AGENCE_FRANCE-PRESS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "AFP-N1",
+      "WORD": "AFP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

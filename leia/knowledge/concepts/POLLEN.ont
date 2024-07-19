@@ -1,0 +1,27 @@
+{
+  "name": "@POLLEN",
+  "isa": [
+    "@EXTERNAL-PLANT-PART"
+  ],
+  "def": "The fine powderlike material consisting of pollen grains that is produced by the anthers of seed plants.",
+  "local": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@ALLERGY"
+    },
+    {
+      "slot": "effect",
+      "facet": "relaxable-to",
+      "filler": "@EVENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

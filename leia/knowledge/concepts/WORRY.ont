@@ -1,0 +1,26 @@
+{
+  "name": "@WORRY",
+  "isa": [
+    "@EMOTIONAL-EVENT"
+  ],
+  "def": "to make troubled or uneasy",
+  "local": [],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

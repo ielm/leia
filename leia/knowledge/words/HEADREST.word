@@ -1,0 +1,39 @@
+{
+  "word": "HEADREST",
+  "senses": {
+    "HEADREST-N1": {
+      "CAT": "N",
+      "DEF": "a support for the head on the back of a chair, airplane seat, etc.",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PILLOW": {
+          "PART-OF-OBJECT": "SEATING-FURNITURE",
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SUPPORT-PHYSICALLY": {
+            "THEME": "HEAD"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HEADREST-N1",
+      "WORD": "HEADREST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "word": "SUPREME_COURT",
+  "senses": {
+    "SUPREME_COURT-N1": {
+      "CAT": "N",
+      "DEF": "usually the highest judicial tribunal of a political entity",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "COURT": {
+          "AUTHORITY-ATTRIBUTE": [
+            ">",
+            0.8
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SUPREME_COURT-N1",
+      "WORD": "SUPREME_COURT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

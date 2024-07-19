@@ -1,0 +1,31 @@
+{
+  "word": "ROCKET_ENGINE",
+  "senses": {
+    "ROCKET_ENGINE-N1": {
+      "CAT": "N",
+      "DEF": "an engine that doesn't rely on atmospheric substances, like air, for its operation",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "ROCKET-ENGINE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ROCKET_MOTOR"
+      ],
+      "HYPONYMS": [
+        "ION_ENGINE"
+      ],
+      "SENSE": "ROCKET_ENGINE-N1",
+      "WORD": "ROCKET_ENGINE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

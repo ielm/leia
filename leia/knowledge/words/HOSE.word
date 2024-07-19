@@ -1,0 +1,51 @@
+{
+  "word": "HOSE",
+  "senses": {
+    "HOSE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "STOCKING",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HOSE-N1",
+      "WORD": "HOSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HOSE-N2": {
+      "CAT": "N",
+      "DEF": "a flexible tube",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "HOSE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "HOSEPIPE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "HOSE-N2",
+      "WORD": "HOSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@ETHNIC-GROUP",
+  "isa": [
+    "@SOCIAL-OBJECT"
+  ],
+  "def": "groups of people sharing a common and distinctive racial, national, religious, linguistic, or cultural heritage",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@NAME"
+    }
+  ],
+  "private": {}
+}

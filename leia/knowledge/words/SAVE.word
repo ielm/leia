@@ -1,0 +1,44 @@
+{
+  "word": "SAVE",
+  "senses": {
+    "SAVE-V1": {
+      "CAT": "V",
+      "DEF": "refers to storing information on a computer",
+      "EX": "She doesn't save her files often enough - some day she'll lose a lot of  information!",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "SAVE-COMPUTER-DATA": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SAVE-V1",
+      "WORD": "SAVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

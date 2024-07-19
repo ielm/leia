@@ -1,0 +1,16 @@
+{
+  "name": "@WAIVE",
+  "isa": [
+    "@YIELD-TO"
+  ],
+  "def": "to give up or forgo (a right, etc.)",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@LEGAL-RIGHT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

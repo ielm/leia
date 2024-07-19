@@ -1,0 +1,71 @@
+{
+  "word": "MATTER",
+  "senses": {
+    "MATTER-N1": {
+      "CAT": "N",
+      "DEF": "a physical object or mass of physical matter",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PHYSICAL-OBJECT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MATTER-N1",
+      "WORD": "MATTER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MATTER-V1": {
+      "CAT": "V",
+      "DEF": "to be important",
+      "EX": "this detail matters",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "SALIENCY",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THIS",
+        "DETAIL-1",
+        "MATTERS-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MATTER-V1",
+      "WORD": "MATTER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

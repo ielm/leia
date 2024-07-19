@@ -1,0 +1,34 @@
+{
+  "word": "TAPE_RECORDER",
+  "senses": {
+    "TAPE_RECORDER-N1": {
+      "CAT": "N",
+      "DEF": "a device for recording on magnetic tape and for playing back what has been recorded",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "TAPE-RECORDER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "CASSETTE_PLAYER",
+        "TAPE_PLAYER",
+        "GHETTO_BLASTER",
+        "TAPE_DECK",
+        "CASSETTE_DECK",
+        "BOOM_BOX"
+      ],
+      "SENSE": "TAPE_RECORDER-N1",
+      "WORD": "TAPE_RECORDER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

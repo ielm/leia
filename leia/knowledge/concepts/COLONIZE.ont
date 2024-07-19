@@ -1,0 +1,52 @@
+{
+  "name": "@COLONIZE",
+  "isa": [
+    "@POLITICAL-EVENT"
+  ],
+  "def": "to establish a colony in or settle in as a colonizer",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COLONY"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@GOVERNMENTAL-ROLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@LARGE-GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "agent",
+      "facet": "not",
+      "filler": "@COLONY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

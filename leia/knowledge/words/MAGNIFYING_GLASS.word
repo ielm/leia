@@ -1,0 +1,30 @@
+{
+  "word": "MAGNIFYING_GLASS",
+  "senses": {
+    "MAGNIFYING_GLASS-N1": {
+      "CAT": "N",
+      "DEF": "a glass that makes objects look larger",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "MAGNIFYING-GLASS",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "LOUPE",
+        "HAND_GLASS"
+      ],
+      "SENSE": "MAGNIFYING_GLASS-N1",
+      "WORD": "MAGNIFYING_GLASS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

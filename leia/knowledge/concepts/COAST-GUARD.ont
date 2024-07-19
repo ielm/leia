@@ -1,0 +1,16 @@
+{
+  "name": "@COAST-GUARD",
+  "isa": [
+    "@MILITARY-BRANCH"
+  ],
+  "def": "a governmental force employed to defend a nation*s coasts, aid vessels in distress, etc.",
+  "local": [
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@SHIP"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

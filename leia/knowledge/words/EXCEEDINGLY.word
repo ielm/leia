@@ -1,0 +1,50 @@
+{
+  "word": "EXCEEDINGLY",
+  "senses": {
+    "EXCEEDINGLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "excessively, more than expected, desired, etc.",
+      "EX": "exceedingly strict",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        },
+        "ROOT": "$VAR1",
+        "CAT": [
+          "ADJ",
+          "ADV"
+        ]
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATIVE-TO-NORM": [
+            ">",
+            0.8
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EXCEEDINGLY-0",
+        "GOOD-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EXCEEDINGLY-ADV1",
+      "WORD": "EXCEEDINGLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

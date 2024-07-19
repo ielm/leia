@@ -1,0 +1,34 @@
+{
+  "word": "CHAMOIS",
+  "senses": {
+    "CHAMOIS-N1": {
+      "CAT": "N",
+      "DEF": "extremely soft leather",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LEATHER": {
+          "SOFTNESS": 0.9
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "CHAMMY",
+        "SHAMMY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CHAMOIS-N1",
+      "WORD": "CHAMOIS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

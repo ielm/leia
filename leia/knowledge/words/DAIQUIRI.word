@@ -1,0 +1,35 @@
+{
+  "word": "DAIQUIRI",
+  "senses": {
+    "DAIQUIRI-N1": {
+      "CAT": "N",
+      "DEF": "A cocktail made of rum, lime or lemon juice, and ice.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MIXED-DRINK": {
+          "HAS-OBJECT-AS-PART": [
+            "RUM",
+            "ICE",
+            "FRUIT-JUICE"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DAIQUIRI-N1",
+      "WORD": "DAIQUIRI",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

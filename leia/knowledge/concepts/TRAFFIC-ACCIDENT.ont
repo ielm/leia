@@ -1,0 +1,11 @@
+{
+  "name": "@TRAFFIC-ACCIDENT",
+  "isa": [
+    "@TRAFFIC-INFRACTION-EVENT",
+    "@ACCIDENT"
+  ],
+  "def": "an accident involving a moving vehicle",
+  "local": [],
+  "block": [],
+  "private": {}
+}

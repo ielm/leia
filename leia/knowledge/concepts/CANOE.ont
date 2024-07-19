@@ -1,0 +1,28 @@
+{
+  "name": "@CANOE",
+  "isa": [
+    "@BOAT",
+    "@WATER-PROPELLED-VEHICLE"
+  ],
+  "def": "a small, narrow boat driven by paddles",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@PADDLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    }
+  ],
+  "private": {}
+}

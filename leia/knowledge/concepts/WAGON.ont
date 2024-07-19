@@ -1,0 +1,27 @@
+{
+  "name": "@WAGON",
+  "isa": [
+    "@HORSE-DRIVEN-VEHICLE"
+  ],
+  "def": "A small vehicle pulled by a horse",
+  "local": [
+    {
+      "slot": "number-of-wheels",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        2
+      ]
+    },
+    {
+      "slot": "number-of-wheels",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        4
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@DECIMETER",
+  "isa": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "def": "1/10 of a meter; .1",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.1
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

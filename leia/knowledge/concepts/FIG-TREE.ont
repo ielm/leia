@@ -1,0 +1,22 @@
+{
+  "name": "@FIG-TREE",
+  "isa": [
+    "@FRUIT-TREE"
+  ],
+  "def": "tree that bears figs",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@FIG-FRUIT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@TREE-FRUIT"
+    }
+  ],
+  "private": {}
+}

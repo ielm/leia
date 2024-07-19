@@ -1,0 +1,31 @@
+{
+  "word": "BOLIVAR",
+  "senses": {
+    "BOLIVAR-N1": {
+      "CAT": "N",
+      "DEF": "currency of venezuela",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": "VENEZUELA"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BOLIVAR-N1",
+      "WORD": "BOLIVAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

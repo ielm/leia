@@ -1,0 +1,9 @@
+{
+  "name": "$TURBULENCE",
+  "def": "the level of motion, unsteadiness, violence of physical movement",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": "$",
+  "measured-in": [],
+  "container": "$SCALAR-ATTRIBUTE"
+}

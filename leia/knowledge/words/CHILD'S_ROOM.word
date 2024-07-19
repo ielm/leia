@@ -1,0 +1,51 @@
+{
+  "word": "CHILD'S_ROOM",
+  "senses": {
+    "CHILD'S_ROOM-N1": {
+      "CAT": "N",
+      "DEF": "a bedroom for a child",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BEDROOM": {
+          "LOCATION-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SLEEP": {
+            "EXPERIENCER": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "HUMAN": {
+            "AGE": [
+              "><",
+              3,
+              14
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "kid's_room"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CHILD'S_ROOM-N1",
+      "WORD": "CHILD'S_ROOM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

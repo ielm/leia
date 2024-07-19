@@ -1,0 +1,41 @@
+{
+  "word": "ANYWAY",
+  "senses": {
+    "ANYWAY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "discourse function only",
+      "EX": "I didn't want those grapes anyway",
+      "COMMENTS": "contrary-to-expectation",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ANYWAY-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ANYWAY-ADV1",
+      "WORD": "ANYWAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

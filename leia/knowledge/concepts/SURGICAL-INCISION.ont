@@ -1,0 +1,22 @@
+{
+  "name": "@SURGICAL-INCISION",
+  "isa": [
+    "@INVASIVE-PROCEDURE"
+  ],
+  "def": "an incision into a human body for purposes of medical treatment",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SURGICAL-KNIFE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MEDICAL-ARTIFACT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@SEXUAL-HARASSMENT",
+  "isa": [
+    "@SEX-CRIME"
+  ],
+  "def": "making unwanted and offensive sexual advances or of sexually offensive remarks or acts, especially by one in a superior or supervisory position",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@ASSERTIVE-ACT"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@APPROACH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@SEX-EVENT"
+    }
+  ],
+  "private": {}
+}

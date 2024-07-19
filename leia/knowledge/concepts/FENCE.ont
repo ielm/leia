@@ -1,0 +1,29 @@
+{
+  "name": "@FENCE",
+  "isa": [
+    "@BARRIER-ARTIFACT"
+  ],
+  "def": "a protective or confining barrier of posts, wire, mesh, etc.",
+  "local": [
+    {
+      "slot": "surrounds",
+      "facet": "default",
+      "filler": "@ENCLOSURE"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

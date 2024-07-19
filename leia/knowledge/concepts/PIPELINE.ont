@@ -1,0 +1,32 @@
+{
+  "name": "@PIPELINE",
+  "isa": [
+    "@CONNECTING-DEVICE"
+  ],
+  "def": "a line of pipes for conveying water, gas, etc.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@VALVE"
+    },
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    },
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@GAS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,52 @@
+{
+  "word": "MUG",
+  "senses": {
+    "MUG-V1": {
+      "CAT": "V",
+      "DEF": "to steal a wallet or purse from s.o. in a public place",
+      "EX": "The man mugged her.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "STEAL": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": "PURSE",
+          "HAS-EVENT-AS-PART": "ASSAULT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "MUGGED-0",
+        "THE",
+        "TOURIST-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MUG-V1",
+      "WORD": "MUG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

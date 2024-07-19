@@ -1,0 +1,22 @@
+{
+  "name": "@HEMATOLOGY",
+  "isa": [
+    "@MEDICINE"
+  ],
+  "def": "the branch of medicine that deals with diseases of the blood and blood-forming organs",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@HEMATOLOGIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@MEDICAL-WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

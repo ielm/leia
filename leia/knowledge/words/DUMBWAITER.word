@@ -1,0 +1,44 @@
+{
+  "word": "DUMBWAITER",
+  "senses": {
+    "DUMBWAITER-N1": {
+      "CAT": "N",
+      "DEF": "an elevator for food",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ELEVATOR": {
+          "SIZE": [
+            "<",
+            0.4
+          ],
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "TRANSPORTATION-SERVE": {
+            "THEME": "FOOD"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "FOOD_ELEVATOR"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DUMBWAITER-N1",
+      "WORD": "DUMBWAITER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

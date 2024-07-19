@@ -1,0 +1,42 @@
+{
+  "name": "@DEMOBILIZE",
+  "isa": [
+    "@MILITARY-ACTIVITY"
+  ],
+  "def": "to disband (troops)",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MILITARY-ORGANIZATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MILITARY-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@AIRPORT-TERMINAL-STAFF",
+  "isa": [
+    "@AIRPORT-WORK-ROLE"
+  ],
+  "def": "the employees who work in an airport terminal",
+  "local": [],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@AIRPLANE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@AIRPORT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,525 @@
+{
+  "word": "SCREAM",
+  "senses": {
+    "SCREAM-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "a scream",
+      "COMMENTS": "if one yells at an adult,though, it's not scolding, often - a tough case of ambiguity",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SCREAM",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SHRIEK",
+        "SCREECH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SCREAM-N1",
+      "WORD": "SCREAM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SCREAM-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "she screamed (something terrible) (to the policeman)",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR4",
+          "CAT": "N",
+          "OPT": "+"
+        },
+        "PP": {
+          "ROOT-WORD": "TO",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SCREAM": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "SCREAMED-0",
+        "SOMETHING-4",
+        "TO-3",
+        "THE",
+        "OFFICER-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR4"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "YELL",
+        "SHOUT",
+        "HOLLER",
+        "SHRIEK",
+        "SCREECH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SCREAM-V1",
+      "WORD": "SCREAM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SCREAM-V804": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "POSS": [
+          [
+            "ROOT",
+            "$VAR2"
+          ],
+          [
+            "ROOT",
+            [
+              "HER",
+              "MY"
+            ]
+          ],
+          [
+            "CAT",
+            "POSS"
+          ]
+        ],
+        "N-1": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "HEAD",
+          "CAT": "N"
+        },
+        "PREP": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "OFF",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "ANGRY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "INTENSITY": 1,
+          "DURATION": [
+            ">",
+            0.8
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "SCREAMED-0",
+        "HER-2",
+        "HEAD-3",
+        "OFF-4"
+      ],
+      "SYNONYMS": [
+        "SOB",
+        "WEEP",
+        "BAWL"
+      ],
+      "SENSE": "SCREAM-V804",
+      "WORD": "SCREAM",
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "SCREAM-V803": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "POSS": [
+          [
+            "ROOT",
+            "$VAR2"
+          ],
+          [
+            "ROOT",
+            "HE"
+          ],
+          [
+            "CAT",
+            "POSS"
+          ]
+        ],
+        "N-1": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "HEAD",
+          "CAT": "N"
+        },
+        "PREP": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "OFF",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "ANGRY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "INTENSITY": 1,
+          "DURATION": [
+            ">",
+            0.8
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "SCREMED-0",
+        "HIS-2",
+        "HEAD-3",
+        "OFF-4"
+      ],
+      "SYNONYMS": [
+        "SOB",
+        "WEEP",
+        "BAWL"
+      ],
+      "SENSE": "SCREAM-V803",
+      "WORD": "SCREAM",
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "SCREAM-V802": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "POSS": [
+          [
+            "ROOT",
+            "$VAR2"
+          ],
+          [
+            "ROOT",
+            [
+              "YOUR"
+            ]
+          ],
+          [
+            "CAT",
+            "POSS"
+          ]
+        ],
+        "N-1": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": [
+            "LUNG",
+            "HEART"
+          ],
+          "CAT": "N"
+        },
+        "PREP": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "OUT",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "SCREAM": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "INTENSITY": 1,
+          "DURATION": [
+            ">",
+            0.8
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "SCREAMED-0",
+        "YOUR-2",
+        "LUNGS-3",
+        "OUT-4"
+      ],
+      "SENSE": "SCREAM-V802",
+      "WORD": "SCREAM",
+      "HYPONYMS": [],
+      "SYNONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "SCREAM-V801": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "POSS": [
+          [
+            "ROOT",
+            "$VAR2"
+          ],
+          [
+            "ROOT",
+            [
+              "HER",
+              "MY"
+            ]
+          ],
+          [
+            "CAT",
+            "POSS"
+          ]
+        ],
+        "N-1": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": [
+            "LUNG",
+            "HEART"
+          ],
+          "CAT": "N"
+        },
+        "PREP": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "OUT",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "SCREAM": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "INTENSITY": 1,
+          "DURATION": [
+            ">",
+            0.8
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "SCREAMED-0",
+        "HER-2",
+        "LUNGS-3",
+        "OUT-4"
+      ],
+      "SENSE": "SCREAM-V801",
+      "WORD": "SCREAM",
+      "HYPONYMS": [],
+      "SYNONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "SCREAM-V800": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "He screamed his lungs out",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "POSS": [
+          [
+            "ROOT",
+            "$VAR2"
+          ],
+          [
+            "ROOT",
+            "HE"
+          ],
+          [
+            "CAT",
+            "POSS"
+          ]
+        ],
+        "N-1": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": [
+            "LUNG",
+            "HEART"
+          ],
+          "CAT": "N"
+        },
+        "PREP": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "OUT",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "SCREAM": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "INTENSITY": 1,
+          "DURATION": [
+            ">",
+            0.8
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "SCREAMED-0",
+        "HIS-2",
+        "LUNGS-3",
+        "OUT-4"
+      ],
+      "SENSE": "SCREAM-V800",
+      "WORD": "SCREAM",
+      "HYPONYMS": [],
+      "SYNONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

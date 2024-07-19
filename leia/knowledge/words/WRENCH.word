@@ -1,0 +1,59 @@
+{
+  "word": "WRENCH",
+  "senses": {
+    "WRENCH-N1": {
+      "CAT": "N",
+      "DEF": "a tool",
+      "EX": "",
+      "COMMENTS": "mechanic",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "WRENCH",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "ALLEN_WRENCH",
+        "ALLIGATOR_WRENCH",
+        "BOX_END_WRENCH",
+        "OPEN-END_WRENCH",
+        "CRESCENT_WRENCH",
+        "CROWFOOT_WRENCH",
+        "LUG_WRENCH",
+        "MONKEY_WRENCH",
+        "OBSTRUCTION_WRENCH",
+        "RATCHETING_WRENCH",
+        "SOCKET_WRENCH",
+        "SPARK_PLUG_WRENCH",
+        "SPEEDER_WRENCH",
+        "STILLSON_WRENCH",
+        "TORQUE_WRENCH",
+        "CARRIAGE_WRENCH",
+        "CHAIN_WRENCH",
+        "END_WRENCH",
+        "FLARE-NUT_WRENCH",
+        "GOOSENECK_WRENCH",
+        "LEVER_WRENCH",
+        "PIN_WRENCH",
+        "TAPPET_WRENCH",
+        "TAP_WRENCH",
+        "TUNING_WRENCH",
+        "VALVE_WRENCH",
+        "HEXAGONAL_WRENCH",
+        "BICYCLE_WRENCH",
+        "PIPE-GRIPPING_WRENCH",
+        "PIPE_WRENCH",
+        "ADJUSTABLE_WRENCH"
+      ],
+      "SENSE": "WRENCH-N1",
+      "WORD": "WRENCH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

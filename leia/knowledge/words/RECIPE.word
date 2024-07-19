@@ -1,0 +1,62 @@
+{
+  "word": "RECIPE",
+  "senses": {
+    "RECIPE-N1": {
+      "CAT": "N",
+      "DEF": "a list of ingredients and instructions for putting them together; not limited to food contexts",
+      "EX": "Here is my recipe for getting a great tan: ...",
+      "COMMENTS": "I'm leaving the relation between the recipe and what's it's for underspecified for now; the reason for including it in the entry at all is so that we don't need to productively process 'for', which is very ambiguous",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "FOR",
+          "OPT": "+",
+          "NP": {
+            "ROOT": "$VAR2",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "RECIPE": {
+          "RELATION": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "RECIPE-0",
+        "FOR-1",
+        "THE",
+        "OBJECT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RECIPE-N1",
+      "WORD": "RECIPE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

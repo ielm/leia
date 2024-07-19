@@ -1,0 +1,16 @@
+{
+  "name": "@REINVESTMENT-TRUST",
+  "isa": [
+    "@INVESTMENT-CORPORATION"
+  ],
+  "def": "a for-profit corporation that buys refinanced properties or secondary markets and manages the profits for its investors",
+  "local": [],
+  "block": [
+    {
+      "slot": "area-of-business-activity",
+      "facet": "sem",
+      "filler": "@INVESTMENT-EVENT"
+    }
+  ],
+  "private": {}
+}

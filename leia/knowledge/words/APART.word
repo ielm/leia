@@ -1,0 +1,49 @@
+{
+  "word": "APART",
+  "senses": {
+    "APART-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "phrasal: X (physical-object, plural) are Y (distance) apart = the distance between the elements of X is Y",
+      "EX": "the rows were 30 yards apart; he saw several rows 30 yards apart",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "N": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          },
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "NUMBER": "PL"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "ELEMENTS": {
+            "VALUE": "^$VAR1",
+            "SEM": "PHYSICAL-OBJECT"
+          },
+          "SPATIAL-DISTANCE": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EVENT-1",
+        "APART-0"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "APART-ADJ1",
+      "WORD": "APART",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

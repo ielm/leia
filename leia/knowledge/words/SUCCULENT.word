@@ -1,0 +1,29 @@
+{
+  "word": "SUCCULENT",
+  "senses": {
+    "SUCCULENT-N1": {
+      "CAT": "N",
+      "DEF": "a plant with thick, fleshy leaves capable of storing large amounts of water",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SUCCULENT-PLANT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SUCCULENT_PLANT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SUCCULENT-N1",
+      "WORD": "SUCCULENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "@BARTER",
+  "isa": [
+    "@EVERYDAY-FINANCIAL-EVENT",
+    "@EXCHANGE"
+  ],
+  "def": "to trade by exchanging goods or services without using money",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CONSUMER-GOOD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SERVICE-EVENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

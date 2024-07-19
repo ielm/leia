@@ -1,0 +1,57 @@
+{
+  "name": "@POISON-EVENT",
+  "isa": [
+    "@PATHOLOGIC-FUNCTION"
+  ],
+  "def": "To do harm or damage to through poisoning, e.g. carbon monoxide poisoning, snake bites, etc.",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@VOMIT"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@FEVER"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@CHILLS"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@POISONOUS-SUBSTANCE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CARBON-MONOXIDE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

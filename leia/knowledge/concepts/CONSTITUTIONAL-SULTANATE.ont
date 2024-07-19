@@ -1,0 +1,27 @@
+{
+  "name": "@CONSTITUTIONAL-SULTANATE",
+  "isa": [
+    "@GOVERNMENT-TYPE"
+  ],
+  "def": "consitutional government in a Muslim state",
+  "local": [
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@SOVEREIGN"
+    },
+    {
+      "slot": "has-religion",
+      "facet": "sem",
+      "filler": "@ISLAM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    }
+  ],
+  "private": {}
+}

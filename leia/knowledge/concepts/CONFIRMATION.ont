@@ -1,0 +1,87 @@
+{
+  "name": "@CONFIRMATION",
+  "isa": [
+    "@CEREMONY"
+  ],
+  "def": "a Christian ceremony supplemental to baptism, when a person is admitted to full membership in a church",
+  "local": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@CHRISTIANITY"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@BAPTISM"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@CARDINAL"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@BISHOP"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@PRIEST"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@CHURCH-BUILDING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

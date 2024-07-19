@@ -1,0 +1,39 @@
+{
+  "word": "TRIARCHY",
+  "senses": {
+    "TRIARCHY-N1": {
+      "CAT": "N",
+      "DEF": "government type with rule by three equally powerful  people",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "GOVERNMENT-TYPE": {
+          "HEADED-BY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": "HUMAN",
+            "CARDINALITY": 3
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TRIARCHY-N1",
+      "WORD": "TRIARCHY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

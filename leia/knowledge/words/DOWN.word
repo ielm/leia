@@ -1,0 +1,101 @@
+{
+  "word": "DOWN",
+  "senses": {
+    "DOWN-ADV1": {
+      "CAT": "ADV",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "DIRECTION-OF-MOTION": "DOWNWARD"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "RAN-1",
+        "DOWN-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DOWN-ADV1",
+      "WORD": "DOWN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DOWN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "in a pretty bad emotional state",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "EMOTIONAL-STATE": 0.2
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HAD",
+        "A",
+        "DOWN-0",
+        "ATTITUDE-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "BLUE",
+        "BUMMED",
+        "BUMMED_OUT",
+        "LOW-SPIRITED",
+        "MELANCHOLY",
+        "SAD",
+        "UNHAPPY",
+        "SORROWFUL",
+        "HEAVY-HEARTED"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DOWN-ADJ1",
+      "WORD": "DOWN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

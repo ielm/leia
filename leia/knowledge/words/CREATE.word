@@ -1,0 +1,65 @@
+{
+  "word": "CREATE",
+  "senses": {
+    "CREATE-V2": {
+      "CAT": "V",
+      "DEF": "to create, of abstract objects",
+      "EX": "she creates problems; they created a commotion",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "CREATE-ABSTRACT-OBJECT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "ABSTRACT-OBJECT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOG-1",
+        "CREATES-0",
+        "THE",
+        "WAR-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "CONCOCT",
+        "DEVISE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CREATE-V2",
+      "WORD": "CREATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

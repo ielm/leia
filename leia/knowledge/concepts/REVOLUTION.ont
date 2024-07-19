@@ -1,0 +1,32 @@
+{
+  "name": "@REVOLUTION",
+  "isa": [
+    "@SUBVERT"
+  ],
+  "def": "overthrow of a government, social system, etc.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GOVERNMENTAL-IDEOLOGY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GOVERNMENT-TYPE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@IDEOLOGY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ORGANIZATION"
+    }
+  ],
+  "private": {}
+}

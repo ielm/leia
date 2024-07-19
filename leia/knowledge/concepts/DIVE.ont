@@ -1,0 +1,52 @@
+{
+  "name": "@DIVE",
+  "isa": [
+    "@MOTION-EVENT"
+  ],
+  "def": "An agentive liquid contact motion event in the vertical downward direction.",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SPRINGBOARD"
+    },
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@SWIMMING-POOL"
+    },
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@BODY-OF-WATER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "destination",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "upward"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

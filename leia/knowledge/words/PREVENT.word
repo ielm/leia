@@ -1,0 +1,160 @@
+{
+  "word": "PREVENT",
+  "senses": {
+    "PREVENT-V1": {
+      "CAT": "V",
+      "DEF": "to make it so that something cannot happen; in this sense there is a small clause with a required PP",
+      "EX": "His bodyguard/His seatbelt prevented him from flying through the windshield.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "PP": {
+          "ROOT-WORD": "FROM",
+          "CAT": "PREP",
+          "ROOT": "$VAR3",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "PREVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR4": {
+          "AGENT-1": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "PREVENTED-0",
+        "THE",
+        "WOMAN-2",
+        "FROM-3",
+        "HITTING-4",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PCOMP",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [
+        "KEEP"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PREVENT-V1",
+      "WORD": "PREVENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PREVENT-V2": {
+      "CAT": "V",
+      "DEF": "to make something not happen; this sense is for NON-small clause constructions,  when there's just a direct object indicating an event",
+      "EX": "Seatbelts prevent deaths. Managers prevent slowdowns.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "PREVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "SEATBELTS-1",
+        "PREVENT-0",
+        "DEATHS-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PREVENT-V2",
+      "WORD": "PREVENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

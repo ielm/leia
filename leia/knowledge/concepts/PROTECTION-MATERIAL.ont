@@ -1,0 +1,16 @@
+{
+  "name": "@PROTECTION-MATERIAL",
+  "isa": [
+    "@PACKAGING-MATERIAL"
+  ],
+  "def": "materials used in packaging to protect the items in the package.",
+  "local": [],
+  "block": [
+    {
+      "slot": "is-consumer-good",
+      "facet": "sem",
+      "filler": "yes"
+    }
+  ],
+  "private": {}
+}

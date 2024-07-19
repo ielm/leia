@@ -1,0 +1,9 @@
+{
+  "name": "$EXTENT-OF-CHANGE",
+  "def": "indicates the extent to which an OBJECT changes as the result of a change event; this is not intended to circumvent property-based reasoning, it is intended to be used when it would be difficult if at all possible to determine what properties are being referred to: e.g., My car has changed a lot over these past few years.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-OBJECT-ATTRIBUTE"
+}

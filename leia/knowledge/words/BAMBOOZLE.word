@@ -1,0 +1,52 @@
+{
+  "word": "BAMBOOZLE",
+  "senses": {
+    "BAMBOOZLE-V1": {
+      "CAT": "V",
+      "DEF": "to deceive using elaborate methods",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "DECEIVE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "AMBASSADOR-1",
+        "BAMBOOZLED-0",
+        "THE",
+        "GOVERNMENT-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "HOODWINK"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BAMBOOZLE-V1",
+      "WORD": "BAMBOOZLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "@ENVELOPE",
+  "isa": [
+    "@PACKAGING-MATERIAL"
+  ],
+  "def": "a specially folded piece of paper",
+  "local": [],
+  "block": [
+    {
+      "slot": "is-consumer-good",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CARDBOARD"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SEWING-MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@STYROFOAM"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@VINYL"
+    }
+  ],
+  "private": {}
+}

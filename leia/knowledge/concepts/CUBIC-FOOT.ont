@@ -1,0 +1,19 @@
+{
+  "name": "@CUBIC-FOOT",
+  "isa": [
+    "@CUBIC-UNIT"
+  ],
+  "def": "the volume equal to a cube one foot on each side; f*f*f",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.0283168
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

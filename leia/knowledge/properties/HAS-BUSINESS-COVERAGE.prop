@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-BUSINESS-COVERAGE",
+  "def": "the area a corporation claims as its territory for marketing goods or services",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$BUSINESS-COVERAGE-OF",
+  "measured-in": [],
+  "container": "$BUSINESS-RELATION"
+}

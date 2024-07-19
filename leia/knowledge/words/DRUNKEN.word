@@ -1,0 +1,38 @@
+{
+  "word": "DRUNKEN",
+  "senses": {
+    "DRUNKEN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "under the influence of alcohol at least to a   moderate extent",
+      "EX": "",
+      "COMMENTS": "only attributive -- a descriptor needs to  be added for this",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "INTOXICATION": [
+            ">",
+            0.4
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DRUNKEN-ADJ1",
+      "WORD": "DRUNKEN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

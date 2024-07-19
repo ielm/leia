@@ -1,0 +1,9 @@
+{
+  "name": "$PRESTIGE",
+  "def": "the level of respect at which someone or something is regarded",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-OBJECT-ATTRIBUTE"
+}

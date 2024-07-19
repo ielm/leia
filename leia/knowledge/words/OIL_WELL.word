@@ -1,0 +1,33 @@
+{
+  "word": "OIL_WELL",
+  "senses": {
+    "OIL_WELL-N1": {
+      "CAT": "N",
+      "DEF": "a hole sunk into the earth to get oil",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "WELL": {
+          "LOCATION-OF": "OIL-DEPOSIT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "OILER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "OIL_WELL-N1",
+      "WORD": "OIL_WELL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "word": "BOTTOM_RIGHT_CORNER",
+  "senses": {
+    "BOTTOM_RIGHT_CORNER-N401": {
+      "CAT": "N",
+      "COMMENTS": "*BLOCKS*",
+      "EX": "",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BOX-CORNER": {
+          "BOX-CORNER-ORIENTATION": "BOTTOM-RIGHT"
+        }
+      },
+      "SYNONYMS": [
+        "BOTTOM_RIGHT_CORNER_OF_THE_BOX",
+        "BOTTOM_RIGHT_CORNER_OF_A_BOX",
+        "BOTTOM_RIGHT_BOX_CORNER"
+      ],
+      "SENSE": "BOTTOM_RIGHT_CORNER-N401",
+      "WORD": "BOTTOM_RIGHT_CORNER",
+      "DEF": "",
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

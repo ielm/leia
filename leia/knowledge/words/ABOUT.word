@@ -1,0 +1,212 @@
+{
+  "word": "ABOUT",
+  "senses": {
+    "ABOUT-ADV1": {
+      "CAT": "ADV",
+      "DEF": "approximately",
+      "EX": "He makes about 80K a year. Dinner at about 5.",
+      "COMMENTS": "We need to create a range with this number in the middle, and expand that range on either side.  7% seems to work pretty well:     About 5 gallons: 5 * .07 = .35 [so it's between 4.65 and 5.35 gallons]    About 150 lbs.:  150 * .07 = 10.5  [so it's 139.5 to 160.5 pounds]     About 8 hours: 480 min. * .07 = 33.6 min either way    The following are bad results. When we have time, we should make ",
+      "TMR-HEAD": "$VAR2",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "ADV",
+        "NUM": {
+          "ROOT": "$VAR1",
+          "CAT": "NUM"
+        },
+        "N": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1",
+            "MEASURED-IN": {
+              "VALUE": "^$VAR2"
+            }
+          },
+          "CARDINALITY": [
+            "><",
+            [
+              [
+                "DECREASE",
+                [
+                  "VALUE",
+                  "^$VAR1"
+                ],
+                0.15
+              ]
+            ],
+            [
+              [
+                "INCREASE",
+                [
+                  "VALUE",
+                  "^$VAR1"
+                ],
+                0.15
+              ]
+            ]
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "GIVE",
+        "ABOUT-0",
+        "|20-1|",
+        "BOXES-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NUM",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "AROUND",
+        "APPROXIMATELY",
+        "ROUGHLY",
+        "ROUND_ABOUT",
+        "SOMEWHERE_AROUND",
+        "IN_THE_NEIGHBORHOOD_OF",
+        "ISH",
+        "-ish"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ABOUT-ADV1",
+      "WORD": "ABOUT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ABOUT-PREP1": {
+      "CAT": "PREP",
+      "DEF": "refers to the topic some type of media, book, etc.",
+      "EX": "a book about life",
+      "COMMENTS": "[D] the hyponym 'across' is used in cases like 'we have data across multiple ethnic groups';  having this sense will probably be a big problem because of disambiguation so I'll need to more about whether we can keep it in or whether we have to restrict it to  some very narrow semantic class into: research into dementia; 'over' is used as in 'concern over piracy'",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "V",
+          "N"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "ABOUT-AS-TOPIC": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE",
+        "RAN-1",
+        "ABOUT-0",
+        "THE",
+        "BOX-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "ACROSS",
+        "IN",
+        "INTO",
+        "OVER"
+      ],
+      "SENSE": "ABOUT-PREP1",
+      "WORD": "ABOUT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ABOUT-PREP4": {
+      "CAT": "PREP",
+      "DEF": "refers to the topic of something as the theme of a communicative-event",
+      "EX": "they talked about life",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "V",
+          "N"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "COMMUNICATIVE-EVENT",
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE",
+        "RAN-1",
+        "ABOUT-0",
+        "THE",
+        "BOX-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ABOUT-PREP4",
+      "WORD": "ABOUT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

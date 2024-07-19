@@ -1,0 +1,31 @@
+{
+  "word": "RAMJET",
+  "senses": {
+    "RAMJET-N1": {
+      "CAT": "N",
+      "DEF": "an engine for aircraft",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ENGINE": {
+          "PART-OF-OBJECT": "AIRPLANE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RAMJET-N1",
+      "WORD": "RAMJET",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

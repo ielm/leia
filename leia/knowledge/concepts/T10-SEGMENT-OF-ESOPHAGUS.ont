@@ -1,0 +1,37 @@
+{
+  "name": "@T10-SEGMENT-OF-ESOPHAGUS",
+  "isa": [
+    "@SEGMENT-OF-ESOPHAGUS"
+  ],
+  "def": "most distal segment, which contains the LES",
+  "local": [
+    {
+      "slot": "distal-to",
+      "facet": "sem",
+      "filler": "@T9-SEGMENT-OF-ESOPHAGUS"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LUMEN-OF-ESOPHAGUS"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@WALL-OF-ABDOMINAL-PART-OF-ESOPHAGUS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "distal-to",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

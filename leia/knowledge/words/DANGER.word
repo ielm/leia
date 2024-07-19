@@ -1,0 +1,72 @@
+{
+  "word": "DANGER",
+  "senses": {
+    "DANGER-N2": {
+      "CAT": "N",
+      "DEF": "the possibility that something bad might happen",
+      "EX": "Can you describe the risks/danger of smoking?",
+      "COMMENTS": "[D] described as 'the potential for something bad to happen from some event' hyponym distress: as in 'distress call', a call signifying danger",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "POTENTIAL",
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          },
+          "VALUE": 0.5
+        },
+        "REFSEM1": {
+          "MODALITY": {
+            "TYPE": "EVALUATIVE",
+            "SCOPE": {
+              "VALUE": "REFSEM2"
+            },
+            "VALUE-1": 0
+          }
+        },
+        "REFSEM2": {
+          "EVENT": {
+            "RELATION": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "DANGER-0",
+        "OF-1",
+        "THE",
+        "MAN-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "DISTRESS",
+        "HAZARD"
+      ],
+      "SENSE": "DANGER-N2",
+      "WORD": "DANGER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$CAPACITY",
+  "def": "the maximum amount that something can contain",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-ATTRIBUTE"
+}

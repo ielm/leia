@@ -1,0 +1,16 @@
+{
+  "name": "@PORCH",
+  "isa": [
+    "@EXTERIOR-BUILDING-PART"
+  ],
+  "def": "a covered entrance to a building",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@FLOOR"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

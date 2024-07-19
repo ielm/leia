@@ -1,0 +1,121 @@
+{
+  "word": "FACING",
+  "senses": {
+    "FACING-PREP1": {
+      "CAT": "PREP",
+      "DEF": "across from and looking at. This is the static relation; the directional relation is facing-prep2",
+      "EX": "the house facing the road is cheap; the house is facing the road",
+      "COMMENTS": "[D] for now, I'm assuming 'in-front-of' is semantically close enough",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "OBJECT",
+          "IN-FRONT-OF": {
+            "VALUE": "^$VAR2",
+            "SEM": "PHYSICAL-OBJECT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "OBJECT-1",
+        "IN_FRONT_OF-0",
+        "THE",
+        "OBJECT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "IN_FRONT_OF"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FACING-PREP1",
+      "WORD": "FACING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FACING-PREP2": {
+      "CAT": "PREP",
+      "DEF": "across from and looking at. This is the directional relation; the static relation is facing-prep1",
+      "EX": "I ran facing the bridge",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "PATH": {
+            "VALUE": "^$VAR2",
+            "SEM": "PHYSICAL-OBJECT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "IN_FRONT_OF-0",
+        "THE",
+        "EVENT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "IN_FRONT_OF"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FACING-PREP2",
+      "WORD": "FACING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "@CUSTOMER-SERVICE",
+  "isa": [
+    "@PEOPLE-MANAGING-ACTIVITY"
+  ],
+  "def": "to handle the concerns of the customers buying the goods or services of a corporation",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CUSTOMER"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@HELP"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

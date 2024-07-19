@@ -1,0 +1,56 @@
+{
+  "word": "ALLIANCE",
+  "senses": {
+    "ALLIANCE-N1": {
+      "CAT": "N",
+      "DEF": "an organization of nations or other groups",
+      "EX": "",
+      "COMMENTS": "I'm representing it as a set of organizations",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": [
+            "BETWEEN",
+            "AMONG",
+            "OF"
+          ],
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "ELEMENTS": {
+            "VALUE": "^$VAR2",
+            "SEM": "ORGANIZATION"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ALLIANCE-0",
+        "BETWEEN-1",
+        "THE",
+        "EVENT-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ALLIANCE-N1",
+      "WORD": "ALLIANCE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

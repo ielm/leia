@@ -1,0 +1,47 @@
+{
+  "name": "@ALCOHOL",
+  "isa": [
+    "@CHEMICAL-COMPOUND"
+  ],
+  "def": "a colorless, volatile, flammable liquid, c2h5oh, formed by vinous fermentation and contained in alcoholic beverages (wine, beer, whiskey, etc.); any of a class of compounds analogous to ethyl alcohol in constitution, classed according to the number of hydroxyl groups, or according to structure",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GRAPHITE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CARBON"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@HYDROGEN"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@OXYGEN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@GAS"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "semi-solid"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "solid"
+    }
+  ],
+  "private": {}
+}

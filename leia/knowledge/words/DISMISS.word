@@ -1,0 +1,62 @@
+{
+  "word": "DISMISS",
+  "senses": {
+    "DISMISS-V1": {
+      "CAT": "V",
+      "DEF": "to fire",
+      "EX": "he dismissed the unruly employees",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "DISMISS": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-2",
+        "DISMISSED-0",
+        "THE",
+        "EMPLOYEES-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "DISCHARGE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DISMISS-V1",
+      "WORD": "DISMISS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

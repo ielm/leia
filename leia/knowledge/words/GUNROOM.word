@@ -1,0 +1,39 @@
+{
+  "word": "GUNROOM",
+  "senses": {
+    "GUNROOM-N1": {
+      "CAT": "N",
+      "DEF": "a room on a ship where there are guns (perhaps this term is used more broadly; I can't find a good def)",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ROOM": {
+          "LOCATION": "SHIP",
+          "LOCATION-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": "GUN"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GUNROOM-N1",
+      "WORD": "GUNROOM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

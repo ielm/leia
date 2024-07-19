@@ -1,0 +1,21 @@
+{
+  "name": "@ADMINISTER-MEDICINE",
+  "isa": [
+    "@MEDICAL-PROCEDURE"
+  ],
+  "def": "to give medicine to a patient",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@DRUG"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MEDICAL-ARTIFACT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

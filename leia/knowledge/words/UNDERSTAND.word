@@ -1,0 +1,468 @@
+{
+  "word": "UNDERSTAND",
+  "senses": {
+    "UNDERSTAND-V1": {
+      "CAT": "V",
+      "DEF": "to comprehend; with an optional comp",
+      "EX": "he understands (that you're confused)",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "COMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "UNDERSTAND": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "UNDERSTANDS-0",
+        "THAT",
+        "THE",
+        "DOG",
+        "WON-2",
+        "THE",
+        "RACE"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "COMPREHEND"
+      ],
+      "HYPONYMS": [
+        "APPRECIATE"
+      ],
+      "SENSE": "UNDERSTAND-V1",
+      "WORD": "UNDERSTAND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "UNDERSTAND-V2": {
+      "CAT": "V",
+      "DEF": "to comprehend; with a required direct object",
+      "EX": "I understand the importance of this",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "UNDERSTAND": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "UNDERSTANDS-0",
+        "THE",
+        "DOCUMENT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "COMPREHEND"
+      ],
+      "HYPONYMS": [
+        "APPRECIATE",
+        "RECOGNIZE"
+      ],
+      "SENSE": "UNDERSTAND-V2",
+      "WORD": "UNDERSTAND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "UNDERSTAND-V3": {
+      "CAT": "V",
+      "DEF": "phrasal: x understands from person or source y (that) z = y tells x (that) z",
+      "EX": "I understand from Harry that you won't be coming to our party",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "FROM",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        },
+        "COMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "KNOW": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "CAUSED-BY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "INFORM": {
+            "AGENT": {
+              "VALUE": "^$VAR4"
+            },
+            "THEME-1": {
+              "VALUE": "^$VAR2"
+            },
+            "BENEFICIARY": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "UNDERSTOOD-0",
+        "FROM-3",
+        "THE",
+        "SPOKESPERSON-4",
+        "THAT",
+        "THE",
+        "DOG",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "UNDERSTAND-V3",
+      "WORD": "UNDERSTAND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "UNDERSTAND-V502": {
+      "CAT": "V",
+      "EX": "I am trying to understand about the plan.",
+      "COMMENTS": "*Indirect Speech Act*  Also works with 'figure out' with 'out' an optional",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": [
+            "WANT",
+            "TRY"
+          ],
+          "CAT": "V"
+        },
+        "INF": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "TO",
+          "CAT": "INF"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP": {
+          "ROOT": "$VAR5",
+          "ROOT-WORD": "ABOUT",
+          "CAT": "PREP"
+        },
+        "N-1": {
+          "ROOT": "$VAR7",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "REQUEST-INFO": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR7"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "I-1",
+        "TRIED-2",
+        "TO-3",
+        "UNDERSTAND-0",
+        "ABOUT-5",
+        "THE",
+        "PLAN-7"
+      ],
+      "SYNONYMS": [
+        "FIGURE_OUT"
+      ],
+      "SENSE": "UNDERSTAND-V502",
+      "WORD": "UNDERSTAND",
+      "DEF": "",
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "UNDERSTAND-V501": {
+      "CAT": "V",
+      "EX": "I am trying to understand the plan.",
+      "COMMENTS": "*Indirect Speech Act*  Also works with 'figure out' with 'out' an optional",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": [
+            "WANT",
+            "TRY"
+          ],
+          "CAT": "V"
+        },
+        "INF": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "TO",
+          "CAT": "INF"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "N-1": {
+          "ROOT": "$VAR7",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "REQUEST-INFO": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR7"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "I-1",
+        "TRIED-2",
+        "TO-3",
+        "UNDERSTAND-0",
+        "THE",
+        "PLAN-7"
+      ],
+      "SYNONYMS": [
+        "FIGURE_OUT"
+      ],
+      "SENSE": "UNDERSTAND-V501",
+      "WORD": "UNDERSTAND",
+      "DEF": "",
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "UNDERSTAND-V500": {
+      "CAT": "V",
+      "EX": "I am trying to understand how to hit the building.",
+      "COMMENTS": "*Indirect Speech Act*  Also works with 'figure out' with 'out' an optional",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": [
+            "WANT",
+            "TRY"
+          ],
+          "CAT": "V"
+        },
+        "INF": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "TO",
+          "CAT": "INF"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "X": [
+          [
+            "ROOT",
+            "$VAR5"
+          ],
+          [
+            "ROOT",
+            "HOW"
+          ],
+          [
+            "CAT",
+            "X"
+          ]
+        ],
+        "INF-1": {
+          "ROOT": "$VAR6",
+          "ROOT-WORD": "TO",
+          "CAT": "INF"
+        },
+        "V-1": {
+          "ROOT": "$VAR7",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "REQUEST-INFO": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR7.HAS-EVENT-AS-PART"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR6": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "I-1",
+        "TRIED-2",
+        "TO-3",
+        "UNDERSTAND-0",
+        "HOW-5",
+        "TO-6",
+        "HIT-7",
+        "THE",
+        "BUILDING"
+      ],
+      "SYNONYMS": [
+        "FIGURE_OUT"
+      ],
+      "SENSE": "UNDERSTAND-V500",
+      "WORD": "UNDERSTAND",
+      "DEF": "",
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

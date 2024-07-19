@@ -1,0 +1,56 @@
+{
+  "word": "FRAMEWORK",
+  "senses": {
+    "FRAMEWORK-N1": {
+      "CAT": "N",
+      "DEF": "in the configuration '(the) framework of X', in which 'framework' is essentially null-sem'd",
+      "EX": "within the framework of the organization = within the organization",
+      "COMMENTS": "this sense requires the pp adjunct",
+      "TMR-HEAD": "$VAR2",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "FRAMEWORK-0",
+        "OF-1",
+        "THE",
+        "MAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FRAMEWORK-N1",
+      "WORD": "FRAMEWORK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

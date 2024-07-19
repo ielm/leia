@@ -1,0 +1,27 @@
+{
+  "name": "@PLANT-PART",
+  "isa": [
+    "@ANIMATE-PART"
+  ],
+  "def": "parts of plants as opposed to creatures",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT-PART"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@GAS"
+    }
+  ],
+  "private": {}
+}

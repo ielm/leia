@@ -1,0 +1,35 @@
+{
+  "word": "MISINFORMATION",
+  "senses": {
+    "MISINFORMATION-N1": {
+      "CAT": "N",
+      "DEF": "deliberately falsified information",
+      "EX": "the Allies released misinformation about their intended landing zone",
+      "COMMENTS": "[D] not (truth-value 0) since some part is usually true",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "INFORMATION": {
+          "TRUTH-VALUE": [
+            "<",
+            1
+          ],
+          "INSTRUMENT-OF": "DECEIVE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MISINFORMATION-N1",
+      "WORD": "MISINFORMATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

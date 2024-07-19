@@ -1,0 +1,22 @@
+{
+  "name": "@TRIGGER",
+  "isa": [
+    "@ARTIFACT-PART"
+  ],
+  "def": "A lever pressed by the finger to discharge a firearm",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

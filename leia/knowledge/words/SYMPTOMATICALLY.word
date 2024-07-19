@@ -1,0 +1,36 @@
+{
+  "word": "SYMPTOMATICALLY",
+  "senses": {
+    "SYMPTOMATICALLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "in response to symptoms",
+      "EX": "the disease can be treated symptomatically",
+      "COMMENTS": "imprecise, but adequate",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "CAUSED-BY": "SYMPTOM"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SYMPTOMATICALLY-ADV1",
+      "WORD": "SYMPTOMATICALLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

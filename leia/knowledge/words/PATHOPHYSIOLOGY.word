@@ -1,0 +1,53 @@
+{
+  "word": "PATHOPHYSIOLOGY",
+  "senses": {
+    "PATHOPHYSIOLOGY-N1": {
+      "CAT": "N",
+      "DEF": "functional changes caused by a disorder",
+      "EX": "the pathophysiology of this disease is pervasive",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "BIOLOGIC-FUNCTION": {
+            "CAUSED-BY": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PATHOPHYSIOLOGY-N1",
+      "WORD": "PATHOPHYSIOLOGY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@THALASSOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "intense fascination with the sea",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SEA"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,45 @@
+{
+  "word": "IMPRESSION",
+  "senses": {
+    "IMPRESSION-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": [
+            "OF",
+            "ABOUT"
+          ],
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "OPINION": {
+          "ABOUT-AS-TOPIC": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "IMPRESSION-N1",
+      "WORD": "IMPRESSION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

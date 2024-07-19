@@ -1,0 +1,136 @@
+{
+  "word": "HIMSELF",
+  "senses": {
+    "HIMSELF-N1": {
+      "CAT": "N",
+      "DEF": "the reflexive pronoun 'himself' as an object",
+      "EX": "my brother rewards himself with chocolate. if a person likes himself, then everything's ok.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "TYPE": "REFL-PRO"
+      },
+      "SEM-STRUC": {
+        "ANIMAL": {
+          "GENDER": "MALE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          [
+            "COREFER-WITH-SUBJECT-OF-CLAUSE"
+          ]
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HIMSELF-N1",
+      "WORD": "HIMSELF",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HIMSELF-N2": {
+      "CAT": "N",
+      "DEF": "the reflexive pronoun 'himself' used directly following a coreferential np; has emphasis function",
+      "EX": " He himself has no idea what he wants. She wanted to talk to John himself.",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "GENDER": "MALE",
+          "NUMBER": "SING",
+          "PERSON": "THIRD"
+        },
+        "N-1": {
+          "ROOT": "$VAR0",
+          "CAT": "N",
+          "TYPE": "REFL-PRO"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "SALIENCY",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EVENT-1",
+        "HIMSELF-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PUNCT",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HIMSELF-N2",
+      "WORD": "HIMSELF",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HIMSELF-N3": {
+      "CAT": "N",
+      "DEF": "independently, without assistance",
+      "EX": "he-i can do it himself-i",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "N": {
+          "ROOT": "$VAR0",
+          "CAT": "N",
+          "TYPE": "REFL-PRO"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "ACCOMPANIER": "*NONE*"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "HIMSELF-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HIMSELF-N3",
+      "WORD": "HIMSELF",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

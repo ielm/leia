@@ -1,0 +1,109 @@
+{
+  "word": "NAIL",
+  "senses": {
+    "NAIL-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "NAIL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "DOORNAIL",
+        "EIGHTPENNY_NAIL",
+        "FOURPENNY_NAIL",
+        "HOBNAIL",
+        "SIXPENNY_NAIL",
+        "CLOUT_NAIL",
+        "SPIKE",
+        "STAPLE",
+        "STUB_NAIL",
+        "TACK",
+        "CARPET_TACK",
+        "THUMBTACK",
+        "PUSHPIN",
+        "TINTACK"
+      ],
+      "SENSE": "NAIL-N1",
+      "WORD": "NAIL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "NAIL-V1": {
+      "CAT": "V",
+      "DEF": "to attach something to something else   using a nail or nails",
+      "EX": "the nailed the picture to the wall",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": [
+            "TO",
+            "INTO"
+          ],
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ATTACH": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "INSTRUMENT": "NAIL",
+          "DESTINATION": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "NAILED-0",
+        "THE",
+        "PICTURE-2",
+        "TO-3",
+        "THE",
+        "WALL-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NAIL-V1",
+      "WORD": "NAIL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

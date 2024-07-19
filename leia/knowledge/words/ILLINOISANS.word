@@ -1,0 +1,49 @@
+{
+  "word": "ILLINOISANS",
+  "senses": {
+    "ILLINOISANS-N1": {
+      "CAT": "N",
+      "DEF": "the set of residents of illinois",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "NUMBER": "PL"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "REFSEM1"
+          },
+          "QUANT": 1
+        },
+        "REFSEM1": {
+          "HUMAN": {
+            "HAS-STATE-ADDRESS": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "STATE": {
+            "HAS-NAME": {
+              "VALUE": "ILLINOIS"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ILLINOISANS-N1",
+      "WORD": "ILLINOISANS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

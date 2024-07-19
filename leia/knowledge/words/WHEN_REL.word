@@ -1,0 +1,47 @@
+{
+  "word": "WHEN_REL",
+  "senses": {
+    "WHEN_REL-PRO1": {
+      "CAT": "PRO",
+      "DEF": "a temporal relation; for NP when cl",
+      "EX": "The days when I am free are Friday and Sunday",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "REL-PRO",
+        "CL": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "TIME-INTERVAL-UNIT",
+            "EVENT"
+          ],
+          "TIME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WHEN_REL-PRO1",
+      "WORD": "WHEN_REL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

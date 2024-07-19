@@ -1,0 +1,32 @@
+{
+  "word": "MOSQUITO",
+  "senses": {
+    "MOSQUITO-N1": {
+      "CAT": "N",
+      "DEF": "an insect in which the female sucks blood  ",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "MOSQUITO",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SKEETER"
+      ],
+      "HYPONYMS": [
+        "COMMON_MOSQUITO",
+        "YELLOW_FEVER_MOSQUITO"
+      ],
+      "SENSE": "MOSQUITO-N1",
+      "WORD": "MOSQUITO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

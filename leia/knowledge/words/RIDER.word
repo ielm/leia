@@ -1,0 +1,31 @@
+{
+  "word": "RIDER",
+  "senses": {
+    "RIDER-N1": {
+      "CAT": "N",
+      "DEF": "someone who rides something, like a horse or bicycle",
+      "EX": "Bicycle riders need to be careful",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "AGENT-OF": "RIDE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RIDER-N1",
+      "WORD": "RIDER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

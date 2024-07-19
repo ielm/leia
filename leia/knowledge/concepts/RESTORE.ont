@@ -1,0 +1,22 @@
+{
+  "name": "@RESTORE",
+  "isa": [
+    "@ABSENCE-OF-CHANGE-EVENT"
+  ],
+  "def": "to return to a former or normal state, or to a position, rank, use, etc.",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

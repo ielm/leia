@@ -1,0 +1,82 @@
+{
+  "word": "HIKE",
+  "senses": {
+    "HIKE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "our hike was nice",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "WALK": {
+          "DURATION": {
+            ">": 2,
+            "MEASURING-UNIT": "HOUR"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HIKE-N1",
+      "WORD": "HIKE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HIKE-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "they hiked through the woods",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "WALK": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "DURATION": {
+            ">": 2,
+            "MEASURING-UNIT": "HOUR"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "HIKED-0",
+        "THROUGH",
+        "THE",
+        "WOODS"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HIKE-V1",
+      "WORD": "HIKE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

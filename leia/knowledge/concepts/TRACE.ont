@@ -1,0 +1,27 @@
+{
+  "name": "@TRACE",
+  "isa": [
+    "@DRAW"
+  ],
+  "def": "to copy using or according to a pattern, often though not necessarily through thin tracing paper",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@TRACING-PAPER"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@TRACING-PAPER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

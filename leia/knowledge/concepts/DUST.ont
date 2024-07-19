@@ -1,0 +1,32 @@
+{
+  "name": "@DUST",
+  "isa": [
+    "@EARTH-MATERIAL"
+  ],
+  "def": "powdery earth or any finely powdered matter",
+  "local": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@ALLERGY"
+    },
+    {
+      "slot": "effect",
+      "facet": "relaxable-to",
+      "filler": "@EVENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

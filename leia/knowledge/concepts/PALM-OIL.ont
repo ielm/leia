@@ -1,0 +1,22 @@
+{
+  "name": "@PALM-OIL",
+  "isa": [
+    "@COOKING-OIL"
+  ],
+  "def": "oil from palm trees",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PALM-TREE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

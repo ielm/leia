@@ -1,0 +1,193 @@
+{
+  "word": "ADDITION",
+  "senses": {
+    "ADDITION-N2": {
+      "CAT": "N",
+      "DEF": "adding one thing to another",
+      "EX": "the addition of the lounge chair to our patio furniture",
+      "COMMENTS": "sem obj. might be too narrow - needs testing",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "TO",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "CHANGE-EVENT": {
+          "PRECONDITION": {
+            "VALUE": "REFSEM1"
+          },
+          "EFFECT": {
+            "VALUE": "REFSEM2"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "ELEMENTS": {
+              "VALUE": "^$VAR4",
+              "SEM": "OBJECT"
+            }
+          }
+        },
+        "REFSEM2": {
+          "SET": {
+            "ELEMENTS-1": {
+              "VALUE": "^$VAR4",
+              "VALUE-1": "^$VAR2"
+            }
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ADDITION-0",
+        "OF-1",
+        "THE",
+        "MAN-2",
+        "TO-3",
+        "THE",
+        "EVENT-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ADDITION-N2",
+      "WORD": "ADDITION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ADDITION-N1": {
+      "CAT": "N",
+      "DEF": "adding up numbers",
+      "EX": "the addition of 4 to 12",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "TO",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ADD-UP": {
+          "THEME": {
+            "VALUE": "^$VAR4"
+          },
+          "THEME-1": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ADDITION-0",
+        "OF-1",
+        "THE",
+        "MEN-2",
+        "TO-3",
+        "THE",
+        "MEN-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ADDITION-N1",
+      "WORD": "ADDITION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

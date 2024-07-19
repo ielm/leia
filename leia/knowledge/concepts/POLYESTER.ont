@@ -1,0 +1,27 @@
+{
+  "name": "@POLYESTER",
+  "isa": [
+    "@SYNTHETICS"
+  ],
+  "def": "a complex ester formed by polymerization or condensation for use chiefly in making fibers, resins and plastics; also used for making photographic film, electrical components, laminates and sails, and to replace glass and metals because it is less prone to shape distortion",
+  "local": [
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "translucent"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "opaque"
+    }
+  ],
+  "block": [
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "transparent"
+    }
+  ],
+  "private": {}
+}

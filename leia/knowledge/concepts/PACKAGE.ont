@@ -1,0 +1,22 @@
+{
+  "name": "@PACKAGE",
+  "isa": [
+    "@MAIL-ARTIFACT"
+  ],
+  "def": "A parcel, usually sent by mail.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PACKAGING-MATERIAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

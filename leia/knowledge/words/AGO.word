@@ -1,0 +1,145 @@
+{
+  "word": "AGO",
+  "senses": {
+    "AGO-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "indicates a time in the past",
+      "EX": "I finished school (three) years ago",
+      "COMMENTS": "I'm saying that the part of speech of this 'ago' is adj because, formally, it modifies nouns. functionally, of course, those nouns are adverbs, which means that functionally, ago is acting like an adverb. in senses 1 and 2, element order is fixed. sense 3 covers instances where ago modifies a syntactic adverb and, therefore, is itself an adverb.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        },
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "EVENT",
+            "TIME-INTERVAL-UNIT"
+          ]
+        },
+        "^$VAR2": {
+          "TIME": [
+            "COMBINE-TIME",
+            [
+              "FIND-ANCHOR-TIME"
+            ],
+            "^$VAR1",
+            "BEFORE"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING",
+        "2",
+        "DAYS-1",
+        "BACK-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "PUNCT",
+          "$VAR2",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "BACK"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "AGO-ADJ1",
+      "WORD": "AGO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "AGO-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "three years ago (,) I finished school",
+      "COMMENTS": "must be this element order",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "PUNCT": {
+          "ROOT-WORD": "*COMMA*",
+          "ROOT": "$VAR3",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        },
+        "CL": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "EVENT",
+            "TIME-INTERVAL-UNIT"
+          ]
+        },
+        "^$VAR2": {
+          "TIME": [
+            "COMBINE-TIME",
+            [
+              "FIND-ANCHOR-TIME"
+            ],
+            "^$VAR1",
+            "BEFORE"
+          ]
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "5",
+        "YEARS-1",
+        "AGO-0",
+        "*COMMA*-3",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING",
+        "*PERIOD*"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AGO-ADJ2",
+      "WORD": "AGO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

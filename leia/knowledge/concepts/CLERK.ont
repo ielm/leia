@@ -1,0 +1,23 @@
+{
+  "name": "@CLERK",
+  "isa": [
+    "@LEGAL-WORK-ROLE",
+    "@CLERICAL-ROLE",
+    "@HOTEL-ROLE"
+  ],
+  "def": "A person who works in an office performing such tasks as keeping records, attending to correspondence, or filing.",
+  "local": [],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

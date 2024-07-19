@@ -1,0 +1,16 @@
+{
+  "name": "@PRISON-BUILDING",
+  "isa": [
+    "@PENAL-INSTITUTION"
+  ],
+  "def": "a place of confinement for those who are convicted by or are awaiting trial",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@JAIL-CELL"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

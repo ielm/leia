@@ -1,0 +1,38 @@
+{
+  "word": "CREDIT_MEASURE",
+  "senses": {
+    "CREDIT_MEASURE-N1": {
+      "CAT": "N",
+      "DEF": "a means of measuring one's credit",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "METHOD": {
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "MEASURE": {
+            "THEME": "CREDIT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CREDIT_MEASURE-N1",
+      "WORD": "CREDIT_MEASURE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

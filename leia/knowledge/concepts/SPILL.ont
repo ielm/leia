@@ -1,0 +1,42 @@
+{
+  "name": "@SPILL",
+  "isa": [
+    "@DROP"
+  ],
+  "def": "To allow to run or fall from a container, especially unintentionally.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@CONTAINER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

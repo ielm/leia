@@ -1,0 +1,27 @@
+{
+  "name": "@ISOPOD",
+  "isa": [
+    "@CRUSTACEAN"
+  ],
+  "def": "small aquatic or terrestrial crustaceans with seven pairs of legs",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@EARTH-SURFACE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BODY-OF-WATER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

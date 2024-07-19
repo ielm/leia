@@ -1,0 +1,42 @@
+{
+  "word": "INJURED",
+  "senses": {
+    "INJURED-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "Having experienced injury",
+      "EX": "The injured bird; the bird is injured",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "BENEFICIARY-OF": "INJURY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "INJURED-0",
+        "MAN-1",
+        "HIT",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INJURED-ADJ2",
+      "WORD": "INJURED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

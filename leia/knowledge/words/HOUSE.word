@@ -1,0 +1,160 @@
+{
+  "word": "HOUSE",
+  "senses": {
+    "HOUSE-N1": {
+      "CAT": "N",
+      "DEF": "place where someone lives--personal space",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PRIVATE-HOME",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "PRIVATE_HOME",
+        "HOMESTEAD"
+      ],
+      "HYPONYMS": [
+        "CONDO",
+        "CONDOMINIUM",
+        "ROW_HOUSE"
+      ],
+      "SENSE": "HOUSE-N1",
+      "WORD": "HOUSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HOUSE-V1": {
+      "CAT": "V",
+      "DEF": "serve as a dwelling place for, usually short-term",
+      "EX": "the loft over the garage will house the teenagers",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "STAY": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "LOCATION": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "LOBBY-1",
+        "HOUSES-0",
+        "THE",
+        "GOD-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HOUSE-V1",
+      "WORD": "HOUSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HOUSE-V2": {
+      "CAT": "V",
+      "DEF": "offer a dwelling place for, usually short-term",
+      "EX": "each host family will house one student",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "STAY": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "LOCATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "DWELLING": {
+            "THEME-OF": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "POSSESSION-EVENT": {
+            "AGENT-1": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "GOD-1",
+        "HOUSES-0",
+        "THE",
+        "GOD-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HOUSE-V2",
+      "WORD": "HOUSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

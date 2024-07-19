@@ -1,0 +1,86 @@
+{
+  "word": "AMONGST",
+  "senses": {
+    "AMONGST-PREP2": {
+      "CAT": "PREP",
+      "DEF": "object a is located in the general space of plural objects b, but those plural objects - for this sense - are represented by a collective noun, like 'herd'",
+      "EX": "the calf was hidden amongst the herd.",
+      "COMMENTS": "[D] whereas the member of a set of trees is a tree - covered in sense 1 using set notation - the member of a herd is a cow - this sense. when we say that a calf is among the herd, there is no need to split up the herd into the set of its individual cows. instead, just refer to the herd as such. so, the singular noun conveys the plural semantics without the need of establishing a set.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N",
+            "NUMBER": "SING"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "OBJECT",
+          "BESIDE": {
+            "VALUE": "^$VAR2",
+            "SEM": "OBJECT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AMONGST-PREP2",
+      "WORD": "AMONGST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "AMONGST-PREP3": {
+      "CAT": "PREP",
+      "DEF": "a member of some group, class, etc.",
+      "EX": "she is amongst the elite; students (who are) amongst the elite are intolerable.",
+      "COMMENTS": "I'm going to assume that the classes of people being referred to here have to be preceded by 'the' - i.e., 'the elite, the great', and that the following noun has to be in the singular (if I'm wrong, we'll find out in testing). the copular construction will be handled by a transformation from the np + pp lexicon entry",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "ELEMENTS": {
+            "VALUE": "^$VAR1"
+          },
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AMONGST-PREP3",
+      "WORD": "AMONGST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

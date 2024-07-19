@@ -1,0 +1,35 @@
+{
+  "word": "CORDED",
+  "senses": {
+    "CORDED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "having a connecting device",
+      "EX": "corded phone, keyboard, etc.",
+      "COMMENTS": "[D] we lexicalized some common compounds",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "HAS-OBJECT-AS-PART": "ELECTRICAL-CORD"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CORDED-ADJ1",
+      "WORD": "CORDED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

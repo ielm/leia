@@ -1,0 +1,22 @@
+{
+  "name": "@VALVE",
+  "isa": [
+    "@ARTIFACT-PART"
+  ],
+  "def": "any device in a pipe, etc. that regulates the flow by way of a flap, lid, etc.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LID"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

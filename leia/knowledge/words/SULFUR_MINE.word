@@ -1,0 +1,33 @@
+{
+  "word": "SULFUR_MINE",
+  "senses": {
+    "SULFUR_MINE-N1": {
+      "CAT": "N",
+      "DEF": "an excavation made in the earth from which sulfur is extracted",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MINE": {
+          "LOCATION-OF": "SULFUR"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SULPHUR_MINE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SULFUR_MINE-N1",
+      "WORD": "SULFUR_MINE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

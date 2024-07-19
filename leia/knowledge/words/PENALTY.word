@@ -1,0 +1,49 @@
+{
+  "word": "PENALTY",
+  "senses": {
+    "PENALTY-N1": {
+      "CAT": "N",
+      "DEF": "loss, punishment, etc., due to an infraction",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PENALTY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PENALTY-N1",
+      "WORD": "PENALTY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PENALTY-N2": {
+      "CAT": "N",
+      "DEF": "penalty in sports",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PENALTY-ATHLETIC",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PENALTY-N2",
+      "WORD": "PENALTY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

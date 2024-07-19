@@ -1,0 +1,16 @@
+{
+  "name": "@INVESTMENT-CORPORATION",
+  "isa": [
+    "@FINANCIAL-CORPORATION"
+  ],
+  "def": "organizations that provide services pertaining to investment",
+  "local": [
+    {
+      "slot": "area-of-business-activity",
+      "facet": "sem",
+      "filler": "@INVESTMENT-EVENT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,39 @@
+{
+  "word": "FESTSCHRIFT",
+  "senses": {
+    "FESTSCHRIFT-N1": {
+      "CAT": "N",
+      "DEF": "A collection of learned articles or essays by   colleagues and admirers, serving as a tribute or memorial especially to a scholar.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ANTHOLOGY": {
+          "HAS-OBJECT-AS-PART": "ARTICLE",
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "COMMEMORATE": {
+            "BENEFICIARY": "ACADEMIC-SPECIALIST"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FESTSCHRIFT-N1",
+      "WORD": "FESTSCHRIFT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "word": "CYPRIAN",
+  "senses": {
+    "CYPRIAN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to cyprus",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "CYPRUS"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "CYPRIOT",
+        "CYPRIOTE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CYPRIAN-ADJ1",
+      "WORD": "CYPRIAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CYPRIAN-N1": {
+      "CAT": "N",
+      "DEF": "a citizen of cyprus",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CITIZEN": {
+          "HAS-NATIONALITY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "CYPRUS"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "CYPRIOT",
+        "CYPRIOTE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CYPRIAN-N1",
+      "WORD": "CYPRIAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "word": "SUGAR_REFINERY",
+  "senses": {
+    "SUGAR_REFINERY-N1": {
+      "CAT": "N",
+      "DEF": "an industrial plant for purifying sugar cane",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "REFINERY": {
+          "LOCATION-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "REFINE-EVENT": {
+            "THEME": "SUGAR"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SUGAR_REFINERY-N1",
+      "WORD": "SUGAR_REFINERY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

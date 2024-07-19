@@ -1,0 +1,93 @@
+{
+  "word": "EXTREME",
+  "senses": {
+    "EXTREME-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "excessive, more than expected, desired, etc.",
+      "EX": "his work requires extreme patience",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "INTENSITY": {
+            "RELATIVE-TO-NORM": [
+              ">",
+              0.8
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EXTREME-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "DRASTIC"
+      ],
+      "SENSE": "EXTREME-ADJ1",
+      "WORD": "EXTREME",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EXTREME-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "lacking in restraint",
+      "EX": "she likes extreme sports; their methods become more extreme as the war continued",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "PRUDENCE": [
+            "<",
+            0.2
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EXTREME-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EXTREME-ADJ2",
+      "WORD": "EXTREME",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

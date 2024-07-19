@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-ETHNIC-GROUP",
+  "def": "the relation between entities and ethnic groups",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$ETHNIC-GROUP-OF",
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

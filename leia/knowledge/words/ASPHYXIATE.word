@@ -1,0 +1,60 @@
+{
+  "word": "ASPHYXIATE",
+  "senses": {
+    "ASPHYXIATE-V1": {
+      "CAT": "V",
+      "DEF": "to cause a condition in which an extreme  decrease in the concentration of oxygen in the body  accompanied by an increase in the concentration of  carbon dioxide leads to loss of consciousness or death",
+      "EX": "the smoke asphyxiated him",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "ASPHYXIATION": {
+          "INSTRUMENT": {
+            "VALUE": "^$VAR1"
+          },
+          "EXPERIENCER": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "SMOKE-1",
+        "ASPHYXIATED-0",
+        "HIM-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ASPHYXIATE-V1",
+      "WORD": "ASPHYXIATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$LEFT-OF",
+  "def": "one object or event is to the left of another",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$RIGHT-OF",
+  "measured-in": [],
+  "container": "$SPATIAL-RELATION"
+}

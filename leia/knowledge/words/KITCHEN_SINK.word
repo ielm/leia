@@ -1,0 +1,31 @@
+{
+  "word": "KITCHEN_SINK",
+  "senses": {
+    "KITCHEN_SINK-N1": {
+      "CAT": "N",
+      "DEF": "a water basin fixed to a wall or floor in the kitchen and having a drainpipe and generally a piped supply of water",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SINK-FIXTURE": {
+          "LOCATION": "KITCHEN"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KITCHEN_SINK-N1",
+      "WORD": "KITCHEN_SINK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

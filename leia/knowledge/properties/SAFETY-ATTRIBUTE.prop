@@ -1,0 +1,11 @@
+{
+  "name": "$SAFETY-ATTRIBUTE",
+  "def": "the degree to which an object or an event is safe or unsafe",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-OBJECT-ATTRIBUTE"
+}

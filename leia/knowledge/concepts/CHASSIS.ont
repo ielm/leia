@@ -1,0 +1,27 @@
+{
+  "name": "@CHASSIS",
+  "isa": [
+    "@VEHICLE-PART"
+  ],
+  "def": "the frame, wheels, etc. of a motor vehicle, but not the body or engine",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@WHEEL"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@ENGINE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

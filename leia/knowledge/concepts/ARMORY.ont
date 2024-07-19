@@ -1,0 +1,16 @@
+{
+  "name": "@ARMORY",
+  "isa": [
+    "@MILITARY-INSTALLATION"
+  ],
+  "def": "a storehouse for weapons and military equipment",
+  "local": [
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@WEAPON"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,39 @@
+{
+  "word": "CAFETERIA_TRAY",
+  "senses": {
+    "CAFETERIA_TRAY-N1": {
+      "CAT": "N",
+      "DEF": "a tray used to carry food in a cafeteria",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "TRAY": {
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "CARRY": {
+            "LOCATION": "CAFETERIA",
+            "THEME": "INGESTIBLE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CAFETERIA_TRAY-N1",
+      "WORD": "CAFETERIA_TRAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

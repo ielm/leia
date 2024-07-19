@@ -1,0 +1,104 @@
+{
+  "word": "PRECAUTION",
+  "senses": {
+    "PRECAUTION-N1": {
+      "CAT": "N",
+      "DEF": "precaution against X: behavior intended to prevent X or reduce damage from X",
+      "EX": "he took precautions (against leaks); we recommend wearing reflective gear as a precaution (against accidents)",
+      "COMMENTS": "[D] usu plural, but not always",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "AGAINST",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": [
+            "OF",
+            "BY"
+          ],
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR4"
+          },
+          "GOAL": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "PROTECT": {
+            "AGENT-1": {
+              "VALUE": "^$VAR4"
+            },
+            "RELATION": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "PRECAUTION-0",
+        "AGAINST-1",
+        "THE",
+        "MAN-2",
+        "OF-3",
+        "THE",
+        "ANIMAL-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRECAUTION-N1",
+      "WORD": "PRECAUTION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@APPENDECTOMY",
+  "isa": [
+    "@SURGICAL-REMOVAL"
+  ],
+  "def": "Surgical removal of the vermiform appendix",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@APPENDIX"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

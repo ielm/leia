@@ -1,0 +1,61 @@
+{
+  "word": "NORTH_OF",
+  "senses": {
+    "NORTH_OF-PREP1": {
+      "CAT": "PREP",
+      "DEF": "",
+      "EX": "NYC is north of Baltimore",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "OBJECT",
+            "EVENT"
+          ],
+          "NORTH-OF": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "NORTH_OF-0",
+        "THE",
+        "OBJECT-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "TO_THE_NORTH_OF"
+      ],
+      "HYPONYMS": [
+        "DUE_NORTH_OF"
+      ],
+      "SENSE": "NORTH_OF-PREP1",
+      "WORD": "NORTH_OF",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

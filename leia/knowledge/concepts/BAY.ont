@@ -1,0 +1,34 @@
+{
+  "name": "@BAY",
+  "isa": [
+    "@BODY-OF-WATER"
+  ],
+  "def": "a body of water partly enclosed by land but with a wide outlet to the sea",
+  "local": [],
+  "block": [
+    {
+      "slot": "available",
+      "facet": "sem",
+      "filler": "yes no"
+    },
+    {
+      "slot": "has-name-non-human",
+      "facet": "sem",
+      "filler": "@NAME-NON-HUMAN"
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "private": {}
+}

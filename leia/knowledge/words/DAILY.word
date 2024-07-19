@@ -1,0 +1,97 @@
+{
+  "word": "DAILY",
+  "senses": {
+    "DAILY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "daily occurrence",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TIME-INTERVAL": {
+            "SEM": 1,
+            "MEASURING-UNIT": "DAY"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "DAILY-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DAILY-ADJ1",
+      "WORD": "DAILY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DAILY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "carried out or occurring every day",
+      "EX": "He runs daily",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TIME-INTERVAL": {
+            "SEM": 1,
+            "MEASURING-UNIT": "DAY"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "DAILY-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "EVERY_DAY",
+        "EACH_DAY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DAILY-ADV1",
+      "WORD": "DAILY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

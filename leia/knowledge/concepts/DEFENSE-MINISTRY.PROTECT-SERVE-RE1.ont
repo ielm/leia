@@ -1,0 +1,21 @@
+{
+  "name": "@DEFENSE-MINISTRY.PROTECT-SERVE-RE1",
+  "isa": [
+    "@PROTECT-SERVE"
+  ],
+  "def": "(reification) a service event which involves protecting people or things from various forms of danger",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@DEFENSE-MINISTRY"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

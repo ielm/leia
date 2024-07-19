@@ -1,0 +1,35 @@
+{
+  "name": "@POEM",
+  "isa": [
+    "@LITERARY-STYLE"
+  ],
+  "def": "an arrangement of words, especially a rhythmical composition, sometimes rhymed, in a style more imaginative than ordinary speech",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@WORD"
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "><",
+        1000
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": "@LINE-TEXT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ABSTRACT-OBJECT"
+    }
+  ],
+  "private": {}
+}

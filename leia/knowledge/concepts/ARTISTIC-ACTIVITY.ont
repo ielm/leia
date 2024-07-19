@@ -1,0 +1,22 @@
+{
+  "name": "@ARTISTIC-ACTIVITY",
+  "isa": [
+    "@NON-WORK-ACTIVITY"
+  ],
+  "def": "activity in the fine arts",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@ARTISTIC-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

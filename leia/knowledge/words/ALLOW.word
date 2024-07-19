@@ -1,0 +1,395 @@
+{
+  "word": "ALLOW",
+  "senses": {
+    "ALLOW-V1": {
+      "CAT": "V",
+      "DEF": "permit",
+      "EX": "john allowed his dog to run in the yard",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "INDIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "XCOMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "PERMISSIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR3"
+          },
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR3": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR2",
+          "^$VAR3"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "ALLOWED-0",
+        "THE",
+        "DOG-2",
+        "TO",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "INFMOD",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "AUTHORIZE"
+      ],
+      "SENSE": "ALLOW-V1",
+      "WORD": "ALLOW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ALLOW-V2": {
+      "CAT": "V",
+      "DEF": "to permit",
+      "EX": "do they allow smoking here?",
+      "COMMENTS": "hyponym take: as in, i can't take any more!",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "PERMISSIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          },
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "ALLOWED-0",
+        "THE",
+        "VOTE-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "TAKE"
+      ],
+      "SENSE": "ALLOW-V2",
+      "WORD": "ALLOW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ALLOW-V3": {
+      "CAT": "V",
+      "DEF": "to permit something to go (be, which is close) somewhere, with the 'go' semantically elided",
+      "EX": "this restaurant allows pets into/in the back yard",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "PERMISSIVE",
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          },
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "MOTION-EVENT": {
+            "AGENT": {
+              "VALUE": "^$VAR2"
+            },
+            "DESTINATION": {
+              "VALUE": "^$VAR4"
+            }
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR2",
+          "REFSEM1"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "ALLOWED-0",
+        "HER-2",
+        "INTO-3",
+        "HIS",
+        "BACKYARD-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "LET",
+        "PERMIT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ALLOW-V3",
+      "WORD": "ALLOW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ALLOW-V4": {
+      "CAT": "V",
+      "DEF": "X (non-agent) allows Y (event)  = X makes Y possible",
+      "EX": "ramps allow easy access by wheelchairs; free trade allows open competition",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "POTENTIAL",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR2": {
+          "INSTRUMENT": {
+            "VALUE": "^$VAR1",
+            "SEM": [
+              "NOT",
+              "HUMAN",
+              "ORGANIZATION"
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "ALLOWED-0",
+        "THE",
+        "INSPECTION-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "PERMIT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ALLOW-V4",
+      "WORD": "ALLOW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ALLOW-V5": {
+      "CAT": "V",
+      "DEF": "X (non-agent) allows Y to Z (xcomp)  = X makes it possible for Y to Z",
+      "EX": "ramps allow handicapped people to enter the building; his ID allows him to enter the building; free trade allows companies to compete evenly",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "INDIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "XCOMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "POTENTIAL",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR3": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "INSTRUMENT": {
+            "VALUE": "^$VAR1",
+            "SEM": [
+              "NOT",
+              "HUMAN",
+              "ORGANIZATION"
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR2",
+          "^$VAR3"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "ALLOWED-0",
+        "HER-2",
+        "TO",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "NSUBJ",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "XSUBJ",
+          "$VAR3",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "PERMIT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ALLOW-V5",
+      "WORD": "ALLOW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

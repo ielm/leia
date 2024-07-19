@@ -1,0 +1,36 @@
+{
+  "word": "HEALTHWISE",
+  "senses": {
+    "HEALTHWISE-ADV1": {
+      "CAT": "ADV",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "this sense is for the phrase 'the world can do much better with iraq healthwise'",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "POST-VERB-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "MEDICAL-PROCEDURE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HEALTHWISE-ADV1",
+      "WORD": "HEALTHWISE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

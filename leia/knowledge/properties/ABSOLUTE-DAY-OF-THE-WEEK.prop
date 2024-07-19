@@ -1,0 +1,9 @@
+{
+  "name": "$ABSOLUTE-DAY-OF-THE-WEEK",
+  "def": "links an event, holiday, etc., to the day of the week it happens (note: absolute-day is the scalar-attribute used for actual numerical days of the month)",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$ABSOLUTE-DAY-OF-THE-WEEK-OF",
+  "measured-in": [],
+  "container": "$TEMPORAL-RELATION"
+}

@@ -1,0 +1,37 @@
+{
+  "name": "@SKYLIGHT",
+  "isa": [
+    "@WINDOW"
+  ],
+  "def": "An overhead window, as in a roof.",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@ROOF"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

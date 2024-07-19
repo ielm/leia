@@ -1,0 +1,27 @@
+{
+  "name": "@PARAMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "irresistible impulse to derive joy from complaints",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COMPLAIN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

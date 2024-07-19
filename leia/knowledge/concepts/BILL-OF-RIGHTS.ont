@@ -1,0 +1,29 @@
+{
+  "name": "@BILL-OF-RIGHTS",
+  "isa": [
+    "@DOCUMENT"
+  ],
+  "def": "a document drafted to guarantee civil liberties, such as the first ten Amendments of the U.S. Constitution",
+  "local": [],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,31 @@
+{
+  "word": "ARSONIST",
+  "senses": {
+    "ARSONIST-N1": {
+      "CAT": "N",
+      "DEF": "someone who commits arson",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CRIMINAL": {
+          "AGENT-OF": "ARSON"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ARSONIST-N1",
+      "WORD": "ARSONIST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

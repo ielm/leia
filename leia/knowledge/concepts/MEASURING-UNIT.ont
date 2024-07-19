@@ -1,0 +1,21 @@
+{
+  "name": "@MEASURING-UNIT",
+  "isa": [
+    "@REPRESENTATIONAL-OBJECT"
+  ],
+  "def": "measuring units of all kinds",
+  "local": [
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@MEASURING-ARTIFACT"
+    },
+    {
+      "slot": "has-standard-measure",
+      "facet": "sem",
+      "filler": "@MEASURING-UNIT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

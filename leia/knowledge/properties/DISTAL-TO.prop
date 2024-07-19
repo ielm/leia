@@ -1,0 +1,9 @@
+{
+  "name": "$DISTAL-TO",
+  "def": "a spatial relation between attached, continuous body parts in which the domain is closer to the bottom of the feet than the range: e.g., the ankle is distal-to the knee",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$PROXIMAL-TO",
+  "measured-in": [],
+  "container": "$MEDICAL-RELATION"
+}

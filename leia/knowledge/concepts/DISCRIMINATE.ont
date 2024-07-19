@@ -1,0 +1,21 @@
+{
+  "name": "@DISCRIMINATE",
+  "isa": [
+    "@OPPOSITION-EVENT"
+  ],
+  "def": "to make distinctions in treatment; show partiality or prejudice",
+  "local": [],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

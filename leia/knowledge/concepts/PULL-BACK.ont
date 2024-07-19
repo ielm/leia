@@ -1,0 +1,21 @@
+{
+  "name": "@PULL-BACK",
+  "isa": [
+    "@CHANGE-POSITION"
+  ],
+  "def": "To change position by withdrawing from a previous position.",
+  "local": [],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

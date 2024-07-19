@@ -1,0 +1,64 @@
+{
+  "word": "BREATHE",
+  "senses": {
+    "BREATHE-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "humans breathe air",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "BREATHE": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HUMANS-1",
+        "BREATHE-0",
+        "AIR-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "BREATHE_IN"
+      ],
+      "HYPONYMS": [
+        "INHALE"
+      ],
+      "SENSE": "BREATHE-V1",
+      "WORD": "BREATHE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

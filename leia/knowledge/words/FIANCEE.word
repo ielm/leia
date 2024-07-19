@@ -1,0 +1,39 @@
+{
+  "word": "FIANCEE",
+  "senses": {
+    "FIANCEE-N1": {
+      "CAT": "N",
+      "DEF": "a woman engaged to be married",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SPOUSE": {
+          "GENDER": "FEMALE",
+          "TIME": [
+            ">",
+            [
+              "FIND-ANCHOR-TIME"
+            ]
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "BRIDE-TO-BE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FIANCEE-N1",
+      "WORD": "FIANCEE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

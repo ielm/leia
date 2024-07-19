@@ -1,0 +1,42 @@
+{
+  "name": "@LUGGAGE-HANDLING-FACILITY",
+  "isa": [
+    "@AIRPORT-ARTIFACT"
+  ],
+  "def": "things and people which deal with the passengers* luggage",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LUGGAGE-CART"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LUGGAGE-VEHICLE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PORTER"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@AIRLINE-CLERK"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CONVEYOR-BELT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

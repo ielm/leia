@@ -1,0 +1,27 @@
+{
+  "name": "@ANIMAL-LIVING-EVENT",
+  "isa": [
+    "@LIVING-EVENT"
+  ],
+  "def": "physical-events which involve the functioning of an animal, including humans",
+  "local": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

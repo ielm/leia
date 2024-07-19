@@ -1,0 +1,72 @@
+{
+  "word": "EIGHTY_THOUSAND",
+  "senses": {
+    "EIGHTY_THOUSAND-NUM1": {
+      "CAT": "NUM",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "NUM"
+      },
+      "SEM-STRUC": {
+        "PHYSICAL-OBJECT": {
+          "CARDINALITY": {
+            "VALUE": 80000
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "80000"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "EIGHTY_THOUSAND-NUM1",
+      "WORD": "EIGHTY_THOUSAND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EIGHTY_THOUSAND-NUM2": {
+      "CAT": "NUM",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NUM": {
+          "ROOT": "$VAR0",
+          "CAT": "NUM"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "NUMBER": "PL"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "CARDINALITY": 80000
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "80000"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "EIGHTY_THOUSAND-NUM2",
+      "WORD": "EIGHTY_THOUSAND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

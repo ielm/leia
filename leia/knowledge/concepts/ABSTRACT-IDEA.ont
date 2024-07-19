@@ -1,0 +1,22 @@
+{
+  "name": "@ABSTRACT-IDEA",
+  "isa": [
+    "@ABSTRACT-OBJECT"
+  ],
+  "def": "an abstract object who significance varies based on individual people",
+  "local": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@PHILOSOPHY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    }
+  ],
+  "private": {}
+}

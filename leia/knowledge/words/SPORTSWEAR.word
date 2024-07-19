@@ -1,0 +1,34 @@
+{
+  "word": "SPORTSWEAR",
+  "senses": {
+    "SPORTSWEAR-N1": {
+      "CAT": "N",
+      "DEF": "clothes used for sporting activities",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SPORTS-OUTFIT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ACTIVE_WEAR"
+      ],
+      "HYPONYMS": [
+        "GYM_SUIT",
+        "RUNNING_SUIT",
+        "SWEATSUIT",
+        "SWEATPANTS"
+      ],
+      "SENSE": "SPORTSWEAR-N1",
+      "WORD": "SPORTSWEAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

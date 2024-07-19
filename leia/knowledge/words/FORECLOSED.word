@@ -1,0 +1,35 @@
+{
+  "word": "FORECLOSED",
+  "senses": {
+    "FORECLOSED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "foreclosed property",
+      "COMMENTS": "this is a separate entry because the verb foreclose doesn't take a d.o., so the passive transformation won't work",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "THEME-OF": "FORECLOSE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FORECLOSED-ADJ1",
+      "WORD": "FORECLOSED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

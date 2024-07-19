@@ -1,0 +1,22 @@
+{
+  "name": "@RADIO-SERVICE-CORPORATION",
+  "isa": [
+    "@MEDIA-SERVICE-CORPORATION"
+  ],
+  "def": "a for-profit communication-corporation that provides radio programming to the public",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@RADIO-STATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    }
+  ],
+  "private": {}
+}

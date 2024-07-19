@@ -1,0 +1,28 @@
+{
+  "name": "@CHEDDAR-CHEESE",
+  "isa": [
+    "@CHEESE"
+  ],
+  "def": "hard, smooth-textured cheese",
+  "local": [
+    {
+      "slot": "softness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0.2
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "softness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

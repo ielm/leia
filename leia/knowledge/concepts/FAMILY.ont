@@ -1,0 +1,32 @@
+{
+  "name": "@FAMILY",
+  "isa": [
+    "@SOCIAL-OBJECT"
+  ],
+  "def": "the family as a social organization, a single unit",
+  "local": [
+    {
+      "slot": "has-nationality",
+      "facet": "sem",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "has-member",
+      "facet": "sem",
+      "filler": "@FAMILY-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-member",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@NAME"
+    }
+  ],
+  "private": {}
+}

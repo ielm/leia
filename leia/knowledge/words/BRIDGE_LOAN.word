@@ -1,0 +1,36 @@
+{
+  "word": "BRIDGE_LOAN",
+  "senses": {
+    "BRIDGE_LOAN-N1": {
+      "CAT": "N",
+      "DEF": "a short-term loan",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LOAN": {
+          "TERM-OF-FINANCIAL-OBLIGATION": [
+            "<",
+            0.2
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SHORT_TERM_LOAN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BRIDGE_LOAN-N1",
+      "WORD": "BRIDGE_LOAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@COLOSTRUM",
+  "isa": [
+    "@SECRETION"
+  ],
+  "def": "The thin yellowish fluid secreted by the mammary glands at the time of parturition that is rich in antibodies and minerals, and precedes the production of true milk",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MINERAL"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@IMMUNOGLOBULIN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    }
+  ],
+  "private": {}
+}

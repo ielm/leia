@@ -1,0 +1,42 @@
+{
+  "name": "@GRAPEVINE",
+  "isa": [
+    "@VINE"
+  ],
+  "def": "a vine that yields grapes",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@GRAPE"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@VITICULTURE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@ARBORICULTURE"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@HORTICULTURE"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@NUT-FOODSTUFF"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@VINE-FRUIT"
+    }
+  ],
+  "private": {}
+}

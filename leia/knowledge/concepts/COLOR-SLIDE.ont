@@ -1,0 +1,22 @@
+{
+  "name": "@COLOR-SLIDE",
+  "isa": [
+    "@TRANSPARENCY"
+  ],
+  "def": "a color photographic transparency for use with a viewer or a projector",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CELLULOID"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

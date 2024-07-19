@@ -1,0 +1,35 @@
+{
+  "word": "GOTHIC",
+  "senses": {
+    "GOTHIC-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "Related to an architectural style popular in western Europe in 12th -15th centuries and characterized by pointed arches, rib vaulting, and the verticality producing impression of height.",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "HAS-STYLE": "GOTHIC"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GOTHIC-ADJ1",
+      "WORD": "GOTHIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

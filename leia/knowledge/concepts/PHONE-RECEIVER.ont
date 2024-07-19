@@ -1,0 +1,11 @@
+{
+  "name": "@PHONE-RECEIVER",
+  "isa": [
+    "@COMMUNICATION-DEVICE",
+    "@DEPENDENT-DEVICE"
+  ],
+  "def": "a phone receiver",
+  "local": [],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,133 @@
+{
+  "name": "@CHEW",
+  "isa": [
+    "@FEEDING-EVENT",
+    "@APPLY-FORCE"
+  ],
+  "def": "to bite and crush with the teeth",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@WIRE"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@LIFE-PRESERVER"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@PAPER"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@SEWING-MATERIAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@LEASH"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@BAIT"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@FURNITURE"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@CLOTHING-ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@RAILING"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@CABLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@DECORATIVE-ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@SMOKING-DEVICE"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@SPORT-ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@BOARD-FOR-CONSTRUCTION"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@EVERYDAY-ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@INDUSTRIAL-ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@PACKAGING-MATERIAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TOOTH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

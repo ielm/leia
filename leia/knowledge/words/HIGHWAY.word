@@ -1,0 +1,35 @@
+{
+  "word": "HIGHWAY",
+  "senses": {
+    "HIGHWAY-N1": {
+      "CAT": "N",
+      "DEF": "main direct roadway, high speed and usu. multi-lane",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "HIGHWAY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "CAUSEWAY",
+        "EXPRESSWAY",
+        "THRUWAY",
+        "MOTORWAY",
+        "SPEEDWAY",
+        "PARKWAY",
+        "TURNPIKE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "HIGHWAY-N1",
+      "WORD": "HIGHWAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

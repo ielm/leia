@@ -1,0 +1,9 @@
+{
+  "name": "$ELEMENTS",
+  "def": "indicates the exact concept elements in\nthe set - it's a list of fillers",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$ELEMENTS-OF",
+  "measured-in": [],
+  "container": "$PARAMETRIC-RELATION"
+}

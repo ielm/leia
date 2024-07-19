@@ -1,0 +1,314 @@
+{
+  "word": "EFFECT",
+  "senses": {
+    "EFFECT-N1": {
+      "CAT": "N",
+      "DEF": "an event caused by another event",
+      "EX": "the effect of drinking bad water on children",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT-WORD": "ON",
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "EVENT": {
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          },
+          "CAUSED-BY": {
+            "VALUE": "^$VAR2",
+            "SEM": "EVENT"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR3",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "EFFECT-0",
+        "OF-1",
+        "THE",
+        "MAN-2",
+        "ON-4",
+        "THE",
+        "BUILDING-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR4",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EFFECT-N1",
+      "WORD": "EFFECT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EFFECT-N2": {
+      "CAT": "N",
+      "DEF": "an event caused by another event, with possessive",
+      "EX": "poverty's effect on children",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR3",
+          "CAT": "N",
+          "POSSESSIVE": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "ON",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "EVENT": {
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          },
+          "CAUSED-BY": {
+            "VALUE": "^$VAR2",
+            "SEM": "EVENT"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR3",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "'S-3",
+        "EFFECT-0",
+        "ON-1",
+        "THE",
+        "BUILDING-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EFFECT-N2",
+      "WORD": "EFFECT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EFFECT-V1": {
+      "CAT": "V",
+      "DEF": "to cause",
+      "EX": "discontent effects change",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "EFFECTED-0",
+        "CHANGE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "PROMOTE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "EFFECT-V1",
+      "WORD": "EFFECT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EFFECT-N3": {
+      "CAT": "N",
+      "DEF": "belongings (pl)",
+      "EX": "please remove all personal effects",
+      "COMMENTS": "[D] often of a deceased person, but not always",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NMOD_POSS": [
+          [
+            "ROOT",
+            "$VAR1"
+          ],
+          [
+            "CAT",
+            [
+              "N",
+              "DET"
+            ]
+          ],
+          [
+            "POSSESSIVE",
+            "+"
+          ],
+          [
+            "OPT",
+            "+"
+          ],
+          [
+            "CASE",
+            [
+              [
+                "ROOT",
+                "$VAR9"
+              ],
+              [
+                "ROOT",
+                "*QUOTE*S"
+              ],
+              [
+                "CAT",
+                "POSSESSIVE"
+              ],
+              [
+                "OPT",
+                "+"
+              ]
+            ]
+          ]
+        ],
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "NUMBER": "PL"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "OBJECT": {
+            "THEME-OF": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "OWN": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        },
+        "^$VAR9": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "DISCUSSED",
+        "THE",
+        "WOMAN-1",
+        "*QUOTE*S-9",
+        "EFFECTS-0"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "PERSONAL_EFFECT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "EFFECT-N3",
+      "WORD": "EFFECT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

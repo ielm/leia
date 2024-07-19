@@ -1,0 +1,35 @@
+{
+  "word": "LARYNGOPHARYNGEAL",
+  "senses": {
+    "LARYNGOPHARYNGEAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to the larynx and pharynx",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "PHARYNX"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LARYNGOPHARYNGEAL-ADJ1",
+      "WORD": "LARYNGOPHARYNGEAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

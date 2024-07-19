@@ -1,0 +1,202 @@
+{
+  "word": "LESSON",
+  "senses": {
+    "LESSON-N1": {
+      "CAT": "N",
+      "DEF": "a plan for teaching",
+      "EX": "he showed me his lesson (for senior athletes) (about cross-training)",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "FOR",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "ABOUT",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ABSTRACT-OBJECT": {
+          "THEME-OF": "PLANNING-EVENT",
+          "PURPOSE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "TEACH": {
+            "THEME": {
+              "VALUE": "REFSEM2"
+            },
+            "BENEFICIARY": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "INFORMATION": {
+            "ABOUT-AS-TOPIC": {
+              "VALUE": "^$VAR4"
+            }
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "LESSON-0",
+        "FOR-1",
+        "THE",
+        "STUDENT-2",
+        "ABOUT-3",
+        "THE",
+        "EVENT-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LESSON-N1",
+      "WORD": "LESSON",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LESSON-N2": {
+      "CAT": "N",
+      "DEF": "an event which teaches something",
+      "EX": "the accident served as a valuable lesson (for the children) (about the need for caution)",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": [
+            "FOR",
+            "TO"
+          ],
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "ABOUT",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "EVENT": {
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "TEACH": {
+            "THEME": {
+              "VALUE": "^$VAR4"
+            },
+            "BENEFICIARY": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "LESSON-0",
+        "FOR-1",
+        "THE",
+        "STUDENT-2",
+        "ABOUT-3",
+        "THE",
+        "CRIME-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LESSON-N2",
+      "WORD": "LESSON",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

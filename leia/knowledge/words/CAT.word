@@ -1,0 +1,156 @@
+{
+  "word": "CAT",
+  "senses": {
+    "CAT-N1": {
+      "CAT": "N",
+      "DEF": "a domestic cat",
+      "EX": "I like my cat.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CAT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "KITTY",
+        "HOUSE_CAT",
+        "KITTY_CAT",
+        "PUSS",
+        "PUSSYCAT"
+      ],
+      "HYPONYMS": [
+        "ALLEY_CAT",
+        "STRAY",
+        "TOMCAT",
+        "TABBY",
+        "TABBY_CAT",
+        "TIGER_CAT",
+        "CALICO_CAT",
+        "CALICO",
+        "PERSIAN_CAT",
+        "SIAMESE_CAT",
+        "MANX_CAT"
+      ],
+      "SENSE": "CAT-N1",
+      "WORD": "CAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CAT-N800": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "Has the cat got your tongue?",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "AUX": {
+          "ROOT": "$VAR1",
+          "ROOT-WORD": "HAVE",
+          "CAT": "AUX",
+          "OPT": "+"
+        },
+        "ART": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "THE",
+          "CAT": "ART",
+          "OPT": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "V": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "GET",
+          "CAT": "V"
+        },
+        "PRO": [
+          [
+            "ROOT",
+            "$VAR4"
+          ],
+          [
+            "CAT",
+            "PRO"
+          ]
+        ],
+        "N": {
+          "ROOT": "$VAR5",
+          "ROOT-WORD": "TONGUE",
+          "CAT": "N"
+        },
+        "PUNCT": {
+          "ROOT": "$VAR6",
+          "ROOT-WORD": "*QUESTION_MARK*",
+          "CAT": "PUNCT"
+        }
+      },
+      "SEM-STRUC": {
+        "REQUEST-INFO": {
+          "AGENT": "*SPEAKER*",
+          "THEME": {
+            "VALUE": "REFSEM1.CAUSED-BY"
+          },
+          "BENFICIARY": "*HEARER*"
+        },
+        "REFSEM1": {
+          "SPEECH-ACT": {
+            "SCOPE-OF": {
+              "VALUE": "REFSEM2"
+            },
+            "AGENT-1": "*HEARER*",
+            "TIME": "FIND-ANCHOR-TIME"
+          }
+        },
+        "REFSEM2": {
+          "MODALITY": {
+            "TYPE": "EPISTEMIC",
+            "VALUE": 0,
+            "SCOPE": {
+              "VALUE": "REFSEM1"
+            }
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR6": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "HAS-1",
+        "THE-2",
+        "CAT-0",
+        "GOT-3",
+        "YOUR-4",
+        "TONGUE-5",
+        "*QUESTION_MARK*-6"
+      ],
+      "SENSE": "CAT-N800",
+      "WORD": "CAT",
+      "HYPONYMS": [],
+      "SYNONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

@@ -1,0 +1,348 @@
+{
+  "name": "@EXTRADITE",
+  "isa": [
+    "@LEGAL-EVENT",
+    "@SEND"
+  ],
+  "def": "to turn over (an alleged criminal) to the jurisdiction of another country, state, etc.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@CRIMINAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@GOVERNMENTAL-ORGANIZATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@NATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "default",
+      "filler": "@LEGAL-CLIENT"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "destination",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "business"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "casual"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "formal"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "sport"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FAX-MACHINE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@POST-OFFICE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SHIPPING-CORPORATION"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TELEGRAPH-MACHINE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@VEHICLE"
+    },
+    {
+      "slot": "legality-attribute",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "source",
+      "facet": "relaxable-to",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@AIRPORT-ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@AUTOMATIC-STAY"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@BOLUS"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@BUILDING"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@CELESTIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@DAMAGES"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@DEBIT"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@EARTH-RESOURCE-ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@ECONOMY"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@ENGINEERED-ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@EXPENSE"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@FINANCIAL-INDEX"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@FINANCIAL-POINT"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@FISCAL-QUARTER"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@GEOGRAPHICAL-ENTITY"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@INFRASTRUCTURE"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@LAW"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@LEGAL-CASE"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@LIEN"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@MARKET"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PAYROLL"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PROFIT-MARGIN"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@TOWER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ADVERTISEMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CREATIVE-WORK"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FILM-MEDIA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FINGERPRINT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FOOTPRINT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INFORMATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LEGAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MUSICAL-COMPOSITION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PRINTED-MEDIA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TELEGRAM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WEBSITE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WORK"
+    }
+  ],
+  "private": {}
+}

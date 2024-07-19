@@ -1,0 +1,35 @@
+{
+  "word": "I",
+  "senses": {
+    "I-N1": {
+      "CAT": "N",
+      "DEF": "the first person singular pronoun",
+      "EX": "I fell asleep.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "TYPE": "PRO"
+      },
+      "SEM-STRUC": "HUMAN",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          [
+            "SG-1-ALGORITHM"
+          ]
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "I-N1",
+      "WORD": "I",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

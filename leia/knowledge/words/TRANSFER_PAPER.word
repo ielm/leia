@@ -1,0 +1,38 @@
+{
+  "word": "TRANSFER_PAPER",
+  "senses": {
+    "TRANSFER_PAPER-N1": {
+      "CAT": "N",
+      "DEF": "specially coated paper used for transferring a design  to another surface",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PAPER": {
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "DUPLICATE": {
+            "THEME": "PICTURE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TRANSFER_PAPER-N1",
+      "WORD": "TRANSFER_PAPER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

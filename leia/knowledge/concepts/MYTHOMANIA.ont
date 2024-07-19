@@ -1,0 +1,32 @@
+{
+  "name": "@MYTHOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "irresistible impulse toward exaggeration and lying",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EXAGGERATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

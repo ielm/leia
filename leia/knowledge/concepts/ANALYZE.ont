@@ -1,0 +1,92 @@
+{
+  "name": "@ANALYZE",
+  "isa": [
+    "@ANALYTIC-COGNITIVE-EVENT"
+  ],
+  "def": "to examine in detail",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PROBLEM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INFORMATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FORMULA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@THEORY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@THOUGHT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CREATIVE-WORK"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ARGUE-CONFLICT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LECTURE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PROCEDURE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GOVERNMENT-ACTIVITY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GROUP-POLITICAL-EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LABOR-RELATED-EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SOCIAL-ACTION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VOTE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

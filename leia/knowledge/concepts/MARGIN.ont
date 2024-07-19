@@ -1,0 +1,22 @@
+{
+  "name": "@MARGIN",
+  "isa": [
+    "@TEXT-FORMAT"
+  ],
+  "def": "the edge or border of a written or printed page",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PAGE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

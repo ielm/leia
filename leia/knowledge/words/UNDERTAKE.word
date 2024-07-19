@@ -1,0 +1,131 @@
+{
+  "word": "UNDERTAKE",
+  "senses": {
+    "UNDERTAKE-V1": {
+      "CAT": "V",
+      "DEF": "to try",
+      "EX": "he undertook to find her",
+      "COMMENTS": "event overt",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "XCOMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "BEGIN",
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR2": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EFFORT",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "UNDERTOOK-0",
+        "TO",
+        "FIND-2",
+        "HER"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "UNDERTAKE-V1",
+      "WORD": "UNDERTAKE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "UNDERTAKE-V2": {
+      "CAT": "V",
+      "DEF": "to start to work on",
+      "EX": "he undertook the task",
+      "COMMENTS": "event overt",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "BEGIN",
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR2": {
+          "SEM": "EVENT",
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "UNDERTOOK-0",
+        "THE",
+        "TASK-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "UNDERTAKE-V2",
+      "WORD": "UNDERTAKE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

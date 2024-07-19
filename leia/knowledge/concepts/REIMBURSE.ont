@@ -1,0 +1,16 @@
+{
+  "name": "@REIMBURSE",
+  "isa": [
+    "@PAY"
+  ],
+  "def": "repay a sum of money that has been spent or lost",
+  "local": [],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "default",
+      "filler": "@CORPORATION"
+    }
+  ],
+  "private": {}
+}

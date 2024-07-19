@@ -1,0 +1,241 @@
+{
+  "word": "IMPOSSIBLE",
+  "senses": {
+    "IMPOSSIBLE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "not possible",
+      "EX": "That is an impossible outcome.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "POTENTIAL",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "IMPOSSIBLE-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "UNVIABLE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "IMPOSSIBLE-ADJ1",
+      "WORD": "IMPOSSIBLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "IMPOSSIBLE-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "not potentially achieved",
+      "EX": "it was an impossible job; what you want is impossible",
+      "COMMENTS": "described as successfully achieving the event (epiteuctic 1) is not possible (epistemic 0)",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "MODALITY": {
+            "TYPE": "EPITEUCTIC",
+            "VALUE": 1,
+            "SCOPE": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        },
+        "MODALITY": {
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          },
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "IMPOSSIBLE-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "UNACHIEVABLE",
+        "UNATTAINABLE",
+        "INFEASIBLE",
+        "UNMANAGEABLE",
+        "IMPRACTICAL",
+        "UNREALISTIC",
+        "NONWORKABLE",
+        "UNVIABLE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "IMPOSSIBLE-ADJ2",
+      "WORD": "IMPOSSIBLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "IMPOSSIBLE-ADJ3": {
+      "CAT": "ADJ",
+      "DEF": "phrasal: it is impossible (for X) to Y : Y cannot be accomplished (by X)",
+      "EX": "it is impossible (for us) to do what you ask",
+      "COMMENTS": "the idea of successfully accomplishing is here; cf. sense 2",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "ROOT-WORD": "IT",
+          "CAT": "N",
+          "TYPE": "PRO"
+        },
+        "ROOT-WORD": "*BE*",
+        "ROOT": "$VAR2",
+        "CAT": "V",
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "PP": {
+          "ROOT-WORD": "FOR",
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR5",
+            "CAT": "N"
+          }
+        },
+        "XCOMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "MODALITY": {
+            "TYPE": "EPITEUCTIC",
+            "VALUE": 1,
+            "SCOPE": {
+              "VALUE": "^$VAR3"
+            }
+          }
+        },
+        "MODALITY": {
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          },
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0
+        },
+        "^$VAR3": {
+          "AGENT": {
+            "VALUE": "^$VAR5"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR5",
+          "^$VAR3"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "IT-1",
+        "WAS-2",
+        "IMPOSSIBLE-0",
+        "FOR-4",
+        "THE",
+        "MAN-5",
+        "TO-7",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "COP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "INFMOD",
+          "$VAR5",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR4",
+          "$VAR5"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [
+        "UNACHIEVABLE",
+        "UNATTAINABLE",
+        "INFEASIBLE",
+        "UNMANAGEABLE",
+        "IMPRACTICAL",
+        "UNREALISTIC",
+        "NONWORKABLE",
+        "UNVIABLE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "IMPOSSIBLE-ADJ3",
+      "WORD": "IMPOSSIBLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

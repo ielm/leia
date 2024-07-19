@@ -1,0 +1,485 @@
+{
+  "word": "FIGHT",
+  "senses": {
+    "FIGHT-N1": {
+      "CAT": "N",
+      "DEF": "argument",
+      "EX": "the fight between my neighbors about money goes on and on",
+      "COMMENTS": "[D] when there are adjuncts, it's more typically 'fighting', but I'm adding them just to be sure",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "BETWEEN",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N",
+            "NUMBER": "PL"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": [
+            "ABOUT",
+            "OVER"
+          ],
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ARGUE-CONFLICT": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "FIGHT-0",
+        "BETWEEN-1",
+        "THE",
+        "ANIMAL-2",
+        "ABOUT-3",
+        "THE",
+        "ISSUE-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FIGHT-N1",
+      "WORD": "FIGHT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FIGHT-N2": {
+      "CAT": "N",
+      "DEF": "physical battle",
+      "EX": "the fight between the gang members was bloody",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "BETWEEN",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N",
+            "NUMBER": "PL"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": [
+            "ABOUT",
+            "OVER"
+          ],
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "FIGHT": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "FIGHT-0",
+        "BETWEEN-1",
+        "THE",
+        "HUMAN-2",
+        "ABOUT-3",
+        "THE",
+        "OBJECT-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "SCUFFLE"
+      ],
+      "SENSE": "FIGHT-N2",
+      "WORD": "FIGHT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FIGHT-V1": {
+      "CAT": "V",
+      "DEF": "to battle, physically",
+      "EX": "the bolsheviks fought (against/with) the mensheviks (over the right to rule russia). they fought hard.",
+      "COMMENTS": "[D] the combination of 'against' and the pp isn't great, but not bad enough to require a different sense for variants. no silly exploitatation of the optionality is expected, like *he fought against over the right to rule",
+      "TMR-HEAD": "$VAR0",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": [
+            "WITH",
+            "AGAINST"
+          ],
+          "OPT": "+"
+        },
+        "NP": {
+          "ROOT": "$VAR2",
+          "CAT": "NP",
+          "OPT": "+"
+        },
+        "PP": {
+          "ROOT-WORD": "OVER",
+          "ROOT": "$VAR5",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "FIGHT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "AGENT-1": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "FOUGHT-0",
+        "WITH-3",
+        "THE",
+        "DOG-2",
+        "OVER-5",
+        "THE",
+        "BONE-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FIGHT-V1",
+      "WORD": "FIGHT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FIGHT-V2": {
+      "CAT": "V",
+      "DEF": "to argue",
+      "EX": "she fights with her inlaws / they fight (about the garden) all the time",
+      "COMMENTS": "[D] Marge: does this sense, as written, properly distinguish a set of agents composed entirely of var1, as opposed to var1 and var3 agents? ",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "WITH",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT-WORD": [
+            "ABOUT",
+            "OVER"
+          ],
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR5",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ARGUE-CONFLICT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "AGENT-1": {
+            "VALUE": "^$VAR3"
+          },
+          "THEME": {
+            "VALUE": "^$VAR5"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "FIGHTS-0",
+        "WITH-2",
+        "HER",
+        "INLAWS-3",
+        "ABOUT-4",
+        "THE",
+        "GARDEN-5",
+        "ALL",
+        "THE",
+        "TIME"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FIGHT-V2",
+      "WORD": "FIGHT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FIGHT-V3": {
+      "CAT": "V",
+      "DEF": "to try to get rid of",
+      "EX": "that group fights hunger in developing countries",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EFFORT",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          },
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "REFSEM1": {
+          "PREVENT": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            },
+            "THEME": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THAT",
+        "GROUP-1",
+        "FIGHTS-0",
+        "HUNGER-2",
+        "IN",
+        "DEVELOPING",
+        "COUNTRIES"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FIGHT-V3",
+      "WORD": "FIGHT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FIGHT-V4": {
+      "CAT": "V",
+      "DEF": "phrasal: fight fire (direct sense)",
+      "EX": "firemen fight fires all the time",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "FIRE",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "FIGHT-FIRE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "FOUGHT-0",
+        "THE",
+        "FIRE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FIGHT-V4",
+      "WORD": "FIGHT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FIGHT-V240": {
+      "CAT": "V",
+      "COMMENTS": "representative of a verbal argument",
+      "DEF": "fixed phrasal: x fight with/against y over z",
+      "EX": "James fought with John over the girls. Greg fought against James over food.  Eliza fought Isabelle over homework.",
+      "SYN-STRUC": {
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": [
+            "WITH",
+            "AGAINST"
+          ],
+          "OPT": "+"
+        },
+        "NP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        },
+        "PREP-1": {
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "ROOT-WORD": "OVER"
+        },
+        "NP-2": {
+          "ROOT": "$VAR5",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "ARGUE-CONFLICT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "AGENT-1": {
+            "VALUE": "^$VAR3"
+          },
+          "THEME": {
+            "VALUE": "^$VAR5"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "MEANING-PROCEDURES": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FIGHT-V240",
+      "WORD": "FIGHT",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": []
+    }
+  }
+}

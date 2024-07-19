@@ -1,0 +1,38 @@
+{
+  "word": "CHEESE_TRAY",
+  "senses": {
+    "CHEESE_TRAY-N1": {
+      "CAT": "N",
+      "DEF": "a tray for serving cheese",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "TRAY": {
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SERVE": {
+            "THEME": "CHEESE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CHEESE_TRAY-N1",
+      "WORD": "CHEESE_TRAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

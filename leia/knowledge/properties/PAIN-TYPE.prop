@@ -1,0 +1,9 @@
+{
+  "name": "$PAIN-TYPE",
+  "def": "indicates the type of pain; this is a property on a scalar-attribute (pain-level)",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

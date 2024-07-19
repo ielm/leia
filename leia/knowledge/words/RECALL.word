@@ -1,0 +1,329 @@
+{
+  "word": "RECALL",
+  "senses": {
+    "RECALL-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "they recalled their childhood",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "RECALL": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "RECALLED-0",
+        "THE",
+        "INCIDENT-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RECALL-V1",
+      "WORD": "RECALL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RECALL-V2": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "they recalled how they used to...",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "COMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "RECALL": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "RECALLED-0",
+        "THAT",
+        "THE",
+        "WOMAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RECALL-V2",
+      "WORD": "RECALL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RECALL-V3": {
+      "CAT": "V",
+      "DEF": "cause s.o. to return",
+      "EX": "they recalled all workers",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "RETURN": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "COMPANY-1",
+        "RECALLED-0",
+        "THE",
+        "MAN-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RECALL-V3",
+      "WORD": "RECALL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RECALL-V4": {
+      "CAT": "V",
+      "DEF": "cause to be returned, of a product",
+      "EX": "the company recalled the high chairs",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "RETURN-OBJECT": {
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": [
+              "ARTIFACT",
+              "INGESTIBLE",
+              "MATERIAL"
+            ]
+          },
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1",
+            "SEM": "FOR-PROFIT-CORPORATION"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "COMPANY-1",
+        "RECALLED-0",
+        "THE",
+        "PRODUCT-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RECALL-V4",
+      "WORD": "RECALL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RECALL-V5": {
+      "CAT": "V",
+      "DEF": "to summon back to awareness of",
+      "EX": "the smell of peach pie recalls my childhood to me. ",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "RECALL": {
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1",
+            "SEM": [
+              "NOT",
+              "HUMAN"
+            ],
+            "SEM-1": [
+              "NOT",
+              "SOCIAL-OBJECT"
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "RECALLED-0",
+        "THE",
+        "WOMAN-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RECALL-V5",
+      "WORD": "RECALL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RECALL-N1": {
+      "CAT": "N",
+      "DEF": "the act of recalling a product",
+      "EX": "the recall of guns by the government",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "RETURN-OBJECT": {
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "CAUSED-BY": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "RECALL-0",
+        "OF-1",
+        "THE",
+        "TABLE-2",
+        "BY-3",
+        "THE",
+        "MAN-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RECALL-N1",
+      "WORD": "RECALL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

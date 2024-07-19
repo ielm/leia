@@ -1,0 +1,44 @@
+{
+  "word": "TIGHTLY",
+  "senses": {
+    "TIGHTLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "of physical tightness",
+      "EX": "she wound the rope tightly",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TIGHTNESS": [
+            ">",
+            0.8
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "TIGHT-0",
+        "DOG-1",
+        "RAN"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TIGHTLY-ADV1",
+      "WORD": "TIGHTLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

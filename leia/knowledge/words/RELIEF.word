@@ -1,0 +1,117 @@
+{
+  "word": "RELIEF",
+  "senses": {
+    "RELIEF-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "dealing with public assistance",
+      "EX": "relief workers, agencies, etc.",
+      "COMMENTS": "a full semantic description requires a script",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "AGENT-OF": "SOCIAL-SERVE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "RELIEF-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RELIEF-ADJ1",
+      "WORD": "RELIEF",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RELIEF-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "events that provide public assistance",
+      "EX": "relief efforts",
+      "COMMENTS": "a full semantic description requires a script",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "INSTRUMENT-OF": {
+            "VALUE": "SOCIAL-SERVE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "RELIEF-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RELIEF-ADJ2",
+      "WORD": "RELIEF",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RELIEF-N1": {
+      "CAT": "N",
+      "DEF": "a sculpture projecting figures or forms on a flat background",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SCULPTURE": {
+          "SCULPTURAL-RELIEF": [
+            "><",
+            0.2,
+            1
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "RELIEVO"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "RELIEF-N1",
+      "WORD": "RELIEF",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

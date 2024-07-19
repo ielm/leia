@@ -1,0 +1,43 @@
+{
+  "word": "SWIM_TRUNKS",
+  "senses": {
+    "SWIM_TRUNKS-N1": {
+      "CAT": "N",
+      "DEF": "a man's bathing suit ",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "NUMBER": "PL"
+      },
+      "SEM-STRUC": {
+        "SWIMSUIT": {
+          "USED-BY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "HUMAN": {
+            "GENDER": "MALE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SWIMMING_TRUNKS",
+        "BATHING_TRUNKS",
+        "TRUNKS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SWIM_TRUNKS-N1",
+      "WORD": "SWIM_TRUNKS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

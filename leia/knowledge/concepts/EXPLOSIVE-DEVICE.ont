@@ -1,0 +1,29 @@
+{
+  "name": "@EXPLOSIVE-DEVICE",
+  "isa": [
+    "@WEAPON"
+  ],
+  "def": "a device usually used as a weapon of war to destroy enemy ships, etc. or as an explosive charge used in the excavation of tunnels, mines, etc.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "default",
+      "filler": "@NITROCELLULOSE"
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

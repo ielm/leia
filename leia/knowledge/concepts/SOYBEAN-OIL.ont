@@ -1,0 +1,22 @@
+{
+  "name": "@SOYBEAN-OIL",
+  "isa": [
+    "@COOKING-OIL"
+  ],
+  "def": "cooking oil made of soybeans",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SOYBEAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

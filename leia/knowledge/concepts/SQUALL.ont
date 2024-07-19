@@ -1,0 +1,72 @@
+{
+  "name": "@SQUALL",
+  "isa": [
+    "@WIND"
+  ],
+  "def": "A brief sudden violent windstorm, often accompanied by rain or snow",
+  "local": [
+    {
+      "slot": "duration",
+      "facet": "default",
+      "filler": [
+        "=>=<",
+        0.2
+      ]
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@RAIN"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@SNOW"
+    },
+    {
+      "slot": "intensity",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0.7
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "duration",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "duration",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "intensity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "intensity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,35 @@
+{
+  "word": "LEFTIST",
+  "senses": {
+    "LEFTIST-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "politically liberal",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "POLITICAL-ATTRIBUTE": "LIBERAL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LEFTIST-ADJ1",
+      "WORD": "LEFTIST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

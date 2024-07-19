@@ -1,0 +1,58 @@
+{
+  "word": "MOLE",
+  "senses": {
+    "MOLE-N2": {
+      "CAT": "N",
+      "DEF": "The mole is an SI base unit used to measure a unit of amount of substance. It is almost the only unit to be used to measure this physical quantity.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "MOLE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MOLE-N2",
+      "WORD": "MOLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MOLE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "MOLE-ANIMAL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "STARNOSE_MOLE",
+        "STAR_NOSED_MOLE",
+        "brewer's_mole",
+        "HAIR_TILED_MOLE",
+        "GOLDEN_MOLE",
+        "SHREW_MOLE",
+        "ASIATIC_SHREW_MOLE",
+        "AMERICAN_SHREW_MOLE"
+      ],
+      "SENSE": "MOLE-N1",
+      "WORD": "MOLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

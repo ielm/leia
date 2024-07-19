@@ -1,0 +1,107 @@
+{
+  "word": "OBSTRUCT",
+  "senses": {
+    "OBSTRUCT-V1": {
+      "CAT": "V",
+      "DEF": "to block sth. in a physical sense",
+      "EX": "the soliders blocked our way [agent]; the trucks blocked our way [instrument]",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "OBSTRUCT": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR2",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-2",
+        "OBSTRUCTED-0",
+        "OUR",
+        "WAY-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OBSTRUCT-V1",
+      "WORD": "OBSTRUCT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "OBSTRUCT-V2": {
+      "CAT": "V",
+      "DEF": "to get in the way of, prevent",
+      "EX": "he's [agent] / their slowness [instrument] is obstructing our work",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "PREVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR2",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-2",
+        "OBSTRUCTED-0",
+        "THE",
+        "WORK-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OBSTRUCT-V2",
+      "WORD": "OBSTRUCT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

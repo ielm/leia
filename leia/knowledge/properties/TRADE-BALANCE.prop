@@ -1,0 +1,9 @@
+{
+  "name": "$TRADE-BALANCE",
+  "def": "an attribute that indicates the difference of imports to exports in international trade",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

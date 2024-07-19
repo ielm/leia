@@ -1,0 +1,9 @@
+{
+  "name": "$STATE-OF-AFFAIRS",
+  "def": "indicates a state of affairs, as needed when describing, for example, vague change events, like improve",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-EVENT-ATTRIBUTE"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@BICYCLE-MANUFACTURING-CORPORATION",
+  "isa": [
+    "@VEHICLE-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a corporation that manufactures bicycles.",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@BICYCLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@VEHICLE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,42 @@
+{
+  "name": "@ARRANGE-HAIR",
+  "isa": [
+    "@PERSONAL-GROOMING-EVENT"
+  ],
+  "def": "to style or dress the hair in a certain way",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HAIR"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAIR-BRUSH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COMB"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PERSONAL-GROOMING-ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CLOTHING-ARTIFACT"
+    }
+  ],
+  "private": {}
+}

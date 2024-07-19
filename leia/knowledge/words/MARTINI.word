@@ -1,0 +1,34 @@
+{
+  "word": "MARTINI",
+  "senses": {
+    "MARTINI-N1": {
+      "CAT": "N",
+      "DEF": "A cocktail made of vodka or gin with dry vermouth.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MIXED-DRINK": {
+          "HAS-OBJECT-AS-PART": [
+            "VODKA",
+            "GIN"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MARTINI-N1",
+      "WORD": "MARTINI",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

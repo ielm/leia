@@ -1,0 +1,27 @@
+{
+  "name": "@GUNSMITH",
+  "isa": [
+    "@TRADE-ROLE"
+  ],
+  "def": "one who makes or repairs small guns",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@GUN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CREATIVE-WORK"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@FOODSTUFF"
+    }
+  ],
+  "private": {}
+}

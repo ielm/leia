@@ -1,0 +1,31 @@
+{
+  "word": "AH",
+  "senses": {
+    "AH-INTERJECTION1": {
+      "CAT": "INTERJECTION",
+      "DEF": "discourse filler",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CAT": "INTERJECTION",
+        "ROOT": "$VAR0"
+      },
+      "SEM-STRUC": {
+        "^$VAR0": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AH-INTERJECTION1",
+      "WORD": "AH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

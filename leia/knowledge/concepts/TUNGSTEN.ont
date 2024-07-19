@@ -1,0 +1,36 @@
+{
+  "name": "@TUNGSTEN",
+  "isa": [
+    "@HEAVY-METALLIC-ELEMENT"
+  ],
+  "def": "a hard brittle corrosion resistant gray to white metallic element extracted from wolframite scheelite and other minerals having the highest melting point and lowest vapor pressure of any metal tungsten and its alloys are used in high temperature structural materials electrical elements notably lamp filaments and instruments requiring thermally compatible glass to metal seals",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        74
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        183
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

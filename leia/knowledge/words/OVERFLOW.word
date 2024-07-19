@@ -1,0 +1,103 @@
+{
+  "word": "OVERFLOW",
+  "senses": {
+    "OVERFLOW-N1": {
+      "CAT": "N",
+      "DEF": "the running of a liquid outside of some border or container",
+      "EX": "The overflow (of water) created a real mess",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "OVERFLOW": {
+          "INSTRUMENT": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OVERFLOW-N1",
+      "WORD": "OVERFLOW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "OVERFLOW-V1": {
+      "CAT": "V",
+      "DEF": "to run outside of the borders of ",
+      "EX": "The river overflowed its banks; the water overflowed",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "OVERFLOW": {
+          "INSTRUMENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "RIVER-1",
+        "OVERFLOWED-0",
+        "THE",
+        "BANKS-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OVERFLOW-V1",
+      "WORD": "OVERFLOW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

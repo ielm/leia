@@ -1,0 +1,31 @@
+{
+  "word": "BACON",
+  "senses": {
+    "BACON-N1": {
+      "CAT": "N",
+      "DEF": "salted and smoked meat from back or sides of a hog",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BACON",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "SIDE_OF_BACON",
+        "BACON_STRIP",
+        "STRIP_OF_BACON"
+      ],
+      "SENSE": "BACON-N1",
+      "WORD": "BACON",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

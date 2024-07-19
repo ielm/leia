@@ -1,0 +1,56 @@
+{
+  "name": "@TRANSLATE",
+  "isa": [
+    "@COMMUNICATION-SERVE"
+  ],
+  "def": "to change into words of a different language from the original source language",
+  "local": [],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@BROADCASTER"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@CRYPTOGRAPHER"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@MODERATOR"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@PUBLICATION-ROLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ENCRYPT-KEY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INFORMATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MEDIA-ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PRINTED-MEDIA"
+    }
+  ],
+  "private": {}
+}

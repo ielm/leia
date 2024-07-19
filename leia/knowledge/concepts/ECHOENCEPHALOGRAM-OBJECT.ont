@@ -1,0 +1,22 @@
+{
+  "name": "@ECHOENCEPHALOGRAM-OBJECT",
+  "isa": [
+    "@SONOGRAM-OBJECT"
+  ],
+  "def": "a sonographic image of the brain",
+  "local": [
+    {
+      "slot": "depicts",
+      "facet": "sem",
+      "filler": "@BRAIN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "depicts",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

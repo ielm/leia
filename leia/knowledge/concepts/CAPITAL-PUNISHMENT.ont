@@ -1,0 +1,82 @@
+{
+  "name": "@CAPITAL-PUNISHMENT",
+  "isa": [
+    "@PUNISH"
+  ],
+  "def": "punishment by death",
+  "local": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@DIE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@CRIMINAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ROPE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@GUN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ELECTRICITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

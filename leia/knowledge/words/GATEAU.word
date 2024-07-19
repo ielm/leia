@@ -1,0 +1,34 @@
+{
+  "word": "GATEAU",
+  "senses": {
+    "GATEAU-N1": {
+      "CAT": "N",
+      "DEF": "a light cake with fruit or nuts",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CAKE": {
+          "HAS-OBJECT-AS-PART": [
+            "FRUIT-FOODSTUFF",
+            "NUT-FOODSTUFF"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GATEAU-N1",
+      "WORD": "GATEAU",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "word": "QUADRAPLEGIC",
+  "senses": {
+    "QUADRAPLEGIC-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "having paralyzed arms and legs",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "EXPERIENCER-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "PARALYSIS": {
+            "LOCATION": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "SET": {
+            "ELEMENTS": {
+              "VALUE": "REFSEM3",
+              "VALUE-1": "REFSEM4"
+            }
+          }
+        },
+        "REFSEM3": {
+          "SET": {
+            "CARDINALITY": 2,
+            "MEMBER-TYPE": "LEG"
+          }
+        },
+        "REFSEM4": {
+          "SET": {
+            "CARDINALITY": 2,
+            "MEMBER-TYPE-1": "ARM"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "QUADRAPLEGIC-ADJ1",
+      "WORD": "QUADRAPLEGIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "QUADRAPLEGIC-N1": {
+      "CAT": "N",
+      "DEF": "a person with paralyzed arms and legs",
+      "EX": "Her son is a quandraplegic",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "EXPERIENCER-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "PARALYSIS": {
+            "LOCATION": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "SET": {
+            "ELEMENTS": {
+              "VALUE": "REFSEM3",
+              "VALUE-1": "REFSEM4"
+            }
+          }
+        },
+        "REFSEM3": {
+          "SET": {
+            "CARDINALITY": 2,
+            "MEMBER-TYPE": "LEG"
+          }
+        },
+        "REFSEM4": {
+          "SET": {
+            "CARDINALITY": 2,
+            "MEMBER-TYPE-1": "ARM"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "QUAD"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "QUADRAPLEGIC-N1",
+      "WORD": "QUADRAPLEGIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

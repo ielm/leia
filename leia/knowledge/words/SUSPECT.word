@@ -1,0 +1,149 @@
+{
+  "word": "SUSPECT",
+  "senses": {
+    "SUSPECT-V1": {
+      "CAT": "V",
+      "DEF": "to believe without certainty something bad",
+      "EX": "I suspect that ... ",
+      "COMMENTS": "low evaluative modality should be part of the object",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "COMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "BELIEF",
+          "VALUE": 0.7,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          },
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "SUSPECTS-0",
+        "THAT",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SUSPECT-V1",
+      "WORD": "SUSPECT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SUSPECT-V2": {
+      "CAT": "V",
+      "DEF": "phrasal: it *be* suspected that...",
+      "EX": "It was suspected that the car was stolen",
+      "COMMENTS": "low evaluative modality should be part of the object",
+      "TMR-HEAD": "$VAR3",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "TYPE": "PRO",
+          "ROOT-WORD": "IT"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "V-1": {
+          "ROOT": "$VAR0",
+          "CAT": "V",
+          "FORM": "PAST-PARTICIPLE"
+        },
+        "COMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "BELIEF",
+          "SCOPE": {
+            "VALUE": "^$VAR3"
+          },
+          "VALUE": 0.7
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "IT-1",
+        "IS-2",
+        "SUSPECTED-0",
+        "THAT",
+        "THE",
+        "MAN",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AUXPASS",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJPASS",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SUSPECT-V2",
+      "WORD": "SUSPECT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

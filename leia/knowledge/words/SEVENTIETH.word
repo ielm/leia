@@ -1,0 +1,46 @@
+{
+  "word": "SEVENTIETH",
+  "senses": {
+    "SEVENTIETH-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "ORDINALITY": 70
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "70",
+        "TH-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "70TH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SEVENTIETH-ADJ1",
+      "WORD": "SEVENTIETH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

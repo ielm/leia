@@ -1,0 +1,9 @@
+{
+  "name": "$CONSCIOUS",
+  "def": "indicates whether an animal is mentally perceptive (conscious) or not (unconscious)",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-OBJECT-ATTRIBUTE"
+}

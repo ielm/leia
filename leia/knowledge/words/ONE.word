@@ -1,0 +1,265 @@
+{
+  "word": "ONE",
+  "senses": {
+    "ONE-NUM3": {
+      "CAT": "NUM",
+      "DEF": "",
+      "EX": "She visited one of her cousins.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "NUM",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "CAT": "PREP",
+          "ROOT": "$VAR1",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "SUBSET-OF": {
+            "VALUE": "^$VAR2"
+          },
+          "CARDINALITY": 1
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ONE-0",
+        "OF-1",
+        "THE",
+        "FINDINGS-2",
+        "HIT",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "ONE_MORE"
+      ],
+      "SENSE": "ONE-NUM3",
+      "WORD": "ONE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ONE-N1": {
+      "CAT": "N",
+      "DEF": "the pronoun 'one'",
+      "EX": "One has to eat regularly in order not to lose strength.",
+      "COMMENTS": "We need to refine this approach of blocking coreference by not blocking it within a discourse segment: e.g., the second 'one' in 'One can do it if one tries', the doer and the trier are coreferred.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "TYPE": "PRO"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "DETERMINATE": "NO"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "BLOCK-COREFERENCE",
+          [
+            "PERSON",
+            "THIRD"
+          ],
+          [
+            "NUMBER",
+            "SING"
+          ]
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ONE-N1",
+      "WORD": "ONE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ONE-NUM1": {
+      "CAT": "NUM",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "NUM"
+      },
+      "SEM-STRUC": {
+        "PHYSICAL-OBJECT": {
+          "CARDINALITY": {
+            "VALUE": 1
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "1"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ONE-NUM1",
+      "WORD": "ONE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ONE-NUM2": {
+      "CAT": "NUM",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NUM": {
+          "ROOT": "$VAR0",
+          "CAT": "NUM"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "CARDINALITY": 1
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ONE-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NUM",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "1"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ONE-NUM2",
+      "WORD": "ONE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ONE-N2": {
+      "CAT": "N",
+      "DEF": "phrasal: the one(s) = indicates coreference, a selection from a salient set",
+      "EX": "take the one in the corner",
+      "COMMENTS": "similar to a demonstrative",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ART": {
+          "ROOT": "$VAR1",
+          "ROOT-WORD": "THE",
+          "CAT": "ART"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "OBJECT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE-1",
+        "ONE-0",
+        "HIT",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ONE-N2",
+      "WORD": "ONE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ONE-NUM401": {
+      "CAT": "NUM",
+      "COMMENTS": "",
+      "DEF": "the quantity 1",
+      "EX": "she bought one egg",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "NUM": {
+          "ROOT": "$VAR0",
+          "CAT": "NUM"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "CARDINALITY": 1
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT",
+        "ONE-0",
+        "BLOCK-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "1",
+        "EXACTLY_ONE",
+        "JUST_ONE"
+      ],
+      "SENSE": "ONE-NUM401",
+      "WORD": "ONE",
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "word": "CLOUDY",
+  "senses": {
+    "CLOUDY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "it's cloudy",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR0",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "TYPE": "PRO",
+          "ROOT-WORD": "IT"
+        },
+        "ROOT": "$VAR2",
+        "CAT": "V",
+        "ROOT-WORD": "*BE*",
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ADV": {
+          "ROOT": "$VAR3",
+          "CAT": "ADV",
+          "ROOT-WORD": [
+            "OUT",
+            "OUTSIDE"
+          ],
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": "CLOUD",
+          "CARDINALITY": [
+            ">",
+            0.6
+          ]
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "IT-1",
+        "WAS-2",
+        "CLOUDY-0",
+        "OUT-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "COP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "DEP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "OVERCAST"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CLOUDY-ADJ1",
+      "WORD": "CLOUDY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

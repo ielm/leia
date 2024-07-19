@@ -1,0 +1,28 @@
+{
+  "name": "@CANTALOUPE",
+  "isa": [
+    "@MELON"
+  ],
+  "def": "a variety of melon with netlike ridges on the rind and sweet orange flesh",
+  "local": [
+    {
+      "slot": "sweetness",
+      "facet": "sem",
+      "filler": [
+        "><",
+        0.9
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "sweetness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

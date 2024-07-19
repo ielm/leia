@@ -1,0 +1,27 @@
+{
+  "name": "@ICHTHYOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "excessive fascination with fish",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FISH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

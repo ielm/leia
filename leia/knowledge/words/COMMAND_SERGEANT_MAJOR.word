@@ -1,0 +1,36 @@
+{
+  "word": "COMMAND_SERGEANT_MAJOR",
+  "senses": {
+    "COMMAND_SERGEANT_MAJOR-N1": {
+      "CAT": "N",
+      "DEF": "an officer of rank 17/22 in the US army",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MILITARY-OFFICER": {
+          "CITIZEN-OF": "USA",
+          "MEMBER-OF": "ARMY",
+          "RANK": [
+            17,
+            22
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COMMAND_SERGEANT_MAJOR-N1",
+      "WORD": "COMMAND_SERGEANT_MAJOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,375 @@
+{
+  "word": "MAY",
+  "senses": {
+    "MAY-AUX1": {
+      "CAT": "AUX",
+      "DEF": "expresses the possibility of something happening - epistemic .5",
+      "EX": "he may come over",
+      "COMMENTS": "I was thinking about phrasalizing may + other modals and aspectuals but there are too many of them [e.g., may have to/want to/start to...] so we'll need to do this compositionally. Steve removed the (^$var2 (agent ^$var1)) and the MP because stanford now puts in the link directly.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "AUX",
+        "INF-CL": {
+          "ROOT": "$VAR2",
+          "CAT": "INF-CL"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0.5,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR2": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOG-1",
+        "MIGHT-0",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AUX",
+          "$VAR2",
+          "$VAR0"
+        ],
+        [
+          "NSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "XSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "MIGHT"
+      ],
+      "HYPONYMS": [
+        "MAY_OR_MAY_NOT",
+        "MAY_WELL",
+        "MIGHT_OR_MIGHT_NOT"
+      ],
+      "SENSE": "MAY-AUX1",
+      "WORD": "MAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MAY-AUX2": {
+      "CAT": "AUX",
+      "DEF": "expresses permission to do sth.- permissive 1",
+      "EX": "you may go to the movies if you'd like",
+      "COMMENTS": "Steve removed the (^$var2 (agent ^$var1)) and the MP because stanford now puts in the link directly.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "AUX",
+        "INF-CL": {
+          "ROOT": "$VAR2",
+          "CAT": "INF-CL"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "PERMISSIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "MAY-0",
+        "EAT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AUX",
+          "$VAR2",
+          "$VAR0"
+        ],
+        [
+          "NSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "CAN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "MAY-AUX2",
+      "WORD": "MAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MAY-AUX3": {
+      "CAT": "AUX",
+      "DEF": "expresses the possibility of something happening - epistemic .5; in constrs. with pleonastic 'it'",
+      "EX": "it may be that this problem will never arise",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "ROOT-WORD": "IT"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "AUX",
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "COMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0.5,
+          "SCOPE": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "IT-1",
+        "MIGHT-0",
+        "BE-2",
+        "THAT",
+        "THE",
+        "MAN",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "NSUBJ",
+          "$VAR2",
+          "$VAR0"
+        ],
+        [
+          "PUNCT",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [
+        "MIGHT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "MAY-AUX3",
+      "WORD": "MAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MAY-AUX4": {
+      "CAT": "AUX",
+      "DEF": "expresses the speaker's desire for something to happen",
+      "EX": "may your camels never have fleas",
+      "COMMENTS": "usu. spoken as a benediction",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "AUX",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "INF-CL": {
+          "ROOT": "$VAR2",
+          "CAT": "INF-CL"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "VOLITIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          },
+          "ATTRIBUTED-TO": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "^$VAR2": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "REFSEM1": [
+          "HUMAN"
+        ]
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "MAY-0",
+        "THE",
+        "DOG-1",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AUX",
+          "$VAR2",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "WOULD_THAT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "MAY-AUX4",
+      "WORD": "MAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MAY-N1": {
+      "CAT": "N",
+      "DEF": "the month",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "MAY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MAY-N1",
+      "WORD": "MAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MAY-AUX500": {
+      "CAT": "AUX",
+      "DEF": "",
+      "EX": "May I hit the building?",
+      "COMMENTS": "Direct speech act",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "ROOT": "$VAR0",
+        "CAT": "AUX",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "V": {
+          "ROOT": "$VAR3",
+          "CAT": "V"
+        },
+        "PUNCT": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "?",
+          "CAT": "PUNCT"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR3": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "REQUEST-INFO": {
+          "AGENT-1": "*SPEAKER*",
+          "THEME": {
+            "VALUE": "REFSEM1.VALUE"
+          }
+        },
+        "REFSEM1": {
+          "MODALITY": {
+            "TYPE": "PERMISSIVE",
+            "SCOPE": {
+              "VALUE": "^$VAR3",
+              "SEM": "EVENT"
+            }
+          }
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "MAY-0",
+        "I-1",
+        "HIT-3",
+        "THE",
+        "BUILDING",
+        "?-4"
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MAY-AUX500",
+      "WORD": "MAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

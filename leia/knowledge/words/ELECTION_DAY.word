@@ -1,0 +1,29 @@
+{
+  "word": "ELECTION_DAY",
+  "senses": {
+    "ELECTION_DAY-N1": {
+      "CAT": "N",
+      "DEF": "in the U.S., the 1st Tuesday after the 1st Monday in November, a day set aside for elections",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "ELECTION-DAY-USA",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "POLLING_DAY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ELECTION_DAY-N1",
+      "WORD": "ELECTION_DAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

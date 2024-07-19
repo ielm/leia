@@ -1,0 +1,19 @@
+{
+  "name": "@BALLAD",
+  "isa": [
+    "@LITERARY-STYLE"
+  ],
+  "def": "A narrative poem, often originating in the folk tradition and intended to be sung; consists of simple stanzas and usually has a refrain",
+  "local": [
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "><=",
+        1.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

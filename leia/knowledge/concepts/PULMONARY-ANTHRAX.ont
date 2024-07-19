@@ -1,0 +1,52 @@
+{
+  "name": "@PULMONARY-ANTHRAX",
+  "isa": [
+    "@ANTHRAX"
+  ],
+  "def": "a form of anthrax acquired by inhalation of dust containing Bacillus anthracis; initial symptoms (chill and cough and dyspnea and rapid pulse) are followed by extreme cardiovascular collapse and death. This form of anthrax can't be treated, mortality is about 100%.",
+  "local": [
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@COUGH"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@FEVER"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@CHILLS"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@NAUSEA"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SKIN"
+    }
+  ],
+  "private": {}
+}

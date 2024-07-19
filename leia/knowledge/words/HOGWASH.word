@@ -1,0 +1,77 @@
+{
+  "word": "HOGWASH",
+  "senses": {
+    "HOGWASH-N1": {
+      "CAT": "N",
+      "DEF": "phrasal: X *is* hogwash <bunk, etc.>. This always implies a negative evaluation. Sometimes it implies that something is false as well, but that's situation-specific so I'm not including it.",
+      "EX": "That proposal is hogwash.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "N": {
+          "ROOT": "$VAR0",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "EVENT-1",
+        "WAS-2",
+        "BUNK-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "COP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "DRIVEL",
+        "BUNK",
+        "HOT_AIR",
+        "RUBBISH",
+        "TRASH",
+        "NONSENSE",
+        "BALDERDASH",
+        "BALONEY",
+        "BULL",
+        "HOOEY",
+        "POPPYCOCK"
+      ],
+      "SENSE": "HOGWASH-N1",
+      "WORD": "HOGWASH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

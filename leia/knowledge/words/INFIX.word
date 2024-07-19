@@ -1,0 +1,27 @@
+{
+  "word": "INFIX",
+  "senses": {
+    "INFIX-N1": {
+      "CAT": "N",
+      "DEF": "a word segment not at the word boundary",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "INFIX",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INFIX-N1",
+      "WORD": "INFIX",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

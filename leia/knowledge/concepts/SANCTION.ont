@@ -1,0 +1,42 @@
+{
+  "name": "@SANCTION",
+  "isa": [
+    "@COMMERCE-EVENT"
+  ],
+  "def": "a coercive measure, as an official trade boycott, against a nation defying international law",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@LARGE-GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@BOYCOTT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@ORGANIZATION"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

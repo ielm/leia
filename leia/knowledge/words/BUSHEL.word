@@ -1,0 +1,29 @@
+{
+  "word": "BUSHEL",
+  "senses": {
+    "BUSHEL-N1": {
+      "CAT": "N",
+      "DEF": "a unit of dry volume, most often used in agriculture, equivalent to eight dry gallons",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "DRY-BUSHEL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "DRY_BUSHEL"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BUSHEL-N1",
+      "WORD": "BUSHEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

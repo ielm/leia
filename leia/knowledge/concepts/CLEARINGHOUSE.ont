@@ -1,0 +1,21 @@
+{
+  "name": "@CLEARINGHOUSE",
+  "isa": [
+    "@BANK"
+  ],
+  "def": "an organization of banks, within a relatively small geographic area, which has the purpose of settling payments for the checks each bank receives during the day",
+  "local": [
+    {
+      "slot": "has-member",
+      "facet": "sem",
+      "filler": "@COMMERCIAL-BANK"
+    },
+    {
+      "slot": "has-member",
+      "facet": "sem",
+      "filler": "@COOPERATIVE-BANK"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

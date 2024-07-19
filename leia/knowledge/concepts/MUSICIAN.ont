@@ -1,0 +1,16 @@
+{
+  "name": "@MUSICIAN",
+  "isa": [
+    "@ENTERTAINMENT-ROLE"
+  ],
+  "def": "an entertainer who sings or plays a musical instrument",
+  "local": [
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@MUSICAL-INSTRUMENT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

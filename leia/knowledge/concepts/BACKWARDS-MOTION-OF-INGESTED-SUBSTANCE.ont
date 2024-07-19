@@ -1,0 +1,32 @@
+{
+  "name": "@BACKWARDS-MOTION-OF-INGESTED-SUBSTANCE",
+  "isa": [
+    "@SYMPTOM"
+  ],
+  "def": "a superclass for vomiting, regurgitation and perhaps \nother events in which ingested material moves\nthe wrong way through the alimentary canal",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ALIMENTARY-SYSTEM"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@BOLUS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,229 @@
+{
+  "word": "FLOAT",
+  "senses": {
+    "FLOAT-V1": {
+      "CAT": "V",
+      "DEF": "rubber balls float",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "FLOAT": {
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "RUBBER",
+        "BALLS-2",
+        "FLOAT-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FLOAT-V1",
+      "WORD": "FLOAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FLOAT-V404": {
+      "CAT": "V",
+      "COMMENTS": "Need this entry because Stanford analyzes this as DEP(object,touch)",
+      "EX": "object not touching any edge.",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "^$VAR3": {
+          "FLOATING": "YES"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "THERE",
+        "IS",
+        "AN",
+        "OBJECT-3",
+        "NOT",
+        "TOUCHING-0",
+        "ANY",
+        "EDGE"
+      ],
+      "SYNONYMS": [
+        "NOT_TOUCHING_ANY_EDGE",
+        "NOT_TOUCHING_AN_EDGE",
+        "NOT_TOUCHING_THE_EDGE",
+        "NOT_TOUCHING_ANY_SIDE",
+        "NOT_TOUCHING_A_SIDE",
+        "NOT_TOUCHING_THE_SIDE",
+        "NOT_TOUCHING_ANYTHING",
+        "NOT_TOUCHING_THE_WALL",
+        "NOT_TOUCH_ANY_EDGE",
+        "NOT_TOUCH_AN_EDGE",
+        "NOT_TOUCH_THE_EDGE",
+        "NOT_TOUCH_ANY_SIDE",
+        "NOT_TOUCH_A_SIDE",
+        "NOT_TOUCH_THE_SIDE",
+        "NOT_TOUCH_ANYTHING",
+        "NOT_TOUCH_THE_WALL"
+      ],
+      "SENSE": "FLOAT-V404",
+      "WORD": "FLOAT",
+      "DEF": "NIL",
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "FLOAT-V403": {
+      "CAT": "V",
+      "COMMENTS": "Need this entry because Stanford analyzes some words like 'square' as ADJ",
+      "EX": "square floating above the edge.",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "ADJ": {
+          "ROOT": "$VAR3",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "^$VAR3": {
+          "FLOATING": "YES"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "THERE",
+        "IS",
+        "A",
+        "SQUARE-3",
+        "FLOATING-0"
+      ],
+      "SENSE": "FLOAT-V403",
+      "WORD": "FLOAT",
+      "DEF": "NIL",
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "FLOAT-V402": {
+      "CAT": "V",
+      "COMMENTS": "Need this entry because Stanford analyzes this as ADJ(object,float)",
+      "EX": "object floating above the edge.",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "^$VAR3": {
+          "FLOATING": "YES"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "THERE",
+        "IS",
+        "AN",
+        "OBJECT-3",
+        "FLOATING-0"
+      ],
+      "SENSE": "FLOAT-V402",
+      "WORD": "FLOAT",
+      "DEF": "NIL",
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "FLOAT-V401": {
+      "CAT": "V",
+      "COMMENTS": "Need this entry because stanford analyzes this as ACL(object,float)",
+      "EX": "blue object floating above the edge.",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "^$VAR3": {
+          "FLOATING": "YES"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "THERE",
+        "IS",
+        "A",
+        "BLUE",
+        "OBJECT-3",
+        "FLOATING-0"
+      ],
+      "SYNONYMS": [
+        "NOT_TOUCHING_ANY_EDGE",
+        "NOT_TOUCHING_AN_EDGE",
+        "NOT_TOUCHING_THE_EDGE",
+        "NOT_TOUCHING_ANY_SIDE",
+        "NOT_TOUCHING_A_SIDE",
+        "NOT_TOUCHING_THE_SIDE",
+        "NOT_TOUCHING_ANYTHING",
+        "NOT_TOUCHING_THE_WALL",
+        "NOT_TOUCH_ANY_EDGE",
+        "NOT_TOUCH_AN_EDGE",
+        "NOT_TOUCH_THE_EDGE",
+        "NOT_TOUCH_ANY_SIDE",
+        "NOT_TOUCH_A_SIDE",
+        "NOT_TOUCH_THE_SIDE",
+        "NOT_TOUCH_ANYTHING",
+        "NOT_TOUCH_THE_WALL"
+      ],
+      "SENSE": "FLOAT-V401",
+      "WORD": "FLOAT",
+      "DEF": "NIL",
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

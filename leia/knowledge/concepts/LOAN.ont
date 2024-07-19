@@ -1,0 +1,27 @@
+{
+  "name": "@LOAN",
+  "isa": [
+    "@DEBT"
+  ],
+  "def": "something lent, especially money at interest",
+  "local": [
+    {
+      "slot": "interest-rate",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "interest-rate",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

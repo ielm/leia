@@ -1,0 +1,27 @@
+{
+  "name": "@GRAPHIC-DESIGNER",
+  "isa": [
+    "@ARTISTIC-ROLE"
+  ],
+  "def": "one who creates, selects, and arranges images and type for publications, signage, packaging, etc",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@PRINTED-MEDIA"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CREATIVE-WORK"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@FOODSTUFF"
+    }
+  ],
+  "private": {}
+}

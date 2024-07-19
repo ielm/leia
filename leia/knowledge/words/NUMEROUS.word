@@ -1,0 +1,53 @@
+{
+  "word": "NUMEROUS",
+  "senses": {
+    "NUMEROUS-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "numerous dogs are barking.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "NUMBER": "PL"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "CARDINALITY": [
+            "><",
+            0.5,
+            0.7
+          ],
+          "DETERMINATE": "NO",
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "NUMEROUS-0",
+        "OBJECT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NUMEROUS-QUANTIFIER1",
+      "WORD": "NUMEROUS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

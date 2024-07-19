@@ -1,0 +1,31 @@
+{
+  "word": "ESCUDO",
+  "senses": {
+    "ESCUDO-N1": {
+      "CAT": "N",
+      "DEF": "currency of cape-verde-island",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": "CAPE_VERDE_ISLAND"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ESCUDO-N1",
+      "WORD": "ESCUDO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

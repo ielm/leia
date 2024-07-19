@@ -1,0 +1,68 @@
+{
+  "word": "YAWN",
+  "senses": {
+    "YAWN-N1": {
+      "CAT": "N",
+      "DEF": "the act of yawning",
+      "EX": "His yawn was too visible",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "YAWN",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "YAWN-N1",
+      "WORD": "YAWN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "YAWN-V1": {
+      "CAT": "V",
+      "DEF": "To open the mouth wide with a deep inhalation, usually involuntarily from drowsiness, fatigue, or boredom",
+      "EX": "John yawned",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "YAWN": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "YAWNED-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "YAWN-V1",
+      "WORD": "YAWN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

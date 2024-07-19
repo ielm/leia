@@ -1,0 +1,43 @@
+{
+  "word": "DUTCHMAN",
+  "senses": {
+    "DUTCHMAN-N1": {
+      "CAT": "N",
+      "DEF": "a citizen of netherlands",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CITIZEN": {
+          "HAS-NATIONALITY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "NETHERLANDS"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "HOLLANDER",
+        "NETHERLANDER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DUTCHMAN-N1",
+      "WORD": "DUTCHMAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

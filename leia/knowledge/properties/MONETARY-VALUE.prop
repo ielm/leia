@@ -1,0 +1,9 @@
+{
+  "name": "$MONETARY-VALUE",
+  "def": "the value of an object, expressed in monetary units",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

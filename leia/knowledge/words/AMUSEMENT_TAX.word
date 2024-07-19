@@ -1,0 +1,31 @@
+{
+  "word": "AMUSEMENT_TAX",
+  "senses": {
+    "AMUSEMENT_TAX-N1": {
+      "CAT": "N",
+      "DEF": "tax on movies, plays, and other performances",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "TAX": {
+          "RELATION": "ENTERTAIN-EVENT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AMUSEMENT_TAX-N1",
+      "WORD": "AMUSEMENT_TAX",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

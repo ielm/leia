@@ -1,0 +1,62 @@
+{
+  "word": "INTRODUCTION",
+  "senses": {
+    "INTRODUCTION-N1": {
+      "CAT": "N",
+      "DEF": "the beginning portion of a book, speech, etc.",
+      "EX": "the introduction to this book is too long",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "TO",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "INTRODUCTION": {
+          "PART-OF-OBJECT": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "INTRODUCTION-0",
+        "TO-1",
+        "THE",
+        "MAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INTRODUCTION-N1",
+      "WORD": "INTRODUCTION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

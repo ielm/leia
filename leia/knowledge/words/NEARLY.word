@@ -1,0 +1,117 @@
+{
+  "word": "NEARLY",
+  "senses": {
+    "NEARLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "almost",
+      "EX": "I nearly fell",
+      "COMMENTS": "Depending on the verb, this can have some aspects of epiteuctic modality as well",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0.7,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "NEARLY-0",
+        "EVENTED-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NEARLY-ADV1",
+      "WORD": "NEARLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "NEARLY-ADV2": {
+      "CAT": "ADV",
+      "DEF": "nearly + number + noun",
+      "EX": "it's been nearly 10 years since I moved here",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR2",
+      "SYN-STRUC": {
+        "ADV": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        },
+        "NUM": {
+          "ROOT": "$VAR1",
+          "CAT": "NUM"
+        },
+        "N": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR2"
+          },
+          "CARDINALITY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "ANY-NUMBER": {
+            "LESS-THAN": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "NEARLY-0",
+        "TEN-1",
+        "BALLS-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "DEP",
+          "$VAR1",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "ALMOST",
+        "JUST_UNDER",
+        "CLOSE_TO"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "NEARLY-ADV2",
+      "WORD": "NEARLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

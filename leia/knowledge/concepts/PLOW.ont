@@ -1,0 +1,52 @@
+{
+  "name": "@PLOW",
+  "isa": [
+    "@FARMING-ACTIVITY"
+  ],
+  "def": "to cut and turn up (soil) with a plow",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@PLANT-FARM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@AGRICULTURAL-CORPORATION"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ENGINEERED-ARTIFACT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WATER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CROP"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GEOLOGICAL-ENTITY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIVESTOCK"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SEED"
+    }
+  ],
+  "private": {}
+}

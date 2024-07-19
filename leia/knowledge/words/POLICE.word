@@ -1,0 +1,75 @@
+{
+  "word": "POLICE",
+  "senses": {
+    "POLICE-N1": {
+      "CAT": "N",
+      "DEF": "the police department or the policemen in the department",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "POLICE-DEPARTMENT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "POLICE_DEPARTMENT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "POLICE-N1",
+      "WORD": "POLICE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "POLICE-V1": {
+      "CAT": "V",
+      "DEF": "to enforce the law in the area indicated as the object",
+      "EX": "They police the neighborhood at night",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "ENFORCE-LAW": {
+          "AGENT": {
+            "VALUE": "^$VAR2",
+            "SEM": "POLICE-OFFICER"
+          },
+          "LOCATION": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "POLICED-0",
+        "THE",
+        "NEIGHBORHOOD-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "POLICE-V1",
+      "WORD": "POLICE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

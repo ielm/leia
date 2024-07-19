@@ -1,0 +1,32 @@
+{
+  "word": "SPECIAL_PROSECUTOR",
+  "senses": {
+    "SPECIAL_PROSECUTOR-N1": {
+      "CAT": "N",
+      "DEF": "individual appointed to investigate and indict in single, exceptional case",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ATTORNEY": {
+          "AGENT-OF": "INVESTIGATE",
+          "AGENT-OF-1": "PROSECUTE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SPECIAL_PROSECUTOR-N1",
+      "WORD": "SPECIAL_PROSECUTOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

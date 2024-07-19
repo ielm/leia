@@ -1,0 +1,27 @@
+{
+  "name": "@DESIGN-SOFTWARE",
+  "isa": [
+    "@COMPUTING-SERVE"
+  ],
+  "def": "to design an develop the programs, routines, etc. for a computer",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@SOFTWARE-ENGINEER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@COMPUTING-WORK-ROLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COMPUTER"
+    }
+  ],
+  "private": {}
+}

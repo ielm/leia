@@ -1,0 +1,157 @@
+{
+  "word": "ARGUMENT",
+  "senses": {
+    "ARGUMENT-N1": {
+      "CAT": "N",
+      "DEF": "reasons for or against",
+      "EX": "the argument by my colleague that his approach is better is invalid",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "COMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "ARGUE": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ARGUMENT-N1",
+      "WORD": "ARGUMENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ARGUMENT-N2": {
+      "CAT": "N",
+      "DEF": "verbal battle, disagreement",
+      "EX": "the argument between/among coaches about the new rules",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": [
+            "BETWEEN",
+            "AMONG"
+          ],
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": [
+            "ABOUT",
+            "OVER"
+          ],
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ARGUE-CONFLICT": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SCORE-0",
+        "BETWEEN-1",
+        "THE",
+        "ANIMAL-2",
+        "ABOUT-3",
+        "THE",
+        "ISSUE-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [
+        "CONFLICT",
+        "FRICTION",
+        "CLASH",
+        "FRACAS",
+        "ANIMOSITY",
+        "ANTAGONISM",
+        "CONFLICTION"
+      ],
+      "HYPONYMS": [
+        "GRUDGE",
+        "SCORE"
+      ],
+      "SENSE": "ARGUMENT-N2",
+      "WORD": "ARGUMENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

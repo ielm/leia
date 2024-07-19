@@ -1,0 +1,22 @@
+{
+  "name": "@FLOATING-KNEE",
+  "isa": [
+    "@INJURY"
+  ],
+  "def": "a specific type of knee injury",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@KNEE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

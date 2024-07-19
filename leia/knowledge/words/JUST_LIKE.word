@@ -1,0 +1,65 @@
+{
+  "word": "JUST_LIKE",
+  "senses": {
+    "JUST_LIKE-PREP1": {
+      "CAT": "PREP",
+      "DEF": "the first NP is of the class of the 2nd NP",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "ELEMENTS": {
+            "VALUE": "^$VAR1",
+            "VALUE-1": "^$VAR2"
+          },
+          "SIMILARITY": 1
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "JUST_LIKE-0",
+        "THE",
+        "MAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "JUST_LIKE-PREP1",
+      "WORD": "JUST_LIKE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

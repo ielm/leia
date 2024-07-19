@@ -1,0 +1,27 @@
+{
+  "name": "@REPRESENTATIONAL-OBJECT",
+  "isa": [
+    "@MENTAL-OBJECT"
+  ],
+  "def": "mental objects which stand in a representational relation to some other objects",
+  "local": [
+    {
+      "slot": "objectivity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "abstractness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

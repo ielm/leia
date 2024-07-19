@@ -1,0 +1,41 @@
+{
+  "word": "PEACOAT",
+  "senses": {
+    "PEACOAT-N1": {
+      "CAT": "N",
+      "DEF": "a sailor's heavy woolen double-breasted jacket",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "COAT": {
+          "MADE-OF": "WOOL",
+          "THEME-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "WEAR-CLOTHES": {
+            "AGENT": "SAILOR"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "PEA_JACKET"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PEACOAT-N1",
+      "WORD": "PEACOAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

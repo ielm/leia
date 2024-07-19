@@ -1,0 +1,27 @@
+{
+  "name": "@WITHDRAW",
+  "isa": [
+    "@BANKING-EVENT"
+  ],
+  "def": "to take money or another financial source from an account",
+  "local": [
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@BANK-ACCOUNT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@BANK"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@BANKER"
+    }
+  ],
+  "private": {}
+}

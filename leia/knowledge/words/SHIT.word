@@ -1,0 +1,54 @@
+{
+  "word": "SHIT",
+  "senses": {
+    "SHIT-V800": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "John will shit bricks when he finds out about you.",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "NP-1": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "BRICK",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "FEAR": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "JOHN-1",
+        "WILL",
+        "SHIT-0",
+        "BRICKS-2",
+        "WHEN",
+        "HE",
+        "FINDS",
+        "OUT"
+      ],
+      "SENSE": "SHIT-V800",
+      "WORD": "SHIT",
+      "HYPONYMS": [],
+      "SYNONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

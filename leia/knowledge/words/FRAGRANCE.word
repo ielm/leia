@@ -1,0 +1,35 @@
+{
+  "word": "FRAGRANCE",
+  "senses": {
+    "FRAGRANCE-N1": {
+      "CAT": "N",
+      "DEF": "an odor that isn't bad",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0.7,
+          "SCOPE": "ODOR"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SCENT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FRAGRANCE-N1",
+      "WORD": "FRAGRANCE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

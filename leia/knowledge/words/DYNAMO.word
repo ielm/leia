@@ -1,0 +1,53 @@
+{
+  "word": "DYNAMO",
+  "senses": {
+    "DYNAMO-N1": {
+      "CAT": "N",
+      "DEF": "a device that converts mechanical energy to electrical energy",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "GENERATOR",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DYNAMO-N1",
+      "WORD": "DYNAMO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DYNAMO-N2": {
+      "CAT": "N",
+      "DEF": "a very energetic person",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "ENTHUSIASM": 1
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DYNAMO-N2",
+      "WORD": "DYNAMO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

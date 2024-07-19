@@ -1,0 +1,16 @@
+{
+  "name": "@RAPIDS",
+  "isa": [
+    "@WATER"
+  ],
+  "def": "fast moving water in a river",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@RIVER"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

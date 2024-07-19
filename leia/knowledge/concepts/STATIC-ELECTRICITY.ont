@@ -1,0 +1,27 @@
+{
+  "name": "@STATIC-ELECTRICITY",
+  "isa": [
+    "@ELECTRICITY"
+  ],
+  "def": "electricity produced by rubbing",
+  "local": [
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@RUB"
+    }
+  ],
+  "block": [
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

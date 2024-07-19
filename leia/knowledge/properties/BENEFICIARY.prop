@@ -1,0 +1,9 @@
+{
+  "name": "$BENEFICIARY",
+  "def": "The role filled by the nonagentive party in an event involving transfer of objects can be either a winner or a loser depending on the event Bill is the beneficiary in both *John robbed Bill of 100 dollars* or *John gave Bill 100 dollars*",
+  "type": "case_role",
+  "range": "!AnyType",
+  "inverse": "$BENEFICIARY-OF",
+  "measured-in": [],
+  "container": "$CASE-ROLE"
+}

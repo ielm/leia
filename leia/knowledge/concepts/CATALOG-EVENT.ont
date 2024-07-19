@@ -1,0 +1,22 @@
+{
+  "name": "@CATALOG-EVENT",
+  "isa": [
+    "@ARRANGE"
+  ],
+  "def": "to arrange in a list or catalog with numbers or symbols assigned to each object",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@INDEX"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

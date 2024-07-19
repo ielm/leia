@@ -1,0 +1,19 @@
+{
+  "name": "@PART-PER-BILLION",
+  "isa": [
+    "@PERCENTAGE-UNIT"
+  ],
+  "def": "one part per billion parts, a comparative ratio; 1E-9",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1e-09
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

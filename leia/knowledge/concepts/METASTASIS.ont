@@ -1,0 +1,77 @@
+{
+  "name": "@METASTASIS",
+  "isa": [
+    "@PATHOLOGIC-FUNCTION"
+  ],
+  "def": "Transmission of pathogenic microorganisms or cancerous cells from an original site to one or more sites elsewhere in the body, usually by way of the blood vessels or lymphatics.",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@CANCER"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@TUMOR"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CELL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MICRO-ORGANISM"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SEGMENT-OF-ARTERIAL-TREE-ORGAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SEGMENT-OF-VENOUS-TREE-ORGAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@LYMPHATIC-SYSTEM"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

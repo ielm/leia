@@ -1,0 +1,33 @@
+{
+  "word": "WALES",
+  "senses": {
+    "WALES-N1": {
+      "CAT": "N",
+      "DEF": "a nation",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "NATION": {
+          "HAS-NAME": {
+            "VALUE": "WALES"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WALES-N1",
+      "WORD": "WALES",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@GASEOUS-ELEMENT",
+  "isa": [
+    "@ELEMENT-MATERIAL",
+    "@GAS"
+  ],
+  "def": "an element gaseous at room temperature, or one commonly thought of as a gas",
+  "local": [],
+  "block": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "semi-solid"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "solid"
+    }
+  ],
+  "private": {}
+}

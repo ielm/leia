@@ -1,0 +1,22 @@
+{
+  "name": "@ONION",
+  "isa": [
+    "@VEGETABLE-FOODSTUFF"
+  ],
+  "def": "An edible pungent bulb from a plant of the lily family.",
+  "local": [
+    {
+      "slot": "diameter",
+      "facet": "sem",
+      "filler": [
+        "><",
+        14
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    }
+  ],
+  "block": [],
+  "private": {}
+}

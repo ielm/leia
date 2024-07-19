@@ -1,0 +1,62 @@
+{
+  "word": "ENFORCEMENT",
+  "senses": {
+    "ENFORCEMENT-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "OF",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "NP"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR5",
+          "ROOT-WORD": "BY",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ENFORCE-LAW": {
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "AGENT": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ENFORCEMENT-N1",
+      "WORD": "ENFORCEMENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

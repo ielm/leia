@@ -1,0 +1,20 @@
+{
+  "name": "@WATERCRESS",
+  "isa": [
+    "@CRUCIFEROUS-VEGETABLE",
+    "@LEAF-VEGETABLE"
+  ],
+  "def": "Any of various herbs of the mustard family with divided basal leaves, cultivated for winter salads.",
+  "local": [],
+  "block": [
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

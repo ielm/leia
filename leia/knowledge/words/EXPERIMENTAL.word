@@ -1,0 +1,38 @@
+{
+  "word": "EXPERIMENTAL",
+  "senses": {
+    "EXPERIMENTAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "being researched",
+      "EX": "the doctor offered to try an experimental procedure",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "THEME-OF": "RESEARCH"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EXPERIMENTAL-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EXPERIMENTAL-ADJ1",
+      "WORD": "EXPERIMENTAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

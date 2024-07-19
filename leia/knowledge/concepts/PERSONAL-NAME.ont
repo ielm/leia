@@ -1,0 +1,21 @@
+{
+  "name": "@PERSONAL-NAME",
+  "isa": [
+    "@NAME-HUMAN-PART"
+  ],
+  "def": "a person*s non-surname name, referred to in English as the first name",
+  "local": [
+    {
+      "slot": "gender",
+      "facet": "sem",
+      "filler": "male"
+    },
+    {
+      "slot": "gender",
+      "facet": "sem",
+      "filler": "female"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,35 @@
+{
+  "word": "BREATHING_DEVICE",
+  "senses": {
+    "BREATHING_DEVICE-N1": {
+      "CAT": "N",
+      "DEF": "a medical device that assists with breathing",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BREATHING-DEVICE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "BREATHING_APPARATUS"
+      ],
+      "HYPONYMS": [
+        "VENTILATOR",
+        "OXYGEN_MASK",
+        "RESPIRATOR",
+        "INHALER",
+        "IRON_LUNG"
+      ],
+      "SENSE": "BREATHING_DEVICE-N1",
+      "WORD": "BREATHING_DEVICE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

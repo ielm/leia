@@ -1,0 +1,34 @@
+{
+  "word": "BABA",
+  "senses": {
+    "BABA-N1": {
+      "CAT": "N",
+      "DEF": "a cake made with rum and usually raisins",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CAKE": {
+          "HAS-OBJECT-AS-PART": "RUM",
+          "HAS-OBJECT-AS-PART-1": "RAISIN"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "RUM_BABA"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BABA-N1",
+      "WORD": "BABA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

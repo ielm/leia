@@ -1,0 +1,53 @@
+{
+  "word": "WITH_EACH_OTHER",
+  "senses": {
+    "WITH_EACH_OTHER-ADV1": {
+      "CAT": "ADV",
+      "DEF": "cooperatively, together",
+      "EX": "The kids played with each other all day.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "POST-VERB-CLAUSE"
+        }
+      },
+      "SEM-STRUC": "COOPERATIVE-EVENT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "COREFER",
+          "^$VAR1",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "HIT-1",
+        "TOGETHER-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "TOGETHER",
+        "COOPERATIVELY",
+        "IN_COOPERATION"
+      ],
+      "HYPONYMS": [
+        "IN_TANDEM"
+      ],
+      "SENSE": "WITH_EACH_OTHER-ADV1",
+      "WORD": "WITH_EACH_OTHER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

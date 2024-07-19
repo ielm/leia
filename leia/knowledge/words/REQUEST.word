@@ -1,0 +1,800 @@
+{
+  "word": "REQUEST",
+  "senses": {
+    "REQUEST-N1": {
+      "CAT": "N",
+      "DEF": "act of asking",
+      "EX": "The request (by the guest) (to get a new room) was granted",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "XCOMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "REQUEST-ACTION": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "REQUEST-0",
+        "BY-1",
+        "THE",
+        "HUMAN-2",
+        "TO-7",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "REQUEST-N1",
+      "WORD": "REQUEST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "REQUEST-N3": {
+      "CAT": "N",
+      "DEF": "phrasal: at the request of X",
+      "EX": "At the request of the administration, all secretaries came to work on Saturday",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "AT",
+          "OBJ": {
+            "ROOT": "$VAR0",
+            "CAT": "N",
+            "ROOT-WORD": "REQUEST",
+            "PP": {
+              "ROOT": "$VAR3",
+              "CAT": "PREP",
+              "ROOT-WORD": "OF",
+              "OBJ": {
+                "ROOT": "$VAR4",
+                "CAT": "N"
+              }
+            }
+          }
+        },
+        "PUNCT": {
+          "ROOT": "$VAR5",
+          "CAT": "PUNCT",
+          "ROOT-WORD": "COMMA",
+          "OPT": "+"
+        },
+        "CL": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "CAUSED-BY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "REQUEST-ACTION": {
+            "AGENT": {
+              "VALUE": "^$VAR4"
+            }
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "AT-1",
+        "OF-3",
+        "THE",
+        "HUMAN-4",
+        "COMMA-5",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR1",
+          "$VAR3"
+        ],
+        [
+          "NN",
+          "$VAR5",
+          "$VAR4"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR5"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "REQUEST-N3",
+      "WORD": "REQUEST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "REQUEST-V1": {
+      "CAT": "V",
+      "DEF": "to ask that something be done: X requested Comp",
+      "EX": "He requested that he be given a new room",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "COMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "REQUEST-ACTION": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "REQUESTED-0",
+        "THAT",
+        "THE",
+        "WOMAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "REQUEST-V1",
+      "WORD": "REQUEST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "REQUEST-V2": {
+      "CAT": "V",
+      "DEF": "request X (event) = request that something be done",
+      "EX": "He requested a transfer",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "REQUEST-ACTION": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "EVENT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "REQUESTED-0",
+        "THE",
+        "TRANSFER-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "REQUEST-V2",
+      "WORD": "REQUEST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "REQUEST-V3": {
+      "CAT": "V",
+      "DEF": "request X (object) = request to be given something",
+      "EX": "He requested a clean fork",
+      "COMMENTS": "this sense includes semantic ellipsis of 'give' (or other verbs of that general semantic class)",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "REQUEST-ACTION": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "TRANSFER-POSSESSION": {
+            "THEME-1": {
+              "VALUE": "^$VAR2"
+            },
+            "BENEFICIARY": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "REQUESTED-0",
+        "A",
+        "CLEAN",
+        "FORK-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "REQUEST-V3",
+      "WORD": "REQUEST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "REQUEST-V4": {
+      "CAT": "V",
+      "DEF": "direct quotation",
+      "EX": "'Would you please pass the potatoes?' he requested of her.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        },
+        "QUOTED-SPEECH": [
+          [
+            "ROOT",
+            "$VAR2"
+          ],
+          [
+            "CAT",
+            "CL"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "REQUEST-ACTION": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "REQUESTED-0",
+        "OF-4",
+        "HIS",
+        "FRIEND-3",
+        "THAT",
+        "THE",
+        "DOG",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR4"
+        ],
+        [
+          "POBJ",
+          "$VAR4",
+          "$VAR3"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "REQUEST-V4",
+      "WORD": "REQUEST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "REQUEST-N6": {
+      "CAT": "N",
+      "DEF": "phrasal: (x's) request for Y (object)",
+      "EX": "his request for a clean fork was denied",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NMOD_POSS": [
+          [
+            "ROOT",
+            "$VAR1"
+          ],
+          [
+            "CAT",
+            [
+              "N",
+              "DET"
+            ]
+          ],
+          [
+            "POSSESSIVE",
+            "+"
+          ],
+          [
+            "OPT",
+            "+"
+          ],
+          [
+            "CASE",
+            [
+              [
+                "ROOT",
+                "$VAR9"
+              ],
+              [
+                "ROOT",
+                "*QUOTE*S"
+              ],
+              [
+                "CAT",
+                "POSSESSIVE"
+              ],
+              [
+                "OPT",
+                "+"
+              ]
+            ]
+          ]
+        ],
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "FOR",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "REQUEST-ACTION": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "TRANSFER-POSSESSION": {
+            "THEME-1": {
+              "VALUE": "^$VAR3"
+            },
+            "BENEFICIARY": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR9": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "DISCUSSED",
+        "THE",
+        "WOMAN-1",
+        "*QUOTE*S-9",
+        "REQUEST-0",
+        "FOR-2",
+        "A",
+        "DOG-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "PLEA"
+      ],
+      "SENSE": "REQUEST-N6",
+      "WORD": "REQUEST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "REQUEST-N5": {
+      "CAT": "N",
+      "DEF": "phrasal: x request",
+      "EX": "his vacation request was denied",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "POSSESSIVE": "+",
+          "OPT": "+"
+        },
+        "N-1": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "REQUEST-ACTION": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HUMAN-1",
+        "CRIME-2",
+        "REQUEST-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "REQUEST-N5",
+      "WORD": "REQUEST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "REQUEST-N4": {
+      "CAT": "N",
+      "DEF": "phrasal: (x's) request for Y (event)",
+      "EX": "his request for a transfer was denied",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NMOD_POSS": [
+          [
+            "ROOT",
+            "$VAR1"
+          ],
+          [
+            "CAT",
+            [
+              "N",
+              "DET"
+            ]
+          ],
+          [
+            "POSSESSIVE",
+            "+"
+          ],
+          [
+            "OPT",
+            "+"
+          ],
+          [
+            "CASE",
+            [
+              [
+                "ROOT",
+                "$VAR9"
+              ],
+              [
+                "ROOT",
+                "*QUOTE*S"
+              ],
+              [
+                "CAT",
+                "POSSESSIVE"
+              ],
+              [
+                "OPT",
+                "+"
+              ]
+            ]
+          ]
+        ],
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "FOR",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "REQUEST-ACTION": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3",
+            "SEM": "EVENT"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR9": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "DISCUSSED",
+        "THE",
+        "WOMAN-1",
+        "*QUOTE*S-9",
+        "REQUEST-0",
+        "FOR-2",
+        "A",
+        "DOG-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "PLEA"
+      ],
+      "SENSE": "REQUEST-N4",
+      "WORD": "REQUEST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "REQUEST-N2": {
+      "CAT": "N",
+      "DEF": "phrasal: at X's request(,) CL",
+      "EX": "At her husband's request, she made reservations for dinner at the restaurant",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "AT",
+          "OBJ": {
+            "N": {
+              "ROOT": "$VAR0",
+              "CAT": "N",
+              "ROOT-WORD": "REQUEST"
+            }
+          }
+        },
+        "PUNCT": {
+          "ROOT": "$VAR3",
+          "CAT": "PUNCT",
+          "ROOT-WORD": "*COMMA*",
+          "OPT": "+"
+        },
+        "COMP": {
+          "ROOT": "$VAR4",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR4": {
+          "CAUSED-BY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "REQUEST-ACTION": {
+            "AGENT": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "AT-1",
+        "REQUEST-2",
+        "*COMMA*-3",
+        "THAT",
+        "THE",
+        "MAN",
+        "HIT-4",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR4",
+          "$VAR1"
+        ],
+        [
+          "PUNCT",
+          "$VAR4",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "REQUEST-N2",
+      "WORD": "REQUEST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

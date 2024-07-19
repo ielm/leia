@@ -1,0 +1,33 @@
+{
+  "word": "LIMERICK",
+  "senses": {
+    "LIMERICK-N1": {
+      "CAT": "N",
+      "DEF": "A humorous, nonsensical, or bawdy verse of five lines usually with the rhyme scheme aabba.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LITERARY-COMPOSITION": {
+          "HAS-STYLE": "POEM",
+          "HUMOR-ATTRIBUTE": 0.8,
+          "LENGTH": 5
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LIMERICK-N1",
+      "WORD": "LIMERICK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

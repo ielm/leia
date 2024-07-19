@@ -1,0 +1,9 @@
+{
+  "name": "$AREA-STUDIED-BY-FIELD",
+  "def": "Links an object or event to the field that studies it",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$FIELD-STUDIES-AREA",
+  "measured-in": [],
+  "container": "$FIELD-OF-STUDY-RELATION"
+}

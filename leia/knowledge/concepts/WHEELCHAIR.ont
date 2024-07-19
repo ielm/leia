@@ -1,0 +1,16 @@
+{
+  "name": "@WHEELCHAIR",
+  "isa": [
+    "@CHAIR"
+  ],
+  "def": "a chair with wheels used by people who cannot walk",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@WHEEL"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

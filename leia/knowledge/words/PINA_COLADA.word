@@ -1,0 +1,33 @@
+{
+  "word": "PINA_COLADA",
+  "senses": {
+    "PINA_COLADA-N1": {
+      "CAT": "N",
+      "DEF": "A cocktail made of rum, pineapple juice, and coconut cream.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MIXED-DRINK": {
+          "HAS-OBJECT-AS-PART": "RUM",
+          "HAS-OBJECT-AS-PART-1": "FRUIT-JUICE",
+          "HAS-OBJECT-AS-PART-2": "COCONUT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PINA_COLADA-N1",
+      "WORD": "PINA_COLADA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

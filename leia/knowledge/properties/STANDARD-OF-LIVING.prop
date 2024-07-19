@@ -1,0 +1,11 @@
+{
+  "name": "$STANDARD-OF-LIVING",
+  "def": "the level of material prosperity in a country and its inhabitants as measured as average annual income per person",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@MONEY-PER-ANNUM-PER-CAPITA-UNIT"
+  ],
+  "container": "$SCALAR-SOCIAL-OBJECT-ATTRIBUTE"
+}

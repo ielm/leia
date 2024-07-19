@@ -1,0 +1,35 @@
+{
+  "word": "LIBERAL",
+  "senses": {
+    "LIBERAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "politically left",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "POLITICAL-ATTRIBUTE": "LIBERAL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LIBERAL-ADJ1",
+      "WORD": "LIBERAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

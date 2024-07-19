@@ -1,0 +1,27 @@
+{
+  "name": "@UNIVERSITY",
+  "isa": [
+    "@ACADEMIC-ORGANIZATION"
+  ],
+  "def": "an educational institution that offers bachelor*s and advanced degrees",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@DEPARTMENT-ACADEMIC"
+    }
+  ],
+  "block": [
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

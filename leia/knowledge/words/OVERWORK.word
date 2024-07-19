@@ -1,0 +1,129 @@
+{
+  "word": "OVERWORK",
+  "senses": {
+    "OVERWORK-V1": {
+      "CAT": "V",
+      "DEF": "to cause to work too much or too hard",
+      "EX": "they overwork their employees",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0.2,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "WORK-ACTIVITY": {
+            "CAUSED-BY": {
+              "VALUE": "^$VAR1"
+            },
+            "AGENT": {
+              "VALUE": "^$VAR2"
+            },
+            "RELATIVE-TO-NORM": [
+              ">",
+              0.6
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "OVERWORKED-0",
+        "THE",
+        "WOMAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OVERWORK-V1",
+      "WORD": "OVERWORK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "OVERWORK-V2": {
+      "CAT": "V",
+      "DEF": "to work too much or too hard",
+      "EX": "those programmers overwork",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0.2,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "WORK-ACTIVITY": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            },
+            "RELATIVE-TO-NORM": [
+              ">",
+              0.6
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "OVERWORKED-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OVERWORK-V2",
+      "WORD": "OVERWORK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

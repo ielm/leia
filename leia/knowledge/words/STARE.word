@@ -1,0 +1,89 @@
+{
+  "word": "STARE",
+  "senses": {
+    "STARE-N1": {
+      "CAT": "N",
+      "DEF": "an intent gaze",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "VOLUNTARY-VISUAL-EVENT": {
+          "INTENSITY": 0.8
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "STARE-N1",
+      "WORD": "STARE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "STARE-V1": {
+      "CAT": "V",
+      "DEF": "to look at intently",
+      "EX": "She stared at the actor",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "AT",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "VOLUNTARY-VISUAL-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          },
+          "INTENSITY": 0.8
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "STARED-0",
+        "AT-2",
+        "THE",
+        "ACTOR-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "GAPE",
+        "GAWK"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "STARE-V1",
+      "WORD": "STARE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

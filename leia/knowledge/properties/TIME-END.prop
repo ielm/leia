@@ -1,0 +1,9 @@
+{
+  "name": "$TIME-END",
+  "def": "the time at which some event ends or, by extension, some object ceases to exist",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": "$TIME-END-OF",
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

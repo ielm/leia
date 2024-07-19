@@ -1,0 +1,46 @@
+{
+  "word": "INTERESTS",
+  "senses": {
+    "INTERESTS-N1": {
+      "CAT": "N",
+      "DEF": "phrasal: interests in X (asset) = X",
+      "EX": "he sold off his interests in new housing development",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "NUMBER": "PL",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "IN",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ASSET": {
+          "RELATION": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INTERESTS-N1",
+      "WORD": "INTERESTS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "word": "FROM_WITHIN",
+  "senses": {
+    "FROM_WITHIN-PREP1": {
+      "CAT": "PREP",
+      "DEF": "agentive 'by' when in the phrasal: X is done from within Y, and Y is an organization",
+      "EX": "This program managed from within the Security and Exchange Commission",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "FORM": "PAST-PARTICIPLE",
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "AGENT": {
+            "VALUE": "^$VAR2",
+            "SEM": "ORGANIZATION"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "FROM_WITHIN-0",
+        "THE",
+        "MAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FROM_WITHIN-PREP1",
+      "WORD": "FROM_WITHIN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

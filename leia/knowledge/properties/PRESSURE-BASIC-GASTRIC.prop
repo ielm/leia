@@ -1,0 +1,9 @@
+{
+  "name": "$PRESSURE-BASIC-GASTRIC",
+  "def": "in the medical domain, the basic gastric pressure for a person, before the effects of food and gravity",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$PRESSURE"
+}

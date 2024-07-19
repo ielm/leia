@@ -1,0 +1,40 @@
+{
+  "word": "PERSONAL_LETTER",
+  "senses": {
+    "PERSONAL_LETTER-N1": {
+      "CAT": "N",
+      "DEF": "a non-business letter",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LETTER": {
+          "THEME-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "WRITE": {
+            "BENEFICIARY": {
+              "FAMILY-ROLE": "FRIEND"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PERSONAL_LETTER-N1",
+      "WORD": "PERSONAL_LETTER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

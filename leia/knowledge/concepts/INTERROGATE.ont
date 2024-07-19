@@ -1,0 +1,33 @@
+{
+  "name": "@INTERROGATE",
+  "isa": [
+    "@SPEECH-ACT"
+  ],
+  "def": "to ask questions formally",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@INFORMATION"
+    },
+    {
+      "slot": "formality",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "formality",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

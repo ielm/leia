@@ -1,0 +1,116 @@
+{
+  "word": "AT_PRESENT",
+  "senses": {
+    "AT_PRESENT-ADV1": {
+      "CAT": "ADV",
+      "DEF": "now, until some unspecified change in circumstance, etc.",
+      "EX": "at present, everything is ok; everything is ok for the present.",
+      "COMMENTS": "[D] synonyms at 'now, for the time being, at this time, for the present'",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ADV": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        },
+        "PUNCT": {
+          "ROOT-WORD": "*COMMA*",
+          "ROOT": "$VAR2",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        },
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "TIME": [
+            "FIND-ANCHOR-TIME"
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "AT_PRESENT-0",
+        "*COMMA*-2",
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "PUNCT",
+          "$VAR1",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AT_PRESENT-ADV1",
+      "WORD": "AT_PRESENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "AT_PRESENT-ADV2": {
+      "CAT": "ADV",
+      "DEF": "now, until some unspecified change in circumstance, etc.",
+      "EX": "everything is ok at present",
+      "COMMENTS": "[D] there's more semantics to this than just 'now', but let's simplify for now. synonyms at 'now, for the time being, at this time, for the present'",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "ADV": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "TIME": [
+            "FIND-ANCHOR-TIME"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "AT_PRESENT-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AT_PRESENT-ADV2",
+      "WORD": "AT_PRESENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

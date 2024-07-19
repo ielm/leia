@@ -1,0 +1,46 @@
+{
+  "word": "GLIMPSE",
+  "senses": {
+    "GLIMPSE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "one glimpse of her and you'll realize what I mean",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "VOLUNTARY-VISUAL-EVENT": {
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GLIMPSE-N1",
+      "WORD": "GLIMPSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

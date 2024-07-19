@@ -1,0 +1,22 @@
+{
+  "name": "@JUDICIAL-BRANCH",
+  "isa": [
+    "@GOVERNMENT-BRANCH"
+  ],
+  "def": "part of a government responsible for determining whether an individual, an organization, a procedure or a document conforms to the laws of that government",
+  "local": [
+    {
+      "slot": "has-member",
+      "facet": "sem",
+      "filler": "@LEGAL-WORK-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-member",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

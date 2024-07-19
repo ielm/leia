@@ -1,0 +1,47 @@
+{
+  "name": "@PEDOPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of children",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OFFSPRING-1"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {
+    "@OFFSPRING-1": {
+      "name": "@OFFSPRING-1",
+      "isa": [
+        "@OFFSPRING"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "age",
+          "facet": "sem",
+          "filler": [
+            "><",
+            18
+          ]
+        }
+      ],
+      "block": [],
+      "private": {}
+    }
+  }
+}

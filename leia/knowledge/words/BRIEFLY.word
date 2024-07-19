@@ -1,0 +1,51 @@
+{
+  "word": "BRIEFLY",
+  "senses": {
+    "BRIEFLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "for a short duration",
+      "EX": "he spoke briefly about it; he briefly spoke about it; he spoke about it briefly",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-VERB-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "DURATION": 0.2
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "TEMPORARILY-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "IN_BRIEF",
+        "SUCCINCTLY",
+        "TERSELY"
+      ],
+      "HYPONYMS": [
+        "TEMPORARILY"
+      ],
+      "SENSE": "BRIEFLY-ADV1",
+      "WORD": "BRIEFLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@WEAPON",
+  "isa": [
+    "@INDEPENDENT-DEVICE"
+  ],
+  "def": "An instrument used to injure or kill something animate, or to break or destroy an object.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    }
+  ],
+  "private": {}
+}

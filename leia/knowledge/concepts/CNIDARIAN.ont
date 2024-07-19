@@ -1,0 +1,19 @@
+{
+  "name": "@CNIDARIAN",
+  "isa": [
+    "@INVERTEBRATE"
+  ],
+  "def": "any of a phylum of invertebrates, as jellyfishes, having stining cells and a saclike body with only one opening",
+  "local": [],
+  "block": [
+    {
+      "slot": "diligence",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

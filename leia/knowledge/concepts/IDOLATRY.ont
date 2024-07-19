@@ -1,0 +1,16 @@
+{
+  "name": "@IDOLATRY",
+  "isa": [
+    "@RELIGIOUS-ACTIVITY"
+  ],
+  "def": "the worship of a physical object as a god",
+  "local": [],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@RELIGIOUS-ROLE"
+    }
+  ],
+  "private": {}
+}

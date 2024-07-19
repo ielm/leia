@@ -1,0 +1,31 @@
+{
+  "word": "GUARANI",
+  "senses": {
+    "GUARANI-N1": {
+      "CAT": "N",
+      "DEF": "currency of paraguay",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": "PARAGUAY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GUARANI-N1",
+      "WORD": "GUARANI",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "@KHAMSIN",
+  "isa": [
+    "@WIND"
+  ],
+  "def": "A generally southerly hot wind from the Sahara that blows across Egypt from late March to early May",
+  "local": [
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MARCH"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@APRIL"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MAY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    }
+  ],
+  "private": {}
+}

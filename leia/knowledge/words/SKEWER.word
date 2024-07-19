@@ -1,0 +1,83 @@
+{
+  "word": "SKEWER",
+  "senses": {
+    "SKEWER-N1": {
+      "CAT": "N",
+      "DEF": "a large metal or wooden pin used for holding  food that is cooking",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SKEWER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SKEWER-N1",
+      "WORD": "SKEWER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SKEWER-V1": {
+      "CAT": "V",
+      "DEF": "to fasten with a skewer",
+      "EX": "They skewered the meat",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "FASTEN": {
+          "INSTRUMENT": "SKEWER",
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "SKEWERED-0",
+        "THE",
+        "MEAT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SKEWER-V1",
+      "WORD": "SKEWER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

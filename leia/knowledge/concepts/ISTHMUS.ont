@@ -1,0 +1,32 @@
+{
+  "name": "@ISTHMUS",
+  "isa": [
+    "@GEOLOGICAL-ENTITY"
+  ],
+  "def": "a narrow strip of land connecting two larger masses of land",
+  "local": [
+    {
+      "slot": "borders-on",
+      "facet": "sem",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "borders-on",
+      "facet": "sem",
+      "filler": "@CONTINENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "borders-on",
+      "facet": "sem",
+      "filler": "@GEOGRAPHICAL-ENTITY"
+    },
+    {
+      "slot": "borders-on",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    }
+  ],
+  "private": {}
+}

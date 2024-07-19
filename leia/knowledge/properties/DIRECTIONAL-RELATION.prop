@@ -1,0 +1,9 @@
+{
+  "name": "$DIRECTIONAL-RELATION",
+  "def": "a set of relations that relate a physical movement event with a physical object or objects in space",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SPATIAL-RELATION"
+}

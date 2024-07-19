@@ -1,0 +1,53 @@
+{
+  "word": "FAIRY_TALE",
+  "senses": {
+    "FAIRY_TALE-N1": {
+      "CAT": "N",
+      "DEF": "A children's story, usually with some magical occurrences.",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CREATIVE-WORK": {
+          "HAS-STYLE": "FAIRY-TALE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FAIRY_TALE-N1",
+      "WORD": "FAIRY_TALE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FAIRY_TALE-N2": {
+      "CAT": "N",
+      "DEF": "the genre of fairy tale",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FAIRY-TALE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FAIRY_TALE-N2",
+      "WORD": "FAIRY_TALE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

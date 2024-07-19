@@ -1,0 +1,31 @@
+{
+  "word": "BARIUM_CONTRAST_MATERIAL",
+  "senses": {
+    "BARIUM_CONTRAST_MATERIAL-N1": {
+      "CAT": "N",
+      "DEF": "something containing barium that is used for medical diagnostics",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MATERIAL": {
+          "HAS-OBJECT-AS-PART": "BARIUM"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BARIUM_CONTRAST_MATERIAL-N1",
+      "WORD": "BARIUM_CONTRAST_MATERIAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

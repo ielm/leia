@@ -1,0 +1,27 @@
+{
+  "name": "@CHAPTER",
+  "isa": [
+    "@TEXT-FORM"
+  ],
+  "def": "the main division of a document",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SECTION-OF-DOCUMENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@RUST",
+  "isa": [
+    "@OXIDIZE"
+  ],
+  "def": "to form a reddish-brown coating on iron or steel as a result of exposure to air and moisture",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@METAL"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@*NOTHING*"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

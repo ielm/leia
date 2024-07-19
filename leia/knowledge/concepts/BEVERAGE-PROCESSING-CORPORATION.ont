@@ -1,0 +1,22 @@
+{
+  "name": "@BEVERAGE-PROCESSING-CORPORATION",
+  "isa": [
+    "@FOOD-PROCESSING-CORPORATION"
+  ],
+  "def": "a corporation producing various liquids for drinking",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@BEVERAGE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@INGESTIBLE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$FREQUENCY",
+  "def": "The number of times a specified periodic phenomenon occurs within a specified interval",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-EVENT-ATTRIBUTE"
+}

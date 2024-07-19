@@ -1,0 +1,64 @@
+{
+  "word": "REGURGITATE",
+  "senses": {
+    "REGURGITATE-V1": {
+      "CAT": "V",
+      "DEF": "the surging back of undigested food without muscle contractions (in this it differs from VOMIT)",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "REGURGITATE": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "REGURGITATED-0",
+        "HIS",
+        "SUPPER-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "REFLUX"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "REGURGITATE-V1",
+      "WORD": "REGURGITATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

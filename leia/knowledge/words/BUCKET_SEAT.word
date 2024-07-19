@@ -1,0 +1,31 @@
+{
+  "word": "BUCKET_SEAT",
+  "senses": {
+    "BUCKET_SEAT-N1": {
+      "CAT": "N",
+      "DEF": "a type of seat in a car",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SEAT": {
+          "LOCATION": "AUTOMOBILE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BUCKET_SEAT-N1",
+      "WORD": "BUCKET_SEAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

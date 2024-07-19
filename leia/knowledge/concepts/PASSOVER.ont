@@ -1,0 +1,32 @@
+{
+  "name": "@PASSOVER",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "A Jewish holiday commemorating the exodus of the Hebrews from Egypt; starts on the 14th of Nissan and lasts for eight days",
+  "local": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@JUDAISM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@CELEBRATE"
+    }
+  ],
+  "private": {}
+}

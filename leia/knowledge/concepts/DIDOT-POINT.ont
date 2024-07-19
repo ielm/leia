@@ -1,0 +1,19 @@
+{
+  "name": "@DIDOT-POINT",
+  "isa": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "def": "A unit of measure in the field of typography - a cicero contains 12 didot points; 0.013837*inch",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.0003514598
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

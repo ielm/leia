@@ -1,0 +1,82 @@
+{
+  "name": "@LAND-EVENT",
+  "isa": [
+    "@MOTION-EVENT"
+  ],
+  "def": "to set an aircraft down on land or water",
+  "local": [
+    {
+      "slot": "destination",
+      "facet": "sem",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@AIRSTRIP"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@PILOT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@AIR-VEHICLE"
+    },
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@GEOLOGICAL-ENTITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "destination",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "source",
+      "facet": "relaxable-to",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,378 @@
+{
+  "word": "MIGHT",
+  "senses": {
+    "MIGHT-AUX3": {
+      "CAT": "AUX",
+      "DEF": "phrasal: it might not be a bad idea to...",
+      "EX": "It might not be a bad idea to bring warm clothes with you on vacation.",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR8",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "TYPE": "PRO",
+          "ROOT-WORD": "IT"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "AUX",
+        "VERB-NEG": {
+          "ROOT": "$VAR2",
+          "CAT": "VERB-NEG",
+          "ROOT-WORD": "NOT"
+        },
+        "V": {
+          "ROOT": "$VAR3",
+          "CAT": "V",
+          "ROOT-WORD": "BE"
+        },
+        "NP": {
+          "ART": {
+            "ROOT": "$VAR4",
+            "ROOT-WORD": "A",
+            "CAT": "ART"
+          },
+          "ADJ": {
+            "ROOT": "$VAR5",
+            "ROOT-WORD": "BAD",
+            "CAT": "ADJ"
+          },
+          "N": {
+            "ROOT": "$VAR6",
+            "CAT": "N",
+            "ROOT-WORD": "IDEA",
+            "NUMBER": "SING"
+          }
+        },
+        "INF": {
+          "ROOT": "$VAR7",
+          "CAT": "INF"
+        },
+        "INF-CL": {
+          "ROOT": "$VAR8",
+          "CAT": "INF-CL"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "VOLITIVE",
+          "VALUE": 0.7,
+          "SCOPE": {
+            "VALUE": "^$VAR8"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR6": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR7": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "IT-1",
+        "MIGHT-0",
+        "NOT-2",
+        "BE-3",
+        "A-4",
+        "BAD-5",
+        "IDEA-6",
+        "TO-7",
+        "HIT-8",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR6",
+          "$VAR5"
+        ],
+        [
+          "AUX",
+          "$VAR6",
+          "$VAR0"
+        ],
+        [
+          "AUX",
+          "$VAR8",
+          "$VAR7"
+        ],
+        [
+          "COP",
+          "$VAR6",
+          "$VAR3"
+        ],
+        [
+          "DET",
+          "$VAR6",
+          "$VAR4"
+        ],
+        [
+          "INFMOD",
+          "$VAR6",
+          "$VAR8"
+        ],
+        [
+          "NEG",
+          "$VAR6",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR6",
+          "$VAR1"
+        ],
+        [
+          "XSUBJ",
+          "$VAR6",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MIGHT-AUX3",
+      "WORD": "MIGHT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MIGHT-AUX4": {
+      "CAT": "AUX",
+      "DEF": "phrasal: it might be a good idea to...",
+      "EX": "It might be a good idea to bring warm clothes on your trip.",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR6",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "TYPE": "PRO",
+          "ROOT-WORD": "IT"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "AUX",
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "BE"
+        },
+        "NP": {
+          "ART": {
+            "ROOT": "$VAR3",
+            "ROOT-WORD": "A",
+            "CAT": "ART"
+          },
+          "ADJ": {
+            "ROOT": "$VAR4",
+            "ROOT-WORD": "GOOD",
+            "CAT": "ADJ"
+          },
+          "N": {
+            "ROOT": "$VAR5",
+            "CAT": "N",
+            "ROOT-WORD": "IDEA",
+            "NUMBER": "SING"
+          }
+        },
+        "INF": {
+          "ROOT": "$VAR6",
+          "CAT": "INF"
+        },
+        "INF-CL": {
+          "ROOT": "$VAR7",
+          "CAT": "INF-CL"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "VOLITIVE",
+          "VALUE": 0.7,
+          "SCOPE": {
+            "VALUE": "^$VAR7"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR6": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "IT-1",
+        "MIGHT-0",
+        "BE-2",
+        "A-3",
+        "GOOD-4",
+        "IDEA-5",
+        "TO-6",
+        "HIT-7",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR5",
+          "$VAR4"
+        ],
+        [
+          "AUX",
+          "$VAR5",
+          "$VAR0"
+        ],
+        [
+          "AUX",
+          "$VAR7",
+          "$VAR6"
+        ],
+        [
+          "COP",
+          "$VAR5",
+          "$VAR2"
+        ],
+        [
+          "DET",
+          "$VAR5",
+          "$VAR3"
+        ],
+        [
+          "INFMOD",
+          "$VAR5",
+          "$VAR7"
+        ],
+        [
+          "NSUBJ",
+          "$VAR5",
+          "$VAR1"
+        ],
+        [
+          "XSUBJ",
+          "$VAR5",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MIGHT-AUX4",
+      "WORD": "MIGHT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MIGHT-AUX101": {
+      "CAT": "AUX",
+      "DEF": "",
+      "EX": "he might",
+      "COMMENTS": "works with VP ellipsis",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "AUX"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "VOLITIVE",
+          "VALUE": 0.7,
+          "SCOPE": "EVENT-VPE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-EVENT",
+          "EVENT-VPE",
+          "CASE-ROLE",
+          "^$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MIGHT-AUX101",
+      "WORD": "MIGHT",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": []
+    },
+    "MIGHT-AUX1": {
+      "CAT": "AUX",
+      "DEF": "",
+      "EX": "he might come",
+      "COMMENTS": "",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "AUX",
+        "XCOMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "VOLITIVE",
+          "VALUE": 0.7,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MIGHT-AUX1",
+      "WORD": "MIGHT",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "EXAMPLE-BINDINGS": []
+    }
+  }
+}

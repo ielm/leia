@@ -1,0 +1,36 @@
+{
+  "name": "@TELLURIUM",
+  "isa": [
+    "@NON-DUCTILE-METAL"
+  ],
+  "def": "a brittle, silvery-white metallic element, occurring naturally combined with gold and other metals, produced commercially as a by-product of the electrolytic refining of copper, and used to alloy stainless steel and lead, in ceramics, and, in the form of bismuth telluride, in thermoelectric devices",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        52
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        127
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

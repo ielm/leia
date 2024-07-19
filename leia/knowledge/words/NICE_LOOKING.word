@@ -1,0 +1,37 @@
+{
+  "word": "NICE_LOOKING",
+  "senses": {
+    "NICE_LOOKING-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "AESTHETIC-ATTRIBUTE": 0.6
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "NICE_LOOKING"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "NICE_LOOKING-ADJ1",
+      "WORD": "NICE_LOOKING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

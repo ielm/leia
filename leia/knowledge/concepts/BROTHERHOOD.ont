@@ -1,0 +1,21 @@
+{
+  "name": "@BROTHERHOOD",
+  "isa": [
+    "@ABSTRACT-IDEA"
+  ],
+  "def": "the bond among all people in a group such as a nation",
+  "local": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@SOCIOLOGY"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@ANTHROPOLOGY"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

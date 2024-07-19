@@ -1,0 +1,21 @@
+{
+  "name": "@VENOUS-BLOOD",
+  "isa": [
+    "@BLOOD"
+  ],
+  "def": "blood in vein",
+  "local": [],
+  "block": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "red"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@ARTERY"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,71 @@
+{
+  "word": "IN_WRITING",
+  "senses": {
+    "IN_WRITING-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "in written form",
+      "EX": "Your resignation must be in writing.",
+      "COMMENTS": "[D] I'm not explicitly blocking pre-nominal usage right now",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "THEME-OF": "WRITE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "IN_WRITTEN_FORM"
+      ],
+      "HYPONYMS": [
+        "ON_PAPER"
+      ],
+      "SENSE": "IN_WRITING-ADJ1",
+      "WORD": "IN_WRITING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "IN_WRITING-ADV1": {
+      "CAT": "ADV",
+      "DEF": "using writing as the instrument of the action",
+      "EX": "She responded in writing; she answered the question in writing",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "POST-VERB-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "INSTRUMENT": "WRITE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "IN_WRITING-ADV1",
+      "WORD": "IN_WRITING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,321 @@
+{
+  "word": "PERCEIVE",
+  "senses": {
+    "PERCEIVE-V1": {
+      "CAT": "V",
+      "DEF": "to notice",
+      "EX": "she perceived the irony in his voice",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "PERCEPTUAL-EVENT": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "PERCEIVED-0",
+        "THE",
+        "IRONY-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PERCEIVE-V1",
+      "WORD": "PERCEIVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PERCEIVE-V2": {
+      "CAT": "V",
+      "DEF": "to notice",
+      "EX": "she perceived that he was becoming uninterested",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "COMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "PERCEPTUAL-EVENT": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "PERCEIVED-0",
+        "THAT",
+        "SHE",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PERCEIVE-V2",
+      "WORD": "PERCEIVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PERCEIVE-V3": {
+      "CAT": "V",
+      "DEF": "to interpret",
+      "EX": "she perceived his behavior to be a sign of indifference",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "INF": {
+          "ROOT": "$VAR3",
+          "CAT": "INF"
+        },
+        "V": {
+          "ROOT": "$VAR4",
+          "CAT": "V",
+          "FORM": "INFINITIVE",
+          "ROOT-WORD": "BE"
+        },
+        "NP": {
+          "ROOT": "$VAR5",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "BELIEF",
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          },
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          },
+          "VALUE": 0.7
+        },
+        "REFSEM1": {
+          "EQUAL-TO": {
+            "DOMAIN": {
+              "VALUE": "^$VAR2"
+            },
+            "RANGE": {
+              "VALUE": "^$VAR5"
+            }
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "PERCEIVED-0",
+        "THE",
+        "DOG-2",
+        "TO-3",
+        "BE-4",
+        "THE",
+        "CAT-5"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "COP",
+          "$VAR5",
+          "$VAR4"
+        ],
+        [
+          "AUX",
+          "$VAR5",
+          "$VAR3"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR5"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PERCEIVE-V3",
+      "WORD": "PERCEIVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PERCEIVE-V4": {
+      "CAT": "V",
+      "DEF": "to interpret",
+      "EX": "she perceived his behavior as a sign of indifference",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDINGS": "T",
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "CONJ": {
+          "ROOT": "$VAR3",
+          "CAT": "CONJ",
+          "ROOT-WORD": "AS"
+        },
+        "NP": {
+          "ROOT": "$VAR4",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "BELIEF",
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          },
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          },
+          "VALUE": 0.7
+        },
+        "REFSEM1": {
+          "EQUAL-TO": {
+            "DOMAIN": {
+              "VALUE": "^$VAR2"
+            },
+            "RANGE": {
+              "VALUE": "^$VAR4"
+            }
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "PERCEIVED-0",
+        "THE",
+        "WOMAN-2",
+        "AS-3",
+        "A",
+        "MONKEY-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "ADVMOD",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "DEP",
+          "$VAR3",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [
+        "INTERPRET"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PERCEIVE-V4",
+      "WORD": "PERCEIVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

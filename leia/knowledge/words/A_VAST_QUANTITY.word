@@ -1,0 +1,51 @@
+{
+  "word": "A_VAST_QUANTITY",
+  "senses": {
+    "A_VAST_QUANTITY-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "a quantity of goods arrived at the airport.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "CAT": "PREP",
+          "ROOT": "$VAR2",
+          "OBJ": {
+            "ROOT": "$VAR1",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "AMOUNT": [
+            ">",
+            0.9
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "A_VAST_QUANTITY-0",
+        "OF-2",
+        "THE",
+        "GRAPHITE-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "A_VAST_QUANTITY-QUANTIFIER1",
+      "WORD": "A_VAST_QUANTITY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

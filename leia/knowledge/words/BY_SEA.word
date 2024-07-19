@@ -1,0 +1,37 @@
+{
+  "word": "BY_SEA",
+  "senses": {
+    "BY_SEA-ADV1": {
+      "CAT": "ADV",
+      "DEF": "",
+      "EX": "travel by sea",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "POST-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "TRAVEL-EVENT",
+          "INSTRUMENT": "WATER-VEHICLE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BY_SEA-ADV1",
+      "WORD": "BY_SEA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

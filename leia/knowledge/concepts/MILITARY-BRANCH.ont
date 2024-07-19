@@ -1,0 +1,16 @@
+{
+  "name": "@MILITARY-BRANCH",
+  "isa": [
+    "@MILITARY-ORGANIZATION"
+  ],
+  "def": "a type of military organization defined by tasks performed, location and equipment used",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MILITARY-UNIT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

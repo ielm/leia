@@ -1,0 +1,53 @@
+{
+  "word": "DEBTOR_IN_POSSESSION",
+  "senses": {
+    "DEBTOR_IN_POSSESSION-N1": {
+      "CAT": "N",
+      "DEF": "a debtor who remains in possession of an estate or the business during chapter 11 bankruptcy and has the same duties as a trustee in bankruptcy",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "DEBTOR-IN-POSSESSION",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DEBTOR_IN_POSSESSION-N1",
+      "WORD": "DEBTOR_IN_POSSESSION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DEBTOR_IN_POSSESSION-N2": {
+      "CAT": "N",
+      "DEF": "a company (or owner of it?) that in in debt and has filed for reorganization under chptr. 11 but is permitted to continue operations without an appointed trustee",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CORPORATION": {
+          "AGENT-OF": "CHAPTER-11-BANKRUPTCY-PROTECTION"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DEBTOR_IN_POSSESSION-N2",
+      "WORD": "DEBTOR_IN_POSSESSION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "@ERASE",
+  "isa": [
+    "@RUB"
+  ],
+  "def": "to rub, scrape, or wipe out (especially writing)",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@BLACKBOARD"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@PAPER"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@COMPUTER-DISK"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ERASER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PENCIL-ERASER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@RUBBER-ERASER"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

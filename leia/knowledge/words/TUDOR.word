@@ -1,0 +1,35 @@
+{
+  "word": "TUDOR",
+  "senses": {
+    "TUDOR-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "of an architectural style  derived from the Tudor period, having exposed beams as a typical feature.",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "HAS-STYLE": "TUDOR"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TUDOR-ADJ1",
+      "WORD": "TUDOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

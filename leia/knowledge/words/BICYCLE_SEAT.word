@@ -1,0 +1,33 @@
+{
+  "word": "BICYCLE_SEAT",
+  "senses": {
+    "BICYCLE_SEAT-N1": {
+      "CAT": "N",
+      "DEF": "seat of a bicycle",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SEAT": {
+          "PART-OF-OBJECT": "BICYCLE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "BIKE_SEAT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BICYCLE_SEAT-N1",
+      "WORD": "BICYCLE_SEAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

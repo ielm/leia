@@ -1,0 +1,51 @@
+{
+  "word": "ERASE",
+  "senses": {
+    "ERASE-V1": {
+      "CAT": "V",
+      "DEF": "to rub, scrape or wipe out",
+      "EX": "they erased the board/the tape",
+      "COMMENTS": "[D] any non-physical uses of this word should be processed as non- literal usage, I'm not encoding them",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "ERASE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "ERASED-0",
+        "THE",
+        "BOARD-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "WIPE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ERASE-V1",
+      "WORD": "ERASE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

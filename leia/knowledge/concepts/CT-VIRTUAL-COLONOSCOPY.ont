@@ -1,0 +1,52 @@
+{
+  "name": "@CT-VIRTUAL-COLONOSCOPY",
+  "isa": [
+    "@RADIOGRAPHY-EVENT"
+  ],
+  "def": "A technique that uses a CT scanner and virtual reality computer software to view the inside of the colon.",
+  "local": [
+    {
+      "slot": "creates-image-of",
+      "facet": "sem",
+      "filler": "@COLON"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SOFTWARE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CT-SCANNER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COLON"
+    }
+  ],
+  "block": [
+    {
+      "slot": "creates-image-of",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@X-RAY-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@LABORATORY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

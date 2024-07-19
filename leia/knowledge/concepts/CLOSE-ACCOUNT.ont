@@ -1,0 +1,27 @@
+{
+  "name": "@CLOSE-ACCOUNT",
+  "isa": [
+    "@BANKING-EVENT"
+  ],
+  "def": "The event of closing a bank account.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BANK-ACCOUNT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@MONEY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

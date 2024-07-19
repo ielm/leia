@@ -1,0 +1,115 @@
+{
+  "word": "BIT",
+  "senses": {
+    "BIT-N1": {
+      "CAT": "N",
+      "DEF": "a unit for the measurement of information",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BIT-INFORMATION-UNIT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BIT-N1",
+      "WORD": "BIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BIT-N2": {
+      "CAT": "N",
+      "DEF": "a small amount (substance unexpressed)",
+      "EX": "I'll have a bit",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "OBJECT": {
+          "AMOUNT": [
+            "><",
+            0.1,
+            0.2
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "LITTLE_BIT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BIT-N2",
+      "WORD": "BIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BIT-N3": {
+      "CAT": "N",
+      "DEF": "a small amount",
+      "EX": "I'll have a bit of cake",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "AMOUNT": [
+            "><",
+            0.1,
+            0.2
+          ]
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "ATE",
+        "A",
+        "BIT-0",
+        "OF-1",
+        "FOOD-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BIT-N3",
+      "WORD": "BIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

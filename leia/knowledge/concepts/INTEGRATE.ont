@@ -1,0 +1,22 @@
+{
+  "name": "@INTEGRATE",
+  "isa": [
+    "@CHANGE-EVENT"
+  ],
+  "def": "to bring parts together into a whole",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,31 @@
+{
+  "word": "WOW",
+  "senses": {
+    "WOW-INTERJECTION1": {
+      "CAT": "INTERJECTION",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CAT": "INTERJECTION",
+        "ROOT": "$VAR0"
+      },
+      "SEM-STRUC": {
+        "^$VAR0": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WOW-INTERJECTION1",
+      "WORD": "WOW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "word": "DEPOT",
+  "senses": {
+    "DEPOT-N1": {
+      "CAT": "N",
+      "DEF": "a transport station",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "TRANSPORTATION-STATION",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DEPOT-N1",
+      "WORD": "DEPOT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DEPOT-N2": {
+      "CAT": "N",
+      "DEF": "a warehouse",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "STORAGE-BUILDING",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DEPOT-N2",
+      "WORD": "DEPOT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "word": "VIAL",
+  "senses": {
+    "VIAL-N1": {
+      "CAT": "N",
+      "DEF": "a small, rigid manufactured container",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "RIGID-MANUFACTURED-CONTAINER": {
+          "SIZE": [
+            "<",
+            0.2
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "VIAL-N1",
+      "WORD": "VIAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

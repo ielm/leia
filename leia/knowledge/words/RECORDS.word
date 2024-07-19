@@ -1,0 +1,32 @@
+{
+  "word": "RECORDS",
+  "senses": {
+    "RECORDS-N1": {
+      "CAT": "N",
+      "DEF": "one or more documents, as in financial record",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "NUMBER": "PL"
+      },
+      "SEM-STRUC": {
+        "DOCUMENT": {
+          "CAUSED-BY": "RECORD-INFORMATION"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RECORDS-N1",
+      "WORD": "RECORDS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

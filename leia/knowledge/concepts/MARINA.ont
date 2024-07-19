@@ -1,0 +1,21 @@
+{
+  "name": "@MARINA",
+  "isa": [
+    "@PLACE"
+  ],
+  "def": "a harbor facility for small boats, yachts, etc.",
+  "local": [
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

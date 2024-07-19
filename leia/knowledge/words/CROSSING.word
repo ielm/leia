@@ -1,0 +1,31 @@
+{
+  "word": "CROSSING",
+  "senses": {
+    "CROSSING-N1": {
+      "CAT": "N",
+      "DEF": "a place to cross something like a street",
+      "EX": "Cars must stop at railroad crossings",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PUBLIC-TRANSPORTATION-LOCATION": {
+          "LOCATION-OF": "CROSS"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CROSSING-N1",
+      "WORD": "CROSSING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

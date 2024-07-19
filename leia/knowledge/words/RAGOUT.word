@@ -1,0 +1,38 @@
+{
+  "word": "RAGOUT",
+  "senses": {
+    "RAGOUT-N1": {
+      "CAT": "N",
+      "DEF": "A meat or fish stew with vegetables which is well seasoned",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SOUP": {
+          "HAS-OBJECT-AS-PART": "MEAT",
+          "HAS-OBJECT-AS-PART-1": "FISH-MEAT",
+          "HAS-OBJECT-AS-PART-2": "VEGETABLE-FOODSTUFF",
+          "HAS-OBJECT-AS-PART-3": "SPICE",
+          "SPICINESS": [
+            ">",
+            0.7
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RAGOUT-N1",
+      "WORD": "RAGOUT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

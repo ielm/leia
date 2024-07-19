@@ -1,0 +1,21 @@
+{
+  "name": "@NON-PROFIT-CORPORATION",
+  "isa": [
+    "@CORPORATION"
+  ],
+  "def": "a corporation that does not intend to make a profit as its primary goal",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-nationality",
+      "facet": "sem",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "location",
+      "facet": "relaxable-to",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@NEWTON",
+  "isa": [
+    "@FORCE-UNIT"
+  ],
+  "def": "the SI derived unit for measuring force. kg*m*s^-2 (^ means power, kg means kilogram, m means meter, s means second, * means multiplication); 10^5*dyne",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.1019716213
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

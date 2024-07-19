@@ -1,0 +1,21 @@
+{
+  "name": "@MYSTERY-GENRE",
+  "isa": [
+    "@LITERARY-STYLE"
+  ],
+  "def": "A work of fiction about the solution of a crime.",
+  "local": [
+    {
+      "slot": "about-as-topic",
+      "facet": "sem",
+      "filler": "@DETECTIVE"
+    },
+    {
+      "slot": "about-as-topic",
+      "facet": "sem",
+      "filler": "@CRIMINAL-ACTIVITY"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,41 @@
+{
+  "word": "INHERITANCE_TAX",
+  "senses": {
+    "INHERITANCE_TAX-N1": {
+      "CAT": "N",
+      "DEF": "tax on assets of deceased person, usually paid by beneficiary",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "TAX": {
+          "RELATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "OBJECT": {
+            "THEME-OF": "INHERIT-GOODS"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ESTATE_TAX",
+        "DEATH_TAX"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "INHERITANCE_TAX-N1",
+      "WORD": "INHERITANCE_TAX",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

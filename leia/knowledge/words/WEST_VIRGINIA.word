@@ -1,0 +1,33 @@
+{
+  "word": "WEST_VIRGINIA",
+  "senses": {
+    "WEST_VIRGINIA-N1": {
+      "CAT": "N",
+      "DEF": "a state",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "STATE": {
+          "HAS-NAME": {
+            "VALUE": "WEST-VIRGINIA"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WEST_VIRGINIA-N1",
+      "WORD": "WEST_VIRGINIA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

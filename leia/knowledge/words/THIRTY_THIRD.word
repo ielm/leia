@@ -1,0 +1,46 @@
+{
+  "word": "THIRTY_THIRD",
+  "senses": {
+    "THIRTY_THIRD-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "ORDINALITY": 33
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "33",
+        "RD-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "33RD"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "THIRTY_THIRD-ADJ1",
+      "WORD": "THIRTY_THIRD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

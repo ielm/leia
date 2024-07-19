@@ -1,0 +1,142 @@
+{
+  "word": "RESOLUTION",
+  "senses": {
+    "RESOLUTION-N1": {
+      "CAT": "N",
+      "DEF": "a formal expression of intention or opinion expressed by a legal body",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LEGAL-OBJECT": {
+          "CAUSED-BY": "DECREE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RESOLUTION-N1",
+      "WORD": "RESOLUTION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RESOLUTION-N2": {
+      "CAT": "N",
+      "DEF": "the disappearance of a symptom or disease",
+      "EX": "GERD resolution",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "END",
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR1": {
+          "SEM": "PATHOLOGIC-FUNCTION"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "OBJECT-1",
+        "RELIEF-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "RELIEF"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "RESOLUTION-N2",
+      "WORD": "RESOLUTION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RESOLUTION-N3": {
+      "CAT": "N",
+      "DEF": "end of a medical symptom or disease",
+      "EX": "resolution of GERD",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "END",
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR2": {
+          "SEM": "PATHOLOGIC-FUNCTION"
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "RELIEF-0",
+        "OF-1",
+        "THE",
+        "OBJECT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "RELIEF"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "RESOLUTION-N3",
+      "WORD": "RESOLUTION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

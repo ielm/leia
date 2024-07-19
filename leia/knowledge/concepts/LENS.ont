@@ -1,0 +1,22 @@
+{
+  "name": "@LENS",
+  "isa": [
+    "@DEPENDENT-DEVICE"
+  ],
+  "def": "a curved piece of glass, plastic, etc. for bringing together or spreading rays of light passing through it; used in optical instruments to form an image",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GLASS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "private": {}
+}

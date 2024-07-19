@@ -1,0 +1,35 @@
+{
+  "word": "RACIST",
+  "senses": {
+    "RACIST-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "prejudiced against another race",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "PREJUDICE-ATTRIBUTE": 1
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RACIST-ADJ1",
+      "WORD": "RACIST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "word": "KICK",
+  "senses": {
+    "KICK-V1": {
+      "CAT": "V",
+      "DEF": "to hit with the foot",
+      "EX": "he kicked the ball",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "KICK": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "KICKED-0",
+        "THE",
+        "BALL-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KICK-V1",
+      "WORD": "KICK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "KICK-V800": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "We are just kicking the can down the street.",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "ART": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "THE",
+          "CAT": "N"
+        },
+        "N-1": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "CAN",
+          "CAT": "N"
+        },
+        "PREP": {
+          "ROOT": "$VAR5",
+          "ROOT-WORD": "DOWN",
+          "CAT": "PREP"
+        },
+        "ART-1": {
+          "ROOT": "$VAR6",
+          "ROOT-WORD": "THE",
+          "CAT": "ART"
+        },
+        "N-2": {
+          "ROOT": "$VAR7",
+          "ROOT-WORD": [
+            "STREET",
+            "ROAD"
+          ],
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "POSTPONE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "EVENT": {
+            "COREF": "SEEK-CONTEXTUAL-SPONSOR"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR6": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR7": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "WE-1",
+        "KICKED-0",
+        "THE-3",
+        "CAN-4",
+        "DOWN-5",
+        "THE-6",
+        "STREET-7"
+      ],
+      "SENSE": "KICK-V800",
+      "WORD": "KICK",
+      "HYPONYMS": [],
+      "SYNONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

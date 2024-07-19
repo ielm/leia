@@ -1,0 +1,16 @@
+{
+  "name": "@DINING-ROOM",
+  "isa": [
+    "@ROOM"
+  ],
+  "def": "part of a home or restaurant in which family members or patrons dine",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@DINING-TABLE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

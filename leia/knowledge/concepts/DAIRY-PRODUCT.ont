@@ -1,0 +1,42 @@
+{
+  "name": "@DAIRY-PRODUCT",
+  "isa": [
+    "@ANIMAL-DERIVED-FOODSTUFF"
+  ],
+  "def": "milk and milk-products, such as cream, whey and cheese",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MILK"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@FOODSTUFF"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "solid"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "solid"
+    }
+  ],
+  "private": {}
+}

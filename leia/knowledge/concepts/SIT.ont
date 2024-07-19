@@ -1,0 +1,27 @@
+{
+  "name": "@SIT",
+  "isa": [
+    "@POSITION-BODY"
+  ],
+  "def": "to rest with the torso vertical and the body supported upon the buttocks; to rest with the hindquarters lowered onto a supporting surface",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@MAMMAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "not",
+      "filler": "@FISH"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    }
+  ],
+  "private": {}
+}

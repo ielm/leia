@@ -1,0 +1,32 @@
+{
+  "word": "MONOCLE",
+  "senses": {
+    "MONOCLE-N1": {
+      "CAT": "N",
+      "DEF": "types of eyeglasses [these are all actually hyponyms of   eyeglasses, but are in a separate entry because they are singular, not  plural]",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "EYEGLASSES",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "PINCE_NEZ",
+        "LORGNETTE",
+        "LORGNON",
+        "MONACLE"
+      ],
+      "SENSE": "MONOCLE-N1",
+      "WORD": "MONOCLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

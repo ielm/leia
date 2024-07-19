@@ -1,0 +1,123 @@
+{
+  "word": "TERRIFY",
+  "senses": {
+    "TERRIFY-V1": {
+      "CAT": "V",
+      "DEF": "Flying terrifies him.",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "FEAR": {
+          "INTENSITY": 1,
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1"
+          },
+          "EXPERIENCER": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "TERRIFIED-0",
+        "THE",
+        "DOG-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "PETRIFY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "TERRIFY-V1",
+      "WORD": "TERRIFY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "TERRIFY-V2": {
+      "CAT": "V",
+      "DEF": "past participle: X is terrified of Y",
+      "EX": "He's terrified of flying.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "V-1": {
+          "ROOT": "$VAR0",
+          "CAT": "V",
+          "FORM": "PAST-PARTCIPLE"
+        },
+        "PP": {
+          "ROOT-WORD": [
+            "OF",
+            "BY"
+          ],
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "FEAR": {
+          "INTENSITY": 1,
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          },
+          "CAUSED-BY": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "WAS-2",
+        "TERRIFIED-0",
+        "OF-3",
+        "THE",
+        "DOG-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TERRIFY-V2",
+      "WORD": "TERRIFY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

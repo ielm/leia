@@ -1,0 +1,34 @@
+{
+  "word": "INTELLIGENCE_AGENT",
+  "senses": {
+    "INTELLIGENCE_AGENT-N1": {
+      "CAT": "N",
+      "DEF": "someone who gathers information for a government by spying",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SPY-INTELLIGENCE-AGENT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "AGENT",
+        "SPOOK",
+        "OPERATIVE"
+      ],
+      "HYPONYMS": [
+        "MOLE",
+        "UNDERCOVER_AGENT"
+      ],
+      "SENSE": "INTELLIGENCE_AGENT-N1",
+      "WORD": "INTELLIGENCE_AGENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@PRONG",
+  "isa": [
+    "@INDEPENDENT-DEVICE"
+  ],
+  "def": "a sharply pointed part of a tool or instrument",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

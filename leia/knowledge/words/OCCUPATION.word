@@ -1,0 +1,106 @@
+{
+  "word": "OCCUPATION",
+  "senses": {
+    "OCCUPATION-N1": {
+      "CAT": "N",
+      "DEF": "taking over a country, territory, etc.",
+      "EX": "the occupation of the territories by the palestinians",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "CONTROL-EVENT-SOCIAL": {
+          "AGENT": {
+            "VALUE": "^$VAR4"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "GEOPOLITICAL-ENTITY"
+          },
+          "PRECONDITION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "CONQUER": {
+            "AGENT-1": {
+              "VALUE": "^$VAR4"
+            },
+            "THEME-1": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "OCCUPATION-0",
+        "OF-1",
+        "THE",
+        "SOCIAL-OBJECT-2",
+        "BY-3",
+        "THE",
+        "MILITARY-ORGANIZATION-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OCCUPATION-N1",
+      "WORD": "OCCUPATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "OCCUPATION-N2": {
+      "CAT": "N",
+      "DEF": "job",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "JOB",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OCCUPATION-N2",
+      "WORD": "OCCUPATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

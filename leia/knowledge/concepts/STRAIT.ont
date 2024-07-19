@@ -1,0 +1,60 @@
+{
+  "name": "@STRAIT",
+  "isa": [
+    "@BODY-OF-WATER"
+  ],
+  "def": "a narrow passage of water joining two larger bodies of water",
+  "local": [
+    {
+      "slot": "borders-on",
+      "facet": "sem",
+      "filler": "@ISLAND"
+    },
+    {
+      "slot": "borders-on",
+      "facet": "sem",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "borders-on",
+      "facet": "sem",
+      "filler": "@CONTINENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "available",
+      "facet": "sem",
+      "filler": "yes no"
+    },
+    {
+      "slot": "borders-on",
+      "facet": "sem",
+      "filler": "@GEOGRAPHICAL-ENTITY"
+    },
+    {
+      "slot": "borders-on",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "has-name-non-human",
+      "facet": "sem",
+      "filler": "@NAME-NON-HUMAN"
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "private": {}
+}

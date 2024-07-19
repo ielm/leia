@@ -1,0 +1,26 @@
+{
+  "name": "@WEAR-CLOTHES",
+  "isa": [
+    "@PERSONAL-GROOMING-EVENT"
+  ],
+  "def": "to carry or bear clothes on the body",
+  "local": [],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PERSONAL-GROOMING-ARTIFACT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BATHROOM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

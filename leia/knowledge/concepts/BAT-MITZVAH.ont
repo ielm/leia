@@ -1,0 +1,72 @@
+{
+  "name": "@BAT-MITZVAH",
+  "isa": [
+    "@CEREMONY"
+  ],
+  "def": "an initiation ceremony signifying the beginning of religious responsibility of a 12-year-old Jewish girl",
+  "local": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@JUDAISM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HUMAN-7"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@TEMPLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {
+    "@HUMAN-7": {
+      "name": "@HUMAN-7",
+      "isa": [
+        "@HUMAN"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "age",
+          "facet": "sem",
+          "filler": [
+            "=>=<",
+            12
+          ]
+        }
+      ],
+      "block": [],
+      "private": {}
+    }
+  }
+}

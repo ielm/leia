@@ -1,0 +1,22 @@
+{
+  "name": "@PATHOLOGY",
+  "isa": [
+    "@MEDICINE"
+  ],
+  "def": "The scientific study of the nature of disease and its causes, processes, development, and consequences",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@PATHOLOGIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@MEDICAL-WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

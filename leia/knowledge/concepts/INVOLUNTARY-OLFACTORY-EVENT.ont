@@ -1,0 +1,21 @@
+{
+  "name": "@INVOLUNTARY-OLFACTORY-EVENT",
+  "isa": [
+    "@OLFACTORY-EVENT"
+  ],
+  "def": "involuntarily (passively) perceive something by smelling",
+  "local": [],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,120 @@
+{
+  "word": "LIQUIDATE",
+  "senses": {
+    "LIQUIDATE-V1": {
+      "CAT": "V",
+      "DEF": "sell assets of a business, paying bills and dividing the remainder among shareholders, partners and other investors",
+      "EX": "",
+      "COMMENTS": "should be part of a script - effect is distributing profits, etc.; need timeline",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "OPT": "+",
+          "ROOT-WORD": "ASSET"
+        }
+      },
+      "SEM-STRUC": {
+        "SELL": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "ASSET"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "BANK-1",
+        "LIQUIDATED-0",
+        "THE",
+        "ASSETS-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LIQUIDATE-V1",
+      "WORD": "LIQUIDATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LIQUIDATE-V2": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "the bank liquidated the company",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "LIQUIDATE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "BANK-1",
+        "LIQUIDATED-0",
+        "THE",
+        "COMPANY-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LIQUIDATE-V2",
+      "WORD": "LIQUIDATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

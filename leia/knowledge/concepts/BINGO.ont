@@ -1,0 +1,22 @@
+{
+  "name": "@BINGO",
+  "isa": [
+    "@GAMBLE"
+  ],
+  "def": "a gambling game in which numbers are called out and players must and mark those numbers on a card in order to win",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PLAYING-BOARD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@GAME-ARTIFACT"
+    }
+  ],
+  "private": {}
+}

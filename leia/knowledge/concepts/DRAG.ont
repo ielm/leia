@@ -1,0 +1,22 @@
+{
+  "name": "@DRAG",
+  "isa": [
+    "@PULL",
+    "@MOTION-EVENT"
+  ],
+  "def": "to pull or to be pulled with effort, especially along the ground",
+  "local": [],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

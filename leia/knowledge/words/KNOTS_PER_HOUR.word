@@ -1,0 +1,29 @@
+{
+  "word": "KNOTS_PER_HOUR",
+  "senses": {
+    "KNOTS_PER_HOUR-N1": {
+      "CAT": "N",
+      "DEF": "a nautical unit of speed",
+      "EX": "The boat moves at 5 knots per hour",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "NAUTICAL-KNOTS-PER-HOUR",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "NAUTICAL_KNOTS_PER_HOUR"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "KNOTS_PER_HOUR-N1",
+      "WORD": "KNOTS_PER_HOUR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

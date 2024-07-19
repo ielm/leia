@@ -1,0 +1,34 @@
+{
+  "word": "AUTOMATIC_RIFLE",
+  "senses": {
+    "AUTOMATIC_RIFLE-N1": {
+      "CAT": "N",
+      "DEF": "a two-handed rifled-bore weapon firing bullets in bursts",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "RIFLE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ASSAULT_RIFLE",
+        "ASSAULT_WEAPON"
+      ],
+      "HYPONYMS": [
+        "AK-47",
+        "KALASHNIKOV",
+        "M-16"
+      ],
+      "SENSE": "AUTOMATIC_RIFLE-N1",
+      "WORD": "AUTOMATIC_RIFLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

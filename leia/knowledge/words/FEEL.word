@@ -1,0 +1,365 @@
+{
+  "word": "FEEL",
+  "senses": {
+    "FEEL-V1": {
+      "CAT": "V",
+      "DEF": "to experience an emotion",
+      "EX": "he feels regret",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "SEM": "EMOTIONAL-EVENT",
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "FEELS-0",
+        "SOME",
+        "REGRET-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "DEP",
+          "$VAR2",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FEEL-V1",
+      "WORD": "FEEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FEEL-V2": {
+      "CAT": "V",
+      "DEF": "to touch sth.",
+      "EX": "he felt the leather and decided it was of sufficiently high quality",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "ANIMAL",
+          "AGENT-OF": {
+            "VALUE": "REFSEM1"
+          },
+          "EXPERIENCER-OF": {
+            "VALUE": "REFSEM2"
+          }
+        },
+        "REFSEM1": {
+          "VOLUNTARY-TACTILE-EVENT": {
+            "THEME": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "INVOLUNTARY-TACTILE-EVENT": {
+            "THEME-1": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "HAS",
+        "FELT-0",
+        "THE",
+        "LEATHER-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FEEL-V2",
+      "WORD": "FEEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FEEL-V4": {
+      "CAT": "V",
+      "DEF": "X feel Y (adj) = X experiences a feeling as though X were Y",
+      "EX": "she feels sad",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "ADJ": {
+          "ROOT": "$VAR2",
+          "CAT": "ADJ"
+        }
+      },
+      "SEM-STRUC": {
+        "EMOTIONAL-EVENT": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "ATTRIBUTE": {
+            "DOMAIN": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "REFSEM1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "FEELS-0",
+        "SAD-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "DEP",
+          "$VAR2",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FEEL-V4",
+      "WORD": "FEEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FEEL-V6": {
+      "CAT": "V",
+      "DEF": "phrasal: feel like Xing = want to X",
+      "EX": "I feel like taking a walk I don't feel like doing any more annotation",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "LIKE",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N",
+            "V": {
+              "CAT": "V",
+              "FORM": "PROGRESSIVE"
+            }
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "VOLITIVE",
+          "VALUE": 0.7,
+          "SCOPE": {
+            "VALUE": "^$VAR3"
+          },
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR3": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR3"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "FELT-0",
+        "LIKE-2",
+        "HITTING-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FEEL-V6",
+      "WORD": "FEEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FEEL-V7": {
+      "CAT": "V",
+      "DEF": "phrasal: feel like X = experience an emotion as if X were true",
+      "EX": "I feel like this job will never end",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP": {
+          "ROOT-WORD": [
+            "LIKE",
+            "AS_IF",
+            "AS_THOUGH"
+          ],
+          "ROOT": "$VAR2",
+          "CAT": "PREP"
+        },
+        "CL": {
+          "ROOT": "$VAR3",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "EMOTIONAL-EVENT": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "MODALITY": {
+          "TYPE": "BELIEF",
+          "VALUE": 0.7,
+          "SCOPE": {
+            "VALUE": "^$VAR3"
+          },
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "FELT-0",
+        "LIKE-2",
+        "THE",
+        "DOG",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "ADVCL",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "MARK",
+          "$VAR3",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FEEL-V7",
+      "WORD": "FEEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

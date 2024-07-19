@@ -1,0 +1,97 @@
+{
+  "word": "PORT",
+  "senses": {
+    "PORT-N1": {
+      "CAT": "N",
+      "DEF": "a harbor",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "HARBOR",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PORT-N1",
+      "WORD": "PORT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PORT-N2": {
+      "CAT": "N",
+      "DEF": "a city with a harbor",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CITY": {
+          "HAS-OBJECT-AS-PART": "HARBOR"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PORT-N2",
+      "WORD": "PORT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PORT-N3": {
+      "CAT": "N",
+      "DEF": "a type of wine",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "WINE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PORT-N3",
+      "WORD": "PORT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PORT-N4": {
+      "CAT": "N",
+      "DEF": "a network port",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "NETWORK-PORT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PORT-N4",
+      "WORD": "PORT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

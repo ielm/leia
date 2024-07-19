@@ -1,0 +1,33 @@
+{
+  "word": "BURGLAR_ALARM",
+  "senses": {
+    "BURGLAR_ALARM-N1": {
+      "CAT": "N",
+      "DEF": "an alarm system in a building or vehicle",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "WARNING-DEVICE": {
+          "LOCATION": {
+            "VEHICLE": "BUILDING-ARTIFACT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BURGLAR_ALARM-N1",
+      "WORD": "BURGLAR_ALARM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@ENTHEOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "obsessive zeal for religion",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

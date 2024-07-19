@@ -1,0 +1,251 @@
+{
+  "word": "PROCEED",
+  "senses": {
+    "PROCEED-V1": {
+      "CAT": "V",
+      "DEF": "to begin",
+      "EX": "after that happened, she proceeded to be sick (to laugh).",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "XCOMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "BEGIN",
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR2": {
+          "SEM": "EVENT",
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "PROCEEDED-0",
+        "TO",
+        "EAT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "XCOMP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "XSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PROCEED-V1",
+      "WORD": "PROCEED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PROCEED-V2": {
+      "CAT": "V",
+      "DEF": "to continue something after a stoppage",
+      "EX": "she paused to cough then proceeded; after the light turned green the truck proceeded.",
+      "COMMENTS": "[D] this sense contains semantic ellipsis. we should ultimately add the precondition that the event stopped temporarily, but that will take some work and will be postponed",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "CONTINUE",
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "EVENT": {
+            "AGENT": {
+              "VALUE": "^$VAR1",
+              "SEM": "OBJECT"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "REFSEM1",
+          "REFERENCE-PROCEDURES"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "PROCEEDED-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "GO"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PROCEED-V2",
+      "WORD": "PROCEED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PROCEED-V3": {
+      "CAT": "V",
+      "DEF": "to continue (there may be need not have been a stoppage)",
+      "EX": "the talks proceeded.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "CONTINUE",
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR1": {
+          "SEM": "EVENT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "TALKS-1",
+        "PROCEEDED-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PROCEED-V3",
+      "WORD": "PROCEED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PROCEED-V4": {
+      "CAT": "V",
+      "DEF": "caused by, has origin in",
+      "EX": "her stuffiness proceeds from insecurity.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "FROM",
+          "CAT": "PREP"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "CAUSED-BY": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HIS",
+        "ANGER-1",
+        "PROCEEDED-0",
+        "FROM-2",
+        "THE",
+        "FIGHT-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PROCEED-V4",
+      "WORD": "PROCEED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

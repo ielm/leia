@@ -1,0 +1,33 @@
+{
+  "word": "ASIA",
+  "senses": {
+    "ASIA-N1": {
+      "CAT": "N",
+      "DEF": "the continent",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CONTINENT": {
+          "HAS-NAME": {
+            "VALUE": "ASIA"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ASIA-N1",
+      "WORD": "ASIA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

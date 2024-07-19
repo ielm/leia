@@ -1,0 +1,35 @@
+{
+  "word": "LEANING",
+  "senses": {
+    "LEANING-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "having a tilt; sloping",
+      "EX": "The tower is leaning to the right.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SLOPE-ATTRIBUTE": 0.7
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LEANING-ADJ1",
+      "WORD": "LEANING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

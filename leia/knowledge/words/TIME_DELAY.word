@@ -1,0 +1,56 @@
+{
+  "word": "TIME_DELAY",
+  "senses": {
+    "TIME_DELAY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "when collocating with some sort of device: causes an event to occur at a later time ",
+      "EX": "a time-delay device",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "DEVICE",
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "EVENT": {
+            "TIME": [
+              ">>",
+              [
+                "VALUE",
+                "REFSEM2.TIME"
+              ]
+            ]
+          }
+        },
+        "REFSEM2": {
+          "TURN-SWITCH-ON": {
+            "THEME": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TIME_DELAY-ADJ1",
+      "WORD": "TIME_DELAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

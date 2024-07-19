@@ -1,0 +1,83 @@
+{
+  "word": "UTAHAN",
+  "senses": {
+    "UTAHAN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to Utah",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "STATE": {
+            "HAS-NAME": {
+              "VALUE": "UTAH"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "UTAHN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "UTAHAN-ADJ1",
+      "WORD": "UTAHAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "UTAHAN-N1": {
+      "CAT": "N",
+      "DEF": "resides in the state of Utah",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "HAS-STATE-ADDRESS": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "STATE": {
+            "HAS-NAME": {
+              "VALUE": "UTAH"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "UTAHN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "UTAHAN-N1",
+      "WORD": "UTAHAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

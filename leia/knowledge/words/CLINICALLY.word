@@ -1,0 +1,45 @@
+{
+  "word": "CLINICALLY",
+  "senses": {
+    "CLINICALLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "ascertained by medical examination",
+      "EX": "he appears clinically healthy",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "DIAGNOSTIC-PROCEDURE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CLINICALLY-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CLINICALLY-ADV1",
+      "WORD": "CLINICALLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

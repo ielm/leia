@@ -1,0 +1,9 @@
+{
+  "name": "$HUMOR-ATTRIBUTE",
+  "def": "The degree to which something, such as a piece of literature or a joke, is funny.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-ATTRIBUTE"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@THESAURUS",
+  "isa": [
+    "@BOOK"
+  ],
+  "def": "extensive listing of words and their synonyms, arranged alphabetically or topically",
+  "local": [
+    {
+      "slot": "about-as-topic",
+      "facet": "sem",
+      "filler": "@WORD"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

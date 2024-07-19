@@ -1,0 +1,138 @@
+{
+  "word": "SUNNY",
+  "senses": {
+    "SUNNY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "when modifying a place - a place where the sun is shining",
+      "EX": "A sunny field",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "PLACE",
+          "LOCATION-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SHINE": {
+            "INSTRUMENT": "SUN"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SUNNY-ADJ1",
+      "WORD": "SUNNY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SUNNY-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "when modifying a time - a time when the sun is shining",
+      "EX": "A sunny morning",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "TIME-INTERVAL-UNIT",
+          "TIME-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SHINE": {
+            "INSTRUMENT": "SUN"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SUNNY-ADJ2",
+      "WORD": "SUNNY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SUNNY-ADJ3": {
+      "CAT": "ADJ",
+      "DEF": "phrasal: it is sunny (out/outside)",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "ROOT-WORD": "IT",
+          "TYPE": "PRO"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ADV": {
+          "ROOT": "$VAR3",
+          "CAT": "ADV",
+          "OPT": "+",
+          "ROOT-WORD": [
+            "OUT",
+            "OUTSIDE"
+          ]
+        }
+      },
+      "SEM-STRUC": {
+        "SHINE": {
+          "INSTRUMENT": "SUN"
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SUNNY-ADJ3",
+      "WORD": "SUNNY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

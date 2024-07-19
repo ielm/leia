@@ -1,0 +1,36 @@
+{
+  "word": "CONGESTED",
+  "senses": {
+    "CONGESTED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "of roads, etc.: having heavy traffic",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "ROAD-SYSTEM-ARTIFACT",
+          "LOCATION-OF": "TRAFFIC-CONGESTION"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONGESTED-ADJ1",
+      "WORD": "CONGESTED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "word": "FRESH",
+  "senses": {
+    "FRESH-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "of food - not stale",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "FRESHNESS": [
+            ">",
+            0.9
+          ],
+          "SEM": "INGESTIBLE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "FRESH-0",
+        "FEED-1",
+        "NOURISHES",
+        "ANIMALS"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FRESH-ADJ1",
+      "WORD": "FRESH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

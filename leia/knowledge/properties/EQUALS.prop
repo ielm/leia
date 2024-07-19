@@ -1,0 +1,9 @@
+{
+  "name": "$EQUALS",
+  "def": "a mathematical property that indicates equality; for\nnon-mathematical cases, use the property similarity; \nobject can be equal to property as in length (of sth.) equals 12 inches;\nthis property needs further restriction",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$EQUAL-TO",
+  "measured-in": [],
+  "container": "$COMPARISON-RELATION"
+}

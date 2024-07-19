@@ -1,0 +1,19 @@
+{
+  "name": "@CARAT",
+  "isa": [
+    "@MASS-WEIGHT-UNIT"
+  ],
+  "def": "a unit of weight for precious stones, approximately 200 milligrams; 2E-4",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.0002
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

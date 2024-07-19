@@ -1,0 +1,34 @@
+{
+  "word": "SLEEPER",
+  "senses": {
+    "SLEEPER-N1": {
+      "CAT": "N",
+      "DEF": "a train car where people can lie down and sleep",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "RAILROAD-CAR": {
+          "LOCATION-OF": "SLEEP"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SLEEPING_CAR",
+        "BUNK_CAR"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SLEEPER-N1",
+      "WORD": "SLEEPER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

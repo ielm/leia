@@ -1,0 +1,22 @@
+{
+  "name": "@HEART",
+  "isa": [
+    "@ANIMAL-ORGAN"
+  ],
+  "def": "the hollow, muscle organ that circulates blood by alternate dilation and contraction",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CARDIAC-VALVE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

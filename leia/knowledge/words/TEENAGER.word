@@ -1,0 +1,40 @@
+{
+  "word": "TEENAGER",
+  "senses": {
+    "TEENAGER-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "a human between 13 and 19 years old",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "AGE": [
+            "><",
+            13,
+            19
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ADOLESCENT",
+        "TEEN"
+      ],
+      "HYPONYMS": [
+        "PUBESCENT"
+      ],
+      "SENSE": "TEENAGER-N1",
+      "WORD": "TEENAGER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

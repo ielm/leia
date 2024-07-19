@@ -1,0 +1,31 @@
+{
+  "word": "SLIDING_WINDOW",
+  "senses": {
+    "SLIDING_WINDOW-N1": {
+      "CAT": "N",
+      "DEF": "a window that slides",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "WINDOW": {
+          "THEME-OF": "SLIDE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SLIDING_WINDOW-N1",
+      "WORD": "SLIDING_WINDOW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@ELECTRIC-POWER-CORPORATION",
+  "isa": [
+    "@UTILITY-CORPORATION"
+  ],
+  "def": "a utility-corporation that provides electrical power service to the public",
+  "local": [
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@COAL-MINING-CORPORATION"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ELECTRICITY"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

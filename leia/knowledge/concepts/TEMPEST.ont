@@ -1,0 +1,22 @@
+{
+  "name": "@TEMPEST",
+  "isa": [
+    "@STORM"
+  ],
+  "def": "violent windstorm, frequently accompanied by rain, snow, or hail.",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@WIND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@NATURAL-EVENT"
+    }
+  ],
+  "private": {}
+}

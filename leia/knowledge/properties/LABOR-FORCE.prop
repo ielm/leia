@@ -1,0 +1,9 @@
+{
+  "name": "$LABOR-FORCE",
+  "def": "the number of workers actually engaged in a certain field or sector",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

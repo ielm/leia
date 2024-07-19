@@ -1,0 +1,36 @@
+{
+  "name": "@CESIUM",
+  "isa": [
+    "@ALKALI-METAL"
+  ],
+  "def": "a soft, silvery-white ductile metal, liquid at room temperature, the most electropositive and alkaline of the elements, used in photoelectric cells and to catalyze hydrogenation of some organic compounds",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        55
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        132
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

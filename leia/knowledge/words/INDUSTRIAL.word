@@ -1,0 +1,40 @@
+{
+  "word": "INDUSTRIAL",
+  "senses": {
+    "INDUSTRIAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to business, particularly that of production",
+      "EX": "industrial zone, industrial carpet, industrial equipment, industrial espionage, industrial salary",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MANUFACTURING-ACTIVITY": {
+          "RELATION": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "INDUSTRIAL-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INDUSTRIAL-ADJ1",
+      "WORD": "INDUSTRIAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

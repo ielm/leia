@@ -1,0 +1,682 @@
+{
+  "word": "WANT",
+  "senses": {
+    "WANT-V1": {
+      "CAT": "V",
+      "DEF": "phrasal: X [want] to Y = X desires to perform action Y",
+      "EX": "She wants to go home",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "XCOMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "VOLITIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          },
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "WANTED-0",
+        "TO",
+        "SLEEP-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "XCOMP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "XSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WANT-V1",
+      "WORD": "WANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WANT-V2": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "she wants him to go home",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "INDIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "XCOMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "VOLITIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR3"
+          },
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR3": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR2",
+          "^$VAR3"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "WANTS-0",
+        "HIM-2",
+        "TO",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "XCOMP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WANT-V2",
+      "WORD": "WANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WANT-V3": {
+      "CAT": "V",
+      "DEF": "want X (object)",
+      "EX": "she wants peanuts",
+      "COMMENTS": "this is light-verb usage with modality",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "VOLITIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          },
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "REFSEM1": {
+          "EVENT": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            },
+            "THEME": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "REFSEM1",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "WANTS-0",
+        "PEANUTS-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WANT-V3",
+      "WORD": "WANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WANT-V5": {
+      "CAT": "V",
+      "DEF": "with a clausal complement and 'if'",
+      "EX": "if you want (to)(,) you can use my car",
+      "COMMENTS": "I took a minimalist approach to describing the meaning; we can do more detail at a later time if we want",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CONJ": {
+          "ROOT": "$VAR1",
+          "CAT": "CONJ",
+          "ROOT-WORD": "IF"
+        },
+        "NP": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "INF": {
+          "ROOT-WORD": "TO",
+          "CAT": "INF",
+          "OPT": "+",
+          "ROOT": "$VAR3"
+        },
+        "PUNCT": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "*COMMA*",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        },
+        "CL": {
+          "ROOT": "$VAR5",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "PERMISSIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR5"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "IF-1",
+        "YOU-2",
+        "WANT-0",
+        "TO-3",
+        "*COMMA*-4",
+        "YOU",
+        "CAN",
+        "EAT-5"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVCL",
+          "$VAR5",
+          "$VAR0"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "MARK",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PUNCT",
+          "$VAR5",
+          "$VAR4"
+        ],
+        [
+          "XCOMP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "XSUBJ",
+          "$VAR3",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WANT-V5",
+      "WORD": "WANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WANT-V510": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "I want you to hit the building",
+      "COMMENTS": "indirect speech act. ",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "N-1": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        },
+        "INFO": [
+          [
+            "ROOT",
+            "$VAR4"
+          ],
+          [
+            "ROOT",
+            "TO"
+          ],
+          [
+            "CAT",
+            "INF"
+          ]
+        ],
+        "V": {
+          "ROOT": "$VAR5",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "REQUEST-ACTION": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          },
+          "THEME": {
+            "VALUE": "^$VAR5"
+          }
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "I-1",
+        "WANT-0",
+        "YOU-3",
+        "TO-4",
+        "HIT-5",
+        "THE",
+        "BUILDING"
+      ],
+      "SYNONYMS": [],
+      "SENSE": "WANT-V510",
+      "WORD": "WANT",
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "WANT-V500": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "I want you to hit the building",
+      "COMMENTS": "direct speech act. ",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "N-1": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        },
+        "INFO": [
+          [
+            "ROOT",
+            "$VAR4"
+          ],
+          [
+            "ROOT",
+            "TO"
+          ],
+          [
+            "CAT",
+            "INF"
+          ]
+        ],
+        "V": {
+          "ROOT": "$VAR5",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "OBLIGATIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR5"
+          },
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR5": {
+          "AGENT": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "I-1",
+        "WANT-0",
+        "YOU-3",
+        "TO-4",
+        "HIT-5",
+        "THE",
+        "BUILDING"
+      ],
+      "SYNONYMS": [],
+      "SENSE": "WANT-V500",
+      "WORD": "WANT",
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "WANT-V101": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "...I wanted to.",
+      "COMMENTS": "works with VP ellipsis",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDINGS": "T",
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "TO": [
+          [
+            "ROOT",
+            "$VAR2"
+          ],
+          [
+            "CAT",
+            "TO"
+          ],
+          [
+            "ROOT",
+            "TO"
+          ]
+        ]
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "VOLITIVE",
+          "VALUE": 1,
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "I-1",
+        "WANT-0",
+        "TO-2"
+      ],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-EVENT",
+          "EVENT-VPE",
+          "CASE-ROLE",
+          "^$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WANT-V101",
+      "WORD": "WANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": []
+    },
+    "WANT-V6": {
+      "CAT": "V",
+      "DEF": "with a clausal complement and 'if'",
+      "EX": "if you want her to(,) she can go with you",
+      "COMMENTS": "I took a minimalist approach to describing the meaning; we can do more detail at a later time if we want",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CONJ": {
+          "ROOT": "$VAR1",
+          "CAT": "CONJ",
+          "ROOT-WORD": "IF"
+        },
+        "NP": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "NP-1": {
+          "ROOT": "$VAR6",
+          "CAT": "NP"
+        },
+        "INF": {
+          "CAT": "INF",
+          "ROOT-WORD": "TO",
+          "ROOT": "$VAR3"
+        },
+        "PUNCT": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "*COMMA*",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        },
+        "CL": {
+          "ROOT": "$VAR5",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "PERMISSIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR5"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR6": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "IF-1",
+        "YOU-2",
+        "WANT-0",
+        "HER-6",
+        "TO-3",
+        "*COMMA*-4",
+        "YOU",
+        "CAN",
+        "EAT-5"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVCL",
+          "$VAR5",
+          "$VAR0"
+        ],
+        [
+          "ADVMOD",
+          "$VAR3",
+          "$VAR6"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "MARK",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PUNCT",
+          "$VAR5",
+          "$VAR4"
+        ],
+        [
+          "XCOMP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "XSUBJ",
+          "$VAR3",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WANT-V6",
+      "WORD": "WANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

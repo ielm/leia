@@ -1,0 +1,48 @@
+{
+  "word": "PRECISELY",
+  "senses": {
+    "PRECISELY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "correct to smallest detail",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "PRECISION-ATTRIBUTE": 0.8
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EXACTLY-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "EXACTLY",
+        "IN_DETAIL"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PRECISELY-ADV1",
+      "WORD": "PRECISELY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

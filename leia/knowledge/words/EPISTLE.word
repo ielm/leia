@@ -1,0 +1,34 @@
+{
+  "word": "EPISTLE",
+  "senses": {
+    "EPISTLE-N1": {
+      "CAT": "N",
+      "DEF": "a formal or elegant letter",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LETTER": {
+          "FORMALITY": [
+            ">",
+            0.8
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EPISTLE-N1",
+      "WORD": "EPISTLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

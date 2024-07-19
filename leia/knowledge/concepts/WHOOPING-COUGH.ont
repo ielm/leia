@@ -1,0 +1,22 @@
+{
+  "name": "@WHOOPING-COUGH",
+  "isa": [
+    "@COMMUNICABLE-DISEASE"
+  ],
+  "def": "a communicable bacterial disease characterized by coughing",
+  "local": [
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@COUGH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    }
+  ],
+  "private": {}
+}

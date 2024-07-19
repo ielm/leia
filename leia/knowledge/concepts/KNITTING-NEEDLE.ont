@@ -1,0 +1,32 @@
+{
+  "name": "@KNITTING-NEEDLE",
+  "isa": [
+    "@IMPLEMENT"
+  ],
+  "def": "small rods used for knitting",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@BONE-SUBSTANCE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@STEEL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

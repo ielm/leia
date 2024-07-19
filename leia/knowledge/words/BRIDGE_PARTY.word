@@ -1,0 +1,31 @@
+{
+  "word": "BRIDGE_PARTY",
+  "senses": {
+    "BRIDGE_PARTY-N1": {
+      "CAT": "N",
+      "DEF": "a party where bridge is played",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PARTY": {
+          "HAS-EVENT-AS-PART": "BRIDGE-CARD-GAME"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BRIDGE_PARTY-N1",
+      "WORD": "BRIDGE_PARTY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

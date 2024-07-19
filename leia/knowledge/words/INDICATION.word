@@ -1,0 +1,76 @@
+{
+  "word": "INDICATION",
+  "senses": {
+    "INDICATION-N1": {
+      "CAT": "N",
+      "DEF": "phrasal: from all (available) indications; indicates < 1 belief modality",
+      "EX": "From all available indications, the fire was not caused by arson",
+      "COMMENTS": "I'm making a syntactically flat structure because the internal structure doesn't matter and this is simpler",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "PREP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "FROM"
+        },
+        "QUANTIFIER": {
+          "ROOT": "$VAR2",
+          "CAT": "QUANTIFIER",
+          "ROOT-WORD": "ALL"
+        },
+        "ADJ": {
+          "ROOT": "$VAR3",
+          "CAT": "ADJ",
+          "ROOT-WORD": "AVAILABLE",
+          "OPT": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "NUMBER": "PL",
+        "PUNCT": {
+          "ROOT": "$VAR4",
+          "CAT": "PUNCT",
+          "ROOT-WORD": "*COMMA*",
+          "OPT": "+"
+        },
+        "CL": {
+          "ROOT": "$VAR5",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "BELIEF",
+          "VALUE": 0.8,
+          "SCOPE": {
+            "VALUE": "^$VAR5"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "evidence"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INDICATION-N1",
+      "WORD": "INDICATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

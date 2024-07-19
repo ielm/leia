@@ -1,0 +1,69 @@
+{
+  "word": "OF_COURSE",
+  "senses": {
+    "OF_COURSE-ADV1": {
+      "CAT": "ADV",
+      "DEF": "discourse function only, no semantics",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "OF_COURSE-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OF_COURSE-ADV1",
+      "WORD": "OF_COURSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "OF_COURSE-INTERJECTION1": {
+      "CAT": "INTERJECTION",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CAT": "INTERJECTION",
+        "ROOT": "$VAR0"
+      },
+      "SEM-STRUC": {
+        "^$VAR0": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "YES"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "OF_COURSE-INTERJECTION1",
+      "WORD": "OF_COURSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "word": "PROPOSITION",
+  "senses": {
+    "PROPOSITION-N1": {
+      "CAT": "N",
+      "DEF": "a proposal",
+      "EX": "the proposition by that laywer that a recess be granted has been denied",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": [
+            "BY",
+            "FROM"
+          ],
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        },
+        "XCOMP": {
+          "ROOT": "$VAR1",
+          "CAT": "V",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "PROPOSE": {
+          "AGENT": {
+            "VALUE": "^$VAR3"
+          },
+          "THEME": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "PROPOSITION-0",
+        "BY-2",
+        "THE",
+        "HUMAN-3",
+        "TO-7",
+        "HIT-1",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "INFMOD",
+          "$VAR3",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [
+        "SUGGESTION"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PROPOSITION-N1",
+      "WORD": "PROPOSITION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

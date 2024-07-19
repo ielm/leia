@@ -1,0 +1,31 @@
+{
+  "word": "RADIUS",
+  "senses": {
+    "RADIUS-N1": {
+      "CAT": "N",
+      "DEF": "a straight line from the center to the circumference of a circle ",
+      "EX": "",
+      "COMMENTS": "this is a quick mapping that does not distinguish between radius and circumference",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LINE-GEOMETRIC": {
+          "INSIDE-OF": "CIRCLE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RADIUS-N1",
+      "WORD": "RADIUS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

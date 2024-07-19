@@ -1,0 +1,49 @@
+{
+  "word": "CONVINCING",
+  "senses": {
+    "CONVINCING-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "with high credibility",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "COGENCY": [
+            ">",
+            0.8
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CONCLUSIVE-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "CONCLUSIVE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CONVINCING-ADJ1",
+      "WORD": "CONVINCING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

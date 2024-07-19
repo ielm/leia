@@ -1,0 +1,35 @@
+{
+  "word": "TOWNSHIP",
+  "senses": {
+    "TOWNSHIP-N1": {
+      "CAT": "N",
+      "DEF": "a number of towns, a portion of a county in the eastern us",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": "TOWN",
+          "CARDINALITY": [
+            ">",
+            1
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TOWNSHIP-N1",
+      "WORD": "TOWNSHIP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

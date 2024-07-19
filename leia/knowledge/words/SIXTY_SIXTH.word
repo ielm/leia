@@ -1,0 +1,46 @@
+{
+  "word": "SIXTY_SIXTH",
+  "senses": {
+    "SIXTY_SIXTH-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "ORDINALITY": 66
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "66",
+        "TH-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "66TH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SIXTY_SIXTH-ADJ1",
+      "WORD": "SIXTY_SIXTH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

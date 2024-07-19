@@ -1,0 +1,16 @@
+{
+  "name": "@OPERATING-ROOM",
+  "isa": [
+    "@HOSPITAL-PART"
+  ],
+  "def": "the room where operations take place in a hospital",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@HOSPITAL"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

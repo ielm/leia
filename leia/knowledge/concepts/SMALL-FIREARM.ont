@@ -1,0 +1,16 @@
+{
+  "name": "@SMALL-FIREARM",
+  "isa": [
+    "@GUN"
+  ],
+  "def": "small firearms having a bore 1.18 inch or less",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "private": {}
+}

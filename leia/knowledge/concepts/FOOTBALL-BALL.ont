@@ -1,0 +1,16 @@
+{
+  "name": "@FOOTBALL-BALL",
+  "isa": [
+    "@BALL"
+  ],
+  "def": "a ball for football",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,176 @@
+{
+  "word": "SUSCEPTIBLE",
+  "senses": {
+    "SUSCEPTIBLE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "likely to be affected by",
+      "EX": "she is susceptible to colds",
+      "COMMENTS": "if there's no pp, there's semantic ellipsis; not covered yet",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "PP": {
+          "ROOT-WORD": "TO",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR4": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "MODALITY": {
+          "TYPE": "POTENTIAL",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOG-1",
+        "WAS-2",
+        "SUSCEPTIBLE-0",
+        "TO-3",
+        "PNEUMONIA-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "COP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [
+        "PRONE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SUSCEPTIBLE-ADJ1",
+      "WORD": "SUSCEPTIBLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SUSCEPTIBLE-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "phrasal: susceptible to X = likely to be affected by",
+      "EX": "a person susceptible to colds",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR4",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "NP",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ",
+          "PP": {
+            "ROOT-WORD": "TO",
+            "ROOT": "$VAR3",
+            "CAT": "PREP",
+            "OBJ": {
+              "ROOT": "$VAR4",
+              "CAT": "N"
+            }
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR4": {
+          "BENEFICIARY": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "MODALITY": {
+          "TYPE": "POTENTIAL",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "SMALL-CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "BOUGHT",
+        "A",
+        "DOG-1",
+        "SUSCEPTIBLE-0",
+        "TO-3",
+        "PNEUMONIA-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [
+        "PRONE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SUSCEPTIBLE-ADJ2",
+      "WORD": "SUSCEPTIBLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

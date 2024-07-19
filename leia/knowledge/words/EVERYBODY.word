@@ -1,0 +1,43 @@
+{
+  "word": "EVERYBODY",
+  "senses": {
+    "EVERYBODY-N2": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "everybody arrived on time.",
+      "COMMENTS": "see notes for 'everything'",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "CARDINALITY": 1,
+          "COMPLETE": "YES",
+          "MEMBER-TYPE": "HUMAN"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          [
+            "SET",
+            1
+          ]
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "EVERYONE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "EVERYBODY-N2",
+      "WORD": "EVERYBODY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

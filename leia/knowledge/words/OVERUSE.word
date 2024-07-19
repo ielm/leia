@@ -1,0 +1,77 @@
+{
+  "word": "OVERUSE",
+  "senses": {
+    "OVERUSE-N1": {
+      "CAT": "N",
+      "DEF": "using too much, with negative evaluative modality",
+      "EX": "Overuse of sleeping pills can lead to dire consequences",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "EVENT": {
+            "INSTRUMENT": {
+              "VALUE": "^$VAR2"
+            },
+            "FREQUENCY": {
+              "RELATIVE-TO-NORM": [
+                ">",
+                0.5
+              ]
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0.3,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "OVERUSE-0",
+        "OF-1",
+        "THE",
+        "OBJECT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OVERUSE-N1",
+      "WORD": "OVERUSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

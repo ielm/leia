@@ -1,0 +1,44 @@
+{
+  "word": "WEDDING_GOWN",
+  "senses": {
+    "WEDDING_GOWN-N1": {
+      "CAT": "N",
+      "DEF": "a formal gown worn by a bride, usually white",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "DRESS": {
+          "FORMALITY": 1,
+          "COLOR": "WHITE",
+          "THEME-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "WEAR-CLOTHES": {
+            "AGENT": "BRIDE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "WEDDING_DRESS",
+        "BRIDAL_GOWN",
+        "BRIDAL_DRESS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "WEDDING_GOWN-N1",
+      "WORD": "WEDDING_GOWN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

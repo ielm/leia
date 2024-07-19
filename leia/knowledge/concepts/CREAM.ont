@@ -1,0 +1,21 @@
+{
+  "name": "@CREAM",
+  "isa": [
+    "@LIQUID-DAIRY-PRODUCT"
+  ],
+  "def": "the yellowish fatty part of milk",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "white"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "off-white"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

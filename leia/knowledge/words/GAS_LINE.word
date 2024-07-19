@@ -1,0 +1,34 @@
+{
+  "word": "GAS_LINE",
+  "senses": {
+    "GAS_LINE-N1": {
+      "CAT": "N",
+      "DEF": "a pipe for gas",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PIPE": {
+          "LOCATION-OF": "GASOLINE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "FUEL_LINE",
+        "OIL_PIPELINE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "GAS_LINE-N1",
+      "WORD": "GAS_LINE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "word": "PORTION",
+  "senses": {
+    "PORTION-N1": {
+      "CAT": "N",
+      "DEF": "part of an object",
+      "EX": "this is the best portion of the house",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "OBJECT": {
+          "PART-OF-OBJECT": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SECTION-0",
+        "OF-1",
+        "THE",
+        "MAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "SECTION"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PORTION-N1",
+      "WORD": "PORTION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

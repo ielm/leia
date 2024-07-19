@@ -1,0 +1,74 @@
+{
+  "name": "@GRILL",
+  "isa": [
+    "@STOVE"
+  ],
+  "def": "a cooking apparatus for broiling",
+  "local": [
+    {
+      "slot": "height",
+      "facet": "default",
+      "filler": [
+        "><",
+        80
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "default",
+      "filler": [
+        "><",
+        1.5
+      ],
+      "meta": {
+        "measured-in": "meter"
+      }
+    },
+    {
+      "slot": "weight",
+      "facet": "default",
+      "filler": [
+        "><",
+        50
+      ]
+    },
+    {
+      "slot": "width",
+      "facet": "default",
+      "filler": [
+        "><",
+        40
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    }
+  ],
+  "block": [
+    {
+      "slot": "height",
+      "facet": "default",
+      "filler": [
+        "><",
+        70
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "default",
+      "filler": [
+        "><",
+        100
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "default",
+      "filler": [
+        "><",
+        300
+      ]
+    }
+  ],
+  "private": {}
+}

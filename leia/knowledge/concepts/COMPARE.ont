@@ -1,0 +1,21 @@
+{
+  "name": "@COMPARE",
+  "isa": [
+    "@DETERMINE"
+  ],
+  "def": "to examine for similarities or differences",
+  "local": [],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

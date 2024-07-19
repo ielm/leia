@@ -1,0 +1,22 @@
+{
+  "name": "@OLIVE-TREE",
+  "isa": [
+    "@FRUIT-TREE"
+  ],
+  "def": "tree that produces olives",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@OLIVE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@TREE-FRUIT"
+    }
+  ],
+  "private": {}
+}

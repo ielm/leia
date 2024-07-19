@@ -1,0 +1,77 @@
+{
+  "name": "@TORNADO",
+  "isa": [
+    "@STORM"
+  ],
+  "def": "a violently whirling column of air seen as a funnel-shaped cloud that usually destroys everything in its path",
+  "local": [
+    {
+      "slot": "path",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "destination",
+      "facet": "not",
+      "filler": "@EARTH-CORE"
+    },
+    {
+      "slot": "destination",
+      "facet": "not",
+      "filler": "@SEA"
+    },
+    {
+      "slot": "destination",
+      "facet": "not",
+      "filler": "@TRANSNATIONAL-ENTITY"
+    },
+    {
+      "slot": "destination",
+      "facet": "not",
+      "filler": "@UNDERWATER-GEOLOGICAL-ENTITY"
+    },
+    {
+      "slot": "destination",
+      "facet": "not",
+      "filler": "@WORLD"
+    },
+    {
+      "slot": "destination",
+      "facet": "not",
+      "filler": "@WATER-TABLE"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@WIND"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@CLOUD"
+    },
+    {
+      "slot": "destination",
+      "facet": "sem",
+      "filler": "@GEOLOGICAL-ENTITY"
+    },
+    {
+      "slot": "destination",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@NATURAL-EVENT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@BODY-OF-WATER"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,35 @@
+{
+  "word": "RICE_DISH",
+  "senses": {
+    "RICE_DISH-N1": {
+      "CAT": "N",
+      "DEF": "a cooked dish which consists mainly of rice but may also have vegetables, fish, meat, etc-",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "RICE-DISH",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "FRIED_RICE",
+        "DIRTY_RICE",
+        "PILAF",
+        "RISOTTO",
+        "SPANISH_RICE",
+        "ARROZ_CON_POLLO",
+        "BIRYANI"
+      ],
+      "SENSE": "RICE_DISH-N1",
+      "WORD": "RICE_DISH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

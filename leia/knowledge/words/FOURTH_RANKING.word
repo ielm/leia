@@ -1,0 +1,39 @@
+{
+  "word": "FOURTH_RANKING",
+  "senses": {
+    "FOURTH_RANKING-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "the 4th ranked",
+      "EX": "She's the fourth-ranking tennis player on the East Coast",
+      "COMMENTS": "ultimately, -ranking and -ranked need to become a meaning  procedure to cover all numbers",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RANK": 4
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "FOURTH_RANKING",
+        "FOURTH_RANKED",
+        "FOURTH-RANKED"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FOURTH_RANKING-ADJ1",
+      "WORD": "FOURTH_RANKING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

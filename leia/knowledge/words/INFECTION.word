@@ -1,0 +1,49 @@
+{
+  "word": "INFECTION",
+  "senses": {
+    "INFECTION-N1": {
+      "CAT": "N",
+      "DEF": "to adversely affect with a disease-causing organism; when in a n-n compound of disase/symptom + infection, then the disease/symptom causes the infection",
+      "EX": "influenza infection",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP",
+          "OPT": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "INFECTION": {
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1",
+            "SEM": "PATHOLOGIC-FUNCTION"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "INFECTION-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INFECTION-N1",
+      "WORD": "INFECTION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

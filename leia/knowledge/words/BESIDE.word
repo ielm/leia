@@ -1,0 +1,65 @@
+{
+  "word": "BESIDE",
+  "senses": {
+    "BESIDE-PREP1": {
+      "CAT": "PREP",
+      "DEF": " ",
+      "EX": "the man is beside the vending machine. the man beside the vending machine sneezed; sit beside the vending machine",
+      "COMMENTS": "synonyms at 'alongside, by the side of, next to [D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "PHYSICAL-OBJECT",
+            "EVENT"
+          ],
+          "BESIDE": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "ALONGSIDE-0",
+        "THE",
+        "TABLE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "ALONGSIDE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BESIDE-PREP1",
+      "WORD": "BESIDE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

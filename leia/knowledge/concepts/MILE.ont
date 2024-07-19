@@ -1,0 +1,19 @@
+{
+  "name": "@MILE",
+  "isa": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "def": "A linear measuring unit equal to 1609 meters, 5280 feet, or 1760 yards; 5280*foot",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1609.344
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

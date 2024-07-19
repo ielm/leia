@@ -1,0 +1,44 @@
+{
+  "word": "RIDE",
+  "senses": {
+    "RIDE-V1": {
+      "CAT": "V",
+      "DEF": "to be carried along by a vehicle",
+      "EX": "John rides horses",
+      "COMMENTS": "it's not clear whether the case role of the DO should be theme or instrument; I'm  choosing instrument for now",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "RIDE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "INSTRUMENT": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RIDE-V1",
+      "WORD": "RIDE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

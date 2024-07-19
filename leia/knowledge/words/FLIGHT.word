@@ -1,0 +1,114 @@
+{
+  "word": "FLIGHT",
+  "senses": {
+    "FLIGHT-N1": {
+      "CAT": "N",
+      "DEF": "a trip in a plane",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FLIGHT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FLIGHT-N1",
+      "WORD": "FLIGHT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FLIGHT-N2": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "the flight of the criminals from jail",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "FROM",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ESCAPE": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "SOURCE": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "FLIGHT-0",
+        "OF-1",
+        "THE",
+        "CRIMINAL-2",
+        "FROM-3",
+        "THE",
+        "PRISON-BUILDING-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FLIGHT-N2",
+      "WORD": "FLIGHT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FLIGHT-N3": {
+      "CAT": "N",
+      "DEF": "nominal form for the ability of some animals to fly",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FLY-ANIMATE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FLIGHT-N3",
+      "WORD": "FLIGHT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

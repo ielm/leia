@@ -1,0 +1,16 @@
+{
+  "name": "@ORAL-GEL",
+  "isa": [
+    "@DRUG-FORM"
+  ],
+  "def": "a gel used in the mouth or on the teeth the delivers some medicine",
+  "local": [],
+  "block": [
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,57 @@
+{
+  "word": "QUITE",
+  "senses": {
+    "QUITE-ADV1": {
+      "CAT": "ADV",
+      "DEF": "on the relatively high end of the given scale",
+      "EX": "they have a quite dangerous job",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        },
+        "ROOT": "$VAR1",
+        "CAT": [
+          "ADJ",
+          "ADV"
+        ]
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "DELIMIT-SCALE",
+          "^$VAR1",
+          "EXTREME",
+          0.1
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT",
+        "THE",
+        "BUILDING",
+        "QUITE-0",
+        "HARD-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "PRETTY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "QUITE-ADV1",
+      "WORD": "QUITE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "name": "@CHEMICAL-REACTION",
+  "isa": [
+    "@PHYSICAL-EVENT"
+  ],
+  "def": "chemical transformation or change : the interaction of chemical entities",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@MEDICAL-BUILDING"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@LABORATORY"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@LABORATORY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CHEMICAL-COMPOUND"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ELEMENT-MATERIAL"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@HEALTH-CARE-ORGANIZATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@MATERIAL-MANUFACTURING-CORPORATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@SCIENTIST"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@PATHOLOGIST"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@TECHNICIAN"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@CHEMISTRY"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@CHEMICAL-ENGINEERING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

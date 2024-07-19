@@ -1,0 +1,97 @@
+{
+  "name": "@POLISH",
+  "isa": [
+    "@RUB"
+  ],
+  "def": "to smooth and brighten, as by rubbing",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GLASS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SHOE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WINDOW"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FLOOR"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FAUCET"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FURNITURE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@UTENSIL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WINE-GLASS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MOLDING"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@RAILING"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BALUSTER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BATHTUB"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIGHTING-FIXTURE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SINK-FIXTURE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

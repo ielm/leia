@@ -1,0 +1,36 @@
+{
+  "word": "IDYLL",
+  "senses": {
+    "IDYLL-N1": {
+      "CAT": "N",
+      "DEF": "A short lyrical poem or prose piece describing a rural or pastoral scene, usually in idealized terms. ",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LITERARY-COMPOSITION": {
+          "HAS-STYLE": "POEM",
+          "ABOUT-AS-TOPIC": "COUNTRYSIDE",
+          "LENGTH": [
+            "<",
+            0.3
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "IDYLL-N1",
+      "WORD": "IDYLL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

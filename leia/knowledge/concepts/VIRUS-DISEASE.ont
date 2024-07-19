@@ -1,0 +1,26 @@
+{
+  "name": "@VIRUS-DISEASE",
+  "isa": [
+    "@COMMUNICABLE-DISEASE"
+  ],
+  "def": "to succumb to any of a large group of tiny infective agents causing various diseases",
+  "local": [],
+  "block": [
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ALLERGY"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@BACTERIA"
+    }
+  ],
+  "private": {}
+}

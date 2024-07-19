@@ -1,0 +1,31 @@
+{
+  "name": "@PARKING-SPACE",
+  "isa": [
+    "@EXTERIOR-BUILDING-PART"
+  ],
+  "def": "a designated space to park a vehicle, often near a building",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@BRICK"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ROCK"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    }
+  ],
+  "private": {}
+}

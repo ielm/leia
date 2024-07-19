@@ -1,0 +1,63 @@
+{
+  "word": "IN_ADDITION_TO",
+  "senses": {
+    "IN_ADDITION_TO-PREP1": {
+      "CAT": "PREP",
+      "DEF": "discourse relation",
+      "EX": "she ate salad in addition to soup in addition to opening presents, we also sang carols",
+      "COMMENTS": "specifics are too subtle to worry about for now",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "DISCOURSE-RELATION": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "IN_ADDITION_TO-0",
+        "THE",
+        "MAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "IN_ADDITION_TO-PREP1",
+      "WORD": "IN_ADDITION_TO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

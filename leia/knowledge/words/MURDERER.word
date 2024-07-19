@@ -1,0 +1,33 @@
+{
+  "word": "MURDERER",
+  "senses": {
+    "MURDERER-N1": {
+      "CAT": "N",
+      "DEF": "a person who kills",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "AGENT-OF": "KILL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "KILLER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "MURDERER-N1",
+      "WORD": "MURDERER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

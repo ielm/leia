@@ -1,0 +1,22 @@
+{
+  "name": "@KITCHEN-STAFF",
+  "isa": [
+    "@WORK-ROLE"
+  ],
+  "def": "restaurant employees who, working behind-the-scenes, do not deal directly with restaurant patrons",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@KITCHEN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

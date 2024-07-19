@@ -1,0 +1,70 @@
+{
+  "word": "COLLISION",
+  "senses": {
+    "COLLISION-N1": {
+      "CAT": "N",
+      "DEF": "crash",
+      "EX": "the collision between the trucks was tragic",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "BETWEEN",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "COLLIDE": {
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "SAW",
+        "THE",
+        "IMPENDING",
+        "COLLISION-0",
+        "BETWEEN-1",
+        "THE",
+        "CARS-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "IMPACT",
+        "CRASH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "COLLISION-N1",
+      "WORD": "COLLISION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

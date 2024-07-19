@@ -1,0 +1,38 @@
+{
+  "word": "RAISED",
+  "senses": {
+    "RAISED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "something that is higher than the surrounding things in the area",
+      "EX": "raised podium",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "HEIGHT": [
+            ">",
+            0.5
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RAISED-ADJ1",
+      "WORD": "RAISED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

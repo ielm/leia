@@ -1,0 +1,27 @@
+{
+  "word": "CONSTABLE",
+  "senses": {
+    "CONSTABLE-N1": {
+      "CAT": "N",
+      "DEF": "a peace officer with less power than a regular police officer",
+      "EX": "",
+      "COMMENTS": "I'm mapping directly to police-officer; don't think the difference in power is relevant for our grain size",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "POLICE-OFFICER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONSTABLE-N1",
+      "WORD": "CONSTABLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

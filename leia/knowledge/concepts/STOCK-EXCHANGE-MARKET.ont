@@ -1,0 +1,16 @@
+{
+  "name": "@STOCK-EXCHANGE-MARKET",
+  "isa": [
+    "@INVESTMENT-CORPORATION"
+  ],
+  "def": "a market organized for the buying and selling of stocks and bonds",
+  "local": [],
+  "block": [
+    {
+      "slot": "area-of-business-activity",
+      "facet": "sem",
+      "filler": "@INVESTMENT-EVENT"
+    }
+  ],
+  "private": {}
+}

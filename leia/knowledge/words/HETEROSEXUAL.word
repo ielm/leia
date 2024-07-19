@@ -1,0 +1,110 @@
+{
+  "word": "HETEROSEXUAL",
+  "senses": {
+    "HETEROSEXUAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "having a hetersexual sexual orientation; of people",
+      "EX": "Her boss is heterosexual",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "HUMAN",
+          "SEXUAL-ORIENTATION": "HETEROSEXUAL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HETEROSEXUAL-ADJ1",
+      "WORD": "HETEROSEXUAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HETEROSEXUAL-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "associated with heterosexual people; when modifying non-humans",
+      "EX": "a heterosexual bar",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": {
+              "VALUE": "REFSEM2"
+            },
+            "CARDINALITY": [
+              ">=",
+              1
+            ]
+          }
+        },
+        "REFSEM2": {
+          "HUMAN": {
+            "SEXUAL-ORIENTATION": "HETEROSEXUAL"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HETEROSEXUAL-ADJ2",
+      "WORD": "HETEROSEXUAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HETEROSEXUAL-N1": {
+      "CAT": "N",
+      "DEF": "a person who has heterosexual sexual orientation",
+      "EX": "He is a heterosexual",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "SEXUAL-ORIENTATION": "HETEROSEXUAL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HETEROSEXUAL-N1",
+      "WORD": "HETEROSEXUAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

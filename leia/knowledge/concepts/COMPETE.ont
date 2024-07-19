@@ -1,0 +1,36 @@
+{
+  "name": "@COMPETE",
+  "isa": [
+    "@OPPOSITION-EVENT"
+  ],
+  "def": "to vie (for something) in a contest or in business",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@WIN"
+    },
+    {
+      "slot": "has-loser",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "has-winner",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "has-loser",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "has-winner",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,117 @@
+{
+  "word": "ACTIVITY",
+  "senses": {
+    "ACTIVITY-N1": {
+      "CAT": "N",
+      "DEF": "action",
+      "EX": "the activity by gunmen on the border",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": [
+            "OF",
+            "BY"
+          ],
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "ACTIVITY-0",
+        "BY-1",
+        "GUNMEN-2",
+        "ON",
+        "THE",
+        "BORDER",
+        "WAS",
+        "DISCONCERTING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "IOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ACTIVITY-N1",
+      "WORD": "ACTIVITY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ACTIVITY-N2": {
+      "CAT": "N",
+      "DEF": "event + activity --> event",
+      "EX": "disease activity --> disease",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DISEASE-1",
+        "ACTIVITY-0",
+        "WAS",
+        "INDOLENT"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ACTIVITY-N2",
+      "WORD": "ACTIVITY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

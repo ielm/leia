@@ -1,0 +1,56 @@
+{
+  "word": "DEFRAUD",
+  "senses": {
+    "DEFRAUD-V1": {
+      "CAT": "V",
+      "DEF": "to take sth. by fraud",
+      "EX": "they defrauded the elderly by selling them bogus insurance policies",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "STEAL": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          },
+          "INSTRUMENT": "FRAUD"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-2",
+        "DEFRAUDED-0",
+        "THE",
+        "ELDERLY-3",
+        "BY",
+        "SELLING",
+        "THEM",
+        "BOGUS",
+        "INSURANCE",
+        "POLICIES"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DEFRAUD-V1",
+      "WORD": "DEFRAUD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

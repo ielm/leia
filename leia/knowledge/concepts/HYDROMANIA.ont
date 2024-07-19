@@ -1,0 +1,27 @@
+{
+  "name": "@HYDROMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "uncontrollable fascination with water",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WATER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

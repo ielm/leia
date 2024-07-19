@@ -1,0 +1,38 @@
+{
+  "word": "PIANIST",
+  "senses": {
+    "PIANIST-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "AGENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "PLAY-MUSICAL-INSTRUMENT": {
+            "INSTRUMENT": "PIANO"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PIANIST-N1",
+      "WORD": "PIANIST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

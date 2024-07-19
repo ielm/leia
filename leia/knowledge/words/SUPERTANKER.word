@@ -1,0 +1,31 @@
+{
+  "word": "SUPERTANKER",
+  "senses": {
+    "SUPERTANKER-N1": {
+      "CAT": "N",
+      "DEF": "a very large oil tanker",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "OIL-TANKER": {
+          "SIZE": 0.8
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SUPERTANKER-N1",
+      "WORD": "SUPERTANKER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

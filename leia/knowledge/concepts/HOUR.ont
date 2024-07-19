@@ -1,0 +1,19 @@
+{
+  "name": "@HOUR",
+  "isa": [
+    "@TIME-INTERVAL-UNIT"
+  ],
+  "def": "A unit of time equal to 3600 seconds",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        3600.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

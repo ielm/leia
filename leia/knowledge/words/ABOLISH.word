@@ -1,0 +1,50 @@
+{
+  "word": "ABOLISH",
+  "senses": {
+    "ABOLISH-V1": {
+      "CAT": "V",
+      "DEF": "to eliminate",
+      "EX": "they abolished slavery",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "ELIMINATE": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-2",
+        "ABOLISHED-0",
+        "THE",
+        "RULES-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ABOLISH-V1",
+      "WORD": "ABOLISH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

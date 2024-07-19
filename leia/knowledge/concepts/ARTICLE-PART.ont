@@ -1,0 +1,22 @@
+{
+  "name": "@ARTICLE-PART",
+  "isa": [
+    "@TEXT-FORM"
+  ],
+  "def": "something that is a part of an article",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@ARTICLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

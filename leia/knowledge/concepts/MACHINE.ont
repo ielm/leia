@@ -1,0 +1,22 @@
+{
+  "name": "@MACHINE",
+  "isa": [
+    "@DEVICE"
+  ],
+  "def": "a mechanical, electrical or electronic object used to produce something",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MACHINE-PART"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

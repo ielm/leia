@@ -1,0 +1,21 @@
+{
+  "name": "@EATING-DISORDER",
+  "isa": [
+    "@MENTAL-DISORDER"
+  ],
+  "def": "a mental disorder manifesting itself in odd eating habits.",
+  "local": [],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

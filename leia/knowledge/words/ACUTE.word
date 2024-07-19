@@ -1,0 +1,56 @@
+{
+  "word": "ACUTE",
+  "senses": {
+    "ACUTE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "intense",
+      "EX": "an acute pain",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "INTENSITY": [
+            ">",
+            0.9
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DISEASE",
+        "CAUSED",
+        "ACUTE-0",
+        "PAIN-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "INTENSE",
+        "SEVERE",
+        "BAD"
+      ],
+      "HYPONYMS": [
+        "HIGH"
+      ],
+      "SENSE": "ACUTE-ADJ1",
+      "WORD": "ACUTE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

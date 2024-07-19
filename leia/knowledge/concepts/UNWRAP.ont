@@ -1,0 +1,47 @@
+{
+  "name": "@UNWRAP",
+  "isa": [
+    "@ANIMAL-LIVING-EVENT"
+  ],
+  "def": "to unwrap or expose an object--to remove a layer of packing material",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PACKAGING-MATERIAL"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@WRAP"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "enablement",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

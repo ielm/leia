@@ -1,0 +1,53 @@
+{
+  "word": "ANOTHER",
+  "senses": {
+    "ANOTHER-DET1": {
+      "CAT": "DET",
+      "DEF": "part of some set, not the first element",
+      "EX": "another hardship",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "DET": {
+          "ROOT": "$VAR0",
+          "CAT": "DET"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "ORDINALITY": [
+            ">",
+            1
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ANOTHER-0",
+        "MAN-1",
+        "RAN"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ANOTHER-DET1",
+      "WORD": "ANOTHER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

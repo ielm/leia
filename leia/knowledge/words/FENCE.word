@@ -1,0 +1,33 @@
+{
+  "word": "FENCE",
+  "senses": {
+    "FENCE-N1": {
+      "CAT": "N",
+      "DEF": "a structure for showing the boundary of a territory, keeping someone in or out, etc.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FENCE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SNAKE_RAIL_FENCE",
+        "SNAKE_FENCE",
+        "WORM_FENCE",
+        "FENCING",
+        "RAIL_FENCE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "FENCE-N1",
+      "WORD": "FENCE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

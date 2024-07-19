@@ -1,0 +1,27 @@
+{
+  "name": "@CALCULATE-AVERAGE",
+  "isa": [
+    "@CALCULATE"
+  ],
+  "def": "to figure out the average of by dividing the sum of two or more quantities by the number of quantities",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@ADD-UP"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@DIVIDE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

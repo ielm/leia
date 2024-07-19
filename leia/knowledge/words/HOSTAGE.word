@@ -1,0 +1,31 @@
+{
+  "word": "HOSTAGE",
+  "senses": {
+    "HOSTAGE-N1": {
+      "CAT": "N",
+      "DEF": "a person who is seized and held",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "THEME-OF": "ABDUCT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HOSTAGE-N1",
+      "WORD": "HOSTAGE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

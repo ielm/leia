@@ -1,0 +1,88 @@
+{
+  "word": "LISTING",
+  "senses": {
+    "LISTING-N1": {
+      "CAT": "N",
+      "DEF": "an entry in a list or directory",
+      "EX": "the first listing in the telephone book is aaron",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "TEXT": {
+          "PART-OF-OBJECT": "DIRECTORY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LISTING-N1",
+      "WORD": "LISTING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LISTING-N2": {
+      "CAT": "N",
+      "DEF": "a list or directory",
+      "EX": "a listing of local doctors",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "DIRECTORY": {
+          "ABOUT-AS-TOPIC": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "LISTING-0",
+        "OF-1",
+        "THE",
+        "EVENT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LISTING-N2",
+      "WORD": "LISTING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

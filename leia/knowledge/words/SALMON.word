@@ -1,0 +1,34 @@
+{
+  "word": "SALMON",
+  "senses": {
+    "SALMON-N1": {
+      "CAT": "N",
+      "DEF": "type of fish",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SALMON",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "ATLANTIC_SALMON",
+        "RED_SALMON",
+        "SOCKEYE_SALMON",
+        "CHINOOK_SALMON",
+        "KING_SALMON",
+        "SILVER_SALMON"
+      ],
+      "SENSE": "SALMON-N1",
+      "WORD": "SALMON",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@SALSA",
+  "isa": [
+    "@FLAVORING"
+  ],
+  "def": "Chopped uncooked vegetables or fruit (tomatoes, onions, peppers, etc.) used as a condiment.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@TOMATO"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ONION"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PEPPER-VEGETABLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@PARADE",
+  "isa": [
+    "@ENTERTAIN-EVENT"
+  ],
+  "def": "an organized procession or march, often on a holiday",
+  "local": [],
+  "block": [
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

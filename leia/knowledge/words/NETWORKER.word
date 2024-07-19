@@ -1,0 +1,31 @@
+{
+  "word": "NETWORKER",
+  "senses": {
+    "NETWORKER-N1": {
+      "CAT": "N",
+      "DEF": "a company that does networking",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CORPORATION": {
+          "AREA-OF-BUSINESS-ACTIVITY": "COMPUTER-NETWORK"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NETWORKER-N1",
+      "WORD": "NETWORKER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@EMPHASIZE",
+  "isa": [
+    "@ASSERTIVE-ACT"
+  ],
+  "def": "to give special stress to an idea or word in speaking or writing",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@SPEECH-ACT"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@WRITE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

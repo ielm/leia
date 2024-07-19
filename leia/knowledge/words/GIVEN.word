@@ -1,0 +1,68 @@
+{
+  "word": "GIVEN",
+  "senses": {
+    "GIVEN-CONJ1": {
+      "CAT": "CONJ",
+      "DEF": "indicates a precondition and effect",
+      "EX": "Given good enough grades(,) you can get into a good college",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CONJ": {
+          "ROOT": "$VAR0",
+          "CAT": "CONJ"
+        },
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "PUNCT": {
+          "ROOT-WORD": "*COMMA*",
+          "ROOT": "$VAR2",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        },
+        "CL": {
+          "ROOT": "$VAR3",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR3": {
+          "PRECONDITION": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "GIVEN-0",
+        "THE",
+        "DOG-1",
+        "*COMMA*-2",
+        "THE",
+        "MAN",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR2",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GIVEN-CONJ1",
+      "WORD": "GIVEN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

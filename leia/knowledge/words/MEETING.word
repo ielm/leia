@@ -1,0 +1,123 @@
+{
+  "word": "MEETING",
+  "senses": {
+    "MEETING-N1": {
+      "CAT": "N",
+      "DEF": "getting together, usus. to discuss something",
+      "EX": "Our meeting (about the budget) lasted 2 hours",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": [
+            "ABOUT",
+            "ON"
+          ],
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MEETING": {
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": [
+              "NOT",
+              "TIME-INTERVAL-UNIT"
+            ]
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SESSION-0",
+        "ABOUT-1",
+        "THE",
+        "OBJECT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "SESSION"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "MEETING-N1",
+      "WORD": "MEETING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MEETING-N2": {
+      "CAT": "N",
+      "DEF": "phrasal: meeting of the minds = agreement",
+      "EX": "they had a meeting of the minds over Kosovo they got together for a meeting of the minds a meeting of the minds among world leaders is a rare cause for celebration",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OBJ": {
+            "ART": {
+              "ROOT": "$VAR2",
+              "CAT": "ART",
+              "ROOT-WORD": "THE"
+            },
+            "ROOT": "$VAR3",
+            "ROOT-WORD": "MIND",
+            "NUMBER": "PL"
+          }
+        }
+      },
+      "SEM-STRUC": "AGREE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "MEETING-0",
+        "OF-1",
+        "THE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "DEP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MEETING-N2",
+      "WORD": "MEETING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

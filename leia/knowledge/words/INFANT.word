@@ -1,0 +1,34 @@
+{
+  "word": "INFANT",
+  "senses": {
+    "INFANT-N1": {
+      "CAT": "N",
+      "DEF": "a baby human (we need different ages for different types of animals, which is why not all are included in this sense)",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "AGE": {
+            "<": 1,
+            "MEASURING-UNIT": "YEAR"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INFANT-N1",
+      "WORD": "INFANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

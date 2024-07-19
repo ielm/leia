@@ -1,0 +1,33 @@
+{
+  "word": "POTAGE",
+  "senses": {
+    "POTAGE-N1": {
+      "CAT": "N",
+      "DEF": "A thick, creamy soup",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SOUP": {
+          "HAS-OBJECT-AS-PART": "VEGETABLE-FOODSTUFF",
+          "HAS-OBJECT-AS-PART-1": "MEAT",
+          "HAS-OBJECT-AS-PART-2": "FISH-MEAT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "POTAGE-N1",
+      "WORD": "POTAGE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

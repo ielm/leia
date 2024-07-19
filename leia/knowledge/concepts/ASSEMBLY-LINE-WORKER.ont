@@ -1,0 +1,22 @@
+{
+  "name": "@ASSEMBLY-LINE-WORKER",
+  "isa": [
+    "@WORK-ROLE"
+  ],
+  "def": "a factory worker who performs a specific task in assembling the work as it passed down the line",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@FACTORY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

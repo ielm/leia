@@ -1,0 +1,9 @@
+{
+  "name": "$RELATIVE-TO-NORM",
+  "def": "Indicates whether cardinality or quant is considered normal, too much/many or too little/few. This actually folds together evaluative modality scoping over cardinality or quant represented on the abstract scale, but it is much more concise - we will leave it for now but possibly remove it later.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$PARAMETRIC-SCALAR"
+}

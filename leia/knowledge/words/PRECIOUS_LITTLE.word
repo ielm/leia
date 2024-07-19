@@ -1,0 +1,129 @@
+{
+  "word": "PRECIOUS_LITTLE",
+  "senses": {
+    "PRECIOUS_LITTLE-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "precious little thinking went into this.",
+      "COMMENTS": "the complement is a 'n' since it can't have a determiner or article.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "NUMBER": "SING"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "AMOUNT": [
+            "<",
+            0.1
+          ],
+          "DETERMINATE": "NO",
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRECIOUS_LITTLE-QUANTIFIER1",
+      "WORD": "PRECIOUS_LITTLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PRECIOUS_LITTLE-QUANTIFIER2": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "precious little of the flour has been used.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "CAT": "PREP",
+          "ROOT": "$VAR2",
+          "OBJ": {
+            "ROOT": "$VAR1",
+            "CAT": "NP",
+            "NUMBER": "SING"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "AMOUNT": [
+            "<",
+            0.1
+          ],
+          "DETERMINATE": "NO",
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRECIOUS_LITTLE-QUANTIFIER2",
+      "WORD": "PRECIOUS_LITTLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PRECIOUS_LITTLE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "precious little has been written about it.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "AMOUNT": [
+            "<",
+            0.1
+          ],
+          "DETERMINATE": "NO"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          [
+            "SET",
+            1
+          ]
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRECIOUS_LITTLE-N1",
+      "WORD": "PRECIOUS_LITTLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "word": "EXISTENCE",
+  "senses": {
+    "EXISTENCE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "the lab's existence",
+      "COMMENTS": "'the lab's existence' --> the lab, since ontological instantiation means existence for us; the analyzer must strip the possessive feature from $var1. The tmr-head filler shows that the semantics of $var1 gets passed through.",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "POSSESSIVE": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "BALL-1",
+        "EXISTENCE-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "SURVIVAL"
+      ],
+      "SENSE": "EXISTENCE-N1",
+      "WORD": "EXISTENCE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EXISTENCE-N2": {
+      "CAT": "N",
+      "DEF": "with 'of' pp",
+      "EX": "The existence of minerals in water makes it taste bad",
+      "COMMENTS": "the existence of the lab --> the lab, since ontological instantiation means existence for us; the filler $var2 for tmr-head ensures that the meaning of $var2 gets passed into the tmr",
+      "TMR-HEAD": "$VAR2",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EXISTENCE-0",
+        "OF-1",
+        "THE",
+        "MAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "SURVIVAL"
+      ],
+      "SENSE": "EXISTENCE-N2",
+      "WORD": "EXISTENCE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "@SMOKE",
+  "isa": [
+    "@SUBSTANCE-USE-EVENT"
+  ],
+  "def": "to draw in and exhale the smoke of tobacco, etc.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SMOKING-MATERIAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SMOKING-DEVICE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

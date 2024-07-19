@@ -1,0 +1,32 @@
+{
+  "name": "@BRASS-INSTRUMENT",
+  "isa": [
+    "@MUSICAL-INSTRUMENT"
+  ],
+  "def": "musical instruments made of brass, usually having a bell-shaped horn",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@BRASS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "is-consumer-good",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    }
+  ],
+  "private": {}
+}

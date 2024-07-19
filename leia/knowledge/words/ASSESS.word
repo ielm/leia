@@ -1,0 +1,63 @@
+{
+  "word": "ASSESS",
+  "senses": {
+    "ASSESS-V1": {
+      "CAT": "V",
+      "DEF": "to measure, gauge, evaluate s.o. or sth.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "EVALUATE": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-2",
+        "ASSESSED-0",
+        "THE",
+        "DOG-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "EVALUATE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ASSESS-V1",
+      "WORD": "ASSESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

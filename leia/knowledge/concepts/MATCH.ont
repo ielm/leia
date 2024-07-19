@@ -1,0 +1,27 @@
+{
+  "name": "@MATCH",
+  "isa": [
+    "@FIRE-STARTING-DEVICE"
+  ],
+  "def": "a slender piece of wood, cardboard, etc. tipped with a substance that catches fire with friction",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CARDBOARD"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

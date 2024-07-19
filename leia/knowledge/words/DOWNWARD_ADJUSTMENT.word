@@ -1,0 +1,45 @@
+{
+  "word": "DOWNWARD_ADJUSTMENT",
+  "senses": {
+    "DOWNWARD_ADJUSTMENT-N1": {
+      "CAT": "N",
+      "DEF": "how much you need to pay to have a petition granted",
+      "EX": "",
+      "COMMENTS": "an approximate mapping - not sure about the financial details",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "PAY": {
+            "PURPOSE": "PETITION-FOR-RELIEF"
+          }
+        },
+        "MODALITY": {
+          "TYPE": "OBLIGATIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DOWNWARD_ADJUSTMENT-N1",
+      "WORD": "DOWNWARD_ADJUSTMENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

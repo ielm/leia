@@ -1,0 +1,37 @@
+{
+  "name": "@ASTRAPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of thunder and lightning",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@THUNDERSTORM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIGHTNING"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@THUNDER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

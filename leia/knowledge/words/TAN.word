@@ -1,0 +1,72 @@
+{
+  "word": "TAN",
+  "senses": {
+    "TAN-N1": {
+      "CAT": "N",
+      "DEF": "with no explicit modifyee",
+      "EX": "some people like tan",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PHYSICAL-OBJECT": {
+          "COLOR": "TAN"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TAN-N1",
+      "WORD": "TAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "TAN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "a color",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "COLOR": "TAN"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "TAN-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "CLAY-COLORED"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "TAN-ADJ1",
+      "WORD": "TAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

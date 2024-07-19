@@ -1,0 +1,186 @@
+{
+  "word": "OPTIMISTIC",
+  "senses": {
+    "OPTIMISTIC-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "he is optimistic about the exam.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "PP": {
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "ROOT-WORD": "ABOUT",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR3": {
+          "SEM": "EVENT",
+          "TIME": [
+            ">",
+            [
+              "FIND-ANCHOR-TIME"
+            ]
+          ]
+        },
+        "MODALITY": {
+          "TYPE": "EPITEUCTIC",
+          "VALUE": 0.7,
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          },
+          "SCOPE": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "MODALITY-1": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 1,
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          },
+          "SCOPE": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OPTIMISTIC-ADJ1",
+      "WORD": "OPTIMISTIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "OPTIMISTIC-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "he is optimistic.",
+      "COMMENTS": "with semantic ellipsis",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "EVENT": {
+            "TIME": [
+              ">",
+              [
+                "FIND-ANCHOR-TIME"
+              ]
+            ]
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPITEUCTIC",
+          "VALUE": 0.7,
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          },
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "MODALITY-1": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 1,
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          },
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "REFSEM1",
+          "REFERENCE-PROCEDURES"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OPTIMISTIC-ADJ2",
+      "WORD": "OPTIMISTIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "OPTIMISTIC-ADJ3": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "OPTIMISM": 0.9
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OPTIMISTIC-ADJ3",
+      "WORD": "OPTIMISTIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

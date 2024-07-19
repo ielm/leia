@@ -1,0 +1,36 @@
+{
+  "word": "EFFICIENCY_APARTMENT",
+  "senses": {
+    "EFFICIENCY_APARTMENT-N1": {
+      "CAT": "N",
+      "DEF": "a one-room apartment, usually furnished,   with a private bathroom and kitchenette",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "APARTMENT": {
+          "SIZE": [
+            "<",
+            0.2
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "STUDIO_APARTMENT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "EFFICIENCY_APARTMENT-N1",
+      "WORD": "EFFICIENCY_APARTMENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

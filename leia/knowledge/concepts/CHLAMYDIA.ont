@@ -1,0 +1,28 @@
+{
+  "name": "@CHLAMYDIA",
+  "isa": [
+    "@MICRO-ORGANISM"
+  ],
+  "def": "Any of various gram-negative, coccoid microorganisms of the genus Chlamydia, especially C. psittaci and C. trachomatis, that are pathogenic to humans and other animals, causing conjunctivitis in cattle and sheep and trachoma, urethritis, and proctitis in humans.",
+  "local": [
+    {
+      "slot": "safety-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "safety-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

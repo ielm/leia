@@ -1,0 +1,19 @@
+{
+  "name": "@ASTRONOMICAL-UNIT",
+  "isa": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "def": "(Wikipedia) a unit of length based on the distance from the Earth to the Sun; 92955807*mile",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        149597870691
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

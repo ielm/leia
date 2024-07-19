@@ -1,0 +1,30 @@
+{
+  "name": "@FORT",
+  "isa": [
+    "@BARRIER-ARTIFACT",
+    "@MILITARY-INSTALLATION"
+  ],
+  "def": "A fortified position that is currently or was at one point stationed with troops.",
+  "local": [],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "solid"
+    },
+    {
+      "slot": "technological-level",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

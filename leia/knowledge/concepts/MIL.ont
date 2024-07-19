@@ -1,0 +1,19 @@
+{
+  "name": "@MIL",
+  "isa": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "def": "1000 mil equals one inch, mil also termed \"thou\" in the UK; 0.001*inch",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        2.54e-05
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

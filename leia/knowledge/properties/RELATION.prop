@@ -1,0 +1,9 @@
+{
+  "name": "$RELATION",
+  "def": "a property that connects two or more concepts",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$RELATION",
+  "measured-in": [],
+  "container": "$PROPERTY"
+}

@@ -1,0 +1,37 @@
+{
+  "word": "CABLE_TV",
+  "senses": {
+    "CABLE_TV-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D] described here as expensive tv programming; we can be more technical later if we need to be",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "TELEVISION-PROGRAMMING": {
+          "COST": [
+            ">",
+            0.7
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "CABLE",
+        "CABLE_TELEVISION"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CABLE_TV-N1",
+      "WORD": "CABLE_TV",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

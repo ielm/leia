@@ -1,0 +1,350 @@
+{
+  "word": "DIAGNOSE",
+  "senses": {
+    "DIAGNOSE-V1": {
+      "CAT": "V",
+      "DEF": "to identify the cause of medical problems",
+      "EX": "the doctor diagnosed her",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "DIAGNOSE-DISEASE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOCTOR-1",
+        "DIAGNOSED-0",
+        "HER-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DIAGNOSE-V1",
+      "WORD": "DIAGNOSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DIAGNOSE-V2": {
+      "CAT": "V",
+      "DEF": "to identify the cause of medical problems",
+      "EX": "the doctor diagnosed cancer",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "DIAGNOSE-DISEASE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOCTOR-1",
+        "DIAGNOSED-0",
+        "CANCER-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DIAGNOSE-V2",
+      "WORD": "DIAGNOSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DIAGNOSE-V3": {
+      "CAT": "V",
+      "DEF": "to identify the cause of a non-medical problem, e.g., an engineering or mechanical problem",
+      "EX": "the mechanic diagnosed the clunk in the car",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "DIAGNOSE-NON-DISEASE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MECHANIC-1",
+        "DIAGNOSED-0",
+        "THE",
+        "CLUNK-2",
+        "IN",
+        "HIS",
+        "CAR"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DIAGNOSE-V3",
+      "WORD": "DIAGNOSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DIAGNOSE-V4": {
+      "CAT": "V",
+      "DEF": "phrasal: diagnose s.o. as having some disease",
+      "EX": "the doctor diagnosed her as having cancer",
+      "COMMENTS": "in this sense 'as having X' is required; it is not merged with v1 because this is a strange syn-struc and we don't want the productive aspects of v1 to be messed up by the entire thing being interpreted as a phrasal.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "CONJ": {
+          "ROOT": "$VAR3",
+          "CAT": "CONJ",
+          "ROOT-WORD": "AS"
+        },
+        "V": {
+          "ROOT": "$VAR4",
+          "CAT": "V",
+          "ROOT-WORD": "HAVE",
+          "FORM": "PROGRESSIVE"
+        },
+        "NP": {
+          "ROOT": "$VAR5",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "DIAGNOSE-DISEASE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR5"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DENTIST-1",
+        "DIAGNOSED-0",
+        "THE",
+        "PATIENT-2",
+        "AS-3",
+        "HAD-4",
+        "THE",
+        "PATHOLOGIC-FUNCTION-5"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR4",
+          "$VAR3"
+        ],
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR4"
+        ],
+        [
+          "DEP",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "DOBJ",
+          "$VAR4",
+          "$VAR5"
+        ],
+        [
+          "IOBJ",
+          "$VAR4",
+          "$VAR5"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "XSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DIAGNOSE-V4",
+      "WORD": "DIAGNOSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DIAGNOSE-V230": {
+      "CAT": "V",
+      "COMMENTS": "",
+      "DEF": "fixed phrasal: x diagnose y as having z",
+      "EX": "The doctor diagnosed Jenna as having cancer.",
+      "SYN-STRUC": {
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "NP-1": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "CONJ": {
+          "ROOT": "$VAR3",
+          "CAT": [
+            "CONJ",
+            "PREP"
+          ],
+          "ROOT-WORD": "AS"
+        },
+        "V": {
+          "ROOT": "$VAR4",
+          "CAT": "V",
+          "ROOT-WORD": "HAVE",
+          "FORM": "PROGRESSIVE"
+        },
+        "NP-2": {
+          "ROOT": "$VAR5",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "DIAGNOSE-DISEASE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR5"
+          }
+        },
+        "^$VAR5": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "MEANING-PROCEDURES": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DIAGNOSE-V230",
+      "WORD": "DIAGNOSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": []
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "@BEEF",
+  "isa": [
+    "@MEAT"
+  ],
+  "def": "the meat of a full-grown cow, ox, bull or steer",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@COW"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@FOODSTUFF"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

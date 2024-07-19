@@ -1,0 +1,45 @@
+{
+  "word": "AUTOMATICALLY",
+  "senses": {
+    "AUTOMATICALLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "without human supervision",
+      "EX": "the sprinkler came on automatically",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "AGENT": "*NOTHING*"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "AUTOMATICALLY-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AUTOMATICALLY-ADV1",
+      "WORD": "AUTOMATICALLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

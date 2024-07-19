@@ -1,0 +1,27 @@
+{
+  "name": "@FOREBRAIN",
+  "isa": [
+    "@SEGMENT-OF-BRAIN"
+  ],
+  "def": "Segment of brain which contains the telencephalon, diencephalon, lateral ventricles and third ventricle.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@TELENCEPHALON"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@DIENCEPHALON"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

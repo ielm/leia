@@ -1,0 +1,24 @@
+{
+  "name": "@GEMSTONE",
+  "isa": [
+    "@MINERAL"
+  ],
+  "def": "any mineral that can be used in a piece of jewelry when cut and polished",
+  "local": [
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

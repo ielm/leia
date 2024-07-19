@@ -1,0 +1,367 @@
+{
+  "word": "EASY",
+  "senses": {
+    "EASY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "easy X (event) = X is not difficult",
+      "EX": "it was a (moderately) easy hike; (unusually) easy exercises build endurance rather than strength",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "DIFFICULTY": 0.2
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "EASY-0",
+        "DOG-1",
+        "HIT",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "BASIC",
+        "EFFORTLESS",
+        "UNDEMANDING",
+        "UNTROUBLESOME"
+      ],
+      "HYPONYMS": [
+        "CONVENIENT",
+        "ELEMENTARY",
+        "LIGHT",
+        "PAINLESS",
+        "PLAIN",
+        "SIMPLE"
+      ],
+      "SENSE": "EASY-ADJ1",
+      "WORD": "EASY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EASY-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "X *be* easy to Y (event) = event Y involving X is not difficult",
+      "EX": "the text was (moderately) easy to read; the times were (unusually) easy to find work; he was being (particularly) easy to teach",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT-WORD": "*BE*",
+        "ROOT": "$VAR2",
+        "CAT": "V",
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "XCOMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "THEME-OF": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR3": {
+          "DIFFICULTY": 0.2
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "BUILDING-1",
+        "IS-2",
+        "EASY-0",
+        "TO",
+        "HIT-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "BASIC",
+        "EFFORTLESS",
+        "UNDEMANDING",
+        "UNTROUBLESOME"
+      ],
+      "HYPONYMS": [
+        "CONVENIENT",
+        "ELEMENTARY",
+        "LIGHT",
+        "PAINLESS",
+        "PLAIN",
+        "SIMPLE"
+      ],
+      "SENSE": "EASY-ADJ2",
+      "WORD": "EASY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EASY-ADJ4": {
+      "CAT": "ADJ",
+      "DEF": "easy X (no specified event) = some event involving X is not difficult",
+      "EX": "it was a (moderately) easy text; (unusually) easy times are relaxing; he was a (particularly) easy child",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "OBJECT",
+          "THEME-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "EVENT": {
+            "DIFFICULTY": 0.2
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "REFSEM1",
+          "^$VAR1"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "EASY-0",
+        "DOG-1",
+        "HIT",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "BASIC",
+        "EFFORTLESS",
+        "UNDEMANDING",
+        "UNTROUBLESOME"
+      ],
+      "HYPONYMS": [
+        "CONVENIENT",
+        "ELEMENTARY",
+        "LIGHT",
+        "PAINLESS",
+        "PLAIN",
+        "SIMPLE"
+      ],
+      "SENSE": "EASY-ADJ4",
+      "WORD": "EASY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EASY-ADJ3": {
+      "CAT": "ADJ",
+      "DEF": "phrasal: easy X to Y (event) = event Y involving X is not difficult",
+      "EX": "it was a (moderately) easy text to read; (unusually) easy times to find work build complacency; he was a (particularly) easy child to teach",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "XCOMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "THEME-OF": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR2": {
+          "DIFFICULTY": 0.2
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "CHOSE",
+        "THE",
+        "BUILDING-1",
+        "THAT",
+        "WAS",
+        "EASY-0",
+        "TO",
+        "HIT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "XCOMP",
+          "$VAR1",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "BASIC",
+        "EFFORTLESS",
+        "UNDEMANDING",
+        "UNTROUBLESOME"
+      ],
+      "HYPONYMS": [
+        "CONVENIENT",
+        "ELEMENTARY",
+        "LIGHT",
+        "PAINLESS",
+        "PLAIN",
+        "SIMPLE"
+      ],
+      "SENSE": "EASY-ADJ3",
+      "WORD": "EASY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EASY-ADJ800": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "It is easy as pie.",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": [
+            "BE",
+            "SEEM",
+            "APPEAR"
+          ],
+          "CAT": "V"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "ADJ",
+        "PREP": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "AS",
+          "CAT": "PREP"
+        },
+        "N-1": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "PIE",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "DIFFICULTY-ATTRIBUTE": {
+          "DOMAIN": {
+            "VALUE": "^$VAR1"
+          },
+          "RANGE": [
+            "<",
+            0.1
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "IT-1",
+        "IS-2",
+        "EASY-0",
+        "AS-3",
+        "PIE-4"
+      ],
+      "SENSE": "EASY-ADJ800",
+      "WORD": "EASY",
+      "HYPONYMS": [],
+      "SYNONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

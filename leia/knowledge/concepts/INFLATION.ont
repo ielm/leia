@@ -1,0 +1,57 @@
+{
+  "name": "@INFLATION",
+  "isa": [
+    "@NATIONAL-ECONOMIC-EVENT"
+  ],
+  "def": "an increase in the amount of money and credit in relation to the supply of goods and services",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MONEY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CREDIT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ECONOMY"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@NATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

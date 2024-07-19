@@ -1,0 +1,76 @@
+{
+  "word": "ENSURE",
+  "senses": {
+    "ENSURE-V1": {
+      "CAT": "V",
+      "DEF": "to make certain that something will occur",
+      "EX": "they ensured that everything was in place",
+      "COMMENTS": "[D] described as some event that causes the event in question to happen - i.e., to have epistemic modality with a value of 1",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "COMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "EFFECT": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "MODALITY": {
+            "TYPE": "EPISTEMIC",
+            "VALUE": 1,
+            "SCOPE": {
+              "VALUE": "^$VAR2",
+              "SEM": "EVENT"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "ENSURED-0",
+        "THAT",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "SECURE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ENSURE-V1",
+      "WORD": "ENSURE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "word": "IMPROVEMENT",
+  "senses": {
+    "IMPROVEMENT-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "the improvement of the school system by the board of education",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": [
+            "IN",
+            "OF",
+            "TO"
+          ],
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "CHANGE-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR4"
+          },
+          "PRECONDITION": {
+            "VALUE": "REFSEM1"
+          },
+          "EFFECT": {
+            "VALUE": "REFSEM2"
+          }
+        },
+        "REFSEM1": {
+          "MODALITY": {
+            "SCOPE": {
+              "VALUE": "^$VAR2"
+            },
+            "TYPE": "EVALUATIVE"
+          }
+        },
+        "REFSEM2": {
+          "MODALITY": {
+            "SCOPE": {
+              "VALUE": "^$VAR2"
+            },
+            "TYPE": "EVALUATIVE"
+          }
+        },
+        "CONSTRAINT": [
+          "<",
+          [
+            "VALUE",
+            "REFSEM2"
+          ],
+          [
+            "VALUE",
+            "REFSEM1"
+          ]
+        ],
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "IMPROVEMENT-0",
+        "IN-1",
+        "THE",
+        "EVENT-2",
+        "BY-3",
+        "THE",
+        "ANIMAL-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [
+        "MELIORATION"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "IMPROVEMENT-N1",
+      "WORD": "IMPROVEMENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "IMPROVEMENT-N2": {
+      "CAT": "N",
+      "DEF": "phrasal: improvement in PATHOLOGIC-FUNCTION ",
+      "EX": "There was improvement in her chest pain",
+      "COMMENTS": "We need to seek out what the property and scale in question are and determine what it means to get worse. This will be a complex MP.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "IN",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "SEM": "PATHOLOGIC-FUNCTION"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "MAKE-PATHOLOGIC-FUNCTION-IMPROVE",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "IMPROVEMENT-0",
+        "IN-1",
+        "THE",
+        "PATHOLOGIC-FUNCTION-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "IMPROVEMENT-N2",
+      "WORD": "IMPROVEMENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

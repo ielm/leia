@@ -1,0 +1,10 @@
+{
+  "name": "@ENCRYPT-KEY",
+  "isa": [
+    "@BIT-STRING"
+  ],
+  "def": "a secret bit of information used by the encryption and decryption algorithm",
+  "local": [],
+  "block": [],
+  "private": {}
+}

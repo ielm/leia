@@ -1,0 +1,36 @@
+{
+  "name": "@LANTHANUM",
+  "isa": [
+    "@RARE-EARTH-ELEMENT"
+  ],
+  "def": "a soft, silvery-white, malleable, ductile, metallic rare-earth element, obtained chiefly from monazite and bastnaesite, used in glass manufacture and with other rare earths in carbon lights for motion-picture and television studio lighting",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        138
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        57
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        72
+      ]
+    }
+  ],
+  "private": {}
+}

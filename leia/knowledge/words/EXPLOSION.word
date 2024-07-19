@@ -1,0 +1,65 @@
+{
+  "word": "EXPLOSION",
+  "senses": {
+    "EXPLOSION-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "the explosion of the bomb",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "EXPLODE": {
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EXPLOSION-0",
+        "OF-1",
+        "THE",
+        "DOG-2",
+        "DISGUSTED",
+        "MANY",
+        "PEOPLE"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EXPLOSION-N1",
+      "WORD": "EXPLOSION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

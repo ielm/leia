@@ -1,0 +1,168 @@
+{
+  "name": "@EARRING",
+  "isa": [
+    "@JEWELRY"
+  ],
+  "def": "a ring or other small ornament for the lobe of the ear",
+  "local": [
+    {
+      "slot": "thickness",
+      "facet": "sem",
+      "filler": [
+        "><",
+        2
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "><",
+        5
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "><",
+        10
+      ],
+      "meta": {
+        "measured-in": "gram"
+      }
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        "><",
+        3
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    },
+    {
+      "slot": "thickness",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "thickness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "worn-on",
+      "facet": "sem",
+      "filler": "@ANKLE"
+    },
+    {
+      "slot": "worn-on",
+      "facet": "sem",
+      "filler": "@FINGER"
+    },
+    {
+      "slot": "worn-on",
+      "facet": "sem",
+      "filler": "@HAIR"
+    },
+    {
+      "slot": "worn-on",
+      "facet": "sem",
+      "filler": "@HEAD"
+    },
+    {
+      "slot": "worn-on",
+      "facet": "sem",
+      "filler": "@NECK"
+    },
+    {
+      "slot": "worn-on",
+      "facet": "sem",
+      "filler": "@WRIST"
+    }
+  ],
+  "private": {}
+}

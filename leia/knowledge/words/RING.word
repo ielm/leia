@@ -1,0 +1,187 @@
+{
+  "word": "RING",
+  "senses": {
+    "RING-N1": {
+      "CAT": "N",
+      "DEF": "a band around the finger",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "RING",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "PINKIE_RING"
+      ],
+      "SENSE": "RING-N1",
+      "WORD": "RING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RING-N2": {
+      "CAT": "N",
+      "DEF": "something in the shape of a ring",
+      "EX": "a ring of rope",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR2",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "SHAPE": "RING"
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "RING-0",
+        "OF-1",
+        "THE",
+        "MAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RING-N2",
+      "WORD": "RING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RING-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "they rang the bell",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "RING-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "INSTRUMENT": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "RANG-0",
+        "THE",
+        "BELL-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PARTMOD",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RING-V1",
+      "WORD": "RING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RING-V2": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "the bell rang",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "RING-EVENT": {
+          "INSTRUMENT": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "BELL-1",
+        "RANG-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "PEAL",
+        "CHIME",
+        "TINKLE"
+      ],
+      "SENSE": "RING-V2",
+      "WORD": "RING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

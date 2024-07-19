@@ -1,0 +1,27 @@
+{
+  "name": "@CYNOPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of dogs",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DOG"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

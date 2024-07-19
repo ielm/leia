@@ -1,0 +1,46 @@
+{
+  "word": "TRADITIONAL",
+  "senses": {
+    "TRADITIONAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to an enduring practice and/or belief",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "NOVELTY": 0
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CUSTOMARY-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "CUSTOMARY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "TRADITIONAL-ADJ1",
+      "WORD": "TRADITIONAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

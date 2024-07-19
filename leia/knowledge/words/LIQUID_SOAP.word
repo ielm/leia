@@ -1,0 +1,33 @@
+{
+  "word": "LIQUID_SOAP",
+  "senses": {
+    "LIQUID_SOAP-N2": {
+      "CAT": "N",
+      "DEF": "soap in liquid form",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SOAP": {
+          "STATE-OF-MATTER": "LIQUID"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SOFT_SOAP"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "LIQUID_SOAP-N2",
+      "WORD": "LIQUID_SOAP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

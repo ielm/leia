@@ -1,0 +1,97 @@
+{
+  "name": "@PURR",
+  "isa": [
+    "@ANIMAL-NOISE-MAKING"
+  ],
+  "def": "to make the soft vibrant sound of a feline",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@FELINE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@RABBIT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ELEPHANT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@GORILLA"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@GORILLA"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@RABBIT"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SQUIRREL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ELEPHANT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@SQUIRREL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "default",
+      "filler": "@FELINE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "not",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "not",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

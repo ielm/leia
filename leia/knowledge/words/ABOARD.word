@@ -1,0 +1,118 @@
+{
+  "word": "ABOARD",
+  "senses": {
+    "ABOARD-PREP1": {
+      "CAT": "PREP",
+      "DEF": "refers to the spatial relation; the directional counterpart is aboard-prep2",
+      "EX": "they went aboard the ship. meals aboard ship are bad.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "OPT": "+",
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "OBJECT",
+          "LOCATION": {
+            "VALUE": "^$VAR2",
+            "SEM": "VEHICLE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "MEN-1",
+        "ABOARD-0",
+        "THE",
+        "OBJECT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ABOARD-PREP1",
+      "WORD": "ABOARD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ABOARD-PREP2": {
+      "CAT": "PREP",
+      "DEF": "refers to the directional relation; the spatial counterpart is aboard-prep1",
+      "EX": "they went aboard ship",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "PATH": {
+            "VALUE": "^$VAR2",
+            "SEM": "VEHICLE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "ABOARD-0",
+        "THE",
+        "EVENT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ABOARD-PREP2",
+      "WORD": "ABOARD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

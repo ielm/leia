@@ -1,0 +1,53 @@
+{
+  "word": "ORCHIL",
+  "senses": {
+    "ORCHIL-N1": {
+      "CAT": "N",
+      "DEF": "violet dyestuff obtained from orchil lichens",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "DYESTUFF": {
+          "COLOR": "VIOLET"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ORCHIL-N1",
+      "WORD": "ORCHIL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ORCHIL-N2": {
+      "CAT": "N",
+      "DEF": "a lichen from which violet dye is obtained",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "LICHEN",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ORCHIL-N2",
+      "WORD": "ORCHIL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

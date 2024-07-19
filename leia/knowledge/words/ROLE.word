@@ -1,0 +1,188 @@
+{
+  "word": "ROLE",
+  "senses": {
+    "ROLE-N1": {
+      "CAT": "N",
+      "DEF": "an activity carried out by s.o. that's part of another activity; this  sense covers (X's) role (in Y)",
+      "EX": "He was criticized for his role in the scandal",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "POSSESSIVE": "+",
+          "OPT": "+"
+        },
+        "N-1": {
+          "ROOT": "$VAR0",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": "IN",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "PART-OF-EVENT": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "HE",
+        "WAS",
+        "CRITICIZED",
+        "FOR",
+        "HIS-1",
+        "ROLE-0",
+        "IN-2",
+        "THE",
+        "PICNIC-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "PART"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ROLE-N1",
+      "WORD": "ROLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ROLE-N2": {
+      "CAT": "N",
+      "DEF": "an activity carried out by s.o. that's part of another activity; this sense covers  the role of X (in Y)",
+      "EX": "There was criticism of the role of the government in the scandal",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT-WORD": "IN",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "PART-OF-EVENT": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR2",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "BEST",
+        "PART-0",
+        "OF-1",
+        "THE",
+        "PROCESS-2",
+        "IN-3",
+        "CRACKER",
+        "CREATION-4",
+        "IS",
+        "THERE"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR4",
+          "$VAR3"
+        ],
+        [
+          "NN",
+          "$VAR4",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "PART"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ROLE-N2",
+      "WORD": "ROLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

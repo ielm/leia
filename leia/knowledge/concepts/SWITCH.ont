@@ -1,0 +1,16 @@
+{
+  "name": "@SWITCH",
+  "isa": [
+    "@MACHINE-PART"
+  ],
+  "def": "a device used to turn on or off on a mechanism or device",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

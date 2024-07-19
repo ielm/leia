@@ -1,0 +1,30 @@
+{
+  "name": "@COUGH-MEDICINE",
+  "isa": [
+    "@DRUG"
+  ],
+  "def": "A drug that gives relief from cough.",
+  "local": [
+    {
+      "slot": "state-of-matter",
+      "facet": "relaxable-to",
+      "filler": "@LIQUID"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    }
+  ],
+  "private": {}
+}

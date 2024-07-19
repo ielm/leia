@@ -1,0 +1,338 @@
+{
+  "word": "AMONG",
+  "senses": {
+    "AMONG-PREP1": {
+      "CAT": "PREP",
+      "DEF": "object or event a is located in the general space of plural objects ",
+      "EX": "the saplings were hidden among the mature trees. the biggest [sapling] among the saplings. the dog ran among the trees.  this was among the best ideas. this game is the best among those i've seen",
+      "COMMENTS": "this sense covers instances when the object of 'among' is plural. I'm not limiting ^$var2 to physical-object  because it might be of ideas, events, etc. I won't deal with potential noun ellipsis - as with 'sapling' in the 2nd example above -  in the lexicon entry; that should be handled separately, when making a full np of the adj + elided n",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N",
+            "NUMBER": "PL"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "EVENT",
+            "OBJECT"
+          ],
+          "BESIDE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": {
+              "VALUE": "^$VAR2",
+              "SEM": [
+                "EVENT",
+                "OBJECT"
+              ]
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "AMID-0",
+        "THE",
+        "PICTURE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "AMONGST",
+        "AMID"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "AMONG-PREP1",
+      "WORD": "AMONG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "AMONG-PREP2": {
+      "CAT": "PREP",
+      "DEF": "object or event a is located in the general space of plural objects b, but those plural objects - for this sense - are represented by a collective noun, like 'herd'",
+      "EX": "the calf was hidden among the herd.",
+      "COMMENTS": "whereas the member of a set of trees is a tree - covered in sense 1 using set notation - the member  of a herd is a cow - this sense. when we say that a calf is among the herd, there is no need to split up the  herd into the set of its individual cows. instead, just refer to the herd as such. so, the singular noun conveys the plural  semantics without the need of establishing a set.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N",
+            "NUMBER": "SING"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "BESIDE": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "AMID-0",
+        "THE",
+        "HUNGER-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "AMID"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "AMONG-PREP2",
+      "WORD": "AMONG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "AMONG-PREP4": {
+      "CAT": "PREP",
+      "DEF": "event + among + np",
+      "EX": "hunger among children; cheating among students",
+      "COMMENTS": "[D] the obj. of among can be agent or experiencer",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR2",
+          "^$VAR1"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "EVENT-1",
+        "AMONG-0",
+        "THE",
+        "EVENT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AMONG-PREP4",
+      "WORD": "AMONG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "AMONG-PREP5": {
+      "CAT": "PREP",
+      "DEF": "in configuration: Among X is Y = the named entity is part of a larger set",
+      "EX": "Among my classes is French literature.",
+      "COMMENTS": "This is actually a transformation; I'm adding it just to be sure we cover our near-term text.",
+      "TMR-HEAD": "$VAR3",
+      "SYN-STRUC": {
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "V": {
+          "ROOT": "$VAR1",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "NP": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR3": {
+          "MEMBER-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "AMONG-0",
+        "THE",
+        "CROWD-2",
+        "WAS-1",
+        "THE",
+        "MAN-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR3"
+        ],
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AMONG-PREP5",
+      "WORD": "AMONG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "AMONG-PREP3": {
+      "CAT": "PREP",
+      "DEF": "a member of some group, class, etc.",
+      "EX": "she is among the elite; students (who are) among the elite are intolerable.",
+      "COMMENTS": "I'm going to assume that the classes of people being referred to here have to be preceded by 'the' - i.e., 'the elite, the great', and that the following noun has to be in the singular (if I'm wrong, we'll find out in testing). the copular construction will be handled by a transformation from the np + pp lexicon entry",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "ELEMENTS": {
+            "VALUE": "^$VAR1",
+            "SEM": "OBJECT"
+          },
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EVENT-1",
+        "AMONG-0",
+        "THE",
+        "MEN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AMONG-PREP3",
+      "WORD": "AMONG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

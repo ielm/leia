@@ -1,0 +1,52 @@
+{
+  "word": "TWENTY_FOURTH",
+  "senses": {
+    "TWENTY_FOURTH-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "ORDINALITY": 24
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "24",
+        "TH-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "24TH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "TWENTY_FOURTH-ADJ1",
+      "WORD": "TWENTY_FOURTH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

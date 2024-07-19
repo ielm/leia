@@ -1,0 +1,87 @@
+{
+  "name": "@ASPHYXIATION",
+  "isa": [
+    "@PATHOLOGIC-FUNCTION"
+  ],
+  "def": "a condition in which the level of oxygen in the blood decreases and the level of carbon dioxide increases, causing loss of consciousness and sometimes death; may be caused by choking, drowning, electric shock, inhalation of toxic gases, etc.",
+  "local": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@DIE"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@CHOKE-EVENT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "$surprise"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CARBON-DIOXIDE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OXYGEN"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

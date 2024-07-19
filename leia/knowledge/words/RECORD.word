@@ -1,0 +1,134 @@
+{
+  "word": "RECORD",
+  "senses": {
+    "RECORD-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "a large disc with music on it to be played on a record player",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PHONOGRAPH-RECORD",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "PHONOGRAPH_RECORD"
+      ],
+      "HYPONYMS": [
+        "LP"
+      ],
+      "SENSE": "RECORD-N1",
+      "WORD": "RECORD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RECORD-V1": {
+      "CAT": "V",
+      "DEF": "to make note of",
+      "EX": "they recorded the incident should it be needed as evidence",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "RECORD-INFORMATION": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "RECORDED-0",
+        "THE",
+        "COMPLAINT-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "REGISTER"
+      ],
+      "SENSE": "RECORD-V1",
+      "WORD": "RECORD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RECORD-V2": {
+      "CAT": "V",
+      "DEF": "to make a recording of music",
+      "EX": "they recorded the song/album",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "RECORD-SOUND": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "RECORDED-0",
+        "THE",
+        "SONG-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RECORD-V2",
+      "WORD": "RECORD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

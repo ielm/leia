@@ -1,0 +1,40 @@
+{
+  "name": "@EARTHQUAKE",
+  "isa": [
+    "@NATURAL-HAZARD"
+  ],
+  "def": "a trembling of the earth*s crust, caused by underground volcanic forces or shifting of rock",
+  "local": [
+    {
+      "slot": "richter-scale",
+      "facet": "sem",
+      "filler": [
+        "><",
+        10
+      ]
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@EARTH-CORE"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@VOLCANO"
+    }
+  ],
+  "block": [
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

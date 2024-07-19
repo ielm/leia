@@ -1,0 +1,87 @@
+{
+  "word": "TILE",
+  "senses": {
+    "TILE-N1": {
+      "CAT": "N",
+      "DEF": "a thin piece of stone, clay, etc., used to cover floors, walls, etc.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "TILE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TILE-N1",
+      "WORD": "TILE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "TILE-V1": {
+      "CAT": "V",
+      "DEF": "to cover with tile",
+      "EX": "they tiled the bathroom floor",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "COVER": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": [
+              "WALL",
+              "FLOOR"
+            ]
+          },
+          "INSTRUMENT": "TILE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "TILED-0",
+        "THE",
+        "FLOOR-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TILE-V1",
+      "WORD": "TILE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

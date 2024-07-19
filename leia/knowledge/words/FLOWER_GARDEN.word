@@ -1,0 +1,31 @@
+{
+  "word": "FLOWER_GARDEN",
+  "senses": {
+    "FLOWER_GARDEN-N1": {
+      "CAT": "N",
+      "DEF": "a garden for flowering plants",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "GARDEN": {
+          "LOCATION-OF": "FLOWERING-PLANT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FLOWER_GARDEN-N1",
+      "WORD": "FLOWER_GARDEN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@TRANSPORTATION-CORPORATION",
+  "isa": [
+    "@FOR-PROFIT-SERVICE-CORPORATION"
+  ],
+  "def": "a for-profit-service-corporation that provides transportation services for people, goods, animals, etc. by various means",
+  "local": [
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@VEHICLE-MANUFACTURING-CORPORATION"
+    },
+    {
+      "slot": "area-of-business-activity",
+      "facet": "sem",
+      "filler": "@TRANSPORTATION-SERVE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

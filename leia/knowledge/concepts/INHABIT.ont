@@ -1,0 +1,21 @@
+{
+  "name": "@INHABIT",
+  "isa": [
+    "@ANIMAL-LIVING-EVENT"
+  ],
+  "def": "to live or reside in - the location inhabited should be in the location case-role",
+  "local": [],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

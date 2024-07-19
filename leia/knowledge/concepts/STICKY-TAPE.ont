@@ -1,0 +1,16 @@
+{
+  "name": "@STICKY-TAPE",
+  "isa": [
+    "@PACKAGING-MATERIAL"
+  ],
+  "def": "strip of adhesive material",
+  "local": [],
+  "block": [
+    {
+      "slot": "is-consumer-good",
+      "facet": "sem",
+      "filler": "yes"
+    }
+  ],
+  "private": {}
+}

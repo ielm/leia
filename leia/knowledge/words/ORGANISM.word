@@ -1,0 +1,29 @@
+{
+  "word": "ORGANISM",
+  "senses": {
+    "ORGANISM-N1": {
+      "CAT": "N",
+      "DEF": "microscopic organism",
+      "EX": "",
+      "COMMENTS": "[D]  technically, any plant or animal is an organism, but the term is rarely used at a macroscopic level",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "MICRO-ORGANISM",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "MICROSCOPIC_ORGANISM"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ORGANISM-N1",
+      "WORD": "ORGANISM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "word": "VERY_MANY",
+  "senses": {
+    "VERY_MANY-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "very many dogs are barking.",
+      "COMMENTS": "see comments for 'all'.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP",
+          "NUMBER": "PL"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "CARDINALITY": [
+            "><",
+            0.8,
+            1
+          ],
+          "DETERMINATE": "NO",
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "VERY_MANY-QUANTIFIER1",
+      "WORD": "VERY_MANY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "VERY_MANY-QUANTIFIER2": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "very many of the dogs are barking",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "CAT": "PREP",
+          "ROOT": "$VAR2",
+          "OBJ": {
+            "ROOT": "$VAR1",
+            "CAT": "NP",
+            "NUMBER": "PL"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "CARDINALITY": [
+            "><",
+            0.8,
+            1
+          ],
+          "DETERMINATE": "NO",
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "VERY_MANY-QUANTIFIER2",
+      "WORD": "VERY_MANY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

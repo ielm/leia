@@ -1,0 +1,52 @@
+{
+  "word": "PROBABLY",
+  "senses": {
+    "PROBABLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "considered to be likely, but uncertain",
+      "EX": "it will probably rain today",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0.7,
+          "DOMAIN": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "LIKELY-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "LIKELY",
+        "MOST_LIKELY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PROBABLY-ADV1",
+      "WORD": "PROBABLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

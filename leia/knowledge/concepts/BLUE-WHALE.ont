@@ -1,0 +1,16 @@
+{
+  "name": "@BLUE-WHALE",
+  "isa": [
+    "@WHALE"
+  ],
+  "def": "A very large whalebone whale having a bluish-gray back, yellow underparts, and several ventral throat grooves; it is considered the largest living animal.",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FIN"
+    }
+  ],
+  "private": {}
+}

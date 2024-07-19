@@ -1,0 +1,69 @@
+{
+  "word": "PIRACY",
+  "senses": {
+    "PIRACY-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "software piracy",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "OPT": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PIRACY-BY-REPRODUCING": {
+          "THEME": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "MEDIA-ARTIFACT-1",
+        "PIRACY-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PIRACY-N1",
+      "WORD": "PIRACY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PIRACY-N2": {
+      "CAT": "N",
+      "DEF": "stealing at sea",
+      "EX": "The piracy off the coast of Africa is mind boggling.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PIRACY-AT-SEA",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PIRACY-N2",
+      "WORD": "PIRACY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

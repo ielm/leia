@@ -1,0 +1,21 @@
+{
+  "name": "@SNOWMOBILE",
+  "isa": [
+    "@SNOW-VEHICLE"
+  ],
+  "def": "a motor vehicle with steerable runners at the front and tractor treads at the rear",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@RUNNER-DEVICE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@ENGINE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

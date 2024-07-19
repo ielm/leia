@@ -1,0 +1,61 @@
+{
+  "word": "GEORGIA",
+  "senses": {
+    "GEORGIA-N1": {
+      "CAT": "N",
+      "DEF": "a nation",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "NATION": {
+          "HAS-NAME": {
+            "VALUE": "GEORGIA"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GEORGIA-N1",
+      "WORD": "GEORGIA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "GEORGIA-N2": {
+      "CAT": "N",
+      "DEF": "a state in the US",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "STATE": {
+          "HAS-NAME": {
+            "VALUE": "GEORGIA"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GEORGIA-N2",
+      "WORD": "GEORGIA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

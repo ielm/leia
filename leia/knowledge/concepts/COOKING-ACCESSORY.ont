@@ -1,0 +1,27 @@
+{
+  "name": "@COOKING-ACCESSORY",
+  "isa": [
+    "@COOKING-EQUIPMENT"
+  ],
+  "def": "cutting instruments and tools used in preparing food and eating it",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BLADE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@HANDLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

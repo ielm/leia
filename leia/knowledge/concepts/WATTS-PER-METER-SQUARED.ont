@@ -1,0 +1,20 @@
+{
+  "name": "@WATTS-PER-METER-SQUARED",
+  "isa": [
+    "@LUMINANCE-UNIT",
+    "@ILLUMINATION-UNIT"
+  ],
+  "def": "the standard unit in the ontology for measuring illumination and luminance",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

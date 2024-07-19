@@ -1,0 +1,16 @@
+{
+  "name": "@BALEEN-WHALE",
+  "isa": [
+    "@WHALE"
+  ],
+  "def": "Any of several whales characterized by a large head, whalebone plates in the mouth, and absence of a dorsal fin.",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FIN"
+    }
+  ],
+  "private": {}
+}

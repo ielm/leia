@@ -1,0 +1,29 @@
+{
+  "name": "@BALLOT",
+  "isa": [
+    "@DOCUMENT"
+  ],
+  "def": "a ticket, paper, etc. by which a vote is registered",
+  "local": [],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    }
+  ],
+  "private": {}
+}

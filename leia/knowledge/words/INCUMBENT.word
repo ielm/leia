@@ -1,0 +1,59 @@
+{
+  "word": "INCUMBENT",
+  "senses": {
+    "INCUMBENT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "currently holding an office",
+      "EX": "the incumbent mayor",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "ADJ",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TIME": [
+            "FIND-ANCHOR-TIME"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INCUMBENT-ADJ1",
+      "WORD": "INCUMBENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "INCUMBENT-N1": {
+      "CAT": "N",
+      "DEF": "a person who holds an office - or a company, as in the ex.",
+      "EX": "it was in the running for a federal aviation administration contract worth a possible $3.5 billion. worldcom had been the incumbent on that contract, but the new deal went to international communications equipment company harris",
+      "COMMENTS": "this actually requires reference resolution that will be pretty tough to generalized about. I'm not spending more time now but we need to. although social-role doesn't officially work for companies, I think the use with companies must be considered regular metonymy",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SOCIAL-ROLE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INCUMBENT-N1",
+      "WORD": "INCUMBENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@SURGERY-AS-MEDICAL-SPECIALTY",
+  "isa": [
+    "@MEDICINE"
+  ],
+  "def": "The branch of medicine that deals with the diagnosis and treatment of injury, deformity, and disease by manual and instrumental means.",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SURGEON"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@MEDICAL-WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

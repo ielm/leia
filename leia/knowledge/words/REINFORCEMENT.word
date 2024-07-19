@@ -1,0 +1,33 @@
+{
+  "word": "REINFORCEMENT",
+  "senses": {
+    "REINFORCEMENT-N1": {
+      "CAT": "N",
+      "DEF": "something used to make something else stable",
+      "EX": "he used reinforcements to keep the deck from falling down",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PHYSICAL-OBJECT": {
+          "INSTRUMENT-OF": "STABILIZE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "STABILIZER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "REINFORCEMENT-N1",
+      "WORD": "REINFORCEMENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

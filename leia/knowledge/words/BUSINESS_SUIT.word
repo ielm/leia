@@ -1,0 +1,31 @@
+{
+  "word": "BUSINESS_SUIT",
+  "senses": {
+    "BUSINESS_SUIT-N1": {
+      "CAT": "N",
+      "DEF": "a set of matching outer garments worn by businessmen",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SUIT": {
+          "USED-BY": "BUSINESS-ROLE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BUSINESS_SUIT-N1",
+      "WORD": "BUSINESS_SUIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

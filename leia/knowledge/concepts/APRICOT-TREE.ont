@@ -1,0 +1,22 @@
+{
+  "name": "@APRICOT-TREE",
+  "isa": [
+    "@FRUIT-TREE"
+  ],
+  "def": "a tree that produces apricots",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@APRICOT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@TREE-FRUIT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@NEWSSTAND",
+  "isa": [
+    "@STORE"
+  ],
+  "def": "a shop or open booth at which newspapers and periodicals are sold",
+  "local": [
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@PERIODICAL"
+    },
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@NEWSPAPER"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

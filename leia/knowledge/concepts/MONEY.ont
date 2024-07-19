@@ -1,0 +1,33 @@
+{
+  "name": "@MONEY",
+  "isa": [
+    "@ASSET"
+  ],
+  "def": "a commodity that is legally established as an exchangeable equivalent of all other commodities and used as a measure of their comparative market value",
+  "local": [
+    {
+      "slot": "interest-rate",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "interest-rate",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

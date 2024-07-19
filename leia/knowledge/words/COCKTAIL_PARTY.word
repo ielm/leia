@@ -1,0 +1,40 @@
+{
+  "word": "COCKTAIL_PARTY",
+  "senses": {
+    "COCKTAIL_PARTY-N1": {
+      "CAT": "N",
+      "DEF": "An early evening party at which cocktails are served",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PARTY": {
+          "FORMALITY": [
+            "><",
+            0.7,
+            0.8
+          ],
+          "HAS-EVENT-AS-PART": {
+            "INGEST": {
+              "THEME": "ALCOHOLIC-BEVERAGE"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COCKTAIL_PARTY-N1",
+      "WORD": "COCKTAIL_PARTY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

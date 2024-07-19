@@ -1,0 +1,29 @@
+{
+  "word": "CRUISE_SHIP",
+  "senses": {
+    "CRUISE_SHIP-N1": {
+      "CAT": "N",
+      "DEF": "a large passenger ship for pleasure cruises",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CRUISE-SHIP",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "LUXURY_LINER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CRUISE_SHIP-N1",
+      "WORD": "CRUISE_SHIP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "word": "YET",
+  "senses": {
+    "YET-CONJ1": {
+      "CAT": "CONJ",
+      "DEF": "",
+      "EX": "She had studied hard(,) (and/but) yet she failed the test anyway",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR2",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "PUNCT": {
+          "ROOT-WORD": "*COMMA*",
+          "ROOT": "$VAR3",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "CONJ",
+        "CL-1": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "CONTRARY-TO-EXPECTATION-BECAUSE-OF": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "*COMMA*-3",
+        "BUT-0",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [
+        "AND_YET"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "YET-CONJ1",
+      "WORD": "YET",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "YET-CONJ3": {
+      "CAT": "CONJ",
+      "DEF": "'yet' conjoining Adjs",
+      "EX": "Mary is thin (and/but) yet wirey",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "MODS": {
+          "ROOT": "$VAR2",
+          "CAT": "ADJ",
+          "CONJ": {
+            "ROOT": "$VAR0",
+            "CAT": "CONJ"
+          },
+          "ADJ": {
+            "ROOT": "$VAR3",
+            "CAT": "ADJ"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "ATTRIBUTE": {
+            "DOMAIN": {
+              "VALUE": "^$VAR1"
+            },
+            "RANGE": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "ATTRIBUTE": {
+            "DOMAIN": {
+              "VALUE": "^$VAR1"
+            },
+            "RANGE": {
+              "VALUE": "^$VAR3"
+            }
+          }
+        },
+        "CONTRARY-TO-EXPECTATION-BECAUSE-OF": {
+          "DOMAIN": {
+            "VALUE": "REFSEM2"
+          },
+          "RANGE": {
+            "VALUE": "REFSEM1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "GOOD-2",
+        "YET-0",
+        "SILLY-3",
+        "MAN-1",
+        "HIT",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR1",
+          "$VAR3"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "BUT",
+        "AND_YET"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "YET-CONJ3",
+      "WORD": "YET",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "YET-ADV1": {
+      "CAT": "ADV",
+      "DEF": "used in negated clauses to imply that although something hasn't been done will be; also used in interrogative clauses to imply that something is expected to be done",
+      "EX": "Have you done that yet? She hasn't done it yet.",
+      "COMMENTS": "For now, this is being null-semmed",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "POST-CL"
+        }
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MANDID",
+        "NOT",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "YET-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "YET-ADV1",
+      "WORD": "YET",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "YET-CONJ2": {
+      "CAT": "CONJ",
+      "DEF": "'yet' joins NPs",
+      "EX": "He's a lawyer (and/but) yet a trustworthy person.",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "CONJ": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": [
+            "AND",
+            "BUT"
+          ],
+          "CAT": "CONJ",
+          "OPT": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "CONJ",
+        "NP-1": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "CONTRARY-TO-EXPECTATION-BECAUSE-OF": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          [
+            "COREFER",
+            "^$VAR1",
+            "^$VAR3"
+          ]
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "BROADNESS-1",
+        "HELPS",
+        "AND-3",
+        "YET-0",
+        "THE",
+        "CURE-2",
+        "OBLITERATES"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "CONJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "BUT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "YET-CONJ2",
+      "WORD": "YET",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

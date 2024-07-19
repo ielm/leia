@@ -1,0 +1,33 @@
+{
+  "word": "LEU",
+  "senses": {
+    "LEU-N1": {
+      "CAT": "N",
+      "DEF": "currency of moldova or rumania",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": {
+            "MOLDOVA": "RUMANIA"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LEU-N1",
+      "WORD": "LEU",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

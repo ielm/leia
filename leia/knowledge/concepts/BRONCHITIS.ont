@@ -1,0 +1,32 @@
+{
+  "name": "@BRONCHITIS",
+  "isa": [
+    "@INFLAMMATION"
+  ],
+  "def": "Inflammation of the mucous membrane of the bronchial tubes.\n(http://medical-dictionary.thefreedictionary.com/bronchitis)",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TRACHEOBRONCHIAL-TREE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

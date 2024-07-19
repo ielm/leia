@@ -1,0 +1,27 @@
+{
+  "name": "@WAREHOUSE",
+  "isa": [
+    "@STORAGE-BUILDING"
+  ],
+  "def": "a building where goods are stored",
+  "local": [
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@CONSUMER-GOOD"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@WATCHMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

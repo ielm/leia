@@ -1,0 +1,20 @@
+{
+  "name": "@WHEELBARROW",
+  "isa": [
+    "@HUMAN-PROPELLED-VEHICLE",
+    "@WHEELED-VEHICLE"
+  ],
+  "def": "device with a wheel, used for carrying large masses",
+  "local": [
+    {
+      "slot": "number-of-wheels",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

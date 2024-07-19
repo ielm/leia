@@ -1,0 +1,32 @@
+{
+  "name": "@CARBON-DIOXIDE",
+  "isa": [
+    "@GASEOUS-CHEMICAL-COMPOUND"
+  ],
+  "def": "a colorless, odorless, incombustible gas, co2, formed during respiration, combustion, and organic decomposition and used in food refrigeration, carbonated beverages, inert atmospheres, fire extinguishers, and aerosols",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GRAPHITE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CARBON"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@OXYGEN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GASEOUS-ELEMENT"
+    }
+  ],
+  "private": {}
+}

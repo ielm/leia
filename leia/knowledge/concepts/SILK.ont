@@ -1,0 +1,28 @@
+{
+  "name": "@SILK",
+  "isa": [
+    "@ANIMAL-DERIVED-SUBSTANCE",
+    "@NATURAL-FABRIC"
+  ],
+  "def": "the filament secreted by the silkworm when spinning its cocoon, and the name for the threads, yarns, and fabrics made from the filament",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "white"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT-DERIVED-SUBSTANCE"
+    }
+  ],
+  "private": {}
+}

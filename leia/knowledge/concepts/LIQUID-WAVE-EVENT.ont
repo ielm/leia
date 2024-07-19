@@ -1,0 +1,16 @@
+{
+  "name": "@LIQUID-WAVE-EVENT",
+  "isa": [
+    "@MOTION-EVENT"
+  ],
+  "def": "a wave usually made of water",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WATER"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

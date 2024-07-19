@@ -1,0 +1,47 @@
+{
+  "name": "@FORECLOSE",
+  "isa": [
+    "@INVESTMENT-EVENT"
+  ],
+  "def": "To deprive (a mortgagor) of the right to redeem mortgaged property, as when the mortgagor fails on payments.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@BUILDING"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@BANK"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@FOUNDATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@LENDING-CORPORATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@UNDERWRITER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MONEY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INVESTMENT"
+    }
+  ],
+  "private": {}
+}

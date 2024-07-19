@@ -1,0 +1,38 @@
+{
+  "word": "PORCH",
+  "senses": {
+    "PORCH-N1": {
+      "CAT": "N",
+      "DEF": "a covered entrance to a building",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PORCH",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "VERANDA",
+        "STOOP",
+        "TERRACE"
+      ],
+      "HYPONYMS": [
+        "BALCONY",
+        "BACK_PORCH",
+        "DECK",
+        "FRONT_PORCH",
+        "PORTICO",
+        "SUN_DECK"
+      ],
+      "SENSE": "PORCH-N1",
+      "WORD": "PORCH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

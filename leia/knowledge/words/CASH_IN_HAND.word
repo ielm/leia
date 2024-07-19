@@ -1,0 +1,43 @@
+{
+  "word": "CASH_IN_HAND",
+  "senses": {
+    "CASH_IN_HAND-N1": {
+      "CAT": "N",
+      "DEF": "currency",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": [
+            "OR",
+            [
+              "OR",
+              "BILL-MONETARY",
+              "COIN"
+            ],
+            [
+              "AND",
+              "BILL-MONETARY",
+              "COIN"
+            ]
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CASH_IN_HAND-N1",
+      "WORD": "CASH_IN_HAND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

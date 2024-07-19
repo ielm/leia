@@ -1,0 +1,19 @@
+{
+  "name": "@INCH-MERCURY",
+  "isa": [
+    "@PRESSURE-UNIT"
+  ],
+  "def": "the pressure exerted by a column of mercury one inch in height at zero degrees Celsius at standard gravity ; 0.3342*atmosphere",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        3386.28
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

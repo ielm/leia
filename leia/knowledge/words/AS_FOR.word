@@ -1,0 +1,86 @@
+{
+  "word": "AS_FOR",
+  "senses": {
+    "AS_FOR-CONJ1": {
+      "CAT": "CONJ",
+      "DEF": "",
+      "EX": "As for democracy, I think it's great",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR3",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "CONJ",
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "PUNCT": {
+          "ROOT": "$VAR2",
+          "CAT": "PUNCT",
+          "ROOT-WORD": "*COMMA*",
+          "OPT": "+"
+        },
+        "CL": {
+          "ROOT": "$VAR3",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          [
+            "EXPLOIT-FRONTING-ARGUMENT",
+            "^$VAR1"
+          ]
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "AS_TO-0",
+        "THE",
+        "MAN-1",
+        "*COMMA*-2",
+        "THE",
+        "MAN",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CC",
+          "$VAR3",
+          "$VAR0"
+        ],
+        [
+          "NSUBJ",
+          "$VAR3",
+          "$VAR1"
+        ],
+        [
+          "PUNCT",
+          "$VAR3",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "IN_REGARD_TO",
+        "WITH_REGARD_TO",
+        "WITH_RESPECT_TO",
+        "AS_TO"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "AS_FOR-CONJ1",
+      "WORD": "AS_FOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

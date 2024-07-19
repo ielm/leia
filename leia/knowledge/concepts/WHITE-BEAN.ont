@@ -1,0 +1,16 @@
+{
+  "name": "@WHITE-BEAN",
+  "isa": [
+    "@BEAN"
+  ],
+  "def": "A bean with white seeds.",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "white"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

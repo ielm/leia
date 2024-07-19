@@ -1,0 +1,52 @@
+{
+  "name": "@NATURAL-FABRIC",
+  "isa": [
+    "@FABRIC"
+  ],
+  "def": "fabrics made of natural materials, such as cotton, wool or silk",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT-DERIVED-SUBSTANCE"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "tan"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "off-white"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@COTTON-FIBER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@NYLON"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@POLYESTER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SILK"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOL"
+    }
+  ],
+  "private": {}
+}

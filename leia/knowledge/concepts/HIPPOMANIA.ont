@@ -1,0 +1,27 @@
+{
+  "name": "@HIPPOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "fascination with horses",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HORSE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

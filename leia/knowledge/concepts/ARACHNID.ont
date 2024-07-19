@@ -1,0 +1,21 @@
+{
+  "name": "@ARACHNID",
+  "isa": [
+    "@ARTHROPOD"
+  ],
+  "def": "any of a class of arthropods with four pairs of legs, such as spiders and scorpions",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@LEG"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@HEAD"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

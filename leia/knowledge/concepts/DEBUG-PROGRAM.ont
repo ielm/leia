@@ -1,0 +1,37 @@
+{
+  "name": "@DEBUG-PROGRAM",
+  "isa": [
+    "@COMPUTING-SERVE"
+  ],
+  "def": "to correct the errors in a computer program",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@PROGRAMMER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COMPUTER-PROGRAM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@COMPUTING-WORK-ROLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COMPUTER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COMPUTER-DATA"
+    }
+  ],
+  "private": {}
+}

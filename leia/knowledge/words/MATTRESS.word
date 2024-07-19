@@ -1,0 +1,31 @@
+{
+  "word": "MATTRESS",
+  "senses": {
+    "MATTRESS-N1": {
+      "CAT": "N",
+      "DEF": "a rectangular pad of heavy cloth filled with soft material used as or on a bed",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "MATTRESS",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "BOX_SPRING",
+        "FOAM_MATTRESS",
+        "INNERSPRING_MATTRESS"
+      ],
+      "SENSE": "MATTRESS-N1",
+      "WORD": "MATTRESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

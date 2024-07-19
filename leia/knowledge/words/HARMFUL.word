@@ -1,0 +1,48 @@
+{
+  "word": "HARMFUL",
+  "senses": {
+    "HARMFUL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "causing injury",
+      "EX": "the accident caused several harmful blows to the head",
+      "COMMENTS": "the direct physical meaning seems rarer than either toxicity or abstract use",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "INSTRUMENT-OF": "INJURY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HARMFUL-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "DAMAGING"
+      ],
+      "HYPONYMS": [
+        "INVASIVE"
+      ],
+      "SENSE": "HARMFUL-ADJ1",
+      "WORD": "HARMFUL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

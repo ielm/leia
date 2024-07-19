@@ -1,0 +1,27 @@
+{
+  "name": "@CHYLE",
+  "isa": [
+    "@TRANSUDATE"
+  ],
+  "def": "Lymph mixed with fats absorbed by the small intestine.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LIPID"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LYMPH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    }
+  ],
+  "private": {}
+}

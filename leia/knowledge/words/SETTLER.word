@@ -1,0 +1,38 @@
+{
+  "word": "SETTLER",
+  "senses": {
+    "SETTLER-N1": {
+      "CAT": "N",
+      "DEF": "a person living in a settlement",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "AGENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "INHABIT": {
+            "LOCATION": "VILLAGE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SETTLER-N1",
+      "WORD": "SETTLER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

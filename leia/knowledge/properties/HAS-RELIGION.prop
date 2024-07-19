@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-RELIGION",
+  "def": "the relation between entities and religions",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$RELIGION-OF",
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

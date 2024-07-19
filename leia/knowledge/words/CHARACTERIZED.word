@@ -1,0 +1,60 @@
+{
+  "word": "CHARACTERIZED",
+  "senses": {
+    "CHARACTERIZED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "phrasal: characterized by X = having X as a feature",
+      "EX": "rattlesnakes, characterized by their distinctive rattling tail, are common to the southwest",
+      "COMMENTS": "can we specify past-participle without *BE*? how do we specify has-feature?",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ",
+          "PP": {
+            "ROOT-WORD": "BY",
+            "ROOT": "$VAR3",
+            "CAT": "PREP",
+            "OBJ": {
+              "ROOT": "$VAR2",
+              "CAT": "N"
+            }
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CHARACTERIZED-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "CHARACTERISED"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CHARACTERIZED-ADJ1",
+      "WORD": "CHARACTERIZED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

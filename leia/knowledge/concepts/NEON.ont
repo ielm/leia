@@ -1,0 +1,36 @@
+{
+  "name": "@NEON",
+  "isa": [
+    "@GASEOUS-ELEMENT"
+  ],
+  "def": "an inert, gaseous element occurring in the atmosphere to the extent of 18 parts per million, and used in display and television tubes",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        20
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        10
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

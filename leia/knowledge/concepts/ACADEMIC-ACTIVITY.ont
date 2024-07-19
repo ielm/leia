@@ -1,0 +1,47 @@
+{
+  "name": "@ACADEMIC-ACTIVITY",
+  "isa": [
+    "@WORK-ACTIVITY"
+  ],
+  "def": "Work-activity that goes on in the academic community: teaching, publishing, research, etc.",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@ACADEMIC-ORGANIZATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ACADEMIC-ROLE"
+    },
+    {
+      "slot": "has-audience",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    },
+    {
+      "slot": "has-audience",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

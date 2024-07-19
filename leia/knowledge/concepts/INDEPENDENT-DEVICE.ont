@@ -1,0 +1,28 @@
+{
+  "name": "@INDEPENDENT-DEVICE",
+  "isa": [
+    "@DEVICE"
+  ],
+  "def": "device that stands on its own and is defined as itself by itself",
+  "local": [
+    {
+      "slot": "autonomy-technological",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "autonomy-technological",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

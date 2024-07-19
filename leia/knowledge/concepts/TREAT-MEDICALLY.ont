@@ -1,0 +1,16 @@
+{
+  "name": "@TREAT-MEDICALLY",
+  "isa": [
+    "@MEDICAL-PROCEDURE"
+  ],
+  "def": "A medical event whose purpose is to improve the condition of a patient; may involve curing a disease, etc., slowing its progression, reversing its progression or providing palliative care",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

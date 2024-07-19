@@ -1,0 +1,109 @@
+{
+  "word": "ASEA",
+  "senses": {
+    "ASEA-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "at sea, on/in a body of water",
+      "EX": "The boat was asea for 3 months",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "*BE"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "LOCATION": "SEA"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "*BED-2",
+        "OFFSHORE-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR2",
+          "$VAR0"
+        ],
+        [
+          "NN",
+          "$VAR2",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "AT_SEA"
+      ],
+      "HYPONYMS": [
+        "OFFSHORE"
+      ],
+      "SENSE": "ASEA-ADJ1",
+      "WORD": "ASEA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ASEA-ADV1": {
+      "CAT": "ADV",
+      "DEF": "at sea, in the sea",
+      "EX": "They sailed asea for many days",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "POST-VERB-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "LOCATION": "SEA"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HIT-1",
+        "OFFSHORE-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "AT_SEA"
+      ],
+      "HYPONYMS": [
+        "OFFSHORE"
+      ],
+      "SENSE": "ASEA-ADV1",
+      "WORD": "ASEA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

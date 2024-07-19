@@ -1,0 +1,53 @@
+{
+  "word": "A_DISPROPORTIONATELY_LARGE_NUMBER",
+  "senses": {
+    "A_DISPROPORTIONATELY_LARGE_NUMBER-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "a disproportionately large number of people voted against it.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "CAT": "PREP",
+          "ROOT": "$VAR2",
+          "OBJ": {
+            "ROOT": "$VAR1",
+            "CAT": "NP",
+            "NUMBER": "PL"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "RELATIVE-TO-NORM": 0.8,
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "DETERMINATE": "NO"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "A_DISPROPORTIONATELY_LARGE_NUMBER-0",
+        "OF-2",
+        "THE",
+        "MEN-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "A_DISPROPORTIONATELY_LARGE_NUMBER-QUANTIFIER1",
+      "WORD": "A_DISPROPORTIONATELY_LARGE_NUMBER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

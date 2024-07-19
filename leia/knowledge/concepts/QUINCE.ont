@@ -1,0 +1,16 @@
+{
+  "name": "@QUINCE",
+  "isa": [
+    "@TREE-FRUIT"
+  ],
+  "def": "a hard apple-like fruit",
+  "local": [],
+  "block": [
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "egglike"
+    }
+  ],
+  "private": {}
+}

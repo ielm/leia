@@ -1,0 +1,53 @@
+{
+  "word": "BOARD_CERTIFIED",
+  "senses": {
+    "BOARD_CERTIFIED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "having received certification from a board of directors, etc.",
+      "EX": "board certified training materials",
+      "COMMENTS": "for now, board is a group of people, so board certified is certified by a group of people with no details about what an actual board might be",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "THEME-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "CERTIFY": {
+            "AGENT": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "SET": {
+            "MEMBER-TYPE": "HUMAN",
+            "CARDINALITY": [
+              ">",
+              1
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BOARD_CERTIFIED-ADJ1",
+      "WORD": "BOARD_CERTIFIED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

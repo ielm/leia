@@ -1,0 +1,34 @@
+{
+  "word": "HARD_WATER",
+  "senses": {
+    "HARD_WATER-N1": {
+      "CAT": "N",
+      "DEF": "water, which contains lime and/or calcium carbonate rendering it unfit for washing.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "WATER": {
+          "HAS-OBJECT-AS-PART": [
+            "LIMESTONE",
+            "CALCIUM"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HARD_WATER-N1",
+      "WORD": "HARD_WATER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

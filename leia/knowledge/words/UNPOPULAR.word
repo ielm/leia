@@ -1,0 +1,39 @@
+{
+  "word": "UNPOPULAR",
+  "senses": {
+    "UNPOPULAR-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "an unpopular musician",
+      "EX": "",
+      "COMMENTS": "I'm making this evaluative - not a new scalar - because although a popular sth. can be of bad quality as viewed by most people, it is good in the opinion of the people with whom it's popular. the matter of attributing the evaluative to the right group will come later",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0.2,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "UNPOPULAR-ADJ1",
+      "WORD": "UNPOPULAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

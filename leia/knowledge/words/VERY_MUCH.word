@@ -1,0 +1,134 @@
+{
+  "word": "VERY_MUCH",
+  "senses": {
+    "VERY_MUCH-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "much thinking went into this.",
+      "COMMENTS": "the complement is a 'n' since it can't have a determiner or article.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP",
+          "NUMBER": "SING"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "AMOUNT": [
+            ">",
+            0.8
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "VERY_MUCH-0",
+        "FLOUR-1",
+        "HAS",
+        "BEEN",
+        "USED"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "VERY_MUCH-QUANTIFIER1",
+      "WORD": "VERY_MUCH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "VERY_MUCH-QUANTIFIER2": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "very much of the flour has been used.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "CAT": "PREP",
+          "ROOT": "$VAR2",
+          "OBJ": {
+            "ROOT": "$VAR1",
+            "CAT": "NP",
+            "NUMBER": "SING"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "AMOUNT": [
+            ">",
+            0.8
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "VERY_MUCH-0",
+        "OF-2",
+        "THE",
+        "FLOUR-1",
+        "HAS",
+        "BEEN",
+        "USED"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "VERY_MUCH-QUANTIFIER2",
+      "WORD": "VERY_MUCH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "VERY_MUCH-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "very much has been written about it.",
+      "COMMENTS": "[D] although this is compositional, can't hurt to list it",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ALL": {
+          "AMOUNT": [
+            ">",
+            0.8
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          [
+            "SET",
+            1
+          ]
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "VERY_MUCH-N1",
+      "WORD": "VERY_MUCH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

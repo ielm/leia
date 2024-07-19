@@ -1,0 +1,33 @@
+{
+  "word": "MUSSEL",
+  "senses": {
+    "MUSSEL-N1": {
+      "CAT": "N",
+      "DEF": "any of several marine bivalve mollusks, often found attached to rocky surfaces or the sides of ships ",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "MUSSEL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "MARINE_MUSSEL",
+        "FRESHWATER_MUSSEL",
+        "PEARLY-SHELLED_MUSSEL",
+        "THIN-SHELLED_MUSSEL",
+        "ZEBRA_MUSSEL"
+      ],
+      "SENSE": "MUSSEL-N1",
+      "WORD": "MUSSEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "word": "NET",
+  "senses": {
+    "NET-N1": {
+      "CAT": "N",
+      "DEF": "a sports item",
+      "EX": "the volleyball net",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "NET",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NET-N1",
+      "WORD": "NET",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "NET-N2": {
+      "CAT": "N",
+      "DEF": "something used to catch something",
+      "EX": "a fishing net",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "NET-TRAP",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NET-N2",
+      "WORD": "NET",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

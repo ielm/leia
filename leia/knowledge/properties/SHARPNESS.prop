@@ -1,0 +1,11 @@
+{
+  "name": "$SHARPNESS",
+  "def": "having sharp edge or point",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

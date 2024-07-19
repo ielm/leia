@@ -1,0 +1,9 @@
+{
+  "name": "$SPEAKS-LANGUAGE",
+  "def": "The relation between a person (or an event, an organization or a geopolitical entity) and the language they speak.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$LANGUAGE-SPOKEN-BY",
+  "measured-in": [],
+  "container": "$LANGUAGE-RELATION"
+}

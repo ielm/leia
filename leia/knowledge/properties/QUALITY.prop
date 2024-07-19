@@ -1,0 +1,9 @@
+{
+  "name": "$QUALITY",
+  "def": "the degree of excellence or grade, applies to objects.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-OBJECT-ATTRIBUTE"
+}

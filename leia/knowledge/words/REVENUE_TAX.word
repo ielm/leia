@@ -1,0 +1,31 @@
+{
+  "word": "REVENUE_TAX",
+  "senses": {
+    "REVENUE_TAX-N1": {
+      "CAT": "N",
+      "DEF": "tax usually imposed on alcohol or tobacco",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "TAX": {
+          "RELATION": "TOBACCO"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "REVENUE_TAX-N1",
+      "WORD": "REVENUE_TAX",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

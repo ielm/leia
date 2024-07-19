@@ -1,0 +1,32 @@
+{
+  "name": "@HEADWIND",
+  "isa": [
+    "@WIND"
+  ],
+  "def": "A wind blowing directly against the course of an aircraft or ship.",
+  "local": [
+    {
+      "slot": "directional-relation",
+      "facet": "sem",
+      "filler": "@SHIP"
+    },
+    {
+      "slot": "directional-relation",
+      "facet": "sem",
+      "filler": "@AIR-VEHICLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "directional-relation",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "directional-relation",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

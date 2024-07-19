@@ -1,0 +1,57 @@
+{
+  "word": "UNSUCCESSFUL",
+  "senses": {
+    "UNSUCCESSFUL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "an unsuccessful attempt",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPITEUCTIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "FRUITLESS-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "FAILED",
+        "FRUITLESS",
+        "INEFFECTIVE",
+        "UNPRODUCTIVE",
+        "FUTILE",
+        "INEFFECTUAL",
+        "VAIN",
+        "WORTHLESS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "UNSUCCESSFUL-ADJ1",
+      "WORD": "UNSUCCESSFUL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

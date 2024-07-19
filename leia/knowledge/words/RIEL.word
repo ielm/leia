@@ -1,0 +1,33 @@
+{
+  "word": "RIEL",
+  "senses": {
+    "RIEL-N1": {
+      "CAT": "N",
+      "DEF": "currency of cambodia or kampuchea",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": {
+            "CAMBODIA": "KAMPUCHEA"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RIEL-N1",
+      "WORD": "RIEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

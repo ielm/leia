@@ -1,0 +1,9 @@
+{
+  "name": "$ARTERIAL-SUPPLY",
+  "def": "links an organ with the arteries that supply it",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$ARTERIAL-SUPPLY-FOR",
+  "measured-in": [],
+  "container": "$MEDICAL-RELATION"
+}

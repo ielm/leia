@@ -1,0 +1,19 @@
+{
+  "name": "@PINT-SCOTTISH",
+  "isa": [
+    "@VOLUME-UNIT"
+  ],
+  "def": "an obsolete pint variant, it is equivalent to three imperial pints; 1.491*imperial-quart",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.001695
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

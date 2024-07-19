@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-AUDIENCE",
+  "def": "The relation between an event and its audience",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$AUDIENCE-OF",
+  "measured-in": [],
+  "container": "$RELATION"
+}

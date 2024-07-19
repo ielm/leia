@@ -1,0 +1,35 @@
+{
+  "word": "NEUTROPHILIC",
+  "senses": {
+    "NEUTROPHILIC-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to neutrophils",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "NEUTROPHIL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NEUTROPHILIC-ADJ1",
+      "WORD": "NEUTROPHILIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

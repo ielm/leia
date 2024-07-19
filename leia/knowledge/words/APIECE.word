@@ -1,0 +1,60 @@
+{
+  "word": "APIECE",
+  "senses": {
+    "APIECE-ADV1": {
+      "CAT": "ADV",
+      "DEF": "",
+      "EX": "john and mary got 10 tickets apiece; they talked to/about 10 students apiece;   the students used 2 different dictionaries apiece. the kids grew 2 inches apiece.",
+      "COMMENTS": "we can't expect the distributed thing to be a theme or a do; we need  to search for the category with the number in it and distribute that over  the set, with the set spelled out - i.e., ref. resolution - as necessary.  how the mp will work:   seek-count-np will pick out and return the meaning of the count np from the clause (var1)   that most directly precedes var0 (i.e., apiece). 'most directly' because if there's   a pp or sth. intervening we don't want to choose it blindly (they bought 10 dresses  in london apiece).   seek-other-quantifier also takes the clause as its argument and returns the quantifier that  wasn't returned by seek-count-np (it may or may not be a numerical count np: so it can   be '5 boys got 3 toys each' or 'he and she got...' or 'they got...'). the other quantifier  doesn't always have to be the subject: they bought shares of stock at 5 dollars apiece)  apply-count-np will apply the result of seek-count-np to the result of seek-other-quantifier.  so, in 'john and sallie ate three cupcakes apiece' we will have the basic tmr  ingest    agent   human-333    theme   cupcake-1  human-333    set      elements   john-1 sallie-1  cupcake-1    cardinality 3 seek-count-np will return  cupcake-1   cardinality  3 seek-other-quantifier will return  human-333    set      elements   john-1  sallie-1 apply-count-np  will return ingest   agent   john-1   theme   cupcake-1 ingest   agent   sallie-1   theme   cupcake-1 ",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "APPLY-COUNT-NP": {
+          "SEEK-COUNT-NP": {
+            "VALUE": "^$VAR1"
+          },
+          "SEEK-OTHER-QUANTIFIER": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "WE",
+        "RAN-1",
+        "A",
+        "RACE",
+        "APIECE-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "XCOMP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "EACH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "APIECE-ADV1",
+      "WORD": "APIECE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "@LECTURER",
+  "isa": [
+    "@UNIVERSITY-FACULTY"
+  ],
+  "def": "one who gives a speech for the purpose of instruction",
+  "local": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "<",
+        0.4
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    }
+  ],
+  "private": {}
+}

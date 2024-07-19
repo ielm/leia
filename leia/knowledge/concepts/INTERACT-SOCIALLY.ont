@@ -1,0 +1,21 @@
+{
+  "name": "@INTERACT-SOCIALLY",
+  "isa": [
+    "@INTERACT"
+  ],
+  "def": "To interact with another person or persons on a social level, as in an associate.",
+  "local": [],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

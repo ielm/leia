@@ -1,0 +1,33 @@
+{
+  "word": "WALL_SOCKET",
+  "senses": {
+    "WALL_SOCKET-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ELECTRICAL-OUTLET": {
+          "LOCATION": "WALL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "WALL_PLUG"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "WALL_SOCKET-N1",
+      "WORD": "WALL_SOCKET",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

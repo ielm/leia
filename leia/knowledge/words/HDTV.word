@@ -1,0 +1,41 @@
+{
+  "word": "HDTV",
+  "senses": {
+    "HDTV-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D] described here as expensive tv programming; we can be more technical later if we need to be",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "TELEVISION-PROGRAMMING": {
+          "COST": [
+            ">",
+            0.7
+          ],
+          "COMPLEXITY": [
+            ">",
+            0.7
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "HIGH_DEFINITION_TV",
+        "HIGH_DEFINITION_TELEVISION"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "HDTV-N1",
+      "WORD": "HDTV",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

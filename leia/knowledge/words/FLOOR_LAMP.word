@@ -1,0 +1,35 @@
+{
+  "word": "FLOOR_LAMP",
+  "senses": {
+    "FLOOR_LAMP-N1": {
+      "CAT": "N",
+      "DEF": "a lamp that stands on the floor",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LAMP": {
+          "ON-TOP-OF": "FLOOR",
+          "HEIGHT": [
+            ">",
+            0.7
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FLOOR_LAMP-N1",
+      "WORD": "FLOOR_LAMP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

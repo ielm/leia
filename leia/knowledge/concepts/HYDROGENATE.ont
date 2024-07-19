@@ -1,0 +1,22 @@
+{
+  "name": "@HYDROGENATE",
+  "isa": [
+    "@CHANGE-EVENT"
+  ],
+  "def": "to combine or treat with hydrogen",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@HYDROGEN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

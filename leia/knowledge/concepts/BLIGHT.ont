@@ -1,0 +1,87 @@
+{
+  "name": "@BLIGHT",
+  "isa": [
+    "@NATURAL-HAZARD"
+  ],
+  "def": "any of several diseases of plants marked by the drying up and fading of the diseased parts",
+  "local": [
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@PLANT"
+    },
+    {
+      "slot": "location",
+      "facet": "not",
+      "filler": "@EARTH-CORE"
+    },
+    {
+      "slot": "location",
+      "facet": "not",
+      "filler": "@ICEBERG"
+    },
+    {
+      "slot": "location",
+      "facet": "not",
+      "filler": "@GLACIER"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@FUNGUS"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@RUST"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GREENHOUSE"
+    },
+    {
+      "slot": "location",
+      "facet": "not",
+      "filler": "@WATER-TABLE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GEOLOGICAL-ENTITY"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@PLANT-DISEASE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

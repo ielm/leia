@@ -1,0 +1,27 @@
+{
+  "name": "@CATSUP",
+  "isa": [
+    "@FLAVORING"
+  ],
+  "def": "A thick sauce made from tomatoes with adding other ingredients.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@TOMATO"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SUGAR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

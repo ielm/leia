@@ -1,0 +1,22 @@
+{
+  "name": "@FOHN",
+  "isa": [
+    "@WIND"
+  ],
+  "def": "A warm dry wind coming off the lee slopes of a mountain range, especially off the northern slopes of the Alps.",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@MOUNTAIN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

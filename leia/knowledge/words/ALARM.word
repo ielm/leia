@@ -1,0 +1,49 @@
+{
+  "word": "ALARM",
+  "senses": {
+    "ALARM-N1": {
+      "CAT": "N",
+      "DEF": "warning",
+      "EX": "the guards spread the alarm",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "WARN",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ALARM-N1",
+      "WORD": "ALARM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ALARM-N2": {
+      "CAT": "N",
+      "DEF": "fear",
+      "EX": "there is no cause for alarm",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FEAR",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ALARM-N2",
+      "WORD": "ALARM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

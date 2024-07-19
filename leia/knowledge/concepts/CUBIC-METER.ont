@@ -1,0 +1,19 @@
+{
+  "name": "@CUBIC-METER",
+  "isa": [
+    "@CUBIC-UNIT"
+  ],
+  "def": "the SI derived unit for measuring volume",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

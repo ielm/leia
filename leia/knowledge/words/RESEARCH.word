@@ -1,0 +1,85 @@
+{
+  "word": "RESEARCH",
+  "senses": {
+    "RESEARCH-N1": {
+      "CAT": "N",
+      "DEF": "the process of carrying out investigation",
+      "EX": "His research is interesting",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "RESEARCH",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "STUDY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "RESEARCH-N1",
+      "WORD": "RESEARCH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RESEARCH-V1": {
+      "CAT": "V",
+      "DEF": "carrying out research on something",
+      "EX": "He is researching the life cycle of bees",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "RESEARCH": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "RESEARCHED-0",
+        "THE",
+        "ANIMALS-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RESEARCH-V1",
+      "WORD": "RESEARCH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

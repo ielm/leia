@@ -1,0 +1,32 @@
+{
+  "name": "@COMMONPLACE-SERVICE-EVENT",
+  "isa": [
+    "@SERVICE-EVENT"
+  ],
+  "def": "a service-event in which non-skilled work-activities are performed, either in the home or the workplace",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@WORK-ROLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,31 @@
+{
+  "word": "LINED_PAPER",
+  "senses": {
+    "LINED_PAPER-N1": {
+      "CAT": "N",
+      "DEF": "paper with horizontal lines for writing",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PAPER": {
+          "HAS-OBJECT-AS-PART": "LINE-GEOMETRIC"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LINED_PAPER-N1",
+      "WORD": "LINED_PAPER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

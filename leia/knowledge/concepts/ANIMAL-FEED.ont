@@ -1,0 +1,24 @@
+{
+  "name": "@ANIMAL-FEED",
+  "isa": [
+    "@PREPARED-FOOD"
+  ],
+  "def": "a substance that can be used or prepared for use as animal food",
+  "local": [],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    }
+  ],
+  "private": {}
+}

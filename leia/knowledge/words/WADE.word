@@ -1,0 +1,47 @@
+{
+  "word": "WADE",
+  "senses": {
+    "WADE-V1": {
+      "CAT": "V",
+      "DEF": "to walk through water, other liquid, or such substances",
+      "EX": "she waded through the river",
+      "COMMENTS": "I'm not adding a pp with 'in' or 'through' because they each need to keep their own meaning and be done compositionally",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "WALK": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "LOCATION": "BODY-OF-WATER"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "WADED-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WADE-V1",
+      "WORD": "WADE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

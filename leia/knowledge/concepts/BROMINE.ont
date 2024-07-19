@@ -1,0 +1,24 @@
+{
+  "name": "@BROMINE",
+  "isa": [
+    "@HALOGEN"
+  ],
+  "def": "a heavy, volatile, corrosive, reddish-brown, nonmetallic liquid element, having a highly irritating vapor. it is used in producing gasoline antiknock mixtures, fumigants, dyes, and photographic chemicals",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        79
+      ]
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "red"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

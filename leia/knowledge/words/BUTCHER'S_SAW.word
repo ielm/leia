@@ -1,0 +1,33 @@
+{
+  "word": "BUTCHER'S_SAW",
+  "senses": {
+    "BUTCHER'S_SAW-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SAW": {
+          "USED-BY": "BUTCHER"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "MEAT_SAW"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BUTCHER'S_SAW-N1",
+      "WORD": "BUTCHER'S_SAW",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

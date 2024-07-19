@@ -1,0 +1,227 @@
+{
+  "word": "HOWEVER",
+  "senses": {
+    "HOWEVER-ADV1": {
+      "CAT": "ADV",
+      "DEF": "contrary to the prediction of some previous statement",
+      "EX": "the children, however, refused to cooperate",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "CONTRARY-TO-EXPECTATION-BECAUSE-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": [
+          "ALL"
+        ]
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          "REFSEM1"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "SAW",
+        "THE",
+        "EXPLOSION",
+        "*COMMA*",
+        "HOWEVER-0",
+        "THE",
+        "DOG",
+        "MANAGED-1",
+        "IT"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HOWEVER-ADV1",
+      "WORD": "HOWEVER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HOWEVER-CONJ1": {
+      "CAT": "CONJ",
+      "DEF": "",
+      "EX": "She studied hard, however, she failed the test. She studied hard; however, she failed the test.   She studied hard however, she failed the test. She studied hard however she failed the test.",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR2",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "PUNCT": {
+          "ROOT-WORD": [
+            "*COMMA*",
+            "*SEMICOLON*"
+          ],
+          "ROOT": "$VAR3",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "CONJ",
+        "PUNCT-1": {
+          "ROOT-WORD": "*COMMA*",
+          "ROOT": "$VAR4",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        },
+        "CL-1": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "CONTRARY-TO-EXPECTATION-BECAUSE-OF": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "*COMMA*-3",
+        "HOWEVER-0",
+        "*COMMA*-4",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "PUNCT",
+          "$VAR2",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HOWEVER-CONJ1",
+      "WORD": "HOWEVER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HOWEVER-CONJ2": {
+      "CAT": "CONJ",
+      "DEF": "",
+      "EX": "However hard she studies, she always does poorly on tests However skinny she is, she always wants to be thinner",
+      "COMMENTS": "This means 'even if she studies very hard... despite studying very hard...  For now I am simplifying to: she studies hard, she does poorly on tests marge: could this be reformulated as (however X Y), with the adverb handled compositionally?  then the sem-struc would be straightforward",
+      "TMR-HEAD": "$VAR4",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "CONJ",
+        "ADV": {
+          "ROOT": "$VAR1",
+          "CAT": "ADV"
+        },
+        "CL": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        },
+        "PUNCT": {
+          "ROOT-WORD": "*COMMA*",
+          "ROOT": "$VAR3",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        },
+        "CL-1": {
+          "ROOT": "$VAR4",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": [
+          "APPLY-MEANING",
+          [
+            "VALUE",
+            "^$VAR1"
+          ],
+          [
+            "VALUE",
+            "^$VAR2"
+          ]
+        ],
+        "PASS-THROUGH-MEANING": {
+          "VALUE": "^$VAR4"
+        },
+        "^$VAR4": {
+          "CONTRARY-TO-EXPECTATION-BECAUSE-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HOWEVER-0",
+        "FAST-1",
+        "THE",
+        "MAN",
+        "HIT-2",
+        "THE",
+        "BUILDING",
+        "*COMMA*-3",
+        "THE",
+        "MAN",
+        "HIT-4",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HOWEVER-CONJ2",
+      "WORD": "HOWEVER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

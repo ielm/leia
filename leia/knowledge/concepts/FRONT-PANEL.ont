@@ -1,0 +1,37 @@
+{
+  "name": "@FRONT-PANEL",
+  "isa": [
+    "@MACHINE-PART"
+  ],
+  "def": "the front panel of a device",
+  "local": [
+    {
+      "slot": "encloses",
+      "facet": "sem",
+      "filler": "@DEVICE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SYNTHETICS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "encloses",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "encloses",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

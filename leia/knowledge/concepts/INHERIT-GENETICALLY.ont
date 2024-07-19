@@ -1,0 +1,32 @@
+{
+  "name": "@INHERIT-GENETICALLY",
+  "isa": [
+    "@OFFSPRING-EVENT"
+  ],
+  "def": "to be passed genetic characteristics from one's parents",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GENE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DISEASE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CHARACTERISTIC"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OFFSPRING"
+    }
+  ],
+  "private": {}
+}

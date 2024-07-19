@@ -1,0 +1,49 @@
+{
+  "word": "SQUASH",
+  "senses": {
+    "SQUASH-N1": {
+      "CAT": "N",
+      "DEF": "a type of fruit",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "SQUASH",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SQUASH-N1",
+      "WORD": "SQUASH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SQUASH-N2": {
+      "CAT": "N",
+      "DEF": "a racket sport",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "RACKET-SPORT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SQUASH-N2",
+      "WORD": "SQUASH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

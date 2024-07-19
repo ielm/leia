@@ -1,0 +1,88 @@
+{
+  "word": "ANTI_APARTHEID",
+  "senses": {
+    "ANTI_APARTHEID-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "against apartheid + event",
+      "EX": "an anti-apartheid rally",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "PURPOSE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "OPPOSITION-EVENT": {
+            "THEME": "APARTHEID"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ANTI_APARTHEID-ADJ1",
+      "WORD": "ANTI_APARTHEID",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ANTI_APARTHEID-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "(person/organization) who acts in opposition to apartheid",
+      "EX": "an anti-apartheid group",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "HUMAN",
+            "ORGANIZATION"
+          ],
+          "AGENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "OPPOSITION-EVENT": {
+            "THEME": "APARTHEID"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ANTI_APARTHEID-ADJ2",
+      "WORD": "ANTI_APARTHEID",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

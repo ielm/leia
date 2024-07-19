@@ -1,0 +1,35 @@
+{
+  "word": "STABILE",
+  "senses": {
+    "STABILE-N1": {
+      "CAT": "N",
+      "DEF": "An abstract sculpture, usually made of sheet metal, resembling a mobile but with no moving parts",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SCULPTURE": {
+          "MADE-OF": "METAL",
+          "ABSTRACTNESS": [
+            ">",
+            0.7
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "STABILE-N1",
+      "WORD": "STABILE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

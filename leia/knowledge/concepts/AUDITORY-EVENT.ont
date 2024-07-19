@@ -1,0 +1,77 @@
+{
+  "name": "@AUDITORY-EVENT",
+  "isa": [
+    "@PERCEPTUAL-EVENT"
+  ],
+  "def": "the root of all auditory events; used when\nit is not clear if the event is voluntary or\ninvoluntary",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WAVE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EAR"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@BODY"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EYE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@NOSE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PRINCIPAL-BODY-PART"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SKIN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SUBDIVISION-OF-PRINCIPAL-BODY-PART"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TONGUE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

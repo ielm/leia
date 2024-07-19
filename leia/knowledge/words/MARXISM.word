@@ -1,0 +1,48 @@
+{
+  "word": "MARXISM",
+  "senses": {
+    "MARXISM-N1": {
+      "CAT": "N",
+      "DEF": "a type of communism created by Marx",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "COMMUNISM": {
+          "CREATED-BY": {
+            "VALUE": "REFSEM1"
+          },
+          "CREATED-BY-1": {
+            "VALUE": "REFSEM2"
+          }
+        },
+        "REFSEM1": {
+          "HUMAN": {
+            "HAS-SURNAME": "MARX",
+            "HAS-PERSONAL-NAME": "KARL"
+          }
+        },
+        "REFSEM2": {
+          "HUMAN": {
+            "HAS-SURNAME": "ENGELS",
+            "HAS-PERSONAL-NAME": "FRIEDRICH"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MARXISM-N1",
+      "WORD": "MARXISM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

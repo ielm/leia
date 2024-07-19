@@ -1,0 +1,115 @@
+{
+  "word": "EMPLOYMENT",
+  "senses": {
+    "EMPLOYMENT-N1": {
+      "CAT": "N",
+      "DEF": "work activity",
+      "EX": "does he have employment?",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "WORK-ACTIVITY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "JOB"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "EMPLOYMENT-N1",
+      "WORD": "EMPLOYMENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EMPLOYMENT-N2": {
+      "CAT": "N",
+      "DEF": "the act of hiring and having s.o. work for one",
+      "EX": "the employment of minorities by large companies",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "HIRE": {
+          "AGENT": {
+            "VALUE": "^$VAR4"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EMPLOYMENT-0",
+        "OF-1",
+        "THE",
+        "CORPORATION-2",
+        "BY-3",
+        "THE",
+        "MANAGERIAL-ROLE-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR4",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR4",
+          "$VAR0"
+        ],
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EMPLOYMENT-N2",
+      "WORD": "EMPLOYMENT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

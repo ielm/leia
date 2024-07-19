@@ -1,0 +1,22 @@
+{
+  "name": "@FERMENTATION",
+  "isa": [
+    "@CHEMICAL-REACTION"
+  ],
+  "def": "the chemical breakdown of a substance caused by microorganisms",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MICRO-ORGANISM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

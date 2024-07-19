@@ -1,0 +1,40 @@
+{
+  "word": "PARNASSIAN_POETRY",
+  "senses": {
+    "PARNASSIAN_POETRY-N1": {
+      "CAT": "N",
+      "DEF": "Poetry written by the school of poets of late 19th-century France whose work is   characterized by detachment and emphasis on metrical form over emotion.",
+      "EX": "",
+      "COMMENTS": "We need a way to indicate approximate time periods - the  description here - 1880-1899 - is too exacting and probably wrong",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LITERARY-COMPOSITION": {
+          "HAS-STYLE": "POEM",
+          "LOCATION": "FRANCE",
+          "TIME-BEGIN": {
+            "YEAR": 1880
+          },
+          "TIME-END": {
+            "YEAR": 1899
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "PARNASSIAN_VERSE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PARNASSIAN_POETRY-N1",
+      "WORD": "PARNASSIAN_POETRY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

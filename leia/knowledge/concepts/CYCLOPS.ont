@@ -1,0 +1,22 @@
+{
+  "name": "@CYCLOPS",
+  "isa": [
+    "@CRUSTACEAN"
+  ],
+  "def": "a copepod with a large median eye, a pear-shaped body, and long antennules - abundant in fresh waters",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BODY-OF-WATER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

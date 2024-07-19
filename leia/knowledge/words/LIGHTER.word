@@ -1,0 +1,31 @@
+{
+  "word": "LIGHTER",
+  "senses": {
+    "LIGHTER-N1": {
+      "CAT": "N",
+      "DEF": "a small device used to create a flame for lighting cigarettes, etc.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "LIGHTER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "CIGARETTE_LIGHTER",
+        "CIGAR_LIGHTER",
+        "POCKET_LIGHTER"
+      ],
+      "SENSE": "LIGHTER-N1",
+      "WORD": "LIGHTER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

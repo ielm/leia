@@ -1,0 +1,21 @@
+{
+  "name": "@TUNNEL",
+  "isa": [
+    "@ROAD"
+  ],
+  "def": "an underground passageway, as for autos",
+  "local": [
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

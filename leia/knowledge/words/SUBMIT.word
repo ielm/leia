@@ -1,0 +1,134 @@
+{
+  "word": "SUBMIT",
+  "senses": {
+    "SUBMIT-V1": {
+      "CAT": "V",
+      "DEF": "phrasal: submit resignation = resign",
+      "EX": "He submitted his resignation yesterday",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "RESIGNATION",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "LEAVE-WORK-ACTIVITY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "SUBMITTED-0",
+        "HIS",
+        "RESIGNATION-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SUBMIT-V1",
+      "WORD": "SUBMIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SUBMIT-V2": {
+      "CAT": "V",
+      "DEF": "to give something to someone",
+      "EX": "He submitted his application to the admissions office",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "INDIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "GIVE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          },
+          "FORMALITY": [
+            ">",
+            0.5
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "SUBMITTED-0",
+        "HER-3",
+        "HIS",
+        "APPLICATION-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SUBMIT-V2",
+      "WORD": "SUBMIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

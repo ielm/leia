@@ -1,0 +1,69 @@
+{
+  "word": "IGNORE",
+  "senses": {
+    "IGNORE-V1": {
+      "CAT": "V",
+      "DEF": "disregard",
+      "EX": "They ignored our suggestion",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "IGNORE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "IGNORED-0",
+        "OUR",
+        "SUGGESTION-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "DISREGARD",
+        "DISMISS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "IGNORE-V1",
+      "WORD": "IGNORE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

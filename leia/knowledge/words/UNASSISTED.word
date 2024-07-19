@@ -1,0 +1,62 @@
+{
+  "word": "UNASSISTED",
+  "senses": {
+    "UNASSISTED-ADV1": {
+      "CAT": "ADV",
+      "DEF": "without help",
+      "EX": "The child can swim across the pool unassisted",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "POST-VERB-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "HAS-EVENT-AS-PART": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "HELP": {
+            "BENEFICIARY": {
+              "VALUE": "^$VAR1.AGENT"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HIT-1",
+        "UNASSISTED-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "UNASSISTED-ADV1",
+      "WORD": "UNASSISTED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

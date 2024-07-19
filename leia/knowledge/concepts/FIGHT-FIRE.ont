@@ -1,0 +1,77 @@
+{
+  "name": "@FIGHT-FIRE",
+  "isa": [
+    "@PROTECT-SERVE"
+  ],
+  "def": "The act of trying to put out a fire, as by a firefighter",
+  "local": [
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@FIRE-ENGINE"
+    },
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@FIRE-STATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@FIREFIGHTER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FIRE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WILDFIRE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FIRE-ENGINE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HOSE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PAIL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@PROTECTION-ROLE"
+    },
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

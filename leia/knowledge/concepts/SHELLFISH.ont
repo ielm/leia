@@ -1,0 +1,42 @@
+{
+  "name": "@SHELLFISH",
+  "isa": [
+    "@FISH-MEAT"
+  ],
+  "def": "the meat from an animal that lives in water and has a shell. Lobsters, crabs, shrimp, mussels, and oysters are all shellfish",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CRUSTACEAN"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MOLLUSK"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@ALLERGY"
+    },
+    {
+      "slot": "effect",
+      "facet": "relaxable-to",
+      "filler": "@EVENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

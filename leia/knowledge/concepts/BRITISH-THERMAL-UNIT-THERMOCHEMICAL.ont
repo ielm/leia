@@ -1,0 +1,19 @@
+{
+  "name": "@BRITISH-THERMAL-UNIT-THERMOCHEMICAL",
+  "isa": [
+    "@ENERGY-UNIT"
+  ],
+  "def": "(Wikipedia) uses the thermochemical calorie of exactly 4.184 J (joule)",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1054.35
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

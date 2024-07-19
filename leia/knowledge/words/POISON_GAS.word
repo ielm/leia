@@ -1,0 +1,31 @@
+{
+  "word": "POISON_GAS",
+  "senses": {
+    "POISON_GAS-N1": {
+      "CAT": "N",
+      "DEF": "a gas or vapor used especially in chemical warfare to injure, disable, or kill upon inhalation or contact.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "POISONOUS-SUBSTANCE": {
+          "STATE-OF-MATTER": "GAS"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "POISON_GAS-N1",
+      "WORD": "POISON_GAS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

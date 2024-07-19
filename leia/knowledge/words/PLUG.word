@@ -1,0 +1,52 @@
+{
+  "word": "PLUG",
+  "senses": {
+    "PLUG-N1": {
+      "CAT": "N",
+      "DEF": "a pronged connecting device for making contact or closing a circuit",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PLUG-ELECTRIC",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PLUG-N1",
+      "WORD": "PLUG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PLUG-N2": {
+      "CAT": "N",
+      "DEF": "a device used to plug a hole tightly",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "STOPPER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "STOPPER",
+        "STOPPLE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PLUG-N2",
+      "WORD": "PLUG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

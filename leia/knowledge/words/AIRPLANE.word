@@ -1,0 +1,42 @@
+{
+  "word": "AIRPLANE",
+  "senses": {
+    "AIRPLANE-N1": {
+      "CAT": "N",
+      "DEF": "a winged vehicle that travels through the air",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "AIRPLANE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "AEROPLANE",
+        "PLANE"
+      ],
+      "HYPONYMS": [
+        "AIRBUS",
+        "AIRLINER",
+        "BIPLANE",
+        "DOUBLE_PROP",
+        "MONOPLANE",
+        "PROP_JET",
+        "PROPELLER_PLANE",
+        "SEAPLANE",
+        "SINGLE_PROP",
+        "TURBOPROP",
+        "TWIN_PROP"
+      ],
+      "SENSE": "AIRPLANE-N1",
+      "WORD": "AIRPLANE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@SNOWSTORM",
+  "isa": [
+    "@STORM"
+  ],
+  "def": "a storm with heavy snowfall",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "not",
+      "filler": "@TROPICAL-RAIN-FOREST"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@SNOW"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@NATURAL-EVENT"
+    }
+  ],
+  "private": {}
+}

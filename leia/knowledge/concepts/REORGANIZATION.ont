@@ -1,0 +1,27 @@
+{
+  "name": "@REORGANIZATION",
+  "isa": [
+    "@CORPORATE-EVENT"
+  ],
+  "def": "an option a corporation has in the event of bankruptcy to change the financial structure, the obligation and the management to overcome its financial difficulties and enable it to continue to function",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CORPORATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

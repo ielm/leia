@@ -1,0 +1,16 @@
+{
+  "name": "@CHEMICAL-COMPOUND",
+  "isa": [
+    "@MATERIAL"
+  ],
+  "def": "a chemically distinct substance formed by union of two or more ingredients (as elements) in definite proportion by weight and with definite structural arrangement",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

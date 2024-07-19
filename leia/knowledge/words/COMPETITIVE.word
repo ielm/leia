@@ -1,0 +1,38 @@
+{
+  "word": "COMPETITIVE",
+  "senses": {
+    "COMPETITIVE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "of use in, or otherwise pertaining to, competition",
+      "EX": "competitive attitude; competitive price; competitive running shoes",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "COMPETE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "COMPETITIVE-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COMPETITIVE-ADJ1",
+      "WORD": "COMPETITIVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

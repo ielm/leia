@@ -1,0 +1,16 @@
+{
+  "name": "@CHLOROPHYLL",
+  "isa": [
+    "@INTERNAL-PLANT-PART"
+  ],
+  "def": "any of a group of related green pigments found in photosynthetic organisms",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "green"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

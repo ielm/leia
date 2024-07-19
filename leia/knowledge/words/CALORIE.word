@@ -1,0 +1,203 @@
+{
+  "word": "CALORIE",
+  "senses": {
+    "CALORIE-N1": {
+      "CAT": "N",
+      "DEF": "a unit for measuring heat, especially for measuring the energy produced by food when oxidized by the body",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CALORIE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CALORIE-N1",
+      "WORD": "CALORIE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CALORIE-N2": {
+      "CAT": "N",
+      "DEF": "(Wikipedia) the amount of energy required to warm one gram of air-free water from 14.5 degrees Celsius to 15.5 degrees Celsius at standard atmospheric pressure. abbreviated cal 15.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CALORIE-15",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CALORIE-N2",
+      "WORD": "CALORIE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CALORIE-N3": {
+      "CAT": "N",
+      "DEF": "(Wikipedia) the amount of energy required to warm one gram of air-free water from 19.5 degrees Celsius to 20.5 degrees Celsius at standard atmospheric pressure. abbreviated cal 20.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CALORIE-20",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CALORIE-N3",
+      "WORD": "CALORIE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CALORIE-N4": {
+      "CAT": "N",
+      "DEF": "this is the Inernational Steam Table calorie. abbreviated cal.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CALORIE-IT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CALORIE-N4",
+      "WORD": "CALORIE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CALORIE-N5": {
+      "CAT": "N",
+      "DEF": "1/100 of the amount of energy required to warm one gram of air-free water from 0 degrees Celsius to 100 degrees Celsius at standard atmospheric pressure. abbreviated cal.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CALORIE-MEAN",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CALORIE-N5",
+      "WORD": "CALORIE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CALORIE-N6": {
+      "CAT": "N",
+      "DEF": "The amount of heat (energy) needed to increase the temperature of one kilogram of water by one degree Celsius (Wikipedia). abbreviated Cal or kcal. IT refers to International Table.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CALORIE-NUTRITION-IT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CALORIE-N6",
+      "WORD": "CALORIE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CALORIE-N7": {
+      "CAT": "N",
+      "DEF": "1/100 of the amount of energy required to warm one gram of air-free water from 0 degrees Celsius to 100 degrees Celsius at standard atmospheric pressure. (Wikipedia). abbreviated Cal or kcal.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CALORIE-NUTRITION-MEAN",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CALORIE-N7",
+      "WORD": "CALORIE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CALORIE-N8": {
+      "CAT": "N",
+      "DEF": "The amount of energy needed to increase the temperature of one kilogram of water by one degree Celsius. (Wikipedia). abbreviated Cal or kcal.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CALORIE-NUTRITION-THERMOCHEMICAL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CALORIE-N8",
+      "WORD": "CALORIE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CALORIE-N9": {
+      "CAT": "N",
+      "DEF": "4.184 J exactly (Wikipedia). abbreviated cal.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CALORIE-THERMOCHEMICAL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CALORIE-N9",
+      "WORD": "CALORIE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

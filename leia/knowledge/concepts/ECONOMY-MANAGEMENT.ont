@@ -1,0 +1,57 @@
+{
+  "name": "@ECONOMY-MANAGEMENT",
+  "isa": [
+    "@GOVERNMENT-ACTIVITY"
+  ],
+  "def": "the management of a government*s income, expenditures, etc.",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@GOVERNMENTAL-ORGANIZATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@EXECUTIVE-BRANCH"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@COMMON-MARKET"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@PUBLIC-ADMINISTRATION-ORGANIZATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

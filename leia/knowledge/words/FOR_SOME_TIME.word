@@ -1,0 +1,52 @@
+{
+  "word": "FOR_SOME_TIME",
+  "senses": {
+    "FOR_SOME_TIME-ADV1": {
+      "CAT": "ADV",
+      "DEF": "for an unspecified amount of time; tends not to be extremely long",
+      "EX": "She has been growing tomatoes for some time",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "DURATION": [
+            "><",
+            0,
+            0.5
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "FOR_SOME_TIME-0",
+        "THE",
+        "WAR-1",
+        "WAS",
+        "ELUSIVE"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FOR_SOME_TIME-ADV1",
+      "WORD": "FOR_SOME_TIME",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

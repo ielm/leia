@@ -1,0 +1,52 @@
+{
+  "name": "@URINATE",
+  "isa": [
+    "@EXCRETE"
+  ],
+  "def": "to excrete urine.",
+  "local": [
+    {
+      "slot": "experiencer",
+      "facet": "default",
+      "filler": "@VERTEBRATE"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@URETER"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@URINE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@LOWER-GASTROINTESTINAL-TRACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@WASTE-MATERIAL"
+    }
+  ],
+  "private": {}
+}

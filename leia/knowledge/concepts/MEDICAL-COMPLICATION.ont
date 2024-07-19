@@ -1,0 +1,10 @@
+{
+  "name": "@MEDICAL-COMPLICATION",
+  "isa": [
+    "@PATHOLOGIC-FUNCTION"
+  ],
+  "def": "a disease, disorder, etc. that is secondary to another one; the onto description should include this precondition but we can't express the correct bindings in DEKADE at this time",
+  "local": [],
+  "block": [],
+  "private": {}
+}

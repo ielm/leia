@@ -1,0 +1,19 @@
+{
+  "name": "@RADIAN",
+  "isa": [
+    "@PLANE-ANGLE-UNIT"
+  ],
+  "def": "the SI derived measure for measuring a plane angle, defined as an angle formed by two straight lines on the same plane. m*m^-1 (^ means power, m means meter, * means multiplication)",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

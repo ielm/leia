@@ -1,0 +1,16 @@
+{
+  "name": "@EGO",
+  "isa": [
+    "@ABSTRACT-IDEA"
+  ],
+  "def": "the self; the individual as self-aware, as in psychology",
+  "local": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@PSYCHOLOGY"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

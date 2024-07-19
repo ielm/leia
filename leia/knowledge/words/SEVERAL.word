@@ -1,0 +1,160 @@
+{
+  "word": "SEVERAL",
+  "senses": {
+    "SEVERAL-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "several people voted for him.",
+      "COMMENTS": "the complement is a 'n' since it can't have a determiner or article.",
+      "TMR-HEAD": "$VAR0",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "NUMBER": "PL"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "CARDINALITY": [
+            "><",
+            3,
+            6
+          ],
+          "DETERMINATE": "NO",
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SEVERAL-0",
+        "DOGS-1",
+        "RAN",
+        "AWAY"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "MULTIPLE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SEVERAL-QUANTIFIER1",
+      "WORD": "SEVERAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SEVERAL-QUANTIFIER2": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "several of her friends like jazz.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "CAT": "PREP",
+          "ROOT": "$VAR2",
+          "OBJ": {
+            "ROOT": "$VAR1",
+            "CAT": "NP",
+            "NUMBER": "PL"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "CARDINALITY": [
+            "><",
+            3,
+            6
+          ],
+          "DETERMINATE": "NO",
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SEVERAL-0",
+        "OF-2",
+        "THE",
+        "DOGS-1",
+        "RAN",
+        "AWAY"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR2",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SEVERAL-QUANTIFIER2",
+      "WORD": "SEVERAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SEVERAL-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "i'd like several if they're not too expensive.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "CARDINALITY": [
+            "><",
+            3,
+            6
+          ],
+          "DETERMINATE": "NO"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          [
+            "SET",
+            1
+          ]
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SEVERAL-N1",
+      "WORD": "SEVERAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

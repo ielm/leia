@@ -1,0 +1,49 @@
+{
+  "word": "MEMORY",
+  "senses": {
+    "MEMORY-N1": {
+      "CAT": "N",
+      "DEF": "the capacity to store and access information in one's brain",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "MEMORY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MEMORY-N1",
+      "WORD": "MEMORY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MEMORY-N2": {
+      "CAT": "N",
+      "DEF": "computer memory",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "COMPUTER-MEMORY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MEMORY-N2",
+      "WORD": "MEMORY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

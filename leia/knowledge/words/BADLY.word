@@ -1,0 +1,51 @@
+{
+  "word": "BADLY",
+  "senses": {
+    "BADLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "in a poor manner",
+      "EX": "she sang badly",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0.2,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "BADLY-0",
+        "EVENTED-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "POORLY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BADLY-ADV1",
+      "WORD": "BADLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "word": "GOSH",
+  "senses": {
+    "GOSH-INTERJECTION1": {
+      "CAT": "INTERJECTION",
+      "DEF": "discourse filler",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CAT": "INTERJECTION",
+        "ROOT": "$VAR0"
+      },
+      "SEM-STRUC": {
+        "^$VAR0": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GOSH-INTERJECTION1",
+      "WORD": "GOSH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "word": "SAFE",
+  "senses": {
+    "SAFE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SAFETY-ATTRIBUTE": 0.9
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CONSERVATIVE-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "CONSERVATIVE",
+        "BENIGN"
+      ],
+      "SENSE": "SAFE-ADJ1",
+      "WORD": "SAFE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SAFE-N1": {
+      "CAT": "N",
+      "DEF": "a metal locking container for valuables",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "METAL-SAFE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SAFE-N1",
+      "WORD": "SAFE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

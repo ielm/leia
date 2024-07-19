@@ -1,0 +1,19 @@
+{
+  "name": "@HAND-AS-MEASURE",
+  "isa": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "def": "4 inches, used to measure equines; 4*inch",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.1016
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

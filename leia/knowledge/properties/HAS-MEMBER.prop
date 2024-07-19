@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-MEMBER",
+  "def": "any organization or group can have people as members",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$MEMBER-OF",
+  "measured-in": [],
+  "container": "$RELATION"
+}

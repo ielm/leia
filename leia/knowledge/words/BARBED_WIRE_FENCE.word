@@ -1,0 +1,32 @@
+{
+  "word": "BARBED_WIRE_FENCE",
+  "senses": {
+    "BARBED_WIRE_FENCE-N1": {
+      "CAT": "N",
+      "DEF": "a fence made of intermeshed wire with sharp spikes at the top",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "FENCE": {
+          "MADE-OF": "WIRE",
+          "SHARPNESS": 0.9
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BARBED_WIRE_FENCE-N1",
+      "WORD": "BARBED_WIRE_FENCE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

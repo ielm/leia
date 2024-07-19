@@ -1,0 +1,32 @@
+{
+  "name": "@TELEVISION-PROGRAM",
+  "isa": [
+    "@ENTERTAIN-EVENT"
+  ],
+  "def": "Programming shown on television",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TELEVISION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    }
+  ],
+  "private": {}
+}

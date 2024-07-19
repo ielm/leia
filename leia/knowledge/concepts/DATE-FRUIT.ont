@@ -1,0 +1,33 @@
+{
+  "name": "@DATE-FRUIT",
+  "isa": [
+    "@TREE-FRUIT"
+  ],
+  "def": "a small brown sweet fruit with a long stone, from hot dry countries",
+  "local": [
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "><",
+        8
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    }
+  ],
+  "block": [
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "egglike"
+    }
+  ],
+  "private": {}
+}

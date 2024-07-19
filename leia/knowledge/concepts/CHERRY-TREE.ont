@@ -1,0 +1,22 @@
+{
+  "name": "@CHERRY-TREE",
+  "isa": [
+    "@FRUIT-TREE"
+  ],
+  "def": "a tree that produces cherries",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CHERRY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@TREE-FRUIT"
+    }
+  ],
+  "private": {}
+}

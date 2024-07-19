@@ -1,0 +1,27 @@
+{
+  "name": "@ASCENSION-DAY",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "A Christian holiday celebrated on the 40th day after Easter",
+  "local": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@CHRISTIANITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "private": {}
+}

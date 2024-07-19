@@ -1,0 +1,9 @@
+{
+  "name": "$CREATED-BY",
+  "def": "relations expressing the tie between created objects and their creators, where the creator is a HUMAN or SOCIAL-OBJECT.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$CREATOR-OF",
+  "measured-in": [],
+  "container": "$RELATION"
+}

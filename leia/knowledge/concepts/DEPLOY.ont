@@ -1,0 +1,47 @@
+{
+  "name": "@DEPLOY",
+  "isa": [
+    "@MILITARY-ACTIVITY"
+  ],
+  "def": "to spread or place (military troops, etc.) as by a plan",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MILITARY-ORGANIZATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MILITARY-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "attribute",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

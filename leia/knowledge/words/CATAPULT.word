@@ -1,0 +1,74 @@
+{
+  "word": "CATAPULT",
+  "senses": {
+    "CATAPULT-N1": {
+      "CAT": "N",
+      "DEF": "a device for hurling things",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "CATAPULT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CATAPULT-N1",
+      "WORD": "CATAPULT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CATAPULT-V1": {
+      "CAT": "V",
+      "DEF": "to hurl using a catapult",
+      "EX": "they catapulted him over the wall",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "THROW": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "INSTRUMENT": "CATAPULT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "CATAPULTED-0",
+        "HIM-2",
+        "OVER",
+        "THE",
+        "WALL"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CATAPULT-V1",
+      "WORD": "CATAPULT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

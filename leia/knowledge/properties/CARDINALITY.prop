@@ -1,0 +1,11 @@
+{
+  "name": "$CARDINALITY",
+  "def": "indicates the number of something",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@CARDINALITY-PER-MEASURING-UNIT"
+  ],
+  "container": "$PARAMETRIC-SCALAR"
+}

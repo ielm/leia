@@ -1,0 +1,35 @@
+{
+  "name": "@ANIMAL-DERIVED-FOODSTUFF",
+  "isa": [
+    "@ANIMAL-DERIVED-SUBSTANCE",
+    "@FOODSTUFF"
+  ],
+  "def": "any foodstuff originating with the animal kingdom",
+  "local": [],
+  "block": [
+    {
+      "slot": "formality",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@GAS"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "semi-solid"
+    }
+  ],
+  "private": {}
+}

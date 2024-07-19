@@ -1,0 +1,33 @@
+{
+  "word": "AIR_HOSE",
+  "senses": {
+    "AIR_HOSE-N1": {
+      "CAT": "N",
+      "DEF": "a hose that contains air under pressure",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "TUBE": {
+          "CONTAINS": "AIR"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "AIRLINE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "AIR_HOSE-N1",
+      "WORD": "AIR_HOSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

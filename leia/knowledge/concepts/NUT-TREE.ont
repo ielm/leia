@@ -1,0 +1,22 @@
+{
+  "name": "@NUT-TREE",
+  "isa": [
+    "@TREE"
+  ],
+  "def": "a tree that produces nuts",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@NUT-FOODSTUFF"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@PLANT-DERIVED-FOODSTUFF"
+    }
+  ],
+  "private": {}
+}

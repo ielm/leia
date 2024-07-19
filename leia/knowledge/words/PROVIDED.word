@@ -1,0 +1,121 @@
+{
+  "word": "PROVIDED",
+  "senses": {
+    "PROVIDED-CONJ1": {
+      "CAT": "CONJ",
+      "DEF": "",
+      "EX": "You can come(,) provided (that) you're polite",
+      "COMMENTS": "synonym of 'if'",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "PUNCT": {
+          "ROOT-WORD": "*COMMA*",
+          "ROOT": "$VAR2",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "CONJ",
+        "CONJ": {
+          "ROOT": "$VAR3",
+          "CAT": "CONJ",
+          "ROOT-WORD": "THAT",
+          "OPT": "+"
+        },
+        "CL-1": {
+          "ROOT": "$VAR4",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "PRECONDITION": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "PROVIDING"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PROVIDED-CONJ1",
+      "WORD": "PROVIDED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PROVIDED-CONJ2": {
+      "CAT": "CONJ",
+      "DEF": "",
+      "EX": "Provided (that) you're polite (,) you can come",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR4",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "CONJ",
+        "CONJ": {
+          "ROOT": "$VAR1",
+          "CAT": "CONJ",
+          "ROOT-WORD": "THAT",
+          "OPT": "+"
+        },
+        "CL": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        },
+        "PUNCT": {
+          "ROOT-WORD": "*COMMA*",
+          "ROOT": "$VAR3",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        },
+        "CL-1": {
+          "ROOT": "$VAR4",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR4": {
+          "PRECONDITION": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "PROVIDING"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PROVIDED-CONJ2",
+      "WORD": "PROVIDED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

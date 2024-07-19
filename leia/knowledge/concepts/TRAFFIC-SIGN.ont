@@ -1,0 +1,11 @@
+{
+  "name": "@TRAFFIC-SIGN",
+  "isa": [
+    "@TRAFFIC-INDICATOR",
+    "@SIGN"
+  ],
+  "def": "a subtree for traffic-oriented signs",
+  "local": [],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,40 @@
+{
+  "word": "ASSOCIATED",
+  "senses": {
+    "ASSOCIATED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "having to do with something else; this is typically a discourse function  word in the contexts we're finding",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ASSOCIATED-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ASSOCIATED-ADJ1",
+      "WORD": "ASSOCIATED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

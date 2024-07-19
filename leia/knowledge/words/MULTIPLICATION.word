@@ -1,0 +1,62 @@
+{
+  "word": "MULTIPLICATION",
+  "senses": {
+    "MULTIPLICATION-N1": {
+      "CAT": "N",
+      "DEF": "a mathematical operation that, for positive integers, consists of adding a number to itself a certain number of times; extends to other real numbers according to the rules governing the multiplicational properties of positive integers ",
+      "EX": "the multiplication of large numbers",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MULTIPLICATION": {
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "MULTIPLICATION-0",
+        "OF-1",
+        "THE",
+        "OBJECT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MULTIPLICATION-N1",
+      "WORD": "MULTIPLICATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

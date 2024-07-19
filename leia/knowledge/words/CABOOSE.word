@@ -1,0 +1,34 @@
+{
+  "word": "CABOOSE",
+  "senses": {
+    "CABOOSE-N1": {
+      "CAT": "N",
+      "DEF": "the last car on a freight train, with   kitchen and sleeping facilities for the train crew",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "RAILROAD-CAR": {
+          "HAS-OBJECT-AS-PART": [
+            "KITCHEN",
+            "BED"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CABOOSE-N1",
+      "WORD": "CABOOSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

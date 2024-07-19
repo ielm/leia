@@ -1,0 +1,71 @@
+{
+  "word": "ACROLITH",
+  "senses": {
+    "ACROLITH-N1": {
+      "CAT": "N",
+      "DEF": "A statue with stone extremities and a trunk generally of wood",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "STATUE": {
+          "DEPICTS": "HUMAN",
+          "HAS-OBJECT-AS-PART": {
+            "VALUE": "REFSEM1"
+          },
+          "HAS-OBJECT-AS-PART-1": {
+            "VALUE": "REFSEM2"
+          },
+          "HAS-OBJECT-AS-PART-2": {
+            "VALUE": "REFSEM4"
+          }
+        },
+        "REFSEM1": {
+          "TRUNK-OF-BODY": {
+            "MADE-OF": "WOOD"
+          }
+        },
+        "REFSEM2": {
+          "SET": {
+            "MEMBER-TYPE": {
+              "VALUE": "REFSEM3"
+            },
+            "CARDINALITY": 2
+          }
+        },
+        "REFSEM3": {
+          "ARM": {
+            "MADE-OF-1": "ROCK"
+          }
+        },
+        "REFSEM4": {
+          "SET": {
+            "MEMBER-TYPE-1": {
+              "VALUE": "REFSEM5"
+            },
+            "CARDINALITY": 2
+          }
+        },
+        "REFSEM5": {
+          "LEG": {
+            "MADE-OF-2": "ROCK"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ACROLITH-N1",
+      "WORD": "ACROLITH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@TRADE-NAME",
+  "isa": [
+    "@INTANGIBLE-ASSET",
+    "@NAME"
+  ],
+  "def": "the business name of a company",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

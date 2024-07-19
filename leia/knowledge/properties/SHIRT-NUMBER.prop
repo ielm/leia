@@ -1,0 +1,9 @@
+{
+  "name": "$SHIRT-NUMBER",
+  "def": "the number on the shirt of an athlete who played for a team in a match",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-HUMAN-ATTRIBUTE"
+}

@@ -1,0 +1,74 @@
+{
+  "word": "PRIORITIZE",
+  "senses": {
+    "PRIORITIZE-V1": {
+      "CAT": "V",
+      "DEF": "assign priority (saliency)",
+      "EX": "they prioritized the applications based on date received",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "CLASSIFY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "EFFECT": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "MODALITY": {
+            "TYPE": "SALIENCY",
+            "SCOPE": {
+              "VALUE": "^$VAR2"
+            },
+            "ATTRIBUTED-TO": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "PRIORITIZED-0",
+        "THE",
+        "APPLICATION-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRIORITIZE-V1",
+      "WORD": "PRIORITIZE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

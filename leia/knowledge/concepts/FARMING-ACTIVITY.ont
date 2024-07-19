@@ -1,0 +1,132 @@
+{
+  "name": "@FARMING-ACTIVITY",
+  "isa": [
+    "@WORK-ACTIVITY"
+  ],
+  "def": "the raising of livestock or crops in the operation of a farm",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SOIL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HUMUS"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FARM-MACHINE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@FARMER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SEED"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GEOLOGICAL-ENTITY"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WATER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ENGINEERED-ARTIFACT"
+    },
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@AGRICULTURAL-CORPORATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CROP"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@FARM"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@AGRICULTURAL-PRODUCT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIVESTOCK"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@CULTIVATE-CROP"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@AGRICULTURE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

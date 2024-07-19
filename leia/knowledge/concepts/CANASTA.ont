@@ -1,0 +1,16 @@
+{
+  "name": "@CANASTA",
+  "isa": [
+    "@CARD-GAME"
+  ],
+  "def": "A card game for two to six players, related to rummy and requiring two decks of cards",
+  "local": [],
+  "block": [
+    {
+      "slot": "individual-or-team",
+      "facet": "sem",
+      "filler": "individual"
+    }
+  ],
+  "private": {}
+}

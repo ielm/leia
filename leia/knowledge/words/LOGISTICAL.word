@@ -1,0 +1,35 @@
+{
+  "word": "LOGISTICAL",
+  "senses": {
+    "LOGISTICAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to administration",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "MANAGEMENT-ACTIVITY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LOGISTICAL-ADJ1",
+      "WORD": "LOGISTICAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

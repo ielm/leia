@@ -1,0 +1,42 @@
+{
+  "word": "EJECTOR_SEAT",
+  "senses": {
+    "EJECTOR_SEAT-N1": {
+      "CAT": "N",
+      "DEF": "a seat that can throw you from an airplane in case of emergency",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SEAT": {
+          "LOCATION": "AIRPLANE",
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "THROW": {
+            "THEME": "PILOT",
+            "SOURCE": "AIRPLANE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "EJECTION_SEAT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "EJECTOR_SEAT-N1",
+      "WORD": "EJECTOR_SEAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

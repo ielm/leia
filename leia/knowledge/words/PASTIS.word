@@ -1,0 +1,31 @@
+{
+  "word": "PASTIS",
+  "senses": {
+    "PASTIS-N1": {
+      "CAT": "N",
+      "DEF": "A French liqueur flavored with licorice.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LIQUOR": {
+          "HAS-OBJECT-AS-PART": "LICORICE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PASTIS-N1",
+      "WORD": "PASTIS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

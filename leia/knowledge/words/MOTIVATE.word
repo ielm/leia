@@ -1,0 +1,61 @@
+{
+  "word": "MOTIVATE",
+  "senses": {
+    "MOTIVATE-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "he motivates her to work hard",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "INDIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "XCOMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "MOTIVATE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "MOTIVATES-0",
+        "THE",
+        "DOG-2",
+        "TO",
+        "WAIT-3",
+        "FOR",
+        "DINNER"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MOTIVATE-V1",
+      "WORD": "MOTIVATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

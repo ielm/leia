@@ -1,0 +1,40 @@
+{
+  "word": "STORMY",
+  "senses": {
+    "STORMY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "it's stormy",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR0",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "TYPE": "PRO",
+          "ROOT-WORD": "IT"
+        },
+        "ROOT": "$VAR2",
+        "CAT": "V",
+        "ROOT-WORD": "*BE*",
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        }
+      },
+      "SEM-STRUC": "STORM",
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "STORMY-ADJ1",
+      "WORD": "STORMY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

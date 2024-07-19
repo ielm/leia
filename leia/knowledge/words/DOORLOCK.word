@@ -1,0 +1,34 @@
+{
+  "word": "DOORLOCK",
+  "senses": {
+    "DOORLOCK-N1": {
+      "CAT": "N",
+      "DEF": "an artifact for locking things, like doors",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LOCK": {
+          "PART-OF-OBJECT": "DOOR"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "NIGHT_LATCH",
+        "DOOR_LATCH"
+      ],
+      "SENSE": "DOORLOCK-N1",
+      "WORD": "DOORLOCK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

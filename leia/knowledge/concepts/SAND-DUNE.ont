@@ -1,0 +1,16 @@
+{
+  "name": "@SAND-DUNE",
+  "isa": [
+    "@GEOLOGICAL-ELEVATION"
+  ],
+  "def": "a mound of sand caused by wind",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "default",
+      "filler": "@SAND"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

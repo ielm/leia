@@ -1,0 +1,51 @@
+{
+  "name": "@BOX-CORNER",
+  "isa": [
+    "@RELATIVE-PART-OF-PHYSICAL-OBJECT"
+  ],
+  "def": "the place where two lines, streets, walls, surfaces, etc. meet to form an angle.",
+  "local": [
+    {
+      "slot": "box-corner-orientation",
+      "facet": "sem",
+      "filler": "right"
+    },
+    {
+      "slot": "box-corner-orientation",
+      "facet": "sem",
+      "filler": "left"
+    },
+    {
+      "slot": "box-corner-orientation",
+      "facet": "sem",
+      "filler": "top"
+    },
+    {
+      "slot": "box-corner-orientation",
+      "facet": "sem",
+      "filler": "bottom"
+    },
+    {
+      "slot": "box-corner-orientation",
+      "facet": "sem",
+      "filler": "top-left"
+    },
+    {
+      "slot": "box-corner-orientation",
+      "facet": "sem",
+      "filler": "top-right"
+    },
+    {
+      "slot": "box-corner-orientation",
+      "facet": "sem",
+      "filler": "bottom-left"
+    },
+    {
+      "slot": "box-corner-orientation",
+      "facet": "sem",
+      "filler": "bottom-right"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

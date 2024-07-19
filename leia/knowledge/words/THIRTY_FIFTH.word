@@ -1,0 +1,52 @@
+{
+  "word": "THIRTY_FIFTH",
+  "senses": {
+    "THIRTY_FIFTH-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "ORDINALITY": 35
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "35",
+        "TH-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "35TH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "THIRTY_FIFTH-ADJ1",
+      "WORD": "THIRTY_FIFTH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

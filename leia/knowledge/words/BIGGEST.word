@@ -1,0 +1,50 @@
+{
+  "word": "BIGGEST",
+  "senses": {
+    "BIGGEST-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "most significant, in general rather than of a given set",
+      "EX": "this is the biggest event of the year; this is the biggest mistake you ever made",
+      "COMMENTS": "note SALIENCY rather than SIZE",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "SALIENCY",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "BIGGEST-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "LARGEST"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "BIGGEST-ADJ1",
+      "WORD": "BIGGEST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

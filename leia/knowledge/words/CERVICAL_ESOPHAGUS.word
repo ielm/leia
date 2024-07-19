@@ -1,0 +1,33 @@
+{
+  "word": "CERVICAL_ESOPHAGUS",
+  "senses": {
+    "CERVICAL_ESOPHAGUS-N1": {
+      "CAT": "N",
+      "DEF": "the C6 and C7 segments of the esophagus",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "ELEMENTS": {
+            "C6-SEGMENT-OF-ESOPHAGUS": "C7-SEGMENT-OF-ESOPHAGUS"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CERVICAL_ESOPHAGUS-N1",
+      "WORD": "CERVICAL_ESOPHAGUS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

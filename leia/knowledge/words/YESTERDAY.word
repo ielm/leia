@@ -1,0 +1,52 @@
+{
+  "word": "YESTERDAY",
+  "senses": {
+    "YESTERDAY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "",
+      "EX": "yesterday he admitted (he admitted yesterday) that; this all happened yesterday",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TIME": [
+            "COMBINE-TIME",
+            [
+              "FIND-ANCHOR-TIME"
+            ],
+            "DAY",
+            "BEFORE"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "YESTERDAY-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "YESTERDAY-ADV1",
+      "WORD": "YESTERDAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "word": "IN_TOUCH_WITH",
+  "senses": {
+    "IN_TOUCH_WITH-PREP1": {
+      "CAT": "PREP",
+      "DEF": "understands, is aware of",
+      "EX": "the boss is in touch with the needs of the workers",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "UNDERSTAND": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HUMAN-1",
+        "IN_TOUCH_WITH-0",
+        "THE",
+        "EVENT-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "IN_TOUCH_WITH-PREP1",
+      "WORD": "IN_TOUCH_WITH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "IN_TOUCH_WITH-PREP2": {
+      "CAT": "PREP",
+      "DEF": "has not been communicating with",
+      "EX": "i haven't been in touch with my cousins for a while",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "HUMAN",
+          "AGENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "COMMUNICATIVE-EVENT": {
+            "BENEFICIARY": {
+              "VALUE": "^$VAR2",
+              "SEM-1": "HUMAN"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "IN_TOUCH_WITH-0",
+        "THE",
+        "GIRL-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "IN_CONTACT_WITH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "IN_TOUCH_WITH-PREP2",
+      "WORD": "IN_TOUCH_WITH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

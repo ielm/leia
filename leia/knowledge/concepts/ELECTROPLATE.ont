@@ -1,0 +1,38 @@
+{
+  "name": "@ELECTROPLATE",
+  "isa": [
+    "@MANUFACTURING-ACTIVITY"
+  ],
+  "def": "to deposit a coating of metal on by electrolysis",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ARTIFACT-1"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@IMPLEMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {
+    "@ARTIFACT-1": {
+      "name": "@ARTIFACT-1",
+      "isa": [
+        "@ARTIFACT"
+      ],
+      "def": "",
+      "local": [],
+      "block": [],
+      "private": {}
+    }
+  }
+}

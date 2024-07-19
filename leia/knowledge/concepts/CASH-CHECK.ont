@@ -1,0 +1,27 @@
+{
+  "name": "@CASH-CHECK",
+  "isa": [
+    "@BANKING-EVENT"
+  ],
+  "def": "to redeem a check for deposit or cash",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@CHECK"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@MONEY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

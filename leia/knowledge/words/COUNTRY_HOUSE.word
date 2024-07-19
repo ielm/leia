@@ -1,0 +1,31 @@
+{
+  "word": "COUNTRY_HOUSE",
+  "senses": {
+    "COUNTRY_HOUSE-N1": {
+      "CAT": "N",
+      "DEF": "a house located in the country",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PRIVATE-HOME": {
+          "LOCATION": "COUNTRYSIDE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COUNTRY_HOUSE-N1",
+      "WORD": "COUNTRY_HOUSE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

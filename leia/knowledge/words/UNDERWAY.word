@@ -1,0 +1,79 @@
+{
+  "word": "UNDERWAY",
+  "senses": {
+    "UNDERWAY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "phrasal: X is (well) underway - X is an event whose phase is 'continue' (it has already started and hasn't ended yet)",
+      "EX": "Work on improving our house is well underway.",
+      "COMMENTS": "we have the usual problem with null-semming *be* - if it's 'seems to be', then the 'seems to' part will get lost",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "ADV": {
+          "ROOT": "$VAR3",
+          "CAT": "ADV",
+          "ROOT-WORD": "WELL",
+          "OPT": "+"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "CONTINUE",
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOG-1",
+        "IS-2",
+        "WELL-3",
+        "UNDERWAY-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "COP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "UNDERWAY-ADJ1",
+      "WORD": "UNDERWAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

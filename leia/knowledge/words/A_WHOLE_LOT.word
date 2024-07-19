@@ -1,0 +1,82 @@
+{
+  "word": "A_WHOLE_LOT",
+  "senses": {
+    "A_WHOLE_LOT-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "a whole lot of people <the students> think that way.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "CAT": "PREP",
+          "ROOT": "$VAR2",
+          "OBJ": {
+            "ROOT": "$VAR1",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "CARDINALITY": 0.9,
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "A_WHOLE_LOT-QUANTIFIER1",
+      "WORD": "A_WHOLE_LOT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "A_WHOLE_LOT-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "a whole lot is depending on you.",
+      "COMMENTS": "[D] the meaning procedure for this is complex since there's no explicit set to be searched for. similar to 'everything depends on you', etc.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ALL": {
+          "AMOUNT": 0.9
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          [
+            "SET",
+            1
+          ]
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "A_WHOLE_LOT-N1",
+      "WORD": "A_WHOLE_LOT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

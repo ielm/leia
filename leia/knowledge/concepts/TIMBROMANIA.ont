@@ -1,0 +1,27 @@
+{
+  "name": "@TIMBROMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "inordinate enthusiasm for postage stamps",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@POSTAGE-STAMP"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

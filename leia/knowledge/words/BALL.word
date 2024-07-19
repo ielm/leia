@@ -1,0 +1,57 @@
+{
+  "word": "BALL",
+  "senses": {
+    "BALL-N1": {
+      "CAT": "N",
+      "DEF": "a round object used in sports and games",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BALL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BALL-N1",
+      "WORD": "BALL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "BALL-N2": {
+      "CAT": "N",
+      "DEF": "a formal party with dancing",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PARTY": {
+          "FORMALITY": [
+            ">",
+            0.8
+          ],
+          "HAS-EVENT-AS-PART": "DANCE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BALL-N2",
+      "WORD": "BALL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

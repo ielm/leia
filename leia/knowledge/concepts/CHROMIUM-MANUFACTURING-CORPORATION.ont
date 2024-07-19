@@ -1,0 +1,22 @@
+{
+  "name": "@CHROMIUM-MANUFACTURING-CORPORATION",
+  "isa": [
+    "@METAL-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a manufacturing-corporation that processes and manufactures chromium products for a profit",
+  "local": [
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@CHROMITE-MINING-CORPORATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@METAL-MINING-CORPORATION"
+    }
+  ],
+  "private": {}
+}

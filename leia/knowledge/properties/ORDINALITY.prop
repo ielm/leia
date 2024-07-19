@@ -1,0 +1,9 @@
+{
+  "name": "$ORDINALITY",
+  "def": "indicates the position of a number in a series, like first, second, etc.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$PARAMETRIC-SCALAR"
+}

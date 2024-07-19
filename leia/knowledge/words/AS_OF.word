@@ -1,0 +1,76 @@
+{
+  "word": "AS_OF",
+  "senses": {
+    "AS_OF-CONJ1": {
+      "CAT": "CONJ",
+      "DEF": "at the time of something = when",
+      "EX": "as of the filing time, they were still in the red",
+      "COMMENTS": "the implication is that situations could have changed since then but that's too complex for now",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "CONJ",
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "PUNCT": {
+          "ROOT": "$VAR2",
+          "CAT": "PUNCT",
+          "ROOT-WORD": "*COMMA*",
+          "OPT": "+"
+        },
+        "CL": {
+          "ROOT": "$VAR3",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR3": {
+          "TIME": {
+            "VALUE": "^$VAR1.TIME"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "AS_OF-0",
+        "THE",
+        "MAN-1",
+        "*COMMA*-2",
+        "THE",
+        "MAN",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CC",
+          "$VAR3",
+          "$VAR0"
+        ],
+        [
+          "NSUBJ",
+          "$VAR3",
+          "$VAR1"
+        ],
+        [
+          "PUNCT",
+          "$VAR3",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AS_OF-CONJ1",
+      "WORD": "AS_OF",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

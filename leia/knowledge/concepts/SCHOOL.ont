@@ -1,0 +1,27 @@
+{
+  "name": "@SCHOOL",
+  "isa": [
+    "@ACADEMIC-ORGANIZATION"
+  ],
+  "def": "A place where children are taught before going on to college.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@DEPARTMENT-ACADEMIC"
+    }
+  ],
+  "block": [
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

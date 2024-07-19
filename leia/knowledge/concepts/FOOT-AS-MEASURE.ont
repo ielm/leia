@@ -1,0 +1,19 @@
+{
+  "name": "@FOOT-AS-MEASURE",
+  "isa": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "def": "a unit of linear measure equal to 12 inches, or .3048 meters; .3048",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.3048
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

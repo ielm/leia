@@ -1,0 +1,39 @@
+{
+  "word": "SEVENTH_RANKING",
+  "senses": {
+    "SEVENTH_RANKING-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "the 7th ranked",
+      "EX": "She's the seventh-ranking tennis player on the East Coast",
+      "COMMENTS": "ultimately, -ranking and -ranked need to become a meaning  procedure to cover all numbers",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RANK": 7
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SEVENTH_RANKING",
+        "SEVENTH_RANKED",
+        "SEVENTH-RANKED"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SEVENTH_RANKING-ADJ1",
+      "WORD": "SEVENTH_RANKING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

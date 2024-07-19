@@ -1,0 +1,34 @@
+{
+  "word": "ORDNANCE",
+  "senses": {
+    "ORDNANCE-N1": {
+      "CAT": "N",
+      "DEF": "all firearms having a bore larger than 1-18 inch",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "ORDNANCE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "RECOILLESS_GUN",
+        "ANTI-TANK_WEAPON",
+        "BAZOOKA",
+        "GRENADE_LAUNCHER",
+        "RECOILLESS_RIFLE",
+        "ROCKET_LAUNCHER"
+      ],
+      "SENSE": "ORDNANCE-N1",
+      "WORD": "ORDNANCE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

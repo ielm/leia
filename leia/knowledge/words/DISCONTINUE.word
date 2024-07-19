@@ -1,0 +1,130 @@
+{
+  "word": "DISCONTINUE",
+  "senses": {
+    "DISCONTINUE-V2": {
+      "CAT": "V",
+      "DEF": "to stop providing something",
+      "EX": "they discontinued this clothing line",
+      "COMMENTS": "[D] the complement is a regular np, not an -ing part., meaning $var1 could have a caused-by role and could have an agentive role. for now, I'm using caused- by only, pending more work on figuring out a recovery procedure for determining when it should actually be an agent - some kind of coreference-oriented procedure",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "END",
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR2": {
+          "THEME-OF": "EVENT",
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "DISCONTINUED-0",
+        "THIS",
+        "CLOTHING",
+        "LINE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "XSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DISCONTINUE-V2",
+      "WORD": "DISCONTINUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DISCONTINUE-V1": {
+      "CAT": "V",
+      "DEF": "to stop doing an event, the event is overt",
+      "EX": "she discontinued working",
+      "COMMENTS": "[D] compl. is -ing part., so var1 is agent",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "XCOMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "END",
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR2": {
+          "SEM": "EVENT",
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "DISCONTINUED-0",
+        "HER",
+        "WORKING-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DISCONTINUE-V1",
+      "WORD": "DISCONTINUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

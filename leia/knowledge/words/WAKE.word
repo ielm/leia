@@ -1,0 +1,980 @@
+{
+  "word": "WAKE",
+  "senses": {
+    "WAKE-N1": {
+      "CAT": "N",
+      "DEF": "vigil over the body of a deceased person",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "WAKE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WAKE-N1",
+      "WORD": "WAKE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WAKE-N2": {
+      "CAT": "N",
+      "DEF": "phrasal: in the wake of; following (not always caused by though there is some relation)",
+      "EX": "they filed a bankruptcy suit in the wake of an accounting scandal",
+      "COMMENTS": "I didn't include any cause-effect relation because it's more  subtle than 'X followed Y and Y caused X'; will refine later as needed",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR5",
+          "CAT": "CL"
+        },
+        "PP": {
+          "ROOT-WORD": "IN",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OBJ": {
+            "ART": {
+              "ROOT": "$VAR2",
+              "CAT": "ART",
+              "ROOT-WORD": "THE"
+            },
+            "N": {
+              "ROOT": "$VAR0",
+              "CAT": "N"
+            },
+            "PP": {
+              "ROOT-WORD": "OF",
+              "ROOT": "$VAR4",
+              "CAT": "PREP",
+              "OBJ": {
+                "ROOT": "$VAR3",
+                "CAT": "N"
+              }
+            }
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR5": {
+          "SEM": "EVENT",
+          "TIME": [
+            ">",
+            [
+              "VALUE",
+              "^$VAR3.TIME"
+            ]
+          ]
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-5",
+        "THE",
+        "BUILDING",
+        "IN-1",
+        "THE-2",
+        "WAKE-0",
+        "OF-4",
+        "THE",
+        "EVENT-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "PREP",
+          "$VAR5",
+          "$VAR1"
+        ],
+        [
+          "PUNCT",
+          "$VAR5",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WAKE-N2",
+      "WORD": "WAKE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WAKE-V1": {
+      "CAT": "V",
+      "DEF": "to keep vigil over",
+      "EX": "they waked him for 3 days",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "WAKE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "WOKE-0",
+        "HIM-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WAKE-V1",
+      "WORD": "WAKE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WAKE-V2": {
+      "CAT": "V",
+      "DEF": "to wake up (phrasal), stop sleeping",
+      "EX": "they woke up before dawn",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "UP"
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "END",
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SLEEP": {
+            "EXPERIENCER": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "WOKE-0",
+        "UP-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WAKE-V2",
+      "WORD": "WAKE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WAKE-V3": {
+      "CAT": "V",
+      "DEF": "to wake up s.o. (phrasal)",
+      "EX": "they woke us up before dawn",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        },
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "UP"
+        }
+      },
+      "SEM-STRUC": {
+        "CHANGE-EVENT": {
+          "PRECONDITION": {
+            "VALUE": "REFSEM1"
+          },
+          "EFFECT": {
+            "VALUE": "REFSEM2"
+          },
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "REFSEM1": {
+          "SLEEP": {
+            "EXPERIENCER": {
+              "VALUE": "^$VAR3"
+            }
+          }
+        },
+        "REFSEM2": {
+          "SLEEP": {
+            "EXPERIENCER": {
+              "VALUE": "^$VAR3"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM2"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "WOKE-0",
+        "UP-2",
+        "THE",
+        "ANIMAL-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WAKE-V3",
+      "WORD": "WAKE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "WAKE-V805": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "UP",
+          "CAT": "PREP"
+        },
+        "PREP-1": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "ON",
+          "CAT": "PREP"
+        },
+        "ART": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "THE",
+          "CAT": "ART"
+        },
+        "ADJ": {
+          "ROOT": "$VAR5",
+          "ROOT-WORD": "RIGHT",
+          "CAT": "ADJ"
+        },
+        "N-1": {
+          "ROOT": "$VAR6",
+          "ROOT-WORD": "SIDE",
+          "CAT": "N"
+        },
+        "PREP-2": {
+          "ROOT": "$VAR7",
+          "ROOT-WORD": "OF",
+          "CAT": "PREP"
+        },
+        "ART-1": {
+          "ROOT": "$VAR8",
+          "ROOT-WORD": "THE",
+          "CAT": "ART"
+        },
+        "N-2": {
+          "ROOT": "$VAR9",
+          "ROOT-WORD": "BED",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "HAPPINESS": {
+          "DOMAIN": {
+            "VALUE": "^$VAR1"
+          },
+          "RANGE": [
+            ">",
+            0.8
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR6": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR7": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR8": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR9": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "WOKE-0",
+        "UP-2",
+        "ON-3",
+        "THE-4",
+        "RIGHT-5",
+        "SIDE-6",
+        "OF-7",
+        "THE-8",
+        "BED-9"
+      ],
+      "SENSE": "WAKE-V805",
+      "WORD": "WAKE",
+      "HYPONYMS": [],
+      "SYNONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "WAKE-V804": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "UP",
+          "CAT": "PREP"
+        },
+        "PREP-1": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "ON",
+          "CAT": "PREP"
+        },
+        "ART": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "THE",
+          "CAT": "ART"
+        },
+        "ADJ": {
+          "ROOT": "$VAR5",
+          "ROOT-WORD": "WRONG",
+          "CAT": "ADJ"
+        },
+        "N-1": {
+          "ROOT": "$VAR6",
+          "ROOT-WORD": "SIDE",
+          "CAT": "N"
+        },
+        "PREP-2": {
+          "ROOT": "$VAR7",
+          "ROOT-WORD": "OF",
+          "CAT": "PREP"
+        },
+        "ART-1": {
+          "ROOT": "$VAR8",
+          "ROOT-WORD": "THE",
+          "CAT": "ART"
+        },
+        "N-2": {
+          "ROOT": "$VAR9",
+          "ROOT-WORD": "BED",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "HAPPINESS": {
+          "DOMAIN": {
+            "VALUE": "^$VAR1"
+          },
+          "RANGE": [
+            "<",
+            0.2
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR6": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR7": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR8": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR9": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "WOKE-0",
+        "UP-2",
+        "ON-3",
+        "THE-4",
+        "WRONG-5",
+        "SIDE-6",
+        "OF-7",
+        "THE-8",
+        "BED-9"
+      ],
+      "SENSE": "WAKE-V804",
+      "WORD": "WAKE",
+      "HYPONYMS": [],
+      "SYNONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "WAKE-V802": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "idiom: need this one because Stanford analyzes 'up' as an ADV in this context",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "ADV": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "UP",
+          "CAT": "ADV"
+        },
+        "CONJ": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "AND",
+          "CAT": "CONJ"
+        },
+        "V": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "SMELL",
+          "CAT": "V"
+        },
+        "ART": {
+          "ROOT": "$VAR5",
+          "ROOT-WORD": "THE",
+          "CAT": "ART"
+        },
+        "N": {
+          "ROOT": "$VAR6",
+          "ROOT-WORD": "COFFEE",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "REQUEST-ACTION": {
+          "AGENT": "*SPEAKER*",
+          "THEME": {
+            "VALUE": "REFSEM1"
+          },
+          "BENEFICIARY": "*HEARER*"
+        },
+        "REFSEM1": {
+          "PAY-ATTENTION": {
+            "AGENT-1": "*HEARER*",
+            "SCOPE-OF": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "ASPECT": {
+            "PHASE": "BEGIN"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR6": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "IF",
+        "YOU",
+        "ARE",
+        "A",
+        "MAN",
+        "WAKE-0",
+        "UP-2",
+        "AND-3",
+        "SMELL-4",
+        "THE-5",
+        "COFFEE-6"
+      ],
+      "SENSE": "WAKE-V802",
+      "WORD": "WAKE",
+      "HYPONYMS": [],
+      "SYNONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "WAKE-V801": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "V": {
+          "ROOT": "$VAR7",
+          "ROOT-WORD": "NEED",
+          "CAT": "V"
+        },
+        "PREP": {
+          "ROOT": "$VAR8",
+          "ROOT-WORD": "TO",
+          "CAT": "PREP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-1": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "UP",
+          "CAT": "PREP"
+        },
+        "CONJ": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "AND",
+          "CAT": "CONJ"
+        },
+        "V-1": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "SMELL",
+          "CAT": "V"
+        },
+        "ART": {
+          "ROOT": "$VAR5",
+          "ROOT-WORD": "THE",
+          "CAT": "ART"
+        },
+        "N-1": {
+          "ROOT": "$VAR6",
+          "ROOT-WORD": "COFFEE",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "REQUEST-ACTION": {
+          "BENEFICIARY": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "REFSEM2"
+          }
+        },
+        "REFSEM2": {
+          "PAY-ATTENTION": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            },
+            "SCOPE-OF": {
+              "VALUE": "REFSEM1"
+            }
+          }
+        },
+        "REFSEM1": {
+          "ASPECT": {
+            "PHASE": "BEGIN"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR6": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR7": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR8": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "YOU-1",
+        "NEED-7",
+        "TO-8",
+        "WAKE-0",
+        "UP-2",
+        "AND-3",
+        "SMELL-4",
+        "THE-5",
+        "COFFEE-6"
+      ],
+      "SENSE": "WAKE-V801",
+      "WORD": "WAKE",
+      "HYPONYMS": [],
+      "SYNONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "WAKE-V800": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "He woke up and smelledthe coffee.",
+      "COMMENTS": "*idiom*",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "UP",
+          "CAT": "PREP"
+        },
+        "CONJ": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "AND",
+          "CAT": "CONJ"
+        },
+        "V": {
+          "ROOT": "$VAR4",
+          "ROOT-WORD": "SMELL",
+          "CAT": "V"
+        },
+        "ART": {
+          "ROOT": "$VAR5",
+          "ROOT-WORD": "THE",
+          "CAT": "ART"
+        },
+        "N-1": {
+          "ROOT": "$VAR6",
+          "ROOT-WORD": "COFFEE",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "PAY-ATTENTION": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "SCOPE-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "ASPECT": {
+            "PHASE": "BEGIN"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR6": {
+          "NULL-SEM": "+"
+        }
+      },
+      "EXAMPLE-BINDINGS": [
+        "JOHN-1",
+        "WOKE-0",
+        "UP-2",
+        "AND-3",
+        "SMELLED-4",
+        "THE-5",
+        "COFFEE-6"
+      ],
+      "SENSE": "WAKE-V800",
+      "WORD": "WAKE",
+      "HYPONYMS": [],
+      "SYNONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "WAKE-V4": {
+      "CAT": "V",
+      "DEF": "idiom 'wake up and smell the coffee'",
+      "EX": "it's time they woke up and smelled the coffee",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR6",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "CAT": "PREP",
+          "ROOT": "$VAR1",
+          "ROOT-WORD": "UP"
+        },
+        "CONJ": {
+          "CAT": "AND",
+          "ROOT": "$VAR2"
+        },
+        "V": {
+          "ROOT": "$VAR3",
+          "CAT": "V",
+          "ROOT-WORD": "SMELL"
+        },
+        "ART": {
+          "ROOT": "$VAR4",
+          "CAT": "ART",
+          "ROOT-WORD": "THE"
+        },
+        "N": {
+          "ROOT": "$VAR5",
+          "CAT": "N",
+          "ROOT-WORD": "COFFEE"
+        }
+      },
+      "SEM-STRUC": {
+        "PAY-ATTENTION": {
+          "AGENT": {
+            "VALUE": "^$VAR6"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-6",
+        "WOKE-0",
+        "UP-1",
+        "AND-2",
+        "SMELLED-3",
+        "THE-4",
+        "COFFEE-5"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "CC",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "CONJ",
+          "$VAR0",
+          "$VAR5"
+        ],
+        [
+          "DEP",
+          "$VAR5",
+          "$VAR3"
+        ],
+        [
+          "DET",
+          "$VAR5",
+          "$VAR4"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR6"
+        ],
+        [
+          "XSUBJ",
+          "$VAR5",
+          "$VAR6"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WAKE-V4",
+      "WORD": "WAKE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

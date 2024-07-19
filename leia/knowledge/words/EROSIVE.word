@@ -1,0 +1,35 @@
+{
+  "word": "EROSIVE",
+  "senses": {
+    "EROSIVE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "causing erosion",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "EFFECT": "ERODE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EROSIVE-ADJ1",
+      "WORD": "EROSIVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

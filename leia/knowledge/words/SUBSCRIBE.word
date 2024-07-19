@@ -1,0 +1,75 @@
+{
+  "word": "SUBSCRIBE",
+  "senses": {
+    "SUBSCRIBE-V1": {
+      "CAT": "V",
+      "DEF": "phrasal: subscribe to = to agree to pay for and receive a periodical, a service, etc.",
+      "EX": "She subscribes to Runner's World",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT-WORD": "TO",
+          "ROOT": "$VAR2",
+          "CAT": "PREP"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "SUBSCRIBE-TO": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "SUBSCRIBED-0",
+        "TO-2",
+        "THE",
+        "MAGAZINE-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SUBSCRIBE-V1",
+      "WORD": "SUBSCRIBE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

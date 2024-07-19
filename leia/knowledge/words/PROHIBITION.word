@@ -1,0 +1,64 @@
+{
+  "word": "PROHIBITION",
+  "senses": {
+    "PROHIBITION-N1": {
+      "CAT": "N",
+      "DEF": "the act of prohibiting sth. or the result of such an act",
+      "EX": "the prohibition of smoking by the bosses",
+      "COMMENTS": "if the adjuncts are missing, it's ellipsis",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT-WORD": "BY",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "PERMISSIVE",
+          "VALUE": 0,
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR4"
+          },
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PROHIBITION-N1",
+      "WORD": "PROHIBITION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

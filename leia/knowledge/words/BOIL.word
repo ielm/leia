@@ -1,0 +1,47 @@
+{
+  "word": "BOIL",
+  "senses": {
+    "BOIL-V1": {
+      "CAT": "V",
+      "DEF": "of  a typical liquid, to achieve the degree of heat at which it changes state from liquid to gas",
+      "EX": "the water is boiling",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "BOIL-EVENT": {
+          "THEME": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "WATER-1",
+        "BOILED-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BOIL-V1",
+      "WORD": "BOIL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

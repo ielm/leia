@@ -1,0 +1,72 @@
+{
+  "word": "COOPERATE",
+  "senses": {
+    "COOPERATE-V1": {
+      "CAT": "V",
+      "DEF": "work together",
+      "EX": "we must all cooperate (together) (with each other) (to get this to work)",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "TOGETHER_WITH",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        },
+        "XCOMP": {
+          "ROOT": "$VAR4",
+          "CAT": "V",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "COOPERATIVE-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "AGENT-1": {
+            "VALUE": "^$VAR3"
+          },
+          "PURPOSE": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MEN-1",
+        "COOPERATED-0",
+        "TOGETHER_WITH-2",
+        "THE",
+        "DOGS-3",
+        "TO",
+        "HIT-4",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COOPERATE-V1",
+      "WORD": "COOPERATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

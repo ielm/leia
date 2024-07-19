@@ -1,0 +1,19 @@
+{
+  "name": "@ABHENRY",
+  "isa": [
+    "@ELECTRIC-INDUCTANCE-UNIT"
+  ],
+  "def": "(Wikipedia) abhenry -- the self-inductance of a circuit or the mutual inductance of two circuits in which the variation of current at the rate of one abampere per second results in an induced electromotive force of one abvolt",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1e-09
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

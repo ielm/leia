@@ -1,0 +1,33 @@
+{
+  "word": "CASUALTY",
+  "senses": {
+    "CASUALTY-N1": {
+      "CAT": "N",
+      "DEF": "s.o. injured or killed in an accident",
+      "EX": "",
+      "COMMENTS": "I'm not mapping to the event of injuring or killing because we can't map to both together and can't make a disjoint set ",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "THEME-OF": {
+            "INJURY": "KILL"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CASUALTY-N1",
+      "WORD": "CASUALTY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "word": "UNDAMAGED",
+  "senses": {
+    "UNDAMAGED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "in perfect state of repair",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "STATE-OF-REPAIR": 1
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "PERFECT-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "IMMACULATE",
+        "INTACT",
+        "PERFECT",
+        "SPOTLESS",
+        "UNBLEMISHED",
+        "UNBROKEN",
+        "UNHARMED",
+        "UNHURT",
+        "UNMARRED",
+        "UNSCATHED"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "UNDAMAGED-ADJ1",
+      "WORD": "UNDAMAGED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

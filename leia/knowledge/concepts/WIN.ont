@@ -1,0 +1,47 @@
+{
+  "name": "@WIN",
+  "isa": [
+    "@OPPOSITION-EVENT"
+  ],
+  "def": "to gain a victory; to finish first in a competition",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "default",
+      "filler": "@ACQUIRE"
+    },
+    {
+      "slot": "has-loser",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "has-winner",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LEGAL-CASE"
+    },
+    {
+      "slot": "has-loser",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "has-winner",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

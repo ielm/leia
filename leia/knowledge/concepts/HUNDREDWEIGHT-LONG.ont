@@ -1,0 +1,19 @@
+{
+  "name": "@HUNDREDWEIGHT-LONG",
+  "isa": [
+    "@MASS-WEIGHT-UNIT"
+  ],
+  "def": "a measure of weight in the UK, equivalent to 8 stone or 112 pounds avoir dupois, abbreviated Cwt; 112*pound",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        50.802304
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,51 @@
+{
+  "word": "RADIATOR",
+  "senses": {
+    "RADIATOR-N1": {
+      "CAT": "N",
+      "DEF": "part of an engine used for cooling",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "RADIATOR-FOR-COOLING",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RADIATOR-N1",
+      "WORD": "RADIATOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RADIATOR-N2": {
+      "CAT": "N",
+      "DEF": "a heater in a building or vehicle",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "HEATER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "HEATER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "RADIATOR-N2",
+      "WORD": "RADIATOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

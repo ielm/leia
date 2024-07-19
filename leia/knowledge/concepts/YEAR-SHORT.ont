@@ -1,0 +1,19 @@
+{
+  "name": "@YEAR-SHORT",
+  "isa": [
+    "@TIME-INTERVAL-UNIT"
+  ],
+  "def": "a time interval equal to a common year, 365 days; 365*day",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        31536000.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

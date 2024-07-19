@@ -1,0 +1,16 @@
+{
+  "name": "@GREEN-BEAN",
+  "isa": [
+    "@BEAN"
+  ],
+  "def": "A common bean grown for its green edible pods.",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "green"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,230 @@
+{
+  "word": "REWARD",
+  "senses": {
+    "REWARD-V1": {
+      "CAT": "V",
+      "DEF": "to give something in gratitude for past action",
+      "EX": "the caliph rewarded him (with five bags of gold) (for rescuing his daughter)",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "INDIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": "WITH",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT-WORD": "FOR",
+          "ROOT": "$VAR5",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR6",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "AWARD": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          },
+          "INSTRUMENT": {
+            "VALUE": "^$VAR4"
+          },
+          "CAUSED-BY": {
+            "VALUE": "^$VAR6"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR5": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "REWARDED-0",
+        "THE",
+        "DOG-2",
+        "WITH-3",
+        "THE",
+        "BONE-4",
+        "FOR-5",
+        "THE",
+        "BEHAVIOR-6"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "POBJ",
+          "$VAR5",
+          "$VAR6"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR5"
+        ]
+      ],
+      "SYNONYMS": [
+        "AWARD"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "REWARD-V1",
+      "WORD": "REWARD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "REWARD-N1": {
+      "CAT": "N",
+      "DEF": "something received in gratitude for past action",
+      "EX": "his/the reward (for rescuing the princess) was five bags of gold",
+      "COMMENTS": "the reward could be an event, an object, or even a property value - thus ALL",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NMOD_POSS": [
+          [
+            "ROOT",
+            "$VAR1"
+          ],
+          [
+            "CAT",
+            [
+              "N",
+              "DET"
+            ]
+          ],
+          [
+            "POSSESSIVE",
+            "+"
+          ],
+          [
+            "OPT",
+            "+"
+          ],
+          [
+            "CASE",
+            [
+              [
+                "ROOT",
+                "$VAR9"
+              ],
+              [
+                "ROOT",
+                "*QUOTE*S"
+              ],
+              [
+                "CAT",
+                "POSSESSIVE"
+              ],
+              [
+                "OPT",
+                "+"
+              ]
+            ]
+          ]
+        ],
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "FOR",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ALL": {
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "AWARD": {
+            "BENEFICIARY": {
+              "VALUE": "^$VAR1"
+            },
+            "CAUSED-BY": {
+              "VALUE": "^$VAR4"
+            }
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR9": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "DISCUSSED",
+        "THE",
+        "WOMAN-1",
+        "*QUOTE*S-9",
+        "REWARD-0",
+        "FOR-3",
+        "THE",
+        "MAN-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "PRIZE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "REWARD-N1",
+      "WORD": "REWARD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "word": "FEDERAL_TAX",
+  "senses": {
+    "FEDERAL_TAX-N1": {
+      "CAT": "N",
+      "DEF": "tax levied by national government",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "TAX": {
+          "THEME-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "PAY": {
+            "BENEFICIARY": "FEDERAL-ORGANIZATION"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FEDERAL_TAX-N1",
+      "WORD": "FEDERAL_TAX",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

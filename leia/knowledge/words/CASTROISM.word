@@ -1,0 +1,39 @@
+{
+  "word": "CASTROISM",
+  "senses": {
+    "CASTROISM-N1": {
+      "CAT": "N",
+      "DEF": "a type of communism created by Fidel Castro",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "COMMUNISM": {
+          "CREATED-BY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "HUMAN": {
+            "HAS-SURNAME": "CASTRO",
+            "HAS-PERSONAL-NAME": "FIDEL"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CASTROISM-N1",
+      "WORD": "CASTROISM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

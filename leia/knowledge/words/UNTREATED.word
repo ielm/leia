@@ -1,0 +1,55 @@
+{
+  "word": "UNTREATED",
+  "senses": {
+    "UNTREATED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "of an ailment, not the object of treatmen",
+      "EX": "his condition remained untreated for two years",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "MEDICAL-PROCEDURE": {
+            "THEME": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "UNTREATED-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "UNTREATED-ADJ1",
+      "WORD": "UNTREATED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

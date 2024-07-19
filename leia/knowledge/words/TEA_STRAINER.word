@@ -1,0 +1,38 @@
+{
+  "word": "TEA_STRAINER",
+  "senses": {
+    "TEA_STRAINER-N1": {
+      "CAT": "N",
+      "DEF": "sth. used for separating tea leaves from brewed tea",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "FILTER-OBJECT": {
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "FILTER": {
+            "THEME": "TEA"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TEA_STRAINER-N1",
+      "WORD": "TEA_STRAINER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "$ROAD-SEGMENT-SHAPE",
+  "def": "indicates different types of road segments",
+  "type": "literal",
+  "range": [
+    "winding",
+    "straight",
+    "bending-right",
+    "bending",
+    "bending-left"
+  ],
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-OBJECT-ATTRIBUTE"
+}

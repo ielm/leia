@@ -1,0 +1,16 @@
+{
+  "name": "@ENGINE-PROPELLED-VEHICLE",
+  "isa": [
+    "@VEHICLE"
+  ],
+  "def": "vehicles propelled by engines",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@ENGINE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

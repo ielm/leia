@@ -1,0 +1,54 @@
+{
+  "word": "GIVEN_THAT",
+  "senses": {
+    "GIVEN_THAT-CONJ1": {
+      "CAT": "CONJ",
+      "DEF": "expresses a circumstance",
+      "EX": "Given that he can't come, we should cancel the party",
+      "COMMENTS": "see notes in 'considering that'",
+      "TMR-HEAD": "$VAR2",
+      "SYN-STRUC": {
+        "CONJ": {
+          "ROOT": "$VAR0",
+          "CAT": "CONJ"
+        },
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "PUNCT": {
+          "ROOT": "$VAR3",
+          "ROOT-WORD": "*COMMA*",
+          "CAT": "PUNCT",
+          "OPT": "+"
+        },
+        "CL-1": {
+          "ROOT": "$VAR2",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GIVEN_THAT-CONJ1",
+      "WORD": "GIVEN_THAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

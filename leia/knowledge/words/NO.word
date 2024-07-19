@@ -1,0 +1,219 @@
+{
+  "word": "NO",
+  "senses": {
+    "NO-DET1": {
+      "CAT": "DET",
+      "DEF": "used as an article-like entity, modifying a scalar entity",
+      "EX": "It is no surprise that this happened; it is of no interest",
+      "COMMENTS": "this entry needs testing",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "DET",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "SCALAR-ATTRIBUTE",
+          "RANGE": 0
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT",
+        "NO-0",
+        "BUILDINGS-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NO-DET1",
+      "WORD": "NO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "NO-DET2": {
+      "CAT": "DET",
+      "DEF": "used as an article-like entity, modifying an event",
+      "EX": "There is no movement in the bushes",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "DET",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT",
+        "NO-0",
+        "BUILDINGS-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NO-DET2",
+      "WORD": "NO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "NO-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "no dignitaries came.",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR0",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "CARDINALITY": 0,
+          "COMPLETE": "YES",
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT",
+        "NO-0",
+        "BUILDINGS-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NO-QUANTIFIER1",
+      "WORD": "NO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "NO-ADV1": {
+      "CAT": "ADV",
+      "DEF": "a negative response",
+      "EX": "",
+      "COMMENTS": "'no' functions sometimes like an interjection, but it also modifies a clause, so we're leaving it as CAT adv rather than interjection.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "CL",
+        "OPT": "+",
+        "PUNCT": {
+          "ROOT": "$VAR2",
+          "CAT": "PUNCT",
+          "OPT": "+",
+          "ROOT-WORD": "*COMMA*"
+        },
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR1": {
+          "SEM": "ACCEPT"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "NO-0",
+        "*COMMA*-2",
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "PUNCT",
+          "$VAR1",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "NAH",
+        "NOPE",
+        "NO_WAY",
+        "UH-UH",
+        "NOT_REALLY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "NO-ADV1",
+      "WORD": "NO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

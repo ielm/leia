@@ -1,0 +1,27 @@
+{
+  "name": "@BADMINTON",
+  "isa": [
+    "@RACKET-SPORT"
+  ],
+  "def": "A sport played by volleying a shuttlecock back and forth over a high, narrow net by means of a light, long-handled racket.",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BADMINTON-COURT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TENNIS-BALL"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@RECREATION-AREA"
+    }
+  ],
+  "private": {}
+}

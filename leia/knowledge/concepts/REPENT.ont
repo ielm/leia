@@ -1,0 +1,42 @@
+{
+  "name": "@REPENT",
+  "isa": [
+    "@RELIGIOUS-ACTIVITY"
+  ],
+  "def": "to feel sorry for (a sin, error, etc. that one has committed)",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ERR"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@CRIMINAL-ACTIVITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@RELIGIOUS-ROLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

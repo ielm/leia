@@ -1,0 +1,19 @@
+{
+  "name": "@GON",
+  "isa": [
+    "@ANGLE-UNIT"
+  ],
+  "def": "(Wikipedia) also known as grade, this is a unit of plane angle and is equivalent to 1/400 of a full circle; 0.9*degree-angular",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.015707963267949
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

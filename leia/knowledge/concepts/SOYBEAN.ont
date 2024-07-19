@@ -1,0 +1,21 @@
+{
+  "name": "@SOYBEAN",
+  "isa": [
+    "@BEAN"
+  ],
+  "def": "the seed of the soy plant, used widely for its protein and oil",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "green"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "tan"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

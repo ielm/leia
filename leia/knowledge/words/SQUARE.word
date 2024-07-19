@@ -1,0 +1,139 @@
+{
+  "word": "SQUARE",
+  "senses": {
+    "SQUARE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "in the shape of a square",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SHAPE": "SQUARELIKE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SQUARE-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SQUARE-ADJ1",
+      "WORD": "SQUARE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SQUARE-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PHYSICAL-OBJECT": {
+          "SHAPE": "SQUARELIKE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SQUARE-N1",
+      "WORD": "SQUARE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SQUARE-N402": {
+      "CAT": "N",
+      "COMMENTS": "THIS MEANS 'BOX' - MAKE SURE IT HAS SAME SEMANTICS AS BOX-N1",
+      "EX": "a grey square",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "ADJ": {
+          "ROOT": "$VAR1",
+          "ROOT-WORD": "GREY",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "GRAPHIC-OBJECT": {
+          "SHAPE": "BOXLIKE"
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "SYNONYMS": [
+        "RECTANGLE"
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THERE",
+        "IS",
+        "A",
+        "GREY-1",
+        "SQUARE-0"
+      ],
+      "SENSE": "SQUARE-N402",
+      "WORD": "SQUARE",
+      "DEF": "NIL",
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    },
+    "SQUARE-N401": {
+      "CAT": "N",
+      "COMMENTS": "*BLOCKS*",
+      "EX": "a black square",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "GRAPHIC-OBJECT": {
+          "SHAPE": "SQUARELIKE"
+        }
+      },
+      "SYNONYMS": [
+        "RECTANGLE"
+      ],
+      "SENSE": "SQUARE-N401",
+      "WORD": "SQUARE",
+      "DEF": "NIL",
+      "HYPONYMS": [],
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

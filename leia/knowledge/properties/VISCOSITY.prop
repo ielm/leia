@@ -1,0 +1,11 @@
+{
+  "name": "$VISCOSITY",
+  "def": "thickness of a liquid measured on a relative scale from 0 to 1",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-OBJECT-ATTRIBUTE"
+}

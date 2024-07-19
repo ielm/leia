@@ -1,0 +1,49 @@
+{
+  "word": "PECK",
+  "senses": {
+    "PECK-N1": {
+      "CAT": "N",
+      "DEF": "(Wikipedia) a unit of dry volume measure, equivalent to 8 imperial quarts, or 9.09219 liters.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PECK-UK",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PECK-N1",
+      "WORD": "PECK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PECK-N2": {
+      "CAT": "N",
+      "DEF": "a unit of dry volume measure in the US system equalling 8 dry quarts; 8*dry-quart",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PECK-US",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PECK-N2",
+      "WORD": "PECK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

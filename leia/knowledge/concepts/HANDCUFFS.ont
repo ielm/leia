@@ -1,0 +1,46 @@
+{
+  "name": "@HANDCUFFS",
+  "isa": [
+    "@RESTRAINING-ARTIFACT",
+    "@INDEPENDENT-DEVICE"
+  ],
+  "def": "A restraining device consisting of a pair of strong, connected hoops that can be tightened and locked about the wrists",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CHAIN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

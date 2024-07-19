@@ -1,0 +1,16 @@
+{
+  "name": "@SALT",
+  "isa": [
+    "@FLAVORING"
+  ],
+  "def": "sodium chloride used for flavoring food",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "white"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

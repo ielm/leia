@@ -1,0 +1,11 @@
+{
+  "name": "$TEMPORAL-ATTRIBUTE",
+  "def": "an attribute dealing with times and time periods",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@TIME-INTERVAL-UNIT"
+  ],
+  "container": "$LITERAL-ATTRIBUTE"
+}

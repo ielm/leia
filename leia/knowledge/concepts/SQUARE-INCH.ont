@@ -1,0 +1,19 @@
+{
+  "name": "@SQUARE-INCH",
+  "isa": [
+    "@AREA-UNIT"
+  ],
+  "def": "a unit for measuring area, equal to the area of a square with sides of one inch.",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.00064516
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

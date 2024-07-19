@@ -1,0 +1,45 @@
+{
+  "word": "MANUSCRIPT",
+  "senses": {
+    "MANUSCRIPT-N1": {
+      "CAT": "N",
+      "DEF": "reading material not (yet) published",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BOOK-DOCUMENT": {
+          "THEME-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": [
+          "PUBLISH"
+        ],
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "DRAFT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "MANUSCRIPT-N1",
+      "WORD": "MANUSCRIPT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

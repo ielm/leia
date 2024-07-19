@@ -1,0 +1,38 @@
+{
+  "word": "COMMANDER",
+  "senses": {
+    "COMMANDER-N1": {
+      "CAT": "N",
+      "DEF": "an officer of rank 6/21 in the US navy or coast guard",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MILITARY-OFFICER": {
+          "CITIZEN-OF": "USA",
+          "MEMBER-OF": {
+            "NAVY": "COAST-GUARD"
+          },
+          "RANK": [
+            6,
+            21
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COMMANDER-N1",
+      "WORD": "COMMANDER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

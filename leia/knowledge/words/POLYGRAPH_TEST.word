@@ -1,0 +1,31 @@
+{
+  "word": "POLYGRAPH_TEST",
+  "senses": {
+    "POLYGRAPH_TEST-N1": {
+      "CAT": "N",
+      "DEF": "a test to detect if a person is lying; it uses an instrument that simultaneously records changes in physiological processes such as heartbeat, blood pressure, and respiration  ",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "POLYGRAPH-TEST",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "LIE_DETECTOR_TEST",
+        "LIE-DETECTOR_TEST",
+        "POLYGRAPH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "POLYGRAPH_TEST-N1",
+      "WORD": "POLYGRAPH_TEST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

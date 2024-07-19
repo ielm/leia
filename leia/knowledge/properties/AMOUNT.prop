@@ -1,0 +1,9 @@
+{
+  "name": "$AMOUNT",
+  "def": "A scalar attribute indicating the quantity of a mass noun, approximately captured through the concept MATERIAL but also used to describe sums of money.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-OBJECT-ATTRIBUTE"
+}

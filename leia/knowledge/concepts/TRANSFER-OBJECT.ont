@@ -1,0 +1,27 @@
+{
+  "name": "@TRANSFER-OBJECT",
+  "isa": [
+    "@CHANGE-LOCATION"
+  ],
+  "def": "An event involving the physical transfer of an object from one individual to another, as in *I handed him the money*; Related to frames CHANGE-LOCATION and TRANSFER-POSSESSION",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

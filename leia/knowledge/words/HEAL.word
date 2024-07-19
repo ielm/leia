@@ -1,0 +1,157 @@
+{
+  "word": "HEAL",
+  "senses": {
+    "HEAL-V1": {
+      "CAT": "V",
+      "DEF": "to help to restore to health or physical wellness",
+      "EX": "the doctor/the medicine healed the patient/the cut",
+      "COMMENTS": "'heal' is another concept for which we need special tense/aspect treatment with respect  to epiteuctic modality [the doctor is healing = no success yet; the doctor healed = success] fix-case-role should switch the case-role of AGENT to INSTRUMENT and BENEFICIARY to THEME, as applicable from the input",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "HEAL": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOCTOR-1",
+        "HEALED-0",
+        "THE",
+        "CUT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "REPAIR"
+      ],
+      "SENSE": "HEAL-V1",
+      "WORD": "HEAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HEAL-V2": {
+      "CAT": "V",
+      "DEF": "to return to a healthy condition, of a patient",
+      "EX": "the patient healed",
+      "COMMENTS": "'heal' is another concept for which we need special tense/aspect treatment with respect to epiteuctic modality [the doctor is healing = no success yet; the doctor healed = success",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "HEAL": {
+          "BENEFICIARY": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "PATIENT-1",
+        "HEALED-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HEAL-V2",
+      "WORD": "HEAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HEAL-V3": {
+      "CAT": "V",
+      "DEF": "to return to a healthy condition, of injuries",
+      "EX": "the cut healed",
+      "COMMENTS": "'heal' is another concept for which we need special tense/aspect treatment with respect to epiteuctic modality [the doctor is healing = no success yet; the doctor healed = success",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "HEAL": {
+          "THEME": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "CUT-1",
+        "HEALED-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "IMPROVE"
+      ],
+      "HYPONYMS": [
+        "MEND"
+      ],
+      "SENSE": "HEAL-V3",
+      "WORD": "HEAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

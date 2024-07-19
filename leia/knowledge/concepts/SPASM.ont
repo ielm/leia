@@ -1,0 +1,27 @@
+{
+  "name": "@SPASM",
+  "isa": [
+    "@CONTRACT-MUSCLE",
+    "@SYMPTOM"
+  ],
+  "def": "a sudden involuntary contraction of a muscle or muscle group",
+  "local": [],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

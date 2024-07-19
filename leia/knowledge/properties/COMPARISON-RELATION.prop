@@ -1,0 +1,9 @@
+{
+  "name": "$COMPARISON-RELATION",
+  "def": "a comparison between two entities",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$RELATION"
+}

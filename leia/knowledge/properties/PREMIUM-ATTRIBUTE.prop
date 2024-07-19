@@ -1,0 +1,9 @@
+{
+  "name": "$PREMIUM-ATTRIBUTE",
+  "def": "the amount paid above the calculation of value",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

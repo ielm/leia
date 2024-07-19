@@ -1,0 +1,47 @@
+{
+  "name": "@ECONOMIC-STAGNATION",
+  "isa": [
+    "@NATIONAL-ECONOMIC-EVENT"
+  ],
+  "def": "a period in which conditions of economic depression prevail, including a small growth in the GNP, in capital investments or in real income",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ECONOMY"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

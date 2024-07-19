@@ -1,0 +1,56 @@
+{
+  "word": "SOMETIMES",
+  "senses": {
+    "SOMETIMES-ADV1": {
+      "CAT": "ADV",
+      "DEF": "",
+      "EX": "she sometimes smokes <smokes sometimes; sometimes, she smokes>",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-PRE-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "ITERATION": "MULTIPLE",
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR1": {
+          "FREQUENCY": 0.5
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SOMETIMES-0",
+        "OBJECTED-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "PERIODICALLY",
+        "IN_SOME_CASES",
+        "IN_RARE_CASES",
+        "IN_CERTAIN_SITUATIONS"
+      ],
+      "SENSE": "SOMETIMES-ADV1",
+      "WORD": "SOMETIMES",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

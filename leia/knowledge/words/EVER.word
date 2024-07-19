@@ -1,0 +1,45 @@
+{
+  "word": "EVER",
+  "senses": {
+    "EVER-ADV1": {
+      "CAT": "ADV",
+      "DEF": "discourse marker",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "DO",
+        "YOU",
+        "EVER-0",
+        "EXPERIENCE-1",
+        "THAT",
+        "?"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EVER-ADV1",
+      "WORD": "EVER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

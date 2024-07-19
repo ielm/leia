@@ -1,0 +1,230 @@
+{
+  "word": "THEN",
+  "senses": {
+    "THEN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "former",
+      "EX": "this statement was issued by then vice president gore",
+      "COMMENTS": "requires temporal reference resolution based on context",
+      "TMR-HEAD": "$VAR2",
+      "SYN-STRUC": {
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "N-1": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "HAS-SOCIAL-ROLE": {
+            "VALUE": "^$VAR1"
+          },
+          "TIME": [
+            "<",
+            [
+              "FIND-ANCHOR-TIME"
+            ]
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEN-0",
+        "THE",
+        "GENERAL-1",
+        "JOHN-2",
+        "HIT",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR2",
+          "$VAR0"
+        ],
+        [
+          "AMOD",
+          "$VAR2",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "THEN-ADJ1",
+      "WORD": "THEN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "THEN-ADV2": {
+      "CAT": "ADV",
+      "DEF": "INDICATES A SERIES OF EVENTS IN TIME",
+      "COMMENTS": "",
+      "EX": "Then(,) SHE WENT TO BED",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "ADV": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        },
+        "PUNCT": {
+          "ROOT": "$VAR4",
+          "CAT": "PUNCT",
+          "ROOT-WORD": "*COMMA*",
+          "OPT": "+"
+        },
+        "CL": {
+          "ROOT": "$VAR3",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR3": {
+          "TIME": [
+            ">",
+            [
+              "VALUE",
+              "REFSEM1"
+            ]
+          ]
+        },
+        "REFSEM1": [
+          "EVENT"
+        ],
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "MEANING-PROCEDURE": [
+        "SEEK-SPONSOR",
+        [
+          "VALUE",
+          "REFSEM1"
+        ]
+      ],
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEN-0",
+        "*COMMA*-4",
+        "THE",
+        "MAN",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "THEN-ADV2",
+      "WORD": "THEN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "THEN-ADV1": {
+      "CAT": "ADV",
+      "DEF": "INDICATES A SERIES OF EVENTS IN TIME",
+      "COMMENTS": "",
+      "EX": "SHE ATE(,) THEN SHE WENT TO BED",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "USE-EXAMPLE-BINDING": "T",
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "PUNCT": {
+          "ROOT": "$VAR2",
+          "CAT": "PUNCT",
+          "ROOT-WORD": [
+            "*COMMA*",
+            "*PERIOD*"
+          ],
+          "OPT": "+"
+        },
+        "ADV": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        },
+        "PUNCT-1": {
+          "ROOT": "$VAR4",
+          "CAT": "PUNCT",
+          "ROOT-WORD": "*COMMA*",
+          "OPT": "+"
+        },
+        "CL-1": {
+          "ROOT": "$VAR3",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TIME": [
+            "<",
+            [
+              "VALUE",
+              "^$VAR3"
+            ]
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "*COMMA*-2",
+        "THEN-0",
+        "*COMMA*-4",
+        "THE",
+        "MAN",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "THEN-ADV1",
+      "WORD": "THEN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

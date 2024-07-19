@@ -1,0 +1,139 @@
+{
+  "word": "MYSELF",
+  "senses": {
+    "MYSELF-N1": {
+      "CAT": "N",
+      "DEF": "the reflexive pronoun 'myself' used as an object",
+      "EX": "I hate myself for having done that.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "TYPE": "REFL-PRO"
+      },
+      "SEM-STRUC": "HUMAN",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          [
+            "COREFER-WITH-SUBJECT-OF-CLAUSE"
+          ]
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MYSELF-N1",
+      "WORD": "MYSELF",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MYSELF-N2": {
+      "CAT": "N",
+      "DEF": "the reflexive pronoun 'myself' used directly after a coreferential np; has emphasis funtion (for now, null-sem)",
+      "EX": "I myself have no idea what I want. He wanted to work with me myself.",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "ROOT-WORD": [
+            "I",
+            "ME"
+          ]
+        },
+        "N-1": {
+          "ROOT": "$VAR0",
+          "CAT": "N",
+          "TYPE": "REFL-PRO"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "SALIENCY",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "I",
+        "MYSELF-0"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MYSELF-N2",
+      "WORD": "MYSELF",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MYSELF-N3": {
+      "CAT": "N",
+      "DEF": "independently, without assistance",
+      "EX": "I can finish the work myself",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "N": {
+          "ROOT": "$VAR0",
+          "CAT": "N",
+          "TYPE": "REFL-PRO"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "ACCOMPANIER": "*NONE*"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          [
+            "FIRST",
+            "SINGULAR"
+          ],
+          [
+            "REFL-CL-SUBJ",
+            1
+          ]
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "MYSELF-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MYSELF-N3",
+      "WORD": "MYSELF",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@FAVA-BEAN",
+  "isa": [
+    "@BEAN"
+  ],
+  "def": "Edible beans or green pods of a plant Vicia faba.",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "green"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

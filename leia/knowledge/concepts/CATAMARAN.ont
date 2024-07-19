@@ -1,0 +1,26 @@
+{
+  "name": "@CATAMARAN",
+  "isa": [
+    "@BOAT"
+  ],
+  "def": "a boat having two parallel hulls propelled by sails or paddles",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@PADDLE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@HULL"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@SAIL"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

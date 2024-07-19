@@ -1,0 +1,52 @@
+{
+  "word": "A_SUFFICIENT_AMOUNT",
+  "senses": {
+    "A_SUFFICIENT_AMOUNT-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "a sufficient amount of time was spent on this.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "CAT": "PREP",
+          "ROOT": "$VAR2",
+          "OBJ": {
+            "ROOT": "$VAR1",
+            "CAT": "NP",
+            "NUMBER": "SING"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "RELATIVE-TO-NORM": 0.5,
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "A_SUFFICIENT_AMOUNT-0",
+        "OF-2",
+        "THE",
+        "GRAPHITE-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "A_SUFFICIENT_AMOUNT-QUANTIFIER1",
+      "WORD": "A_SUFFICIENT_AMOUNT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

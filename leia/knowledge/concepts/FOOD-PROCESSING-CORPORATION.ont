@@ -1,0 +1,16 @@
+{
+  "name": "@FOOD-PROCESSING-CORPORATION",
+  "isa": [
+    "@CONSUMER-GOODS-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a corporation in which foodstuffs are processed, refined, and packaged",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@INGESTIBLE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

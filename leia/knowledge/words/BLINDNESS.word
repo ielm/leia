@@ -1,0 +1,36 @@
+{
+  "word": "BLINDNESS",
+  "senses": {
+    "BLINDNESS-N1": {
+      "CAT": "N",
+      "DEF": "the inability to see",
+      "EX": "His blindness made law school especially difficult.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "POTENTIAL",
+          "VALUE": 0,
+          "SCOPE": {
+            "V": "OLUNTARY-VISUAL-EVENT",
+            "I": "NVOLUNTARY-VISUAL-EVENT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BLINDNESS-N1",
+      "WORD": "BLINDNESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

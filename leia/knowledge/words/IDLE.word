@@ -1,0 +1,49 @@
+{
+  "word": "IDLE",
+  "senses": {
+    "IDLE-V1": {
+      "CAT": "V",
+      "DEF": "of a vehicle: to be turned on but not to move ",
+      "EX": "The car was idling in the driveway",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "VEHICLE",
+          "THEME-OF": "FUNCTION",
+          "THEME-OF-1": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": [
+          "MOTION-EVENT"
+        ],
+        "MODALITY": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "IDLE-V1",
+      "WORD": "IDLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

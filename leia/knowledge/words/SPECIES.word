@@ -1,0 +1,36 @@
+{
+  "word": "SPECIES",
+  "senses": {
+    "SPECIES-N1": {
+      "CAT": "N",
+      "DEF": "a group of living organisms that are extremely similar and can interbreed",
+      "EX": "",
+      "COMMENTS": "this is non-technical description; if we ever treat this domain we'll need to make  this an ontological concept",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": "ANIMAL",
+          "SIMILARITY": [
+            "><",
+            0.9,
+            1
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SPECIES-N1",
+      "WORD": "SPECIES",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

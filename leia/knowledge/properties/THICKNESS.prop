@@ -1,0 +1,12 @@
+{
+  "name": "$THICKNESS",
+  "def": "The thickness of something; using relative scale: thinnest - e.g. thread; thinner - e.g. a grain of rice; thin - e.g. a pencil, etc.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@DISTANCE-LENGTH-UNIT",
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SIZE"
+}

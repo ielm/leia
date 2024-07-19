@@ -1,0 +1,31 @@
+{
+  "word": "GOLD_MINE",
+  "senses": {
+    "GOLD_MINE-N1": {
+      "CAT": "N",
+      "DEF": "an excavation made in the earth from which gold is extracted",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MINE": {
+          "LOCATION-OF": "GOLD"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GOLD_MINE-N1",
+      "WORD": "GOLD_MINE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

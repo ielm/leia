@@ -1,0 +1,284 @@
+{
+  "word": "PRESS",
+  "senses": {
+    "PRESS-N1": {
+      "CAT": "N",
+      "DEF": "the entirety of agencies that collect and publish the news",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": "MEDIA-SERVICE-CORPORATION"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRESS-N1",
+      "WORD": "PRESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PRESS-N2": {
+      "CAT": "N",
+      "DEF": "a printing press",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MACHINE": {
+          "INSTRUMENT-OF": "PRINTING-ACTIVITY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRESS-N2",
+      "WORD": "PRESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PRESS-N3": {
+      "CAT": "N",
+      "DEF": "reporters and others involved in the press",
+      "EX": "the press is hounding her",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "HUMAN": {
+            "AGENT-OF": {
+              "BROADCAST": "PUBLISH"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRESS-N3",
+      "WORD": "PRESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PRESS-V1": {
+      "CAT": "V",
+      "DEF": "to act on with steady pressure; with a d.o.",
+      "EX": "she pressed the button",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "PRESS": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "PRESSED-0",
+        "THE",
+        "BUTTON-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "CLICK"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PRESS-V1",
+      "WORD": "PRESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PRESS-V2": {
+      "CAT": "V",
+      "DEF": "to act on with steady pressure; with the pp 'against'",
+      "EX": "she pressed against him",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PREP-PART": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "AGAINST",
+          "CAT": "PREP"
+        },
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "PRESS": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "PRESSED-0",
+        "AGAINST-2",
+        "THE",
+        "MAN-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRESS-V2",
+      "WORD": "PRESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PRESS-V3": {
+      "CAT": "V",
+      "DEF": "to try to force s.o. to do sth.",
+      "EX": "She pressed him for a reply",
+      "COMMENTS": "the sem-struc is interpreted as follows: pressing s.o. is making the  action almost obligatory, which is obligative modality .8; but the action isn't  necessarily occurring, which is why epistemic is < 1",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "FOR",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "OBLIGATIVE",
+          "VALUE": 0.7,
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          },
+          "SCOPE": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR4": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "MODALITY-1": {
+          "TYPE": "EPISTEMIC",
+          "VALUE": 0.7,
+          "SCOPE": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "PRESSED-0",
+        "THE",
+        "WOMAN-2",
+        "FOR-3",
+        "AN",
+        "ANSWER-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR3",
+          "$VAR2"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRESS-V3",
+      "WORD": "PRESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

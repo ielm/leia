@@ -1,0 +1,28 @@
+{
+  "name": "@HUT",
+  "isa": [
+    "@PRIVATE-HOME"
+  ],
+  "def": "a primitive home",
+  "local": [
+    {
+      "slot": "number-of-floors",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "number-of-floors",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

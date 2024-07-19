@@ -1,0 +1,42 @@
+{
+  "name": "@PARCHMENT",
+  "isa": [
+    "@ANIMAL-DERIVED-SUBSTANCE"
+  ],
+  "def": "a writing material made from the skins primarily of sheep, calves or goats, used for certain documents, in bookbinding, for lampshades, and for drum and banjo heads",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "yellow"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "tan"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "off-white"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "beige"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@LEATHER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

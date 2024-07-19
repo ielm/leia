@@ -1,0 +1,61 @@
+{
+  "word": "PORTEND",
+  "senses": {
+    "PORTEND-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "the clouds portended a storm",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "WARN": {
+          "INSTRUMENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "CLOUDS-2",
+        "PORTENDED-0",
+        "A",
+        "STORM-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PORTEND-V1",
+      "WORD": "PORTEND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "word": "TREATABLE",
+  "senses": {
+    "TREATABLE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "of a medical condition, capable of being healed or alleviated",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TREATABLE": "YES"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "TREATABLE-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TREATABLE-ADJ1",
+      "WORD": "TREATABLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@LIVE",
+  "isa": [
+    "@LIVING-EVENT"
+  ],
+  "def": "The act of living - having vital signs - as opposed to being dead.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

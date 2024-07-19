@@ -1,0 +1,27 @@
+{
+  "name": "@GROW-ANIMATE",
+  "isa": [
+    "@CHANGE-EVENT"
+  ],
+  "def": "of animate things, to increase in size and develop",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

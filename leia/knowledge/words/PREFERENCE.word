@@ -1,0 +1,128 @@
+{
+  "word": "PREFERENCE",
+  "senses": {
+    "PREFERENCE-N1": {
+      "CAT": "N",
+      "DEF": "liking better",
+      "EX": "her preference for apples over bananas is well known",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR5",
+          "CAT": "N",
+          "OPT": "+",
+          "POSSESSIVE": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "FOR",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "OVER",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "MODALITY": {
+            "ATTRIBUTED-TO": {
+              "VALUE": "^$VAR5"
+            },
+            "TYPE": "EVALUATIVE",
+            "SCOPE": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "MODALITY": {
+            "TYPE": "EVALUATIVE",
+            "ATTRIBUTED-TO": {
+              "VALUE": "^$VAR5"
+            },
+            "SCOPE": {
+              "VALUE": "^$VAR4"
+            }
+          }
+        },
+        "CONSTRAINT": [
+          ">",
+          [
+            "VALUE",
+            "REFSEM1"
+          ],
+          [
+            "VALUE",
+            "REFSEM2"
+          ]
+        ],
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "GIRL-5",
+        "PREFERENCE-0",
+        "FOR-1",
+        "THE",
+        "EVENT-2",
+        "OVER-3",
+        "THE",
+        "EVENT-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR0",
+          "$VAR5"
+        ],
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR2",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PREFERENCE-N1",
+      "WORD": "PREFERENCE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

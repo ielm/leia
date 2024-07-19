@@ -1,0 +1,40 @@
+{
+  "word": "JEHOVAH",
+  "senses": {
+    "JEHOVAH-N1": {
+      "CAT": "N",
+      "DEF": "Jehovah's Witness",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "POSSESSIVE": "+",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "ROOT-WORD": "WITNESS"
+        }
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "HAS-RELIGION": "JEHOVAH-S-WITNESS"
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "JEHOVAH-N1",
+      "WORD": "JEHOVAH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

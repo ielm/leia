@@ -1,0 +1,27 @@
+{
+  "name": "@VEHICLE-ROLE",
+  "isa": [
+    "@WORK-ROLE"
+  ],
+  "def": "people involved with operating vehicles",
+  "local": [
+    {
+      "slot": "operator-of",
+      "facet": "sem",
+      "filler": "@VEHICLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "operator-of",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "operator-of",
+      "facet": "sem",
+      "filler": "@DEVICE"
+    }
+  ],
+  "private": {}
+}

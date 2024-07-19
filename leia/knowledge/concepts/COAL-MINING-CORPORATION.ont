@@ -1,0 +1,22 @@
+{
+  "name": "@COAL-MINING-CORPORATION",
+  "isa": [
+    "@FUEL-MINING-CORPORATION"
+  ],
+  "def": "a corporation involved in the mining and preparation of coal",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@COAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

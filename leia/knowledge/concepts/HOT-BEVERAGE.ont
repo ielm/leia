@@ -1,0 +1,43 @@
+{
+  "name": "@HOT-BEVERAGE",
+  "isa": [
+    "@NONALCOHOLIC-BEVERAGE"
+  ],
+  "def": "a liquid for drinking that is warmer than the temperature of the human body",
+  "local": [
+    {
+      "slot": "temperature",
+      "facet": "sem",
+      "filler": [
+        "><",
+        99
+      ]
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@COFFEE-CUP"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "temperature",
+      "facet": "sem",
+      "filler": [
+        "><",
+        99
+      ]
+    },
+    {
+      "slot": "temperature",
+      "facet": "sem",
+      "filler": "@DEGREE-CELSIUS"
+    }
+  ],
+  "private": {}
+}

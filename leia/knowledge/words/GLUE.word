@@ -1,0 +1,147 @@
+{
+  "word": "GLUE",
+  "senses": {
+    "GLUE-N1": {
+      "CAT": "N",
+      "DEF": "an adhesive substance",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "GLUE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GLUE-N1",
+      "WORD": "GLUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "GLUE-V1": {
+      "CAT": "V",
+      "DEF": "to attach something to something else using glue",
+      "EX": "She glued the wallpaper to the wall",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": "TO",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ATTACH": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "DESTINATION": {
+            "VALUE": "^$VAR4"
+          },
+          "INSTRUMENT": "GLUE"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "GLUED-0",
+        "THE",
+        "WALLPAPER-2",
+        "TO-3",
+        "THE",
+        "WALL-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GLUE-V1",
+      "WORD": "GLUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "GLUE-V2": {
+      "CAT": "V",
+      "DEF": "to attach two things together; in the construction X glues Y together",
+      "EX": "He glued the pages together",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "$VAR0",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "NUMBER": "PL"
+        },
+        "ADV": {
+          "ROOT": "$VAR3",
+          "CAT": "ADV",
+          "ROOT-WORD": "TOGETHER"
+        }
+      },
+      "SEM-STRUC": {
+        "ATTACH": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "INSTRUMENT": "GLUE"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "CL"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "GLUED-0",
+        "THE",
+        "PLANES-2",
+        "TOGETHER-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GLUE-V2",
+      "WORD": "GLUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

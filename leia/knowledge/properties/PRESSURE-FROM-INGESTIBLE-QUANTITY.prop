@@ -1,0 +1,9 @@
+{
+  "name": "$PRESSURE-FROM-INGESTIBLE-QUANTITY",
+  "def": "used in the medical domain for the gastric pressure associated with the amount of food in the stomach",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$PRESSURE"
+}

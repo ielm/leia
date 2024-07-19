@@ -1,0 +1,26 @@
+{
+  "name": "@ANIMAL-BREEDING-CORPORATION",
+  "isa": [
+    "@ANIMAL-FARM"
+  ],
+  "def": "a corporation that breeds animals for food-processing or manufacturing purposes",
+  "local": [],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ANIMAL-DERIVED-FOODSTUFF"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ANIMAL-DERIVED-SUBSTANCE"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ANIMAL-PRODUCT"
+    }
+  ],
+  "private": {}
+}

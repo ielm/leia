@@ -1,0 +1,36 @@
+{
+  "word": "SOUTHEASTWARD",
+  "senses": {
+    "SOUTHEASTWARD-ADV1": {
+      "CAT": "ADV",
+      "DEF": "in a direction toward the southeast",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "DIRECTION-OF-MOTION": "SOUTHEASTWARD"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SOUTHEASTWARD-ADV1",
+      "WORD": "SOUTHEASTWARD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "word": "SEED_PEARL",
+  "senses": {
+    "SEED_PEARL-N1": {
+      "CAT": "N",
+      "DEF": "a small, often imperfect pearl",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PEARL": {
+          "SIZE": [
+            "<",
+            0.4
+          ],
+          "QUALITY": [
+            "<",
+            0.5
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SEED_PEARL-N1",
+      "WORD": "SEED_PEARL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

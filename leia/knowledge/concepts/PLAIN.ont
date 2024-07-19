@@ -1,0 +1,16 @@
+{
+  "name": "@PLAIN",
+  "isa": [
+    "@GEOLOGICAL-ENTITY"
+  ],
+  "def": "an extensive, level, treeless land region, such as a valley floor or a plateau summit",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@TREE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

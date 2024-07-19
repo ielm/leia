@@ -1,0 +1,16 @@
+{
+  "name": "@COMIC-BOOK",
+  "isa": [
+    "@BOOKLET"
+  ],
+  "def": "paperbound booklet of extended cartoons in series",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ILLUSTRATION"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

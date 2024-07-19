@@ -1,0 +1,22 @@
+{
+  "name": "@IRON-MANUFACTURING-CORPORATION",
+  "isa": [
+    "@METAL-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a manufacturing corporation that manufactures iron products",
+  "local": [
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@IRON-ORE-MINING-CORPORATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@METAL-MINING-CORPORATION"
+    }
+  ],
+  "private": {}
+}

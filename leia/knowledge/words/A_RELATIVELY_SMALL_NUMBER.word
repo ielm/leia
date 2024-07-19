@@ -1,0 +1,57 @@
+{
+  "word": "A_RELATIVELY_SMALL_NUMBER",
+  "senses": {
+    "A_RELATIVELY_SMALL_NUMBER-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "only a relatively small number of people can do this work.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "CAT": "PREP",
+          "ROOT": "$VAR2",
+          "OBJ": {
+            "ROOT": "$VAR1",
+            "CAT": "N",
+            "NUMBER": "PL"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "CARDINALITY": [
+            "><",
+            0.2,
+            0.3
+          ],
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "DETERMINATE": "NO"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "A_RELATIVELY_SMALL_NUMBER-0",
+        "OF-2",
+        "THE",
+        "CHICKENS-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "A_RELATIVELY_SMALL_NUMBER-QUANTIFIER1",
+      "WORD": "A_RELATIVELY_SMALL_NUMBER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "word": "DAIRY_PRODUCT",
+  "senses": {
+    "DAIRY_PRODUCT-N1": {
+      "CAT": "N",
+      "DEF": "milk and milk-products, such as cream, whey and cheese",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "DAIRY-PRODUCT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "MILK_PRODUCT",
+        "MILK-BASED_PRODUCT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DAIRY_PRODUCT-N1",
+      "WORD": "DAIRY_PRODUCT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

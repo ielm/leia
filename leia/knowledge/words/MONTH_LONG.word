@@ -1,0 +1,37 @@
+{
+  "word": "MONTH_LONG",
+  "senses": {
+    "MONTH_LONG-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "DURATION": "MONTH"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "MONTH_LONG"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "MONTH_LONG-ADJ1",
+      "WORD": "MONTH_LONG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

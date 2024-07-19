@@ -1,0 +1,39 @@
+{
+  "word": "CHEESEBOARD",
+  "senses": {
+    "CHEESEBOARD-N1": {
+      "CAT": "N",
+      "DEF": "a board for serving cheese",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "TRAY": {
+          "MADE-OF": "WOOD",
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SERVE": {
+            "THEME": "CHEESE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CHEESEBOARD-N1",
+      "WORD": "CHEESEBOARD",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

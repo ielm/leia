@@ -1,0 +1,47 @@
+{
+  "word": "FLUCTUATE",
+  "senses": {
+    "FLUCTUATE-V2": {
+      "CAT": "V",
+      "DEF": "to waver",
+      "EX": "if they keep fluctuating we'll never reach an agreement",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "FLUCTUATE": {
+          "THEME": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "WAR-1",
+        "FLUCTUATES-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FLUCTUATE-V2",
+      "WORD": "FLUCTUATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

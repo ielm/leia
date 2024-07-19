@@ -1,0 +1,35 @@
+{
+  "word": "NEOCLASSICAL",
+  "senses": {
+    "NEOCLASSICAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "A revival in the architecture and art (especially decorative arts)  of 18th and 19th centuries, characterized by  simplicity of style,  order, and symmetry. ",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "HAS-STYLE": "NEOCLASSICAL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NEOCLASSICAL-ADJ1",
+      "WORD": "NEOCLASSICAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

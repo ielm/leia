@@ -1,0 +1,91 @@
+{
+  "word": "TRAVEL",
+  "senses": {
+    "TRAVEL-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "his travels have been interesting for him",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "TRAVEL-EVENT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "TREK"
+      ],
+      "SENSE": "TRAVEL-N1",
+      "WORD": "TRAVEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "TRAVEL-V1": {
+      "CAT": "V",
+      "DEF": "travel (X) = journey (around/through X)",
+      "EX": "he traveled from france to spain they traveled around Brooklyn she traveled the length of the continent they traveled the countryside",
+      "COMMENTS": "[D] path PP's (from, to, around, etc.) are handled compositionally",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "TRAVEL-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "LOCATION": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "TRAVELED-0",
+        "THE",
+        "COUNTRYSIDE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "COVER",
+        "TRAIPSE",
+        "TREK",
+        "VOYAGE",
+        "TRAVERSE"
+      ],
+      "SENSE": "TRAVEL-V1",
+      "WORD": "TRAVEL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

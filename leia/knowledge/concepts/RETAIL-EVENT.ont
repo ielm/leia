@@ -1,0 +1,67 @@
+{
+  "name": "@RETAIL-EVENT",
+  "isa": [
+    "@PROFESSIONAL-SERVICE-EVENT"
+  ],
+  "def": "the activity of selling goods to the public, usually in small quantities",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@SALES-STALL"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@RETAIL-CORPORATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@SALESPERSON"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CONSUMER-GOOD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@WORK-ROLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WATER"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

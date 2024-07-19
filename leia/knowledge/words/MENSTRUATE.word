@@ -1,0 +1,46 @@
+{
+  "word": "MENSTRUATE",
+  "senses": {
+    "MENSTRUATE-V1": {
+      "CAT": "V",
+      "DEF": "discharging the menses--the monthly flow of blood and cellular debris from the uterus of women and other primiate females  ",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "MENSTRUATE": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "MENSTRUATED-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MENSTRUATE-V1",
+      "WORD": "MENSTRUATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

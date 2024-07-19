@@ -1,0 +1,84 @@
+{
+  "word": "DIGEST",
+  "senses": {
+    "DIGEST-N1": {
+      "CAT": "N",
+      "DEF": "a collection of published materials",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "BOOK-DOCUMENT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DIGEST-N1",
+      "WORD": "DIGEST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DIGEST-V1": {
+      "CAT": "V",
+      "DEF": "to process food within the body",
+      "EX": "he doesn't digest hot peppers well",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "DIGEST": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-2",
+        "DOES",
+        "NOT",
+        "DIGEST-0",
+        "PEPPERS-3",
+        "WELL"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DIGEST-V1",
+      "WORD": "DIGEST",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

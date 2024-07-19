@@ -1,0 +1,26 @@
+{
+  "name": "@DORMITORY",
+  "isa": [
+    "@DWELLING"
+  ],
+  "def": "a building with rooms in it for sleeping and living in, as by students in a college",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@BATHROOM"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@BEDROOM"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@STUDENT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

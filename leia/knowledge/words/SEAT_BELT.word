@@ -1,0 +1,58 @@
+{
+  "word": "SEAT_BELT",
+  "senses": {
+    "SEAT_BELT-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "STRAP": {
+          "LOCATION": "CAR",
+          "LOCATION-1": "AIRPLANE",
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          },
+          "INSTRUMENT-OF-1": {
+            "VALUE": "REFSEM2"
+          },
+          "INSTRUMENT-OF-2": {
+            "VALUE": "REFSEM3"
+          }
+        },
+        "REFSEM1": {
+          "PROTECT": {
+            "THEME": "PASSENGER"
+          }
+        },
+        "REFSEM2": {
+          "PROTECT-1": {
+            "THEME-1": "PILOT"
+          }
+        },
+        "REFSEM3": {
+          "PROTECT-2": {
+            "THEME-2": "DRIVER"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SAFETY_BELT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SEAT_BELT-N1",
+      "WORD": "SEAT_BELT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

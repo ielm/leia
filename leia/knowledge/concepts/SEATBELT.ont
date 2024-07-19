@@ -1,0 +1,27 @@
+{
+  "name": "@SEATBELT",
+  "isa": [
+    "@VEHICLE-PART"
+  ],
+  "def": "a safety belt in a vehicle",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BUCKLE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@STRAP"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

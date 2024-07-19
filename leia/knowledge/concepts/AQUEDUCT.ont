@@ -1,0 +1,37 @@
+{
+  "name": "@AQUEDUCT",
+  "isa": [
+    "@PIPELINE"
+  ],
+  "def": "a large pipe or conduit for bringing water from a distant source",
+  "local": [
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@WATER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CEMENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@GAS"
+    },
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "private": {}
+}

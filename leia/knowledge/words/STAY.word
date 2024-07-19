@@ -1,0 +1,255 @@
+{
+  "word": "STAY",
+  "senses": {
+    "STAY-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "his stay at the hotel was satisfactory",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR3",
+          "CAT": "N",
+          "POSSESSIVE": "+",
+          "OPT": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": [
+            "IN",
+            "AT"
+          ],
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "STAY": {
+          "AGENT": {
+            "VALUE": "^$VAR3"
+          },
+          "LOCATION": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "'S-3",
+        "STAY-0",
+        "AT-1",
+        "THE",
+        "HOTEL-2",
+        "WAS",
+        "EXPENSIVE"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "STAY-N1",
+      "WORD": "STAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "STAY-V1": {
+      "CAT": "V",
+      "DEF": "to live temporarily",
+      "EX": "he stayed in the best hotel in town",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": [
+            "IN",
+            "AT"
+          ],
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "STAY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "LOCATION": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "STAYED-0",
+        "IN-3",
+        "THE",
+        "HOUSE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "STAY-V1",
+      "WORD": "STAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "STAY-V2": {
+      "CAT": "V",
+      "DEF": "to remain some place when other people or things go away",
+      "EX": "the water evaporated, and only the sediment remained",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "REMAIN": {
+          "THEME": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "SEDIMENT-1",
+        "STAYED-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "REMAIN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "STAY-V2",
+      "WORD": "STAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "STAY-V3": {
+      "CAT": "V",
+      "DEF": "phrasal: stay awake = not fall asleep",
+      "EX": "He stayed awake till 3",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "ADJ": {
+          "ROOT": "$VAR2",
+          "CAT": "ADJ",
+          "ROOT-WORD": "AWAKE"
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "CONTINUE",
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "BE-AWAKE": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "STAYED-0",
+        "AWAKE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "NSUBJ",
+          "$VAR2",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "STAY-V3",
+      "WORD": "STAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "word": "NECESSITATE",
+  "senses": {
+    "NECESSITATE-V1": {
+      "CAT": "V",
+      "DEF": "to require",
+      "EX": "this situtation necessitates that we act quickly",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "COMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "OBLIGATIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          },
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "PROBLEM-1",
+        "NECESSITATES-0",
+        "THAT",
+        "WE",
+        "BUY-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NECESSITATE-V1",
+      "WORD": "NECESSITATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "NECESSITATE-V2": {
+      "CAT": "V",
+      "DEF": "to require",
+      "EX": "such situtations necessitate quick thinking",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "OBLIGATIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          },
+          "CAUSED-BY": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "PROBLEM-1",
+        "NECESSITATED-0",
+        "QUICK",
+        "THINKING-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NECESSITATE-V2",
+      "WORD": "NECESSITATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

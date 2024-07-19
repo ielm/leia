@@ -1,0 +1,16 @@
+{
+  "name": "@COMPUTER-MEDIA-ARTIFACT",
+  "isa": [
+    "@MEDIA-ARTIFACT"
+  ],
+  "def": "2",
+  "local": [],
+  "block": [
+    {
+      "slot": "is-consumer-good",
+      "facet": "sem",
+      "filler": "yes"
+    }
+  ],
+  "private": {}
+}

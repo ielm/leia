@@ -1,0 +1,62 @@
+{
+  "name": "@FLY-ANIMATE",
+  "isa": [
+    "@FLY"
+  ],
+  "def": "Concept for flying animals",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "not",
+      "filler": "@PENGUIN"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@BIRD"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@INSECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "not",
+      "filler": "@OSTRICH"
+    },
+    {
+      "slot": "agent",
+      "facet": "not",
+      "filler": "@EMU"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@BAT-ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

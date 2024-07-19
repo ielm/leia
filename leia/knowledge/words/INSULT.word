@@ -1,0 +1,119 @@
+{
+  "word": "INSULT",
+  "senses": {
+    "INSULT-N1": {
+      "CAT": "N",
+      "DEF": "offensive comment",
+      "EX": "an insult (to the emperor) (by the ambassador) led to renewed hostilities",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "TO",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "PP-1": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "BY",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "INSULT": {
+          "AGENT": {
+            "VALUE": "^$VAR4"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SLIGHT-0",
+        "TO-1",
+        "THE",
+        "HUMAN-2",
+        "BY-3",
+        "THE",
+        "HUMAN-4"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "AFFRONT",
+        "OFFENSE",
+        "SLAP_IN_THE_FACE",
+        "SLIGHT",
+        "SNUB"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "INSULT-N1",
+      "WORD": "INSULT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "INSULT-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "he insulted her",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "INSULT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "INSULTED-0",
+        "HER-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INSULT-V1",
+      "WORD": "INSULT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

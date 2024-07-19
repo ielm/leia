@@ -1,0 +1,27 @@
+{
+  "name": "@PLACE-SETTING",
+  "isa": [
+    "@TABLE-SETTING-ARTIFACT"
+  ],
+  "def": "dishes, glassware, etc, used in setting a table for a meal, a table service for one person",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@TABLE-LINEN"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@TABLEWARE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

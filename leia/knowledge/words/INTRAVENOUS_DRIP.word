@@ -1,0 +1,30 @@
+{
+  "word": "INTRAVENOUS_DRIP",
+  "senses": {
+    "INTRAVENOUS_DRIP-N1": {
+      "CAT": "N",
+      "DEF": "The continuous introduction of a solution intravenously, a drop at a time.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "INTRAVENOUS-DRIP",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "INTRAVENOUS",
+        "IV_LINE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "INTRAVENOUS_DRIP-N1",
+      "WORD": "INTRAVENOUS_DRIP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

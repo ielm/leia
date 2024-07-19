@@ -1,0 +1,35 @@
+{
+  "word": "POSTMODERN",
+  "senses": {
+    "POSTMODERN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to art, architecture, or literature that reacts against  previously accepted modernist principles, as by reintroducing traditional  or classical elements of style or by taking modernist styles and practices to  extremes",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "HAS-STYLE": "POSTMODERN"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "POSTMODERN-ADJ1",
+      "WORD": "POSTMODERN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

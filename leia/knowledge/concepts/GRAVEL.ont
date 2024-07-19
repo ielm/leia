@@ -1,0 +1,22 @@
+{
+  "name": "@GRAVEL",
+  "isa": [
+    "@PAVING-MATERIAL"
+  ],
+  "def": "a loose mixture of pebbles and rock fragments coarser than sand, often used as paving material",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ROCK"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

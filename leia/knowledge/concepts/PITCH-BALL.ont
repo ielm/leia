@@ -1,0 +1,57 @@
+{
+  "name": "@PITCH-BALL",
+  "isa": [
+    "@THROW"
+  ],
+  "def": "in baseball, softball, etc., to throw the ball toward the batter",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@PITCHER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BASEBALL-BALL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SOFTBALL-BALL"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@SPORTS-ARENA"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@PRIMATE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

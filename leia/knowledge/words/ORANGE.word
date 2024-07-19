@@ -1,0 +1,97 @@
+{
+  "word": "ORANGE",
+  "senses": {
+    "ORANGE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "a color",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "COLOR": "ORANGE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ORANGE-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ORANGE-ADJ1",
+      "WORD": "ORANGE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ORANGE-N1": {
+      "CAT": "N",
+      "DEF": "with no explicit modifyee",
+      "EX": "some people like orange",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PHYSICAL-OBJECT": {
+          "COLOR": "ORANGE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ORANGE-N1",
+      "WORD": "ORANGE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ORANGE-N2": {
+      "CAT": "N",
+      "DEF": "a medium-sized citrus fruit",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "ORANGE-FRUIT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "TEMPLE_ORANGE",
+        "JAFFA_ORANGE",
+        "NAVEL_ORANGE",
+        "VALENCIA_ORANGE"
+      ],
+      "SENSE": "ORANGE-N2",
+      "WORD": "ORANGE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

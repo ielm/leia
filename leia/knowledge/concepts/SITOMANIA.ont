@@ -1,0 +1,32 @@
+{
+  "name": "@SITOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "abnormal craving for food",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FOOD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INGEST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

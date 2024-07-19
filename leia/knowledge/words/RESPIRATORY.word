@@ -1,0 +1,44 @@
+{
+  "word": "RESPIRATORY",
+  "senses": {
+    "RESPIRATORY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "associated with the respiratory system",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "RESPIRATORY-SYSTEM"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "RESPIRATORY-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RESPIRATORY-ADJ1",
+      "WORD": "RESPIRATORY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

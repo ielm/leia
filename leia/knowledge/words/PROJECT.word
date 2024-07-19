@@ -1,0 +1,232 @@
+{
+  "word": "PROJECT",
+  "senses": {
+    "PROJECT-N1": {
+      "CAT": "N",
+      "DEF": "a planned piece of work",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PROJECT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PROJECT-N1",
+      "WORD": "PROJECT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PROJECT-V2": {
+      "CAT": "V",
+      "DEF": "to 'throw' an image onto a screen, wall, etc. in order to display it",
+      "EX": "He projected his slides onto the screen.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "NP"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "DISPLAY": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "INSTRUMENT": "PROJECTOR",
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": "PICTURE"
+          },
+          "DESTINATION": {
+            "VALUE": "^$VAR4"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOG-1",
+        "PROJECTS-0",
+        "THE",
+        "CURE-2",
+        "IN-3",
+        "THE",
+        "LOBBY-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PROJECT-V2",
+      "WORD": "PROJECT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PROJECT-V3": {
+      "CAT": "V",
+      "DEF": "to throw something, like a projectile",
+      "EX": "The arrow was projected from the bow.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "THROW": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "GOD-1",
+        "PROJECTS-0",
+        "THE",
+        "DOG-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PROJECT-V3",
+      "WORD": "PROJECT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PROJECT-V1": {
+      "CAT": "V",
+      "DEF": "phrasal: to project one's voice = to speak loudly",
+      "EX": "He projected his voice so everybody could hear him.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "N": {
+            "ROOT": "$VAR3",
+            "CAT": "N",
+            "POSSESSIVE": "+"
+          },
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "SPEECH-ACT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "LOUDNESS": [
+            ">",
+            0.8
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOG-1",
+        "PROJECTS-0",
+        "HIS-3",
+        "VOICE-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PROJECT-V1",
+      "WORD": "PROJECT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@PAD",
+  "isa": [
+    "@EVERYDAY-ARTIFACT",
+    "@PACKAGING-MATERIAL"
+  ],
+  "def": "a thin, cushionlike mass of usually soft material used to fill, to give shape, or to protect against jarring, injury, etc.",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CARDBOARD"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

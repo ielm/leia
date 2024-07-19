@@ -1,0 +1,146 @@
+{
+  "word": "COACH",
+  "senses": {
+    "COACH-N1": {
+      "CAT": "N",
+      "DEF": "a carriage",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "COACH",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "FOUR_IN_HAND",
+        "COACH_AND_FOUR",
+        "STAGECOACH",
+        "CARRIAGE",
+        "EQUIPAGE",
+        "RIG",
+        "HACKNEY",
+        "HACKNEY_CARRIAGE",
+        "HACKNEY_COACH",
+        "HANSOM",
+        "HANSOM_CAB"
+      ],
+      "SENSE": "COACH-N1",
+      "WORD": "COACH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "COACH-N2": {
+      "CAT": "N",
+      "DEF": "a trainer, as in sports",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "TRAINER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COACH-N2",
+      "WORD": "COACH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "COACH-V1": {
+      "CAT": "V",
+      "DEF": "to train",
+      "EX": "she coached me in doing good interviews",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "IN",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "TRAINING": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR4"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "TRAINER-1",
+        "COACHED-0",
+        "THE",
+        "MAN-2",
+        "IN-3",
+        "THE",
+        "ROUTINE-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COACH-V1",
+      "WORD": "COACH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

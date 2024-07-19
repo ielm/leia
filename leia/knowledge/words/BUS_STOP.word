@@ -1,0 +1,31 @@
+{
+  "word": "BUS_STOP",
+  "senses": {
+    "BUS_STOP-N1": {
+      "CAT": "N",
+      "DEF": "a place where you wait for and get on/off a bus",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "TRANSPORTATION-STOP": {
+          "LOCATION-OF": "BUS"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BUS_STOP-N1",
+      "WORD": "BUS_STOP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

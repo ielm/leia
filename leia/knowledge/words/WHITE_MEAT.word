@@ -1,0 +1,31 @@
+{
+  "word": "WHITE_MEAT",
+  "senses": {
+    "WHITE_MEAT-N1": {
+      "CAT": "N",
+      "DEF": "lightly colored meat, esp. of poultry",
+      "EX": "",
+      "COMMENTS": "I'm not including 'the other white meat', pork, because that's usually not what's meant",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "POULTRY-MEAT": {
+          "COLOR": "WHITE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WHITE_MEAT-N1",
+      "WORD": "WHITE_MEAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

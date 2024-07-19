@@ -1,0 +1,38 @@
+{
+  "word": "ELECTRICAL",
+  "senses": {
+    "ELECTRICAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "containing electrical parts",
+      "EX": "an electronic alarm clock",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "HAS-OBJECT-AS-PART": "ELECTRICAL-EQUIPMENT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ELECTRICAL-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ELECTRICAL-ADJ1",
+      "WORD": "ELECTRICAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

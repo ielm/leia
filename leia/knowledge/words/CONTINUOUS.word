@@ -1,0 +1,45 @@
+{
+  "word": "CONTINUOUS",
+  "senses": {
+    "CONTINUOUS-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "repeating without interruption",
+      "EX": "we get continuous internet service",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "ITERATION": "MULTIPLE",
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "TIME-INTERVAL": 0
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CONTINUOUS-0",
+        "OBJECT-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CONTINUOUS-ADJ1",
+      "WORD": "CONTINUOUS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

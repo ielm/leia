@@ -1,0 +1,52 @@
+{
+  "word": "INITIAL",
+  "senses": {
+    "INITIAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "before some other, to be determined by context, action/event",
+      "EX": "The initial investigation was inconclusive",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TIME": [
+            "<",
+            [
+              "SEEK-COMPARED-EVENT"
+            ]
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "INITIAL-0",
+        "PLAN-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "ORIGINAL"
+      ],
+      "SENSE": "INITIAL-ADJ1",
+      "WORD": "INITIAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

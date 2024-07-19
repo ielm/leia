@@ -1,0 +1,22 @@
+{
+  "name": "@ALTIMETER",
+  "isa": [
+    "@MEASURING-ARTIFACT"
+  ],
+  "def": "an instrument used for measuring altitude, particularly in an air-vehicle",
+  "local": [
+    {
+      "slot": "measures-property",
+      "facet": "sem",
+      "filler": "$height"
+    }
+  ],
+  "block": [
+    {
+      "slot": "measures-property",
+      "facet": "sem",
+      "filler": "$property"
+    }
+  ],
+  "private": {}
+}

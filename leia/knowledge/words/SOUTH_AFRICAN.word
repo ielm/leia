@@ -1,0 +1,79 @@
+{
+  "word": "SOUTH_AFRICAN",
+  "senses": {
+    "SOUTH_AFRICAN-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to south africa",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "SOUTH_AFRICA"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SOUTH_AFRICAN-ADJ1",
+      "WORD": "SOUTH_AFRICAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "SOUTH_AFRICAN-N1": {
+      "CAT": "N",
+      "DEF": "a citizen of south africa",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CITIZEN": {
+          "HAS-NATIONALITY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "SOUTH_AFRICA"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SOUTH_AFRICAN-N1",
+      "WORD": "SOUTH_AFRICAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

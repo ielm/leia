@@ -1,0 +1,22 @@
+{
+  "name": "@MEASURING-SCALE",
+  "isa": [
+    "@MEASURING-ARTIFACT"
+  ],
+  "def": "A device used to measure weight",
+  "local": [
+    {
+      "slot": "measures-property",
+      "facet": "sem",
+      "filler": "$weight"
+    }
+  ],
+  "block": [
+    {
+      "slot": "measures-property",
+      "facet": "sem",
+      "filler": "$property"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,37 @@
+{
+  "word": "CONTRADICTORY",
+  "senses": {
+    "CONTRADICTORY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "contradictory reports, evidence",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "CONTRADICT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "PARADOXICAL"
+      ],
+      "SENSE": "CONTRADICTORY-ADJ1",
+      "WORD": "CONTRADICTORY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

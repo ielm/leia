@@ -1,0 +1,40 @@
+{
+  "word": "REDUCED_POWER",
+  "senses": {
+    "REDUCED_POWER-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "of less than full strength",
+      "EX": "reduced-power engine",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "STRENGTH": [
+            "<",
+            1
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "REDUCED-STRENGTH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "REDUCED_POWER-ADJ1",
+      "WORD": "REDUCED_POWER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

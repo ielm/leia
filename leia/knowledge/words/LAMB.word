@@ -1,0 +1,37 @@
+{
+  "word": "LAMB",
+  "senses": {
+    "LAMB-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SHEEP": {
+          "AGE": {
+            "VALUE": [
+              "><",
+              0,
+              1
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LAMB-N1",
+      "WORD": "LAMB",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

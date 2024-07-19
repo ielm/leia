@@ -1,0 +1,37 @@
+{
+  "name": "@FLOOD",
+  "isa": [
+    "@NATURAL-HAZARD"
+  ],
+  "def": "an overflowing of water due to excessive rain or high tides in an area normally dry",
+  "local": [
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@RAINSTORM"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@TIDE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,36 @@
+{
+  "word": "MASTER_GUNNERY_SERGEANT",
+  "senses": {
+    "MASTER_GUNNERY_SERGEANT-N1": {
+      "CAT": "N",
+      "DEF": "an officer of rank 13/17 in the US marines",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MILITARY-OFFICER": {
+          "CITIZEN-OF": "USA",
+          "MEMBER-OF": "MARINES",
+          "RANK": [
+            13,
+            17
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MASTER_GUNNERY_SERGEANT-N1",
+      "WORD": "MASTER_GUNNERY_SERGEANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

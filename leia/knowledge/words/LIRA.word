@@ -1,0 +1,59 @@
+{
+  "word": "LIRA",
+  "senses": {
+    "LIRA-N1": {
+      "CAT": "N",
+      "DEF": "currency of cyprus or turkey",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": {
+            "CYPRUS": "TURKEY"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LIRA-N1",
+      "WORD": "LIRA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LIRA-N2": {
+      "CAT": "N",
+      "DEF": "currency of malta",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": "MALTA"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LIRA-N2",
+      "WORD": "LIRA",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

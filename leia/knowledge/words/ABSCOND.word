@@ -1,0 +1,46 @@
+{
+  "word": "ABSCOND",
+  "senses": {
+    "ABSCOND-V1": {
+      "CAT": "V",
+      "DEF": "to leave quickly and usually secretively",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "EXIT": {
+          "RAPIDITY": [
+            ">",
+            0.8
+          ],
+          "SECRECY-ATTRIBUTE": 0.8,
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DOG-1",
+        "ABSCONDED-0"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ABSCOND-V1",
+      "WORD": "ABSCOND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

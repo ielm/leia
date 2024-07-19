@@ -1,0 +1,61 @@
+{
+  "word": "EMANATE",
+  "senses": {
+    "EMANATE-V2": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "[in our texts, almost always metaphorical, but I think the ont. def. is broad enough to accommodate such usage] the information emanated from his own party headquarters",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "FROM",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "EMANATE": {
+          "THEME": {
+            "VALUE": "^$VAR1"
+          },
+          "SOURCE": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "INFORMATION-1",
+        "EMANATED-0",
+        "FROM-2",
+        "HIS",
+        "OWN",
+        "PARTY",
+        "HEADQUARTERS-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EMANATE-V2",
+      "WORD": "EMANATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

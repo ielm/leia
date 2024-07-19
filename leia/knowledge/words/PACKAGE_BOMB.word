@@ -1,0 +1,33 @@
+{
+  "word": "PACKAGE_BOMB",
+  "senses": {
+    "PACKAGE_BOMB-N1": {
+      "CAT": "N",
+      "DEF": "a bomb that is located in a parcel and explodes when that object is opened",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BOMB": {
+          "LOCATION": "PACKAGE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "PARCEL_BOMB"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PACKAGE_BOMB-N1",
+      "WORD": "PACKAGE_BOMB",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

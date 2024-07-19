@@ -1,0 +1,32 @@
+{
+  "word": "ECLOGUE",
+  "senses": {
+    "ECLOGUE-N1": {
+      "CAT": "N",
+      "DEF": "a pastoral poem, usually in the form of a dialogue among shepherds",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LITERARY-COMPOSITION": {
+          "HAS-STYLE": "POEM",
+          "ABOUT-AS-TOPIC": "COUNTRYSIDE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ECLOGUE-N1",
+      "WORD": "ECLOGUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

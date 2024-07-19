@@ -1,0 +1,56 @@
+{
+  "word": "AVERSION",
+  "senses": {
+    "AVERSION-N1": {
+      "CAT": "N",
+      "DEF": "staying away from some event or situation",
+      "EX": "his aversion to social gatherings made people wonder about him",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "ROOT-WORD": "TO",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "VOLITIVE",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "^$VAR2",
+            "SEM": "EVENT"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "DISCUSSED",
+        "HIS",
+        "AVERSION-0",
+        "TO-3",
+        "DOGS-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AVERSION-N1",
+      "WORD": "AVERSION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

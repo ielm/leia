@@ -1,0 +1,27 @@
+{
+  "name": "@SQUEEGEE",
+  "isa": [
+    "@CLEANING-ARTIFACT"
+  ],
+  "def": "a t-shaped instrument edged with rubber or leather and used to remove water from surfaces, as when washing windows",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SYNTHETIC-RUBBER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@LEATHER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

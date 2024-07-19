@@ -1,0 +1,36 @@
+{
+  "word": "GUILDER",
+  "senses": {
+    "GUILDER-N1": {
+      "CAT": "N",
+      "DEF": "currency of aruba or netherlands-antilles or suriname",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": {
+            "ARUBA": [
+              "NETHERLANDS_ANTILLES",
+              "SURINAME"
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GUILDER-N1",
+      "WORD": "GUILDER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

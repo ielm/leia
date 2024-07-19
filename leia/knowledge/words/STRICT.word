@@ -1,0 +1,44 @@
+{
+  "word": "STRICT",
+  "senses": {
+    "STRICT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "demanding close conformity to requirements or principles",
+      "EX": "the teacher was strict with her students; the club had strict entrance requirements",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "FLEXIBILITY-SOCIAL": 0.1
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "STRICT-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "STRICT-ADJ1",
+      "WORD": "STRICT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "word": "FULL_SKIRT",
+  "senses": {
+    "FULL_SKIRT-N1": {
+      "CAT": "N",
+      "DEF": "a long skirt gathered at the waist",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SKIRT": {
+          "LENGTH": [
+            ">",
+            0.8
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FULL_SKIRT-N1",
+      "WORD": "FULL_SKIRT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

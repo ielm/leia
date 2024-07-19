@@ -1,0 +1,31 @@
+{
+  "word": "CHICKEN_SANDWICH",
+  "senses": {
+    "CHICKEN_SANDWICH-N1": {
+      "CAT": "N",
+      "DEF": "Sandwich filled with sliced chicken",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SANDWICH": {
+          "HAS-OBJECT-AS-PART": "POULTRY-MEAT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CHICKEN_SANDWICH-N1",
+      "WORD": "CHICKEN_SANDWICH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

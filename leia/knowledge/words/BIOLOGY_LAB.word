@@ -1,0 +1,41 @@
+{
+  "word": "BIOLOGY_LAB",
+  "senses": {
+    "BIOLOGY_LAB-N1": {
+      "CAT": "N",
+      "DEF": "a laboratory where biology is studied",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LABORATORY": {
+          "LOCATION-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "RESEARCH": {
+            "RELATION": "BIOLOGY"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "BIO_LAB",
+        "BIOLOGY_LABORATORY"
+      ],
+      "SENSE": "BIOLOGY_LAB-N1",
+      "WORD": "BIOLOGY_LAB",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

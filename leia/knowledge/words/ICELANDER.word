@@ -1,0 +1,40 @@
+{
+  "word": "ICELANDER",
+  "senses": {
+    "ICELANDER-N1": {
+      "CAT": "N",
+      "DEF": "a citizen of iceland",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CITIZEN": {
+          "HAS-NATIONALITY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NATION": {
+            "HAS-NAME": {
+              "VALUE": "ICELAND"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ICELANDER-N1",
+      "WORD": "ICELANDER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

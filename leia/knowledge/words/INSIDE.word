@@ -1,0 +1,267 @@
+{
+  "word": "INSIDE",
+  "senses": {
+    "INSIDE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "within the boundaries of an understood location",
+      "EX": "the building had inside sprinklers",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "INSIDE-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": [
+          "PLACE"
+        ]
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "REFSEM1",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "RAN",
+        "ON",
+        "THE",
+        "INSIDE-0",
+        "TRACK-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "INTERNAL"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "INSIDE-ADJ1",
+      "WORD": "INSIDE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "INSIDE-ADV1": {
+      "CAT": "ADV",
+      "DEF": "within the boundaries of an understood location",
+      "EX": "we'll meet inside; inside, the debate was heating up",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "INSIDE-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": [
+          "LOCATION"
+        ]
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "REFSEM1"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "ATE-1",
+        "INSIDE-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INSIDE-ADV1",
+      "WORD": "INSIDE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "INSIDE-N1": {
+      "CAT": "N",
+      "DEF": "the inside of an object",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "INSIDE-OF-OBJECT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "WITHIN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "INSIDE-N1",
+      "WORD": "INSIDE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "INSIDE-PREP1": {
+      "CAT": "PREP",
+      "DEF": "within the boundaries of a specified object or location",
+      "EX": "we'll meet inside the theater; the air inside the office is dank",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PREP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP"
+        },
+        "PREP-1": {
+          "ROOT": "$VAR2",
+          "ROOT-WORD": "OF",
+          "CAT": "PREP",
+          "OPT": "+"
+        },
+        "NP": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "OBJECT",
+            "EVENT"
+          ],
+          "INSIDE-OF": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "INSIDE-0",
+        "OF-2",
+        "THE",
+        "OBJECT-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "PREP",
+          "$VAR1",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [
+        "INSIDE_OF"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "INSIDE-PREP1",
+      "WORD": "INSIDE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "INSIDE-PREP2": {
+      "CAT": "PREP",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": [
+          "N",
+          "V"
+        ],
+        "PP": {
+          "ROOT": "$VAR0",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "INSIDE-OF": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "INSIDE-0",
+        "THE",
+        "MAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INSIDE-PREP2",
+      "WORD": "INSIDE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

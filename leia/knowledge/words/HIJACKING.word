@@ -1,0 +1,49 @@
+{
+  "word": "HIJACKING",
+  "senses": {
+    "HIJACKING-N1": {
+      "CAT": "N",
+      "DEF": "seizing control of something (by somebody)",
+      "EX": "(pirate/bandit/etc.) hijacking",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NP": {
+          "ROOT": "$VAR1",
+          "CAT": "NP",
+          "OPT": "+"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HIJACK": {
+          "AGENT": {
+            "VALUE": "^$VAR1",
+            "SEM": "HUMAN"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "CRIMINAL-1",
+        "HIJACKING-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HIJACKING-N1",
+      "WORD": "HIJACKING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

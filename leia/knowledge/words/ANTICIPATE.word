@@ -1,0 +1,167 @@
+{
+  "word": "ANTICIPATE",
+  "senses": {
+    "ANTICIPATE-V3": {
+      "CAT": "V",
+      "DEF": "phrasal: it *be* anticipated that...",
+      "EX": "It is anticipated that the fall will be cooler than usual.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "TYPE": "PRO",
+          "ROOT-WORD": "IT"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "V-1": {
+          "ROOT": "$VAR0",
+          "CAT": "V",
+          "FORM": "PAST-PARTICIPLE"
+        },
+        "COMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "FORESEE": {
+          "AGENT": {
+            "VALUE": "REFSEM1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": "HUMAN"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "IT-1",
+        "WAS-2",
+        "ANTICIPATED-0",
+        "THAT",
+        "THE",
+        "MAN",
+        "HIT-3",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ANTICIPATE-V3",
+      "WORD": "ANTICIPATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ANTICIPATE-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "I'm anticipating a problem <not being able to make it on time>",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "FORESEE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "ANTICIPATED-0",
+        "THE",
+        "WAR-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "FORESEE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ANTICIPATE-V1",
+      "WORD": "ANTICIPATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ANTICIPATE-V2": {
+      "CAT": "V",
+      "DEF": "to act in advance of and forestall",
+      "EX": "teachers must anticipate their students' questions",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "ANTICIPATE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "GOD-1",
+        "ANTICIPATED-0",
+        "THE",
+        "WAR-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ANTICIPATE-V2",
+      "WORD": "ANTICIPATE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

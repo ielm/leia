@@ -1,0 +1,47 @@
+{
+  "word": "COSTUME_PARTY",
+  "senses": {
+    "COSTUME_PARTY-N1": {
+      "CAT": "N",
+      "DEF": "a party where the participants wear costumes",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PARTY": {
+          "AGENT": {
+            "VALUE": "REFSEM2"
+          },
+          "HAS-EVENT-AS-PART": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "WEAR-CLOTHES": {
+            "THEME": "COSTUME",
+            "AGENT-1": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": [
+          "HUMAN"
+        ]
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COSTUME_PARTY-N1",
+      "WORD": "COSTUME_PARTY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

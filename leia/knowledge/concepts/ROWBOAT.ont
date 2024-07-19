@@ -1,0 +1,16 @@
+{
+  "name": "@ROWBOAT",
+  "isa": [
+    "@BOAT"
+  ],
+  "def": "a small boat propelled using oars",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@PADDLE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

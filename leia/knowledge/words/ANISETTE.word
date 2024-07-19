@@ -1,0 +1,31 @@
+{
+  "word": "ANISETTE",
+  "senses": {
+    "ANISETTE-N1": {
+      "CAT": "N",
+      "DEF": "An anise-flavored liqueur.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LIQUOR": {
+          "HAS-OBJECT-AS-PART": "ANISE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ANISETTE-N1",
+      "WORD": "ANISETTE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

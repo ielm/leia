@@ -1,0 +1,9 @@
+{
+  "name": "$ABOVE",
+  "def": "an event takes place or an object is positioned vertically higher than another",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$UNDER",
+  "measured-in": [],
+  "container": "$SPATIAL-RELATION"
+}

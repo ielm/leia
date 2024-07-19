@@ -1,0 +1,41 @@
+{
+  "word": "APPREHENSIVE",
+  "senses": {
+    "APPREHENSIVE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "experiencing some degree of fear and a tendency not to want to do something",
+      "EX": "an apprehensive candidate",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "FEAR": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          },
+          "INTENSITY": [
+            "<",
+            0.3
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "APPREHENSIVE-ADJ1",
+      "WORD": "APPREHENSIVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

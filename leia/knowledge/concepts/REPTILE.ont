@@ -1,0 +1,19 @@
+{
+  "name": "@REPTILE",
+  "isa": [
+    "@VERTEBRATE"
+  ],
+  "def": "Any cold-blooded vertebrate that crawls.",
+  "local": [],
+  "block": [
+    {
+      "slot": "diligence",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

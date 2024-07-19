@@ -1,0 +1,21 @@
+{
+  "name": "@RAIL",
+  "isa": [
+    "@ROAD-SYSTEM-ARTIFACT"
+  ],
+  "def": "a road composed of parallel steel rails",
+  "local": [
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

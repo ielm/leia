@@ -1,0 +1,9 @@
+{
+  "name": "$NOT-ELEMENTS",
+  "def": "indicates which concepts are not elements\nof a given set",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$NOT-ELEMENTS-OF",
+  "measured-in": [],
+  "container": "$PARAMETRIC-RELATION"
+}

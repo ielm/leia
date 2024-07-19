@@ -1,0 +1,19 @@
+{
+  "name": "@DROP-VOLUME",
+  "isa": [
+    "@VOLUME-UNIT"
+  ],
+  "def": "a unit measure of volume. 60 drops equal one teaspoon; tsp/60",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        8.33333e-08
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

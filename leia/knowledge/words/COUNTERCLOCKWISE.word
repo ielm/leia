@@ -1,0 +1,37 @@
+{
+  "word": "COUNTERCLOCKWISE",
+  "senses": {
+    "COUNTERCLOCKWISE-ADV1": {
+      "CAT": "ADV",
+      "DEF": "in the opposite direction of a clock's hands",
+      "EX": "she ran counterclockwise around the track",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "DIRECTION-OF-MOTION": "COUNTERCLOCKWISE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COUNTERCLOCKWISE-ADV1",
+      "WORD": "COUNTERCLOCKWISE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

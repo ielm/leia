@@ -1,0 +1,35 @@
+{
+  "word": "STEEL_MILL",
+  "senses": {
+    "STEEL_MILL-N1": {
+      "CAT": "N",
+      "DEF": "a factory where steel is made",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "FACTORY": {
+          "PRODUCER-OF": "STEEL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "STEELWORKS",
+        "STEEL_PLANT",
+        "STEEL_FACTORY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "STEEL_MILL-N1",
+      "WORD": "STEEL_MILL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

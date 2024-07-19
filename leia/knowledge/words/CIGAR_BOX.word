@@ -1,0 +1,31 @@
+{
+  "word": "CIGAR_BOX",
+  "senses": {
+    "CIGAR_BOX-N1": {
+      "CAT": "N",
+      "DEF": "a box that contains cigars",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BOX": {
+          "CONTAINS": "CIGAR"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CIGAR_BOX-N1",
+      "WORD": "CIGAR_BOX",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

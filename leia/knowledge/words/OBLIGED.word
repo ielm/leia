@@ -1,0 +1,113 @@
+{
+  "word": "OBLIGED",
+  "senses": {
+    "OBLIGED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "students obliged to do too much will fail.",
+      "COMMENTS": "takes xcomp complement",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "XCOMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "MODALITY": {
+          "TYPE": "OBLIGATIVE",
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          },
+          "VALUE": 1
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OBLIGED-ADJ1",
+      "WORD": "OBLIGED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "OBLIGED-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "he'll be obliged to finish on time.",
+      "COMMENTS": "takes xcomp complement",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT-WORD": "*BE*",
+        "ROOT": "$VAR3",
+        "CAT": "V",
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "XCOMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "MODALITY": {
+          "TYPE": "OBLIGATIVE",
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          },
+          "VALUE": 1
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "OBLIGED-ADJ2",
+      "WORD": "OBLIGED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

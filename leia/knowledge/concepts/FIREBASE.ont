@@ -1,0 +1,16 @@
+{
+  "name": "@FIREBASE",
+  "isa": [
+    "@BASE-OF-OPERATIONS"
+  ],
+  "def": "A military base or site from which heavy fire is directed against the enemy.",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "default",
+      "filler": "@DISCHARGE-WEAPON"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

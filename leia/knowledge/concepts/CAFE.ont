@@ -1,0 +1,55 @@
+{
+  "name": "@CAFE",
+  "isa": [
+    "@RESTAURANT"
+  ],
+  "def": "a small restaurant or barroom where hot beverages and liquor are served and where people may socialize",
+  "local": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@SERVER"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@FLOOR-STAFF-MEMBER"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@KITCHEN-STAFF"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

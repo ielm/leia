@@ -1,0 +1,16 @@
+{
+  "name": "@FLEA",
+  "isa": [
+    "@INSECT"
+  ],
+  "def": "a small wingless bloodsucking insect that is good at jumping",
+  "local": [
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

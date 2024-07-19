@@ -1,0 +1,27 @@
+{
+  "name": "@DEPARTMENT-ACADEMIC",
+  "isa": [
+    "@ACADEMIC-ORGANIZATION"
+  ],
+  "def": "a division of a school, college, or university dealing with a particular field of knowledge",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@UNIVERSITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

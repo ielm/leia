@@ -1,0 +1,72 @@
+{
+  "word": "A_THOUSAND",
+  "senses": {
+    "A_THOUSAND-NUM1": {
+      "CAT": "NUM",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "NUM"
+      },
+      "SEM-STRUC": {
+        "PHYSICAL-OBJECT": {
+          "CARDINALITY": {
+            "VALUE": 1000
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "1000"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "A_THOUSAND-NUM1",
+      "WORD": "A_THOUSAND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "A_THOUSAND-NUM2": {
+      "CAT": "NUM",
+      "DEF": "",
+      "EX": "a thousand bottles of beer on the wall",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "NUM": {
+          "ROOT": "$VAR0",
+          "CAT": "NUM"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "NUMBER": "PL"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "CARDINALITY": 1000
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "1000"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "A_THOUSAND-NUM2",
+      "WORD": "A_THOUSAND",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

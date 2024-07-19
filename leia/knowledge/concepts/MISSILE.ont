@@ -1,0 +1,16 @@
+{
+  "name": "@MISSILE",
+  "isa": [
+    "@PROJECTILE"
+  ],
+  "def": "An object or weapon that is fired, thrown, dropped, or otherwise projected at a target; a projectile.",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "private": {}
+}

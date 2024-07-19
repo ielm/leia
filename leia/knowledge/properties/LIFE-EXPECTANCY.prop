@@ -1,0 +1,11 @@
+{
+  "name": "$LIFE-EXPECTANCY",
+  "def": "the number of years a human is expected to live (usually in a given geographical area or during a given historical period)\nHOW DIFFERENT is this from LIFESPAN?",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@YEAR"
+  ],
+  "container": "$DEMOGRAPHICS-ATTRIBUTE"
+}

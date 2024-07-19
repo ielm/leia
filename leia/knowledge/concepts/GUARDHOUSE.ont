@@ -1,0 +1,16 @@
+{
+  "name": "@GUARDHOUSE",
+  "isa": [
+    "@MILITARY-INSTALLATION"
+  ],
+  "def": "A building where a military guard is located",
+  "local": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@WATCHMAN"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

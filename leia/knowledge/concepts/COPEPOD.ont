@@ -1,0 +1,22 @@
+{
+  "name": "@COPEPOD",
+  "isa": [
+    "@CRUSTACEAN"
+  ],
+  "def": "a very small marine and freshwater crustacean with a forked tail and an elongated body",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BODY-OF-WATER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

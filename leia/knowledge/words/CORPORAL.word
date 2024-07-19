@@ -1,0 +1,36 @@
+{
+  "word": "CORPORAL",
+  "senses": {
+    "CORPORAL-N1": {
+      "CAT": "N",
+      "DEF": "an officer of rank 22/22 in the US army",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MILITARY-OFFICER": {
+          "CITIZEN-OF": "USA",
+          "MEMBER-OF": "ARMY",
+          "RANK": [
+            22,
+            22
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CORPORAL-N1",
+      "WORD": "CORPORAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

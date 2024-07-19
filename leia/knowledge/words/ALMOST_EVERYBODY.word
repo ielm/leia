@@ -1,0 +1,55 @@
+{
+  "word": "ALMOST_EVERYBODY",
+  "senses": {
+    "ALMOST_EVERYBODY-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "almost everybody arrived on time.",
+      "COMMENTS": "see notes for 'everything'",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "CARDINALITY": [
+            ">",
+            0.9
+          ],
+          "DETERMINATE": "NO",
+          "MEMBER-TYPE": "HUMAN"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          [
+            "SET",
+            1
+          ]
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "JUST_ABOUT_EVERYBODY",
+        "PRACTICALLY_EVERYBODY",
+        "NEARLY_EVERYBODY",
+        "ALMOST_EVERYONE",
+        "JUST_ABOUT_EVERYONE",
+        "NEARLY_EVERYONE",
+        "VIRTUALLY_EVERYONE",
+        "VIRTUALLY_EVERYBODY",
+        "PRETTY_MUCH_EVERYONE",
+        "PRETTY_MUCH_EVERYBODY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "ALMOST_EVERYBODY-N1",
+      "WORD": "ALMOST_EVERYBODY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

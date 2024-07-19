@@ -1,0 +1,96 @@
+{
+  "word": "DISPERSAL",
+  "senses": {
+    "DISPERSAL-N1": {
+      "CAT": "N",
+      "DEF": "for things that can be agents",
+      "EX": "dispersal of the troops",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N",
+            "NUMBER": "PL"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "DISPERSE": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "DISPERSION"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DISPERSAL-N1",
+      "WORD": "DISPERSAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DISPERSAL-N2": {
+      "CAT": "N",
+      "DEF": "when the thing dispersing can't be an agent",
+      "EX": "",
+      "COMMENTS": "[D] the theme needn't be plural or a set because it can be a mass noun",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "DISPERSE": {
+          "THEME": {
+            "VALUE": "^$VAR2",
+            "SEM": [
+              "NOT",
+              "ANIMAL"
+            ]
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "DISPERSION"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "DISPERSAL-N2",
+      "WORD": "DISPERSAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "@EXPENSE",
+  "isa": [
+    "@FINANCIAL-OBJECT"
+  ],
+  "def": "An expenditure of money; a cost",
+  "local": [
+    {
+      "slot": "capital-gains",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "capital-gains",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "capital-gains",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "corporate-assets-of",
+      "facet": "sem",
+      "filler": "@CORPORATION"
+    }
+  ],
+  "private": {}
+}

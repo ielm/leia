@@ -1,0 +1,76 @@
+{
+  "word": "MORAL",
+  "senses": {
+    "MORAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "morally good",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "MORALITY": 0.8
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "DECENT-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "DECENT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "MORAL-ADJ1",
+      "WORD": "MORAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MORAL-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "relating to morals (not evaluative)",
+      "EX": "moral education does (not) belong in the schools; laws should not be moral",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "MORALITY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MORAL-ADJ2",
+      "WORD": "MORAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

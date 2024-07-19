@@ -1,0 +1,55 @@
+{
+  "word": "CURRENTLY",
+  "senses": {
+    "CURRENTLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "going on right now",
+      "EX": "this is based only on records currently in the system",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TIME": [
+            "FIND-ANCHOR-TIME"
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "IS",
+        "EATING-1",
+        "CURRENTLY-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "PRESENTLY"
+      ],
+      "HYPONYMS": [
+        "TODAY",
+        "THESE_DAYS"
+      ],
+      "SENSE": "CURRENTLY-ADV1",
+      "WORD": "CURRENTLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

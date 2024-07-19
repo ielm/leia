@@ -1,0 +1,22 @@
+{
+  "name": "@PAPER-PRODUCT",
+  "isa": [
+    "@INDUSTRIAL-ARTIFACT"
+  ],
+  "def": "any product made of paper material which can be classified by quality, in accordance with agreed international standards, can be traded on the commodities exchang",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PAPER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

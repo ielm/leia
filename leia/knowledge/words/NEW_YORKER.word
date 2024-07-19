@@ -1,0 +1,75 @@
+{
+  "word": "NEW_YORKER",
+  "senses": {
+    "NEW_YORKER-N1": {
+      "CAT": "N",
+      "DEF": "resides in the state of new york",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "HAS-STATE-ADDRESS": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "STATE": {
+            "HAS-NAME": {
+              "VALUE": "NEW_YORK"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NEW_YORKER-N1",
+      "WORD": "NEW_YORKER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "NEW_YORKER-N2": {
+      "CAT": "N",
+      "DEF": "resides in the city of new york",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "HAS-CITY-ADDRESS": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "CITY": {
+            "HAS-NAME": {
+              "VALUE": "NEW_YORK"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NEW_YORKER-N2",
+      "WORD": "NEW_YORKER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

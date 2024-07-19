@@ -1,0 +1,9 @@
+{
+  "name": "$AREA-OF-BUSINESS-ACTIVITY",
+  "def": "The relation between a person or an organization and its area of work activity.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$ORGANIZATION-IN-BUSINESS-AREA",
+  "measured-in": [],
+  "container": "$BUSINESS-RELATION"
+}

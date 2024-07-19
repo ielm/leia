@@ -1,0 +1,9 @@
+{
+  "name": "$HEALTH-ATTRIBUTE",
+  "def": "the degree to which animals are healthy or unhealthy (we can \ndecide later if we want the same to apply to plants)",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-MEDICAL-ATTRIBUTE"
+}

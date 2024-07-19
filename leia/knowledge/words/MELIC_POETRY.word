@@ -1,0 +1,41 @@
+{
+  "word": "MELIC_POETRY",
+  "senses": {
+    "MELIC_POETRY-N1": {
+      "CAT": "N",
+      "DEF": "Pertaining to ancient Greek lyric poetry around the seventh to fifth century B.C.",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LITERARY-COMPOSITION": {
+          "HAS-STYLE": "POEM",
+          "TIME-BEGIN": {
+            "YEAR": -700
+          },
+          "TIME-END": {
+            "YEAR": -400
+          },
+          "LOCATION": "GREECE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "MELIC_VERSE",
+        "MELIC_POEM"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "MELIC_POETRY-N1",
+      "WORD": "MELIC_POETRY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

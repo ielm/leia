@@ -1,0 +1,62 @@
+{
+  "name": "@SWALLOW",
+  "isa": [
+    "@FEEDING-EVENT"
+  ],
+  "def": "To cause a bolus of food or drink, a pill, etc., to pass from the mouth/throat into the esophagus. SWALLOW is defined as the volitional part of the entire process of getting a bolus of food, etc., from the mouth into the stomach.",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@STOMACH"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PILL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COATED-TABLET"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BOLUS"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@ESOPHAGEAL-PHASE-OF-SWALLOWING"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@OROPHARYNGEAL-PHASE-OF-SWALLOWING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

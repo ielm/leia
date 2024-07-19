@@ -1,0 +1,24 @@
+{
+  "name": "@ALGINIC-ACID",
+  "isa": [
+    "@DRUG"
+  ],
+  "def": "a hydrophilic colloidal carbohydrate obtained from seaweed, used as a tablet binder and emulsifying agent.\n(http://medical-dictionary.thefreedictionary.com/alginic+acid)",
+  "local": [],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    }
+  ],
+  "private": {}
+}

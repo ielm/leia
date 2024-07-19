@@ -1,0 +1,102 @@
+{
+  "name": "@CULTIVATE-PLANT",
+  "isa": [
+    "@WORK-ACTIVITY"
+  ],
+  "def": "carrying out all of the activities required to grow any kind of plant",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GREENHOUSE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@WORK-ROLE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@ORCHARD"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLANTATION"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SHOVEL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SPADE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GARDEN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@RAKE-IMPLEMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PLANT"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@HORTICULTURE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,37 @@
+{
+  "word": "IDEOLOGICAL",
+  "senses": {
+    "IDEOLOGICAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to ideology",
+      "EX": "Their ideological differences caused the dissolution of their marriage.",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "IDEOLOGY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "COMMUNITARIAN"
+      ],
+      "SENSE": "IDEOLOGICAL-ADJ1",
+      "WORD": "IDEOLOGICAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

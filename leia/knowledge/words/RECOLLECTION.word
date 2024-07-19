@@ -1,0 +1,31 @@
+{
+  "word": "RECOLLECTION",
+  "senses": {
+    "RECOLLECTION-N1": {
+      "CAT": "N",
+      "DEF": "sth. recollected, recalled, remembered",
+      "EX": "this recollection frightened her",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ABSTRACT-OBJECT": {
+          "CAUSED-BY": "RECALL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RECOLLECTION-N1",
+      "WORD": "RECOLLECTION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

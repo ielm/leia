@@ -1,0 +1,54 @@
+{
+  "word": "POPULAR",
+  "senses": {
+    "POPULAR-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "well-known and well-liked",
+      "EX": "a popular musician",
+      "COMMENTS": "I'm making this evaluative - not a new scalar - because although a popular sth. can be of bad quality as viewed by most people, it is good in the opinion of the people with whom it's popular. the matter of attributing the evaluative to the right group will come later;",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR1": {
+          "FAME-ATTRIBUTE": [
+            ">",
+            0.5
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "POPULAR-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "POPULAR-ADJ1",
+      "WORD": "POPULAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

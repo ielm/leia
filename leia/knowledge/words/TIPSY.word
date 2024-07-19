@@ -1,0 +1,38 @@
+{
+  "word": "TIPSY",
+  "senses": {
+    "TIPSY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "under the influence of alcohol to a small  extent",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "INTOXICATION": [
+            "<",
+            0.2
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TIPSY-ADJ1",
+      "WORD": "TIPSY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "word": "US",
+  "senses": {
+    "US-N1": {
+      "CAT": "N",
+      "DEF": "the pronominal object 'us'",
+      "EX": "show us the picture.",
+      "COMMENTS": "for 'me' and 'us', the main binding heuristic (subj-of-same-clause 0) can exclude possible antecedents, but similar processes for finding extra-linguistic referents as are used for 'we' will be needed.if 'we' is in a quoted passage, seek referent of a verb of communication introducing or closing the parens. (use speech-act concept) if 'we' is not in a quoted passage, or if the above does not yield a referent, determine (or use pre-processing-determined) source of whole document - perhaps multiple authors. ",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "TYPE": "PRO"
+      },
+      "SEM-STRUC": "HUMAN",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          [
+            "PERSON",
+            "FIRST"
+          ],
+          [
+            "NUMBER",
+            "PL"
+          ],
+          [
+            "SUBJ-OF-SAME-CLAUSE",
+            0
+          ],
+          [
+            "ANCHOR-SPEAKER",
+            1
+          ]
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "US-N1",
+      "WORD": "US",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

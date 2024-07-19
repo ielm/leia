@@ -1,0 +1,42 @@
+{
+  "name": "@LEAVE-WORK-ACTIVITY",
+  "isa": [
+    "@WORK-ACTIVITY"
+  ],
+  "def": "to quit or to be fired from a job or work-activity",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@WORK-ROLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WORK"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CAREER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

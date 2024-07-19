@@ -1,0 +1,51 @@
+{
+  "word": "LINK",
+  "senses": {
+    "LINK-N1": {
+      "CAT": "N",
+      "DEF": "unit of length in the imperial system, for use with Gunter's chain; .01*chain-uk",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "LINK-UK",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "GUNTER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "LINK-N1",
+      "WORD": "LINK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "LINK-N2": {
+      "CAT": "N",
+      "DEF": "a unit of length in the US system, for use with Ramsden's chain; .01*chain-us",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "LINK-US",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LINK-N2",
+      "WORD": "LINK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

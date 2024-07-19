@@ -1,0 +1,95 @@
+{
+  "word": "DANGEROUS",
+  "senses": {
+    "DANGEROUS-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "hazardous",
+      "EX": "a dangrous mission; a dangerous area; dangerous actions",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "NOT",
+            "ANIMAL"
+          ],
+          "SAFETY-ATTRIBUTE": 0.2
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "DANGEROUS-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "SLICK"
+      ],
+      "SENSE": "DANGEROUS-ADJ1",
+      "WORD": "DANGEROUS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DANGEROUS-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "(of a person or animal) having the potential to do harm",
+      "EX": "a dangerous dog; a dangerous person",
+      "COMMENTS": "[D] I'm representing this as potentially having a high range on the hostility scale",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "ANIMAL",
+          "HOSTILITY": [
+            ">",
+            0.7
+          ]
+        },
+        "REFSEM1": {
+          "DESTROY": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            }
+          }
+        },
+        "MODALITY": {
+          "TYPE": "POTENTIAL",
+          "VALUE": 0.7,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "DANGEROUS-0",
+        "ANIMAL-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DANGEROUS-ADJ2",
+      "WORD": "DANGEROUS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "word": "EPIGRAM",
+  "senses": {
+    "EPIGRAM-N1": {
+      "CAT": "N",
+      "DEF": "a short, witty poem reflecting a single thought or observation",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "LITERARY-COMPOSITION": {
+          "HAS-STYLE": "POEM",
+          "LENGTH": [
+            "<",
+            0.2
+          ],
+          "HUMOR-ATTRIBUTE": [
+            ">",
+            0.7
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EPIGRAM-N1",
+      "WORD": "EPIGRAM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

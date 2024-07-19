@@ -1,0 +1,22 @@
+{
+  "name": "@LIFE-PRESERVER",
+  "isa": [
+    "@PROTECTION-OBJECT"
+  ],
+  "def": "a buoyant device for saving a person from drowning by keeping the body afloat",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SEWING-MATERIAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

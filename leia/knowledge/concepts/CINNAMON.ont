@@ -1,0 +1,21 @@
+{
+  "name": "@CINNAMON",
+  "isa": [
+    "@SPICE"
+  ],
+  "def": "the light-brown spice made from the dried inner-bark of a laurel tree from the East Indies",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "orange"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

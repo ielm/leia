@@ -1,0 +1,42 @@
+{
+  "word": "SUICIDE",
+  "senses": {
+    "SUICIDE-N1": {
+      "CAT": "N",
+      "DEF": "killing oneself",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "KILL",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          [
+            "COREFER",
+            [
+              "VALUE",
+              "KILL.AGENT"
+            ],
+            [
+              "VALUE",
+              "KILL.THEME"
+            ]
+          ]
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SUICIDE-N1",
+      "WORD": "SUICIDE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

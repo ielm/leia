@@ -1,0 +1,130 @@
+{
+  "word": "MECHANICAL",
+  "senses": {
+    "MECHANICAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to a machine part",
+      "EX": "a mechanical failure",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": [
+            "NOT",
+            "ARTIFACT"
+          ],
+          "RELATION": "MACHINE-PART"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "MECHANICAL-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MECHANICAL-ADJ1",
+      "WORD": "MECHANICAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MECHANICAL-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "is a machine",
+      "EX": "a mechanical pencil",
+      "COMMENTS": "edk: should this also say (not (is-a (or electrical-machine electronic-machine)))?",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": "MACHINE",
+          "ELEMENTS": {
+            "VALUE": "^$VAR1",
+            "SEM": "ARTIFACT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "MECHANICAL-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MECHANICAL-ADJ2",
+      "WORD": "MECHANICAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MECHANICAL-ADJ3": {
+      "CAT": "ADJ",
+      "DEF": "related to the application of force, as opposed to chemical or electrical",
+      "EX": "the function of ligaments and tendons is purely mechanical",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "APPLY-FORCE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "MECHANICAL-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MECHANICAL-ADJ3",
+      "WORD": "MECHANICAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

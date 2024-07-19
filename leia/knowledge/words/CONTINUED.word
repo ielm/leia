@@ -1,0 +1,53 @@
+{
+  "word": "CONTINUED",
+  "senses": {
+    "CONTINUED-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "ongoing",
+      "EX": "his continued efforts are paying off",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "CONTINUE",
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "READ",
+        "THE",
+        "CONTINUED-0",
+        "STORY-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "ONGOING"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CONTINUED-ADJ1",
+      "WORD": "CONTINUED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

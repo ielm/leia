@@ -1,0 +1,79 @@
+{
+  "word": "SOONER",
+  "senses": {
+    "SOONER-ADV1": {
+      "CAT": "ADV",
+      "DEF": "phrasal: sooner(,) rather than later",
+      "EX": "",
+      "COMMENTS": "this is semantially same as 'soon'; not a syn. there because  of punctuation mark",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "PUNCT": {
+            "ROOT": "$VAR2",
+            "CAT": "PUNCT",
+            "ROOT-WORD": "*COMMA*",
+            "OPT": "+"
+          },
+          "CONJ": {
+            "ROOT": "$VAR3",
+            "CAT": "CONJ",
+            "ROOT-WORD": "RATHER_THAN"
+          },
+          "ADV": {
+            "ROOT": "$VAR4",
+            "CAT": "ADV",
+            "ROOT-WORD": "LATER"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TIME": [
+            "COMBINE-TIME",
+            [
+              "FIND-ANCHOR-TIME"
+            ],
+            [
+              "<",
+              0.2
+            ],
+            "AFTER"
+          ]
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SOONER-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PUNCT",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SOONER-ADV1",
+      "WORD": "SOONER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

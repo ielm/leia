@@ -1,0 +1,17 @@
+{
+  "name": "@APPLY-FOR",
+  "isa": [
+    "@REQUEST",
+    "@PROPOSE"
+  ],
+  "def": "to make a formal request for",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

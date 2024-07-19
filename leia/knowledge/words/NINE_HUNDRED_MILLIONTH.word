@@ -1,0 +1,46 @@
+{
+  "word": "NINE_HUNDRED_MILLIONTH",
+  "senses": {
+    "NINE_HUNDRED_MILLIONTH-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "ORDINALITY": 9000000000
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "9000000000",
+        "TH-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "9000000000TH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "NINE_HUNDRED_MILLIONTH-ADJ1",
+      "WORD": "NINE_HUNDRED_MILLIONTH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

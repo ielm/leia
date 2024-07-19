@@ -1,0 +1,63 @@
+{
+  "name": "@MEDICAL-BUILDING",
+  "isa": [
+    "@INSTITUTIONAL-BUILDING",
+    "@SERVICE-BUILDING"
+  ],
+  "def": "a building in which emergency or non-emergency medical services are provided",
+  "local": [
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@MEDICAL-ARTIFACT"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@HEAL"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@PATIENT"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@MEDICAL-PROCEDURE"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@DIAGNOSE-DISEASE"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@MEDICAL-RESEARCH"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@MEDICAL-WORK-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@RECEPTION-AREA"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@CUSTOMER"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$ATOMIC-WEIGHT",
+  "def": "the average weight of an atom of an element, in grams per mole",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

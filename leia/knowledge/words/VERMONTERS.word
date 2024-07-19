@@ -1,0 +1,49 @@
+{
+  "word": "VERMONTERS",
+  "senses": {
+    "VERMONTERS-N1": {
+      "CAT": "N",
+      "DEF": "the set of citizens of Vermont",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "NUMBER": "PL"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "REFSEM1"
+          },
+          "QUANT": 1
+        },
+        "REFSEM1": {
+          "HUMAN": {
+            "HAS-STATE-ADDRESS": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "STATE": {
+            "HAS-NAME": {
+              "VALUE": "VERMONT"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "VERMONTERS-N1",
+      "WORD": "VERMONTERS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

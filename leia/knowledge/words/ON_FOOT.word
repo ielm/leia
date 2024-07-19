@@ -1,0 +1,78 @@
+{
+  "word": "ON_FOOT",
+  "senses": {
+    "ON_FOOT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "walking",
+      "EX": "the travelers are on foot; those on foot may need longer breaks",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "AGENT-OF": "WALK"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ON_FOOT-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ON_FOOT-ADJ1",
+      "WORD": "ON_FOOT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ON_FOOT-ADV1": {
+      "CAT": "ADV",
+      "DEF": "walking",
+      "EX": "they arrived on foot; they crossed the Sahara on foot",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "HAS-EVENT-AS-PART": "WALK"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ON_FOOT-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ON_FOOT-ADV1",
+      "WORD": "ON_FOOT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

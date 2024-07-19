@@ -1,0 +1,35 @@
+{
+  "word": "FILIAL",
+  "senses": {
+    "FILIAL-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to being someone's child",
+      "EX": "filial responsibility",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "OFFSPRING"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FILIAL-ADJ1",
+      "WORD": "FILIAL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

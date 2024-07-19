@@ -1,0 +1,32 @@
+{
+  "name": "@FRESHWATER-MAMMAL",
+  "isa": [
+    "@MAMMAL"
+  ],
+  "def": "any mammal that lives in or near a body of freshwater and depends on it for survival",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "not",
+      "filler": "@BAY"
+    },
+    {
+      "slot": "location",
+      "facet": "not",
+      "filler": "@SEA"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BODY-OF-WATER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

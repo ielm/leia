@@ -1,0 +1,57 @@
+{
+  "name": "@DRILL",
+  "isa": [
+    "@APPLY-FORCE"
+  ],
+  "def": "to bore (a hole) with a drill",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HOLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@DRILL-DEVICE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@CONSTRUCTION-MATERIAL"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@WALL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

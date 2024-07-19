@@ -1,0 +1,21 @@
+{
+  "name": "@LEGAL-WORK-ROLE",
+  "isa": [
+    "@WORK-ROLE"
+  ],
+  "def": "a social-role that is connected with the practice of law",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "default",
+      "filler": "@LEGAL-OBJECT"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "default",
+      "filler": "@BILL-LEGISLATIVE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

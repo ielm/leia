@@ -1,0 +1,31 @@
+{
+  "name": "@PLANT-PATHOLOGIC-FUNCTION",
+  "isa": [
+    "@PLANT-LIVING-EVENT"
+  ],
+  "def": "abnormal functions of plants",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FUNGUS"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@BACTERIA"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@VIRUS"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

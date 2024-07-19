@@ -1,0 +1,54 @@
+{
+  "word": "INJUNCTION",
+  "senses": {
+    "INJUNCTION-N1": {
+      "CAT": "N",
+      "DEF": "a type of court order",
+      "EX": "an injunction against the company to prevent the action they threatened",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "AGAINST",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        },
+        "XCOMP": {
+          "ROOT": "$VAR3",
+          "CAT": "V",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "INJUNCTION": {
+          "BENEFICIARY": {
+            "VALUE": "^$VAR2"
+          },
+          "PURPOSE": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "INJUNCTION-N1",
+      "WORD": "INJUNCTION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

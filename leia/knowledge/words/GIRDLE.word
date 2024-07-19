@@ -1,0 +1,42 @@
+{
+  "word": "GIRDLE",
+  "senses": {
+    "GIRDLE-N1": {
+      "CAT": "N",
+      "DEF": "a tight undergarment worn by women on the waist and hips",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "UNDERGARMENT": {
+          "TIGHTNESS": 0.8,
+          "WORN-ON": "SUBDIVISION-OF-ABDOMEN",
+          "USED-BY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "HUMAN": {
+            "GENDER": "FEMALE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "CORSET"
+      ],
+      "SENSE": "GIRDLE-N1",
+      "WORD": "GIRDLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

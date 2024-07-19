@@ -1,0 +1,16 @@
+{
+  "name": "@PITA",
+  "isa": [
+    "@BREAD"
+  ],
+  "def": "A round, Middle-Eastern bread, with a hole in the middle for filling.",
+  "local": [
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "@CIRCULAR-AS-DOCUMENT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

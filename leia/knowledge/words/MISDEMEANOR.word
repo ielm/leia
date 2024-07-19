@@ -1,0 +1,33 @@
+{
+  "word": "MISDEMEANOR",
+  "senses": {
+    "MISDEMEANOR-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "we might want to add a scalar-attribute to do with 'seriousness, severity' [D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "CRIMINAL-ACTIVITY": {
+          "CRIME-TYPE": "MISDEMEANOR"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "INFRACTION"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "MISDEMEANOR-N1",
+      "WORD": "MISDEMEANOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

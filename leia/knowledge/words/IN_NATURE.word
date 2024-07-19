@@ -1,0 +1,40 @@
+{
+  "word": "IN_NATURE",
+  "senses": {
+    "IN_NATURE-ADV1": {
+      "CAT": "ADV",
+      "DEF": "discourse function only",
+      "EX": "this problem is complex in nature",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "ADJ",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV"
+        }
+      },
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "GOOD-1",
+        "IN_NATURE-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DEP",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "IN_NATURE-ADV1",
+      "WORD": "IN_NATURE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

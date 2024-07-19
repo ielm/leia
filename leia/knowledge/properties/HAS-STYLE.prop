@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-STYLE",
+  "def": "links an abstract object, like a work of art or music, to the style category to which it belongs -- e.g., a cathedral can be of the baroque style",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$STYLE-OF",
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

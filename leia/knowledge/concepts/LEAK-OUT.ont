@@ -1,0 +1,277 @@
+{
+  "name": "@LEAK-OUT",
+  "isa": [
+    "@FLOW"
+  ],
+  "def": "(of liquid/gas) to move out of at a slow rate in cases when the entity is supposed to stay within the container",
+  "local": [
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@SEWER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GAS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@AIR-CONDITIONER"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@HEATER"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@GENERATOR"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@INJECTOR"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@STEAM-ENGINE"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@TURBINE"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@INTERNAL-COMBUSTION-ENGINE"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@WELL"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@DAM"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@RESERVOIR"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@SWIMMING-POOL"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@INTRAVENOUS-BAG"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@COOKING-CONTAINER"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@PLACE-SETTING-CONTAINER"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@TRASH-CAN"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@VOLUME-MEASURING-ARTIFACT"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@MEASURING-SPOON"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@SPOON"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@COOKING-APPLIANCE"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@VOLCANO"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@AIR-BAG"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@EXHAUST-SYSTEM"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@JAR"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@PAIL"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@BOTTLE"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@BARREL-CONTAINER"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@CAN"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@VASE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "source",
+      "facet": "relaxable-to",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@AQUEOUS-HUMOR-OF-EYEBALL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BEVERAGE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BLOOD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CHLOROPHYLL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COOKING-OIL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INTRAVENOUS-FLUID"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LAVA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LINSEED-OIL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LUBRICANT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PLASMA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SECRETION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TAR"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TRANSUDATE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@URINE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VACCINE"
+    }
+  ],
+  "private": {}
+}

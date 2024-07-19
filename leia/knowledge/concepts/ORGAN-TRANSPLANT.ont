@@ -1,0 +1,22 @@
+{
+  "name": "@ORGAN-TRANSPLANT",
+  "isa": [
+    "@SURGERY"
+  ],
+  "def": "the surgical removal of an organ and replacement by a donor organ",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMAL-ORGAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMAL-PART"
+    }
+  ],
+  "private": {}
+}

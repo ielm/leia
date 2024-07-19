@@ -1,0 +1,33 @@
+{
+  "word": "NEWFOUNDLAND_AND_LABRADOR",
+  "senses": {
+    "NEWFOUNDLAND_AND_LABRADOR-N1": {
+      "CAT": "N",
+      "DEF": "a nation",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PROVINCE": {
+          "HAS-NAME": {
+            "VALUE": "NEWFOUNDLAND_AND_LABRADOR"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NEWFOUNDLAND_AND_LABRADOR-N1",
+      "WORD": "NEWFOUNDLAND_AND_LABRADOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

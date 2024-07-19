@@ -1,0 +1,40 @@
+{
+  "word": "AGGRESSOR",
+  "senses": {
+    "AGGRESSOR-N1": {
+      "CAT": "N",
+      "DEF": "the agent of a war activity - the one who initiates the fighting",
+      "EX": "",
+      "COMMENTS": "[D] I map to 'object' here because an aggressor can be a person, animal, social-object, etc. Since we can't multiple-map at the top level of a sem-struc, this is the best we can do. ",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "OBJECT": {
+          "AGENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "WAR-ACTIVITY": {
+            "CAUSED-BY": {
+              "VALUE": "^$VAR0"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AGGRESSOR-N1",
+      "WORD": "AGGRESSOR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

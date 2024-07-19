@@ -1,0 +1,54 @@
+{
+  "word": "COMPETENCE",
+  "senses": {
+    "COMPETENCE-N1": {
+      "CAT": "N",
+      "DEF": "(medical) ability to function properly",
+      "EX": "the procedure improves the competence of the LES",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "POTENTIAL",
+          "VALUE": 0.7,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "NORMAL-BIOLOGIC-FUNCTION": {
+            "THEME": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COMPETENCE-N1",
+      "WORD": "COMPETENCE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

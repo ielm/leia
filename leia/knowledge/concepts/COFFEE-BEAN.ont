@@ -1,0 +1,16 @@
+{
+  "name": "@COFFEE-BEAN",
+  "isa": [
+    "@PLANT-DERIVED-FOODSTUFF"
+  ],
+  "def": "the bean of the coffee plant, which is used in food, especially for the beverage coffee",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,49 @@
+{
+  "word": "TURRET",
+  "senses": {
+    "TURRET-N1": {
+      "CAT": "N",
+      "DEF": "a small tower or projection in a building",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "TURRET-OF-BUILDING",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TURRET-N1",
+      "WORD": "TURRET",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "TURRET-N2": {
+      "CAT": "N",
+      "DEF": "A low, heavily armored structure, usually rotating horizontally, containing mounted guns and their gunners or crew, as on a warship or tank   ",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "TURRET-ARMORED",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TURRET-N2",
+      "WORD": "TURRET",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

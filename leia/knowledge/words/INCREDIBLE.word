@@ -1,0 +1,47 @@
+{
+  "word": "INCREDIBLE",
+  "senses": {
+    "INCREDIBLE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "completely atypical (good or bad)",
+      "EX": "their scores on the tests were incredible",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TYPICALNESS-ATTRIBUTE": 0
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "AMAZING-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "AMAZING",
+        "UNBELIEVABLE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "INCREDIBLE-ADJ1",
+      "WORD": "INCREDIBLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

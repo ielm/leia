@@ -1,0 +1,102 @@
+{
+  "word": "SQUANDER",
+  "senses": {
+    "SQUANDER-V1": {
+      "CAT": "V",
+      "DEF": "squander money on x = buy x, evaluative < .2",
+      "EX": "he squandered 50 grand on a new car",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "PP": {
+          "ROOT-WORD": "ON",
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 0,
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "PAY": {
+            "INSTRUMENT": {
+              "VALUE": "^$VAR2",
+              "SEM": "MONEY"
+            },
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            },
+            "THEME": {
+              "VALUE": "^$VAR3"
+            }
+          }
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "SQUANDERED-0",
+        "HIS",
+        "MONEY-2",
+        "ON-4",
+        "THE",
+        "PARTY-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR4",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR4"
+        ]
+      ],
+      "SYNONYMS": [
+        "WASTE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SQUANDER-V1",
+      "WORD": "SQUANDER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "word": "KYAT",
+  "senses": {
+    "KYAT-N1": {
+      "CAT": "N",
+      "DEF": "currency of burma or myanmar",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MONEY": {
+          "CURRENCY-OF": {
+            "BURMA": "MYANMAR"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "KYAT-N1",
+      "WORD": "KYAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

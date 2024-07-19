@@ -1,0 +1,16 @@
+{
+  "name": "@SHIPPING-CORPORATION",
+  "isa": [
+    "@TRANSPORTATION-CORPORATION"
+  ],
+  "def": "a transportation-corporation that ships goods for its customers",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@SHIPYARD"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

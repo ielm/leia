@@ -1,0 +1,34 @@
+{
+  "word": "DRINKING_WATER",
+  "senses": {
+    "DRINKING_WATER-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "WATER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "BOTTLED_WATER",
+        "SPARKLING_WATER",
+        "SODA_WATER",
+        "CARBONATED_WATER",
+        "PLAIN_WATER",
+        "TAP_WATER"
+      ],
+      "SENSE": "DRINKING_WATER-N1",
+      "WORD": "DRINKING_WATER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

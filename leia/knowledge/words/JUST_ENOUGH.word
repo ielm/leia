@@ -1,0 +1,38 @@
+{
+  "word": "JUST_ENOUGH",
+  "senses": {
+    "JUST_ENOUGH-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "enough food was served.",
+      "COMMENTS": "I'm describing this the same as 'enough', ignoring for now the semantic nuance of 'there couldn't be a bit less if there is still to be enough'",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "RELATIVE-TO-NORM": 0.5,
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "JUST_ENOUGH-QUANTIFIER1",
+      "WORD": "JUST_ENOUGH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

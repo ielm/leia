@@ -1,0 +1,47 @@
+{
+  "name": "@IMPRISON",
+  "isa": [
+    "@RESTRAIN"
+  ],
+  "def": "to put in or as in prison",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@CRIMINAL"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@POLICE-DEPARTMENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

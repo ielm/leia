@@ -1,0 +1,55 @@
+{
+  "word": "ROCKY",
+  "senses": {
+    "ROCKY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "(a region) characterized by rocks",
+      "EX": "their travel was slow over the rocky terrain",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "GEOLOGICAL-ENTITY",
+          "HAS-OBJECT-AS-PART": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "ROCK": {
+            "AMOUNT": [
+              ">",
+              0.5
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "ROCKY-0",
+        "GEOLOGICAL-ENTITY-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CC",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ROCKY-ADJ1",
+      "WORD": "ROCKY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

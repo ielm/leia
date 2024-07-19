@@ -1,0 +1,30 @@
+{
+  "word": "RADIO",
+  "senses": {
+    "RADIO-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "RADIO-RECEIVER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "RADIO_SET",
+        "TUNER"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "RADIO-N1",
+      "WORD": "RADIO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

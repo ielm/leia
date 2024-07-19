@@ -1,0 +1,65 @@
+{
+  "word": "WIDE_VARIETY",
+  "senses": {
+    "WIDE_VARIETY-N1": {
+      "CAT": "N",
+      "DEF": "indicates many different things of different types in a given class, indicated by the PP",
+      "EX": "He likes a wide variety of movies",
+      "COMMENTS": "this is a simplified semantic represenation that does not require 'getting inside' the set to attribute features to various members",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR2": {
+          "SIMILARITY": 0.2
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "WIDE_VARIETY-0",
+        "OF-1",
+        "THE",
+        "OBJECT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "WIDE_VARIETY-N1",
+      "WORD": "WIDE_VARIETY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

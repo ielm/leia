@@ -1,0 +1,28 @@
+{
+  "name": "@DEPENDENT-DEVICE",
+  "isa": [
+    "@DEVICE"
+  ],
+  "def": "device that is a part of something; it cannot stand or be of use on its own",
+  "local": [
+    {
+      "slot": "autonomy-technological",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "autonomy-technological",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

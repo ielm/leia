@@ -1,0 +1,46 @@
+{
+  "word": "NINE_HUNDREDTH",
+  "senses": {
+    "NINE_HUNDREDTH-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          },
+          "ORDINALITY": 900
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "N"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "900",
+        "TH-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "900TH"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "NINE_HUNDREDTH-ADJ1",
+      "WORD": "NINE_HUNDREDTH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

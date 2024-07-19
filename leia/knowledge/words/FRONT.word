@@ -1,0 +1,95 @@
+{
+  "word": "FRONT",
+  "senses": {
+    "FRONT-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "front part of an object",
+      "EX": "This is the front left leg of the couch",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SIDE-FB": "FRONT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "LEFT-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FRONT-ADJ1",
+      "WORD": "FRONT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FRONT-N1": {
+      "CAT": "N",
+      "DEF": "the front of an object",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FRONT-OF-OBJECT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "TIP",
+        "NOSE"
+      ],
+      "SENSE": "FRONT-N1",
+      "WORD": "FRONT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FRONT-N2": {
+      "CAT": "N",
+      "DEF": "battle line",
+      "EX": "they flanked the foe and attacked on two fronts",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "PLACE": {
+          "LOCATION-OF": "WAR-ACTIVITY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FRONT-N2",
+      "WORD": "FRONT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

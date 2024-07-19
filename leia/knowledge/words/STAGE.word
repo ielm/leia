@@ -1,0 +1,130 @@
+{
+  "word": "STAGE",
+  "senses": {
+    "STAGE-N1": {
+      "CAT": "N",
+      "DEF": "a place for performances",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "STAGE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "STAGE-N1",
+      "WORD": "STAGE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "STAGE-N2": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "during the first stage (of the project) we will be writing specs",
+      "COMMENTS": "'phase' is an event over a time period - but I'm simplifying out the time aspect for now",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "EVENT": {
+          "PART-OF-EVENT": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "STEP-0",
+        "OF-1",
+        "THE",
+        "MAN-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "STEP"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "STAGE-N2",
+      "WORD": "STAGE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "STAGE-V1": {
+      "CAT": "V",
+      "DEF": "to produce, direct, or carry out",
+      "EX": "they staged the attack",
+      "COMMENTS": "[D] this mapping is approximate; there are multiple parts to it - planning, carrying out...",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "SUPERVISE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "STAGED-0",
+        "AN",
+        "ATTACK-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "STAGE-V1",
+      "WORD": "STAGE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

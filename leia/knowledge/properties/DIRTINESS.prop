@@ -1,0 +1,9 @@
+{
+  "name": "$DIRTINESS",
+  "def": "0 on this scale is perfectly clean; 1 is completely dirty; this property covers all types of contamination, pollution, etc., as well as physical dirtiness, as from a lack of washing",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

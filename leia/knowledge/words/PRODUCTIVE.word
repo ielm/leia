@@ -1,0 +1,44 @@
+{
+  "word": "PRODUCTIVE",
+  "senses": {
+    "PRODUCTIVE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "a productive session",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "USEFULNESS": 0.8
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "PRODUCTIVE-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PRODUCTIVE-ADJ1",
+      "WORD": "PRODUCTIVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

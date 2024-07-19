@@ -1,0 +1,33 @@
+{
+  "word": "SELLER",
+  "senses": {
+    "SELLER-N1": {
+      "CAT": "N",
+      "DEF": "a person who sells something",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SOCIAL-ROLE": {
+          "AGENT-OF": "SELL"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "VENDOR"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SELLER-N1",
+      "WORD": "SELLER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

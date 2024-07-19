@@ -1,0 +1,28 @@
+{
+  "name": "@GUARDIAN",
+  "isa": [
+    "@PROTECTION-ROLE"
+  ],
+  "def": "One who is legally responsible for the care and management of the person or property of an incompetent or a minor.",
+  "local": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "><",
+        100
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "><",
+        130
+      ]
+    }
+  ],
+  "private": {}
+}

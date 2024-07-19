@@ -1,0 +1,32 @@
+{
+  "name": "@PHAGOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "irresistible craving for food and interest in eating",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FOOD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INGEST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

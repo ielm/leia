@@ -1,0 +1,21 @@
+{
+  "name": "@CATION",
+  "isa": [
+    "@ION"
+  ],
+  "def": "an ion or group of ions with a positive charge, esp. those that move toward the negative electrode in electrolysis",
+  "local": [],
+  "block": [
+    {
+      "slot": "electric-charge",
+      "facet": "sem",
+      "filler": "negative"
+    },
+    {
+      "slot": "electric-charge",
+      "facet": "sem",
+      "filler": "neutral"
+    }
+  ],
+  "private": {}
+}

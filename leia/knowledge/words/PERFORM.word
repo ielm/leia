@@ -1,0 +1,400 @@
+{
+  "word": "PERFORM",
+  "senses": {
+    "PERFORM-V1": {
+      "CAT": "V",
+      "DEF": "do some activity",
+      "EX": "perform activites, tasks, work",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "SEM": "EVENT",
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "PERFORMED-0",
+        "THE",
+        "TASK2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "XSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PERFORM-V1",
+      "WORD": "PERFORM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PERFORM-V2": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "stocks perform well, poorly; company performs better; he performs well on the job",
+      "COMMENTS": "the adverbial will provide the value for the modality compositionally",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "SHE-1",
+        "PERFORMED-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PERFORM-V2",
+      "WORD": "PERFORM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PERFORM-V3": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "who is performing tonight at the met?",
+      "COMMENTS": "sem:actor-dramatic is in the ont. for disambig. with next sense",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "PERFORM-CHARACTER": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MUSICIAN-1",
+        "PERFORMED-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PERFORM-V3",
+      "WORD": "PERFORM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PERFORM-V4": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "yo-yo ma performs brilliantly",
+      "COMMENTS": "sem:musician is in the ont. for disambig. with preceding sense",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V"
+      },
+      "SEM-STRUC": {
+        "PERFORM-MUSIC": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MUSICIAN-1",
+        "PERFORMED-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PERFORM-V4",
+      "WORD": "PERFORM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PERFORM-V5": {
+      "CAT": "V",
+      "DEF": "do some activity that results in the given object being created",
+      "EX": "perform x-rays",
+      "COMMENTS": "[D] contains semantic ellipsis; when an effect is an OBJECT, the meaning is  that the object was established, i.e., started to be in existence",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "EFFECT": {
+            "VALUE": "^$VAR2",
+            "SEM": "OBJECT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "PERFORMED-0",
+        "THE",
+        "PROCEDURE-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PERFORM-V5",
+      "WORD": "PERFORM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PERFORM-V6": {
+      "CAT": "V",
+      "DEF": "phrasal: perform [how] in [event]",
+      "EX": "She performed poorly [well, outstandingly, pitifully, etc.] in the job interview",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "ADV": {
+          "ROOT": "$VAR2",
+          "CAT": "ADV"
+        },
+        "PP": {
+          "ROOT-WORD": [
+            "IN",
+            "ON"
+          ],
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "REFSEM1": {
+          "MODALITY": {
+            "SCOPE": {
+              "VALUE": "^$VAR4"
+            }
+          }
+        },
+        "^$VAR4": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "SEEK-SPECIFICATION",
+          "REFSEM1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "HE-1",
+        "PERFORMED-0",
+        "WELL-2",
+        "IN-3",
+        "THE",
+        "CONTEST-4"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "ADVMOD",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PERFORM-V6",
+      "WORD": "PERFORM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PERFORM-V7": {
+      "CAT": "V",
+      "DEF": "phrasal: perform examination = to examine someone medically",
+      "EX": "The doctor performed an examination on the patient.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N",
+          "ROOT-WORD": [
+            "EXAMINATION",
+            "TEST"
+          ]
+        }
+      },
+      "SEM-STRUC": {
+        "DIAGNOSE-DISEASE": {
+          "AGENT": {
+            "VALUE": "^$VAR1",
+            "SEM": "MEDICAL-WORK-ROLE"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "DENTIST-1",
+        "PERFORMED-0",
+        "THE",
+        "EXAMINATION-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PERFORM-V7",
+      "WORD": "PERFORM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "name": "@SPRAY",
+  "isa": [
+    "@APPLY-FORCE"
+  ],
+  "def": "to disperse in a mass of droplets",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PAIL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TAIL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@BOTTLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@STRAW-DRINKING"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FOUNTAIN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PUMP-DEVICE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

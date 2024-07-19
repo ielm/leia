@@ -1,0 +1,32 @@
+{
+  "word": "SHTETL",
+  "senses": {
+    "SHTETL-N1": {
+      "CAT": "N",
+      "DEF": "a small jewish village in eastern europe",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "VILLAGE": {
+          "LOCATION": "EASTERN_EUROPE",
+          "HAS-OCCUPANT": "JEW"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SHTETL-N1",
+      "WORD": "SHTETL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

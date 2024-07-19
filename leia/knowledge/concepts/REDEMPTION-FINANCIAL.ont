@@ -1,0 +1,85 @@
+{
+  "name": "@REDEMPTION-FINANCIAL",
+  "isa": [
+    "@INVESTMENT-EVENT",
+    "@LIQUIDATE"
+  ],
+  "def": "liquidating a note, bond, redeemable stock, or mortgage by the issuing corporation by repurchasing the financial object on the redemption date or before maturity, and thus freeing it from future liabilities",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIABILITY"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@BUY-1"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@CORPORATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MONEY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ASSET"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CORPORATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INVESTMENT"
+    }
+  ],
+  "private": {
+    "@BUY-1": {
+      "name": "@BUY-1",
+      "isa": [
+        "@BUY"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "theme",
+          "facet": "sem",
+          "filler": "@LIABILITY"
+        },
+        {
+          "slot": "theme",
+          "facet": "sem",
+          "filler": "@INVESTMENT"
+        }
+      ],
+      "block": [],
+      "private": {}
+    }
+  }
+}

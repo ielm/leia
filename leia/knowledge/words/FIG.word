@@ -1,0 +1,49 @@
+{
+  "word": "FIG",
+  "senses": {
+    "FIG-N1": {
+      "CAT": "N",
+      "DEF": "fruit of the fig tree",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FIG-FRUIT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FIG-N1",
+      "WORD": "FIG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "FIG-N2": {
+      "CAT": "N",
+      "DEF": "the fig tree",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FIG-TREE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FIG-N2",
+      "WORD": "FIG",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

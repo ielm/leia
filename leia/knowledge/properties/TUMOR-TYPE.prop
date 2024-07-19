@@ -1,0 +1,9 @@
+{
+  "name": "$TUMOR-TYPE",
+  "def": "classifies tumors into concentric and eccentric",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-OBJECT-ATTRIBUTE"
+}

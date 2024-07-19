@@ -1,0 +1,58 @@
+{
+  "word": "HALL",
+  "senses": {
+    "HALL-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "HALLWAY",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HALL-N1",
+      "WORD": "HALL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HALL-N2": {
+      "CAT": "N",
+      "DEF": "a building used for meetings, receptions, etc.",
+      "EX": "their wedding reception was in a huge hall",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BUILDING": {
+          "LOCATION-OF": {
+            "VALUE": [
+              "MEETING",
+              "SPECIAL-OCCASION"
+            ]
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HALL-N2",
+      "WORD": "HALL",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

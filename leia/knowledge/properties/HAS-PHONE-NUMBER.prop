@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-PHONE-NUMBER",
+  "def": "the phone number of an individual or a corporation",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": "$PHONE-NUMBER-OF",
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

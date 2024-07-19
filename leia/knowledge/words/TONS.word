@@ -1,0 +1,50 @@
+{
+  "word": "TONS",
+  "senses": {
+    "TONS-QUANTIFIER1": {
+      "CAT": "QUANTIFIER",
+      "DEF": "",
+      "EX": "tons of fish live in the ocean",
+      "COMMENTS": "I'm putting the complement of 'of' as a 'n' (not np) because if it were an np, I think it would be a real ton, not the generalized quantifier meaning. let's wait for evidence to prove this hypothesis wrong.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "QUANTIFIER",
+        "PP": {
+          "ROOT-WORD": "OF",
+          "CAT": "PREP",
+          "ROOT": "$VAR2",
+          "OBJ": {
+            "ROOT": "$VAR1",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "CARDINALITY": [
+            ">",
+            0.9
+          ],
+          "DETERMINATE": "NO",
+          "MEMBER-TYPE": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TONS-QUANTIFIER1",
+      "WORD": "TONS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

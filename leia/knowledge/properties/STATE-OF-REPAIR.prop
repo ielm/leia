@@ -1,0 +1,9 @@
+{
+  "name": "$STATE-OF-REPAIR",
+  "def": "The degree to which inanimate things are in good or bad condition; the inanimate version of HEALTH-ATTRIBUTE.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

@@ -1,0 +1,31 @@
+{
+  "word": "ACCUSER",
+  "senses": {
+    "ACCUSER-N1": {
+      "CAT": "N",
+      "DEF": "a person accusing someone of something",
+      "EX": "His accusers remained anonymous",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "AGENT-OF": "ACCUSE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ACCUSER-N1",
+      "WORD": "ACCUSER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

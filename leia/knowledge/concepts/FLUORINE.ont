@@ -1,0 +1,49 @@
+{
+  "name": "@FLUORINE",
+  "isa": [
+    "@HALOGEN"
+  ],
+  "def": "a pale-yellow, highly corrosive, highly poisonous, gaseous element",
+  "local": [
+    {
+      "slot": "toxicity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "yellow"
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        18
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "toxicity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "toxicity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@YEAR-PAYROLL",
+  "isa": [
+    "@TIME-INTERVAL-UNIT"
+  ],
+  "def": "an interval of time equal to one working year; 261*day-payroll",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        7516800.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

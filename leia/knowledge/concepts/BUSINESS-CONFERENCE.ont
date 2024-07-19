@@ -1,0 +1,47 @@
+{
+  "name": "@BUSINESS-CONFERENCE",
+  "isa": [
+    "@MEETING"
+  ],
+  "def": "a formal meeting for discussion of business-related topics",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@RECEPTION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BUSINESS-DOCUMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BUSINESS-ACTIVITY"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@BUSINESS-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

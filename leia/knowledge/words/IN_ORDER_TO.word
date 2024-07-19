@@ -1,0 +1,142 @@
+{
+  "word": "IN_ORDER_TO",
+  "senses": {
+    "IN_ORDER_TO-CONJ1": {
+      "CAT": "CONJ",
+      "DEF": "He hit her in order to make her mad",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "CONJ": {
+          "ROOT": "$VAR0",
+          "CAT": "CONJ"
+        },
+        "INF-CL": {
+          "ROOT": "$VAR2",
+          "CAT": "INF-CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "PURPOSE": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "IN_ORDER_TO-0",
+        "EAT-2",
+        "DINNER"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CC",
+          "$VAR1",
+          "$VAR0"
+        ],
+        [
+          "CONJ",
+          "$VAR1",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "SO_AS_TO"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "IN_ORDER_TO-CONJ1",
+      "WORD": "IN_ORDER_TO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "IN_ORDER_TO-CONJ2": {
+      "CAT": "CONJ",
+      "DEF": "In order to make her mad[,] he hit her",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CONJ": {
+          "ROOT": "$VAR0",
+          "CAT": "CONJ"
+        },
+        "INF-CL": {
+          "ROOT": "$VAR2",
+          "CAT": "INF-CL"
+        },
+        "PUNCT": {
+          "ROOT": "$VAR3",
+          "CAT": "PUNCT",
+          "ROOT-WORD": "*COMMA*",
+          "OPT": "+"
+        },
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "EVENT",
+          "PURPOSE": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "IN_ORDER_TO-0",
+        "HIT-2",
+        "THE",
+        "BUILDING",
+        "*COMMA*-3",
+        "THE",
+        "MAN",
+        "ATE-1",
+        "DINNER"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CC",
+          "$VAR2",
+          "$VAR0"
+        ],
+        [
+          "CCOMP",
+          "$VAR1",
+          "$VAR2"
+        ],
+        [
+          "PUNCT",
+          "$VAR1",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [
+        "SO_AS_TO"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "IN_ORDER_TO-CONJ2",
+      "WORD": "IN_ORDER_TO",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

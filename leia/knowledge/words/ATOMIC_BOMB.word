@@ -1,0 +1,33 @@
+{
+  "word": "ATOMIC_BOMB",
+  "senses": {
+    "ATOMIC_BOMB-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "ATOMIC-BOMB",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "ATOM_BOMB",
+        "A_BOMB",
+        "FISSION_BOMB"
+      ],
+      "HYPONYMS": [
+        "PLUTONIUM_BOMB"
+      ],
+      "SENSE": "ATOMIC_BOMB-N1",
+      "WORD": "ATOMIC_BOMB",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

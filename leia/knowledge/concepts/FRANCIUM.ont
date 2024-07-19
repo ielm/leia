@@ -1,0 +1,36 @@
+{
+  "name": "@FRANCIUM",
+  "isa": [
+    "@ALKALI-METAL"
+  ],
+  "def": "an extremely unstable radioactive metallic element, having approximately 19 isotopes, the most stable of which is fr 223 with a half-life of 21 minutes",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        87
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        223
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

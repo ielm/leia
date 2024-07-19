@@ -1,0 +1,22 @@
+{
+  "name": "@CARBOHYDRATE-SEQUENCE",
+  "isa": [
+    "@MOLECULAR-SEQUENCE"
+  ],
+  "def": "The sequence of carbohydrates within polysaccharides, glycoproteins, and glycolipids.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CARBOHYDRATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BIOLOGICAL-MACROMOLECULE"
+    }
+  ],
+  "private": {}
+}

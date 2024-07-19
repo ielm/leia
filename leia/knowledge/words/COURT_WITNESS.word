@@ -1,0 +1,32 @@
+{
+  "word": "COURT_WITNESS",
+  "senses": {
+    "COURT_WITNESS-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "COURT-WITNESS",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "CHARACTER_WITNESS",
+        "EYEWITNESS",
+        "HOSTILE_WITNESS",
+        "MATERIAL_WITNESS"
+      ],
+      "SENSE": "COURT_WITNESS-N1",
+      "WORD": "COURT_WITNESS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

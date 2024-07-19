@@ -1,0 +1,271 @@
+{
+  "word": "CLEAR",
+  "senses": {
+    "CLEAR-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "phrasal 'it is clear to me + xcomp'",
+      "EX": "it is clear (to me) that we must rethink the project",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP",
+          "ROOT-WORD": "IT",
+          "TYPE": "PRO"
+        },
+        "V": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "ROOT-WORD": "*BE*"
+        },
+        "ADJ": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "PP": {
+          "ROOT-WORD": "TO",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR4",
+            "CAT": "N"
+          }
+        },
+        "COMP": {
+          "ROOT": "$VAR5",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "UNDERSTAND": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR4"
+          },
+          "THEME": {
+            "VALUE": "^$VAR5"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "IT-1",
+        "WAS-2",
+        "OBVIOUS-0",
+        "TO-3",
+        "THE",
+        "DOG-4",
+        "THAT",
+        "THE",
+        "MAN",
+        "HIT-5",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR5"
+        ],
+        [
+          "COP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR3",
+          "$VAR4"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [
+        "APPARENT",
+        "EVIDENT",
+        "OBVIOUS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CLEAR-ADJ1",
+      "WORD": "CLEAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CLEAR-ADJ2": {
+      "CAT": "ADJ",
+      "DEF": "evident",
+      "EX": "the reasons for this are clear to me",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "TO",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "UNDERSTAND": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT",
+        "THE",
+        "BUILDING",
+        "FOR",
+        "REASONS-1",
+        "CLEAR-0",
+        "TO-3",
+        "ME-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "APPARENT",
+        "OBVIOUS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "CLEAR-ADJ2",
+      "WORD": "CLEAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CLEAR-ADJ3": {
+      "CAT": "ADJ",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "VISIBILITY": 0.9
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "CLEAR-0",
+        "BALL-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CLEAR-ADJ3",
+      "WORD": "CLEAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "CLEAR-V1": {
+      "CAT": "V",
+      "DEF": "grant permission",
+      "EX": "they cleared the grant/the refurbishing of the office",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "APPROVE": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "CLEARED-0",
+        "THE",
+        "GRANT-2"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "CLEAR-V1",
+      "WORD": "CLEAR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@APRICOT",
+  "isa": [
+    "@TREE-FRUIT"
+  ],
+  "def": "a smallish, yellow-orange sweet fruit",
+  "local": [],
+  "block": [
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "cylindrical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "egglike"
+    }
+  ],
+  "private": {}
+}

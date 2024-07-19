@@ -1,0 +1,19 @@
+{
+  "name": "@STERE",
+  "isa": [
+    "@VOLUME-UNIT"
+  ],
+  "def": "a measure of volume for wood, and equals one cubic meter (Wikipedia)",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

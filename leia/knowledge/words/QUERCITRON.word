@@ -1,0 +1,58 @@
+{
+  "word": "QUERCITRON",
+  "senses": {
+    "QUERCITRON-N1": {
+      "CAT": "N",
+      "DEF": "bright orange inner bark of the black oak",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "TREE-BARK": {
+          "COLOR": "ORANGE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "QUERCITRON-N1",
+      "WORD": "QUERCITRON",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "QUERCITRON-N2": {
+      "CAT": "N",
+      "DEF": "dye obtained from the bright orange inner bark of the black oak",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "DYESTUFF": {
+          "COLOR": "ORANGE",
+          "MADE-OF": "TREE-BARK"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "QUERCITRON-N2",
+      "WORD": "QUERCITRON",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

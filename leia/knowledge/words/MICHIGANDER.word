@@ -1,0 +1,40 @@
+{
+  "word": "MICHIGANDER",
+  "senses": {
+    "MICHIGANDER-N1": {
+      "CAT": "N",
+      "DEF": "resides in the state of Michigan",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "HAS-STATE-ADDRESS": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "STATE": {
+            "HAS-NAME": {
+              "VALUE": "MICHIGAN"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MICHIGANDER-N1",
+      "WORD": "MICHIGANDER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

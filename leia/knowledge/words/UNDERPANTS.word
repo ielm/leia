@@ -1,0 +1,34 @@
+{
+  "word": "UNDERPANTS",
+  "senses": {
+    "UNDERPANTS-N1": {
+      "CAT": "N",
+      "DEF": "an undergarment for the lower body",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "NUMBER": "PL"
+      },
+      "SEM-STRUC": "UNDERPANTS",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "UNDIES",
+        "DRAWERS",
+        "UNDERSHORTS"
+      ],
+      "HYPONYMS": [
+        "BRIEFS"
+      ],
+      "SENSE": "UNDERPANTS-N1",
+      "WORD": "UNDERPANTS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

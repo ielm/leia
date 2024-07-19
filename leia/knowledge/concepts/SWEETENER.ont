@@ -1,0 +1,28 @@
+{
+  "name": "@SWEETENER",
+  "isa": [
+    "@FLAVORING"
+  ],
+  "def": "any substance used to sweeten food or drink",
+  "local": [
+    {
+      "slot": "sweetness",
+      "facet": "sem",
+      "filler": [
+        "><=",
+        1.0
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "sweetness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

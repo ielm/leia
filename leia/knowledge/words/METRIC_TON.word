@@ -1,0 +1,30 @@
+{
+  "word": "METRIC_TON",
+  "senses": {
+    "METRIC_TON-N1": {
+      "CAT": "N",
+      "DEF": "the metric ton is a unit of weight equal to 2,204.6 pounds; 1000",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "TON-METRIC",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "TONNE",
+        "METRIC_TONNE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "METRIC_TON-N1",
+      "WORD": "METRIC_TON",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

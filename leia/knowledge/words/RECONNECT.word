@@ -1,0 +1,68 @@
+{
+  "word": "RECONNECT",
+  "senses": {
+    "RECONNECT-V1": {
+      "CAT": "V",
+      "DEF": "to begin cooperating (with s.o.) after some period when this wasn't happening",
+      "EX": "the great powers reconnected after the war; they reconnected with their once allies",
+      "COMMENTS": "only part of the semantics of 're' can be expressed without a script",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "PP": {
+          "ROOT-WORD": "WITH",
+          "ROOT": "$VAR3",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "ASPECT": {
+          "PHASE": "BEGIN",
+          "SCOPE": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "COOPERATIVE-EVENT": {
+            "AGENT": {
+              "VALUE": "^$VAR1"
+            },
+            "AGENT-1": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        },
+        "^$VAR3": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "RECONNECTED-0",
+        "WITH-3",
+        "THE",
+        "WOMAN-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RECONNECT-V1",
+      "WORD": "RECONNECT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

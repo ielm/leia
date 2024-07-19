@@ -1,0 +1,42 @@
+{
+  "name": "@SMUGGLE",
+  "isa": [
+    "@CRIMINAL-ACTIVITY"
+  ],
+  "def": "to bring into or take out of a country illegally",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@IMMIGRANT"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ILLEGAL-DRUG"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@WEAPON"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@TRANSFER-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

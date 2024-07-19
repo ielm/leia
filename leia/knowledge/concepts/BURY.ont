@@ -1,0 +1,37 @@
+{
+  "name": "@BURY",
+  "isa": [
+    "@PHYSICAL-EVENT"
+  ],
+  "def": "to put (sometimes a dead body) into the earth",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@CEMETERY"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@GEOGRAPHICAL-ENTITY"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@SOIL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

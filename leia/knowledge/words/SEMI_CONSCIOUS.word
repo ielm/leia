@@ -1,0 +1,38 @@
+{
+  "word": "SEMI_CONSCIOUS",
+  "senses": {
+    "SEMI_CONSCIOUS-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "partially mentally perceptive",
+      "EX": "he remained semi-conscious during the operation",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "CONSCIOUS": "PARTIALLY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "PARTIALLY_CONSCIOUS",
+        "SEMI-COMATOSE"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "SEMI_CONSCIOUS-ADJ1",
+      "WORD": "SEMI_CONSCIOUS",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

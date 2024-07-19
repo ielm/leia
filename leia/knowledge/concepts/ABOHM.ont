@@ -1,0 +1,19 @@
+{
+  "name": "@ABOHM",
+  "isa": [
+    "@ELECTRIC-RESISTANCE-UNIT"
+  ],
+  "def": "(Wikipedia) abohm -- the resistance of a conductor that, with a constant current of one abampere through it, maintains between its terminals a potential difference of one abvolt",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1e-09
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

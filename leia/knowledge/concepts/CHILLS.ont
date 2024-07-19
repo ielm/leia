@@ -1,0 +1,47 @@
+{
+  "name": "@CHILLS",
+  "isa": [
+    "@SYMPTOM"
+  ],
+  "def": "A sensation of coldness, often accompanied by shivering and pallor of the skin.",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ULCERATIVE-COLITIS"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@COMMON-COLD"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@PULMONARY-ANTHRAX"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SKIN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@DISEASE"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

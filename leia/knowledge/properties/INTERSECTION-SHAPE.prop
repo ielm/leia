@@ -1,0 +1,13 @@
+{
+  "name": "$INTERSECTION-SHAPE",
+  "def": "indicates the type of roadway intersection",
+  "type": "literal",
+  "range": [
+    "y-intersection",
+    "t-intersection",
+    "four-way-intersection"
+  ],
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-OBJECT-ATTRIBUTE"
+}

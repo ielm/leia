@@ -1,0 +1,53 @@
+{
+  "word": "FOLLOWING",
+  "senses": {
+    "FOLLOWING-N1": {
+      "CAT": "N",
+      "DEF": "phrasal: the following = that which is about to be mentioned",
+      "EX": "if none of the following appeal to you, please make an alternate suggestion",
+      "COMMENTS": "elliptical, meaning the understand content of an ensuing communication; need a special reference res. function for this",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ART": {
+          "ROOT": "$VAR1",
+          "ROOT-WORD": "THE",
+          "CAT": "ART"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "GAINED",
+        "THE-1",
+        "FOLLOWING-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FOLLOWING-N1",
+      "WORD": "FOLLOWING",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

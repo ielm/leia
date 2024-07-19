@@ -1,0 +1,49 @@
+{
+  "word": "PRIVATELY",
+  "senses": {
+    "PRIVATELY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "without making others aware",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SECRECY-ATTRIBUTE": 0.8
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "PRIVATELY-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "IN_PRIVATE"
+      ],
+      "HYPONYMS": [
+        "BEHIND_THE_SCENES"
+      ],
+      "SENSE": "PRIVATELY-ADV1",
+      "WORD": "PRIVATELY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

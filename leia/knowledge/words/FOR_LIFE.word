@@ -1,0 +1,49 @@
+{
+  "word": "FOR_LIFE",
+  "senses": {
+    "FOR_LIFE-ADV1": {
+      "CAT": "ADV",
+      "DEF": "lifelong",
+      "EX": "the accident left him a cripple for life; they vowed to stay together for life",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TIME-END": "*NOTHING*"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "FOR_LIFE-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "FOR_LIFE-ADV1",
+      "WORD": "FOR_LIFE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

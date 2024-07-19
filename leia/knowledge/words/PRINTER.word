@@ -1,0 +1,42 @@
+{
+  "word": "PRINTER",
+  "senses": {
+    "PRINTER-N1": {
+      "CAT": "N",
+      "DEF": "an output device used with computers",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PRINTER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "DOT_MATRIX_PRINTER",
+        "LASER_PRINTER",
+        "MATRIX_PRINTER",
+        "INK_JET_PRINTER",
+        "BUBBLE_JET_PRINTER",
+        "BUBBLEJET",
+        "STYLUS_PRINTER",
+        "CHARACTER_PRINTER",
+        "DAISYWHEEL_PRINTER",
+        "IMPACT_PRINTER",
+        "BAR_PRINTER",
+        "CHAIN_PRINTER",
+        "XEROGRAPHIC_PRINTER",
+        "THERMAL_PRINTER"
+      ],
+      "SENSE": "PRINTER-N1",
+      "WORD": "PRINTER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@BARBELL",
+  "isa": [
+    "@SPORT-ARTIFACT"
+  ],
+  "def": "a metal bar with weights at each end, used for weight-lifting exercises",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

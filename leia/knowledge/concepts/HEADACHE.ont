@@ -1,0 +1,22 @@
+{
+  "name": "@HEADACHE",
+  "isa": [
+    "@PAIN"
+  ],
+  "def": "Pain in the head.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HEAD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

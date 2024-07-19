@@ -1,0 +1,34 @@
+{
+  "word": "SPLIT_PEA_SOUP",
+  "senses": {
+    "SPLIT_PEA_SOUP-N1": {
+      "CAT": "N",
+      "DEF": "Soup made of stock, split peas, onions, celery, and carrots",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SOUP": {
+          "HAS-OBJECT-AS-PART": "PEA",
+          "HAS-OBJECT-AS-PART-1": "CARROT",
+          "HAS-OBJECT-AS-PART-2": "CELERY",
+          "HAS-OBJECT-AS-PART-3": "ONION"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "SPLIT_PEA_SOUP-N1",
+      "WORD": "SPLIT_PEA_SOUP",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

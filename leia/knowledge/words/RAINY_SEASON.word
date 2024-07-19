@@ -1,0 +1,31 @@
+{
+  "word": "RAINY_SEASON",
+  "senses": {
+    "RAINY_SEASON-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SEASON": {
+          "TIME-OF": "RAINSTORM"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RAINY_SEASON-N1",
+      "WORD": "RAINY_SEASON",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "word": "ICETRAY",
+  "senses": {
+    "ICETRAY-N1": {
+      "CAT": "N",
+      "DEF": "a tray used to make ice",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "TRAY": {
+          "INSTRUMENT-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "CREATE-ARTIFACT": {
+            "THEME": "ICE-CUBE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ICETRAY-N1",
+      "WORD": "ICETRAY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

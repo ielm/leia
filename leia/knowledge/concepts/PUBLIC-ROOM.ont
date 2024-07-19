@@ -1,0 +1,21 @@
+{
+  "name": "@PUBLIC-ROOM",
+  "isa": [
+    "@ROOM"
+  ],
+  "def": "rooms used for public functions",
+  "local": [
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

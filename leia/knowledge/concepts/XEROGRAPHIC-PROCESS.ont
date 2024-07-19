@@ -1,0 +1,47 @@
+{
+  "name": "@XEROGRAPHIC-PROCESS",
+  "isa": [
+    "@DUPLICATE"
+  ],
+  "def": "a process for copying printed material, etc. by the action of light on an electrically charged surface",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PRINTED-MEDIA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DOCUMENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COPIER"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@OFFICE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PRINTER"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    }
+  ],
+  "private": {}
+}

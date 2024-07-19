@@ -1,0 +1,47 @@
+{
+  "name": "@RELIGIOUS-ACTIVITY",
+  "isa": [
+    "@SOCIAL-EVENT"
+  ],
+  "def": "activity that involves religious practice",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@RELIGIOUS-BUILDING"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@RELIGIOUS-ROLE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PRIVATE-HOME"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@THEOLOGY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

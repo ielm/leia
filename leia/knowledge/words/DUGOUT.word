@@ -1,0 +1,34 @@
+{
+  "word": "DUGOUT",
+  "senses": {
+    "DUGOUT-N1": {
+      "CAT": "N",
+      "DEF": "a pit dug into the ground or on a hillside and used as a shelter. ",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "HOLE": {
+          "LOCATION": {
+            "EARTH-SURFACE": "GEOLOGICAL-ELEVATION"
+          },
+          "FUNCTIONS-LIKE": "SHELTER"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DUGOUT-N1",
+      "WORD": "DUGOUT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

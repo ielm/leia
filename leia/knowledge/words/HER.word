@@ -1,0 +1,132 @@
+{
+  "word": "HER",
+  "senses": {
+    "HER-DET2": {
+      "CAT": "DET",
+      "DEF": "possessive use of the 1SG pronoun, referring to body part",
+      "EX": "her back hurts; I can't see her toes",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "DET": {
+          "ROOT": "$VAR0",
+          "CAT": "DET"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "SEM": "ANIMATE-PART",
+          "PART-OF-OBJECT": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "HUMAN": {
+            "GENDER": "FEMALE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          "REFSEM1",
+          [
+            "SG-1-ALGORITHM"
+          ]
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "HER-0",
+        "DOG-1",
+        "HIT",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HER-DET2",
+      "WORD": "HER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HER-DET1": {
+      "CAT": "DET",
+      "DEF": "possessive use of the pronoun 'her' for humans",
+      "EX": "her shirt looks funny; her students misbehaved today; her dissertation got lost.",
+      "COMMENTS": "this needs a meaning procedure to reason about the type of relation",
+      "SYN-STRUC": {
+        "DET": {
+          "ROOT": "$VAR0",
+          "CAT": "DET",
+          "TYPE": "POSS-PRO"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "HUMAN": {
+            "GENDER": "FEMALE"
+          }
+        }
+      },
+      "MEANING-PROCEDURES": [
+        [
+          "CONSIDER-POSSESSIVE-CHANGE",
+          "REFSEM1",
+          "^$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HER-DET1",
+      "WORD": "HER",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": []
+    },
+    "HER-DET3": {
+      "CAT": "DET",
+      "DEF": "the pronoun 'her' when it refers to a human, non-subject for of 'she' but is analyzed as a PRP$",
+      "EX": "Dawami says neighbors told her they heard Hassan beat\u00a0the\u00a0girl.",
+      "COMMENTS": "This is just a stanford error. 'her' can be a possessive pronoun ('her dog') and a regular, non-subject personal pronoun in English.\u00a0 Stanford gets sentences like 'He gave her the donut.' correct (it says 'her' = PRO). So this is just wrong.\u00a0 I probably shouldn't do anything, but I added a HER-DET3 sense that has the same semantics as SHE-N1.\u00a0 That sense gets chosen here, and the other senses of HER work when it really is a possessive pronoun.",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "DET"
+      },
+      "SEM-STRUC": {
+        "HUMAN": {
+          "GENDER": "FEMALE"
+        }
+      },
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HER-DET3",
+      "WORD": "HER",
+      "TYPES": [],
+      "USE-WITH-TYPES": [],
+      "OUTPUT-SYNTAX": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "MEANING-PROCEDURES": []
+    }
+  }
+}

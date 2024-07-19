@@ -1,0 +1,77 @@
+{
+  "name": "@FEVER",
+  "isa": [
+    "@SYMPTOM"
+  ],
+  "def": "to have an abnormally increased body temperature as a sign of illness",
+  "local": [
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@THERMOMETER"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ULCERATIVE-COLITIS"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@DIPHTHERIA"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@PULMONARY-ANTHRAX"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "$temperature"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@MEASURING-ARTIFACT"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@DISEASE"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

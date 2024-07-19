@@ -1,0 +1,22 @@
+{
+  "name": "@POWER-UNIT",
+  "isa": [
+    "@MEASURING-UNIT"
+  ],
+  "def": "a unit to measure power, with power being defined as (from Wikipedia) the rate at which work is performed or energy is transmitted, or the amount of energy required or expended for a given unit of time. As a rate of change of work done or the energy of a subsystem, power is: P = work/time",
+  "local": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@WATT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "sem",
+      "filler": "@MEASURING-UNIT"
+    }
+  ],
+  "private": {}
+}

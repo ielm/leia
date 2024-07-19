@@ -1,0 +1,29 @@
+{
+  "name": "@LICENSE",
+  "isa": [
+    "@DOCUMENT"
+  ],
+  "def": "Official or legal permission to do or own a specified thing.",
+  "local": [],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    }
+  ],
+  "private": {}
+}

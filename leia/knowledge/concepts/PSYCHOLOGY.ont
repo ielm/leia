@@ -1,0 +1,32 @@
+{
+  "name": "@PSYCHOLOGY",
+  "isa": [
+    "@SOCIAL-SCIENCE"
+  ],
+  "def": "the science dealing with the mind and mental and emotional processes",
+  "local": [
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@COUNSELING"
+    },
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@PSYCHOLOGIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-SCIENTIST"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@WORK-ACTIVITY"
+    }
+  ],
+  "private": {}
+}

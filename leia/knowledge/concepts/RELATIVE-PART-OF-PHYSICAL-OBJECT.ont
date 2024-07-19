@@ -1,0 +1,10 @@
+{
+  "name": "@RELATIVE-PART-OF-PHYSICAL-OBJECT",
+  "isa": [
+    "@PHYSICAL-OBJECT"
+  ],
+  "def": "a subtree for parts of objects as analyzed in a relative sense, like front, back, inside, right side, etc. Making things like *right side* abstract objects rather than uninterpretable fillers of a literal attribute will help when we introduce spatial reasoning. We need to be able to say things like *Right arm, part of human-body, location right-side*",
+  "local": [],
+  "block": [],
+  "private": {}
+}

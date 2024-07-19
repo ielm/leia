@@ -1,0 +1,27 @@
+{
+  "name": "@OPHIDIOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "excessive interest in reptiles",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@REPTILE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

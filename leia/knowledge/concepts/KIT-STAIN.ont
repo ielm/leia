@@ -1,0 +1,16 @@
+{
+  "name": "@KIT-STAIN",
+  "isa": [
+    "@PHARMACEUTICAL-MATERIAL"
+  ],
+  "def": "medical stain used for detecting the kit protein on cells",
+  "local": [],
+  "block": [
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    }
+  ],
+  "private": {}
+}

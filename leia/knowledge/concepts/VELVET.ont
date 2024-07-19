@@ -1,0 +1,22 @@
+{
+  "name": "@VELVET",
+  "isa": [
+    "@BLENDED-FABRIC"
+  ],
+  "def": "a rich fabric of rayon, silk, etc. with a soft, thick pile",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@RAYON"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOL"
+    }
+  ],
+  "private": {}
+}

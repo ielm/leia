@@ -1,0 +1,26 @@
+{
+  "name": "@OWE",
+  "isa": [
+    "@BANKING-EVENT"
+  ],
+  "def": "to be indebted in the amount of",
+  "local": [],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@BANK"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@BANKER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

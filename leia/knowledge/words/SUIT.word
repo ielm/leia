@@ -1,0 +1,43 @@
+{
+  "word": "SUIT",
+  "senses": {
+    "SUIT-N1": {
+      "CAT": "N",
+      "DEF": "a set of matching outer garments",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SUIT": {
+          "USED-BY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "HUMAN": {
+            "GENDER": "MALE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "DOUBLE_BREASTED_SUIT",
+        "SINGLE_BREASTED_SUIT",
+        "ZOOT_SUIT",
+        "LEISURE_SUIT"
+      ],
+      "SENSE": "SUIT-N1",
+      "WORD": "SUIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

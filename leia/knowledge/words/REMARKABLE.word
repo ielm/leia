@@ -1,0 +1,55 @@
+{
+  "word": "REMARKABLE",
+  "senses": {
+    "REMARKABLE-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "unusual and extraordinary",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "TYPICALNESS-ATTRIBUTE": 0.1
+        },
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EXTRAORDINARY-0",
+        "EVENT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "AMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "EXTRAORDINARY",
+        "OUTSTANDING",
+        "NOTEWORTHY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "REMARKABLE-ADJ1",
+      "WORD": "REMARKABLE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

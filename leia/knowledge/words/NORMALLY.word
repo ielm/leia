@@ -1,0 +1,45 @@
+{
+  "word": "NORMALLY",
+  "senses": {
+    "NORMALLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "without any abnormalities, difficulties, etc.; for now, with the attribute DIFFICULTY having a value of 0 (though this will not cover all uses of the word)",
+      "EX": "Can you walk normally?",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "DIFFICULTY": 0
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "NORMALLY-0",
+        "HIT-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "NORMALLY-ADV1",
+      "WORD": "NORMALLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

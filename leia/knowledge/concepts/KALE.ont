@@ -1,0 +1,20 @@
+{
+  "name": "@KALE",
+  "isa": [
+    "@LEAF-VEGETABLE",
+    "@CRUCIFEROUS-VEGETABLE"
+  ],
+  "def": "a green leafy vegetable in the mustard family",
+  "local": [],
+  "block": [
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

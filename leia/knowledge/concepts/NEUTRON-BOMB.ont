@@ -1,0 +1,25 @@
+{
+  "name": "@NEUTRON-BOMB",
+  "isa": [
+    "@BOMB",
+    "@NUCLEAR-WEAPON"
+  ],
+  "def": "A nuclear bomb that would destroy life but spare property due to little blast",
+  "local": [],
+  "block": [
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "private": {}
+}

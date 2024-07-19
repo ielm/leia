@@ -1,0 +1,32 @@
+{
+  "name": "@SOLAR-ENERGY",
+  "isa": [
+    "@ENERGY"
+  ],
+  "def": "energy harnessed from the sun: active or passive",
+  "local": [
+    {
+      "slot": "relation",
+      "facet": "sem",
+      "filler": "@SUN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "relation",
+      "facet": "sem",
+      "filler": "@CELESTIAL-OBJECT"
+    },
+    {
+      "slot": "relation",
+      "facet": "sem",
+      "filler": "@NATURAL-RESOURCE"
+    },
+    {
+      "slot": "relation",
+      "facet": "sem",
+      "filler": "@WAVE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@TWEEZERS",
+  "isa": [
+    "@PERSONAL-GROOMING-ARTIFACT"
+  ],
+  "def": "small nippers for plucking out hairs, etc.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

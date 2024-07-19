@@ -1,0 +1,35 @@
+{
+  "word": "COMEDIC",
+  "senses": {
+    "COMEDIC-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "related to the genre of comedy",
+      "EX": "a comedic play",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "HAS-STYLE": "COMEDY"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "COMEDIC-ADJ1",
+      "WORD": "COMEDIC",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

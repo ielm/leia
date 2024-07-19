@@ -1,0 +1,92 @@
+{
+  "word": "EMERGENCY",
+  "senses": {
+    "EMERGENCY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "sudden and dangerous situation,",
+      "EX": "they had to perform an emergency c-section",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "URGENCY": 1
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "ATE",
+        "THE",
+        "EMERGENCY-0",
+        "RATIONS-1"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EMERGENCY-ADJ1",
+      "WORD": "EMERGENCY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EMERGENCY-N1": {
+      "CAT": "N",
+      "DEF": "a situation that requires an immediate response",
+      "EX": "don't call me unless it's an emergency",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "EVENT": {
+          "EFFECT": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "MODALITY": {
+            "TYPE": "OBLIGATIVE",
+            "SCOPE": {
+              "VALUE": "REFSEM2"
+            },
+            "VALUE-1": 1
+          }
+        },
+        "REFSEM2": {
+          "EVENT": {
+            "URGENCY": 1
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "CRISIS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "EMERGENCY-N1",
+      "WORD": "EMERGENCY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@PHOTOGRAPHER",
+  "isa": [
+    "@ARTISTIC-ROLE"
+  ],
+  "def": "a person who takes and develops pictures by way of photography",
+  "local": [
+    {
+      "slot": "operator-of",
+      "facet": "sem",
+      "filler": "@PHOTOGRAPHIC-DEVICE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "operator-of",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "operator-of",
+      "facet": "sem",
+      "filler": "@DEVICE"
+    }
+  ],
+  "private": {}
+}

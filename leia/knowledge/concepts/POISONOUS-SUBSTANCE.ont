@@ -1,0 +1,33 @@
+{
+  "name": "@POISONOUS-SUBSTANCE",
+  "isa": [
+    "@MATERIAL"
+  ],
+  "def": "any substance that can injure or kill",
+  "local": [
+    {
+      "slot": "toxicity",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "toxicity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

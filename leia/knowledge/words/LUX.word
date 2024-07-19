@@ -1,0 +1,27 @@
+{
+  "word": "LUX",
+  "senses": {
+    "LUX-N1": {
+      "CAT": "N",
+      "DEF": "The SI derived unit to measure illuminance, which is the total luminous flux incident on a surface, per unit area. m^-2*cd*sr^-1 (^ means power, m means meter, cd means candela, sr means steradian, * means multiplication); lumen/square_foot",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "LUX",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "LUX-N1",
+      "WORD": "LUX",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

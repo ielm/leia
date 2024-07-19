@@ -1,0 +1,106 @@
+{
+  "word": "HOTBED",
+  "senses": {
+    "HOTBED-N1": {
+      "CAT": "N",
+      "DEF": "an environment conducive to the fast growth of sth.;  this sense is for when the prepositional object is a count object",
+      "EX": "a hotbed of biotech startups",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "PLACE": {
+          "LOCATION-OF": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "SET": {
+            "MEMBER-TYPE": {
+              "VALUE": "^$VAR2"
+            },
+            "CARDINALITY": [
+              ">",
+              0.7
+            ],
+            "DETERMINATE": "NO"
+          }
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HOTBED-N1",
+      "WORD": "HOTBED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "HOTBED-N2": {
+      "CAT": "N",
+      "DEF": "an environment conducive to the fast growth of sth.; this sense is for when the prepositional  object instantiates an event",
+      "EX": "a hotbed of support for the taliban (i.e., many people support the taliban)",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR1",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR2",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "PLACE": {
+          "LOCATION-OF": {
+            "VALUE": "^$VAR2"
+          }
+        },
+        "^$VAR2": {
+          "SEM": "EVENT",
+          "INTENSITY": [
+            ">",
+            0.8
+          ]
+        },
+        "^$VAR1": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "HOTBED-N2",
+      "WORD": "HOTBED",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

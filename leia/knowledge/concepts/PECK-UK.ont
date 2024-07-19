@@ -1,0 +1,19 @@
+{
+  "name": "@PECK-UK",
+  "isa": [
+    "@VOLUME-UNIT"
+  ],
+  "def": "(Wikipedia) a unit of dry volume measure, equivalent to 8 imperial quarts, or 9.09219 liters.",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.00909219858976
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

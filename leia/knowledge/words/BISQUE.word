@@ -1,0 +1,32 @@
+{
+  "word": "BISQUE",
+  "senses": {
+    "BISQUE-N1": {
+      "CAT": "N",
+      "DEF": "A white soup made from shellfish, meat, or fish. ",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SOUP": {
+          "HAS-OBJECT-AS-PART": "FISH-MEAT",
+          "HAS-OBJECT-AS-PART-1": "MEAT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BISQUE-N1",
+      "WORD": "BISQUE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

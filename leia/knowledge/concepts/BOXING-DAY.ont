@@ -1,0 +1,52 @@
+{
+  "name": "@BOXING-DAY",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "the first weekday after Christmas, a legal holiday in parts of the British Commonwealth, on which postmen, employees, etc. receive Christmas boxes with gifts",
+  "local": [
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@DECEMBER"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@GIVE-GIFT"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@WORK-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@CELEBRATE"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@COMMEMORATE"
+    }
+  ],
+  "private": {}
+}

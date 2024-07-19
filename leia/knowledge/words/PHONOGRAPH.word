@@ -1,0 +1,32 @@
+{
+  "word": "PHONOGRAPH",
+  "senses": {
+    "PHONOGRAPH-N1": {
+      "CAT": "N",
+      "DEF": "a device for reproducing sound recorded in a spiral groove on a revolving disk",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PHONOGRAPH",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "RECORD_PLAYER",
+        "GRAMOPHONE"
+      ],
+      "HYPONYMS": [
+        "ACOUSTIC_GRAMOPHONE"
+      ],
+      "SENSE": "PHONOGRAPH-N1",
+      "WORD": "PHONOGRAPH",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

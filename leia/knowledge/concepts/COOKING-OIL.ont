@@ -1,0 +1,21 @@
+{
+  "name": "@COOKING-OIL",
+  "isa": [
+    "@PLANT-DERIVED-FOODSTUFF"
+  ],
+  "def": "An oil, such as olive, canola, safflower, etc. used in cooking",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "yellow"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "relaxable-to",
+      "filler": "@LIQUID"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

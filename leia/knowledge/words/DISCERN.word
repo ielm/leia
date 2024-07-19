@@ -1,0 +1,110 @@
+{
+  "word": "DISCERN",
+  "senses": {
+    "DISCERN-V1": {
+      "CAT": "V",
+      "DEF": "to detect",
+      "EX": "I discerned slight motion in the garden",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR3",
+          "CAT": "NP"
+        }
+      },
+      "SEM-STRUC": {
+        "PERCEPTUAL-EVENT": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "I-2",
+        "DISCERNED-0",
+        "SLIGHT",
+        "MOTION-3",
+        "IN",
+        "THE",
+        "GARDEN"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DISCERN-V1",
+      "WORD": "DISCERN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DISCERN-V2": {
+      "CAT": "V",
+      "DEF": "to understand",
+      "EX": "I discerned that things weren't the way they used to be",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "COMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "UNDERSTAND": {
+          "EXPERIENCER": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "I-1",
+        "DISCERNED-0",
+        "THAT",
+        "HE",
+        "LIED-2",
+        "TO",
+        "ME"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DISCERN-V2",
+      "WORD": "DISCERN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

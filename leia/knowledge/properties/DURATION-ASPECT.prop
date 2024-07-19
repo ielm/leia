@@ -1,0 +1,9 @@
+{
+  "name": "$DURATION-ASPECT",
+  "def": "the duration of an event as defined by apect",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$PARAMETRIC-LITERAL-ATTRIBUTE"
+}

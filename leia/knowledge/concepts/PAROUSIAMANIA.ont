@@ -1,0 +1,27 @@
+{
+  "name": "@PAROUSIAMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "obsessive zeal for the second coming of Christ",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@THEOLOGICAL-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

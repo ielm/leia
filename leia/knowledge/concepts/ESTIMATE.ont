@@ -1,0 +1,27 @@
+{
+  "name": "@ESTIMATE",
+  "isa": [
+    "@MATHEMATICAL-OPERATION"
+  ],
+  "def": "The active cognitive event of guessing the quantity or amount of something; a kind of determining.",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@STATISTIC"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MATHEMATICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@BURP",
+  "isa": [
+    "@EXPEL-GAS"
+  ],
+  "def": "to expel gas through the mouth",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@MOUTH"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

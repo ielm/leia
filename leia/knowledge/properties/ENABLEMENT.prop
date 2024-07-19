@@ -1,0 +1,9 @@
+{
+  "name": "$ENABLEMENT",
+  "def": "In an enablement relation, the situation represented in the range is unrealized. The action represented in the domain increases the chances of the situation in the range being realized. ",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$ENABLED-BY",
+  "measured-in": [],
+  "container": "$RELATION"
+}

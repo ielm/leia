@@ -1,0 +1,47 @@
+{
+  "name": "@FLAX-PLANT",
+  "isa": [
+    "@CROP-PLANT"
+  ],
+  "def": "a slender, erect plant, whose seeds are used to produce linseed oil and whose fibers are spun to produce linen thread",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@FLAX"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@LINSEED-OIL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CROP"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@FRUIT-FOODSTUFF"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@GRAIN-FOODSTUFF"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@NUT-FOODSTUFF"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@VEGETABLE-FOODSTUFF"
+    }
+  ],
+  "private": {}
+}

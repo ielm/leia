@@ -1,0 +1,16 @@
+{
+  "name": "@SUNDIAL",
+  "isa": [
+    "@TIMEPIECE"
+  ],
+  "def": "an instrument that shows time by the shadow of a pointer cast by the sun on a dial",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "private": {}
+}

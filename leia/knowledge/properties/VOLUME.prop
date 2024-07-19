@@ -1,0 +1,12 @@
+{
+  "name": "$VOLUME",
+  "def": "Space occupied by cubic units; measurement of the mass, size or bulk quantity of 3D-objects, in terms of cubic units.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@CUBIC-UNIT",
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SIZE"
+}

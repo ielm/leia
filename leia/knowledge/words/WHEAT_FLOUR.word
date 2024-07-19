@@ -1,0 +1,33 @@
+{
+  "word": "WHEAT_FLOUR",
+  "senses": {
+    "WHEAT_FLOUR-N1": {
+      "CAT": "N",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "FLOUR": {
+          "MADE-OF": "WHEAT"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "WHOLE_WHEAT_FLOUR"
+      ],
+      "SENSE": "WHEAT_FLOUR-N1",
+      "WORD": "WHEAT_FLOUR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

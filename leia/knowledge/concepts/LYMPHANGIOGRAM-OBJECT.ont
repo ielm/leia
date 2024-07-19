@@ -1,0 +1,22 @@
+{
+  "name": "@LYMPHANGIOGRAM-OBJECT",
+  "isa": [
+    "@X-RAY-OBJECT"
+  ],
+  "def": "an angiogram of the lymph nodes and lymph vessels after injection of a radiopaque substance",
+  "local": [
+    {
+      "slot": "depicts",
+      "facet": "sem",
+      "filler": "@LYMPH-NODE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "depicts",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

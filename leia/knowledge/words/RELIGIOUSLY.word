@@ -1,0 +1,69 @@
+{
+  "word": "RELIGIOUSLY",
+  "senses": {
+    "RELIGIOUSLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "related to religion",
+      "EX": "he is not religiously affiliated",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "RELATION": "RELIGION"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "RELIGIOUSLY-ADV1",
+      "WORD": "RELIGIOUSLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "RELIGIOUSLY-ADV2": {
+      "CAT": "ADV",
+      "DEF": "with dedication",
+      "EX": "he reads Calvin & Hobbes religiously",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "PRE-VERB-POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "DEDICATION": 0.8
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "FAITHFULLY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "RELIGIOUSLY-ADV2",
+      "WORD": "RELIGIOUSLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "@DRUGSTORE",
+  "isa": [
+    "@STORE"
+  ],
+  "def": "a store where drugs, medical supplies, and various items are sold and prescriptions are filled",
+  "local": [
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "contains",
+      "facet": "default",
+      "filler": "@BANDAGE"
+    },
+    {
+      "slot": "contains",
+      "facet": "default",
+      "filler": "@CONTRACEPTIVE-DEVICE"
+    },
+    {
+      "slot": "contains",
+      "facet": "default",
+      "filler": "@DENTAL-PRODUCT"
+    },
+    {
+      "slot": "contains",
+      "facet": "default",
+      "filler": "@DRUG"
+    },
+    {
+      "slot": "contains",
+      "facet": "default",
+      "filler": "@DRUG-DELIVERY-DEVICE"
+    },
+    {
+      "slot": "contains",
+      "facet": "default",
+      "filler": "@DRUG-FORM"
+    },
+    {
+      "slot": "contains",
+      "facet": "default",
+      "filler": "@EYEDROPPER"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

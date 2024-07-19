@@ -1,0 +1,52 @@
+{
+  "name": "@ULCERATIVE-COLITIS",
+  "isa": [
+    "@NON-COMMUNICABLE-DISEASE"
+  ],
+  "def": "a serious chronic inflammatory disease of the large intestine and rectum characterized by recurrent episodes of abdominal pain and fever and chills and profuse diarrhea",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LARGE-INTESTINE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@RECTUM"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@PAIN"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@DIARRHEA"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@FEVER"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@CHILLS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

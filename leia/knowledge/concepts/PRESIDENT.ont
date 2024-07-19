@@ -1,0 +1,22 @@
+{
+  "name": "@PRESIDENT",
+  "isa": [
+    "@ELECTED-GOVERNMENTAL-ROLE"
+  ],
+  "def": "the chief executive of a republic",
+  "local": [
+    {
+      "slot": "rules",
+      "facet": "sem",
+      "filler": "@LARGE-GEOPOLITICAL-ENTITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "rules",
+      "facet": "sem",
+      "filler": "@GEOGRAPHICAL-ENTITY"
+    }
+  ],
+  "private": {}
+}

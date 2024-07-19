@@ -1,0 +1,31 @@
+{
+  "word": "BOWLING_ALLEY",
+  "senses": {
+    "BOWLING_ALLEY-N1": {
+      "CAT": "N",
+      "DEF": "a building specifically designed to host the sport of bowling, complete with individual bowling lanes",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "BOWLING-ALLEY": {
+          "LOCATION-OF": "BOWLING"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "BOWLING_ALLEY-N1",
+      "WORD": "BOWLING_ALLEY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "word": "PANTS_SUIT",
+  "senses": {
+    "PANTS_SUIT-N1": {
+      "CAT": "N",
+      "DEF": "a woman's outfit with pants and a matching jacket",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SUIT": {
+          "USED-BY": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "HUMAN": {
+            "GENDER": "FEMALE"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "SLACK_SUIT",
+        "PANT_SUIT",
+        "PANTSUIT"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "PANTS_SUIT-N1",
+      "WORD": "PANTS_SUIT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

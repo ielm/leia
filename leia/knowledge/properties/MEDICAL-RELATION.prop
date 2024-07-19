@@ -1,0 +1,9 @@
+{
+  "name": "$MEDICAL-RELATION",
+  "def": "Relations that have to do with medical objects or events.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$RELATION"
+}

@@ -1,0 +1,152 @@
+{
+  "word": "ITSELF",
+  "senses": {
+    "ITSELF-N1": {
+      "CAT": "N",
+      "DEF": "the reflexive pronoun 'itself'used as an object",
+      "EX": "this idea repeated itself time and again over the centuries.",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "TYPE": "REFL-PRO"
+      },
+      "SEM-STRUC": "OBJECT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          [
+            "COREFER-WITH-SUBJECT-OF-CLAUSE"
+          ]
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ITSELF-N1",
+      "WORD": "ITSELF",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ITSELF-N2": {
+      "CAT": "N",
+      "DEF": "the reflexive pronoun 'itself' used directly after a coreferential np; has emphasis function",
+      "EX": "the play itself was ok but the actors weren't so hot. I want to talk about it itself.",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": {
+        "N": {
+          "ROOT": "$VAR1",
+          "CAT": "N",
+          "PERSON": "THIRD",
+          "NUMBER": "SING",
+          "ANIMACY": "INANIMATE"
+        },
+        "N-1": {
+          "ROOT": "$VAR0",
+          "CAT": "N",
+          "TYPE": "PRO"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "SALIENCY",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "EVENT-1",
+        "ITSELF-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "PUNCT",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ITSELF-N2",
+      "WORD": "ITSELF",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ITSELF-N3": {
+      "CAT": "N",
+      "DEF": "independently, without assistance",
+      "EX": "the computer can finish the work itself",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "CL": {
+          "ROOT": "$VAR1",
+          "CAT": "CL"
+        },
+        "N": {
+          "ROOT": "$VAR0",
+          "CAT": "N",
+          "TYPE": "PRO"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "ACCOMPANIER": "*NONE*"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "TRIGGER-REFERENCE",
+          [
+            "PERSON",
+            "THIRD"
+          ],
+          [
+            "NUMBER",
+            "SING"
+          ],
+          [
+            "ANIMACY",
+            "INANIMATE"
+          ],
+          [
+            "REFL-CL-SUBJ",
+            1
+          ]
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "ITSELF-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ITSELF-N3",
+      "WORD": "ITSELF",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "word": "HERBICIDE",
+  "senses": {
+    "HERBICIDE-N1": {
+      "CAT": "N",
+      "DEF": "weed killer",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "HERBICIDE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "WEED_KILLER"
+      ],
+      "HYPONYMS": [
+        "AGENT_ORANGE",
+        "ATRAZINE",
+        "LINURON",
+        "PARAQUAT",
+        "SILVEX",
+        "SIMAZINE"
+      ],
+      "SENSE": "HERBICIDE-N1",
+      "WORD": "HERBICIDE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

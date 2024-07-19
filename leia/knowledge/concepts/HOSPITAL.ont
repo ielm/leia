@@ -1,0 +1,21 @@
+{
+  "name": "@HOSPITAL",
+  "isa": [
+    "@MEDICAL-BUILDING"
+  ],
+  "def": "a medical building in which medical services of a more serious nature are provided",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@HOSPITAL-STAY"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@HOSPITAL-PART"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

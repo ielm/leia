@@ -1,0 +1,59 @@
+{
+  "word": "INCREDIBLY",
+  "senses": {
+    "INCREDIBLY-ADV1": {
+      "CAT": "ADV",
+      "DEF": "when modifying a verb: extremely well",
+      "EX": "she dances incredibly",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR1",
+        "CAT": "V",
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADV",
+          "TYPE": "POST-CLAUSE"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "EVALUATIVE",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "HIT-1",
+        "THE",
+        "BUILDING",
+        "INCREDIBLY-0"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "ADVMOD",
+          "$VAR1",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "AMAZINGLY",
+        "UNBELIEVABLY",
+        "INCREDIBLY_WELL",
+        "AMAZINGLY_WELL",
+        "UNBELIEVABLY_WELL"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "INCREDIBLY-ADV1",
+      "WORD": "INCREDIBLY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

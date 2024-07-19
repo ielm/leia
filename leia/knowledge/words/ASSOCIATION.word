@@ -1,0 +1,91 @@
+{
+  "word": "ASSOCIATION",
+  "senses": {
+    "ASSOCIATION-N1": {
+      "CAT": "N",
+      "DEF": "an organization",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "ORGANIZATION",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ASSOCIATION-N1",
+      "WORD": "ASSOCIATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "ASSOCIATION-N2": {
+      "CAT": "N",
+      "DEF": "social interaction",
+      "EX": "his association with the mob",
+      "COMMENTS": "I'm not making the possessive or pp optional because it will add a lot of ambiguity; let's see how it works with them obligatory",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT-WORD": "WITH",
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "INTERACT-SOCIALLY": {
+          "AGENT": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY",
+        "DISCUSSED",
+        "MY",
+        "ASSOCIATION-0",
+        "WITH-2",
+        "THE",
+        "HUMAN-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NN",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR3"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "ASSOCIATION-N2",
+      "WORD": "ASSOCIATION",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

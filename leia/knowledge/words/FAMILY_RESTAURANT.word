@@ -1,0 +1,33 @@
+{
+  "word": "FAMILY_RESTAURANT",
+  "senses": {
+    "FAMILY_RESTAURANT-N1": {
+      "CAT": "N",
+      "DEF": "an inexpensive waitered restaurant where street clothes are acceptable",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "FAMILY-RESTAURANT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "DINER",
+        "GREASY_SPOON",
+        "GRILL",
+        "ROTISSERIE",
+        "STEAKHOUSE"
+      ],
+      "SENSE": "FAMILY_RESTAURANT-N1",
+      "WORD": "FAMILY_RESTAURANT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

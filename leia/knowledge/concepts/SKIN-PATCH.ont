@@ -1,0 +1,16 @@
+{
+  "name": "@SKIN-PATCH",
+  "isa": [
+    "@DRUG-FORM"
+  ],
+  "def": "A medicated adhesive pad that is placed on the skin to deliver a time-release dose of medication through the skin into the bloodstream",
+  "local": [],
+  "block": [
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@RUST-MITE",
+  "isa": [
+    "@MITE"
+  ],
+  "def": "a mite causing reddish and brownish spots on leaves and fruits thus damaging them",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@FRUIT-FOODSTUFF"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@LEAF"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

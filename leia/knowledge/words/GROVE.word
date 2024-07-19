@@ -1,0 +1,36 @@
+{
+  "word": "GROVE",
+  "senses": {
+    "GROVE-N1": {
+      "CAT": "N",
+      "DEF": "a small group of trees",
+      "EX": "",
+      "COMMENTS": "cardinality <> 4 100 is just a guess - no way to say, exactly",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SET": {
+          "MEMBER-TYPE": "TREE",
+          "CARDINALITY": [
+            "><",
+            4,
+            100
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "GROVE-N1",
+      "WORD": "GROVE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@DETERGENT",
+  "isa": [
+    "@CLEANSING-MATERIAL"
+  ],
+  "def": "a cleansing preparation synthesized from a number of readily available raw materials -- hydrocarbons from crude oil are most frequently used",
+  "local": [],
+  "block": [
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "solid"
+    }
+  ],
+  "private": {}
+}

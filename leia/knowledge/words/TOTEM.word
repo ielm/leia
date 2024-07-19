@@ -1,0 +1,33 @@
+{
+  "word": "TOTEM",
+  "senses": {
+    "TOTEM-N1": {
+      "CAT": "N",
+      "DEF": "Emblem of an animal or plant which serves as the symbol of a family or clan (especially among American Indians)",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "SCULPTURE": {
+          "DEPICTS": {
+            "ANIMAL": "PLANT"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "TOTEM-N1",
+      "WORD": "TOTEM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

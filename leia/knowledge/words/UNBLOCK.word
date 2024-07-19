@@ -1,0 +1,72 @@
+{
+  "word": "UNBLOCK",
+  "senses": {
+    "UNBLOCK-V1": {
+      "CAT": "V",
+      "DEF": "to remove or end an obstruction",
+      "EX": "they unblocked the road so we could get by",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        }
+      },
+      "SEM-STRUC": {
+        "EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "EFFECT": {
+            "VALUE": "REFSEM1"
+          }
+        },
+        "REFSEM1": {
+          "ASPECT": {
+            "PHASE": "END",
+            "SCOPE": {
+              "VALUE": "REFSEM2"
+            }
+          }
+        },
+        "REFSEM2": {
+          "OBSTRUCT": {
+            "THEME-1": {
+              "VALUE": "^$VAR2"
+            }
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THEY-1",
+        "UNBLOCKED-0",
+        "THE",
+        "ROAD-2"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "CLEAR"
+      ],
+      "HYPONYMS": [
+        "UNCORK",
+        "UNPLUG"
+      ],
+      "SENSE": "UNBLOCK-V1",
+      "WORD": "UNBLOCK",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

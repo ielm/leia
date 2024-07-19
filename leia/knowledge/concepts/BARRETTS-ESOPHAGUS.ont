@@ -1,0 +1,109 @@
+{
+  "name": "@BARRETTS-ESOPHAGUS",
+  "isa": [
+    "@NON-COMMUNICABLE-DISEASE"
+  ],
+  "def": " Chronic peptic ulcer of the lower esophagus due to the presence of columnar epithelium resembling the mucosa of the gastric cardia.\n(http://medical-dictionary.thefreedictionary.com/Barretts+esophagus)",
+  "local": [
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@GASTROESOPHAGEAL-REFLUX-DISEASE"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@VOMIT-2"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@HEARTBURN"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@DYSPHAGIA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ESOPHAGUS"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@PAIN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@BACTERIA"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@BIOLOGICAL-WEAPON"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@VIRUS"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {
+    "@VOMIT-2": {
+      "name": "@VOMIT-2",
+      "isa": [
+        "@VOMIT"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "theme",
+          "facet": "default",
+          "filler": "@BLOOD"
+        }
+      ],
+      "block": [],
+      "private": {}
+    }
+  }
+}

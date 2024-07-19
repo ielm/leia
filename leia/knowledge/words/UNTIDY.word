@@ -1,0 +1,48 @@
+{
+  "word": "UNTIDY",
+  "senses": {
+    "UNTIDY-ADJ1": {
+      "CAT": "ADJ",
+      "DEF": "not neat",
+      "EX": "Your room is so untidy!",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "MODS": {
+          "ROOT": "$VAR0",
+          "CAT": "ADJ"
+        },
+        "ROOT": "$VAR1",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "^$VAR1": {
+          "ORDERLINESS": [
+            "<",
+            0.2
+          ]
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "UNORDERLY",
+        "DISORGANIZED",
+        "UNSYSTEMATIC",
+        "CLUTTERED",
+        "UNMETHODICAL",
+        "DISORDERED",
+        "HARUM-SCARUM",
+        "HELTER-SKELTER",
+        "TOPSY-TURVY"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "UNTIDY-ADJ1",
+      "WORD": "UNTIDY",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@RENTAL-ROLE",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "a social role that involves the renting of property",
+  "local": [],
+  "block": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

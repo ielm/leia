@@ -1,0 +1,33 @@
+{
+  "word": "HAND_MIRROR",
+  "senses": {
+    "HAND_MIRROR-N1": {
+      "CAT": "N",
+      "DEF": "a mirror one can hold",
+      "EX": "",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": {
+        "MIRROR": {
+          "THEME-OF": "HOLD"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [
+        "HAND_GLASS"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "HAND_MIRROR-N1",
+      "WORD": "HAND_MIRROR",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

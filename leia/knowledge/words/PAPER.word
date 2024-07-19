@@ -1,0 +1,93 @@
+{
+  "word": "PAPER",
+  "senses": {
+    "PAPER-N1": {
+      "CAT": "N",
+      "DEF": "material for writing and printing on",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PAPER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PAPER-N1",
+      "WORD": "PAPER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PAPER-N2": {
+      "CAT": "N",
+      "DEF": "newspaper",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "NEWSPAPER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PAPER-N2",
+      "WORD": "PAPER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PAPER-N3": {
+      "CAT": "N",
+      "DEF": "academic paper",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "ACADEMIC-PAPER",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PAPER-N3",
+      "WORD": "PAPER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "PAPER-N4": {
+      "CAT": "N",
+      "DEF": "document (pl. only)",
+      "EX": "the receipt is among my papers",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "DOCUMENT",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "PAPER-N4",
+      "WORD": "PAPER",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

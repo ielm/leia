@@ -1,0 +1,454 @@
+{
+  "word": "AIM",
+  "senses": {
+    "AIM-N2": {
+      "CAT": "N",
+      "DEF": "intention",
+      "EX": "the aim of the president is to get reelected",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OBJ": {
+            "ROOT": "$VAR1",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "INTENTIONAL",
+          "VALUE": 1,
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "GOAL-0",
+        "OF-2",
+        "THE",
+        "TEACHER-1",
+        "AMAZED",
+        "SOME"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "NSUBJ",
+          "$VAR2",
+          "$VAR0"
+        ]
+      ],
+      "SYNONYMS": [
+        "END",
+        "GOAL",
+        "IDEA",
+        "INTENT",
+        "INTENTION",
+        "OBJECT",
+        "OBJECTIVE",
+        "PURPOSE",
+        "THOUGHT"
+      ],
+      "HYPONYMS": [
+        "DESIGN",
+        "MOTIVE",
+        "PLAN",
+        "TARGET"
+      ],
+      "SENSE": "AIM-N2",
+      "WORD": "AIM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "AIM-N3": {
+      "CAT": "N",
+      "DEF": "functional purpose",
+      "EX": "the aim of the program is to prepare kids for college",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "PP": {
+          "ROOT": "$VAR2",
+          "CAT": "PREP",
+          "ROOT-WORD": "OF",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR1",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "EVENT": {
+          "PURPOSE-OF": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-0",
+        "OF-2",
+        "THE",
+        "UNIVERSITY-1",
+        "AMAZED",
+        "SOME"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "POBJ",
+          "$VAR2",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [
+        "END",
+        "GOAL",
+        "IDEA",
+        "INTENT",
+        "INTENTION",
+        "OBJECT",
+        "OBJECTIVE",
+        "PURPOSE"
+      ],
+      "HYPONYMS": [
+        "DESIGN",
+        "MOTIVE",
+        "PLAN",
+        "TARGET"
+      ],
+      "SENSE": "AIM-N3",
+      "WORD": "AIM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "AIM-V1": {
+      "CAT": "V",
+      "DEF": "she aims to study law",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "NP"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "XCOMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V"
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          }
+        },
+        "MODALITY": {
+          "TYPE": "INTENTIONAL",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          },
+          "ATTRIBUTED-TO": {
+            "VALUE": "^$VAR1"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR1",
+          "^$VAR2"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "AIMED-0",
+        "TO",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "CCOMP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "XCOMP",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "XSUBJ",
+          "$VAR2",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AIM-V1",
+      "WORD": "AIM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "AIM-V2": {
+      "CAT": "V",
+      "DEF": "aim a sighted instrument (weapon,camera,telescope) at a target",
+      "EX": "she aimed the gun at him",
+      "COMMENTS": "[D]",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": "AT",
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OPT": "+",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "AIM": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          },
+          "BENEFICIARY": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [
+        [
+          "FIX-CASE-ROLE",
+          "^$VAR3",
+          "^$VAR0"
+        ]
+      ],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "AIMED-0",
+        "THE",
+        "DUCK-2",
+        "AT-4",
+        "THE",
+        "DOG-3"
+      ],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AIM-V2",
+      "WORD": "AIM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "AIM-V3": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "his visit was aimed at helping the poor [he aimed his visit at helping the poor]",
+      "COMMENTS": "this sense is in the active by convention; would be very odd to see it in anything but passive",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "SUBJECT": {
+          "ROOT": "$VAR1",
+          "CAT": "N"
+        },
+        "ROOT": "$VAR0",
+        "CAT": "V",
+        "DIRECTOBJECT": {
+          "ROOT": "$VAR2",
+          "CAT": "N"
+        },
+        "PP": {
+          "ROOT-WORD": "AT",
+          "ROOT": "$VAR4",
+          "CAT": "PREP",
+          "OBJ": {
+            "ROOT": "$VAR3",
+            "CAT": "N"
+          }
+        }
+      },
+      "SEM-STRUC": {
+        "^$VAR2": {
+          "SEM": "EVENT",
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "PURPOSE": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "AIMED-0",
+        "THE",
+        "DUCK-2",
+        "AT-4",
+        "THE",
+        "DOG-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR4"
+        ],
+        [
+          "POBJ",
+          "$VAR4",
+          "$VAR3"
+        ],
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "AIM-V3",
+      "WORD": "AIM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "AIM-N1": {
+      "CAT": "N",
+      "DEF": "intention",
+      "EX": "her aim to study law is well-known to her friends",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N",
+        "XCOMP": {
+          "ROOT": "$VAR2",
+          "CAT": "V",
+          "OPT": "+"
+        }
+      },
+      "SEM-STRUC": {
+        "MODALITY": {
+          "TYPE": "INTENTIONAL",
+          "VALUE": 1,
+          "SCOPE": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN",
+        "DISCUSSED",
+        "HIS",
+        "GOAL-0",
+        "TO",
+        "HIT-2",
+        "THE",
+        "BUILDING"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DET",
+          "$VAR0",
+          "$VAR1"
+        ]
+      ],
+      "SYNONYMS": [
+        "END",
+        "GOAL",
+        "IDEA",
+        "INTENT",
+        "INTENTION",
+        "OBJECT",
+        "OBJECTIVE",
+        "PURPOSE",
+        "THOUGHT"
+      ],
+      "HYPONYMS": [
+        "DESIGN",
+        "MOTIVE",
+        "PLAN",
+        "TARGET"
+      ],
+      "SENSE": "AIM-N1",
+      "WORD": "AIM",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

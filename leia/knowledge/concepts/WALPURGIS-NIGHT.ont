@@ -1,0 +1,63 @@
+{
+  "name": "@WALPURGIS-NIGHT",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "a celebration of spring marked by music and bonfire on the eve of May Day in some European countries and in some Scandinavian communities in the U.S.",
+  "local": [
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        30
+      ]
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@APRIL"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@FIRE"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@PERFORM-MUSIC"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        31
+      ]
+    },
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@COMMEMORATE"
+    }
+  ],
+  "private": {}
+}

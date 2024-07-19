@@ -1,0 +1,27 @@
+{
+  "name": "@HOCKEY-STICK",
+  "isa": [
+    "@SPORT-ARTIFACT"
+  ],
+  "def": "a stick used in hockey or field-hockey",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SYNTHETICS"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

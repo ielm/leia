@@ -1,0 +1,52 @@
+{
+  "word": "DISEASE",
+  "senses": {
+    "DISEASE-N1": {
+      "CAT": "N",
+      "DEF": "a disorder in the functioning of an animal that shows specific signs and is not trauma",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "DISEASE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "MEDICAL_CONDITION",
+        "CONDITION"
+      ],
+      "SENSE": "DISEASE-N1",
+      "WORD": "DISEASE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "DISEASE-N2": {
+      "CAT": "N",
+      "DEF": "plant disease",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": {
+        "ROOT": "$VAR0",
+        "CAT": "N"
+      },
+      "SEM-STRUC": "PLANT-DISEASE",
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "DISEASE-N2",
+      "WORD": "DISEASE",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

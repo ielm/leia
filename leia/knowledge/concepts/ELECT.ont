@@ -1,0 +1,16 @@
+{
+  "name": "@ELECT",
+  "isa": [
+    "@VOTE"
+  ],
+  "def": "to select for an office by voting",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@SELECT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

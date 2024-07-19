@@ -1,0 +1,19 @@
+{
+  "name": "@RESEARCHER",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "someone who carries out research",
+  "local": [],
+  "block": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

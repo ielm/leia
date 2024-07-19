@@ -1,0 +1,27 @@
+{
+  "name": "@SUSPENSION-BRIDGE",
+  "isa": [
+    "@BRIDGE"
+  ],
+  "def": "a bridge suspended from cables anchored at either end and supported by towers at intervals",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@TOWER"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CABLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}
