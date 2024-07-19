@@ -21,14 +21,14 @@ class OntoAgentModule(object):
     def __init__(self, agent: Agent, name: str, process_id: int=None, service_host: str=None, service_port: int=None):
         self.agent = agent
         self.name = name
-        self._process_id = process_id
+        self._process_id = process_id if process_id is not None else os.getpid()
         self._service_host = service_host
         self._service_port = service_port
 
     def set_process_id(self, process_id: int):
         self._process_id = process_id
 
-    def process_id(self) -> Union[int, None]:
+    def process_id(self) -> int:
         return self._process_id
 
     def set_service_host(self, host: str):
@@ -224,46 +224,26 @@ class HeartbeatThread(StoppableThread):
             self.module.heartbeat()
 
 
-# class OntoAgentPerceptionModule(OntoAgentModule):
-#
-#     @classmethod
-#     def instance(cls, module_type: Union[str, Frame]=None) -> 'OntoAgentPerceptionModule':
-#         if module_type is None:
-#             module_type = "PERCEPTION-MODULE"
-#         module: OntoAgentPerceptionModule = super().instance(module_type)
-#         return module
-#
-#
-# class OntoAgentInterpretationModule(OntoAgentModule):
-#
-#     @classmethod
-#     def instance(cls, module_type: Union[str, Frame]=None) -> 'OntoAgentInterpretationModule':
-#         if module_type is None:
-#             module_type = "INTERPRETATION-MODULE"
-#         module: OntoAgentInterpretationModule = super().instance(module_type)
-#         return module
-#
-#
-# class OntoAgentAttentionModule(OntoAgentModule):
-#
-#     @classmethod
-#     def instance(cls, module_type: Union[str, Frame]=None) -> 'OntoAgentAttentionModule':
-#         if module_type is None:
-#             module_type = "ATTENTION-MODULE"
-#         module: OntoAgentAttentionModule = super().instance(module_type)
-#         return module
-#
-#
-# class OntoAgentReasoningModule(OntoAgentModule):
-#
-#     @classmethod
-#     def instance(cls, module_type: Union[str, Frame]=None) -> 'OntoAgentReasoningModule':
-#         if module_type is None:
-#             module_type = "REASONING-MODULE"
-#         module: OntoAgentReasoningModule = super().instance(module_type)
-#         return module
-#
-#
+class OntoAgentPerceptionModule(OntoAgentModule):
+
+    pass
+
+
+class OntoAgentInterpretationModule(OntoAgentModule):
+
+    pass
+
+
+class OntoAgentAttentionModule(OntoAgentModule):
+
+    pass
+
+
+class OntoAgentReasoningModule(OntoAgentModule):
+
+    pass
+
+
 class OntoAgentRenderingModule(OntoAgentModule):
 
     def __init__(self, agent: Agent, name: str, process_id: int = None, service_host: str = None, service_port: int = None):

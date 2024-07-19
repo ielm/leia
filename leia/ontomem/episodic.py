@@ -1,3 +1,4 @@
+from enum import Enum
 from leia.ontomem.memory import Memory
 from leia.ontomem.ontology import Concept
 from leia.ontomem.properties import Property
@@ -156,11 +157,42 @@ class Space(object):        # Examples: WM, LTE, ???, etc.
 
 class XMR(Space):
 
-    def __init__(self, memory: Memory, name: str=None, private: bool=False, raw: Any=None, timestamp: float=None):
+    class Status(Enum):
+        RAW = "RAW"                     # The XMR represents input that is not yet interpreted
+        INTERPRETED = "INTERPRETED"     # The XMR represents input that has been interpreted
+        ISSUED = "ISSUED"               # The XMR represents output that has not yet been rendered
+        RENDERED = "RENDERED"           # The XMR represents output that has been rendered
+
+    class Priority(Enum):
+        LOW = "LOW"
+        ASAP = "ASAP"
+        INTERRUPT = "INTERRUPT"
+
+    def __init__(self, memory: Memory, name: str=None, private: bool=False, raw: Any=None, timestamp: float=None, status: Status=None, priority: Priority=None):
         super().__init__(memory, name if name is not None else memory.episodic._next_id_for_xmr(self), private=private)
 
-        self.raw = raw
+        self._raw = raw
         self.timestmap = timestamp if timestamp is not None else time.time()
+        self._status = status if status is not None else XMR.Status.RAW
+        self._priority = priority if priority is not None else XMR.Priority.LOW
+
+    def set_raw(self, raw: Any):
+        self._raw = raw
+
+    def raw(self) -> Any:
+        return self._raw
+
+    def set_status(self, status: Status):
+        self._status = status
+
+    def status(self) -> Status:
+        return self._status
+
+    def set_priority(self, priority: Priority):
+        self._priority = priority
+
+    def priority(self) -> Priority:
+        return self._priority
 
     def root(self) -> Union['Instance', None]:
         # Finds the current root of the XMR.
@@ -199,7 +231,10 @@ class XMR(Space):
                 for filler in frame.values(property):
                     if isinstance(filler, Instance):
                         root_scoring[frame.id()]["outgoing"] += 1
-                        root_scoring[filler.id()]["incoming"] += 1
+
+                        # Update incoming only if the instance is part of the XMR's space.
+                        if filler.id() in self.instances:
+                            root_scoring[filler.id()]["incoming"] += 1
 
         # Now find the best root
         candidates = []
@@ -233,6 +268,8 @@ class XMR(Space):
 
 
 class Instance(object):
+
+    class TooManyFillersError(Exception): pass
 
     def __init__(self, memory: Memory, concept: Union[str, Concept], index: int, private_to: Space=None):
         self.memory = memory
@@ -286,8 +323,16 @@ class Instance(object):
     def values(self, slot: str) -> List['Filler.VALUE']:
         return list(map(lambda f: f.value, self.fillers(slot)))
 
-    def is_a(self, parent: Concept) -> bool:
-        raise NotImplementedError
+    def value(self, slot: str) -> Union['Filler.VALUE', None]:
+        fillers = self.fillers(slot)
+        if len(fillers) == 0:
+            return None
+        if len(fillers) == 1:
+            return fillers[0].value
+        raise Instance.TooManyFillersError
+
+    def isa(self, parent: Concept) -> bool:
+        return self.concept.isa(parent)
 
     def private_to(self) -> Union[Space, None]:
         return self._private_to

@@ -455,3 +455,16 @@ class InstanceTestCase(TestCase):
 
         frame.set_filler("AGENT", ["c", "d"])
         self.assertEqual(["c", "d"], frame.values("AGENT"))
+
+    def test_isa(self):
+
+        c1 = Concept(self.m, "C1")
+        c1.isa = MagicMock(return_value=True)
+
+        c2 = Concept(self.m, "C2")
+
+        instance = Instance(self.m, c1, 1)
+
+        self.assertTrue(instance.isa(c2))
+
+        c1.isa.assert_called_once_with(c2)
