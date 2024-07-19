@@ -164,6 +164,33 @@ class SynMapperTestCase(LEIATestCase):
             ("$VAR2", 456),
         ], self.mapper.map_variables(match))
 
+    def test_map_variable_constituency_element_with_children_no_top_variable(self):
+        # Identical to test_map_variable_constituency_element_with_children, however the top element has no variable.
+        # This verifies that recursive variables are found even if the top one would normally be skipped for having
+        # a null variable.
+
+        element = SynStruc.ConstituencyElement("VP", [
+            SynStruc.ConstituencyElement("NP", [
+                SynStruc.TokenElement({"word"}, "N", dict(), 2, False)
+            ], None, False)
+        ], None, False)
+
+        vp = ConstituencyNode("VP")
+        np = ConstituencyNode("NP")
+        token1 = self.mockWord(123, "word", "N")
+        token2 = self.mockWord(456, "word", "N")
+
+        vp.children = [token1, np]
+        np.children = [token2]
+
+        match = SynMatcher.ConstituencyMatch(element, vp, [
+            SynMatcher.TokenMatch(element.children[0].children[0], token2)
+        ])
+
+        self.assertEqual([
+            ("$VAR2", 456),
+        ], self.mapper.map_variables(match))
+
     def test_run(self):
         # First, define some words that will be part of the input
         word0 = self.mockWord(0, "the", "ART")

@@ -47,6 +47,16 @@ class SynMapper(object):
     def map_variables(self, match: 'SynMatcher.SynMatch') -> List[Tuple[str, int]]:
         variable = match.element.to_variable()
 
+        if isinstance(match, SynMatcher.ConstituencyMatch):
+            variables = []
+            if variable is not None:
+                variables = [("$VAR%d" % variable, match.component.leftmost_word().index)]
+
+            for child in match.children:
+                variables += self.map_variables(child)
+
+            return variables
+
         if variable is None:
             return []
 
@@ -61,14 +71,6 @@ class SynMapper(object):
 
         if isinstance(match, SynMatcher.DependencyMatch):
             return [("$VAR%d" % variable, match.component.dependent.index)]
-
-        if isinstance(match, SynMatcher.ConstituencyMatch):
-            variables = [("$VAR%d" % variable, match.component.leftmost_word().index)]
-
-            for child in match.children:
-                variables += self.map_variables(child)
-
-            return variables
 
         # If none of the above can be selected, no variable can be mapped.
         return []
@@ -251,8 +253,12 @@ class SynMatcher(object):
                         "remaining": nm[1]
                     }
                 if element.is_optional():
+                    args = [element, None]
+                    if isinstance(element, SynStruc.ConstituencyElement):
+                        args = [element, None, []]
+
                     yield {
-                        "match": match["match"] + [_get_match_type(element)(element, None)],
+                        "match": match["match"] + [_get_match_type(element)(*args)],
                         "remaining": list(match["remaining"])
                     }
 
