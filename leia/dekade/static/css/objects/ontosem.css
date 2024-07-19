@@ -288,3 +288,23 @@ div.word-senses div.word-sense div.word-sense-id {
 div.word-senses div.word-sense div.word-sense-details {
 
 }
+
+/* *** Constituencies *** */
+
+div.constituencies-container {
+
+}
+
+div.constituencies-container div.constituency-node {
+    margin-left: 25px;
+    border-left-style: dotted;
+    border-left-width: 1px;
+    border-left-color: gray;
+    padding-left: 2px;
+    margin-bottom: 5px;
+}
+
+div.constituencies-container div.token-node {
+    margin-left: 25px;
+    margin-bottom: 5px;
+}
