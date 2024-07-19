@@ -18,6 +18,9 @@ export class Analysis extends LEIAObject {
         element.find("span.caret").click(this._onCaretClicked.bind(this));
         element.find("a.config-content-link").click(this._onConfigContentLinkClicked.bind(this));
         element.find("a.syntax-content-link").click(this._onSyntaxContentLinkClicked.bind(this));
+        element.find("a.constituencies-content-link").click(this._onConstituenciesContentLinkClicked.bind(this));
+        element.find("a.dependencies-content-link").click(this._onDependenciesContentLinkClicked.bind(this));
+        element.find("a.word-content-link").click(this._onWordContentLinkClicked.bind(this));
         element.find("a.candidate-content-link").click(this._onCandidateContentLinkClicked.bind(this));
     }
 
@@ -81,6 +84,31 @@ export class Analysis extends LEIAObject {
         await this.showContent(syntax);
     }
 
+    async _onConstituenciesContentLinkClicked(event) {
+        const link = $(event.currentTarget);
+        const sentence = this.content.sentences[parseInt(link.data("sentence"))];
+
+        const constituencies = new Constituencies(sentence.syntax.parse);
+        await this.showContent(constituencies);
+    }
+
+    async _onDependenciesContentLinkClicked(event) {
+        const link = $(event.currentTarget);
+        const sentence = this.content.sentences[parseInt(link.data("sentence"))];
+
+        const dependencies = new Dependencies(sentence.syntax.dependencies);
+        await this.showContent(dependencies);
+    }
+
+    async _onWordContentLinkClicked(event) {
+        const link = $(event.currentTarget);
+        const sentence = this.content.sentences[parseInt(link.data("sentence"))];
+        const word = sentence.syntax.words[parseInt(link.data("word"))];
+
+        const element = new Word(word);
+        await this.showContent(element);
+    }
+
     async _onCandidateContentLinkClicked(event) {
         const link = $(event.currentTarget);
         const sentence = this.content.sentences[parseInt(link.data("sentence"))];
@@ -114,7 +142,7 @@ export class Config extends LEIAObject {
     prepareData() {
         return {
             ...super.prepareData(),
-            logs: this.content
+            config: this.content
         }
     }
 
@@ -198,6 +226,105 @@ export class Syntax extends LEIAObject {
 
     name() {
         return "Syntax";
+    }
+
+}
+
+
+export class Constituencies extends LEIAObject {
+
+    constructor(content) {
+        super();
+        this.content = content;
+    }
+
+    prepareData() {
+        return {
+            ...super.prepareData(),
+            constituencies: this.content
+        }
+    }
+
+    activateListeners(element) {
+
+    }
+
+    templateName() {
+        return "leia.ontosem.syntax.constituencies";
+    }
+
+    label() {
+        return "Constituencies";
+    }
+
+    name() {
+        return "Constituencies";
+    }
+
+}
+
+
+export class Dependencies extends LEIAObject {
+
+    constructor(content) {
+        super();
+        this.content = content;
+    }
+
+    prepareData() {
+        return {
+            ...super.prepareData(),
+            dependencies: this.content
+        }
+    }
+
+    activateListeners(element) {
+
+    }
+
+    templateName() {
+        return "leia.ontosem.syntax.dependencies";
+    }
+
+    label() {
+        return "Dependencies";
+    }
+
+    name() {
+        return "Dependencies";
+    }
+
+}
+
+
+export class Word extends LEIAObject {
+
+    constructor(content) {
+        super();
+        this.content = content;
+    }
+
+    prepareData() {
+        return {
+            ...super.prepareData(),
+            word: this.content
+        }
+    }
+
+    activateListeners(element) {
+
+    }
+
+    templateName() {
+        return "leia.ontosem.syntax.word";
+    }
+
+    label() {
+        return "Word";
+    }
+
+    name() {
+        return "Word";
     }
 
 }

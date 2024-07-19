@@ -7,6 +7,21 @@
                 <span class="caret {{#if @first}}caret-down{{/if}}">{{this.text}}</span>
                 <ul class="nested {{#if @first}}active{{/if}}">
                     <li><a class="analysis-content-link syntax-content-link" data-sentence="{{@index}}">Syntax</a></li>
+                    <li>
+                        <span class="caret">Syntax</span>
+                        <ul class="nested">
+                            <li>
+                                <span class="caret">Words</span>
+                                <ul class="nested">
+                                    {{#each syntax.words}}
+                                    <li><a class="analysis-content-link word-content-link" data-sentence="{{@../index}}" data-word="{{@index}}">{{token}}</a></li>
+                                    {{/each}}
+                                </ul>
+                            </li>
+                            <li><a class="analysis-content-link constituencies-content-link" data-sentence="{{@index}}">Constituencies</a></li>
+                            <li><a class="analysis-content-link dependencies-content-link" data-sentence="{{@index}}">Dependencies</a></li>
+                        </ul>
+                    </li>
                     {{#each this.candidates}}
                     <li class="candidate-navigator" {{#each this.sense-maps}}data-sense-{{this.word}}="{{this.sense}}"{{/each}}>
                         <span class="caret {{#if @first}}caret-down{{/if}}">Candidate {{inc @index}}</span>

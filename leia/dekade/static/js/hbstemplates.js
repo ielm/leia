@@ -17,6 +17,9 @@ class LEIAHBSTemplates {
             "leia.ontosem.config": "handlebars/ontosem/config.html",
             "leia.ontosem.logs": "handlebars/ontosem/logs.html",
             "leia.ontosem.syntax": "handlebars/ontosem/syntax.html",
+            "leia.ontosem.syntax.constituencies": "handlebars/ontosem/syntax/constituencies.html",
+            "leia.ontosem.syntax.dependencies": "handlebars/ontosem/syntax/dependencies.html",
+            "leia.ontosem.syntax.word": "handlebars/ontosem/syntax/word.html",
             "leia.ontosem.tmr": "handlebars/ontosem/tmr.html",
         };
     }
