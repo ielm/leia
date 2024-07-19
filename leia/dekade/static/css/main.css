@@ -58,3 +58,12 @@ button[is=help-button] {
     display: inline-flex;
     align-items: center;
 }
+
+a[is=content-link] {
+    text-decoration: underline;
+    color: #3763e6;
+}
+
+a[is=content-link]:hover {
+    cursor: pointer;
+}
