@@ -468,6 +468,91 @@ class MongoPropertyExporter(object):
             print("Skipped %s" % s)
 
 
+class MongoWordExporter(object):
+
+    def __init__(self, url: str, port: int, database: str, collection: str, output_dir: str):
+        self.url = url
+        self.port = port
+        self.database = database
+        self.collection = collection
+        self.output_dir = output_dir
+
+    def getclient(self):
+        client = MongoClient(self.url, self.port)
+        with client:
+            return client
+
+    def handle(self):
+        client = self.getclient()
+        db = client[self.database]
+        return db[self.collection]
+
+    def run(self):
+
+        words = {}
+
+        for sense in self.handle().find({"PROCTYPE": None}):
+            word = sense["WORD"]
+            if word not in words:
+                words[word] = {}
+
+            sense = self.sanitize_sense(sense)
+            words[word][sense["SENSE"]] = sense
+
+        for k, v in words.items():
+            contents = {
+                "word": k,
+                "senses": v
+            }
+
+            file = "%s/%s.word" % (output_dir, k)
+            with open(file, "w") as f:
+                json.dump(contents, f, indent=2)
+
+    def sanitize_sense(self, sense: dict) -> dict:
+        # Remove the mongo id
+        del sense["_id"]
+
+        # Output syntax should always be a list
+        if "OUTPUT-SYNTAX" not in sense:
+            sense["OUTPUT-SYNTAX"] = []
+        if sense["OUTPUT-SYNTAX"] == "NIL":
+            sense["OUTPUT-SYNTAX"] = []
+        if isinstance(sense["OUTPUT-SYNTAX"], str):
+            sense["OUTPUT-SYNTAX"] = [sense["OUTPUT-SYNTAX"]]
+
+        # Example bindings should always be a list (of strings)
+        if "EXAMPLE-BINDINGS" not in sense:
+            sense["EXAMPLE-BINDINGS"] = []
+        if sense["EXAMPLE-BINDINGS"] == "NIL":
+            sense["EXAMPLE-BINDINGS"] = []
+        if not isinstance(sense["EXAMPLE-BINDINGS"], list):
+            sense["EXAMPLE-BINDINGS"] = [sense["EXAMPLE-BINDINGS"]]
+        sense["EXAMPLE-BINDINGS"] = list(map(lambda eb: str(eb), sense["EXAMPLE-BINDINGS"]))
+
+        # Example deps should always be a list
+        if "EXAMPLE-DEPS" not in sense:
+            sense["EXAMPLE-DEPS"] = []
+        if sense["EXAMPLE-DEPS"] == "NIL":
+            sense["EXAMPLE-DEPS"] = []
+
+        # Meaning procedures should always be a list
+        if "MEANING-PROCEDURES" not in sense:
+            sense["MEANING-PROCEDURES"] = []
+        if sense["MEANING-PROCEDURES"] == "NIL":
+            sense["MEANING-PROCEDURES"] = []
+
+        # Synonyms should always be a list
+        if sense["SYNONYMS"] == "NIL":
+            sense["SYNONYMS"] = []
+
+        # Hyponyms should always be a list
+        if sense["HYPONYMS"] == "NIL":
+            sense["HYPONYMS"] = []
+
+        return sense
+
+
 if __name__ == "__main__":
 
     import sys
@@ -479,4 +564,8 @@ if __name__ == "__main__":
     elif sys.argv[1] == "concepts":
         output_dir = "%s/knowledge/concepts" % os.getcwd()
         exporter = MongoConceptExporter("localhost", 27016, "leia-ontology", "canonical-v.1.0.6", output_dir)
+        exporter.run()
+    elif sys.argv[1] == "words":
+        output_dir = "%s/knowledge/words" % os.getcwd()
+        exporter = MongoWordExporter("localhost", 27016, "leia-lexicon", "canonical-v.1.3.0", output_dir)
         exporter.run()

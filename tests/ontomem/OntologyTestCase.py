@@ -11,7 +11,7 @@ class OntologyTestCase(TestCase):
 class ConceptTestCase(TestCase):
 
     def setUp(self):
-        self.m = Memory("", "")
+        self.m = Memory("", "", "")
 
     def test_parse_basic_fields(self):
         concept = Concept(self.m, "test", contents={
@@ -154,6 +154,9 @@ class ConceptTestCase(TestCase):
         ], concept.block["c"]["sem"])
 
     def test_parse_private_frames(self):
+        fail()
+
+    def test_parse_sets(self):
         fail()
 
     def test_parents(self):
@@ -491,6 +494,7 @@ class ConceptTestCase(TestCase):
         fail()
 
     def test_evaluate(self):
+        # Evaluate must account for sets (both input and existing) as well as private frames
         fail()
 
     def test_allowed(self):
