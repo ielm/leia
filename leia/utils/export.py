@@ -69,8 +69,8 @@ class MongoConceptExporter(object):
             parents = concept["parents"]
 
             contents = {
-                "name": "@%s" % name,
-                "isa": list(map(lambda p: "@%s" % p, parents)),
+                "name": "@%s" % name.upper(),
+                "isa": list(map(lambda p: "@%s" % p.upper(), parents)),
                 "def": definition,
                 "local": [],
                 "block": [],
@@ -189,12 +189,12 @@ class MongoConceptExporter(object):
             if concept is not None:
                 for m in onto_instance_map:
                     if m[1] == concept["name"]:
-                        concept = output_ontology[m[0][1:]]
+                        concept = output_ontology[m[0][1:].lower()]
                         concept["private"][name] = oi
                         unmapped_onto_instances.remove(oi)
 
         for concept in output_ontology.values():
-            file = "%s/%s.ont" % (output_dir, concept["name"][1:])
+            file = "%s/%s.ont" % (output_dir, concept["name"][1:].upper())
             with open(file, "w") as f:
                 json.dump(concept, f, indent=2)
 
@@ -215,7 +215,7 @@ class MongoConceptExporter(object):
         as_scalar_range = self.parse_scalar_range(filler)
 
         if isinstance(filler, str) and filler in concept_names:
-            return "@%s" % filler
+            return "@%s" % filler.upper()
         elif isinstance(filler, str) and slot in literals:
             # Known literals can just be passed through for now; if any of the values are actually out
             # of range, we will deal with them later (not a big deal)

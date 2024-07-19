@@ -65,6 +65,7 @@ button[is=help-button] {
 a[is=content-link] {
     text-decoration: underline;
     color: #3763e6;
+    font-variant: all-small-caps;
 }
 
 a[is=content-link]:hover {

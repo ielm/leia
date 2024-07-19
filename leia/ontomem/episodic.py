@@ -364,11 +364,16 @@ class Instance(object):
         if space is None:
             space = self.memory.episodic
 
+        def _cast_value(value):
+            if isinstance(value, list):
+                return value
+            return str(value)
+
         return {
             "id": self.id(space=space),
             "concept": str(self.concept),
             "index": self.index(space=space),
-            "properties": dict(map(lambda i: (i[0], list(map(lambda f: str(f.value()), i[1]))), self.properties.items())),
+            "properties": dict(map(lambda i: (i[0], list(map(lambda f: _cast_value(f.value()), i[1]))), self.properties.items())),
         }
 
     def __repr__(self):
