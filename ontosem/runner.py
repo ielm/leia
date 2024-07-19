@@ -1,9 +1,9 @@
-from leia.ontosem.analysis import Analysis, Sentence
-from leia.ontosem.config import OntoSemConfig
-from leia.ontosem.semantics.compiler import SemanticCompiler
-from leia.ontosem.semantics.extended import BasicSemanticsMPProcessor
-from leia.ontosem.semantics.scorer import SemanticScorer
-from leia.ontosem.syntax.analyzer import Preprocessor, SyntacticAnalyzer
+from ontosem.analysis import Analysis, Sentence
+from ontosem.config import OntoSemConfig
+from ontosem.semantics.compiler import SemanticCompiler
+from ontosem.semantics.extended import BasicSemanticsMPProcessor
+from ontosem.semantics.scorer import SemanticScorer
+from ontosem.syntax.analyzer import Preprocessor, SyntacticAnalyzer
 from typing import List
 
 import json

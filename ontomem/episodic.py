@@ -17,7 +17,7 @@ class EpisodicMemory(object):
         # Bookkeeping
         self._index_nums_by_concept: Dict[str, int] = {}
 
-    def restart(self):
+    def reset(self):
         self._instances = {}
         self._spaces = {}
         self._xmrs = {}
@@ -62,6 +62,10 @@ class Space(object):        # Examples: WM, LTE, ???, etc.
 class XMR(Space):           # Additional fields on top of space, such as raw input, timestamp, etc.
 
     pass
+
+    # RAW
+    # ROOT
+    # TIMESTAMP
 
 
 class Frame(object):        # TODO: RENAME TO Instance
