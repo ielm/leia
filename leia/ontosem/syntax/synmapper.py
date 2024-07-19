@@ -4,6 +4,8 @@ from leia.ontosem.analysis import Analysis
 from leia.ontosem.syntax.results import ConstituencyNode, Dependency, SenseMap, SynMap, Syntax, Word
 from typing import Any, Iterable, List, Tuple, Type, Union
 
+import functools
+
 
 class SynMapper(object):
 
@@ -272,9 +274,12 @@ class SynMatcher(object):
                 return None
 
         # If POS is specified, at least one must be a match; case insensitive
-        # TODO: Possibly use a hierarchy of POS matching here
         if element.pos is not None:
-            if element.pos.lower() not in set(map(lambda p: p.lower(), word.pos)):
+            wordpos = map(lambda pos: self.analysis.config.memory().parts_of_speech.get(pos), word.pos)
+            matches = map(lambda pos: pos.isa(element.pos), wordpos)
+            match = functools.reduce(lambda x, y: x or y, matches)
+
+            if not match:
                 return None
 
         # If any morphology is specified, each must be a match; case sensitive
