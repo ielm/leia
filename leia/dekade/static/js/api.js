@@ -30,6 +30,16 @@ export async function apiKnowledgeOntologyFilter(filter) {
 }
 
 
+export async function apiKnowledgeOntologyChildren(concept) {
+    try {
+        const response = await axios.get("/api/knowledge/ontology/children/" + concept);
+        return response.data;
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+
 export async function apiOntoSemAnalyze(input) {
     try {
         const response = await axios.post("/api/ontosem/analyze", {

@@ -60,6 +60,7 @@ class DEKADEAPIBlueprint(Blueprint):
         self.add_url_rule("/api/knowledge/ontology/list", endpoint=None, view_func=self.knowledge_ontology_list, methods=["GET"])
         self.add_url_rule("/api/knowledge/ontology/filter/<substring>", endpoint=None, view_func=self.knowledge_ontology_filter, methods=["GET"])
         self.add_url_rule("/api/knowledge/ontology/concept/<concept>", endpoint=None, view_func=self.knowledge_ontology_concept, methods=["GET"])
+        self.add_url_rule("/api/knowledge/ontology/children/<concept>", endpoint=None, view_func=self.knowledge_ontology_children, methods=["GET"])
 
         # OntoSem API
         self.add_url_rule("/api/ontosem/analyze", endpoint=None, view_func=self.ontosem_analyze, methods=["POST"])
@@ -122,6 +123,13 @@ class DEKADEAPIBlueprint(Blueprint):
         }
 
         return json.dumps(output)
+
+    def knowledge_ontology_children(self, concept: str):
+        concept = self.app.agent.memory.ontology.concept(concept)
+        children = concept.children()
+        children = sorted(list(map(lambda c: c.name, children)))
+
+        return json.dumps(children)
 
     def ontosem_analyze(self):
         if not request.get_json():
