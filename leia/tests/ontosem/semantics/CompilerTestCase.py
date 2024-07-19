@@ -49,14 +49,14 @@ class SemanticCompilerTestCase(LEIATestCase):
 
     def test_expand_candidates(self):
 
-        sm0_N1 = SenseMap(Word.basic(0), "S0-N1", {"$VAR0": 0}, 0.5)
-        sm0_N2 = SenseMap(Word.basic(0), "S0-N2", {"$VAR0": 0}, 0.5)
-        sm1_V1 = SenseMap(Word.basic(1), "S1-V1", {"$VAR0": 0}, 0.5)
-        sm1_V2 = SenseMap(Word.basic(1), "S1-V2", {"$VAR0": 0}, 0.5)
-        sm1_V3 = SenseMap(Word.basic(1), "S1-V3", {"$VAR0": 0}, 0.5)
-        sm2_N1 = SenseMap(Word.basic(2), "S2-N1", {"$VAR0": 0}, 0.5)
-        sm2_N2 = SenseMap(Word.basic(2), "S2-N2", {"$VAR0": 0}, 0.5)
-        sm2_N3 = SenseMap(Word.basic(2), "S2-N3", {"$VAR0": 0}, 0.5)
+        sm0_N1 = SenseMap(Word.basic(0), "S0-N1", {"$VAR0": 0})
+        sm0_N2 = SenseMap(Word.basic(0), "S0-N2", {"$VAR0": 0})
+        sm1_V1 = SenseMap(Word.basic(1), "S1-V1", {"$VAR0": 0})
+        sm1_V2 = SenseMap(Word.basic(1), "S1-V2", {"$VAR0": 0})
+        sm1_V3 = SenseMap(Word.basic(1), "S1-V3", {"$VAR0": 0})
+        sm2_N1 = SenseMap(Word.basic(2), "S2-N1", {"$VAR0": 0})
+        sm2_N2 = SenseMap(Word.basic(2), "S2-N2", {"$VAR0": 0})
+        sm2_N3 = SenseMap(Word.basic(2), "S2-N3", {"$VAR0": 0})
 
         synmap = SynMap([
             [sm0_N1, sm0_N2],
@@ -139,9 +139,9 @@ class SemanticCompilerTestCase(LEIATestCase):
             "^$VAR4": {"THING": "HUMAN", "AGE": 50},
         })
 
-        sm1 = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
-        sm2 = SenseMap(Word.basic(1), "TEST-T2", {"$VAR1": 123}, 0.5)
-        sm3 = SenseMap(Word.basic(2), "TEST-T3", {"$VAR4": None}, 0.5)
+        sm1 = SenseMap(Word.basic(0), "TEST-T1", {})
+        sm2 = SenseMap(Word.basic(1), "TEST-T2", {"$VAR1": 123})
+        sm3 = SenseMap(Word.basic(2), "TEST-T3", {"$VAR4": None})
 
         lexicon.add_sense(sm1.word, Sense(self.m, "TEST-T1", contents=s1))
         lexicon.add_sense(sm2.word, Sense(self.m, "TEST-T2", contents=s2))
@@ -183,9 +183,9 @@ class SemanticCompilerTestCase(LEIATestCase):
         f1 = TMRInstance(self.m, "TEST", 2)
         f7 = TMRInstance(self.m, "TEST", 3)
 
-        sm1 = SenseMap(Word.basic(0), "TEST-T1", {"$VAR3": 0, "$VAR1": 1}, 0.5)
-        sm2 = SenseMap(Word.basic(1), "TEST-T2", {"$VAR3": 1, "$VAR2": 7}, 0.5)
-        sm3 = SenseMap(Word.basic(7), "TEST-T3", {"$VAR9": 9}, 0.5)                 # Word 9 does not exist, this will be skipped.
+        sm1 = SenseMap(Word.basic(0), "TEST-T1", {"$VAR3": 0, "$VAR1": 1})
+        sm2 = SenseMap(Word.basic(1), "TEST-T2", {"$VAR3": 1, "$VAR2": 7})
+        sm3 = SenseMap(Word.basic(7), "TEST-T3", {"$VAR9": 9})                 # Word 9 does not exist, this will be skipped.
 
         candidate = Candidate(self.m, sm1, sm2, sm3)
 
@@ -228,8 +228,8 @@ class SemanticCompilerTestCase(LEIATestCase):
         # Create a candidate with two sense maps; word 0 points to TEST-T1 and word 1 points to TEST-T2.
         # The candidate has already bound 0.HEAD, 0.SUB.1, 1.HEAD, and 1.VAR.1.ABC to some frames.
         # (Note that VAR1 is unbound, so its properties evoke as frames.)
-        sm1 = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
-        sm2 = SenseMap(Word.basic(1), "TEST-T2", {"$VAR1": None}, 0.5)
+        sm1 = SenseMap(Word.basic(0), "TEST-T1", {})
+        sm2 = SenseMap(Word.basic(1), "TEST-T2", {"$VAR1": None})
 
         lexicon.add_sense(sm1.word, Sense(self.m, "TEST-T1", contents=s1))
         lexicon.add_sense(sm2.word, Sense(self.m, "TEST-T2", contents=s2))
@@ -274,7 +274,7 @@ class SemanticCompilerTestCase(LEIATestCase):
     def test_populate_semantic_properties(self):
         candidate = Candidate(self.m)
         frame = TMRInstance(self.m, "TEST", 1)
-        sense_map = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
+        sense_map = SenseMap(Word.basic(0), "TEST-T1", {})
         element = SemStruc.Head("TEST", {
             "AGENT": "HUMAN",
             "COLOR": "RED",
@@ -300,7 +300,7 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         candidate = Candidate(self.m)
         frame = TMRInstance(self.m, "TEST", 1)
-        sense_map = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
+        sense_map = SenseMap(Word.basic(0), "TEST-T1", {})
         element = SemStruc.RefSem(1, SemStruc({
             "HEAD": {
                 "AGENT": "HUMAN",
@@ -326,7 +326,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         candidate = Candidate(self.m)
 
         frame = TMRInstance(self.m, "TEST", 1)
-        sense_map = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
+        sense_map = SenseMap(Word.basic(0), "TEST-T1", {})
         element = SemStruc.Head("TEST", {
             "AGENT": "REFSEM1",
         })
@@ -350,7 +350,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         candidate = Candidate(self.m)
 
         frame = TMRInstance(self.m, "TEST", 1)
-        sense_map = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
+        sense_map = SenseMap(Word.basic(0), "TEST-T1", {})
         element = SemStruc.Head("TEST", {
             "AGENT": "REFSEM1.THEME",
         })
@@ -375,7 +375,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         frame = TMRInstance(self.m, "TEST", 1)
         sense_map = SenseMap(Word.basic(0), "TEST-T1", {
             "$VAR1": 4,  # This variable points to word 4, and is the variable found in the semstruc
-        }, 0.5)
+        })
 
         element = SemStruc.Variable(1, {
             "AGENT": "HUMAN",
@@ -406,7 +406,7 @@ class SemanticCompilerTestCase(LEIATestCase):
             "$VAR1": 4,     # This variable points to word 4, and is found in the semstruc
             "$VAR2": 5,     # This variable points to word 5, and is found in the semstruc
             "$VAR3": 6,     # This variable should be ignored
-        }, 0.5)
+        })
 
         element = SemStruc.Head("TEST", {
             "AGENT": "^$VAR1",              # Variables can be found directly as fillers
@@ -442,7 +442,7 @@ class SemanticCompilerTestCase(LEIATestCase):
             "$VAR1": 4,     # This variable points to word 4, and is found in the semstruc
             "$VAR2": 5,     # This variable points to word 5, and is found in the semstruc
             "$VAR3": 6,     # This variable should be ignored
-        }, 0.5)
+        })
 
         element = SemStruc.Head("TEST", {
             "AGENT": "^$VAR1.AGENT",        # Variables can be found directly as fillers
@@ -478,7 +478,7 @@ class SemanticCompilerTestCase(LEIATestCase):
             "$VAR1": 4,  # This variable points to word 4, and is found in the semstruc
             "$VAR2": 5,  # This variable points to word 5, and is found in the semstruc
             "$VAR3": 6,  # This variable should be ignored
-        }, 0.5)
+        })
 
         element = SemStruc.Head("TEST", {
             "AGENT": {
@@ -512,7 +512,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         frame = TMRInstance(self.m, "TEST", 1)
         sense_map = SenseMap(Word.basic(0), "TEST-T1", {
             "$VAR1": 4,     # This variable points to word 4
-        }, 0.5)
+        })
 
         element = SemStruc.Head("TEST", {
             "AGENT": {
@@ -538,7 +538,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         frame = TMRInstance(self.m, "TEST", 1)
         sense_map = SenseMap(Word.basic(0), "TEST-T1", {
             "$VAR1": 4,  # This variable points to word 4, and is the variable found in the semstruc
-        }, 0.5)
+        })
 
         element = SemStruc.Variable(1, {
             "AGENT": "HUMAN",
@@ -560,7 +560,7 @@ class SemanticCompilerTestCase(LEIATestCase):
     def test_populate_semantic_properties_as_set_with_lexical_constraint(self):
         candidate = Candidate(self.m)
         frame = TMRInstance(self.m, "TEST", 1)
-        sense_map = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
+        sense_map = SenseMap(Word.basic(0), "TEST-T1", {})
 
         element = SemStruc.Head("SET", {
             "MEMBER-TYPE": {
@@ -586,7 +586,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         frame2 = TMRInstance(self.m, "TEST", 2)
         candidate.bind(Word.basic(0), SemStruc.Head(), frame1)
 
-        sense_map = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
+        sense_map = SenseMap(Word.basic(0), "TEST-T1", {})
 
         element = SemStruc.Head("^$VAR2", {
             "NULL-SEM": "+"
@@ -608,7 +608,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         frame2 = TMRInstance(self.m, "TEST", 2)
         candidate.bind(Word.basic(0), SemStruc.RefSem(1), frame1)
 
-        sense_map = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
+        sense_map = SenseMap(Word.basic(0), "TEST-T1", {})
 
         self.analysis.lexicon.add_sense(sense_map.word, sense)
 
@@ -628,7 +628,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         frame1 = TMRInstance(self.m, "TEST", 1)
         frame2 = TMRInstance(self.m, "TEST", 2)
 
-        sense_map = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
+        sense_map = SenseMap(Word.basic(0), "TEST-T1", {})
 
         self.analysis.lexicon.add_sense(sense_map.word, sense)
 
@@ -645,7 +645,7 @@ class SemanticCompilerTestCase(LEIATestCase):
 
     def test_resolve_embedded_semstruc(self):
         candidate = Candidate(self.m)
-        sense_map = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
+        sense_map = SenseMap(Word.basic(0), "TEST-T1", {})
         semstruc = [">", ["X", "Y"], ["Z", [1, 2, 3]]]
 
         analyzer = SemanticCompiler(self.analysis)
@@ -661,7 +661,7 @@ class SemanticCompilerTestCase(LEIATestCase):
             "$VAR1": 4,  # This variable points to word 4, and is found in the semstruc
             "$VAR2": 5,  # This variable points to word 5, and is found in the semstruc
             "$VAR3": 6,  # This variable should be ignored
-        }, 0.5)
+        })
 
         semstruc = [">", ["VALUE", "^$VAR1"], ["XYZ", ["VALUE", "^$VAR2"]], ["NOSUCH", "$VAR4"]]
 
@@ -686,7 +686,7 @@ class SemanticCompilerTestCase(LEIATestCase):
     def test_resolve_embedded_semstruc_with_refsems(self):
         candidate = Candidate(self.m)
 
-        sense_map = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
+        sense_map = SenseMap(Word.basic(0), "TEST-T1", {})
         semstruc = [">", ["VALUE", "REFSEM1"], ["XYZ", ["VALUE", "REFSEM2"]], ["NOSUCH", "REFSEM3"]]
 
         f1 = TMRInstance(self.m, "REF", 1)
@@ -712,7 +712,7 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         # Setup the relevant syntax (a word with a synmap)
         word0 = Word(0, "", [], "", 0, 0, Word.Ner.NONE, [], {})
-        sense_map = SenseMap(word0, "TEST-T1", {}, 0.5)
+        sense_map = SenseMap(word0, "TEST-T1", {})
 
         # Build the candidate and frame; mock a semstruc element head
         candidate = Candidate(self.m)
@@ -743,7 +743,7 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         # Setup the relevant syntax (a word with a synmap)
         word0 = Word(0, "", list(), "", 0, 0, Word.Ner.NONE, [], {})
-        sense_map = SenseMap(word0, "TEST-T1", {}, 0.5)
+        sense_map = SenseMap(word0, "TEST-T1", {})
 
         # Build the candidate and frame; mock a semstruc element head
         candidate = Candidate(self.m)
@@ -774,7 +774,7 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         # Setup the relevant syntax (a word with a synmap)
         word0 = Word(0, "", list(), "", 0, 0, Word.Ner.NONE, [], {})
-        sense_map = SenseMap(word0, "TEST-T1", {}, 0.5)
+        sense_map = SenseMap(word0, "TEST-T1", {})
 
         # Build the candidate and frame; mock a semstruc element head
         candidate = Candidate(self.m)
@@ -807,7 +807,7 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         # Setup the relevant syntax (a word with a synmap)
         word0 = Word(0, "", list(), "", 0, 0, Word.Ner.NONE, [], {})
-        sense_map = SenseMap(word0, "TEST-T1", {}, 0.5)
+        sense_map = SenseMap(word0, "TEST-T1", {})
 
         # Build the candidate and frame; mock a semstruc element head
         candidate = Candidate(self.m)
@@ -917,9 +917,9 @@ class SemanticCompilerTestCase(LEIATestCase):
             ["TESTMP4", "^$VAR1", ["VALUE", "^$VAR2"]]
         ])
 
-        sm1 = SenseMap(Word.basic(0), "TEST-T1", {"$VAR1": -1, "$VAR2": -1}, 0.5)
-        sm2 = SenseMap(Word.basic(1), "TEST-T2", {"$VAR1": -1, "$VAR2": -1}, 0.5)
-        sm3 = SenseMap(Word.basic(2), "TEST-T3", {}, 0.5)
+        sm1 = SenseMap(Word.basic(0), "TEST-T1", {"$VAR1": -1, "$VAR2": -1})
+        sm2 = SenseMap(Word.basic(1), "TEST-T2", {"$VAR1": -1, "$VAR2": -1})
+        sm3 = SenseMap(Word.basic(2), "TEST-T3", {})
 
         lexicon.add_sense(sm1.word, Sense(self.m, "TEST-T1", contents=s1))
         lexicon.add_sense(sm2.word, Sense(self.m, "TEST-T2", contents=s2))

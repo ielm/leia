@@ -1,14 +1,16 @@
+from leia.ontomem.lexicon import Sense, SynStruc
 from leia.ontomem.properties import Property
 from leia.ontosem.analysis import Analysis
 from leia.ontosem.config import OntoSemConfig
 from leia.ontosem.semantics.candidate import Candidate, Constraint, Score
-from leia.ontosem.semantics.candidate import LexicalConstraintScore, RelationRangeScore, SenseMapPreferenceScore
+from leia.ontosem.semantics.candidate import LexicalConstraintScore, RelationRangeScore, SenseMapScore
 from leia.ontosem.semantics.scorer import SemanticScorer
 from leia.ontosem.syntax.results import SenseMap, Word
+from leia.tests.LEIATestCase import LEIATestCase
 from unittest import TestCase
 
 
-class SemanticScorerTestCase(TestCase):
+class SemanticScorerTestCase(LEIATestCase):
 
     def setUp(self):
         self.analysis = Analysis()
@@ -28,19 +30,46 @@ class SemanticScorerTestCase(TestCase):
 
         self.assertEqual(24.0, result)
 
-    def test_score_extract_sense_map_preferences(self):
-        sm1 = SenseMap(Word.basic(0), "TEST-T1", {}, 2.0)
-        sm2 = SenseMap(Word.basic(1), "TEST-T1", {}, 4.0)
-
-        candidate = Candidate(self.m, sm1, sm2)
+    def test_score_sense_maps(self):
 
         scorer = SemanticScorer(self.analysis)
-        scores = scorer.score_extract_sense_map_preferences(candidate)
+        word0 = Word.basic(0)
+        word1 = Word.basic(1)
+
+        sense = Sense(self.m, "TEST-T2", contents=self.mockSense("TEST-T2"))
+        self.analysis.lexicon.add_sense(word1, sense)
+        sense = self.analysis.lexicon.sense(word1, "TEST-T2")
+
+        # If all variables in map are not None, scores are 1.0
+        sm1 = SenseMap(word0, "TEST-T1", {})
+        sm2 = SenseMap(word1, "TEST-T2", {"$VAR0": 0, "$VAR1": 1})
 
         self.assertEqual([
-            SenseMapPreferenceScore(0.5, sm1),
-            SenseMapPreferenceScore(1.0, sm2),
-        ], scores)
+            SenseMapScore(1.0, sm1),
+            SenseMapScore(1.0, sm2),
+        ], scorer.score_sense_maps(Candidate(self.m, sm1, sm2)))
+
+        # If any variable is None, but its corresponding element is optional, there is no penalty
+        sm1 = SenseMap(word0, "TEST-T1", {})
+        sm2 = SenseMap(word1, "TEST-T2", {"$VAR0": 0, "$VAR1": None})
+
+        sense.synstruc.elements = [SynStruc.TokenElement({"TEST"}, None, dict(), 1, True)]
+
+        self.assertEqual([
+            SenseMapScore(1.0, sm1),
+            SenseMapScore(1.0, sm2),
+        ], scorer.score_sense_maps(Candidate(self.m, sm1, sm2)))
+
+        # If any variable is None, and its corresponding element is not optional, the penalized score is 0.1
+        sm1 = SenseMap(word0, "TEST-T1", {})
+        sm2 = SenseMap(word1, "TEST-T2", {"$VAR0": 0, "$VAR1": None})
+
+        sense.synstruc.elements = [SynStruc.TokenElement({"TEST"}, None, dict(), 1, False)]
+
+        self.assertEqual([
+            SenseMapScore(1.0, sm1),
+            SenseMapScore(0.1, sm2),
+        ], scorer.score_sense_maps(Candidate(self.m, sm1, sm2)))
 
     def test_score_relation_ranges(self):
         # This function scores only relations in the TMRFrames (not attributes).  It finds what the frame's expected
@@ -137,7 +166,7 @@ class SemanticScorerTestCase(TestCase):
         candidate = Candidate(self.m)
         frame = candidate.basic_tmr.new_instance("PARENT1")
 
-        null_sense_map = SenseMap(Word.basic(0), "", {}, 0.5)
+        null_sense_map = SenseMap(Word.basic(0), "", {})
 
         c1 = Constraint(1, frame, "PARENT1", null_sense_map)
         c2 = Constraint(2, frame, "GRANDPARENT", null_sense_map)
@@ -186,7 +215,7 @@ class SemanticScorerTestCase(TestCase):
         frame = candidate.basic_tmr.new_instance("ABSTRACT-OBJECT")
         frame.add_filler("REPRESENTS", "CHILDPROP1")
 
-        null_sense_map = SenseMap(Word.basic(0), "", {}, 0.5)
+        null_sense_map = SenseMap(Word.basic(0), "", {})
 
         c1 = Constraint(1, frame, "PROPERTY", null_sense_map)
         c2 = Constraint(2, frame, "CHILDPROP1", null_sense_map)
@@ -225,7 +254,7 @@ class SemanticScorerTestCase(TestCase):
         frame = candidate.basic_tmr.new_instance("SET")
         pf1 = candidate.basic_tmr.new_instance("PARENT1")
 
-        null_sense_map = SenseMap(Word.basic(0), "", {}, 0.5)
+        null_sense_map = SenseMap(Word.basic(0), "", {})
 
         c1 = Constraint(1, frame, "GRANDPARENT", null_sense_map)
         c2 = Constraint(2, frame, "PARENT1", null_sense_map)

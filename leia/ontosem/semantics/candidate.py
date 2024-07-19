@@ -1,6 +1,6 @@
-from leia.ontomem.episodic import Instance
 from leia.ontomem.lexicon import SemStruc
 from leia.ontomem.memory import Memory
+from leia.ontosem.score import Score
 from leia.ontosem.semantics.tmr import TMR, TMRInstance
 from leia.ontosem.syntax.results import SenseMap, Word
 from typing import List, Set, Union
@@ -130,24 +130,7 @@ class Constraint(object):
         return "Constraint: %s should be a %s, according to %s." % (self.frame.id(), self.concepts, self.sense_map)
 
 
-class Score(object):
-
-    def __init__(self, score: float, message: str=""):
-        self.score = score
-        self.message = message
-
-    def to_dict(self) -> dict:
-        return {
-            "type": self.__class__.__name__,
-            "score": self.score,
-            "message": self.message
-        }
-
-    def __repr__(self):
-        return "Score %f: '%s'" % (self.score, self.message)
-
-
-class SenseMapPreferenceScore(Score):
+class SenseMapScore(Score):
 
     def __init__(self, score: float, sense_map: SenseMap):
         super().__init__(score)
@@ -162,10 +145,10 @@ class SenseMapPreferenceScore(Score):
         return out
 
     def __repr__(self):
-        return "Sense map for word %d (%s) had syntactic preference %f." % (self.sense_map.word.index, self.sense_map.sense, self.score)
+        return "Sense map for word %d (%s) has score %f." % (self.sense_map.word.index, self.sense_map.sense, self.score)
 
     def __eq__(self, other):
-        if isinstance(other, SenseMapPreferenceScore):
+        if isinstance(other, SenseMapScore):
             return self.score == other.score and self.sense_map == other.sense_map
         return super().__eq__(other)
 

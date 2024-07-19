@@ -1,5 +1,6 @@
 from enum import Enum
 from leia.ontomem.lexicon import Sense
+from leia.ontosem.score import Score
 from pyparsing import OneOrMore, nestedExpr
 from typing import Dict, List, Union
 
@@ -150,25 +151,23 @@ class SenseMap(object):
             bindings[variable[0]] = int(variable[1]) if variable[1] != "NIL" else None
         preference = float(lisp[2][1])
 
-        return SenseMap(word, sense, bindings, preference)
+        return SenseMap(word, sense, bindings)
 
-    def __init__(self, word: 'Word', sense: str, bindings: Dict[str, Union[int, None]], preference: float):
+    def __init__(self, word: 'Word', sense: str, bindings: Dict[str, Union[int, None]]):
         self.word = word
         self.sense = sense
         self.bindings = bindings
-        self.preference = preference
 
     def to_dict(self) -> dict:
         return {
             "word": self.word.index,
             "sense": self.sense,
             "bindings": self.bindings,
-            "preference": self.preference
         }
 
     def __eq__(self, other):
         if isinstance(other, SenseMap):
-            return self.sense == other.sense and self.bindings == other.bindings and self.preference == other.preference
+            return self.sense == other.sense and self.bindings == other.bindings
         return super().__eq__(other)
 
     def __repr__(self):

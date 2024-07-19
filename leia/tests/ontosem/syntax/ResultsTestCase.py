@@ -168,10 +168,10 @@ class SynMapTestCase(TestCase):
         self.assertEqual(2, len(synmap.words))
         self.assertEqual(1, len(synmap.words[0]))
         self.assertEqual(2, len(synmap.words[1]))
-        self.assertEqual([SenseMap(w1, "THE-ART1", {"$VAR0": 0, "$VAR1": 1}, 4.0)], synmap.words[0])
+        self.assertEqual([SenseMap(w1, "THE-ART1", {"$VAR0": 0, "$VAR1": 1})], synmap.words[0])
         self.assertEqual([
-            SenseMap(w2, "CACHE-N1", {"$VAR0": 1}, 3.0),
-            SenseMap(w2, "STORE-N1", {"$VAR0": 1}, 2.0)
+            SenseMap(w2, "CACHE-N1", {"$VAR0": 1}),
+            SenseMap(w2, "STORE-N1", {"$VAR0": 1})
         ], synmap.words[1])
 
 
@@ -187,7 +187,6 @@ class SenseMapTestCase(TestCase):
         self.assertEqual(2, len(sense_map.bindings))
         self.assertEqual(0, sense_map.bindings["$VAR0"])
         self.assertEqual(None, sense_map.bindings["$VAR1"])
-        self.assertEqual(4.0, sense_map.preference)
 
     def test_parse_lisp_results_with_quotes_on_sense_name(self):
         lisp = ['"THE-ART1"', [["$VAR0", "0"], ["$VAR1", "NIL"]], ["PREFERENCE", "4"]]
@@ -199,7 +198,6 @@ class SenseMapTestCase(TestCase):
         self.assertEqual(2, len(sense_map.bindings))
         self.assertEqual(0, sense_map.bindings["$VAR0"])
         self.assertEqual(None, sense_map.bindings["$VAR1"])
-        self.assertEqual(4.0, sense_map.preference)
 
 
 class WordTestCase(TestCase):

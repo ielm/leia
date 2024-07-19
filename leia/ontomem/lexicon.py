@@ -272,6 +272,18 @@ class SynStruc(object):
         def is_optional(self) -> bool:
             return self.optional
 
+        def element_for_variable(self, variable: int) -> Union['SynStruc.Element', None]:
+            if self.to_variable() == variable:
+                return self
+            for child in self.children:
+                if child.to_variable() == variable:
+                    return child
+                if isinstance(child, SynStruc.ConstituencyElement):
+                    match = child.element_for_variable(variable)
+                    if match is not None:
+                        return match
+            return None
+
         def to_dict(self) -> dict:
             return {"type": "constituency", "contype": self.type, "children": list(map(lambda child: child.to_dict(), self.children)), "var": self.variable, "opt": self.optional}
 
@@ -290,6 +302,17 @@ class SynStruc(object):
         }
 
         self.elements = list(map(lambda element: element_map[element["type"]].parse(element), contents))
+
+    def element_for_variable(self, variable: int) -> Union['SynStruc.Element', None]:
+        for element in self.elements:
+            if element.to_variable() == variable:
+                return element
+            if isinstance(element, SynStruc.ConstituencyElement):
+                match = element.element_for_variable(variable)
+                if match is not None:
+                    return match
+
+        return None
 
     def to_dict(self) -> list:
         return list(map(lambda e: e.to_dict(), self.elements))

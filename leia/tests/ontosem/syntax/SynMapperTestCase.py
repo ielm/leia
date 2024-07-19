@@ -31,7 +31,7 @@ class SynMapperTestCase(LEIATestCase):
         maps = list(self.mapper.build_sense_maps(syntax, word, sense))
 
         self.assertEqual([
-            SenseMap(word, "word-N1", {"$VAR0": 123}, 1.0)
+            SenseMap(word, "word-N1", {"$VAR0": 123})
         ], maps)
 
     @patch("leia.ontosem.syntax.synmapper.SynMatcher.run")
@@ -54,7 +54,7 @@ class SynMapperTestCase(LEIATestCase):
         maps = list(self.mapper.build_sense_maps(syntax, root, sense))
 
         self.assertEqual([
-            SenseMap(root, "root-V1", {"$VAR0": 1, "$VAR1": 2}, 1.0),
+            SenseMap(root, "root-V1", {"$VAR0": 1, "$VAR1": 2}),
         ], maps)
 
     @patch("leia.ontosem.syntax.synmapper.SynMatcher.run")
@@ -82,8 +82,8 @@ class SynMapperTestCase(LEIATestCase):
         maps = list(self.mapper.build_sense_maps(syntax, root, sense))
 
         self.assertEqual([
-            SenseMap(root, "root-V1", {"$VAR0": 1, "$VAR1": 2}, 1.0),
-            SenseMap(root, "root-V1", {"$VAR0": 1, "$VAR1": 3}, 1.0),
+            SenseMap(root, "root-V1", {"$VAR0": 1, "$VAR1": 2}),
+            SenseMap(root, "root-V1", {"$VAR0": 1, "$VAR1": 3}),
         ], maps)
 
     def test_map_variable_no_variable(self):
@@ -186,11 +186,11 @@ class SynMapperTestCase(LEIATestCase):
 
         # Mock the output of build_sense_maps; each call should return an iterable of SenseMap objects.  We'll return
         # a different one for each expected call.
-        sm_w0s1 = SenseMap(word0, w0s1.id, {}, 1.0)
-        sm_w0s2 = SenseMap(word0, w0s2.id, {}, 1.0)
-        sm_w1s1 = SenseMap(word1, w1s1.id, {}, 1.0)
-        sm_w1s2a = SenseMap(word1, w1s2.id, {}, 0.2)
-        sm_w1s2b = SenseMap(word1, w1s2.id, {}, 0.8)
+        sm_w0s1 = SenseMap(word0, w0s1.id, {})
+        sm_w0s2 = SenseMap(word0, w0s2.id, {})
+        sm_w1s1 = SenseMap(word1, w1s1.id, {})
+        sm_w1s2a = SenseMap(word1, w1s2.id, {})
+        sm_w1s2b = SenseMap(word1, w1s2.id, {})
 
         def _mock_build_sense_maps(syntax: Syntax, word: Word, sense: Sense) -> Iterable[SenseMap]:
             return {

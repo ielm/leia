@@ -13,12 +13,12 @@ class CandidateTestCase(TestCase):
 
     def test_words_by_binding_count(self):
 
-        sm0 = SenseMap(Word.basic(0), "S0-N1", {"$VAR0": 0}, 0.5)
-        sm1 = SenseMap(Word.basic(1), "S1-N1", {"$VAR0": 0, "$VAR1": 0, "$VAR2": 0}, 0.5)
-        sm2 = SenseMap(Word.basic(2), "S2-N1", {"$VAR0": 0, "$VAR1": 0, "$VAR2": 0}, 0.5)
-        sm3 = SenseMap(Word.basic(3), "S3-N1", {"$VAR0": 0, "$VAR1": 0}, 0.5)
-        sm4 = SenseMap(Word.basic(4), "S4-N1", {"$VAR0": 0, "$VAR1": 0, "$VAR2": 0}, 0.5)
-        sm5 = SenseMap(Word.basic(5), "S5-N1", {"$VAR0": 0, "$VAR1": 0}, 0.5)
+        sm0 = SenseMap(Word.basic(0), "S0-N1", {"$VAR0": 0})
+        sm1 = SenseMap(Word.basic(1), "S1-N1", {"$VAR0": 0, "$VAR1": 0, "$VAR2": 0})
+        sm2 = SenseMap(Word.basic(2), "S2-N1", {"$VAR0": 0, "$VAR1": 0, "$VAR2": 0})
+        sm3 = SenseMap(Word.basic(3), "S3-N1", {"$VAR0": 0, "$VAR1": 0})
+        sm4 = SenseMap(Word.basic(4), "S4-N1", {"$VAR0": 0, "$VAR1": 0, "$VAR2": 0})
+        sm5 = SenseMap(Word.basic(5), "S5-N1", {"$VAR0": 0, "$VAR1": 0})
 
         candidate = Candidate(self.m, sm0, sm1, sm2, sm3, sm4, sm5)
 
@@ -72,10 +72,10 @@ class CandidateTestCase(TestCase):
     def test_add_constraint(self):
         c = Candidate(self.m)
 
-        c1 = c.add_constraint(TMRInstance(self.m, "", 1), "", SenseMap(Word.basic(0), "", {}, 0.5))
+        c1 = c.add_constraint(TMRInstance(self.m, "", 1), "", SenseMap(Word.basic(0), "", {}))
         self.assertEqual(1, c1.index)
 
-        c2 = c.add_constraint(TMRInstance(self.m, "", 1), "", SenseMap(Word.basic(0), "", {}, 0.5))
+        c2 = c.add_constraint(TMRInstance(self.m, "", 1), "", SenseMap(Word.basic(0), "", {}))
         self.assertEqual(2, c2.index)
 
         self.assertIn(c1, c.constraints)

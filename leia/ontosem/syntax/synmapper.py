@@ -40,8 +40,7 @@ class SynMapper(object):
                 for varmap in varmaps:
                     bindings[varmap[0]] = varmap[1]
 
-            # TODO: Apply scoring penalties here if the binding set is incomplete
-            yield SenseMap(word, sense.id, bindings, 1.0)
+            yield SenseMap(word, sense.id, bindings)
 
     def map_variables(self, match: 'SynMatcher.SynMatch') -> List[Tuple[str, int]]:
         variable = match.element.to_variable()

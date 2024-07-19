@@ -411,3 +411,49 @@ class SynStrucTestCase(TestCase):
             SynStruc.TokenElement({"A"}, None, {}, None, False),
             SynStruc.TokenElement({"B"}, None, {}, None, False),
         ], synstruc.elements)
+
+    def test_element_for_variable(self):
+        # No match returns None
+        synstruc = SynStruc()
+        self.assertIsNone(synstruc.element_for_variable(1))
+
+        # Root elements are always variable 0
+        synstruc = SynStruc(contents=[
+            {"type": "root"}
+        ])
+        self.assertEqual(synstruc.elements[0], synstruc.element_for_variable(0))
+
+        # Token elements can contain a variable
+        synstruc = SynStruc(contents=[
+            {"type": "root"},
+            {"type": "token", "lemma": ["A"], "pos": "N", "morph": {}, "var": 3}
+        ])
+        self.assertEqual(synstruc.elements[1], synstruc.element_for_variable(3))
+
+        # Dependency elements can contain a variable
+        synstruc = SynStruc(contents=[
+            {"type": "root"},
+            {"type": "dependency", "deptype": "NSUBJ", "var": 3}
+        ])
+        self.assertEqual(synstruc.elements[1], synstruc.element_for_variable(3))
+
+        # Constituency elements can contain a variable
+        synstruc = SynStruc(contents=[
+            {"type": "root"},
+            {"type": "constituency", "contype": "NP", "children": [], "var": 3}
+        ])
+        self.assertEqual(synstruc.elements[1], synstruc.element_for_variable(3))
+
+        # Constituency elements can recursively contain other elements with variables
+        synstruc = SynStruc(contents=[
+            {"type": "root"},
+            {"type": "constituency", "contype": "VP", "children": [
+                {"type": "constituency", "contype": "NP", "children": [
+                    {"type": "token", "lemma": ["A"], "pos": "N", "morph": {}, "var": 4}
+                ], "var": 2},
+                {"type": "token", "lemma": ["A"], "pos": "N", "morph": {}, "var": 6}
+            ]}
+        ])
+        self.assertEqual(synstruc.elements[1].children[0], synstruc.element_for_variable(2))
+        self.assertEqual(synstruc.elements[1].children[0].children[0], synstruc.element_for_variable(4))
+        self.assertEqual(synstruc.elements[1].children[1], synstruc.element_for_variable(6))

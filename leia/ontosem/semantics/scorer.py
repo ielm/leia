@@ -1,6 +1,7 @@
 from leia.ontosem.analysis import Analysis
-from leia.ontosem.semantics.candidate import Candidate, LexicalConstraintScore, RelationRangeScore, SenseMapPreferenceScore
+from leia.ontosem.semantics.candidate import Candidate, LexicalConstraintScore, RelationRangeScore, SenseMapScore
 from leia.ontosem.semantics.tmr import TMRInstance
+from leia.ontosem.syntax.results import SenseMap
 from typing import Iterable, List
 
 import itertools
@@ -18,7 +19,7 @@ class SemanticScorer(object):
     def run(self, candidates: Iterable[Candidate]) -> Iterable[Candidate]:
         for candidate in candidates:
             # Run various scoring mechanisms here, logging the results of each into the candidate.
-            candidate.scores.extend(self.score_extract_sense_map_preferences(candidate))
+            candidate.scores.extend(self.score_sense_maps(candidate))
             candidate.scores.extend(self.score_relation_ranges(candidate))
             candidate.scores.extend(self.score_lexical_constraints(candidate))
 
@@ -35,8 +36,25 @@ class SemanticScorer(object):
 
         return result
 
-    def score_extract_sense_map_preferences(self, candidate: Candidate) -> List[SenseMapPreferenceScore]:
-        return list(map(lambda sm: SenseMapPreferenceScore(sm.preference * 0.25, sm), candidate.senses))
+    def score_sense_maps(self, candidate: Candidate) -> List[SenseMapScore]:
+        # Sense maps must be complete (that is, each input sense map is assumed to have a mapping for all variables
+        # in the corresponding sense; mappings are either to a word index, or to None).
+        # Any mapping with no None values gets a 1.0 score.
+        # Any mapping with None values that correspond to optional elements receives no penalty.
+        # Any mapping with None values that do not correspond to optional elements are penalized down to 0.1.
+        # (A single non-optional None receives the full penalty.)
+
+        def _score_sense_map(sense_map: SenseMap) -> float:
+            for var, word in sense_map.bindings.items():
+                if word is None:
+                    var = int(var.replace("$VAR", ""))
+                    sense = self.lexicon.sense(sense_map.word, sense_map.sense)
+                    element = sense.synstruc.element_for_variable(var)
+                    if not element.is_optional():
+                        return 0.1
+            return 1.0
+
+        return list(map(lambda sm: SenseMapScore(_score_sense_map(sm), sm), candidate.senses))
 
     def score_relation_ranges(self, candidate: Candidate) -> List[RelationRangeScore]:
         results = []
