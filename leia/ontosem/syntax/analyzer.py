@@ -149,5 +149,6 @@ if __name__ == "__main__":
 
     config = OntoSemConfig()
     analysis = Analysis(config)
-    syntax = SpacyAnalyzer(analysis).run("Kick the building. The store was hit by the woman.")
-    print(syntax)
+    syntax = SpacyAnalyzer(analysis).run("A cake was eaten by a man.")
+    for s in syntax:
+        print(s.to_dict())

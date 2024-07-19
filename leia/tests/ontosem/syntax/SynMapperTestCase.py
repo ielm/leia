@@ -695,6 +695,25 @@ class SynMatcherTestCase(LEIATestCase):
             ])
         ], results)
 
+    def test_match_remaining_elements(self):
+        # If any element, including the first, has no matches, the remaining elements are still attempted to
+        # be matched.
+
+        element1 = SynStruc.TokenElement({"word"}, "N", dict(), None, False)
+        element2 = SynStruc.TokenElement({"word"}, "V", dict(), None, False)
+
+        component1 = self.mockWord(1, "word", "ADJ")
+        component2 = self.mockWord(2, "word", "V")
+        component3 = self.mockWord(3, "word", "ADJ")
+
+        results = self.matcher.match([element1, element2], [component1, component2, component3], None)
+
+        self.assertEqual([
+            SynMatcher.SynMatchResult([
+                SynMatcher.TokenMatch(element2, component2)
+            ])
+        ], results)
+
     def test_run(self):
         flattened = ["MOCK", "FLATTENED", "SYNTAX"]
         expected = ["MOCK", "EXPECTED", "RESULTS"]

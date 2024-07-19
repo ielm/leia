@@ -238,6 +238,12 @@ class SynMatcher(object):
             # (declared in the loop below), and find the next matching component for it starting from the next
             # available component (per match).  In addition, if the element is optional, add an additional null
             # match to each current match set.
+
+            # In the event that no matches were passed in (all previous elements have found no matches anywhere),
+            # create an empty match with all remaining components so future elements have something to attach to.
+            if len(matches) == 0:
+                matches = [{"match": [], "remaining": list(components)}]
+
             for match in matches:
                 for nm in _find_matches(element, match["remaining"]):
                     yield {
