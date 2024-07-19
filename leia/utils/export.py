@@ -360,13 +360,13 @@ class MongoPropertyExporter(object):
         skipped = []
 
         for property in h.aggregate(aggregation):
-            name = property["name"]
-            ancestry = set(map(lambda parent: parent["name"], property["properties"]))
-            container = property["parents"][0]
+            name = property["name"].upper()
+            ancestry = set(map(lambda parent: parent["name"].upper(), property["properties"]))
+            container = property["parents"][0].upper()
             definition = property["definition"]
 
             # Filter out some properties that we no longer need:
-            filter_out = {"ontology-slot", "second-order-property", "parametrics", "fr-property"}
+            filter_out = {"ONTOLOGY-SLOT", "SECOND-ORDER-PROPERTY", "PARAMETRICS", "FR-PROPERTY"}
             if name in filter_out or len(ancestry.intersection(filter_out)) > 0:
                 skipped.append(name)
                 continue
@@ -375,12 +375,12 @@ class MongoPropertyExporter(object):
                 skipped.append(name)
                 continue
 
-            if name in {"attribute", "extra-ontological"}:
+            if name in {"ATTRIBUTE", "EXTRA-ONTOLOGICAL"}:
                 skipped.append(name)
                 continue
 
             property_type = None
-            for landmark in ["case-role", "relation", "literal-attribute", "scalar-attribute", "temporal-attribute", "naming-data"]:
+            for landmark in ["CASE-ROLE", "RELATION", "LITERAL-ATTRIBUTE", "SCALAR-ATTRIBUTE", "TEMPORAL-ATTRIBUTE", "NAMING-DATA"]:
                 if landmark in ancestry or name == landmark:
                     property_type = landmark
                     break
@@ -390,16 +390,16 @@ class MongoPropertyExporter(object):
                 continue
 
             # Update certain attributes to be contained by literals
-            if property_type in {"naming-data", "temporal-attribute"}:
-                container = "literal-attribute"
+            if property_type in {"NAMING-DATA", "TEMPORAL-ATTRIBUTE"}:
+                container = "LITERAL-ATTRIBUTE"
 
             property_type = {   # Boolean isn't a type in the current ontology, so need to map it
-                "case-role": Property.TYPE.CASE_ROLE,
-                "literal-attribute": Property.TYPE.LITERAL,
-                "naming-data": Property.TYPE.LITERAL,           # Map these to literals (for now at least)
-                "relation": Property.TYPE.RELATION,
-                "scalar-attribute": Property.TYPE.SCALAR,
-                "temporal-attribute": Property.TYPE.SCALAR,     # Map these to scalars (for now at least)
+                "CASE-ROLE": Property.TYPE.CASE_ROLE,
+                "LITERAL-ATTRIBUTE": Property.TYPE.LITERAL,
+                "NAMING-DATA": Property.TYPE.LITERAL,           # Map these to literals (for now at least)
+                "RELATION": Property.TYPE.RELATION,
+                "SCALAR-ATTRIBUTE": Property.TYPE.SCALAR,
+                "TEMPORAL-ATTRIBUTE": Property.TYPE.SCALAR,     # Map these to scalars (for now at least)
             }[property_type]
 
             property_range = {
@@ -421,23 +421,23 @@ class MongoPropertyExporter(object):
                     continue
 
                 if property["slot"] == "inverse":
-                    inverse = property["filler"]
+                    inverse = property["filler"].upper()
                 elif property["slot"] == "measured-in":
                     # Just make a new concept now; it just needs to be a valid type with the right name; nothing
                     # else matters for this conversion process.
-                    measured_in.append("@%s" % property["filler"])
+                    measured_in.append("@%s" % property["filler"].upper())
                 elif property["filler"] in {"yes", "no"}:
                     property_type = Property.TYPE.BOOLEAN
                 # Handle very special cases
-                elif name == "bulb-color" and property["slot"] == "range":
+                elif name == "BULB-COLOR" and property["slot"] == "range":
                     if not isinstance(property_range, set):
                         property_range = set()
                     property_range.add(property["filler"])
-                elif name == "intersection-shape" and property["slot"] == "range":
+                elif name == "INTERSECTION-SHAPE" and property["slot"] == "range":
                     if not isinstance(property_range, set):
                         property_range = set()
                     property_range.add(property["filler"])
-                elif name == "road-segment-shape" and property["slot"] == "range":
+                elif name == "ROAD-SEGMENT-SHAPE" and property["slot"] == "range":
                     if not isinstance(property_range, set):
                         property_range = set()
                     property_range.add(property["filler"])
