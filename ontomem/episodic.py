@@ -39,6 +39,13 @@ class EpisodicMemory(object):
         self._instances[instance.id()] = instance
         return instance
 
+    def remove_instance(self, instance: 'Frame'):
+        if instance.id() in self._instances:
+            del self._instances[instance.id()]
+
+        for space in self._spaces.values():
+            space.remove_instance(instance)
+
     def _next_instance_for_concept(self, concept: Concept) -> int:
         if concept.name not in self._instance_nums_by_concept:
             self._instance_nums_by_concept[concept.name] = 0
@@ -66,6 +73,17 @@ class Space(object):        # Examples: WM, LTE, ???, etc.
         self.memory = memory
         self.name = name
         self.instances: Dict[str, Frame] = {}
+
+    def new_instance(self, concept: Concept) -> 'Frame':
+        # Calls memory's new_instance method, and then adds the instance to this space
+        instance = self.memory.episodic.new_instance(concept)
+        self.instances[instance.id()] = instance
+        return instance
+
+    def remove_instance(self, instance: 'Frame'):
+        # Removes the instance from this space (but does not remove it from memory)
+        if instance.id() in self.instances:
+            del self.instances[instance.id()]
 
 
 class XMR(Space):
