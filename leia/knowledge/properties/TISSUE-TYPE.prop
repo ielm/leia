@@ -1,0 +1,9 @@
+{
+  "name": "$TISSUE-TYPE",
+  "def": "classifies tissue as benign or malignant",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-OBJECT-ATTRIBUTE"
+}

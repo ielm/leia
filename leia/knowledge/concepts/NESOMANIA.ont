@@ -1,0 +1,27 @@
+{
+  "name": "@NESOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "intense obsession with islands",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ISLAND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

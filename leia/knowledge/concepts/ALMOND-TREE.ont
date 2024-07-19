@@ -1,0 +1,22 @@
+{
+  "name": "@ALMOND-TREE",
+  "isa": [
+    "@NUT-TREE"
+  ],
+  "def": "tree that produces almonds",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ALMOND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@NUT-FOODSTUFF"
+    }
+  ],
+  "private": {}
+}

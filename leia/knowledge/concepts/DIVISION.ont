@@ -1,0 +1,16 @@
+{
+  "name": "@DIVISION",
+  "isa": [
+    "@MILITARY-UNIT"
+  ],
+  "def": "a major military unit",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BATTALION"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$DEMAND-FOR-PRODUCT",
+  "def": "the degree to which a product is desirable; influences its cost",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

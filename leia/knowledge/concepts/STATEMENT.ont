@@ -1,0 +1,29 @@
+{
+  "name": "@STATEMENT",
+  "isa": [
+    "@DOCUMENT"
+  ],
+  "def": "An accounting of activity over a period of time, as in a banking statement.",
+  "local": [],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    }
+  ],
+  "private": {}
+}

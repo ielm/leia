@@ -1,0 +1,9 @@
+{
+  "name": "$DEPICTS",
+  "def": "links a physical representation - like a painting or sculpture - to the real-world object that it represents (cf. concept REPRESENTS)",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$DEPICTED-BY",
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$COST-OF-LIVING",
+  "def": "the cost of living as measured as percentage changes in wages or salaries that offset increases or decreases in prices",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

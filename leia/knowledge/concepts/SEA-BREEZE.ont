@@ -1,0 +1,52 @@
+{
+  "name": "@SEA-BREEZE",
+  "isa": [
+    "@WIND"
+  ],
+  "def": "A cool breeze blowing from the sea toward the land",
+  "local": [
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@SEA"
+    },
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@GEOLOGICAL-ENTITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "destination",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "source",
+      "facet": "relaxable-to",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

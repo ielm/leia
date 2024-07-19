@@ -1,0 +1,22 @@
+{
+  "name": "@METAL-PRODUCT",
+  "isa": [
+    "@INDUSTRIAL-ARTIFACT"
+  ],
+  "def": "any product made from metal material which can be classified by quality, in accordance with agreed international standards, can be traded on the commodities exchange",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

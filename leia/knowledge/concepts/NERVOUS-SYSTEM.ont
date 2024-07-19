@@ -1,0 +1,37 @@
+{
+  "name": "@NERVOUS-SYSTEM",
+  "isa": [
+    "@ORGAN-SYSTEM"
+  ],
+  "def": "the sensory and control apparatus consisting of a network of nerve cells",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PARASYMPATHETIC-NERVOUS-SYSTEM"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SYMPATHETIC-NERVOUS-SYSTEM"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PERIPHERAL-NERVOUS-SYSTEM"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@NEURAXIS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

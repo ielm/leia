@@ -1,0 +1,16 @@
+{
+  "name": "@BANG",
+  "isa": [
+    "@EMIT-SOUND"
+  ],
+  "def": "to produce a loud dull noise",
+  "local": [],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-NAME-NON-HUMAN",
+  "def": "links a work of art, literature, film, building, train station, event, etc. - anything namable that is not human - to its name",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": "$TITLE-OF",
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

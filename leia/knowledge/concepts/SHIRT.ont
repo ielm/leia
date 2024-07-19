@@ -1,0 +1,140 @@
+{
+  "name": "@SHIRT",
+  "isa": [
+    "@CLOTHING-ARTIFACT"
+  ],
+  "def": "a garment worn on the upper part of the body, usually with a collar and a buttoned front",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SLEEVE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@COLLAR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BUTTON"
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        "><",
+        80
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "><",
+        300
+      ],
+      "meta": {
+        "measured-in": "gram"
+      }
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "><",
+        1
+      ],
+      "meta": {
+        "measured-in": "meter"
+      }
+    },
+    {
+      "slot": "thickness",
+      "facet": "sem",
+      "filler": [
+        "><",
+        0.6
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CLOTHING-ARTIFACT-PART"
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "thickness",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "thickness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

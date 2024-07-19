@@ -1,0 +1,42 @@
+{
+  "name": "@WALL-OF-ESOPHAGUS",
+  "isa": [
+    "@WALL-OF-ORGAN"
+  ],
+  "def": "organ component enclosing the open space in the esophagus; this concept is part of the various esophageal segments, so it should not be interpreted as *the wall of the whole esophagus* but, rather, as a type of object",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SEROSA-OF-ESOPHAGUS"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MUSCLE-LAYER-OF-ESOPHAGUS"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ADVENTITIA-OF-ESOPHAGUS"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SUBMUCOSA-OF-ESOPHAGUS"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MUCOSA-OF-ESOPHAGUS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

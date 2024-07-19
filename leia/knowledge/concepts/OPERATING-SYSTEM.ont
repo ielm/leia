@@ -1,0 +1,27 @@
+{
+  "name": "@OPERATING-SYSTEM",
+  "isa": [
+    "@SOFTWARE"
+  ],
+  "def": "software that controls the execution of programs and that may provide services such as resource allocation, scheduling, input/output control and data management",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@GRAPHICAL-USER-INTERFACE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SOFTWARE-KERNEL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ABSTRACT-OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@TAKE",
+  "isa": [
+    "@TRANSFER-POSSESSION"
+  ],
+  "def": "to take possession of, either permanently or temporarily",
+  "local": [],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

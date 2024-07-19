@@ -1,0 +1,42 @@
+{
+  "name": "@CELL-FUNCTION",
+  "isa": [
+    "@NORMAL-BIOLOGIC-FUNCTION"
+  ],
+  "def": "A physiologic function inherent to cells or cell components, such as cell cycle, phagocytosis, etc.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CELL"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

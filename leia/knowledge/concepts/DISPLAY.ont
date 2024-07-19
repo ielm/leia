@@ -1,0 +1,22 @@
+{
+  "name": "@DISPLAY",
+  "isa": [
+    "@PHYSICAL-EVENT"
+  ],
+  "def": "to show or exhibit; to present to public view",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

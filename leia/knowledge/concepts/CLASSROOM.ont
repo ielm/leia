@@ -1,0 +1,22 @@
+{
+  "name": "@CLASSROOM",
+  "isa": [
+    "@PUBLIC-ROOM"
+  ],
+  "def": "A room or place especially in a school in which classes are conducted.",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@ACADEMIC-BUILDING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

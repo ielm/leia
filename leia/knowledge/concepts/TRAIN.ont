@@ -1,0 +1,28 @@
+{
+  "name": "@TRAIN",
+  "isa": [
+    "@ENGINE-PROPELLED-VEHICLE",
+    "@TRACK-VEHICLE"
+  ],
+  "def": "A passenger or cargo vehicle that consists of one or more cars (connected) running on tracks",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@RAILROAD-CAR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@SIDE-EFFECT",
+  "isa": [
+    "@PATHOLOGIC-FUNCTION"
+  ],
+  "def": "a secondary, typically undesirable effect of a medical intervention",
+  "local": [],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

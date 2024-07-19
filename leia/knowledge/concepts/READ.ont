@@ -1,0 +1,52 @@
+{
+  "name": "@READ",
+  "isa": [
+    "@ACTIVE-COGNITIVE-EVENT"
+  ],
+  "def": "to look at a text and assimilate what it conveys",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@REPRESENTATIONAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@PRINTED-MEDIA"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@LEARN"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@LANGUAGE-RELATED-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

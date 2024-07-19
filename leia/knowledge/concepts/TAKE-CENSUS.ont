@@ -1,0 +1,27 @@
+{
+  "name": "@TAKE-CENSUS",
+  "isa": [
+    "@MEASURE"
+  ],
+  "def": "to take an official count of the population and recording of age, sex, etc.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@GOVERNMENTAL-ORGANIZATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

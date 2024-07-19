@@ -1,0 +1,27 @@
+{
+  "name": "@DEPOSIT",
+  "isa": [
+    "@BANKING-EVENT"
+  ],
+  "def": "to place money or valuables for safekeeping, as in a bank",
+  "local": [
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@BANK-ACCOUNT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@BANK"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@BANKER"
+    }
+  ],
+  "private": {}
+}

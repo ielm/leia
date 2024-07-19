@@ -1,0 +1,36 @@
+{
+  "name": "@CALCIUM",
+  "isa": [
+    "@HARD-METALLIC-ELEMENT"
+  ],
+  "def": "a silvery, moderately hard metallic element, constituting approximately three per cent of the earth*s crust, a basic component of bone, shells, and leaves, used in making plaster",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        40
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        20
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

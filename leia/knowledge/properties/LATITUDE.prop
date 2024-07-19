@@ -1,0 +1,11 @@
+{
+  "name": "$LATITUDE",
+  "def": "indicates the distance north or south of the \nequator of a certain geographical-entity. The relaxable-to\nin the domain is due to the fact that a person (or any object) \ncan be located at some latitude by being in certain place.\n",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@GEOGRAPHICAL-DEGREE"
+  ],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

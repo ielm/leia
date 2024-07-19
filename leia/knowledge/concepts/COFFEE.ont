@@ -1,0 +1,52 @@
+{
+  "name": "@COFFEE",
+  "isa": [
+    "@HOT-BEVERAGE"
+  ],
+  "def": "an aromatic, mildly stimulating beverage prepared from coffee beans",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ACRYLAMIDE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CAFFEINE"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "translucent"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@COFFEE-BEAN"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@FOODSTUFF"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "transparent"
+    }
+  ],
+  "private": {}
+}

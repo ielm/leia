@@ -1,0 +1,28 @@
+{
+  "name": "@BURN",
+  "isa": [
+    "@BREAK-DOWN",
+    "@OXIDIZE"
+  ],
+  "def": "to set (an entity) on fire so as to damage or otherwise change the state of that entity",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

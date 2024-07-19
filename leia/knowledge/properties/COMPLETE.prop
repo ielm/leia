@@ -1,0 +1,9 @@
+{
+  "name": "$COMPLETE",
+  "def": "indicates whether the listing of a set's\nmembers is the complete inventory",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$PARAMETRIC-LITERAL-ATTRIBUTE"
+}

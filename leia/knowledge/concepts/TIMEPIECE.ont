@@ -1,0 +1,42 @@
+{
+  "name": "@TIMEPIECE",
+  "isa": [
+    "@TIME-MEASURING-ARTIFACT"
+  ],
+  "def": "an instrument that measures, registers, or records time",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CLOCK-HAND"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GLASS"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

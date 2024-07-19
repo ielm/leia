@@ -1,0 +1,9 @@
+{
+  "name": "$INTOXICATION",
+  "def": "How sober or drunk a person is.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-MEDICAL-ATTRIBUTE"
+}

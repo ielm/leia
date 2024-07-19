@@ -1,0 +1,19 @@
+{
+  "name": "@GALLON-LIQUID",
+  "isa": [
+    "@LIQUID-MEASURING-UNIT"
+  ],
+  "def": "a liquid measure equal to 4 quarts or 64 ounces; 231*cubic-inch",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.0037854
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

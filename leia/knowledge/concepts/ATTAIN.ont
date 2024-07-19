@@ -1,0 +1,22 @@
+{
+  "name": "@ATTAIN",
+  "isa": [
+    "@CHANGE-EVENT"
+  ],
+  "def": "The event of attaining a goal.",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

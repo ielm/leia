@@ -1,0 +1,32 @@
+{
+  "name": "@AUTUMN",
+  "isa": [
+    "@SEASON"
+  ],
+  "def": "The season of the year between summer and winter",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SEPTEMBER"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@OCTOBER"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@NOVEMBER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

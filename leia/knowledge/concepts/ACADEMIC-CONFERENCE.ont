@@ -1,0 +1,47 @@
+{
+  "name": "@ACADEMIC-CONFERENCE",
+  "isa": [
+    "@MEETING"
+  ],
+  "def": "a conference at which academic papers are read",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@TECHNICAL-DEMONSTRATION"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@RECEPTION"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@ACADEMIC-ROLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ACADEMIC-PAPER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$PRESSURE-FROM-INGESTIBLE-TYPE",
+  "def": "refers to the effects that certain types of ingestibles have on LES pressure: e.g., ingesting chocolate results in a reduction of 6 torr to the LES pressure",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$PRESSURE"
+}

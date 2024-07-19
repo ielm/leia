@@ -1,0 +1,71 @@
+{
+  "name": "@NORTHWESTER",
+  "isa": [
+    "@WINDSTORM"
+  ],
+  "def": "A storm or gale blowing from the northwest",
+  "local": [],
+  "block": [
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "backward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "clockwise"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "counterclockwise"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "downward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "forward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "inward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "northeastward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "northwestward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "outward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "sideward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "southwestward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "upward"
+    }
+  ],
+  "private": {}
+}

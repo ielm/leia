@@ -1,0 +1,33 @@
+{
+  "name": "@SCISSORS",
+  "isa": [
+    "@CUTTING-IMPLEMENT",
+    "@OFFICE-SUPPLIES"
+  ],
+  "def": "a cutting instrument with two opposing blades pivoted together so that they can work against each other",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@STEEL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "private": {}
+}

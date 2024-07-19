@@ -1,0 +1,27 @@
+{
+  "name": "@DESIGN-ARTIFACT",
+  "isa": [
+    "@SERVICE-EVENT"
+  ],
+  "def": "to make original plans to build or construct an artifact",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

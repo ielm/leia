@@ -1,0 +1,27 @@
+{
+  "name": "@MUSCLE-LAYER-OF-ESOPHAGUS",
+  "isa": [
+    "@MUSCLE-LAYER-OF-ORGAN"
+  ],
+  "def": "nd",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CIRCULAR-MUSCLE-LAYER-OF-ESOPHAGUS"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LONGITUDINAL-MUSCLE-LAYER-OF-ESOPHAGUS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@ALARM-CLOCK",
+  "isa": [
+    "@TIMEPIECE"
+  ],
+  "def": "a clock that can be set to buzz, flash a light, etc., so as to awaken a person",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "private": {}
+}

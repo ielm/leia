@@ -1,0 +1,36 @@
+{
+  "name": "@STRONTIUM",
+  "isa": [
+    "@SOFT-METALLIC-ELEMENT"
+  ],
+  "def": "a soft, silvery, easily oxidized metallic element that ignites spontaneously in air when finely divided. strontium is used in pyrotechnic compounds and various alloys",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        87
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        38
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

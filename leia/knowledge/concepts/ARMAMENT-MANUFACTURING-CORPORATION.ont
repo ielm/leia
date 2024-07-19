@@ -1,0 +1,22 @@
+{
+  "name": "@ARMAMENT-MANUFACTURING-CORPORATION",
+  "isa": [
+    "@ARTIFACT-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a manufacturing corporation that manufactures weapons.",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@WEAPON"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    }
+  ],
+  "private": {}
+}

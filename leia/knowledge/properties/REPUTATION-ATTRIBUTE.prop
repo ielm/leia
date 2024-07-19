@@ -1,0 +1,9 @@
+{
+  "name": "$REPUTATION-ATTRIBUTE",
+  "def": "how an individual, an organization or another social-object is known or recognized by the public",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-ANIMAL-ATTRIBUTE"
+}

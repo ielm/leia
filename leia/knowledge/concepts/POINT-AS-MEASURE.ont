@@ -1,0 +1,19 @@
+{
+  "name": "@POINT-AS-MEASURE",
+  "isa": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "def": "(Wikipedia) the smallest unit of measure in typography; inch/72",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.0003514598
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

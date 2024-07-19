@@ -1,0 +1,92 @@
+{
+  "name": "@GASTROSCOPY",
+  "isa": [
+    "@ENDOSCOPY"
+  ],
+  "def": "inspection of the interior of the stomach with a gastroscope\n(http://medical-dictionary.thefreedictionary.com/gastroscopy)",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@STOMACH"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@GASTROENTEROLOGIST"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@GASTROSCOPE"
+    },
+    {
+      "slot": "creates-image-of",
+      "facet": "sem",
+      "filler": "@STOMACH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "creates-image-of",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ENDOSCOPE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BONE-JOINT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CARDIOVASCULAR-SYSTEM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FEMALE-INTERNAL-GENITALIA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GASTROINTESTINAL-SYSTEM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LARYNX"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LUNG"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NOSE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHARYNX"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TRACHEOBRONCHIAL-TREE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@URINARY-SYSTEM"
+    }
+  ],
+  "private": {}
+}

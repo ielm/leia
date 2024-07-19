@@ -1,0 +1,135 @@
+{
+  "name": "@GEOLOGICAL-ENTITY",
+  "isa": [
+    "@GEOGRAPHICAL-ENTITY"
+  ],
+  "def": "features of the earth*s surface often attributed to natural causes, but sometimes man-made; esp, the attributes of rocks and rock formations",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@EARTH-MATERIAL"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@NAME"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@COMPASS-POINT"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@EMAIL-ADDRESS"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@PHONE-NUMBER"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@WEB-ADDRESS"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "has-name-suffix",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "has-name-suffix",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "has-name-suffix",
+      "facet": "sem",
+      "filler": "@NAME-SUFFIX"
+    },
+    {
+      "slot": "has-name-prefix",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "has-name-prefix",
+      "facet": "sem",
+      "filler": "@NAME-PREFIX"
+    },
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "has-alias",
+      "facet": "sem",
+      "filler": "@ALIAS"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@EMAIL-ADDRESS"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@PHONE-NUMBER"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@WEB-ADDRESS"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@NATURAL-OBJECT"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@NATURAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

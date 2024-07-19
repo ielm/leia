@@ -1,0 +1,37 @@
+{
+  "name": "@REGULATE",
+  "isa": [
+    "@CONTROL-EVENT-SOCIAL"
+  ],
+  "def": "to control or regulate according to a rule or a standard",
+  "local": [
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@STANDARD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@REPRESENTATIONAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MEASURING-UNIT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

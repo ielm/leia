@@ -1,0 +1,22 @@
+{
+  "name": "@CEMENT-MANUFACTURING-CORPORATION",
+  "isa": [
+    "@CONSTRUCTION-MATERIAL-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a corporation that manufactures cement",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CEMENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

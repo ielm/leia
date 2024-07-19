@@ -1,0 +1,9 @@
+{
+  "name": "$TOUGHNESS-EMOTIONAL",
+  "def": "indicates how tough or fragile a person or animal is in an emotional/social sense",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-ANIMAL-ATTRIBUTE"
+}

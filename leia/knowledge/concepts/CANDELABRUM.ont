@@ -1,0 +1,27 @@
+{
+  "name": "@CANDELABRUM",
+  "isa": [
+    "@LIGHTING-FIXTURE"
+  ],
+  "def": "a large, branched candlestick",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    },
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@CANDLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

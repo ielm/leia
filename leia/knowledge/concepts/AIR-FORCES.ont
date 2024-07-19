@@ -1,0 +1,16 @@
+{
+  "name": "@AIR-FORCES",
+  "isa": [
+    "@MILITARY-BRANCH"
+  ],
+  "def": "the aviation branch of a government*s armed forces",
+  "local": [
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@AIR-VEHICLE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

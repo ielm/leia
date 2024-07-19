@@ -1,0 +1,42 @@
+{
+  "name": "@PROGRAM",
+  "isa": [
+    "@COMPUTING-SERVE"
+  ],
+  "def": "to plan or furnish a program for a computer",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@PROGRAMMER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PROGRAMMING-LANGUAGE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COMPUTER-PROGRAM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@COMPUTING-WORK-ROLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COMPUTER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COMPUTER-DATA"
+    }
+  ],
+  "private": {}
+}

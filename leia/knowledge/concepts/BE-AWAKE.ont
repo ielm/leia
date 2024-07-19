@@ -1,0 +1,26 @@
+{
+  "name": "@BE-AWAKE",
+  "isa": [
+    "@NORMAL-BIOLOGIC-FUNCTION"
+  ],
+  "def": "to function in an awake state; considered an event since its opposite, sleep, is an event",
+  "local": [],
+  "block": [
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

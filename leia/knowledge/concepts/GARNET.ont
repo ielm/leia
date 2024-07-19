@@ -1,0 +1,82 @@
+{
+  "name": "@GARNET",
+  "isa": [
+    "@GEMSTONE"
+  ],
+  "def": "rock made of aluminum or calcium silicate minerals , generally crystallized, often embedded in igneous and metamorphic rock; colors are red, brown, black, green, yellow, white; used as a gemstone and an abrasive",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MINERAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "beige"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "blue"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "colorless"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "cyan"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "gray"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "magenta"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "navy-blue"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "off-white"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "orange"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "pink"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "purple"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "violet"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@EARTH-MATERIAL"
+    }
+  ],
+  "private": {}
+}

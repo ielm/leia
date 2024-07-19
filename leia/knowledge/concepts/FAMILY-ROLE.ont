@@ -1,0 +1,40 @@
+{
+  "name": "@FAMILY-ROLE",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "particular social roles held by members of a family unit with respect to one another; the concepts of relatives or kin are also covered here",
+  "local": [
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@PERSONAL-SERVICE-CORPORATION"
+    },
+    {
+      "slot": "family-relation",
+      "facet": "sem",
+      "filler": "@FAMILY-ROLE"
+    },
+    {
+      "slot": "has-distant-family-relation",
+      "facet": "sem",
+      "filler": "@FAMILY-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-distant-family-relation",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

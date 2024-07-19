@@ -1,0 +1,27 @@
+{
+  "name": "@IDEOPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of ideas or reason",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@THOUGHT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

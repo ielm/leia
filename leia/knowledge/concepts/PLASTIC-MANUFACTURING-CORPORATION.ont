@@ -1,0 +1,22 @@
+{
+  "name": "@PLASTIC-MANUFACTURING-CORPORATION",
+  "isa": [
+    "@MATERIAL-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a corporation that manufactures various kinds of plastic",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

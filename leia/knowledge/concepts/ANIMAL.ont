@@ -1,0 +1,381 @@
+{
+  "name": "@ANIMAL",
+  "isa": [
+    "@ANIMATE"
+  ],
+  "def": "typically mobile living things",
+  "local": [
+    {
+      "slot": "energeticness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "pregnant",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "goal",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "acquainted",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "accustomed-to",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "accustomed-to",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "pain-level",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "has-birth-info",
+      "facet": "sem",
+      "filler": "@CITY"
+    },
+    {
+      "slot": "gender",
+      "facet": "sem",
+      "filler": "female"
+    },
+    {
+      "slot": "conscious",
+      "facet": "sem",
+      "filler": "partially"
+    },
+    {
+      "slot": "conscious",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "superordinate-to",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "health-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "conscious",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@NAME"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@COMPASS-POINT"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@EMAIL-ADDRESS"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@PHONE-NUMBER"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@WEB-ADDRESS"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "has-name-suffix",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "has-name-suffix",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "has-name-prefix",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "has-alias",
+      "facet": "sem",
+      "filler": "@ALIAS"
+    },
+    {
+      "slot": "has-city-of-birth",
+      "facet": "sem",
+      "filler": "@CITY"
+    },
+    {
+      "slot": "monetary-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "monetary-value",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "pregnant",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "has-name-non-human",
+      "facet": "sem",
+      "filler": "@NAME-NON-HUMAN"
+    },
+    {
+      "slot": "surprise",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "sociability",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-animal-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "responsibility-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "intelligence",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "intimacy",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "emotional-state",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "fitness-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "composure",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "anger",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "anxiety-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "has-city-of-birth",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "gender",
+      "facet": "sem",
+      "filler": "male"
+    },
+    {
+      "slot": "diligence",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@BIOLOGY"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@ANATOMY"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@ZOOLOGY"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "enthusiasm",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "leadership",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "comfort-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "formality",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "lifespan",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "lifespan",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "plasma-solid"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "semi-solid"
+    }
+  ],
+  "private": {}
+}

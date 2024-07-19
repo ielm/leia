@@ -1,0 +1,32 @@
+{
+  "name": "@EYEBALL",
+  "isa": [
+    "@ANIMAL-ORGAN"
+  ],
+  "def": "Organ with organ cavity which is connected to the optic nerve",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LENS"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PUPIL"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INTRA-OCULAR-MUSCLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@EROTICA",
+  "isa": [
+    "@LITERARY-STYLE"
+  ],
+  "def": "Literature intended to arouse sexual desire.",
+  "local": [
+    {
+      "slot": "about-as-topic",
+      "facet": "sem",
+      "filler": "@SEX-EVENT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@HYSTEROSALPINGOGRAM-OBJECT",
+  "isa": [
+    "@X-RAY-OBJECT"
+  ],
+  "def": "an x-ray of the uterus and Fallopian tubes",
+  "local": [
+    {
+      "slot": "depicts",
+      "facet": "sem",
+      "filler": "@UTERUS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "depicts",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@MENTAL-HOSPITAL",
+  "isa": [
+    "@MEDICAL-BUILDING"
+  ],
+  "def": "an asylum for patients with psychological disorders",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@HOSPITAL-STAY"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@HOSPITAL-ROOM"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@NURSE-STATION"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

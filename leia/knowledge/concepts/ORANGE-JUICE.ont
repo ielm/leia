@@ -1,0 +1,22 @@
+{
+  "name": "@ORANGE-JUICE",
+  "isa": [
+    "@FRUIT-JUICE"
+  ],
+  "def": "Juice made from oranges.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ORANGE-FRUIT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@FOODSTUFF"
+    }
+  ],
+  "private": {}
+}

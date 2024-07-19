@@ -1,0 +1,28 @@
+{
+  "name": "@KINDERGARTEN-STUDENT",
+  "isa": [
+    "@SCHOOL-STUDENT"
+  ],
+  "def": "a student at kindergarten",
+  "local": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "><",
+        6
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "><",
+        19
+      ]
+    }
+  ],
+  "private": {}
+}

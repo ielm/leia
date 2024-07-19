@@ -1,0 +1,16 @@
+{
+  "name": "@CLEAN-BOMB",
+  "isa": [
+    "@ATOMIC-BOMB"
+  ],
+  "def": "an atom bomb leaving little or no radioactive contamination",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@NITROCELLULOSE"
+    }
+  ],
+  "private": {}
+}

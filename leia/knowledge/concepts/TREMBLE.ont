@@ -1,0 +1,37 @@
+{
+  "name": "@TREMBLE",
+  "isa": [
+    "@SYMPTOM"
+  ],
+  "def": "to shake involuntarily",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@COLD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BODY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@DISEASE"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

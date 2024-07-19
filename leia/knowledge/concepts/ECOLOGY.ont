@@ -1,0 +1,22 @@
+{
+  "name": "@ECOLOGY",
+  "isa": [
+    "@SCIENCE"
+  ],
+  "def": "the branch of biology that deals with the relations between living organisms and their environment",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@ECOLOGIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SCIENTIST"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$FAMILY-RELATION",
+  "def": "The relationships within a family",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$RELATION"
+}

@@ -1,0 +1,61 @@
+{
+  "name": "@AGRIBUSINESS-ACTIVITY",
+  "isa": [
+    "@FARMING-ACTIVITY"
+  ],
+  "def": "the management activities involved in operating a farming business or industry",
+  "local": [],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@AGRICULTURAL-PRODUCT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ENGINEERED-ARTIFACT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FARM-MACHINE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HUMUS"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WATER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CROP"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GEOLOGICAL-ENTITY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIVESTOCK"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SEED"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SOIL"
+    }
+  ],
+  "private": {}
+}

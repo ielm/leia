@@ -1,0 +1,20 @@
+{
+  "name": "@CHAIRMAN-CORPORATION",
+  "isa": [
+    "@BUSINESS-ROLE",
+    "@MANAGERIAL-ROLE"
+  ],
+  "def": "the highest non-executive officer of a corporation; chairs the board of directors",
+  "local": [
+    {
+      "slot": "authority-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0.9
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

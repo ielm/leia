@@ -1,0 +1,48 @@
+{
+  "name": "@PUDDING",
+  "isa": [
+    "@DESSERT"
+  ],
+  "def": "A sweet dessert, usually containing flour or a cereal product, that has been boiled, steamed, or baked.",
+  "local": [
+    {
+      "slot": "fattiness",
+      "facet": "sem",
+      "filler": [
+        "><=",
+        1.0
+      ]
+    },
+    {
+      "slot": "thickness",
+      "facet": "sem",
+      "filler": [
+        "><=",
+        1.0
+      ]
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SUGAR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MILK"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@EGG"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@TANK-MANUFACTURING-CORPORATION",
+  "isa": [
+    "@VEHICLE-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a corporation that produces tanks and other military vehicles.",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@TANK"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@VEHICLE"
+    }
+  ],
+  "private": {}
+}

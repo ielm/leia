@@ -1,0 +1,16 @@
+{
+  "name": "@WHITE-WHALE",
+  "isa": [
+    "@WHALE"
+  ],
+  "def": "A small toothed whale chiefly of northern waters, that is white when full-grown.",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FIN"
+    }
+  ],
+  "private": {}
+}

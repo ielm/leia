@@ -1,0 +1,16 @@
+{
+  "name": "@WASP",
+  "isa": [
+    "@INSECT"
+  ],
+  "def": "an insect whose mouth is adapted for biting or sucking; the females have an ovipositor often modified as a sting",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@STINGER"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

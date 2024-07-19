@@ -1,0 +1,22 @@
+{
+  "name": "@BLOOD-PRODUCT",
+  "isa": [
+    "@MEDICAL-ARTIFACT"
+  ],
+  "def": "products made from blood (check definition with specialist!)",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@BLOOD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

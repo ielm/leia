@@ -1,0 +1,37 @@
+{
+  "name": "@FATHERS-DAY",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "in the U.S., the third Sunday in June, an informal holiday honoring fathers",
+  "local": [
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@JUNE"
+    },
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@SUNDAY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "private": {}
+}

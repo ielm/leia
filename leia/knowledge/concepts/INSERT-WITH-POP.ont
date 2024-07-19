@@ -1,0 +1,143 @@
+{
+  "name": "@INSERT-WITH-POP",
+  "isa": [
+    "@INSERT",
+    "@ENDOSCOPIC-SURGERY"
+  ],
+  "def": "a concept necessary to describe a test result of ESOPHAGOGASTRODUODENOSCOPY; when the upper-endoscope is inserted, there*s a pop, so emit-sound fills the has-event-as-part slot of INSERT in this concept",
+  "local": [
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@UPPER-GASTROINTESTINAL-TRACT"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EMIT-SOUND"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@UPPER-ENDOSCOPE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "destination",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@UTENSIL"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BONE-JOINT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CARDIOVASCULAR-SYSTEM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FEMALE-INTERNAL-GENITALIA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GASTROINTESTINAL-SYSTEM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INJECTOR"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LARYNX"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LUNG"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NOSE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHARYNX"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SUPPOSITORY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TRACHEOBRONCHIAL-TREE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@URINARY-SYSTEM"
+    }
+  ],
+  "private": {}
+}

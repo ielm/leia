@@ -1,0 +1,22 @@
+{
+  "name": "@MONITOR",
+  "isa": [
+    "@OUTPUT-DEVICE"
+  ],
+  "def": "display-device for computers",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CATHODE-RAY-TUBE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

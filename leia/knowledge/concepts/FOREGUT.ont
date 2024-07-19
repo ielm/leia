@@ -1,0 +1,22 @@
+{
+  "name": "@FOREGUT",
+  "isa": [
+    "@SUBDIVISION-OF-GUT"
+  ],
+  "def": "nd",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ESOPHAGUS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

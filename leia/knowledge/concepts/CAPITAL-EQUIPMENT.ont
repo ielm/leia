@@ -1,0 +1,21 @@
+{
+  "name": "@CAPITAL-EQUIPMENT",
+  "isa": [
+    "@DEVICE"
+  ],
+  "def": "a mechanical, electrical or electronic object used to produce something",
+  "local": [],
+  "block": [
+    {
+      "slot": "is-consumer-good",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@TABLESPOONFUL",
+  "isa": [
+    "@VOLUME-UNIT"
+  ],
+  "def": "a measure of volume, used in cooking; .015*liter",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.5e-05
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

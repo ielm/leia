@@ -1,0 +1,65 @@
+{
+  "name": "@HIGH-CHAIR",
+  "isa": [
+    "@CHAIR"
+  ],
+  "def": "a chair that is higher than ordinary chairs for the purpose of seating infants at a table",
+  "local": [
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "><",
+        1
+      ]
+    },
+    {
+      "slot": "depth",
+      "facet": "sem",
+      "filler": [
+        "><",
+        30
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "depth",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "depth",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SEWING-MATERIAL"
+    }
+  ],
+  "private": {}
+}

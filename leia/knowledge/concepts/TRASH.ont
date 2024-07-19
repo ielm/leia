@@ -1,0 +1,22 @@
+{
+  "name": "@TRASH",
+  "isa": [
+    "@MATERIAL"
+  ],
+  "def": "worthless or discarded material or objects; waste material",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@TRASH-CAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

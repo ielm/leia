@@ -1,0 +1,21 @@
+{
+  "name": "@LARGE-INTESTINE",
+  "isa": [
+    "@ANIMAL-ORGAN"
+  ],
+  "def": "That part of the alimentary canal between the stomach and the anus.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@RECTUM"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@COLON"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

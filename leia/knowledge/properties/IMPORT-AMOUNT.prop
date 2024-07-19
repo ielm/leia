@@ -1,0 +1,9 @@
+{
+  "name": "$IMPORT-AMOUNT",
+  "def": "the price of goods that are imported into a country ",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

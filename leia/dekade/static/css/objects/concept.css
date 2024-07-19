@@ -1,0 +1,136 @@
+div.concept {
+    --fixed-concept-navigation-header-height: 25px;
+    height: 100%;
+}
+
+div.concept > div.concept-navigation-header {
+    height: var(--fixed-concept-navigation-header-height);
+    padding-top: 2px;
+    padding-left: 0px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    background: var(--ribbon-color-tier-3);
+    border-bottom-color: var(--ribbon-color-tier-1);
+}
+
+div.concept > div.concept-navigation-header > div.concept-navigation-tabs {
+    display: inline;
+}
+
+div.concept > div.concept-navigation-content {
+    padding: 4px;
+    overflow-y: scroll;
+    height: calc(100% - var(--fixed-concept-navigation-header-height));
+}
+
+div.concept > div.concept-navigation-content > div.concept-definition > .concept-lineage-header > .concept-name {
+    font-weight: bold;
+}
+
+div.concept > div.concept-navigation-content > div.concept-ancestry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+}
+
+div.concept > div.concept-navigation-content > div.concept-usage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+}
+
+table.concept-rows {
+    width: 100%;
+    table-layout: fixed;
+}
+
+table.concept-rows > tbody > tr > td > input {
+    margin-top: -1px;
+    width: 100%;
+}
+
+table.concept-rows > tbody > tr.concept-row-local > td:not(:first-of-type) {
+    background: #f4f4f4;
+}
+
+table.concept-rows > tbody > tr.concept-row-inherit {
+    color: grey;
+}
+
+table.concept-rows > tbody > tr.concept-row-inherit > td:not(:first-of-type) {
+    background: #ccc;
+}
+
+table.concept-rows > tbody > tr.concept-row-inherit a[is=content-link] {
+    color: #56689d;
+}
+
+table.concept-rows > tbody > tr.concept-row-block {
+    color: darkred;
+}
+
+table.concept-rows > tbody > tr.concept-row-block > td:not(:first-of-type) {
+    background: #dfa9a9;
+}
+
+table.concept-rows > tbody > tr.concept-row-block a[is=content-link] {
+    color: darkred;
+}
+
+table.concept-rows > tbody > tr > td > button.concept-edit {
+    font-size: 0.7em;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+    margin-top: -1px;
+}
+
+table.concept-rows > tbody > tr > td {
+    vertical-align: top;
+}
+
+table.concept-rows > tbody > tr > td:nth-child(1) {
+    width: 22px;
+}
+
+div.concept-lineage-header {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+div.concept-definition {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+div.concept-definition > button.concept-edit {
+    font-size: 0.7em;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+    margin-top: -2.5px;
+}
+
+input.concept-definition-content {
+    width: calc(100% - 24px);
+}
+
+.concept-definition-content.hidden {
+    display: none;
+}
+
+button.concept-add-private {
+    font-size: 0.7em;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+    margin-top: -2px;
+}

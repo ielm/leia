@@ -1,0 +1,32 @@
+{
+  "name": "@ORGAN-FUNCTION",
+  "isa": [
+    "@NORMAL-BIOLOGIC-FUNCTION"
+  ],
+  "def": "A physiologic function of a particular organ, organ system, or tissue, such as osteogenesis, renal circulation, etc.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

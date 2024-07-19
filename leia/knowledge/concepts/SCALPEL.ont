@@ -1,0 +1,16 @@
+{
+  "name": "@SCALPEL",
+  "isa": [
+    "@SURGICAL-KNIFE"
+  ],
+  "def": "A sharp knife-like instrumet, used in surgery",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

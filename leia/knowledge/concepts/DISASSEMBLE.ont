@@ -1,0 +1,22 @@
+{
+  "name": "@DISASSEMBLE",
+  "isa": [
+    "@DEVICE-AS-THEME-EVENT"
+  ],
+  "def": "to take apart a device",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@IMPLEMENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

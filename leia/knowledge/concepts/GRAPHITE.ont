@@ -1,0 +1,16 @@
+{
+  "name": "@GRAPHITE",
+  "isa": [
+    "@CARBON"
+  ],
+  "def": "a soft, black form of carbon used in pencils, for lubricants, etc.",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "black"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

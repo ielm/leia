@@ -1,0 +1,32 @@
+{
+  "name": "@POLLING-PLACE",
+  "isa": [
+    "@GOVERNMENT-BUILDING"
+  ],
+  "def": "a place where votes are cast",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@VOTE"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@TALLY-VOTE"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@CIVIL-SERVICE-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@GOVERNMENT-ACTIVITY"
+    }
+  ],
+  "private": {}
+}

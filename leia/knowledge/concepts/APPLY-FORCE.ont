@@ -1,0 +1,24 @@
+{
+  "name": "@APPLY-FORCE",
+  "isa": [
+    "@PHYSICAL-EVENT"
+  ],
+  "def": "to apply force to something, regardless of whether or not the theme moves",
+  "local": [
+    {
+      "slot": "pressure",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "pressure",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

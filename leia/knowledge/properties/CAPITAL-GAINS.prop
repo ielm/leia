@@ -1,0 +1,9 @@
+{
+  "name": "$CAPITAL-GAINS",
+  "def": "yield from property or investment",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

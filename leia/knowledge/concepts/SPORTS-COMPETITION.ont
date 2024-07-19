@@ -1,0 +1,27 @@
+{
+  "name": "@SPORTS-COMPETITION",
+  "isa": [
+    "@PLAY-GAME-SPORT"
+  ],
+  "def": "An event in which people compete in some sports discipline.",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@SUBACTIVITY-OF-GAME-SPORT"
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@TROPHY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

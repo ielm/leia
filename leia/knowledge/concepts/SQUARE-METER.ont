@@ -1,0 +1,19 @@
+{
+  "name": "@SQUARE-METER",
+  "isa": [
+    "@AREA-UNIT"
+  ],
+  "def": "(Wikipedia) the SI derived unit for measuring area",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

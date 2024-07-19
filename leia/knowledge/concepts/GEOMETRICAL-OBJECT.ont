@@ -1,0 +1,101 @@
+{
+  "name": "@GEOMETRICAL-OBJECT",
+  "isa": [
+    "@MATHEMATICAL-OBJECT"
+  ],
+  "def": "objects which have to do with geometry",
+  "local": [
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "hexagonal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "semispherical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "pyramidlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "parallelepiped"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "halftoroidal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "cylindrical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "conical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "circular"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "curved"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "round"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "linear"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "rectangular"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "spirallike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "spherical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "squarelike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "toroidal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "trapezoidal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "triangular"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

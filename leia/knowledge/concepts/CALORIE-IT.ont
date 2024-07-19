@@ -1,0 +1,19 @@
+{
+  "name": "@CALORIE-IT",
+  "isa": [
+    "@ENERGY-UNIT"
+  ],
+  "def": "this is the Inernational Steam Table calorie. abbreviated cal.",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        4.1868
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

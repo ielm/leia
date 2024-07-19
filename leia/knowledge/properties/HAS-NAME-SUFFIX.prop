@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-NAME-SUFFIX",
+  "def": "links a named entity to the suffixes that can be used with his, her or its name, like Jr., III, Corp., possibly any number, as for World War 1.. 2. ",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": "$NAME-OF",
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

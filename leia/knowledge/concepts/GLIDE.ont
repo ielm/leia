@@ -1,0 +1,47 @@
+{
+  "name": "@GLIDE",
+  "isa": [
+    "@FLY"
+  ],
+  "def": "to fly without propulsion",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@AIRPLANE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GLIDER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PARACHUTE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@BIRD"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@BAT-ANIMAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@ACCELERATION-OF-FREE-FALL",
+  "isa": [
+    "@ACCELERATION-UNIT"
+  ],
+  "def": "(Wikipedia). The change in velocity over time. The rate at which something speeds up or slows down.",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        9.80665
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

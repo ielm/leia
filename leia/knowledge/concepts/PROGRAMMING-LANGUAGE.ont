@@ -1,0 +1,47 @@
+{
+  "name": "@PROGRAMMING-LANGUAGE",
+  "isa": [
+    "@LANGUAGE",
+    "@COMPUTER-PROGRAM"
+  ],
+  "def": "programming languages like basic, etc.",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

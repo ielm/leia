@@ -1,0 +1,37 @@
+{
+  "name": "@FILE-PETITION",
+  "isa": [
+    "@CORPORATE-EVENT"
+  ],
+  "def": "To enter (a petition or legal document) on public official record.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DOCUMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@PETITION-FOR-RELIEF"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@PLAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

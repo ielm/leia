@@ -1,0 +1,32 @@
+{
+  "name": "@METAL-MANUFACTURING-CORPORATION",
+  "isa": [
+    "@MATERIAL-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a manufacturing-corporation that processes and manufactures metal products for a profit",
+  "local": [
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@METAL-MINING-CORPORATION"
+    },
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@COAL-MINING-CORPORATION"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@METAL-PRODUCT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

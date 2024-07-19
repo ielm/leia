@@ -1,0 +1,39 @@
+{
+  "name": "@TROLLEY",
+  "isa": [
+    "@TRACK-VEHICLE",
+    "@WHEELED-VEHICLE"
+  ],
+  "def": "AN ELECTRIC PUBLIC TRANSPORTATION VEHICLE MOVING ON TRACKS",
+  "local": [
+    {
+      "slot": "number-of-wheels",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        8
+      ]
+    },
+    {
+      "slot": "number-of-wheels",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        4
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    }
+  ],
+  "private": {}
+}

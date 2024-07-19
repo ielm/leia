@@ -1,0 +1,27 @@
+{
+  "name": "@DIGEST",
+  "isa": [
+    "@FEEDING-EVENT"
+  ],
+  "def": "to process food within the body",
+  "local": [
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

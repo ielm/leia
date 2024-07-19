@@ -1,0 +1,28 @@
+{
+  "name": "@SPEEDOMETER",
+  "isa": [
+    "@MEASURING-ARTIFACT",
+    "@VEHICLE-PART"
+  ],
+  "def": "A device used for measuring speed or velocity",
+  "local": [
+    {
+      "slot": "measures-property",
+      "facet": "sem",
+      "filler": "$velocity"
+    }
+  ],
+  "block": [
+    {
+      "slot": "is-consumer-good",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "measures-property",
+      "facet": "sem",
+      "filler": "$property"
+    }
+  ],
+  "private": {}
+}

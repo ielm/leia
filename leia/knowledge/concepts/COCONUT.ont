@@ -1,0 +1,33 @@
+{
+  "name": "@COCONUT",
+  "isa": [
+    "@TREE-FRUIT"
+  ],
+  "def": "A tropical fruit from a palm tree.",
+  "local": [
+    {
+      "slot": "diameter",
+      "facet": "sem",
+      "filler": [
+        "><",
+        16
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    }
+  ],
+  "block": [
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "cylindrical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "egglike"
+    }
+  ],
+  "private": {}
+}

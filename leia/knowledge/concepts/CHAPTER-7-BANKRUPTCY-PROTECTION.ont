@@ -1,0 +1,47 @@
+{
+  "name": "@CHAPTER-7-BANKRUPTCY-PROTECTION",
+  "isa": [
+    "@BANKRUPT"
+  ],
+  "def": "A type of bankruptcy whereby the troubled entity liquidates assets to pay its creditors.",
+  "local": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@CREDITOR"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@LIQUIDATE"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@OWE"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@CANCEL-OBLIGATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@MACE",
+  "isa": [
+    "@CLUB"
+  ],
+  "def": "a heavy, spiked war club, used in the Middle Ages",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@NAIL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

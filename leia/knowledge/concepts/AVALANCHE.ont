@@ -1,0 +1,52 @@
+{
+  "name": "@AVALANCHE",
+  "isa": [
+    "@NATURAL-HAZARD"
+  ],
+  "def": "a large mass of snow and ice crashing down the side of a mountain",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@MOUNTAIN-RANGE"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@MOUNTAIN"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SNOW"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ICE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ROCK"
+    }
+  ],
+  "block": [
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

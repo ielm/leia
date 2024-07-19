@@ -1,0 +1,22 @@
+{
+  "name": "@THYROIDECTOMY",
+  "isa": [
+    "@SURGICAL-REMOVAL"
+  ],
+  "def": "Surgical removal of the thyroid gland.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@THYROID-GLAND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@SURGEON",
+  "isa": [
+    "@PHYSICIAN"
+  ],
+  "def": "a doctor who performs surgery",
+  "local": [
+    {
+      "slot": "uses",
+      "facet": "sem",
+      "filler": "@SCALPEL"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,36 @@
+{
+  "name": "@LEAD",
+  "isa": [
+    "@HEAVY-METALLIC-ELEMENT"
+  ],
+  "def": "a soft, malleable, ductile, bluish-white, dense metallic element, extracted chiefly from galena and used in containers and pipes for corrosives, in solder and type metal, bullets, radiation shielding, paints, and antiknock compounds",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        82
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        207
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

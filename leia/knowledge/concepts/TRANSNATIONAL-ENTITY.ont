@@ -1,0 +1,47 @@
+{
+  "name": "@TRANSNATIONAL-ENTITY",
+  "isa": [
+    "@LARGE-GEOPOLITICAL-ENTITY"
+  ],
+  "def": "A group of nations integrated at a variety of levels -- from tight (European Union) to loose (UN)",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@NATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-compass-point",
+      "facet": "sem",
+      "filler": "@COMPASS-POINT"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BUILDING"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@GEOGRAPHICAL-ENTITY"
+    },
+    {
+      "slot": "in-nation",
+      "facet": "sem",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "in-region",
+      "facet": "sem",
+      "filler": "@REGION"
+    }
+  ],
+  "private": {}
+}

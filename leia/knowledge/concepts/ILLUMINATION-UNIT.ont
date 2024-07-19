@@ -1,0 +1,22 @@
+{
+  "name": "@ILLUMINATION-UNIT",
+  "isa": [
+    "@MEASURING-UNIT"
+  ],
+  "def": "unit to measure illuminance, which is the total luminous flux incident on a surface, per unit area",
+  "local": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@WATTS-PER-METER-SQUARED"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "sem",
+      "filler": "@MEASURING-UNIT"
+    }
+  ],
+  "private": {}
+}

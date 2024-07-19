@@ -1,0 +1,19 @@
+{
+  "name": "@PARODY",
+  "isa": [
+    "@LITERARY-STYLE"
+  ],
+  "def": "an imitation of the characteristic style of an author for comic effect or ridicule",
+  "local": [
+    {
+      "slot": "humor-attribute",
+      "facet": "sem",
+      "filler": [
+        "><",
+        0.8
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

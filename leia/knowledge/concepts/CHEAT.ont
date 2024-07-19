@@ -1,0 +1,67 @@
+{
+  "name": "@CHEAT",
+  "isa": [
+    "@CRIMINAL-ACTIVITY"
+  ],
+  "def": "to be dishonest or deceitful",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@CON-MAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EXAMINATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TAX"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@POLITICAL-EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FINANCIAL-EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ACADEMIC-ACTIVITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@CRIMINAL"
+    }
+  ],
+  "private": {}
+}

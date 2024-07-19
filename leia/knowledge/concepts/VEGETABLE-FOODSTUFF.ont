@@ -1,0 +1,71 @@
+{
+  "name": "@VEGETABLE-FOODSTUFF",
+  "isa": [
+    "@PLANT-DERIVED-FOODSTUFF"
+  ],
+  "def": "any herbaceous plant whose parts are used as food; the edible parts of such plants",
+  "local": [],
+  "block": [
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "automated"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "automated"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "automated"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "automated"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "manual"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "manual"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "manual"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "manual"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "mechanical"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "mechanical"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "mechanical"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "mechanical"
+    }
+  ],
+  "private": {}
+}

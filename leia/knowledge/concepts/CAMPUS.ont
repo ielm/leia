@@ -1,0 +1,21 @@
+{
+  "name": "@CAMPUS",
+  "isa": [
+    "@SMALL-GEOPOLITICAL-ENTITY"
+  ],
+  "def": "the grounds, and sometimes the buildings, of a school or college",
+  "local": [
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

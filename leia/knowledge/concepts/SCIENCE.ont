@@ -1,0 +1,22 @@
+{
+  "name": "@SCIENCE",
+  "isa": [
+    "@FIELD-OF-STUDY"
+  ],
+  "def": "any branch of knowledge that systematizes facts, principles, and methods",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SCIENTIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@AIR-BAG",
+  "isa": [
+    "@VEHICLE-PART"
+  ],
+  "def": "a safety device in a vehicle that discharges in the event of an accident",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PILLOW"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SEWING-MATERIAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

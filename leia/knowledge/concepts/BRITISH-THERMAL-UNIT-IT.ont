@@ -1,0 +1,19 @@
+{
+  "name": "@BRITISH-THERMAL-UNIT-IT",
+  "isa": [
+    "@ENERGY-UNIT"
+  ],
+  "def": "(Wikipedia) The most widespread BTU, uses the International Table (IT) calorie, 4.1868 J (joule)",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1055.05585262
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

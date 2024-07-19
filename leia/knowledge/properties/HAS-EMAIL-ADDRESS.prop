@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-EMAIL-ADDRESS",
+  "def": "links a person (the domain) with his or her email address (the range)",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": "$EMAIL-ADDRESS-OF",
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

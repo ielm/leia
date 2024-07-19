@@ -1,0 +1,57 @@
+{
+  "name": "@INFLAMMATION",
+  "isa": [
+    "@SYMPTOM"
+  ],
+  "def": "# A localized protective reaction of tissue to irritation, injury, or infection, characterized by pain, redness, swelling, and sometimes loss of function",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@HEPATITIS"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@PNEUMONIA"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@CANCER"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@DISEASE"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-SIDE-EFFECT",
+  "def": "indicates what side effects medical interventions (tests and procedures) can have (eventually we might want to include probabilities as well)",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$SIDE-EFFECT-OF",
+  "measured-in": [],
+  "container": "$MEDICAL-RELATION"
+}

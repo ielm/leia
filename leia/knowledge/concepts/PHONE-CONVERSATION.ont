@@ -1,0 +1,65 @@
+{
+  "name": "@PHONE-CONVERSATION",
+  "isa": [
+    "@COMMUNICATIVE-EVENT"
+  ],
+  "def": "a meeting of at least 2 people by telephone",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@PHONE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@TELEPHONE-BOOTH"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "loudness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COMMUNICATION-DEVICE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

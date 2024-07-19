@@ -1,0 +1,19 @@
+{
+  "name": "@DEGREE-KELVIN",
+  "isa": [
+    "@TEMPERATURE-UNIT"
+  ],
+  "def": "The kelvin is the SI base unit for measuring temperature, and is a unit increment of temperature. The Kelvin scale is a thermodynamic (absolute) temperature scale where absolute zero, the theoretical absence of all thermal energy, is zero (0 K). According to this scale absolute zero is 0 K, or -273.15 C; water freezes at 273.15 K, and boils at 373.15 K. ",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

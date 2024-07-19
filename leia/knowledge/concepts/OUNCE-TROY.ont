@@ -1,0 +1,19 @@
+{
+  "name": "@OUNCE-TROY",
+  "isa": [
+    "@MASS-WEIGHT-UNIT"
+  ],
+  "def": "used for the weights of precious metals, abbreviated troz.",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.0311035
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

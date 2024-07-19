@@ -1,0 +1,40 @@
+{
+  "name": "@VINEYARD",
+  "isa": [
+    "@GEOLOGICAL-ENTITY"
+  ],
+  "def": "ground planted with cultivated grapevines",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@GRAPEVINE"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    }
+  ],
+  "private": {}
+}

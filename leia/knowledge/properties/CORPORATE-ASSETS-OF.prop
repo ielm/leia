@@ -1,0 +1,9 @@
+{
+  "name": "$CORPORATE-ASSETS-OF",
+  "def": "the corporation that holds the assets",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$HAS-CORPORATE-ASSETS",
+  "measured-in": [],
+  "container": "$BUSINESS-RELATION"
+}

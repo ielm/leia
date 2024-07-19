@@ -1,0 +1,1475 @@
+{
+  "name": "@CONCRETE",
+  "isa": [
+    "@PAVING-MATERIAL"
+  ],
+  "def": "a construction material consisting of conglomerate gravel, pebbles, broken stone, or slag in a mortar or cement matrix; the compact whole achieved by bonding fine and coarse aggregate particles with cement paste, which is a mixture of cement and water",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CEMENT"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ROCK"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SAND"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WATER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "above",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "above",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "across",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "across",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "aesthetic-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "amount",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "amount",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "area",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "area",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "attribute",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "autonomy",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "available",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "available",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "beside",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "beside",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "between-spatial",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "between-spatial",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "beyond",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "beyond",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "capacity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "capacity",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "beige"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "beige"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "black"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "black"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "blue"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "colorless"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "cyan"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "green"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "magenta"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "navy-blue"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "off-white"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "off-white"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "orange"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "pink"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "purple"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "red"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "red"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "violet"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "white"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "yellow"
+    },
+    {
+      "slot": "comfort-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "compatibility",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "complexity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "corefer",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "demand-for-product",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "density",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "density",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "depth",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "depth",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "directional-relation",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "directional-relation",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "dirtiness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "east-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "east-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "electric-charge",
+      "facet": "sem",
+      "filler": "negative"
+    },
+    {
+      "slot": "electric-charge",
+      "facet": "sem",
+      "filler": "neutral"
+    },
+    {
+      "slot": "electric-charge",
+      "facet": "sem",
+      "filler": "positive"
+    },
+    {
+      "slot": "enablement",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "enablement",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "encloses",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "encloses",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "extent-of-change",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "extra-ontological",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "extra-ontological",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "fame-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": [
+        ">=<",
+        1
+      ]
+    },
+    {
+      "slot": "formality",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "fr-property",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "fr-property",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "genuineness",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "genuineness",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "hardness-breakability",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "has-center",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "importance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "in-front-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "in-front-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "latitude",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "latitude-north",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "latitude-south",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "left-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "left-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "linear-size",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "linear-size",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "literal-attribute",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "literal-object-attribute",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "longitude",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "longitude-east",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "longitude-west",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "mass",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "mass",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@BALANCE"
+    },
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@MEASURING-SCALE"
+    },
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@PIPETTE"
+    },
+    {
+      "slot": "meet",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "meet",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "monetary-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "monetary-value",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "north-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "north-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "novelty",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "object-relation",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "oiliness",
+      "facet": "sem",
+      "filler": [
+        ">=<",
+        0
+      ]
+    },
+    {
+      "slot": "ontology-slot",
+      "facet": "sem",
+      "filler": "@ALL"
+    },
+    {
+      "slot": "on-top-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "orderliness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "outside-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "outside-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "path",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "path",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "ph",
+      "facet": "sem",
+      "filler": [
+        "><",
+        14
+      ]
+    },
+    {
+      "slot": "precision-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "preparedness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "pressure",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "pressure",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "automated"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "manual"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "mechanical"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "natural"
+    },
+    {
+      "slot": "property",
+      "facet": "sem",
+      "filler": "@ALL"
+    },
+    {
+      "slot": "quality",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "relation",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "safety-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "scalar-financial-object-attribute",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "scalar-financial-object-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "scalar-medical-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-medical-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "scalar-object-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-object-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "scalar-physical-object-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-physical-object-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "secrecy-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "amorphous"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "barlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "blocklike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "circular"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "conical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "crosslike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "curved"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "cylindrical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "egglike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "halftoroidal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "heart-shaped"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "hexagonal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "hornlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "knoblike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "linear"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "parallelepiped"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "pyramidlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "rectangular"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "ringlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "semicircular"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "sheetlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "spherical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "spirallike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "squarelike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "toroidal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "trapezoidal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "triangular"
+    },
+    {
+      "slot": "sharpness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "similarity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "size",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "size",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "size",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "slope-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "slope-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "smoothness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "softness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "south-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "south-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "spatial-distance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "spatial-distance",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "spatial-orientation",
+      "facet": "sem",
+      "filler": "horizontal"
+    },
+    {
+      "slot": "spatial-orientation",
+      "facet": "sem",
+      "filler": "vertical"
+    },
+    {
+      "slot": "spatial-relation",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "spatial-relation",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "stability",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "semi-solid"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "solid"
+    },
+    {
+      "slot": "state-of-repair",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "strength",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "strength",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "surrounds",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "surrounds",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "symmetry",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "symmetry",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "temperature",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "temperature",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "temporal-attribute",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "thickness",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "thickness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "tightness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "time-begin",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "time-end",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "toxicity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "typicalness-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "under",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "under",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "up-directional",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "up-directional",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "usable-life",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "usable-life",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "usefulness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "validated",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "vertical-orientation",
+      "facet": "sem",
+      "filler": "upright"
+    },
+    {
+      "slot": "vertical-orientation",
+      "facet": "sem",
+      "filler": "upside-down"
+    },
+    {
+      "slot": "visibility",
+      "facet": "sem",
+      "filler": [
+        ">=<",
+        0
+      ]
+    },
+    {
+      "slot": "volatility",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "volume",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "volume",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "volume",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "west-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "west-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "west-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "west-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "wetness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

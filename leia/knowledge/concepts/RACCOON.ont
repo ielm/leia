@@ -1,0 +1,16 @@
+{
+  "name": "@RACCOON",
+  "isa": [
+    "@MAMMAL"
+  ],
+  "def": "A carnivorous North American mammal having grayish-brown fur, black masklike facial markings, and a black-ringed bushy tail.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PAW"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

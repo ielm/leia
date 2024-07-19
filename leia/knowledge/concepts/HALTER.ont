@@ -1,0 +1,27 @@
+{
+  "name": "@HALTER",
+  "isa": [
+    "@RESTRAINING-ARTIFACT"
+  ],
+  "def": "a rope or a strap for tying or leading an animal",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ROPE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@LEATHER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

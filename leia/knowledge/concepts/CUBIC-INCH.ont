@@ -1,0 +1,19 @@
+{
+  "name": "@CUBIC-INCH",
+  "isa": [
+    "@CUBIC-UNIT"
+  ],
+  "def": "a unit of volume equal to a cube one inch on each side; inch*inch*inch",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.63871e-05
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

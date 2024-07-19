@@ -1,0 +1,19 @@
+{
+  "name": "@PENNYWEIGHT",
+  "isa": [
+    "@MASS-WEIGHT-UNIT"
+  ],
+  "def": "used by jewelers to value precious metals, and by dentists to evaluate the amount of precious metals in dental fixtures such as crowns; ounce-troy/20",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.00155518
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

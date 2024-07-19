@@ -1,0 +1,19 @@
+{
+  "name": "@PICA",
+  "isa": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "def": "1/6 of an inch, used in typography; 12*point-as-measure",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.00421752
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

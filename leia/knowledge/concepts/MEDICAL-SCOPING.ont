@@ -1,0 +1,48 @@
+{
+  "name": "@MEDICAL-SCOPING",
+  "isa": [
+    "@DIAGNOSTIC-PROCEDURE",
+    "@INVASIVE-PROCEDURE"
+  ],
+  "def": "using a medical-scope for diagnostic purposes",
+  "local": [
+    {
+      "slot": "creates-image-of",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MEDICAL-SCOPE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@NURSE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@PHYSICIAN-ASSISTANT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MEDICAL-ARTIFACT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MEDICAL-ARTIFACT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@LABORATORY"
+    }
+  ],
+  "private": {}
+}

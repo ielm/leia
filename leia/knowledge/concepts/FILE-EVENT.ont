@@ -1,0 +1,62 @@
+{
+  "name": "@FILE-EVENT",
+  "isa": [
+    "@APPLY-FORCE"
+  ],
+  "def": "to smooth or grind, as with an implement for such a purpose",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@NAIL-ANATOMICAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@WOOD"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SAW"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@STEEL-WOOL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SANDPAPER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@NAIL-FILE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

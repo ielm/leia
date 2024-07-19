@@ -1,0 +1,9 @@
+{
+  "name": "$ABSOLUTE-YEAR",
+  "def": "The absolute year of something - the specific year, like 1492",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

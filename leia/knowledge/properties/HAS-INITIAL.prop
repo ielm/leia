@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-INITIAL",
+  "def": "links a person with his/her initial, which may be at the front of the name, in the middle, etc. (J. Jones; Mary C. Clark)",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": "$MIDDLE-INITIAL-OF",
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

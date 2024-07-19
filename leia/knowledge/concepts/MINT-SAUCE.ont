@@ -1,0 +1,22 @@
+{
+  "name": "@MINT-SAUCE",
+  "isa": [
+    "@FLAVORING"
+  ],
+  "def": "A sauce for meats with spearmint flavor.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MINT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

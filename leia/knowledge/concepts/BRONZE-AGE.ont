@@ -1,0 +1,87 @@
+{
+  "name": "@BRONZE-AGE",
+  "isa": [
+    "@HISTORICAL-PERIOD"
+  ],
+  "def": "a technological stage between Stone and Iron Ages when weapons and tools were made of bronze and there was a lot of trading; in Britain, 2000 - 500 B.C. (note: this period was earlier in the Middle East - needs clarification)",
+  "local": [
+    {
+      "slot": "time-end",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        500
+      ],
+      "meta": {
+        "measured-in": "year-bc"
+      }
+    },
+    {
+      "slot": "time-begin",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        2000
+      ],
+      "meta": {
+        "measured-in": "year-bc"
+      }
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@IMPLEMENT-1"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@WEAPON-1"
+    }
+  ],
+  "block": [
+    {
+      "slot": "time-begin",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "time-end",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    }
+  ],
+  "private": {
+    "@IMPLEMENT-1": {
+      "name": "@IMPLEMENT-1",
+      "isa": [
+        "@IMPLEMENT"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "made-of",
+          "facet": "sem",
+          "filler": "@BRONZE"
+        }
+      ],
+      "block": [],
+      "private": {}
+    },
+    "@WEAPON-1": {
+      "name": "@WEAPON-1",
+      "isa": [
+        "@WEAPON"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "made-of",
+          "facet": "sem",
+          "filler": "@BRONZE"
+        }
+      ],
+      "block": [],
+      "private": {}
+    }
+  }
+}

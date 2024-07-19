@@ -1,0 +1,22 @@
+{
+  "name": "@ORGANIZE",
+  "isa": [
+    "@CHANGE-EVENT"
+  ],
+  "def": "to arrange in a specific way or to provide an organic structure (to something)",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

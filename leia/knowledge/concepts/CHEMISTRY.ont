@@ -1,0 +1,22 @@
+{
+  "name": "@CHEMISTRY",
+  "isa": [
+    "@SCIENCE"
+  ],
+  "def": "the science dealing with the composition and properties of substances, and with the reactions by which substances are produced or converted into other substances",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@CHEMIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SCIENTIST"
+    }
+  ],
+  "private": {}
+}

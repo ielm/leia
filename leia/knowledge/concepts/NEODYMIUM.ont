@@ -1,0 +1,36 @@
+{
+  "name": "@NEODYMIUM",
+  "isa": [
+    "@RARE-EARTH-ELEMENT"
+  ],
+  "def": "a bright, silvery rare-earth metal element, found in the minerals monazite and bastnaesite and used for coloring glass and for doping some glass lasers",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        144
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        60
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        72
+      ]
+    }
+  ],
+  "private": {}
+}

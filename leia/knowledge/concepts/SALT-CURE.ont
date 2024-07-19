@@ -1,0 +1,42 @@
+{
+  "name": "@SALT-CURE",
+  "isa": [
+    "@PREPARE-INGESTIBLE"
+  ],
+  "def": "to preserve food (meat or fish) using salt or a salt solution",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@SMOKEHOUSE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SALT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FISH-MEAT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MEAT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COOKING-EQUIPMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FOOD"
+    }
+  ],
+  "private": {}
+}

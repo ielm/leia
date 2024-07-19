@@ -1,0 +1,28 @@
+{
+  "name": "@DIPLOMAT",
+  "isa": [
+    "@APPOINTED-GOVERNMENTAL-ROLE"
+  ],
+  "def": "a representative of a government who conducts relations with another government",
+  "local": [
+    {
+      "slot": "tact",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "tact",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

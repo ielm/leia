@@ -1,0 +1,27 @@
+{
+  "name": "@PROGRAMMER",
+  "isa": [
+    "@COMPUTING-WORK-ROLE"
+  ],
+  "def": "a person who designs, writes and tests computer programs",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@COMPUTER-PROGRAM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CREATIVE-WORK"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@FOODSTUFF"
+    }
+  ],
+  "private": {}
+}

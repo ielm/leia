@@ -1,0 +1,28 @@
+{
+  "name": "@SPECIAL-FORCES",
+  "isa": [
+    "@MILITARY-BRANCH"
+  ],
+  "def": "troops specially trained for difficult military situations: e.g. the Green Berets",
+  "local": [
+    {
+      "slot": "expertise-attribute",
+      "facet": "sem",
+      "filler": [
+        "><",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "expertise-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

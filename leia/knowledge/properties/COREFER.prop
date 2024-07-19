@@ -1,0 +1,9 @@
+{
+  "name": "$COREFER",
+  "def": "When two objects are coreferent with each other. I.e. \"The man is a dog.\"",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

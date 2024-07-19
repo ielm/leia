@@ -1,0 +1,32 @@
+{
+  "name": "@CARBON-MONOXIDE",
+  "isa": [
+    "@GASEOUS-CHEMICAL-COMPOUND"
+  ],
+  "def": "a colorless, odorless, highly poisonous gas",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CARBON"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@OXYGEN"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GASEOUS-ELEMENT"
+    }
+  ],
+  "private": {}
+}

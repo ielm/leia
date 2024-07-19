@@ -1,0 +1,22 @@
+{
+  "name": "@BLENNIOID",
+  "isa": [
+    "@FISH"
+  ],
+  "def": "marine mostly bottom-dwelling fishes of northern seas",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@SEA"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BODY-OF-WATER"
+    }
+  ],
+  "private": {}
+}

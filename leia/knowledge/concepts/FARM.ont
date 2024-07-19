@@ -1,0 +1,35 @@
+{
+  "name": "@FARM",
+  "isa": [
+    "@EARTH-RESOURCE-ARTIFACT"
+  ],
+  "def": "a piece of land (usually with a house and a barn) on which crops or animals are raised",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BARN"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

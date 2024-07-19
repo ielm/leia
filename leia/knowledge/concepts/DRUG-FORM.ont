@@ -1,0 +1,16 @@
+{
+  "name": "@DRUG-FORM",
+  "isa": [
+    "@MEDICAL-ARTIFACT"
+  ],
+  "def": "types of medication in terms of how the medication is delivered: e.g., as a tablet, an ingestible liquid, etc.",
+  "local": [
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

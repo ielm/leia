@@ -1,0 +1,21 @@
+{
+  "name": "@ELECTRICITY",
+  "isa": [
+    "@FORCE"
+  ],
+  "def": "electric power",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "default",
+      "filler": "@MAGNETISM"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@ELECTRICAL-ENGINEERING"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,77 @@
+{
+  "name": "@PROVE",
+  "isa": [
+    "@ANALYTIC-COGNITIVE-EVENT"
+  ],
+  "def": "to establish (something) as true",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@STANDARD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@THEORY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@THOUGHT"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@ANALYTIC-COGNITIVE-EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CLASSIFICATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FORMULA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FOUNDATIONAL-PRINCIPLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HYPOTHESIS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OPINION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INFORMATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PROBLEM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

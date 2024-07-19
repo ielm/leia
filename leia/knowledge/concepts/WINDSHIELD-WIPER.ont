@@ -1,0 +1,27 @@
+{
+  "name": "@WINDSHIELD-WIPER",
+  "isa": [
+    "@VEHICLE-PART"
+  ],
+  "def": "a device used to keep a windshield free of rain, insects, etc.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SYNTHETIC-RUBBER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ALLOY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-WORK-EQUIPMENT",
+  "def": "Equipment typically used in a particular line of work",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$WORK-EQUIPMENT-OF",
+  "measured-in": [],
+  "container": "$RELATION"
+}

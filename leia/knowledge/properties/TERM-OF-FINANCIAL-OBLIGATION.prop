@@ -1,0 +1,11 @@
+{
+  "name": "$TERM-OF-FINANCIAL-OBLIGATION",
+  "def": "The length of time for which an obligation is good, e.g. the term of the loan is 8 years.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@TIME-INTERVAL-UNIT"
+  ],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

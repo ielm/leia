@@ -1,0 +1,16 @@
+{
+  "name": "@CARPENTER",
+  "isa": [
+    "@TRADE-ROLE"
+  ],
+  "def": "one who builds and repairs wooden things, especially buildings, ships, etc.",
+  "local": [
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@WOODWORKING-IMPLEMENT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

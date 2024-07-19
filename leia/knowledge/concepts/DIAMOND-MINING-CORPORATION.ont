@@ -1,0 +1,22 @@
+{
+  "name": "@DIAMOND-MINING-CORPORATION",
+  "isa": [
+    "@GEM-MINING-CORPORATION"
+  ],
+  "def": "a corporation involved in the diamond mining and preparation of diamond",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@DIAMOND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@GEMSTONE"
+    }
+  ],
+  "private": {}
+}

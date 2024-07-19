@@ -1,0 +1,52 @@
+{
+  "name": "@INSECT",
+  "isa": [
+    "@ARTHROPOD"
+  ],
+  "def": "any of a large class of small, usually winged, invertebrates, such as beetles, flies, wasps, etc., having three pairs of legs",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@WING"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ALA"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FOREWING"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ABDOMEN"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@HEAD"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@OVIPOSITOR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LEG"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

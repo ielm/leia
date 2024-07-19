@@ -1,0 +1,16 @@
+{
+  "name": "@VERDICT",
+  "isa": [
+    "@DECIDE"
+  ],
+  "def": "a decision by a court or judge",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@JUDGE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

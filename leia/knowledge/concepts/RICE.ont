@@ -1,0 +1,42 @@
+{
+  "name": "@RICE",
+  "isa": [
+    "@GRAIN-FOODSTUFF"
+  ],
+  "def": "a cereal grass that is cultivated extensively in warm climates and is a staple food throughout the world",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "off-white"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "tan"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "white"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "opaque"
+    }
+  ],
+  "block": [
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "transparent"
+    }
+  ],
+  "private": {}
+}

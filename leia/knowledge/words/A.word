@@ -1,0 +1,38 @@
+{
+  "word": "A",
+  "senses": {
+    "A-ART1": {
+      "CAT": "ART",
+      "DEF": "indicates no coreference",
+      "EX": "A cat walked in the room",
+      "COMMENTS": "",
+      "TMR-HEAD": "$VAR1",
+      "SYN-STRUC": [
+        {"type": "root"}
+      ],
+      "SEM-STRUC": "",
+      "OUTPUT-SYNTAX": [
+        "NP"
+      ],
+      "MEANING-PROCEDURES": [
+        [
+          "BLOCK-REFERENCE",
+          [
+            "TARGET",
+            "^$VAR1"
+          ],
+          [
+            "DETERMINATE",
+            "NO"
+          ]
+        ]
+      ],
+      "SYNONYMS": [
+        "AN"
+      ],
+      "HYPONYMS": [],
+      "SENSE": "A-ART1",
+      "WORD": "A"
+    }
+  }
+}

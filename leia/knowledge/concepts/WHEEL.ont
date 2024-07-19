@@ -1,0 +1,37 @@
+{
+  "name": "@WHEEL",
+  "isa": [
+    "@VEHICLE-PART"
+  ],
+  "def": "A circular frame of metal, wood or other hard material, consisting of a hub at the center for attachment to an axle on which it may revolve",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    },
+    {
+      "slot": "shape",
+      "facet": "default",
+      "filler": "round"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

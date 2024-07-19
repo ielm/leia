@@ -1,0 +1,10 @@
+{
+  "name": "@BANK-ACCOUNT",
+  "isa": [
+    "@ASSET"
+  ],
+  "def": "money deposited in a bank and credited to the depositor",
+  "local": [],
+  "block": [],
+  "private": {}
+}

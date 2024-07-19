@@ -1,0 +1,36 @@
+{
+  "name": "@SCANDIUM",
+  "isa": [
+    "@LIGHT-METALLIC-ELEMENT"
+  ],
+  "def": "a silvery-white, very lightweight metallic element found in various rare minerals and separated as a by-product in the processing of certain uranium ores",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        44
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        21
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

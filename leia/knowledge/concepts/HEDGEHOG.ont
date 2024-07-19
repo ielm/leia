@@ -1,0 +1,32 @@
+{
+  "name": "@HEDGEHOG",
+  "isa": [
+    "@MAMMAL"
+  ],
+  "def": "Any of several small insectivorous mammals of Europe, Africa, and Asia, having the back covered with dense erectile spines and characteristically rolling into a ball for protection.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@FUR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@HAIR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FUR"
+    }
+  ],
+  "private": {}
+}

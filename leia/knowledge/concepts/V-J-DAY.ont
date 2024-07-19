@@ -1,0 +1,48 @@
+{
+  "name": "@V-J-DAY",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "a holiday commemorating the Allied victory over Japan, World War II, 15 August 1945",
+  "local": [
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@AUGUST"
+    },
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        15
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        31
+      ]
+    },
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "private": {}
+}

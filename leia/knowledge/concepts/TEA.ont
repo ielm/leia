@@ -1,0 +1,47 @@
+{
+  "name": "@TEA",
+  "isa": [
+    "@HOT-BEVERAGE"
+  ],
+  "def": "a beverage prepared from tea leaves",
+  "local": [
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "translucent"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@TEA-LEAF"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CAFFEINE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@FOODSTUFF"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "opaque"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "transparent"
+    }
+  ],
+  "private": {}
+}

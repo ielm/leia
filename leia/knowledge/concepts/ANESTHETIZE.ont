@@ -1,0 +1,37 @@
+{
+  "name": "@ANESTHETIZE",
+  "isa": [
+    "@MEDICAL-PROCEDURE"
+  ],
+  "def": "to make unconscious using anesthesia",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SYRINGE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ANESTHETIC"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@PATIENT"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@ANESTHESIOLOGIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MEDICAL-ARTIFACT"
+    }
+  ],
+  "private": {}
+}

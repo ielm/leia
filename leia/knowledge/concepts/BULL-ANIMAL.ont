@@ -1,0 +1,21 @@
+{
+  "name": "@BULL-ANIMAL",
+  "isa": [
+    "@CATTLE"
+  ],
+  "def": "An adult male bovine mammal.",
+  "local": [],
+  "block": [
+    {
+      "slot": "gender",
+      "facet": "sem",
+      "filler": "female"
+    },
+    {
+      "slot": "gender",
+      "facet": "sem",
+      "filler": "female"
+    }
+  ],
+  "private": {}
+}

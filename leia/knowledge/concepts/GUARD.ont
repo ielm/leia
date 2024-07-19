@@ -1,0 +1,37 @@
+{
+  "name": "@GUARD",
+  "isa": [
+    "@PROTECT"
+  ],
+  "def": "to watch over and to keep from escape or trouble",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@PROTECTION-ROLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@VEHICLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

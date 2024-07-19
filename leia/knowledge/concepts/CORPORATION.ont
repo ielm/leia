@@ -1,0 +1,195 @@
+{
+  "name": "@CORPORATION",
+  "isa": [
+    "@PRIVATE-ORGANIZATION"
+  ],
+  "def": "A single company or a group of companies organized for a certain business purpose",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "relaxable-to",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "has-nationality",
+      "facet": "sem",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "year-founded",
+      "facet": "sem",
+      "filler": [
+        ">",
+        1500
+      ]
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@HEADQUARTERS"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "has-holding-company",
+      "facet": "sem",
+      "filler": "@CORPORATION"
+    },
+    {
+      "slot": "has-business-competitor",
+      "facet": "sem",
+      "filler": "@CORPORATION"
+    },
+    {
+      "slot": "business-capacity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "business-capacity",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "has-business-coverage",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "ownership-percent",
+      "facet": "sem",
+      "filler": [
+        "><",
+        100
+      ]
+    },
+    {
+      "slot": "monopoly-attribute",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "has-franchise",
+      "facet": "sem",
+      "filler": "@CORPORATION"
+    },
+    {
+      "slot": "has-creditor",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "financial-leverage",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "financial-leverage",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "has-franchise",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "has-creditor",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "market-share",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "market-share",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "monopoly-attribute",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "ownership-percent",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "production-rate",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "production-rate",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-business-competitor",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "has-business-competitor",
+      "facet": "sem",
+      "filler": "@ORGANIZATION"
+    },
+    {
+      "slot": "has-business-coverage",
+      "facet": "sem",
+      "filler": "@GEOGRAPHICAL-ENTITY"
+    },
+    {
+      "slot": "has-creditor",
+      "facet": "sem",
+      "filler": "@ORGANIZATION"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "year-founded",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    }
+  ],
+  "private": {}
+}

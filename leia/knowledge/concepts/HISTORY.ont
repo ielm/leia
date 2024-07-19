@@ -1,0 +1,22 @@
+{
+  "name": "@HISTORY",
+  "isa": [
+    "@SOCIAL-SCIENCE"
+  ],
+  "def": "the field of study that deals systematically with the past",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@HISTORIAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-SCIENTIST"
+    }
+  ],
+  "private": {}
+}

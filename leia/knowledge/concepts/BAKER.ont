@@ -1,0 +1,32 @@
+{
+  "name": "@BAKER",
+  "isa": [
+    "@COOK"
+  ],
+  "def": "one whose work or business is baking bread, cakes, etc.",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@BAKED-FOOD"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BAKERY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CREATIVE-WORK"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@FOODSTUFF"
+    }
+  ],
+  "private": {}
+}

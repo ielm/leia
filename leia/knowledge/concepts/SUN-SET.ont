@@ -1,0 +1,27 @@
+{
+  "name": "@SUN-SET",
+  "isa": [
+    "@NATURAL-EVENT"
+  ],
+  "def": "The event or time of the daily disappearance of the sun below the western horizon.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SUN"
+    },
+    {
+      "slot": "time-end",
+      "facet": "sem",
+      "filler": "@NIGHT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "time-end",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    }
+  ],
+  "private": {}
+}

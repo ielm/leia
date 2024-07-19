@@ -1,0 +1,19 @@
+{
+  "name": "@INCH",
+  "isa": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "def": "A unit of linear measure equal to 1/12 of a foot, or 2.54 cm; .0254",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.0254
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

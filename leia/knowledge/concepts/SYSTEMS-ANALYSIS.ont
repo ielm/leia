@@ -1,0 +1,22 @@
+{
+  "name": "@SYSTEMS-ANALYSIS",
+  "isa": [
+    "@COMPUTING-SERVE"
+  ],
+  "def": "to investigate a computer system to determine what information requirements and processes are needed",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@SYSTEMS-ANALYST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@COMPUTING-WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

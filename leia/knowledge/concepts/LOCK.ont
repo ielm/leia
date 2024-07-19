@@ -1,0 +1,21 @@
+{
+  "name": "@LOCK",
+  "isa": [
+    "@LOCKING-DEVICE"
+  ],
+  "def": "a locking device; e.g., a door lock, lock in a car door, padlock, etc.",
+  "local": [
+    {
+      "slot": "locked",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "locked",
+      "facet": "sem",
+      "filler": "no"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

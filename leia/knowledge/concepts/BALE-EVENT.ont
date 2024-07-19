@@ -1,0 +1,62 @@
+{
+  "name": "@BALE-EVENT",
+  "isa": [
+    "@FARMING-ACTIVITY"
+  ],
+  "def": "to make agricultural products into bales",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@BALER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@AGRICULTURAL-PRODUCT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ENGINEERED-ARTIFACT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FARM-MACHINE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HUMUS"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WATER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GEOLOGICAL-ENTITY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIVESTOCK"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SEED"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SOIL"
+    }
+  ],
+  "private": {}
+}

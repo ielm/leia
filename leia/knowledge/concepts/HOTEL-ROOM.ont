@@ -1,0 +1,47 @@
+{
+  "name": "@HOTEL-ROOM",
+  "isa": [
+    "@ROOM"
+  ],
+  "def": "a room in a hotel in which patrons reside",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@WINDOW"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@LODGING-CORPORATION"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BATHROOM"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@WALL"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CEILING"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FLOOR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

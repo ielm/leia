@@ -1,0 +1,9 @@
+{
+  "name": "$ENCLOSES",
+  "def": "the inverse of inside-of -- e.g., the pen encloses the pigs",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$INSIDE-OF",
+  "measured-in": [],
+  "container": "$SPATIAL-RELATION"
+}

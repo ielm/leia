@@ -1,0 +1,16 @@
+{
+  "name": "@TYPING",
+  "isa": [
+    "@PREPARE-DOCUMENT"
+  ],
+  "def": "to enter information into a computer or on a typewriter using a keyboard",
+  "local": [],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    }
+  ],
+  "private": {}
+}

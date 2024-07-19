@@ -1,0 +1,16 @@
+{
+  "name": "@STAR",
+  "isa": [
+    "@CELESTIAL-OBJECT"
+  ],
+  "def": "any of the luminous celestial objects seen as points of lights in the sky",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "value",
+      "filler": "@SOLAR-ENERGY"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

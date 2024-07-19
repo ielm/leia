@@ -1,0 +1,16 @@
+{
+  "name": "@DRILL-BIT",
+  "isa": [
+    "@DEPENDENT-DEVICE"
+  ],
+  "def": "The sharp metal piece in a drill used to actually make the hole",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    }
+  ],
+  "private": {}
+}

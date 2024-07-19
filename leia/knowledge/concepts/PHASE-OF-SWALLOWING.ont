@@ -1,0 +1,22 @@
+{
+  "name": "@PHASE-OF-SWALLOWING",
+  "isa": [
+    "@FEEDING-EVENT"
+  ],
+  "def": "this is a structure-only concept, needed to accommodate its children",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@STOMACH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

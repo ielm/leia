@@ -1,0 +1,32 @@
+{
+  "name": "@ADVERTISING-INSERT",
+  "isa": [
+    "@PRINTED-MEDIA"
+  ],
+  "def": "a printed sheet inserted in a newspaper or other publication that usually advertises sales for local stores",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CHART"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@NAME"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

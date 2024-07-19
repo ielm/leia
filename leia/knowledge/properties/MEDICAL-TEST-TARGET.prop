@@ -1,0 +1,9 @@
+{
+  "name": "$MEDICAL-TEST-TARGET",
+  "def": "The thing being looked for by a medical test - to be used together with THEME. For e.g. in FECAL-OCCULT-BLOOD-TEST, the theme is FECES, and the test target is BLOOD.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$TARGETED-BY-MEDICAL-TEST",
+  "measured-in": [],
+  "container": "$MEDICAL-RELATION"
+}

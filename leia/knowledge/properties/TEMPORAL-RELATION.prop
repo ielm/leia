@@ -1,0 +1,9 @@
+{
+  "name": "$TEMPORAL-RELATION",
+  "def": "relations describing time-related properties of events; when applied to objects, those objects are understood as existing",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$RELATION"
+}

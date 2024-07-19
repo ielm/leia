@@ -1,0 +1,22 @@
+{
+  "name": "@RAPE",
+  "isa": [
+    "@SEX-CRIME"
+  ],
+  "def": "the crime of having sexual intercourse with a person forcibly and without consent",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

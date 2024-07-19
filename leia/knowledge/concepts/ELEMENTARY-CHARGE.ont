@@ -1,0 +1,19 @@
+{
+  "name": "@ELEMENTARY-CHARGE",
+  "isa": [
+    "@ELECTRIC-CHARGE-UNIT"
+  ],
+  "def": "(Wikipedia) The elementary charge, usually denoted e,[1] is the electric charge carried by a single proton, or equivalently, the negative of the electric charge carried by a single electron",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.6021776462e-19
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

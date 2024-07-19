@@ -1,0 +1,27 @@
+{
+  "name": "@FOUNDATION",
+  "isa": [
+    "@NON-PROFIT-CORPORATION"
+  ],
+  "def": "a financial institution established to manage a monetary endowment for a charity or a cause",
+  "local": [
+    {
+      "slot": "area-of-business-activity",
+      "facet": "sem",
+      "filler": "@MONEY-MANAGING-ACTIVITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "area-of-business-activity",
+      "facet": "sem",
+      "filler": "@CREATE-ARTIFACT"
+    },
+    {
+      "slot": "area-of-business-activity",
+      "facet": "sem",
+      "filler": "@WORK-ACTIVITY"
+    }
+  ],
+  "private": {}
+}

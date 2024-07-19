@@ -1,0 +1,47 @@
+{
+  "name": "@DARE",
+  "isa": [
+    "@OPPOSITION-EVENT",
+    "@SPEECH-ACT"
+  ],
+  "def": "to challenge someone to do something",
+  "local": [],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

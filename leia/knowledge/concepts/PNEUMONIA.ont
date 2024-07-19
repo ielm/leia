@@ -1,0 +1,82 @@
+{
+  "name": "@PNEUMONIA",
+  "isa": [
+    "@COMMUNICABLE-DISEASE"
+  ],
+  "def": "An acute or chronic disease marked by inflammation of the lungs and caused by viruses, bacteria, or other microorganisms and sometimes by physical and chemical irritants; classed outside of communicable/non-communicable because it can be caused by many different types of things",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@FUNGUS"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@MICRO-ORGANISM"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@SMOKE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LUNG"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@INFLAMMATION"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@WHEEZE"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@COUGH"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@PAIN"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

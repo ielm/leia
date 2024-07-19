@@ -1,0 +1,31 @@
+{
+  "name": "@ELECTRIC-CHARGE-UNIT",
+  "isa": [
+    "@ELECTRIC-ORIENTED-UNIT"
+  ],
+  "def": "a measuring unit of electrical power",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@AMPERE"
+    },
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@HENRY"
+    },
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@OHM"
+    },
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@VOLT"
+    }
+  ],
+  "private": {}
+}

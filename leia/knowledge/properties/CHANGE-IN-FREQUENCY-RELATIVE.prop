@@ -1,0 +1,9 @@
+{
+  "name": "$CHANGE-IN-FREQUENCY-RELATIVE",
+  "def": "Used to indicate the relative change in the frequency of an event.",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-EVENT-ATTRIBUTE"
+}

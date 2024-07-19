@@ -1,0 +1,26 @@
+{
+  "name": "@NATURAL-RESIN",
+  "isa": [
+    "@PLANT-DERIVED-SUBSTANCE"
+  ],
+  "def": "any of various hard, brittle, solid or semi-solid substances that are usually transparent or translucent, yellow or brown in color, that are formed in plant secretions and obtained as extracts",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "yellow"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@TREE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

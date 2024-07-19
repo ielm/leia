@@ -1,0 +1,27 @@
+{
+  "name": "@RAINSTORM",
+  "isa": [
+    "@STORM"
+  ],
+  "def": "a storm with rain",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@RAIN"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@CLOUD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@NATURAL-EVENT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,81 @@
+{
+  "name": "@CONCH",
+  "isa": [
+    "@MOLLUSK"
+  ],
+  "def": "a type of snail-like tropical sea animal with a large twisted often brightly coloured shell",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "orange"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "red"
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "><",
+        100
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "><",
+        10
+      ],
+      "meta": {
+        "measured-in": "kilogram"
+      }
+    }
+  ],
+  "block": [
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

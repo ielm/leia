@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-OCCUPANT",
+  "def": "The relation between a building, city, country, etc. and the humans who occupy it.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$OCCUPANT-OF",
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@ATMOSPHERE",
+  "isa": [
+    "@PRESSURE-UNIT"
+  ],
+  "def": "an international reference pressure, mostly obsolete, replaced by the bar (Wikipedia); 101325",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        101325
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

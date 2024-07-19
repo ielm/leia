@@ -1,0 +1,19 @@
+{
+  "name": "@CALORIE-THERMOCHEMICAL",
+  "isa": [
+    "@ENERGY-UNIT"
+  ],
+  "def": "4.184 J exactly (Wikipedia). abbreviated cal.",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        4.184
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

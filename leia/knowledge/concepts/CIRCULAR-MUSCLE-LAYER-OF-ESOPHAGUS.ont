@@ -1,0 +1,22 @@
+{
+  "name": "@CIRCULAR-MUSCLE-LAYER-OF-ESOPHAGUS",
+  "isa": [
+    "@INNER-MUSCLE-LAYER-OF-ORGAN"
+  ],
+  "def": "nd",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SEGMENT-OF-NEURAL-TREE-ORGAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

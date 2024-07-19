@@ -1,0 +1,16 @@
+{
+  "name": "@BRAIN",
+  "isa": [
+    "@SEGMENT-OF-NEURAXIS"
+  ],
+  "def": "the mass of nerve tissue in the cranium of vertebrates",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "relaxable-to",
+      "filler": "@HEAD"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

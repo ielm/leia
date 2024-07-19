@@ -1,0 +1,94 @@
+{
+  "name": "@AIRPORT-ARTIFACT",
+  "isa": [
+    "@ARTIFACT"
+  ],
+  "def": "artifacts whose typical location is in an airport",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@AIRPORT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@AIRPORT-TERMINAL"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@AVIATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "extent-of-change",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "path",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "scalar-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "scalar-financial-object-attribute",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "scalar-object-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "validated",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    }
+  ],
+  "private": {}
+}

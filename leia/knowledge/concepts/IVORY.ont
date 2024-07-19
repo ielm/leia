@@ -1,0 +1,21 @@
+{
+  "name": "@IVORY",
+  "isa": [
+    "@ANIMAL-DERIVED-SUBSTANCE"
+  ],
+  "def": "the hard, smooth, yellowish-white dentine forming the main part of the tusks of the elephant, walrus, etc, used as an ornamental material",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "off-white"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "yellow"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

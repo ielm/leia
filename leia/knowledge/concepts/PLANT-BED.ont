@@ -1,0 +1,21 @@
+{
+  "name": "@PLANT-BED",
+  "isa": [
+    "@LAND-ACREAGE"
+  ],
+  "def": "an area of cultivated land for flowers, etc., but typically not crops",
+  "local": [],
+  "block": [
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    }
+  ],
+  "private": {}
+}

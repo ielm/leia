@@ -1,0 +1,207 @@
+{
+  "name": "@FOLD",
+  "isa": [
+    "@CHANGE-POSITION"
+  ],
+  "def": "to double a material or object up on itself",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VINYL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PAPER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FABRIC"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BREAD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BODY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LEG"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SANDWICH"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ARM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FLOWER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INSULATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BACKDROP"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BED-LINEN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ENVELOPE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HAMMOCK"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COTTON-FIBER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@HAND"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CLEANING-CLOTH"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COUCH-SLEEPER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CLOTHING-ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BAG"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PRINTED-MEDIA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NET"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NET-TRAP"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@SHOE"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@BOOT"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@HELMET"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@JEWELRY"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@ZIPPER"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@EYEGLASSES"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WRAPPING-PAPER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WINDOW-COVERING"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TOWEL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TABLE-LINEN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@RESTAURANT-MENU"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

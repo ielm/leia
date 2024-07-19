@@ -1,0 +1,1006 @@
+{
+  "name": "@HUMAN",
+  "isa": [
+    "@PRIMATE"
+  ],
+  "def": "a person, a human being",
+  "local": [
+    {
+      "slot": "dedication",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "expertise-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "hostility",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "sexual-orientation",
+      "facet": "sem",
+      "filler": "heterosexual"
+    },
+    {
+      "slot": "sexual-orientation",
+      "facet": "sem",
+      "filler": "homosexual"
+    },
+    {
+      "slot": "sexual-orientation",
+      "facet": "sem",
+      "filler": "bisexual"
+    },
+    {
+      "slot": "sexual-orientation",
+      "facet": "sem",
+      "filler": "asexual"
+    },
+    {
+      "slot": "shyness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "courage",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@FUR"
+    },
+    {
+      "slot": "acquainted",
+      "facet": "value",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "has-nationality",
+      "facet": "sem",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@NAME-HUMAN"
+    },
+    {
+      "slot": "height",
+      "facet": "value",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "><",
+        130
+      ]
+    },
+    {
+      "slot": "language-relation",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "has-social-role",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    },
+    {
+      "slot": "marital-status",
+      "facet": "sem",
+      "filler": "single"
+    },
+    {
+      "slot": "political-attribute",
+      "facet": "sem",
+      "filler": "independent"
+    },
+    {
+      "slot": "has-employee",
+      "facet": "sem",
+      "filler": "@WORK-ROLE"
+    },
+    {
+      "slot": "cash-flow-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "political-attribute",
+      "facet": "sem",
+      "filler": "conservative"
+    },
+    {
+      "slot": "intoxication",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "net-loss-attribute",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "net-loss-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@CITY"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@ROAD"
+    },
+    {
+      "slot": "charisma",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "cogency",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@STATE"
+    },
+    {
+      "slot": "solvency",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "race",
+      "facet": "sem",
+      "filler": "asian"
+    },
+    {
+      "slot": "weight-loss-intentionality",
+      "facet": "sem",
+      "filler": "intentional"
+    },
+    {
+      "slot": "practitioner-in",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "political-party-membership",
+      "facet": "sem",
+      "filler": "republican"
+    },
+    {
+      "slot": "standard-of-living",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "operator-of",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "has-religion",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    },
+    {
+      "slot": "scalar-social-object-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "scalar-social-object-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "deficit-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "deficit-attribute",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "dignity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "revenue-attribute",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "revenue-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "profit-attribute",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "profit-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "ownership-percent",
+      "facet": "sem",
+      "filler": [
+        "><",
+        100
+      ]
+    },
+    {
+      "slot": "ownership-percent",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "operator-of",
+      "facet": "sem",
+      "filler": "@DEVICE"
+    },
+    {
+      "slot": "has-surname",
+      "facet": "sem",
+      "filler": "@SURNAME"
+    },
+    {
+      "slot": "has-postal-code",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "has-personal-name",
+      "facet": "sem",
+      "filler": "@PERSONAL-NAME"
+    },
+    {
+      "slot": "has-partner",
+      "facet": "sem",
+      "filler": "@ORGANIZATION"
+    },
+    {
+      "slot": "expenditure",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "expenditure",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "has-initial",
+      "facet": "sem",
+      "filler": "@INITIAL"
+    },
+    {
+      "slot": "has-employee",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "has-contact-information",
+      "facet": "sem",
+      "filler": "@WEB-ADDRESS"
+    },
+    {
+      "slot": "has-contact-information",
+      "facet": "sem",
+      "filler": "@PHONE-NUMBER"
+    },
+    {
+      "slot": "has-contact-information",
+      "facet": "sem",
+      "filler": "@EMAIL-ADDRESS"
+    },
+    {
+      "slot": "has-contact-information",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "has-city-address",
+      "facet": "sem",
+      "filler": "@CITY"
+    },
+    {
+      "slot": "has-email-address",
+      "facet": "sem",
+      "filler": "@EMAIL-ADDRESS"
+    },
+    {
+      "slot": "has-nation-address",
+      "facet": "sem",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "has-phone-number",
+      "facet": "sem",
+      "filler": "@PHONE-NUMBER"
+    },
+    {
+      "slot": "has-state-address",
+      "facet": "sem",
+      "filler": "@STATE"
+    },
+    {
+      "slot": "has-street-address",
+      "facet": "sem",
+      "filler": "@ROAD"
+    },
+    {
+      "slot": "has-web-address",
+      "facet": "sem",
+      "filler": "@WEB-ADDRESS"
+    },
+    {
+      "slot": "honesty-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "humility",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "deficit-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "cash-flow-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "marital-status",
+      "facet": "sem",
+      "filler": "divorced"
+    },
+    {
+      "slot": "marital-status",
+      "facet": "sem",
+      "filler": "widowed"
+    },
+    {
+      "slot": "marital-status",
+      "facet": "sem",
+      "filler": "married"
+    },
+    {
+      "slot": "business-relation",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "area-of-business-activity",
+      "facet": "sem",
+      "filler": "@WORK-ACTIVITY"
+    },
+    {
+      "slot": "has-fax-number",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "politeness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "political-attribute",
+      "facet": "sem",
+      "filler": "liberal conservative"
+    },
+    {
+      "slot": "political-party-membership",
+      "facet": "sem",
+      "filler": "democrat"
+    },
+    {
+      "slot": "political-party-membership",
+      "facet": "sem",
+      "filler": "green-party"
+    },
+    {
+      "slot": "political-party-membership",
+      "facet": "sem",
+      "filler": "communist"
+    },
+    {
+      "slot": "race",
+      "facet": "sem",
+      "filler": "black"
+    },
+    {
+      "slot": "race",
+      "facet": "sem",
+      "filler": "white"
+    },
+    {
+      "slot": "race",
+      "facet": "sem",
+      "filler": "hispanic"
+    },
+    {
+      "slot": "reputation-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CREATIVE-WORK"
+    },
+    {
+      "slot": "prejudice-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-human-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "self-respect",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "has-partner",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "has-distant-family-relation",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "goal",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "business-relation",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "area-of-business-activity",
+      "facet": "sem",
+      "filler": "@CREATE-ARTIFACT"
+    },
+    {
+      "slot": "solvency",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "speaks-language",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "ambition",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "empathy",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "flexibility-social",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "weight-loss-intentionality",
+      "facet": "sem",
+      "filler": "unintentional"
+    },
+    {
+      "slot": "morality",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "optimism",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "years-of-education",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "wealth-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "years-of-education",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "piety",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "prestige",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "tact",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "studiousness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "standard-of-living",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "objectivity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "sanity-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "has-name-prefix",
+      "facet": "sem",
+      "filler": "@NAME-PREFIX"
+    },
+    {
+      "slot": "has-name-suffix",
+      "facet": "sem",
+      "filler": "@NAME-SUFFIX"
+    },
+    {
+      "slot": "has-title",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "diligence",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@NON-HUMAN-ANIMAL-PART"
+    },
+    {
+      "slot": "authority-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "attentiveness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "kindness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "patience-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "reliability",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "decisiveness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "prudence",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "humor-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "seriousness-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "sincerity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "loyalty",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "punctuality",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "sophistication",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@ANTHROPOLOGY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "acquainted",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "beige"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "blue"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "colorless"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "cyan"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "gray"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "gray"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "green"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "magenta"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "navy-blue"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "off-white"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "orange"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "pink"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "purple"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "violet"
+    },
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "has-name-non-human",
+      "facet": "sem",
+      "filler": "@NAME-NON-HUMAN"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FUR"
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    }
+  ],
+  "private": {}
+}

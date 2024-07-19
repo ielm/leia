@@ -1,0 +1,91 @@
+{
+  "name": "@TUNA",
+  "isa": [
+    "@FISH"
+  ],
+  "def": "a large ocean fish of the mackerel group, as the albacore",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "@SILVER"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "blue"
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "><",
+        820
+      ],
+      "meta": {
+        "measured-in": "kilogram"
+      }
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "><",
+        4
+      ],
+      "meta": {
+        "measured-in": "meter"
+      }
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@SEA"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BAY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

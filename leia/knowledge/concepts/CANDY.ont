@@ -1,0 +1,24 @@
+{
+  "name": "@CANDY",
+  "isa": [
+    "@PREPARED-FOOD"
+  ],
+  "def": "a solid confection with sugar or syrup with flavoring, fruit, nuts, etc.",
+  "local": [],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    }
+  ],
+  "private": {}
+}

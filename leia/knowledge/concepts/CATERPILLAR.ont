@@ -1,0 +1,16 @@
+{
+  "name": "@CATERPILLAR",
+  "isa": [
+    "@INSECT"
+  ],
+  "def": "the wormlike, often brightly colored, hairy or spiny larva of a butterfly or moth",
+  "local": [],
+  "block": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "colorless"
+    }
+  ],
+  "private": {}
+}

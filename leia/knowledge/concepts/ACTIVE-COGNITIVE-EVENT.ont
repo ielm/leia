@@ -1,0 +1,22 @@
+{
+  "name": "@ACTIVE-COGNITIVE-EVENT",
+  "isa": [
+    "@MENTAL-EVENT"
+  ],
+  "def": "a cognitive action in which the agent is actively using his/her cognitive faculties",
+  "local": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

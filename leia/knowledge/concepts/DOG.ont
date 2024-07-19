@@ -1,0 +1,94 @@
+{
+  "name": "@DOG",
+  "isa": [
+    "@CANINE"
+  ],
+  "def": "a domesticated carnivorous mammal, canis familiaris, raised in a wide variety of breeds and probably originally derived from several wild species",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "beige"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "off-white"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "orange"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "tan"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "white"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "yellow"
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "><",
+        45
+      ],
+      "meta": {
+        "measured-in": "kilogram"
+      }
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "black"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@ALLERGY"
+    },
+    {
+      "slot": "effect",
+      "facet": "relaxable-to",
+      "filler": "@EVENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

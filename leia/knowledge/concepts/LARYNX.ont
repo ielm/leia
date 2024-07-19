@@ -1,0 +1,37 @@
+{
+  "name": "@LARYNX",
+  "isa": [
+    "@HETEROGENEOUS-CLUSTER"
+  ],
+  "def": "the structure at the upper end of the trachea, containing the vocal cords. Heterogeneous cluster that connects the pharynx to the tracheobronchial tree. Examples: There is only one larynx.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SET-OF-LARYNGEAL-MUSCLES"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@NECK"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@VOCAL-FOLD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

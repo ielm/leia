@@ -1,0 +1,19 @@
+{
+  "name": "@WATT",
+  "isa": [
+    "@POWER-UNIT"
+  ],
+  "def": "The SI derived unit of power, and is equivalent to one joule of energy per second. A watt measures the rate at which energy is expended/work is done. kg*m^2*s^-3 (^ means power, kg means kilogram, m means meter, s means second, * means multiplication",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

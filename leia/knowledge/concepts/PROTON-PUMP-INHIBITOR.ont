@@ -1,0 +1,24 @@
+{
+  "name": "@PROTON-PUMP-INHIBITOR",
+  "isa": [
+    "@DRUG"
+  ],
+  "def": "any of a group of drugs that inhibit the activity of proton pumps and are used to inhibit gastric acid secretion in the treatment of ulcers and gastroesophageal reflux disease",
+  "local": [],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    }
+  ],
+  "private": {}
+}

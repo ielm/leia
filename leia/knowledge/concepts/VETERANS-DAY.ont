@@ -1,0 +1,48 @@
+{
+  "name": "@VETERANS-DAY",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "November 11, observed in the United States in honor of veterans of the armed services and in commemoration of the armistice that ended World War I in 1918",
+  "local": [
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@NOVEMBER"
+    },
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        11
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        31
+      ]
+    },
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "private": {}
+}

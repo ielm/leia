@@ -1,0 +1,65 @@
+{
+  "name": "@ANIMATE-PART",
+  "isa": [
+    "@INANIMATE"
+  ],
+  "def": "parts of living organisms",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@ANATOMY"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@BIOLOGY"
+    },
+    {
+      "slot": "formality",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "maturity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "automated"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "manual"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "mechanical"
+    }
+  ],
+  "private": {}
+}

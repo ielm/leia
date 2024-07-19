@@ -1,0 +1,91 @@
+{
+  "name": "@CARP",
+  "isa": [
+    "@FISH"
+  ],
+  "def": "an edible freshwater fish (Cyprinus carpio) of Europe and Asia that is frequently bred in ponds and lakes",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "black"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "orange"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "red"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "white"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "yellow"
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "><",
+        100
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "><",
+        20
+      ],
+      "meta": {
+        "measured-in": "kilogram"
+      }
+    }
+  ],
+  "block": [
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

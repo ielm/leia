@@ -1,0 +1,22 @@
+{
+  "name": "@FINE-ARTS",
+  "isa": [
+    "@FIELD-OF-STUDY"
+  ],
+  "def": "the field of study that include any of the art forms such as painting, sculpture, drawing, etc.",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@ARTISTIC-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,123 @@
+{
+  "name": "@WRITE",
+  "isa": [
+    "@ACTIVE-COGNITIVE-EVENT",
+    "@APPLY-FORCE"
+  ],
+  "def": "to form (words, letters, etc.) either on a surface, as with a pen, or on a screen, as with a computer; also in the sense of *to compose*",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@LANGUAGE-RELATED-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@WRITING-IMPLEMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@PRINTED-MEDIA"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@AUTHOR"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@PLAYWRIGHT"
+    },
+    {
+      "slot": "purpose",
+      "facet": "default",
+      "filler": "@COMMUNICATIVE-EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@COMPUTER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ABSTRACT-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@REPRESENTATIONAL-OBJECT"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@ANALYTIC-COGNITIVE-EVENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

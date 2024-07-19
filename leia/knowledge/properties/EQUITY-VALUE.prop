@@ -1,0 +1,9 @@
+{
+  "name": "$EQUITY-VALUE",
+  "def": "the money value of a property or of an interest in a property in excess of claims or liens against it",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

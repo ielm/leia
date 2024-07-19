@@ -1,0 +1,22 @@
+{
+  "name": "@ENERGY-UNIT",
+  "isa": [
+    "@MEASURING-UNIT"
+  ],
+  "def": "units used for measuring energy or work",
+  "local": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@JOULE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "sem",
+      "filler": "@MEASURING-UNIT"
+    }
+  ],
+  "private": {}
+}

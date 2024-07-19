@@ -1,0 +1,109 @@
+{
+  "name": "@LARGE-GEOPOLITICAL-ENTITY",
+  "isa": [
+    "@GEOPOLITICAL-ENTITY"
+  ],
+  "def": "a geopolitical entity that is larger than a county in population and/or geographical area",
+  "local": [],
+  "block": [
+    {
+      "slot": "autonomy-political",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@EMAIL-ADDRESS"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@PHONE-NUMBER"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@WEB-ADDRESS"
+    },
+    {
+      "slot": "in-city",
+      "facet": "sem",
+      "filler": "@CITY"
+    },
+    {
+      "slot": "in-city",
+      "facet": "sem",
+      "filler": "@CITY"
+    },
+    {
+      "slot": "in-county",
+      "facet": "sem",
+      "filler": "@COUNTY"
+    },
+    {
+      "slot": "in-county",
+      "facet": "sem",
+      "filler": "@COUNTY"
+    },
+    {
+      "slot": "in-district",
+      "facet": "sem",
+      "filler": "@DISTRICT"
+    },
+    {
+      "slot": "in-district",
+      "facet": "sem",
+      "filler": "@DISTRICT"
+    },
+    {
+      "slot": "in-province",
+      "facet": "sem",
+      "filler": "@PROVINCE"
+    },
+    {
+      "slot": "in-state",
+      "facet": "sem",
+      "filler": "@STATE"
+    },
+    {
+      "slot": "in-state",
+      "facet": "sem",
+      "filler": "@STATE"
+    },
+    {
+      "slot": "in-town",
+      "facet": "sem",
+      "filler": "@TOWN"
+    },
+    {
+      "slot": "in-town",
+      "facet": "sem",
+      "filler": "@TOWN"
+    },
+    {
+      "slot": "in-village",
+      "facet": "sem",
+      "filler": "@VILLAGE"
+    },
+    {
+      "slot": "in-village",
+      "facet": "sem",
+      "filler": "@VILLAGE"
+    }
+  ],
+  "private": {}
+}

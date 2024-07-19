@@ -1,0 +1,47 @@
+{
+  "name": "@SKATING",
+  "isa": [
+    "@SPORTS-DISCIPLINE"
+  ],
+  "def": "move in a gliding fashion using ice skates, roller blades, etc.",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@ICE-RINK"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SKATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SPORT-ARTIFACT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BEACH"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BOWLING-ALLEY"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GYMNASIUM"
+    }
+  ],
+  "private": {}
+}

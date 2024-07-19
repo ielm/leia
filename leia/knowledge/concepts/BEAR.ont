@@ -1,0 +1,16 @@
+{
+  "name": "@BEAR",
+  "isa": [
+    "@MAMMAL"
+  ],
+  "def": "Any of various usually omnivorous mammals that have a shaggy coat and a short tail and walk with the entire lower surface of the foot touching the ground.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PAW"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

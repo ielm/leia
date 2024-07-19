@@ -1,0 +1,19 @@
+{
+  "name": "@VICE-PRESIDENT-CORPORATION",
+  "isa": [
+    "@EXECUTIVE"
+  ],
+  "def": "The officer next in rank below the president of a corporation, acting during the president*s absence on incapacity",
+  "local": [
+    {
+      "slot": "authority-attribute",
+      "facet": "sem",
+      "filler": [
+        "><",
+        0.8
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

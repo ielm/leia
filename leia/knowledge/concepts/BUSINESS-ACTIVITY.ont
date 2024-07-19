@@ -1,0 +1,87 @@
+{
+  "name": "@BUSINESS-ACTIVITY",
+  "isa": [
+    "@WORK-ACTIVITY"
+  ],
+  "def": "Business events are a subclass of social events and include the various events in running a business.",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@FINANCIAL-DIRECTOR"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@MANAGERIAL-ROLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@COMPUTER-USER"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@COMPUTING-WORK-ROLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@BUSINESS-ROLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ATTORNEY"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@RESEARCHER"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@CORPORATION"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@OFFICE"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@BUSINESS-ADMINISTRATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

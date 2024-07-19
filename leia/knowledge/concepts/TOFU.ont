@@ -1,0 +1,16 @@
+{
+  "name": "@TOFU",
+  "isa": [
+    "@GRAIN-FOODSTUFF"
+  ],
+  "def": "A creamy white cake made from soybean, used chiefly in oriental cooking. Also known as bean curd.",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "off-white"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@BLOOM",
+  "isa": [
+    "@PLANT-LIVING-EVENT"
+  ],
+  "def": "(of a flower) to produce flowers",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@FLOWER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

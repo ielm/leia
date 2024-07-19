@@ -1,0 +1,21 @@
+{
+  "name": "@MEAN",
+  "isa": [
+    "@ACTIVE-COGNITIVE-EVENT"
+  ],
+  "def": "To be used to convey - denote; to act as a symbol of, to signify or represent.",
+  "local": [],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

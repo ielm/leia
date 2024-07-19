@@ -1,0 +1,91 @@
+{
+  "name": "@MIRROR",
+  "isa": [
+    "@FURNITURE",
+    "@FURNITURE-PART"
+  ],
+  "def": "a surface capable of reflecting a virtual image of an object placed in front of it",
+  "local": [
+    {
+      "slot": "hardness-breakability",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": [
+        ">=<",
+        1
+      ]
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": [
+        ">=<",
+        1
+      ]
+    },
+    {
+      "slot": "hardness-breakability",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "hardness-breakability",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "is-consumer-good",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SEWING-MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SYNTHETICS"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    }
+  ],
+  "private": {}
+}

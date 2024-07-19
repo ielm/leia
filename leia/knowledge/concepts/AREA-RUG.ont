@@ -1,0 +1,21 @@
+{
+  "name": "@AREA-RUG",
+  "isa": [
+    "@FLOOR-COVERING"
+  ],
+  "def": "a piece of fabric used as a floor covering on an area of bare floor",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    }
+  ],
+  "private": {}
+}

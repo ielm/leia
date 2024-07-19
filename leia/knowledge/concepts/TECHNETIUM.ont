@@ -1,0 +1,36 @@
+{
+  "name": "@TECHNETIUM",
+  "isa": [
+    "@METALLIC-SOLID-ELEMENT"
+  ],
+  "def": "a silvery-gray metal, the first synthetically produced element, having 14 isotopes with masses ranging from 92 to 105 and half-lives up to 2.6x10 6 years. it is used as a tracer and to eliminate corrosion in steel",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        43
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        97
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

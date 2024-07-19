@@ -1,0 +1,19 @@
+{
+  "name": "@LUMEN",
+  "isa": [
+    "@LUMINOUS-FLUX-UNIT"
+  ],
+  "def": "the SI derived unit for measuring the perceived power of light. cd*sr (cd means candela, sr means steradian, * means multiplication)",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.001496
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

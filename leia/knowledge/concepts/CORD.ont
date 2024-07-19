@@ -1,0 +1,19 @@
+{
+  "name": "@CORD",
+  "isa": [
+    "@VOLUME-UNIT"
+  ],
+  "def": "a unit of dry volume used to measure firewood; 4feet*8feet*4feet",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        3.6247
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

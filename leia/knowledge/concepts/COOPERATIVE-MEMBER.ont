@@ -1,0 +1,19 @@
+{
+  "name": "@COOPERATIVE-MEMBER",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "Someone who is a member of a cooperative, thus owning a part of it.",
+  "local": [],
+  "block": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

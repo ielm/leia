@@ -1,0 +1,16 @@
+{
+  "name": "@TURBINE",
+  "isa": [
+    "@ENGINE"
+  ],
+  "def": "an engine as driven by the pressure of air, water, or steam against the curved vanes of a wheel",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@WHEEL"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,45 @@
+{
+  "name": "@ALKALOID",
+  "isa": [
+    "@SOLID-CHEMICAL-COMPOUND"
+  ],
+  "def": "a bitter, alkaline substance, such as caffeine, morphine, etc., containing nitrogen",
+  "local": [
+    {
+      "slot": "ph",
+      "facet": "sem",
+      "filler": [
+        "><",
+        7
+      ]
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@NITROGEN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    }
+  ],
+  "private": {}
+}

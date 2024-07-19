@@ -1,0 +1,19 @@
+{
+  "name": "@KARAT-GOLD",
+  "isa": [
+    "@PERCENTAGE-UNIT"
+  ],
+  "def": "the amount of gold in an alloy, 24K gold is pure gold; 1/24",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.0416667
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

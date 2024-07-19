@@ -1,0 +1,9 @@
+{
+  "name": "$ACROSS",
+  "def": "from one side of (something) to the other side",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$ACROSS-FROM",
+  "measured-in": [],
+  "container": "$SPATIAL-RELATION"
+}

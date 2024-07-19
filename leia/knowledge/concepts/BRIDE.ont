@@ -1,0 +1,25 @@
+{
+  "name": "@BRIDE",
+  "isa": [
+    "@MARRIAGE-ROLE"
+  ],
+  "def": "a female who is about to be, or has just been, married",
+  "local": [
+    {
+      "slot": "age",
+      "facet": "default",
+      "filler": [
+        ">",
+        12
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "gender",
+      "facet": "sem",
+      "filler": "male"
+    }
+  ],
+  "private": {}
+}

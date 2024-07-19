@@ -1,0 +1,27 @@
+{
+  "name": "@GEPHYROMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "irresistable fascination with bridges",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BRIDGE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

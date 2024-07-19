@@ -1,0 +1,36 @@
+{
+  "name": "@SODIUM",
+  "isa": [
+    "@ALKALI-METAL"
+  ],
+  "def": "a soft, light, extremely malleable silver-white metallic element",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        11
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        22
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

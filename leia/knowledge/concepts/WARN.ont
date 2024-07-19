@@ -1,0 +1,16 @@
+{
+  "name": "@WARN",
+  "isa": [
+    "@ASSERTIVE-ACT"
+  ],
+  "def": "to tell of a danger, a coming evil",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@WARNING-DEVICE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

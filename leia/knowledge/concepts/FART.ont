@@ -1,0 +1,32 @@
+{
+  "name": "@FART",
+  "isa": [
+    "@EXPEL-GAS"
+  ],
+  "def": "expel gas through the colon",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@COLON"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ANUS"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@ANUS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@LOWER-GASTROINTESTINAL-TRACT"
+    }
+  ],
+  "private": {}
+}

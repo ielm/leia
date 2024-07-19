@@ -1,0 +1,9 @@
+{
+  "name": "$DESTINATION",
+  "def": "an endpoint for actions involving change of state or location",
+  "type": "case_role",
+  "range": "!AnyType",
+  "inverse": "$DESTINATION-OF",
+  "measured-in": [],
+  "container": "$CASE-ROLE"
+}

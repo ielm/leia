@@ -1,0 +1,27 @@
+{
+  "name": "@PROTON",
+  "isa": [
+    "@ATOMIC-PARTICLE"
+  ],
+  "def": "an elementary particle in the nucleus of all atoms, carrying a unit positive charge of electricity",
+  "local": [
+    {
+      "slot": "electric-charge",
+      "facet": "sem",
+      "filler": "positive"
+    }
+  ],
+  "block": [
+    {
+      "slot": "electric-charge",
+      "facet": "sem",
+      "filler": "negative"
+    },
+    {
+      "slot": "electric-charge",
+      "facet": "sem",
+      "filler": "neutral"
+    }
+  ],
+  "private": {}
+}

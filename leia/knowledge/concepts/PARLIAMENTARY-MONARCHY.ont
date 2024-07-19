@@ -1,0 +1,22 @@
+{
+  "name": "@PARLIAMENTARY-MONARCHY",
+  "isa": [
+    "@GOVERNMENT-TYPE"
+  ],
+  "def": "a type of Monorchial government",
+  "local": [
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@SOVEREIGN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    }
+  ],
+  "private": {}
+}

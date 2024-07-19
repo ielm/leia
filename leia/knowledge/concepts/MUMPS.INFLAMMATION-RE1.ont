@@ -1,0 +1,22 @@
+{
+  "name": "@MUMPS.INFLAMMATION-RE1",
+  "isa": [
+    "@INFLAMMATION"
+  ],
+  "def": "(reification) # a localized protective reaction of tissue to irritation, injury, or infection, characterized by pain, redness, swelling, and sometimes loss of function",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SALIVARY-GLAND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

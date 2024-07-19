@@ -1,0 +1,46 @@
+{
+  "name": "@LEVANTER",
+  "isa": [
+    "@WIND"
+  ],
+  "def": "A strong easterly wind of the Mediterranean area.",
+  "local": [
+    {
+      "slot": "intensity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0.5
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "northeastward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "southeastward"
+    },
+    {
+      "slot": "intensity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "intensity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

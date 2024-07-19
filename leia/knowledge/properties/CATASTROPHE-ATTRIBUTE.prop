@@ -1,0 +1,9 @@
+{
+  "name": "$CATASTROPHE-ATTRIBUTE",
+  "def": "an attribute that quantifies the intensity of a disaster or catastrophe in lives lost, property damage in thousands of dollars or other quantifiers",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-EVENT-ATTRIBUTE"
+}

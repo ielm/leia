@@ -1,0 +1,25 @@
+{
+  "name": "@CUSTOMER",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "a person who patronizes an organization",
+  "local": [
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@ORGANIZATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

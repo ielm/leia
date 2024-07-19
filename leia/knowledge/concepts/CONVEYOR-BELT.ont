@@ -1,0 +1,26 @@
+{
+  "name": "@CONVEYOR-BELT",
+  "isa": [
+    "@DEPENDENT-DEVICE"
+  ],
+  "def": "a device which is used to move solid objects which are placed on a belt strip which moves",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@RUBBER-NATURAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SYNTHETIC-RUBBER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

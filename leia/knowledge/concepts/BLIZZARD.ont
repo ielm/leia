@@ -1,0 +1,66 @@
+{
+  "name": "@BLIZZARD",
+  "isa": [
+    "@STORM",
+    "@PRECIPITATION"
+  ],
+  "def": "a long severe snowstorm with winds of at least 35 miles per hour and a visibility of less than a quarter mile for 3 hours",
+  "local": [
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@CLOUD"
+    },
+    {
+      "slot": "location",
+      "facet": "not",
+      "filler": "@TROPICAL-RAIN-FOREST"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@GALE"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@SNOW"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@NATURAL-EVENT"
+    },
+    {
+      "slot": "intensity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

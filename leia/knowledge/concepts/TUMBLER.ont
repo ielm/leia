@@ -1,0 +1,82 @@
+{
+  "name": "@TUMBLER",
+  "isa": [
+    "@DRINKING-VESSEL"
+  ],
+  "def": "a flat-bottomed glass having no handle, foot, or stem",
+  "local": [
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "><",
+        600
+      ],
+      "meta": {
+        "measured-in": "gram"
+      }
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "><",
+        20
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    },
+    {
+      "slot": "diameter",
+      "facet": "sem",
+      "filler": [
+        "><",
+        11
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    }
+  ],
+  "block": [
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

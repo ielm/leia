@@ -1,0 +1,22 @@
+{
+  "name": "@LUMINANCE-UNIT",
+  "isa": [
+    "@MEASURING-UNIT"
+  ],
+  "def": "Luminance is a photometric measure of the luminous intensity per unit area of light travelling in a given direction. (Wikipedia)",
+  "local": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@WATTS-PER-METER-SQUARED"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "sem",
+      "filler": "@MEASURING-UNIT"
+    }
+  ],
+  "private": {}
+}

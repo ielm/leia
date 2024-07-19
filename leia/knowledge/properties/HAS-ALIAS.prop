@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-ALIAS",
+  "def": "A relation between an object (or, perhaps, event, like some military operation) and its assumed or secondary names.",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": "$NAME-OF",
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

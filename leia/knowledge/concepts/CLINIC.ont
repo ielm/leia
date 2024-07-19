@@ -1,0 +1,16 @@
+{
+  "name": "@CLINIC",
+  "isa": [
+    "@MEDICAL-BUILDING"
+  ],
+  "def": "A facility, often associated with a hospital or medical school, that is devoted to the diagnosis and care of outpatients",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@NURSE-STATION"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@FEATHER",
+  "isa": [
+    "@NON-HUMAN-ANIMAL-PART"
+  ],
+  "def": "any of the soft, light growths covering the body of a bird",
+  "local": [
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@CHICKEN"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

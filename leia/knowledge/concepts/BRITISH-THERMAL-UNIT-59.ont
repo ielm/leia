@@ -1,0 +1,19 @@
+{
+  "name": "@BRITISH-THERMAL-UNIT-59",
+  "isa": [
+    "@ENERGY-UNIT"
+  ],
+  "def": "(Wikipedia) The amount of heat required to raise the temperature of one pound of liquid water by one degree at a constant pressure of one atmosphere. This variant is chiefly American, and uses the 15 degree Celsius calorie.",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1054.8
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

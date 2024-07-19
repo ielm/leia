@@ -1,0 +1,19 @@
+{
+  "name": "@CALIBER",
+  "isa": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "def": "(Wikipeda) the interior diameter of a tube, the exterior diameter of a wire or rod, or the measurement of the length of a gun relative to its diameter; 0.01*inch",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.000254
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

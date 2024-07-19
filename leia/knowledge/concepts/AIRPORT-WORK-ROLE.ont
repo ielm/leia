@@ -1,0 +1,32 @@
+{
+  "name": "@AIRPORT-WORK-ROLE",
+  "isa": [
+    "@WORK-ROLE"
+  ],
+  "def": "service-role filled by airport employees while on the job",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@AIRPORT-TERMINAL"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@AIRPLANE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@AIRPORT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

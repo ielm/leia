@@ -1,0 +1,11 @@
+{
+  "name": "$PERCENT-OF-WORLD-POPULATION",
+  "def": "the percent of the world population that lives in a certain place",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$DEMOGRAPHICS-ATTRIBUTE"
+}

@@ -1,0 +1,142 @@
+{
+  "name": "@TABLESPOON",
+  "isa": [
+    "@VOLUME-MEASURING-ARTIFACT",
+    "@SPOON"
+  ],
+  "def": "a large spoon used for eating soups, serving foods and for measuring",
+  "local": [
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        "><",
+        6
+      ]
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "><",
+        4
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "><",
+        3
+      ]
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": "@CENTIMETER"
+    },
+    {
+      "slot": "is-consumer-good",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        "><",
+        4
+      ]
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": "@CENTIMETER"
+    }
+  ],
+  "private": {}
+}

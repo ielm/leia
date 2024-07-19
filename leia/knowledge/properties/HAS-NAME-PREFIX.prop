@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-NAME-PREFIX",
+  "def": "links a named entity with the prefix(es) that might be used with his, her or its name: e.g., Mr., Professor, Dr. Cohen, Bank of, ...",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": "$NAME-OF",
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

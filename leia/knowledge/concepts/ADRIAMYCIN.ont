@@ -1,0 +1,24 @@
+{
+  "name": "@ADRIAMYCIN",
+  "isa": [
+    "@DRUG"
+  ],
+  "def": "an anti-cancer drug",
+  "local": [],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    }
+  ],
+  "private": {}
+}

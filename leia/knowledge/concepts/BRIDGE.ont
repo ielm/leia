@@ -1,0 +1,21 @@
+{
+  "name": "@BRIDGE",
+  "isa": [
+    "@ROAD"
+  ],
+  "def": "a structure built over a river, etc. to provide a way across",
+  "local": [
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

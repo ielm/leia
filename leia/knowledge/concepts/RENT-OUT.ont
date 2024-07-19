@@ -1,0 +1,37 @@
+{
+  "name": "@RENT-OUT",
+  "isa": [
+    "@EVERYDAY-FINANCIAL-EVENT"
+  ],
+  "def": "to permit someone occupancy or the use of something in return for payment at regular intervals",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@AUTOMOBILE"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@BUILDING"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

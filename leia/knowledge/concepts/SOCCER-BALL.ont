@@ -1,0 +1,21 @@
+{
+  "name": "@SOCCER-BALL",
+  "isa": [
+    "@BALL"
+  ],
+  "def": "A round ball used in soccer",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "black"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "white"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

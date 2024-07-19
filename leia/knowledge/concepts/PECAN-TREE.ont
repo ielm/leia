@@ -1,0 +1,22 @@
+{
+  "name": "@PECAN-TREE",
+  "isa": [
+    "@NUT-TREE"
+  ],
+  "def": "tree that produces pecans",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@PECAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@NUT-FOODSTUFF"
+    }
+  ],
+  "private": {}
+}

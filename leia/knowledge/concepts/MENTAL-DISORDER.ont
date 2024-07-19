@@ -1,0 +1,72 @@
+{
+  "name": "@MENTAL-DISORDER",
+  "isa": [
+    "@NON-COMMUNICABLE-DISEASE"
+  ],
+  "def": "A clinically significant dysfunction whose major manifestation is behavioral or psychological. These dysfunctions may have identified or presumed biological etiologies or manifestations; e.g. agoraphobia, hallucinations, etc.",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@BRAIN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@BACTERIA"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@BIOLOGICAL-WEAPON"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@GENE"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@VIRUS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

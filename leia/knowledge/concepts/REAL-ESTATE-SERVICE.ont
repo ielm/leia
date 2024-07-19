@@ -1,0 +1,42 @@
+{
+  "name": "@REAL-ESTATE-SERVICE",
+  "isa": [
+    "@PROFESSIONAL-SERVICE-EVENT"
+  ],
+  "def": "Work activity relating to providing real-estate services such as consulting, developing, selling, leasing, etc.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@REAL-ESTATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WATER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

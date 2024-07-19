@@ -1,0 +1,21 @@
+{
+  "name": "@PROBLEM",
+  "isa": [
+    "@ABSTRACT-OBJECT"
+  ],
+  "def": "a serious and difficult matter that often requires choosing between two or more alternatives",
+  "local": [
+    {
+      "slot": "about-as-topic",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "about-as-topic",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

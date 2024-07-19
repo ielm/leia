@@ -1,0 +1,21 @@
+{
+  "name": "@ROSIN",
+  "isa": [
+    "@NATURAL-RESIN"
+  ],
+  "def": "the hard resin left after the distillation of crude turpentine; it is rubbed on violin bows, used in making varnish, etc.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@TURPENTINE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "default",
+      "filler": "@TURPENTINE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

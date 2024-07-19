@@ -1,0 +1,40 @@
+{
+  "name": "@ELEMENT-MATERIAL",
+  "isa": [
+    "@MATERIAL"
+  ],
+  "def": "a substance composed of atoms having an identical number of protons in each nucleus and not separable into a less complex substance",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ATOM"
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

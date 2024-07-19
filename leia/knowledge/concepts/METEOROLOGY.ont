@@ -1,0 +1,22 @@
+{
+  "name": "@METEOROLOGY",
+  "isa": [
+    "@SCIENCE"
+  ],
+  "def": "the science of atmosphere and its phenomena; the study of weather",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@METEOROLOGIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SCIENTIST"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$FACE-VALUE",
+  "def": "the value written on a bond or a bill or the nominal value of an object",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@TABLE",
+  "isa": [
+    "@FURNITURE"
+  ],
+  "def": "a flat horizontal surface with legs",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SEWING-MATERIAL"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@SPROUT",
+  "isa": [
+    "@VEGETABLE-FOODSTUFF",
+    "@EXTERNAL-PLANT-PART"
+  ],
+  "def": "a young growth on a plant",
+  "local": [],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "maturity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

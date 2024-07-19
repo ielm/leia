@@ -1,0 +1,52 @@
+{
+  "name": "@REPAIR",
+  "isa": [
+    "@COMMONPLACE-SERVICE-EVENT"
+  ],
+  "def": "to cause an artifact to be fixed",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@TRADE-ROLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@IMPLEMENT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@WORKSHOP"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@WORK-ROLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

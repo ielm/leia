@@ -1,0 +1,57 @@
+{
+  "name": "@MENSTRUATE",
+  "isa": [
+    "@NORMAL-BIOLOGIC-FUNCTION"
+  ],
+  "def": "discharging the menses--the monthly flow of blood and cellular debris from the uterus of women and other primate females",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@UTERUS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BLOOD"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@PRIMATE"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@PRIMATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

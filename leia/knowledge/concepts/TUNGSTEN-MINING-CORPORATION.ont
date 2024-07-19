@@ -1,0 +1,22 @@
+{
+  "name": "@TUNGSTEN-MINING-CORPORATION",
+  "isa": [
+    "@METAL-MINING-CORPORATION"
+  ],
+  "def": "a corporation involved in the tungsten mining and preparation of tungsten",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@TUNGSTEN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "private": {}
+}

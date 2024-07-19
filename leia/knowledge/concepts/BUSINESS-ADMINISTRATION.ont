@@ -1,0 +1,22 @@
+{
+  "name": "@BUSINESS-ADMINISTRATION",
+  "isa": [
+    "@FIELD-OF-STUDY"
+  ],
+  "def": "a field of study focused on business",
+  "local": [
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@BUSINESS-ACTIVITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@WORK-ACTIVITY"
+    }
+  ],
+  "private": {}
+}

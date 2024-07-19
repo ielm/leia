@@ -1,0 +1,27 @@
+{
+  "name": "@HYPNOPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of sleeping",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SLEEP"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

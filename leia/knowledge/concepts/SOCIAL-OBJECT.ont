@@ -1,0 +1,379 @@
+{
+  "name": "@SOCIAL-OBJECT",
+  "isa": [
+    "@OBJECT"
+  ],
+  "def": "objects which exist only by the agreement of some people",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@NAME"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@FOODSTUFF"
+    },
+    {
+      "slot": "has-representative",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "cash-flow-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "net-loss-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "net-loss-attribute",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "standard-of-living",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "scalar-social-object-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "scalar-social-object-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "deficit-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "deficit-attribute",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "revenue-attribute",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "revenue-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "profit-attribute",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "profit-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@NAME"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@COMPASS-POINT"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@EMAIL-ADDRESS"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@PHONE-NUMBER"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@WEB-ADDRESS"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "language-used",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "has-name-suffix",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "has-name-suffix",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "expenditure",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "expenditure",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "has-name-prefix",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "has-alias",
+      "facet": "sem",
+      "filler": "@ALIAS"
+    },
+    {
+      "slot": "has-member",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "has-representative",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "economic-growth-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "economic-growth-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "deficit-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "cash-flow-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "has-name-non-human",
+      "facet": "sem",
+      "filler": "@NAME-NON-HUMAN"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CREATIVE-WORK"
+    },
+    {
+      "slot": "reputation-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "authority-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "flexibility-social",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "prestige",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "standard-of-living",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "objectivity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "language-relation",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "expertise-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "diligence",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "work-potential",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "goal",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "goal",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@SOCIOLOGY"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@ANTHROPOLOGY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "scalar-medical-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-medical-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,12 @@
+{
+  "name": "$WEIGHT",
+  "def": "the gravitational force exerted by the earth or another celestial body on an object, equal to the product of the object*s mass and the local value of gravitational acceleration",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@MASS-WEIGHT-UNIT",
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@GLIDER",
+  "isa": [
+    "@AIR-VEHICLE"
+  ],
+  "def": "AIRPLANES WITH NO ENGINES",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@ENGINE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

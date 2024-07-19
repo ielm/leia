@@ -1,0 +1,28 @@
+{
+  "name": "@BEAUTY",
+  "isa": [
+    "@ABSTRACT-IDEA"
+  ],
+  "def": "the quality of being pleasing aesthetically, in an ideal sense",
+  "local": [
+    {
+      "slot": "aesthetic-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "aesthetic-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

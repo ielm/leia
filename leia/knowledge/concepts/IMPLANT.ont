@@ -1,0 +1,88 @@
+{
+  "name": "@IMPLANT",
+  "isa": [
+    "@INSERT",
+    "@SURGERY"
+  ],
+  "def": "to insert surgically",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TISSUE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PROSTHESIS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ELECTRODE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@UTENSIL"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INJECTOR"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SUPPOSITORY"
+    }
+  ],
+  "private": {}
+}

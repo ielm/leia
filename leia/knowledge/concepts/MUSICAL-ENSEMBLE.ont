@@ -1,0 +1,16 @@
+{
+  "name": "@MUSICAL-ENSEMBLE",
+  "isa": [
+    "@CLUB-ORGANIZATION"
+  ],
+  "def": "a group of musicians playing together.",
+  "local": [
+    {
+      "slot": "has-member",
+      "facet": "default",
+      "filler": "@MUSICIAN"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

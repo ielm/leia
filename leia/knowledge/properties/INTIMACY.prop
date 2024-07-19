@@ -1,0 +1,11 @@
+{
+  "name": "$INTIMACY",
+  "def": "the degree of acquaintanceship, association or familiarity (no sexual implications)",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-ANIMAL-ATTRIBUTE"
+}

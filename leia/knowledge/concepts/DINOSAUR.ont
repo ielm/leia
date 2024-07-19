@@ -1,0 +1,138 @@
+{
+  "name": "@DINOSAUR",
+  "isa": [
+    "@REPTILE"
+  ],
+  "def": "a prehistoric, extinct reptile, often huge",
+  "local": [
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "><",
+        30
+      ],
+      "meta": {
+        "measured-in": "meter"
+      }
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "><",
+        15
+      ],
+      "meta": {
+        "measured-in": "meter"
+      }
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "><",
+        150000
+      ],
+      "meta": {
+        "measured-in": "kilogram"
+      }
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SKELETON"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LEG"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@TAIL"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@TOOTH"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "black"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "green"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

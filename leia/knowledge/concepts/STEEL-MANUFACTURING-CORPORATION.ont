@@ -1,0 +1,16 @@
+{
+  "name": "@STEEL-MANUFACTURING-CORPORATION",
+  "isa": [
+    "@METAL-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a for-profit corporation that manufactures steel products",
+  "local": [
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@IRON-MANUFACTURING-CORPORATION"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

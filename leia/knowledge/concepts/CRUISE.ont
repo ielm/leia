@@ -1,0 +1,62 @@
+{
+  "name": "@CRUISE",
+  "isa": [
+    "@TRAVEL-EVENT"
+  ],
+  "def": "To sail or travel about, often referring to trips on large cruiseships, where food and entertainment are presented on-board.",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@BOAT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@CRUISE-SHIP"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@ENTERTAIN-EVENT"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@INGEST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FOOT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@VEHICLE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

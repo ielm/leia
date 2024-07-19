@@ -1,0 +1,19 @@
+{
+  "name": "@PINT",
+  "isa": [
+    "@LIQUID-MEASURING-UNIT"
+  ],
+  "def": "a measure of liquid volume equal to one-half quart; 4732E-7",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.0004732
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

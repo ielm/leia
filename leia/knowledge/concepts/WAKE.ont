@@ -1,0 +1,52 @@
+{
+  "name": "@WAKE",
+  "isa": [
+    "@CEREMONY"
+  ],
+  "def": "to keep vigil over a dead person",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@FUNERAL-HOME"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@RELIGIOUS-BUILDING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

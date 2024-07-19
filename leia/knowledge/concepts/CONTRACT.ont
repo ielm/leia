@@ -1,0 +1,132 @@
+{
+  "name": "@CONTRACT",
+  "isa": [
+    "@BUSINESS-DOCUMENT",
+    "@FINANCIAL-OBJECT",
+    "@LEGAL-OBJECT"
+  ],
+  "def": "an agreement written up between two parties, especially one that can be enforced by law",
+  "local": [],
+  "block": [
+    {
+      "slot": "amount",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "capital-gains",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "corporate-assets-of",
+      "facet": "sem",
+      "filler": "@CORPORATION"
+    },
+    {
+      "slot": "face-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "face-value",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "scalar-medical-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-medical-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-medical-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "scalar-medical-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "term-of-financial-obligation",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "term-of-financial-obligation",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@STOMATOPOD",
+  "isa": [
+    "@CRUSTACEAN"
+  ],
+  "def": "a marine crustacean",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BODY-OF-WATER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

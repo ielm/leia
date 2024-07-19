@@ -1,0 +1,16 @@
+{
+  "name": "@LAND-VEHICLE",
+  "isa": [
+    "@VEHICLE"
+  ],
+  "def": "all vehicles that move on land and not on tracks",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@WHEEL"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

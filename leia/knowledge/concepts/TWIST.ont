@@ -1,0 +1,47 @@
+{
+  "name": "@TWIST",
+  "isa": [
+    "@CHANGE-POSITION"
+  ],
+  "def": "to subject to torsion",
+  "local": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@ADJUST"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

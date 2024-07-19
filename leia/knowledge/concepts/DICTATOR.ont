@@ -1,0 +1,22 @@
+{
+  "name": "@DICTATOR",
+  "isa": [
+    "@GOVERNMENTAL-ROLE"
+  ],
+  "def": "a ruler or tyrant with absolute power",
+  "local": [
+    {
+      "slot": "rules",
+      "facet": "sem",
+      "filler": "@LARGE-GEOPOLITICAL-ENTITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "rules",
+      "facet": "sem",
+      "filler": "@GEOGRAPHICAL-ENTITY"
+    }
+  ],
+  "private": {}
+}

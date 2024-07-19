@@ -1,0 +1,9 @@
+{
+  "name": "$BOX-WALL-ORIENTATION",
+  "def": "indicates the spatial orientation of a box-wall",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-OBJECT-ATTRIBUTE"
+}

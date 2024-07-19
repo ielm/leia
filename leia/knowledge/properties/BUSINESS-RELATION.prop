@@ -1,0 +1,9 @@
+{
+  "name": "$BUSINESS-RELATION",
+  "def": "relations that pertain to corporations and business activity",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$RELATION"
+}

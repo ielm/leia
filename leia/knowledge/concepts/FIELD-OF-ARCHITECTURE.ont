@@ -1,0 +1,22 @@
+{
+  "name": "@FIELD-OF-ARCHITECTURE",
+  "isa": [
+    "@FIELD-OF-STUDY"
+  ],
+  "def": "the science or profession of designing and constructing buildings",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@ARCHITECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    }
+  ],
+  "private": {}
+}

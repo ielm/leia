@@ -1,0 +1,21 @@
+{
+  "name": "@RYE",
+  "isa": [
+    "@GRAIN-FOODSTUFF"
+  ],
+  "def": "the grain of the rye, used in making flour and whiskey",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "tan"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

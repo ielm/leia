@@ -1,0 +1,72 @@
+{
+  "name": "@DIPHTHERIA",
+  "isa": [
+    "@COMMUNICABLE-DISEASE"
+  ],
+  "def": "to have an acute infectious disease marked by high fever and difficult breathing",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NOSE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@THROAT"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@FEVER"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@WHEEZE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ALLERGY"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@VIRUS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

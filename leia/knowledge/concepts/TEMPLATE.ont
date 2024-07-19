@@ -1,0 +1,22 @@
+{
+  "name": "@TEMPLATE",
+  "isa": [
+    "@IMPLEMENT"
+  ],
+  "def": "a pattern, as a thin metal plate, for making an exact copy",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

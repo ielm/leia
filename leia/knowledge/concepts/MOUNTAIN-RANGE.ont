@@ -1,0 +1,37 @@
+{
+  "name": "@MOUNTAIN-RANGE",
+  "isa": [
+    "@GEOLOGICAL-ENTITY"
+  ],
+  "def": "a series of mountain ridges alike in form, direction, and origin",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@EARTH-MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ROCK"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MOUNTAIN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    }
+  ],
+  "private": {}
+}

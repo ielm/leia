@@ -1,0 +1,9 @@
+{
+  "name": "$INVOLVES-OBJECT",
+  "def": "links an event and the objects that are used for it; e.g., horseback riding involves using a riding crop, shopping involves using a shopping bag",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$USED-IN",
+  "measured-in": [],
+  "container": "$RELATION"
+}

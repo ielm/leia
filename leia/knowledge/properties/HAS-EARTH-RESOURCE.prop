@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-EARTH-RESOURCE",
+  "def": "the relation between nations and natural (earth) resources",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$EARTH-RESOURCE-OF",
+  "measured-in": [],
+  "container": "$GEOPOLITICAL-RELATION"
+}

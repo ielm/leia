@@ -1,0 +1,22 @@
+{
+  "name": "@SNORE",
+  "isa": [
+    "@HUMAN-NOISE-MAKING"
+  ],
+  "def": "to breathe, while asleep, with harsh sounds",
+  "local": [
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

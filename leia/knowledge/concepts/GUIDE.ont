@@ -1,0 +1,32 @@
+{
+  "name": "@GUIDE",
+  "isa": [
+    "@CONTROL-EVENT-SOCIAL"
+  ],
+  "def": "to point out the way for; lead (not only of physical guidance, but of guidance in work or anything else)",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ABSTRACT-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

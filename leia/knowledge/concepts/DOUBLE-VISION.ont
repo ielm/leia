@@ -1,0 +1,22 @@
+{
+  "name": "@DOUBLE-VISION",
+  "isa": [
+    "@PATHOLOGIC-FUNCTION"
+  ],
+  "def": "a problem with vision when one sees two images instead of one",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EYE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

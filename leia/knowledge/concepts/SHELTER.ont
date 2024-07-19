@@ -1,0 +1,21 @@
+{
+  "name": "@SHELTER",
+  "isa": [
+    "@PLACE"
+  ],
+  "def": "a place where a person or animal finds protection, as from weather, danger, etc. It need not be a building but can be.",
+  "local": [
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

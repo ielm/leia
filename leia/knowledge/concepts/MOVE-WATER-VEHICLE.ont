@@ -1,0 +1,108 @@
+{
+  "name": "@MOVE-WATER-VEHICLE",
+  "isa": [
+    "@TRANSPORTATION-SERVE",
+    "@PILOT-EVENT"
+  ],
+  "def": "to operate a water-vehicle",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@SAILOR"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WATER-VEHICLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@VEHICLE-ROLE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "business"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "casual"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "formal"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "sport"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@SWIMMING-POOL"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VEHICLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VEHICLE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$CONVERSION-TO-STANDARD",
+  "def": "A special attribute which provides a conversion factor or lambda expression enabling us to convert any measuring unit in the ontology into the standard measuring unit for the category in question",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-OBJECT-ATTRIBUTE"
+}

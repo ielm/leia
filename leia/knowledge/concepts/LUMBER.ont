@@ -1,0 +1,16 @@
+{
+  "name": "@LUMBER",
+  "isa": [
+    "@CONSTRUCTION-MATERIAL"
+  ],
+  "def": "timber (i.e., processed wood) sawed into planks, boards, etc., to be used for building",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

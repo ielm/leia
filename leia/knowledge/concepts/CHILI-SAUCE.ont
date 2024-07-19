@@ -1,0 +1,32 @@
+{
+  "name": "@CHILI-SAUCE",
+  "isa": [
+    "@FLAVORING"
+  ],
+  "def": "A sauce made by simmering tomatoes, onions, and peppers with various seasonings.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@TOMATO"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ONION"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SPICE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

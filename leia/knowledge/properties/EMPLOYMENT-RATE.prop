@@ -1,0 +1,9 @@
+{
+  "name": "$EMPLOYMENT-RATE",
+  "def": "the number or percentage of persons gainfully employed.\nIf this is expressed not as a percentage, look at LABOR-FORCE",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

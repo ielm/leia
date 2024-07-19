@@ -1,0 +1,27 @@
+{
+  "name": "@PROVINCE",
+  "isa": [
+    "@LARGE-GEOPOLITICAL-ENTITY"
+  ],
+  "def": "a territory governed by an administrative or political unit of a country. It is either larger than or equivalent to a county.",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

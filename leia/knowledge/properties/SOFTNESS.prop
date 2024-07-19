@@ -1,0 +1,9 @@
+{
+  "name": "$SOFTNESS",
+  "def": "The degree to which a thing is soft (like cat fur) or rough (like sandpaper, for example).",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

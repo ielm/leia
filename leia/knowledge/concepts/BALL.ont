@@ -1,0 +1,16 @@
+{
+  "name": "@BALL",
+  "isa": [
+    "@SPORT-ARTIFACT"
+  ],
+  "def": "a round or egg-shaped object used in various games",
+  "local": [
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "spherical"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,58 @@
+{
+  "name": "@SUGAR-CANE",
+  "isa": [
+    "@CROP-PLANT",
+    "@GRASS"
+  ],
+  "def": "a very tall tropical grass cultivated as the main source of sugar",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@SUGAR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "effect",
+      "facet": "relaxable-to",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@ALLERGY"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CROP"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@FRUIT-FOODSTUFF"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@GRAIN-FOODSTUFF"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@GRAIN-FOODSTUFF"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@NUT-FOODSTUFF"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@VEGETABLE-FOODSTUFF"
+    }
+  ],
+  "private": {}
+}

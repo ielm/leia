@@ -1,0 +1,9 @@
+{
+  "name": "$FORMALITY",
+  "def": "The degree to which smth is formal or informal.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-ATTRIBUTE"
+}

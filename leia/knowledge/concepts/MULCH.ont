@@ -1,0 +1,16 @@
+{
+  "name": "@MULCH",
+  "isa": [
+    "@AGRICULTURAL-PRODUCT"
+  ],
+  "def": "A protective covering, usually made of organic matter like leaves, straw, or peat; it is placed around plants to prevent the evaporation of moisture, the freezing of roots, and the growth of weeds",
+  "local": [],
+  "block": [
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    }
+  ],
+  "private": {}
+}

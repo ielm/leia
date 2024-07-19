@@ -1,0 +1,26 @@
+{
+  "name": "@ACADEMIC-BUILDING",
+  "isa": [
+    "@INSTITUTIONAL-BUILDING"
+  ],
+  "def": "a building in which learning takes place, usually part of a school or university",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@LEARN"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@TEACH"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@ACADEMIC-ROLE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

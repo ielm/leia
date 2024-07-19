@@ -1,0 +1,28 @@
+{
+  "name": "@VIRUS",
+  "isa": [
+    "@MICRO-ORGANISM"
+  ],
+  "def": "Any of various simple submicroscopic parasites of plants, animals, and bacteria that often cause disease and that consist essentially of a core of RNA or DNA surrounded by a protein coat and are unable to replicate without a host cell.",
+  "local": [
+    {
+      "slot": "safety-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "safety-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

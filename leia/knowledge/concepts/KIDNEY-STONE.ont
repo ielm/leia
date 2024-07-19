@@ -1,0 +1,46 @@
+{
+  "name": "@KIDNEY-STONE",
+  "isa": [
+    "@ANATOMICAL-ABNORMALITY",
+    "@PATHOLOGIC-FUNCTION"
+  ],
+  "def": "an abnormal mass in the kidney",
+  "local": [],
+  "block": [
+    {
+      "slot": "humor-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "humor-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "visibility",
+      "facet": "sem",
+      "filler": [
+        ">=<",
+        0
+      ]
+    }
+  ],
+  "private": {}
+}

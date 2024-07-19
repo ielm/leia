@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-HOLDING-COMPANY",
+  "def": "the relation between a corporation that has bought stock of other corporations and has assumed control over them and those other corporations",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$HOLDING-COMPANY-OF",
+  "measured-in": [],
+  "container": "$BUSINESS-RELATION"
+}

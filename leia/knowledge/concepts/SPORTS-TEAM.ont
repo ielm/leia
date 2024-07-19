@@ -1,0 +1,262 @@
+{
+  "name": "@SPORTS-TEAM",
+  "isa": [
+    "@SPORTS-ROLE",
+    "@CLUB-ORGANIZATION"
+  ],
+  "def": "An identifiable group of athletes that participate in sports or athletic competitions",
+  "local": [
+    {
+      "slot": "has-member",
+      "facet": "default",
+      "filler": "@ATHLETE"
+    },
+    {
+      "slot": "has-coach",
+      "facet": "sem",
+      "filler": "@SPORTS-ROLE"
+    },
+    {
+      "slot": "has-member",
+      "facet": "relaxable-to",
+      "filler": "@DOG"
+    },
+    {
+      "slot": "has-member",
+      "facet": "relaxable-to",
+      "filler": "@HORSE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "aggression",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "authority-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@ORGANIZATION"
+    },
+    {
+      "slot": "formality",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "gender",
+      "facet": "sem",
+      "filler": "female"
+    },
+    {
+      "slot": "gender",
+      "facet": "sem",
+      "filler": "male"
+    },
+    {
+      "slot": "genuineness",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "has-alias",
+      "facet": "sem",
+      "filler": "@ALIAS"
+    },
+    {
+      "slot": "has-alias",
+      "facet": "sem",
+      "filler": "@ALIAS"
+    },
+    {
+      "slot": "has-business-competitor",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "has-business-competitor",
+      "facet": "sem",
+      "filler": "@ORGANIZATION"
+    },
+    {
+      "slot": "has-business-coverage",
+      "facet": "sem",
+      "filler": "@GEOGRAPHICAL-ENTITY"
+    },
+    {
+      "slot": "has-creditor",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "has-creditor",
+      "facet": "sem",
+      "filler": "@ORGANIZATION"
+    },
+    {
+      "slot": "has-name-non-human",
+      "facet": "sem",
+      "filler": "@NAME-NON-HUMAN"
+    },
+    {
+      "slot": "has-nationality",
+      "facet": "sem",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "height",
+      "facet": "value",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "leadership",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "maturity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "operating",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "operating",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "path",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ANNUITY"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@DOCUMENT"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@INSURANCE-POLICY"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "punctuality",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "symmetry",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "symmetry",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

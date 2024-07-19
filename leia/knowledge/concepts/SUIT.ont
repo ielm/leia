@@ -1,0 +1,32 @@
+{
+  "name": "@SUIT",
+  "isa": [
+    "@CLOTHING-ARTIFACT"
+  ],
+  "def": "A set of matching outer garments, especially one consisting of a coat with trousers or a skirt.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@COAT"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SKIRT"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PANTS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CLOTHING-ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

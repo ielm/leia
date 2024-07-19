@@ -1,0 +1,21 @@
+{
+  "name": "@TELEGRAPH-MACHINE",
+  "isa": [
+    "@MACHINE"
+  ],
+  "def": "an apparatus that transmits messages sent by wire or radio",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@WIRE"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@TELEGRAM"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@SEAWEED",
+  "isa": [
+    "@ALGA"
+  ],
+  "def": "any marine algae or any marine plant in general",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@SEA"
+    }
+  ],
+  "block": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "green"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BODY-OF-WATER"
+    }
+  ],
+  "private": {}
+}

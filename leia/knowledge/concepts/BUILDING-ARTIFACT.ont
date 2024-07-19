@@ -1,0 +1,98 @@
+{
+  "name": "@BUILDING-ARTIFACT",
+  "isa": [
+    "@ARTIFACT"
+  ],
+  "def": "an artifact that relates to buildings and their parts",
+  "local": [
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "equity-value",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "equity-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "extent-of-change",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "path",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "property",
+      "facet": "sem",
+      "filler": "@ALL"
+    },
+    {
+      "slot": "scalar-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "scalar-financial-object-attribute",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "scalar-object-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "validated",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    }
+  ],
+  "private": {}
+}

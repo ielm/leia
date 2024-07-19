@@ -1,0 +1,22 @@
+{
+  "name": "@DICTATION",
+  "isa": [
+    "@CLERICAL-SERVE"
+  ],
+  "def": "to write down or transcribe something someone else has spoken or recorded",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TAPE-RECORDER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@OBSERVATION-DECK",
+  "isa": [
+    "@EXTERIOR-BUILDING-PART"
+  ],
+  "def": "a place on the top of a tall building where people can go to see what is around",
+  "local": [
+    {
+      "slot": "on-top-of",
+      "facet": "sem",
+      "filler": "@BUILDING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "on-top-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

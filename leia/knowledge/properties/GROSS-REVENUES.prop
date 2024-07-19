@@ -1,0 +1,9 @@
+{
+  "name": "$GROSS-REVENUES",
+  "def": "income earned before expenses and taxes are taken out",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

@@ -1,0 +1,58 @@
+{
+  "name": "@EPIPHANY",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "January 6, celebrated in parts of Europe and the Americas, as commemorating the role of the Magi in the story of the birth of Jesus.",
+  "local": [
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        6
+      ]
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@JANUARY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@CHRISTIANITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        31
+      ]
+    },
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "private": {}
+}

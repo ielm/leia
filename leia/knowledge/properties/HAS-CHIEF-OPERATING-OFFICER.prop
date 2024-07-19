@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-CHIEF-OPERATING-OFFICER",
+  "def": "The relation between an organization and its chief operating officer",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$CHIEF-OPERATING-OFFICER-OF",
+  "measured-in": [],
+  "container": "$BUSINESS-RELATION"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@QUASI-GOVERNMENT-ORGANIZATION",
+  "isa": [
+    "@PUBLIC-ADMINISTRATION-ORGANIZATION"
+  ],
+  "def": "an organization that is affiliated with a (usually) federal government but may function independently from it to some degree",
+  "local": [
+    {
+      "slot": "has-partner",
+      "facet": "sem",
+      "filler": "@FEDERAL-ORGANIZATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-partner",
+      "facet": "sem",
+      "filler": "@ORGANIZATION"
+    },
+    {
+      "slot": "has-partner",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    }
+  ],
+  "private": {}
+}

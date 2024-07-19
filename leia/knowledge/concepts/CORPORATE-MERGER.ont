@@ -1,0 +1,22 @@
+{
+  "name": "@CORPORATE-MERGER",
+  "isa": [
+    "@MERGE"
+  ],
+  "def": "in the uniting of two corporations, one acquires the other, and the acquiring corporation continues to maintain its own identity",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CORPORATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ORGANIZATION"
+    }
+  ],
+  "private": {}
+}

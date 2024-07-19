@@ -1,0 +1,19 @@
+{
+  "name": "@YARD",
+  "isa": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "def": "a unit of length equal to 0.91 meters; .9144",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.9144
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

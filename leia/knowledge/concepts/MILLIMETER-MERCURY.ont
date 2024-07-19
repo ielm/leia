@@ -1,0 +1,19 @@
+{
+  "name": "@MILLIMETER-MERCURY",
+  "isa": [
+    "@PRESSURE-UNIT"
+  ],
+  "def": "(Wikipedia) the pressure exerted at the base of a column of mercury exactly one millimeter high at standard gravity. ",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        133.322368421
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

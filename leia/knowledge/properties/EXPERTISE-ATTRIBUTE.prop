@@ -1,0 +1,9 @@
+{
+  "name": "$EXPERTISE-ATTRIBUTE",
+  "def": "the level of knowledge or skill brought to an activity or skill",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-OBJECT-ATTRIBUTE"
+}

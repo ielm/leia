@@ -1,0 +1,32 @@
+{
+  "name": "@PHONOPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of noise",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INVOLUNTARY-AUDITORY-EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EMIT-SOUND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$VALUE",
+  "def": "indicates the value of a modality on the abstract scale of {0,1}",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$PARAMETRIC-SCALAR"
+}

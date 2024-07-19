@@ -1,0 +1,27 @@
+{
+  "name": "@LOGGING-CORPORATION",
+  "isa": [
+    "@MATERIAL-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a corporation primarily engaged in cutting timber and in producing raw wood materials",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@FOREST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

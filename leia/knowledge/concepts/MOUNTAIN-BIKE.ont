@@ -1,0 +1,16 @@
+{
+  "name": "@MOUNTAIN-BIKE",
+  "isa": [
+    "@SPORT-ARTIFACT"
+  ],
+  "def": "a bicycle for mountain bike",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@WHEEL"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

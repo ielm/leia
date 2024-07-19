@@ -1,0 +1,9 @@
+{
+  "name": "$FATTINESS",
+  "def": "the degree of fat or fattiness that an object may have",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

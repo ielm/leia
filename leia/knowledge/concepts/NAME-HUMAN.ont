@@ -1,0 +1,27 @@
+{
+  "name": "@NAME-HUMAN",
+  "isa": [
+    "@NAME"
+  ],
+  "def": "The name of a human being.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SURNAME"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PERSONAL-NAME"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

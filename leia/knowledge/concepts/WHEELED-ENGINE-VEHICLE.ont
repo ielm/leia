@@ -1,0 +1,76 @@
+{
+  "name": "@WHEELED-ENGINE-VEHICLE",
+  "isa": [
+    "@WHEELED-VEHICLE",
+    "@ENGINE-PROPELLED-VEHICLE"
+  ],
+  "def": "motor vehicles that have wheels",
+  "local": [
+    {
+      "slot": "number-of-wheels",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        4
+      ]
+    },
+    {
+      "slot": "number-of-wheels",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        3
+      ]
+    },
+    {
+      "slot": "number-of-wheels",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        10
+      ]
+    },
+    {
+      "slot": "number-of-wheels",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        14
+      ]
+    },
+    {
+      "slot": "number-of-wheels",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        6
+      ]
+    },
+    {
+      "slot": "number-of-wheels",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        8
+      ]
+    },
+    {
+      "slot": "number-of-wheels",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        2
+      ]
+    },
+    {
+      "slot": "number-of-wheels",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        18
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

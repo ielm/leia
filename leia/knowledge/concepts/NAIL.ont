@@ -1,0 +1,28 @@
+{
+  "name": "@NAIL",
+  "isa": [
+    "@FASTENER"
+  ],
+  "def": "A slim, pointed piece of metal hammered into material as a fastener.",
+  "local": [
+    {
+      "slot": "sharpness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "sharpness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

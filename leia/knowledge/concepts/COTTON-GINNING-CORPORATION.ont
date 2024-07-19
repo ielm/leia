@@ -1,0 +1,22 @@
+{
+  "name": "@COTTON-GINNING-CORPORATION",
+  "isa": [
+    "@PLANT-FARM"
+  ],
+  "def": "a corporation whose business is separating the seeds from raw cotton",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@COTTON"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

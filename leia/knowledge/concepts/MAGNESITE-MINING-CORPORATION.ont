@@ -1,0 +1,22 @@
+{
+  "name": "@MAGNESITE-MINING-CORPORATION",
+  "isa": [
+    "@METAL-MINING-CORPORATION"
+  ],
+  "def": "a corporation involved in the magnesite mining and preparation of magnesite",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@MAGNESIUM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "private": {}
+}

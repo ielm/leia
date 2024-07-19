@@ -1,0 +1,47 @@
+{
+  "name": "@LECTURE",
+  "isa": [
+    "@INTERACT"
+  ],
+  "def": "a speech providing information about a given subject, delivered before an audience or class",
+  "local": [
+    {
+      "slot": "has-audience",
+      "facet": "default",
+      "filler": "@AUDIENCE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@ACADEMIC-BUILDING"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@UNIVERSITY-FACULTY"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@TEACHER"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@RELIGIOUS-ROLE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@RELIGIOUS-BUILDING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

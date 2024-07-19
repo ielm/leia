@@ -1,0 +1,9 @@
+{
+  "name": "$CRIME-TYPE",
+  "def": "indicates whether a crime is a felony or a misdemeanor",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-EVENT-ATTRIBUTE"
+}

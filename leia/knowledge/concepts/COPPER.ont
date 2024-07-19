@@ -1,0 +1,36 @@
+{
+  "name": "@COPPER",
+  "isa": [
+    "@DUCTILE-METALLIC-ELEMENT"
+  ],
+  "def": "a ductile, malleable, reddish-brown metallic element that is an excellent conductor of heat and electricity and is widely used for electrical wiring, water piping, and corrosion-resistant parts either pure or in alloys such as brass and bronze",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        29
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        63
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

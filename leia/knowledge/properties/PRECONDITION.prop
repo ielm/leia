@@ -1,0 +1,9 @@
+{
+  "name": "$PRECONDITION",
+  "def": "relations that connect actions with other actions that are necessary conditions for their occurrence",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$PRECONDITION-OF",
+  "measured-in": [],
+  "container": "$REASON"
+}

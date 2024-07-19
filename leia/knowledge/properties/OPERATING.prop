@@ -1,0 +1,9 @@
+{
+  "name": "$OPERATING",
+  "def": "Doing whatever the thing is supposed to be doing; this can relate to things like cars and lawnmowers, as well as to stores (open/closed), companies (up and running), etc.",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-OBJECT-ATTRIBUTE"
+}

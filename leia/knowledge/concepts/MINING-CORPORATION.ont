@@ -1,0 +1,27 @@
+{
+  "name": "@MINING-CORPORATION",
+  "isa": [
+    "@MATERIAL-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a for-profit corporation that produces materials or manufactures products from minerals.",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@MINE"
+    },
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@MINING-EQUIPMENT-MANUFACTURING-CORPORATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@INDUSTRIAL-EQUIPMENT-MANUFACTURING-CORPORATION"
+    }
+  ],
+  "private": {}
+}

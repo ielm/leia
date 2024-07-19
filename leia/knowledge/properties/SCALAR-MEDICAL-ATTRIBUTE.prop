@@ -1,0 +1,9 @@
+{
+  "name": "$SCALAR-MEDICAL-ATTRIBUTE",
+  "def": "a node for scalar medical attributes",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-OBJECT-ATTRIBUTE"
+}

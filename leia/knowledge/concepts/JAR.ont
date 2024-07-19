@@ -1,0 +1,73 @@
+{
+  "name": "@JAR",
+  "isa": [
+    "@RIGID-MANUFACTURED-CONTAINER"
+  ],
+  "def": "a container made of glass, ceramic, etc. with a large opening",
+  "local": [
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "><",
+        800
+      ],
+      "meta": {
+        "measured-in": "gram"
+      }
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "><",
+        25
+      ]
+    },
+    {
+      "slot": "diameter",
+      "facet": "sem",
+      "filler": [
+        "><",
+        20
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    }
+  ],
+  "block": [
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "><",
+        250
+      ]
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "><",
+        4500
+      ]
+    }
+  ],
+  "private": {}
+}

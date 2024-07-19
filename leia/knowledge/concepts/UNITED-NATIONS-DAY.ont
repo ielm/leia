@@ -1,0 +1,53 @@
+{
+  "name": "@UNITED-NATIONS-DAY",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "October 24, a day commemorating the founding of the United Nations",
+  "local": [
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@OCTOBER"
+    },
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        24
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        31
+      ]
+    },
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@CELEBRATE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@WATCH-MANUFACTURING-CORPORATION",
+  "isa": [
+    "@ARTIFACT-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a manufacturing-corporation that assemble watches for a profit",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@TIME-MEASURING-ARTIFACT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    }
+  ],
+  "private": {}
+}

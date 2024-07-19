@@ -1,0 +1,16 @@
+{
+  "name": "@COMMODITY-BROKERAGE-CORPORATION",
+  "isa": [
+    "@INVESTMENT-CORPORATION"
+  ],
+  "def": "an organization engaged in the buying and selling of commodity contracts",
+  "local": [],
+  "block": [
+    {
+      "slot": "area-of-business-activity",
+      "facet": "sem",
+      "filler": "@INVESTMENT-EVENT"
+    }
+  ],
+  "private": {}
+}

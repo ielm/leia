@@ -1,0 +1,9 @@
+{
+  "name": "$ATTRIBUTED-TO",
+  "def": "indicates to whom a modality is attributed - i.e., who has this belief, attitude, etc.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$ATTRIBUTION",
+  "measured-in": [],
+  "container": "$PARAMETRIC-RELATION"
+}

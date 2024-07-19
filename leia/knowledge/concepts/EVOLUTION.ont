@@ -1,0 +1,225 @@
+{
+  "name": "@EVOLUTION",
+  "isa": [
+    "@LIVING-EVENT"
+  ],
+  "def": "the change in the genetic composition of a population during successive generations resulting from natural selection acting on the genetic variation among individuals, and resulting in the development of new species",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "above",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "before",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "between-temporal",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "change-in-frequency-relative",
+      "facet": "sem",
+      "filler": "less-frequent"
+    },
+    {
+      "slot": "change-in-frequency-relative",
+      "facet": "sem",
+      "filler": "more-frequent"
+    },
+    {
+      "slot": "change-in-frequency-relative",
+      "facet": "sem",
+      "filler": "no-change"
+    },
+    {
+      "slot": "duration",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "duration",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "east-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "enablement",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "frequency",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "genuineness",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "genuineness",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@NAME"
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "legality-attribute",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "legality-attribute",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "outside-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "probability",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "secrecy-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "similarity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "spatial-relation",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "spatial-relation",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "stability",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "surrounds",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "validated",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    }
+  ],
+  "private": {}
+}

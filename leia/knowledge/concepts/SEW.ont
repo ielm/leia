@@ -1,0 +1,32 @@
+{
+  "name": "@SEW",
+  "isa": [
+    "@CREATE-FABRIC-MATERIAL-ARTIFACT"
+  ],
+  "def": "to fasten with stitches made with needle and thread",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CLOTHING-ARTIFACT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@KNITTING-NEEDLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@LOOM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    }
+  ],
+  "private": {}
+}

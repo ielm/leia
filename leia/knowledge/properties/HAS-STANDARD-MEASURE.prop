@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-STANDARD-MEASURE",
+  "def": "A relation defined between a class of measuring units and what the ontology uses as the standard measure for that class: for example, TEMPORAL-UNIT has SECOND as its STANDARD-MEASURE.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$STANDARD-MEASURE-FOR",
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

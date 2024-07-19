@@ -1,0 +1,42 @@
+{
+  "name": "@COOPERATIVE-EVENT",
+  "isa": [
+    "@SOCIAL-EVENT"
+  ],
+  "def": "an event in which two or more parties work together for a specific purpose",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@MEETING"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@CONVERSATION"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@PHONE-CONVERSATION"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@TELECOMMUNICATION"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

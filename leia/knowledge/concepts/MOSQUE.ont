@@ -1,0 +1,27 @@
+{
+  "name": "@MOSQUE",
+  "isa": [
+    "@RELIGIOUS-BUILDING"
+  ],
+  "def": "a Muslim place of worship",
+  "local": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@IMAM"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@PILGRIM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@RELIGIOUS-ROLE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,37 @@
+{
+  "name": "@PUT",
+  "isa": [
+    "@CHANGE-LOCATION"
+  ],
+  "def": "To move an object to a location where it is to remain in equilibrium.",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@UTENSIL"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

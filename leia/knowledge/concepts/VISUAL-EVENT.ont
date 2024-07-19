@@ -1,0 +1,72 @@
+{
+  "name": "@VISUAL-EVENT",
+  "isa": [
+    "@PERCEPTUAL-EVENT"
+  ],
+  "def": "the root for visual events; used when \nit is not clear if the event is voluntary\nor involuntary",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EYE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SOCIAL-EVENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@BODY"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EAR"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@NOSE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PRINCIPAL-BODY-PART"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SKIN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SUBDIVISION-OF-PRINCIPAL-BODY-PART"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TONGUE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

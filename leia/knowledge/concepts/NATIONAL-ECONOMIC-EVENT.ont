@@ -1,0 +1,22 @@
+{
+  "name": "@NATIONAL-ECONOMIC-EVENT",
+  "isa": [
+    "@FINANCIAL-EVENT"
+  ],
+  "def": "financial-events that pertain to national economies, as opposed to events between nations",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@ORGANIZATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

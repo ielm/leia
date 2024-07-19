@@ -1,0 +1,205 @@
+{
+  "name": "@EXPEL",
+  "isa": [
+    "@PUSH"
+  ],
+  "def": "to drive out by force",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@INGESTIBLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "absolute-year",
+      "facet": "value",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "across",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "across",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beyond",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "change-in-frequency-relative",
+      "facet": "sem",
+      "filler": "less-frequent"
+    },
+    {
+      "slot": "change-in-frequency-relative",
+      "facet": "sem",
+      "filler": "more-frequent"
+    },
+    {
+      "slot": "change-in-frequency-relative",
+      "facet": "sem",
+      "filler": "no-change"
+    },
+    {
+      "slot": "directional-relation",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@CHANGE-POSITION"
+    },
+    {
+      "slot": "enablement",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "fame-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "formality",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "frequency",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "genuineness",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "importance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "language-relation",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "left-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "literal-attribute",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "literal-event-attribute",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "meet",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "north-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "outside-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "scalar-event-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-event-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "spatial-relation",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "typicalness-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "up-directional",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "validated",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    }
+  ],
+  "private": {}
+}

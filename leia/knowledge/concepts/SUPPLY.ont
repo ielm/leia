@@ -1,0 +1,32 @@
+{
+  "name": "@SUPPLY",
+  "isa": [
+    "@TRANSFER-OBJECT"
+  ],
+  "def": "to furnish or provide (what is needed) to some person or animal",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    }
+  ],
+  "private": {}
+}

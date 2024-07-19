@@ -1,0 +1,27 @@
+{
+  "name": "@WAITING-ROOM",
+  "isa": [
+    "@PUBLIC-ROOM"
+  ],
+  "def": "a room where one waits",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@SERVICE-BUILDING"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CHAIR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

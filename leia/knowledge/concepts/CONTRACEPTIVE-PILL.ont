@@ -1,0 +1,28 @@
+{
+  "name": "@CONTRACEPTIVE-PILL",
+  "isa": [
+    "@CONTRACEPTIVE-DEVICE",
+    "@PILL"
+  ],
+  "def": "a pill taken by women for contraception",
+  "local": [],
+  "block": [
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

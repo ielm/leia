@@ -1,0 +1,47 @@
+{
+  "name": "@NUCLEAR-ENERGY-EVENT",
+  "isa": [
+    "@ENERGY-EVENT"
+  ],
+  "def": "events in which nuclear energy is generated",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NUCLEAR-ENERGY"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@NUCLEAR-PLANT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@NUCLEAR-REACTOR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ENERGY"
+    }
+  ],
+  "private": {}
+}

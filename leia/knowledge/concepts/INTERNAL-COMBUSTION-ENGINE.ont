@@ -1,0 +1,21 @@
+{
+  "name": "@INTERNAL-COMBUSTION-ENGINE",
+  "isa": [
+    "@ENGINE"
+  ],
+  "def": "an engine, as in an automobile, powered by the fuel-and-air mixture within the cylinders",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@THROTTLE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ENGINE-PART"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

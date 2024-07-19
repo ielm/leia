@@ -1,0 +1,9 @@
+{
+  "name": "$ECONOMIC-GROWTH-ATTRIBUTE",
+  "def": "how fast an organization or other social-object's revenues change relative to some time period in the immediate past. \nMay be negative!",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

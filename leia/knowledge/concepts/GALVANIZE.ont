@@ -1,0 +1,47 @@
+{
+  "name": "@GALVANIZE",
+  "isa": [
+    "@MANUFACTURING-ACTIVITY"
+  ],
+  "def": "to coat iron or steel with a protective layer of zinc",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@IRON"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@STEEL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ZINC"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@IMPLEMENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MACHINE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@METAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

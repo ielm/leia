@@ -1,0 +1,16 @@
+{
+  "name": "@SHIPPING-CONTAINER",
+  "isa": [
+    "@RIGID-MANUFACTURED-CONTAINER"
+  ],
+  "def": "a large box of standard dimensions, designed for ease of transporting freight",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "private": {}
+}

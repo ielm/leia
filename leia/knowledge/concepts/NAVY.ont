@@ -1,0 +1,21 @@
+{
+  "name": "@NAVY",
+  "isa": [
+    "@MILITARY-BRANCH"
+  ],
+  "def": "a government*s entire sea force",
+  "local": [
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@SHIP"
+    },
+    {
+      "slot": "has-member",
+      "facet": "sem",
+      "filler": "@SAILOR"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

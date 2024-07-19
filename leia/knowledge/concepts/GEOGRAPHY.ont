@@ -1,0 +1,22 @@
+{
+  "name": "@GEOGRAPHY",
+  "isa": [
+    "@SCIENCE"
+  ],
+  "def": "the science dealing with the earth*s surface, its continents, climates, plants, animals, resources, etc.",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@GEOGRAPHER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SCIENTIST"
+    }
+  ],
+  "private": {}
+}

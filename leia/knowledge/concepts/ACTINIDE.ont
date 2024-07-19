@@ -1,0 +1,33 @@
+{
+  "name": "@ACTINIDE",
+  "isa": [
+    "@METALLIC-SOLID-ELEMENT"
+  ],
+  "def": "any of a series of chemically similar, mostly synthetic, radioactive elements with atomic numbers ranging from 89 (actinium) through 103 (lawrencium)",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

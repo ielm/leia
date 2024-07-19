@@ -1,0 +1,19 @@
+{
+  "name": "@GILL-FLUID",
+  "isa": [
+    "@LIQUID-MEASURING-UNIT"
+  ],
+  "def": "unit of volume equivalent to 1/4 of a pint; 4*fluid-ounce",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.0001182941
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

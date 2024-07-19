@@ -1,0 +1,22 @@
+{
+  "name": "@FLY-PROPELLED",
+  "isa": [
+    "@FLY"
+  ],
+  "def": "The act of flying when it is caused by being propelled by something - e.g. a rider flying through the air when the horse rears, or a stone flying through a window after being thrown.",
+  "local": [
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

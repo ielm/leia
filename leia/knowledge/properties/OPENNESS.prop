@@ -1,0 +1,11 @@
+{
+  "name": "$OPENNESS",
+  "def": "the degree to which a physical object (like a door, one*s eyes, etc.) are open.The domain needs to be further constrained when we have time.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

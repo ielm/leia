@@ -1,0 +1,881 @@
+{
+  "name": "@ANNOTATE",
+  "isa": [
+    "@WRITE"
+  ],
+  "def": "to provide explanatory notes for (e.g. a book)",
+  "local": [],
+  "block": [
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        31
+      ]
+    },
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        31
+      ]
+    },
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "absolute-year",
+      "facet": "value",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "absolute-year",
+      "facet": "value",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "attribute",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "attribute",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "before",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "before",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "between-temporal",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "between-temporal",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "capacity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "capacity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "capacity",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "capacity",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "change-in-frequency-relative",
+      "facet": "sem",
+      "filler": "less-frequent"
+    },
+    {
+      "slot": "change-in-frequency-relative",
+      "facet": "sem",
+      "filler": "less-frequent"
+    },
+    {
+      "slot": "change-in-frequency-relative",
+      "facet": "sem",
+      "filler": "more-frequent"
+    },
+    {
+      "slot": "change-in-frequency-relative",
+      "facet": "sem",
+      "filler": "more-frequent"
+    },
+    {
+      "slot": "change-in-frequency-relative",
+      "facet": "sem",
+      "filler": "no-change"
+    },
+    {
+      "slot": "change-in-frequency-relative",
+      "facet": "sem",
+      "filler": "no-change"
+    },
+    {
+      "slot": "compatibility",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "compatibility",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "complexity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "complexity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "difficulty",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "difficulty",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "duration",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "duration",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "duration",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "duration",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "enablement",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "enablement",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "enablement",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "enablement",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "extra-ontological",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "extra-ontological",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "extra-ontological",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "extra-ontological",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "fame-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "fame-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "formality",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "formality",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "frequency",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "frequency",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "frequency",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "frequency",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "fr-property",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "fr-property",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "fr-property",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "fr-property",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "genuineness",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "genuineness",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "genuineness",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "genuineness",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@NAME"
+    },
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@NAME"
+    },
+    {
+      "slot": "humor-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "humor-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "importance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "importance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "intensity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "intensity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "language-relation",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "language-relation",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "language-used",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "language-used",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "legality-attribute",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "legality-attribute",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "legality-attribute",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "legality-attribute",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "literal-attribute",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "literal-attribute",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "literal-event-attribute",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "literal-event-attribute",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "novelty",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "novelty",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "ontology-slot",
+      "facet": "sem",
+      "filler": "@ALL"
+    },
+    {
+      "slot": "ontology-slot",
+      "facet": "sem",
+      "filler": "@ALL"
+    },
+    {
+      "slot": "orderliness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "orderliness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "precision-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "precision-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "probability",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "probability",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "safety-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "safety-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "scalar-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "scalar-event-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-event-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-event-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "scalar-event-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "secrecy-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "secrecy-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "similarity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "similarity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "stability",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "stability",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "temporal-attribute",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "temporal-attribute",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "temporal-attribute",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "temporal-attribute",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ABSTRACT-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@REPRESENTATIONAL-OBJECT"
+    },
+    {
+      "slot": "time-begin",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "time-begin",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "time-end",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "time-end",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "typicalness-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "typicalness-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "urgency",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "urgency",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "usefulness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "usefulness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "validated",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "validated",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,33 @@
+{
+  "name": "@DART",
+  "isa": [
+    "@PROJECTILE"
+  ],
+  "def": "a small pointed missile for throwing or shooting",
+  "local": [
+    {
+      "slot": "sharpness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    },
+    {
+      "slot": "sharpness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@MACHINE-PART",
+  "isa": [
+    "@ARTIFACT-PART"
+  ],
+  "def": "parts of machines that do not act as devices",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "translucent"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "transparent"
+    }
+  ],
+  "private": {}
+}

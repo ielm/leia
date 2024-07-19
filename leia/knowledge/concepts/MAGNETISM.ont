@@ -1,0 +1,16 @@
+{
+  "name": "@MAGNETISM",
+  "isa": [
+    "@FORCE"
+  ],
+  "def": "a force exerted by an electric current-carrying or ferromagnetic medium",
+  "local": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@MAGNETICS"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

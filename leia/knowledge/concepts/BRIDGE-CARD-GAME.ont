@@ -1,0 +1,16 @@
+{
+  "name": "@BRIDGE-CARD-GAME",
+  "isa": [
+    "@CARD-GAME"
+  ],
+  "def": "Any one of several card games derived from whist, usually played by two sets of partners",
+  "local": [],
+  "block": [
+    {
+      "slot": "individual-or-team",
+      "facet": "sem",
+      "filler": "individual"
+    }
+  ],
+  "private": {}
+}

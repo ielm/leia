@@ -1,0 +1,37 @@
+{
+  "name": "@ECOSYSTEM",
+  "isa": [
+    "@PHYSICAL-OBJECT"
+  ],
+  "def": "the systematic interaction between a group of organisms and their physical environment",
+  "local": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@ECOLOGY"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

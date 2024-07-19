@@ -1,0 +1,21 @@
+{
+  "name": "@DESERVE",
+  "isa": [
+    "@ABSTRACT-SOCIAL-ACTIVITY"
+  ],
+  "def": "to be worthy of; to merit",
+  "local": [],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

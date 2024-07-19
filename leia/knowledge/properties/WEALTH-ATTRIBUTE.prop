@@ -1,0 +1,9 @@
+{
+  "name": "$WEALTH-ATTRIBUTE",
+  "def": "How much money or other forms of wealth a human has",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-HUMAN-ATTRIBUTE"
+}

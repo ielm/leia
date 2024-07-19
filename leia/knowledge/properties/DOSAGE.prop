@@ -1,0 +1,9 @@
+{
+  "name": "$DOSAGE",
+  "def": "the amount of a drug administered at a given time",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-MEDICAL-ATTRIBUTE"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "@ORGAN-SUBDIVISION-CLUSTER",
+  "isa": [
+    "@ORGAN-PART-CLUSTER"
+  ],
+  "def": "Organ part cluster, which consists of some members of two or more organ subdivision subclasses which are grouped together according to some shared attributes. Examples: root of lung, neurovascular bundle, renal pedicle, fascia of back.",
+  "local": [],
+  "block": [],
+  "private": {}
+}

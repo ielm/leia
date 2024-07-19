@@ -1,0 +1,77 @@
+{
+  "name": "@ARREST",
+  "isa": [
+    "@CONTROL-EVENT-SOCIAL"
+  ],
+  "def": "to seize by the authority of the law",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@CRIMINAL"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@POLICE-OFFICER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HANDCUFFS"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@DETECTIVE"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@MILITARY-ORGANIZATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@MILITARY-OFFICER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

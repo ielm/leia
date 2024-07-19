@@ -1,0 +1,16 @@
+{
+  "name": "@RIDE",
+  "isa": [
+    "@TRANSPORTATION-SERVE"
+  ],
+  "def": "to be carried along, as by a horse or a vehicle",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HORSE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

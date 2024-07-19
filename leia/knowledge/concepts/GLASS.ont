@@ -1,0 +1,47 @@
+{
+  "name": "@GLASS",
+  "isa": [
+    "@EARTH-MATERIAL"
+  ],
+  "def": "a hard, brittle and often transparent substance made by the fusing of silicates with lime or soda ash",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@QUARTZ"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SAND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@EARTH-MATERIAL"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@GAS"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@GAS"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "semi-solid"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "semi-solid"
+    }
+  ],
+  "private": {}
+}

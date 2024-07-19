@@ -1,0 +1,22 @@
+{
+  "name": "@COPPER-MINING-CORPORATION",
+  "isa": [
+    "@METAL-MINING-CORPORATION"
+  ],
+  "def": "a corporation involved in the copper mining and preparation of copper",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@COPPER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "private": {}
+}

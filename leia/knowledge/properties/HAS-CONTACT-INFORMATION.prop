@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-CONTACT-INFORMATION",
+  "def": "this is the root of all relations dealing with the contact information for a person or organization",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": "$CONTACT-INFORMATION-OF",
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

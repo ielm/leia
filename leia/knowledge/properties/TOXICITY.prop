@@ -1,0 +1,11 @@
+{
+  "name": "$TOXICITY",
+  "def": "the level of poisonousness found in a material",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

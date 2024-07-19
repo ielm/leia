@@ -1,0 +1,27 @@
+{
+  "name": "@ATROPHY",
+  "isa": [
+    "@SYMPTOM"
+  ],
+  "def": "wasting of a body organ due to illness or lack of use",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MUSCLE-TISSUE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

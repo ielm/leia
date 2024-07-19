@@ -1,0 +1,32 @@
+{
+  "name": "@DEVELOP",
+  "isa": [
+    "@WORK-ACTIVITY"
+  ],
+  "def": "to improve or enlarge upon ideas related to a certain field or activity",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@WORK-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@DATA-ENTRY",
+  "isa": [
+    "@COMPUTING-SERVE"
+  ],
+  "def": "the keying in of data to a computer*s storage system",
+  "local": [],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COMPUTER"
+    }
+  ],
+  "private": {}
+}

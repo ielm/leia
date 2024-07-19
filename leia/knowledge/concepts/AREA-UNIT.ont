@@ -1,0 +1,22 @@
+{
+  "name": "@AREA-UNIT",
+  "isa": [
+    "@MEASURING-UNIT"
+  ],
+  "def": "a unit of surface area",
+  "local": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "sem",
+      "filler": "@SQUARE-METER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "sem",
+      "filler": "@MEASURING-UNIT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@SATIN",
+  "isa": [
+    "@BLENDED-FABRIC"
+  ],
+  "def": "a fabric of silk, nylon, rayon, etc., with a smooth, glossy finish on one side",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@RAYON"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

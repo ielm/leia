@@ -1,0 +1,32 @@
+{
+  "name": "@RECAPITALIZATION",
+  "isa": [
+    "@CORPORATE-EVENT"
+  ],
+  "def": "a substantial change in the financial structure of a corporation, in the amount or the nature of the outstanding stock capital, or the corporation*s paid-in surplus",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CORPORATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CAPITAL-ASSET"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

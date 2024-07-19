@@ -1,0 +1,16 @@
+{
+  "name": "@STEAMBOAT",
+  "isa": [
+    "@WATER-PROPELLED-VEHICLE"
+  ],
+  "def": "a boat driven by steam power, using paddles",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@PADDLE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

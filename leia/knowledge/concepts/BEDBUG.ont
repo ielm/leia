@@ -1,0 +1,27 @@
+{
+  "name": "@BEDBUG",
+  "isa": [
+    "@INSECT"
+  ],
+  "def": "a wingless bloodsucking insect with a flat reddish body infesting dwellings and beddings and feeding on human blood",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BED-LINEN"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@DWELLING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

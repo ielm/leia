@@ -1,0 +1,16 @@
+{
+  "name": "@DISMISS",
+  "isa": [
+    "@PERSONNEL-MANAGEMENT"
+  ],
+  "def": "to discharge from an office, employment, etc.",
+  "local": [],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MONEY"
+    }
+  ],
+  "private": {}
+}

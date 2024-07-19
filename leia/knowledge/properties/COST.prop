@@ -1,0 +1,11 @@
+{
+  "name": "$COST",
+  "def": "an amount paid or required in payment for a purchase",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@MONETARY-UNIT"
+  ],
+  "container": "$SCALAR-ATTRIBUTE"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@METAL-WORK",
+  "isa": [
+    "@DECORATIVE-ARTIFACT"
+  ],
+  "def": "decorative artifacts that are worked or shaped in gold, silver, or other metals",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

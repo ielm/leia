@@ -1,0 +1,16 @@
+{
+  "name": "@SEATING-FURNITURE",
+  "isa": [
+    "@FURNITURE"
+  ],
+  "def": "furniture used primarily for sitting",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GLASS"
+    }
+  ],
+  "private": {}
+}

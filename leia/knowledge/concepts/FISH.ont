@@ -1,0 +1,80 @@
+{
+  "name": "@FISH",
+  "isa": [
+    "@VERTEBRATE"
+  ],
+  "def": "Any of the completely aquatic cold-blooded vertebrates, having gills, fins, and scales.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FIN"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@GILL"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@TAIL"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CAVIAR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@OVIPOSITOR"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BODY-OF-WATER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "diligence",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CREATIVE-WORK"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@FOODSTUFF"
+    }
+  ],
+  "private": {}
+}

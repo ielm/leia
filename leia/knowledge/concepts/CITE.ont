@@ -1,0 +1,62 @@
+{
+  "name": "@CITE",
+  "isa": [
+    "@COMMUNICATIVE-EVENT"
+  ],
+  "def": "to repeat a passage or statement from",
+  "local": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@READ"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PARAGRAPH"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SENTENCE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HEADING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ALL"
+    }
+  ],
+  "private": {}
+}

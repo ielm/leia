@@ -1,0 +1,102 @@
+{
+  "name": "@TYPHOON",
+  "isa": [
+    "@STORM"
+  ],
+  "def": "A tropical cyclone occurring in the western Pacific or Indian oceans.",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@WIND"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@OCEAN"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@WIND"
+    },
+    {
+      "slot": "destination",
+      "facet": "sem",
+      "filler": "@COASTAL-GEOLOGICAL-ENTITY"
+    },
+    {
+      "slot": "destination",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "destination",
+      "facet": "not",
+      "filler": "@EMPIRE"
+    },
+    {
+      "slot": "destination",
+      "facet": "not",
+      "filler": "@EMIRATE"
+    },
+    {
+      "slot": "destination",
+      "facet": "not",
+      "filler": "@WORLD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@NATURAL-EVENT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@REGION"
+    },
+    {
+      "slot": "location",
+      "facet": "not",
+      "filler": "@EARTH-CORE"
+    },
+    {
+      "slot": "location",
+      "facet": "not",
+      "filler": "@TRANSNATIONAL-ENTITY"
+    },
+    {
+      "slot": "location",
+      "facet": "not",
+      "filler": "@UNDERWATER-GEOLOGICAL-ENTITY"
+    },
+    {
+      "slot": "location",
+      "facet": "not",
+      "filler": "@WATER-TABLE"
+    },
+    {
+      "slot": "location",
+      "facet": "not",
+      "filler": "@WORLD"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@GEOLOGICAL-ENTITY"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    }
+  ],
+  "private": {}
+}

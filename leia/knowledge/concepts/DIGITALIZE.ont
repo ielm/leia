@@ -1,0 +1,57 @@
+{
+  "name": "@DIGITALIZE",
+  "isa": [
+    "@TECHNOLOGY-EVENT"
+  ],
+  "def": "referring to a recording technique in which sounds or images are converted into electronic bits: the bits are read electronically for reproduction",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WAVE"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@COMPUTING-WORK-ROLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@MUSICIAN"
+    },
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@ORGANIZATION"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COMPUTER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SOFTWARE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

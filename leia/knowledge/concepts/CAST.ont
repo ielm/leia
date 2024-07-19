@@ -1,0 +1,27 @@
+{
+  "name": "@CAST",
+  "isa": [
+    "@FORM-EVENT"
+  ],
+  "def": "to shape (metal, etc.) by pouring into a mold",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@FOUNDRY"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TEMPLATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

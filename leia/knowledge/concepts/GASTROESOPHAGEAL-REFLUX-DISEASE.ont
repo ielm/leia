@@ -1,0 +1,92 @@
+{
+  "name": "@GASTROESOPHAGEAL-REFLUX-DISEASE",
+  "isa": [
+    "@ESOPHAGEAL-DISORDER"
+  ],
+  "def": "a chronic flowing back of gastric acid or stomach contents into the esophagus",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@STOMACH"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@ESOPHAGITIS"
+    },
+    {
+      "slot": "treated-by",
+      "facet": "sem",
+      "filler": "@FUNDOPLICATION"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@CHEST-PAIN"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@HEARTBURN"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@REGURGITATE"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@DYSPHAGIA"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@NAUSEA"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "treated-by",
+      "facet": "sem",
+      "filler": "@MEDICAL-PROCEDURE"
+    }
+  ],
+  "private": {}
+}

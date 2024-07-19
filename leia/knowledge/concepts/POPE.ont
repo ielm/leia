@@ -1,0 +1,22 @@
+{
+  "name": "@POPE",
+  "isa": [
+    "@RELIGIOUS-LEADER"
+  ],
+  "def": "the bishop of Rome and the head of the Catholic Church",
+  "local": [
+    {
+      "slot": "has-religion",
+      "facet": "sem",
+      "filler": "@CHRISTIANITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-religion",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,11 @@
+{
+  "name": "$URGENCY",
+  "def": "The degree to which something must be\ndone immediately",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-EVENT-ATTRIBUTE"
+}

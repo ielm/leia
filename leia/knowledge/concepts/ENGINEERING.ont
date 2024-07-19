@@ -1,0 +1,37 @@
+{
+  "name": "@ENGINEERING",
+  "isa": [
+    "@FIELD-OF-STUDY"
+  ],
+  "def": "the field of study that is concerned with applying scientific knowledge to practical uses",
+  "local": [
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@ENGINEERING-SERVE"
+    },
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@ENGINEER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@WORK-ACTIVITY"
+    },
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@ACADEMIC-SPECIALIST"
+    }
+  ],
+  "private": {}
+}

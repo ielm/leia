@@ -1,0 +1,217 @@
+{
+  "name": "@STRETCH",
+  "isa": [
+    "@APPLY-FORCE"
+  ],
+  "def": "to lengthen, widen or distend",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CONNECTING-DEVICE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BED-FRAME"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WINDOW-COVERING"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@STRING"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ROPE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PRINCIPAL-BODY-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMAL-ORGAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BODY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FABRIC"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TISSUE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SUBDIVISION-OF-PRINCIPAL-BODY-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@RUBBER-NATURAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SYNTHETICS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@THREAD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CLOTHING-ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BED-LINEN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ROAD-SYSTEM-ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@METAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WAX"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WOOD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BAG"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@AREA-RUG"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CARPET"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SISAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@RUBBERBAND"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TOWEL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TABLE-LINEN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COTTON-FIBER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FLAX"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HEMP"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LEATHER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SWIMMING-CAP"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@YARN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BANDAGE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PAD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NET"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NET-TRAP"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ELASTIC"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

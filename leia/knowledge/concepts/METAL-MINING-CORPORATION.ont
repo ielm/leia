@@ -1,0 +1,22 @@
+{
+  "name": "@METAL-MINING-CORPORATION",
+  "isa": [
+    "@MINING-CORPORATION"
+  ],
+  "def": "a corporation involved in the metal mining and preparation of metal",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

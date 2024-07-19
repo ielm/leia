@@ -1,0 +1,27 @@
+{
+  "name": "@INTEGUMENTARY-SYSTEM",
+  "isa": [
+    "@ORGAN-SYSTEM"
+  ],
+  "def": "the skin and its appendages viewed as a system",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MAMMARY-GLAND"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INTEGUMENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

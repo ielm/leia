@@ -1,0 +1,9 @@
+{
+  "name": "$WEST-OF",
+  "def": "object or event x is located west of object or event y",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SPATIAL-RELATION"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@ADVERTISE",
+  "isa": [
+    "@MARKETING"
+  ],
+  "def": "to call public attention to or describe things for sale",
+  "local": [],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SELL"
+    }
+  ],
+  "private": {}
+}

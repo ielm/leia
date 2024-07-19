@@ -1,0 +1,42 @@
+{
+  "name": "@HIJACK",
+  "isa": [
+    "@CRIMINAL-ACTIVITY"
+  ],
+  "def": "To seize control of (a moving vehicle) by use of force, especially in order to reach an alternate destination",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VEHICLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WEAPON"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,37 @@
+{
+  "name": "@PEN",
+  "isa": [
+    "@WRITING-IMPLEMENT"
+  ],
+  "def": "a device used in writing, etc. with ink",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@INK"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CARTRIDGE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

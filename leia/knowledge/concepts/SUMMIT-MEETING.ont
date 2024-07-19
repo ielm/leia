@@ -1,0 +1,32 @@
+{
+  "name": "@SUMMIT-MEETING",
+  "isa": [
+    "@MEETING"
+  ],
+  "def": "a conference held between heads of state to resolve problems of diplomacy",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@GOVERNMENTAL-ROLE"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@SOLVE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

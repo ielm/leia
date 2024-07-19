@@ -1,0 +1,9 @@
+{
+  "name": "$ON-TOP-OF",
+  "def": "one physical-object is on another or in the same place as another.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$BELOW-AND-TOUCHING",
+  "measured-in": [],
+  "container": "$SPATIAL-RELATION"
+}

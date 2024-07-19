@@ -1,0 +1,31 @@
+{
+  "name": "@ELECTRIC-POTENTIAL-UNIT",
+  "isa": [
+    "@ELECTRIC-ORIENTED-UNIT"
+  ],
+  "def": "a measuring unit to measure electric potential",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@AMPERE"
+    },
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@COULOMB"
+    },
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@HENRY"
+    },
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@OHM"
+    }
+  ],
+  "private": {}
+}

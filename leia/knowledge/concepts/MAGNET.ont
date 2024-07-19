@@ -1,0 +1,27 @@
+{
+  "name": "@MAGNET",
+  "isa": [
+    "@DEPENDENT-DEVICE"
+  ],
+  "def": "any piece of iron or other certain materials that has the property of attracting similar materials",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "default",
+      "filler": "@MAGNETISM"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@IRON"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "private": {}
+}

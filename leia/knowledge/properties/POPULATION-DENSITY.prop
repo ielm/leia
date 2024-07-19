@@ -1,0 +1,11 @@
+{
+  "name": "$POPULATION-DENSITY",
+  "def": "how closely together people live in a given area: high or low population density",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@POPULATION-DENSITY-UNIT"
+  ],
+  "container": "$DEMOGRAPHICS-ATTRIBUTE"
+}

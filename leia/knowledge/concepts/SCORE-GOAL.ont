@@ -1,0 +1,43 @@
+{
+  "name": "@SCORE-GOAL",
+  "isa": [
+    "@SUBACTIVITY-OF-GAME-SPORT"
+  ],
+  "def": "to gain a point in a game or contest",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@ACQUIRE-1"
+    }
+  ],
+  "block": [],
+  "private": {
+    "@ACQUIRE-1": {
+      "name": "@ACQUIRE-1",
+      "isa": [
+        "@ACQUIRE"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "theme",
+          "facet": "sem",
+          "filler": "@GAME-POINT"
+        },
+        {
+          "slot": "agent",
+          "facet": "default",
+          "filler": "@ATHLETE"
+        },
+        {
+          "slot": "agent",
+          "facet": "default",
+          "filler": "@SPORTS-TEAM"
+        }
+      ],
+      "block": [],
+      "private": {}
+    }
+  }
+}

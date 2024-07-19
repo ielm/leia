@@ -1,0 +1,16 @@
+{
+  "name": "@BUTTER-BEAN",
+  "isa": [
+    "@BEAN"
+  ],
+  "def": "Large light green beans from a plant Phaseolus limensis.",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "green"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

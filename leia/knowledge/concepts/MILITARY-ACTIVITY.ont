@@ -1,0 +1,42 @@
+{
+  "name": "@MILITARY-ACTIVITY",
+  "isa": [
+    "@WORK-ACTIVITY"
+  ],
+  "def": "various activities of the military.",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@MILITARY-ROLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@MILITARY-ORGANIZATION"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@MILITARY-SCIENCE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    }
+  ],
+  "private": {}
+}

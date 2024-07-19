@@ -1,0 +1,82 @@
+{
+  "name": "@STEEL",
+  "isa": [
+    "@ALLOY"
+  ],
+  "def": "any of various generally hard, strong, durable, malleable alloys of iron and carbon, usually containing between 0.2 and 1.5 per cent carbon, often with other constituents such as manganese, chromium, nickel, molybdenum, copper, tungsten, cobalt, or silicon, depending on the desired alloy properties, and widely used as a structural material",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CARBON"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CHROMIUM"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@COPPER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MANGANESE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MOLYBDENUM"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@NICKEL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SILICON"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@TUNGSTEN"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "@SILVER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GRAPHITE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@IRON"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@STEEL-MANUFACTURING-CORPORATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METALLIC-LIQUID-ELEMENT"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METALLIC-SOLID-ELEMENT"
+    }
+  ],
+  "private": {}
+}

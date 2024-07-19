@@ -1,0 +1,27 @@
+{
+  "name": "@DUE-DILIGENCE",
+  "isa": [
+    "@CORPORATE-EVENT"
+  ],
+  "def": "the series of audits and interviews necessary before a major business transaction",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@AUDIT"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@INTERVIEW"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

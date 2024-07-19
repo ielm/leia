@@ -1,0 +1,9 @@
+{
+  "name": "$FINANCIAL-LEVERAGE",
+  "def": "the ratio between a corporation*s indebtedness and its equity capital; e.g., a highly leveraged corporation has a high proportion of loans to equity",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

@@ -1,0 +1,267 @@
+{
+  "name": "@SEND",
+  "isa": [
+    "@HUMAN-ONLY-LIVING-EVENT"
+  ],
+  "def": "to cause to go to another person or be at another place",
+  "local": [
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "source",
+      "facet": "relaxable-to",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "destination",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WEBSITE"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@LIEN"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@MARKET"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PAYROLL"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PROFIT-MARGIN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SHIPPING-CORPORATION"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TELEGRAPH-MACHINE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@POST-OFFICE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INFORMATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TELEGRAM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WORK"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CREATIVE-WORK"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FINGERPRINT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FOOTPRINT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ADVERTISEMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FILM-MEDIA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MUSICAL-COMPOSITION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PRINTED-MEDIA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LEGAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@AIRPORT-ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@BUILDING"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@TOWER"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@EARTH-RESOURCE-ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@ENGINEERED-ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@INFRASTRUCTURE"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@BOLUS"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@GEOGRAPHICAL-ENTITY"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@CELESTIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@AUTOMATIC-STAY"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@DAMAGES"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@LAW"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@LEGAL-CASE"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@ECONOMY"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@EXPENSE"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@FINANCIAL-INDEX"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@FINANCIAL-POINT"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@FISCAL-QUARTER"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@DEBIT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FAX-MACHINE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@VEHICLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

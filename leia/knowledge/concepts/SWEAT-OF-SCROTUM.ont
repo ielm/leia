@@ -1,0 +1,16 @@
+{
+  "name": "@SWEAT-OF-SCROTUM",
+  "isa": [
+    "@SWEAT-LIQUID"
+  ],
+  "def": "sweat excreted by the scrotum",
+  "local": [
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@SCROTUM"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

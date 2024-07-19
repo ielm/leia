@@ -1,0 +1,16 @@
+{
+  "name": "@POND-SCUM",
+  "isa": [
+    "@ALGA"
+  ],
+  "def": "freshwater algae forming a greenish film on the serface of stagnant water",
+  "local": [],
+  "block": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "green"
+    }
+  ],
+  "private": {}
+}

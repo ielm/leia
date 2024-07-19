@@ -1,0 +1,82 @@
+{
+  "name": "@BUZZ",
+  "isa": [
+    "@ANIMAL-NOISE-MAKING"
+  ],
+  "def": "to make the sound of a bee",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@BEE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WING"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@WASP"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@BEE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@WASP"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "not",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "not",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "relation",
+      "facet": "sem",
+      "filler": "@LARYNX"
+    }
+  ],
+  "private": {}
+}

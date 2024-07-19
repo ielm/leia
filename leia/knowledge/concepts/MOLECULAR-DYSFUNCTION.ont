@@ -1,0 +1,32 @@
+{
+  "name": "@MOLECULAR-DYSFUNCTION",
+  "isa": [
+    "@PATHOLOGIC-FUNCTION"
+  ],
+  "def": "A pathologic function inherent to cells, parts of cells, or molecules, e.g. DNA damage, Wallerian Degeneration, etc.",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@GENE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CELL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

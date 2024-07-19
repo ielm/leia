@@ -1,0 +1,11 @@
+{
+  "name": "$SMOOTHNESS",
+  "def": "the degree to which something is free of irregularities, roughness, projections, etc.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

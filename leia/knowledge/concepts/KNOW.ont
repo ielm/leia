@@ -1,0 +1,32 @@
+{
+  "name": "@KNOW",
+  "isa": [
+    "@PASSIVE-COGNITIVE-EVENT"
+  ],
+  "def": "The passive cognitive event of knowing some fact; does NOT include knowing how to do something or being acquainted with s.o.",
+  "local": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

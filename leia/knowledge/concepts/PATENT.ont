@@ -1,0 +1,31 @@
+{
+  "name": "@PATENT",
+  "isa": [
+    "@INTANGIBLE-ASSET",
+    "@LEGAL-RIGHT"
+  ],
+  "def": "the exclusive right to make, use or sell an invention, which is granted to the inventor",
+  "local": [
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

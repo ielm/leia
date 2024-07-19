@@ -1,0 +1,57 @@
+{
+  "name": "@BANISH",
+  "isa": [
+    "@OPPOSITION-EVENT"
+  ],
+  "def": "to drive away; get rid of",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "source",
+      "facet": "relaxable-to",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "destination",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

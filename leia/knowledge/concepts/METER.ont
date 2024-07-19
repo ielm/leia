@@ -1,0 +1,19 @@
+{
+  "name": "@METER",
+  "isa": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "def": "The SI base unit for measuring distance, and is a metric unit of linear measure. ",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

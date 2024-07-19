@@ -1,0 +1,30 @@
+{
+  "name": "@ANIMAL-ANTISERUM",
+  "isa": [
+    "@DRUG"
+  ],
+  "def": "an animal-derived serum containing antibodies that are specific for one or more antigens",
+  "local": [
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    }
+  ],
+  "private": {}
+}

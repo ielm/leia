@@ -1,0 +1,42 @@
+{
+  "name": "@PAIN",
+  "isa": [
+    "@DISCOMFORT"
+  ],
+  "def": "the event of experiencing physical or emotional discomfort",
+  "local": [
+    {
+      "slot": "pain-type",
+      "facet": "sem",
+      "filler": "burning"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@CANCER"
+    },
+    {
+      "slot": "pain-type",
+      "facet": "sem",
+      "filler": "aching"
+    },
+    {
+      "slot": "pain-type",
+      "facet": "sem",
+      "filler": "sharp"
+    },
+    {
+      "slot": "pain-type",
+      "facet": "sem",
+      "filler": "dull"
+    }
+  ],
+  "block": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@DISEASE"
+    }
+  ],
+  "private": {}
+}

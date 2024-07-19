@@ -1,0 +1,36 @@
+{
+  "name": "@CELLULOSE",
+  "isa": [
+    "@PLANT-DERIVED-SUBSTANCE"
+  ],
+  "def": "an amorphous carbohydrate polymer, (c6h10o5)x, the main constituent of all plant tissues and fibers, used in the manufacture of many fibrous products, including paper, textiles, and explosives",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GRAPHITE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CARBON"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@HYDROGEN"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@OXYGEN"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "white"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

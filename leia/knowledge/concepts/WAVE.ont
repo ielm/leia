@@ -1,0 +1,30 @@
+{
+  "name": "@WAVE",
+  "isa": [
+    "@NATURAL-OBJECT"
+  ],
+  "def": "A natural phenomenon underlying light, sound, radiowaves, etc.",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "intensity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@SQUARE-YARD",
+  "isa": [
+    "@AREA-UNIT"
+  ],
+  "def": "(Wikipedia) an imperial/US unit of area, the area of a square with sides the length of one yard; 0.8361",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.8361
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

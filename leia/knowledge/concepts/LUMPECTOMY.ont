@@ -1,0 +1,22 @@
+{
+  "name": "@LUMPECTOMY",
+  "isa": [
+    "@SURGICAL-REMOVAL"
+  ],
+  "def": "Surgical excision of a tumor from the breast with the removal of a minimal amount of surrounding tissue.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@TUMOR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

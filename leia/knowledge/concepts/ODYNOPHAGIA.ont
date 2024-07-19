@@ -1,0 +1,16 @@
+{
+  "name": "@ODYNOPHAGIA",
+  "isa": [
+    "@DISCOMFORT"
+  ],
+  "def": "pain upon swallowing",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ESOPHAGUS"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

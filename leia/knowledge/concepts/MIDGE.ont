@@ -1,0 +1,22 @@
+{
+  "name": "@MIDGE",
+  "isa": [
+    "@FLY-INSECT"
+  ],
+  "def": "a gnatlike fly frequently occurring in swarms near ponds",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@POND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

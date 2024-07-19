@@ -1,0 +1,37 @@
+{
+  "name": "@SUKKOTH",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "a Jewish harvest festival beginning on the eve of the 15th of Tishri",
+  "local": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@JUDAISM"
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@TENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

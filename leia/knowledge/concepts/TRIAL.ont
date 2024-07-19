@@ -1,0 +1,37 @@
+{
+  "name": "@TRIAL",
+  "isa": [
+    "@LEGAL-EVENT-IN-COURTROOM"
+  ],
+  "def": "a formal examination held in a court of law",
+  "local": [
+    {
+      "slot": "legal-trial-outcome",
+      "facet": "sem",
+      "filler": "not-guilty"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CRIMINAL-ACTIVITY"
+    },
+    {
+      "slot": "legal-trial-outcome",
+      "facet": "sem",
+      "filler": "guilty"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

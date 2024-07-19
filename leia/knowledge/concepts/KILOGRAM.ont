@@ -1,0 +1,19 @@
+{
+  "name": "@KILOGRAM",
+  "isa": [
+    "@MASS-WEIGHT-UNIT"
+  ],
+  "def": "the SI base unit for measuring mass, it is a basic metric unit of mass and weight approximately equal to 1000 cu. cm. of water at the temperature of its maximum density; 1",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

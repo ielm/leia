@@ -1,0 +1,57 @@
+{
+  "name": "@COMMENCEMENT",
+  "isa": [
+    "@CEREMONY"
+  ],
+  "def": "a ceremony at which degrees are conferred upon students and others by colleges and universities",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ACADEMIC-DEGREE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@STUDENT"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@ACADEMIC-ORGANIZATION"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@ACADEMIC-BUILDING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

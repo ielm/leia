@@ -1,0 +1,106 @@
+{
+  "name": "@CHAIR-BACK",
+  "isa": [
+    "@SEATING-PART"
+  ],
+  "def": "the part of the chair upon which the human back rests",
+  "local": [],
+  "block": [
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "amorphous"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "barlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "blocklike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "conical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "crosslike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "cylindrical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "halftoroidal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "hornlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "knoblike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "linear"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "parallelepiped"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "pyramidlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "ringlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "semicircular"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "spherical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "spirallike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "toroidal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "trapezoidal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "triangular"
+    }
+  ],
+  "private": {}
+}

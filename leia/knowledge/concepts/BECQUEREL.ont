@@ -1,0 +1,19 @@
+{
+  "name": "@BECQUEREL",
+  "isa": [
+    "@RADIOACTIVITY-UNIT"
+  ],
+  "def": "(Wikipedia) the SI derived unit for measuring radioactivity. 1 Bq is defined as the activity of a quantity of radioactive material in which one nucleus decays per second. s^-1 (^ means power, s means second)",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

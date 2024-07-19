@@ -1,0 +1,32 @@
+{
+  "name": "@SPIT",
+  "isa": [
+    "@ANIMAL-LIVING-EVENT"
+  ],
+  "def": "to eject -- usually saliva -- from the mouth",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SALIVA"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

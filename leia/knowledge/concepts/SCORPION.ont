@@ -1,0 +1,26 @@
+{
+  "name": "@SCORPION",
+  "isa": [
+    "@ARACHNID"
+  ],
+  "def": "an arachnid living in warm dry regions and having an erectile tail with a venomous sting",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@STINGER"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@POISONOUS-SUBSTANCE"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

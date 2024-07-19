@@ -1,0 +1,47 @@
+{
+  "name": "@BALANCE",
+  "isa": [
+    "@MEASURING-ARTIFACT"
+  ],
+  "def": "a weighing device consisting of a rigid beam horizontally suspended by a low-friction support at its center, with identical weighing pans hung at either end, one of which holds an unknown weight while the effective weight in the other is increased by known amounts until the beam is level and motionless",
+  "local": [
+    {
+      "slot": "measures-property",
+      "facet": "sem",
+      "filler": "$weight"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GLASS"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "measures-property",
+      "facet": "sem",
+      "filler": "$property"
+    }
+  ],
+  "private": {}
+}

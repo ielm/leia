@@ -1,0 +1,32 @@
+{
+  "name": "@SPEED-UNIT",
+  "isa": [
+    "@MEASURING-UNIT"
+  ],
+  "def": "Units for measuring velocity or speed",
+  "local": [
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@SPEEDOMETER"
+    },
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@METERS-PER-SECOND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "sem",
+      "filler": "@MEASURING-UNIT"
+    },
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@MEASURING-ARTIFACT"
+    }
+  ],
+  "private": {}
+}

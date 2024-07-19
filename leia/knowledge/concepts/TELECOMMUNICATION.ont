@@ -1,0 +1,82 @@
+{
+  "name": "@TELECOMMUNICATION",
+  "isa": [
+    "@COMMUNICATIVE-EVENT"
+  ],
+  "def": "communication by electronic or electrical means, as through radio, TV, computers, etc.",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WEBPAGE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WEBSITE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COMPUTER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TELEGRAM"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TELEVISION-CHANNEL"
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@SIGNAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

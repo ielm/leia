@@ -1,0 +1,9 @@
+{
+  "name": "$HONESTY-ATTRIBUTE",
+  "def": "the degree of honesty with which a person or group conducts himself or themselves",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-HUMAN-ATTRIBUTE"
+}

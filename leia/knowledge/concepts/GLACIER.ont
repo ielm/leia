@@ -1,0 +1,62 @@
+{
+  "name": "@GLACIER",
+  "isa": [
+    "@GEOLOGICAL-ENTITY"
+  ],
+  "def": "a large mass of ice and snow moving slowly down a mountain or valley",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SNOWFIELD"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ICE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ROCK"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SOIL"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@MOUNTAIN"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@VALLEY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@EARTH-MATERIAL"
+    }
+  ],
+  "private": {}
+}

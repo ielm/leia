@@ -1,0 +1,22 @@
+{
+  "name": "@STEEL-WOOL",
+  "isa": [
+    "@CLEANING-ARTIFACT"
+  ],
+  "def": "Fine fibers of steel matted or woven together to form an abrasive for cleaning, smoothing, or polishing",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@STEEL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

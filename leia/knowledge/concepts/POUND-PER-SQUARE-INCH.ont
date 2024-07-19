@@ -1,0 +1,19 @@
+{
+  "name": "@POUND-PER-SQUARE-INCH",
+  "isa": [
+    "@PRESSURE-UNIT"
+  ],
+  "def": "pressure associated with the application of a one-pound force to a one square inch area.",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        6894.75729316836
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

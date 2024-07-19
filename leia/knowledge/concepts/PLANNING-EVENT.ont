@@ -1,0 +1,27 @@
+{
+  "name": "@PLANNING-EVENT",
+  "isa": [
+    "@ACTIVE-COGNITIVE-EVENT"
+  ],
+  "def": "An active cognitive event of devising a scheme to do an event.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ABSTRACT-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PRINTED-MEDIA"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@BARROOM",
+  "isa": [
+    "@FOR-PROFIT-SERVICE-CORPORATION"
+  ],
+  "def": "a place where alcoholic beverages are sold",
+  "local": [
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@BEVERAGE-PROCESSING-CORPORATION"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

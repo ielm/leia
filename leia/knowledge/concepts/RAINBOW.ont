@@ -1,0 +1,61 @@
+{
+  "name": "@RAINBOW",
+  "isa": [
+    "@CELESTIAL-OBJECT"
+  ],
+  "def": "An arc of spectral colors, usually identified as red, orange, yellow, green, blue, indigo, and violet, that appears in the sky opposite the sun as a result of the refractive dispersion of sunlight in drops of rain or mist.",
+  "local": [],
+  "block": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "beige"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "black"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "colorless"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "cyan"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "gray"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "magenta"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "navy-blue"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "off-white"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "white"
+    }
+  ],
+  "private": {}
+}

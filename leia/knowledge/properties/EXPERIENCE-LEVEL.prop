@@ -1,0 +1,11 @@
+{
+  "name": "$EXPERIENCE-LEVEL",
+  "def": "the number of years someone in a social-role may have in performing that role",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@MEASURING-UNIT"
+  ],
+  "container": "$SCALAR-HUMAN-ATTRIBUTE"
+}

@@ -1,0 +1,62 @@
+{
+  "name": "@SIGN-EVENT",
+  "isa": [
+    "@WRITE"
+  ],
+  "def": "a commissive event of putting a signature on something",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MEMO"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LETTER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DOCUMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CONTRACT"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SIGNATURE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@COMPUTER"
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ABSTRACT-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@REPRESENTATIONAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

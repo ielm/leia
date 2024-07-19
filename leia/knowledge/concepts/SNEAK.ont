@@ -1,0 +1,33 @@
+{
+  "name": "@SNEAK",
+  "isa": [
+    "@MOTION-EVENT"
+  ],
+  "def": "to move clandestinely",
+  "local": [
+    {
+      "slot": "secrecy-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "secrecy-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

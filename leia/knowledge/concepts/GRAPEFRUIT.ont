@@ -1,0 +1,22 @@
+{
+  "name": "@GRAPEFRUIT",
+  "isa": [
+    "@CITRUS-FRUIT"
+  ],
+  "def": "a large citrus fruit",
+  "local": [
+    {
+      "slot": "diameter",
+      "facet": "sem",
+      "filler": [
+        "><",
+        16
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    }
+  ],
+  "block": [],
+  "private": {}
+}

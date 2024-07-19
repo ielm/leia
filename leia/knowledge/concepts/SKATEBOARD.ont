@@ -1,0 +1,20 @@
+{
+  "name": "@SKATEBOARD",
+  "isa": [
+    "@HUMAN-PROPELLED-VEHICLE",
+    "@WHEELED-VEHICLE"
+  ],
+  "def": "a board with wheels on which humans can stand and transport themselves",
+  "local": [
+    {
+      "slot": "number-of-wheels",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        4
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

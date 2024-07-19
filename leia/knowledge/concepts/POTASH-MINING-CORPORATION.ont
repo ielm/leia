@@ -1,0 +1,22 @@
+{
+  "name": "@POTASH-MINING-CORPORATION",
+  "isa": [
+    "@METAL-MINING-CORPORATION"
+  ],
+  "def": "a corporation involved in the potash mining and preparation of potash",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@POTASSIUM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@POSSESSION-EVENT",
+  "isa": [
+    "@SOCIAL-EVENT"
+  ],
+  "def": "an event in which the having or transferring of possessions is central",
+  "local": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

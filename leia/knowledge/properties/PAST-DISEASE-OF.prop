@@ -1,0 +1,9 @@
+{
+  "name": "$PAST-DISEASE-OF",
+  "def": "indicates what diseases an individual had in his or her lifetime; inverse of has-disease-history",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$HAS-DISEASE-HISTORY",
+  "measured-in": [],
+  "container": "$MEDICAL-RELATION"
+}

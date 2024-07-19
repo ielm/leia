@@ -1,0 +1,95 @@
+{
+  "name": "@FUNGUS",
+  "isa": [
+    "@ANIMATE"
+  ],
+  "def": "Any of numerous eukaryotic organisms of the kingdom Fungi, which lack chlorophyll and vascular tissue and range in form from a single cell to a body mass of branched filamentous hyphae that often produce specialized fruiting bodies. The kingdom includes the yeasts, molds, smuts, mildews, and mushrooms.",
+  "local": [
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@ANATOMY"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CELL"
+    },
+    {
+      "slot": "oiliness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "comfort-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "fattiness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "fattiness",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "formality",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    },
+    {
+      "slot": "oiliness",
+      "facet": "sem",
+      "filler": [
+        ">=<",
+        0
+      ]
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "plasma-solid"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,47 @@
+{
+  "name": "@SUCK",
+  "isa": [
+    "@ANIMAL-LIVING-EVENT"
+  ],
+  "def": "To draw (liquid) into the mouth by movements of the tongue and lips that create suction",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BEVERAGE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LOZENGE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@LIP"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

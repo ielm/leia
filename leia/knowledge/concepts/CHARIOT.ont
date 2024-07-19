@@ -1,0 +1,19 @@
+{
+  "name": "@CHARIOT",
+  "isa": [
+    "@HORSE-DRIVEN-VEHICLE"
+  ],
+  "def": "A light, two-wheeled vehicle, usually drawn by two horses and driven from a standing position.",
+  "local": [
+    {
+      "slot": "number-of-wheels",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        2
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$MEASURED-BY",
+  "def": "A relation between a measured quantity and what measures it--time is measured by a clock",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$MEASURING-DEVICE-FOR",
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

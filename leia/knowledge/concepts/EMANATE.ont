@@ -1,0 +1,97 @@
+{
+  "name": "@EMANATE",
+  "isa": [
+    "@DISPLAY"
+  ],
+  "def": "to come forth; issue, as from a source",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PERSONALITY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ENERGY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ABSTRACT-IDEA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INFORMATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ISSUE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@STYLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TRADITION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WAVE"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "source",
+      "facet": "relaxable-to",
+      "filler": "@PHYSICAL-EVENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

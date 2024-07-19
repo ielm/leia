@@ -1,0 +1,57 @@
+{
+  "name": "@NYLON",
+  "isa": [
+    "@SYNTHETICS"
+  ],
+  "def": "any of a family of high-strength, resilient synthetic materials the long-chain molecule of which contains the recurring amide group conh",
+  "local": [
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "opaque"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "translucent"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CARBON"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@HYDROGEN"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@NITROGEN"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@OXYGEN"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GRAPHITE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "transparent"
+    }
+  ],
+  "private": {}
+}

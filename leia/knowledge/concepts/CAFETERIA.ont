@@ -1,0 +1,45 @@
+{
+  "name": "@CAFETERIA",
+  "isa": [
+    "@RESTAURANT"
+  ],
+  "def": "a restaurant in which one can serve oneself",
+  "local": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@KITCHEN-STAFF"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

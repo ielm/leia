@@ -1,0 +1,47 @@
+{
+  "name": "@DECK",
+  "isa": [
+    "@BUILDING-ARTIFACT-PART"
+  ],
+  "def": "A roofless, floored structure, typically with a railing, that adjoins a house.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    },
+    {
+      "slot": "beside",
+      "facet": "sem",
+      "filler": "@PRIVATE-HOME"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@ROOF"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@RAILING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beside",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "beside",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

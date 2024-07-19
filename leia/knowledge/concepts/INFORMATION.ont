@@ -1,0 +1,50 @@
+{
+  "name": "@INFORMATION",
+  "isa": [
+    "@ABSTRACT-OBJECT"
+  ],
+  "def": "Anything having mental content that can be perceived by an individual or transferred from one individual to another to create new ideas, etc.",
+  "local": [
+    {
+      "slot": "about-as-topic",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "about-as-topic",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "cogency",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "language-used",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "truth-value",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "accuracy",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

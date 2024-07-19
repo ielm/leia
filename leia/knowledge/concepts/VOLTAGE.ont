@@ -1,0 +1,31 @@
+{
+  "name": "@VOLTAGE",
+  "isa": [
+    "@ELECTRICITY"
+  ],
+  "def": "electromotive force or potential difference, usually expressed in volts",
+  "local": [],
+  "block": [
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@BAROMETER"
+    },
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@BAROMETER"
+    },
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@PHOTOMETER"
+    },
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@SEISMOGRAPH"
+    }
+  ],
+  "private": {}
+}

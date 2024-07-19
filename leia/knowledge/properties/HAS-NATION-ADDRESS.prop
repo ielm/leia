@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-NATION-ADDRESS",
+  "def": "The nation part of an address.",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": "$ADDRESS-OF",
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

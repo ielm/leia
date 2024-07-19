@@ -1,0 +1,16 @@
+{
+  "name": "@ENCLAVE",
+  "isa": [
+    "@LARGE-GEOPOLITICAL-ENTITY"
+  ],
+  "def": "a territory surrounded by another nation*s territory",
+  "local": [
+    {
+      "slot": "in-province",
+      "facet": "sem",
+      "filler": "@PROVINCE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

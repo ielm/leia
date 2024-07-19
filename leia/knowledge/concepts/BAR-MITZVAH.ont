@@ -1,0 +1,72 @@
+{
+  "name": "@BAR-MITZVAH",
+  "isa": [
+    "@CEREMONY"
+  ],
+  "def": "an initiation ceremony signifying the beginning of religious responsibility for a 13-year-old Jewish boy",
+  "local": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@JUDAISM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HUMAN-6"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@TEMPLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {
+    "@HUMAN-6": {
+      "name": "@HUMAN-6",
+      "isa": [
+        "@HUMAN"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "age",
+          "facet": "sem",
+          "filler": [
+            "=>=<",
+            13
+          ]
+        }
+      ],
+      "block": [],
+      "private": {}
+    }
+  }
+}

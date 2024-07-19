@@ -1,0 +1,9 @@
+{
+  "name": "$EMOTIONAL-STATE",
+  "def": "this attribute conveys animal emotion in rather general terms so that we don*t split attributes into countless shades of meaning; a good mood, state of mind, etc., is given a high value, whereas a bad mood or state of mind is given a low value",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-ANIMAL-ATTRIBUTE"
+}

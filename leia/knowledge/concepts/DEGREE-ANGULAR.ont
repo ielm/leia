@@ -1,0 +1,19 @@
+{
+  "name": "@DEGREE-ANGULAR",
+  "isa": [
+    "@ANGLE-UNIT"
+  ],
+  "def": "(Wikipedia) denoted by the degree symbol, is a measurement of plane angle and represents 1/360 of a full rotation; quadrant/90",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.0174533
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

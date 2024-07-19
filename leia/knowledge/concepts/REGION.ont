@@ -1,0 +1,22 @@
+{
+  "name": "@REGION",
+  "isa": [
+    "@LARGE-GEOPOLITICAL-ENTITY"
+  ],
+  "def": "a geopolitical-entity that usually refers to a very generally defined area of a country, such as the Pacific Northwest of the U.S.",
+  "local": [
+    {
+      "slot": "in-province",
+      "facet": "sem",
+      "filler": "@PROVINCE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "in-region",
+      "facet": "sem",
+      "filler": "@REGION"
+    }
+  ],
+  "private": {}
+}

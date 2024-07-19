@@ -1,0 +1,24 @@
+{
+  "name": "@MUSCLE-TISSUE",
+  "isa": [
+    "@TISSUE"
+  ],
+  "def": "Tissue which consists of muscle cells surrounded by a reticulum of collagen fibers or fine connective tissue [endomysium]. Examples: Smooth muscle, Cardiac muscle.",
+  "local": [
+    {
+      "slot": "myogenic-tone",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "myogenic-tone",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@DEVICE-AS-THEME-EVENT",
+  "isa": [
+    "@DEVICE-EVENT"
+  ],
+  "def": "The theme of the event is a DEVICE",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DEVICE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@KLEPTOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "irresistible impulse to steal",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@STEAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

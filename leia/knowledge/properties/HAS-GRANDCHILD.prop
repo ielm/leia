@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-GRANDCHILD",
+  "def": "the relation between a grandparent and his or her grandchild",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$HAS-GRANDPARENT",
+  "measured-in": [],
+  "container": "$FAMILY-RELATION"
+}

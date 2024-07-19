@@ -1,0 +1,55 @@
+{
+  "name": "@ART-GALLERY",
+  "isa": [
+    "@RETAIL-CORPORATION"
+  ],
+  "def": "an establishment where art is displayed and sold",
+  "local": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@PAINTER-ARTISTIC"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@PHOTOGRAPHER"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@SCULPTOR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@GOVERNMENTAL-ROLE",
+  "isa": [
+    "@WORK-ROLE"
+  ],
+  "def": "a social-role pertaining to a governmental position",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GOVERNMENT-BUILDING"
+    },
+    {
+      "slot": "rules",
+      "facet": "sem",
+      "filler": "@GEOGRAPHICAL-ENTITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

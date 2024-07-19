@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-FAX-NUMBER",
+  "def": "the fax number of a corporation or an individual",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": "$FAX-NUMBER-OF",
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@STIMULATE",
+  "isa": [
+    "@ANIMAL-LIVING-EVENT"
+  ],
+  "def": "to increase, temporarily, the function or activity of a body part",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

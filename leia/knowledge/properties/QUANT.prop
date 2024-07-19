@@ -1,0 +1,9 @@
+{
+  "name": "$QUANT",
+  "def": "Used as a relative scale for counting the elements in a set. We can't use the relative scale 0,1 in a set because the actual cardinality can be 1 or 0. ",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$PARAMETRIC-SCALAR"
+}

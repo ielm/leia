@@ -1,0 +1,57 @@
+{
+  "name": "@INTRAVENOUS-DRIP",
+  "isa": [
+    "@ADMINISTER-MEDICINE"
+  ],
+  "def": "The continuous introduction of a solution intravenously, a drop at a time. (http://medical-dictionary.thefreedictionary.com/intravenous+drip)",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "relaxable-to",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@INTRAVENOUS-BAG"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@INTRAVENOUS-FLUID"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@VEHICLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MEDICAL-ARTIFACT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@DRUG"
+    }
+  ],
+  "private": {}
+}

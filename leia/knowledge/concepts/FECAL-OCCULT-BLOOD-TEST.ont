@@ -1,0 +1,32 @@
+{
+  "name": "@FECAL-OCCULT-BLOOD-TEST",
+  "isa": [
+    "@DIAGNOSTIC-PROCEDURE"
+  ],
+  "def": "A fecal occult blood test checks stool samples for traces of blood that cannot be seen with the naked eye.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@FECES"
+    },
+    {
+      "slot": "medical-test-target",
+      "facet": "sem",
+      "filler": "@BLOOD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "medical-test-target",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

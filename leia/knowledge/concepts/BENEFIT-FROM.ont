@@ -1,0 +1,31 @@
+{
+  "name": "@BENEFIT-FROM",
+  "isa": [
+    "@ABSTRACT-SOCIAL-ACTIVITY"
+  ],
+  "def": "to receive advantage or gain from; the thing that is providing the benefit is typically the instrument case-role and the person or animal benefitting is the beneficiary",
+  "local": [],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

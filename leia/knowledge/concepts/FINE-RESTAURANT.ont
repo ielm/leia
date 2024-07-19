@@ -1,0 +1,48 @@
+{
+  "name": "@FINE-RESTAURANT",
+  "isa": [
+    "@WAITERED-RESTAURANT"
+  ],
+  "def": "a relatively expensive restaurant with a relatively formal dress code",
+  "local": [
+    {
+      "slot": "formality",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0.6
+      ]
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@MAITRE-DHOTEL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "business"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "casual"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "sport"
+    },
+    {
+      "slot": "formality",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,674 @@
+{
+  "name": "@BOWL",
+  "isa": [
+    "@COOKING-EQUIPMENT",
+    "@PLACE-SETTING-CONTAINER"
+  ],
+  "def": "a hemispherical vessel, wider than it is deep, for food or fluids",
+  "local": [
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "semispherical"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "><",
+        30
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        "><",
+        30
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "><",
+        3
+      ],
+      "meta": {
+        "measured-in": "kilogram"
+      }
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "><",
+        15
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    }
+  ],
+  "block": [
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "amorphous"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "amorphous"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "amorphous"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "barlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "barlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "barlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "blocklike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "blocklike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "blocklike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "circular"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "circular"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "circular"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "conical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "conical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "conical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "crosslike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "crosslike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "crosslike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "curved"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "curved"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "curved"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "cylindrical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "cylindrical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "cylindrical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "egglike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "egglike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "egglike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "halftoroidal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "halftoroidal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "halftoroidal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "heart-shaped"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "heart-shaped"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "heart-shaped"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "hexagonal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "hexagonal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "hexagonal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "hornlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "hornlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "hornlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "knoblike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "knoblike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "knoblike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "linear"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "linear"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "linear"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "parallelepiped"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "parallelepiped"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "parallelepiped"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "pyramidlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "pyramidlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "pyramidlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "rectangular"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "rectangular"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "rectangular"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "ringlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "ringlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "ringlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "semicircular"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "semicircular"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "semicircular"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "sheetlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "sheetlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "sheetlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "spherical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "spherical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "spherical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "spirallike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "spirallike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "spirallike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "squarelike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "squarelike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "squarelike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "toroidal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "toroidal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "toroidal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "trapezoidal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "trapezoidal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "trapezoidal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "triangular"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "triangular"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "triangular"
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

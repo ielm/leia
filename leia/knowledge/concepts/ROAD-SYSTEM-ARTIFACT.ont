@@ -1,0 +1,63 @@
+{
+  "name": "@ROAD-SYSTEM-ARTIFACT",
+  "isa": [
+    "@ENGINEERED-ARTIFACT"
+  ],
+  "def": "man-made paths, such as highways, freeways, roads, railroad beds, and hiking trails",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PAVING-MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@EARTH-MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@STEEL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

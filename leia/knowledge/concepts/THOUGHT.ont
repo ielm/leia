@@ -1,0 +1,19 @@
+{
+  "name": "@THOUGHT",
+  "isa": [
+    "@ABSTRACT-OBJECT"
+  ],
+  "def": "the power of reasoning in the form of an idea or concept",
+  "local": [
+    {
+      "slot": "cogency",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

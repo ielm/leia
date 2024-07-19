@@ -1,0 +1,22 @@
+{
+  "name": "@PARLIAMENTARY-CONSTITUTIONAL-MONARCHY",
+  "isa": [
+    "@GOVERNMENT-TYPE"
+  ],
+  "def": "a type of Monarchial government",
+  "local": [
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@SOVEREIGN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    }
+  ],
+  "private": {}
+}

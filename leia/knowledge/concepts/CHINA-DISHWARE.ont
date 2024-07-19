@@ -1,0 +1,21 @@
+{
+  "name": "@CHINA-DISHWARE",
+  "isa": [
+    "@PLACE-SETTING-CONTAINER"
+  ],
+  "def": "high-qualtiy dishware made of china",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GLASS"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    }
+  ],
+  "private": {}
+}

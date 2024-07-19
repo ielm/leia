@@ -1,0 +1,32 @@
+{
+  "name": "@ZOOPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of animals",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

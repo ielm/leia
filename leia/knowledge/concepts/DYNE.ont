@@ -1,0 +1,19 @@
+{
+  "name": "@DYNE",
+  "isa": [
+    "@FORCE-UNIT"
+  ],
+  "def": "the force required to accelerate a mass of one gram at the rate of one centimeter per second squared, the unit of force in the CGS (centimeter-gram-second) system of units (Wikipedi); 10^-5*newton",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.019716213e-06
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

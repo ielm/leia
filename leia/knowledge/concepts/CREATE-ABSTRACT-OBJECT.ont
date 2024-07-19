@@ -1,0 +1,47 @@
+{
+  "name": "@CREATE-ABSTRACT-OBJECT",
+  "isa": [
+    "@SOCIAL-EVENT"
+  ],
+  "def": "this concept is akin to CREATE-ARTIFACT, but with abstract objects as the theme; it is used to convey notions like *create a democracy*, *build a career*, *develop a social network*, etc.; it is needed because the process involved in bringing such things about can be important, such that saying *X caused-by Y* is not sufficient",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ABSTRACT-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "business"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "casual"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "formal"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "sport"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

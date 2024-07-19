@@ -1,0 +1,35 @@
+{
+  "name": "@MAMMAL",
+  "isa": [
+    "@VERTEBRATE"
+  ],
+  "def": "Animals that nurse their young and typically bear their young alive.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LIMB"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FUR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "diligence",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

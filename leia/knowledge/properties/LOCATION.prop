@@ -1,0 +1,9 @@
+{
+  "name": "$LOCATION",
+  "def": "relates any object or event with its location; typically physical object/events will be in physical\nobjects, and the same for mental objects/events. Those distinctions will be handled in the frames for \nphysical-event, mental-event, etc. Note that we are not permitting locations to be events because what is really meant is the location where an event is taking place - e.g., at a soccer game is at the location of the soccer game.",
+  "type": "case_role",
+  "range": "!AnyType",
+  "inverse": "$LOCATION-OF",
+  "measured-in": [],
+  "container": "$CASE-ROLE"
+}

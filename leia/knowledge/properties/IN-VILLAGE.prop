@@ -1,0 +1,9 @@
+{
+  "name": "$IN-VILLAGE",
+  "def": "links an entity or place, like a road or bank, to the village where it is located.",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

@@ -1,0 +1,53 @@
+{
+  "name": "@SUBSIDIZE",
+  "isa": [
+    "@COMMERCE-EVENT",
+    "@NATIONAL-ECONOMIC-EVENT"
+  ],
+  "def": "to support with a grant of money, as a government with a private enterprise",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MONEY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ORGANIZATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@FOUNDATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,455 @@
+{
+  "name": "@INFRASTRUCTURE",
+  "isa": [
+    "@ARTIFACT"
+  ],
+  "def": "the physical facilities and things needed for the functioning of a community, like the roads, power lines, water system, buildings,etc.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@AIRPORT-ARTIFACT"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BUILDING-ARTIFACT"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ENGINEERED-ARTIFACT"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@ROAD"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@CITY"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@STATE"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "has-street-address",
+      "facet": "sem",
+      "filler": "@ROAD"
+    },
+    {
+      "slot": "has-city-address",
+      "facet": "sem",
+      "filler": "@CITY"
+    },
+    {
+      "slot": "has-nation-address",
+      "facet": "sem",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "has-state-address",
+      "facet": "sem",
+      "filler": "@STATE"
+    },
+    {
+      "slot": "has-postal-code",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "has-contact-information",
+      "facet": "sem",
+      "filler": "@WEB-ADDRESS"
+    },
+    {
+      "slot": "has-contact-information",
+      "facet": "sem",
+      "filler": "@PHONE-NUMBER"
+    },
+    {
+      "slot": "has-contact-information",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "has-contact-information",
+      "facet": "sem",
+      "filler": "@EMAIL-ADDRESS"
+    },
+    {
+      "slot": "has-email-address",
+      "facet": "sem",
+      "filler": "@EMAIL-ADDRESS"
+    },
+    {
+      "slot": "has-fax-number",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "has-phone-number",
+      "facet": "sem",
+      "filler": "@PHONE-NUMBER"
+    },
+    {
+      "slot": "has-web-address",
+      "facet": "sem",
+      "filler": "@WEB-ADDRESS"
+    },
+    {
+      "slot": "has-compass-point",
+      "facet": "sem",
+      "filler": "@COMPASS-POINT"
+    },
+    {
+      "slot": "location-oriented-naming-data",
+      "facet": "sem",
+      "filler": "@COMPASS-POINT"
+    },
+    {
+      "slot": "location-oriented-naming-data",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "in-region",
+      "facet": "sem",
+      "filler": "@REGION"
+    },
+    {
+      "slot": "in-city",
+      "facet": "sem",
+      "filler": "@CITY"
+    },
+    {
+      "slot": "in-county",
+      "facet": "sem",
+      "filler": "@COUNTY"
+    },
+    {
+      "slot": "in-district",
+      "facet": "sem",
+      "filler": "@DISTRICT"
+    },
+    {
+      "slot": "in-nation",
+      "facet": "sem",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "in-state",
+      "facet": "sem",
+      "filler": "@STATE"
+    },
+    {
+      "slot": "in-town",
+      "facet": "sem",
+      "filler": "@TOWN"
+    },
+    {
+      "slot": "in-village",
+      "facet": "sem",
+      "filler": "@VILLAGE"
+    },
+    {
+      "slot": "in-province",
+      "facet": "sem",
+      "filler": "@PROVINCE"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    }
+  ],
+  "block": [
+    {
+      "slot": "aesthetic-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "compatibility",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "complexity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "extent-of-change",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "fame-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "formality",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "genuineness",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "genuineness",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "importance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "literal-attribute",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "literal-object-attribute",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "novelty",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "object-relation",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "ontology-slot",
+      "facet": "sem",
+      "filler": "@ALL"
+    },
+    {
+      "slot": "orderliness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "path",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "precision-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "preparedness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "property",
+      "facet": "sem",
+      "filler": "@ALL"
+    },
+    {
+      "slot": "safety-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "scalar-financial-object-attribute",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "scalar-object-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-object-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "secrecy-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "similarity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "stability",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "symmetry",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "symmetry",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "typicalness-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "usefulness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "validated",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    }
+  ],
+  "private": {}
+}

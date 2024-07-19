@@ -1,0 +1,66 @@
+{
+  "name": "@BLANKET",
+  "isa": [
+    "@BED-LINEN"
+  ],
+  "def": "a large, soft piece of fabric used for warmth, especially as a bed cover",
+  "local": [
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "><",
+        3
+      ],
+      "meta": {
+        "measured-in": "kilogram"
+      }
+    },
+    {
+      "slot": "thickness",
+      "facet": "sem",
+      "filler": [
+        "><",
+        7
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    }
+  ],
+  "block": [
+    {
+      "slot": "thickness",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "thickness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

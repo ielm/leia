@@ -1,0 +1,37 @@
+{
+  "name": "@AIR-VEHICLE",
+  "isa": [
+    "@VEHICLE"
+  ],
+  "def": "AIRPLANES AIRSHIPS GLIDERS ETC.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@AIR-VEHICLE-PART"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@ALTIMETER"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@VEHICLE-PART"
+    }
+  ],
+  "private": {}
+}

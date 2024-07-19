@@ -1,0 +1,22 @@
+{
+  "name": "@PNEUMONECTOMY",
+  "isa": [
+    "@SURGICAL-REMOVAL"
+  ],
+  "def": "Surgical removal of all or part of a lung.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@LUNG"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

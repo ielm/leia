@@ -1,0 +1,23 @@
+ontosem-sidebar {
+    --fixed-ontosem-sidebar-header-height: 25px;
+}
+
+div.ontosem-sidebar {
+    height: 100%;
+}
+
+div.ontosem-sidebar-header {
+    height: var(--fixed-ontosem-sidebar-header-height);
+    padding-top: 2px;
+    padding-left: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--ribbon-color-tier-1);
+}
+
+div.ontosem-sidebar-repository {
+    height: calc(100% - var(--fixed-ontosem-sidebar-header-height));
+    overflow-y: auto;
+    padding: 2px;
+    background-color: var(--results-color-tier-1);
+}

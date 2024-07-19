@@ -1,0 +1,32 @@
+{
+  "name": "@BEAR-OFFSPRING",
+  "isa": [
+    "@OFFSPRING-EVENT"
+  ],
+  "def": "to give birth to",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@UTERUS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

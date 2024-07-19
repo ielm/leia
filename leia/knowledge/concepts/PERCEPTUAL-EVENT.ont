@@ -1,0 +1,133 @@
+{
+  "name": "@PERCEPTUAL-EVENT",
+  "isa": [
+    "@ANIMAL-LIVING-EVENT",
+    "@MENTAL-EVENT"
+  ],
+  "def": "Events involving the physical senses; e.g., look/see, hear/listen, touch/feel, taste, smell; this includes the notion that plants experience some form of perception. The voluntary/involuntary subclasses are restricted to animals",
+  "local": [
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@PLANT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@MENTAL-EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EYE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SKIN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@BODY"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PRINCIPAL-BODY-PART"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SUBDIVISION-OF-PRINCIPAL-BODY-PART"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TONGUE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@NOSE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EAR"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

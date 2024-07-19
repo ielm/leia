@@ -1,0 +1,19 @@
+{
+  "name": "@CUP-VOLUME",
+  "isa": [
+    "@VOLUME-UNIT"
+  ],
+  "def": "a unit of volume equal to eight ounces, can be used for dry cooking goods or fluids; 8*ounce-fluid",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.000236587
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

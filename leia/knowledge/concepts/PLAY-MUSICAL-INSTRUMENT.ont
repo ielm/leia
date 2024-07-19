@@ -1,0 +1,92 @@
+{
+  "name": "@PLAY-MUSICAL-INSTRUMENT",
+  "isa": [
+    "@ENTERTAIN-EVENT"
+  ],
+  "def": "to perform on a musical instrument",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MUSICAL-COMPOSITION"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MUSICAL-INSTRUMENT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@CONCERT-HALL"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FINE-ARTS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MUSICAL-INSTRUMENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "business"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "casual"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "formal"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "sport"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

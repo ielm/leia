@@ -1,0 +1,19 @@
+{
+  "name": "@MILES-PER-HOUR",
+  "isa": [
+    "@SPEED-UNIT"
+  ],
+  "def": "Speed or velocity measured in miles per hour; mile/hour",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.447028
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

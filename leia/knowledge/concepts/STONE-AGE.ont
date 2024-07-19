@@ -1,0 +1,87 @@
+{
+  "name": "@STONE-AGE",
+  "isa": [
+    "@HISTORICAL-PERIOD"
+  ],
+  "def": "period in history from 2 million B.C. to 4000 B.C.; characterized by use of increasingly sophisticated stone tools and weapons and, in latter ages, by development of food clutivation, villages, and crafts; usually divided into Paleolithic, Mesolithic, and Neolithic periods and ending with the dawn of civilization in the Bronze Age around 4000 B.C.",
+  "local": [
+    {
+      "slot": "time-begin",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        2000000
+      ],
+      "meta": {
+        "measured-in": "year-bc"
+      }
+    },
+    {
+      "slot": "time-end",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        4000
+      ],
+      "meta": {
+        "measured-in": "year-bc"
+      }
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@WEAPON-4"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@IMPLEMENT-4"
+    }
+  ],
+  "block": [
+    {
+      "slot": "time-begin",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "time-end",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    }
+  ],
+  "private": {
+    "@IMPLEMENT-4": {
+      "name": "@IMPLEMENT-4",
+      "isa": [
+        "@IMPLEMENT"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "made-of",
+          "facet": "sem",
+          "filler": "@STONE"
+        }
+      ],
+      "block": [],
+      "private": {}
+    },
+    "@WEAPON-4": {
+      "name": "@WEAPON-4",
+      "isa": [
+        "@WEAPON"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "made-of",
+          "facet": "sem",
+          "filler": "@STONE"
+        }
+      ],
+      "block": [],
+      "private": {}
+    }
+  }
+}

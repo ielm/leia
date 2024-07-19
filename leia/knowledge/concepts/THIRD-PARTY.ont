@@ -1,0 +1,19 @@
+{
+  "name": "@THIRD-PARTY",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "a person or group, who is not an immediate party to a transaction, but whose interest may be influenced by it",
+  "local": [],
+  "block": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

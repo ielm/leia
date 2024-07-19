@@ -1,0 +1,9 @@
+{
+  "name": "$PREGNANT",
+  "def": "indicates whether a female is pregnant",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-OBJECT-ATTRIBUTE"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@HORN-OF-VEHICLE",
+  "isa": [
+    "@VEHICLE-PART"
+  ],
+  "def": "a device on a vehicle used to make a loud noise of warning",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SYNTHETICS"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,1618 @@
+{
+  "name": "@MECHANIC",
+  "isa": [
+    "@TRADE-ROLE"
+  ],
+  "def": "one who is skilled in making, using or repairing machines and tools",
+  "local": [],
+  "block": [
+    {
+      "slot": "above",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "above",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "across",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "across",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "aesthetic-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "ambition",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "area-of-business-activity",
+      "facet": "sem",
+      "filler": "@CREATE-ARTIFACT"
+    },
+    {
+      "slot": "available",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "beside",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "beside",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "between-spatial",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "between-spatial",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "beyond",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "beyond",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "business-relation",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "cash-flow-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "charisma",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "cogency",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "black"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "red"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "white"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "yellow"
+    },
+    {
+      "slot": "compatibility",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "complexity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "conscious",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "conscious",
+      "facet": "sem",
+      "filler": "partially"
+    },
+    {
+      "slot": "conscious",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "deficit-attribute",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "deficit-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "depth",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "depth",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "dignity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "directional-relation",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "directional-relation",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "dirtiness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "east-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "east-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "empathy",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "expenditure",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "expenditure",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "extent-of-change",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "fame-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "fattiness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "fattiness",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "flexibility-social",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "gender",
+      "facet": "sem",
+      "filler": "female"
+    },
+    {
+      "slot": "gender",
+      "facet": "sem",
+      "filler": "male"
+    },
+    {
+      "slot": "genuineness",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "hardness-breakability",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "has-center",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "has-city-address",
+      "facet": "sem",
+      "filler": "@CITY"
+    },
+    {
+      "slot": "has-city-of-birth",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "has-city-of-birth",
+      "facet": "sem",
+      "filler": "@CITY"
+    },
+    {
+      "slot": "has-distant-family-relation",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "has-email-address",
+      "facet": "sem",
+      "filler": "@EMAIL-ADDRESS"
+    },
+    {
+      "slot": "has-employee",
+      "facet": "sem",
+      "filler": "@WORK-ROLE"
+    },
+    {
+      "slot": "has-fax-number",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@NAME-HUMAN"
+    },
+    {
+      "slot": "has-nation-address",
+      "facet": "sem",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "has-nationality",
+      "facet": "sem",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ABDOMEN"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANIMAL-ORGAN"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANIMAL-TISSUE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANKLE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANUS"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARM"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BLOOD"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BONE-JOINT"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BREAST"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CELL"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CHIN"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@EAR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ELBOW"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@EYE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FACE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FECES"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FINGER"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FOOT"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FOREHEAD"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@HAIR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@HAND"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@HEMOGLOBIN"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@HORMONE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LARYNX"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LEG"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@NECK"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@NOSE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PALM"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SALIVA"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SHOULDER"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SKELETON"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SKIN"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SWEAT-LIQUID"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@TONGUE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@TOOTH"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@TRUNK-OF-BODY"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@URINE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@VOCAL-FOLD"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@WRIST"
+    },
+    {
+      "slot": "has-phone-number",
+      "facet": "sem",
+      "filler": "@PHONE-NUMBER"
+    },
+    {
+      "slot": "has-religion",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    },
+    {
+      "slot": "has-social-role",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    },
+    {
+      "slot": "has-state-address",
+      "facet": "sem",
+      "filler": "@STATE"
+    },
+    {
+      "slot": "has-street-address",
+      "facet": "sem",
+      "filler": "@ROAD"
+    },
+    {
+      "slot": "has-web-address",
+      "facet": "sem",
+      "filler": "@WEB-ADDRESS"
+    },
+    {
+      "slot": "health-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "height",
+      "facet": "value",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "honesty-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "humility",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "importance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "in-front-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "in-front-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "latitude",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "latitude-north",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "latitude-south",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "left-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "left-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "linear-size",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "linear-size",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "literal-attribute",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "literal-object-attribute",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "longitude",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "longitude-east",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "longitude-west",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "marital-status",
+      "facet": "sem",
+      "filler": "divorced"
+    },
+    {
+      "slot": "marital-status",
+      "facet": "sem",
+      "filler": "married"
+    },
+    {
+      "slot": "marital-status",
+      "facet": "sem",
+      "filler": "single"
+    },
+    {
+      "slot": "marital-status",
+      "facet": "sem",
+      "filler": "widowed"
+    },
+    {
+      "slot": "mass",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "mass",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "maturity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "meet",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "meet",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "morality",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "north-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "north-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "novelty",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "object-relation",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "ontology-slot",
+      "facet": "sem",
+      "filler": "@ALL"
+    },
+    {
+      "slot": "on-top-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "opaque"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "translucent"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "transparent"
+    },
+    {
+      "slot": "operator-of",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "optimism",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "orderliness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "outside-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "outside-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "path",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "path",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "ph",
+      "facet": "sem",
+      "filler": [
+        "><",
+        14
+      ]
+    },
+    {
+      "slot": "piety",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "politeness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "political-attribute",
+      "facet": "sem",
+      "filler": "independent"
+    },
+    {
+      "slot": "political-attribute",
+      "facet": "sem",
+      "filler": "liberal conservative"
+    },
+    {
+      "slot": "political-party-membership",
+      "facet": "sem",
+      "filler": "communist"
+    },
+    {
+      "slot": "political-party-membership",
+      "facet": "sem",
+      "filler": "democrat"
+    },
+    {
+      "slot": "political-party-membership",
+      "facet": "sem",
+      "filler": "green-party"
+    },
+    {
+      "slot": "political-party-membership",
+      "facet": "sem",
+      "filler": "republican"
+    },
+    {
+      "slot": "practitioner-in",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "precision-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "pregnant",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "pregnant",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "prejudice-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "preparedness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "prestige",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CREATIVE-WORK"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@FOODSTUFF"
+    },
+    {
+      "slot": "property",
+      "facet": "sem",
+      "filler": "@ALL"
+    },
+    {
+      "slot": "race",
+      "facet": "sem",
+      "filler": "asian"
+    },
+    {
+      "slot": "race",
+      "facet": "sem",
+      "filler": "black"
+    },
+    {
+      "slot": "race",
+      "facet": "sem",
+      "filler": "hispanic"
+    },
+    {
+      "slot": "race",
+      "facet": "sem",
+      "filler": "white"
+    },
+    {
+      "slot": "reputation-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "safety-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "sanity-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "scalar-human-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-object-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-object-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "self-respect",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "amorphous"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "barlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "blocklike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "circular"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "conical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "crosslike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "curved"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "cylindrical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "egglike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "halftoroidal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "heart-shaped"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "hexagonal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "hornlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "knoblike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "linear"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "parallelepiped"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "pyramidlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "rectangular"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "ringlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "semicircular"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "sheetlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "spherical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "spirallike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "squarelike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "toroidal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "trapezoidal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "triangular"
+    },
+    {
+      "slot": "sharpness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "similarity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "size",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "size",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "slope-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "slope-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "smoothness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "softness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "solvency",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "solvency",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "spatial-distance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "spatial-distance",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "spatial-orientation",
+      "facet": "sem",
+      "filler": "horizontal"
+    },
+    {
+      "slot": "spatial-orientation",
+      "facet": "sem",
+      "filler": "vertical"
+    },
+    {
+      "slot": "spatial-relation",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "spatial-relation",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "speaks-language",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "stability",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "standard-of-living",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "strength",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "strength",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "studiousness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "superordinate-to",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "surrounds",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "surrounds",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "symmetry",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "symmetry",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "tact",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "temperature",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "thickness",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "thickness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "tightness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "toughness-emotional",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "typicalness-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "usefulness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "validated",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "vertical-orientation",
+      "facet": "sem",
+      "filler": "upright"
+    },
+    {
+      "slot": "vertical-orientation",
+      "facet": "sem",
+      "filler": "upside-down"
+    },
+    {
+      "slot": "volume",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "volume",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "wealth-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "weight-loss-intentionality",
+      "facet": "sem",
+      "filler": "intentional"
+    },
+    {
+      "slot": "weight-loss-intentionality",
+      "facet": "sem",
+      "filler": "unintentional"
+    },
+    {
+      "slot": "wetness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "work-potential",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "years-of-education",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "years-of-education",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

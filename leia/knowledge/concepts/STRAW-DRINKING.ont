@@ -1,0 +1,22 @@
+{
+  "name": "@STRAW-DRINKING",
+  "isa": [
+    "@TABLE-SETTING-ARTIFACT"
+  ],
+  "def": "a prolonged circular plastic device used for drinking through it",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

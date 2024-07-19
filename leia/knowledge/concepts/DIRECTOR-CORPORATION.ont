@@ -1,0 +1,36 @@
+{
+  "name": "@DIRECTOR-CORPORATION",
+  "isa": [
+    "@BUSINESS-ROLE",
+    "@MANAGERIAL-ROLE"
+  ],
+  "def": "A company role in which the holder directs some aspect of the company.",
+  "local": [
+    {
+      "slot": "authority-attribute",
+      "facet": "sem",
+      "filler": [
+        "><",
+        0.8
+      ]
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@HEADQUARTERS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

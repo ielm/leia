@@ -1,0 +1,9 @@
+{
+  "name": "$EXPERIENCER",
+  "def": "the entity that experiences a state (e.g., John in John is tired) or an event (e.g. a medical event)",
+  "type": "case_role",
+  "range": "!AnyType",
+  "inverse": "$EXPERIENCER-OF",
+  "measured-in": [],
+  "container": "$CASE-ROLE"
+}

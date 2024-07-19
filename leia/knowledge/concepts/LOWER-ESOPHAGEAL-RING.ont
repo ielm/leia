@@ -1,0 +1,16 @@
+{
+  "name": "@LOWER-ESOPHAGEAL-RING",
+  "isa": [
+    "@PATHOLOGIC-FUNCTION"
+  ],
+  "def": "a condition in which a ring of tissue inside the lower part of the esophagus causes narrowing and partial blockage of the esophagus",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@DISTAL-ESOPHAGUS"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

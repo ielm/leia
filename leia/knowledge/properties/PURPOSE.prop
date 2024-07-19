@@ -1,0 +1,9 @@
+{
+  "name": "$PURPOSE",
+  "def": "the reason for doing something--or the existence of something",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$PURPOSE-OF",
+  "measured-in": [],
+  "container": "$REASON"
+}

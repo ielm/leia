@@ -1,0 +1,27 @@
+{
+  "name": "@CIGARETTE",
+  "isa": [
+    "@SMOKING-DEVICE"
+  ],
+  "def": "a small roll of finely cut tobacco in thin paper for smoking",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PAPER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@TOBACCO"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

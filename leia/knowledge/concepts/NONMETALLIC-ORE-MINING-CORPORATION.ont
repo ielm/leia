@@ -1,0 +1,21 @@
+{
+  "name": "@NONMETALLIC-ORE-MINING-CORPORATION",
+  "isa": [
+    "@MINING-CORPORATION"
+  ],
+  "def": "a corporation involved in the nonmetallic ore mining and preparation of nonmetal",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "not",
+      "filler": "@GEMSTONE"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "not",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

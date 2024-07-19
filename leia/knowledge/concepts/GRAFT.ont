@@ -1,0 +1,98 @@
+{
+  "name": "@GRAFT",
+  "isa": [
+    "@CORPORATE-CRIMINAL-ACTIVITY",
+    "@ACQUIRE"
+  ],
+  "def": "acquiring money or other benefits illegally through the abuse of one*s business or political position",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EXPLOIT-ABUSE-1"
+    }
+  ],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "business"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "casual"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "formal"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "sport"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "legality-attribute",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "legality-attribute",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "safety-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {
+    "@EXPLOIT-ABUSE-1": {
+      "name": "@EXPLOIT-ABUSE-1",
+      "isa": [
+        "@EXPLOIT-ABUSE"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "theme",
+          "facet": "sem",
+          "filler": "@BUSINESS-ROLE"
+        }
+      ],
+      "block": [],
+      "private": {}
+    }
+  }
+}

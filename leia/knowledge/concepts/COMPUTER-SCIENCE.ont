@@ -1,0 +1,32 @@
+{
+  "name": "@COMPUTER-SCIENCE",
+  "isa": [
+    "@FIELD-OF-STUDY"
+  ],
+  "def": "the branch of science and technology that is concerned with methods and techniques relating to data processing",
+  "local": [
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@COMPUTING-SERVE"
+    },
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@COMPUTING-WORK-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@WORK-ACTIVITY"
+    }
+  ],
+  "private": {}
+}

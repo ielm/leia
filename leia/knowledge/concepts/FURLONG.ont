@@ -1,0 +1,19 @@
+{
+  "name": "@FURLONG",
+  "isa": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "def": "1/8 of a mile, a imperial/US unit of distance; mi/8",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        201.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

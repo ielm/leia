@@ -1,0 +1,16 @@
+{
+  "name": "@SPIDER-MITE",
+  "isa": [
+    "@MITE"
+  ],
+  "def": "a small red mite feeding on vegetation",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "red"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

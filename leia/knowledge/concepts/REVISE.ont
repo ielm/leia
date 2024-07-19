@@ -1,0 +1,83 @@
+{
+  "name": "@REVISE",
+  "isa": [
+    "@COMMUNICATION-SERVE",
+    "@PREPARE-DOCUMENT"
+  ],
+  "def": "to read over carefully and correct, improve or update",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@EDITOR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@BROADCASTER"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@CRYPTOGRAPHER"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@MODERATOR"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@PUBLICATION-ROLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@TRANSLATOR"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ENCRYPT-KEY"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DOCUMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MEDIA-ARTIFACT"
+    }
+  ],
+  "private": {}
+}

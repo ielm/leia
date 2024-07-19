@@ -1,0 +1,44 @@
+{
+  "name": "@LOWER-PALAEOLITHIC-PERIOD",
+  "isa": [
+    "@HISTORICAL-PERIOD"
+  ],
+  "def": "earliest portion of the Palaeolithic Period (i.e.,Old Stone Age), between 2 million and 200,000 years ago",
+  "local": [
+    {
+      "slot": "time-end",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        200000
+      ],
+      "meta": {
+        "measured-in": "year-bc"
+      }
+    },
+    {
+      "slot": "time-begin",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        2000000
+      ],
+      "meta": {
+        "measured-in": "year-bc"
+      }
+    }
+  ],
+  "block": [
+    {
+      "slot": "time-begin",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "time-end",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    }
+  ],
+  "private": {}
+}

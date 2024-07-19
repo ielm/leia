@@ -1,0 +1,22 @@
+{
+  "name": "@MYSOPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of dirt or contamination",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SOIL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

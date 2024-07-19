@@ -1,0 +1,27 @@
+{
+  "name": "@STRINGED-INSTRUMENT",
+  "isa": [
+    "@MUSICAL-INSTRUMENT"
+  ],
+  "def": "all the string instruments of an orchestra",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@STRING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "is-consumer-good",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "private": {}
+}

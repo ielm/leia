@@ -1,0 +1,9 @@
+{
+  "name": "$BEYOND",
+  "def": "indicates that one thing is located past another (encountered after another, etc.) when, for example, one is engaged in a motion event",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$BEFORE-SPATIAL",
+  "measured-in": [],
+  "container": "$DIRECTIONAL-RELATION"
+}

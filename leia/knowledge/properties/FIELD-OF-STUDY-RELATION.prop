@@ -1,0 +1,9 @@
+{
+  "name": "$FIELD-OF-STUDY-RELATION",
+  "def": "relations that pertain to a field-of-study, its related role and work-activity",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$RELATION"
+}

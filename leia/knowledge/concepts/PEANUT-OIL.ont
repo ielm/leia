@@ -1,0 +1,22 @@
+{
+  "name": "@PEANUT-OIL",
+  "isa": [
+    "@COOKING-OIL"
+  ],
+  "def": "oil made of peanuts",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PEANUT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

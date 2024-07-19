@@ -1,0 +1,9 @@
+{
+  "name": "$STABILITY",
+  "def": "indicates how stable (resistant to change) or \nunstable (highly changeable) a situation, \nobject or person is; eventually these types\nof stability should probably be separated",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-ATTRIBUTE"
+}

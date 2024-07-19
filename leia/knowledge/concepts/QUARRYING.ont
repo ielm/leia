@@ -1,0 +1,27 @@
+{
+  "name": "@QUARRYING",
+  "isa": [
+    "@MINING-ACTIVITY"
+  ],
+  "def": "to excavate rock from a quarry",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ROCK"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@MINE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EARTH-RESOURCE"
+    }
+  ],
+  "private": {}
+}

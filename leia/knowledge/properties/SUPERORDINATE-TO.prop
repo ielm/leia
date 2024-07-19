@@ -1,0 +1,9 @@
+{
+  "name": "$SUPERORDINATE-TO",
+  "def": "of higher social rank",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$SUBORDINATE-TO",
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

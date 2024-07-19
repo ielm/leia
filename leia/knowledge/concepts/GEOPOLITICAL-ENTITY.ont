@@ -1,0 +1,484 @@
+{
+  "name": "@GEOPOLITICAL-ENTITY",
+  "isa": [
+    "@GEOGRAPHICAL-ENTITY",
+    "@SOCIAL-OBJECT"
+  ],
+  "def": "political subdivisions of the earth*s surface",
+  "local": [
+    {
+      "slot": "has-government-type",
+      "facet": "sem",
+      "filler": "@GOVERNMENTAL-IDEOLOGY"
+    },
+    {
+      "slot": "life-expectancy-female",
+      "facet": "sem",
+      "filler": [
+        "><",
+        130
+      ]
+    },
+    {
+      "slot": "life-expectancy-male",
+      "facet": "sem",
+      "filler": [
+        "><",
+        130
+      ]
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "mortality-rate",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BUILDING"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@GEOGRAPHICAL-ENTITY"
+    },
+    {
+      "slot": "infant-mortality-rate",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "has-industry",
+      "facet": "sem",
+      "filler": "@CORPORATION"
+    },
+    {
+      "slot": "speaks-language",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "demographics-attribute",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "cost-of-living",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "year-founded",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "has-agricultural-product",
+      "facet": "sem",
+      "filler": "@AGRICULTURAL-PRODUCT"
+    },
+    {
+      "slot": "demographics-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "percent-of-world-population",
+      "facet": "sem",
+      "filler": [
+        "><",
+        100
+      ]
+    },
+    {
+      "slot": "employment-rate",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "employment-rate",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "language-used",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "has-religion",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    },
+    {
+      "slot": "has-industry",
+      "facet": "sem",
+      "filler": "@FOR-PROFIT-ORGANIZATION"
+    },
+    {
+      "slot": "has-earth-resource",
+      "facet": "sem",
+      "filler": "@NATURAL-RESOURCE"
+    },
+    {
+      "slot": "has-capital",
+      "facet": "sem",
+      "filler": "@CITY"
+    },
+    {
+      "slot": "has-earth-resource",
+      "facet": "sem",
+      "filler": "@EARTH-RESOURCE"
+    },
+    {
+      "slot": "has-government-type",
+      "facet": "sem",
+      "filler": "@GOVERNMENT-TYPE"
+    },
+    {
+      "slot": "has-language-official",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "employment-rate",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "life-expectancy",
+      "facet": "sem",
+      "filler": [
+        "><",
+        130
+      ]
+    },
+    {
+      "slot": "unemployment-rate",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "unemployment-rate",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "birth-rate",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "autonomy-political",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "has-population",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "percent-of-world-population",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "population-density",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "mortality-rate",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "life-expectancy-male",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "life-expectancy-female",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "life-expectancy",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "infant-mortality-rate",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "has-population",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "birth-rate",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "population-density",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "formality",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@NAME"
+    },
+    {
+      "slot": "has-name-prefix",
+      "facet": "sem",
+      "filler": "@NAME-PREFIX"
+    },
+    {
+      "slot": "has-name-prefix",
+      "facet": "sem",
+      "filler": "@NAME-PREFIX"
+    },
+    {
+      "slot": "has-name-suffix",
+      "facet": "sem",
+      "filler": "@NAME-SUFFIX"
+    },
+    {
+      "slot": "has-name-suffix",
+      "facet": "sem",
+      "filler": "@NAME-SUFFIX"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location-oriented-naming-data",
+      "facet": "sem",
+      "filler": "@COMPASS-POINT"
+    },
+    {
+      "slot": "location-oriented-naming-data",
+      "facet": "sem",
+      "filler": "@COMPASS-POINT"
+    },
+    {
+      "slot": "location-oriented-naming-data",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "location-oriented-naming-data",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "path",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "path",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CREATIVE-WORK"
+    },
+    {
+      "slot": "scalar-financial-object-attribute",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "scalar-financial-object-attribute",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "scalar-medical-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-medical-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-medical-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "scalar-medical-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "symmetry",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "symmetry",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "symmetry",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "symmetry",
+      "facet": "sem",
+      "filler": "yes"
+    }
+  ],
+  "private": {}
+}

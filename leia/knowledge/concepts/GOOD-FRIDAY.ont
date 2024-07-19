@@ -1,0 +1,42 @@
+{
+  "name": "@GOOD-FRIDAY",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "the Friday before Easter; a Christian holiday commemorating the crucifixion of Jesus",
+  "local": [
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@FRIDAY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@CHRISTIANITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@CELEBRATE"
+    }
+  ],
+  "private": {}
+}

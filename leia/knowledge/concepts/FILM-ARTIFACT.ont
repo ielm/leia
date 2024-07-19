@@ -1,0 +1,22 @@
+{
+  "name": "@FILM-ARTIFACT",
+  "isa": [
+    "@VISUAL-MEDIA-ARTIFACT"
+  ],
+  "def": "any artifact related to recording images on film",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@LIBRARY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

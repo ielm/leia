@@ -1,0 +1,74 @@
+{
+  "name": "@CARTRIDGE",
+  "isa": [
+    "@RIGID-MANUFACTURED-CONTAINER"
+  ],
+  "def": "a small container, as for ink in a pen, camera film, phonographic needle, etc.",
+  "local": [
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "><",
+        10
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "><",
+        10
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "><",
+        300
+      ],
+      "meta": {
+        "measured-in": "gram"
+      }
+    }
+  ],
+  "block": [
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "><",
+        250
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "><",
+        4500
+      ]
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,73 @@
+{
+  "name": "@BEQUEATH",
+  "isa": [
+    "@GIVE-GIFT",
+    "@LEGAL-EVENT"
+  ],
+  "def": "to leave (property) to another by one*s will; to pass on to",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ASSET"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@LEGAL-WILL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@LEGAL-WORK-ROLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@CHARITABLE-ORGANIZATION"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "legality-attribute",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CONSUMER-GOOD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

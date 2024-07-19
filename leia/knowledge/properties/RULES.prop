@@ -1,0 +1,9 @@
+{
+  "name": "$RULES",
+  "def": "A link between a ruler (be it a person or organization) and a geopolitical entity.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$RULED-BY",
+  "measured-in": [],
+  "container": "$GEOPOLITICAL-RELATION"
+}

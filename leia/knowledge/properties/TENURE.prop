@@ -1,0 +1,9 @@
+{
+  "name": "$TENURE",
+  "def": "permanence of academic appointment",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-OBJECT-ATTRIBUTE"
+}

@@ -1,0 +1,57 @@
+{
+  "name": "@SAW-EVENT",
+  "isa": [
+    "@APPLY-FORCE"
+  ],
+  "def": "to cut or be cut with or as with a saw",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@WOOD"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@LUMBER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SAW"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@SAWMILL"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@CREATIVE-COGNITIVE-EVENT",
+  "isa": [
+    "@ACTIVE-COGNITIVE-EVENT"
+  ],
+  "def": "an active-cognitive-event in which the mind is used to create things",
+  "local": [],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

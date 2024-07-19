@@ -1,0 +1,47 @@
+{
+  "name": "@GAS",
+  "isa": [
+    "@MATERIAL"
+  ],
+  "def": "chemical",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ATOM"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GAS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "semi-solid"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "solid"
+    }
+  ],
+  "private": {}
+}

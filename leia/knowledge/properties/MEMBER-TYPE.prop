@@ -1,0 +1,9 @@
+{
+  "name": "$MEMBER-TYPE",
+  "def": "indicates what type of concepts are in\na set",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$MEMBER-TYPE-OF",
+  "measured-in": [],
+  "container": "$PARAMETRIC-RELATION"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@NEOPLASTIC-PROCESS",
+  "isa": [
+    "@NON-COMMUNICABLE-DISEASE"
+  ],
+  "def": "A new and abnormal growth of tissue in which the growth is uncontrolled and progressive. The growths may be malignant or benign.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMAL-TISSUE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@BACTERIA"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@VIRUS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

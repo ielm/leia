@@ -1,0 +1,27 @@
+{
+  "name": "@COAST",
+  "isa": [
+    "@COASTAL-GEOLOGICAL-ENTITY"
+  ],
+  "def": "where a landmass meets the ocean",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BEACH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    }
+  ],
+  "private": {}
+}

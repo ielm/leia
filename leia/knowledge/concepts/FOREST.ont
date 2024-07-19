@@ -1,0 +1,27 @@
+{
+  "name": "@FOREST",
+  "isa": [
+    "@GEOLOGICAL-ENTITY"
+  ],
+  "def": "a large area of land thickly covered with trees and bushes.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@TREE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    }
+  ],
+  "private": {}
+}

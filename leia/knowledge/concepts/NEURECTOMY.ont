@@ -1,0 +1,22 @@
+{
+  "name": "@NEURECTOMY",
+  "isa": [
+    "@SURGICAL-REMOVAL"
+  ],
+  "def": "Surgical removal of a nerve or part of a nerve.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@NERVE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

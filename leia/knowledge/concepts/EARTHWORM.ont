@@ -1,0 +1,71 @@
+{
+  "name": "@EARTHWORM",
+  "isa": [
+    "@ANNELID"
+  ],
+  "def": "a round, segmented worm that burrows in the soil",
+  "local": [
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "><",
+        50
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "><",
+        8
+      ],
+      "meta": {
+        "measured-in": "gram"
+      }
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "black"
+    }
+  ],
+  "block": [
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

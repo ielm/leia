@@ -1,0 +1,27 @@
+{
+  "name": "@MAINTAIN-PEACE",
+  "isa": [
+    "@COOPERATIVE-EVENT"
+  ],
+  "def": "to undertake activities that lead to the maintenance of peace between people, political entities, etc.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PEACE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

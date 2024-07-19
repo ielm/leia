@@ -1,0 +1,30 @@
+{
+  "name": "@CELESTIAL-OBJECT",
+  "isa": [
+    "@NATURAL-OBJECT"
+  ],
+  "def": "objects related to the sky and the universe",
+  "local": [
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    }
+  ],
+  "private": {}
+}

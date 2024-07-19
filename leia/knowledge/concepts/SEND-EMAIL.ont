@@ -1,0 +1,52 @@
+{
+  "name": "@SEND-EMAIL",
+  "isa": [
+    "@TELECOMMUNICATION"
+  ],
+  "def": "to send an email to someone",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COMPUTER"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@EMAIL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COMMUNICATION-DEVICE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TELEGRAM"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TELEVISION-CHANNEL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WEBPAGE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WEBSITE"
+    }
+  ],
+  "private": {}
+}

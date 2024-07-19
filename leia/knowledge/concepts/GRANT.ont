@@ -1,0 +1,67 @@
+{
+  "name": "@GRANT",
+  "isa": [
+    "@LEGAL-EVENT"
+  ],
+  "def": "to allow, give or transfer (something) by legal procedure",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LEGAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@JUDGE"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@ORGANIZATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MONEY"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@LEGAL-WORK-ROLE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

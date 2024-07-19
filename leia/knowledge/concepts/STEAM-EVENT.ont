@@ -1,0 +1,52 @@
+{
+  "name": "@STEAM-EVENT",
+  "isa": [
+    "@PREPARE-INGESTIBLE"
+  ],
+  "def": "To cook food using the vapor rising from boiling water.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VEGETABLE-FOODSTUFF"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PUDDING"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SAUCEPAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WATER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@STOVE"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@BOIL-EVENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COOKING-EQUIPMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FOOD"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$STRENGTH",
+  "def": "the degree of strength  (in the sense of durability) something has",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

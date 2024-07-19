@@ -1,0 +1,30 @@
+{
+  "name": "@NOVEL",
+  "isa": [
+    "@LITERARY-STYLE"
+  ],
+  "def": "a relatively long fictional prose narrative; also the style of such a narrative, in which the plot is unfolded by the actions, speech, and thoughts of the characters",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PLOT"
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "><",
+        1500
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ABSTRACT-OBJECT"
+    }
+  ],
+  "private": {}
+}

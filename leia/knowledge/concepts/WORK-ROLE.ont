@@ -1,0 +1,19 @@
+{
+  "name": "@WORK-ROLE",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "a social role concerning work activity",
+  "local": [],
+  "block": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

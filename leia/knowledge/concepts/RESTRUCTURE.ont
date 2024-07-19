@@ -1,0 +1,32 @@
+{
+  "name": "@RESTRUCTURE",
+  "isa": [
+    "@CHANGE-EVENT"
+  ],
+  "def": "to change the makeup, organization, or pattern of; for eg. restructure a corporation or restructure a debt",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CORPORATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DEBT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LOAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

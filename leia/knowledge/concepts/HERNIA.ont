@@ -1,0 +1,77 @@
+{
+  "name": "@HERNIA",
+  "isa": [
+    "@PATHOLOGIC-FUNCTION"
+  ],
+  "def": "protrusion of a portion of an organ or tissue through an abnormal opening (http://medical-dictionary.thefreedictionary.com/hernia)",
+  "local": [
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@HOLE"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@GENE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMAL-ORGAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMAL-TISSUE"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@PAIN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

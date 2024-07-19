@@ -1,0 +1,43 @@
+{
+  "name": "@FRUIT-PRESERVE",
+  "isa": [
+    "@DESSERT"
+  ],
+  "def": "a preserve made of fruit and sugar",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FRUIT-FOODSTUFF"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SUGAR"
+    },
+    {
+      "slot": "sweetness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0.9
+      ]
+    },
+    {
+      "slot": "wetness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0.9
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

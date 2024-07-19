@@ -1,0 +1,9 @@
+{
+  "name": "$EARLY-STAGE-OF-LIFE-OF",
+  "def": "indicates relations between stages of life of an organism, at least until we have full scripts for their development",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$HAS-EARLY-STAGE-OF-LIFE",
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

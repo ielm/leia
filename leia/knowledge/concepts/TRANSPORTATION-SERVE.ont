@@ -1,0 +1,87 @@
+{
+  "name": "@TRANSPORTATION-SERVE",
+  "isa": [
+    "@PROFESSIONAL-SERVICE-EVENT"
+  ],
+  "def": "a service-event that involves the transporting of humans, products or animals from one place to another",
+  "local": [
+    {
+      "slot": "source",
+      "facet": "relaxable-to",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@VEHICLE-ROLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VEHICLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@VEHICLE-PART"
+    },
+    {
+      "slot": "destination",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@WORK-ROLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WATER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

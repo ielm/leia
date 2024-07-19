@@ -1,0 +1,16 @@
+{
+  "name": "@FOR-PROFIT-MANUFACTURING-CORPORATION",
+  "isa": [
+    "@FOR-PROFIT-CORPORATION"
+  ],
+  "def": "a corporation that manufactures products for a profit",
+  "local": [
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@INDUSTRIAL-EQUIPMENT-MANUFACTURING-CORPORATION"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,38 @@
+{
+  "name": "@PLACE-SETTING-CONTAINER",
+  "isa": [
+    "@PLACE-SETTING",
+    "@CONTAINER"
+  ],
+  "def": "Place setting artifacts that are containers",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CERAMIC"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GLASS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

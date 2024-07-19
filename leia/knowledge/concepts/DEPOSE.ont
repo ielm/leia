@@ -1,0 +1,42 @@
+{
+  "name": "@DEPOSE",
+  "isa": [
+    "@POLITICAL-EVENT"
+  ],
+  "def": "to remove from office",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GOVERNMENTAL-ROLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@LARGE-GEOPOLITICAL-ENTITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

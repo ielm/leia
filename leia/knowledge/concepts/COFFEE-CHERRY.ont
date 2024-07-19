@@ -1,0 +1,27 @@
+{
+  "name": "@COFFEE-CHERRY",
+  "isa": [
+    "@TREE-FRUIT"
+  ],
+  "def": "the fruit of the coffee tree, which contains the coffee bean as one of its components",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@COFFEE-BEAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SEED"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@VOLUNTARY-VISUAL-EVENT",
+  "isa": [
+    "@VISUAL-EVENT"
+  ],
+  "def": "voluntarily (actively) perceive something by looking",
+  "local": [],
+  "block": [
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

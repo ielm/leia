@@ -1,0 +1,52 @@
+{
+  "name": "@LAYER-EVENT",
+  "isa": [
+    "@CHANGE-POSITION"
+  ],
+  "def": "to place an object (usually something flat) on top of a similar object",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@IMPLEMENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CRANE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@UTENSIL"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@ARRANGE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

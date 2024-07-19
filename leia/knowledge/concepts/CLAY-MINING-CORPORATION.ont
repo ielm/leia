@@ -1,0 +1,22 @@
+{
+  "name": "@CLAY-MINING-CORPORATION",
+  "isa": [
+    "@NONMETALLIC-ORE-MINING-CORPORATION"
+  ],
+  "def": "a corporation involved in the clay mining and preparation of clay",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CLAY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

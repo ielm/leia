@@ -1,0 +1,17 @@
+{
+  "name": "@FISCAL-QUARTER",
+  "isa": [
+    "@TIME-INTERVAL-UNIT",
+    "@FINANCIAL-OBJECT"
+  ],
+  "def": "A period of three months during which corporate performance is measured",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

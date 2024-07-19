@@ -1,0 +1,9 @@
+{
+  "name": "$BOX-CORNER-ORIENTATION",
+  "def": "indicates the spatial orientation of a box-corner",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-OBJECT-ATTRIBUTE"
+}

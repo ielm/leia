@@ -1,0 +1,31 @@
+{
+  "name": "@INK",
+  "isa": [
+    "@PIGMENT"
+  ],
+  "def": "a pigmented liquid or paste used especially for writing or printing",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "black"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "blue"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "green"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "red"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

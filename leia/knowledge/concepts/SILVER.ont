@@ -1,0 +1,41 @@
+{
+  "name": "@SILVER",
+  "isa": [
+    "@PRECIOUS-METAL"
+  ],
+  "def": "a lustrous white, ductile, malleable metallic element, occurring both uncombined and in ores such as argentite, having the highest thermal and electrical conductivity of the metals. it is highly valued for jewelry, tableware, and other ornamental use and is widely used in coinage, photography, dental and soldering alloys, electrical contacts, and printed",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        107
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        47
+      ]
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "@SILVER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

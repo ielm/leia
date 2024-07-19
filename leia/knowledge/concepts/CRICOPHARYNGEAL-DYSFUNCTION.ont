@@ -1,0 +1,52 @@
+{
+  "name": "@CRICOPHARYNGEAL-DYSFUNCTION",
+  "isa": [
+    "@PATHOLOGIC-FUNCTION"
+  ],
+  "def": "an esophageal disorder caused by a failure of the upper esophageal sphincter to relax properly. The problem may be an incoordination between relaxation in the upper esophageal sphincter and simultaneous contraction of the pharynx, which may result in a pharyngoesophageal diverticulum. This is a false diverticulum that consists only of mucosa that herniate posteriorly between the fibers of the cricopharyngeal muscle. Cricopharyngeal dysfunction is often associated with hiatal hernia and astroesophageal reflux.",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@PHARYNX"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@SPHINCTER"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

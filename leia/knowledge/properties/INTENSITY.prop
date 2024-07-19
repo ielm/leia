@@ -1,0 +1,11 @@
+{
+  "name": "$INTENSITY",
+  "def": "Indicates the level of saturation (of color), energy involved (for work, desire), etc.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-ATTRIBUTE"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@HUNDREDWEIGHT-SHORT",
+  "isa": [
+    "@MASS-WEIGHT-UNIT"
+  ],
+  "def": "a weight measure used in the US and Canada, is equivalent to 100 pounds, abbreviated Cwt; 100*pound",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        45.3592
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

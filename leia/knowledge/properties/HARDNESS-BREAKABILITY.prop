@@ -1,0 +1,11 @@
+{
+  "name": "$HARDNESS-BREAKABILITY",
+  "def": "how easily an object can be broken or damaged",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

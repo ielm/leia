@@ -1,0 +1,22 @@
+{
+  "name": "@HYPOPHYSECTOMY",
+  "isa": [
+    "@SURGICAL-REMOVAL"
+  ],
+  "def": "Excision or destruction of the pituitary gland.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@PITUITARY-GLAND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

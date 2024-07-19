@@ -1,0 +1,31 @@
+{
+  "name": "@CARDBOARD",
+  "isa": [
+    "@PAPER"
+  ],
+  "def": "material often used for packing--either extremely coarse/thick paper or layered/corrugated paper",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "beige"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "tan"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "white"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

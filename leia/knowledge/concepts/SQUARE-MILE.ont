@@ -1,0 +1,19 @@
+{
+  "name": "@SQUARE-MILE",
+  "isa": [
+    "@AREA-UNIT"
+  ],
+  "def": "(Wikipedia) an imperial and US unit of measure equal to the area of a square of one mile; mi*mi",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        2589846
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

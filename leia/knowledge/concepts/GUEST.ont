@@ -1,0 +1,19 @@
+{
+  "name": "@GUEST",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "A person who receives the hospitality of another person or organization",
+  "local": [],
+  "block": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

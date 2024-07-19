@@ -1,0 +1,21 @@
+{
+  "name": "@ARTERIAL-BLOOD",
+  "isa": [
+    "@BLOOD"
+  ],
+  "def": "blood in artery",
+  "local": [],
+  "block": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "blue"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@VEIN"
+    }
+  ],
+  "private": {}
+}

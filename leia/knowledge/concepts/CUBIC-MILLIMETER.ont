@@ -1,0 +1,19 @@
+{
+  "name": "@CUBIC-MILLIMETER",
+  "isa": [
+    "@CUBIC-UNIT"
+  ],
+  "def": "the volume of a cube with edges one millimeter in length; mm*mm*mm",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1e-09
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

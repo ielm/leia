@@ -1,0 +1,36 @@
+{
+  "name": "@LAWRENCIUM",
+  "isa": [
+    "@ACTINIDE"
+  ],
+  "def": "a synthetic transuranic element having a single isotope with mass number 257 and a half-life of 8 seconds",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        257
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        103
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

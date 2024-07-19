@@ -1,0 +1,38 @@
+{
+  "name": "@GOVERNMENT-ACTIVITY",
+  "isa": [
+    "@POLITICAL-EVENT",
+    "@WORK-ACTIVITY"
+  ],
+  "def": "an activity that is commonly carried out by a government at any level or a member thereof",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@GOVERNMENTAL-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

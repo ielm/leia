@@ -1,0 +1,62 @@
+{
+  "name": "@PAINTING",
+  "isa": [
+    "@DECORATIVE-ARTIFACT",
+    "@PICTURE"
+  ],
+  "def": "a painted picture",
+  "local": [
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "path",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "technological-level",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,52 @@
+{
+  "name": "@ULCER",
+  "isa": [
+    "@NON-COMMUNICABLE-DISEASE"
+  ],
+  "def": "to have an open sore on the skin or on a mucous membrane",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SKIN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MUCOSA-OF-ORGAN"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@ITCHING"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@PAIN"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@NAUSEA"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@VOMIT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,177 @@
+{
+  "name": "@FILL",
+  "isa": [
+    "@CHANGE-LOCATION"
+  ],
+  "def": "to put something (solid, liquid or gas) into some container",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CONTAINER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LUNG"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VASE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PIPELINE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TUBE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CLEANING-APPLIANCE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BUILDING"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PORTABLE-SHELTER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TOWER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COOKING-APPLIANCE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INJECTOR"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SHOVEL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SPADE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MAILBOX"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VEHICLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PUMP-DEVICE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GUN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SLINGSHOT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CATAPULT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FAX-MACHINE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHOTOCOPY-MACHINE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHOTOGRAPHIC-DEVICE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VENDING-MACHINE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TYPEWRITER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NUCLEAR-REACTOR"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HAT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HANDWEAR"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BOWL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MEASURING-CUP"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MEASURING-SPOON"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SPOON"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

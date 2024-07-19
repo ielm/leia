@@ -1,0 +1,32 @@
+{
+  "name": "@TEMPERATURE-UNIT",
+  "isa": [
+    "@MEASURING-UNIT"
+  ],
+  "def": "Units for measuring temperature",
+  "local": [
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@THERMOMETER"
+    },
+    {
+      "slot": "has-standard-measure",
+      "facet": "sem",
+      "filler": "@DEGREE-KELVIN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "sem",
+      "filler": "@MEASURING-UNIT"
+    },
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@MEASURING-ARTIFACT"
+    }
+  ],
+  "private": {}
+}

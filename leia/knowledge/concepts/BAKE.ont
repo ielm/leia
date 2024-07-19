@@ -1,0 +1,107 @@
+{
+  "name": "@BAKE",
+  "isa": [
+    "@PREPARE-INGESTIBLE"
+  ],
+  "def": "to cook food in an oven",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@BAKER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BAKED-FOOD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PUDDING"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BAKERY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@APPETIZER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@OVEN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DOUGH"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MEAT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FISH-MEAT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EGG-DISH"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ENTREE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PIZZA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MEAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VEGETABLE-FOODSTUFF"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@CAKE"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@PIE"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@COOKIE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@COOK"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FOOD"
+    }
+  ],
+  "private": {}
+}

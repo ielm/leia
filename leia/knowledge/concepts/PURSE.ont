@@ -1,0 +1,84 @@
+{
+  "name": "@PURSE",
+  "isa": [
+    "@BAG"
+  ],
+  "def": "A small piece of luggage normally carried on person and containing valuables such as money and jewelry as well as personal artifacts.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@VINYL"
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "><",
+        20
+      ]
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        "><",
+        50
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "><",
+        700
+      ],
+      "meta": {
+        "measured-in": "gram"
+      }
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "><",
+        50
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "><",
+        50
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "><",
+        100
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "><",
+        3
+      ]
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        "><",
+        100
+      ]
+    }
+  ],
+  "private": {}
+}

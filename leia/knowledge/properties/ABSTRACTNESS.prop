@@ -1,0 +1,9 @@
+{
+  "name": "$ABSTRACTNESS",
+  "def": "How concerete(0) or abstract (1) an idea, painting, etc., is",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-OBJECT-ATTRIBUTE"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@LIPECTOMY",
+  "isa": [
+    "@SURGICAL-REMOVAL"
+  ],
+  "def": "Surgical excision of subcutaneous fatty tissue.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@FATTY-LAYER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

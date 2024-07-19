@@ -1,0 +1,22 @@
+{
+  "name": "@PLANT-DISEASE",
+  "isa": [
+    "@PLANT-PATHOLOGIC-FUNCTION"
+  ],
+  "def": "Diseases that affect plants",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@PLANT-SYMPTOM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

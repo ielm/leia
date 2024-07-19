@@ -1,0 +1,47 @@
+{
+  "name": "@TRANSFER-DATA",
+  "isa": [
+    "@TECHNOLOGY-EVENT"
+  ],
+  "def": "to transfer data from a storage device into a computer*s memory",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@COMPUTER-DATA"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@COMPUTER-DISK"
+    },
+    {
+      "slot": "destination",
+      "facet": "sem",
+      "filler": "@COMPUTER"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@COMPUTER-MEDIA-ARTIFACT"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@NETWORK-SERVER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

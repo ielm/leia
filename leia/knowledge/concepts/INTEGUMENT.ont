@@ -1,0 +1,27 @@
+{
+  "name": "@INTEGUMENT",
+  "isa": [
+    "@ORGAN-SYSTEM-SUBDIVISION"
+  ],
+  "def": "Organ system subdivision which consists of the skin and the superficial fascia. Examples: There is only one integument.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SKIN"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SUPERFICIAL-FASCIA"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

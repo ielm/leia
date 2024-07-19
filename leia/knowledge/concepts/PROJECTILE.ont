@@ -1,0 +1,22 @@
+{
+  "name": "@PROJECTILE",
+  "isa": [
+    "@WEAPON"
+  ],
+  "def": "an object to be shot, thrown or hurled forward, as a bullet",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@LIVESTOCK",
+  "isa": [
+    "@VERTEBRATE"
+  ],
+  "def": "cattle, horses, poultry, etc. that is raised or used on a farm but is not a domestic pet",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@FARM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "diligence",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

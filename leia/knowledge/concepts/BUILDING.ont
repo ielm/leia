@@ -1,0 +1,237 @@
+{
+  "name": "@BUILDING",
+  "isa": [
+    "@BUILDING-ARTIFACT",
+    "@PLACE"
+  ],
+  "def": "large, permanent immobile enclosures where people live and work",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BUILDING-PLACE-PART"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@BRICK"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CONCRETE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@VINYL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CONSTRUCTION-MATERIAL"
+    },
+    {
+      "slot": "has-style",
+      "facet": "sem",
+      "filler": "@ARCHITECTURAL-STYLE"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-ARCHITECTURE"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-REAL-ESTATE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ROCK"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GLASS"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CEMENT"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BUILDING-ARTIFACT-PART"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "locked",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "number-of-floors",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        1
+      ]
+    },
+    {
+      "slot": "locked",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "extent-of-change",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "path",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "natural"
+    },
+    {
+      "slot": "property",
+      "facet": "sem",
+      "filler": "@ALL"
+    },
+    {
+      "slot": "scalar-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "scalar-financial-object-attribute",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "scalar-medical-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-medical-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "scalar-object-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "solid"
+    },
+    {
+      "slot": "technological-level",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "validated",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,57 @@
+{
+  "name": "@SWEAT",
+  "isa": [
+    "@NORMAL-BIOLOGIC-FUNCTION"
+  ],
+  "def": "to give forth a salty moisture from the skin",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@SKIN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SWEAT-LIQUID"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@MAMMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@MAMMAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

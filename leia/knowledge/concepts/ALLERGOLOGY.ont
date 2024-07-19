@@ -1,0 +1,22 @@
+{
+  "name": "@ALLERGOLOGY",
+  "isa": [
+    "@MEDICINE"
+  ],
+  "def": "the branch of medical science that studies the causes and treatment of allergies",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@ALLERGIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@MEDICAL-WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

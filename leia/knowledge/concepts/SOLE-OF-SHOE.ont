@@ -1,0 +1,152 @@
+{
+  "name": "@SOLE-OF-SHOE",
+  "isa": [
+    "@CLOTHING-ARTIFACT-PART"
+  ],
+  "def": "the underside of a shoe or boot",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SYNTHETIC-RUBBER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "translucent"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "transparent"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "amorphous"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "barlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "blocklike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "circular"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "conical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "crosslike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "curved"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "cylindrical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "egglike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "halftoroidal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "heart-shaped"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "hexagonal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "hornlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "knoblike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "linear"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "parallelepiped"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "pyramidlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "ringlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "semicircular"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "spherical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "spirallike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "toroidal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "trapezoidal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "triangular"
+    }
+  ],
+  "private": {}
+}

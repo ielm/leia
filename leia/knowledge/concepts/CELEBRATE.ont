@@ -1,0 +1,72 @@
+{
+  "name": "@CELEBRATE",
+  "isa": [
+    "@SPECIAL-OCCASION"
+  ],
+  "def": "to commemorate an event (such as a birthday) with festivity",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HOLIDAY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WEDDING"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COMMENCEMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BAPTISM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CONFIRMATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BAR-MITZVAH"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BAT-MITZVAH"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@EVENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

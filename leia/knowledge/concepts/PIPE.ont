@@ -1,0 +1,22 @@
+{
+  "name": "@PIPE",
+  "isa": [
+    "@SMOKING-DEVICE"
+  ],
+  "def": "a tube with a small bowl at one end in which tobacco is smoked",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

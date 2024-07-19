@@ -1,0 +1,67 @@
+{
+  "name": "@SURGERY",
+  "isa": [
+    "@INVASIVE-PROCEDURE"
+  ],
+  "def": "A type of medical service in which an organ of an animal is manipulated using instruments, often being cut open.",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@TREAT-MEDICALLY"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@SURGEON"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@SURGICAL-INCISION"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SURGICAL-INSTRUMENT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@PHYSICIAN"
+    },
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@OPERATING-ROOM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MEDICAL-ARTIFACT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@MEDICAL-BUILDING"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@OFFICE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,41 @@
+{
+  "name": "@CHROMIUM",
+  "isa": [
+    "@HARD-METALLIC-ELEMENT"
+  ],
+  "def": "a lustrous, hard, steel-gray metallic element used to harden steel alloys, to produce stainless steels, and in corrosion-resistant decorative platings",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@CHROMIUM-MANUFACTURING-CORPORATION"
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        24
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        51
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

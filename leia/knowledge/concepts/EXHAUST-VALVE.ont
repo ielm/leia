@@ -1,0 +1,33 @@
+{
+  "name": "@EXHAUST-VALVE",
+  "isa": [
+    "@VEHICLE-PART",
+    "@VALVE"
+  ],
+  "def": "a valve through which burned gases from a cylinder move into the exhaust manifold",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

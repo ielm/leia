@@ -1,0 +1,21 @@
+{
+  "name": "@PENAL-INSTITUTION",
+  "isa": [
+    "@INSTITUTIONAL-BUILDING"
+  ],
+  "def": "a place where criminals serve terms of punishment",
+  "local": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@CRIMINAL"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@POLICE-OFFICER"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

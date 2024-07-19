@@ -1,0 +1,11 @@
+{
+  "name": "$HUMIDITY",
+  "def": "the amount of moistness in the air; understood as relative humidity",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

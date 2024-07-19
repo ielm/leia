@@ -1,0 +1,16 @@
+{
+  "name": "@SURVEYING",
+  "isa": [
+    "@ENGINEERING-SERVE"
+  ],
+  "def": "the science or work of making land surveys",
+  "local": [],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ENGINEER"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@CORK-MANUFACTURING-CORPORATION",
+  "isa": [
+    "@PLANT-FARM"
+  ],
+  "def": "a corporation involved in a cork industry",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CORK"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@PLACE-MAT",
+  "isa": [
+    "@TABLE-LINEN"
+  ],
+  "def": "a mat placed on table or tray underneath tableware",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SYNTHETIC-RUBBER"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

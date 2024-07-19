@@ -1,0 +1,22 @@
+{
+  "name": "@ECHOCARDIOGRAM-OBJECT",
+  "isa": [
+    "@SONOGRAM-OBJECT"
+  ],
+  "def": "a sonographic image of the heart",
+  "local": [
+    {
+      "slot": "depicts",
+      "facet": "sem",
+      "filler": "@HEART"
+    }
+  ],
+  "block": [
+    {
+      "slot": "depicts",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

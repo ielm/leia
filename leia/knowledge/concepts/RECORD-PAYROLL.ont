@@ -1,0 +1,42 @@
+{
+  "name": "@RECORD-PAYROLL",
+  "isa": [
+    "@MONEY-MANAGING-ACTIVITY"
+  ],
+  "def": "to maintain records of employees* wages, deductions for taxes withheld from wages, benefits, etc.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PAYROLL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TAX"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FINANCIAL-BOOKS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

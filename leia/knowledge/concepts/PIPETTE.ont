@@ -1,0 +1,32 @@
+{
+  "name": "@PIPETTE",
+  "isa": [
+    "@VOLUME-MEASURING-ARTIFACT"
+  ],
+  "def": "any of variously shaped glass tubes, open at both ends, usually calibrated, and used especially to transfer small volumes of liquid",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GLASS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "opaque"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "translucent"
+    }
+  ],
+  "private": {}
+}

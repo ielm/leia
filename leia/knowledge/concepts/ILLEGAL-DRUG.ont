@@ -1,0 +1,30 @@
+{
+  "name": "@ILLEGAL-DRUG",
+  "isa": [
+    "@DRUG"
+  ],
+  "def": "a drug that is illegal to sell or possess, such as certain narcotics",
+  "local": [
+    {
+      "slot": "legality-attribute",
+      "facet": "sem",
+      "filler": "no"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    }
+  ],
+  "private": {}
+}

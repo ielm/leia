@@ -1,0 +1,42 @@
+{
+  "name": "@DECORATE",
+  "isa": [
+    "@COMMONPLACE-SERVICE-EVENT"
+  ],
+  "def": "to adorn or beautify",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@FLOWERING-PLANT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@JEWELRY"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@BUILDING"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@ARTISTIC-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$BETWEEN-TEMPORAL",
+  "def": "between in time; e.g., the race was between \nthe game and the dinner party; if a is between b and c, then a is the domain and b and c are set in the range",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$BETWEEN-TEMPORAL-INVERSE",
+  "measured-in": [],
+  "container": "$TEMPORAL-RELATION"
+}

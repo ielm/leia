@@ -1,0 +1,62 @@
+{
+  "name": "@MEETING",
+  "isa": [
+    "@SOCIAL-EVENT"
+  ],
+  "def": "an assembly or gathering of people with a given purpose - often business - at a given location, with certain expectations regarding the content and process depending on the type of meeting",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@CONFERENCE-ROOM"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@BUSINESS-ACTIVITY"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COMMUNICATION-DEVICE"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@MAKE-APPOINTMENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

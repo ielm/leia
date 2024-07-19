@@ -1,0 +1,16 @@
+{
+  "name": "@PHOTOGRAPHIC-DEVICE",
+  "isa": [
+    "@MACHINE"
+  ],
+  "def": "a device used to photograph images, moving or still",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@PHOTOGRAPH"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

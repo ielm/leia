@@ -1,0 +1,9 @@
+{
+  "name": "$OPERATOR-OF",
+  "def": "Relation between humans and the objects they can operate, such as machines, cars, planes, etc.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$OPERATED-BY",
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

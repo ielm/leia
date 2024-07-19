@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-SPOUSE",
+  "def": "the relation between spouses",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$SPOUSE-OF",
+  "measured-in": [],
+  "container": "$FAMILY-RELATION"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@DRY-ICE",
+  "isa": [
+    "@ICE"
+  ],
+  "def": "a substance that consists of solidified carbon dioxide usually in the form of blocks, that at -78.5 degrees celceus changes directly to a gas as it absorbs heat, and that is used chiefly as a refrigerant and coolant",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CARBON-DIOXIDE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

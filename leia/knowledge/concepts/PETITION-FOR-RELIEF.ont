@@ -1,0 +1,40 @@
+{
+  "name": "@PETITION-FOR-RELIEF",
+  "isa": [
+    "@LEGAL-OBJECT",
+    "@BUSINESS-DOCUMENT"
+  ],
+  "def": "A document which declares the start of bankruptcy proceedings",
+  "local": [],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "scalar-medical-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-medical-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "private": {}
+}

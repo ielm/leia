@@ -1,0 +1,24 @@
+{
+  "name": "@DIAGNOSIS-MEDICAL",
+  "isa": [
+    "@ABSTRACT-OBJECT"
+  ],
+  "def": "the positive identification of a problem - an illness, program bug, etc. - after study and analysis",
+  "local": [
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@KILOMETER",
+  "isa": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "def": "A linear measuring unit equal to 1000 meters; 1000",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1000.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

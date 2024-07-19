@@ -1,0 +1,82 @@
+{
+  "name": "@UNTIE",
+  "isa": [
+    "@PHYSICAL-EVENT"
+  ],
+  "def": "to unfasten (a thing tied or knotted)",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CONSTRUCTION-MATERIAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMAL-DERIVED-SUBSTANCE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FOOD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@METAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PLANT-DERIVED-SUBSTANCE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FABRIC"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SYNTHETICS"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

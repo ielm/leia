@@ -1,0 +1,37 @@
+{
+  "name": "@LIQUIDATE",
+  "isa": [
+    "@CORPORATE-EVENT"
+  ],
+  "def": "to settle the accounts (of a corporation) by apportioning assets and debts",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CORPORATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ASSET"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIABILITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

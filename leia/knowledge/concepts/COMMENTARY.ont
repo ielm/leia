@@ -1,0 +1,42 @@
+{
+  "name": "@COMMENTARY",
+  "isa": [
+    "@COMMUNICATIVE-EVENT"
+  ],
+  "def": "to make explanatory remarks about something",
+  "local": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@INFORM"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@EXPLAIN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

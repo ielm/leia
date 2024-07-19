@@ -1,0 +1,82 @@
+{
+  "name": "@ARSON",
+  "isa": [
+    "@CRIMINAL-ACTIVITY"
+  ],
+  "def": "the crime of purposely setting on fire a building or property",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BUILDING"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FIRE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WEAPON"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@BURN"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PERSONAL-PROPERTY"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PLACE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

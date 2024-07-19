@@ -1,0 +1,21 @@
+{
+  "name": "@MEDIA-SERVICE-CORPORATION",
+  "isa": [
+    "@COMMUNICATION-CORPORATION"
+  ],
+  "def": "a communication-corporation that provides media service to the public",
+  "local": [
+    {
+      "slot": "has-audience",
+      "facet": "default",
+      "filler": "@AUDIENCE"
+    },
+    {
+      "slot": "area-of-business-activity",
+      "facet": "default",
+      "filler": "@BROADCAST"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

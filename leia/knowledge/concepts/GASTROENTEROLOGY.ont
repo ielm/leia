@@ -1,0 +1,22 @@
+{
+  "name": "@GASTROENTEROLOGY",
+  "isa": [
+    "@MEDICINE"
+  ],
+  "def": "The branch of medicine dealing with the study of disorders affecting the stomach, intestines, and associated organs.",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@GASTROENTEROLOGIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@MEDICAL-WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

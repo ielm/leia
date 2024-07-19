@@ -1,0 +1,16 @@
+{
+  "name": "@DEITY",
+  "isa": [
+    "@THEOLOGICAL-OBJECT"
+  ],
+  "def": "a god or goddess",
+  "local": [
+    {
+      "slot": "goal",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

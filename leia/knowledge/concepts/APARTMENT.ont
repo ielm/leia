@@ -1,0 +1,16 @@
+{
+  "name": "@APARTMENT",
+  "isa": [
+    "@ROOM"
+  ],
+  "def": "a room or suite of rooms to live in, especially one of a number in a an apartment building",
+  "local": [
+    {
+      "slot": "has-occupant",
+      "facet": "sem",
+      "filler": "@TENANT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

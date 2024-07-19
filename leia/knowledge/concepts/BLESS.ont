@@ -1,0 +1,22 @@
+{
+  "name": "@BLESS",
+  "isa": [
+    "@RELIGIOUS-ACTIVITY"
+  ],
+  "def": "to ask divine favor for",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

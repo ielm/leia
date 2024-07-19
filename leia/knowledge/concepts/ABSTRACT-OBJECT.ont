@@ -1,0 +1,38 @@
+{
+  "name": "@ABSTRACT-OBJECT",
+  "isa": [
+    "@MENTAL-OBJECT"
+  ],
+  "def": "mental objects that are not inherently representational in nature, such as ideas, beliefs, information",
+  "local": [
+    {
+      "slot": "abstractness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "objectivity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ABSTRACT-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

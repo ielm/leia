@@ -1,0 +1,57 @@
+{
+  "name": "@FIBROSIS",
+  "isa": [
+    "@PATHOLOGIC-FUNCTION"
+  ],
+  "def": "formation of fibrous tissue",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TISSUE"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@GENE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMAL-ORGAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

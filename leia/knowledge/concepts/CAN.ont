@@ -1,0 +1,103 @@
+{
+  "name": "@CAN",
+  "isa": [
+    "@RIGID-MANUFACTURED-CONTAINER"
+  ],
+  "def": "an airtight container, usually cylindrical and made of tin-coated iron, in which food or beverages are preserved",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@IRON"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@TIN"
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "><",
+        20
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "><",
+        800
+      ],
+      "meta": {
+        "measured-in": "gram"
+      }
+    },
+    {
+      "slot": "diameter",
+      "facet": "sem",
+      "filler": [
+        "><",
+        20
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    }
+  ],
+  "block": [
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "><",
+        250
+      ]
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CERAMIC"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GLASS"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "blocklike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "spherical"
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "><",
+        4500
+      ]
+    }
+  ],
+  "private": {}
+}

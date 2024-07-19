@@ -1,0 +1,9 @@
+{
+  "name": "$COMPOSURE",
+  "def": "indicates the level of composure or lack of composure of a person or animal",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-ANIMAL-ATTRIBUTE"
+}

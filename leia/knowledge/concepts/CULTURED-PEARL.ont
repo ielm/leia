@@ -1,0 +1,31 @@
+{
+  "name": "@CULTURED-PEARL",
+  "isa": [
+    "@MARINE-SUBSTANCE"
+  ],
+  "def": "pearl grown or produced by man",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "off-white"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "black"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "pink"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "beige"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

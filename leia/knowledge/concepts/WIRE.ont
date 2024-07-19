@@ -1,0 +1,16 @@
+{
+  "name": "@WIRE",
+  "isa": [
+    "@CONNECTING-DEVICE"
+  ],
+  "def": "metal drawn into a long thread",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    }
+  ],
+  "private": {}
+}

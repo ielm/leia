@@ -1,0 +1,22 @@
+{
+  "name": "@RAILROAD",
+  "isa": [
+    "@RAIL"
+  ],
+  "def": "a road composed of parallel steel rails supported by ties and providing a track for locomotive-drawn trains and other rolling stock",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ROCK"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@EARTH-MATERIAL"
+    }
+  ],
+  "private": {}
+}

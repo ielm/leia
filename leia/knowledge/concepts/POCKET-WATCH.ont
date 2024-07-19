@@ -1,0 +1,16 @@
+{
+  "name": "@POCKET-WATCH",
+  "isa": [
+    "@TIMEPIECE"
+  ],
+  "def": "a watch that is carried in the pocket, often attached to the clothing by a chain",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "private": {}
+}

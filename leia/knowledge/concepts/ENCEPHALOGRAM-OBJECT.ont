@@ -1,0 +1,22 @@
+{
+  "name": "@ENCEPHALOGRAM-OBJECT",
+  "isa": [
+    "@X-RAY-OBJECT"
+  ],
+  "def": "an X ray of the brain made by replacing spinal fluid with a gas",
+  "local": [
+    {
+      "slot": "depicts",
+      "facet": "sem",
+      "filler": "@BRAIN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "depicts",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

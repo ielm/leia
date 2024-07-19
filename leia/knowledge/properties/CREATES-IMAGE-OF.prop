@@ -1,0 +1,9 @@
+{
+  "name": "$CREATES-IMAGE-OF",
+  "def": "A relation that specifies which internal animal part a given instrument or procedure creates an image of, as in a coloscopy, etc.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$IMAGED-BY",
+  "measured-in": [],
+  "container": "$MEDICAL-RELATION"
+}

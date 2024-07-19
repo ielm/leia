@@ -1,0 +1,31 @@
+{
+  "name": "@ELECTRIC-RESISTANCE-UNIT",
+  "isa": [
+    "@ELECTRIC-ORIENTED-UNIT"
+  ],
+  "def": "a measuring unit for electric resistance",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@AMPERE"
+    },
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@COULOMB"
+    },
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@HENRY"
+    },
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@VOLT"
+    }
+  ],
+  "private": {}
+}

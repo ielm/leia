@@ -1,0 +1,16 @@
+{
+  "name": "@KEYBOARD-INSTRUMENT",
+  "isa": [
+    "@PERCUSSION-INSTRUMENT"
+  ],
+  "def": "Instruments that have a keyboard, such as a piano, organ, accordion, etc.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@IVORY"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

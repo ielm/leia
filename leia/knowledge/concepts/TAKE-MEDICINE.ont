@@ -1,0 +1,47 @@
+{
+  "name": "@TAKE-MEDICINE",
+  "isa": [
+    "@ADMINISTER-MEDICINE"
+  ],
+  "def": "to administer medicine to oneself; the medicine can be in any form - injection, pill, etc.",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@PHYSICIAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MEDICAL-ARTIFACT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@MEDICAL-BUILDING"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@OFFICE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@LEGAL-CLIENT",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "a person or company for whom an attorney is acting",
+  "local": [],
+  "block": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

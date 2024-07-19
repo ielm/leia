@@ -1,0 +1,36 @@
+{
+  "name": "@YTTERBIUM",
+  "isa": [
+    "@RARE-EARTH-ELEMENT"
+  ],
+  "def": "a soft bright silvery rare-earth element occurring in two allotropic forms and used as an x-ray source for portable irradiation devices, in some laser materials, and in some special alloys",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        70
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        173
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        72
+      ]
+    }
+  ],
+  "private": {}
+}

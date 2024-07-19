@@ -1,0 +1,21 @@
+{
+  "name": "@COW",
+  "isa": [
+    "@CATTLE"
+  ],
+  "def": "The mature female of cattle.",
+  "local": [],
+  "block": [
+    {
+      "slot": "gender",
+      "facet": "sem",
+      "filler": "male"
+    },
+    {
+      "slot": "gender",
+      "facet": "sem",
+      "filler": "male"
+    }
+  ],
+  "private": {}
+}

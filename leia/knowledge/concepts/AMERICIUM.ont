@@ -1,0 +1,36 @@
+{
+  "name": "@AMERICIUM",
+  "isa": [
+    "@ACTINIDE"
+  ],
+  "def": "a white metallic transuranic element of the actinide series, having isotopes with mass numbers from 237 to 246 and half-lives from 25 minutes to 7,950 years. its longest-lived isotopes, am 241 and am 243, are alpha-ray emitters used as radiation sources in research",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        243
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        95
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

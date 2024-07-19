@@ -1,0 +1,22 @@
+{
+  "name": "@TEMPERATE-DECIDUOUS-FOREST",
+  "isa": [
+    "@FOREST"
+  ],
+  "def": "an environment that is neither very hot nor very cold forested with trees that shed leaves annually",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@DECIDUOUS-TREE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@TREE"
+    }
+  ],
+  "private": {}
+}

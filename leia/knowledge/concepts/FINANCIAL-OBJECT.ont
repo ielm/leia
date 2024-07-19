@@ -1,0 +1,99 @@
+{
+  "name": "@FINANCIAL-OBJECT",
+  "isa": [
+    "@REPRESENTATIONAL-OBJECT"
+  ],
+  "def": "An abstract object that represents a monetary value, including money, stocks, bank account, bills, bonds, etc.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    },
+    {
+      "slot": "amount",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ],
+      "meta": {
+        "measured-in": "monetary-unit"
+      }
+    },
+    {
+      "slot": "term-of-financial-obligation",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "corporate-assets-of",
+      "facet": "sem",
+      "filler": "@CORPORATION"
+    },
+    {
+      "slot": "face-value",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "face-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "capital-gains",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "monetary-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "monetary-value",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "capital-gains",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "term-of-financial-obligation",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

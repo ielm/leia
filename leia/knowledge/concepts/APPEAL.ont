@@ -1,0 +1,37 @@
+{
+  "name": "@APPEAL",
+  "isa": [
+    "@LEGAL-EVENT"
+  ],
+  "def": "to request a rehearing of a legal case to a higher court",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LEGAL-CASE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TRIAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@SUNFLOWER-OIL",
+  "isa": [
+    "@COOKING-OIL"
+  ],
+  "def": "cooking oil made of sunflower seeds",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SUNFLOWER-SEED"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

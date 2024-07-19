@@ -1,0 +1,32 @@
+{
+  "name": "@PHYSICAL-EXAM",
+  "isa": [
+    "@MEDICAL-PROCEDURE"
+  ],
+  "def": "An exam carried out by a doctor on a patient during a consultation",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@STETHOSCOPE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PATIENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MEDICAL-ARTIFACT"
+    }
+  ],
+  "private": {}
+}

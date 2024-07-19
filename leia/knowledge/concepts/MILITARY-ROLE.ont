@@ -1,0 +1,22 @@
+{
+  "name": "@MILITARY-ROLE",
+  "isa": [
+    "@PROTECTION-ROLE"
+  ],
+  "def": "an military occupation that invloves protecting one*s country, in the case of war",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@MILITARY-INSTALLATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

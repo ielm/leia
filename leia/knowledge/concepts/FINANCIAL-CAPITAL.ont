@@ -1,0 +1,27 @@
+{
+  "name": "@FINANCIAL-CAPITAL",
+  "isa": [
+    "@ASSET"
+  ],
+  "def": "money or property used in business",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PERSONAL-PROPERTY"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MONEY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

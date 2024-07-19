@@ -1,0 +1,57 @@
+{
+  "name": "@INVESTMENT-EVENT",
+  "isa": [
+    "@FINANCIAL-EVENT"
+  ],
+  "def": "all events related to investment activities, such as dilution and issuing financial instruments",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MONEY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INVESTMENT"
+    },
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@CORPORATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@BROKER"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@INVESTMENT-CORPORATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

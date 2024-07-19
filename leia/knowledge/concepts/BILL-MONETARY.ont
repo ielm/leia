@@ -1,0 +1,16 @@
+{
+  "name": "@BILL-MONETARY",
+  "isa": [
+    "@MONEY"
+  ],
+  "def": "Paper money",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PAPER"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

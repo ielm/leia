@@ -1,0 +1,50 @@
+{
+  "name": "@SAUSAGE",
+  "isa": [
+    "@PREPARED-FOOD"
+  ],
+  "def": "pork or other meat chopped fine, seasoned, and often stuffed into a casing",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PORK"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@BEEF"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@FOODSTUFF"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

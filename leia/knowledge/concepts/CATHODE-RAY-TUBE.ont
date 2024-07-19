@@ -1,0 +1,22 @@
+{
+  "name": "@CATHODE-RAY-TUBE",
+  "isa": [
+    "@DEPENDENT-DEVICE"
+  ],
+  "def": "cathode ray tube",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SCREEN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

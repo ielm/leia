@@ -1,0 +1,22 @@
+{
+  "name": "@SOFTWARE-DEVELOPMENT-CORPORATION",
+  "isa": [
+    "@ARTIFACT-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a corporation that develops, manufactures and markets computer software",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@SOFTWARE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    }
+  ],
+  "private": {}
+}

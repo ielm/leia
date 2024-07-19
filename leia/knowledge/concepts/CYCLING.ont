@@ -1,0 +1,195 @@
+{
+  "name": "@CYCLING",
+  "isa": [
+    "@SPORTS-DISCIPLINE"
+  ],
+  "def": "competitive bicycle racing",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@BICYCLE"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@RACE-EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HELMET"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SPORTS-OUTFIT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@ROAD"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUNTAIN-BIKE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@CATCH"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@CLIMB"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@COLLIDE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@DISCHARGE-WEAPON"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@DIVE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@ELEVATE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@HIT"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@HOLD"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@JUMP"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@KICK"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@MOVE-WATER-VEHICLE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@OBSTRUCT"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@RESTRAIN"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@ROLL"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@ROTATE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@RUN"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@SKI-EVENT"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@SWIM"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@SYNCHRONIZE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@THROW"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@WALK"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@WHIP"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SPORT-ARTIFACT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BEACH"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BOWLING-ALLEY"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@RECREATION-AREA"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@SPORTS-ARENA"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "typicalness-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

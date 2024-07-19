@@ -1,0 +1,21 @@
+{
+  "name": "@ROCKET",
+  "isa": [
+    "@AIR-VEHICLE"
+  ],
+  "def": "a vehicle propelled through the air by means of rocket engines; often but not exclusively used for travel to space",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ROCKET-ENGINE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PROPELLANT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

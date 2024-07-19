@@ -1,0 +1,16 @@
+{
+  "name": "@WATER-UTILITY-CORPORATION",
+  "isa": [
+    "@UTILITY-CORPORATION"
+  ],
+  "def": "a corporation that provides water as a service to the public",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@WATER"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

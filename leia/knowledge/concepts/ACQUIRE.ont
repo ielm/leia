@@ -1,0 +1,27 @@
+{
+  "name": "@ACQUIRE",
+  "isa": [
+    "@TRANSFER-POSSESSION"
+  ],
+  "def": "The transfer of possession event where the agent transfers an object to its possession.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

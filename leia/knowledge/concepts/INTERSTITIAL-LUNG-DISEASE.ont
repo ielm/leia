@@ -1,0 +1,22 @@
+{
+  "name": "@INTERSTITIAL-LUNG-DISEASE",
+  "isa": [
+    "@LUNG-DISEASE",
+    "@INFLAMMATION"
+  ],
+  "def": "a certain kind of inflammation of the interstitium of the lungs",
+  "local": [],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

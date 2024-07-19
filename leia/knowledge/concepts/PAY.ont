@@ -1,0 +1,52 @@
+{
+  "name": "@PAY",
+  "isa": [
+    "@EVERYDAY-FINANCIAL-EVENT"
+  ],
+  "def": "to give to (a person) what is due, as for goods or services - the theme is the money paid - If the thing paid for is an object then the effect is that the person owns the object - If the theme is an event then the effect is that event (possibly with some modalities but that depends upon the context; e.g., one might pay for permission to do sth.)",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@MONEY"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "default",
+      "filler": "@CORPORATION"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@OWE"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OWN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,92 @@
+{
+  "name": "@APPLAUSE",
+  "isa": [
+    "@NON-VERBAL-COMMUNICATIVE-ACT"
+  ],
+  "def": "the showing of approval by clapping hands",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@PRAISE"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@TIGER"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SEAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HORSE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@WHALE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PERFORM-CHARACTER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PERFORM-MUSIC"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "default",
+      "filler": "@ENTERTAINMENT-ROLE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@DOG"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@CAT"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ELEPHANT"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@LION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ALL"
+    }
+  ],
+  "private": {}
+}

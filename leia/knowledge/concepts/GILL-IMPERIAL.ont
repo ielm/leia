@@ -1,0 +1,19 @@
+{
+  "name": "@GILL-IMPERIAL",
+  "isa": [
+    "@LIQUID-MEASURING-UNIT"
+  ],
+  "def": "a unit of volume, equivalent to 5 imperial fluid ounces; 5*fluid-ounce",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.0001420653
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

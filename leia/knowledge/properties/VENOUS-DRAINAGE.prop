@@ -1,0 +1,9 @@
+{
+  "name": "$VENOUS-DRAINAGE",
+  "def": "what veins receive blood from a given organ, etc.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$VENOUS-DRAINAGE-FOR",
+  "measured-in": [],
+  "container": "$MEDICAL-RELATION"
+}

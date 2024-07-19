@@ -1,0 +1,21 @@
+{
+  "name": "@TRACK-VEHICLE",
+  "isa": [
+    "@VEHICLE"
+  ],
+  "def": "vehicle that is conveyed along a track",
+  "local": [
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@NECROPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of death",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DIE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@AMINO-ACID-SEQUENCE",
+  "isa": [
+    "@MOLECULAR-SEQUENCE"
+  ],
+  "def": "The sequence of amino acids as arrayed in chains, sheets, etc., within the protein molecule. It is of fundamental importance in determining protein structure.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@AMINO-ACID"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BIOLOGICAL-MACROMOLECULE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$SCOPE",
+  "def": "The scope of a modality or aspect - what it \nmodifies, essentially",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$SCOPE-OF",
+  "measured-in": [],
+  "container": "$PARAMETRIC-RELATION"
+}

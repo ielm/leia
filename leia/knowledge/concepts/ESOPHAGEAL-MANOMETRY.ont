@@ -1,0 +1,22 @@
+{
+  "name": "@ESOPHAGEAL-MANOMETRY",
+  "isa": [
+    "@MANOMETRY"
+  ],
+  "def": "a test to measure the pressure of muscle contractions in the esophagus",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ESOPHAGUS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GASTROINTESTINAL-SYSTEM"
+    }
+  ],
+  "private": {}
+}

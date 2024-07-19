@@ -1,0 +1,63 @@
+{
+  "name": "@PRICE-FREEZE",
+  "isa": [
+    "@NATIONAL-ECONOMIC-EVENT",
+    "@COMMERCE-EVENT"
+  ],
+  "def": "in commerce, the process in which a government holds prices at existing levels, as part of its policy to fight inflation or because of emergency conditions",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@INFLATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

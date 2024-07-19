@@ -1,0 +1,21 @@
+{
+  "name": "@CHERRY",
+  "isa": [
+    "@TREE-FRUIT"
+  ],
+  "def": "a small, round tree fruit",
+  "local": [],
+  "block": [
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "cylindrical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "egglike"
+    }
+  ],
+  "private": {}
+}

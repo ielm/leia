@@ -1,0 +1,9 @@
+{
+  "name": "$GENUINENESS",
+  "def": "this boolean attribute states whether an object (a passport) or event (a wedding) is genuine or fake",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

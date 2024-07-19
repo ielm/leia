@@ -1,0 +1,27 @@
+{
+  "name": "@DETENTE",
+  "isa": [
+    "@DIPLOMATIC-EVENT"
+  ],
+  "def": "the lessening of tension, especially between nations",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EMOTIONAL-EVENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

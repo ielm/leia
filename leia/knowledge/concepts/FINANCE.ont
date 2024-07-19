@@ -1,0 +1,32 @@
+{
+  "name": "@FINANCE",
+  "isa": [
+    "@FIELD-OF-STUDY"
+  ],
+  "def": "The field of study that is concerned with the science of managing money.",
+  "local": [
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@MONEY-MANAGING-ACTIVITY"
+    },
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@FINANCIAL-WORK-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@WORK-ACTIVITY"
+    }
+  ],
+  "private": {}
+}

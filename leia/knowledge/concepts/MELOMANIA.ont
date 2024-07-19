@@ -1,0 +1,27 @@
+{
+  "name": "@MELOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "excessive fascination with music",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MUSICAL-COMPOSITION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

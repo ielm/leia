@@ -1,0 +1,19 @@
+{
+  "name": "@OUNCE-FLUID-IMPERIAL",
+  "isa": [
+    "@LIQUID-MEASURING-UNIT"
+  ],
+  "def": "a unit of volume used in the Imperial system, essentially equivalent to ounce-fluid, is 1/160th of an imperial gallon; gal/4/32",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        2.8413063e-05
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

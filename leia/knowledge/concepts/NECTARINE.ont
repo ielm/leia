@@ -1,0 +1,21 @@
+{
+  "name": "@NECTARINE",
+  "isa": [
+    "@TREE-FRUIT"
+  ],
+  "def": "a peach-like fruit but without fuzzy skin",
+  "local": [],
+  "block": [
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "cylindrical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "egglike"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@IMPEL",
+  "isa": [
+    "@CONTROL-EVENT-SOCIAL"
+  ],
+  "def": "to force, urge, or compel; to drive forward",
+  "local": [],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

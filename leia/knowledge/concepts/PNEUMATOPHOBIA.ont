@@ -1,0 +1,32 @@
+{
+  "name": "@PNEUMATOPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of spirits",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SPIRIT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GHOST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

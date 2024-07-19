@@ -1,0 +1,55 @@
+{
+  "name": "@OFFICE-BUILDING",
+  "isa": [
+    "@BUILDING"
+  ],
+  "def": "place where people work",
+  "local": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@WORK-ROLE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@PERSONAL-COMPUTER"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@CONFERENCE-ROOM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@EMAIL-ADDRESS"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@PHONE-NUMBER"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@WEB-ADDRESS"
+    }
+  ],
+  "private": {}
+}

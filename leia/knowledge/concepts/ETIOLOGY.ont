@@ -1,0 +1,22 @@
+{
+  "name": "@ETIOLOGY",
+  "isa": [
+    "@MEDICINE"
+  ],
+  "def": "the study of the causes of disease",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@ETIOLOGIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@MEDICAL-WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

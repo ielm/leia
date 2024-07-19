@@ -1,0 +1,20 @@
+{
+  "name": "@CPU",
+  "isa": [
+    "@COMPUTER-HARDWARE",
+    "@SIMPLE-CIRCUIT-MECHANISM"
+  ],
+  "def": "central processing unit",
+  "local": [],
+  "block": [
+    {
+      "slot": "autonomy-technological",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

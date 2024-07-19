@@ -1,0 +1,22 @@
+{
+  "name": "@LASER-DISC",
+  "isa": [
+    "@VISUAL-MEDIA-ARTIFACT"
+  ],
+  "def": "a videodisc for recording audio and video data to be read by a laser beam",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LASER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@WALNUT-TREE",
+  "isa": [
+    "@NUT-TREE"
+  ],
+  "def": "tree that produces walnuts",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@WALNUT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@NUT-FOODSTUFF"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,36 @@
+{
+  "name": "@CALIFORNIUM",
+  "isa": [
+    "@ACTINIDE"
+  ],
+  "def": "a synthetic element produced in trace quantities by helium isotope bombardment of curium. all isotopes are radioactive, chiefly by emission of alpha particles",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        251
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        98
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

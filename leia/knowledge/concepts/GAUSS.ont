@@ -1,0 +1,19 @@
+{
+  "name": "@GAUSS",
+  "isa": [
+    "@MAGNETIC-FLUX-DENSITY-UNIT"
+  ],
+  "def": "(Wikipedia) the CGS unit of measurement of magnetic flux density, it is equal to one maxwell per square centimeter.",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.0001
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,47 @@
+{
+  "name": "@CUT-INJURY",
+  "isa": [
+    "@INJURY"
+  ],
+  "def": "an injury to the soft tissue of the body that includes breaking the skin",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@BLEED"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CUTTING-IMPLEMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TISSUE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SKIN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

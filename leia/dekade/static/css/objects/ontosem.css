@@ -1,0 +1,329 @@
+/* *** Analysis *** */
+
+div.analysis-container {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-gap: 5px;
+    height: 100%;
+}
+
+div.analysis-container > div.analysis-navigator {
+    overflow-y: scroll;
+    height: 100%;
+    padding: 4px;
+}
+
+div.analysis-container > div.analysis-content {
+    overflow-y: scroll;
+    height: 100%;
+    padding: 4px;
+    padding-left: 0px;
+}
+
+div.analysis-container > div.analysis-logs {
+    overflow-y: scroll;
+    height: 100%;
+    padding: 4px;
+    padding-left: 0px;
+}
+
+div.analysis-navigator ul {
+    list-style-type: none;
+}
+
+div.analysis-navigator > ul {
+    margin: 0;
+    padding: 0;
+}
+
+div.analysis-navigator .caret {
+    cursor: pointer;
+    user-select: none;
+}
+
+div.analysis-navigator .caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+    font-size: small;
+}
+
+div.analysis-navigator .caret-down::before {
+    transform: rotate(90deg);
+}
+
+div.analysis-navigator ul.nested {
+    display: none;
+    padding-left: 19px;
+}
+
+div.analysis-navigator ul.active {
+    display: block;
+}
+
+div.analysis-navigator a.analysis-content-link{
+    text-decoration: underline;
+    color: #3763e6;
+}
+
+div.analysis-navigator a.analysis-content-link:hover {
+    cursor: pointer;
+}
+
+/* *** Candidate *** */
+
+div.ontosem-candidate {
+
+}
+
+div.ontosem-candidate > h2:first-of-type {
+    margin-top: 0px;
+}
+
+div.ontosem-candidate > div.sense-map {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: gray;
+    margin-top: 4px;
+}
+
+div.ontosem-candidate > div.sense-map > div.header {
+    background-color: darkgray;
+    padding: 2px;
+}
+
+div.ontosem-candidate > div.sense-map > div.preference {
+    font-size: 0.7em;
+    padding: 2px;
+}
+
+div.ontosem-candidate > div.sense-map > div.bindings {
+    font-size: 0.7em;
+    padding: 2px;
+}
+
+div.ontosem-candidate > div.score {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: gray;
+    margin-top: 4px;
+}
+
+div.ontosem-candidate > div.score > div.header {
+    background-color: darkgray;
+    padding: 2px;
+}
+
+div.ontosem-candidate > div.score > div.message {
+    padding: 2px;
+}
+
+div.ontosem-candidate > div.score > div.parameters {
+    font-size: 0.7em;
+    padding: 2px;
+}
+
+div.ontosem-candidate > div.constraint {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: gray;
+    margin-top: 4px;
+}
+
+div.ontosem-candidate > div.constraint > div.header {
+    background-color: darkgray;
+    padding: 2px;
+}
+
+div.ontosem-candidate > div.constraint > div.details {
+    padding: 2px;
+}
+
+/* *** TMR *** */
+
+div.tmr {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 4px;
+}
+
+div.tmr > div.tmr-instance {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: gray;
+}
+
+div.tmr-instance > div.header {
+    background-color: darkseagreen;
+    padding: 2px;
+}
+
+div.tmr-instance > div.resolutions {
+    font-size: 0.6em;
+    background: #b6d9b5;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+div.tmr-instance > div.properties {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 2px;
+}
+
+/* *** Logs *** */
+
+div.logs-container {
+
+}
+
+div.log {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: gray;
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 0px;
+    margin-bottom: 2px;
+}
+
+div.log:last-child {
+    margin-bottom: 0px;
+}
+
+div.log.log-NOTSET {
+
+}
+
+div.log.log-DEBUG {
+    background: darkseagreen;
+}
+
+div.log.log-INFO {
+    background: aliceblue;
+}
+
+div.log.log-WARNING {
+    background: khaki;
+}
+
+div.log.log-ERROR {
+    background: lightpink;
+}
+
+div.log.log-CRITICAL {
+    background: lightpink;
+    font-weight: bold;
+}
+
+div.log > div.log-source {
+    color: gray;
+    font-size: x-small;
+    text-transform: uppercase;
+    overflow-x: clip;
+}
+
+div.log > div.log-message {
+    font-size: small;
+}
+
+/* *** Words *** */
+
+div.word-id {
+    font-size: larger;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+div.word-section-header {
+    font-size: large;
+    margin-top: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: gray;
+}
+
+table.word-structure {
+    width: 100%;
+    table-layout: fixed;
+}
+
+table.word-structure tr {
+    background: #f0f0f0;
+}
+
+table.word-morphology {
+    width: 100%;
+    table-layout: fixed;
+}
+
+table.word-morphology tr {
+    background: #f0f0f0;
+}
+
+div.word-coref div.empty-results {
+    font-style: italic;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+div.word-senses div.word-sense {
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background: #ccc;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: gray;
+}
+
+div.word-senses div.sense-navigation-tabs {
+    margin-top: 3px;
+}
+
+div.word-senses div.sense-navigation-tabs button:first-child {
+    margin-left: 2px;
+}
+
+/* *** Constituencies *** */
+
+div.constituencies-container {
+
+}
+
+div.constituencies-container div.constituency-node {
+    margin-left: 25px;
+    border-left-style: dotted;
+    border-left-width: 1px;
+    border-left-color: gray;
+    padding-left: 2px;
+    margin-bottom: 5px;
+}
+
+div.constituencies-container div.token-node {
+    margin-left: 25px;
+    margin-bottom: 5px;
+}
+
+/* *** Dependencies *** */
+
+div.dependencies-container table.dependencies {
+    width: 100%;
+    table-layout: fixed;
+}
+
+div.dependencies-container table.dependencies tr {
+    background: #f0f0f0;
+}
+
+div.dependencies-container table.dependencies td:first-child {
+    font-weight: bold;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@ARAGONITE-MINING-CORPORATION",
+  "isa": [
+    "@NONMETALLIC-ORE-MINING-CORPORATION"
+  ],
+  "def": "a manufacturing-corporation that excavates aragonite from the earth for a profit",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ARAGONITE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

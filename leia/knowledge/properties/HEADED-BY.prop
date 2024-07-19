@@ -1,0 +1,9 @@
+{
+  "name": "$HEADED-BY",
+  "def": "links an organization with the person (as a social role) that is the head of it",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$HEAD-OF",
+  "measured-in": [],
+  "container": "$RELATION"
+}

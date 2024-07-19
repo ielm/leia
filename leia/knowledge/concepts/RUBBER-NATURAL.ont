@@ -1,0 +1,16 @@
+{
+  "name": "@RUBBER-NATURAL",
+  "isa": [
+    "@PLANT-DERIVED-SUBSTANCE"
+  ],
+  "def": "rubber derived naturally from rubber tree latex",
+  "local": [],
+  "block": [
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "transparent"
+    }
+  ],
+  "private": {}
+}

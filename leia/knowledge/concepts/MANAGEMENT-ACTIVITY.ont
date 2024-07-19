@@ -1,0 +1,56 @@
+{
+  "name": "@MANAGEMENT-ACTIVITY",
+  "isa": [
+    "@BUSINESS-ACTIVITY"
+  ],
+  "def": "Business activities involving the management of people, money, information, other resources, etc.",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@COMPUTING-WORK-ROLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ATTORNEY"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@RESEARCHER"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@CORPORATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@BUSINESS-ROLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@MANAGERIAL-ROLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@FINANCIAL-DIRECTOR"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@COMPUTER-USER"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ORGANIZATION"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

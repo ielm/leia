@@ -1,0 +1,38 @@
+div.properties-tree-viewer {
+    height: 100%;
+    overflow-y: scroll;
+    padding: 4px;
+}
+
+div.properties-tree-viewer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.properties-tree-viewer ul.nested {
+    padding-left: 13px;
+}
+
+div.properties-tree-viewer .caret {
+    cursor: pointer;
+    user-select: none;
+}
+
+div.properties-tree-viewer .caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+    font-size: small;
+}
+
+div.properties-tree-viewer .caret-down::before {
+    transform: rotate(90deg);
+}
+
+div.property {
+    padding: 4px;
+    overflow-y: scroll;
+    height: 100%;
+}

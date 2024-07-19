@@ -1,0 +1,102 @@
+{
+  "name": "@EGD",
+  "isa": [
+    "@ENDOSCOPY"
+  ],
+  "def": "examination of the lumen of the esophagus, stomach and duodenum using an endoscope",
+  "local": [
+    {
+      "slot": "creates-image-of",
+      "facet": "sem",
+      "filler": "@LUMEN-OF-ESOPHAGUS"
+    },
+    {
+      "slot": "creates-image-of",
+      "facet": "sem",
+      "filler": "@STOMACH"
+    },
+    {
+      "slot": "creates-image-of",
+      "facet": "sem",
+      "filler": "@DUODENUM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LUMEN-OF-ESOPHAGUS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@STOMACH"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DUODENUM"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@GASTROENTEROLOGIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "creates-image-of",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BONE-JOINT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CARDIOVASCULAR-SYSTEM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FEMALE-INTERNAL-GENITALIA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GASTROINTESTINAL-SYSTEM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LARYNX"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LUNG"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NOSE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHARYNX"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TRACHEOBRONCHIAL-TREE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@URINARY-SYSTEM"
+    }
+  ],
+  "private": {}
+}

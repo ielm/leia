@@ -1,0 +1,9 @@
+{
+  "name": "$ATOMIC-NUMBER",
+  "def": "the number of protons in an atomic nucleus",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

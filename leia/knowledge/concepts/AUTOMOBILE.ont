@@ -1,0 +1,62 @@
+{
+  "name": "@AUTOMOBILE",
+  "isa": [
+    "@WHEELED-ENGINE-VEHICLE"
+  ],
+  "def": "Relatively small vehicle for carrying people",
+  "local": [
+    {
+      "slot": "velocity",
+      "facet": "sem",
+      "filler": [
+        "><",
+        120
+      ]
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    }
+  ],
+  "block": [
+    {
+      "slot": "velocity",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "velocity",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "velocity",
+      "facet": "sem",
+      "filler": [
+        "><",
+        1000
+      ]
+    },
+    {
+      "slot": "velocity",
+      "facet": "sem",
+      "filler": [
+        "><",
+        1000
+      ]
+    }
+  ],
+  "private": {}
+}

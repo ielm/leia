@@ -1,0 +1,92 @@
+{
+  "name": "@ROAST",
+  "isa": [
+    "@PREPARE-INGESTIBLE"
+  ],
+  "def": "to cook (meat, etc.) with little or no moisture, as in an oven or an open fire",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MEAT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TOMATO"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HOT-DOG"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SAUSAGE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FISH-MEAT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TREE-FRUIT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PUMPKIN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OVEN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COFFEE-BEAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NUT-FOODSTUFF"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SEED-EDIBLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GRAIN-FOODSTUFF"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@ALCOHOLIC-BEVERAGE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VEGETABLE-FOODSTUFF"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COOKING-EQUIPMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FOOD"
+    }
+  ],
+  "private": {}
+}

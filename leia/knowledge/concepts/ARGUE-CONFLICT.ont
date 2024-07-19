@@ -1,0 +1,67 @@
+{
+  "name": "@ARGUE-CONFLICT",
+  "isa": [
+    "@COMMUNICATIVE-EVENT"
+  ],
+  "def": "To engage in a quarrel or a dispute",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OFFEND"
+    },
+    {
+      "slot": "has-loser",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "has-winner",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "has-winner",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "has-loser",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ISSUE"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PROBLEM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COMMUNICATION-DEVICE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ALL"
+    }
+  ],
+  "private": {}
+}

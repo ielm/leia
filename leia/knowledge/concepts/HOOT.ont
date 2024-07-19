@@ -1,0 +1,62 @@
+{
+  "name": "@HOOT",
+  "isa": [
+    "@ANIMAL-NOISE-MAKING"
+  ],
+  "def": "to make the sound of an owl",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@OWL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@OWL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "not",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "not",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "relation",
+      "facet": "sem",
+      "filler": "@LARYNX"
+    }
+  ],
+  "private": {}
+}

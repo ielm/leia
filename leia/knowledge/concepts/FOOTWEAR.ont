@@ -1,0 +1,52 @@
+{
+  "name": "@FOOTWEAR",
+  "isa": [
+    "@CLOTHING-ACCESSORY"
+  ],
+  "def": "shoes, boots, etc.",
+  "local": [
+    {
+      "slot": "worn-on",
+      "facet": "sem",
+      "filler": "@FOOT"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SOLE-OF-SHOE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@TONGUE-OF-SHOE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@LEATHER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SYNTHETIC-RUBBER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CLOTHING-ARTIFACT-PART"
+    },
+    {
+      "slot": "worn-on",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

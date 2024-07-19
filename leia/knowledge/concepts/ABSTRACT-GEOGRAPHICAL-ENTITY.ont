@@ -1,0 +1,32 @@
+{
+  "name": "@ABSTRACT-GEOGRAPHICAL-ENTITY",
+  "isa": [
+    "@GEOGRAPHICAL-ENTITY"
+  ],
+  "def": "a geographical-entity that marks places on the earth that have been created by humans and not characterized by physical features; e.g., the equator",
+  "local": [
+    {
+      "slot": "created-by",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@EMAIL-ADDRESS"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@PHONE-NUMBER"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@WEB-ADDRESS"
+    }
+  ],
+  "private": {}
+}

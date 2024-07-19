@@ -1,0 +1,27 @@
+{
+  "name": "@UNDERCLASS",
+  "isa": [
+    "@SOCIOECONOMIC-CLASS"
+  ],
+  "def": "the class with incomes below subsistence level, especially the underprivileged",
+  "local": [
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@CHARITABLE-ORGANIZATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@ORGANIZATION"
+    }
+  ],
+  "private": {}
+}

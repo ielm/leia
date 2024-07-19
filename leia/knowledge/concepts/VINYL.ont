@@ -1,0 +1,27 @@
+{
+  "name": "@VINYL",
+  "isa": [
+    "@SYNTHETICS"
+  ],
+  "def": "a polymer of a vinyl compound, for example vinyl resin or vinyl plastic",
+  "local": [
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "opaque"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "translucent"
+    }
+  ],
+  "block": [
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "transparent"
+    }
+  ],
+  "private": {}
+}

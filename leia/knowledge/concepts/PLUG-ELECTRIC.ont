@@ -1,0 +1,22 @@
+{
+  "name": "@PLUG-ELECTRIC",
+  "isa": [
+    "@CONNECTING-DEVICE"
+  ],
+  "def": "a pronged connecting-device for making contact or closing a circuit",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PRONG"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@ANTIBIOTIC",
+  "isa": [
+    "@DRUG"
+  ],
+  "def": "any of certain substances, such as penicillin or streptomycin, produced by various microorganisms and capable of destroying or weakening bacteria, etc.",
+  "local": [
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    }
+  ],
+  "private": {}
+}

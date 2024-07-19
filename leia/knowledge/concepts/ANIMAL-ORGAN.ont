@@ -1,0 +1,35 @@
+{
+  "name": "@ANIMAL-ORGAN",
+  "isa": [
+    "@ANATOMICAL-STRUCTURE"
+  ],
+  "def": "an internal part adapted to perform a specified function",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@TRUNK-OF-BODY"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

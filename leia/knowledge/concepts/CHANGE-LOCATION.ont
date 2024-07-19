@@ -1,0 +1,117 @@
+{
+  "name": "@CHANGE-LOCATION",
+  "isa": [
+    "@PHYSICAL-EVENT"
+  ],
+  "def": "to move from one point to another in space or cause something to do that",
+  "local": [
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "backward"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "source",
+      "facet": "relaxable-to",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "velocity",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "velocity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "northeastward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "southwestward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "southeastward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "clockwise"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "forward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "sideward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "inward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "outward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "downward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "counterclockwise"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "upward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "northwestward"
+    },
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "destination",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

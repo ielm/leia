@@ -1,0 +1,21 @@
+{
+  "name": "@LIQUID-DAIRY-PRODUCT",
+  "isa": [
+    "@DAIRY-PRODUCT"
+  ],
+  "def": "a liquid dairy-product that flows readily",
+  "local": [
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "solid"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "relaxable-to",
+      "filler": "@LIQUID"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

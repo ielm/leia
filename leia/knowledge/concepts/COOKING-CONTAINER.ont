@@ -1,0 +1,28 @@
+{
+  "name": "@COOKING-CONTAINER",
+  "isa": [
+    "@COOKING-EQUIPMENT",
+    "@CONTAINER"
+  ],
+  "def": "containers that are used for cooking",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    }
+  ],
+  "private": {}
+}

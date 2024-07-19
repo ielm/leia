@@ -1,0 +1,38 @@
+{
+  "name": "@GASEOUS-CHEMICAL-COMPOUND",
+  "isa": [
+    "@CHEMICAL-COMPOUND",
+    "@GAS"
+  ],
+  "def": "A chemical compound that is a gas.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GASEOUS-ELEMENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GAS"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "semi-solid"
+    }
+  ],
+  "private": {}
+}

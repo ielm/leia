@@ -1,0 +1,265 @@
+{
+  "name": "@LAUNCH",
+  "isa": [
+    "@PUSH"
+  ],
+  "def": "to send forth with some force, as a vessel or a rocket",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WATER-VEHICLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SPACE-VEHICLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CATAPULT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SLINGSHOT"
+    },
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@CELESTIAL-OBJECT"
+    },
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@GEOGRAPHICAL-ENTITY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BOMB"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ROCKET"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FIRECRACKER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MISSILE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TORPEDO"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "absolute-year",
+      "facet": "value",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "across",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "across",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beyond",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "change-in-frequency-relative",
+      "facet": "sem",
+      "filler": "less-frequent"
+    },
+    {
+      "slot": "change-in-frequency-relative",
+      "facet": "sem",
+      "filler": "more-frequent"
+    },
+    {
+      "slot": "change-in-frequency-relative",
+      "facet": "sem",
+      "filler": "no-change"
+    },
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "directional-relation",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@CHANGE-POSITION"
+    },
+    {
+      "slot": "enablement",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "fame-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "formality",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "frequency",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "genuineness",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "importance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "language-relation",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "left-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "literal-attribute",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "literal-event-attribute",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "meet",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "north-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "outside-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "scalar-event-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-event-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "spatial-relation",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "typicalness-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "up-directional",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "validated",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    }
+  ],
+  "private": {}
+}

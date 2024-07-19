@@ -1,0 +1,91 @@
+{
+  "name": "@LUGGAGE",
+  "isa": [
+    "@BAG"
+  ],
+  "def": "baggage; suitcases, etc.",
+  "local": [
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "><",
+        5
+      ]
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "><",
+        30
+      ]
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@POCKET"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@VINYL"
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "><",
+        100
+      ]
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        "><",
+        70
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "height",
+      "facet": "sem",
+      "filler": [
+        "><",
+        50
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "><",
+        100
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "><",
+        3
+      ]
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        "><",
+        100
+      ]
+    }
+  ],
+  "private": {}
+}

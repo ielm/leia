@@ -1,0 +1,36 @@
+{
+  "name": "@MAGNESIUM",
+  "isa": [
+    "@LIGHT-METALLIC-ELEMENT"
+  ],
+  "def": "a light, silvery, moderately hard metallic element that burns with a brilliant white flame",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        24
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        12
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

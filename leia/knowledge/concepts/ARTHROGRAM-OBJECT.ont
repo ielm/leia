@@ -1,0 +1,22 @@
+{
+  "name": "@ARTHROGRAM-OBJECT",
+  "isa": [
+    "@X-RAY-OBJECT"
+  ],
+  "def": "an x-ray of a joint after the injection of a contrast substance",
+  "local": [
+    {
+      "slot": "depicts",
+      "facet": "sem",
+      "filler": "@JOINT-OF-BODY-PART"
+    }
+  ],
+  "block": [
+    {
+      "slot": "depicts",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

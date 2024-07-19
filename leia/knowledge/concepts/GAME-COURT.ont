@@ -1,0 +1,22 @@
+{
+  "name": "@GAME-COURT",
+  "isa": [
+    "@SPORT-ARTIFACT"
+  ],
+  "def": "a rectangular playing area devided into two sides by a net.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@NET"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

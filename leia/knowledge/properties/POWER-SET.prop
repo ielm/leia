@@ -1,0 +1,9 @@
+{
+  "name": "$POWER-SET",
+  "def": "indicates whether the given set is a power set, defined as all the possible subsets\nof the set",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$PARAMETRIC-LITERAL-ATTRIBUTE"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE",
+  "def": "scalar attributes involving financial-objects",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@MONETARY-UNIT",
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-OBJECT-ATTRIBUTE"
+}

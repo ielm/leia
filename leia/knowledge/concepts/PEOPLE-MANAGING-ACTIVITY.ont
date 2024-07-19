@@ -1,0 +1,62 @@
+{
+  "name": "@PEOPLE-MANAGING-ACTIVITY",
+  "isa": [
+    "@MANAGEMENT-ACTIVITY"
+  ],
+  "def": "a business-activity in which human resources are managed",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ATTORNEY"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@BUSINESS-ROLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@COMPUTER-USER"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@COMPUTING-WORK-ROLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@FINANCIAL-DIRECTOR"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ORGANIZATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@RESEARCHER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

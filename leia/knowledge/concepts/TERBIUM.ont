@@ -1,0 +1,36 @@
+{
+  "name": "@TERBIUM",
+  "isa": [
+    "@RARE-EARTH-ELEMENT"
+  ],
+  "def": "a soft, silvery-gray metallic rare-earth element, used as a solid-state dopant and as a laser material",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        158
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        65
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        72
+      ]
+    }
+  ],
+  "private": {}
+}

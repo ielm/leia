@@ -1,0 +1,42 @@
+{
+  "name": "@ENERGY-EVENT",
+  "isa": [
+    "@PHYSICAL-EVENT"
+  ],
+  "def": "events in which energy is generated",
+  "local": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@PHYSICS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ENERGY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

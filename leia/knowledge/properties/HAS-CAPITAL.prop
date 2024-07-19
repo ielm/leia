@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-CAPITAL",
+  "def": "the relation between the nation or state that has the capital and the capital city",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$CAPITAL-OF",
+  "measured-in": [],
+  "container": "$GEOPOLITICAL-RELATION"
+}

@@ -1,0 +1,26 @@
+{{#*inline "node"}}
+    <div class="constituency-node">
+        <div class="constituency-node-label">{{node.label}}</div>
+        <div class="constituency-node-children">
+            {{#each node.children}}
+                {{#if this.label}}
+                    {{> node node=this words=../words}}
+                {{else}}
+                    {{> token token=this words=../words}}
+                {{/if}}
+            {{/each}}
+        </div>
+    </div>
+{{/inline}}
+
+{{#*inline "token"}}
+    <div class="token-node">
+        {{#with (lookup words token.word)}}
+            {{this.token}}-{{this.index}}
+        {{/with}}
+    </div>
+{{/inline}}
+
+<div class="constituencies-container">
+    {{> node node=this.content words=this.words}}
+</div>

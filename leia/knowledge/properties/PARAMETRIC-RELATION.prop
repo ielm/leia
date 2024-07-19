@@ -1,0 +1,9 @@
+{
+  "name": "$PARAMETRIC-RELATION",
+  "def": "relations that can be used only for our parametrics - modality, aspect, set",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$RELATION"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@SCHOOL-CLASS",
+  "isa": [
+    "@LECTURE"
+  ],
+  "def": "a group of students taught together on a particular subject, with verbal interaction between teacher and students",
+  "local": [
+    {
+      "slot": "beneficiary",
+      "facet": "default",
+      "filler": "@STUDENT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

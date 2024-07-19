@@ -1,0 +1,16 @@
+{
+  "name": "@ENGINE-CYLINDER",
+  "isa": [
+    "@ENGINE-PART"
+  ],
+  "def": "the piston chamber of an engine",
+  "local": [
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@PISTON"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@BOAT",
+  "isa": [
+    "@SURFACE-WATER-VEHICLE",
+    "@SPORT-ARTIFACT"
+  ],
+  "def": "an open vehicle for traveling on water, often on shallower waters and smaller than a ship",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    }
+  ],
+  "private": {}
+}

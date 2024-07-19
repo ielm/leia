@@ -1,0 +1,57 @@
+{
+  "name": "@MEDICAL-LABORATORY-PROCEDURE",
+  "isa": [
+    "@MEDICAL-PROCEDURE"
+  ],
+  "def": "A procedure, method, or technique used to determine the composition, quantity, or concentration of a specimen, and which is carried out in a clinical laboratory. Included here are procedures which measure the times and rates of reactions, e.g. radioimmunoassay, blood protein electrophoresis, etc.",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@LABORATORY"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MICROSCOPE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SYRINGE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BLOOD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TISSUE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@PATIENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MEDICAL-ARTIFACT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@MEDICAL-BUILDING"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@OFFICE"
+    }
+  ],
+  "private": {}
+}

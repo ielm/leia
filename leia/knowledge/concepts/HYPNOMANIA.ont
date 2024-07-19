@@ -1,0 +1,27 @@
+{
+  "name": "@HYPNOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "uncontrollable desire for sleep",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SLEEP"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@DENTISTRY",
+  "isa": [
+    "@MEDICINE"
+  ],
+  "def": "the profession of the care and repair of the teeth",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@DENTIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@MEDICAL-WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

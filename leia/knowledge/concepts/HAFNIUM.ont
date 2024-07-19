@@ -1,0 +1,36 @@
+{
+  "name": "@HAFNIUM",
+  "isa": [
+    "@DUCTILE-METALLIC-ELEMENT"
+  ],
+  "def": "a brilliant, silvery, metallic element separated from ores of zirconium and used in nuclear reactor control rods, as a getter for oxygen and nitrogen, and in the manufacture of tungsten filaments",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        72
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        178
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

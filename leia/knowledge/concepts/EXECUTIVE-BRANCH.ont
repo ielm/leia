@@ -1,0 +1,26 @@
+{
+  "name": "@EXECUTIVE-BRANCH",
+  "isa": [
+    "@GOVERNMENT-BRANCH"
+  ],
+  "def": "Part of a government responsible for implementing the government*s decisions",
+  "local": [
+    {
+      "slot": "has-member",
+      "facet": "default",
+      "filler": "@APPOINTED-GOVERNMENTAL-ROLE"
+    },
+    {
+      "slot": "has-member",
+      "facet": "default",
+      "filler": "@CIVIL-SERVICE-ROLE"
+    },
+    {
+      "slot": "has-member",
+      "facet": "default",
+      "filler": "@PUBLIC-SAFETY-ROLE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

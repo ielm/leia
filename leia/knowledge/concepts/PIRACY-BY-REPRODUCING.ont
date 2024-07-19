@@ -1,0 +1,57 @@
+{
+  "name": "@PIRACY-BY-REPRODUCING",
+  "isa": [
+    "@STEAL"
+  ],
+  "def": "to publish, reproduce, etc. (a book, recording, etc.) in violation of a copyright",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@PIRATE-WHO-REPRODUCES"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MEDIA-ARTIFACT"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@COMMUNICATION-SERVE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

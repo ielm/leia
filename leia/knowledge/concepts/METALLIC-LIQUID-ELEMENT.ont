@@ -1,0 +1,50 @@
+{
+  "name": "@METALLIC-LIQUID-ELEMENT",
+  "isa": [
+    "@METAL",
+    "@LIQUID-ELEMENT"
+  ],
+  "def": "an element, liquid at or near room temperature, with metallic properties",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "translucent"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "translucent"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@GAS"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "semi-solid"
+    }
+  ],
+  "private": {}
+}

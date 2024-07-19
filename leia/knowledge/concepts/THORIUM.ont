@@ -1,0 +1,36 @@
+{
+  "name": "@THORIUM",
+  "isa": [
+    "@ACTINIDE"
+  ],
+  "def": "a silvery-white metallic element with 13 radioactive isotopes only one of which, thorium 232, occurs naturally. it is used in magnesium alloys and isotope 232 is a source of nuclear energy",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        232
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        90
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@LUGGAGE-CART",
+  "isa": [
+    "@AIRPORT-ARTIFACT"
+  ],
+  "def": "an open platform on wheels used to transport luggage within an airport terminal",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

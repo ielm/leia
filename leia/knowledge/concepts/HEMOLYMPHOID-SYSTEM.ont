@@ -1,0 +1,32 @@
+{
+  "name": "@HEMOLYMPHOID-SYSTEM",
+  "isa": [
+    "@HETEROGENEOUS-CLUSTER"
+  ],
+  "def": "nd",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LYMPHOID-SYSTEM"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@HEMATOPOIETIC-SYSTEM"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LYMPHATIC-TREE-ORGAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

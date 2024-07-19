@@ -1,0 +1,37 @@
+{
+  "name": "@BOYCOTT",
+  "isa": [
+    "@GROUP-POLITICAL-EVENT"
+  ],
+  "def": "withdraw from relations with a country, etc., as a sign of protest or as a punishment",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ORGANIZATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LARGE-GEOPOLITICAL-ENTITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

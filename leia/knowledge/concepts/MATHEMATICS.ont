@@ -1,0 +1,27 @@
+{
+  "name": "@MATHEMATICS",
+  "isa": [
+    "@FIELD-OF-STUDY"
+  ],
+  "def": "the science dealing with quantities, forms, etc. and their relationships by the use of numbers and symbols",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@MATHEMATICIAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    },
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@ACADEMIC-SPECIALIST"
+    }
+  ],
+  "private": {}
+}

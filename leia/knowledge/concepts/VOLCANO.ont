@@ -1,0 +1,27 @@
+{
+  "name": "@VOLCANO",
+  "isa": [
+    "@GEOLOGICAL-ELEVATION"
+  ],
+  "def": "a cone-shaped mountain of molten rock, ashes, etc., which have been ejected through a vent in the earth*s crust",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LAVA"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    }
+  ],
+  "private": {}
+}

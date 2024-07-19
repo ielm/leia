@@ -1,0 +1,16 @@
+{
+  "name": "@COLON",
+  "isa": [
+    "@SEGMENT-OF-LARGE-INTESTINE"
+  ],
+  "def": "The section of the large intestine extending from the cecum to the rectum.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@SIGMOID-COLON"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

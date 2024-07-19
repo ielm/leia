@@ -1,0 +1,47 @@
+{
+  "name": "@RUSTLE",
+  "isa": [
+    "@STEAL"
+  ],
+  "def": "to first gather then steal; often of livestock",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@GATHER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIVESTOCK"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HORSE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@ROPE"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@STEAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

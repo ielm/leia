@@ -1,0 +1,22 @@
+{
+  "name": "@PROSTATECTOMY",
+  "isa": [
+    "@SURGICAL-REMOVAL"
+  ],
+  "def": "Surgical removal of all or part of the prostate gland.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@PROSTATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

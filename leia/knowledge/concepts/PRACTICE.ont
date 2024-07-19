@@ -1,0 +1,27 @@
+{
+  "name": "@PRACTICE",
+  "isa": [
+    "@ACTIVE-COGNITIVE-EVENT"
+  ],
+  "def": "To perform or exercise repeatedly in order to acquire skill.",
+  "local": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@LEARN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

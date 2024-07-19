@@ -1,0 +1,9 @@
+{
+  "name": "$INSTITUTION-TYPE",
+  "def": "an attribute indicating whether an institution is public or private",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-OBJECT-ATTRIBUTE"
+}

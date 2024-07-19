@@ -1,0 +1,9 @@
+{
+  "name": "$DEMOGRAPHICS-ATTRIBUTE",
+  "def": "The different properties dealing with demographics-related things",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-SOCIAL-OBJECT-ATTRIBUTE"
+}

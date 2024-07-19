@@ -1,0 +1,41 @@
+{
+  "name": "@CARBON",
+  "isa": [
+    "@NONMETALLIC-SOLID-ELEMENT"
+  ],
+  "def": "a naturally abundant nonmetallic element that occurs in many inorganic and in all organic compounds",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        12
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        6
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "private": {}
+}

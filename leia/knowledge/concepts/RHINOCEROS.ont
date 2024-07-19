@@ -1,0 +1,27 @@
+{
+  "name": "@RHINOCEROS",
+  "isa": [
+    "@UNGULATE"
+  ],
+  "def": "Any of several large, thick-skinned, herbivorous mammals of Africa and Asia, having one or two upright horns on the snout.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@FUR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@HAIR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    }
+  ],
+  "private": {}
+}

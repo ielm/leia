@@ -1,0 +1,22 @@
+{
+  "name": "@MAGNETIC-FIELD-STRENGTH-UNIT",
+  "isa": [
+    "@MEASURING-UNIT"
+  ],
+  "def": "Used to measure the strength of a magnetic field.",
+  "local": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@AMPERE-PER-METER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "sem",
+      "filler": "@MEASURING-UNIT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$SOLVENCY",
+  "def": "whether or not an individual or organization is able to pay his or its debts",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-OBJECT-ATTRIBUTE"
+}

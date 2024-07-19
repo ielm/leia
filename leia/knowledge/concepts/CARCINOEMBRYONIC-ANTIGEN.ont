@@ -1,0 +1,16 @@
+{
+  "name": "@CARCINOEMBRYONIC-ANTIGEN",
+  "isa": [
+    "@DIAGNOSTIC-PROCEDURE"
+  ],
+  "def": "A test for monitoring the effectiveness ofa treatment, as for colorectal cancer, using a glycoproetin present in fetal gastrointestinal tissue and in the cells or serum of adults having certain types of cancers. (Also known as CEA).",
+  "local": [],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

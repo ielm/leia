@@ -1,0 +1,97 @@
+{
+  "name": "@GUST",
+  "isa": [
+    "@WIND"
+  ],
+  "def": "A strong, abrupt rush of wind",
+  "local": [
+    {
+      "slot": "velocity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0.7
+      ]
+    },
+    {
+      "slot": "intensity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0.5
+      ]
+    },
+    {
+      "slot": "duration",
+      "facet": "default",
+      "filler": [
+        "=>=<",
+        0.2
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "duration",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "duration",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "intensity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "intensity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "velocity",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "velocity",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "velocity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "velocity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

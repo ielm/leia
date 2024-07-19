@@ -1,0 +1,32 @@
+{
+  "name": "@FLATULENCE",
+  "isa": [
+    "@SYMPTOM"
+  ],
+  "def": "the presence of excessive gas in the digestive tract, esp. the large intestine",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@GASTROINTESTINAL-SYSTEM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GAS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@TEXTBOOK",
+  "isa": [
+    "@BOOK"
+  ],
+  "def": "book giving detailed instruction in principles of some subject for students",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@SCHOOL"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@COLLEGE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@UNIVERSITY"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

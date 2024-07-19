@@ -1,0 +1,9 @@
+{
+  "name": "$LITERAL-OBJECT-ATTRIBUTE",
+  "def": "an attribute which applies only to objects and whose range is filled with literals",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

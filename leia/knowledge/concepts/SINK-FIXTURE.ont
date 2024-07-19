@@ -1,0 +1,72 @@
+{
+  "name": "@SINK-FIXTURE",
+  "isa": [
+    "@BUILDING-FIXTURE"
+  ],
+  "def": "a water basin fixed to a wall or floor and having a drainpipe and generally a piped supply of water",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@VINYL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@FIBERGLASS"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@DRAINPIPE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CERAMIC"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "barlike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "crosslike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "cylindrical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "egglike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "halftoroidal"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@NUCLEAR-REACTOR",
+  "isa": [
+    "@COMPLEX-MECHANISM"
+  ],
+  "def": "a device for creating a controlled nuclear chain reaction using atomic fuel, as for the production of energy",
+  "local": [
+    {
+      "slot": "radioactivity",
+      "facet": "sem",
+      "filler": [
+        "><=",
+        1.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

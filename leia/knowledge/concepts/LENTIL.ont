@@ -1,0 +1,26 @@
+{
+  "name": "@LENTIL",
+  "isa": [
+    "@LEGUME"
+  ],
+  "def": "A round, flattened leguminous seed.",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "orange"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "green"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

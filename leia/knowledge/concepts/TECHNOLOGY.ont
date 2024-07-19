@@ -1,0 +1,22 @@
+{
+  "name": "@TECHNOLOGY",
+  "isa": [
+    "@SCIENCE"
+  ],
+  "def": "the science that involves the practical or industrial arts",
+  "local": [
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@RESEARCH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@WORK-ACTIVITY"
+    }
+  ],
+  "private": {}
+}

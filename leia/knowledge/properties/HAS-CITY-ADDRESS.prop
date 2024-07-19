@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-CITY-ADDRESS",
+  "def": "The city part of an address.",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": "$CITY-ADDRESS-OF",
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

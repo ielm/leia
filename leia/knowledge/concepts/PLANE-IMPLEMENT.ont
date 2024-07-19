@@ -1,0 +1,22 @@
+{
+  "name": "@PLANE-IMPLEMENT",
+  "isa": [
+    "@IMPLEMENT"
+  ],
+  "def": "a carpenter*s tool used for smoothing or leveling wood",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@LINK-US",
+  "isa": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "def": "a unit of length in the US system, for use with Ramsden's chain; .01*chain-us",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.201168
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

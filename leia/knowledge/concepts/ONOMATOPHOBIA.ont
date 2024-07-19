@@ -1,0 +1,32 @@
+{
+  "name": "@ONOMATOPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of a name or a particular word",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WORD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NAME"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

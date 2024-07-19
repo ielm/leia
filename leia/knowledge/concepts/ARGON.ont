@@ -1,0 +1,36 @@
+{
+  "name": "@ARGON",
+  "isa": [
+    "@GASEOUS-ELEMENT"
+  ],
+  "def": "a colorless, odorless, inert gaseous element constituting approximately one per cent of the earth*s atmosphere and used in electric lamps, fluorescent tubes, and radio vacuum tubes",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        39
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        18
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

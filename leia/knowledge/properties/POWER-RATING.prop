@@ -1,0 +1,11 @@
+{
+  "name": "$POWER-RATING",
+  "def": "the amount of electrical power needed by a device or appliance or the specified power available at the power supply output",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ENERGY-UNIT"
+  ],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

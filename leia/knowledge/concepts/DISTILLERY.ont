@@ -1,0 +1,27 @@
+{
+  "name": "@DISTILLERY",
+  "isa": [
+    "@BEVERAGE-PROCESSING-CORPORATION"
+  ],
+  "def": "a place where alcohol liquors are distilled",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ALCOHOL"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ALCOHOLIC-BEVERAGE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@BEVERAGE"
+    }
+  ],
+  "private": {}
+}

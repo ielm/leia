@@ -1,0 +1,21 @@
+{
+  "name": "@FIG-FRUIT",
+  "isa": [
+    "@TREE-FRUIT"
+  ],
+  "def": "fruit of the fig tree",
+  "local": [],
+  "block": [
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "cylindrical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "spherical"
+    }
+  ],
+  "private": {}
+}

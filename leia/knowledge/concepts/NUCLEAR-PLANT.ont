@@ -1,0 +1,114 @@
+{
+  "name": "@NUCLEAR-PLANT",
+  "isa": [
+    "@POWER-PLANT"
+  ],
+  "def": "a facility where nuclear power is generated",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@NUCLEAR-ENERGY"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@WEB-ADDRESS"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@PHONE-NUMBER"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@EMAIL-ADDRESS"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@COMPASS-POINT"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@NAME"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "naming-data",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "has-name-suffix",
+      "facet": "sem",
+      "filler": "@NAME-SUFFIX"
+    },
+    {
+      "slot": "has-name-suffix",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "has-name-suffix",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "has-name-prefix",
+      "facet": "sem",
+      "filler": "@NAME-PREFIX"
+    },
+    {
+      "slot": "has-name-prefix",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@NAME"
+    },
+    {
+      "slot": "has-alias",
+      "facet": "sem",
+      "filler": "@ALIAS"
+    },
+    {
+      "slot": "has-name-non-human",
+      "facet": "sem",
+      "filler": "@NAME-NON-HUMAN"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

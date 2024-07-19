@@ -1,0 +1,22 @@
+{
+  "name": "@FLOUR-MILL",
+  "isa": [
+    "@FOOD-PROCESSING-CORPORATION"
+  ],
+  "def": "a corporation that has machinery for grinding grain into flour or meal",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@FLOUR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@INGESTIBLE"
+    }
+  ],
+  "private": {}
+}

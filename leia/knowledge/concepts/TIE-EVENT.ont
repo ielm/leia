@@ -1,0 +1,27 @@
+{
+  "name": "@TIE-EVENT",
+  "isa": [
+    "@OPPOSITION-EVENT"
+  ],
+  "def": "To equal an opponent*s score in a contest.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SCORE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

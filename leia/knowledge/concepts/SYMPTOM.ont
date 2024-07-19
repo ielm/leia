@@ -1,0 +1,21 @@
+{
+  "name": "@SYMPTOM",
+  "isa": [
+    "@PATHOLOGIC-FUNCTION"
+  ],
+  "def": "a physical or mental condition that indicates the presence of a disease",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@DISEASE"
+    },
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@MEASURING-ARTIFACT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

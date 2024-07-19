@@ -1,0 +1,22 @@
+{
+  "name": "@DERMATOLOGY",
+  "isa": [
+    "@MEDICINE"
+  ],
+  "def": "the branch of medicine dealing with the physiology and pathology of the skin",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@DERMATOLOGIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@MEDICAL-WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

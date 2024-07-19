@@ -1,0 +1,19 @@
+{
+  "name": "@TESLA",
+  "isa": [
+    "@MAGNETIC-FLUX-DENSITY-UNIT"
+  ],
+  "def": "the SI derived unit for  measuring magnetic flux, which is the numeric value of a changing magnetic field. kg*s^-2*A^-1 (^ means power, kg means kilogram, s means second, A means ampere, * means multiplication)",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

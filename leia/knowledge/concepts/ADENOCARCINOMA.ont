@@ -1,0 +1,22 @@
+{
+  "name": "@ADENOCARCINOMA",
+  "isa": [
+    "@CANCER"
+  ],
+  "def": "A malignant tumor originating in glandular tissue.\n(http://www.thefreedictionary.com/adenocarcinoma)",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GLAND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

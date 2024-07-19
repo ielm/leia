@@ -1,0 +1,26 @@
+{
+  "name": "@GRAVITY-PROPELLED-VEHICLE",
+  "isa": [
+    "@VEHICLE"
+  ],
+  "def": "parachutes, gliders, alpine skis, etc.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@ENGINE"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

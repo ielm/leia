@@ -1,0 +1,46 @@
+{
+  "name": "@LIBRARY",
+  "isa": [
+    "@ACADEMIC-BUILDING"
+  ],
+  "def": "a place in which literary and artistic materials, such as books, periodicals, newspapers, pamphlets, and prints, are kept for reading or reference; an institution or foundation maintaining such a collection",
+  "local": [
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@FILM-MEDIA"
+    },
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@TRANSPARENCY"
+    },
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@VIDEO-CASSETTE"
+    },
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@PRINTED-MEDIA"
+    },
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@AUDIO-CASSETTE"
+    },
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@COMPACT-DISC"
+    },
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@PHONOGRAPH-RECORD"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

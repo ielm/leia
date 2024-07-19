@@ -1,0 +1,24 @@
+{
+  "name": "@ASPARTAME",
+  "isa": [
+    "@SWEETENER"
+  ],
+  "def": "an artificial sweetner",
+  "local": [
+    {
+      "slot": "sweetness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "genuineness",
+      "facet": "sem",
+      "filler": "no"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

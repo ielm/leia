@@ -1,0 +1,19 @@
+{
+  "name": "@ESSAY",
+  "isa": [
+    "@LITERARY-STYLE"
+  ],
+  "def": "A brief, analytic literary composition on a single subject, usually presenting the personal view of the author.",
+  "local": [
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        ">=<",
+        0.3
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

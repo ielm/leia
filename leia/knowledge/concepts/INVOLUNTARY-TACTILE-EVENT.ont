@@ -1,0 +1,16 @@
+{
+  "name": "@INVOLUNTARY-TACTILE-EVENT",
+  "isa": [
+    "@TACTILE-EVENT"
+  ],
+  "def": "involuntarily (passively) perceive something by feeling",
+  "local": [],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,46 @@
+{
+  "name": "@RESPIRATORY-ARREST",
+  "isa": [
+    "@PATHOLOGIC-FUNCTION"
+  ],
+  "def": "The cessation of breathing. It typically occurs with cardiac arrest.",
+  "local": [
+    {
+      "slot": "urgency",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    },
+    {
+      "slot": "urgency",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "urgency",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

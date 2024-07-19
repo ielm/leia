@@ -1,0 +1,37 @@
+{
+  "name": "@PROSECUTE",
+  "isa": [
+    "@LEGAL-EVENT-IN-COURTROOM"
+  ],
+  "def": "to conduct legal action against an individual or an organization",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@PUBLIC-PROSECUTOR"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@ATTORNEY"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "default",
+      "filler": "@CRIMINAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@LEGAL-WORK-ROLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@BE-STANDING",
+  "isa": [
+    "@POSITION-BODY"
+  ],
+  "def": "To be in an upright, vertical position, typically supported by one*s legs",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ARTHROPOD"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FOOT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PAW"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HOOF"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

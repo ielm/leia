@@ -1,0 +1,16 @@
+{
+  "name": "@FOREIGN-EXCHANGE-MARKET",
+  "isa": [
+    "@INVESTMENT-CORPORATION"
+  ],
+  "def": "a market in which the currencies of various countries are exchanged for one another, and are used to settle international liabilities or for speculation in currency futures",
+  "local": [],
+  "block": [
+    {
+      "slot": "area-of-business-activity",
+      "facet": "sem",
+      "filler": "@INVESTMENT-EVENT"
+    }
+  ],
+  "private": {}
+}

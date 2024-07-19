@@ -1,0 +1,42 @@
+{
+  "name": "@SALIVA",
+  "isa": [
+    "@SECRETION"
+  ],
+  "def": "The watery mixture of secretions from the salivary and oral mucous glands that lubricates chewed food",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CELL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@GAS"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "semi-solid"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "solid"
+    }
+  ],
+  "private": {}
+}

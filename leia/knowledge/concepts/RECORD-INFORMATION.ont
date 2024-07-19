@@ -1,0 +1,52 @@
+{
+  "name": "@RECORD-INFORMATION",
+  "isa": [
+    "@HUMAN-ONLY-LIVING-EVENT"
+  ],
+  "def": "to note something down for future reference",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PAPER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LANGUAGE-RELATED-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WRITING-IMPLEMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INFORMATION"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

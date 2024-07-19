@@ -1,0 +1,27 @@
+{
+  "name": "@EMETOPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of vomiting",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VOMIT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

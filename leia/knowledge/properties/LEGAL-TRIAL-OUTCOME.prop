@@ -1,0 +1,9 @@
+{
+  "name": "$LEGAL-TRIAL-OUTCOME",
+  "def": "The outcome of a trial - whether someone has been found guilty or not guilty of committing a crime.",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-EVENT-ATTRIBUTE"
+}

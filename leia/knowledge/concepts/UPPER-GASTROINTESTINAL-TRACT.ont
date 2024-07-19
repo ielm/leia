@@ -1,0 +1,32 @@
+{
+  "name": "@UPPER-GASTROINTESTINAL-TRACT",
+  "isa": [
+    "@SUBDIVISION-OF-GASTROINTESTINAL-SYSTEM"
+  ],
+  "def": "includes esophagus, duodenum and stomach",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@DUODENUM"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@STOMACH"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ESOPHAGUS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

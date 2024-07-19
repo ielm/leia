@@ -1,0 +1,21 @@
+{
+  "name": "@APARTMENT-BUILDING",
+  "isa": [
+    "@DWELLING"
+  ],
+  "def": "a building containing a number of apartments",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@APARTMENT"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@TENANT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

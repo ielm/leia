@@ -1,0 +1,11 @@
+{
+  "name": "@HOSPITAL-ROOM",
+  "isa": [
+    "@HOSPITAL-PART",
+    "@ROOM"
+  ],
+  "def": "A room in a hospital.",
+  "local": [],
+  "block": [],
+  "private": {}
+}

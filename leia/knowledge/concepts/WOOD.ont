@@ -1,0 +1,27 @@
+{
+  "name": "@WOOD",
+  "isa": [
+    "@PLANT-DERIVED-SUBSTANCE"
+  ],
+  "def": "the tough, fibrous cellular substance constituting the xylem of trees and shrubs, lying beneath the bark and consisting largely of cellulose and lignin, often cut and dried, used for building material, as fuel, and for many other purposes",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CELLULOSE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT-PART"
+    }
+  ],
+  "private": {}
+}

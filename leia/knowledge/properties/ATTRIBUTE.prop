@@ -1,0 +1,9 @@
+{
+  "name": "$ATTRIBUTE",
+  "def": "the head of the tree that comprises literal and scalar attributes",
+  "type": "unknown",
+  "range": "!AnyType",
+  "inverse": "$ATTRIBUTE",
+  "measured-in": [],
+  "container": "$PROPERTY"
+}

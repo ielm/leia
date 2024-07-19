@@ -1,0 +1,48 @@
+{
+  "name": "@CANVAS",
+  "isa": [
+    "@BLENDED-FABRIC",
+    "@NATURAL-FABRIC"
+  ],
+  "def": "a coarse, strong cloth woven from hemp, cotton, etc., used for tents, sails, etc.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@HEMP"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@COTTON-FIBER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@NYLON"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT-DERIVED-SUBSTANCE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@POLYESTER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SILK"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOL"
+    }
+  ],
+  "private": {}
+}

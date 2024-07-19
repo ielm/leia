@@ -1,0 +1,27 @@
+{
+  "name": "@C7-SEGMENT-OF-ESOPHAGUS",
+  "isa": [
+    "@SEGMENT-OF-ESOPHAGUS"
+  ],
+  "def": "segment distal to C6 and proximal to T1",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@WALL-OF-ESOPHAGUS"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LUMEN-OF-ESOPHAGUS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

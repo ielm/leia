@@ -1,0 +1,11 @@
+{
+  "name": "$VOLATILITY",
+  "def": "the degree of instability or explosiveness found in an object",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

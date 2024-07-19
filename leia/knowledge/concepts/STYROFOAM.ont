@@ -1,0 +1,27 @@
+{
+  "name": "@STYROFOAM",
+  "isa": [
+    "@PLASTIC"
+  ],
+  "def": "spongy artificial material often used for packing things; a trademark for a light, resilient polystyrene plastic",
+  "local": [
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "opaque"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "white"
+    }
+  ],
+  "block": [
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "transparent"
+    }
+  ],
+  "private": {}
+}

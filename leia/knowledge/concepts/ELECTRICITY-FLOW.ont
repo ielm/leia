@@ -1,0 +1,158 @@
+{
+  "name": "@ELECTRICITY-FLOW",
+  "isa": [
+    "@FLOW",
+    "@ENERGY-EVENT"
+  ],
+  "def": "The flow of electricity from one location to another.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ELECTRICITY"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@CONNECT-ELECTRICALLY"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CONNECTING-DEVICE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@AQUEOUS-HUMOR-OF-EYEBALL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BEVERAGE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BLOOD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CHLOROPHYLL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COOKING-OIL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ENERGY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INTRAVENOUS-FLUID"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LAVA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LINSEED-OIL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LUBRICANT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PLASMA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SECRETION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TAR"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TRANSUDATE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@URINE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VACCINE"
+    }
+  ],
+  "private": {}
+}

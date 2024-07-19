@@ -1,0 +1,62 @@
+{
+  "name": "@DAM-EVENT",
+  "isa": [
+    "@RESTRAIN"
+  ],
+  "def": "to confine by building or using a dam",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OBSTRUCT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@DAM"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@BEAVER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,72 @@
+{
+  "name": "@EMIT-LIGHT",
+  "isa": [
+    "@WAVE-ENERGY-EVENT"
+  ],
+  "def": "to cause to give off light",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@STAR"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@LIGHT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CANDLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FIRE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@LAMP"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SUN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@LIGHTBULB"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@WAVE"
+    }
+  ],
+  "private": {}
+}

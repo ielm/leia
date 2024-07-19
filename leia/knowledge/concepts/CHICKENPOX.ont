@@ -1,0 +1,16 @@
+{
+  "name": "@CHICKENPOX",
+  "isa": [
+    "@VIRUS-DISEASE"
+  ],
+  "def": "a disease that causes blistering of the skin",
+  "local": [
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@BLISTER"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

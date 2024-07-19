@@ -1,0 +1,19 @@
+{
+  "name": "@SECOND-ANGLE",
+  "isa": [
+    "@ANGLE-UNIT"
+  ],
+  "def": "60 arc seconds make one arc minute; 1/60*minute-angular",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        4.848136811e-06
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

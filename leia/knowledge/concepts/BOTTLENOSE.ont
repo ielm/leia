@@ -1,0 +1,16 @@
+{
+  "name": "@BOTTLENOSE",
+  "isa": [
+    "@DOLPHIN"
+  ],
+  "def": "a type of dolphin",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FIN"
+    }
+  ],
+  "private": {}
+}

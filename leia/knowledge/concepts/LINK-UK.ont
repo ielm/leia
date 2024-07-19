@@ -1,0 +1,19 @@
+{
+  "name": "@LINK-UK",
+  "isa": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "def": "unit of length in the imperial system, for use with Gunter's chain; .01*chain-uk",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.201168
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

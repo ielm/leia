@@ -1,0 +1,16 @@
+{
+  "name": "@GATHER",
+  "isa": [
+    "@PHYSICAL-EVENT"
+  ],
+  "def": "to bring together in one place",
+  "local": [],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

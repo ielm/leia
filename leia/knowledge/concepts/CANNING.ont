@@ -1,0 +1,42 @@
+{
+  "name": "@CANNING",
+  "isa": [
+    "@PRESERVE"
+  ],
+  "def": "to put up in cans or jars for preservation",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CAN"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@CANNERY"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@JAR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@FOOD-PROCESSING-CORPORATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    }
+  ],
+  "private": {}
+}

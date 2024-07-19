@@ -1,0 +1,54 @@
+{
+  "name": "@ENGINE-PART",
+  "isa": [
+    "@MACHINE-PART"
+  ],
+  "def": "any part specific to an engine",
+  "local": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@MECHANICAL-ENGINEERING"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0
+      ]
+    },
+    {
+      "slot": "hardness-breakability",
+      "facet": "sem",
+      "filler": [
+        "<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": [
+        ">=<",
+        1
+      ]
+    },
+    {
+      "slot": "hardness-breakability",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

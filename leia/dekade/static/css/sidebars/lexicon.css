@@ -1,0 +1,27 @@
+lexicon-sidebar {
+    --fixed-lexicon-sidebar-header-height: 25px;
+}
+
+div.lexicon-sidebar {
+    height: 100%;
+}
+
+div.lexicon-sidebar-header {
+    height: var(--fixed-lexicon-sidebar-header-height);
+    padding-top: 2px;
+    padding-left: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--ribbon-color-tier-1);
+}
+
+input.lexicon-sidebar-filter {
+    width: calc(100% - 25px);
+}
+
+div.lexicon-sidebar-search-results {
+    height: calc(100% - var(--fixed-lexicon-sidebar-header-height));
+    overflow-y: auto;
+    padding: 4px;
+    background-color: var(--results-color-tier-1);
+}

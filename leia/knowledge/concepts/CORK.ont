@@ -1,0 +1,16 @@
+{
+  "name": "@CORK",
+  "isa": [
+    "@DECIDUOUS-TREE"
+  ],
+  "def": "cork oak tree from Southern Europe and North Africa",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@CORK-MANUFACTURING-CORPORATION"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

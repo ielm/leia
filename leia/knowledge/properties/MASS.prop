@@ -1,0 +1,11 @@
+{
+  "name": "$MASS",
+  "def": "the mass of a body is different from but proportional to its weight, is independent of the body*s position but dependent on its motion with respect to other bodies, and may be expressed in mass units, such as kilograms",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@MASS-WEIGHT-UNIT"
+  ],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

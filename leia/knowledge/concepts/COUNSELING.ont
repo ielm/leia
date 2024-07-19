@@ -1,0 +1,47 @@
+{
+  "name": "@COUNSELING",
+  "isa": [
+    "@SOCIAL-SERVE"
+  ],
+  "def": "to provide advice on personal problems",
+  "local": [
+    {
+      "slot": "beneficiary",
+      "facet": "default",
+      "filler": "@PATIENT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@PSYCHOLOGIST"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@OFFICE"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@ADVISE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@SOCIAL-SCIENTIST"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

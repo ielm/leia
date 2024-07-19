@@ -1,0 +1,31 @@
+{
+  "name": "@FIGHT",
+  "isa": [
+    "@OPPOSITION-EVENT"
+  ],
+  "def": "a fist fight, combat in war, etc.",
+  "local": [
+    {
+      "slot": "has-loser",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "has-winner",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "has-winner",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "has-loser",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

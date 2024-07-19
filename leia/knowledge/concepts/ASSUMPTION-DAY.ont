@@ -1,0 +1,58 @@
+{
+  "name": "@ASSUMPTION-DAY",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "August 15, a Christian holiday celebrating the taking up of the Virgin Mary into heaven",
+  "local": [
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@AUGUST"
+    },
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        15
+      ]
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@CATHOLICISM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        31
+      ]
+    },
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "private": {}
+}

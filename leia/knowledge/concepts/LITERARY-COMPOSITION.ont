@@ -1,0 +1,22 @@
+{
+  "name": "@LITERARY-COMPOSITION",
+  "isa": [
+    "@CREATIVE-WORK",
+    "@LANGUAGE-RELATED-OBJECT"
+  ],
+  "def": "all writings or telling in prose or verse",
+  "local": [],
+  "block": [
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

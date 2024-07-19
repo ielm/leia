@@ -1,0 +1,21 @@
+{
+  "name": "@LEEK",
+  "isa": [
+    "@VEGETABLE-FOODSTUFF"
+  ],
+  "def": "An edible plant related to the onion, having a white elongated bulb and dark-green leaves.",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "green"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "white"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

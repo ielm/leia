@@ -1,0 +1,9 @@
+{
+  "name": "$DETERMINATE",
+  "def": "indicates whether a set is determinate\nor not (i.e., whether all of the set's members are known)",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$PARAMETRIC-LITERAL-ATTRIBUTE"
+}

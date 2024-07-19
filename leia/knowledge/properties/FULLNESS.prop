@@ -1,0 +1,11 @@
+{
+  "name": "$FULLNESS",
+  "def": "The degree to which some fillable object is empty or full. \nCurrently defined for the most obvious things that can be full or empty,\nbut the list is probably not complete, and for\nsome types of objects, this clearly does not apply. (Figuring\nout all the domain constraints is more work than I will do right now.)",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

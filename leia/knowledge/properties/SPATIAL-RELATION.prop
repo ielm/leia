@@ -1,0 +1,9 @@
+{
+  "name": "$SPATIAL-RELATION",
+  "def": "relations that deal with relative locations; an event takes place or an object is positioned relative to a physical object (the latter constraint makes this purely a spatial relation, no metonymies)",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$RELATION"
+}

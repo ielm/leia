@@ -1,0 +1,32 @@
+{
+  "name": "@ICED-TEA",
+  "isa": [
+    "@CHILLED-BEVERAGE"
+  ],
+  "def": "chilled tea",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CAFFEINE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@TEA-LEAF"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@FOODSTUFF"
+    }
+  ],
+  "private": {}
+}

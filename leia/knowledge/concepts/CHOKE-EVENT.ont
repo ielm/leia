@@ -1,0 +1,104 @@
+{
+  "name": "@CHOKE-EVENT",
+  "isa": [
+    "@PATHOLOGIC-FUNCTION"
+  ],
+  "def": "to have difficulty breathing because of an obstruction in the larynx or trachea",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@OBSTRUCT-1"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@LARYNX"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@TRACHEOBRONCHIAL-TREE"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {
+    "@OBSTRUCT-1": {
+      "name": "@OBSTRUCT-1",
+      "isa": [
+        "@OBSTRUCT"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "theme",
+          "facet": "sem",
+          "filler": "@LARYNX"
+        },
+        {
+          "slot": "theme",
+          "facet": "sem",
+          "filler": "@TRACHEOBRONCHIAL-TREE"
+        },
+        {
+          "slot": "instrument",
+          "facet": "sem",
+          "filler": "@INGESTIBLE"
+        },
+        {
+          "slot": "beneficiary",
+          "facet": "sem",
+          "filler": "@VERTEBRATE"
+        },
+        {
+          "slot": "experiencer",
+          "facet": "sem",
+          "filler": "@VERTEBRATE"
+        }
+      ],
+      "block": [],
+      "private": {}
+    }
+  }
+}

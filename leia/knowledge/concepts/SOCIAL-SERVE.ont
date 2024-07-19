@@ -1,0 +1,52 @@
+{
+  "name": "@SOCIAL-SERVE",
+  "isa": [
+    "@PROFESSIONAL-SERVICE-EVENT"
+  ],
+  "def": "to provide services to individuals with specific social or personal problems",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@SOCIAL-SCIENTIST"
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@PSYCHOLOGICAL-DISORDER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@WORK-ROLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WATER"
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@THROAT",
+  "isa": [
+    "@SUBDIVISION-OF-FRONT-OF-NECK"
+  ],
+  "def": "an anatomical structure that leads from the back of \nthe mouth to the esophagus in a human",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LARYNX"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PHARYNX"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

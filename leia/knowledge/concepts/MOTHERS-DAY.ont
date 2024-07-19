@@ -1,0 +1,37 @@
+{
+  "name": "@MOTHERS-DAY",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "A U.S. holiday honoring mothers and observed on the second Sunday in May",
+  "local": [
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MAY"
+    },
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@SUNDAY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "private": {}
+}

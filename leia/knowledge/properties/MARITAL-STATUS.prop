@@ -1,0 +1,9 @@
+{
+  "name": "$MARITAL-STATUS",
+  "def": "single, married, widowed, divorced",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-OBJECT-ATTRIBUTE"
+}

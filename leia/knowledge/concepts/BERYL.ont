@@ -1,0 +1,81 @@
+{
+  "name": "@BERYL",
+  "isa": [
+    "@GEMSTONE"
+  ],
+  "def": "transparent to translucent glassy mineral; transparent varieties in white, green, blue, yellow, or pink are valued as gems",
+  "local": [],
+  "block": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "beige"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "black"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "colorless"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "cyan"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "gray"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "magenta"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "navy-blue"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "off-white"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "orange"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "purple"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "red"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "violet"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "opaque"
+    }
+  ],
+  "private": {}
+}

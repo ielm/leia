@@ -1,0 +1,72 @@
+{
+  "name": "@LAMINATE",
+  "isa": [
+    "@PHYSICAL-EVENT"
+  ],
+  "def": "to cover something with one or more thin layers of some substance, often for protection (like an ID covered in plastic)",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PAPER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BOX"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ENVELOPE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PACKAGE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MACHINE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DOCUMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PAPER-PRODUCT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SHIPPING-CONTAINER"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

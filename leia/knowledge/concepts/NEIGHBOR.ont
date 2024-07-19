@@ -1,0 +1,19 @@
+{
+  "name": "@NEIGHBOR",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "a person who lives next to or very close by to one; by extension, an organization, country, etc., that  is in such a relationship to another",
+  "local": [],
+  "block": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

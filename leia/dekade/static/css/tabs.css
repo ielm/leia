@@ -1,0 +1,17 @@
+button[is=tab-button] {
+    margin-left: 4px;
+}
+
+button[is=tab-button].selected {
+    background-color: #848484;
+    color: white;
+    border-color: #515151;
+}
+
+.tab-contents-hidden {
+    display: none !important;
+}
+
+.fixed-tab-content {
+    height: 100%;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@FLUSH-TOILET",
+  "isa": [
+    "@HUMAN-ONLY-LIVING-EVENT"
+  ],
+  "def": "to make the water in a toilet carry away waste",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TOILET"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

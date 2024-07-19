@@ -1,0 +1,21 @@
+{
+  "name": "@SAFFRON",
+  "isa": [
+    "@SPICE"
+  ],
+  "def": "the dried orange stigmas of the saffron plant, used as a flavoring",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "orange"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "red"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

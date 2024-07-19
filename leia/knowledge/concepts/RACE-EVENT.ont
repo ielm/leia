@@ -1,0 +1,22 @@
+{
+  "name": "@RACE-EVENT",
+  "isa": [
+    "@SPORTS-COMPETITION"
+  ],
+  "def": "an event in which people compete to see who is the fastest",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@RACETRACK"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

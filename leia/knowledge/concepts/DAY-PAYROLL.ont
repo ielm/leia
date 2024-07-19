@@ -1,0 +1,19 @@
+{
+  "name": "@DAY-PAYROLL",
+  "isa": [
+    "@TIME-INTERVAL-UNIT"
+  ],
+  "def": "an interval of time equal to one full day of work (8 hours); 8*hour",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        28800.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

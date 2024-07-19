@@ -1,0 +1,27 @@
+{
+  "name": "@WORD",
+  "isa": [
+    "@TEXT-UNIT"
+  ],
+  "def": "the written or printed representation of a speech sound that has meaning",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@WORD-SEGMENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

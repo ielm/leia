@@ -1,0 +1,27 @@
+{
+  "name": "@TENNIS",
+  "isa": [
+    "@RACKET-SPORT"
+  ],
+  "def": "a game in which players in a marked area hit a ball back and forth with rackets over a net",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@TENNIS-COURT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SHUTTLECOCK"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@RECREATION-AREA"
+    }
+  ],
+  "private": {}
+}

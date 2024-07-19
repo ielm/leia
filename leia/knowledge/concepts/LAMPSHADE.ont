@@ -1,0 +1,37 @@
+{
+  "name": "@LAMPSHADE",
+  "isa": [
+    "@FURNITURE-PART"
+  ],
+  "def": "a device used to modify the direct light of a lamp",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WIRE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SEWING-MATERIAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "halftoroidal"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "toroidal"
+    }
+  ],
+  "private": {}
+}

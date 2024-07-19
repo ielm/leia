@@ -1,0 +1,19 @@
+{
+  "name": "@HENRY",
+  "isa": [
+    "@ELECTRIC-INDUCTANCE-UNIT"
+  ],
+  "def": "the SI derived measure for measuring inductance, which is the property of a circuit or circuit element that opposes a change in current flow, thus causing current changes to lag behind voltage changes",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,52 @@
+{
+  "name": "@TEAR-EVENT",
+  "isa": [
+    "@APPLY-FORCE"
+  ],
+  "def": "to pull apart forcefully by ripping",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CLAW"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@BEAK"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TOOTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "relaxable-to",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,11 @@
+{
+  "name": "$PRODUCTION-RATE",
+  "def": "The rate at which goods are produced by an industry.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@QUANTITY-PER-TIME-UNIT"
+  ],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

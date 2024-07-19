@@ -1,0 +1,9 @@
+{
+  "name": "$TYPE",
+  "def": "the type of modality or aspect (although the use\nfor modality and aspect permits diffrent ranges,\nwe are keeping the property name 'type' for both\nfor convenience - even though this is overloading\nthe property name)",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$PARAMETRIC-LITERAL-ATTRIBUTE"
+}

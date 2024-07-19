@@ -1,0 +1,97 @@
+{
+  "name": "@SAND",
+  "isa": [
+    "@MINERAL"
+  ],
+  "def": "a loose material consisting of small but easily distinguishable grains usually less than two millimeters in diameter, most commonly of quartz resulting from the disintegration of rocks, and commonly used for making mortar and glass, and as an abrasive; also defined as a loose aggregate of sand-sized mineral particles",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@QUARTZ"
+    }
+  ],
+  "block": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "blue"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "colorless"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "cyan"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "magenta"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "navy-blue"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "orange"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "pink"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "purple"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "red"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "violet"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "white"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "yellow"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@EARTH-MATERIAL"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "translucent"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "transparent"
+    }
+  ],
+  "private": {}
+}

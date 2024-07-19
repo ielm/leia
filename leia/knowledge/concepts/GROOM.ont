@@ -1,0 +1,16 @@
+{
+  "name": "@GROOM",
+  "isa": [
+    "@MARRIAGE-ROLE"
+  ],
+  "def": "a male who is about to be married or has just been married",
+  "local": [],
+  "block": [
+    {
+      "slot": "gender",
+      "facet": "sem",
+      "filler": "female"
+    }
+  ],
+  "private": {}
+}

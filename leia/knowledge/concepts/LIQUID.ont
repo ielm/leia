@@ -1,0 +1,45 @@
+{
+  "name": "@LIQUID",
+  "isa": [
+    "@MATERIAL"
+  ],
+  "def": "a body of matter in the liquid state",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    },
+    {
+      "slot": "viscosity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@GAS"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "semi-solid"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "solid"
+    }
+  ],
+  "private": {}
+}

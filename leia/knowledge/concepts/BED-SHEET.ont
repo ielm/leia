@@ -1,0 +1,66 @@
+{
+  "name": "@BED-SHEET",
+  "isa": [
+    "@BED-LINEN"
+  ],
+  "def": "a large piece of cotton, linen, etc. used on a bed",
+  "local": [
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "><",
+        0.7
+      ],
+      "meta": {
+        "measured-in": "kilogram"
+      }
+    },
+    {
+      "slot": "thickness",
+      "facet": "sem",
+      "filler": [
+        "><",
+        2
+      ],
+      "meta": {
+        "measured-in": "millimeter"
+      }
+    }
+  ],
+  "block": [
+    {
+      "slot": "thickness",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "thickness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

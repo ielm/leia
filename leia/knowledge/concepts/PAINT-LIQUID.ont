@@ -1,0 +1,16 @@
+{
+  "name": "@PAINT-LIQUID",
+  "isa": [
+    "@PIGMENT"
+  ],
+  "def": "a mixture of a pigment with oil, water, etc., used as a coloring or covering",
+  "local": [],
+  "block": [
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "solid"
+    }
+  ],
+  "private": {}
+}

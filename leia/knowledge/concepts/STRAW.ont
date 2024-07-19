@@ -1,0 +1,27 @@
+{
+  "name": "@STRAW",
+  "isa": [
+    "@PLANT-DERIVED-SUBSTANCE"
+  ],
+  "def": "Stalks of threshed grain, used as bedding and food for animals, for thatching, and for weaving or braiding, as into baskets.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GRAIN-FOODSTUFF"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT-PART"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@AGRICULTURE",
+  "isa": [
+    "@FIELD-OF-STUDY"
+  ],
+  "def": "the study of raising crops and livestock",
+  "local": [
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@FARMING-ACTIVITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@WORK-ACTIVITY"
+    }
+  ],
+  "private": {}
+}

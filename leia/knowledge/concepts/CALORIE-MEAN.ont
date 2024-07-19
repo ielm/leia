@@ -1,0 +1,19 @@
+{
+  "name": "@CALORIE-MEAN",
+  "isa": [
+    "@ENERGY-UNIT"
+  ],
+  "def": "1/100 of the amount of energy required to warm one gram of air-free water from 0 degrees Celsius to 100 degrees Celsius at standard atmospheric pressure. abbreviated cal.",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        4.19002
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

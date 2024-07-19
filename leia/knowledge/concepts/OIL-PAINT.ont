@@ -1,0 +1,22 @@
+{
+  "name": "@OIL-PAINT",
+  "isa": [
+    "@PAINT-LIQUID"
+  ],
+  "def": "a paint having an oil base",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@LINSEED-OIL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

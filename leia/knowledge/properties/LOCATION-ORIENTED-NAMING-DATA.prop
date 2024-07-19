@@ -1,0 +1,9 @@
+{
+  "name": "$LOCATION-ORIENTED-NAMING-DATA",
+  "def": "properties that link streets, cities, etc. to their names",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

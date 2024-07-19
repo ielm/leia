@@ -1,0 +1,9 @@
+{
+  "name": "$EXPORT-QUOTA",
+  "def": "the maximum portion of goods (in units) that can be brought into a country to be sold",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

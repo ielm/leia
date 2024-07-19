@@ -1,0 +1,16 @@
+{
+  "name": "@LUGGAGE-VEHICLE",
+  "isa": [
+    "@MOTORIZED-CART"
+  ],
+  "def": "a vehicle used to transport luggage in an airport",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@AIRPORT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

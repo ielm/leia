@@ -1,0 +1,22 @@
+{
+  "name": "@UROLOGY",
+  "isa": [
+    "@MEDICINE"
+  ],
+  "def": "The branch of medicine that deals with the diagnosis and treatment of diseases of the urinary tract and urogenital system",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@UROLOGIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@MEDICAL-WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

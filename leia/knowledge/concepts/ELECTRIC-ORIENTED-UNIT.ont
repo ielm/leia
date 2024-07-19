@@ -1,0 +1,42 @@
+{
+  "name": "@ELECTRIC-ORIENTED-UNIT",
+  "isa": [
+    "@MEASURING-UNIT"
+  ],
+  "def": "measuring units related to electricity",
+  "local": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@AMPERE"
+    },
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@HENRY"
+    },
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@COULOMB"
+    },
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@OHM"
+    },
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@VOLT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "sem",
+      "filler": "@MEASURING-UNIT"
+    }
+  ],
+  "private": {}
+}

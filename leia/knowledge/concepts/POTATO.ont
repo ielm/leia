@@ -1,0 +1,31 @@
+{
+  "name": "@POTATO",
+  "isa": [
+    "@ROOT-VEGETABLE"
+  ],
+  "def": "a starchy root",
+  "local": [
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "><",
+        16
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    }
+  ],
+  "block": [
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

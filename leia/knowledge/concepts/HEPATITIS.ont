@@ -1,0 +1,42 @@
+{
+  "name": "@HEPATITIS",
+  "isa": [
+    "@COMMUNICABLE-DISEASE"
+  ],
+  "def": "a disease characterized by inflammation\nof the liver",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIVER"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@INFLAMMATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ALLERGY"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@BACTERIA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

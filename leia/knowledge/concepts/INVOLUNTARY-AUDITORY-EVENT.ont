@@ -1,0 +1,21 @@
+{
+  "name": "@INVOLUNTARY-AUDITORY-EVENT",
+  "isa": [
+    "@AUDITORY-EVENT"
+  ],
+  "def": "involuntarily (passively) perceive something by hearing",
+  "local": [],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

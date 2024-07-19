@@ -1,0 +1,72 @@
+{
+  "name": "@DIABETES",
+  "isa": [
+    "@NON-COMMUNICABLE-DISEASE"
+  ],
+  "def": "Any of several metabolic disorders marked by excessive discharge of urine and persistent thirst.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BODY"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@INGEST"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@URINATE"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@MAMMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@MAMMAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@BACTERIA"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@BIOLOGICAL-WEAPON"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@VIRUS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

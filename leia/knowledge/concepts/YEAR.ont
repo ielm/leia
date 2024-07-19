@@ -1,0 +1,42 @@
+{
+  "name": "@YEAR",
+  "isa": [
+    "@TIME-INTERVAL-UNIT"
+  ],
+  "def": "A unit of time equal to approx. 365 days; 365.2422*day",
+  "local": [
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@CALENDAR"
+    },
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@TIMEPIECE"
+    },
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@WRISTWATCH"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@DAY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

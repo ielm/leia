@@ -1,0 +1,54 @@
+{
+  "word": "MAN",
+  "senses": {
+    "MAN-N1": {
+      "CAT": "N",
+      "DEF": "male human being",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": null,
+      "SYN-STRUC": [
+        {"type": "root"}
+      ],
+      "SEM-STRUC": {
+        "HUMAN": {
+          "GENDER": "MALE"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MAN-N1",
+      "WORD": "MAN"
+    },
+    "MAN-V1": {
+      "CAT": "V",
+      "DEF": "to protect or defend a position",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": null,
+      "SYN-STRUC": [
+        {"type": "dependency", "deptype": "NSUBJ", "var": 1},
+        {"type": "root"},
+        {"type": "dependency", "deptype": "DOBJ", "var": 2}
+      ],
+      "SEM-STRUC": {
+        "PROTECT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MAN-V1",
+      "WORD": "MAN"
+    }
+  }
+}

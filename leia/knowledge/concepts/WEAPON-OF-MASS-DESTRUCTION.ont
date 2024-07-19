@@ -1,0 +1,16 @@
+{
+  "name": "@WEAPON-OF-MASS-DESTRUCTION",
+  "isa": [
+    "@WEAPON"
+  ],
+  "def": "A weapon capable of phenomenal damage to civilians.",
+  "local": [
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

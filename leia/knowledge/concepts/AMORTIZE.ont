@@ -1,0 +1,37 @@
+{
+  "name": "@AMORTIZE",
+  "isa": [
+    "@EVERYDAY-FINANCIAL-EVENT"
+  ],
+  "def": "the process of gradually extinguishing a debt by a series of periodic payments to the creditor",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DEBT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MONEY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@FARCE",
+  "isa": [
+    "@LITERARY-STYLE"
+  ],
+  "def": "A light dramatic composition with an improbable, humorous plot",
+  "local": [
+    {
+      "slot": "humor-attribute",
+      "facet": "sem",
+      "filler": [
+        "><=",
+        1.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

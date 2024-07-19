@@ -1,0 +1,16 @@
+{
+  "name": "@VETERINARY-FACILITY",
+  "isa": [
+    "@BUILDING"
+  ],
+  "def": "a place where animals are treated by veterinarians",
+  "local": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@VETERINARIAN"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@AUDIENCE",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "listeners, viewers, or the persons reached by a broadcast, publication, or entertainment event.",
+  "local": [],
+  "block": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

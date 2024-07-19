@@ -1,0 +1,22 @@
+{
+  "name": "@HEADWEAR",
+  "isa": [
+    "@CLOTHING-ACCESSORY"
+  ],
+  "def": "any clothing-artifact specifically made for wearing on the head",
+  "local": [
+    {
+      "slot": "worn-on",
+      "facet": "sem",
+      "filler": "@HEAD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "worn-on",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

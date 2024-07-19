@@ -1,0 +1,45 @@
+{
+  "name": "@STOCK",
+  "isa": [
+    "@INVESTMENT"
+  ],
+  "def": "a share or shares of corporate ownership",
+  "local": [
+    {
+      "slot": "business-relation",
+      "facet": "sem",
+      "filler": "@CORPORATION"
+    },
+    {
+      "slot": "equity-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "equity-value",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

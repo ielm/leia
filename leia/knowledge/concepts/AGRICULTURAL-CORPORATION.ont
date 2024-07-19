@@ -1,0 +1,21 @@
+{
+  "name": "@AGRICULTURAL-CORPORATION",
+  "isa": [
+    "@FOR-PROFIT-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a corporation involved in a farming industry",
+  "local": [
+    {
+      "slot": "customer-of",
+      "facet": "default",
+      "filler": "@AGRICULTURAL-MACHINERY-MANUFACTURING-CORPORATION"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@FARM"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

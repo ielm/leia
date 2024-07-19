@@ -1,0 +1,82 @@
+{
+  "name": "@ANTITRADES",
+  "isa": [
+    "@WIND"
+  ],
+  "def": "The westerly winds above the surface trade winds of the tropics, which become the prevailing westerly winds of the middle latitudes.",
+  "local": [
+    {
+      "slot": "beyond",
+      "facet": "sem",
+      "filler": "@TRADE-WIND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beyond",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "beyond",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "backward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "clockwise"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "counterclockwise"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "downward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "forward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "inward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "northwestward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "outward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "sideward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "southwestward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "upward"
+    }
+  ],
+  "private": {}
+}

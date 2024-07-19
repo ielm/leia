@@ -1,0 +1,42 @@
+{
+  "name": "@MILITARY-ORGANIZATION",
+  "isa": [
+    "@GOVERNMENTAL-ORGANIZATION"
+  ],
+  "def": "an organization that consists usually of a government*s armed forces",
+  "local": [
+    {
+      "slot": "customer-of",
+      "facet": "default",
+      "filler": "@TANK-MANUFACTURING-CORPORATION"
+    },
+    {
+      "slot": "customer-of",
+      "facet": "default",
+      "filler": "@ARMAMENT-MANUFACTURING-CORPORATION"
+    },
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@WEAPON"
+    },
+    {
+      "slot": "has-member",
+      "facet": "sem",
+      "filler": "@MILITARY-OFFICER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "has-member",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

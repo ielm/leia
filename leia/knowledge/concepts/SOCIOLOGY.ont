@@ -1,0 +1,22 @@
+{
+  "name": "@SOCIOLOGY",
+  "isa": [
+    "@SOCIAL-SCIENCE"
+  ],
+  "def": "the science of social relations, organizations, and change",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SOCIOLOGIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-SCIENTIST"
+    }
+  ],
+  "private": {}
+}

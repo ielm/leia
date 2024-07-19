@@ -1,0 +1,11 @@
+{
+  "name": "$LUMINANCE",
+  "def": "Measurement of emitted light; degree of brightness. Domain \nincludes DEVICE meaning light-emitting device. So, this is a composite attribute... for\ndevices and general physical objects; have a problem because physical-object is an ancestor of device...\nRange is relative because we don't know what unit to use ",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

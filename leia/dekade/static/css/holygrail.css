@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    --fixed-header-height: 20px;
+    --fixed-nav-height: 20px;
+    --fixed-footer-height: 20px;
+    --fixed-body-padding: 5px;
+    --fixed-grid-gap: 1px;
+    --ribbon-color-tier-1: #3b1a16;
+    --ribbon-color-tier-2: #9f8575;
+    --ribbon-color-tier-3: #e1cbc2;
+    --results-color-tier-1: #ccc;
+}
+
+body {
+    background: #e4e4e4;
+    padding: var(--fixed-body-padding);
+    height: 100vh;
+    margin: 0;
+}
+
+.page-wrap {
+    background: white;
+    height: calc(100vh - (2 * var(--fixed-body-padding)));
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.33);
+    display: grid;
+    grid-template-columns: 250px minmax(10px, 3fr);
+    grid-template-rows: min-content min-content 1fr min-content;
+    gap: var(--fixed-grid-gap);
+}
+
+.page-header {
+    grid-column: 1/-1;
+    background: var(--ribbon-color-tier-1);
+    height: calc(var(--fixed-header-height));
+}
+
+.page-sidenav {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: var(--ribbon-color-tier-2);
+    height: calc(var(--fixed-nav-height));
+}
+
+.page-sidebar {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background: var(--ribbon-color-tier-3);
+    height: calc(
+        100vh
+        - (2 * var(--fixed-body-padding))
+        - (3 * var(--fixed-grid-gap))
+        - var(--fixed-header-height)
+        - var(--fixed-nav-height)
+        - var(--fixed-footer-height)
+    );
+}
+
+.page-nav {
+    grid-column: 2/3;
+    background: var(--ribbon-color-tier-2);
+    height: calc(var(--fixed-nav-height));
+}
+
+.page-main {
+    grid-column: 2/3;
+    background: #dbdbdb;
+}
+
+.page-main-content {
+    height: calc(
+        100vh
+        - (2 * var(--fixed-body-padding))
+        - (3 * var(--fixed-grid-gap))
+        - var(--fixed-header-height)
+        - var(--fixed-nav-height)
+        - var(--fixed-footer-height)
+    );
+}
+
+.page-main-content > div.leia-object {
+    height: 100%;
+}
+
+.page-footer {
+    grid-column: 1/-1;
+    background: var(--ribbon-color-tier-1);
+    height: calc(var(--fixed-footer-height));
+}
+
+details p {
+    text-transform: none;
+    text-align: left;
+}

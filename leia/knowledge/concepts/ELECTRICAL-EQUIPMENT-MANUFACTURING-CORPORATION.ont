@@ -1,0 +1,22 @@
+{
+  "name": "@ELECTRICAL-EQUIPMENT-MANUFACTURING-CORPORATION",
+  "isa": [
+    "@EQUIPMENT-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a corporation engaged in the manufacturing of electric machinery and apparatus",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ELECTRICAL-EQUIPMENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    }
+  ],
+  "private": {}
+}

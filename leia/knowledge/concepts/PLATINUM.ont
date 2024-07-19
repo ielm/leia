@@ -1,0 +1,36 @@
+{
+  "name": "@PLATINUM",
+  "isa": [
+    "@PRECIOUS-METAL"
+  ],
+  "def": "a silver-white metallic element occurring worldwide, usually mixed with other metals such as iridium, osmium, or nickel. it is ductile and malleable, does not oxidize in air, and is used in electrical components, jewelry, dentistry, electroplating, and as a catalyst",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        195
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        78
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

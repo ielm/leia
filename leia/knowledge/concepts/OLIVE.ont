@@ -1,0 +1,21 @@
+{
+  "name": "@OLIVE",
+  "isa": [
+    "@TREE-FRUIT"
+  ],
+  "def": "the fruit of the olive tree, used as food and for oil",
+  "local": [],
+  "block": [
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "cylindrical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "egglike"
+    }
+  ],
+  "private": {}
+}

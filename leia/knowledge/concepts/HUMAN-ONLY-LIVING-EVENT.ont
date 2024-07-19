@@ -1,0 +1,37 @@
+{
+  "name": "@HUMAN-ONLY-LIVING-EVENT",
+  "isa": [
+    "@ANIMAL-LIVING-EVENT"
+  ],
+  "def": "living events performed or experienced only by humans",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

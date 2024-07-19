@@ -1,0 +1,11 @@
+{
+  "name": "$CIRCUMFERENCE",
+  "def": "the enclosing boundary of a curved geometric figure",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "container": "$SIZE"
+}

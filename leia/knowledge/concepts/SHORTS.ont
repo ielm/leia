@@ -1,0 +1,22 @@
+{
+  "name": "@SHORTS",
+  "isa": [
+    "@CLOTHING-ARTIFACT"
+  ],
+  "def": "short pants that don*t go below the knee",
+  "local": [
+    {
+      "slot": "worn-on",
+      "facet": "sem",
+      "filler": "@LEG"
+    }
+  ],
+  "block": [
+    {
+      "slot": "worn-on",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

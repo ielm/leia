@@ -1,0 +1,9 @@
+{
+  "name": "$LANGUAGE-RELATION",
+  "def": "the relation between languages and and associated entities",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$RELATION"
+}

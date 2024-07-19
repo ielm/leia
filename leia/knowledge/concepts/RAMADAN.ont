@@ -1,0 +1,32 @@
+{
+  "name": "@RAMADAN",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "A fast carried out during daylight through the ninth month of the Islamic calendar",
+  "local": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@ISLAM"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@PRAY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "private": {}
+}

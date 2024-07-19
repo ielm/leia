@@ -1,0 +1,9 @@
+{
+  "name": "$SPATIAL-ORIENTATION",
+  "def": "indicates the spatial orientation of a physical object (current range includes horizontal and vertical; more fillers for range may be added if needed); used to describe, for example, that a clock has vertical spatial orientation as the norm, but if it falls down it will have horizontal orientation; circumvents the need to *extend* the usage animal events such as standing and lying.",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-OBJECT-ATTRIBUTE"
+}

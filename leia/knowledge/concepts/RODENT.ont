@@ -1,0 +1,16 @@
+{
+  "name": "@RODENT",
+  "isa": [
+    "@MAMMAL"
+  ],
+  "def": "Any of various mammals such as a mouse, rat, squirrel, or beaver, characterized by large incisors adapted for gnawing or nibbling.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PAW"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

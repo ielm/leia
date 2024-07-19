@@ -1,0 +1,22 @@
+{
+  "name": "@GUT",
+  "isa": [
+    "@SUBDIVISION-OF-GASTROINTESTINAL-SYSTEM"
+  ],
+  "def": "nd",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FOREGUT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

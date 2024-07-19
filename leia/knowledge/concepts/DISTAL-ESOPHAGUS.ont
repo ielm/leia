@@ -1,0 +1,32 @@
+{
+  "name": "@DISTAL-ESOPHAGUS",
+  "isa": [
+    "@ORGAN-REGION-WITH-FIXED-FIAT-BOUNDARY"
+  ],
+  "def": "The distal three segments of the esophagus. It exists as a concept because certain diseases -- like reflux -- affect these segments as a group, typically.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@T8-SEGMENT-OF-ESOPHAGUS"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@T9-SEGMENT-OF-ESOPHAGUS"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@T10-SEGMENT-OF-ESOPHAGUS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

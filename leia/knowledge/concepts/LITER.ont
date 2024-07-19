@@ -1,0 +1,19 @@
+{
+  "name": "@LITER",
+  "isa": [
+    "@VOLUME-UNIT"
+  ],
+  "def": "not an SI unit, but is accepted in use with other SI units, a liter is a basic measure of liquid volume of capacity of one cubic decimeter",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.001
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

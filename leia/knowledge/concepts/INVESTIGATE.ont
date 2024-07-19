@@ -1,0 +1,52 @@
+{
+  "name": "@INVESTIGATE",
+  "isa": [
+    "@SEARCH"
+  ],
+  "def": "to search and inquire (into), often in a systematic fashion",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@DETECTIVE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ABSTRACT-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ORGANIZATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@MILITARY-ORGANIZATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@POLICE-DEPARTMENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@LAMP"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@FOR-PROFIT-ORGANIZATION",
+  "isa": [
+    "@ORGANIZATION"
+  ],
+  "def": "an organization that makes a profit out of its business",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ASSET"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SHARE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

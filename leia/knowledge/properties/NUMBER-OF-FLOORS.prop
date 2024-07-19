@@ -1,0 +1,9 @@
+{
+  "name": "$NUMBER-OF-FLOORS",
+  "def": "applies to buildings.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

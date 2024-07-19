@@ -1,0 +1,21 @@
+{
+  "name": "@SAWMILL",
+  "isa": [
+    "@FACTORY"
+  ],
+  "def": "A plant where timber is sawed into boards",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@LUMBER"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SAW"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

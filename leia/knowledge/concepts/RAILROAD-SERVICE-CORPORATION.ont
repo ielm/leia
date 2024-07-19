@@ -1,0 +1,16 @@
+{
+  "name": "@RAILROAD-SERVICE-CORPORATION",
+  "isa": [
+    "@TRANSPORTATION-CORPORATION"
+  ],
+  "def": "a corporation that provides transportation service by train",
+  "local": [
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@TRAIN"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

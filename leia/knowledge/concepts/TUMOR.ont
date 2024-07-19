@@ -1,0 +1,36 @@
+{
+  "name": "@TUMOR",
+  "isa": [
+    "@ANIMAL-TISSUE"
+  ],
+  "def": "an abnormal growth of new tissue, independent of its surrounding structures",
+  "local": [
+    {
+      "slot": "tumor-type",
+      "facet": "sem",
+      "filler": "eccentric"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    },
+    {
+      "slot": "tumor-type",
+      "facet": "sem",
+      "filler": "benign"
+    },
+    {
+      "slot": "tumor-type",
+      "facet": "sem",
+      "filler": "concentric"
+    },
+    {
+      "slot": "tumor-type",
+      "facet": "sem",
+      "filler": "malignant"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,48 @@
+{
+  "name": "@SPOUSE",
+  "isa": [
+    "@FAMILY-ROLE"
+  ],
+  "def": "one*s husband or wife",
+  "local": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "><",
+        130
+      ]
+    },
+    {
+      "slot": "has-spouse",
+      "facet": "sem",
+      "filler": "@SPOUSE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "><",
+        130
+      ]
+    },
+    {
+      "slot": "marital-status",
+      "facet": "sem",
+      "filler": "divorced"
+    },
+    {
+      "slot": "marital-status",
+      "facet": "sem",
+      "filler": "single"
+    },
+    {
+      "slot": "marital-status",
+      "facet": "sem",
+      "filler": "widowed"
+    }
+  ],
+  "private": {}
+}

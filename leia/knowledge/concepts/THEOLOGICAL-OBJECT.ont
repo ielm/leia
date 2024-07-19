@@ -1,0 +1,22 @@
+{
+  "name": "@THEOLOGICAL-OBJECT",
+  "isa": [
+    "@ABSTRACT-OBJECT"
+  ],
+  "def": "abstract objects related to religious doctrines and matters of divinity",
+  "local": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@THEOLOGY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    }
+  ],
+  "private": {}
+}

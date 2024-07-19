@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-COACH",
+  "def": "the relation between an athlete and his/her coach",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$COACH-OF",
+  "measured-in": [],
+  "container": "$SPORTS-RELATION"
+}

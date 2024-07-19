@@ -1,0 +1,36 @@
+{
+  "name": "@NOBELIUM",
+  "isa": [
+    "@ACTINIDE"
+  ],
+  "def": "a radioactive transuranic element in the actinide series, artificially produced in trace amounts",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        254
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        102
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

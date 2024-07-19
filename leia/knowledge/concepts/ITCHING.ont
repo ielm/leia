@@ -1,0 +1,42 @@
+{
+  "name": "@ITCHING",
+  "isa": [
+    "@DISCOMFORT"
+  ],
+  "def": "to have an irritating skin sensation",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@FUNGAL-INFECTION"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@CUTANEOUS-ANTHRAX"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ULCER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SKIN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@DISEASE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

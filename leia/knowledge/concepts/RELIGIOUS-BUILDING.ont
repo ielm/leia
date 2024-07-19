@@ -1,0 +1,21 @@
+{
+  "name": "@RELIGIOUS-BUILDING",
+  "isa": [
+    "@INSTITUTIONAL-BUILDING"
+  ],
+  "def": "a building used for public worship",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@RELIGIOUS-ACTIVITY"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@RELIGIOUS-ROLE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

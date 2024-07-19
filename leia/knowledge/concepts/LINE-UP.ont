@@ -1,0 +1,27 @@
+{
+  "name": "@LINE-UP",
+  "isa": [
+    "@ARRANGE"
+  ],
+  "def": "to arrange persons or things in a line or queue",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COMPUTER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

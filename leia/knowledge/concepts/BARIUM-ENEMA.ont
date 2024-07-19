@@ -1,0 +1,47 @@
+{
+  "name": "@BARIUM-ENEMA",
+  "isa": [
+    "@RADIOGRAPHY-EVENT"
+  ],
+  "def": "A barium enema is given in order to perform an X-ray examination of the large intestines. Pictures are taken after rectal instillation of barium.",
+  "local": [
+    {
+      "slot": "creates-image-of",
+      "facet": "sem",
+      "filler": "@COLON"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@RECTUM"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@BARIUM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COLON"
+    }
+  ],
+  "block": [
+    {
+      "slot": "creates-image-of",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@LABORATORY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

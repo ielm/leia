@@ -1,0 +1,22 @@
+{
+  "name": "@COMMERCIAL-PRINTING-CORPORATION",
+  "isa": [
+    "@ARTIFACT-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a corporation involved in producing printed media but not focusing on publishing per se",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@PRINTED-MEDIA"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,12 @@
+{
+  "name": "$ABDOMINAL-PRESSURE",
+  "def": "in the medical domain, pressure in the abdomen",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@TORR",
+    "@PRESSURE-UNIT"
+  ],
+  "container": "$PRESSURE"
+}

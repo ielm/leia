@@ -1,0 +1,36 @@
+{
+  "name": "@BASEMENT",
+  "isa": [
+    "@INTERIOR-BUILDING-PART"
+  ],
+  "def": "the story below the main floor; cellar",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@WINDOW"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@DOOR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@WALL"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@FLOOR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@CEILING"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

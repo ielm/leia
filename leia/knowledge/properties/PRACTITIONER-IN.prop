@@ -1,0 +1,9 @@
+{
+  "name": "$PRACTITIONER-IN",
+  "def": "Links a human and his field-of-study.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$HAS-PRACTITIONER",
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

@@ -1,0 +1,93 @@
+{
+  "name": "@SIEGE",
+  "isa": [
+    "@OPPOSITION-EVENT",
+    "@MILITARY-ACTIVITY"
+  ],
+  "def": "The surrounding and blockading of a city, town, or fortress by an army attempting to capture it.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BUILDING"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "theme",
+      "facet": "relaxable-to",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WEAPON"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBSTRUCT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

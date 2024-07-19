@@ -1,0 +1,107 @@
+{
+  "name": "@SUFFOCATE",
+  "isa": [
+    "@KILL"
+  ],
+  "def": "to kill by cutting off the supply of air for breathing",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@STRING"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TOWEL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TABLE-LINEN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COLLAR"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CHEMICAL-COMPOUND"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@DUST"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@GAS"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HERBICIDE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PESTICIDE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "relaxable-to",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ROPE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@BED-LINEN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CABLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CHAIN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WIRE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

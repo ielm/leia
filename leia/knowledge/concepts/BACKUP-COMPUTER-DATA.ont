@@ -1,0 +1,21 @@
+{
+  "name": "@BACKUP-COMPUTER-DATA",
+  "isa": [
+    "@COPY-COMPUTER-DATA"
+  ],
+  "def": "to copy data from one storage device to another to prevent complete loss when the original is lost or corrupted",
+  "local": [
+    {
+      "slot": "destination",
+      "facet": "sem",
+      "filler": "@COMPUTER-DISK"
+    },
+    {
+      "slot": "destination",
+      "facet": "sem",
+      "filler": "@COMPUTER-MEDIA-ARTIFACT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-WEB-ADDRESS",
+  "def": "the relation between the web-address where an organization is located on the Internet, and that organization itself",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": "$WEB-ADDRESS-OF",
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

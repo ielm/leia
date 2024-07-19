@@ -1,0 +1,87 @@
+{
+  "name": "@LAST-RITES",
+  "isa": [
+    "@CEREMONY"
+  ],
+  "def": "rites performed for a dying person or in connection with death or burial",
+  "local": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@CHRISTIANITY"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN-9"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@RELIGIOUS-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {
+    "@HUMAN-9": {
+      "name": "@HUMAN-9",
+      "isa": [
+        "@HUMAN"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "health-attribute",
+          "facet": "sem",
+          "filler": [
+            "=>=<",
+            0.1
+          ]
+        }
+      ],
+      "block": [],
+      "private": {}
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "@CAKE",
+  "isa": [
+    "@BAKED-FOOD",
+    "@DESSERT"
+  ],
+  "def": "a mixture of flour, sugar, eggs, etc. baked in a loaf and covered with icing",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@EGG"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@FOODSTUFF"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

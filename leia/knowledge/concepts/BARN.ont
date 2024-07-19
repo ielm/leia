@@ -1,0 +1,37 @@
+{
+  "name": "@BARN",
+  "isa": [
+    "@STORAGE-BUILDING"
+  ],
+  "def": "a farm building used for sheltering harvested crops, livestock, machines, etc.",
+  "local": [
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@LIVESTOCK"
+    },
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@CROP"
+    },
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@FARM-EQUIPMENT"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@FARMER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

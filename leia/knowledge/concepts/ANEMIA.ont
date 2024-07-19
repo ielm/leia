@@ -1,0 +1,47 @@
+{
+  "name": "@ANEMIA",
+  "isa": [
+    "@SYMPTOM"
+  ],
+  "def": "A pathological deficiency in the oxygen-carrying component of the blood, measured in unit volume concentrations of hemoglobin, red blood cell volume, or red blood cell number.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HEMOGLOBIN"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@BLOOD"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@GENE"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@CANCER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@DISEASE"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,67 @@
+{
+  "name": "@COUNTERTERRORISM",
+  "isa": [
+    "@POLITICAL-EVENT"
+  ],
+  "def": "the practices, tactics, techniques, and strategies that governments, militaries, police departments and other groups adopt in order to fight terrorism",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@GOVERNMENTAL-ROLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@POLICE-DEPARTMENT"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@MILITARY-ORGANIZATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TERRORIST-ORGANIZATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TERRORIST-ACTIVITY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TERRORIST"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@LARGE-GEOPOLITICAL-ENTITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

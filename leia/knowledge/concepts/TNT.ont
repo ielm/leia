@@ -1,0 +1,22 @@
+{
+  "name": "@TNT",
+  "isa": [
+    "@EXPLOSIVE-DEVICE"
+  ],
+  "def": "trinitrotoluene is a yellow crystalline compound, used mainly as a high explosive",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ELEMENT-MATERIAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

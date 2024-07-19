@@ -1,0 +1,16 @@
+{
+  "name": "@SNOWFIELD",
+  "isa": [
+    "@GEOLOGICAL-ENTITY"
+  ],
+  "def": "an area of permanent snow and ice forming the accumulation area of a glacier",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "default",
+      "filler": "@SNOW"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

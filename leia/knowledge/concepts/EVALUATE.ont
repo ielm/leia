@@ -1,0 +1,22 @@
+{
+  "name": "@EVALUATE",
+  "isa": [
+    "@ANALYTIC-COGNITIVE-EVENT"
+  ],
+  "def": "to determine the value or worth of something",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@TEST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,28 @@
+{
+  "name": "@CLASSIFICATION",
+  "isa": [
+    "@ABSTRACT-OBJECT"
+  ],
+  "def": "The grouping of things by classes or categories.",
+  "local": [
+    {
+      "slot": "abstractness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "abstractness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

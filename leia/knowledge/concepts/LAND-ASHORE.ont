@@ -1,0 +1,47 @@
+{
+  "name": "@LAND-ASHORE",
+  "isa": [
+    "@MOTION-EVENT"
+  ],
+  "def": "of boats, to come to shore",
+  "local": [
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@WATER-VEHICLE"
+    },
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@EARTH-SURFACE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "destination",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "source",
+      "facet": "relaxable-to",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

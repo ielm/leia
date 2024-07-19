@@ -1,0 +1,42 @@
+{
+  "name": "@PRESS-CONFERENCE",
+  "isa": [
+    "@MEETING"
+  ],
+  "def": "a group interview granted to media personnel as by a celebrity",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@REPORTER"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@CELEBRITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

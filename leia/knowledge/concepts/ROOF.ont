@@ -1,0 +1,22 @@
+{
+  "name": "@ROOF",
+  "isa": [
+    "@BUILDING-ARTIFACT-PART"
+  ],
+  "def": "outer covering of building top",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SKYLIGHT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

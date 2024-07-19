@@ -1,0 +1,32 @@
+{
+  "name": "@CLAY",
+  "isa": [
+    "@MINERAL"
+  ],
+  "def": "a natural, earthy, fine-grained material consisting primarily of a particular group of crystalline minerals",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ALUMINUM"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WATER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@EARTH-MATERIAL"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "translucent"
+    }
+  ],
+  "private": {}
+}

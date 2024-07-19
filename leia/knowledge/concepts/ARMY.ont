@@ -1,0 +1,21 @@
+{
+  "name": "@ARMY",
+  "isa": [
+    "@MILITARY-BRANCH"
+  ],
+  "def": "a large, organized body of soldiers for waging war, especially on land",
+  "local": [
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@LAND-VEHICLE"
+    },
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@TANK"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

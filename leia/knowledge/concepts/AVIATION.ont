@@ -1,0 +1,32 @@
+{
+  "name": "@AVIATION",
+  "isa": [
+    "@FIELD-OF-STUDY"
+  ],
+  "def": "the science of flying airplanes (aircraft design, construction, etc.)",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@PILOT"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@FLY-AIR-VEHICLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@WORK-ACTIVITY"
+    }
+  ],
+  "private": {}
+}

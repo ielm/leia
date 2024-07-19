@@ -1,0 +1,77 @@
+{
+  "name": "@ROTATE",
+  "isa": [
+    "@CHANGE-POSITION"
+  ],
+  "def": "to turn around an axis",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "backward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "downward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "forward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "inward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "northeastward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "northwestward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "outward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "sideward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "southeastward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "southwestward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "upward"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

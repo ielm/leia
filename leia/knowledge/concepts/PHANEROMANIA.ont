@@ -1,0 +1,32 @@
+{
+  "name": "@PHANEROMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "uncontrollable impulse to pick at a spot or growth on one*s body",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PULL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TUMOR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

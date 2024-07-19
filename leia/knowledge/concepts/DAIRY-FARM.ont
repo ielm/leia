@@ -1,0 +1,43 @@
+{
+  "name": "@DAIRY-FARM",
+  "isa": [
+    "@ANIMAL-FARM",
+    "@FOOD-PROCESSING-CORPORATION"
+  ],
+  "def": "a corporation that produces milk and milk products and sells them wholesale or retail",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@DAIRY-PRODUCT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ANIMAL-DERIVED-FOODSTUFF"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ANIMAL-DERIVED-SUBSTANCE"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ANIMAL-PRODUCT"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@INGESTIBLE"
+    }
+  ],
+  "private": {}
+}

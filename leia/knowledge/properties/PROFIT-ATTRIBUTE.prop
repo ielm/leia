@@ -1,0 +1,9 @@
+{
+  "name": "$PROFIT-ATTRIBUTE",
+  "def": "financial gain - the difference between the amount earned and the amount spent in expenses etc.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

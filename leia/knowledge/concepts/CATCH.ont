@@ -1,0 +1,87 @@
+{
+  "name": "@CATCH",
+  "isa": [
+    "@APPLY-FORCE"
+  ],
+  "def": "To grab, so as to stop the motion of, as in to catch a ball.",
+  "local": [
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@MOTION-EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    },
+    {
+      "slot": "instrument",
+      "facet": "relaxable-to",
+      "filler": "@FOOT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "relaxable-to",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@ANIMATE-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@CELESTIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@GEOGRAPHICAL-ENTITY"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@NATURAL-RESOURCE"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@UNIVERSE"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@WAVE"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@RELATIVE-PART-OF-PHYSICAL-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@LEGAL-COUNSEL",
+  "isa": [
+    "@INFORMATION-MANAGING-ACTIVITY"
+  ],
+  "def": "legal support to assist in the conducting of business-activities",
+  "local": [],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@BUSINESS-ROLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@COMPUTER-USER"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@COMPUTING-WORK-ROLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@RESEARCHER"
+    }
+  ],
+  "private": {}
+}

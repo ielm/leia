@@ -1,0 +1,11 @@
+{
+  "name": "@MONEY-MARKET-ACCOUNT",
+  "isa": [
+    "@BANK-ACCOUNT",
+    "@INVESTMENT"
+  ],
+  "def": "a bank account in the short-term investment market, usually requiring a minimum deposit",
+  "local": [],
+  "block": [],
+  "private": {}
+}

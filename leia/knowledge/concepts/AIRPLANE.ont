@@ -1,0 +1,22 @@
+{
+  "name": "@AIRPLANE",
+  "isa": [
+    "@AIR-VEHICLE",
+    "@WHEELED-ENGINE-VEHICLE"
+  ],
+  "def": "a fixed wing aircraft, heavier than air, driven by a propeller or a jet",
+  "local": [],
+  "block": [
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    }
+  ],
+  "private": {}
+}

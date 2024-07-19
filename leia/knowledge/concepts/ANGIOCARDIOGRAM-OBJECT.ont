@@ -1,0 +1,27 @@
+{
+  "name": "@ANGIOCARDIOGRAM-OBJECT",
+  "isa": [
+    "@X-RAY-OBJECT"
+  ],
+  "def": "a series of x-rays showing the heart and blood vessels after injection of a radiopaque substance",
+  "local": [
+    {
+      "slot": "depicts",
+      "facet": "sem",
+      "filler": "@HEART"
+    },
+    {
+      "slot": "depicts",
+      "facet": "sem",
+      "filler": "@VEIN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "depicts",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

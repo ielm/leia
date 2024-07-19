@@ -1,0 +1,22 @@
+{
+  "name": "@COTTONSEED-OIL",
+  "isa": [
+    "@COOKING-OIL"
+  ],
+  "def": "cooking oil made of cotton seeds",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@COTTON"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

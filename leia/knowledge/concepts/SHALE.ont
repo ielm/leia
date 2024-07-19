@@ -1,0 +1,22 @@
+{
+  "name": "@SHALE",
+  "isa": [
+    "@ROCK"
+  ],
+  "def": "rock formed of hard clay; it splits easily into thin layers",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CLAY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@EARTH-MATERIAL"
+    }
+  ],
+  "private": {}
+}

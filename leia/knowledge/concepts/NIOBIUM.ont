@@ -1,0 +1,45 @@
+{
+  "name": "@NIOBIUM",
+  "isa": [
+    "@SOFT-METALLIC-ELEMENT",
+    "@DUCTILE-METALLIC-ELEMENT"
+  ],
+  "def": "a silvery, soft, ductile metallic element that occurs chiefly in columbite-tantalite and is used in steel alloys, arc welding, and superconductivity research",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        92
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        41
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

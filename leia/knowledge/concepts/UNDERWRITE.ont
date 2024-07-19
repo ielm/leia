@@ -1,0 +1,62 @@
+{
+  "name": "@UNDERWRITE",
+  "isa": [
+    "@CORPORATE-EVENT"
+  ],
+  "def": "to agree to market an issue of stocks, guaranteeing to buy the remaining unsold portion",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@UNDERWRITER"
+    },
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@ORGANIZATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIABILITY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ASSET"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@CORPORATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@DIRECTOR-CORPORATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@EXECUTIVE"
+    },
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

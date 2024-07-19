@@ -1,0 +1,16 @@
+{
+  "name": "@CORN",
+  "isa": [
+    "@GRAIN-FOODSTUFF"
+  ],
+  "def": "the seeds or kernels of a tall, widely cultivated cereal plant",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "yellow"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

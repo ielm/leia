@@ -1,0 +1,16 @@
+{
+  "name": "@GUY-ROPE",
+  "isa": [
+    "@DEPENDENT-DEVICE"
+  ],
+  "def": "a rope, chain, etc. used to steady or guide something",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ROPE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

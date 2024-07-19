@@ -1,0 +1,24 @@
+{
+  "name": "@ANTI-INFLAMMATORY-DRUG",
+  "isa": [
+    "@DRUG"
+  ],
+  "def": "Drugs used to reduce inflammation - the redness, heat, swelling, and increased blood flow found in infections and in many chronic noninfective diseases such as rheumatoid arthritis and gout. (fda.gov)",
+  "local": [],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,42 @@
+{
+  "name": "@MOVIE-THEATER",
+  "isa": [
+    "@ENTERTAINMENT-BUILDING"
+  ],
+  "def": "a place where movies are shown",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@SHOW-FILM"
+    },
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@FILM-MEDIA"
+    },
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@FILM-SCREEN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@ENTERTAINMENT-ROLE"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@ENTERTAIN-EVENT"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@SPORTS-COMPETITION"
+    }
+  ],
+  "private": {}
+}

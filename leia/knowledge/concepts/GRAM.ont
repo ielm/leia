@@ -1,0 +1,19 @@
+{
+  "name": "@GRAM",
+  "isa": [
+    "@MASS-WEIGHT-UNIT"
+  ],
+  "def": "the basic unit of mass in the metric system, equivalent to one-twenty-eighth of an ounce; .001",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.001
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

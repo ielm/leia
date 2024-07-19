@@ -1,0 +1,22 @@
+{
+  "name": "@SWEATER",
+  "isa": [
+    "@CLOTHING-ARTIFACT"
+  ],
+  "def": "A jacket or pullover made especially of knit, crocheted, or woven wool, cotton, or synthetic yarn.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@YARN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SEWING-MATERIAL"
+    }
+  ],
+  "private": {}
+}

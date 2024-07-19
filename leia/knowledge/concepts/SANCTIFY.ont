@@ -1,0 +1,16 @@
+{
+  "name": "@SANCTIFY",
+  "isa": [
+    "@RELIGIOUS-ACTIVITY"
+  ],
+  "def": "to set apart as holy; to consecrate",
+  "local": [],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@LINEN",
+  "isa": [
+    "@NATURAL-FABRIC"
+  ],
+  "def": "thread or cloth made of flax",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@FLAX"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT-DERIVED-SUBSTANCE"
+    }
+  ],
+  "private": {}
+}

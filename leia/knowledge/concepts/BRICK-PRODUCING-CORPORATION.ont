@@ -1,0 +1,22 @@
+{
+  "name": "@BRICK-PRODUCING-CORPORATION",
+  "isa": [
+    "@CONSTRUCTION-MATERIAL-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a corporation that manufactures brick",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@BRICK"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

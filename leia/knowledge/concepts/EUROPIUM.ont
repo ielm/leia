@@ -1,0 +1,36 @@
+{
+  "name": "@EUROPIUM",
+  "isa": [
+    "@RARE-EARTH-ELEMENT"
+  ],
+  "def": "a silvery-white, soft, rare-earth element occurring in monazite and bastnaesite and used as a laser dopant and to absorb neutrons in research",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        63
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        151
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        72
+      ]
+    }
+  ],
+  "private": {}
+}

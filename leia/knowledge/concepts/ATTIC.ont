@@ -1,0 +1,36 @@
+{
+  "name": "@ATTIC",
+  "isa": [
+    "@INTERIOR-BUILDING-PART"
+  ],
+  "def": "the room or space below the roof; garret",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@CEILING"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@FLOOR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@WALL"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@DOOR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@WINDOW"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@GOVERNMENTAL-PARLIAMENT",
+  "isa": [
+    "@LEGISLATIVE-BRANCH"
+  ],
+  "def": "an official government council",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SENATE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CONGRESS"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

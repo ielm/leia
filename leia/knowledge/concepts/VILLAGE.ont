@@ -1,0 +1,52 @@
+{
+  "name": "@VILLAGE",
+  "isa": [
+    "@SMALL-GEOPOLITICAL-ENTITY"
+  ],
+  "def": "a small group of dwellings in a rural area",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@COUNTY"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PUBLIC-SQUARE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "in-city",
+      "facet": "sem",
+      "filler": "@CITY"
+    },
+    {
+      "slot": "in-town",
+      "facet": "sem",
+      "filler": "@TOWN"
+    },
+    {
+      "slot": "in-village",
+      "facet": "sem",
+      "filler": "@VILLAGE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

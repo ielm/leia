@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-OFFSPRING",
+  "def": "the relation between a parent and his or her child",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$HAS-PARENT",
+  "measured-in": [],
+  "container": "$FAMILY-RELATION"
+}

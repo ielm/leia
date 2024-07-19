@@ -1,0 +1,22 @@
+{
+  "name": "@CARPET-MANUFACTURING-CORPORATION",
+  "isa": [
+    "@TEXTILE-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a corporation that produces carpet products",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CARPET"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@SORE-THROAT",
+  "isa": [
+    "@DISCOMFORT"
+  ],
+  "def": "pain in the throat, typically due to disease",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@THROAT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

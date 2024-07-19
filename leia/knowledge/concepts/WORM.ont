@@ -1,0 +1,19 @@
+{
+  "name": "@WORM",
+  "isa": [
+    "@INVERTEBRATE"
+  ],
+  "def": "Any of various invertebrates having a long, flexible, rounded or flattened body, often without obvious appendages.",
+  "local": [],
+  "block": [
+    {
+      "slot": "diligence",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

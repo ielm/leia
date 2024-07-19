@@ -1,0 +1,42 @@
+{
+  "name": "@ASH-WEDNESDAY",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "A Christian holiday celebrated on the 7th Wednesday before Easter, when many Christians get a mark of ashes on the forehead as a symbol of penitence and mortality",
+  "local": [
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@WEDNESDAY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@CHRISTIANITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@CELEBRATE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$LITERAL-ATTRIBUTE",
+  "def": "attributes whose ranges are filled with literals",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$ATTRIBUTE"
+}

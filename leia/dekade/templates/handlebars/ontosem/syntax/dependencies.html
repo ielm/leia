@@ -1,0 +1,19 @@
+<div class="dependencies-container">
+    <table class="dependencies">
+        {{#each this.content}}
+        <tr>
+            <td>{{this.type}}</td>
+            <td>
+                {{#with (lookup ../words this.gov)}}
+                    {{this.token}}-{{this.index}}
+                {{/with}}
+            </td>
+            <td>
+                {{#with (lookup ../words this.dep)}}
+                    {{this.token}}-{{this.index}}
+                {{/with}}
+            </td>
+        </tr>
+        {{/each}}
+    </table>
+</div>

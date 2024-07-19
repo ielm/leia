@@ -1,0 +1,32 @@
+{
+  "name": "@COMMUNICATION",
+  "isa": [
+    "@FIELD-OF-STUDY"
+  ],
+  "def": "The area of knowledge having to do with language, technology and other forms of communication.",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@REPORTER"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@COMMUNICATION-SERVE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@WORK-ACTIVITY"
+    }
+  ],
+  "private": {}
+}

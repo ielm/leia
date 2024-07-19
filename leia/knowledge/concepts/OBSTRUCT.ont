@@ -1,0 +1,161 @@
+{
+  "name": "@OBSTRUCT",
+  "isa": [
+    "@APPLY-FORCE",
+    "@MOTION-EVENT",
+    "@CONTROL-EVENT-SOCIAL"
+  ],
+  "def": "to block or stop up physically (as a passage)",
+  "local": [
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@MOTION-EVENT-1"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@MOTION-EVENT-2"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ROAD-SYSTEM-ARTIFACT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMATE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "destination",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "effect",
+      "facet": "default",
+      "filler": "@CHANGE-LOCATION"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "source",
+      "facet": "relaxable-to",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {
+    "@MOTION-EVENT-2": {
+      "name": "@MOTION-EVENT-2",
+      "isa": [
+        "@MOTION-EVENT"
+      ],
+      "def": "",
+      "local": [],
+      "block": [],
+      "private": {}
+    },
+    "@MOTION-EVENT-1": {
+      "name": "@MOTION-EVENT-1",
+      "isa": [
+        "@MOTION-EVENT"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "theme",
+          "facet": "sem",
+          "filler": "obstruct.theme"
+        }
+      ],
+      "block": [],
+      "private": {}
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "name": "@BRONZE",
+  "isa": [
+    "@ALLOY"
+  ],
+  "def": "an alloy of copper and tin with or without small proportions of other elements such as zinc and phosphorus certain copper base alloys containing more manganese iron lead or zinc than tin are also regarded as bronzes although tin is generally the principal addition used in most bronzes which have great strength wear resistance and corrosion resistance in a saltwater environment",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@IRON"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@COPPER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@LEAD"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MANGANESE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PHOSPHORUS"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@TIN"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ZINC"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "yellow"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METALLIC-LIQUID-ELEMENT"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METALLIC-SOLID-ELEMENT"
+    }
+  ],
+  "private": {}
+}

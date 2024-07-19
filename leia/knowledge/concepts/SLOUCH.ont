@@ -1,0 +1,27 @@
+{
+  "name": "@SLOUCH",
+  "isa": [
+    "@POSITION-BODY"
+  ],
+  "def": "to have an unnaturally relaxed posture",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@PRIMATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "not",
+      "filler": "@FISH"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@METHANE",
+  "isa": [
+    "@GASEOUS-CHEMICAL-COMPOUND"
+  ],
+  "def": "a colorless, odorless, flammable gas formed by the decomposition of vegetable matter, as in marshes",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "colorless"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

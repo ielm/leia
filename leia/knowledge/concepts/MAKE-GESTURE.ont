@@ -1,0 +1,41 @@
+{
+  "name": "@MAKE-GESTURE",
+  "isa": [
+    "@NON-VERBAL-COMMUNICATIVE-ACT"
+  ],
+  "def": "any act or movement of a part of the body consciously made to express or emphasize ideas, emotions, etc.",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TAIL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TONGUE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ARM"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EYE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SHOULDER"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

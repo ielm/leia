@@ -1,0 +1,9 @@
+{
+  "name": "$DEFICIT-ATTRIBUTE",
+  "def": "The difference between actual or planned expenditure and available resources",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@RADICCHIO",
+  "isa": [
+    "@LEAF-VEGETABLE"
+  ],
+  "def": "A variety of chicory with globose heads of red leaves",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "white"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "red"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@HOST",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "one who entertains guests or furnishes facilities for a function or an event",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PRIVATE-HOME"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

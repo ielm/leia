@@ -1,0 +1,9 @@
+{
+  "name": "$SEXUAL-ORIENTATION",
+  "def": "indicates a person*s sexual orientation: heterosexual, homosexual, bisexual or asexual",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-OBJECT-ATTRIBUTE"
+}

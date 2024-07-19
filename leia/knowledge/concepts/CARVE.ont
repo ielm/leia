@@ -1,0 +1,27 @@
+{
+  "name": "@CARVE",
+  "isa": [
+    "@CUT"
+  ],
+  "def": "to make or shape as by cutting away material",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@PRIMATE"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OPEN"
+    }
+  ],
+  "private": {}
+}

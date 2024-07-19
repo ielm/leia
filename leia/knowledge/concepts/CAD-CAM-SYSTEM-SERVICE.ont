@@ -1,0 +1,16 @@
+{
+  "name": "@CAD-CAM-SYSTEM-SERVICE",
+  "isa": [
+    "@COMPUTING-SERVE"
+  ],
+  "def": "to provide services related to computer-aided-design and computer-aided-manufacturing techniques",
+  "local": [],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COMPUTER"
+    }
+  ],
+  "private": {}
+}

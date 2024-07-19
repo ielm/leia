@@ -1,0 +1,34 @@
+{
+  "name": "@RIVER",
+  "isa": [
+    "@BODY-OF-WATER"
+  ],
+  "def": "a large natural stream of water emptying into an ocean, lake, or other body of water and usually found along its course by converging tributaries",
+  "local": [],
+  "block": [
+    {
+      "slot": "available",
+      "facet": "sem",
+      "filler": "yes no"
+    },
+    {
+      "slot": "has-name-non-human",
+      "facet": "sem",
+      "filler": "@NAME-NON-HUMAN"
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "private": {}
+}

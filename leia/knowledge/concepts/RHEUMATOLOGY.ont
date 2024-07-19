@@ -1,0 +1,22 @@
+{
+  "name": "@RHEUMATOLOGY",
+  "isa": [
+    "@MEDICINE"
+  ],
+  "def": "The medical field of study that concerns the joints and the connective tissues of the human body",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@PHYSICIAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@MEDICAL-WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@SNOW-ALGAE",
+  "isa": [
+    "@ALGA"
+  ],
+  "def": "a type of alga that grows on snow and ice in very cold locales, such as the Arctic and Himalayas)",
+  "local": [],
+  "block": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "green"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,52 @@
+{
+  "name": "@SNAP",
+  "isa": [
+    "@CLOTHING-ARTIFACT-PART",
+    "@FASTENER"
+  ],
+  "def": "a clasp that operates with a snapping sound",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0.2
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": [
+        ">=<",
+        1
+      ]
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": [
+        ">=<",
+        1
+      ]
+    },
+    {
+      "slot": "is-consumer-good",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

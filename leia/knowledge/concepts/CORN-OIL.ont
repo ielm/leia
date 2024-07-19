@@ -1,0 +1,22 @@
+{
+  "name": "@CORN-OIL",
+  "isa": [
+    "@COOKING-OIL"
+  ],
+  "def": "a cooking oil made of corn",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CORN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

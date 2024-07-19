@@ -1,0 +1,29 @@
+{
+  "name": "@BUSINESS-DOCUMENT",
+  "isa": [
+    "@DOCUMENT"
+  ],
+  "def": "Documents that are relevant in business.",
+  "local": [],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    }
+  ],
+  "private": {}
+}

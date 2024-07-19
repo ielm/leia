@@ -1,0 +1,27 @@
+{
+  "name": "@MOLECULAR-SEQUENCE",
+  "isa": [
+    "@MATERIAL"
+  ],
+  "def": "A broad type for grouping the collected sequences of amino acids, carbohydrates, and nucleotide sequences.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BIOLOGICAL-MACROMOLECULE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,92 @@
+{
+  "name": "@COMMUNICATION-SERVE",
+  "isa": [
+    "@PROFESSIONAL-SERVICE-EVENT"
+  ],
+  "def": "a service-event that involves using communication to disseminate information",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COMMUNICATION-DEVICE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INFORMATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PRINTED-MEDIA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MEDIA-ARTIFACT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ENCRYPT-KEY"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@BROADCASTER"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@CRYPTOGRAPHER"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@MODERATOR"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@PUBLICATION-ROLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@TRANSLATOR"
+    },
+    {
+      "slot": "has-audience",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    },
+    {
+      "slot": "has-audience",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@WORK-ROLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WATER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

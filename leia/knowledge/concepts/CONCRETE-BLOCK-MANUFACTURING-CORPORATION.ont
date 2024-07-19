@@ -1,0 +1,22 @@
+{
+  "name": "@CONCRETE-BLOCK-MANUFACTURING-CORPORATION",
+  "isa": [
+    "@CONSTRUCTION-MATERIAL-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a corporation that manufactures building blocks and their parts",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CONCRETE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

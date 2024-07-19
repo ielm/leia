@@ -1,0 +1,37 @@
+{
+  "name": "@TRANSMIT",
+  "isa": [
+    "@WAVE-ENERGY-EVENT"
+  ],
+  "def": "to send out; to convey to",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ELECTRICITY"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WIRE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

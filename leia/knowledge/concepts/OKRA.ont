@@ -1,0 +1,16 @@
+{
+  "name": "@OKRA",
+  "isa": [
+    "@VEGETABLE-FOODSTUFF"
+  ],
+  "def": "The mucliaginous green pods of a tall tropical Asian plant, used in soups and as a vegetable.",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "green"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

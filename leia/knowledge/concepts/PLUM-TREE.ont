@@ -1,0 +1,22 @@
+{
+  "name": "@PLUM-TREE",
+  "isa": [
+    "@FRUIT-TREE"
+  ],
+  "def": "a tree that produces plums",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@PLUM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@TREE-FRUIT"
+    }
+  ],
+  "private": {}
+}

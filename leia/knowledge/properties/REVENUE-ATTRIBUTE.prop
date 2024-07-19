@@ -1,0 +1,9 @@
+{
+  "name": "$REVENUE-ATTRIBUTE",
+  "def": "the amount of income of a person or organization",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

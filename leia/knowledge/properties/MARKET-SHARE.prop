@@ -1,0 +1,9 @@
+{
+  "name": "$MARKET-SHARE",
+  "def": "the percentage of sales of a product that are produced by a certain company",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

@@ -1,0 +1,47 @@
+{
+  "name": "@ELEVATE",
+  "isa": [
+    "@APPLY-FORCE"
+  ],
+  "def": "to raise or lift (something) up",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EXCAVATOR"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CRANE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FARM-MACHINE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PULLEY"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CONNECTING-DEVICE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CABLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

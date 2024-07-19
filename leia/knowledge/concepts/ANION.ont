@@ -1,0 +1,21 @@
+{
+  "name": "@ANION",
+  "isa": [
+    "@ION"
+  ],
+  "def": "a negatively charged ion, esp. one that migrates to an anode in electrolysis",
+  "local": [],
+  "block": [
+    {
+      "slot": "electric-charge",
+      "facet": "sem",
+      "filler": "neutral"
+    },
+    {
+      "slot": "electric-charge",
+      "facet": "sem",
+      "filler": "positive"
+    }
+  ],
+  "private": {}
+}

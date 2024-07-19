@@ -1,0 +1,16 @@
+{
+  "name": "@IRON",
+  "isa": [
+    "@METALLIC-SOLID-ELEMENT"
+  ],
+  "def": "a metallic chemical element, the most common of all metals",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@IRON-MANUFACTURING-CORPORATION"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

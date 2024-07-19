@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-COMPASS-POINT",
+  "def": "links an entity or place like a city, state, campus, road, bank to the compass point where it is located on the map.",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

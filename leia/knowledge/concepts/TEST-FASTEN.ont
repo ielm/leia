@@ -1,0 +1,27 @@
+{
+  "name": "@TEST-FASTEN",
+  "isa": [
+    "@FASTEN"
+  ],
+  "def": "a test concept for testing facet percolation in the property subtree",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@CAT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@BANDAGE"
+    }
+  ],
+  "private": {}
+}

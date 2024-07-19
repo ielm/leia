@@ -1,0 +1,9 @@
+{
+  "name": "$FAME-ATTRIBUTE",
+  "def": "The level to which some person is publicly known or some thing or event is known about",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-ATTRIBUTE"
+}

@@ -1,0 +1,52 @@
+{
+  "name": "@KICK",
+  "isa": [
+    "@APPLY-FORCE"
+  ],
+  "def": "to use one*s foot to strike something",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HOOF"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PAW"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FOOT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    },
+    {
+      "slot": "agent",
+      "facet": "not",
+      "filler": "@SNAKE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

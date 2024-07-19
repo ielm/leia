@@ -1,0 +1,57 @@
+{
+  "name": "@SUPPORT-FINANCIALLY",
+  "isa": [
+    "@EVERYDAY-FINANCIAL-EVENT"
+  ],
+  "def": "to provide enough money to keep some person provided for or some organization running",
+  "local": [
+    {
+      "slot": "beneficiary",
+      "facet": "default",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@BANK"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@FOUNDATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MONEY"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@UNDERWRITER"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@LENDING-CORPORATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

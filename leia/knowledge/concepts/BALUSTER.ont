@@ -1,0 +1,27 @@
+{
+  "name": "@BALUSTER",
+  "isa": [
+    "@BUILDING-ARTIFACT-PART"
+  ],
+  "def": "any of the small posts of a railing, as on a banister",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

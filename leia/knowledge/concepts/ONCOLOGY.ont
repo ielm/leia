@@ -1,0 +1,22 @@
+{
+  "name": "@ONCOLOGY",
+  "isa": [
+    "@MEDICINE"
+  ],
+  "def": "the branch of medicine dealing with tumors and cancer",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@ONCOLOGIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@MEDICAL-WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

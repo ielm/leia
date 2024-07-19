@@ -1,0 +1,22 @@
+{
+  "name": "@RIBBON",
+  "isa": [
+    "@DECORATIVE-ARTIFACT"
+  ],
+  "def": "a long narrow strip of fabric used for tying or decoration",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@FABRIC"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

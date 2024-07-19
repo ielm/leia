@@ -1,0 +1,27 @@
+{
+  "name": "@SKELETAL-SYSTEM",
+  "isa": [
+    "@SUBDIVISION-OF-SKELETAL-SYSTEM"
+  ],
+  "def": "a usually rigid supportive or protective structure or framework of an organism; especially : the bony or more or less cartilaginous framework supporting the soft tissues and protecting the internal organs of a vertebrate",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@VERTEBRAL-COLUMN"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SKELETON"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

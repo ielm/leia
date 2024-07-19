@@ -1,0 +1,53 @@
+{
+  "name": "@ICE-CREAM",
+  "isa": [
+    "@FROZEN-FOOD",
+    "@DESSERT"
+  ],
+  "def": "A frozen food made of milk products, sweetened, and variously flavored.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@DAIRY-PRODUCT"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SUGAR"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@FRUIT-FOODSTUFF"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CHOCOLATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@FOODSTUFF"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@FOODSTUFF"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@STANDARD",
+  "isa": [
+    "@ABSTRACT-OBJECT"
+  ],
+  "def": "something established for use as a rule or basis of comparison for measuring quantity, quality, etc.",
+  "local": [
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@STANDARDIZE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

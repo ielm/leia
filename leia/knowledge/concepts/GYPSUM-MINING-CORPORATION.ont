@@ -1,0 +1,22 @@
+{
+  "name": "@GYPSUM-MINING-CORPORATION",
+  "isa": [
+    "@NONMETALLIC-ORE-MINING-CORPORATION"
+  ],
+  "def": "a corporation involved in the gypsium mining and preparation of gypsum",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@GYPSUM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

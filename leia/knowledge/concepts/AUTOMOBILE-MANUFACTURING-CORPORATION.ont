@@ -1,0 +1,22 @@
+{
+  "name": "@AUTOMOBILE-MANUFACTURING-CORPORATION",
+  "isa": [
+    "@VEHICLE-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a corporation whose business is manufacturing automobiles",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@AUTOMOBILE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@VEHICLE"
+    }
+  ],
+  "private": {}
+}

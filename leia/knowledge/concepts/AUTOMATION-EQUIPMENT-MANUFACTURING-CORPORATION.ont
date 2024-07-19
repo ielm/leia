@@ -1,0 +1,22 @@
+{
+  "name": "@AUTOMATION-EQUIPMENT-MANUFACTURING-CORPORATION",
+  "isa": [
+    "@EQUIPMENT-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a corporation that manufactures automatic equipments",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@AUTOMATED-TELLER-MACHINE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    }
+  ],
+  "private": {}
+}

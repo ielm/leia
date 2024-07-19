@@ -1,0 +1,19 @@
+{
+  "name": "@GALILEO",
+  "isa": [
+    "@ACCELERATION-UNIT"
+  ],
+  "def": "(Wikipedia) A unit of acceleration used in gravimetry.",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.01
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

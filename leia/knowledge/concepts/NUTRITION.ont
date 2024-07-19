@@ -1,0 +1,22 @@
+{
+  "name": "@NUTRITION",
+  "isa": [
+    "@MEDICINE"
+  ],
+  "def": "the field of study dealing with food and nutrition",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@NUTRITIONIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@MEDICAL-WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

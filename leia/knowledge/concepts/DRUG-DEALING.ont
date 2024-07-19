@@ -1,0 +1,62 @@
+{
+  "name": "@DRUG-DEALING",
+  "isa": [
+    "@CRIMINAL-ACTIVITY"
+  ],
+  "def": "to buy or sell illegal drugs",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@DRUG-CARTEL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ILLEGAL-DRUG"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@BUY"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@SELL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MONEY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

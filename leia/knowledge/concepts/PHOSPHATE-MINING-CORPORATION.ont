@@ -1,0 +1,22 @@
+{
+  "name": "@PHOSPHATE-MINING-CORPORATION",
+  "isa": [
+    "@NONMETALLIC-ORE-MINING-CORPORATION"
+  ],
+  "def": "a corporation involved in the phosphate mining and preparation of phosphate",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@PHOSPHORUS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

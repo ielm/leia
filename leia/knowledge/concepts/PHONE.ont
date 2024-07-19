@@ -1,0 +1,33 @@
+{
+  "name": "@PHONE",
+  "isa": [
+    "@AUDIO-MEDIA-ARTIFACT",
+    "@COMMUNICATION-DEVICE"
+  ],
+  "def": "telephone",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PHONE-RECEIVER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

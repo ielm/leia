@@ -1,0 +1,22 @@
+{
+  "name": "@ATTACH",
+  "isa": [
+    "@CHANGE-POSITION"
+  ],
+  "def": "to put together 2 things so that undoing this action involves more than just moving them",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@SCHEDULE-EVENT",
+  "isa": [
+    "@MAKE-APPOINTMENT"
+  ],
+  "def": "To set up an event for a person or multiple people.",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@SECRETARY"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CALENDAR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MEETING"
+    }
+  ],
+  "private": {}
+}

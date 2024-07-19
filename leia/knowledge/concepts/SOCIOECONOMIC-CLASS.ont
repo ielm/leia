@@ -1,0 +1,21 @@
+{
+  "name": "@SOCIOECONOMIC-CLASS",
+  "isa": [
+    "@ABSTRACT-OBJECT"
+  ],
+  "def": "the social and economic class a group of people with certain likenesses may have within a society",
+  "local": [
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@ORGANIZATION"
+    },
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

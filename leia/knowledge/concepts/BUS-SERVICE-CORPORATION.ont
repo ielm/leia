@@ -1,0 +1,16 @@
+{
+  "name": "@BUS-SERVICE-CORPORATION",
+  "isa": [
+    "@TRANSPORTATION-CORPORATION"
+  ],
+  "def": "a transportation-corporation in which bus service is provided for passengers",
+  "local": [
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@BUS"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

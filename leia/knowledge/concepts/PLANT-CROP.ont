@@ -1,0 +1,47 @@
+{
+  "name": "@PLANT-CROP",
+  "isa": [
+    "@FARMING-ACTIVITY"
+  ],
+  "def": "to put a crop (either seed or plant) into the ground to grow",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@PLANT-FARM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@AGRICULTURAL-CORPORATION"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ENGINEERED-ARTIFACT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WATER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GEOLOGICAL-ENTITY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIVESTOCK"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SOIL"
+    }
+  ],
+  "private": {}
+}

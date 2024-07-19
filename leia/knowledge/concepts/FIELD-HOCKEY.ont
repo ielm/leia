@@ -1,0 +1,190 @@
+{
+  "name": "@FIELD-HOCKEY",
+  "isa": [
+    "@SPORTS-DISCIPLINE"
+  ],
+  "def": "a game similar to ice hockey but played on foot with a small ball",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HOCKEY-STICK"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FIELD-HOCKEY-BALL"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLAYING-FIELD"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SPORTS-OUTFIT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@FIELD"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@DEFENSEMAN"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@CENTER-IN-SPORTS"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@GOALKEEPER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@ATHLETE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@CLIMB"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@DISCHARGE-WEAPON"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@DIVE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@ELEVATE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@HOLD"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@KICK"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@MOVE-WATER-VEHICLE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@PULL"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@PUSH"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@ROLL"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@ROTATE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@SKI-EVENT"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@SWIM"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@SYNCHRONIZE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@THROW"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@WALK"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@WHIP"
+    },
+    {
+      "slot": "individual-or-team",
+      "facet": "sem",
+      "filler": "individual"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SPORT-ARTIFACT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BEACH"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BOWLING-ALLEY"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GYMNASIUM"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@RECREATION-AREA"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "typicalness-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

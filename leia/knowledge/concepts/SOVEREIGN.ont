@@ -1,0 +1,22 @@
+{
+  "name": "@SOVEREIGN",
+  "isa": [
+    "@INHERITED-GOVERNMENTAL-ROLE"
+  ],
+  "def": "a monarch or a ruler",
+  "local": [
+    {
+      "slot": "rules",
+      "facet": "sem",
+      "filler": "@LARGE-GEOPOLITICAL-ENTITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "rules",
+      "facet": "sem",
+      "filler": "@GEOGRAPHICAL-ENTITY"
+    }
+  ],
+  "private": {}
+}

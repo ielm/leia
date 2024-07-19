@@ -1,0 +1,32 @@
+{
+  "name": "@CAPITAL-ASSET",
+  "isa": [
+    "@ASSET"
+  ],
+  "def": "a collective term that refers to all fixed assets (that is, property that yields income or reduces expenses as opposed to property consumed)",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@TANGIBLE-ASSET"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@INTANGIBLE-ASSET"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@RABBI",
+  "isa": [
+    "@RELIGIOUS-ROLE"
+  ],
+  "def": "an ordained teacher of the Jewish law",
+  "local": [
+    {
+      "slot": "has-religion",
+      "facet": "sem",
+      "filler": "@JUDAISM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-religion",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "private": {}
+}

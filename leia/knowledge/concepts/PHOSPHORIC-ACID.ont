@@ -1,0 +1,21 @@
+{
+  "name": "@PHOSPHORIC-ACID",
+  "isa": [
+    "@ACID-COMPOUND"
+  ],
+  "def": "any of three colorless, crystalline compounds with a phosphorus and oxygen radical",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@OXYGEN"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PHOSPHORUS"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

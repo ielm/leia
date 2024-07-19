@@ -1,0 +1,27 @@
+{
+  "name": "@SUN-RISE",
+  "isa": [
+    "@NATURAL-EVENT"
+  ],
+  "def": "The event or time of the daily first appearance of the sun above the eastern horizon",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SUN"
+    },
+    {
+      "slot": "time-begin",
+      "facet": "sem",
+      "filler": "@MORNING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "time-begin",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    }
+  ],
+  "private": {}
+}

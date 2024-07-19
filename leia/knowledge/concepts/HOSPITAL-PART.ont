@@ -1,0 +1,40 @@
+{
+  "name": "@HOSPITAL-PART",
+  "isa": [
+    "@BUILDING-PLACE-PART"
+  ],
+  "def": "subtree for parts of a hospital, like ICU and operating room",
+  "local": [
+    {
+      "slot": "has-occupant",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@PATIENT"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@MEDICAL-WORK-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    }
+  ],
+  "private": {}
+}

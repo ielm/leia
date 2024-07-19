@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-GOVERNMENT-TYPE",
+  "def": "the relation between geopolitical entities and the type of government they have (such as monarchy)",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$GOVERNMENT-OF",
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

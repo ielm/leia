@@ -1,0 +1,24 @@
+{
+  "name": "@FROZEN-FOOD",
+  "isa": [
+    "@PREPARED-FOOD"
+  ],
+  "def": "food preserved by freezing",
+  "local": [],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    }
+  ],
+  "private": {}
+}

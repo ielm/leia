@@ -1,0 +1,27 @@
+{
+  "name": "@USER-ACCOUNT",
+  "isa": [
+    "@COMPUTER-DATA"
+  ],
+  "def": "list of information about a user of a computer-system",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@USER-NAME"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BIT-INFORMATION-UNIT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ABSTRACT-OBJECT"
+    }
+  ],
+  "private": {}
+}

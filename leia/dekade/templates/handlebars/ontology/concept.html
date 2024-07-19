@@ -1,0 +1,126 @@
+<div class="concept">
+    <div class="concept-navigation-header">
+        <div class="concept-navigation-tabs"></div>
+        <button disabled class="concept-add-private">
+            <i class="fas fa-plus"></i>
+        </button>
+    </div>
+    <div class="concept-navigation-content">
+        <div class="concept-definition fixed-tab-content" data-tab-name="definition" data-tab-label="Definition">
+            <div class="concept-lineage-header">
+                <span class="concept-name">@{{name}}</span> isa
+                {{#each parents}}
+                    <a is="content-link" data-content-type="ontology.concept" data-content-id="@{{this}}">@{{this}}</a>
+                    {{#unless @last}}, {{/unless}}
+                {{/each}}
+            </div>
+            <div class="concept-definition">
+                <button class="concept-edit concept-edit-definition">
+                    <i class="fas fa-edit"></i>
+                </button>
+                <span class="concept-definition-content">{{definition}}</span>
+                <input type="text" class="concept-definition-content hidden" value="{{definition}}" placeholder="definition" />
+            </div>
+            <hr>
+            <div>
+                <input type="checkbox" class="concept-toggle-inherited-display" checked /> Show Inherited?
+            </div>
+            <table class="concept-rows">
+                <tr>
+                    <td>
+                        <button disabled class="concept-edit concept-add-local">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </td>
+                    <td><input class="concept-add-local-property" type="text" placeholder="property" /></td>
+                    <td><input class="concept-add-local-facet" type="text" placeholder="facet" /></td>
+                    <td><input class="concept-add-local-filler" type="text" placeholder="filler" /></td>
+                    <td><input class="concept-add-local-meta" type="text" placeholder="meta" /></td>
+                    <td></td>
+                </tr>
+                {{#each rows}}
+                    {{#if this.local}}
+                        <tr class="concept-row-local">
+                            <td>
+                                <button class="concept-edit concept-del-local" data-property="{{this.property}}" data-facet="{{this.facet}}" data-filler="{{this.filler}}" data-type="{{this.type}}">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </td>
+                            <td>
+                                <a is="content-link" data-content-type="properties.property" data-content-id="${{toUpperCase this.property}}">${{this.property}}</a>
+                            </td>
+                            <td>{{this.facet}}</td>
+                            <td>
+                                {{#ifeq this.type "concept"}}
+                                    <a is="content-link" data-content-type="ontology.concept" data-content-id="{{this.filler}}">{{this.filler}}</a>
+                                {{else}}
+                                    {{this.filler}}
+                                {{/ifeq}}
+                            </td>
+                            <td>
+                                {{#each this.meta}}
+                                    {{@key}} = {{this}}
+                                    {{#unless @last}}, {{/unless}}
+                                {{/each}}
+                            </td>
+                            <td></td>
+                        </tr>
+                    {{else if this.inherit}}
+                        <tr class="concept-row-inherit">
+                            <td>
+                                <button class="concept-edit concept-block-inherit" data-from="{{this.from}}" data-property="{{this.property}}" data-facet="{{this.facet}}" data-filler="{{this.filler}}" data-type="{{this.type}}">
+                                    <i class="fas fa-ban"></i>
+                                </button>
+                            </td>
+                            <td>
+                                <a is="content-link" data-content-type="properties.property" data-content-id="${{toUpperCase this.property}}">${{this.property}}</a>
+                            </td>
+                            <td>{{this.facet}}</td>
+                            <td>
+                                {{#ifeq this.type "concept"}}
+                                    <a is="content-link" data-content-type="ontology.concept" data-content-id="{{this.filler}}">{{this.filler}}</a>
+                                {{else}}
+                                    {{this.filler}}
+                                {{/ifeq}}
+                            </td>
+                            <td>
+                                {{#each this.meta}}
+                                    {{@key}} = {{this}}
+                                    {{#unless @last}}, {{/unless}}
+                                {{/each}}
+                            </td>
+                            <td>inherit from <a is="content-link" data-content-type="ontology.concept" data-content-id="@{{this.from}}">@{{this.from}}</a></td>
+                        </tr>
+                    {{else if this.block}}
+                        <tr class="concept-row-block">
+                            <td>
+                                <button class="concept-edit concept-unblock-block" data-from="{{this.from}}" data-property="{{this.property}}" data-facet="{{this.facet}}" data-filler="{{this.filler}}" data-type="{{this.type}}">
+                                    <i class="fas fa-undo-alt"></i>
+                                </button>
+                            </td>
+                            <td>
+                                <a is="content-link" data-content-type="properties.property" data-content-id="${{toUpperCase this.property}}">${{this.property}}</a>
+                            </td>
+                            <td>{{this.facet}}</td>
+                            <td>
+                                {{#ifeq this.type "concept"}}
+                                    <a is="content-link" data-content-type="ontology.concept" data-content-id="{{this.filler}}">{{this.filler}}</a>
+                                {{else}}
+                                    {{this.filler}}
+                                {{/ifeq}}
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    {{/if}}
+                {{/each}}
+            </table>
+        </div>
+        <div class="concept-ancestry fixed-tab-content" data-tab-name="ancestry" data-tab-label="Ancestry">
+            Ancestry view is not yet implemented.
+        </div>
+        <div class="concept-usage fixed-tab-content" data-tab-name="usage" data-tab-label="Usage">
+            Usage view is not yet implemented.
+        </div>
+    </div>
+</div>

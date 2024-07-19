@@ -1,0 +1,19 @@
+{
+  "name": "@DRAM-AVOIRDUPOIS",
+  "isa": [
+    "@MASS-WEIGHT-UNIT"
+  ],
+  "def": "a modern dram unit (cf. dram-apothecaries); ounce/16",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.0017718451953125
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

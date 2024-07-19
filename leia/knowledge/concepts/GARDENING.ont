@@ -1,0 +1,42 @@
+{
+  "name": "@GARDENING",
+  "isa": [
+    "@NON-WORK-ACTIVITY"
+  ],
+  "def": "to take care of a garden",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GARDEN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "business"
+    },
+    {
+      "slot": "dress-code",
+      "facet": "sem",
+      "filler": "formal"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

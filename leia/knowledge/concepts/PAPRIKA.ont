@@ -1,0 +1,16 @@
+{
+  "name": "@PAPRIKA",
+  "isa": [
+    "@SPICE"
+  ],
+  "def": "a mild seasoning made from sweet red peppers",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "red"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

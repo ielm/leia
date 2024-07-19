@@ -1,0 +1,22 @@
+{
+  "name": "@MUTAGENESIS",
+  "isa": [
+    "@PATHOLOGIC-FUNCTION"
+  ],
+  "def": "a process by which the genetic information of an organism  is changed",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GENE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,72 @@
+{
+  "name": "@COUNTY",
+  "isa": [
+    "@SMALL-GEOPOLITICAL-ENTITY"
+  ],
+  "def": "A territorial division of a state exercising administrative and sometimes judicial and political functions. A county comprises cities and towns. It can be smaller than or equivalent to a province.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CITY"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@DISTRICT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@STATE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@VILLAGE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@GEOGRAPHICAL-ENTITY"
+    },
+    {
+      "slot": "in-city",
+      "facet": "sem",
+      "filler": "@CITY"
+    },
+    {
+      "slot": "in-county",
+      "facet": "sem",
+      "filler": "@COUNTY"
+    },
+    {
+      "slot": "in-town",
+      "facet": "sem",
+      "filler": "@TOWN"
+    },
+    {
+      "slot": "in-village",
+      "facet": "sem",
+      "filler": "@VILLAGE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,93 @@
+{
+  "name": "@MILK-AN-ANIMAL",
+  "isa": [
+    "@FARMING-ACTIVITY"
+  ],
+  "def": "to draw milk from the teat or udder of a female mammal",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MILKING-MACHINE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIVESTOCK-1"
+    },
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@ANIMAL-FARM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@AGRICULTURAL-CORPORATION"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@AGRICULTURAL-PRODUCT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ENGINEERED-ARTIFACT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FARM-MACHINE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HUMUS"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WATER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CROP"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GEOLOGICAL-ENTITY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIVESTOCK"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SEED"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SOIL"
+    }
+  ],
+  "private": {
+    "@LIVESTOCK-1": {
+      "name": "@LIVESTOCK-1",
+      "isa": [
+        "@LIVESTOCK"
+      ],
+      "def": "",
+      "local": [],
+      "block": [],
+      "private": {}
+    }
+  }
+}

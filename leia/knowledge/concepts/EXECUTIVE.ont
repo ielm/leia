@@ -1,0 +1,22 @@
+{
+  "name": "@EXECUTIVE",
+  "isa": [
+    "@BUSINESS-ROLE"
+  ],
+  "def": "a person who exercises administrative or managerial control",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@HEADQUARTERS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

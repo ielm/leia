@@ -1,0 +1,71 @@
+{
+  "name": "@ESOPHAGUS",
+  "isa": [
+    "@ANIMAL-ORGAN"
+  ],
+  "def": "Organ with organ cavity which is continuous proximally with the pharynx and distally with the stomach. Examples: There is only one esophagus.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SEGMENT-OF-ESOPHAGUS"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@DISTAL-ESOPHAGUS"
+    },
+    {
+      "slot": "distal-to",
+      "facet": "sem",
+      "filler": "@PHARYNX"
+    },
+    {
+      "slot": "nerve-supply",
+      "facet": "sem",
+      "filler": "@ANTERIOR-ESOPHAGEAL-NERVE-PLEXUS"
+    },
+    {
+      "slot": "nerve-supply",
+      "facet": "sem",
+      "filler": "@POSTERIOR-ESOPHAGEAL-NERVE-PLEXUS"
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        24
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    }
+  ],
+  "block": [
+    {
+      "slot": "distal-to",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "nerve-supply",
+      "facet": "sem",
+      "filler": "@NERVE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@TAPE-RECORDER",
+  "isa": [
+    "@AUDIO-MEDIA-ARTIFACT",
+    "@COMPLEX-MECHANISM"
+  ],
+  "def": "a device for recording on magnetic tape and for playing back what has been recorded",
+  "local": [],
+  "block": [
+    {
+      "slot": "autonomy-technological",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

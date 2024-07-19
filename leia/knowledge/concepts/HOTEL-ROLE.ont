@@ -1,0 +1,22 @@
+{
+  "name": "@HOTEL-ROLE",
+  "isa": [
+    "@WORK-ROLE"
+  ],
+  "def": "social-role filled by hotel employees while on the job",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@LODGING-CORPORATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

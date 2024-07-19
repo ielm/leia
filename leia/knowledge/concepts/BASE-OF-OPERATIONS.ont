@@ -1,0 +1,22 @@
+{
+  "name": "@BASE-OF-OPERATIONS",
+  "isa": [
+    "@MILITARY-INSTALLATION"
+  ],
+  "def": "installation from which a military force initiates operations",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@MILITARY-ACTIVITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@GOVERNMENT-ACTIVITY"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@CHEMICAL-WEAPON",
+  "isa": [
+    "@WEAPON-OF-MASS-DESTRUCTION"
+  ],
+  "def": "A warfare made of toxic substances to damage or kill human beings.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CHEMICAL-COMPOUND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

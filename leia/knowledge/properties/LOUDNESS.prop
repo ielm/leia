@@ -1,0 +1,11 @@
+{
+  "name": "$LOUDNESS",
+  "def": "how soft or loud a sound is",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@DECIBEL"
+  ],
+  "container": "$SCALAR-EVENT-ATTRIBUTE"
+}

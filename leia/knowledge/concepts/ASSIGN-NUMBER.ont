@@ -1,0 +1,22 @@
+{
+  "name": "@ASSIGN-NUMBER",
+  "isa": [
+    "@MATHEMATICAL-OPERATION"
+  ],
+  "def": "to assign a number to something",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MATHEMATICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

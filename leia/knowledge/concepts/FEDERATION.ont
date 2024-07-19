@@ -1,0 +1,17 @@
+{
+  "name": "@FEDERATION",
+  "isa": [
+    "@GOVERNMENT-TYPE",
+    "@POLITICAL-ENTITY"
+  ],
+  "def": "a union of states, groups, etc. in which each subordinates its power to a central authority",
+  "local": [
+    {
+      "slot": "has-member",
+      "facet": "sem",
+      "filler": "@STATE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-REPRESENTATIVE",
+  "def": "The relation between a social-object and a person who represents it",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$REPRESENTATIVE-OF",
+  "measured-in": [],
+  "container": "$RELATION"
+}

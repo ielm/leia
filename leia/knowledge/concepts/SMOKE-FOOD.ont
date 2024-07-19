@@ -1,0 +1,37 @@
+{
+  "name": "@SMOKE-FOOD",
+  "isa": [
+    "@PREPARE-INGESTIBLE"
+  ],
+  "def": "To preserve (meat or fish) by exposing it to the aromatic smoke of burning hardwood, usually after pickling it in salt or brine",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@SMOKEHOUSE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MEAT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FISH-MEAT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@KITCHEN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FOOD"
+    }
+  ],
+  "private": {}
+}

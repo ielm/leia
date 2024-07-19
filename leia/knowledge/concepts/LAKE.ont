@@ -1,0 +1,34 @@
+{
+  "name": "@LAKE",
+  "isa": [
+    "@BODY-OF-WATER"
+  ],
+  "def": "a large inland body of fresh or salt water",
+  "local": [],
+  "block": [
+    {
+      "slot": "available",
+      "facet": "sem",
+      "filler": "yes no"
+    },
+    {
+      "slot": "has-name-non-human",
+      "facet": "sem",
+      "filler": "@NAME-NON-HUMAN"
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "private": {}
+}

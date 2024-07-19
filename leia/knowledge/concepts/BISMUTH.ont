@@ -1,0 +1,36 @@
+{
+  "name": "@BISMUTH",
+  "isa": [
+    "@NON-DUCTILE-METAL"
+  ],
+  "def": "a white, crystalline, brittle metallic element used in medicines and especially in various low-melting alloys",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        208
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        83
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

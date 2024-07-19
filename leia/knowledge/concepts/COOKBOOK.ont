@@ -1,0 +1,21 @@
+{
+  "name": "@COOKBOOK",
+  "isa": [
+    "@BOOK"
+  ],
+  "def": "a book of recipes",
+  "local": [
+    {
+      "slot": "about-as-topic",
+      "facet": "sem",
+      "filler": "@PREPARE-INGESTIBLE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@RECIPE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

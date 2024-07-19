@@ -1,0 +1,32 @@
+{
+  "name": "@SCAN",
+  "isa": [
+    "@READ"
+  ],
+  "def": "to read quickly, looking for something in particular",
+  "local": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@INFORMATION"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@SEARCH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

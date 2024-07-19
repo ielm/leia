@@ -1,0 +1,22 @@
+{
+  "name": "@HAZELNUT-TREE",
+  "isa": [
+    "@NUT-TREE"
+  ],
+  "def": "tree that produces hazelnuts",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@HAZELNUT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@NUT-FOODSTUFF"
+    }
+  ],
+  "private": {}
+}

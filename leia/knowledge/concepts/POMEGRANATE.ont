@@ -1,0 +1,16 @@
+{
+  "name": "@POMEGRANATE",
+  "isa": [
+    "@TREE-FRUIT"
+  ],
+  "def": "a red fruit with pulpy seeds inside",
+  "local": [],
+  "block": [
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "egglike"
+    }
+  ],
+  "private": {}
+}

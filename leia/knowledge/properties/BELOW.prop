@@ -1,0 +1,9 @@
+{
+  "name": "$BELOW",
+  "def": "an object is positioned vertically lower than another",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$ABOVE",
+  "measured-in": [],
+  "container": "$SPATIAL-RELATION"
+}

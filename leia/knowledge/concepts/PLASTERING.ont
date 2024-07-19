@@ -1,0 +1,47 @@
+{
+  "name": "@PLASTERING",
+  "isa": [
+    "@CONSTRUCTION-ACTIVITY"
+  ],
+  "def": "to cover a surface as with plaster",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WALL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CEILING"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BUILDING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@CONSTRUCTION-MATERIAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MACHINE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

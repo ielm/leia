@@ -1,0 +1,19 @@
+{
+  "name": "@PARTNER",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "the person who is the other agent with you in a cooperative event",
+  "local": [],
+  "block": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

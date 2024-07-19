@@ -1,0 +1,63 @@
+{
+  "name": "@EPIDEMIC",
+  "isa": [
+    "@MEDICAL-EVENT"
+  ],
+  "def": "an outbreak of a communicable disease that spreads widely and rapidly",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COMMUNICABLE-DISEASE"
+    },
+    {
+      "slot": "death-toll",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "death-toll",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "catastrophe-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "catastrophe-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@PHYSICIAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MEDICAL-ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

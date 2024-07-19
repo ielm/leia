@@ -1,0 +1,9 @@
+{
+  "name": "$RAWNESS",
+  "def": "An attribute of food indicating the degree to which it is cooked.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

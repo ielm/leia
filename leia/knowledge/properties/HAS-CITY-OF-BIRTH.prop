@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-CITY-OF-BIRTH",
+  "def": "links a person to his city of birth",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": "$CITY-OF-BIRTH-OF",
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

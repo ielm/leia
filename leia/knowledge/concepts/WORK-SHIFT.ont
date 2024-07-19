@@ -1,0 +1,37 @@
+{
+  "name": "@WORK-SHIFT",
+  "isa": [
+    "@WORK-ACTIVITY"
+  ],
+  "def": "a period of time, usually measured in hours, during which a given person works on a given day",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

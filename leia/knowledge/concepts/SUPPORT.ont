@@ -1,0 +1,37 @@
+{
+  "name": "@SUPPORT",
+  "isa": [
+    "@COOPERATIVE-EVENT"
+  ],
+  "def": "to feel/voice agreement with someone or an idea or to promote them/it",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

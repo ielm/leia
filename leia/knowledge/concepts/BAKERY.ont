@@ -1,0 +1,22 @@
+{
+  "name": "@BAKERY",
+  "isa": [
+    "@FOOD-PROCESSING-CORPORATION"
+  ],
+  "def": "a corporation where bread and other baked goods are made and sometimes sold",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@BAKED-FOOD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@INGESTIBLE"
+    }
+  ],
+  "private": {}
+}

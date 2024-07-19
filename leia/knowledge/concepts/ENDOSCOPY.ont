@@ -1,0 +1,82 @@
+{
+  "name": "@ENDOSCOPY",
+  "isa": [
+    "@MEDICAL-SCOPING"
+  ],
+  "def": "examination of the interior of a hollow body organ by use of an endoscope",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ENDOSCOPE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TRACHEOBRONCHIAL-TREE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GASTROINTESTINAL-SYSTEM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LUNG"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHARYNX"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LARYNX"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NOSE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@URINARY-SYSTEM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FEMALE-INTERNAL-GENITALIA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BONE-JOINT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CARDIOVASCULAR-SYSTEM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MEDICAL-SCOPE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

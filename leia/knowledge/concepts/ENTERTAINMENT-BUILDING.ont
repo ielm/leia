@@ -1,0 +1,65 @@
+{
+  "name": "@ENTERTAINMENT-BUILDING",
+  "isa": [
+    "@BUILDING"
+  ],
+  "def": "a building in which various entertainment performances are held",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@ENTERTAIN-EVENT"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@SEATING-FURNITURE"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@SPORTS-COMPETITION"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@ENTERTAINMENT-ROLE"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@AUDIENCE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@EMAIL-ADDRESS"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@PHONE-NUMBER"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@WEB-ADDRESS"
+    }
+  ],
+  "private": {}
+}

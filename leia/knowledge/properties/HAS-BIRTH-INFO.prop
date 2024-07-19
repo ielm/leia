@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-BIRTH-INFO",
+  "def": "the subtree that contains properties linking a person or animal to their birth information",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": "$BIRTH-INFO-OF",
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@MAIL-ORDER-CORPORATION",
+  "isa": [
+    "@SALES-CORPORATION"
+  ],
+  "def": "a sales-organization that sells products through catalogues and mass-mailings",
+  "local": [
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@CATALOG-OF-GOODS"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

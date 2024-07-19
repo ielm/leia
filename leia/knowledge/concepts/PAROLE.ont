@@ -1,0 +1,52 @@
+{
+  "name": "@PAROLE",
+  "isa": [
+    "@LEGAL-EVENT"
+  ],
+  "def": "The release of a prisoner whose term has not expired on condition of sustained lawful behavior that is subject to regular monitoring by an officer of the law for a set period of time.",
+  "local": [
+    {
+      "slot": "beneficiary",
+      "facet": "default",
+      "filler": "@CRIMINAL"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@JUDGE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@LEGAL-WORK-ROLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

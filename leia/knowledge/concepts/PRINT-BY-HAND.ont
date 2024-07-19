@@ -1,0 +1,37 @@
+{
+  "name": "@PRINT-BY-HAND",
+  "isa": [
+    "@GRAPHIC-EVENT"
+  ],
+  "def": "to write in letters resembling printed ones",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DOCUMENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FILM-ARTIFACT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHOTOGRAPHIC-DEVICE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PRINTER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

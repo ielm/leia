@@ -1,0 +1,36 @@
+{
+  "name": "@CERIUM",
+  "isa": [
+    "@RARE-EARTH-ELEMENT"
+  ],
+  "def": "a lustrous, iron-gray, malleable metallic rare-earth element that occurs chiefly in the minerals monazite and bastnaesite, exists in four allotropic states, is a constituent of lighter flint alloys, and is used in various metallurgical and nuclear applications",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        58
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        140
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        72
+      ]
+    }
+  ],
+  "private": {}
+}

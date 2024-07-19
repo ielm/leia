@@ -1,0 +1,21 @@
+{
+  "name": "@LAND-RESERVE",
+  "isa": [
+    "@SMALL-GEOPOLITICAL-ENTITY"
+  ],
+  "def": "protected public land for a particular purpose, like preservation of wildlife",
+  "local": [
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

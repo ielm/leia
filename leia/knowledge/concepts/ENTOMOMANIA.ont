@@ -1,0 +1,27 @@
+{
+  "name": "@ENTOMOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "inordinate fascination with insects",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INSECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

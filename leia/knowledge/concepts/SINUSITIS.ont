@@ -1,0 +1,32 @@
+{
+  "name": "@SINUSITIS",
+  "isa": [
+    "@INFLAMMATION"
+  ],
+  "def": "Inflammation of the nasal sinuses.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NOSE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

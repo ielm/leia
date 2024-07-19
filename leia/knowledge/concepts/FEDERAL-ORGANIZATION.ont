@@ -1,0 +1,22 @@
+{
+  "name": "@FEDERAL-ORGANIZATION",
+  "isa": [
+    "@PUBLIC-ADMINISTRATION-ORGANIZATION"
+  ],
+  "def": "a public-administration-organization that functions at the federal level",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GOVERNMENT-BUILDING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

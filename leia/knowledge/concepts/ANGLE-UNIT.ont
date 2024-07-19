@@ -1,0 +1,22 @@
+{
+  "name": "@ANGLE-UNIT",
+  "isa": [
+    "@MEASURING-UNIT"
+  ],
+  "def": "arc degrees, radians etc.",
+  "local": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@RADIAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "sem",
+      "filler": "@MEASURING-UNIT"
+    }
+  ],
+  "private": {}
+}

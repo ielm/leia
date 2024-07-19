@@ -1,0 +1,28 @@
+{
+  "name": "@LIQUEUR",
+  "isa": [
+    "@ALCOHOLIC-BEVERAGE"
+  ],
+  "def": "a sweet liquor",
+  "local": [
+    {
+      "slot": "sweetness",
+      "facet": "sem",
+      "filler": [
+        "><",
+        0.9
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "sweetness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

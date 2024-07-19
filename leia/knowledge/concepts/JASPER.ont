@@ -1,0 +1,21 @@
+{
+  "name": "@JASPER",
+  "isa": [
+    "@QUARTZ"
+  ],
+  "def": "opaque cryptocrystalline type of chalcedony that may be red, yellow, or brown",
+  "local": [],
+  "block": [
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "translucent"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "transparent"
+    }
+  ],
+  "private": {}
+}

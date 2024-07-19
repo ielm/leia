@@ -1,0 +1,9 @@
+{
+  "name": "$CONTAINS",
+  "def": "A relation between any container and\nwhat is contained in it",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$CONTAINED-IN",
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

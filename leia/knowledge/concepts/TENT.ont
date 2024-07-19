@@ -1,0 +1,27 @@
+{
+  "name": "@TENT",
+  "isa": [
+    "@PORTABLE-SHELTER"
+  ],
+  "def": "portable shelter made of canvas, etc. stretched over poles",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CANVAS"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@NYLON"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

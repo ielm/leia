@@ -1,0 +1,65 @@
+{
+  "name": "@DOUGH",
+  "isa": [
+    "@PREPARED-FOOD"
+  ],
+  "def": "a mixture of flour, liquid, etc. worked into a soft mass for baking",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@FLOUR"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WATER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@EGG"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SUGAR"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SALT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@FOODSTUFF"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

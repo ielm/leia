@@ -1,0 +1,35 @@
+{
+  "name": "@NATURAL-RESOURCE",
+  "isa": [
+    "@NATURAL-OBJECT"
+  ],
+  "def": "raw material supplied by nature that is used for commercial purposes",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@EARTH-MATERIAL"
+    },
+    {
+      "slot": "demand-for-product",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@NATURAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

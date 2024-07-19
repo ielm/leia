@@ -1,0 +1,27 @@
+{
+  "name": "@POSTAGE-STAMP",
+  "isa": [
+    "@OFFICE-SUPPLIES"
+  ],
+  "def": "a gummed piece of paper used to show that a fee has been paid for postage",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GLUE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PAPER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

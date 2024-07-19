@@ -1,0 +1,9 @@
+{
+  "name": "$GRAIN-SIZE",
+  "def": "The circumference of particles of sediment, crystals, grains.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SIZE"
+}

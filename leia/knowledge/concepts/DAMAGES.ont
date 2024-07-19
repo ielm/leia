@@ -1,0 +1,19 @@
+{
+  "name": "@DAMAGES",
+  "isa": [
+    "@LEGAL-OBJECT"
+  ],
+  "def": "the monetary value of a loss; the monetary estimate of reparation received by legal proceedings",
+  "local": [
+    {
+      "slot": "net-loss-attribute",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

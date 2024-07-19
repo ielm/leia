@@ -1,0 +1,36 @@
+{
+  "name": "@RUBIDIUM",
+  "isa": [
+    "@ALKALI-METAL"
+  ],
+  "def": "a soft silvery-white alkali element that ignites spontaneously in air and reacts violently with water, used in photocells and in the manufacture of vacuum tubes",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        37
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        85
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

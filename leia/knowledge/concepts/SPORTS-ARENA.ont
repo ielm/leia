@@ -1,0 +1,27 @@
+{
+  "name": "@SPORTS-ARENA",
+  "isa": [
+    "@ENTERTAINMENT-BUILDING"
+  ],
+  "def": "a building specifically used for professional sports events to be viewed by the paying public",
+  "local": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@SPORTS-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@ENTERTAINMENT-ROLE"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@ENTERTAIN-EVENT"
+    }
+  ],
+  "private": {}
+}

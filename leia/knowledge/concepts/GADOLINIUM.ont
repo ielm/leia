@@ -1,0 +1,36 @@
+{
+  "name": "@GADOLINIUM",
+  "isa": [
+    "@RARE-EARTH-ELEMENT"
+  ],
+  "def": "a silvery-white, malleable, ductile, metallic rare-earth element obtained from monazite and bastnaesite. it has the highest neutron-absorption cross section known and is useful in improving high-temperature characteristics of iron, chromium, and related metallic alloys",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        64
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        157
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        72
+      ]
+    }
+  ],
+  "private": {}
+}

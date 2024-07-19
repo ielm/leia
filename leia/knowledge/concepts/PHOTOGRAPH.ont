@@ -1,0 +1,51 @@
+{
+  "name": "@PHOTOGRAPH",
+  "isa": [
+    "@FILM-ARTIFACT",
+    "@PICTURE"
+  ],
+  "def": "a picture made by photography",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PAPER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@INK"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@INK"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

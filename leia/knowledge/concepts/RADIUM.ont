@@ -1,0 +1,36 @@
+{
+  "name": "@RADIUM",
+  "isa": [
+    "@RADIOACTIVE-METAL"
+  ],
+  "def": "a rare, white, highly radioactive metallic element, used in radiotherapy, as a neutron source, and as a constituent of luminescent paints",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        88
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        226
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

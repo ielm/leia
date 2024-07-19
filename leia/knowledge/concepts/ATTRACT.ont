@@ -1,0 +1,32 @@
+{
+  "name": "@ATTRACT",
+  "isa": [
+    "@COOPERATIVE-EVENT"
+  ],
+  "def": "to draw to an individual or a group",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

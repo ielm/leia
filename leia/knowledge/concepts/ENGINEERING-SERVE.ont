@@ -1,0 +1,57 @@
+{
+  "name": "@ENGINEERING-SERVE",
+  "isa": [
+    "@PROFESSIONAL-SERVICE-EVENT"
+  ],
+  "def": "a work activity that concerns the planning, designing, and constructing of practical structures such as machinery, bridges, power plants, etc.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ENGINEERED-ARTIFACT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ENGINEER"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@SURVEYOR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@WORK-ROLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WATER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

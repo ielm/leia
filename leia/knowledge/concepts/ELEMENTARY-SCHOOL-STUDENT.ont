@@ -1,0 +1,28 @@
+{
+  "name": "@ELEMENTARY-SCHOOL-STUDENT",
+  "isa": [
+    "@SCHOOL-STUDENT"
+  ],
+  "def": "a student at an elementary school",
+  "local": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "><",
+        13
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "><",
+        19
+      ]
+    }
+  ],
+  "private": {}
+}

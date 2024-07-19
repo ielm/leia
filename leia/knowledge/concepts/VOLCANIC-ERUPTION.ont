@@ -1,0 +1,42 @@
+{
+  "name": "@VOLCANIC-ERUPTION",
+  "isa": [
+    "@NATURAL-HAZARD"
+  ],
+  "def": "to force out or release suddenly and often violently something (as lava or steam) that is pent up",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@LAVA"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@VOLCANO"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GEOLOGICAL-ENTITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "destination",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@SHAMPOO",
+  "isa": [
+    "@SOAP"
+  ],
+  "def": "a liquid soap for the hair",
+  "local": [],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@CRUSTACEAN",
+  "isa": [
+    "@ARTHROPOD"
+  ],
+  "def": "any of a class of arthropods, including shrimp, crabs, lobsters, that have a hard outer shell",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@TAIL"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@SHELL"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@TRUNK-OF-BODY"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@HEAD"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

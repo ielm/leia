@@ -1,0 +1,28 @@
+{
+  "name": "@BAIT",
+  "isa": [
+    "@ANIMAL-RELATED-ARTIFACT"
+  ],
+  "def": "Something used in hunting or fishing to lure the animal",
+  "local": [
+    {
+      "slot": "sharpness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "sharpness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

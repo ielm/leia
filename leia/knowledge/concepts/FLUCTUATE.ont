@@ -1,0 +1,16 @@
+{
+  "name": "@FLUCTUATE",
+  "isa": [
+    "@ALTERNATE-EVENT"
+  ],
+  "def": "to vary, repeatedly, in an irregular way",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@*NOTHING*"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

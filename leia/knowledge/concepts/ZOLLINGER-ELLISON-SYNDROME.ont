@@ -1,0 +1,94 @@
+{
+  "name": "@ZOLLINGER-ELLISON-SYNDROME",
+  "isa": [
+    "@NON-COMMUNICABLE-DISEASE"
+  ],
+  "def": "A gastrointestinal disease characterized by chronic peptic ulcers, gastric hypersecretion, and gastrinomas of the pancreatic islets of Langerhans.\n(http://medical-dictionary.thefreedictionary.com/Zollinger-Ellison+syndrome)",
+  "local": [
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@VOMIT-1"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PANCREAS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SMALL-INTESTINE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@STOMACH"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@PAIN"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@DIARRHEA"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@ULCER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@BACTERIA"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@BIOLOGICAL-WEAPON"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@VIRUS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {
+    "@VOMIT-1": {
+      "name": "@VOMIT-1",
+      "isa": [
+        "@VOMIT"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "theme",
+          "facet": "default",
+          "filler": "@BLOOD"
+        }
+      ],
+      "block": [],
+      "private": {}
+    }
+  }
+}

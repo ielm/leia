@@ -1,0 +1,42 @@
+{
+  "name": "@REPRESENT-LEGALLY",
+  "isa": [
+    "@LEGAL-EVENT"
+  ],
+  "def": "to act on behalf of a party, as in a lawyer representing a client",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@ATTORNEY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@LEGAL-WORK-ROLE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

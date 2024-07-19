@@ -1,0 +1,19 @@
+{
+  "name": "@METERS-PER-SECOND-SQUARED",
+  "isa": [
+    "@ACCELERATION-UNIT"
+  ],
+  "def": "an SI derived unit for measuring acceleration",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

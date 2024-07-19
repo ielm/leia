@@ -1,0 +1,90 @@
+{
+  "name": "@WILDFIRE",
+  "isa": [
+    "@FIRE"
+  ],
+  "def": "a fire which is burning strongly and out of control on an area of grass or bushes.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TREE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BUSH"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GRASS"
+    },
+    {
+      "slot": "intensity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@FIELD"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@FOREST"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GEOLOGICAL-ELEVATION"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GEOLOGICAL-FLAT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GRASSLANDS"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@MEADOW"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@VALLEY"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@VINEYARD"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@COUNTRYSIDE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

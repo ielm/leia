@@ -1,0 +1,84 @@
+{
+  "name": "@BEVERAGE",
+  "isa": [
+    "@INGESTIBLE"
+  ],
+  "def": "any of various liquids for drinking",
+  "local": [
+    {
+      "slot": "temperature",
+      "facet": "sem",
+      "filler": [
+        "><",
+        99
+      ],
+      "meta": {
+        "measured-in": "degree-celsius"
+      }
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "is-consumer-good",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "automated"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "manual"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "mechanical"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@GAS"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "semi-solid"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "solid"
+    },
+    {
+      "slot": "temperature",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "temperature",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "private": {}
+}

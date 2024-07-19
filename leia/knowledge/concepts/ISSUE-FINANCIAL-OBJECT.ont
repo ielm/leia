@@ -1,0 +1,84 @@
+{
+  "name": "@ISSUE-FINANCIAL-OBJECT",
+  "isa": [
+    "@CORPORATE-EVENT",
+    "@INVESTMENT-EVENT",
+    "@BANKING-EVENT"
+  ],
+  "def": "To issue either corporate stock or other corporate securities for public sale, or to issue a promissory note or other form of obligation as the beginning of a loaning transaction",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@SHARE-BROKERAGE-CORPORATION"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@STOCK-EXCHANGE-MARKET"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PROMISSORY-NOTE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@PATRON"
+    },
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@CORPORATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@ORGANIZATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MONEY"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@MONEY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

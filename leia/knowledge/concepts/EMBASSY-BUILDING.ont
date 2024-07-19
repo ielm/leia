@@ -1,0 +1,16 @@
+{
+  "name": "@EMBASSY-BUILDING",
+  "isa": [
+    "@GOVERNMENT-BUILDING"
+  ],
+  "def": "the residence or offices of an ambassador",
+  "local": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@AMBASSADOR"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

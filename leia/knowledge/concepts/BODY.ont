@@ -1,0 +1,22 @@
+{
+  "name": "@BODY",
+  "isa": [
+    "@ANATOMICAL-STRUCTURE"
+  ],
+  "def": "Anatomical structure, which is the maximal aggregate manifestation of an individual member of the species Homo sapiens; it is completely surrounded by skin",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@TRUNK-OF-BODY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@DRY-GALLON",
+  "isa": [
+    "@VOLUME-UNIT"
+  ],
+  "def": "1/8 of a bushel-dry; 268.8025*cubic-inch",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.004404884
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

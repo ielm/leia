@@ -1,0 +1,37 @@
+{
+  "name": "@ACCOUNTS-RECEIVABLE",
+  "isa": [
+    "@ACCOUNTING"
+  ],
+  "def": "a creditor*s accounts of money owed to him; normally arise form the sale of products or services",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@RECEIPT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MONEY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,37 @@
+{
+  "name": "@NATURAL-HAZARD",
+  "isa": [
+    "@DISASTER-EVENT"
+  ],
+  "def": "Natural event that causes great harm or damage",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@DEITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "destination",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "source",
+      "facet": "relaxable-to",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "source",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

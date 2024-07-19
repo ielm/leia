@@ -1,0 +1,16 @@
+{
+  "name": "@INSPECT",
+  "isa": [
+    "@SUPERVISE"
+  ],
+  "def": "To examine carefully and critically, especially for flaws.",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@INSPECTING-ORGANIZATION"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

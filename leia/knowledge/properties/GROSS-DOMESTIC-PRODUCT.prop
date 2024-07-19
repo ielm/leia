@@ -1,0 +1,9 @@
+{
+  "name": "$GROSS-DOMESTIC-PRODUCT",
+  "def": "the value of goods and services produced by the country in a unit of time, usually a year",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

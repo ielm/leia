@@ -1,0 +1,22 @@
+{
+  "name": "@DOWN-PAYMENT",
+  "isa": [
+    "@FINANCIAL-OBJECT"
+  ],
+  "def": "cash (usually a percentage) paid toward the purchase of something",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MONEY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

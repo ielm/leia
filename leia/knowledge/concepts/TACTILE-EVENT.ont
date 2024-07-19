@@ -1,0 +1,46 @@
+{
+  "name": "@TACTILE-EVENT",
+  "isa": [
+    "@PERCEPTUAL-EVENT"
+  ],
+  "def": "the event of bringing a body part in contact with someone or something; this parent concept of voluntary- and involuntary- doesn't specify which one it is",
+  "local": [],
+  "block": [
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@PLANT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EAR"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EYE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@NOSE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TONGUE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

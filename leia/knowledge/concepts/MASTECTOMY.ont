@@ -1,0 +1,22 @@
+{
+  "name": "@MASTECTOMY",
+  "isa": [
+    "@SURGICAL-REMOVAL"
+  ],
+  "def": "Surgical removal of all or part of a breast, sometimes including excision of the underlying pectoral muscles and regional lymph nodes, usually performed as a treatment for cancer.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@BREAST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

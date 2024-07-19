@@ -1,0 +1,19 @@
+{
+  "name": "@NAUTICAL-MILE",
+  "isa": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "def": "a linear unit used in navigation equaling 1852 meters",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1852.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

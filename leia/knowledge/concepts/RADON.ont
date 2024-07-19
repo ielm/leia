@@ -1,0 +1,41 @@
+{
+  "name": "@RADON",
+  "isa": [
+    "@GASEOUS-ELEMENT"
+  ],
+  "def": "a colorless, radioactive, inert gaseous element formed by disintegration of radium and used in radiotherapy",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        222
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        86
+      ]
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

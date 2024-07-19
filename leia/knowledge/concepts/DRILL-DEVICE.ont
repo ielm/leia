@@ -1,0 +1,22 @@
+{
+  "name": "@DRILL-DEVICE",
+  "isa": [
+    "@INDEPENDENT-DEVICE"
+  ],
+  "def": "a device that bores holes into surfaces",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@DRILL-BIT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

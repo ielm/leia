@@ -1,0 +1,22 @@
+{
+  "name": "@IMAM",
+  "isa": [
+    "@RELIGIOUS-ROLE"
+  ],
+  "def": "in islam, the man who leads prayers in a mosque",
+  "local": [
+    {
+      "slot": "has-religion",
+      "facet": "sem",
+      "filler": "@ISLAM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-religion",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@MONOPOLY",
+  "isa": [
+    "@CORPORATE-EVENT"
+  ],
+  "def": "exclusive control by one group of the means of producing some entity or service",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

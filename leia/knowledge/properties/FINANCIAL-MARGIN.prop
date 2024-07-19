@@ -1,0 +1,9 @@
+{
+  "name": "$FINANCIAL-MARGIN",
+  "def": "in trade, the difference between the selling price and the seller*s cost of a specific item. May be negative...",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

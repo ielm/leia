@@ -1,0 +1,19 @@
+{
+  "name": "@BOOKLET",
+  "isa": [
+    "@BOOK"
+  ],
+  "def": "a small book, especially paperbound",
+  "local": [
+    {
+      "slot": "size",
+      "facet": "sem",
+      "filler": [
+        "<",
+        0.4
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

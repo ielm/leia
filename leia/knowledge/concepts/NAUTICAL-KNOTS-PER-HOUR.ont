@@ -1,0 +1,19 @@
+{
+  "name": "@NAUTICAL-KNOTS-PER-HOUR",
+  "isa": [
+    "@SPEED-UNIT"
+  ],
+  "def": "a speed unit used in navigation, equal to one nautical mile per hour; nautical-mile/hour",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.514444
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@AVENGE",
+  "isa": [
+    "@OPPOSITION-EVENT"
+  ],
+  "def": "to get revenge for an injury, etc. or to take vengeance for someone else",
+  "local": [
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@INJURY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

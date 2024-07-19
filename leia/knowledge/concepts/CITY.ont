@@ -1,0 +1,77 @@
+{
+  "name": "@CITY",
+  "isa": [
+    "@SMALL-GEOPOLITICAL-ENTITY"
+  ],
+  "def": "a population center larger or more important than a town",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@DISTRICT"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@PUBLIC-SQUARE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PUBLIC-SQUARE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@COUNTY"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@DISTRICT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@GEOGRAPHICAL-ENTITY"
+    },
+    {
+      "slot": "in-city",
+      "facet": "sem",
+      "filler": "@CITY"
+    },
+    {
+      "slot": "in-town",
+      "facet": "sem",
+      "filler": "@TOWN"
+    },
+    {
+      "slot": "in-village",
+      "facet": "sem",
+      "filler": "@VILLAGE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

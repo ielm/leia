@@ -1,0 +1,26 @@
+{
+  "name": "@MORTAR",
+  "isa": [
+    "@CONSTRUCTION-MATERIAL"
+  ],
+  "def": "a mixture of lime, cement, sand and water",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WATER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SAND"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CEMENT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

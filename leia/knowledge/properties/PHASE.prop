@@ -1,0 +1,9 @@
+{
+  "name": "$PHASE",
+  "def": "the phase of aspect",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$PARAMETRIC-LITERAL-ATTRIBUTE"
+}

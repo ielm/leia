@@ -1,0 +1,21 @@
+{
+  "name": "@DESIGN",
+  "isa": [
+    "@ARRANGE"
+  ],
+  "def": "to arrange by parts, form, color, etc. in an artistic way",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@GRAPHIC-DESIGNER"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@PAINTER-ARTISTIC"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

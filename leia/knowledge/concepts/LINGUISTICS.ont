@@ -1,0 +1,22 @@
+{
+  "name": "@LINGUISTICS",
+  "isa": [
+    "@FIELD-OF-STUDY"
+  ],
+  "def": "the science of language",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@LINGUIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    }
+  ],
+  "private": {}
+}

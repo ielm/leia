@@ -1,0 +1,21 @@
+{
+  "name": "@DRIVEWAY",
+  "isa": [
+    "@ROAD"
+  ],
+  "def": "a private road that connects a house to a road and/or other places on a private territory",
+  "local": [
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

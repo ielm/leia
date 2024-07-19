@@ -1,0 +1,77 @@
+{
+  "name": "@HEMOGLOBIN",
+  "isa": [
+    "@PROTEIN"
+  ],
+  "def": "the oxygen-bearing, iron-containing conjugated protein in vertebrate red blood cells",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GRAPHITE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@HYDROGEN"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@OXYGEN"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SULFUR"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "red"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CARBON"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@NITROGEN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "blue"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "off-white"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "purple"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "white"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "yellow"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,52 @@
+{
+  "name": "@BRASS",
+  "isa": [
+    "@ALLOY"
+  ],
+  "def": "an alloy consisting mainly of copper (over 50%) and zinc, to which other elements, such as tin, lead and aluminum are added, depending upon the color, strength, machinability, corrosion resistance and ductility desired",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ALUMINUM"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@COPPER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@LEAD"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@TIN"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ZINC"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "yellow"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METALLIC-LIQUID-ELEMENT"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METALLIC-SOLID-ELEMENT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@SPRING",
+  "isa": [
+    "@SEASON"
+  ],
+  "def": "The season of the year, occurring between winter and summer, during which the weather becomes warmer and plants revive",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MAY"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@APRIL"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MARCH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

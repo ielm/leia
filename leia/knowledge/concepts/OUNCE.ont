@@ -1,0 +1,19 @@
+{
+  "name": "@OUNCE",
+  "isa": [
+    "@MASS-WEIGHT-UNIT"
+  ],
+  "def": "a unit of weight, one-sixteenth of a pound",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.0283495
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

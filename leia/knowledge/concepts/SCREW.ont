@@ -1,0 +1,27 @@
+{
+  "name": "@SCREW",
+  "isa": [
+    "@MACHINE-PART",
+    "@FASTENER"
+  ],
+  "def": "a nail with ridges",
+  "local": [],
+  "block": [
+    {
+      "slot": "is-consumer-good",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "translucent"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "transparent"
+    }
+  ],
+  "private": {}
+}

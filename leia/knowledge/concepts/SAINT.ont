@@ -1,0 +1,22 @@
+{
+  "name": "@SAINT",
+  "isa": [
+    "@RELIGIOUS-ROLE"
+  ],
+  "def": "a holy person: especially, in certain Christian churches, a person officially recognized and venerated for having attained heaven after a particularly holy life",
+  "local": [
+    {
+      "slot": "has-religion",
+      "facet": "sem",
+      "filler": "@CHRISTIANITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-religion",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "private": {}
+}

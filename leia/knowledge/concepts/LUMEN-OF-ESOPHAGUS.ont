@@ -1,0 +1,52 @@
+{
+  "name": "@LUMEN-OF-ESOPHAGUS",
+  "isa": [
+    "@ORGAN-CAVITY"
+  ],
+  "def": "the inner open space of the esophagus; this concept is part of the various esophageal segments, so it should not be interpreted as *the lumen of the whole esophagus* but, rather, as a type of object",
+  "local": [
+    {
+      "slot": "width",
+      "facet": "relaxable-to",
+      "filler": [
+        "=>=<",
+        3
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        2
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "width",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

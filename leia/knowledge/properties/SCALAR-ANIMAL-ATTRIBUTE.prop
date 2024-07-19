@@ -1,0 +1,9 @@
+{
+  "name": "$SCALAR-ANIMAL-ATTRIBUTE",
+  "def": "Attributes that apply to animals",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

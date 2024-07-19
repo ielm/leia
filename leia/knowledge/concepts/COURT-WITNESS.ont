@@ -1,0 +1,36 @@
+{
+  "name": "@COURT-WITNESS",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "one who testifies in court",
+  "local": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "><",
+        130
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "><",
+        130
+      ]
+    },
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

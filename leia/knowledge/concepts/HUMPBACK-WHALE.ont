@@ -1,0 +1,16 @@
+{
+  "name": "@HUMPBACK-WHALE",
+  "isa": [
+    "@WHALE"
+  ],
+  "def": "A baleen whale having a rounded back and long knobby flippers. Humpback whales communicate using complex, distinctive songs that identify individuals and play an important role in mating.",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FIN"
+    }
+  ],
+  "private": {}
+}

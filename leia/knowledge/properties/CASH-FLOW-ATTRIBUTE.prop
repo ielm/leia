@@ -1,0 +1,9 @@
+{
+  "name": "$CASH-FLOW-ATTRIBUTE",
+  "def": "The pattern of income and expenditures, as of a company or person, and the resulting availability of cash",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

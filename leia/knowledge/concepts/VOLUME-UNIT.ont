@@ -1,0 +1,22 @@
+{
+  "name": "@VOLUME-UNIT",
+  "isa": [
+    "@MEASURING-UNIT"
+  ],
+  "def": "a unit for measuring how much three-dimensional space an object occupies",
+  "local": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@CUBIC-METER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "sem",
+      "filler": "@MEASURING-UNIT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@MINUTE",
+  "isa": [
+    "@TIME-INTERVAL-UNIT"
+  ],
+  "def": "A unit of time equal to 60 seconds",
+  "local": [
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@TIMEPIECE"
+    },
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        60.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

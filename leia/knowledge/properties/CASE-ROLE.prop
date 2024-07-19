@@ -1,0 +1,9 @@
+{
+  "name": "$CASE-ROLE",
+  "def": "The roles arguments can have in a situation described by a predicate.",
+  "type": "case_role",
+  "range": "!AnyType",
+  "inverse": "$CASE-ROLE-OF",
+  "measured-in": [],
+  "container": "$RELATION"
+}

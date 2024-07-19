@@ -1,0 +1,52 @@
+{
+  "name": "@GAME-ACTIVITY",
+  "isa": [
+    "@PLAY-GAME-SPORT"
+  ],
+  "def": "to play at an amusement or sport",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@GAME-ARTIFACT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@ATHLETE"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@SPORTS-TEAM"
+    },
+    {
+      "slot": "has-loser",
+      "facet": "default",
+      "filler": "@ATHLETE"
+    },
+    {
+      "slot": "has-loser",
+      "facet": "default",
+      "filler": "@SPORTS-TEAM"
+    },
+    {
+      "slot": "has-winner",
+      "facet": "default",
+      "filler": "@ATHLETE"
+    },
+    {
+      "slot": "has-winner",
+      "facet": "default",
+      "filler": "@SPORTS-TEAM"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SPORT-ARTIFACT"
+    }
+  ],
+  "private": {}
+}

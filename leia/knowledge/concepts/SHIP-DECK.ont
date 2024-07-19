@@ -1,0 +1,22 @@
+{
+  "name": "@SHIP-DECK",
+  "isa": [
+    "@WATER-VEHICLE-PART"
+  ],
+  "def": "the floor of a ship",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

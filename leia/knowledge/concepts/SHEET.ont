@@ -1,0 +1,19 @@
+{
+  "name": "@SHEET",
+  "isa": [
+    "@MASS-WEIGHT-UNIT"
+  ],
+  "def": "a unit of mass; pound/700",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.000647989
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

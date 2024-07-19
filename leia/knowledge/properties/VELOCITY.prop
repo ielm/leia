@@ -1,0 +1,11 @@
+{
+  "name": "$VELOCITY",
+  "def": "time rate of linear motion in a given direction",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@SPEED-UNIT"
+  ],
+  "container": "$SCALAR-EVENT-ATTRIBUTE"
+}

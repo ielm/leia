@@ -1,0 +1,17 @@
+{
+  "name": "@TRADEMARK",
+  "isa": [
+    "@INTANGIBLE-ASSET",
+    "@NAME"
+  ],
+  "def": "the word or symbol, etc. used by a corporation to distinguish a product, usually protected by law",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

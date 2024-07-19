@@ -1,0 +1,27 @@
+{
+  "name": "@VOLTMETER",
+  "isa": [
+    "@MEASURING-ARTIFACT"
+  ],
+  "def": "an instrument, such as a galvanometer, for measuring potential differences in volts",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GLASS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

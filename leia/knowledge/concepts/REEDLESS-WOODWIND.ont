@@ -1,0 +1,16 @@
+{
+  "name": "@REEDLESS-WOODWIND",
+  "isa": [
+    "@WOODWIND"
+  ],
+  "def": "a woodwind instrument without a reed",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    }
+  ],
+  "private": {}
+}

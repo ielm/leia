@@ -1,0 +1,16 @@
+{
+  "name": "@MUNICIPAL-BUILDING",
+  "isa": [
+    "@GOVERNMENT-BUILDING"
+  ],
+  "def": "any building having to do with the local government (town, city, county, etc.)",
+  "local": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@MUNICIPAL-OFFICER"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

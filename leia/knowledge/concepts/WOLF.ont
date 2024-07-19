@@ -1,0 +1,31 @@
+{
+  "name": "@WOLF",
+  "isa": [
+    "@CANINE"
+  ],
+  "def": "a wild, carnivorous canine mammal of the Northern Hemisphere",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "black"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "red"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "white"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,68 @@
+{
+  "name": "@FOOD",
+  "isa": [
+    "@INGESTIBLE"
+  ],
+  "def": "a substance taken in and assimilated by an organism to maintain life and growth; nourishment",
+  "local": [
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "rawness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "is-consumer-good",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "automated"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "manual"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "mechanical"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@GAS"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "semi-solid"
+    }
+  ],
+  "private": {}
+}

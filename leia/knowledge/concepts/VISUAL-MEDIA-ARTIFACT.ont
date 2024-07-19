@@ -1,0 +1,16 @@
+{
+  "name": "@VISUAL-MEDIA-ARTIFACT",
+  "isa": [
+    "@MEDIA-ARTIFACT"
+  ],
+  "def": "artifacts used in visual media, such as printed media and signs",
+  "local": [],
+  "block": [
+    {
+      "slot": "is-consumer-good",
+      "facet": "sem",
+      "filler": "yes"
+    }
+  ],
+  "private": {}
+}

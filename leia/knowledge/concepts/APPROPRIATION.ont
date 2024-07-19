@@ -1,0 +1,21 @@
+{
+  "name": "@APPROPRIATION",
+  "isa": [
+    "@TRANSFER-POSSESSION"
+  ],
+  "def": "to take for one*s own use, often improperly",
+  "local": [],
+  "block": [
+    {
+      "slot": "legality-attribute",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

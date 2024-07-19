@@ -1,0 +1,36 @@
+{
+  "name": "@HELIUM",
+  "isa": [
+    "@GASEOUS-ELEMENT"
+  ],
+  "def": "a colorless, odorless, tasteless, inert gaseous element",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        4
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        2
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,77 @@
+{
+  "name": "@BUSINESS-WRITING",
+  "isa": [
+    "@INFORMATION-MANAGING-ACTIVITY"
+  ],
+  "def": "a business-activity that involves any kind of writing for business such as documentation, reports, letters, etc.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DOCUMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@BUSINESS-DOCUMENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WRITING-IMPLEMENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PAPER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COMPUTER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ATTORNEY"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@COMPUTER-USER"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@COMPUTING-WORK-ROLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@RESEARCHER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

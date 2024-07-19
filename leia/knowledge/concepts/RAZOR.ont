@@ -1,0 +1,38 @@
+{
+  "name": "@RAZOR",
+  "isa": [
+    "@CUTTING-IMPLEMENT",
+    "@PERSONAL-GROOMING-ARTIFACT"
+  ],
+  "def": "a sharp-edged cutting instrument for shaving, etc.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BLADE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@HANDLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

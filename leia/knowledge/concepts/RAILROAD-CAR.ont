@@ -1,0 +1,22 @@
+{
+  "name": "@RAILROAD-CAR",
+  "isa": [
+    "@VEHICLE-PART"
+  ],
+  "def": "a railroad passenger car",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@VEHICLE-PART"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

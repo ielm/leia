@@ -1,0 +1,32 @@
+{
+  "name": "@FITTED-SHEET",
+  "isa": [
+    "@BED-SHEET"
+  ],
+  "def": "a bed sheet with elastic to make it fit tight to the mattress",
+  "local": [
+    {
+      "slot": "on-top-of",
+      "facet": "sem",
+      "filler": "@MATTRESS"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ELASTIC"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "on-top-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

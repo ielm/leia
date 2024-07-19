@@ -1,0 +1,77 @@
+{
+  "name": "@AIM",
+  "isa": [
+    "@DEVICE-AS-THEME-EVENT"
+  ],
+  "def": "to direct a weapon (or other device) so as to point and/or hit",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WEAPON"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@HIT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHOTOGRAPHIC-DEVICE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DRILL-DEVICE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FIRE-EXTINGUISHER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LENS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MAGNET"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANTENNA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CRANE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INJECTOR"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OPTICAL-INSTRUMENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DEVICE"
+    }
+  ],
+  "private": {}
+}

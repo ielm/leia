@@ -1,0 +1,36 @@
+{
+  "name": "@ZINC",
+  "isa": [
+    "@METALLIC-SOLID-ELEMENT"
+  ],
+  "def": "a bluish-white, lustrous metallic element that is brittle at room temperatures but malleable with heating. it is used to form a wide variety of alloys including brass, bronze, german silver, various solders, and nickel silver, in galvanizing iron and other metals, for electric fuses, anodes, and meter cases, and in roofing, gutters, and various household",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        65
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        30
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

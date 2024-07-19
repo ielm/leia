@@ -1,0 +1,55 @@
+{
+  "name": "@SERVICE-BUILDING",
+  "isa": [
+    "@BUILDING"
+  ],
+  "def": "place where services are performed",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@RECEPTION-AREA"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@WORK-ROLE"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@CUSTOMER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@EMAIL-ADDRESS"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@PHONE-NUMBER"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@WEB-ADDRESS"
+    }
+  ],
+  "private": {}
+}

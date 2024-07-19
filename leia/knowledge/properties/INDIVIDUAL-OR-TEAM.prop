@@ -1,0 +1,9 @@
+{
+  "name": "$INDIVIDUAL-OR-TEAM",
+  "def": "individual or team sports",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-EVENT-ATTRIBUTE"
+}

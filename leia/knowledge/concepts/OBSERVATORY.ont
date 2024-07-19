@@ -1,0 +1,21 @@
+{
+  "name": "@OBSERVATORY",
+  "isa": [
+    "@PLACE"
+  ],
+  "def": "a facility equipped for observation of atmospheric or space phenomena",
+  "local": [
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,92 @@
+{
+  "name": "@REMEMBER",
+  "isa": [
+    "@PASSIVE-COGNITIVE-EVENT"
+  ],
+  "def": "To retain information in one*s memory.",
+  "local": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INFORMATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DEADLINE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CLASSIFICATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DIAGNOSIS-MEDICAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DIAGNOSIS-NON-MEDICAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FORMULA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ISSUE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MEMORY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SUBJECT-AREA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@THEORY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@THOUGHT"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

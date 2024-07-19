@@ -1,0 +1,16 @@
+{
+  "name": "@OROPHARYNGEAL-PHASE-OF-SWALLOWING",
+  "isa": [
+    "@PHASE-OF-SWALLOWING"
+  ],
+  "def": "the agentive phase of swallowing",
+  "local": [],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

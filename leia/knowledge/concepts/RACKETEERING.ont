@@ -1,0 +1,47 @@
+{
+  "name": "@RACKETEERING",
+  "isa": [
+    "@CRIMINAL-ACTIVITY"
+  ],
+  "def": "operation of a business characterized by systematically dishonest practices",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@FRAUD"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@LIE"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@DECEIVE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BUSINESS-ACTIVITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

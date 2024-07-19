@@ -1,0 +1,16 @@
+{
+  "name": "@CRANE",
+  "isa": [
+    "@MACHINE"
+  ],
+  "def": "a machine for lifting or moving heavy weights, using a moveable projecting arm or a horizontal traveling beam",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BEAM"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@FLANNEL",
+  "isa": [
+    "@BLENDED-FABRIC"
+  ],
+  "def": "A soft woven cloth of wool or a blend of wool and cotton or synthetics.",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SILK"
+    }
+  ],
+  "private": {}
+}

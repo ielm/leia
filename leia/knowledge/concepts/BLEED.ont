@@ -1,0 +1,42 @@
+{
+  "name": "@BLEED",
+  "isa": [
+    "@NORMAL-BIOLOGIC-FUNCTION"
+  ],
+  "def": "to lose blood, especially from an injury",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ARTERY"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@VEIN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BLOOD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

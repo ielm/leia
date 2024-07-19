@@ -1,0 +1,60 @@
+{
+  "name": "@CREAM-CHEESE",
+  "isa": [
+    "@CHEESE"
+  ],
+  "def": "a soft white cheese made of cream and milk",
+  "local": [
+    {
+      "slot": "sourness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0.1
+      ]
+    },
+    {
+      "slot": "bitterness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0.1
+      ]
+    },
+    {
+      "slot": "softness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0.8
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "bitterness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "softness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "sourness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

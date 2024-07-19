@@ -1,0 +1,19 @@
+{
+  "name": "@KILOMETERS-PER-HOUR",
+  "isa": [
+    "@SPEED-UNIT"
+  ],
+  "def": "a speed unit",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.277778
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

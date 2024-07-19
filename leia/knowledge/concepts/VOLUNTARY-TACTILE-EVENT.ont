@@ -1,0 +1,16 @@
+{
+  "name": "@VOLUNTARY-TACTILE-EVENT",
+  "isa": [
+    "@TACTILE-EVENT"
+  ],
+  "def": "voluntarily (actively) perceive something by touching",
+  "local": [],
+  "block": [
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

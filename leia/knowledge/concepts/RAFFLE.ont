@@ -1,0 +1,22 @@
+{
+  "name": "@RAFFLE",
+  "isa": [
+    "@GAMBLE"
+  ],
+  "def": "to offer a prize in a lottery in which each participant buys a chance to win",
+  "local": [
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@TICKET"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@GAME-ARTIFACT"
+    }
+  ],
+  "private": {}
+}

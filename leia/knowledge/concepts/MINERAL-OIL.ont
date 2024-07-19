@@ -1,0 +1,22 @@
+{
+  "name": "@MINERAL-OIL",
+  "isa": [
+    "@OIL"
+  ],
+  "def": "a colorless, tasteless oil from petroleum, used as a laxative",
+  "local": [
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "transparent"
+    }
+  ],
+  "block": [
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "opaque"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$LEGALITY-ATTRIBUTE",
+  "def": "shows whether something is legal or illegal according to the law or other regulations, such as rules of sports events",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

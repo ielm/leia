@@ -1,0 +1,36 @@
+{
+  "name": "@MOLYBDENUM",
+  "isa": [
+    "@HARD-METALLIC-ELEMENT"
+  ],
+  "def": "a hard, gray, metallic element used to toughen alloy steels and soften tungsten alloy. it is also used in fertilizers, dyes, enamels, and reagents",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        42
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        95
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

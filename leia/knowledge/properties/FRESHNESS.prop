@@ -1,0 +1,12 @@
+{
+  "name": "$FRESHNESS",
+  "def": "how recently grown, made, etc. an object is",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE",
+    "@TIME-INTERVAL-UNIT"
+  ],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

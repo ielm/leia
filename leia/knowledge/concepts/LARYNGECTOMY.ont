@@ -1,0 +1,22 @@
+{
+  "name": "@LARYNGECTOMY",
+  "isa": [
+    "@SURGICAL-REMOVAL"
+  ],
+  "def": "Surgical removal of part or all of the larynx.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@LARYNX"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

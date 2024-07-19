@@ -1,0 +1,27 @@
+{
+  "name": "@CONTAINER-FURNITURE",
+  "isa": [
+    "@FURNITURE",
+    "@CONTAINER"
+  ],
+  "def": "furniture that functions as containers for objects",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SEWING-MATERIAL"
+    }
+  ],
+  "private": {}
+}

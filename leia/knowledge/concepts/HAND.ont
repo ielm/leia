@@ -1,0 +1,27 @@
+{
+  "name": "@HAND",
+  "isa": [
+    "@DISTAL-FREE-LIMB-SEGMENT"
+  ],
+  "def": "a part of an animal*s body, connected to the arm",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FINGER"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PALM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

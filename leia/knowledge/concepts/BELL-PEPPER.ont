@@ -1,0 +1,31 @@
+{
+  "name": "@BELL-PEPPER",
+  "isa": [
+    "@PEPPER-VEGETABLE"
+  ],
+  "def": "A plant with large mild thick-walled fruits of a bell shape and yellow, green, orange, or red color.",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "green"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "red"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "yellow"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "orange"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,58 @@
+{
+  "name": "@CANDLEMAS",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "a Christian holiday, February 2, celebrating the feast of the Purification of the Virgin Mary",
+  "local": [
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@FEBRUARY"
+    },
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        2
+      ]
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@CATHOLICISM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        31
+      ]
+    },
+    {
+      "slot": "absolute-day",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "private": {}
+}

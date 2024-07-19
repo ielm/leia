@@ -1,0 +1,32 @@
+{
+  "name": "@CHARITABLE-GIVING",
+  "isa": [
+    "@EVERYDAY-FINANCIAL-EVENT"
+  ],
+  "def": "economic support provided willingly and with no \ndirect economic benefit to the giver (apart from\ntax breaks in some cases)",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MONEY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@POOL-INTEREST",
+  "isa": [
+    "@CORPORATE-EVENT"
+  ],
+  "def": "to combine the accounting of two companies",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ACCOUNTING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

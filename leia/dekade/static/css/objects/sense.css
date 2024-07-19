@@ -1,0 +1,89 @@
+div.sense {
+    padding: 4px;
+    overflow-y: scroll;
+    height: 100%;
+    --sense-functional-field-background: #eee;
+}
+
+div.sense.imported {
+    overflow-y: unset;
+}
+
+div.sense div.sense-header {
+    font-weight: bold;
+}
+
+div.sense div.sense-field-label {
+    font-size: small;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: -3px;
+    color: #686868;
+}
+
+div.sense div.sense-field-content {
+
+}
+
+div.sense div.sense-field-content.empty {
+    font-style: italic;
+}
+
+div.sense div.syn-struc-element {
+    background: var(--sense-functional-field-background);
+    margin-top: 3px;
+}
+
+div.sense span.syn-struc-element-content {
+    font-family: monospace;
+}
+
+div.sense span.syn-struc-element-variable {
+    font-family: monospace;
+}
+
+div.sense span.syn-struc-element-optionality {
+    font-size: small;
+    font-style: italic;
+}
+
+div.sense span.syn-struc-element-optionality.optional {
+    color: cadetblue;
+}
+
+div.sense div.syn-struc-element.dependency div.syn-struc-element.token {
+    display: inline;
+}
+
+div.sense div.syn-struc-element.dependency div.dependency-tokens {
+    margin-left: 20px;
+}
+
+div.sense div.syn-struc-element.constituency div.constituency-children {
+    margin-left: 20px;
+}
+
+div.sense div.sem-struc-element {
+    font-family: monospace;
+    background: var(--sense-functional-field-background);
+    margin-top: 3px;
+}
+
+div.sense div.sem-struc-element div.sem-struc-element {
+    margin-top: 0px;
+}
+
+div.sense div.sem-struc-element-children {
+    margin-left: 20px;
+}
+
+div.sense div.meaning-procedure {
+    font-family: monospace;
+    background: var(--sense-functional-field-background);
+    margin-top: 3px;
+}
+
+div.sense div.sense-additional-meaning div.sense-field-content.full {
+    font-family: monospace;
+    background: var(--sense-functional-field-background);
+}

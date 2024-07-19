@@ -1,0 +1,52 @@
+{
+  "name": "@ACADEMIC-ROLE",
+  "isa": [
+    "@WORK-ROLE"
+  ],
+  "def": "social roles pertaining to scholarly pursuit",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@ACADEMIC-BUILDING"
+    },
+    {
+      "slot": "tenure",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "tenure",
+      "facet": "sem",
+      "filler": "yes"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@ANATOMY"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@ANTHROPOLOGY"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@BIOLOGY"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@ZOOLOGY"
+    }
+  ],
+  "private": {}
+}

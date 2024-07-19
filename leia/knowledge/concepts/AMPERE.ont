@@ -1,0 +1,19 @@
+{
+  "name": "@AMPERE",
+  "isa": [
+    "@ELECTRIC-CURRENT-UNIT"
+  ],
+  "def": "the SI Base unit for measuring electrical current, or the amount of electric charge per unit time, in coulombs per second.  ",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

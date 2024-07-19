@@ -1,0 +1,19 @@
+{
+  "name": "@CREDITOR",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "One to whom money or its equivalent is owed.",
+  "local": [],
+  "block": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

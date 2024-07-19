@@ -1,0 +1,22 @@
+{
+  "name": "@MOLDING",
+  "isa": [
+    "@BUILDING-ARTIFACT-PART"
+  ],
+  "def": "a shaped strip of wood, etc. as around the upper walls of a room",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

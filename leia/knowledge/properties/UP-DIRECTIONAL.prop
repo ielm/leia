@@ -1,0 +1,9 @@
+{
+  "name": "$UP-DIRECTIONAL",
+  "def": "to a higher position",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$DOWN-DIRECTIONAL",
+  "measured-in": [],
+  "container": "$DIRECTIONAL-RELATION"
+}

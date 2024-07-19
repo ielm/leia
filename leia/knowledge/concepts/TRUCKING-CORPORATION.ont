@@ -1,0 +1,16 @@
+{
+  "name": "@TRUCKING-CORPORATION",
+  "isa": [
+    "@TRANSPORTATION-CORPORATION"
+  ],
+  "def": "a corporation that transports goods by truck",
+  "local": [
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@TRUCK"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

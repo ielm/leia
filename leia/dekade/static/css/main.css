@@ -1,0 +1,110 @@
+@import "./holygrail.css";
+@import "./tabs.css";
+@import "./widgets.css";
+
+@import "./objects/_default.css";
+@import "./objects/concept.css";
+@import "./objects/errors.css";
+@import "./objects/ontosem.css";
+@import "./objects/properties.css";
+@import "./objects/sense.css";
+@import "./objects/tree.css";
+
+@import "./sidebars/lexicon.css";
+@import "./sidebars/ontology.css";
+@import "./sidebars/ontosem.css";
+@import "./sidebars/properties.css";
+
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+div {
+
+}
+
+table {
+
+}
+
+input[type=text] {
+    border-radius: 3px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+button {
+    background-color: #eff3f7;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: #938f8b;
+}
+
+button:hover {
+    background-color: #d4d9dd;
+}
+
+button:active {
+    background-color: #938f8b;
+}
+
+button:disabled {
+    background-color: #d7d7d7 !important;
+    cursor: not-allowed;
+}
+
+button[is=help-button] {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    font-size: 0.8em;
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+}
+
+a[is=content-link] {
+    text-decoration: underline;
+    color: #3763e6;
+    font-variant: all-small-caps;
+}
+
+a[is=content-link]:hover {
+    cursor: pointer;
+}
+
+.empty-contents-message {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    color: #484848;
+}
+
+#leia-header-image {
+    height: 18px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    vertical-align: middle;
+}
+
+#dekade-footer-version {
+    vertical-align: middle;
+    height: 18px;
+    padding-left: 4px;
+    display: inline-block;
+    color: #ccc;
+}

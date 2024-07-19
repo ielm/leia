@@ -1,0 +1,32 @@
+{
+  "name": "@OPEN-ACCOUNT",
+  "isa": [
+    "@BANKING-EVENT"
+  ],
+  "def": "The event of opening a bank account.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@BANK-ACCOUNT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@BANK"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@MONEY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

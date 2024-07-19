@@ -1,0 +1,27 @@
+{
+  "name": "@MINE",
+  "isa": [
+    "@EARTH-RESOURCE-ARTIFACT"
+  ],
+  "def": "an excavation made in the earth from which coal, ores, etc. are extracted",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MINING-GALLERY"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MINESHAFT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

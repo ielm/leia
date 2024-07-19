@@ -1,0 +1,9 @@
+{
+  "name": "$MYOGENIC-TONE",
+  "def": "the tension generated as determined by the state of contraction of a segment of muscle",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$PRESSURE"
+}

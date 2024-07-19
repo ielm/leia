@@ -1,0 +1,36 @@
+{
+  "name": "@ROAD-SEGMENT",
+  "isa": [
+    "@ROAD"
+  ],
+  "def": "a segment of a road that might be specified as being of a certain shape, distance, etc.",
+  "local": [
+    {
+      "slot": "road-segment-shape",
+      "facet": "sem",
+      "filler": "straight"
+    },
+    {
+      "slot": "road-segment-shape",
+      "facet": "sem",
+      "filler": "winding"
+    },
+    {
+      "slot": "road-segment-shape",
+      "facet": "sem",
+      "filler": "bending"
+    },
+    {
+      "slot": "road-segment-shape",
+      "facet": "sem",
+      "filler": "bending-right"
+    },
+    {
+      "slot": "road-segment-shape",
+      "facet": "sem",
+      "filler": "bending-left"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

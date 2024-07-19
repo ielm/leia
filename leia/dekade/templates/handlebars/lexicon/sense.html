@@ -1,0 +1,200 @@
+{{#*inline "synstruc-element"}}
+    {{> (lookup . 'type')}}
+{{/inline}}
+
+{{#*inline "root"}}
+    <div class="syn-struc-element root">
+        <span class="syn-struc-element-content">*ROOT</span>
+        ...
+        <span class="syn-struc-element-variable">$VAR0</span>,
+        <span class="syn-struc-element-optionality">required</span>
+    </div>
+{{/inline}}
+
+{{#*inline "token"}}
+    <div class="syn-struc-element token">
+        <span class="syn-struc-element-content">
+            {{#if pos}}>{{pos}}{{/if}}
+            {{#if lemma}}
+                "{{#each lemma}}{{this}}{{#unless @last}},{{/unless}}{{/each}}"
+            {{/if}}
+            {{#each morph}}{{@key}}={{this}}{{#unless @last}},{{/unless}}{{/each}}
+        </span>
+        ...
+        {{#if var}}
+            <span class="syn-struc-element-variable">$VAR{{var}}</span>,
+        {{/if}}
+        <span class="syn-struc-element-optionality {{#if opt}}optional{{/if}}">{{#if opt}}optional{{else}}required{{/if}}</span>
+    </div>
+{{/inline}}
+
+{{#*inline "dependency"}}
+    <div class="syn-struc-element dependency">
+        <span class="syn-struc-element-content">
+            >{{deptype}}
+            {{#if (or gov dep)}}
+                (
+                    {{#if gov}}
+                        {{#if gov.pos}}>{{gov.pos}}{{/if}}
+                        {{#if gov.lemma}}"{{#each gov.lemma}}{{this}}{{#unless @last}},{{/unless}}{{/each}}"{{/if}}
+                    {{else}}
+                        *
+                    {{/if}},
+                    {{#if dep}}
+                        {{#if dep.pos}}>{{dep.pos}}{{/if}}
+                        {{#if dep.lemma}}"{{#each dep.lemma}}{{this}}{{#unless @last}},{{/unless}}{{/each}}"{{/if}}
+                    {{else}}
+                        *
+                    {{/if}}
+                )
+            {{/if}}
+        </span>
+        ...
+        {{#if var}}
+            <span class="syn-struc-element-variable">$VAR{{var}}</span>,
+        {{/if}}
+        <span class="syn-struc-element-optionality {{#if opt}}optional{{/if}}">{{#if opt}}optional{{else}}required{{/if}}</span>
+    </div>
+{{/inline}}
+
+{{#*inline "constituency"}}
+    <div class="syn-struc-element constituency">
+        <span class="syn-struc-element-content">({{contype}}</span>
+        ...
+        {{#if var}}
+            <span class="syn-struc-element-variable">$VAR{{var}}</span>,
+        {{/if}}
+        <span class="syn-struc-element-optionality {{#if opt}}optional{{/if}}">{{#if opt}}optional{{else}}required{{/if}}</span>
+        <div class="constituency-children">
+            {{#each children}}
+                {{> synstruc-element}}
+            {{/each}}
+        </div>
+    </div>
+{{/inline}}
+
+{{#*inline "semstruc"}}
+    {{#each this}}
+        <div class="sem-struc-element">
+            {{#iftype this "object"}}
+                <div class="sem-struc-element-value">{{@key}}</div>
+                <div class="sem-struc-element-children">
+                    {{> semstruc}}
+                </div>
+            {{else}}
+                <div class="sem-struc-element-value">{{@key}} = {{this}}</div>
+            {{/iftype}}
+        </div>
+    {{/each}}
+{{/inline}}
+
+{{#*inline "meaning-procedure"}}
+    <div class="meaning-procedure">
+        <span class="mp-name">{{this.[0]}}</span>
+        ({{#each this}}{{#ifeq @index 0}}{{else}}{{this}}{{#unless @last}} , {{/unless}}{{/ifeq}}{{/each}})
+    </div>
+{{/inline}}
+
+<div class="sense">
+
+    <div class="sense-header">
+        <span class="sense-name">~{{sense}}</span>
+    </div>
+
+    <div class="sense-descriptions">
+        <div class="sense-field-label">Definition</div>
+        {{#if definition}}
+            <div class="sense-field-content">{{definition}}</div>
+        {{else}}
+            <div class="sense-field-content empty">None.</div>
+        {{/if}}
+
+        <div class="sense-field-label">Example</div>
+        {{#if example}}
+            <div class="sense-field-content">{{example}}</div>
+        {{else}}
+            <div class="sense-field-content empty">None.</div>
+        {{/if}}
+
+        <div class="sense-field-label">Comments</div>
+        {{#if comments}}
+            <div class="sense-field-content">{{comments}}</div>
+        {{else}}
+            <div class="sense-field-content empty">None.</div>
+        {{/if}}
+    </div>
+
+    <div class="sense-alternates">
+        <div class="sense-field-label">Synonyms</div>
+        {{#if synonyms}}
+            <div class="sense-field-content">
+                {{#each synonyms}}
+                    {{this}}
+                    {{#unless @last}},{{/unless}}
+                {{/each}}
+            </div>
+        {{else}}
+            <div class="sense-field-content empty">None.</div>
+        {{/if}}
+
+        <div class="sense-field-label">Hyponyms</div>
+        {{#if hyponyms}}
+            <div class="sense-field-content">
+                {{#each hyponyms}}
+                    {{this}}
+                    {{#unless @last}},{{/unless}}
+                {{/each}}
+            </div>
+        {{else}}
+            <div class="sense-field-content empty">None.</div>
+        {{/if}}
+    </div>
+
+    <hr>
+
+    <div class="sense-synstruc">
+        <div class="sense-field-label">Syn-Struc</div>
+        <div class="syn-struc-elements">
+            {{#each synstruc}}
+                {{> synstruc-element}}
+            {{/each}}
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="sense-semstruc">
+        <div class="sense-field-label">Sem-Struc</div>
+        {{> semstruc semstruc}}
+    </div>
+
+    <hr>
+
+    <div class="sense-additional-meaning">
+        <div class="sense-field-label">Output Syntax</div>
+        {{#if outputsyntax}}
+            <div class="sense-field-content full">{{#each outputsyntax}}{{this}}{{#unless @last}} , {{/unless}}{{/each}}</div>
+        {{else}}
+            <div class="sense-field-content empty">None.</div>
+        {{/if}}
+
+        <div class="sense-field-label">TMR Head</div>
+        {{#if tmrhead}}
+            <div class="sense-field-content full">{{tmrhead}}</div>
+        {{else}}
+            <div class="sense-field-content empty">None.</div>
+        {{/if}}
+
+        <div class="sense-field-label">Meaning Procedures</div>
+        <div class="meaning-procedures">
+            {{#if mps}}
+                {{#each mps}}
+                    {{> meaning-procedure}}
+                {{/each}}
+            {{else}}
+                <div class="sense-field-content empty">None.</div>
+            {{/if}}
+        </div>
+    </div>
+
+</div>

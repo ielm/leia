@@ -1,0 +1,9 @@
+{
+  "name": "$INTEREST-RATE",
+  "def": "the rate at which money is lent",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-FINANCIAL-OBJECT-ATTRIBUTE"
+}

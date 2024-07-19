@@ -1,0 +1,42 @@
+{
+  "name": "@SWIM",
+  "isa": [
+    "@MOTION-EVENT"
+  ],
+  "def": "To move in water by moving one*s arms and legs or fins or tail.",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FIN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TAIL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WING"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ARM"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@LEG"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

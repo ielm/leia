@@ -1,0 +1,37 @@
+{
+  "name": "@FERTILIZER",
+  "isa": [
+    "@AGRICULTURAL-PRODUCT"
+  ],
+  "def": "manure, chemicals, compost, etc. used to enrich the soil",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ANIMAL-DERIVED-SUBSTANCE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CHEMICAL-COMPOUND"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT-DERIVED-SUBSTANCE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLANT-FARM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

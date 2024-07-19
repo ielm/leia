@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-CENTER",
+  "def": "inverse of CENTER-OF",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$CENTER-OF",
+  "measured-in": [],
+  "container": "$SPATIAL-RELATION"
+}

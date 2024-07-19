@@ -1,0 +1,9 @@
+{
+  "name": "$AVAILABLE",
+  "def": "whether something or someone is available for use (yes), vs. in use, busy, used up, etc. (no)",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-OBJECT-ATTRIBUTE"
+}

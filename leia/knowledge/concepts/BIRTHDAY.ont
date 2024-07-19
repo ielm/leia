@@ -1,0 +1,27 @@
+{
+  "name": "@BIRTHDAY",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "to celebrate the anniversary of the day of one*s birth",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@GIVE-GIFT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@COMMEMORATE"
+    }
+  ],
+  "private": {}
+}

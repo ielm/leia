@@ -1,0 +1,47 @@
+{
+  "name": "@DEMILITARIZE",
+  "isa": [
+    "@POLITICAL-EVENT"
+  ],
+  "def": "to free from organized military control",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@GOVERNMENTAL-ROLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@LARGE-GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MILITARY-ORGANIZATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

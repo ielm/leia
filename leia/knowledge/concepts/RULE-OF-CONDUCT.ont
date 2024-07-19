@@ -1,0 +1,21 @@
+{
+  "name": "@RULE-OF-CONDUCT",
+  "isa": [
+    "@STANDARD"
+  ],
+  "def": "an established rule for the way people behave toward each other",
+  "local": [
+    {
+      "slot": "applies-to",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "applies-to",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

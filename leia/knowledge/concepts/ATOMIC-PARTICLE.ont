@@ -1,0 +1,16 @@
+{
+  "name": "@ATOMIC-PARTICLE",
+  "isa": [
+    "@ELEMENT-MATERIAL"
+  ],
+  "def": "particles that help to form an atom",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ATOM"
+    }
+  ],
+  "private": {}
+}

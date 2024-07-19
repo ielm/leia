@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-SURNAME",
+  "def": "links a person to his/her surname; a person can have more than one surname",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": "$LAST-NAME-OF",
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

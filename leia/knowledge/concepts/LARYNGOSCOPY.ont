@@ -1,0 +1,51 @@
+{
+  "name": "@LARYNGOSCOPY",
+  "isa": [
+    "@ENDOSCOPY"
+  ],
+  "def": "a scoping procedure that shows the back of the throat",
+  "local": [],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BONE-JOINT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CARDIOVASCULAR-SYSTEM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FEMALE-INTERNAL-GENITALIA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GASTROINTESTINAL-SYSTEM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LUNG"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NOSE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TRACHEOBRONCHIAL-TREE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@URINARY-SYSTEM"
+    }
+  ],
+  "private": {}
+}

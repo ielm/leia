@@ -1,0 +1,11 @@
+{
+  "name": "$PROBABILITY",
+  "def": "indicates the likelihood of something, measured by a percentage or on our abstract scale of 0-1",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-EVENT-ATTRIBUTE"
+}

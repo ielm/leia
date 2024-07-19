@@ -1,0 +1,35 @@
+{
+  "name": "@MEAL",
+  "isa": [
+    "@PREPARED-FOOD"
+  ],
+  "def": "the food served at a certain time of the day for eating, such as breakfast",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@KITCHEN"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@RESTAURANT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    }
+  ],
+  "private": {}
+}

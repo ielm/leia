@@ -1,0 +1,9 @@
+{
+  "name": "$ABSOLUTE-MONTH",
+  "def": "links an event, holiday, etc., to the month when it happens",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$ABSOLUTE-MONTH-OF",
+  "measured-in": [],
+  "container": "$TEMPORAL-RELATION"
+}

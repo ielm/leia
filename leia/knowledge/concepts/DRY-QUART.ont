@@ -1,0 +1,19 @@
+{
+  "name": "@DRY-QUART",
+  "isa": [
+    "@VOLUME-UNIT"
+  ],
+  "def": "a unit of volume equal to 1/4 of a dry-gallon; 67.2*i^3",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.00110121
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

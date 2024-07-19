@@ -1,0 +1,19 @@
+{
+  "name": "@FRIEND",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "a person whom one knows, likes, and trusts",
+  "local": [],
+  "block": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

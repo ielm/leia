@@ -1,0 +1,10 @@
+{
+  "name": "@CHECKING-ACCOUNT",
+  "isa": [
+    "@BANK-ACCOUNT"
+  ],
+  "def": "a bank account from which the depositor can draw checks; this kind of account, unlike a savings account, does not accrue interest",
+  "local": [],
+  "block": [],
+  "private": {}
+}

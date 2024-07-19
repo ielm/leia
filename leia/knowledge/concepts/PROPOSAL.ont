@@ -1,0 +1,35 @@
+{
+  "name": "@PROPOSAL",
+  "isa": [
+    "@DOCUMENT"
+  ],
+  "def": "That which is proposed, or propounded for consideration or acceptance; a scheme or design; The offer by a party of what he has in view as to an intended business transaction, which, with acceptance, constitutes a contract",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@PROPOSE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    }
+  ],
+  "private": {}
+}

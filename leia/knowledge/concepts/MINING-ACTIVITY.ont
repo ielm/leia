@@ -1,0 +1,47 @@
+{
+  "name": "@MINING-ACTIVITY",
+  "isa": [
+    "@MANUFACTURING-ACTIVITY"
+  ],
+  "def": "the work-activity of extracting minerals or precious ores from the earth",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EARTH-RESOURCE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@MINE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@QUARRY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@IMPLEMENT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@FACTORY"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

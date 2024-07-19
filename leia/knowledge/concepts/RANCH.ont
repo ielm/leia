@@ -1,0 +1,21 @@
+{
+  "name": "@RANCH",
+  "isa": [
+    "@FARM"
+  ],
+  "def": "a large farm, especially in the western U.S., for raising cattle, horses, or sheep",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@LIVESTOCK"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FENCE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@AIRPORT-CHECK-IN-FACILITY",
+  "isa": [
+    "@AIRPORT-ARTIFACT"
+  ],
+  "def": "the things used in aiding airport check-in",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@AIRLINE-CLERK"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@COMPUTER"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@COUNTER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

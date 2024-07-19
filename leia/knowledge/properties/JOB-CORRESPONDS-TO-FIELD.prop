@@ -1,0 +1,9 @@
+{
+  "name": "$JOB-CORRESPONDS-TO-FIELD",
+  "def": "the relation between the work-activity and the field-of-study of a given field of interest",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$FIELD-CORRESPONDS-TO-JOB",
+  "measured-in": [],
+  "container": "$FIELD-OF-STUDY-RELATION"
+}

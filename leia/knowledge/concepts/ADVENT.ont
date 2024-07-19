@@ -1,0 +1,42 @@
+{
+  "name": "@ADVENT",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "the time period which includes the four Sundays before Christmas",
+  "local": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@CHRISTIANITY"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@NOVEMBER"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@DECEMBER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "private": {}
+}

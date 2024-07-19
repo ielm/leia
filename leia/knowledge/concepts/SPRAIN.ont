@@ -1,0 +1,22 @@
+{
+  "name": "@SPRAIN",
+  "isa": [
+    "@INJURY"
+  ],
+  "def": "injury to a ligament",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIGAMENT-ORGAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

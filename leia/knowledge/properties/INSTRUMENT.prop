@@ -1,0 +1,9 @@
+{
+  "name": "$INSTRUMENT",
+  "def": "Objects or events used to implement acts--*He cut the bread with a knife,* *He became rich by marrying her.*",
+  "type": "case_role",
+  "range": "!AnyType",
+  "inverse": "$INSTRUMENT-OF",
+  "measured-in": [],
+  "container": "$CASE-ROLE"
+}

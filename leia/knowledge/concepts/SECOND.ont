@@ -1,0 +1,24 @@
+{
+  "name": "@SECOND",
+  "isa": [
+    "@TIME-INTERVAL-UNIT"
+  ],
+  "def": "The SI base unit for measuring time.",
+  "local": [
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@TIMEPIECE"
+    },
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

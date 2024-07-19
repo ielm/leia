@@ -1,0 +1,22 @@
+{
+  "name": "@SINK",
+  "isa": [
+    "@MOTION-EVENT"
+  ],
+  "def": "An non-agentive liquid contact motion event in the vertical downward direction.",
+  "local": [
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

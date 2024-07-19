@@ -1,0 +1,11 @@
+{
+  "name": "$SPATIAL-DISTANCE",
+  "def": "distance in space (needs to be a 3-place predicate)",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "container": "$SCALAR-ATTRIBUTE"
+}

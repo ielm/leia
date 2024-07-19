@@ -1,0 +1,107 @@
+{
+  "name": "@RELEASE-MEDIA-WORK",
+  "isa": [
+    "@COMMUNICATION-SERVE"
+  ],
+  "def": "to make public - for purchasing, viewing, etc. - a work like  a movie, film, CD",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BOOK"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FILM-MEDIA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COMPACT-DISC"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CREATIVE-WORK"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@CARTOON-CHARACTER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SERIAL-PUBLICATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANNALS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ARTICLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@BROADCASTER"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@CRYPTOGRAPHER"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@MODERATOR"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@TRANSLATOR"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ENCRYPT-KEY"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INFORMATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MEDIA-ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PRINTED-MEDIA"
+    }
+  ],
+  "private": {}
+}

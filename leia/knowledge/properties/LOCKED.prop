@@ -1,0 +1,9 @@
+{
+  "name": "$LOCKED",
+  "def": "Property showing whether something is locked or not",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-OBJECT-ATTRIBUTE"
+}

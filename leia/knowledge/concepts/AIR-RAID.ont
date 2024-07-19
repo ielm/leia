@@ -1,0 +1,32 @@
+{
+  "name": "@AIR-RAID",
+  "isa": [
+    "@RAID-MILITARY"
+  ],
+  "def": "an attack in which bombs are dropped from planes",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@BOMB"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@AIRPLANE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@VEHICLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WEAPON"
+    }
+  ],
+  "private": {}
+}

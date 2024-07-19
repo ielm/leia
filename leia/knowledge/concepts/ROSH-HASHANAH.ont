@@ -1,0 +1,27 @@
+{
+  "name": "@ROSH-HASHANAH",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "A solemn and festive holiday of the Jewish New Year observed on the first day or the first and second days of Tishri",
+  "local": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@JUDAISM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "private": {}
+}

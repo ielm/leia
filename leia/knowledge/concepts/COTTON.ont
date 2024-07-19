@@ -1,0 +1,22 @@
+{
+  "name": "@COTTON",
+  "isa": [
+    "@NATURAL-FABRIC"
+  ],
+  "def": "thread or cloth made from cotton fiber",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@COTTON-FIBER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLANT-DERIVED-SUBSTANCE"
+    }
+  ],
+  "private": {}
+}

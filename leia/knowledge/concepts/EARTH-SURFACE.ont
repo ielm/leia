@@ -1,0 +1,27 @@
+{
+  "name": "@EARTH-SURFACE",
+  "isa": [
+    "@GEOLOGICAL-ENTITY"
+  ],
+  "def": "the exterior portion of the earth*s crust, exposed to the atmosphere",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BODY-OF-WATER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    }
+  ],
+  "private": {}
+}

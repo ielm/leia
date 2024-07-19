@@ -1,0 +1,74 @@
+{
+  "name": "@ARBOR-DAY",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "A day designated for public planting of shrubs and trees - usually on the last Friday in April",
+  "local": [
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@APRIL"
+    },
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@FRIDAY"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@GARDENING-1"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@CELEBRATE"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@COMMEMORATE"
+    }
+  ],
+  "private": {
+    "@GARDENING-1": {
+      "name": "@GARDENING-1",
+      "isa": [
+        "@GARDENING"
+      ],
+      "def": "",
+      "local": [
+        {
+          "slot": "theme",
+          "facet": "sem",
+          "filler": "@TREE"
+        },
+        {
+          "slot": "theme",
+          "facet": "sem",
+          "filler": "@BUSH"
+        }
+      ],
+      "block": [],
+      "private": {}
+    }
+  }
+}

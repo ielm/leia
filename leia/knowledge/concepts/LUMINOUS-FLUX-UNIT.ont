@@ -1,0 +1,22 @@
+{
+  "name": "@LUMINOUS-FLUX-UNIT",
+  "isa": [
+    "@MEASURING-UNIT"
+  ],
+  "def": "measuring unit of the perceived power of light.\n",
+  "local": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@WATT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "sem",
+      "filler": "@MEASURING-UNIT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE",
+  "def": "Attributes that apply to physical objects",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-OBJECT-ATTRIBUTE"
+}

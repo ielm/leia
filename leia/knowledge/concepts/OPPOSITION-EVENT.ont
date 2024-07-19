@@ -1,0 +1,16 @@
+{
+  "name": "@OPPOSITION-EVENT",
+  "isa": [
+    "@SOCIAL-EVENT"
+  ],
+  "def": "an event in which two or more parties face off in opposition or competition",
+  "local": [],
+  "block": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

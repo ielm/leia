@@ -1,0 +1,22 @@
+{
+  "name": "@HEMATEMESIS",
+  "isa": [
+    "@VOMIT"
+  ],
+  "def": "vomiting blood",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@BLOOD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@CHYME"
+    }
+  ],
+  "private": {}
+}

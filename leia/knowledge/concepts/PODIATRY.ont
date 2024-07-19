@@ -1,0 +1,22 @@
+{
+  "name": "@PODIATRY",
+  "isa": [
+    "@MEDICINE"
+  ],
+  "def": "The branch of medicine that deals with the diagnosis, treatment, and prevention of diseases of the human foot.",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@PODIATRIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@MEDICAL-WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

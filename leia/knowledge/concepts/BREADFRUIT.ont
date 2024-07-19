@@ -1,0 +1,21 @@
+{
+  "name": "@BREADFRUIT",
+  "isa": [
+    "@TREE-FRUIT"
+  ],
+  "def": "a type of round usully seedless tropical fruit that looks and feels like bread when baked",
+  "local": [],
+  "block": [
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "cylindrical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "egglike"
+    }
+  ],
+  "private": {}
+}

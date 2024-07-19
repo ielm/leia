@@ -1,0 +1,10 @@
+{
+  "name": "@SUB-FEDERAL-ORGANIZATION",
+  "isa": [
+    "@PUBLIC-ADMINISTRATION-ORGANIZATION"
+  ],
+  "def": "includes all public administration organizations\nat level that is more local than federal. \nSplitting the tree into state, county, etc. \nis too USA-centric and too many organizations can belong\nto either or both.",
+  "local": [],
+  "block": [],
+  "private": {}
+}

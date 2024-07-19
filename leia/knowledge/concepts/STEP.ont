@@ -1,0 +1,47 @@
+{
+  "name": "@STEP",
+  "isa": [
+    "@MOTION-EVENT"
+  ],
+  "def": "a complete movement of raising one foot and putting it down in another spot, as done when walking",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FOOT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HOOF"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PAW"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

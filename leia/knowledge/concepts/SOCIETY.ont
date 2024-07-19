@@ -1,0 +1,27 @@
+{
+  "name": "@SOCIETY",
+  "isa": [
+    "@SOCIAL-OBJECT"
+  ],
+  "def": "people living and working together considered as a whole",
+  "local": [
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@NAME"
+    }
+  ],
+  "private": {}
+}

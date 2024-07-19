@@ -1,0 +1,9 @@
+{
+  "name": "$BESIDE",
+  "def": "by",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$BESIDE-INVERSE",
+  "measured-in": [],
+  "container": "$SPATIAL-RELATION"
+}

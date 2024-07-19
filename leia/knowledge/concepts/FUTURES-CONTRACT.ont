@@ -1,0 +1,37 @@
+{
+  "name": "@FUTURES-CONTRACT",
+  "isa": [
+    "@CONTRACT"
+  ],
+  "def": "an agreement traded on an organized exchanged to buy or sell assets at a fixed price but to be delivered and paid for later",
+  "local": [
+    {
+      "slot": "about-as-topic",
+      "facet": "default",
+      "filler": "@SHARE"
+    },
+    {
+      "slot": "about-as-topic",
+      "facet": "default",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "about-as-topic",
+      "facet": "default",
+      "filler": "@MONEY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "about-as-topic",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "about-as-topic",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

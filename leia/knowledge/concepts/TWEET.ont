@@ -1,0 +1,62 @@
+{
+  "name": "@TWEET",
+  "isa": [
+    "@ANIMAL-NOISE-MAKING"
+  ],
+  "def": "to make the short, high-pitched cry of a bird",
+  "local": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@BIRD"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@BIRD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "not",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "not",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "relation",
+      "facet": "sem",
+      "filler": "@LARYNX"
+    }
+  ],
+  "private": {}
+}

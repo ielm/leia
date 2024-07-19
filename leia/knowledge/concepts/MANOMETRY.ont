@@ -1,0 +1,32 @@
+{
+  "name": "@MANOMETRY",
+  "isa": [
+    "@DIAGNOSTIC-PROCEDURE"
+  ],
+  "def": "testing to measure pressure or tension of liquids or gases in the gastrointestinal system.",
+  "local": [
+    {
+      "slot": "medical-test-target",
+      "facet": "sem",
+      "filler": "$pressure"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GASTROINTESTINAL-SYSTEM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "medical-test-target",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@AMETHYST",
+  "isa": [
+    "@QUARTZ"
+  ],
+  "def": "purple or violet transparent quartz used as a gemstone",
+  "local": [],
+  "block": [
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "opaque"
+    }
+  ],
+  "private": {}
+}

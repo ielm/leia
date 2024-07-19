@@ -1,0 +1,19 @@
+{
+  "name": "@MARRIAGE-ROLE",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "all roles related to marriage, like bride, groom, best man, etc.",
+  "local": [],
+  "block": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

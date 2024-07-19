@@ -1,0 +1,21 @@
+{
+  "name": "@PREPARE",
+  "isa": [
+    "@ANIMAL-LIVING-EVENT"
+  ],
+  "def": "to make ready beforehand--a broad definition for a broad concept",
+  "local": [
+    {
+      "slot": "goal",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SOCIAL-EVENT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

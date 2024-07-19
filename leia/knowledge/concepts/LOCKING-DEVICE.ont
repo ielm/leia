@@ -1,0 +1,10 @@
+{
+  "name": "@LOCKING-DEVICE",
+  "isa": [
+    "@DEPENDENT-DEVICE"
+  ],
+  "def": "device used for locking and unlocking things. it consists of a key and a lock",
+  "local": [],
+  "block": [],
+  "private": {}
+}

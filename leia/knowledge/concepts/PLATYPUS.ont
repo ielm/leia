@@ -1,0 +1,32 @@
+{
+  "name": "@PLATYPUS",
+  "isa": [
+    "@MAMMAL"
+  ],
+  "def": "A semiaquatic egg-laying mammal of Australia and Tasmania, having a broad flat tail, webbed feet, and a snout resembling a duck*s bill.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@FUR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@HAIR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FUR"
+    }
+  ],
+  "private": {}
+}

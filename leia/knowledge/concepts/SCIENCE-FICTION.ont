@@ -1,0 +1,26 @@
+{
+  "name": "@SCIENCE-FICTION",
+  "isa": [
+    "@LITERARY-STYLE"
+  ],
+  "def": "A literary genre typically based on speculative scientific discoveries or developments, environmental changes, space travel, or life on other planets, forms part of the plot or background.",
+  "local": [
+    {
+      "slot": "about-as-topic",
+      "facet": "sem",
+      "filler": "@SPACE-VEHICLE"
+    },
+    {
+      "slot": "about-as-topic",
+      "facet": "sem",
+      "filler": "@PLANET"
+    },
+    {
+      "slot": "about-as-topic",
+      "facet": "sem",
+      "filler": "@SCIENCE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

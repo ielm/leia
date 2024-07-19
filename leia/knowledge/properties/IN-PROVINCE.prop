@@ -1,0 +1,9 @@
+{
+  "name": "$IN-PROVINCE",
+  "def": "links an entity or place, like a city, campus, road, bank to the province where it is located.",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

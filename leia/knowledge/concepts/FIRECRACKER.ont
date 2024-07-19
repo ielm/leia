@@ -1,0 +1,24 @@
+{
+  "name": "@FIRECRACKER",
+  "isa": [
+    "@DECORATIVE-ARTIFACT"
+  ],
+  "def": "Any of a set of large- or small-scale decorative explosives, set off for noise and/or visual display at celebrations, etc.",
+  "local": [
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@BONE-ORGAN",
+  "isa": [
+    "@ANIMAL-ORGAN"
+  ],
+  "def": "Organ with cavitated organ parts, which primarily consists of compact (cortical) and cancellous bone, which surround bone marrow cavities; together with other bones, cartilages and joints, it constitutes the skeletal system. Examples: femur, sternum, maxilla, vertebra, talus.",
+  "local": [],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    }
+  ],
+  "private": {}
+}

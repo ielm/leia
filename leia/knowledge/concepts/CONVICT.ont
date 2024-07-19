@@ -1,0 +1,62 @@
+{
+  "name": "@CONVICT",
+  "isa": [
+    "@LEGAL-EVENT-IN-COURTROOM"
+  ],
+  "def": "to find or prove s.o. guilty of a crime in a court of law",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@JUDGE"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@JURY-MEMBER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CRIMINAL-ACTIVITY"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "default",
+      "filler": "@CRIMINAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@LEGAL-WORK-ROLE"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

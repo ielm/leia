@@ -1,0 +1,32 @@
+{
+  "name": "@TIME-INTERVAL-UNIT",
+  "isa": [
+    "@MEASURING-UNIT"
+  ],
+  "def": "Units for measuring time",
+  "local": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@SECOND"
+    },
+    {
+      "slot": "between-temporal",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    },
+    {
+      "slot": "before",
+      "facet": "sem",
+      "filler": "@TIME-INTERVAL-UNIT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "sem",
+      "filler": "@MEASURING-UNIT"
+    }
+  ],
+  "private": {}
+}

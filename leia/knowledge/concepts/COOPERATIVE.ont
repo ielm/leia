@@ -1,0 +1,16 @@
+{
+  "name": "@COOPERATIVE",
+  "isa": [
+    "@PRIVATE-ORGANIZATION"
+  ],
+  "def": "an organization owned by its members who share its benefits",
+  "local": [
+    {
+      "slot": "has-member",
+      "facet": "default",
+      "filler": "@COOPERATIVE-MEMBER"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,61 @@
+{
+  "name": "@URANIUM",
+  "isa": [
+    "@ACTINIDE",
+    "@RADIOACTIVE-METAL"
+  ],
+  "def": "a heavy silvery-white metallic element, radioactive, easily oxidized, and having 14 known isotopes of which u 238 is the most abundant in nature. the element occurs in several minerals, including pitchblende and carnotite, from which it is extracted and processed for use in research, nuclear fuels, and nuclear weapons",
+  "local": [
+    {
+      "slot": "radioactivity",
+      "facet": "sem",
+      "filler": [
+        "><=",
+        1.0
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        238
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        92
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    },
+    {
+      "slot": "radioactivity",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    }
+  ],
+  "private": {}
+}

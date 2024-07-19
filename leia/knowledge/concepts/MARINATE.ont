@@ -1,0 +1,72 @@
+{
+  "name": "@MARINATE",
+  "isa": [
+    "@PREPARE-INGESTIBLE"
+  ],
+  "def": "to steep meat, fish, etc. in a marinade",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MEAT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FISH-MEAT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PASTA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@RICE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TOFU"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@BOWL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MARINADE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VEGETABLE-FOODSTUFF"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COOKING-EQUIPMENT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FOOD"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,42 @@
+{
+  "name": "@COCKPIT",
+  "isa": [
+    "@AIR-VEHICLE-PART"
+  ],
+  "def": "the space in a airplane for the pilot, co-pilot, etc.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SEAT"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ALTIMETER"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ODOMETER"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SPEEDOMETER"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "sem",
+      "filler": "@PILOT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

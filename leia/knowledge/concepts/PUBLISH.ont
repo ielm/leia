@@ -1,0 +1,77 @@
+{
+  "name": "@PUBLISH",
+  "isa": [
+    "@COMMUNICATION-SERVE"
+  ],
+  "def": "to issue printed matter to an audience, sometimes for sale",
+  "local": [
+    {
+      "slot": "has-audience",
+      "facet": "sem",
+      "filler": "@AUDIENCE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@BROADCASTER"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@CRYPTOGRAPHER"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@MODERATOR"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@TRANSLATOR"
+    },
+    {
+      "slot": "has-audience",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "has-audience",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@ENCRYPT-KEY"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INFORMATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MEDIA-ARTIFACT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@DRAFT",
+  "isa": [
+    "@WIND"
+  ],
+  "def": "a current of air in an enclosed place",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BUILDING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

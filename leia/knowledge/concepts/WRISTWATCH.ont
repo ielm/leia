@@ -1,0 +1,22 @@
+{
+  "name": "@WRISTWATCH",
+  "isa": [
+    "@TIMEPIECE"
+  ],
+  "def": "a watch worn on a strap or a band around the wrist",
+  "local": [
+    {
+      "slot": "worn-on",
+      "facet": "sem",
+      "filler": "@WRIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "private": {}
+}

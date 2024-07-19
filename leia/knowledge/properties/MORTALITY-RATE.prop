@@ -1,0 +1,11 @@
+{
+  "name": "$MORTALITY-RATE",
+  "def": "the ratio of deaths to population",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$DEMOGRAPHICS-ATTRIBUTE"
+}

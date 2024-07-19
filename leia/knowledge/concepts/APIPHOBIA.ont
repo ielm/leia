@@ -1,0 +1,27 @@
+{
+  "name": "@APIPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of bees",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BEE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

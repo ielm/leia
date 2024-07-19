@@ -1,0 +1,36 @@
+{
+  "name": "@PALLADIUM",
+  "isa": [
+    "@PRECIOUS-METAL"
+  ],
+  "def": "a soft, ductile, steel-white, tarnish-resistant, metallic element occurring naturally with platinum, especially in gold, nickel, and copper ores. it is used as a catalyst in hydrogenation process, as a purification filter for hydrogen, and is alloyed for use in electric contacts, jewelry, nonmagnetic watch parts, and surgical instruments",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        106
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        46
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

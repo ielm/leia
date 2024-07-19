@@ -1,0 +1,22 @@
+{
+  "name": "@OTOLOGY",
+  "isa": [
+    "@MEDICINE"
+  ],
+  "def": "The branch of medicine that deals with the structure, function, and pathology of the ear.",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@OTOLOGIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@MEDICAL-WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

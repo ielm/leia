@@ -1,0 +1,29 @@
+{
+  "name": "@DAY",
+  "isa": [
+    "@TIME-INTERVAL-UNIT"
+  ],
+  "def": "A unit of time equal to 24 hours; 24*hour",
+  "local": [
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@CALENDAR"
+    },
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@TIMEPIECE"
+    },
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        86400.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

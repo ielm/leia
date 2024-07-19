@@ -1,0 +1,63 @@
+{
+  "name": "@ECONOMIC-COLLAPSE",
+  "isa": [
+    "@NATIONAL-ECONOMIC-EVENT"
+  ],
+  "def": "the sudden and sharp fall in business activity or prices",
+  "local": [
+    {
+      "slot": "rapidity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ECONOMY"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@NATION"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "rapidity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

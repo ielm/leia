@@ -1,0 +1,9 @@
+{
+  "name": "$BETWEEN-SPATIAL",
+  "def": "a spatial relation; in a is between b and c, a is the domain and \nb and c are a set in the range. Events can also participate in this \nrelation: a soccer game can be happening between a hockey game and a baseball \ngame on a huge field.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$BETWEEN-SPATIAL-INVERSE",
+  "measured-in": [],
+  "container": "$SPATIAL-RELATION"
+}

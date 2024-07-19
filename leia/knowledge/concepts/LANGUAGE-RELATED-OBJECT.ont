@@ -1,0 +1,27 @@
+{
+  "name": "@LANGUAGE-RELATED-OBJECT",
+  "isa": [
+    "@REPRESENTATIONAL-OBJECT"
+  ],
+  "def": "mental objects that represent language, such as text, word, letter, sentence, sound, vowel, phoneme",
+  "local": [
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@LANGUAGE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "represents",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@SPADE",
+  "isa": [
+    "@IMPLEMENT"
+  ],
+  "def": "a sturdy digging tool with a flat blade",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@HANDLE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BLADE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

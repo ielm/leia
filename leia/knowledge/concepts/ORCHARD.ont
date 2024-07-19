@@ -1,0 +1,16 @@
+{
+  "name": "@ORCHARD",
+  "isa": [
+    "@FARM"
+  ],
+  "def": "the land for growing fruit trees",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@FRUIT-TREE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

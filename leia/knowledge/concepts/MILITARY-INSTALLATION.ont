@@ -1,0 +1,16 @@
+{
+  "name": "@MILITARY-INSTALLATION",
+  "isa": [
+    "@GOVERNMENT-BUILDING"
+  ],
+  "def": "a building or complex of buildings used to house military equipment and personnel",
+  "local": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@MILITARY-ROLE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

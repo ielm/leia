@@ -1,0 +1,27 @@
+{
+  "name": "@TRAVEL-AGENCY",
+  "isa": [
+    "@SERVICE-BUILDING"
+  ],
+  "def": "a place where travel agents help customers arrange appropriate flight and accommodation arrangements",
+  "local": [
+    {
+      "slot": "has-occupant",
+      "facet": "sem",
+      "filler": "@TRAVEL-AGENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@WORK-ROLE"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

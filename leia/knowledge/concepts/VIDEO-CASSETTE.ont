@@ -1,0 +1,22 @@
+{
+  "name": "@VIDEO-CASSETTE",
+  "isa": [
+    "@FILM-ARTIFACT"
+  ],
+  "def": "a case with magnetic tape in it for loading and viewing in a videocassette recorder",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

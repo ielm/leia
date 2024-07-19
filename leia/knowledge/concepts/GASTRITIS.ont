@@ -1,0 +1,42 @@
+{
+  "name": "@GASTRITIS",
+  "isa": [
+    "@INFLAMMATION"
+  ],
+  "def": "Chronic or acute inflammation of the stomach, especially of the mucous membrane of the stomach.\n(http://www.thefreedictionary.com/gastritis)",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MUCOSA-OF-STOMACH"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@STOMACH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@PNEUMONIA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

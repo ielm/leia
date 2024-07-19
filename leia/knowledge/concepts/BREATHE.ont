@@ -1,0 +1,42 @@
+{
+  "name": "@BREATHE",
+  "isa": [
+    "@NORMAL-BIOLOGIC-FUNCTION"
+  ],
+  "def": "to take air in and out of the lungs; to inhale and exhale",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OXYGEN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@AIR"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@LUNG"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

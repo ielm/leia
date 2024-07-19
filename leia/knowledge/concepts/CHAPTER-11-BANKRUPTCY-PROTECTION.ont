@@ -1,0 +1,47 @@
+{
+  "name": "@CHAPTER-11-BANKRUPTCY-PROTECTION",
+  "isa": [
+    "@BANKRUPT"
+  ],
+  "def": "A type of bankruptcy, usually corporate, whereby the troubled entity tries to reorganize and resume operations.",
+  "local": [
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@OWE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@CREDITOR"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@REORGANIZATION"
+    },
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@CANCEL-OBLIGATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

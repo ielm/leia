@@ -1,0 +1,36 @@
+{
+  "name": "@GALLIUM",
+  "isa": [
+    "@METALLIC-LIQUID-ELEMENT"
+  ],
+  "def": "a rare metallic element that is liquid near room temperature, expands on solidifying, and is found as a trace element in coal, bauxite, and other minerals. it is used in semiconductor technology and as a component of various low-melting alloys",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        69
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        31
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

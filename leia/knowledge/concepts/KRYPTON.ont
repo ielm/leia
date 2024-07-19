@@ -1,0 +1,41 @@
+{
+  "name": "@KRYPTON",
+  "isa": [
+    "@GASEOUS-ELEMENT"
+  ],
+  "def": "a whitish, inert gaseous element used chiefly in gas-discharge lamps and fluorescent lamps",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        83
+      ]
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "white"
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        36
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

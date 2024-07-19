@@ -1,0 +1,27 @@
+{
+  "name": "@FLIGHT",
+  "isa": [
+    "@TRAVEL-EVENT"
+  ],
+  "def": "a journey by airplane",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@AIRPLANE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FOOT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@VEHICLE"
+    }
+  ],
+  "private": {}
+}

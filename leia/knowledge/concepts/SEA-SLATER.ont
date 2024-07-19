@@ -1,0 +1,16 @@
+{
+  "name": "@SEA-SLATER",
+  "isa": [
+    "@ISOPOD"
+  ],
+  "def": "a marine isopod crustacean",
+  "local": [],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@EARTH-SURFACE"
+    }
+  ],
+  "private": {}
+}

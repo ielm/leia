@@ -1,0 +1,42 @@
+{
+  "name": "@PSYCHOLOGICAL-DISORDER",
+  "isa": [
+    "@DISEASE"
+  ],
+  "def": "a disorder affecting the mind and emotions",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@GENE"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@BRAIN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@BACTERIA"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@VIRUS"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    }
+  ],
+  "private": {}
+}

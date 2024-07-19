@@ -1,0 +1,19 @@
+{
+  "name": "@TRICYCLE",
+  "isa": [
+    "@WHEELED-VEHICLE"
+  ],
+  "def": "A SMALL BIKE WITH THREE WHEELS",
+  "local": [
+    {
+      "slot": "number-of-wheels",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        3
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

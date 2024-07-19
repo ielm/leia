@@ -1,0 +1,9 @@
+{
+  "name": "$TIME-BEGIN",
+  "def": "indicates the beginning time of some event or, by extension, the time in which some object begins to exist",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": "$TIME-BEGIN-OF",
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@STRONGBOX",
+  "isa": [
+    "@BOX"
+  ],
+  "def": "a sturdy box or safe in which valuables are locked and stored; a safe",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "private": {}
+}

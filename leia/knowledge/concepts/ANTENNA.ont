@@ -1,0 +1,22 @@
+{
+  "name": "@ANTENNA",
+  "isa": [
+    "@COMMUNICATION-DEVICE"
+  ],
+  "def": "an arrangement of wires, rods, etc., used in sending and receiving electromagnetic waves",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@WIRE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

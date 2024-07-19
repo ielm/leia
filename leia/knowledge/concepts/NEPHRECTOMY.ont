@@ -1,0 +1,22 @@
+{
+  "name": "@NEPHRECTOMY",
+  "isa": [
+    "@SURGICAL-REMOVAL"
+  ],
+  "def": "Surgical removal of a kidney.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@KIDNEY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@ZOO",
+  "isa": [
+    "@PLACE"
+  ],
+  "def": "a place where a collection of wild animals are kept for public showing",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

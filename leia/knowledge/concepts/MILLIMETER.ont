@@ -1,0 +1,19 @@
+{
+  "name": "@MILLIMETER",
+  "isa": [
+    "@DISTANCE-LENGTH-UNIT"
+  ],
+  "def": "One one-thousandth of a meter; one tenth of a centimeter; .001",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.001
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

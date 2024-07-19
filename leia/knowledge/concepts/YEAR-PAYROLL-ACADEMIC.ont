@@ -1,0 +1,19 @@
+{
+  "name": "@YEAR-PAYROLL-ACADEMIC",
+  "isa": [
+    "@TIME-INTERVAL-UNIT"
+  ],
+  "def": "a time interval equal to one working year for a teacher or professor (typically nine months); 195*day-payroll",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        5616000.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

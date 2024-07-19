@@ -1,0 +1,21 @@
+{
+  "name": "@WOOD-TICK",
+  "isa": [
+    "@TICK"
+  ],
+  "def": "a tick of the genus Dermacentor living in or on wood and capable of transmitting tularemia and other diseases in humans",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@TREE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@WOOD"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

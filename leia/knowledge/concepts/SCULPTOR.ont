@@ -1,0 +1,32 @@
+{
+  "name": "@SCULPTOR",
+  "isa": [
+    "@ARTISTIC-ROLE"
+  ],
+  "def": "an artist who creates a work of sculpture",
+  "local": [
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@CHISEL"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@SCULPTURE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CREATIVE-WORK"
+    },
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@FOODSTUFF"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,104 @@
+{
+  "name": "@HOTEL",
+  "isa": [
+    "@LODGING-CORPORATION"
+  ],
+  "def": "a large lodging-organization with some amenities",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@HOTEL-ROOM"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@HOTEL-ROLE"
+    },
+    {
+      "slot": "number-of-floors",
+      "facet": "sem",
+      "filler": [
+        "><",
+        50
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@RECEPTION-AREA"
+    },
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@WORK-ROLE"
+    },
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "number-of-floors",
+      "facet": "sem",
+      "filler": [
+        "><",
+        200
+      ]
+    }
+  ],
+  "private": {}
+}

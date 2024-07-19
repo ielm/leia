@@ -1,0 +1,11 @@
+{
+  "name": "$RICHTER-SCALE",
+  "def": "a scale for measuring earthquakes, with each step about ten times greater than the previous one",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$CATASTROPHE-ATTRIBUTE"
+}

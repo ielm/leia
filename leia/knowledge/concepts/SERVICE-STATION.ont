@@ -1,0 +1,21 @@
+{
+  "name": "@SERVICE-STATION",
+  "isa": [
+    "@STORE"
+  ],
+  "def": "a place selling gasoline, oil, etc. for motor vehicles",
+  "local": [
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@GASOLINE"
+    },
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@ENGINE-OIL"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

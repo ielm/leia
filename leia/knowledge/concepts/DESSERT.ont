@@ -1,0 +1,89 @@
+{
+  "name": "@DESSERT",
+  "isa": [
+    "@PREPARED-FOOD"
+  ],
+  "def": "Pastry, ice cream, etc. served as the final course of a meal.",
+  "local": [
+    {
+      "slot": "spiciness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0
+      ]
+    },
+    {
+      "slot": "bitterness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0
+      ]
+    },
+    {
+      "slot": "saltiness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0
+      ]
+    },
+    {
+      "slot": "sweetness",
+      "facet": "sem",
+      "filler": [
+        "><=",
+        1.0
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "bitterness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "saltiness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "spiciness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "sweetness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@BANANA",
+  "isa": [
+    "@TREE-FRUIT"
+  ],
+  "def": "an elongated yellowish fruit which grows on palm trees",
+  "local": [],
+  "block": [
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "egglike"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "spherical"
+    }
+  ],
+  "private": {}
+}

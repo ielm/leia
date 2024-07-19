@@ -1,0 +1,27 @@
+{
+  "name": "@EYEDROPPER",
+  "isa": [
+    "@MEDICAL-ARTIFACT"
+  ],
+  "def": "a small tube with a hollow rubber bulb at one end, used to measure out liquid in drops",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GLASS"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

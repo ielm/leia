@@ -1,0 +1,16 @@
+{
+  "name": "@SUBMARINE",
+  "isa": [
+    "@UNDERWATER-VEHICLE"
+  ],
+  "def": "all kinds of submarine vehicles.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@PERISCOPE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,11 @@
+{
+  "name": "$SLOPE-ATTRIBUTE",
+  "def": "the angle at which an object is positioned\nor the slope of a surface",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

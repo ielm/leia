@@ -1,0 +1,32 @@
+{
+  "name": "@PHONOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "obsession with noise or sound",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EMIT-SOUND"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VOLUNTARY-AUDITORY-EVENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

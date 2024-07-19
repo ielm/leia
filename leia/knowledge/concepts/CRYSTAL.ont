@@ -1,0 +1,21 @@
+{
+  "name": "@CRYSTAL",
+  "isa": [
+    "@QUARTZ"
+  ],
+  "def": "a transparent natural mineral that looks like pure ice",
+  "local": [],
+  "block": [
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "opaque"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "translucent"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@SHORT-STORY",
+  "isa": [
+    "@LITERARY-STYLE"
+  ],
+  "def": "a short piece of prose fiction, usually with few characters and often with more mood than plot",
+  "local": [
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "><",
+        25
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@PEPPER",
+  "isa": [
+    "@SPICE"
+  ],
+  "def": "A pungent condiment obtained from the dried berries of a tropical, climbing shrub.",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "black"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

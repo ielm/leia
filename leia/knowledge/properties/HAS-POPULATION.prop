@@ -1,0 +1,11 @@
+{
+  "name": "$HAS-POPULATION",
+  "def": "The number of people in a given geopolitical entity.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$DEMOGRAPHICS-ATTRIBUTE"
+}

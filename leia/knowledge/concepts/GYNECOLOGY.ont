@@ -1,0 +1,22 @@
+{
+  "name": "@GYNECOLOGY",
+  "isa": [
+    "@MEDICINE"
+  ],
+  "def": "The branch of medicine dealing with health care for women, especially the diagnosis and treatment of disorders affecting the female reproductive organs.",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@GYNECOLOGIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@MEDICAL-WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

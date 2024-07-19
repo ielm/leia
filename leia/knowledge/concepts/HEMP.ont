@@ -1,0 +1,21 @@
+{
+  "name": "@HEMP",
+  "isa": [
+    "@PLANT-DERIVED-SUBSTANCE"
+  ],
+  "def": "the fiber from a tall Asiatic plant used for rope, sailcloth, etc.",
+  "local": [],
+  "block": [
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "translucent"
+    },
+    {
+      "slot": "opacity",
+      "facet": "sem",
+      "filler": "transparent"
+    }
+  ],
+  "private": {}
+}

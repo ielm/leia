@@ -1,0 +1,32 @@
+{
+  "name": "@TRAVEL-AGENT",
+  "isa": [
+    "@AIRPORT-WORK-ROLE"
+  ],
+  "def": "one who aids persons in arranging adequate travel arrangements",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@TRAVEL-AGENCY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@AIRPLANE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@AIRPORT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@AIRPORT-TERMINAL"
+    }
+  ],
+  "private": {}
+}

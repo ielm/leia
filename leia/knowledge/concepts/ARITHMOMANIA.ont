@@ -1,0 +1,32 @@
+{
+  "name": "@ARITHMOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "craze for counting and numbers",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COUNT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

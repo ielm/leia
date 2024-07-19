@@ -1,0 +1,36 @@
+{
+  "name": "@PROTACTINIUM",
+  "isa": [
+    "@ACTINIDE"
+  ],
+  "def": "a rare radioactive element chemically similar to uranium, having 12 known isotopes, the most common of which is pa 231 with a half-life of 32,480 years",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        231
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        91
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

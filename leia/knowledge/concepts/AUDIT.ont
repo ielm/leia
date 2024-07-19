@@ -1,0 +1,62 @@
+{
+  "name": "@AUDIT",
+  "isa": [
+    "@CORPORATE-EVENT"
+  ],
+  "def": "a formal checking of financial records",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ORGANIZATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@PUBLIC-ADMINISTRATION-ORGANIZATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@CORPORATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@DIRECTOR-CORPORATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@EXECUTIVE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

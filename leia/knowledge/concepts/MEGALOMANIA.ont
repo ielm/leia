@@ -1,0 +1,27 @@
+{
+  "name": "@MEGALOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "uncontrollable obsession with grandiose self-importance",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EGO"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

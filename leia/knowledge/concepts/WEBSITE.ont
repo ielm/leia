@@ -1,0 +1,22 @@
+{
+  "name": "@WEBSITE",
+  "isa": [
+    "@MEDIA-OBJECT"
+  ],
+  "def": "a node of the internet",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@WEBPAGE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

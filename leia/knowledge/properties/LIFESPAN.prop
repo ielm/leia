@@ -1,0 +1,11 @@
+{
+  "name": "$LIFESPAN",
+  "def": "The typical duration of the life of an animal - measured in days or years.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@MEASURING-UNIT"
+  ],
+  "container": "$SCALAR-ANIMAL-ATTRIBUTE"
+}

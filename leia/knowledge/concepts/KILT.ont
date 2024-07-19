@@ -1,0 +1,46 @@
+{
+  "name": "@KILT",
+  "isa": [
+    "@SKIRT"
+  ],
+  "def": "A knee-length skirt with deep pleats, usually made of a tartan wool; worn as part of the dress for men in the Scottish Highlands; also refers to similar skirts worn by women",
+  "local": [
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0.5
+      ]
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        ">=",
+        0
+      ]
+    },
+    {
+      "slot": "length",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SEWING-MATERIAL"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@VETERINARIAN",
+  "isa": [
+    "@MEDICAL-WORK-ROLE"
+  ],
+  "def": "a social-role in which a person is trained in the medical treatment of animals",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@VETERINARY-FACILITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@MEDICAL-BUILDING"
+    }
+  ],
+  "private": {}
+}

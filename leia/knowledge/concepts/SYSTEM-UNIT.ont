@@ -1,0 +1,16 @@
+{
+  "name": "@SYSTEM-UNIT",
+  "isa": [
+    "@INDEPENDENT-DEVICE"
+  ],
+  "def": "a part of a computer that contains the processing unit and devices, such as disk and diskette drives",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@LOCKING-DEVICE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

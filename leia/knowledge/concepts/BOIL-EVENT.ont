@@ -1,0 +1,82 @@
+{
+  "name": "@BOIL-EVENT",
+  "isa": [
+    "@PREPARE-INGESTIBLE"
+  ],
+  "def": "To cook food by immersing it in boiling water or, in the case of a liquid, by bringing the temperature up to boiling.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PUDDING"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VEGETABLE-FOODSTUFF"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FISH-MEAT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MEAT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SAUCE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@STOVE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SAUCEPAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WATER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GRAIN-FOODSTUFF"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIQUID-DAIRY-PRODUCT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EGG"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NONALCOHOLIC-BEVERAGE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COOKING-EQUIPMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FOOD"
+    }
+  ],
+  "private": {}
+}

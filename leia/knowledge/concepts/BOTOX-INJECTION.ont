@@ -1,0 +1,42 @@
+{
+  "name": "@BOTOX-INJECTION",
+  "isa": [
+    "@INVASIVE-PROCEDURE"
+  ],
+  "def": "an injection of botox",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SYRINGE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@BOTOX"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ESOPHAGUS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LES"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MEDICAL-ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@GREETING-CARD",
+  "isa": [
+    "@DOCUMENT"
+  ],
+  "def": "a card that celebrates an event such as a birthday, anniversary, etc.",
+  "local": [],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    }
+  ],
+  "private": {}
+}

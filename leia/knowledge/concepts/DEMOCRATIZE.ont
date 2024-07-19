@@ -1,0 +1,47 @@
+{
+  "name": "@DEMOCRATIZE",
+  "isa": [
+    "@GOVERNMENT-ACTIVITY"
+  ],
+  "def": "to change a government to one that is ruled by the people or by their elected representatives",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LARGE-GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@GOVERNMENTAL-ORGANIZATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GOVERNMENTAL-ORGANIZATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

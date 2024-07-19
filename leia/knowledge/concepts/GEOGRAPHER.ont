@@ -1,0 +1,16 @@
+{
+  "name": "@GEOGRAPHER",
+  "isa": [
+    "@ACADEMIC-SPECIALIST"
+  ],
+  "def": "a specialist in the field of geography",
+  "local": [
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@MAP"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

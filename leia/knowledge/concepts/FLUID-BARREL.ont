@@ -1,0 +1,19 @@
+{
+  "name": "@FLUID-BARREL",
+  "isa": [
+    "@LIQUID-MEASURING-UNIT"
+  ],
+  "def": "a unit of volume used for liquids other than oil, the values in this concept represent a US non-beer liquid barrel; 31.5*gallon",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.11924
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

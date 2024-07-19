@@ -1,0 +1,9 @@
+{
+  "name": "$LIFE-EXPECTANCY-FEMALE",
+  "def": "the numbers of years a woman is expected to live in a given area",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LIFE-EXPECTANCY"
+}

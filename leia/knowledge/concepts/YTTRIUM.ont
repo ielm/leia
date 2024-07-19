@@ -1,0 +1,36 @@
+{
+  "name": "@YTTRIUM",
+  "isa": [
+    "@METALLIC-SOLID-ELEMENT"
+  ],
+  "def": "a silvery metallic element, not a rare earth but occurring in nearly all rare-earth minerals, used in various metallurgical applications, notably to increase the strength of magnesium and aluminum alloys",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        39
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        88
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

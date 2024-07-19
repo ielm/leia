@@ -1,0 +1,22 @@
+{
+  "name": "@SWEAR-OATH",
+  "isa": [
+    "@PROMISE"
+  ],
+  "def": "to make a solemn declaration with an appeal to God to confirm it",
+  "local": [
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@AFFIDAVIT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@CONTRACT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@DIALYSIS",
+  "isa": [
+    "@MEDICAL-PROCEDURE"
+  ],
+  "def": "a medical procedure for cleansing the blood",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BLOOD"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMAL-PART"
+    }
+  ],
+  "private": {}
+}

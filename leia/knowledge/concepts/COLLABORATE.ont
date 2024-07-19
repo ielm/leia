@@ -1,0 +1,157 @@
+{
+  "name": "@COLLABORATE",
+  "isa": [
+    "@COOPERATIVE-EVENT"
+  ],
+  "def": "To work with others towards a specific goal",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MEASURE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PLANNING-EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SELECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DEMONSTRATE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PROCEDURE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PROJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WORK"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CLASSIFICATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DIAGNOSIS-MEDICAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DIAGNOSIS-NON-MEDICAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FORMULA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HYPOTHESIS"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FOUNDATIONAL-PRINCIPLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INFORMATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@COMPUTER-DATA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OPPORTUNITY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@THEORY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CREATIVE-WORK"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DOCUMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CREATE-ABSTRACT-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CREATE-ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANALYTIC-COGNITIVE-EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CLASSIFY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EXPERIMENT-EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CREATIVE-COGNITIVE-EVENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

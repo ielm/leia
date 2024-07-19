@@ -1,0 +1,19 @@
+{
+  "name": "@SHAREHOLDER",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "An individual who has bought company shares.",
+  "local": [],
+  "block": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

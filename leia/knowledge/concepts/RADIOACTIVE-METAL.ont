@@ -1,0 +1,24 @@
+{
+  "name": "@RADIOACTIVE-METAL",
+  "isa": [
+    "@METALLIC-SOLID-ELEMENT"
+  ],
+  "def": "a metal that has radioactive qualities",
+  "local": [
+    {
+      "slot": "radioactivity",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

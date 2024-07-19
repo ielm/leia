@@ -1,0 +1,42 @@
+{
+  "name": "@FUNGAL-INFECTION",
+  "isa": [
+    "@INFECTION"
+  ],
+  "def": "An infection caused by fungus.",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@FUNGUS"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@ITCHING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ALLERGY"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@BACTERIA"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@VIRUS"
+    }
+  ],
+  "private": {}
+}

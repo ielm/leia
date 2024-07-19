@@ -1,0 +1,22 @@
+{
+  "name": "@ORTHOPEDICS",
+  "isa": [
+    "@MEDICINE"
+  ],
+  "def": "The branch of medicine that deals with the prevention or correction of injuries or disorders of the skeletal system and associated muscles, joints, and ligaments.",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@ORTHOPEDIST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@MEDICAL-WORK-ROLE"
+    }
+  ],
+  "private": {}
+}

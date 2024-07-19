@@ -1,0 +1,41 @@
+{
+  "name": "@PHOSPHORUS",
+  "isa": [
+    "@NONMETALLIC-SOLID-ELEMENT"
+  ],
+  "def": "a highly reactive, poisonous, nonmetallic element used in safety matches, pyrotechnics, incendiary shells, fertilizers, glass, and steel",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        30
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        15
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,37 @@
+{
+  "name": "@COMPUTER",
+  "isa": [
+    "@INDEPENDENT-DEVICE"
+  ],
+  "def": "an electronic machine that performs rapid, complex calculations and compiles and stores data",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@COMPUTER-HARDWARE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SOFTWARE"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@ELECTRIC-INDUCTANCE-UNIT",
+  "isa": [
+    "@ELECTRIC-ORIENTED-UNIT"
+  ],
+  "def": "a unit for measuring inductance, which is the property of a circuit or circuit element that opposes a change in current flow, thus causing current changes to lag behind voltage changes. kg*m^2*s^-2*A^-2 (^ means power, kg means kilogram, m means meter, s means second, A means ampere, * means multiplication)",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@AMPERE"
+    },
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@COULOMB"
+    },
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@OHM"
+    },
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@VOLT"
+    }
+  ],
+  "private": {}
+}

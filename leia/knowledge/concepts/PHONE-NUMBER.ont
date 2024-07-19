@@ -1,0 +1,22 @@
+{
+  "name": "@PHONE-NUMBER",
+  "isa": [
+    "@REPRESENTATIONAL-OBJECT"
+  ],
+  "def": "the numbers that need to be dialed to reach an individual by phone",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

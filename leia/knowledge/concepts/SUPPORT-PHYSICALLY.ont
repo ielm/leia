@@ -1,0 +1,72 @@
+{
+  "name": "@SUPPORT-PHYSICALLY",
+  "isa": [
+    "@APPLY-FORCE"
+  ],
+  "def": "to support some physical structure (artifact, body part, etc.) with physical pressure",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PRINCIPAL-BODY-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PLANT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@GEOLOGICAL-ENTITY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BODY-OF-WATER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@BUILDING-SUPPORT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "default",
+      "filler": "@STRUCTURAL-SUPPORT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "relaxable-to",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "$pressure"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

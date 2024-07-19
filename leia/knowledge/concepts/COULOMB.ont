@@ -1,0 +1,19 @@
+{
+  "name": "@COULOMB",
+  "isa": [
+    "@ELECTRIC-CHARGE-UNIT"
+  ],
+  "def": "the SI derived unit of electric charge. One coulomb is the amount of charge accumulated in one second by one ampere. A*s (A means ampere, s means second, * means multiplication)",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

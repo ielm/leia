@@ -1,0 +1,16 @@
+{
+  "name": "@CREAM-MED",
+  "isa": [
+    "@DRUG-FORM"
+  ],
+  "def": "A pharmaceutical preparation consisting of a semisolid emulsion of either the oil-in-water or the water-in-oil type, ordinarily intended for topical use",
+  "local": [],
+  "block": [
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    }
+  ],
+  "private": {}
+}

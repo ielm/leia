@@ -1,0 +1,9 @@
+{
+  "name": "$HEIGHT",
+  "def": "shows how tall a person is. This is currently used to also modify non-human entities.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LINEAR-SIZE"
+}

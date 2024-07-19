@@ -1,0 +1,32 @@
+{
+  "name": "@PACHYDERM",
+  "isa": [
+    "@MAMMAL"
+  ],
+  "def": "any of various nonruminant hoofed mammals (as an elephant, a rhinoceros, or a pig) most of which have a thick skin",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@FUR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@HAIR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FUR"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,11 @@
+{
+  "name": "$WORK-POTENTIAL",
+  "def": "the potential of the amount of work that an object is capable of doing",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-OBJECT-ATTRIBUTE"
+}

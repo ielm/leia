@@ -1,0 +1,9 @@
+{
+  "name": "$SECRECY-ATTRIBUTE",
+  "def": "indicates the level of secrecy or publicity of something: strictly confidential is 1, completely  public is 0",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-ATTRIBUTE"
+}

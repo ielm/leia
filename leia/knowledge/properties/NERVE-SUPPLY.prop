@@ -1,0 +1,9 @@
+{
+  "name": "$NERVE-SUPPLY",
+  "def": "links a body part with the nerves that supply it; the domain has the nerve supply indicated in the range",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$NERVE-SUPPLY-OF",
+  "measured-in": [],
+  "container": "$MEDICAL-RELATION"
+}

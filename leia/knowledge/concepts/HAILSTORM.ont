@@ -1,0 +1,27 @@
+{
+  "name": "@HAILSTORM",
+  "isa": [
+    "@STORM"
+  ],
+  "def": "a storm with hail",
+  "local": [
+    {
+      "slot": "source",
+      "facet": "default",
+      "filler": "@CLOUD"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@HAIL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@NATURAL-EVENT"
+    }
+  ],
+  "private": {}
+}

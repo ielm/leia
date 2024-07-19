@@ -1,0 +1,9 @@
+{
+  "name": "$PRODUCTION-MODE",
+  "def": "How something is produced",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-OBJECT-ATTRIBUTE"
+}

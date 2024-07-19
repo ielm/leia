@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-ADDRESS",
+  "def": "the relation between the address where a person or organization is located and that person or organization",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": "$ADDRESS-OF",
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

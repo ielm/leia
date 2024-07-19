@@ -1,0 +1,36 @@
+{
+  "name": "@BARIUM",
+  "isa": [
+    "@SOFT-METALLIC-ELEMENT"
+  ],
+  "def": "a soft, silvery-white alkaline-earth metal, used to deoxidize copper, in various alloys, and in rat poison",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        56
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        137
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

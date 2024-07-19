@@ -1,0 +1,27 @@
+{
+  "name": "@RADIOGRAPHY-EVENT",
+  "isa": [
+    "@DIAGNOSTIC-PROCEDURE"
+  ],
+  "def": "A medical test performed by the making of radiographs (film records) of internal structures of the body by passage of X-rays or gamma rays through the body to act on specially sensitized film.",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@X-RAY-OBJECT"
+    },
+    {
+      "slot": "creates-image-of",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MEDICAL-ARTIFACT"
+    }
+  ],
+  "private": {}
+}

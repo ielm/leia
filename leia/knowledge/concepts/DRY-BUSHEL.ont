@@ -1,0 +1,19 @@
+{
+  "name": "@DRY-BUSHEL",
+  "isa": [
+    "@VOLUME-UNIT"
+  ],
+  "def": "a unit of dry volume, most often used in agriculture, equivalent to eight dry gallons",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.0352381
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

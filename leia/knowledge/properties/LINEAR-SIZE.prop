@@ -1,0 +1,12 @@
+{
+  "name": "$LINEAR-SIZE",
+  "def": "any linear unit of measure, such as length, width, depth, height",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@DISTANCE-LENGTH-UNIT",
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SIZE"
+}

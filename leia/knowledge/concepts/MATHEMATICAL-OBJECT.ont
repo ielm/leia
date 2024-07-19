@@ -1,0 +1,21 @@
+{
+  "name": "@MATHEMATICAL-OBJECT",
+  "isa": [
+    "@REPRESENTATIONAL-OBJECT"
+  ],
+  "def": "entities defined in mathematics, such as sets, variables, numbers, etc.",
+  "local": [
+    {
+      "slot": "equals",
+      "facet": "sem",
+      "filler": "@MATHEMATICAL-OBJECT"
+    },
+    {
+      "slot": "greater-than",
+      "facet": "sem",
+      "filler": "@MATHEMATICAL-OBJECT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

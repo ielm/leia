@@ -1,0 +1,10 @@
+{
+  "name": "@INCREASE",
+  "isa": [
+    "@CHANGE-EVENT"
+  ],
+  "def": "indicates the range of a property value being higher in the effect than in the precondition of the event",
+  "local": [],
+  "block": [],
+  "private": {}
+}

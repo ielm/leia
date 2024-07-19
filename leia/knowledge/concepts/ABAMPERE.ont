@@ -1,0 +1,19 @@
+{
+  "name": "@ABAMPERE",
+  "isa": [
+    "@ELECTRIC-CURRENT-UNIT"
+  ],
+  "def": "(Wikipedia) One abampere is equal to ten amperes in the SI system of units. An abampere of current in a circular path of one centimeter radius produces a magnetic field of 2 \u03c0 oersteds at the center of the circle",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        10.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,42 @@
+{
+  "name": "@POLITICAL-CAMPAIGN",
+  "isa": [
+    "@POLITICAL-EVENT"
+  ],
+  "def": "a series of planned actions for electing a candidate",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@POLITICAL-PARTY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@POLITICAL-CANDIDATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

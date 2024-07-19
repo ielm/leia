@@ -1,0 +1,16 @@
+{
+  "name": "@WAIT",
+  "isa": [
+    "@ANIMAL-LIVING-EVENT"
+  ],
+  "def": "to stay (until something expected happens)",
+  "local": [],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

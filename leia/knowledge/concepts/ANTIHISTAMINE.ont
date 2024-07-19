@@ -1,0 +1,24 @@
+{
+  "name": "@ANTIHISTAMINE",
+  "isa": [
+    "@DRUG"
+  ],
+  "def": "any of several drugs used in treating such allergic conditions as hay fever and hives",
+  "local": [],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    }
+  ],
+  "private": {}
+}

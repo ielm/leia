@@ -1,0 +1,27 @@
+{
+  "name": "@BRAKE",
+  "isa": [
+    "@VEHICLE-PART"
+  ],
+  "def": "any device for slowing or stopping a machine or vehicle, as by causing a block or a band to press against a moving part",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BRAKE-FLUID"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "amorphous"
+    }
+  ],
+  "private": {}
+}

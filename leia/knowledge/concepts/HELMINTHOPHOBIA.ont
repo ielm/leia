@@ -1,0 +1,27 @@
+{
+  "name": "@HELMINTHOPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of worms",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WORM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

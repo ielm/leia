@@ -1,0 +1,21 @@
+{
+  "name": "@POLITICAL-PARTY",
+  "isa": [
+    "@POLITICAL-ENTITY"
+  ],
+  "def": "a group of people working to promote a political platform or slate, cause etc.",
+  "local": [
+    {
+      "slot": "has-member",
+      "facet": "default",
+      "filler": "@POLITICIAN"
+    },
+    {
+      "slot": "has-member",
+      "facet": "default",
+      "filler": "@CITIZEN"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

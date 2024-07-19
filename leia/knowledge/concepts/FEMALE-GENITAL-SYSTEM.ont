@@ -1,0 +1,27 @@
+{
+  "name": "@FEMALE-GENITAL-SYSTEM",
+  "isa": [
+    "@GENITAL-SYSTEM"
+  ],
+  "def": "genital system of human females",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FEMALE-EXTERNAL-GENITALIA"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@FEMALE-INTERNAL-GENITALIA"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

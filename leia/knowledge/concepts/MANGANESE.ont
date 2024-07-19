@@ -1,0 +1,36 @@
+{
+  "name": "@MANGANESE",
+  "isa": [
+    "@NON-DUCTILE-METAL"
+  ],
+  "def": "a gray-white or silvery brittle metallic element, alloyed with steel",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        25
+      ]
+    },
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        54
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

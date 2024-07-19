@@ -1,0 +1,26 @@
+{
+  "name": "@NEWSPRINT",
+  "isa": [
+    "@PAPER"
+  ],
+  "def": "inexpensive paper made from wood pulp, used chiefly for printing newspapers",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "beige"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "tan"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

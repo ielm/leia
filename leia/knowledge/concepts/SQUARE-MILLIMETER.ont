@@ -1,0 +1,19 @@
+{
+  "name": "@SQUARE-MILLIMETER",
+  "isa": [
+    "@AREA-UNIT"
+  ],
+  "def": "1,000,000 square millimeters is equivalent to one square meter;mm*mm",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1e-06
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

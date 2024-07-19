@@ -1,0 +1,67 @@
+{
+  "name": "@DYSPHAGIA",
+  "isa": [
+    "@DISCOMFORT"
+  ],
+  "def": "difficulty swallowing",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@BARRETTS-ESOPHAGUS"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ESOPHAGUS"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@THROAT"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ACHALASIA"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@GASTROESOPHAGEAL-REFLUX-DISEASE"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@HYPOCHLORHYDRIA"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@SWALLOW"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BOLUS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@DISEASE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

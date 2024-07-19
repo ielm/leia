@@ -1,0 +1,27 @@
+{
+  "name": "@METAPLASIA",
+  "isa": [
+    "@NON-COMMUNICABLE-DISEASE"
+  ],
+  "def": "Transformation of cells from a normal to an abnormal state",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@SMOKE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CELL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

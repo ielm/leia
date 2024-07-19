@@ -1,0 +1,21 @@
+{
+  "name": "@METHOD",
+  "isa": [
+    "@PROCEDURE"
+  ],
+  "def": "an organized way of doing anything",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-name-suffix",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "has-name-suffix",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    }
+  ],
+  "private": {}
+}

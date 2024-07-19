@@ -1,0 +1,29 @@
+{
+  "name": "@TIDE",
+  "isa": [
+    "@CURRENT"
+  ],
+  "def": "shoreline current caused by gravitational attraction on large bodies of fluid",
+  "local": [],
+  "block": [
+    {
+      "slot": "absolute-day",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        31
+      ]
+    },
+    {
+      "slot": "absolute-day",
+      "facet": "sem",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@AIR"
+    }
+  ],
+  "private": {}
+}

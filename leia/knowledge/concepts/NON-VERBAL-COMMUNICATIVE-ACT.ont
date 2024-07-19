@@ -1,0 +1,32 @@
+{
+  "name": "@NON-VERBAL-COMMUNICATIVE-ACT",
+  "isa": [
+    "@COMMUNICATIVE-EVENT"
+  ],
+  "def": "exchanging information through gesture or other non-verbal means",
+  "local": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COMMUNICATION-DEVICE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@NATURAL-LANGUAGE"
+    }
+  ],
+  "private": {}
+}

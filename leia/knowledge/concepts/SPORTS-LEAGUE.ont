@@ -1,0 +1,22 @@
+{
+  "name": "@SPORTS-LEAGUE",
+  "isa": [
+    "@CLUB-ORGANIZATION"
+  ],
+  "def": "a group of teams organized to play one another",
+  "local": [
+    {
+      "slot": "has-member",
+      "facet": "sem",
+      "filler": "@SPORTS-TEAM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-member",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

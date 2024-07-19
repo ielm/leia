@@ -1,0 +1,9 @@
+{
+  "name": "$BELOW-AND-TOUCHING",
+  "def": "be tangent to a surface from below",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$ABOVE-AND-TOUCHING",
+  "measured-in": [],
+  "container": "$SPATIAL-RELATION"
+}

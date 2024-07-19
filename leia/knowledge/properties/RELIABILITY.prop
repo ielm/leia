@@ -1,0 +1,9 @@
+{
+  "name": "$RELIABILITY",
+  "def": "the degree of reliability with which a person or group conducts himself or themselves",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-ANIMAL-ATTRIBUTE"
+}

@@ -1,0 +1,43 @@
+{
+  "name": "@PADDLE",
+  "isa": [
+    "@WATER-VEHICLE-PART",
+    "@SPORT-ARTIFACT"
+  ],
+  "def": "a short pole with a wide blade, used to propel some water vehicles",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@FIBERGLASS"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "is-consumer-good",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$SERIOUSNESS-ATTRIBUTE",
+  "def": "the degree to which a person*s personality is serious, solemn, grave, etc.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-ANIMAL-ATTRIBUTE"
+}

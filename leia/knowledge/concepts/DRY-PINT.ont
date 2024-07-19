@@ -1,0 +1,19 @@
+{
+  "name": "@DRY-PINT",
+  "isa": [
+    "@VOLUME-UNIT"
+  ],
+  "def": "1/8 of a dry-gallon, used in the US; 5506E-7",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.0005506
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

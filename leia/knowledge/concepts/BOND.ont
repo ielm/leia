@@ -1,0 +1,24 @@
+{
+  "name": "@BOND",
+  "isa": [
+    "@INVESTMENT"
+  ],
+  "def": "an interest-bearing certificate issued by a government or business, redeemable on a specific date",
+  "local": [
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

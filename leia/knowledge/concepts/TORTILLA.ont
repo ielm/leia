@@ -1,0 +1,16 @@
+{
+  "name": "@TORTILLA",
+  "isa": [
+    "@BREAD"
+  ],
+  "def": "A round, thin unleavened bread made from masa or wheat flour.",
+  "local": [
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "@CIRCULAR-AS-DOCUMENT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

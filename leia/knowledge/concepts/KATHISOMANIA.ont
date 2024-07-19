@@ -1,0 +1,27 @@
+{
+  "name": "@KATHISOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "uncontrollable compulsion to sit",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SIT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

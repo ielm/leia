@@ -1,0 +1,27 @@
+{
+  "name": "@COLLAR",
+  "isa": [
+    "@CLOTHING-ARTIFACT-PART"
+  ],
+  "def": "a band that serves to finish or decorate the neckline of a garment",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SEWING-MATERIAL"
+    },
+    {
+      "slot": "worn-on",
+      "facet": "default",
+      "filler": "@NECK"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@INCH-WATER",
+  "isa": [
+    "@PRESSURE-UNIT"
+  ],
+  "def": "an inch of water is the pressure exerted by a column of water one inch in height at defined conditions. It is used for measuring differences in pressure across an orifice, in a pipeline, or shaft (Wikipedia); .07355*inch-mercury",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        249.061
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

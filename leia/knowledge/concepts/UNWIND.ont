@@ -1,0 +1,127 @@
+{
+  "name": "@UNWIND",
+  "isa": [
+    "@CHANGE-POSITION"
+  ],
+  "def": "to wind off or to undo (something wound)",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SCARF"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ROPE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@STRING"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@THREAD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@YARN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ELASTIC"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@TWIST"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@COIL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TAIL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VINE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LEASH"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CABLE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CHAIN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WIRE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BELT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@NECKLACE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BRACELET"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@PRIMATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

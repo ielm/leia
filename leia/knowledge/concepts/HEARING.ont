@@ -1,0 +1,72 @@
+{
+  "name": "@HEARING",
+  "isa": [
+    "@GOVERNMENT-ACTIVITY"
+  ],
+  "def": "an appearance before a judge, investigative committee, etc.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@INVESTIGATIVE-ENTITY"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@JUDGE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@COURTROOM"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@GOVERNMENT-BUILDING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

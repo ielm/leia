@@ -1,0 +1,16 @@
+{
+  "name": "@CONSULATE-BUILDING",
+  "isa": [
+    "@GOVERNMENT-BUILDING"
+  ],
+  "def": "the office or residence of a government official appointed to live in a foreign city and look after his government*s citizens and business",
+  "local": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@CONSUL"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

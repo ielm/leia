@@ -1,0 +1,22 @@
+{
+  "name": "@TRADITIONAL-MONARCHY",
+  "isa": [
+    "@GOVERNMENT-TYPE"
+  ],
+  "def": "a type of government where a hereditary ruler wields absolute power",
+  "local": [
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@SOVEREIGN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    }
+  ],
+  "private": {}
+}

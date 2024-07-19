@@ -1,0 +1,27 @@
+{
+  "name": "@UPPER-CLASS",
+  "isa": [
+    "@SOCIOECONOMIC-CLASS"
+  ],
+  "def": "the rich or aristocratic social class",
+  "local": [
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@OFFSHORE-BANK"
+    }
+  ],
+  "block": [
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@ORGANIZATION"
+    }
+  ],
+  "private": {}
+}

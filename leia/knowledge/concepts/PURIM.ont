@@ -1,0 +1,27 @@
+{
+  "name": "@PURIM",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "A Jewish holiday commemorating the deliverance of the Jews from the massacre by Haman, celebrated on the 14th of Adar",
+  "local": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@JUDAISM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "private": {}
+}

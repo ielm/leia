@@ -1,0 +1,22 @@
+{
+  "name": "@DREAM",
+  "isa": [
+    "@PASSIVE-COGNITIVE-EVENT"
+  ],
+  "def": "to have a sequence of images passing through one*s mind while sleeping",
+  "local": [
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@SLEEP"
+    }
+  ],
+  "block": [
+    {
+      "slot": "precondition",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

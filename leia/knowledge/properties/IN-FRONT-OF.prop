@@ -1,0 +1,9 @@
+{
+  "name": "$IN-FRONT-OF",
+  "def": "one object or event is in front of another",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$BEHIND",
+  "measured-in": [],
+  "container": "$SPATIAL-RELATION"
+}

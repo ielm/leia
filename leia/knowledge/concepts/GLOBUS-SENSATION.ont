@@ -1,0 +1,47 @@
+{
+  "name": "@GLOBUS-SENSATION",
+  "isa": [
+    "@DISCOMFORT"
+  ],
+  "def": "the feeling that something is caught in the throat",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@THROAT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BOLUS"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@MAMMAL"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@MAMMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

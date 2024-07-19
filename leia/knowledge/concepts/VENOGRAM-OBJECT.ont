@@ -1,0 +1,22 @@
+{
+  "name": "@VENOGRAM-OBJECT",
+  "isa": [
+    "@X-RAY-OBJECT"
+  ],
+  "def": "x-ray of veins",
+  "local": [
+    {
+      "slot": "depicts",
+      "facet": "sem",
+      "filler": "@VEIN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "depicts",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

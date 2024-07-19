@@ -1,0 +1,16 @@
+{
+  "name": "@ARCHITECTURAL-SERVICE-CORPORATION",
+  "isa": [
+    "@ENGINEERING-CORPORATION"
+  ],
+  "def": "a corporation providing professional architectural services",
+  "local": [],
+  "block": [
+    {
+      "slot": "area-of-business-activity",
+      "facet": "sem",
+      "filler": "@BUILD"
+    }
+  ],
+  "private": {}
+}

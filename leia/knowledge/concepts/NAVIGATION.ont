@@ -1,0 +1,47 @@
+{
+  "name": "@NAVIGATION",
+  "isa": [
+    "@FIELD-OF-STUDY"
+  ],
+  "def": "The science of locating the position and plotting the course of ships and aircraft.",
+  "local": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@PILOT"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@MOVE-WATER-VEHICLE"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@FLY-AIR-VEHICLE"
+    },
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SAILOR"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@MARITIME-SCIENCE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@WORK-ACTIVITY"
+    }
+  ],
+  "private": {}
+}

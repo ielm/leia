@@ -1,0 +1,11 @@
+{
+  "name": "$COMFORT-ATTRIBUTE",
+  "def": "the degree to which an object provides ease or relief from stress",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

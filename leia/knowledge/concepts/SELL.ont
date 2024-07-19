@@ -1,0 +1,47 @@
+{
+  "name": "@SELL",
+  "isa": [
+    "@EVERYDAY-FINANCIAL-EVENT"
+  ],
+  "def": "To exchange or deliver for money or its equivalent.",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@SALESPERSON"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@BROKER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MONEY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

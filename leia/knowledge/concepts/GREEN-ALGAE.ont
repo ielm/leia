@@ -1,0 +1,16 @@
+{
+  "name": "@GREEN-ALGAE",
+  "isa": [
+    "@ALGA"
+  ],
+  "def": "clear green algae growing on damp wood or the surface of stagant water",
+  "local": [],
+  "block": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "green"
+    }
+  ],
+  "private": {}
+}

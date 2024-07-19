@@ -1,0 +1,22 @@
+{
+  "name": "@SPLENECTOMY",
+  "isa": [
+    "@SURGICAL-REMOVAL"
+  ],
+  "def": "Surgical removal of the spleen.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@SPLEEN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

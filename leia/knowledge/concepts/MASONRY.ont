@@ -1,0 +1,27 @@
+{
+  "name": "@MASONRY",
+  "isa": [
+    "@CONSTRUCTION-ACTIVITY"
+  ],
+  "def": "working with and laying stone for a building, wall, etc.",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@MASON"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@CONSTRUCTION-CORPORATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@TRADE-ROLE"
+    }
+  ],
+  "private": {}
+}

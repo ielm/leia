@@ -1,0 +1,21 @@
+{
+  "name": "@EXTERNAL-PLANT-PART",
+  "isa": [
+    "@PLANT-PART"
+  ],
+  "def": "plant-parts found externally",
+  "local": [],
+  "block": [
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@LIQUID"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "semi-solid"
+    }
+  ],
+  "private": {}
+}

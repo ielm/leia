@@ -1,0 +1,16 @@
+{
+  "name": "@SLED-VEHICLE",
+  "isa": [
+    "@SNOW-VEHICLE"
+  ],
+  "def": "Sleds, toboggans, etc",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@RUNNER-DEVICE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@PASSENGER",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "one who travels",
+  "local": [],
+  "block": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

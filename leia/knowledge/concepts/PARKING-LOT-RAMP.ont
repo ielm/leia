@@ -1,0 +1,16 @@
+{
+  "name": "@PARKING-LOT-RAMP",
+  "isa": [
+    "@ROAD"
+  ],
+  "def": "the ramp into or out of, or within, a parking lot",
+  "local": [
+    {
+      "slot": "part-of-object",
+      "facet": "sem",
+      "filler": "@PARKING-LOT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

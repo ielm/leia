@@ -1,0 +1,22 @@
+{
+  "name": "@ASBESTOS-MINING-CORPORATION",
+  "isa": [
+    "@NONMETALLIC-ORE-MINING-CORPORATION"
+  ],
+  "def": "a corporation involved in the asbestos mining and preparation of asbestos",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@ASBESTOS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

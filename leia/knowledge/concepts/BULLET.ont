@@ -1,0 +1,32 @@
+{
+  "name": "@BULLET",
+  "isa": [
+    "@PROJECTILE"
+  ],
+  "def": "a small piece of lead, steel, etc. to be shot from a firearm",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@LEAD"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SILVER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@STEEL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "private": {}
+}

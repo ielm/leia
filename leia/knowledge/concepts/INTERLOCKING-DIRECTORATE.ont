@@ -1,0 +1,22 @@
+{
+  "name": "@INTERLOCKING-DIRECTORATE",
+  "isa": [
+    "@FOR-PROFIT-ORGANIZATION",
+    "@PRIVATE-ORGANIZATION"
+  ],
+  "def": "a situation in which several directors serve on a number of corporations with similar operations; generally such a holding is prohibited by law",
+  "local": [
+    {
+      "slot": "has-member",
+      "facet": "default",
+      "filler": "@DIRECTOR-CORPORATION"
+    },
+    {
+      "slot": "has-member",
+      "facet": "default",
+      "filler": "@CORPORATE-TRUSTEE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

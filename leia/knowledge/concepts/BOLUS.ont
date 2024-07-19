@@ -1,0 +1,80 @@
+{
+  "name": "@BOLUS",
+  "isa": [
+    "@INANIMATE"
+  ],
+  "def": "A soft mass of chewed food within the mouth or alimentary canal",
+  "local": [
+    {
+      "slot": "wetness",
+      "facet": "sem",
+      "filler": [
+        "><=",
+        1.0
+      ]
+    },
+    {
+      "slot": "softness",
+      "facet": "sem",
+      "filler": [
+        "><=",
+        1.0
+      ]
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@INGESTIBLE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SALIVA"
+    },
+    {
+      "slot": "hardness-breakability",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "hardness-breakability",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "softness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@GAS"
+    },
+    {
+      "slot": "wetness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

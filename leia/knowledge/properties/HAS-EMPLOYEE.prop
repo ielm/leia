@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-EMPLOYEE",
+  "def": "the relation between a person or \norganization and his or its employees (e.g.,\na domestic servant is an employee but not\nof a company)",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$EMPLOYEE-OF",
+  "measured-in": [],
+  "container": "$BUSINESS-RELATION"
+}

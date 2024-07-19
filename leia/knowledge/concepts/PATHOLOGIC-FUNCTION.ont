@@ -1,0 +1,88 @@
+{
+  "name": "@PATHOLOGIC-FUNCTION",
+  "isa": [
+    "@MEDICAL-EVENT",
+    "@BIOLOGIC-FUNCTION"
+  ],
+  "def": "a disordered process or functioning of an animal",
+  "local": [
+    {
+      "slot": "fatal-if-not-treated",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "fatal-if-not-treated",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@PHYSICIAN"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "relaxable-to",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@PATIENT"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "relaxable-to",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@PATIENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MEDICAL-ARTIFACT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

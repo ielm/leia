@@ -1,0 +1,88 @@
+{
+  "name": "@ECONOMIC-SUPPORT",
+  "isa": [
+    "@COOPERATIVE-EVENT",
+    "@EVERYDAY-FINANCIAL-EVENT"
+  ],
+  "def": "to provide with monetary backing",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "not",
+      "filler": "@CEMETERY"
+    },
+    {
+      "slot": "agent",
+      "facet": "not",
+      "filler": "@LAND-RESERVE"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@FOUNDATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MONEY"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@UNDERWRITER"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@BANK"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@LENDING-CORPORATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@GEOPOLITICAL-ENTITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

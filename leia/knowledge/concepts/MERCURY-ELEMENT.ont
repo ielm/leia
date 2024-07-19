@@ -1,0 +1,36 @@
+{
+  "name": "@MERCURY-ELEMENT",
+  "isa": [
+    "@METALLIC-LIQUID-ELEMENT"
+  ],
+  "def": "a silvery-white poisonous metallic element, liquid at room temperature. it is used in thermometers, barometers, vapor lamps, and batteries, and in the preparation of chemical pesticides",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        200
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        80
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

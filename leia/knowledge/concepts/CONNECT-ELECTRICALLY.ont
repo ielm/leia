@@ -1,0 +1,37 @@
+{
+  "name": "@CONNECT-ELECTRICALLY",
+  "isa": [
+    "@ATTACH"
+  ],
+  "def": "the process of attaching elements, consisting of one or more subevents, that enables electricity to flow from the source to the goal",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ELECTRICAL-CORD"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@TELEPHONE-WIRE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ELECTRICAL-EQUIPMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ELECTRICAL-OUTLET"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

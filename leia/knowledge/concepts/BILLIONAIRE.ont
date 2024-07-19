@@ -1,0 +1,19 @@
+{
+  "name": "@BILLIONAIRE",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "A person whose wealth amounts to at least a billion (a thousand millions) dollars, pounds, etc.",
+  "local": [],
+  "block": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

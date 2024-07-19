@@ -1,0 +1,16 @@
+{
+  "name": "@INDULGE",
+  "isa": [
+    "@ABSTRACT-SOCIAL-ACTIVITY"
+  ],
+  "def": "to gratify the wishes of",
+  "local": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

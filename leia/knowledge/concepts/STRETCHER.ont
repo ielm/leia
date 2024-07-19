@@ -1,0 +1,27 @@
+{
+  "name": "@STRETCHER",
+  "isa": [
+    "@MEDICAL-ARTIFACT"
+  ],
+  "def": "a light frame covered with canvas for carrying the sick, injured, etc.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CANVAS"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

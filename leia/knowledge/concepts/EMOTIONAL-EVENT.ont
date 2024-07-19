@@ -1,0 +1,67 @@
+{
+  "name": "@EMOTIONAL-EVENT",
+  "isa": [
+    "@MENTAL-EVENT"
+  ],
+  "def": "emotional states or acts, such as anger, sadness, depression, happiness",
+  "local": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@CRIMINAL-ACTIVITY"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EMIGRATE"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@ENTERTAIN-EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@MENTAL-EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@NON-WORK-ACTIVITY"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@ABSTRACT-IDEA"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,38 @@
+{
+  "name": "@SADDLE",
+  "isa": [
+    "@ANIMAL-RELATED-ARTIFACT"
+  ],
+  "def": "a seat for a rider on a horse, bicycle, etc.",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@LEATHER"
+    },
+    {
+      "slot": "sharpness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        0
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "sharpness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@SCLERODERMA",
+  "isa": [
+    "@NON-COMMUNICABLE-DISEASE"
+  ],
+  "def": "A pathological thickening and hardening of the skin; characterized by the formation of scar tissue, fibrosis, in the skin and organs of the body",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SKIN"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ANIMAL-ORGAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

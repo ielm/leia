@@ -1,0 +1,16 @@
+{
+  "name": "@NIGHTCLUB",
+  "isa": [
+    "@SERVICE-BUILDING"
+  ],
+  "def": "An establishment that stays open late at night and provides food, drink, entertainment,  and music for dancing",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@DANCE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

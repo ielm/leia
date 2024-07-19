@@ -1,0 +1,16 @@
+{
+  "name": "@CHOCOLATE",
+  "isa": [
+    "@FLAVORING"
+  ],
+  "def": "a substance made from roasted and ground cacao seeds",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

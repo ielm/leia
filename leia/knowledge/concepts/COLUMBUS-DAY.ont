@@ -1,0 +1,37 @@
+{
+  "name": "@COLUMBUS-DAY",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "a U.S. holiday, the second Monday in October, commemorating the 1492 discovery of the New World by Christopher Columbus",
+  "local": [
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@OCTOBER"
+    },
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@MONDAY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "private": {}
+}

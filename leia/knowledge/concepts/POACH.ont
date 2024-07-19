@@ -1,0 +1,62 @@
+{
+  "name": "@POACH",
+  "isa": [
+    "@PREPARE-INGESTIBLE"
+  ],
+  "def": "to cook in a boiling or simmering liquid",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EGG"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@BEVERAGE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FISH-MEAT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@POULTRY"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@STOVE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SAUCEPAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "not",
+      "filler": "@LIQUID-MEDICINE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FRUIT-FOODSTUFF"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COOKING-EQUIPMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FOOD"
+    }
+  ],
+  "private": {}
+}

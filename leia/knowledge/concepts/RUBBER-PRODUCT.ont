@@ -1,0 +1,22 @@
+{
+  "name": "@RUBBER-PRODUCT",
+  "isa": [
+    "@INDUSTRIAL-ARTIFACT"
+  ],
+  "def": "any commercial product made of rubber",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SYNTHETIC-RUBBER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

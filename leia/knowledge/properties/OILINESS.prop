@@ -1,0 +1,9 @@
+{
+  "name": "$OILINESS",
+  "def": "The degree to which a physical object is oily.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-PHYSICAL-OBJECT-ATTRIBUTE"
+}

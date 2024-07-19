@@ -1,0 +1,32 @@
+{
+  "name": "@FEED",
+  "isa": [
+    "@FEEDING-EVENT"
+  ],
+  "def": "to provide with substances necessary to life and growth",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MOUTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@UTENSIL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

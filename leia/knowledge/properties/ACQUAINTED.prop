@@ -1,0 +1,9 @@
+{
+  "name": "$ACQUAINTED",
+  "def": "The state where some animal has previously met another animal and now they can identify one another upon meeting.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

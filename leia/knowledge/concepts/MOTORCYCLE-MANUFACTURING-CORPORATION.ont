@@ -1,0 +1,22 @@
+{
+  "name": "@MOTORCYCLE-MANUFACTURING-CORPORATION",
+  "isa": [
+    "@VEHICLE-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a corporation that produces motorcycles.",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@MOTORCYCLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@VEHICLE"
+    }
+  ],
+  "private": {}
+}

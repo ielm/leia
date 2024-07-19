@@ -1,0 +1,52 @@
+{
+  "name": "@DETACH",
+  "isa": [
+    "@CHANGE-POSITION"
+  ],
+  "def": "to disconnect one thing from another",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@TOOTH"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PAW"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@SEPARATE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@IMPLEMENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "effect",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

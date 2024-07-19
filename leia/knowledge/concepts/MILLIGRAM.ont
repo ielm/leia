@@ -1,0 +1,19 @@
+{
+  "name": "@MILLIGRAM",
+  "isa": [
+    "@MASS-WEIGHT-UNIT"
+  ],
+  "def": "On thousandth of a gram; 1E-6",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1e-06
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

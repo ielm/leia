@@ -1,0 +1,37 @@
+{
+  "name": "@COMPUTING-WORK-ROLE",
+  "isa": [
+    "@WORK-ROLE"
+  ],
+  "def": "a social-role in which a person uses a computer to complete tasks such as programming, software design, etc.",
+  "local": [
+    {
+      "slot": "operator-of",
+      "facet": "sem",
+      "filler": "@COMPUTER-NETWORK"
+    },
+    {
+      "slot": "operator-of",
+      "facet": "sem",
+      "filler": "@COMPUTER-HARDWARE"
+    },
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@COMPUTER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "operator-of",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "operator-of",
+      "facet": "sem",
+      "filler": "@DEVICE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@SUE",
+  "isa": [
+    "@LEGAL-EVENT-IN-COURTROOM"
+  ],
+  "def": "to petition a court for redress of grievances or recovery of a right",
+  "local": [
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@IRON-ORE-MINING-CORPORATION",
+  "isa": [
+    "@METAL-MINING-CORPORATION"
+  ],
+  "def": "a corporation involved in the iron mining and preparation of iron",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@IRON"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "private": {}
+}

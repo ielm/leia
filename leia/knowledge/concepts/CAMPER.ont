@@ -1,0 +1,21 @@
+{
+  "name": "@CAMPER",
+  "isa": [
+    "@WHEELED-ENGINE-VEHICLE"
+  ],
+  "def": "A motor vehicle with space and equipment, either in a rear compartment or in an attached trailer, for sleeping and simple housekeeping, used for camping and recreational travel",
+  "local": [
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

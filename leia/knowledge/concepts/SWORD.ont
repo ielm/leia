@@ -1,0 +1,33 @@
+{
+  "name": "@SWORD",
+  "isa": [
+    "@CUTTING-IMPLEMENT",
+    "@WEAPON"
+  ],
+  "def": "a hand weapon with a long, pointed blade set in a hilt",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@BLADE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@HANDLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

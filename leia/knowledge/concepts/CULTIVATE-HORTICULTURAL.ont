@@ -1,0 +1,32 @@
+{
+  "name": "@CULTIVATE-HORTICULTURAL",
+  "isa": [
+    "@CULTIVATE-PLANT"
+  ],
+  "def": "to do everything necessary to grow flowers and other plants that are considered within the realm of horticulture",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FLOWERING-PLANT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FRUIT-FOODSTUFF"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VEGETABLE-FOODSTUFF"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

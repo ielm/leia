@@ -1,0 +1,19 @@
+{
+  "name": "@CUBIC-CENTIMETER",
+  "isa": [
+    "@CUBIC-UNIT"
+  ],
+  "def": "the volume equal to a cube one centimeter on each side; cm*cm*cm",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1e-06
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

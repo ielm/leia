@@ -1,0 +1,26 @@
+{
+  "name": "@BALCONY",
+  "isa": [
+    "@EXTERIOR-BUILDING-PART"
+  ],
+  "def": "a platform projecting from an upper story and enclosed by a railing",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@RAILING"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@DOOR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@FLOOR"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@PRESENTATION",
+  "isa": [
+    "@INTERACT"
+  ],
+  "def": "information or results being presented for a business-meeting",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@BUSINESS-ROLE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@RESCUE",
+  "isa": [
+    "@ANIMAL-LIVING-EVENT"
+  ],
+  "def": "to free or save from danger, imprisonment, evil, etc.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

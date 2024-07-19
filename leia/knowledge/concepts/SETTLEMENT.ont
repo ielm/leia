@@ -1,0 +1,52 @@
+{
+  "name": "@SETTLEMENT",
+  "isa": [
+    "@EVERYDAY-FINANCIAL-EVENT"
+  ],
+  "def": "the agreeing of two parties as to the conditions under which a matter under negotiation between them will be settled, such as an insurance claim, a labor dispute, etc.",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@AGREE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@INVESTIGATE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ARGUE-CONFLICT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OPPOSITION-EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LITIGATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

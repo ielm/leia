@@ -1,0 +1,21 @@
+{
+  "name": "@BUS",
+  "isa": [
+    "@WHEELED-ENGINE-VEHICLE"
+  ],
+  "def": "large vehicles for carrying passengers",
+  "local": [
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

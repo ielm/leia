@@ -1,0 +1,16 @@
+{
+  "name": "@JET-PLANE",
+  "isa": [
+    "@AIRPLANE"
+  ],
+  "def": "a jet propelled airplane",
+  "local": [],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@AIR-VEHICLE-PART"
+    }
+  ],
+  "private": {}
+}

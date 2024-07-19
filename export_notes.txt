@@ -1,0 +1,9 @@
+The following knowledge was intentionally omitted during export for various reasons:
+
+air-1: is only used by breathe-2
+breathe-2: is not used by anything
+wheel-1: is not used by anything
+obstruct-2: is not used by anything
+seat-1: is not used by anything
+
+motion-event-1: theme/sem/obstruct.theme doesn't make sense (and we don't have dot notation support currently)

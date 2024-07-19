@@ -1,0 +1,33 @@
+{
+  "name": "@APPLE",
+  "isa": [
+    "@TREE-FRUIT"
+  ],
+  "def": "the firm, rounded fruit of a tree, having skin that is usually red but may be yellow or green",
+  "local": [
+    {
+      "slot": "diameter",
+      "facet": "sem",
+      "filler": [
+        "><",
+        12
+      ],
+      "meta": {
+        "measured-in": "centimeter"
+      }
+    }
+  ],
+  "block": [
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "cylindrical"
+    },
+    {
+      "slot": "shape",
+      "facet": "sem",
+      "filler": "egglike"
+    }
+  ],
+  "private": {}
+}

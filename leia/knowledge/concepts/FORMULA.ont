@@ -1,0 +1,19 @@
+{
+  "name": "@FORMULA",
+  "isa": [
+    "@ABSTRACT-OBJECT"
+  ],
+  "def": "a conventional rule for doing something",
+  "local": [
+    {
+      "slot": "accuracy",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

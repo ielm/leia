@@ -1,0 +1,37 @@
+{
+  "name": "@NEWSPAPER",
+  "isa": [
+    "@PRINTED-MEDIA"
+  ],
+  "def": "a typically daily or weekly publication containing current news, editorials, feature articles, and usually advertising",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@NEWSPRINT"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "public"
+    },
+    {
+      "slot": "public-private",
+      "facet": "sem",
+      "filler": "private"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@ANY-STRING"
+    },
+    {
+      "slot": "has-name",
+      "facet": "sem",
+      "filler": "@NAME"
+    }
+  ],
+  "private": {}
+}

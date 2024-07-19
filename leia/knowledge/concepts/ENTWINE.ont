@@ -1,0 +1,22 @@
+{
+  "name": "@ENTWINE",
+  "isa": [
+    "@CHANGE-POSITION"
+  ],
+  "def": "to twine together or around",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HAND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

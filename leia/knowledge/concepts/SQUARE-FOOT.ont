@@ -1,0 +1,19 @@
+{
+  "name": "@SQUARE-FOOT",
+  "isa": [
+    "@AREA-UNIT"
+  ],
+  "def": "a unit for measuring area; f*f",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.092903
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

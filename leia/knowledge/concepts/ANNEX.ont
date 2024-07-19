@@ -1,0 +1,115 @@
+{
+  "name": "@ANNEX",
+  "isa": [
+    "@BUILDING-PLACE-PART"
+  ],
+  "def": "an addition to a building",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@BRICK"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CEMENT"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CONCRETE"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CONSTRUCTION-MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GLASS"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ROCK"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@VINYL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@CEILING"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@FLOOR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@WALL"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@DOOR"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@WINDOW"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@EMAIL-ADDRESS"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@PHONE-NUMBER"
+    },
+    {
+      "slot": "has-address",
+      "facet": "sem",
+      "filler": "@WEB-ADDRESS"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

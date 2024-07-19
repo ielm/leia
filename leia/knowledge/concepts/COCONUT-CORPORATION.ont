@@ -1,0 +1,22 @@
+{
+  "name": "@COCONUT-CORPORATION",
+  "isa": [
+    "@PLANT-FARM"
+  ],
+  "def": "a corporation that produces coconut products",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@COCONUT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@PLANT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,82 @@
+{
+  "name": "@FALL",
+  "isa": [
+    "@MOTION-EVENT"
+  ],
+  "def": "To descend in elevation due to the force of gravity.",
+  "local": [
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "backward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "clockwise"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "counterclockwise"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "forward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "inward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "northeastward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "northwestward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "outward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "sideward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "southeastward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "southwestward"
+    },
+    {
+      "slot": "direction-of-motion",
+      "facet": "sem",
+      "filler": "upward"
+    }
+  ],
+  "private": {}
+}

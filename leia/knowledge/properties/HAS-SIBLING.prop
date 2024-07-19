@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-SIBLING",
+  "def": "the relationship between a sibling and another sibling",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$SIBLING-OF",
+  "measured-in": [],
+  "container": "$FAMILY-RELATION"
+}

@@ -1,0 +1,47 @@
+{
+  "name": "@CHEST-PAIN",
+  "isa": [
+    "@PAIN"
+  ],
+  "def": "pain in the chest or upper part of the body;\nmade into a separate concept because of\nits frequent role in scripts and the fact\nthat it actually refers to an area that might\nbe called things other than the chest",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@PNEUMONIA"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CHEST"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@HYPOCHLORHYDRIA"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ACHALASIA"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@GASTROESOPHAGEAL-REFLUX-DISEASE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@CANCER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

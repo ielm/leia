@@ -1,0 +1,57 @@
+{
+  "name": "@EXECUTE",
+  "isa": [
+    "@KILL"
+  ],
+  "def": "To put to death, especially by carrying out a lawful sentence.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@CRIMINAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@POLITICAL-ROLE"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@WEAPON"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@MILITARY-ORGANIZATION"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@CRIMINAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "private": {}
+}

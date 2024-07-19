@@ -1,0 +1,115 @@
+{
+  "name": "@INTANGIBLE-OBJECT",
+  "isa": [
+    "@OBJECT"
+  ],
+  "def": "objects that cannot be seen or touched but are evident in their influence on the physical world, such as momentum, energy, entrophy, etc.",
+  "local": [
+    {
+      "slot": "amount",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "amount",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@BAROMETER"
+    },
+    {
+      "slot": "intensity",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@PHOTOMETER"
+    },
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@SEISMOGRAPH"
+    },
+    {
+      "slot": "measured-by",
+      "facet": "sem",
+      "filler": "@VOLTMETER"
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@PHYSICS"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INTANGIBLE-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "aesthetic-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "scalar-financial-object-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "scalar-medical-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "scalar-medical-attribute",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "private": {}
+}

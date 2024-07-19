@@ -1,0 +1,16 @@
+{
+  "name": "@FAX-SERVICE-CORPORATION",
+  "isa": [
+    "@COMMUNICATION-CORPORATION"
+  ],
+  "def": "a corporation that provides message service by way of facsimile machine and may also sell them",
+  "local": [
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@FAX-MACHINE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

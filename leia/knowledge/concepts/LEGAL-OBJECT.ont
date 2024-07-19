@@ -1,0 +1,39 @@
+{
+  "name": "@LEGAL-OBJECT",
+  "isa": [
+    "@REPRESENTATIONAL-OBJECT"
+  ],
+  "def": "representational objects that stand in relation to the law and legal activities",
+  "local": [
+    {
+      "slot": "applies-to",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "applies-to",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "truth-value",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "legality-attribute",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "legality-attribute",
+      "facet": "sem",
+      "filler": "yes"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

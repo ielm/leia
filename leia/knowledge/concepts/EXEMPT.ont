@@ -1,0 +1,42 @@
+{
+  "name": "@EXEMPT",
+  "isa": [
+    "@LEGAL-EVENT"
+  ],
+  "def": "to free from a rule or obligation, which applies to others",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LAW"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@JUDGE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@LEGAL-WORK-ROLE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@PEACH-TREE",
+  "isa": [
+    "@FRUIT-TREE"
+  ],
+  "def": "a tree that produces peaches",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@PEACH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@TREE-FRUIT"
+    }
+  ],
+  "private": {}
+}

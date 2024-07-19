@@ -1,0 +1,22 @@
+{
+  "name": "@ACCELERATION-UNIT",
+  "isa": [
+    "@MEASURING-UNIT"
+  ],
+  "def": "Units for measuring acceleration",
+  "local": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "value",
+      "filler": "@METERS-PER-SECOND-SQUARED"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-standard-measure",
+      "facet": "sem",
+      "filler": "@MEASURING-UNIT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@UNIVERSE",
+  "isa": [
+    "@NATURAL-OBJECT"
+  ],
+  "def": "All matter and energy, including the earth, the galaxies, and the contents of intergalactic space, regarded as a whole.",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CELESTIAL-OBJECT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@INANIMATE"
+    }
+  ],
+  "private": {}
+}

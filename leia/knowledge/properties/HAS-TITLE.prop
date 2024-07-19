@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-TITLE",
+  "def": "The title given to a leader, such as Rabbi, Father, etc. Also applies to book titles, etc.",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

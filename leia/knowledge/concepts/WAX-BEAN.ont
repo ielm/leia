@@ -1,0 +1,16 @@
+{
+  "name": "@WAX-BEAN",
+  "isa": [
+    "@BEAN"
+  ],
+  "def": "A common bean grown for its light brown edible pod.",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "brown"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@TOPOPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of a particular place",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PLACE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

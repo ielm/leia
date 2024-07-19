@@ -1,0 +1,32 @@
+{
+  "name": "@PREFABRICATE",
+  "isa": [
+    "@MANUFACTURING-ACTIVITY"
+  ],
+  "def": "to manufacture part of an assembly so that final assembly consists of attaching the prefabricated items",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@IMPLEMENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@METAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

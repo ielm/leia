@@ -1,0 +1,32 @@
+{
+  "name": "@CASHIER",
+  "isa": [
+    "@WORK-ROLE"
+  ],
+  "def": "an employee responsible for money transactions",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@STORE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@RESTAURANT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@NEWSSTAND"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

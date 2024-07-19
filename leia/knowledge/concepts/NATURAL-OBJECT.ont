@@ -1,0 +1,53 @@
+{
+  "name": "@NATURAL-OBJECT",
+  "isa": [
+    "@INANIMATE"
+  ],
+  "def": "physical objects that are not alive and not made by humans",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@NATURAL-OBJECT"
+    },
+    {
+      "slot": "volatility",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "formality",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "automated"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "manual"
+    },
+    {
+      "slot": "production-mode",
+      "facet": "sem",
+      "filler": "mechanical"
+    }
+  ],
+  "private": {}
+}

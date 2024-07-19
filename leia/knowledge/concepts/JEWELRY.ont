@@ -1,0 +1,62 @@
+{
+  "name": "@JEWELRY",
+  "isa": [
+    "@CLOTHING-ACCESSORY"
+  ],
+  "def": "ornaments such as rings, necklaces, bracelets, etc. collectively",
+  "local": [
+    {
+      "slot": "worn-on",
+      "facet": "sem",
+      "filler": "@HEAD"
+    },
+    {
+      "slot": "worn-on",
+      "facet": "sem",
+      "filler": "@EAR"
+    },
+    {
+      "slot": "worn-on",
+      "facet": "sem",
+      "filler": "@FINGER"
+    },
+    {
+      "slot": "worn-on",
+      "facet": "sem",
+      "filler": "@WRIST"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@GEMSTONE"
+    },
+    {
+      "slot": "worn-on",
+      "facet": "sem",
+      "filler": "@HAIR"
+    },
+    {
+      "slot": "worn-on",
+      "facet": "sem",
+      "filler": "@NECK"
+    },
+    {
+      "slot": "worn-on",
+      "facet": "sem",
+      "filler": "@ANKLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "worn-on",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@MOBILE-HOME",
+  "isa": [
+    "@PORTABLE-SHELTER"
+  ],
+  "def": "a movable dwelling set more or less permanently at a location",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@SURVEYOR",
+  "isa": [
+    "@WORK-ROLE"
+  ],
+  "def": "one who surveys",
+  "local": [
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@MEASURING-ARTIFACT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

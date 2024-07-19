@@ -1,0 +1,45 @@
+{
+  "name": "@STORE",
+  "isa": [
+    "@RETAIL-CORPORATION"
+  ],
+  "def": "a retail establishment where goods are offered for sale",
+  "local": [
+    {
+      "slot": "purpose",
+      "facet": "sem",
+      "filler": "@SELL"
+    }
+  ],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    },
+    {
+      "slot": "headed-by",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "private": {}
+}

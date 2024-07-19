@@ -1,0 +1,32 @@
+{
+  "name": "@MILITARY-SCIENCE",
+  "isa": [
+    "@FIELD-OF-STUDY"
+  ],
+  "def": "The field of study that concerns war strategy, maneuvers and operations, and other activities that pertain to the function of an army or other military unit.",
+  "local": [
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@MILITARY-ACTIVITY"
+    },
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@MILITARY-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@WORK-ACTIVITY"
+    }
+  ],
+  "private": {}
+}

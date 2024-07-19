@@ -1,0 +1,36 @@
+{
+  "name": "@EINSTEINIUM",
+  "isa": [
+    "@ACTINIDE"
+  ],
+  "def": "a synthetic transuranic element first produced by neutron irradiation of uranium in a thermonuclear explosion. it has 12 known isotopes with half-lives ranging between 1.2 minutes and 270 days and mass numbers from 245 to 256",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        254
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        99
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

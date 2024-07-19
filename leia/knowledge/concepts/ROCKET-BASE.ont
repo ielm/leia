@@ -1,0 +1,16 @@
+{
+  "name": "@ROCKET-BASE",
+  "isa": [
+    "@BASE-OF-OPERATIONS"
+  ],
+  "def": "a military base for rocket missiles",
+  "local": [
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@ROCKET"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@SIGMOIDOSCOPY",
+  "isa": [
+    "@COLONOSCOPY"
+  ],
+  "def": "A procedure in which a scope is used to view the sigmoid flexure",
+  "local": [
+    {
+      "slot": "creates-image-of",
+      "facet": "sem",
+      "filler": "@SIGMOID-COLON"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@SIGMOID-COLON"
+    }
+  ],
+  "block": [
+    {
+      "slot": "creates-image-of",
+      "facet": "sem",
+      "filler": "@COLON"
+    },
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@COLON"
+    }
+  ],
+  "private": {}
+}

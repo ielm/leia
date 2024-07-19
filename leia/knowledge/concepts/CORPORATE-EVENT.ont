@@ -1,0 +1,26 @@
+{
+  "name": "@CORPORATE-EVENT",
+  "isa": [
+    "@FINANCIAL-EVENT"
+  ],
+  "def": "a financial-event in which transactions are conducted between corporations",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@EXECUTIVE"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@DIRECTOR-CORPORATION"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@CORPORATION"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

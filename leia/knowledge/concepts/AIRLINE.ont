@@ -1,0 +1,16 @@
+{
+  "name": "@AIRLINE",
+  "isa": [
+    "@TRANSPORTATION-CORPORATION"
+  ],
+  "def": "a corporation for moving passengers and freight by aircraft",
+  "local": [
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@AIRPLANE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

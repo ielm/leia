@@ -1,0 +1,9 @@
+{
+  "name": "$MEASURED-IN",
+  "def": "relation between a scalar attribute and a measuring unit used to measure that attribute--for example, SIZE can be measured in METERs",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$MEASURING-UNIT-FOR",
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

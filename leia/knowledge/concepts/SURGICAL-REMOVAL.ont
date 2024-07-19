@@ -1,0 +1,22 @@
+{
+  "name": "@SURGICAL-REMOVAL",
+  "isa": [
+    "@SURGERY"
+  ],
+  "def": "a surgical procedure that removes something from an organism",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@MEDICAL-WORK-ROLE",
+  "isa": [
+    "@WORK-ROLE"
+  ],
+  "def": "a social-role in which the treating and preventing of disease are emphasized",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@MEDICAL-BUILDING"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

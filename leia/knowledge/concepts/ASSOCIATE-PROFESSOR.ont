@@ -1,0 +1,43 @@
+{
+  "name": "@ASSOCIATE-PROFESSOR",
+  "isa": [
+    "@PROFESSOR"
+  ],
+  "def": "a college or university teacher who ranks below a full professor and above an assistant professor",
+  "local": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0.7
+      ]
+    },
+    {
+      "slot": "tenure",
+      "facet": "sem",
+      "filler": "full"
+    }
+  ],
+  "block": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0.5
+      ]
+    },
+    {
+      "slot": "tenure",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "tenure",
+      "facet": "sem",
+      "filler": "yes"
+    }
+  ],
+  "private": {}
+}

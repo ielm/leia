@@ -1,0 +1,42 @@
+{
+  "name": "@WALL-OF-ABDOMINAL-PART-OF-ESOPHAGUS",
+  "isa": [
+    "@WALL-OF-ORGAN"
+  ],
+  "def": "this concept is needed because unlike the walls of the rest of the segments, this one has the LES instead of the regular circular muscle layer",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LES"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SUBMUCOSA-OF-ESOPHAGUS"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LONGITUDINAL-MUSCLE-LAYER-OF-ESOPHAGUS"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SEROSA-OF-ESOPHAGUS"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MUCOSA-OF-ESOPHAGUS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

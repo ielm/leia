@@ -1,0 +1,21 @@
+{
+  "name": "@PHARMACEUTICAL-MATERIAL",
+  "isa": [
+    "@MATERIAL"
+  ],
+  "def": "a material created by a pharmaceutical company, and/or used in the preparation of drugs or as drugs themselves",
+  "local": [],
+  "block": [
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "@GAS"
+    },
+    {
+      "slot": "state-of-matter",
+      "facet": "sem",
+      "filler": "semi-solid"
+    }
+  ],
+  "private": {}
+}

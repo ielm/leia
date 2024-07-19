@@ -1,0 +1,37 @@
+{
+  "name": "@VERTEBRATE",
+  "isa": [
+    "@ANIMAL"
+  ],
+  "def": "Animals that have a spinal column or backbone",
+  "local": [
+    {
+      "slot": "toughness-emotional",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@HEAD"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@VERTEBRAL-COLUMN"
+    },
+    {
+      "slot": "humor-attribute",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

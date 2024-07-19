@@ -1,0 +1,27 @@
+{
+  "name": "@ASSISTANT-PROFESSOR",
+  "isa": [
+    "@PROFESSOR"
+  ],
+  "def": "a college teacher who ranks above an instructor and below an associate professor",
+  "local": [
+    {
+      "slot": "tenure",
+      "facet": "sem",
+      "filler": "limited"
+    }
+  ],
+  "block": [
+    {
+      "slot": "tenure",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "tenure",
+      "facet": "sem",
+      "filler": "yes"
+    }
+  ],
+  "private": {}
+}

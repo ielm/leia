@@ -1,0 +1,16 @@
+{
+  "name": "@WARSHIP",
+  "isa": [
+    "@SHIP"
+  ],
+  "def": "any ship for combat use, as a battleship",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@SIXTEEN-INCH-GUN"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,36 @@
+{
+  "name": "@RELIGIOUS-ROLE",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "a person who is involved in the practice of religion in some central way",
+  "local": [
+    {
+      "slot": "piety",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "piety",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,35 @@
+{
+  "name": "@LES",
+  "isa": [
+    "@CIRCULAR-MUSCLE-LAYER-OF-REGION-OF-ESOPHAGUS"
+  ],
+  "def": "the lower esophageal sphincter; note: this is called circular-muscle-layer-of-abdominal-part-of-esophagus in Foundational Model. We are, as an exception, not using that name because it*s too long",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SEGMENT-OF-NEURAL-TREE-ORGAN"
+    },
+    {
+      "slot": "pressure-from-ingestible-type",
+      "facet": "sem",
+      "filler": [
+        "><",
+        10
+      ]
+    },
+    {
+      "slot": "pressure-from-ingestible-type",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

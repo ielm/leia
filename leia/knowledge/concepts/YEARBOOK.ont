@@ -1,0 +1,31 @@
+{
+  "name": "@YEARBOOK",
+  "isa": [
+    "@BOOK"
+  ],
+  "def": "annual publication of graduation class of school or college",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@SCHOOL"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@COLLEGE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@UNIVERSITY"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PICTURE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

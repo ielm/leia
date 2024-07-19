@@ -1,0 +1,16 @@
+{
+  "name": "@SUBURB",
+  "isa": [
+    "@SMALL-GEOPOLITICAL-ENTITY"
+  ],
+  "def": "a district, town, etc. on the outskirts of a city",
+  "local": [],
+  "block": [
+    {
+      "slot": "in-village",
+      "facet": "sem",
+      "filler": "@VILLAGE"
+    }
+  ],
+  "private": {}
+}

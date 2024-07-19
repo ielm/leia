@@ -1,0 +1,32 @@
+{
+  "name": "@ICEBERG",
+  "isa": [
+    "@GEOLOGICAL-ENTITY"
+  ],
+  "def": "a massive piece of ice broken off from a glacier and floating in the sea",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@ICE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@BODY-OF-WATER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@EARTH-MATERIAL"
+    }
+  ],
+  "private": {}
+}

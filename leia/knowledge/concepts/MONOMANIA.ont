@@ -1,0 +1,27 @@
+{
+  "name": "@MONOMANIA",
+  "isa": [
+    "@MANIA"
+  ],
+  "def": "obsessive zeal for one topic or idea",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ISSUE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@WORK-ACTIVITY",
+  "isa": [
+    "@SOCIAL-EVENT"
+  ],
+  "def": "events concerning the jobs people do",
+  "local": [
+    {
+      "slot": "has-work-equipment",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@FIELD-OF-STUDY"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

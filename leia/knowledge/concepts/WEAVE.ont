@@ -1,0 +1,47 @@
+{
+  "name": "@WEAVE",
+  "isa": [
+    "@CREATE-FABRIC-MATERIAL-ARTIFACT"
+  ],
+  "def": "to make (a fabric, basket, etc.) by interlacing (threads, straw, etc.)",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@COTTON-FIBER"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SILK"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@WOOL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@YARN"
+    },
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@WEAVER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "default",
+      "filler": "@ARTISAN"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ARTIFACT"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@EMIT-SOUND",
+  "isa": [
+    "@WAVE-ENERGY-EVENT"
+  ],
+  "def": "to create wave-like disturbances in the air",
+  "local": [
+    {
+      "slot": "loudness",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "loudness",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

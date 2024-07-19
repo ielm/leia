@@ -1,0 +1,16 @@
+{
+  "name": "@THEOCRATIC-REPUBLIC",
+  "isa": [
+    "@GOVERNMENT-TYPE"
+  ],
+  "def": "a Republic government working based on religious rules",
+  "local": [
+    {
+      "slot": "has-religion",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

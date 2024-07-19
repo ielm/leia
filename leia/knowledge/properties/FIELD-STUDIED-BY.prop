@@ -1,0 +1,9 @@
+{
+  "name": "$FIELD-STUDIED-BY",
+  "def": "the relation between the field-of-study and the social-role in a given field of interest",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$STUDIES-FIELD",
+  "measured-in": [],
+  "container": "$FIELD-OF-STUDY-RELATION"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$REPRESENTS",
+  "def": "conveys the representational/physical distinction when the representational part is not a physical object: e.g., a rose REPRESENTs one*s love for another (cf. DEPICTS, which deals with physical representations of physical objects)",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$REPRESENTED-BY",
+  "measured-in": [],
+  "container": "$RELATION"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@MEDICINE",
+  "isa": [
+    "@FIELD-OF-STUDY"
+  ],
+  "def": "The field of study that deals with animal bodies, their malfunctions, diseases, and cures.",
+  "local": [
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@MEDICAL-PROCEDURE"
+    },
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@MEDICAL-WORK-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "field-studied-by",
+      "facet": "sem",
+      "filler": "@SOCIAL-ROLE"
+    },
+    {
+      "slot": "job-corresponds-to-field",
+      "facet": "sem",
+      "filler": "@WORK-ACTIVITY"
+    }
+  ],
+  "private": {}
+}

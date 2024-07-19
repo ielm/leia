@@ -1,0 +1,22 @@
+{
+  "name": "@MYELOGRAM-OBJECT",
+  "isa": [
+    "@X-RAY-OBJECT"
+  ],
+  "def": "x-ray of spinal cord and spinal nerve roots",
+  "local": [
+    {
+      "slot": "depicts",
+      "facet": "sem",
+      "filler": "@VERTEBRAL-COLUMN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "depicts",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

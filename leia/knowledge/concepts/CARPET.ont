@@ -1,0 +1,21 @@
+{
+  "name": "@CARPET",
+  "isa": [
+    "@FLOOR-COVERING"
+  ],
+  "def": "heavy woven often woollen material for covering floors or stairs",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@PLASTIC"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    }
+  ],
+  "private": {}
+}

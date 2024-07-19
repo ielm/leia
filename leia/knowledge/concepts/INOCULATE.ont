@@ -1,0 +1,22 @@
+{
+  "name": "@INOCULATE",
+  "isa": [
+    "@DRUG-INJECTION"
+  ],
+  "def": "to inject a serum, vaccine, etc. into, especially in order to create immunity",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "default",
+      "filler": "@VACCINE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@HOSPITAL"
+    }
+  ],
+  "private": {}
+}

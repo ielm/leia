@@ -1,0 +1,16 @@
+{
+  "name": "@STOPPER",
+  "isa": [
+    "@DEPENDENT-DEVICE"
+  ],
+  "def": "an object used to plug a hole tightly",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@CORK"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

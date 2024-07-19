@@ -1,0 +1,22 @@
+{
+  "name": "@BIOLOGICAL-WEAPON",
+  "isa": [
+    "@WEAPON-OF-MASS-DESTRUCTION"
+  ],
+  "def": "weapons made of microorganisms to injure or destroy human beings, animals, or crops",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MICRO-ORGANISM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

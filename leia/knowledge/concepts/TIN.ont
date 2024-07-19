@@ -1,0 +1,45 @@
+{
+  "name": "@TIN",
+  "isa": [
+    "@DUCTILE-METALLIC-ELEMENT",
+    "@LIGHT-METALLIC-ELEMENT"
+  ],
+  "def": "a malleable, silvery metallic element obtained chiefly from cassiterite. it is used to coat other metals to prevent corrosion, and forms part of numerous alloys, such as soft solder, pewter, type metal, and bronze",
+  "local": [
+    {
+      "slot": "atomic-weight",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        118
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        50
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    },
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

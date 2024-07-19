@@ -1,0 +1,21 @@
+{
+  "name": "@TET",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "the Vietnamese New Year celebrated for three days after the first full moon after January 20th",
+  "local": [],
+  "block": [
+    {
+      "slot": "celebrated-in",
+      "facet": "sem",
+      "filler": "@RELIGION"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@COMMEMORATE"
+    }
+  ],
+  "private": {}
+}

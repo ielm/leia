@@ -1,0 +1,11 @@
+{
+  "name": "$FLEXIBILITY-SOCIAL",
+  "def": "The degree to which some person or organization is flexible, as in their views, opinions or requests.",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [
+    "@ABSTRACT-SCALE"
+  ],
+  "container": "$SCALAR-SOCIAL-OBJECT-ATTRIBUTE"
+}

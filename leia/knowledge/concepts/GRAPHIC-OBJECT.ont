@@ -1,0 +1,61 @@
+{
+  "name": "@GRAPHIC-OBJECT",
+  "isa": [
+    "@PRINTED-MEDIA"
+  ],
+  "def": "Object that can be viewed",
+  "local": [
+    {
+      "slot": "above-and-touching",
+      "facet": "sem",
+      "filler": "@GRAPHIC-OBJECT"
+    },
+    {
+      "slot": "below-and-touching",
+      "facet": "sem",
+      "filler": "@GRAPHIC-OBJECT"
+    },
+    {
+      "slot": "below",
+      "facet": "sem",
+      "filler": "@GRAPHIC-OBJECT"
+    },
+    {
+      "slot": "below",
+      "facet": "sem",
+      "filler": "@BOX-WALL"
+    },
+    {
+      "slot": "above",
+      "facet": "sem",
+      "filler": "@BOX-WALL"
+    },
+    {
+      "slot": "above",
+      "facet": "sem",
+      "filler": "@GRAPHIC-OBJECT"
+    },
+    {
+      "slot": "floating",
+      "facet": "sem",
+      "filler": "yes"
+    },
+    {
+      "slot": "floating",
+      "facet": "sem",
+      "filler": "no"
+    },
+    {
+      "slot": "touching",
+      "facet": "sem",
+      "filler": "@BOX-WALL"
+    },
+    {
+      "slot": "touching",
+      "facet": "sem",
+      "filler": "@GRAPHIC-OBJECT"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

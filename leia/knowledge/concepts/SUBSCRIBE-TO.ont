@@ -1,0 +1,40 @@
+{
+  "name": "@SUBSCRIBE-TO",
+  "isa": [
+    "@PAY"
+  ],
+  "def": "to agree to pay for and receive a periodical, a service, etc.",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PERIODICAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SERVICE-EVENT"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "cost",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MONEY"
+    }
+  ],
+  "private": {}
+}

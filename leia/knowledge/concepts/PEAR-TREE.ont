@@ -1,0 +1,22 @@
+{
+  "name": "@PEAR-TREE",
+  "isa": [
+    "@FRUIT-TREE"
+  ],
+  "def": "tree that produces pears",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@PEAR"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@TREE-FRUIT"
+    }
+  ],
+  "private": {}
+}

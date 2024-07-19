@@ -1,0 +1,27 @@
+{
+  "name": "@ANATOMICAL-ABNORMALITY",
+  "isa": [
+    "@ANIMATE-PART"
+  ],
+  "def": "A structure that is abnormal in any way.",
+  "local": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@ANATOMY"
+    },
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    }
+  ],
+  "block": [
+    {
+      "slot": "area-studied-by-field",
+      "facet": "sem",
+      "filler": "@BIOLOGY"
+    }
+  ],
+  "private": {}
+}

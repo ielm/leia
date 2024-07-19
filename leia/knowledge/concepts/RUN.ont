@@ -1,0 +1,52 @@
+{
+  "name": "@RUN",
+  "isa": [
+    "@MOTION-EVENT"
+  ],
+  "def": "to go by moving the legs faster than walking",
+  "local": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@MAMMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@LEG"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FOOT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@HOOF"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PAW"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

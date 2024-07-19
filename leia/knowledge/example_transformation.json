@@ -1,0 +1,39 @@
+{
+  "name": "Passivization of transitive and optionally transitive verbs",
+  "example": "A sandwich was eaten by a chicken.",
+  "pattern": {
+    "input-syn-strucs": [
+      [
+        {"type": "dependency", "deptype": "nsubjpass", "var": 0}
+      ],
+      [
+        {"type": "constituency", "contype": "NP", "children": []},
+        {"type": "token", "lemma": ["be"], "pos": null, "morph": {}},
+        {"type": "token", "lemma": [], "pos": "V", "var": 0, "morph": {"tense": "past", "verbform": "part"}}
+      ]
+    ],
+    "root-syn-struc": [
+      {"type": "dependency", "deptype": "nsubj"},
+      {"type": "root"},
+      {"type": "dependency", "deptype": "dobj"}
+    ]
+  },
+  "executable": "*leia.syntax.transformer.PassivizationOfTransVerbs"
+}
+
+/*
+  The name field can be any string that is unique amongst transformations.
+  The example is any human-readable example that demonstrates a sentence that the transformation would trigger on.
+
+  The pattern field consists of two subfields:
+    input-syn-strucs: a list of individual syn-strucs, any of which can act as a match for this transformation;
+                each entry uses the same format as the lexicon sense's syn-struc (although "root" should be excluded);
+                each entry must specify a var0 (the corresponding token over which the transformation will run)
+    root-syn-struc: a normal syn-struc entry that must align with the a given var0's sense
+
+  The executable is a pointer to the python implementation of this transformation.
+    The full module path must be given.
+    The string may start with an * (this is just to operate as a reminder that this is essentially a pointer).
+    The executable need not be implemented yet - the system will skip the transformation if it is not available,
+      and will record a warning in that case.
+*/

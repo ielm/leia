@@ -1,0 +1,22 @@
+{
+  "name": "@BUS-DRIVER",
+  "isa": [
+    "@DRIVER"
+  ],
+  "def": "one who drives buses",
+  "local": [
+    {
+      "slot": "operator-of",
+      "facet": "sem",
+      "filler": "@BUS"
+    }
+  ],
+  "block": [
+    {
+      "slot": "operator-of",
+      "facet": "sem",
+      "filler": "@VEHICLE"
+    }
+  ],
+  "private": {}
+}

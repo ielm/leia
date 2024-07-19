@@ -1,0 +1,16 @@
+{
+  "name": "@CHEMICAL-MANUFACTURING-CORPORATION",
+  "isa": [
+    "@FOR-PROFIT-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a for-profit-manufacturing-corporation that makes chemicals for industrial or individual use",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CHEMICAL-COMPOUND"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

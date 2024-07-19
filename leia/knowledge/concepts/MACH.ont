@@ -1,0 +1,19 @@
+{
+  "name": "@MACH",
+  "isa": [
+    "@SPEED-UNIT"
+  ],
+  "def": "(Wikipedia) the speed of an object moving through air or fluid, divided by the speed of sound in that substance, used to represent the speed of an object when traveling at the speed of sound.",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        331.0
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

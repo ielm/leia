@@ -1,0 +1,19 @@
+{
+  "name": "@SPORTS-ROLE",
+  "isa": [
+    "@SOCIAL-ROLE"
+  ],
+  "def": "a social-role that is related to sports, both amateur and professional",
+  "local": [],
+  "block": [
+    {
+      "slot": "seniority",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@CLOTHING-MANUFACTURING-CORPORATION",
+  "isa": [
+    "@TEXTILE-MANUFACTURING-CORPORATION"
+  ],
+  "def": "a corporation that produces clothes",
+  "local": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@CLOTHING-ARTIFACT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "producer-of",
+      "facet": "sem",
+      "filler": "@MATERIAL"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@SAUCE",
+  "isa": [
+    "@PREPARED-FOOD"
+  ],
+  "def": "a liquid or soft mixture served with food to add flavor",
+  "local": [],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-CURRENCY",
+  "def": "the relation between a nation and its currency",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$CURRENCY-OF",
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

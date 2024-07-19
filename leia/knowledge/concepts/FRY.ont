@@ -1,0 +1,92 @@
+{
+  "name": "@FRY",
+  "isa": [
+    "@PREPARE-INGESTIBLE"
+  ],
+  "def": "to cook in a pan over direct heat, usually in hot fat",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EGG"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@MEAT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CHEESE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ENTREE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FISH-MEAT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@RICE-DISH"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SAUSAGE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@APPETIZER"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COOKING-OIL"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FRYING-PAN"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COOKING-FAT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@STOVE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FRUIT-FOODSTUFF"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@VEGETABLE-FOODSTUFF"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@COOKING-EQUIPMENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FOOD"
+    }
+  ],
+  "private": {}
+}

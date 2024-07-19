@@ -1,0 +1,28 @@
+{
+  "name": "@RHENIUM",
+  "isa": [
+    "@HEAVY-METALLIC-ELEMENT"
+  ],
+  "def": "a heavy metallic solid element",
+  "local": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        75
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "atomic-number",
+      "facet": "sem",
+      "filler": [
+        "><",
+        104
+      ]
+    }
+  ],
+  "private": {}
+}

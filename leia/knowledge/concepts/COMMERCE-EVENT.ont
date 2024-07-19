@@ -1,0 +1,42 @@
+{
+  "name": "@COMMERCE-EVENT",
+  "isa": [
+    "@FINANCIAL-EVENT"
+  ],
+  "def": "a financial-event in which trade is conducted on a large scale, such as between two countries",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@ORGANIZATION"
+    }
+  ],
+  "block": [
+    {
+      "slot": "agent",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@FINANCIAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

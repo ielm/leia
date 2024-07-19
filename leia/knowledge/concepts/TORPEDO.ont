@@ -1,0 +1,30 @@
+{
+  "name": "@TORPEDO",
+  "isa": [
+    "@EXPLOSIVE-DEVICE",
+    "@PROJECTILE"
+  ],
+  "def": "a large, cigar-shaped, self-propelled underwater projectile containing explosives",
+  "local": [],
+  "block": [
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    },
+    {
+      "slot": "luminance",
+      "facet": "sem",
+      "filler": "@ANY-NUMBER"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@METAL"
+    }
+  ],
+  "private": {}
+}

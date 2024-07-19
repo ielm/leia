@@ -1,0 +1,21 @@
+{
+  "name": "@REPUDIATE",
+  "isa": [
+    "@OPPOSITION-EVENT"
+  ],
+  "def": "to refuse to have anything to do with; to refuse to support or accept",
+  "local": [],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

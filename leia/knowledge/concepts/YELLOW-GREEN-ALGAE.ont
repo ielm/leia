@@ -1,0 +1,22 @@
+{
+  "name": "@YELLOW-GREEN-ALGAE",
+  "isa": [
+    "@ALGA"
+  ],
+  "def": "algae whose chlorophyll is masked by yellow pigment",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "yellow"
+    }
+  ],
+  "block": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "green"
+    }
+  ],
+  "private": {}
+}

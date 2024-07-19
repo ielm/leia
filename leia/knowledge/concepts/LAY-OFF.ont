@@ -1,0 +1,16 @@
+{
+  "name": "@LAY-OFF",
+  "isa": [
+    "@PERSONNEL-MANAGEMENT"
+  ],
+  "def": "To dismiss an employee, usually due to budget cuts or other financial difficulties, or to mergers or acquisitions",
+  "local": [],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MONEY"
+    }
+  ],
+  "private": {}
+}

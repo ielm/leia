@@ -1,0 +1,27 @@
+{
+  "name": "@COITOPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of having sex",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@SEX-EVENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

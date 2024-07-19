@@ -1,0 +1,41 @@
+<div class="analysis-container">
+    <div class="analysis-navigator">
+        <ul>
+            <li><a class="analysis-content-link config-content-link">Config</a></li>
+            {{#each analysis.sentences}}
+            <li>
+                <span class="caret {{#if @first}}caret-down{{/if}}">{{this.text}}</span>
+                <ul class="nested {{#if @first}}active{{/if}}">
+                    <li>
+                        <span class="caret">Syntax</span>
+                        <ul class="nested">
+                            <li>
+                                <span class="caret">Words</span>
+                                <ul class="nested">
+                                    {{#each syntax.words}}
+                                    <li><a class="analysis-content-link word-content-link" data-sentence="{{@../index}}" data-word="{{@index}}">{{token}}</a></li>
+                                    {{/each}}
+                                </ul>
+                            </li>
+                            <li><a class="analysis-content-link constituencies-content-link" data-sentence="{{@index}}">Constituencies</a></li>
+                            <li><a class="analysis-content-link dependencies-content-link" data-sentence="{{@index}}">Dependencies</a></li>
+                        </ul>
+                    </li>
+                    {{#each this.candidates}}
+                    <li class="candidate-navigator" {{#each this.sense-maps}}data-sense-{{this.word}}="{{this.sense}}"{{/each}}>
+                        <span class="caret {{#if @first}}caret-down{{/if}}">Candidate {{inc @index}}</span>
+                        <ul class="nested {{#if @first}}active{{/if}}">
+                            <li><a class="analysis-content-link candidate-content-link" data-sentence="{{@../index}}" data-candidate="{{@index}}" data-content="basic-tmr">Basic TMR</a></li>
+                            <li><a class="analysis-content-link candidate-content-link" data-sentence="{{@../index}}" data-candidate="{{@index}}" data-content="extended-tmr">Extended TMR</a></li>
+                            <li><a class="analysis-content-link candidate-content-link" data-sentence="{{@../index}}" data-candidate="{{@index}}" data-content="meta-data">Candidate Data</a></li>
+                        </ul>
+                    </li>
+                    {{/each}}
+                </ul>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="analysis-content"></div>
+    <div class="analysis-logs"></div>
+</div>

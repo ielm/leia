@@ -1,0 +1,27 @@
+{
+  "name": "@OFFEND",
+  "isa": [
+    "@ABSTRACT-SOCIAL-ACTIVITY"
+  ],
+  "def": "to treat with discourtesy",
+  "local": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

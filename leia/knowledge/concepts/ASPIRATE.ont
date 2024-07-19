@@ -1,0 +1,77 @@
+{
+  "name": "@ASPIRATE",
+  "isa": [
+    "@PATHOLOGIC-FUNCTION"
+  ],
+  "def": "The sucking of fluid or a foreign body into the airway when drawing breath",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@BEVERAGE"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@LARYNX"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@LUNG"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@PHARYNX"
+    },
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@TRACHEOBRONCHIAL-TREE"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@FOREIGN-BODY"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@LIQUID-BOLUS"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@VERTEBRATE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "experiencer",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    },
+    {
+      "slot": "theme",
+      "facet": "not",
+      "filler": "@PLANT-PART"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANIMATE-PART"
+    }
+  ],
+  "private": {}
+}

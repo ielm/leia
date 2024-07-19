@@ -1,0 +1,36 @@
+{
+  "name": "@TRAFFIC-LIGHT",
+  "isa": [
+    "@ROAD-SYSTEM-ARTIFACT"
+  ],
+  "def": "a light (often containin multiple different-colored lights and possibly arrows) indicating who has the right of way",
+  "local": [
+    {
+      "slot": "bulb-color",
+      "facet": "sem",
+      "filler": "green"
+    },
+    {
+      "slot": "bulb-color",
+      "facet": "sem",
+      "filler": "red"
+    },
+    {
+      "slot": "bulb-color",
+      "facet": "sem",
+      "filler": "yellow"
+    },
+    {
+      "slot": "bulb-color",
+      "facet": "sem",
+      "filler": "blinking-yellow"
+    },
+    {
+      "slot": "bulb-color",
+      "facet": "sem",
+      "filler": "blinking-red"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

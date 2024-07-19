@@ -1,0 +1,21 @@
+{
+  "name": "@CONVENIENCE-STORE",
+  "isa": [
+    "@STORE"
+  ],
+  "def": "a small store where small quantities of food and other items are sold for quick and easy purchase",
+  "local": [
+    {
+      "slot": "contains",
+      "facet": "sem",
+      "filler": "@CONSUMER-GOOD"
+    },
+    {
+      "slot": "customer-of",
+      "facet": "sem",
+      "filler": "@BEVERAGE-PROCESSING-CORPORATION"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

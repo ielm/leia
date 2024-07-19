@@ -1,0 +1,9 @@
+{
+  "name": "$PRESSURE-FROM-GRAVITY",
+  "def": "used in the medical domain for the gastric pressure associated with being in an upright vs. recumbant position",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$PRESSURE"
+}

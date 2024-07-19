@@ -1,0 +1,16 @@
+{
+  "name": "@EMBRYO",
+  "isa": [
+    "@EMBRYONIC-STRUCTURE"
+  ],
+  "def": "the prefetal product of conception from implantation through an early stage of development, with the time period depending on the species",
+  "local": [
+    {
+      "slot": "early-stage-of-life-of",
+      "facet": "sem",
+      "filler": "@ANIMAL"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

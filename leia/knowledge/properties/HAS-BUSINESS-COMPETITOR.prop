@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-BUSINESS-COMPETITOR",
+  "def": "The relation to link a corporation with its competitors.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$BUSINESS-COMPETITOR-OF",
+  "measured-in": [],
+  "container": "$BUSINESS-RELATION"
+}

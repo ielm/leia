@@ -1,0 +1,26 @@
+{
+  "name": "@TABLEWARE",
+  "isa": [
+    "@PLACE-SETTING"
+  ],
+  "def": "the plates, drinking-vessels, utensils used in setting a table for a meal",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@DRINKING-VESSEL"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@UTENSIL"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@PLATE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

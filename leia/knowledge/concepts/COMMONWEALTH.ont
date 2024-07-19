@@ -1,0 +1,16 @@
+{
+  "name": "@COMMONWEALTH",
+  "isa": [
+    "@GOVERNMENT-TYPE"
+  ],
+  "def": "a Republic type of government voluntarily associated with the United States",
+  "local": [
+    {
+      "slot": "has-member",
+      "facet": "sem",
+      "filler": "@STATE"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

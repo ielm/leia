@@ -1,0 +1,21 @@
+{
+  "name": "@LYMPH-NODE",
+  "isa": [
+    "@ANIMAL-ORGAN"
+  ],
+  "def": "Any of the small bodies located along the lymphatic vessels, particularly at the neck, armpit, and groin, that filter bacteria and foreign particles from lymph fluid.",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@NECK"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@INGUINAL-PART-OF-ABDOMEN"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$LESS-THAN",
+  "def": "a relation between two quantities (or objects, so that we cover some metonymies directly) that compares them and establishes one as having a lesser value on some scale (for objects, this scale will need to be determined)",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$COMPARISON-RELATION"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-OBJECT-AS-PART",
+  "def": "the relation between an object and its parts",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$PART-OF-OBJECT",
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

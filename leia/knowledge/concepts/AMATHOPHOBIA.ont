@@ -1,0 +1,27 @@
+{
+  "name": "@AMATHOPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of dust",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@DUST"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {}
+}

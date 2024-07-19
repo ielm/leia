@@ -1,0 +1,19 @@
+{
+  "name": "@COUNTRYSIDE",
+  "isa": [
+    "@GEOLOGICAL-ENTITY"
+  ],
+  "def": "The place contrasted with the city, where one can live, vacation, raise cows, etc.",
+  "local": [
+    {
+      "slot": "population-density",
+      "facet": "sem",
+      "filler": [
+        "<",
+        0.2
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

@@ -1,0 +1,62 @@
+{
+  "name": "@AIRPORT-TERMINAL",
+  "isa": [
+    "@SERVICE-BUILDING"
+  ],
+  "def": "a building that is a part of an airport where there are passenger and luggage facilities",
+  "local": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@AIRPORT-TERMINAL-STAFF"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "default",
+      "filler": "@WAITING-ROOM"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@AIRPORT"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@AIRPORT-CHECK-IN-FACILITY"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@RESTAURANT"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LUGGAGE-HANDLING-FACILITY"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@SECURITY-CHECK-FACILITY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-occupant",
+      "facet": "default",
+      "filler": "@WORK-ROLE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-EVENT"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

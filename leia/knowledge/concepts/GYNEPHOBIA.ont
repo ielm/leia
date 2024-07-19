@@ -1,0 +1,38 @@
+{
+  "name": "@GYNEPHOBIA",
+  "isa": [
+    "@PHOBIA"
+  ],
+  "def": "fear of women",
+  "local": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@HUMAN-2"
+    }
+  ],
+  "block": [
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    }
+  ],
+  "private": {
+    "@HUMAN-2": {
+      "name": "@HUMAN-2",
+      "isa": [
+        "@HUMAN"
+      ],
+      "def": "",
+      "local": [],
+      "block": [],
+      "private": {}
+    }
+  }
+}

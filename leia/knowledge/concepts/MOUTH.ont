@@ -1,0 +1,32 @@
+{
+  "name": "@MOUTH",
+  "isa": [
+    "@SUBDIVISION-OF-FACE"
+  ],
+  "def": "the natural opening through which food passes into the body of an animal and which in vertebrates is typically bounded externally by the lips and internally by the pharynx and encloses the tongue, gums, and teeth",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@TONGUE"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@LIP"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@TOOTH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    }
+  ],
+  "private": {}
+}

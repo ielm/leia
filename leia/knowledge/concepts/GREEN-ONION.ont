@@ -1,0 +1,21 @@
+{
+  "name": "@GREEN-ONION",
+  "isa": [
+    "@ONION"
+  ],
+  "def": "A young onion before the bulb has developed.",
+  "local": [
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "green"
+    },
+    {
+      "slot": "color",
+      "facet": "sem",
+      "filler": "white"
+    }
+  ],
+  "block": [],
+  "private": {}
+}

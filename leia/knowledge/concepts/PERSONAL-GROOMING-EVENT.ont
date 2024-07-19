@@ -1,0 +1,77 @@
+{
+  "name": "@PERSONAL-GROOMING-EVENT",
+  "isa": [
+    "@HUMAN-ONLY-LIVING-EVENT"
+  ],
+  "def": "events involving personal maintenance and hygiene such as bathing, brushing teeth, etc.",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "relaxable-to",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@DWELLING"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PERSONAL-GROOMING-ARTIFACT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@ANATOMICAL-STRUCTURE"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@BATHROOM"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@CLOTHING-ARTIFACT"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "beneficiary",
+      "facet": "relaxable-to",
+      "filler": "@SOCIAL-OBJECT"
+    },
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    },
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PHYSICAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

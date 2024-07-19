@@ -1,0 +1,27 @@
+{
+  "name": "@QUARTZ",
+  "isa": [
+    "@GEMSTONE"
+  ],
+  "def": "a very hard mineral composed of silica, SiO2; found in many types of rocks, including sandstone and granite",
+  "local": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SILICON"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@OXYGEN"
+    }
+  ],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@EARTH-MATERIAL"
+    }
+  ],
+  "private": {}
+}

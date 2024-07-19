@@ -1,0 +1,157 @@
+{
+  "name": "@GAMBLE",
+  "isa": [
+    "@GAME-ACTIVITY"
+  ],
+  "def": "to play games of chance for money",
+  "local": [
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@CASINO"
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@MONEY"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@CATCH"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@CLIMB"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@COLLIDE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@DISCHARGE-WEAPON"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@DIVE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@ELEVATE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@HIT"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@HOLD"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@JUMP"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@KICK"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@MOVE-WATER-VEHICLE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@OBSTRUCT"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@PULL"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@PUSH"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@RESTRAIN"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@ROLL"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@ROTATE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@RUN"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@SKI-EVENT"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@SWIM"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@SYNCHRONIZE"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@THROW"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@WALK"
+    },
+    {
+      "slot": "has-sports-activity",
+      "facet": "sem",
+      "filler": "@WHIP"
+    },
+    {
+      "slot": "individual-or-team",
+      "facet": "sem",
+      "filler": "team"
+    },
+    {
+      "slot": "involves-object",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "location",
+      "facet": "default",
+      "filler": "@PLACE"
+    }
+  ],
+  "private": {}
+}

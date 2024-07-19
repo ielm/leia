@@ -1,0 +1,19 @@
+{
+  "name": "@PROOF",
+  "isa": [
+    "@PERCENTAGE-UNIT"
+  ],
+  "def": "twice the value of percent; percent*2",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        0.02
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

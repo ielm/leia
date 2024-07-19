@@ -1,0 +1,27 @@
+{
+  "name": "@SEDATE",
+  "isa": [
+    "@MEDICAL-PROCEDURE"
+  ],
+  "def": "To administer a sedative to; calm or relieve by means of a sedative drug. (http://medical-dictionary.thefreedictionary.com/sedate)",
+  "local": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@SEDATIVE"
+    },
+    {
+      "slot": "theme",
+      "facet": "sem",
+      "filler": "@PATIENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "instrument",
+      "facet": "sem",
+      "filler": "@MEDICAL-ARTIFACT"
+    }
+  ],
+  "private": {}
+}

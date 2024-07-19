@@ -1,0 +1,22 @@
+{
+  "name": "@TRANSMISSION",
+  "isa": [
+    "@VEHICLE-PART"
+  ],
+  "def": "the gears that transmit power from an automobile engine via the driveshaft to the live axle",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@CLUTCH"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    }
+  ],
+  "private": {}
+}

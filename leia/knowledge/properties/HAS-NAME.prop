@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-NAME",
+  "def": "links a person, organization, named event, etc., with its name. Includes names of people, corporations, geographic entities, etc. More specific properties (like has-name-non-human) should be used if possible.",
+  "type": "literal",
+  "range": "!AnyLit",
+  "inverse": "$NAME-OF",
+  "measured-in": [],
+  "container": "$LITERAL-ATTRIBUTE"
+}

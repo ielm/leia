@@ -1,0 +1,27 @@
+{
+  "name": "@CIRCULAR-AS-DOCUMENT",
+  "isa": [
+    "@BOOK-DOCUMENT"
+  ],
+  "def": "letter or advertisement printed for mass distribution",
+  "local": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ADVERTISEMENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@ARTIFACT-PART"
+    },
+    {
+      "slot": "has-object-as-part",
+      "facet": "sem",
+      "filler": "@MENTAL-OBJECT"
+    }
+  ],
+  "private": {}
+}

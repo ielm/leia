@@ -1,0 +1,19 @@
+{
+  "name": "@CORAL-ANIMAL",
+  "isa": [
+    "@INVERTEBRATE"
+  ],
+  "def": "a chiefly colonial marine polyp that secretes a calcareous skeleton",
+  "local": [],
+  "block": [
+    {
+      "slot": "diligence",
+      "facet": "sem",
+      "filler": [
+        "=>=<",
+        1
+      ]
+    }
+  ],
+  "private": {}
+}

@@ -1,0 +1,52 @@
+{
+  "name": "@LABOR-DAY",
+  "isa": [
+    "@HOLIDAY"
+  ],
+  "def": "a legal U.S. holiday honoring working people as a class (first Monday of September)",
+  "local": [
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@SEPTEMBER"
+    },
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@MONDAY"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@WORK-ROLE"
+    }
+  ],
+  "block": [
+    {
+      "slot": "absolute-day-of-the-week",
+      "facet": "value",
+      "filler": "@DAY"
+    },
+    {
+      "slot": "absolute-month",
+      "facet": "value",
+      "filler": "@MONTH"
+    },
+    {
+      "slot": "beneficiary",
+      "facet": "sem",
+      "filler": "@HUMAN"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@CELEBRATE"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@COMMEMORATE"
+    }
+  ],
+  "private": {}
+}

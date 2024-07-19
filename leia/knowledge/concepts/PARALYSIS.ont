@@ -1,0 +1,22 @@
+{
+  "name": "@PARALYSIS",
+  "isa": [
+    "@NON-COMMUNICABLE-DISEASE"
+  ],
+  "def": "to cause partial or complete loss of voluntary motion or of sensation in part or all of the body",
+  "local": [
+    {
+      "slot": "medical-relation",
+      "facet": "sem",
+      "filler": "@ACCIDENT"
+    }
+  ],
+  "block": [
+    {
+      "slot": "causes-symptom",
+      "facet": "sem",
+      "filler": "@SYMPTOM"
+    }
+  ],
+  "private": {}
+}

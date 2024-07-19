@@ -1,0 +1,16 @@
+{
+  "name": "@SURFACE-MINING",
+  "isa": [
+    "@MINING-ACTIVITY"
+  ],
+  "def": "mining for minerals on the earth*s surface, as opposed to underground",
+  "local": [],
+  "block": [
+    {
+      "slot": "location",
+      "facet": "sem",
+      "filler": "@QUARRY"
+    }
+  ],
+  "private": {}
+}

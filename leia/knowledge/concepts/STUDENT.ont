@@ -1,0 +1,28 @@
+{
+  "name": "@STUDENT",
+  "isa": [
+    "@ACADEMIC-ROLE"
+  ],
+  "def": "A person who goes to an academic organization to learn.",
+  "local": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "><",
+        100
+      ]
+    }
+  ],
+  "block": [
+    {
+      "slot": "age",
+      "facet": "sem",
+      "filler": [
+        "><",
+        130
+      ]
+    }
+  ],
+  "private": {}
+}

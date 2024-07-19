@@ -1,0 +1,19 @@
+{
+  "name": "@ABVOLT",
+  "isa": [
+    "@ELECTRIC-POTENTIAL-UNIT"
+  ],
+  "def": "The centimeter-gram-second electromagnetic unit of potential difference, equal to one hundred-millionth of a volt.",
+  "local": [
+    {
+      "slot": "conversion-to-standard",
+      "facet": "value",
+      "filler": [
+        "=>=<",
+        1e-08
+      ]
+    }
+  ],
+  "block": [],
+  "private": {}
+}

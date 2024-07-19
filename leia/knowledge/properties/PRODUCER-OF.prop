@@ -1,0 +1,9 @@
+{
+  "name": "$PRODUCER-OF",
+  "def": "Domain is the creator of range. Refers to non-agentive creating. The agentive relation is CREATED-BY.",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$PRODUCED-BY",
+  "measured-in": [],
+  "container": "$OBJECT-RELATION"
+}

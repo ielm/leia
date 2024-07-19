@@ -1,0 +1,29 @@
+{
+  "name": "@TEXT-UNIT",
+  "isa": [
+    "@TEXT"
+  ],
+  "def": "linguistic terminology for text units, i.e., metalanguage",
+  "local": [],
+  "block": [
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": [
+        ">",
+        0
+      ]
+    },
+    {
+      "slot": "book-value",
+      "facet": "sem",
+      "filler": "!AnyNum"
+    },
+    {
+      "slot": "flexibility-physical",
+      "facet": "sem",
+      "filler": "!AnyBool"
+    }
+  ],
+  "private": {}
+}

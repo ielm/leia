@@ -1,0 +1,21 @@
+{
+  "name": "@LINOLEUM",
+  "isa": [
+    "@FLOOR-COVERING"
+  ],
+  "def": "a smooth, washable floor covering",
+  "local": [],
+  "block": [
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@SEWING-MATERIAL"
+    },
+    {
+      "slot": "made-of",
+      "facet": "sem",
+      "filler": "@WOOD"
+    }
+  ],
+  "private": {}
+}

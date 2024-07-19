@@ -1,0 +1,10 @@
+{
+  "name": "@ENCODE",
+  "isa": [
+    "@ENCRYPT"
+  ],
+  "def": "to encrypt a communication, such as a message, in units of arbitrary sizes other than individual characters",
+  "local": [],
+  "block": [],
+  "private": {}
+}

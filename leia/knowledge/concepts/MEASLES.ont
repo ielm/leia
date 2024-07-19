@@ -1,0 +1,37 @@
+{
+  "name": "@MEASLES",
+  "isa": [
+    "@VIRUS-DISEASE"
+  ],
+  "def": "an infectious viral disease causing fever and rash",
+  "local": [
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@RASH"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@FEVER"
+    }
+  ],
+  "block": [
+    {
+      "slot": "fr-property",
+      "facet": "sem",
+      "filler": "@OBJECT"
+    },
+    {
+      "slot": "fr-property",
+      "facet": "sem",
+      "filler": "@EVENT"
+    },
+    {
+      "slot": "has-event-as-part",
+      "facet": "sem",
+      "filler": "@EVENT"
+    }
+  ],
+  "private": {}
+}

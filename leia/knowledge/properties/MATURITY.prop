@@ -1,0 +1,9 @@
+{
+  "name": "$MATURITY",
+  "def": "indicates how fully grown or developed an object is; applies to animals as well as other entities, like cells",
+  "type": "scalar",
+  "range": "!AnyNum",
+  "inverse": null,
+  "measured-in": [],
+  "container": "$SCALAR-OBJECT-ATTRIBUTE"
+}

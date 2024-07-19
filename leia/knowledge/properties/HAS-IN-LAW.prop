@@ -1,0 +1,9 @@
+{
+  "name": "$HAS-IN-LAW",
+  "def": "the relationship between inlaws",
+  "type": "relation",
+  "range": "!AnyType",
+  "inverse": "$IN-LAW-OF",
+  "measured-in": [],
+  "container": "$FAMILY-RELATION"
+}
