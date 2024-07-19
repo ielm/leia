@@ -1,6 +1,9 @@
 from flask import Blueprint, Flask, render_template, send_from_directory
 from flask_cors import CORS
 from leia.ontoagent.agent import Agent
+from leia.ontomem.memory import Memory
+from leia.ontomem.ontology import Concept
+from leia.ontomem.properties import Property
 
 import json
 import mimetypes
@@ -68,26 +71,44 @@ class DEKADEAPIBlueprint(Blueprint):
         return json.dumps(list(sorted(concepts)))
 
     def knowledge_ontology_concept(self, concept: str):
+
+        def _format_row(row) -> dict:
+            row_type = "local"
+            if isinstance(row, Concept.LocalRow) and row.concept.name != concept:
+                row_type = "inherit"
+            if isinstance(row, Concept.BlockedRow):
+                row_type = "block"
+
+            return {
+                "row": row_type,
+                "from": row.concept.name,
+                "property": row.property,
+                "facet": row.facet,
+                "filler": _format_filler(row.filler),
+                "meta": row.meta
+            }
+
+        def _format_filler(filler):
+            if isinstance(filler, Concept):
+                return str(filler)
+            if isinstance(filler, Property):
+                return str(filler)
+            if isinstance(filler, list):
+                return filler
+            if isinstance(filler, tuple):
+                if len(filler) == 2:
+                    return (filler[0].name, filler[1])
+                if len(filler) == 3:
+                    return (filler[0].name, filler[1], filler[2])
+
+            raise NotImplementedError("Cannot format filler %s in %s" % (str(filler), concept))
+
         concept = self.app.agent.memory.ontology.concept(concept)
         output = {
             "name": concept.name,
             "definition": "TODO: get definition",
             "parents": list(map(lambda p: p.name, concept.parents())),
-            "rows": concept.rows()
-        }
-
-        # Mock output
-        output = {
-            "name": concept.name,
-            "definition": "This is an an example definition.",
-            "parents": ["all", "object"],
-            "rows": [
-                {"row": "local", "property": "agent", "facet": "sem", "filler": "@primate", "meta": {}},
-                {"row": "local", "property": "color", "facet": "sem", "filler": "yellow", "meta": {}},
-                {"row": "local", "property": "size", "facet": "sem", "filler": (">", 1.0), "meta": {"measured-in": "inches"}},
-                {"row": "inherit", "from": "object", "property": "name", "facet": "sem", "filler": ["abcd", "defg"], "meta": {}},
-                {"row": "block", "from": "physical-object", "property": "theme", "facet": "sem", "filler": "@all"},
-            ]
+            "rows": list(map(lambda r: _format_row(r), concept.rows()))
         }
 
         return json.dumps(output)
@@ -95,16 +116,9 @@ class DEKADEAPIBlueprint(Blueprint):
 
 if __name__ == "__main__":
 
-    agent = Agent()
-
-    # For testing, load some fake data
-    agent.memory.ontology.concept("all")
-    agent.memory.ontology.concept("object")
-    agent.memory.ontology.concept("physical-object")
-    agent.memory.ontology.concept("animate")
-    agent.memory.ontology.concept("primate")
-    agent.memory.ontology.concept("human")
-    agent.memory.ontology.concept("human-professional")
+    agent = Agent(memory=Memory("../knowledge/properties/", "../knowledge/concepts/", ""))
+    agent.memory.properties.load()
+    agent.memory.ontology.load()
 
     app = DEKADE(agent)
     app.config.update(
