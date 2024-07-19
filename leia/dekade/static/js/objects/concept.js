@@ -96,14 +96,18 @@ export class Concept extends LEIAObject {
         }
     }
 
-    _onUnblockBlockButtonClicked(event) {
+    async _onUnblockBlockButtonClicked(event) {
         const concept = this.name();
         const from = $(event.currentTarget).data("from");
         const property = $(event.currentTarget).data("property");
         const facet = $(event.currentTarget).data("facet");
         const filler = $(event.currentTarget).data("filler");
+        const type = $(event.currentTarget).data("type");
 
-        console.log("TODO: unblock " + property + "/" + facet + "/" + filler + " in " + concept + " from " + from);
+        const response = await API.apiKnowledgeOntologyWriteUnblockFiller(concept, property, facet, filler, type);
+        if (response == "OK") {
+            await this.refresh();
+        }
     }
 
     _onToggleInheritedDisplayChanged(event) {
