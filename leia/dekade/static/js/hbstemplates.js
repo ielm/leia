@@ -14,6 +14,7 @@ class LEIAHBSTemplates {
             "leia.knowledge.properties.tree": "handlebars/properties/tree.html",
             "leia.ontosem.analysis": "handlebars/ontosem/analysis.html",
             "leia.ontosem.candidate": "handlebars/ontosem/candidate.html",
+            "leia.ontosem.config": "handlebars/ontosem/config.html",
             "leia.ontosem.logs": "handlebars/ontosem/logs.html",
             "leia.ontosem.syntax": "handlebars/ontosem/syntax.html",
             "leia.ontosem.tmr": "handlebars/ontosem/tmr.html",

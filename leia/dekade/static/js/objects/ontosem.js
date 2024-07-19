@@ -16,6 +16,7 @@ export class Analysis extends LEIAObject {
 
     activateListeners(element) {
         element.find("span.caret").click(this._onCaretClicked.bind(this));
+        element.find("a.config-content-link").click(this._onConfigContentLinkClicked.bind(this));
         element.find("a.syntax-content-link").click(this._onSyntaxContentLinkClicked.bind(this));
         element.find("a.candidate-content-link").click(this._onCandidateContentLinkClicked.bind(this));
     }
@@ -67,6 +68,11 @@ export class Analysis extends LEIAObject {
         ul.toggleClass("active");
     }
 
+    async _onConfigContentLinkClicked(event) {
+        const config = new Config(this.content.config);
+        await this.showContent(config);
+    }
+
     async _onSyntaxContentLinkClicked(event) {
         const link = $(event.currentTarget);
         const sentence = this.content.sentences[parseInt(link.data("sentence"))];
@@ -93,6 +99,39 @@ export class Analysis extends LEIAObject {
         } else {
             console.log("Unhandled content target type: " + contentTarget);
         }
+    }
+
+}
+
+
+export class Config extends LEIAObject {
+
+    constructor(content) {
+        super();
+        this.content = content;
+    }
+
+    prepareData() {
+        return {
+            ...super.prepareData(),
+            logs: this.content
+        }
+    }
+
+    activateListeners(element) {
+
+    }
+
+    templateName() {
+        return "leia.ontosem.config";
+    }
+
+    label() {
+        return "Config";
+    }
+
+    name() {
+        return "Config";
     }
 
 }
