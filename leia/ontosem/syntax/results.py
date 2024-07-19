@@ -332,6 +332,11 @@ class Dependency(object):
         self.dependent = dependent
         self.type = type
 
+    def __eq__(self, other):
+        if isinstance(other, Dependency):
+            return self.governor == other.governor and self.dependent == other.dependent and self.type == other.type
+        return super().__eq__(other)
+
 
 class LispParser(object):
 

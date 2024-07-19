@@ -1,9 +1,41 @@
-from leia.ontosem.syntax.results import LispParser, SenseMap, SynMap, Syntax, Word, WordCoreference
+from leia.ontosem.syntax.results import ConstituencyNode, Dependency, LispParser, SenseMap, SynMap, Syntax, Word, WordCoreference
 from unittest import TestCase
 from unittest.mock import call, MagicMock, patch
 
 
 class SyntaxTestCase(TestCase):
+
+    @patch("leia.ontosem.syntax.results.Word.from_spacy")
+    @patch("leia.ontosem.syntax.results.ConstituencyNode.parse_lisp_results")
+    def test_from_spacy(self, mock_parse_lisp_results: MagicMock, mock_word_from_spacy: MagicMock):
+        mock_parse_lisp_results.side_effect = lambda input, words: input
+        mock_word_from_spacy.side_effect = lambda input, ner, coref: input
+
+        word1 = MagicMock()
+        word1.i = 0
+        word1.dep_ = "test"
+        word1.head = MagicMock()
+        word1.head.i = 1
+
+        word2 = MagicMock()
+        word2.i = 1
+        word2.dep_ = "ROOT"
+        word2.head = MagicMock()
+        word2.head.i = 1
+
+        sentence = MagicMock()
+        sentence.subtree = [word1, word2]
+        sentence._ = MagicMock()
+        sentence._.parse_string = "(TEST (PARSE (STRING)))"
+
+
+        syntax = Syntax.from_spacy(sentence)
+        self.assertEqual([word1, word2], syntax.words)
+        self.assertEqual(["TEST", ["PARSE", ["STRING"]]], syntax.parse)
+        self.assertEqual([Dependency(word2, word1, "test"), Dependency(word2, word2, "ROOT")], syntax.dependencies)
+
+        mock_parse_lisp_results.assert_called_once_with(["TEST", ["PARSE", ["STRING"]]], [word1, word2])
+        mock_word_from_spacy.assert_has_calls([call(word1, None, None), call(word2, None, None)])
 
     @patch("leia.ontosem.syntax.results.Syntax.parse_lisp_results")
     def test_from_lisp_string(self, mock_parse_syntax: MagicMock):
@@ -216,6 +248,26 @@ class WordCoreferenceTestCase(TestCase):
         self.assertEqual(2, coreference.sentence)
         self.assertEqual(1, coreference.word)
         self.assertEqual(0.5, coreference.confidence)
+
+
+class ConstituencyNodeTestCase(TestCase):
+
+    def test_parse_lisp_results(self):
+        words = [
+            Word(0, "word", [], "word", 0, 0, Word.Ner.NONE, [], {}),
+            Word(1, "bird", [], "bird", 0, 0, Word.Ner.NONE, [], {}),
+        ]
+
+        parsed = ConstituencyNode.parse_lisp_results(["S", ["V", "Word"], ["N", "bird"]], words)
+
+        self.assertEqual("S", parsed.label)
+        self.assertEqual(2, len(parsed.children))
+
+        self.assertEqual("V", parsed.children[0].label)
+        self.assertEqual([words[0]], parsed.children[0].children)
+
+        self.assertEqual("N", parsed.children[1].label)
+        self.assertEqual([words[1]], parsed.children[1].children)
 
 
 class LispParserTestCase(TestCase):
