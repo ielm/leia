@@ -37,7 +37,7 @@ class Space(object):
             address.append(self)
             return address
 
-        return Address(self)
+        return Address(self.memory, self)
 
     def parent(self) -> Union['Space', None]:
         return self._parent
@@ -300,7 +300,7 @@ class Instance(object):
             return None
 
         address = space.address()
-        address.append(self.id(space=space))
+        address.append(self)
 
         return address
 
@@ -377,21 +377,52 @@ class Instance(object):
 
 class Address(object):
 
-    def __init__(self, *start: Union[Space, str]):
+    def __init__(self, memory: Memory, *start: Union[Space, Instance]):
+        self.memory = memory
         self._path = []
+
+        if len(start) == 0:
+            self.append(self.memory.episodic)
 
         for node in start:
             self.append(node)
 
-    def append(self, node: Union[Space, str]):
+    def append(self, node: Union[Space, Instance]):
         if isinstance(node, Space):
+            # A space can only follow another space (or be the first element)
+            if len(self._path) > 0 and self._path[-1]["type"] != "space":
+                raise Exception("A space in a path cannot follow a non-space.")
+
             node = {"type": "space", "id": node.name()}
         elif isinstance(node, Instance):
-            node = {"type": "instance", "id": node.id()}
+            # An instance must follow a space; the id used will be the current id relative to the space
+            if not self._path[-1]["type"] == "space":
+                raise Exception("An instance in a path must follow a space.")
+
+            node = {"type": "instance", "id": node.id(space=self.resolve())}
+        else:
+            raise Exception("Unknown address type: %s." % str(node))
 
         self._path.append(node)
 
-    def resolve(self) -> Instance:
+    def resolve(self) -> Union[Space, Instance]:
+        if len(self._path) == 0:
+            raise Exception("Cannot resolve an empty address.")
+
+        current = None
+        for node in self._path:
+            current = self._resolve_node(node, current)
+
+        return current
+
+    def _resolve_node(self, node: Dict, current: Union[Space, Instance, None]) -> Union[Space, Instance]:
+        if node["type"] == "space":
+            if current is None:
+                return self.memory.episodic
+            return current.space(node["id"])
+        if node["type"] == "instance":
+            return current.instance(node["id"])
+
         raise NotImplementedError
 
     def __repr__(self):

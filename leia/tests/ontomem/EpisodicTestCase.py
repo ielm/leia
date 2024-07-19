@@ -140,7 +140,7 @@ class SpaceTestCase(TestCase):
         self.assertEqual([f4, f5], self.m.episodic.instances_of(c2, include_descendants=True))
 
     def test_address(self):
-        self.assertEqual(Address(self.m.episodic), self.m.episodic.address())
+        self.assertEqual(Address(self.m, self.m.episodic), self.m.episodic.address())
 
         space1 = self.m.episodic.new_space("TEST1")
         space2 = self.m.episodic.new_space("TEST2")
@@ -148,11 +148,11 @@ class SpaceTestCase(TestCase):
         space4 = space1.new_space("TEST4")
         space5 = space3.new_space("TEST5")
 
-        self.assertEqual(Address(self.m.episodic, space1), space1.address())
-        self.assertEqual(Address(self.m.episodic, space2), space2.address())
-        self.assertEqual(Address(self.m.episodic, space1, space3), space3.address())
-        self.assertEqual(Address(self.m.episodic, space1, space4), space4.address())
-        self.assertEqual(Address(self.m.episodic, space1, space3, space5), space5.address())
+        self.assertEqual(Address(self.m, self.m.episodic, space1), space1.address())
+        self.assertEqual(Address(self.m, self.m.episodic, space2), space2.address())
+        self.assertEqual(Address(self.m, self.m.episodic, space1, space3), space3.address())
+        self.assertEqual(Address(self.m, self.m.episodic, space1, space4), space4.address())
+        self.assertEqual(Address(self.m, self.m.episodic, space1, space3, space5), space5.address())
 
 
 class XMRTestCase(TestCase):
@@ -221,18 +221,18 @@ class InstanceTestCase(TestCase):
 
     def test_address(self):
         f = self.m.episodic.new_instance("C")
-        self.assertEqual(Address(self.m.episodic, f.id()), f.address())
+        self.assertEqual(Address(self.m, self.m.episodic, f), f.address())
 
         s = self.m.episodic.new_space("TEST")
         s.register_instance(f)
-        self.assertEqual(Address(self.m.episodic, s, f.id(space=s)), f.address(space=s))
+        self.assertEqual(Address(self.m, self.m.episodic, s, f), f.address(space=s))
 
         x = self.m.episodic.new_space("XYZ")
         self.assertIsNone(f.address(space=x))
 
         self.assertEqual([
-            Address(self.m.episodic, f.id()),
-            Address(self.m.episodic, s, f.id(space=s))
+            Address(self.m, self.m.episodic, f),
+            Address(self.m, self.m.episodic, s, f)
         ], f.addresses())
 
     @patch("leia.ontomem.episodic.time.time")
@@ -348,3 +348,27 @@ class InstanceTestCase(TestCase):
         self.assertTrue(instance.isa(c2))
 
         c1.isa.assert_called_once_with(c2)
+
+
+class AddressTestCase(TestCase):
+
+    def setUp(self):
+        self.m = Memory("", "", "")
+
+    def test_resolve(self):
+        # By default, addresses resolve to the episodic root
+        self.assertEqual(self.m.episodic, Address(self.m).resolve())
+
+        # An address can resolve to any sub space
+        space1 = self.m.episodic.new_space("TEST1")
+        space2 = self.m.episodic.new_space("TEST2")
+        space3 = space1.new_space("TEST3")
+
+        self.assertEqual(space1, Address(self.m, self.m.episodic, space1).resolve())
+        self.assertEqual(space2, Address(self.m, self.m.episodic, space2).resolve())
+        self.assertEqual(space3, Address(self.m, self.m.episodic, space1, space3).resolve())
+
+        # An address can resolve to any instance within a space
+        instance = space3.new_instance("C")
+
+        self.assertEqual(instance, Address(self.m, self.m.episodic, space1, space3, instance).resolve())
