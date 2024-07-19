@@ -114,6 +114,18 @@ class WMLexiconLoader(object):
 
         semstruc = "ALL"
         for pos in word.pos:
+            pos = self.analysis.config.memory().parts_of_speech.get(pos)
+            if pos.isa("NOUN"):
+                pos = "NOUN"
+            elif pos.isa("VERB"):
+                pos = "VERB"
+            elif pos.isa("ADJ"):
+                pos = "ADJ"
+            elif pos.isa("ADV"):
+                pos = "ADV"
+            else:
+                pos = "UNKNOWN"
+
             if pos in semstruc_options:
                 semstruc = semstruc_options[pos]
                 break
