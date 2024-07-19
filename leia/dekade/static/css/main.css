@@ -87,3 +87,16 @@ a[is=content-link]:hover {
     justify-content: center;
     color: #484848;
 }
+
+#leia-header-image {
+    height: 18px;
+    padding: 2px;
+    vertical-align: middle;
+}
+
+#dekade-footer-version {
+    vertical-align: middle;
+    height: 18px;
+    padding-left: 2px;
+    display: inline-block;
+}
