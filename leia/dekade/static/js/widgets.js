@@ -22,6 +22,8 @@ export class ContextMenu {
     }
 
     show(x, y) {
+        $("body").find(".context-menu").hide();
+
         const menu = this.template({options: this.options});
 
         this.rendered = $(menu);
