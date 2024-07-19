@@ -1,7 +1,7 @@
 from enum import Enum
-from multiprocessing import Pool
 from leia.ontomem.memory import Memory
 from leia.ontomem.ontology import Concept
+from leia.utils.threads import multiprocess_read_directory
 from typing import Dict, List, Set, Tuple, Union
 
 import json
@@ -166,17 +166,11 @@ class PropertyInventory(object):
             self.load()
 
     def load(self):
-        pool = Pool(4)
-        files = os.listdir(self.contents_dir)
-
-        names = map(lambda f: f[0:-5], files)
-        props = map(lambda n: (n, Property(self.memory, n, contents=None)), names)
-        self.cache = dict(props)
-
-        contents = pool.starmap(_read_property, map(lambda file: (self.contents_dir, file), files))
+        contents = multiprocess_read_directory(self.contents_dir, "prop")
+        for c in contents:
+            self.cache[c[0]] = Property(self.memory, c[0], contents=None)
         for c in contents:
             self.cache[c[0]].set_contents(c[1])
-
         self._loaded = True
 
     def is_loaded(self) -> bool:

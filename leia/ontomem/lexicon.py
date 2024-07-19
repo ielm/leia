@@ -1,8 +1,6 @@
 from dataclasses import dataclass
 from leia.ontomem.memory import Memory
-# from leia.utils.formatting import FormatFromLISP
-from leia.utils.threads import multiprocess_read_json_file
-from multiprocessing.pool import Pool
+from leia.utils.threads import multiprocess_read_directory
 from typing import Any, Dict, List, Set, Tuple, Union
 
 import itertools
@@ -21,13 +19,9 @@ class Lexicon(object):
             self.load()
 
     def load(self):
-        pool = Pool(4)
-        files = os.listdir(self.contents_dir)
-
-        contents = pool.starmap(multiprocess_read_json_file, map(lambda file: (self.contents_dir, file, "word"), files))
+        contents = multiprocess_read_directory(self.contents_dir, "word")
         for c in contents:
             self.cache[c[0]] = Word(self.memory, c[0], contents=c[1])
-
         self._loaded = True
 
     def is_loaded(self) -> bool:

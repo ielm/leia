@@ -1,12 +1,8 @@
-from dataclasses import dataclass
 from leia.ontomem.lexicon import Sense, SynStruc
 from leia.ontomem.memory import Memory
 from leia.utils.str2py import import_class
-from leia.utils.threads import multiprocess_read_json_file
-from multiprocessing.pool import Pool
+from leia.utils.threads import multiprocess_read_directory
 from typing import List, Type, Union
-
-import os
 
 
 class TransformationsCatalogue(object):
@@ -21,13 +17,9 @@ class TransformationsCatalogue(object):
             self.load()
 
     def load(self):
-        pool = Pool(4)
-        files = os.listdir(self.contents_dir)
-
-        contents = pool.starmap(multiprocess_read_json_file, map(lambda file: (self.contents_dir, file, "trans"), files))
+        contents = multiprocess_read_directory(self.contents_dir, "trans")
         for c in contents:
             self.cache[c[0]] = Transformation(c[0], contents=c[1])
-
         self._loaded = True
 
     def is_loaded(self) -> bool:
