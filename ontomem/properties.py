@@ -51,6 +51,7 @@ class Property(object):
         LITERAL = "LITERAL"
         SCALAR = "SCALAR"
         RELATION = "RELATION"
+        UNKNOWN = "UNKNOWN"
 
     def __init__(self, memory: Memory, name: str, contents: dict=None):
         self.memory = memory
@@ -61,6 +62,8 @@ class Property(object):
         self.contents = contents
 
     def type(self) -> TYPE:
+        if self.contents is None:
+            return Property.TYPE.UNKNOWN
         return Property.TYPE[self.contents["type"].upper()]
 
     def range(self) -> RANGE:
