@@ -233,12 +233,12 @@ class SynStrucTestCase(TestCase):
 
         self.assertEqual([SynStruc.DependencyElement("subject", None, None, None, False)], synstruc.elements)
 
-        # Dependencies can specify a governor or dependent.
+        # Dependencies can specify a governor or dependent; these are tokens.
         synstruc = SynStruc(contents=[
-            {"type": "dependency", "deptype": "subject", "gov": 1, "dep": 2}
+            {"type": "dependency", "deptype": "subject", "gov": {"type": "token", "lemma": [], "pos": "N", "morph": {}}, "dep": {"type": "token", "lemma": [], "pos": "V", "morph": {}}}
         ])
 
-        self.assertEqual([SynStruc.DependencyElement("subject", 1, 2, None, False)], synstruc.elements)
+        self.assertEqual([SynStruc.DependencyElement("subject", SynStruc.TokenElement(set(), "N", dict(), None, False), SynStruc.TokenElement(set(), "V", dict(), None, False), None, False)], synstruc.elements)
 
         # Dependencies can specify a variable or optionality flag.
         synstruc = SynStruc(contents=[

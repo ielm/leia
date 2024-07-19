@@ -33,7 +33,20 @@
         <span class="syn-struc-element-content">
             >{{deptype}}
             {{#if (or gov dep)}}
-                ({{#if gov}}$VAR{{gov}}{{else}}*{{/if}}, {{#if dep}}$VAR{{dep}}{{else}}*{{/if}})
+                (
+                    {{#if gov}}
+                        {{#if gov.pos}}>{{gov.pos}}{{/if}}
+                        {{#if gov.lemma}}"{{#each gov.lemma}}{{this}}{{#unless @last}},{{/unless}}{{/each}}"{{/if}}
+                    {{else}}
+                        *
+                    {{/if}},
+                    {{#if dep}}
+                        {{#if dep.pos}}>{{dep.pos}}{{/if}}
+                        {{#if dep.lemma}}"{{#each dep.lemma}}{{this}}{{#unless @last}},{{/unless}}{{/each}}"{{/if}}
+                    {{else}}
+                        *
+                    {{/if}}
+                )
             {{/if}}
         </span>
         ...

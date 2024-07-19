@@ -51,6 +51,14 @@ div.sense span.syn-struc-element-optionality.optional {
     color: cadetblue;
 }
 
+div.sense div.syn-struc-element.dependency div.syn-struc-element.token {
+    display: inline;
+}
+
+div.sense div.syn-struc-element.dependency div.dependency-tokens {
+    margin-left: 20px;
+}
+
 div.sense div.syn-struc-element.constituency div.constituency-children {
     margin-left: 20px;
 }

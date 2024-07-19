@@ -226,17 +226,26 @@ class SynStruc(object):
     class DependencyElement(Element):
 
         type: str
-        governor: Union[int, None]
-        dependent: Union[int, None]
+        governor: Union['SynStruc.TokenElement', None]
+        dependent: Union['SynStruc.TokenElement', None]
         variable: Union[int, None]
         optional: bool
 
         @classmethod
         def parse(cls, data: dict) -> 'SynStruc.DependencyElement':
+
+            gov = data["gov"] if "gov" in data else None
+            if isinstance(gov, dict):
+                gov = SynStruc.TokenElement.parse(gov)
+
+            dep = data["dep"] if "dep" in data else None
+            if isinstance(dep, dict):
+                dep = SynStruc.TokenElement.parse(dep)
+
             return SynStruc.DependencyElement(
                 data["deptype"],
-                data["gov"] if "gov" in data else None,
-                data["dep"] if "dep" in data else None,
+                gov,
+                dep,
                 data["var"] if "var" in data else None,
                 data["opt"] if "opt" in data else False
             )
@@ -248,7 +257,7 @@ class SynStruc(object):
             return self.optional
 
         def to_dict(self) -> dict:
-            return {"type": "dependency", "deptype": self.type, "gov": self.governor, "dep": self.dependent, "var": self.variable, "opt": self.optional}
+            return {"type": "dependency", "deptype": self.type, "gov": self.governor if self.governor is None else self.governor.to_dict(), "dep": self.dependent if self.dependent is None else self.dependent.to_dict(), "var": self.variable, "opt": self.optional}
 
     @dataclass
     class ConstituencyElement(Element):
