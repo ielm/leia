@@ -3,6 +3,7 @@ class LEIAHBSTemplates {
     constructor() {
         this.templates = {
             "leia.default.template": "handlebars/_default.html",
+            "leia.errors.report": "handlebars/errors/report.html",
             "leia.knowledge.lexicon.sense": "handlebars/lexicon/sense.html",
             "leia.knowledge.lexicon.sidebar.results": "handlebars/lexicon/sidebar_results.html",
             "leia.knowledge.ontology.concept": "handlebars/ontology/concept.html",

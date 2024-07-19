@@ -9,6 +9,7 @@ from leia.ontosem.runner import OntoSemRunner
 
 import json
 import mimetypes
+import traceback
 
 
 mimetypes.add_type("text/javascript", ".js")
@@ -190,10 +191,15 @@ class DEKADEAPIBlueprint(Blueprint):
         config._memory = self.app.agent.memory
 
         runner = OntoSemRunner(config)
-        results = runner.run([input])
-        results = results.to_dict()
 
-        # results = cached_tmr
+        try:
+            results = runner.run([input])
+            results = results.to_dict()
+        except Exception as e:
+            results = {
+                "error": str(e),
+                "trace": traceback.format_tb(e.__traceback__)
+            }
 
         return json.dumps(results)
 

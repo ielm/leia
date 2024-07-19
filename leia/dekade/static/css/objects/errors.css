@@ -1,0 +1,30 @@
+div.error-report {
+    padding: 4px;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+div.error-report > div:last-child {
+    margin-bottom: 0px;
+}
+
+div.error-report > div.error {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: darkred;
+    padding: 2px;
+    background-color: pink;
+    margin-bottom: 2px;
+}
+
+div.error-report > div.trace {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: darkred;
+    padding: 2px;
+    background-color: #f6e3e6;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}

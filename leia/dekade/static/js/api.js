@@ -120,5 +120,7 @@ export async function apiOntoSemAnalyze(input) {
         return response.data;
     } catch (error) {
         console.log(error);
+        console.log(error.data);
+        return error.data;
     }
 }
