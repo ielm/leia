@@ -68,7 +68,7 @@
     confidence              0 - 1 value for any filler
   Valid fields for private frames:
     (all but private)       Exact same format as root frames, but without the "private" field
-  Valid fiels for sets:
+  Valid fields for sets:
     name                    Name is required
     type                    Either "conjunctive" or "disjunctive"
     cardinality             A single integer; this field is optional (1 is default)

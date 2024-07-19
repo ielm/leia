@@ -1,5 +1,5 @@
 from ontomem.memory import Memory
-from ontomem.ontology import Concept, Ontology
+from ontomem.ontology import Concept, Ontology, OSet
 from unittest import TestCase
 
 
@@ -253,7 +253,83 @@ class ConceptTestCase(TestCase):
         self.assertEqual([private_p2], private_p1.fillers("a", "sem"))
 
     def test_parse_sets(self):
-        fail()
+        # Sets are special elements contained entirely within frames (they are not accessible from the ontology).
+        # Unlike private concepts, which have the same behavior as other concepts, sets have a very limited behavior
+        # encapsulated in four fields.
+        # Sets essentially define either an AND (conjunctive) or OR (disjunctive) relationship between one or more
+        # ontological elements (concepts, private concepts, other sets, and properties), and may define a required
+        # cardinality.
+
+        # A set can be used to say:
+        #   A or B or C
+        #   A and B and C
+        #   3 of A or B or C
+        #   3 each of A and B and C
+
+        # Declare a global p1 concept (for a namespace collision), a global p2 concept, and a global prop1 property.
+        p1 = self.m.ontology.concept("p1")
+        p2 = self.m.ontology.concept("p2")
+        prop1 = self.m.properties.get_property("prop1")
+
+        # Parse a concept; it contains two sets, and a private concept.  One of the sets references the other, as well
+        # as the private concept.  The set also references public concepts, and there is a namespace collision.
+        concept = Concept(self.m, "test", contents={
+            "name": "@test",
+            "isa": [],
+            "def": "test definition",
+            "local": [{"slot": "a", "facet": "sem", "filler": "&s1"}],
+            "block": [],
+            "private": {
+                "&s1": {
+                    "name": "&s1",
+                    "type": "conjunctive",
+                    "cardinality": 4,
+                    "members": ["@p1", "@p2", "&s2", "$prop1"]
+                },
+                "&s2": {
+                    "name": "&s2",
+                    "type": "disjunctive",
+                    "cardinality": 1,
+                    "members": []
+                },
+                "@p1": {
+                    "name": "@p1",
+                    "isa": ["@other"],
+                    "def": "private concept 1",
+                    "local": [{"slot": "a", "facet": "sem", "filler": "&s2"}],
+                    "block": [],
+                },
+            }
+        })
+
+        # There should be three private elements (s1, s2, and p1)
+        self.assertEqual(3, len(concept.private))
+
+        # Verify their types
+        self.assertIsInstance(concept.private["s1"], OSet)
+        self.assertIsInstance(concept.private["s2"], OSet)
+        self.assertIsInstance(concept.private["p1"], Concept)
+
+        # Extract the private content
+        s1: OSet = concept.private["s1"]
+        s2: OSet = concept.private["s2"]
+        private_p1: Concept = concept.private["p1"]
+
+        # Verify s1 was parsed correctly
+        self.assertEqual(OSet.Type.CONJUNCTIVE, s1.type())
+        self.assertEqual(4, s1.cardinality())
+        self.assertEqual([private_p1, p2, s2, prop1], s1.members())     # Note that @p1 uses the private concept
+
+        # Verify s2 was parsed correctly
+        self.assertEqual(OSet.Type.DISJUNCTIVE, s2.type())
+        self.assertEqual(1, s2.cardinality())
+        self.assertEqual([], s2.members())
+
+        # Verify private_p1 references s2
+        self.assertEqual([s2], private_p1.fillers("a", "sem"))
+
+        # Verify concept references s1
+        self.assertEqual([s1], concept.fillers("a", "sem"))
 
     def test_parents(self):
         parent1 = Concept(self.m, "parent1")
@@ -599,8 +675,21 @@ class ConceptTestCase(TestCase):
         self.assertNotEqual(public, private)            # But they are different frames
 
     def test_sets(self):
-        # Add to parsing above as well (local/block)
-        fail()
+        # Sets are not registered in the ontology directly; they are only accessible from inside the root frame
+        # that owns them.  They are not complete frames, having only a handful of specialized fields.
+
+        root = self.m.ontology.concept("ROOT")
+        set = OSet(self.m, "SET")
+        root.private["SET"] = set
+
+        self.assertIn("ROOT", self.m.ontology.cache)
+        self.assertNotIn("SET", self.m.ontology.cache)
+        self.assertIn("SET", root.private)
+
+        # The namespace for private frames is separate from public frames
+
+        public = self.m.ontology.concept("SET")     # Same literal name as the private frame
+        self.assertNotEqual(public, set)            # But they are different frames
 
     def test_evaluate(self):
         # Evaluate must account for sets (both input and existing) as well as private frames

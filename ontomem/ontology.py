@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from enum import Enum
 from multiprocessing import Pool
 from ontomem.memory import Memory
 from typing import List, Iterable, Set, Tuple, Union
@@ -146,7 +147,10 @@ class Concept(object):
         if self._root == self:
             # Generate the private concepts, but don't parse them yet
             for concept in self.contents["private"].keys():
-                self.private[concept[1:]] = Concept(self.memory, concept[1:], root=self)
+                if concept[0] == "@":
+                    self.private[concept[1:]] = Concept(self.memory, concept[1:], root=self)
+                elif concept[0] == "&":
+                    self.private[concept[1:]] = OSet(self.memory, concept[1:], root=self)
 
             # Now that the private concepts all exist, each can be parsed
             for concept, contents in self.contents["private"].items():
@@ -176,8 +180,7 @@ class Concept(object):
             elif filler[0] == "$":
                 filler = self.memory.properties.get_property(filler[1:])
             elif filler[0] == "&":
-                # TODO: get the set
-                raise NotImplementedError
+                filler = self._root.private[filler[1:]]
 
         if slot not in into:
             into[slot] = dict()
@@ -328,6 +331,56 @@ class Concept(object):
 
     def __repr__(self):
         return "@%s" % self.name
+
+
+class OSet(object):
+
+    class Type(Enum):
+        CONJUNCTIVE = "CONJUNCTIVE"
+        DISJUNCTIVE = "DISJUNCTIVE"
+
+    def __init__(self, memory: Memory, name: str, contents: dict=None, root: 'Concept'=None):
+        self.memory = memory
+        self.name = name
+        self.contents = contents
+        self.root = root
+
+        self._type = OSet.Type.CONJUNCTIVE
+        self._cardinality = 0
+        self._members = []
+
+        if contents is not None:
+            self._index()
+
+    def set_contents(self, contents: dict):
+        self.contents = contents
+        self._index()
+
+    def _index(self):
+        self._type = OSet.Type[self.contents["type"].upper()]
+        self._cardinality = self.contents["cardinality"]
+
+        self._members = []
+        for m in self.contents["members"]:
+            if m.startswith("@"):
+                if m[1:] in self.root.private:
+                    self._members.append(self.root.private[m[1:]])
+                else:
+                    self._members.append(self.memory.ontology.concept(m[1:]))
+            if m.startswith("&"):
+                if m[1:] in self.root.private:
+                    self._members.append(self.root.private[m[1:]])
+            if m.startswith("$"):
+                self._members.append(self.memory.properties.get_property(m[1:]))
+
+    def type(self) -> Type:
+        return self._type
+
+    def cardinality(self) -> int:
+        return self._cardinality
+
+    def members(self) -> List[Union[Concept, 'Property', 'OSet']]:
+        return list(self._members)
 
 
 if __name__ == "__main__":
