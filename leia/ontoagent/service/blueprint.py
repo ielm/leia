@@ -118,8 +118,8 @@ class OntoAgentBlueprint(Blueprint):
             for filler in fs:
                 fillers.append({
                     "slot": slot,
-                    "filler": _output_filler(filler.value),
-                    "type": _output_filler_type(filler.value)
+                    "filler": _output_filler(filler.value()),
+                    "type": _output_filler_type(filler.value())
                 })
 
         return {

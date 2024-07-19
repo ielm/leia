@@ -1,8 +1,8 @@
-from leia.ontomem.episodic import Instance
 from leia.ontomem.lexicon import Lexicon
 from leia.ontomem.ontology import Ontology
 from leia.ontosem.config import OntoSemConfig
 from leia.ontosem.semantics.candidate import Candidate, LexicalConstraintScore, RelationRangeScore, SenseMapPreferenceScore
+from leia.ontosem.semantics.tmr import TMRInstance
 from typing import Iterable, List
 
 import itertools
@@ -58,9 +58,9 @@ class SemanticScorer(object):
                 ranges = set(map(lambda r: r.name, ranges))
                 descendants = set(map(lambda d: d.name, descendants))
 
-                for filler in map(lambda f: f.value, fillers):
+                for filler in map(lambda f: f.value(), fillers):
                     # Only score relations connected to actual frames
-                    if not isinstance(filler, Instance):
+                    if not isinstance(filler, TMRInstance):
                         continue
 
                     # If there are no ranges, give the minimum score

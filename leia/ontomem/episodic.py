@@ -318,7 +318,7 @@ class Instance(object):
         if slot not in self.properties:
             return self
 
-        to_remove = list(filter(lambda f: f.value == filler, self.fillers(slot)))
+        to_remove = list(filter(lambda f: f.value() == filler, self.fillers(slot)))
         for x in to_remove:
             self.properties[slot].remove(x)
 
@@ -344,14 +344,14 @@ class Instance(object):
         return list(self.properties[slot])
 
     def values(self, slot: str) -> List['Filler.VALUE']:
-        return list(map(lambda f: f.value, self.fillers(slot)))
+        return list(map(lambda f: f.value(), self.fillers(slot)))
 
     def value(self, slot: str) -> Union['Filler.VALUE', None]:
         fillers = self.fillers(slot)
         if len(fillers) == 0:
             return None
         if len(fillers) == 1:
-            return fillers[0].value
+            return fillers[0].value()
         raise Instance.TooManyFillersError
 
     def isa(self, parent: Concept) -> bool:
@@ -368,7 +368,7 @@ class Instance(object):
             "id": self.id(space=space),
             "concept": str(self.concept),
             "index": self.index(space=space),
-            "properties": dict(map(lambda i: (i[0], list(map(lambda f: str(f.value), i[1]))), self.properties.items())),
+            "properties": dict(map(lambda i: (i[0], list(map(lambda f: str(f.value()), i[1]))), self.properties.items())),
         }
 
     def __repr__(self):
@@ -459,13 +459,18 @@ class Address(object):
 
 class Filler(object):
 
-    VALUE = Union['Instance', Concept, Property, str, float, int, bool]
+    VALUE = Union[Instance, Concept, Property, str, float, int, bool]
 
-    def __init__(self, value: VALUE, timestamp: float=None):
-        self.value = value
+    def __init__(self, value: Union[VALUE, Address], timestamp: float=None):
+        self._value = value
         self.timestamp = timestamp if timestamp is not None else time.time()
+
+    def value(self) -> VALUE:
+        if isinstance(self._value, Address):
+            return self._value.resolve()
+        return self._value
 
     def __eq__(self, other):
         if isinstance(other, Filler):
-            return self.value == other.value and self.timestamp == other.timestamp
-        return self.value == other
+            return self._value == other._value and self.timestamp == other.timestamp
+        return self._value == other

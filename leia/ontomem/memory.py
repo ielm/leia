@@ -224,7 +224,7 @@ class OntoMemTCPRequestGetInstance(OntoMemTCPRequest):
     def cast(self, fillers):
         values = []
         for f in fillers:
-            value = f.value
+            value = f.value()
             if isinstance(value, int) or isinstance(value, float) or isinstance(value, bool):
                 values.append(value)
             else:

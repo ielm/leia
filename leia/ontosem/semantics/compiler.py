@@ -314,7 +314,7 @@ class SemanticCompiler(object):
         # will be removed when the null-sems are removed.
         for frame in candidate.basic_tmr.instances():
             for k, v in list(frame.properties.items()):
-                for filler in map(lambda x: x.value, v):
+                for filler in map(lambda x: x.value(), v):
                     if not isinstance(filler, str) or filler not in null_sem_replacements.keys():
                         continue
                     replacement = null_sem_replacements[filler]

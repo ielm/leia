@@ -124,7 +124,7 @@ if __name__ == "__main__":
     for frame in results.sentences[0].semantics[0].basic_tmr.instances():
         print(frame.id())
         for p, fillers in frame.properties.items():
-            print("--%s = %s" % (p, ",".join(map(lambda f: str(f.value), fillers))))
+            print("--%s = %s" % (p, ",".join(map(lambda f: str(f.value()), fillers))))
     print("----")
     print("SCORE: %f" % results.sentences[0].semantics[0].score)
     print("SCORING:")
