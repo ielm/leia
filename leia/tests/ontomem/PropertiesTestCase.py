@@ -6,7 +6,7 @@ from unittest import TestCase
 class PropertyInventoryTestCase(TestCase):
 
     def test_properties_with_type(self):
-        memory = Memory("", "", "")
+        memory = Memory()
         memory.properties.add_property(Property(memory, "P1", {"type": "relation"}))
         memory.properties.add_property(Property(memory, "P2", {"type": "relation"}))
         memory.properties.add_property(Property(memory, "P3", {"type": "literal"}))
@@ -19,7 +19,7 @@ class PropertyInventoryTestCase(TestCase):
         self.assertEqual({"P5", "P6"}, set(map(lambda p: p.name, memory.properties.properties_with_type(Property.TYPE.BOOLEAN))))
 
     def test_inverses(self):
-        memory = Memory("", "", "")
+        memory = Memory()
         memory.properties.add_property(Property(memory, "RELATION", {"type": "relation"}))
         memory.properties.add_property(Property(memory, "R1", {"type": "relation", "inverse": "@R1-OF"}))
         memory.properties.add_property(Property(memory, "R2", {"type": "relation", "inverse": "@R2-OF"}))

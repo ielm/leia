@@ -9,7 +9,7 @@ from unittest.mock import MagicMock
 class DEKADEAPIOntologyBlueprintTestCase(TestCase):
 
     def setUp(self):
-        self.m = Memory("", "", "")
+        self.m = Memory()
 
     def test_cast_filler(self):
         app = MagicMock()

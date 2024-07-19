@@ -6,4 +6,4 @@ from leia.tests.LEIATestCase import LEIATestCase
 class LexicalTransformerTestCase(LEIATestCase):
 
     def setUp(self):
-        self.m = Memory("", "", "")
+        self.m = Memory()

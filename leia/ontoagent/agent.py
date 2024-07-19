@@ -12,7 +12,7 @@ class Agent(object):
     def __init__(self, memory: 'Memory'=None, modules: List['OntoAgentModule']=None, effectors: List['Effector']=None):
         from leia.ontomem.memory import Memory
 
-        self.memory = memory if memory is not None else Memory("", "", "")
+        self.memory = memory if memory is not None else Memory()
         self.modules = modules if modules is not None else []
         self.effectors = effectors if effectors is not None else []
 

@@ -146,12 +146,12 @@ class SyntacticAnalyzer(object):
         return syntax
 
     def _run_syntax(self, text: str) -> str:
-        host = self.config.corenlp_host
-        port = self.config.corenlp_port
+        host = "localhost"
+        port = 4998
 
         type = "default"
-        lexicon = self.config.ontosyn_lexicon
-        mem_file = self.config.ontosyn_mem
+        lexicon = "ontosyn/lisp/lexicon.lisp"
+        mem_file = "build/ontosem2-new4.mem"
 
         lisp_exe = '(run-syntax \'%s \"%s\" \"%s\" \"%s\" %d)' % (type, lexicon, text, host, port)
 

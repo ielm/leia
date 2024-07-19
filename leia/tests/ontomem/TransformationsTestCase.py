@@ -10,7 +10,7 @@ class TestTransformationExecutable(TransformationExecutable): pass
 class TransformationsCatalogueTestCase(TestCase):
 
     def setUp(self):
-        self.m = Memory("", "", "")
+        self.m = Memory()
         self.c = TransformationsCatalogue(self.m, "", load_now=False)
 
     def test_transformations(self):
@@ -53,7 +53,7 @@ class TransformationsCatalogueTestCase(TestCase):
 class TransformationTestCase(TestCase):
 
     def setUp(self):
-        self.m = Memory("", "", "")
+        self.m = Memory()
 
     def test_index(self):
         content = {

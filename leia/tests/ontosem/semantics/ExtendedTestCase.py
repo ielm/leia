@@ -31,7 +31,7 @@ class BasicSemanticsMPProcessorTestCase(TestCase):
 
         self.assertEqual(analysis, result)
 
-        mem_file = config.semantics_mp_mem
+        mem_file = "build/post-basic-semantic-MPs.mem"
 
         lisp_exe = '(post-basic-semantic-MPs "%s")' % json.dumps(analysis.to_dict()).replace("\"", "\\\"")
 

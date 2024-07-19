@@ -9,7 +9,7 @@ from unittest import TestCase
 class CandidateTestCase(TestCase):
 
     def setUp(self):
-        self.m = Memory("", "", "")
+        self.m = Memory()
 
     def test_words_by_binding_count(self):
 

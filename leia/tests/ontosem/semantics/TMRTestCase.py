@@ -6,7 +6,7 @@ from unittest import TestCase
 class TMRTestCase(TestCase):
 
     def setUp(self):
-        self.m = Memory("", "", "")
+        self.m = Memory()
 
     def test_speaker(self):
         tmr = TMR(self.m)

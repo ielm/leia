@@ -1,5 +1,7 @@
 from typing import Set
 
+import importlib
+
 
 class Memory(object):
 
@@ -10,7 +12,17 @@ class Memory(object):
             self.properties = OntoMemEditBuffer(memory)
             self.lexicon = OntoMemEditBuffer(memory)
 
-    def __init__(self, props_path: str, ont_path: str, lex_path: str):
+    def __init__(self, knowledge_path: str=None, props_path: str=None, ont_path: str=None, lex_path: str=None):
+        if knowledge_path is None:
+            knowledge_path = "%s/knowledge" % importlib.import_module("leia").__path__[0]
+
+        if props_path is None:
+            props_path = "%s/properties" % knowledge_path
+        if ont_path is None:
+            ont_path = "%s/concepts" % knowledge_path
+        if lex_path is None:
+            lex_path = "%s/words" % knowledge_path
+
         from leia.ontomem.episodic import Space
         from leia.ontomem.lexicon import Lexicon
         from leia.ontomem.ontology import Ontology

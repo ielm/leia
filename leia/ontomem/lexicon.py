@@ -473,7 +473,7 @@ if __name__ == "__main__":
 
     knowledge_dir = "%s/leia/knowledge/words" % os.getcwd()
 
-    memory = Memory("", "", knowledge_dir)
+    memory = Memory(lex_path=knowledge_dir)
     lexicon = memory.lexicon
 
     import time

@@ -5,7 +5,7 @@ from unittest import TestCase
 class OntoMemEditBufferTestCase(TestCase):
 
     def setUp(self):
-        self.m = Memory("", "", "")
+        self.m = Memory()
 
     def test_note_edited(self):
         buffer = OntoMemEditBuffer(self.m)

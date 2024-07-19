@@ -8,7 +8,7 @@ from unittest.mock import MagicMock, patch
 class SpaceTestCase(TestCase):
 
     def setUp(self):
-        self.m = Memory("", "", "")
+        self.m = Memory()
 
     def test_instance(self):
         # None is returned if the instance is unknown
@@ -158,7 +158,7 @@ class SpaceTestCase(TestCase):
 class XMRTestCase(TestCase):
 
     def setUp(self):
-        self.m = Memory("", "", "")
+        self.m = Memory()
 
     def test_root(self):
         # The root is considered the EVENT with the least incoming relations and most outgoing relations.  In the case
@@ -207,7 +207,7 @@ class XMRTestCase(TestCase):
 class InstanceTestCase(TestCase):
 
     def setUp(self):
-        self.m = Memory("", "", "")
+        self.m = Memory()
 
     def test_id(self):
         c = Concept(self.m, "C1")
@@ -353,7 +353,7 @@ class InstanceTestCase(TestCase):
 class AddressTestCase(TestCase):
 
     def setUp(self):
-        self.m = Memory("", "", "")
+        self.m = Memory()
 
     def test_resolve(self):
         # By default, addresses resolve to the episodic root

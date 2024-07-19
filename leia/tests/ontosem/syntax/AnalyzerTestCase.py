@@ -37,11 +37,11 @@ class SyntacticAnalyzerTestCase(TestCase):
 
         self.assertEqual("some output", result)
 
-        host = config.corenlp_host
-        port = config.corenlp_port
+        host = "localhost"
+        port = 4998
         type = "default"
-        lexicon = config.ontosyn_lexicon
-        mem_file = config.ontosyn_mem
+        lexicon = "ontosyn/lisp/lexicon.lisp"
+        mem_file = "build/ontosem2-new4.mem"
 
         lisp_exe = '(run-syntax \'%s \"%s\" \"%s\" \"%s\" %d)' % (type, lexicon, text, host, port)
 

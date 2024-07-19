@@ -8,7 +8,7 @@ from unittest.mock import MagicMock
 class OntologyTestCase(TestCase):
 
     def test_common_ancestors(self):
-        ontology = Memory("", "", "").ontology
+        ontology = Memory().ontology
 
         gp = ontology.concept("GRANDPARENT")
         p1 = ontology.concept("PARENT1").add_parent(gp)
@@ -22,7 +22,7 @@ class OntologyTestCase(TestCase):
         self.assertEqual({"GRANDPARENT"}, ontology.common_ancestors("PARENT1", "PARENT2"))
 
     def test_distance_to_ancestor(self):
-        ontology = Memory("", "", "").ontology
+        ontology = Memory().ontology
 
         gp = ontology.concept("GRANDPARENT")
         p1 = ontology.concept("PARENT1").add_parent(gp)
@@ -47,7 +47,7 @@ class OntologyTestCase(TestCase):
 class ConceptTestCase(TestCase):
 
     def setUp(self):
-        self.m = Memory("", "", "")
+        self.m = Memory()
 
     def test_parse_basic_fields(self):
         concept = Concept(self.m, "test", contents={
@@ -750,7 +750,7 @@ class ConceptEvaluateTestCase(TestCase):
     # Evaluate considers: hierarchy, sets, and flat values when making its determination.
 
     def setUp(self):
-        self.m = Memory("", "", "")
+        self.m = Memory()
 
     def test_simple_literal(self):
         concept = self.m.ontology.concept("concept")

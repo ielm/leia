@@ -8,7 +8,7 @@ from leia.tests.LEIATestCase import LEIATestCase
 class WMLexiconTestCase(LEIATestCase):
 
     def setUp(self):
-        self.m = Memory("", "", "")
+        self.m = Memory()
 
     def test_senses(self):
         lexicon = WMLexicon()

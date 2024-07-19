@@ -27,7 +27,7 @@ class BasicSemanticsMPProcessor(object):
         return analysis
 
     def _run_basic_semantics_mp_processor(self, analysis: Analysis) -> str:
-        mem_file = self.config.semantics_mp_mem
+        mem_file = "build/post-basic-semantic-MPs.mem"
 
         analysis = json.dumps(analysis.to_dict())
         analysis = analysis.replace("\"", "\\\"")

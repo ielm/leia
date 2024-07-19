@@ -9,7 +9,7 @@ from unittest.mock import MagicMock
 class LexiconTestCase(TestCase):
 
     def setUp(self):
-        self.m = Memory("", "", "")
+        self.m = Memory()
 
     def test_word_uses_cache_first(self):
         test_word = Word(self.m, "test-word", contents={"name": "test-word", "senses": {}})
@@ -88,7 +88,7 @@ class LexiconTestCase(TestCase):
 class WordTestCase(LEIATestCase):
 
     def setUp(self):
-        self.m = Memory("", "", "")
+        self.m = Memory()
 
     def test_senses(self):
         word = self.m.lexicon.word("test")
@@ -129,7 +129,7 @@ class WordTestCase(LEIATestCase):
 class SenseTestCase(TestCase):
 
     def setUp(self):
-        self.m = Memory("", "", "")
+        self.m = Memory()
 
     def sample_sense_dict(self) -> dict:
         return {
@@ -274,7 +274,7 @@ class SenseTestCase(TestCase):
 class SynStrucTestCase(TestCase):
 
     def setUp(self):
-        self.m = Memory("", "", "")
+        self.m = Memory()
 
     def test_index_root(self):
         # Root elements have no parameters
