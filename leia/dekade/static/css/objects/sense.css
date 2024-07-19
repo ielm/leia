@@ -63,3 +63,9 @@ div.sense div.sem-struc-element div.sem-struc-element {
 div.sense div.sem-struc-element-children {
     margin-left: 20px;
 }
+
+div.sense div.meaning-procedure {
+    font-family: monospace;
+    background: #eee;
+    margin-top: 3px;
+}

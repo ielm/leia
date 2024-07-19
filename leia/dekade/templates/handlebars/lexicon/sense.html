@@ -75,6 +75,13 @@
     {{/each}}
 {{/inline}}
 
+{{#*inline "meaning-procedure"}}
+    <div class="meaning-procedure">
+        <span class="mp-name">{{this.[0]}}</span>
+        ({{#each this}}{{#ifeq @index 0}}{{else}}{{this}}{{#unless @last}} , {{/unless}}{{/ifeq}}{{/each}})
+    </div>
+{{/inline}}
+
 <div class="sense">
 
     <div class="sense-header">
@@ -159,7 +166,11 @@
         {{/if}}
 
         <div class="sense-field-label">Meaning Procedures</div>
-        {{{json mps}}}
+        <div class="meaning-procedures">
+            {{#each mps}}
+                {{> meaning-procedure}}
+            {{/each}}
+        </div>
     </div>
 
 </div>
