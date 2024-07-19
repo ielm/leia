@@ -31,6 +31,10 @@ export class Concept extends LEIAObject {
         element.find("button.concept-block-inherit").click(this._onBlockInheritButtonClicked.bind(this));
         element.find("button.concept-unblock-block").click(this._onUnblockBlockButtonClicked.bind(this));
         element.find("input.concept-toggle-inherited-display").change(this._onToggleInheritedDisplayChanged.bind(this));
+        element.find("input.concept-add-local-property").keyup(this._onAddLocalInputChanged.bind(this));
+        element.find("input.concept-add-local-facet").keyup(this._onAddLocalInputChanged.bind(this));
+        element.find("input.concept-add-local-filler").keyup(this._onAddLocalInputChanged.bind(this));
+        element.find("input.concept-add-local-meta").keyup(this._onAddLocalInputChanged.bind(this));
     }
 
     templateName() {
@@ -82,6 +86,28 @@ export class Concept extends LEIAObject {
         const response = await API.apiKnowledgeOntologyWriteAddFiller(concept, property, facet, filler, meta);
         if (response == "OK") {
             await this.refresh();
+        }
+    }
+
+    async _onAddLocalInputChanged(event) {
+        const input = $(event.currentTarget);
+        const row = $(input.closest("tr"));
+        const button = $(row.find(".concept-add-local"));
+
+        const concept = this.name();
+        const property = row.find(".concept-add-local-property").val();
+        const facet = row.find(".concept-add-local-facet").val();
+        const filler = row.find(".concept-add-local-filler").val();
+        const meta = row.find(".concept-add-local-meta").val();
+
+        const disabled = !(property.length > 0 && facet.length > 0 && filler.length > 0);
+        button.prop("disabled", disabled);
+
+        if (!disabled && event.originalEvent.key == "Enter") {
+            const response = await API.apiKnowledgeOntologyWriteAddFiller(concept, property, facet, filler, meta);
+            if (response == "OK") {
+                await this.refresh();
+            }
         }
     }
 

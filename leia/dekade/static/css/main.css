@@ -59,6 +59,11 @@ button:active {
     background-color: #938f8b;
 }
 
+button:disabled {
+    background-color: #d7d7d7 !important;
+    cursor: not-allowed;
+}
+
 button[is=help-button] {
     width: 16px;
     height: 16px;
