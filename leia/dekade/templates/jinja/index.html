@@ -29,11 +29,16 @@
         <main class="page-main">
             <div id="leia-tabs-content" class="page-main-content"></div>
         </main>
-        <nav class="page-sidenav">
-            Sidenav
+        <nav id="leia-sidebar-tabs" class="page-sidenav">
+
         </nav>
-        <aside class="page-sidebar">
-            {% include "jinja/sidebars/ontology.html" %}
+        <aside id="leia-sidebar-content" class="page-sidebar">
+            <div class="fixed-tab-content" data-tab-name="ontosem" data-tab-label="TMR">
+                ANALYZER STUFF HERE
+            </div>
+            <div class="fixed-tab-content" data-tab-name="ontology" data-tab-label="ONT">
+                {% include "jinja/sidebars/ontology.html" %}
+            </div>
         </aside>
         <footer class="page-footer">
             Footer

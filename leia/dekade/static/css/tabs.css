@@ -11,3 +11,7 @@ button[is=tab-button].selected {
 .tab-contents-hidden {
     display: none;
 }
+
+.fixed-tab-content {
+    height: 100%;
+}
