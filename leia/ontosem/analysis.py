@@ -11,6 +11,8 @@ import logging
 
 class Analysis(object):
 
+    index: int = 0
+
     class LogHandler(Handler):
 
         def __init__(self, logs: List[dict], level="INFO"):
@@ -37,7 +39,13 @@ class Analysis(object):
 
         return analysis
 
+    @classmethod
+    def next_index(cls) -> int:
+        Analysis.index += 1
+        return Analysis.index
+
     def __init__(self, config: OntoSemConfig=None, text: str=None):
+        self.id = Analysis.next_index()
         self.config = config if config is not None else OntoSemConfig()
         self.sentences: List[Sentence] = []
         self.lexicon = WMLexicon()
@@ -63,6 +71,7 @@ class Analysis(object):
 
     def to_dict(self) -> dict:
         return {
+            "id": self.id,
             "config": self.config.to_dict(),
             "sentences": list(map(lambda s: s.to_dict(), self.sentences)),
             "logs": self.logs,

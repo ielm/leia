@@ -57,22 +57,24 @@ class OntoSemRunner(object):
             {"name": "synmap", "message": "run synmapping", "exec": self._run_stage_synmapping},
             {"name": "basic-sem", "message": "run basic semantic analysis", "exec": self._run_stage_basic_semantics},
         ]
-
-        # Create a new analysis object
-        analysis = Analysis(self.config, text=sentences)
-
-        # Load any memory components that haven't yet been loaded
-        self._load_memory(analysis)
+        analysis = None
 
         # For now, the only valid cache read level is syntax
         if self.config.cache_read_level == "syntax":
-            cached = self.cache.load(sentences, logs=analysis.logs)
+            cached = self.cache.load(sentences)
             if cached is not None:
                 analysis = cached
 
                 # Remove the proprocess and syntax stages to prevent them from running
                 stages = list(filter(lambda stage: stage["name"] != "preprocess", stages))
                 stages = list(filter(lambda stage: stage["name"] != "syntax", stages))
+
+        # Create a new analysis object if no cached version was loaded
+        if analysis is None:
+            analysis = Analysis(self.config, text=sentences)
+
+        # Load any memory components that haven't yet been loaded
+        self._load_memory(analysis)
 
         # Now run all stages
         for stage in stages:

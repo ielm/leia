@@ -26,7 +26,7 @@ export class Analysis extends LEIAObject {
     }
 
     label() {
-        const text = this.text();
+        const text = this.name();
         let truncated = text.slice(0, 17);
         if (truncated != text) {
             truncated = truncated + "...";
@@ -35,7 +35,7 @@ export class Analysis extends LEIAObject {
     }
 
     name() {
-        return this.text();
+        return '"' + this.text() + '"-' + this.content.id;
     }
 
     text() {
