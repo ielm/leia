@@ -64,18 +64,9 @@ export class Concept extends LEIAObject {
         });
     }
 
-    async refresh() {
+    async reload() {
         const concept = this.name();
-        const loaded = await API.apiKnowledgeOntologyConcept(concept);
-        this.content = loaded.content;
-
-        const rendered = await loaded.html();
-        this.rendered.empty();
-        this.rendered.append(rendered.children());
-        this.activateListeners(this.rendered);
-
-        const event = new CustomEvent("onRefresh", {});
-        this.dispatchEvent(event);
+        this.content = await API.apiKnowledgeOntologyConcept(concept, true);
     }
 
     _onAddLocalButtonClicked(event) {

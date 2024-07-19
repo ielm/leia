@@ -8,6 +8,7 @@ export class LEIAObject {
         // this.myfield = myfield;
         this.rendered = undefined;
         this.listeners = [];
+        this.content = undefined;
     }
 
     prepareData() {
@@ -54,6 +55,27 @@ export class LEIAObject {
         this.activateListeners(this.rendered);
 
         return this.rendered;
+    }
+
+    async reload() {
+        // Override to prove a custom method that assigns a value to this.content.
+        // This may involve in a remote call.
+        // This method should *not* modify the rendered template or any other UI elements or listeners.
+    }
+
+    async refresh() {
+        // Calls this.reload to get the latest content, and then redraws itself inside the wrapper leia-object div.
+        // After, a custom event is dispatched.
+
+        await this.reload();
+
+        const rendered = await this.html();
+        this.rendered.empty();
+        this.rendered.append(rendered.children());
+        this.activateListeners(this.rendered);
+
+        const event = new CustomEvent("onRefresh", {});
+        this.dispatchEvent(event);
     }
 
     registerListener(type, listener, callback) {

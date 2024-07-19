@@ -42,9 +42,14 @@ export async function apiKnowledgeLexiconFilter(filter) {
 }
 
 
-export async function apiKnowledgeLexiconSense(sense) {
+export async function apiKnowledgeLexiconSense(sense, dataOnly = false) {
     try {
         const response = await axios.get("/api/knowledge/lexicon/sense/" + sense);
+
+        if (dataOnly) {
+            return response.data;
+        }
+
         return new Sense(response.data);
     } catch (error) {
         console.error(error);
@@ -52,9 +57,14 @@ export async function apiKnowledgeLexiconSense(sense) {
 }
 
 
-export async function apiKnowledgeOntologyConcept(concept) {
+export async function apiKnowledgeOntologyConcept(concept, dataOnly = false) {
     try {
         const response = await axios.get("/api/knowledge/ontology/concept/" + concept);
+
+        if (dataOnly) {
+            return response.data;
+        }
+
         return new Concept(response.data);
     } catch (error) {
         console.error(error);
@@ -117,9 +127,14 @@ export async function apiKnowledgePropertiesFilter(filter) {
 }
 
 
-export async function apiKnowledgePropertiesProperty(property) {
+export async function apiKnowledgePropertiesProperty(property, dataOnly = false) {
     try {
         const response = await axios.get("/api/knowledge/properties/property/" + property);
+
+        if (dataOnly) {
+            return response.data;
+        }
+
         return new Property(response.data);
     } catch (error) {
         console.error(error);
