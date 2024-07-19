@@ -25,4 +25,4 @@ class DEKADEAPILexiconBlueprint(Blueprint):
     def knowledge_lexicon_sense(self, sense: str):
         sense = self.app.agent.memory.lexicon.sense(sense)
 
-        return json.dumps(sense.contents)
+        return json.dumps(sense.to_dict())

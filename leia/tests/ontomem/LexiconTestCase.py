@@ -12,7 +12,7 @@ class LexiconTestCase(TestCase):
         self.m = Memory("", "", "")
 
     def test_word_uses_cache_first(self):
-        test_word = Word(self.m, "test-word", contents={"name": "test-word", "senses": []})
+        test_word = Word(self.m, "test-word", contents={"name": "test-word", "senses": {}})
 
         lex = Lexicon(self.m, "", load_now=False)
         lex.cache["test-word"] = test_word
@@ -25,7 +25,7 @@ class LexiconTestCase(TestCase):
         lex.create_word.assert_not_called()
 
     def test_word_creates_new_second(self):
-        test_word = Word(self.m, "test-word", contents={"name": "test-word", "senses": []})
+        test_word = Word(self.m, "test-word", contents={"name": "test-word", "senses": {}})
 
         lex = Lexicon(self.m, "", load_now=False)
 
@@ -78,7 +78,7 @@ class LexiconTestCase(TestCase):
         lex.cache["MAN"] = Word(self.m, "MAN", contents={
             "name": "MAN",
             "senses": {
-                "MAN-N1": Sense(self.m, "MAN-N1", contents=sense_contents)
+                "MAN-N1": sense_contents
             }
         })
 

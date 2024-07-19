@@ -56,22 +56,23 @@ class Word(object):
     def __init__(self, memory: Memory, name: str, contents: dict=None):
         self.memory = memory
         self.name = name
-        self._contents = contents if contents is not None else {
-            "name": self.name,
-            "senses": {}
-        }
+        self._senses = dict()
+
+        if contents is not None:
+            for k, v in contents["senses"].items():
+                self._senses[k] = Sense(memory, k, contents=v)
 
     def add_sense(self, sense: 'Sense'):
-        self._contents["senses"][sense.id] = sense
+        self._senses[sense.id] = sense
 
     def sense(self, sense: str) -> 'Sense':
-        if sense in self._contents["senses"]:
-            return self._contents["senses"][sense]
+        if sense in self._senses:
+            return self._senses[sense]
 
         raise Exception("Unknown sense %s." % sense)
 
     def senses(self, include_synonyms: bool=True) -> List['Sense']:
-        results = list(self._contents["senses"].values())
+        results = list(self._senses.values())
 
         if include_synonyms:
             for word in self.memory.lexicon.words():
@@ -83,7 +84,7 @@ class Word(object):
 
     def __eq__(self, other):
         if isinstance(other, Word):
-            return self.name == other.name and self._contents == other._contents
+            return self.name == other.name and self._senses == other._senses
 
 
 class Sense(object):
