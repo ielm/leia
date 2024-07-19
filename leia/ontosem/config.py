@@ -25,6 +25,9 @@ class OntoSemConfig(object):
             lexicon_path=input["lexicon-path"],
             trans_path=input["trans-path"],
             pos_file=input["pos-file"],
+            cache_path=input["cache-path"],
+            cache_read_level=input["cache-read-level"],
+            cache_write_level=input["cache-write-level"],
         )
 
     def __init__(self,
@@ -34,6 +37,9 @@ class OntoSemConfig(object):
                  lexicon_path: str=None,
                  trans_path: str=None,
                  pos_file: str=None,
+                 cache_path: str=None,
+                 cache_read_level: str=None,
+                 cache_write_level: str=None,
                  ):
 
         self.knowledge_path = self.parameter_environment_or_default(knowledge_path, "KNOWLEDGE-PATH", None)
@@ -42,6 +48,9 @@ class OntoSemConfig(object):
         self.lexicon_path = self.parameter_environment_or_default(lexicon_path, "KNOWLEDGE-PATH", None)
         self.trans_path = self.parameter_environment_or_default(trans_path, "TRANS-PATH", None)
         self.pos_file = self.parameter_environment_or_default(pos_file, "POS-FILE", None)
+        self.cache_path = self.parameter_environment_or_default(cache_path, "CACHE-PATH", None)
+        self.cache_read_level = self.parameter_environment_or_default(cache_read_level, "CACHE-READ-LEVEL", "syntax")
+        self.cache_write_level = self.parameter_environment_or_default(cache_write_level, "CACHE-WRITE-LEVEL", "syntax")
 
         self._memory = None
 
@@ -92,4 +101,7 @@ class OntoSemConfig(object):
             "lexicon-path": self.lexicon_path,
             "trans-path": self.trans_path,
             "pos-file": self.pos_file,
+            "cache-path": self.cache_path,
+            "cache-read-level": self.cache_read_level,
+            "cache-write-level": self.cache_write_level,
         }

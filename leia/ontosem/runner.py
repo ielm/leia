@@ -1,7 +1,7 @@
 from leia.ontosem.analysis import Analysis, Sentence
+from leia.ontosem.cache import OntoSemCache
 from leia.ontosem.config import OntoSemConfig
 from leia.ontosem.semantics.compiler import SemanticCompiler
-from leia.ontosem.semantics.extended import BasicSemanticsMPProcessor
 from leia.ontosem.semantics.scorer import SemanticScorer
 from leia.ontosem.syntax.analyzer import Preprocessor, SpacyAnalyzer, WMLexiconLoader
 from leia.ontosem.syntax.synmapper import SynMapper
@@ -34,6 +34,7 @@ class OntoSemRunner(object):
 
     def __init__(self, config: OntoSemConfig):
         self.config = config
+        self.cache = OntoSemCache(self.config)
 
     def run_from_file(self, file: str) -> Analysis:
         f = open(file, "r")
@@ -44,8 +45,49 @@ class OntoSemRunner(object):
         return self.run(sentences)
 
     def run(self, sentences: List[str]) -> Analysis:
-        analysis = Analysis(self.config)
+        sentences = " ".join(sentences)
 
+        # Define the stages to run; each has a name that can be referenced by the cacheing system, as well as a
+        # message for the timer logs.
+        stages = [
+            {"name": "preprocess", "message": "preprocess", "exec": self._run_stage_preprocessor},
+            {"name": "syntax", "message": "run spacy syntax", "exec": self._run_stage_syntax},
+            {"name": "build-lex", "message": "build wm-lexicon", "exec": self._run_stage_build_lexicon},
+            {"name": "transform", "message": "run transformations", "exec": self._run_stage_transformations},
+            {"name": "synmap", "message": "run synmapping", "exec": self._run_stage_synmapping},
+            {"name": "basic-sem", "message": "run basic semantic analysis", "exec": self._run_stage_basic_semantics},
+        ]
+
+        # Create a new analysis object
+        analysis = Analysis(self.config, text=sentences)
+
+        # Load any memory components that haven't yet been loaded
+        self._load_memory(analysis)
+
+        # For now, the only valid cache read level is syntax
+        if self.config.cache_read_level == "syntax":
+            cached = self.cache.load(sentences, logs=analysis.logs)
+            if cached is not None:
+                analysis = cached
+
+                # Remove the proprocess and syntax stages to prevent them from running
+                stages = list(filter(lambda stage: stage["name"] != "preprocess", stages))
+                stages = list(filter(lambda stage: stage["name"] != "syntax", stages))
+
+        # Now run all stages
+        for stage in stages:
+            # Time the stage and log the results
+            with timer(analysis, stage["message"]):
+                stage["exec"](analysis)
+
+            # Cache the results if this is the specified write level
+            if stage["name"] == self.config.cache_write_level:
+                self.cache.cache(analysis)
+
+        # Return the results
+        return analysis
+
+    def _load_memory(self, analysis: Analysis):
         if not self.config.memory().properties.is_loaded():
             with timer(analysis, "load properties"):
                 self.config.memory().properties.load()
@@ -66,42 +108,35 @@ class OntoSemRunner(object):
             with timer(analysis, "load parts of speech"):
                 self.config.memory().parts_of_speech.load()
 
-        sentences = " ".join(sentences)
+    def _run_stage_preprocessor(self, analysis: Analysis):
+        pp = Preprocessor(analysis).run(analysis.text)
+        analysis.text = pp
 
-        with timer(analysis, "preprocess"):
-            pp = Preprocessor(analysis).run(sentences)
+    def _run_stage_syntax(self, analysis: Analysis):
+        syntax = SpacyAnalyzer(analysis).run(analysis.text)
+        for s in syntax:
+            sentence = Sentence(s.original_sentence)
+            sentence.syntax = s
+            analysis.sentences.append(sentence)
 
-        with timer(analysis, "run spacy syntax"):
-            syntax = SpacyAnalyzer(analysis).run(pp)
-            for s in syntax:
-                sentence = Sentence(s.original_sentence)
-                sentence.syntax = s
-                analysis.sentences.append(sentence)
+    def _run_stage_build_lexicon(self, analysis: Analysis):
+        WMLexiconLoader(analysis).run(list(map(lambda s: s.syntax, analysis.sentences)))
 
-        with timer(analysis, "build wm-lexicon"):
-            WMLexiconLoader(analysis).run(syntax)
+    def _run_stage_transformations(self, analysis: Analysis):
+        for s in analysis.sentences:
+            LexicalTransformer(analysis).run(s.syntax)
 
-        with timer(analysis, "run transformations"):
-            for s in syntax:
-                LexicalTransformer(analysis).run(s)
+    def _run_stage_synmapping(self, analysis: Analysis):
+        for sentence in analysis.sentences:
+            synmap = SynMapper(analysis).run(sentence.syntax)
+            sentence.syntax.synmap = synmap
 
-        with timer(analysis, "run synmapping"):
-            for sentence in analysis.sentences:
-                synmap = SynMapper(analysis).run(sentence.syntax)
-                sentence.syntax.synmap = synmap
+    def _run_stage_basic_semantics(self, analysis: Analysis):
+        for sentence in analysis.sentences:
+            candidates = SemanticCompiler(analysis).run(sentence.syntax)
+            candidates = SemanticScorer(analysis).run(candidates)
 
-        with timer(analysis, "run basic semantic analysis"):
-            for sentence in analysis.sentences:
-                candidates = SemanticCompiler(analysis).run(sentence.syntax)
-                candidates = SemanticScorer(analysis).run(candidates)
-
-                sentence.semantics = list(candidates)
-
-        # Perform post-basic semantic MP analysis
-        # with timer("semantic MP analysis", self.timed_results):
-        #     BasicSemanticsMPProcessor(self.config).run(analysis)
-
-        return analysis
+            sentence.semantics = list(candidates)
 
 
 if __name__ == "__main__":
@@ -127,7 +162,7 @@ if __name__ == "__main__":
 
     results = runner.run([sentence])
     for log in results.logs:
-        print(log.msg["message"])
+        print("%s%s" % ("(cached)" if log["cached"] else "", log["message"]))
 
     print("----")
 

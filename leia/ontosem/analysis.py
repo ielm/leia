@@ -21,6 +21,7 @@ class Analysis(object):
             message = dict(record.msg)
             message["time"] = record.created
             message["level"] = record.levelname
+            message["cached"] = False
 
             self.logs.append(message)
 
@@ -29,16 +30,18 @@ class Analysis(object):
         analysis = Analysis()
         analysis.config = OntoSemConfig.from_dict(input["config"])
         analysis.sentences = list(map(lambda s: Sentence.from_dict(s), input["sentences"]))
-        analysis.logs = input["logs"]
+        analysis.logs.extend(input["logs"])
+        analysis.text = input["text"]
 
         # TODO: Parse WMLexicon if present
 
         return analysis
 
-    def __init__(self, config: OntoSemConfig=None):
+    def __init__(self, config: OntoSemConfig=None, text: str=None):
         self.config = config if config is not None else OntoSemConfig()
         self.sentences: List[Sentence] = []
         self.lexicon = WMLexicon()
+        self.text = text
 
         self.logs: List[dict] = []
         self._logger = Logger(Analysis.__name__, level="INFO")
@@ -62,7 +65,8 @@ class Analysis(object):
         return {
             "config": self.config.to_dict(),
             "sentences": list(map(lambda s: s.to_dict(), self.sentences)),
-            "logs": self.logs
+            "logs": self.logs,
+            "text": self.text
         }
 
 

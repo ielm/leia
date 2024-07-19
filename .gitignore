@@ -54,8 +54,8 @@ Thumbs.db
 # NLTK Data
 .nltkdata/*
 
-# Temporarily ignore yaml files
-ontosem.yaml
+# OntoSem Cache
+.cache/*
 
 # Temporarily ignore TODO files
 TODO.txt
