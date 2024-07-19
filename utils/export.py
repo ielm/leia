@@ -77,11 +77,6 @@ class MongoConceptExporter(object):
                 "private": {}
             }
 
-            # If the concept is flagged as an onto-instance, save it for future processing
-            if len(list(filter(lambda p: p["slot"] == "is-onto-instance", concept["localProperties"]))):
-                onto_instances.append(concept)
-                continue
-
             # Find any uses of default-measure and record the slot they are attached to
             # Later, they will be added to the metadata of any other filler of that slot
             default_measures = {}
@@ -100,6 +95,9 @@ class MongoConceptExporter(object):
                     continue
                 # Skip all "onto-instances", this is a pointer that isn't needed
                 if slot == "onto-instances":
+                    continue
+                # Skip all "is-onto-instance", we'll be adding the frame directly to the private field
+                if slot == "is-onto-instance":
                     continue
 
                 try:
@@ -157,10 +155,47 @@ class MongoConceptExporter(object):
 
                 contents["block"].append(prop)
 
-            output_ontology[name] = contents
+            # Add the concept to the ontology
+            if len(list(filter(lambda p: p["slot"] == "is-onto-instance", concept["localProperties"]))):
+                onto_instances.append(contents)
+            else:
+                output_ontology[name] = contents
 
-        # TODO: handle the onto_instances that have been reserved
-        #   loop through all entries, find any props whose filler is @name-1; that is who owns it (should only be one)
+        # Now we find where to put onto-instances
+        onto_instance_map = []          # A list of tuples owner -> private frame
+        unmapped_onto_instances = []    # A list of onto instances whose owner is unknown
+
+        # Go through each onto instance, find any frame that references it, and consider that the owner.
+        # Any onto instance whose owner is unknown, add to the unmapped list.
+        for oi in onto_instances:
+            name = oi["name"]
+            concept = self.find_root_of_onto_instance(name, output_ontology.values())
+
+            if concept is not None:
+                concept["private"][name] = oi
+                onto_instance_map.append((concept["name"], name))
+                continue
+
+            unmapped_onto_instances.append(oi)
+
+        # Go through the unmapped list (basically a second pass).
+        # This time, look for owners amongst the other onto instances.
+        # If found, use the onto instance map to find their respective owners, and redirect the unmapped entity
+        # to the actual root.  (Onto instances can't own other onto instances, so those "grandchildren" are handed
+        # off to the root concept.)
+        for oi in list(unmapped_onto_instances):
+            name = oi["name"]
+            concept = self.find_root_of_onto_instance(name, onto_instances)
+            if concept is not None:
+                for m in onto_instance_map:
+                    if m[1] == concept["name"]:
+                        concept = output_ontology[m[0][1:]]
+                        concept["private"][name] = oi
+                        unmapped_onto_instances.remove(oi)
+
+        print("Total onto-instances with unknown owners: %d" % len(unmapped_onto_instances))
+        for oi in unmapped_onto_instances:
+            print("-- %s" % oi["name"])
 
         print("Total unknown fillers: %d" % len(unknown_fillers))
         for uf in unknown_fillers:
@@ -257,6 +292,16 @@ class MongoConceptExporter(object):
             except: pass
         return None
 
+    def find_root_of_onto_instance(self, name: str, concepts) -> Union[dict, None]:
+        for concept in concepts:
+            for prop in concept["local"]:
+                if prop["slot"] == "onto-instances":
+                    continue
+
+                if prop["filler"] == name:
+                    return concept
+
+        return None
 
 
 class MongoPropertyExporter(object):
