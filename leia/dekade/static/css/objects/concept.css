@@ -41,6 +41,15 @@ div.concept > div.concept-navigation-content > div.concept-usage {
     color: #666;
 }
 
+table.concept-rows {
+    width: 100%;
+    table-layout: fixed;
+}
+
+table.concept-rows > tbody > tr > td > input {
+    margin-top: -1px;
+}
+
 table.concept-rows > tbody > tr.concept-row-local {
 
 }
@@ -69,6 +78,14 @@ table.concept-rows > tbody > tr > td > button.concept-edit {
     display: inline-flex;
     align-items: center;
     margin-top: -1px;
+}
+
+table.concept-rows > tbody > tr > td {
+    vertical-align: top;
+}
+
+table.concept-rows > tbody > tr > td:nth-child(1) {
+    width: 22px;
 }
 
 div.concept-lineage-header {
