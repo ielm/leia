@@ -48,14 +48,19 @@ table.concept-rows {
 
 table.concept-rows > tbody > tr > td > input {
     margin-top: -1px;
+    width: 100%;
 }
 
-table.concept-rows > tbody > tr.concept-row-local {
-
+table.concept-rows > tbody > tr.concept-row-local > td:not(:first-of-type) {
+    background: #f4f4f4;
 }
 
 table.concept-rows > tbody > tr.concept-row-inherit {
     color: grey;
+}
+
+table.concept-rows > tbody > tr.concept-row-inherit > td:not(:first-of-type) {
+    background: #ccc;
 }
 
 table.concept-rows > tbody > tr.concept-row-inherit a[is=content-link] {
@@ -64,6 +69,10 @@ table.concept-rows > tbody > tr.concept-row-inherit a[is=content-link] {
 
 table.concept-rows > tbody > tr.concept-row-block {
     color: darkred;
+}
+
+table.concept-rows > tbody > tr.concept-row-block > td:not(:first-of-type) {
+    background: #dfa9a9;
 }
 
 table.concept-rows > tbody > tr.concept-row-block a[is=content-link] {
