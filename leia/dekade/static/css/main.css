@@ -1,6 +1,9 @@
 @import "./holygrail.css";
+
 @import "./objects/_default.css";
 @import "./objects/concept.css";
+
+@import "./sidebars/ontology.css";
 
 
 h1 {
@@ -21,4 +24,37 @@ div {
 
 table {
 
+}
+
+input[type=text] {
+    border-radius: 3px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+button {
+    background-color: #eff3f7;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: #938f8b;
+}
+
+button:hover {
+    background-color: #d4d9dd;
+}
+
+button:active {
+    background-color: #938f8b;
+}
+
+button[is=help-button] {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    font-size: 0.8em;
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
 }

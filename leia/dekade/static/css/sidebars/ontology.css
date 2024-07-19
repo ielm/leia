@@ -1,0 +1,25 @@
+ontology-sidebar {
+    --fixed-ontology-sidebar-header-height: 25px;
+}
+
+div.ontology-sidebar {
+    height: 100%;
+}
+
+div.ontology-sidebar-header {
+    height: var(--fixed-ontology-sidebar-header-height);
+    padding: 2px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #775779;
+}
+
+div.ontology-sidebar-content {
+    height: calc(100% - var(--fixed-ontology-sidebar-header-height));
+    overflow-y: auto;
+}
+
+div.ontology-sidebar-content {
+    padding: 2px;
+    background-color: #c6a5cc;
+}

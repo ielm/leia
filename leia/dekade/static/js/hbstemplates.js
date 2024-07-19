@@ -3,7 +3,8 @@ class LEIAHBSTemplates {
     constructor() {
         this.templates = {
             "leia.default.template": "handlebars/_default.html",
-            "leia.knowledge.ontology.concept": "handlebars/concept.html",
+            "leia.knowledge.ontology.concept": "handlebars/ontology/concept.html",
+            "leia.knowledge.ontology.sidebar.results": "handlebars/ontology/sidebar_results.html",
         };
     }
 

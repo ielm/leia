@@ -1,5 +1,7 @@
 from flask import Blueprint, Flask, render_template, send_from_directory
 from flask_cors import CORS
+from leia.ontoagent.agent import Agent
+
 import json
 import mimetypes
 
@@ -9,23 +11,25 @@ mimetypes.add_type("text/javascript", ".js")
 
 class DEKADE(Flask):
 
-    def __init__(self):
+    def __init__(self, agent: Agent):
         super().__init__(__name__, static_folder="static/", template_folder="templates/")
         CORS(self)
 
+        self.agent = agent
+
         self.register_blueprint(DEKADEBlueprint(self))
+        self.register_blueprint(DEKADEAPIBlueprint(self))
 
 
 class DEKADEBlueprint(Blueprint):
 
     def __init__(self, app: DEKADE):
-        super().__init__(__name__, __name__, static_folder=app.static_folder, template_folder=app.template_folder)
+        super().__init__("DEKADE", __name__, static_folder=app.static_folder, template_folder=app.template_folder)
         self.app = app
 
         self.add_url_rule("/favicon.ico", endpoint=None, view_func=self.favicon, methods=["GET"])
         self.add_url_rule("/", endpoint=None, view_func=self.index, methods=["GET"])
-        self.add_url_rule("/api", endpoint=None, view_func=self.api, methods=["GET"])
-        self.add_url_rule("/handlebars/<template>", endpoint=None, view_func=self.handlebars_template, methods=["GET"])
+        self.add_url_rule("/handlebars/<path:path>", endpoint=None, view_func=self.handlebars_template, methods=["GET"])
 
     def read_template(self, name: str) -> str:
         with open("%s/%s" % (self.template_folder, name), "r") as f:
@@ -37,17 +41,50 @@ class DEKADEBlueprint(Blueprint):
     def index(self):
         return render_template("jinja/index.html", thing=123)
 
-    def api(self):
-        return json.dumps({"thing": 456})
+    def handlebars_template(self, path):
+        return self.read_template("handlebars/%s" % path)
 
-    def handlebars_template(self, template: str):
-        return self.read_template("handlebars/%s" % template)
+
+class DEKADEAPIBlueprint(Blueprint):
+
+    def __init__(self, app: DEKADE):
+        super().__init__("DEKADE-API", __name__, static_folder=app.static_folder, template_folder=app.template_folder)
+        self.app = app
+
+        # Ontology API
+        self.add_url_rule("/api/knowledge/ontology/list", endpoint=None, view_func=self.knowledge_ontology_list, methods=["GET"])
+        self.add_url_rule("/api/knowledge/ontology/filter/<substring>", endpoint=None, view_func=self.knowledge_ontology_filter, methods=["GET"])
+        self.add_url_rule("/api/knowledge/ontology/concept/<concept>", endpoint=None, view_func=self.knowledge_ontology_concept, methods=["GET"])
+
+    def knowledge_ontology_list(self):
+        return json.dumps(list(sorted(self.app.agent.memory.ontology.names())))
+
+    def knowledge_ontology_filter(self, substring: str):
+        substring = substring.lower()
+
+        concepts = self.app.agent.memory.ontology.names()
+        concepts = filter(lambda c: substring in c.lower(), concepts)
+
+        return json.dumps(list(sorted(concepts)))
+
+    def knowledge_ontology_concept(self, concept: str):
+        raise NotImplementedError
 
 
 if __name__ == "__main__":
 
+    agent = Agent()
 
-    app = DEKADE()
+    # For testing, load some fake data
+    agent.memory.ontology.concept("all")
+    agent.memory.ontology.concept("object")
+    agent.memory.ontology.concept("physical-object")
+    agent.memory.ontology.concept("animate")
+    agent.memory.ontology.concept("primate")
+    agent.memory.ontology.concept("human")
+    agent.memory.ontology.concept("human-professional")
+
+    app = DEKADE(agent)
     app.config.update(
         TEMPLATES_AUTO_RELOAD=True,
     )
