@@ -1,3 +1,25 @@
-<div>
-    ANALYSIS HERE
+<div class="analysis-container">
+    <div class="analysis-navigator">
+        <ul>
+            {{#each analysis.sentences}}
+            <li>
+                <span class="caret {{#if @first}}caret-down{{/if}}">{{this.text}}</span>
+                <ul class="nested {{#if @first}}active{{/if}}">
+                    <li><a class="analysis-content-link syntax-content-link">Syntax</a></li>
+                    {{#each this.candidates}}
+                    <li class="candidate-navigator" {{#each this.sense-maps}}data-sense-{{this.word}}="{{this.sense}}"{{/each}}>
+                        <span class="caret {{#if @first}}caret-down{{/if}}">Candidate {{inc @index}}</span>
+                        <ul class="nested {{#if @first}}active{{/if}}">
+                            <li><a class="analysis-content-link candidate-content-link" data-sentence="{{@../index}}" data-candidate="{{@index}}" data-content="basic-tmr">Basic TMR</a></li>
+                            <li><a class="analysis-content-link candidate-content-link">Extended TMR</a></li>
+                            <li><a class="analysis-content-link candidate-content-link">Candidate Data</a></li>
+                        </ul>
+                    </li>
+                    {{/each}}
+                </ul>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="analysis-content"></div>
 </div>

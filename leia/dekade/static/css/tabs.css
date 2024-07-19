@@ -9,7 +9,7 @@ button[is=tab-button].selected {
 }
 
 .tab-contents-hidden {
-    display: none;
+    display: none !important;
 }
 
 .fixed-tab-content {

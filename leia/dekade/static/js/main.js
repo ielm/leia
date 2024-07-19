@@ -5,6 +5,10 @@ import * as OntologySidebar from "./sidebars/ontology.js";
 import * as OntoSemSidebar from "./sidebars/ontosem.js";
 import { contentTabs } from "./tabs.js";
 
+Handlebars.registerHelper("inc", function(value, options) {
+    return parseInt(value) + 1;
+});
+
 class HelpButton extends HTMLButtonElement {
 
     constructor() {

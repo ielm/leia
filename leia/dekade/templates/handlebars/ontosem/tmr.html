@@ -1,0 +1,22 @@
+<div class="tmr">
+    {{#each instances}}
+    <div class="tmr-instance">
+        <div class="header">
+            {{this.id}} instance-of <a is="content-link" data-content-id="{{this.concept}}">{{this.concept}}</a>
+        </div>
+        <div class="resolutions">
+            {{#each this.resolutions}}
+            {{this}}{{#unless @last}},{{/unless}}
+            {{/each}}
+        </div>
+        <div class="properties">
+            {{#each this.properties}}
+                {{#each this}}
+                <div class="slot">{{@../key}}</div>
+                <div class="filler">{{this}}</div>
+                {{/each}}
+            {{/each}}
+        </div>
+    </div>
+    {{/each}}
+</div>

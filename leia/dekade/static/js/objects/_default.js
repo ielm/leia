@@ -6,6 +6,7 @@ export class LEIAObject {
     constructor() {
         // Override to include local fields
         // this.myfield = myfield;
+        this.rendered = undefined;
     }
 
     prepareData() {
@@ -41,6 +42,7 @@ export class LEIAObject {
 
         const template = await templates.getTemplate(this.templateName());
         const rendered = $(template(this.prepareData()));
+        this.rendered = rendered;
 
         this.activateListeners(rendered);
 
