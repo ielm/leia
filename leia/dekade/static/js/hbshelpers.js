@@ -11,7 +11,11 @@ Handlebars.registerHelper("ifeq", function(arg1, arg2, options) {
 });
 
 Handlebars.registerHelper("ifempty", function(arg, options) {
-    return (arg == {}) || (arg == []) || (arg == "") ? options.fn(this): options.inverse(this);
+    return (arg == {}) || (arg == []) || (arg == "") ? options.fn(this) : options.inverse(this);
+});
+
+Handlebars.registerHelper("iftype", function(arg1, arg2, options) {
+    return typeof arg1 == arg2 ? options.fn(this) : options.inverse(this);
 });
 
 Handlebars.registerHelper("toUpperCase", function(str) {

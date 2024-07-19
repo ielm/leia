@@ -60,6 +60,21 @@
     </div>
 {{/inline}}
 
+{{#*inline "semstruc"}}
+    {{#each this}}
+        <div class="sem-struc-element">
+            {{#iftype this "object"}}
+                <div class="sem-struc-element-value">{{@key}}</div>
+                <div class="sem-struc-element-children">
+                    {{> semstruc}}
+                </div>
+            {{else}}
+                <div class="sem-struc-element-value">{{@key}} = {{this}}</div>
+            {{/iftype}}
+        </div>
+    {{/each}}
+{{/inline}}
+
 <div class="sense">
 
     <div class="sense-header">
@@ -128,16 +143,20 @@
 
     <hr>
 
-    <div class="sense-semantics">
+    <div class="sense-semstruc">
+        <div class="sense-field-label">Sem-Struc</div>
+        {{> semstruc semstruc}}
+    </div>
+
+    <hr>
+
+    <div class="sense-additional-meaning">
         <div class="sense-field-label">TMR Head</div>
         {{#if tmrhead}}
             <div class="sense-field-content">{{tmrhead}}</div>
         {{else}}
             <div class="sense-field-content empty">None.</div>
         {{/if}}
-
-        <div class="sense-field-label">Sem-Struc</div>
-        {{{json semstruc}}}
 
         <div class="sense-field-label">Meaning Procedures</div>
         {{{json mps}}}

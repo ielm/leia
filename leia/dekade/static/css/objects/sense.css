@@ -49,3 +49,17 @@ div.sense span.syn-struc-element-optionality.optional {
 div.sense div.syn-struc-element.constituency div.constituency-children {
     margin-left: 20px;
 }
+
+div.sense div.sem-struc-element {
+    font-family: monospace;
+    background: #eee;
+    margin-top: 3px;
+}
+
+div.sense div.sem-struc-element div.sem-struc-element {
+    margin-top: 0px;
+}
+
+div.sense div.sem-struc-element-children {
+    margin-left: 20px;
+}
