@@ -20,6 +20,7 @@ async function _onOntoSemInputButtonClick(event) {
 
         const errors = new Errors.ErrorReport(results);
         contentTabs.addObject(errors);
+        $(event.currentTarget).prop("disabled", false);
         return;
     }
 

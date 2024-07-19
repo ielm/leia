@@ -75,7 +75,8 @@ class Analysis(object):
             "config": self.config.to_dict(),
             "sentences": list(map(lambda s: s.to_dict(), self.sentences)),
             "logs": self.logs,
-            "text": self.text
+            "text": self.text,
+            "lexicon": self.lexicon.to_dict()
         }
 
 
@@ -141,3 +142,6 @@ class WMLexicon(object):
         if word not in self.words:
             self.words[word] = dict()
         return self.words[word]
+
+    def to_dict(self) -> dict:
+        return dict(map(lambda item: (item[0].index, dict(map(lambda sense: (sense[0], sense[1].to_dict()), item[1].items()))), self.words.items()))

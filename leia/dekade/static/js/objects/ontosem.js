@@ -17,7 +17,6 @@ export class Analysis extends LEIAObject {
     activateListeners(element) {
         element.find("span.caret").click(this._onCaretClicked.bind(this));
         element.find("a.config-content-link").click(this._onConfigContentLinkClicked.bind(this));
-        element.find("a.syntax-content-link").click(this._onSyntaxContentLinkClicked.bind(this));
         element.find("a.constituencies-content-link").click(this._onConstituenciesContentLinkClicked.bind(this));
         element.find("a.dependencies-content-link").click(this._onDependenciesContentLinkClicked.bind(this));
         element.find("a.word-content-link").click(this._onWordContentLinkClicked.bind(this));
@@ -76,14 +75,6 @@ export class Analysis extends LEIAObject {
         await this.showContent(config);
     }
 
-    async _onSyntaxContentLinkClicked(event) {
-        const link = $(event.currentTarget);
-        const sentence = this.content.sentences[parseInt(link.data("sentence"))];
-
-        const syntax = new Syntax(sentence.syntax);
-        await this.showContent(syntax);
-    }
-
     async _onConstituenciesContentLinkClicked(event) {
         const link = $(event.currentTarget);
         const sentence = this.content.sentences[parseInt(link.data("sentence"))];
@@ -104,8 +95,9 @@ export class Analysis extends LEIAObject {
         const link = $(event.currentTarget);
         const sentence = this.content.sentences[parseInt(link.data("sentence"))];
         const word = sentence.syntax.words[parseInt(link.data("word"))];
+        const senses = this.content.lexicon[word.index];
 
-        const element = new Word(word);
+        const element = new Word(word, senses);
         await this.showContent(element);
     }
 
@@ -299,15 +291,17 @@ export class Dependencies extends LEIAObject {
 
 export class Word extends LEIAObject {
 
-    constructor(content) {
+    constructor(content, senses = []) {
         super();
         this.content = content;
+        this.senses = senses;
     }
 
     prepareData() {
         return {
             ...super.prepareData(),
-            word: this.content
+            word: this.content,
+            senses: this.senses,
         }
     }
 

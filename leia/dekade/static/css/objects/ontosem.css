@@ -227,6 +227,7 @@ div.log > div.log-source {
     color: gray;
     font-size: x-small;
     text-transform: uppercase;
+    overflow-x: clip;
 }
 
 div.log > div.log-message {
