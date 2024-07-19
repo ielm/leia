@@ -1,4 +1,4 @@
-from flask import Blueprint, Flask, render_template
+from flask import Blueprint, Flask, render_template, send_from_directory
 from flask_cors import CORS
 import json
 import mimetypes
@@ -22,6 +22,7 @@ class DEKADEBlueprint(Blueprint):
         super().__init__(__name__, __name__, static_folder=app.static_folder, template_folder=app.template_folder)
         self.app = app
 
+        self.add_url_rule("/favicon.ico", endpoint=None, view_func=self.favicon, methods=["GET"])
         self.add_url_rule("/", endpoint=None, view_func=self.index, methods=["GET"])
         self.add_url_rule("/api", endpoint=None, view_func=self.api, methods=["GET"])
         self.add_url_rule("/handlebars/<template>", endpoint=None, view_func=self.handlebars_template, methods=["GET"])
@@ -29,6 +30,9 @@ class DEKADEBlueprint(Blueprint):
     def read_template(self, name: str) -> str:
         with open("%s/%s" % (self.template_folder, name), "r") as f:
             return f.read()
+
+    def favicon(self):
+        return send_from_directory(self.static_folder, "favicon.ico", mimetype="image/vnd.microsoft.icon")
 
     def index(self):
         return render_template("jinja/index.html", thing=123)
