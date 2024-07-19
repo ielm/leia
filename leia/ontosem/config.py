@@ -1,5 +1,5 @@
 from leia.ontomem.lexicon import Lexicon
-from leia.ontomem.memory import Memory, TCPMemory
+from leia.ontomem.memory import Memory
 from leia.ontomem.ontology import Ontology
 
 import os
