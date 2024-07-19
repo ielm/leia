@@ -27,16 +27,7 @@ $(document).ready(function() {
 
 
 async function _onOntologySidebarTreeClick(event) {
-    if (event.altKey) {
-        contentTabs.addObject(await new OntologyTree());
-        return;
-    }
-
-    const treeview = $(".ontology-sidebar-tree-viewer-container");
-    const container = $(".ontology-sidebar-search-results");
-
-    treeview.removeClass("hidden");
-    container.addClass("hidden");
+    contentTabs.addObject(await new OntologyTree(), !event.altKey);
 }
 
 
