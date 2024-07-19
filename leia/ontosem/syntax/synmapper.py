@@ -1,13 +1,20 @@
 from dataclasses import dataclass
-from leia.ontomem.lexicon import SynStruc
+from leia.ontomem.lexicon import Sense, SynStruc
 from leia.ontomem.ontology import Ontology
 from leia.ontosem.analysis import WMLexicon
 from leia.ontosem.config import OntoSemConfig
-from leia.ontosem.syntax.results import ConstituencyNode, Dependency, SynMap, Syntax, Word
-from typing import Iterable, List, Tuple, Type, Union
+from leia.ontosem.syntax.results import ConstituencyNode, Dependency, SenseMap, SynMap, Syntax, Word
+from typing import Any, Iterable, List, Tuple, Type, Union
 
 
 class SynMapper(object):
+
+    """
+    The job of the SynMapper is to find all possible variable matches for each sense of each word in the input
+    syntax.  The SynMapper does not prune any possibilities at this point, but does apply scoring penalties
+    when a sense is a poor match (e.g., it is the wrong POS, or not all of its non-optional synstruc elements
+    can be aligned to a syntactic component).
+    """
 
     def __init__(self, config: OntoSemConfig, ontology: Ontology, lexicon: WMLexicon):
         self.config = config
@@ -16,6 +23,43 @@ class SynMapper(object):
 
     def run(self, syntax: Syntax) -> SynMap:
         raise NotImplementedError
+
+    def build_sense_maps(self, syntax: Syntax, word: Word, sense: Sense) -> Iterable[SenseMap]:
+        results = SynMatcher(self.config, self.ontology, self.lexicon).run(syntax, sense.synstruc, root=word)
+
+        for result in results:
+            bindings = dict()
+
+            for match in result.matches:
+                varmap = self.map_variable(match)
+                if varmap is not None:
+                    bindings[varmap[0]] = varmap[1]
+
+            yield SenseMap(word, sense.id, bindings, 1.0)
+
+    def map_variable(self, match: 'SynMatcher.SynMatch') -> Union[Tuple[str, int], None]:
+        variable = match.element.to_variable()
+
+        if variable is None:
+            return None
+
+        if match.component is None:
+            return None
+
+        if isinstance(match, SynMatcher.RootMatch) and variable == 0:
+            return ("$VAR%d" % variable, match.component.index)
+
+        if isinstance(match, SynMatcher.TokenMatch):
+            return ("$VAR%d" % variable, match.component.index)
+
+        if isinstance(match, SynMatcher.DependencyMatch):
+            return ("$VAR%d" % variable, match.component.dependent.index)
+
+        if isinstance(match, SynMatcher.ConstituencyMatch):
+            return ("$VAR%d" % variable, match.component.leftmost_word().index)
+
+        # If none of the above can be selected, no variable can be mapped.
+        return None
 
 
 class SynMatcher(object):
@@ -31,27 +75,28 @@ class SynMatcher(object):
     """
 
     class SynMatch:
-        pass
+        element: SynStruc.Element
+        component: Any
 
     @dataclass
     class RootMatch(SynMatch):
         element: SynStruc.RootElement
-        match: Word
+        component: Word
 
     @dataclass
     class TokenMatch(SynMatch):
         element: SynStruc.TokenElement
-        match: Word
+        component: Word
 
     @dataclass
     class DependencyMatch(SynMatch):
         element: SynStruc.DependencyElement
-        match: Dependency
+        component: Dependency
 
     @dataclass
     class ConstituencyMatch(SynMatch):
         element: SynStruc.ConstituencyElement
-        match: ConstituencyNode
+        component: ConstituencyNode
 
     @dataclass
     class SynMatchResult(object):

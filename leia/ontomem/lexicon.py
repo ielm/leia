@@ -161,6 +161,9 @@ class SynStruc(object):
         def parse(cls, data: dict) -> 'SynStruc.Element':
             raise NotImplementedError
 
+        def to_variable(self) -> Union[int, None]:
+            raise NotImplementedError
+
         def is_optional(self) -> bool:
             raise NotImplementedError
 
@@ -175,6 +178,9 @@ class SynStruc(object):
         @classmethod
         def parse(cls, data: dict) -> 'SynStruc.RootElement':
             return SynStruc.RootElement()
+
+        def to_variable(self) -> Union[int, None]:
+            return self.variable
 
         def is_optional(self) -> bool:
             return False
@@ -201,6 +207,9 @@ class SynStruc(object):
                 data["opt"] if "opt" in data else False
             )
 
+        def to_variable(self) -> Union[int, None]:
+            return self.variable
+
         def is_optional(self) -> bool:
             return self.optional
 
@@ -225,6 +234,9 @@ class SynStruc(object):
                 data["var"] if "var" in data else None,
                 data["opt"] if "opt" in data else False
             )
+
+        def to_variable(self) -> Union[int, None]:
+            return self.variable
 
         def is_optional(self) -> bool:
             return self.optional
@@ -253,6 +265,9 @@ class SynStruc(object):
                 data["var"] if "var" in data else None,
                 data["opt"] if "opt" in data else False
             )
+
+        def to_variable(self) -> Union[int, None]:
+            return self.variable
 
         def is_optional(self) -> bool:
             return self.optional

@@ -10,7 +10,7 @@ class LEIATestCase(TestCase):
     # A test case with common helper methods
 
     def mockSense(self, sense: str, word: str=None, cat: str=None, definition: str=None, example: str=None, comments: str=None,
-                  synonyms: List[str]=None, hyponyms: List[str]=None, synstruc: dict=None, semstruc: Union[str, dict]=None,
+                  synonyms: List[str]=None, hyponyms: List[str]=None, synstruc: list=None, semstruc: Union[str, dict]=None,
                   tmrhead: str=None, meaning_procedures: List[List[str]]=None, output_syntax: Union[str, List[str]]=None,
                   example_deps: List[Tuple[str, str, str]]=None, example_bindings: List[str]=None, types: List[str]=None,
                   use_with_types: List[str]=None) -> dict:

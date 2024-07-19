@@ -1,17 +1,141 @@
-from leia.ontomem.lexicon import SynStruc
+from leia.ontomem.lexicon import Sense, SynStruc
 from leia.ontomem.memory import Memory
 from leia.ontosem.analysis import WMLexicon
 from leia.ontosem.config import OntoSemConfig
-from leia.ontosem.syntax.results import ConstituencyNode, Dependency, Syntax
+from leia.ontosem.syntax.results import ConstituencyNode, Dependency, SenseMap, Syntax
 from leia.ontosem.syntax.synmapper import SynMatcher, SynMapper
 from leia.tests.LEIATestCase import LEIATestCase
-from unittest.mock import MagicMock
+from unittest.mock import MagicMock, patch
 
 
 class SynMapperTestCase(LEIATestCase):
 
     def setUp(self):
         self.m = Memory("", "", "")
+        self.mapper = SynMapper(OntoSemConfig(), self.m.ontology, WMLexicon())
+
+    @patch("leia.ontosem.syntax.synmapper.SynMatcher.run")
+    def test_build_sense_maps(self, mock_matcher: MagicMock):
+        sense = Sense(self.m, "word-N1", contents=self.mockSense("word-N1", synstruc=[{"type": "root"}]))
+        word = self.mockWord(123, "word", "N")
+        syntax = Syntax([word], "", "", ConstituencyNode(""), [])
+
+        mock_matcher.return_value = [
+            SynMatcher.SynMatchResult([
+                SynMatcher.RootMatch(sense.synstruc.elements[0], word)
+            ])
+        ]
+
+        maps = list(self.mapper.build_sense_maps(syntax, word, sense))
+
+        self.assertEqual([
+            SenseMap(word, "word-N1", {"$VAR0": 123}, 1.0)
+        ], maps)
+
+    @patch("leia.ontosem.syntax.synmapper.SynMatcher.run")
+    def test_build_sense_maps_multiple_elements(self, mock_matcher: MagicMock):
+        sense = Sense(self.m, "root-V1", contents=self.mockSense("root-V1", synstruc=[
+            {"type": "root"},
+            {"type": "token", "lemma": [], "pos": "N", "morph": {}, "var": 1},
+        ]))
+        root = self.mockWord(1, "root", "V")
+        noun = self.mockWord(2, "noun", "N")
+        syntax = Syntax([root, noun], "", "", ConstituencyNode(""), [])
+
+        mock_matcher.return_value = [
+            SynMatcher.SynMatchResult([
+                SynMatcher.RootMatch(sense.synstruc.elements[0], root),
+                SynMatcher.TokenMatch(sense.synstruc.elements[1], noun)
+            ]),
+        ]
+
+        maps = list(self.mapper.build_sense_maps(syntax, root, sense))
+
+        self.assertEqual([
+            SenseMap(root, "root-V1", {"$VAR0": 1, "$VAR1": 2}, 1.0),
+        ], maps)
+
+    @patch("leia.ontosem.syntax.synmapper.SynMatcher.run")
+    def test_build_sense_maps_multiple_matches(self, mock_matcher: MagicMock):
+        sense = Sense(self.m, "root-V1", contents=self.mockSense("root-V1", synstruc=[
+            {"type": "root"},
+            {"type": "token", "lemma": [], "pos": "N", "morph": {}, "var": 1},
+        ]))
+        root = self.mockWord(1, "root", "V")
+        noun1 = self.mockWord(2, "noun", "N")
+        noun2 = self.mockWord(3, "noun", "N")
+        syntax = Syntax([root, noun1, noun2], "", "", ConstituencyNode(""), [])
+
+        mock_matcher.return_value = [
+            SynMatcher.SynMatchResult([
+                SynMatcher.RootMatch(sense.synstruc.elements[0], root),
+                SynMatcher.TokenMatch(sense.synstruc.elements[1], noun1)
+            ]),
+            SynMatcher.SynMatchResult([
+                SynMatcher.RootMatch(sense.synstruc.elements[0], root),
+                SynMatcher.TokenMatch(sense.synstruc.elements[1], noun2)
+            ]),
+        ]
+
+        maps = list(self.mapper.build_sense_maps(syntax, root, sense))
+
+        self.assertEqual([
+            SenseMap(root, "root-V1", {"$VAR0": 1, "$VAR1": 2}, 1.0),
+            SenseMap(root, "root-V1", {"$VAR0": 1, "$VAR1": 3}, 1.0),
+        ], maps)
+
+    def test_map_variable_no_variable(self):
+        element = SynStruc.TokenElement({"word"}, "N", dict(), None, False)
+        component = self.mockWord(123, "word", "N")
+        match = SynMatcher.TokenMatch(element, component)
+
+        # If an element in a match has no variable assigned to it, then no mapping can occur.  This is true for
+        # all match / element types.
+        self.assertIsNone(self.mapper.map_variable(match))
+
+    def test_map_variable_no_matched_component(self):
+        element = SynStruc.RootElement()
+        match = SynMatcher.RootMatch(element, None)
+
+        # If any match object has no component (meaning no match was found by the matcher), then no variable
+        # can be mapped.  None is returned.  This is true for all match / element types.
+        self.assertIsNone(self.mapper.map_variable(match))
+
+    def test_map_variable_root_element(self):
+        element = SynStruc.RootElement()
+        component = self.mockWord(123, "word", "N")
+        match = SynMatcher.RootMatch(element, component)
+
+        # When a root element is matched, variable 0 is always used; the mapping is to the matched token.
+        self.assertEqual(("$VAR0", 123), self.mapper.map_variable(match))
+
+    def test_map_variable_token_element(self):
+        element = SynStruc.TokenElement({"word"}, "N", dict(), 3, False)
+        component = self.mockWord(123, "word", "N")
+        match = SynMatcher.TokenMatch(element, component)
+
+        # When a token element is matched, the variable specified on the element is used; the mapping is to the matched token.
+        self.assertEqual(("$VAR3", 123), self.mapper.map_variable(match))
+
+    def test_map_variable_dependency_element(self):
+        element = SynStruc.DependencyElement("NSUBJ", None, None, 3, False)
+        dependency = Dependency(self.mockWord(123, "word", "V"), self.mockWord(456, "word", "N"), "NSUBJ")
+        match = SynMatcher.DependencyMatch(element, dependency)
+
+        # When a dependency element is matched, the variable specified on the element is used; the mapping is to the dependent token.
+        self.assertEqual(("$VAR3", 456), self.mapper.map_variable(match))
+
+    def test_map_variable_constituency_element(self):
+        element = SynStruc.ConstituencyElement("NP", [], 3, False)
+        constituency = ConstituencyNode("NP")
+        constituency.children = [self.mockWord(123, "word", "V"), self.mockWord(456, "word", "N")]
+        match = SynMatcher.ConstituencyMatch(element, constituency)
+
+        # When a constituency element is matched, the variable specified on the element is used; the mapping is to the leftmost token.
+        self.assertEqual(("$VAR3", 123), self.mapper.map_variable(match))
+
+    def test_run(self):
+        fail()
 
 
 class SynMatcherTestCase(LEIATestCase):
