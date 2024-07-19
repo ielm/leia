@@ -739,7 +739,9 @@ class ConceptEvaluateTestCase(TestCase):
 
     def test_simple_literal(self):
         concept = self.m.ontology.concept("concept")
-        concept.add_local("literal1", "sem", ["A", "B", "C"])
+        concept.add_local("literal1", "sem", "A")
+        concept.add_local("literal1", "sem", "B")
+        concept.add_local("literal1", "sem", "C")
         concept.add_local("literal2", "sem", WILDCARD.ANYLIT)
 
         self.assertEqual(0.9, concept.evaluate("literal1", "A"))     # The value is part of the local definition
@@ -849,7 +851,9 @@ class ConceptEvaluateTestCase(TestCase):
         child.add_parent(parent)
         parent.add_parent(grandparent)
 
-        grandparent.add_local("literal", "sem", ["A", "B", "C"])
+        grandparent.add_local("literal", "sem", "A")
+        grandparent.add_local("literal", "sem", "B")
+        grandparent.add_local("literal", "sem", "C")
 
         self.assertEqual(0.9, child.evaluate("literal", "A"))
         self.assertEqual(0.9, child.evaluate("literal", "B"))
@@ -864,8 +868,11 @@ class ConceptEvaluateTestCase(TestCase):
 
         child.add_parent(parent)
 
-        parent.add_local("literal", "sem", ["A", "B", "C"])
-        child.add_local("literal", "relaxable-to", ["D", "E"])
+        parent.add_local("literal", "sem", "A")
+        parent.add_local("literal", "sem", "B")
+        parent.add_local("literal", "sem", "C")
+        child.add_local("literal", "relaxable-to", "D")
+        child.add_local("literal", "relaxable-to", "E")
         child.add_local("literal", "value", "Z")
 
         self.assertEqual(1.0, child.evaluate("literal", "Z"))
@@ -880,9 +887,12 @@ class ConceptEvaluateTestCase(TestCase):
 
         concept = self.m.ontology.concept("concept")
         concept.add_local("literal", "default", "Z")
-        concept.add_local("literal", "sem", ["A", "B"])
-        concept.add_local("literal", "relaxable-to", ["C", "D"])
-        concept.add_local("literal", "not", ["E", "F"])
+        concept.add_local("literal", "sem", "A")
+        concept.add_local("literal", "sem", "B")
+        concept.add_local("literal", "relaxable-to", "C")
+        concept.add_local("literal", "relaxable-to", "D")
+        concept.add_local("literal", "not", "E")
+        concept.add_local("literal", "not", "F")
 
         self.assertEqual(1.0, concept.evaluate("literal", "Z"))
         self.assertEqual(0.9, concept.evaluate("literal", "A"))
@@ -896,8 +906,10 @@ class ConceptEvaluateTestCase(TestCase):
         # If multiple values are defined, they are OR'd together
 
         concept = self.m.ontology.concept("concept")
-        concept.add_local("literal", "sem", ["A", "B"])
-        concept.add_local("literal", "sem", ["C", "D"])
+        concept.add_local("literal", "sem", "A")
+        concept.add_local("literal", "sem", "B")
+        concept.add_local("literal", "sem", "C")
+        concept.add_local("literal", "sem", "D")
 
         self.assertEqual(0.9, concept.evaluate("literal", "A"))
         self.assertEqual(0.9, concept.evaluate("literal", "B"))

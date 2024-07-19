@@ -92,7 +92,7 @@ class Concept(object):
         'Concept',
         'Property',
         'OSet',
-        List[str],
+        str,
         Tuple['COMPARATOR', Union[int, float]],
         Tuple['COMPARATOR', Union[int, float], Union[int, float]],
         'WILDCARD',
@@ -370,8 +370,6 @@ class Concept(object):
 
         if isinstance(existing, str):
             return 1.0 if literal == existing else 0.0
-        if isinstance(existing, list):
-            return 1.0 if literal in existing else 0.0
         if existing == WILDCARD.ANYLIT:
             return 1.0
         return 0.0
