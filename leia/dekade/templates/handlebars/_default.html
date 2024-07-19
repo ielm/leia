@@ -1,0 +1,15 @@
+<div class="leia-default-object">
+    <div class="leia-default-object-message">Default LEIA object renderer; override templateName() to provide a custom view.</div>
+    <table class="leia-default-object-contents">
+        <tr>
+            <th>Key</th>
+            <th>Value</th>
+        </tr>
+        {{#each this}}
+        <tr>
+            <td>{{@key}}</td>
+            <td>{{this}}</td>
+        </tr>
+        {{/each}}
+    </table>
+</div>

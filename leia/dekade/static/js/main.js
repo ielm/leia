@@ -1,0 +1,1 @@
+export { Concept } from "./objects/concept.js";
