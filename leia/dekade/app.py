@@ -185,15 +185,15 @@ class DEKADEAPIBlueprint(Blueprint):
 
         input = data["input"]
 
-        # config_file = "../../ontosem.yaml"
-        # config = OntoSemConfig.from_file(config_file)
-        # config._memory = self.app.agent.memory
-        #
-        # runner = OntoSemRunner(config)
-        # results = runner.run([input])
-        # results = results.to_dict()
+        config_file = "../../ontosem.yaml"
+        config = OntoSemConfig.from_file(config_file)
+        config._memory = self.app.agent.memory
 
-        results = cached_tmr
+        runner = OntoSemRunner(config)
+        results = runner.run([input])
+        results = results.to_dict()
+
+        # results = cached_tmr
 
         return json.dumps(results)
 

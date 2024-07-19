@@ -46,6 +46,9 @@ class OntoSemRunner(object):
         self.config = config
         self.timed_results = OntoSemTimedResults()
 
+        print("WARNING: Overriding ontosyn_lexicon path to '%s'" % "ontosyn/lisp/lexicon.lisp")
+        self.config.ontosyn_lexicon = "ontosyn/lisp/lexicon.lisp"
+
     def run_from_file(self, file: str) -> Analysis:
         f = open(file, "r")
         sentences = json.load(f)
