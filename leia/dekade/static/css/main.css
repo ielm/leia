@@ -67,3 +67,12 @@ a[is=content-link] {
 a[is=content-link]:hover {
     cursor: pointer;
 }
+
+.empty-contents-message {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    color: #484848;
+}
