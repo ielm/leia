@@ -48,4 +48,8 @@ if __name__ == "__main__":
 
 
     app = DEKADE()
+    app.config.update(
+        TEMPLATES_AUTO_RELOAD=True,
+    )
+
     app.run("", 5000)
