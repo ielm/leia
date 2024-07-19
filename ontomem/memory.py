@@ -10,3 +10,8 @@ class Memory(object):
         self.lexicon = Lexicon(self, lex_path, load_now=False)
         self.properties = PropertyInventory(self, props_path, load_now=False)
         self.ontology = Ontology(self, ont_path, load_now=False)
+
+
+class TCPMemory(object):
+
+    pass

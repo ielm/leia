@@ -2,7 +2,7 @@ from enum import Enum
 from multiprocessing import Pool
 from ontomem.memory import Memory
 from ontomem.ontology import Concept
-from typing import List, Set, Tuple, Union
+from typing import Dict, List, Set, Tuple, Union
 
 import json
 import os
@@ -84,6 +84,9 @@ class Property(object):
         return self.memory.properties.get_property(c)
 
     def inverse(self) -> Union[str, None]:
+        if "inverse" not in self.contents:
+            return "%s-INVERSE" % self.name
+
         i = self.contents["inverse"]
         if isinstance(i, str):
             i = i[1:]
@@ -169,6 +172,11 @@ class PropertyInventory(object):
         if name not in self.cache:
             self.cache[name] = Property(self.memory, name)
         return self.cache[name]
+
+    def inverses(self) -> Dict[str, str]:
+        return dict(
+            map(lambda p: (p.inverse(), p.name), filter(lambda p: p.is_relation(), self.cache.values()))
+        )
 
 
 if __name__ == "__main__":
