@@ -110,3 +110,28 @@ class SynMatcher(object):
 
         # No filtering has occurred; the dependency is considered a match
         return True
+
+    def does_constituency_match(self, element: SynStruc.ConstituencyElement, node: ConstituencyNode) -> bool:
+        # The type must match
+        if element.type.lower() != node.label.lower():
+            return False
+
+        # If any children are specified, they must be found, IN ORDER, in the node;
+        # valid children are more constituencies, or tokens.
+        candidate_children = iter(node.children)
+        for child in element.children:
+            found = False
+            for candidate_child in candidate_children:
+                if isinstance(child, SynStruc.ConstituencyElement) and isinstance(candidate_child, ConstituencyNode):
+                    if self.does_constituency_match(child, candidate_child):
+                        found = True
+                        break
+                if isinstance(child, SynStruc.TokenElement) and isinstance(candidate_child, Word):
+                    if self.does_token_match(child, candidate_child):
+                        found = True
+                        break
+            if not found:
+                return False
+
+        # No filtering has occurred; the constituency is considered a match
+        return True

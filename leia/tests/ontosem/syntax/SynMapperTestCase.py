@@ -2,7 +2,7 @@ from leia.ontomem.lexicon import SynStruc
 from leia.ontomem.memory import Memory
 from leia.ontosem.analysis import WMLexicon
 from leia.ontosem.config import OntoSemConfig
-from leia.ontosem.syntax.results import Dependency
+from leia.ontosem.syntax.results import ConstituencyNode, Dependency
 from leia.ontosem.syntax.synmapper import SynMatcher, SynMapper
 from leia.tests.LEIATestCase import LEIATestCase
 
@@ -136,15 +136,92 @@ class SynMatcherTestCase(LEIATestCase):
         self.assertFalse(self.matcher.does_dependency_match(element, dep2, gov))
         self.assertFalse(self.matcher.does_dependency_match(element, dep3, gov))
 
+    def test_does_constituency_match_no_children(self):
+        node1 = ConstituencyNode("NP")
+        node2 = ConstituencyNode("VP")
+
+        element = SynStruc.ConstituencyElement("NP", [], None, False)
+
+        # The node type must always be a match, regardless of any children
+        self.assertTrue(self.matcher.does_constituency_match(element, node1))
+        self.assertFalse(self.matcher.does_constituency_match(element, node2))
+
+    def test_does_constituency_match_with_constituency_children(self):
+        node1 = ConstituencyNode("NP")
+        node1.children = [ConstituencyNode("X")]
+
+        node2 = ConstituencyNode("NP")
+        node2.children = [ConstituencyNode("Y")]
+
+        element = SynStruc.ConstituencyElement("NP", [SynStruc.ConstituencyElement("X", [], None, False)], None, False)
+
+        # The children must match as well as the outer type.  Children can be other constituency nodes.
+        self.assertTrue(self.matcher.does_constituency_match(element, node1))
+        self.assertFalse(self.matcher.does_constituency_match(element, node2))
+
+    def test_does_constituency_match_with_token_children(self):
+        node1 = ConstituencyNode("NP")
+        node1.children = [self.mockWord(0, "a", "N")]
+
+        node2 = ConstituencyNode("NP")
+        node2.children = [self.mockWord(0, "b", "N")]
+
+        element = SynStruc.ConstituencyElement("NP", [SynStruc.TokenElement({"a"}, "N", dict(), None, False)], None, False)
+
+        # The children must match as well as the outer type.  Children can be words.
+        self.assertTrue(self.matcher.does_constituency_match(element, node1))
+        self.assertFalse(self.matcher.does_constituency_match(element, node2))
+
+    def test_does_constituency_match_with_multiple_children(self):
+        node1 = ConstituencyNode("NP")
+        node1.children = [ConstituencyNode("X"), ConstituencyNode("Y")]
+
+        node2 = ConstituencyNode("NP")
+        node2.children = [ConstituencyNode("X")]
+
+        node3 = ConstituencyNode("NP")
+        node3.children = [ConstituencyNode("Y"), ConstituencyNode("X")]
+
+        element = SynStruc.ConstituencyElement("NP", [
+            SynStruc.ConstituencyElement("X", [], None, False),
+            SynStruc.ConstituencyElement("Y", [], None, False),
+        ], None, False)
+
+        # Multiple children may be required; their ordering matters..
+        self.assertTrue(self.matcher.does_constituency_match(element, node1))
+        self.assertFalse(self.matcher.does_constituency_match(element, node2))
+        self.assertFalse(self.matcher.does_constituency_match(element, node3))
+
+    def test_does_constituency_match_recursive_children(self):
+        node1 = ConstituencyNode("NP")
+        node1a = ConstituencyNode("A")
+        node1b = ConstituencyNode("B")
+        node1c = ConstituencyNode("C")
+
+        node1.children = [node1a, node1b]
+        node1a.children = [node1c]
+
+        node2 = ConstituencyNode("NP")
+        node2a = ConstituencyNode("A")
+        node2b = ConstituencyNode("B")
+        node2c = ConstituencyNode("C")
+
+        node2.children = [node2a, node2b]
+        node2b.children = [node2c]
+
+        element = SynStruc.ConstituencyElement("NP", [
+            SynStruc.ConstituencyElement("A", [
+                SynStruc.ConstituencyElement("C", [], None, False)
+            ], None, False),
+            SynStruc.ConstituencyElement("B", [], None, False),
+        ], None, False)
+
+        # The child structure is fully recursive.
+        self.assertTrue(self.matcher.does_constituency_match(element, node1))
+        self.assertFalse(self.matcher.does_constituency_match(element, node2))
+
     """
     TODO: tests to run:
-    - can it match a dependency
-        - type (from root)
-        - type (without root, matches all possible)
-    - can it match a constituency
-        - type
-        - with children
-        - recursive
     - does it match multiple elements in a row
         - respect ordering (for now, allow gapping)
         - ordering for constituencies at the top level implies flattening
