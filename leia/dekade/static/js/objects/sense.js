@@ -11,7 +11,18 @@ export class Sense extends LEIAObject {
     prepareData() {
         return {
             ...super.prepareData(),
-            sense: this.content
+            sense: this.content["SENSE"],
+            word: this.content["WORD"],
+            pos: this.content["CAT"],
+            comments: this.content["COMMENTS"],
+            definition: this.content["DEF"],
+            example: this.content["EX"],
+            synonyms: this.content["SYNONYMS"],
+            hyponyms: this.content["HYPONYMS"],
+            tmrhead: this.content["TMR-HEAD"],
+            synstruc: this.content["SYN-STRUC"],
+            semstruc: this.content["SEM-STRUC"],
+            mps: this.content["MEANING-PROCEDURES"],
         }
     }
 

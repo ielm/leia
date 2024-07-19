@@ -91,13 +91,21 @@ class Sense(object):
 
     def __init__(self, memory: Memory, id: str, contents: dict=None):
         self.memory = memory
-        self.id = id
+        self.id: str = id
 
-        self.word = None
-        self.pos = None
-        self.synstruc = None
-        self.semstruc = None
-        self.meaning_procedures = []
+        self.word: Word = None
+        self.pos: str = None
+        self.synstruc: SynStruc = None
+        self.semstruc: SemStruc = None
+        self.meaning_procedures: List[MeaningProcedure] = []
+        self.tmr_head: str = None
+
+        self.definition: str = None
+        self.example: str = None
+        self.comments: str = None
+
+        self._synonyms: List[str] = []
+        self._hyponyms: List[str] = []
 
         if contents is not None:
             self._index(contents)
@@ -108,6 +116,12 @@ class Sense(object):
         self.synstruc = SynStruc(contents=contents["SYN-STRUC"])
         self.semstruc = SemStruc(contents["SEM-STRUC"])
         self.meaning_procedures = list(map(lambda mp: MeaningProcedure(mp), contents["MEANING-PROCEDURES"]))
+        self.tmr_head = contents["TMR-HEAD"]
+
+        self.definition = contents["DEF"]
+        self.example = contents["EX"]
+        self.comments = contents["COMMENTS"]
+
         self._synonyms = list(contents["SYNONYMS"]) if "SYNONYMS" in contents else []
         self._hyponyms = list(contents["HYPONYMS"]) if "HYPONYMS" in contents else []
 
@@ -124,14 +138,15 @@ class Sense(object):
             "SYN-STRUC": self.synstruc.to_dict(),
             "SEM-STRUC": self.semstruc.to_dict(),
             "MEANING-PROCEDURES": list(map(lambda mp: mp.to_dict(), self.meaning_procedures)),
+            "TMR-HEAD": self.tmr_head,
 
-            "COMMENTS": "",
-            "DEF": "",
-            "EX": "",
+            "COMMENTS": self.comments,
+            "DEF": self.definition,
+            "EX": self.example,
+
             "EXAMPLE-BINDINGS": [],
             "EXAMPLE-DEPS": [],
             "OUTPUT-SYNTAX": [],
-            "TMR-HEAD": None,
             "TYPES": [],
             "USE-WITH-TYPES": []
         }

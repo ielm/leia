@@ -135,9 +135,13 @@ class WMLexiconLoader(object):
             "SENSE": id,
             "WORD": word.lemma.upper(),
             "CAT": word.pos,
+            "TMR-HEAD": None,
             "SYN-STRUC": [{"type": "root"}],
             "SEM-STRUC": semstruc,
-            "MEANING-PROCEDURES": []
+            "MEANING-PROCEDURES": [],
+            "DEF": "generated sense",
+            "EX": "",
+            "COMMENTS": "generated for unknown word #%s" % word.index
         })
 
         self.analysis.log("Generated sense $sense for unknown word #$word", type="knowledge", source=self.__class__, sense=id, word=word.index)

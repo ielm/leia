@@ -3,10 +3,10 @@
   "senses": {
     "MAN-N1": {
       "CAT": "N",
-      "DEF": "",
+      "DEF": "male human being",
       "EX": "",
       "COMMENTS": "",
-      "TMR-HEAD": "NIL",
+      "TMR-HEAD": null,
       "SYN-STRUC": [
         {"type": "root"}
       ],
@@ -28,10 +28,10 @@
     },
     "MAN-V1": {
       "CAT": "V",
-      "DEF": "",
+      "DEF": "to protect or defend a position",
       "EX": "",
       "COMMENTS": "",
-      "TMR-HEAD": "NIL",
+      "TMR-HEAD": null,
       "SYN-STRUC": [
         {"type": "dependency", "deptype": "NSUBJ", "var": 1},
         {"type": "root"},

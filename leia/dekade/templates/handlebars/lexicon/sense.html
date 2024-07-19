@@ -1,5 +1,80 @@
 <div class="sense">
 
-    {{{json sense}}}
+    <div class="sense-header">
+        <span class="sense-name">~{{sense}}</span>
+    </div>
+
+    <div class="sense-descriptions">
+        <div class="sense-field-label">Definition</div>
+        {{#if definition}}
+            <div class="sense-field-content">{{definition}}</div>
+        {{else}}
+            <div class="sense-field-content empty">None.</div>
+        {{/if}}
+
+        <div class="sense-field-label">Example</div>
+        {{#if example}}
+            <div class="sense-field-content">{{example}}</div>
+        {{else}}
+            <div class="sense-field-content empty">None.</div>
+        {{/if}}
+
+        <div class="sense-field-label">Comments</div>
+        {{#if comments}}
+            <div class="sense-field-content">{{comments}}</div>
+        {{else}}
+            <div class="sense-field-content empty">None.</div>
+        {{/if}}
+    </div>
+
+    <div class="sense-alternates">
+        <div class="sense-field-label">Synonyms</div>
+        {{#if synonyms}}
+            <div class="sense-field-content">
+                {{#each synonyms}}
+                    {{this}}
+                    {{#unless @last}},{{/unless}}
+                {{/each}}
+            </div>
+        {{else}}
+            <div class="sense-field-content empty">None.</div>
+        {{/if}}
+
+        <div class="sense-field-label">Hyponyms</div>
+        {{#if hyponyms}}
+            <div class="sense-field-content">
+                {{#each hyponyms}}
+                    {{this}}
+                    {{#unless @last}},{{/unless}}
+                {{/each}}
+            </div>
+        {{else}}
+            <div class="sense-field-content empty">None.</div>
+        {{/if}}
+    </div>
+
+    <hr>
+
+    <div class="sense-synstruc">
+        <div class="sense-field-label">Syn-Struc</div>
+        {{{json synstruc}}}
+    </div>
+
+    <hr>
+
+    <div class="sense-semantics">
+        <div class="sense-field-label">TMR Head</div>
+        {{#if tmrhead}}
+            <div class="sense-field-content">{{tmrhead}}</div>
+        {{else}}
+            <div class="sense-field-content empty">None.</div>
+        {{/if}}
+
+        <div class="sense-field-label">Sem-Struc</div>
+        {{{json semstruc}}}
+
+        <div class="sense-field-label">Meaning Procedures</div>
+        {{{json mps}}}
+    </div>
 
 </div>

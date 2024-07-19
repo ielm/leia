@@ -6,7 +6,7 @@
       "DEF": "ingest",
       "EX": "",
       "COMMENTS": "",
-      "TMR-HEAD": "NIL",
+      "TMR-HEAD": null,
       "SYN-STRUC": [
         {"type": "dependency", "deptype": "NSUBJ", "var": 2},
         {"type": "root"},
@@ -57,7 +57,7 @@
       "DEF": "phrasal: eat away at X = to wear away something by rubbing, etc.",
       "EX": "the acid ate away at the fence",
       "COMMENTS": "",
-      "TMR-HEAD": "NIL",
+      "TMR-HEAD": null,
       "SYN-STRUC": [
         {"type": "dependency", "deptype": "NSUBJ", "var": 1},
         {"type": "root"},
@@ -129,7 +129,7 @@
       "DEF": "phrasal: eat away at X = to destroy gradually (abstract)",
       "EX": "the scorn of his teachers ate away at his self-confidence",
       "COMMENTS": "",
-      "TMR-HEAD": "NIL",
+      "TMR-HEAD": null,
       "SYN-STRUC": [
         {"type": "dependency", "deptype": "NSUBJ", "var": 1},
         {"type": "root"},

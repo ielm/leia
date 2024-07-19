@@ -3,3 +3,23 @@ div.sense {
     overflow-y: scroll;
     height: 100%;
 }
+
+div.sense div.sense-header {
+    font-weight: bold;
+}
+
+div.sense div.sense-field-label {
+    font-size: small;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: -3px;
+    color: #686868;
+}
+
+div.sense div.sense-field-content {
+
+}
+
+div.sense div.sense-field-content.empty {
+    font-style: italic;
+}
