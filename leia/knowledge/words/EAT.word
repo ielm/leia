@@ -1,1 +1,231 @@
-{"word": "EAT", "senses": {"EAT-V1": {"CAT": "V", "DEF": "ingest", "EX": "", "COMMENTS": "", "TMR-HEAD": "NIL", "SYN-STRUC": {"SUBJECT": {"ROOT": "$VAR2", "CAT": "NP"}, "ROOT": "$VAR0", "CAT": "V", "DIRECTOBJECT": {"ROOT": "$VAR3", "OPT": "+", "CAT": "NP"}}, "SEM-STRUC": {"INGEST": {"AGENT": {"VALUE": "^$VAR2"}, "THEME": {"VALUE": "^$VAR3"}}}, "OUTPUT-SYNTAX": [], "MEANING-PROCEDURES": [], "EXAMPLE-BINDINGS": ["THE", "MAN-2", "ATE-0", "THE", "FOOD-3"], "EXAMPLE-DEPS": [["DOBJ", "$VAR0", "$VAR3"], ["NSUBJ", "$VAR0", "$VAR2"]], "SYNONYMS": [], "HYPONYMS": ["SUP"], "SENSE": "EAT-V1", "WORD": "EAT", "TYPES": [], "USE-WITH-TYPES": []}, "EAT-V2": {"CAT": "V", "DEF": "phrasal: eat away at X = to wear away something by rubbing, etc.", "EX": "the acid ate away at the fence", "COMMENTS": "", "TMR-HEAD": "NIL", "SYN-STRUC": {"SUBJECT": {"ROOT": "$VAR1", "CAT": "NP"}, "ROOT": "$VAR0", "CAT": "V", "PREP-PART": {"ROOT-WORD": "AWAY", "ROOT": "$VAR2", "CAT": "PREP"}, "PP": {"ROOT-WORD": "AT", "ROOT": "$VAR4", "CAT": "PREP", "OBJ": {"ROOT": "$VAR3", "CAT": "N"}}}, "SEM-STRUC": {"ERODE": {"INSTRUMENT": {"VALUE": "^$VAR1"}, "THEME": {"VALUE": "^$VAR3"}}, "^$VAR2": {"NULL-SEM": "+"}, "^$VAR4": {"NULL-SEM": "+"}}, "OUTPUT-SYNTAX": [], "MEANING-PROCEDURES": [], "EXAMPLE-BINDINGS": ["THE", "ACID-1", "IS", "EATING-0", "AWAY-2", "AT-4", "THE", "FENCE-3"], "EXAMPLE-DEPS": [["NSUBJ", "$VAR0", "$VAR1"], ["PREP", "$VAR0", "$VAR4"], ["ADVMOD", "$VAR0", "$VAR2"], ["POBJ", "$VAR4", "$VAR3"]], "SYNONYMS": [], "HYPONYMS": [], "SENSE": "EAT-V2", "WORD": "EAT", "TYPES": [], "USE-WITH-TYPES": []}, "EAT-V3": {"CAT": "V", "DEF": "phrasal: eat away at X = to destroy gradually (abstract)", "EX": "the scorn of his teachers ate away at his self-confidence", "COMMENTS": "", "TMR-HEAD": "NIL", "SYN-STRUC": {"SUBJECT": {"ROOT": "$VAR1", "CAT": "NP"}, "ROOT": "$VAR0", "CAT": "V", "PREP-PART": {"ROOT-WORD": "AWAY", "ROOT": "$VAR2", "CAT": "PREP"}, "PP": {"ROOT-WORD": "AT", "ROOT": "$VAR4", "CAT": "PREP", "OBJ": {"ROOT": "$VAR3", "CAT": "N"}}}, "SEM-STRUC": {"CHANGE-EVENT": {"AGENT": {"VALUE": "^$VAR1"}, "PRECONDITION": {"VALUE": "REFSEM1"}, "EFFECT": {"VALUE": "REFSEM2"}}, "REFSEM1": {"ABSTRACT-OBJECT": {"DOMAIN": {"VALUE": "^$VAR3", "SEM": ["NOT", "PHYSICAL-OBJECT"]}, "REPRESENTS": "STATE-OF-AFFAIRS"}}, "REFSEM2": {"ABSTRACT-OBJECT": {"DOMAIN": {"VALUE": "^$VAR3"}, "REPRESENTS": "STATE-OF-AFFAIRS"}}, "^$VAR2": {"NULL-SEM": "+"}, "^$VAR4": {"NULL-SEM": "+"}, "ABSTRACT-OBJECT": {"DOMAIN": {"VALUE": "REFSEM2.RANGE"}, "RANGE": {"VALUE": "REFSEM1.RANGE"}, "REPRESENTS": "LESS-THAN"}}, "OUTPUT-SYNTAX": [], "MEANING-PROCEDURES": [], "EXAMPLE-BINDINGS": ["THE", "MAN-1", "ATE-0", "AWAY-2", "AT-4", "THE", "FOOD-3"], "EXAMPLE-DEPS": [["NSUBJ", "$VAR0", "$VAR1"], ["PREP", "$VAR0", "$VAR4"], ["ADVMOD", "$VAR0", "$VAR2"], ["POBJ", "$VAR4", "$VAR3"]], "SYNONYMS": [], "HYPONYMS": [], "SENSE": "EAT-V3", "WORD": "EAT", "TYPES": [], "USE-WITH-TYPES": []}}}
+{
+  "word": "EAT",
+  "senses": {
+    "EAT-V1": {
+      "CAT": "V",
+      "DEF": "ingest",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": [
+        {"type": "dependency", "deptype": "NSUBJ", "var": 2},
+        {"type": "root"},
+        {"type": "dependency", "deptype": "DOBJ", "var": 3, "opt": true}
+      ],
+      "SEM-STRUC": {
+        "INGEST": {
+          "AGENT": {
+            "VALUE": "^$VAR2"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-2",
+        "ATE-0",
+        "THE",
+        "FOOD-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "DOBJ",
+          "$VAR0",
+          "$VAR3"
+        ],
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR2"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [
+        "SUP"
+      ],
+      "SENSE": "EAT-V1",
+      "WORD": "EAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EAT-V2": {
+      "CAT": "V",
+      "DEF": "phrasal: eat away at X = to wear away something by rubbing, etc.",
+      "EX": "the acid ate away at the fence",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": [
+        {"type": "dependency", "deptype": "NSUBJ", "var": 1},
+        {"type": "root"},
+        {"type": "token", "lemma": ["away"], "pos": null, "morph": {}, "var": 2},
+        {"type": "constituency", "contype": "PP", "children": [
+          {"type": "token", "lemma": ["at"], "pos": null, "morph": {}, "var": 4},
+          {"type": "constituency", "contype": "NP", "children": [], "var": 3}
+        ]}
+      ],
+      "SEM-STRUC": {
+        "ERODE": {
+          "INSTRUMENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR3"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "ACID-1",
+        "IS",
+        "EATING-0",
+        "AWAY-2",
+        "AT-4",
+        "THE",
+        "FENCE-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR4"
+        ],
+        [
+          "ADVMOD",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR4",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EAT-V2",
+      "WORD": "EAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "EAT-V3": {
+      "CAT": "V",
+      "DEF": "phrasal: eat away at X = to destroy gradually (abstract)",
+      "EX": "the scorn of his teachers ate away at his self-confidence",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": [
+        {"type": "dependency", "deptype": "NSUBJ", "var": 1},
+        {"type": "root"},
+        {"type": "token", "lemma": ["away"], "pos": null, "morph": {}, "var": 2},
+        {"type": "constituency", "contype": "PP", "children": [
+          {"type": "token", "lemma": ["at"], "pos": null, "morph": {}, "var": 4},
+          {"type": "constituency", "contype": "NP", "children": [], "var": 3}
+        ]}
+      ],
+      "SEM-STRUC": {
+        "CHANGE-EVENT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "PRECONDITION": {
+            "VALUE": "REFSEM1"
+          },
+          "EFFECT": {
+            "VALUE": "REFSEM2"
+          }
+        },
+        "REFSEM1": {
+          "ABSTRACT-OBJECT": {
+            "DOMAIN": {
+              "VALUE": "^$VAR3",
+              "SEM": [
+                "NOT",
+                "PHYSICAL-OBJECT"
+              ]
+            },
+            "REPRESENTS": "STATE-OF-AFFAIRS"
+          }
+        },
+        "REFSEM2": {
+          "ABSTRACT-OBJECT": {
+            "DOMAIN": {
+              "VALUE": "^$VAR3"
+            },
+            "REPRESENTS": "STATE-OF-AFFAIRS"
+          }
+        },
+        "^$VAR2": {
+          "NULL-SEM": "+"
+        },
+        "^$VAR4": {
+          "NULL-SEM": "+"
+        },
+        "ABSTRACT-OBJECT": {
+          "DOMAIN": {
+            "VALUE": "REFSEM2.RANGE"
+          },
+          "RANGE": {
+            "VALUE": "REFSEM1.RANGE"
+          },
+          "REPRESENTS": "LESS-THAN"
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [
+        "THE",
+        "MAN-1",
+        "ATE-0",
+        "AWAY-2",
+        "AT-4",
+        "THE",
+        "FOOD-3"
+      ],
+      "EXAMPLE-DEPS": [
+        [
+          "NSUBJ",
+          "$VAR0",
+          "$VAR1"
+        ],
+        [
+          "PREP",
+          "$VAR0",
+          "$VAR4"
+        ],
+        [
+          "ADVMOD",
+          "$VAR0",
+          "$VAR2"
+        ],
+        [
+          "POBJ",
+          "$VAR4",
+          "$VAR3"
+        ]
+      ],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "EAT-V3",
+      "WORD": "EAT",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    }
+  }
+}

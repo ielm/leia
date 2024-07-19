@@ -6,13 +6,12 @@
       "DEF": "",
       "EX": "",
       "COMMENTS": "",
-      "SYN-STRUC": {
-        "ROOT": "$VAR0",
-        "CAT": "PUNCT"
-      },
+      "SYN-STRUC": [
+        {"type": "root"}
+      ],
       "SEM-STRUC": "",
       "MEANING-PROCEDURES": [],
-      "SYNONYMS": [],
+      "SYNONYMS": ["."],
       "HYPONYMS": [],
       "SENSE": "*PERIOD*-PUNCT1",
       "WORD": "*PERIOD*",

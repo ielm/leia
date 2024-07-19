@@ -54,18 +54,8 @@ Thumbs.db
 # NLTK Data
 .nltkdata/*
 
-# Temporarily ignore knowledge files
-leia/knowledge/concepts/*
-leia/knowledge/properties/*
-leia/knowledge/words/*
-leia/knowledge/words_old/*
-
 # Temporarily ignore yaml files
 ontosem.yaml
 
 # Temporarily ignore TODO files
 TODO.txt
-
-# Temporarily ignore ontosem temp files
-temp-output.txt
-temp-synmap-output.txt

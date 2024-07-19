@@ -7,10 +7,9 @@
       "EX": "",
       "COMMENTS": "",
       "TMR-HEAD": "NIL",
-      "SYN-STRUC": {
-        "ROOT": "$VAR0",
-        "CAT": "N"
-      },
+      "SYN-STRUC": [
+        {"type": "root"}
+      ],
       "SEM-STRUC": "ACID-COMPOUND",
       "OUTPUT-SYNTAX": [],
       "MEANING-PROCEDURES": [],

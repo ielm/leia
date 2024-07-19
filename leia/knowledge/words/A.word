@@ -7,14 +7,9 @@
       "EX": "A cat walked in the room",
       "COMMENTS": "",
       "TMR-HEAD": "$VAR1",
-      "SYN-STRUC": {
-        "ART": {
-          "ROOT": "$VAR0",
-          "CAT": "ART"
-        },
-        "ROOT": "$VAR1",
-        "CAT": "N"
-      },
+      "SYN-STRUC": [
+        {"type": "root"}
+      ],
       "SEM-STRUC": "",
       "OUTPUT-SYNTAX": [
         "NP"

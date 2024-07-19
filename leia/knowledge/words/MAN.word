@@ -3,14 +3,13 @@
   "senses": {
     "MAN-N1": {
       "CAT": "N",
-      "DEF": "male human being",
+      "DEF": "",
       "EX": "",
       "COMMENTS": "",
       "TMR-HEAD": "NIL",
-      "SYN-STRUC": {
-        "ROOT": "$VAR0",
-        "CAT": "N"
-      },
+      "SYN-STRUC": [
+        {"type": "root"}
+      ],
       "SEM-STRUC": {
         "HUMAN": {
           "GENDER": "MALE"
@@ -23,6 +22,38 @@
       "SYNONYMS": [],
       "HYPONYMS": [],
       "SENSE": "MAN-N1",
+      "WORD": "MAN",
+      "TYPES": [],
+      "USE-WITH-TYPES": []
+    },
+    "MAN-V1": {
+      "CAT": "V",
+      "DEF": "",
+      "EX": "",
+      "COMMENTS": "",
+      "TMR-HEAD": "NIL",
+      "SYN-STRUC": [
+        {"type": "dependency", "deptype": "NSUBJ", "var": 1},
+        {"type": "root"},
+        {"type": "dependency", "deptype": "DOBJ", "var": 2}
+      ],
+      "SEM-STRUC": {
+        "PROTECT": {
+          "AGENT": {
+            "VALUE": "^$VAR1"
+          },
+          "THEME": {
+            "VALUE": "^$VAR2"
+          }
+        }
+      },
+      "OUTPUT-SYNTAX": [],
+      "MEANING-PROCEDURES": [],
+      "EXAMPLE-BINDINGS": [],
+      "EXAMPLE-DEPS": [],
+      "SYNONYMS": [],
+      "HYPONYMS": [],
+      "SENSE": "MAN-V1",
       "WORD": "MAN",
       "TYPES": [],
       "USE-WITH-TYPES": []
