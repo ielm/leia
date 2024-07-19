@@ -1,6 +1,8 @@
 from ontomem.memory import Memory
 from ontomem.ontology import Concept, Ontology, OSet
-from unittest import TestCase
+from ontomem.properties import COMPARATOR, WILDCARD
+from unittest import skip, TestCase
+from unittest.mock import MagicMock
 
 
 class OntologyTestCase(TestCase):
@@ -126,6 +128,26 @@ class ConceptTestCase(TestCase):
         self.assertEqual([
             {"value": prop},
         ], concept.local["c"]["sem"])
+
+        # Now, test for various wildcards in properties
+
+        concept = Concept(self.m, "test", contents={
+            "isa": [],
+            "local": [
+                {"slot": "a", "facet": "sem", "filler": "!AnyLit"},
+                {"slot": "b", "facet": "sem", "filler": "^"},
+            ],
+            "block": [],
+            "private": {}
+        })
+
+        self.assertEqual([
+            {"value": WILDCARD.ANYLIT}
+        ], concept.local["a"]["sem"])
+
+        self.assertEqual([
+            {"value": Concept.INHFLAG}
+        ], concept.local["b"]["sem"])
 
     def test_parse_block_properties(self):
         # First, test that multiple slots, facets, and fillers are parsed
@@ -634,6 +656,24 @@ class ConceptTestCase(TestCase):
             Concept.BlockedRow(concept, "prop", "sem", "*"),
         ], concept.rows())
 
+    def test_rows_inherits_from_property(self):
+        property = self.m.properties.get_property("property")
+        property.set_contents({
+            "name": "$property",
+            "def": "",
+            "type": "literal",
+            "range": ["a", "b", "c"]
+        })
+
+        concept = self.m.ontology.concept("concept")
+        concept.add_local("property", "sem", Concept.INHFLAG)
+
+        rows = concept.rows()
+        self.assertEqual(3, len(rows))
+        self.assertIn(Concept.LocalRow(concept, "property", "sem", "a", dict()), rows)
+        self.assertIn(Concept.LocalRow(concept, "property", "sem", "b", dict()), rows)
+        self.assertIn(Concept.LocalRow(concept, "property", "sem", "c", dict()), rows)
+
     def test_fillers(self):
         grandparent = Concept(self.m, "grandparent")
         parent = Concept(self.m, "parent")
@@ -691,12 +731,204 @@ class ConceptTestCase(TestCase):
         public = self.m.ontology.concept("SET")     # Same literal name as the private frame
         self.assertNotEqual(public, set)            # But they are different frames
 
-    def test_evaluate(self):
-        # Evaluate must account for sets (both input and existing) as well as private frames
-        fail()
-
     def test_allowed(self):
-        fail()
+        # A filler is allowed if it evaluates to > 0
+
+        concept = self.m.ontology.concept("concept")
+        concept.evaluate = MagicMock()
+
+        concept.evaluate.return_value = 0.5
+        self.assertTrue(concept.allowed("slot", 123))
+
+        concept.evaluate.return_value = 0.0
+        self.assertFalse(concept.allowed("slot", 123))
 
     def test_validate(self):
+        fail()
+
+
+class ConceptEvaluateTestCase(TestCase):
+
+    # Evaluate calculates a 0-1 result for a given value against a concept's defined property.
+    # In other words, evaluate determines the "correctness" of a value for a concept's property.
+    # Evaluate utilizes inheritance if local fillers are not defined.
+    # Evaluate considers: hierarchy, sets, and flat values when making its determination.
+
+    def setUp(self):
+        self.m = Memory("", "", "")
+
+    def test_simple_literal(self):
+        concept = self.m.ontology.concept("concept")
+        concept.add_local("literal1", "sem", ["A", "B", "C"])
+        concept.add_local("literal2", "sem", WILDCARD.ANYLIT)
+
+        self.assertEqual(0.9, concept.evaluate("literal1", "A"))     # The value is part of the local definition
+        self.assertEqual(0.0, concept.evaluate("literal1", "D"))     # The value is not part of the local definition
+
+        self.assertEqual(0.9, concept.evaluate("literal2", "A"))     # literal2 is a wildcard for any str
+        self.assertEqual(0.9, concept.evaluate("literal2", "D"))     # literal2 is a wildcard for any str
+
+    def test_simple_number(self):
+        concept = self.m.ontology.concept("concept")
+        concept.add_local("number1", "sem", (COMPARATOR.GT, 0))
+        concept.add_local("number2", "sem", (COMPARATOR.GTE, 0))
+        concept.add_local("number3", "sem", (COMPARATOR.LT, 0))
+        concept.add_local("number4", "sem", (COMPARATOR.LTE, 0))
+        concept.add_local("number5", "sem", (COMPARATOR.BETWEEN, 0, 2))
+        concept.add_local("number6", "sem", (COMPARATOR.INCLUDE, 0, 2))
+        concept.add_local("number7", "sem", WILDCARD.ANYNUM)
+
+        self.assertEqual(0.9, concept.evaluate("number1", 1))
+        self.assertEqual(0.0, concept.evaluate("number1", 0))
+
+        self.assertEqual(0.9, concept.evaluate("number2", 1))
+        self.assertEqual(0.9, concept.evaluate("number2", 0))
+        self.assertEqual(0.0, concept.evaluate("number2", -1))
+
+        self.assertEqual(0.9, concept.evaluate("number3", -1))
+        self.assertEqual(0.0, concept.evaluate("number3", 0))
+
+        self.assertEqual(0.9, concept.evaluate("number4", -1))
+        self.assertEqual(0.9, concept.evaluate("number4", 0))
+        self.assertEqual(0.0, concept.evaluate("number4", 1))
+
+        self.assertEqual(0.9, concept.evaluate("number5", 1))
+        self.assertEqual(0.0, concept.evaluate("number5", 0))
+        self.assertEqual(0.0, concept.evaluate("number5", 2))
+        self.assertEqual(0.0, concept.evaluate("number5", -1))
+
+        self.assertEqual(0.9, concept.evaluate("number6", 1))
+        self.assertEqual(0.9, concept.evaluate("number6", 0))
+        self.assertEqual(0.9, concept.evaluate("number6", 2))
+        self.assertEqual(0.0, concept.evaluate("number6", -1))
+
+        self.assertEqual(0.9, concept.evaluate("number7", 1))
+
+    def test_simple_boolean(self):
+        concept = self.m.ontology.concept("concept")
+        concept.add_local("boolean", "sem", WILDCARD.ANYBOOL)
+
+        self.assertEqual(0.9, concept.evaluate("boolean", True))
+        self.assertEqual(0.9, concept.evaluate("boolean", False))
+        self.assertEqual(0.0, concept.evaluate("boolean", "xyz"))
+
+    def test_simple_concept(self):
+        other = self.m.ontology.concept("other")
+        unused = self.m.ontology.concept("unused")
+
+        concept = self.m.ontology.concept("concept")
+        concept.add_local("concept1", "sem", other)
+        concept.add_local("concept2", "sem", WILDCARD.ANYTYPE)
+
+        self.assertEqual(0.9, concept.evaluate("concept1", other))
+        self.assertEqual(0.0, concept.evaluate("concept1", unused))
+
+        self.assertEqual(0.9, concept.evaluate("concept2", other))
+        self.assertEqual(0.9, concept.evaluate("concept2", unused))
+
+    def test_concept_with_inheritance(self):
+        grandparent = self.m.ontology.concept("grandparent")
+        parent = self.m.ontology.concept("parent")
+        child = self.m.ontology.concept("child")
+
+        child.add_parent(parent)
+        parent.add_parent(grandparent)
+
+        concept = self.m.ontology.concept("concept")
+        concept.add_local("concept1", "sem", grandparent)
+
+        # Currently no penalty for descendants
+        self.assertEqual(0.9, concept.evaluate("concept1", grandparent))
+        self.assertEqual(0.9, concept.evaluate("concept1", parent))
+        self.assertEqual(0.9, concept.evaluate("concept1", child))
+
+    def test_inherit_from_property(self):
+        property = self.m.properties.get_property("property")
+        property.set_contents({
+            "name": "$property",
+            "def": "",
+            "type": "literal",
+            "range": ["A", "B", "C"]
+        })
+
+        concept = self.m.ontology.concept("concept")
+        concept.add_local("property", "sem", Concept.INHFLAG)
+
+        self.assertEqual(0.9, concept.evaluate("property", "A"))
+        self.assertEqual(0.9, concept.evaluate("property", "B"))
+        self.assertEqual(0.9, concept.evaluate("property", "C"))
+        self.assertEqual(0.0, concept.evaluate("property", "D"))
+
+    def test_inherit_from_ancestors(self):
+        # Sanity check; calculation of filler definitions is tested extensively in ConceptTestCase
+
+        grandparent = self.m.ontology.concept("grandparent")
+        parent = self.m.ontology.concept("parent")
+        child = self.m.ontology.concept("child")
+
+        child.add_parent(parent)
+        parent.add_parent(grandparent)
+
+        grandparent.add_local("literal", "sem", ["A", "B", "C"])
+
+        self.assertEqual(0.9, child.evaluate("literal", "A"))
+        self.assertEqual(0.9, child.evaluate("literal", "B"))
+        self.assertEqual(0.9, child.evaluate("literal", "C"))
+        self.assertEqual(0.0, child.evaluate("literal", "D"))
+
+    def test_value_facet_overrides_all_others(self):
+        # The value facet essentially blanks all other facets, including inherited ones.
+
+        parent = self.m.ontology.concept("parent")
+        child = self.m.ontology.concept("child")
+
+        child.add_parent(parent)
+
+        parent.add_local("literal", "sem", ["A", "B", "C"])
+        child.add_local("literal", "relaxable-to", ["D", "E"])
+        child.add_local("literal", "value", "Z")
+
+        self.assertEqual(1.0, child.evaluate("literal", "Z"))
+        self.assertEqual(0.0, child.evaluate("literal", "A"))
+        self.assertEqual(0.0, child.evaluate("literal", "B"))
+        self.assertEqual(0.0, child.evaluate("literal", "C"))
+        self.assertEqual(0.0, child.evaluate("literal", "D"))
+        self.assertEqual(0.0, child.evaluate("literal", "E"))
+
+    def test_facet_modifications_to_values(self):
+        # The facet in which the value is declared will impact the final result
+
+        concept = self.m.ontology.concept("concept")
+        concept.add_local("literal", "default", "Z")
+        concept.add_local("literal", "sem", ["A", "B"])
+        concept.add_local("literal", "relaxable-to", ["C", "D"])
+        concept.add_local("literal", "not", ["E", "F"])
+
+        self.assertEqual(1.0, concept.evaluate("literal", "Z"))
+        self.assertEqual(0.9, concept.evaluate("literal", "A"))
+        self.assertEqual(0.9, concept.evaluate("literal", "B"))
+        self.assertEqual(0.25, concept.evaluate("literal", "C"))
+        self.assertEqual(0.25, concept.evaluate("literal", "D"))
+        self.assertEqual(0.0, concept.evaluate("literal", "E"))
+        self.assertEqual(0.0, concept.evaluate("literal", "F"))
+
+    def test_multiple_values_are_ord(self):
+        # If multiple values are defined, they are OR'd together
+
+        concept = self.m.ontology.concept("concept")
+        concept.add_local("literal", "sem", ["A", "B"])
+        concept.add_local("literal", "sem", ["C", "D"])
+
+        self.assertEqual(0.9, concept.evaluate("literal", "A"))
+        self.assertEqual(0.9, concept.evaluate("literal", "B"))
+        self.assertEqual(0.9, concept.evaluate("literal", "C"))
+        self.assertEqual(0.9, concept.evaluate("literal", "D"))
+
+    @skip("Skip this for now; requires SETs to be defined in the episodic memory to properly evaluate.")
+    def test_set_evaluations(self):
+        # If the value defined is a set, evaluate against it's contents.
+        # DISJUNCTIVE / CONJUNCTIVE must be considered.
+        # If any members are also sets, the process must be recursive.
+        # The input can also be a set, in which case the evaluation must consider unions / intersections, and cardinality.
+
         fail()

@@ -2,7 +2,7 @@
   "name": "$example",
   "def": "an example property",
   "type": "relation",
-  "range": ["$object"],
+  "range": ["@object"],
   "inverse": "$example-of",
   "measured-in": "@measuring-unit"
 }

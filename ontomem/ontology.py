@@ -2,19 +2,15 @@ from dataclasses import dataclass
 from enum import Enum
 from multiprocessing import Pool
 from ontomem.memory import Memory
-from typing import List, Iterable, Set, Tuple, Union
+from typing import List, Iterable, Set, Type, Tuple, Union
 
+import itertools
 import json
 import os
 
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
-    from ontomem.properties import Property, WILDCARD
-
-
-# TODO: Following functionalities are needed at a minimum
-#  - handling not
-#  - value facet overrides all other facets (and can't be overridden)
+    from ontomem.properties import COMPARATOR, Property, WILDCARD
 
 
 # This is needed as Pool.starmap cannot access self functions, so we make a public function as a wrapper.
@@ -95,13 +91,17 @@ class Ontology(object):
 
 class Concept(object):
 
+    class INHFLAG: pass
+
     FILLER = Union[
         'Concept',
         'Property',
+        'OSet',
         List[str],
         Tuple['COMPARATOR', Union[int, float]],
         Tuple['COMPARATOR', Union[int, float], Union[int, float]],
-        'WILDCARD'
+        'WILDCARD',
+        Type[INHFLAG]
     ]
 
     @dataclass
@@ -181,6 +181,11 @@ class Concept(object):
                 filler = self.memory.properties.get_property(filler[1:])
             elif filler[0] == "&":
                 filler = self._root.private[filler[1:]]
+            elif filler[0] == "!":
+                from ontomem.properties import WILDCARD
+                filler = WILDCARD[filler[1:].upper()]
+            elif filler == "^":
+                filler = Concept.INHFLAG
 
         if slot not in into:
             into[slot] = dict()
@@ -297,9 +302,20 @@ class Concept(object):
         for slot, facets in self.local.items():
             for facet, fillers in facets.items():
                 for filler in fillers:
-                    meta = dict(filler)
-                    del meta["value"]
-                    out.append(Concept.LocalRow(self, slot, facet, filler["value"], meta))
+                    if filler["value"] == Concept.INHFLAG:
+                        range = self.memory.properties.get_property(slot).range()
+                        if isinstance(range, list) and len(range) > 0 and isinstance(range[0], Concept):
+                            pass
+                        elif isinstance(range, set):
+                            range = list(range)
+                        else:
+                            range = [range]
+                        for r in range:
+                            out.append(Concept.LocalRow(self, slot, facet, r, dict()))
+                    else:
+                        meta = dict(filler)
+                        del meta["value"]
+                        out.append(Concept.LocalRow(self, slot, facet, filler["value"], meta))
 
         for slot, facets in self.block.items():
             for facet, fillers in facets.items():
@@ -323,11 +339,87 @@ class Concept(object):
 
         return list(out)
 
-    def allowed(self, slot: str, facet: str, filler) -> bool:
+    def allowed(self, slot: str, filler) -> bool:
+        return self.evaluate(slot, filler) > 0.0
+
+    def evaluate(self, slot: str, filler) -> float:
+        # Evaluate against value facet; if any are found, return here
+        scores = list(map(lambda f: self._evaluate_filler(filler, f, 1.0), self.fillers(slot, "value")))
+        if len(scores) > 0:
+            return max(scores)
+
+        # Evaluate against all other facets, returning the highest
+        scores = []
+        for facet in [("default", 1.0), ("sem", 0.9), ("relaxable-to", 0.25), ("not", 0.0)]:
+            scores.extend(map(lambda f: self._evaluate_filler(filler, f, facet[1]), self.fillers(slot, facet[0])))
+
+        if len(scores) > 0:
+            return max(scores)
+
+        return 0.0
+
+    def _evaluate_filler(self, input, existing, penalty: float) -> float:
+        if isinstance(input, str):
+            return penalty * self._evaluate_literal_filler(input, existing)
+        if isinstance(input, bool):
+            return penalty * self._evaluate_boolean_filler(input, existing)
+        if isinstance(input, float) or isinstance(input, int):
+            return penalty * self._evaluate_number_filler(input, existing)
+        if isinstance(input, Concept):
+            return penalty * self._evaluate_concept_filler(input, existing)
+
         raise NotImplementedError
 
-    def evaluate(self, slot: str, facet: str, filler) -> float:
-        raise NotImplementedError
+    def _evaluate_literal_filler(self, literal: str, existing) -> float:
+        from ontomem.properties import WILDCARD
+
+        if isinstance(existing, str):
+            return 1.0 if literal == existing else 0.0
+        if isinstance(existing, list):
+            return 1.0 if literal in existing else 0.0
+        if existing == WILDCARD.ANYLIT:
+            return 1.0
+        return 0.0
+
+    def _evaluate_boolean_filler(self, boolean: bool, existing) -> float:
+        from ontomem.properties import WILDCARD
+
+        if isinstance(existing, bool):
+            return 1.0 if boolean == existing else 0.0
+        if existing == WILDCARD.ANYBOOL:
+            return 1.0
+        return 0.0
+
+    def _evaluate_number_filler(self, number: Union[int, float], existing) -> float:
+        from ontomem.properties import COMPARATOR, WILDCARD
+
+        if isinstance(existing, float) or isinstance(existing, int):
+            return 1.0 if number == existing else 0.0
+        if isinstance(existing, tuple) and isinstance(existing[0], COMPARATOR):
+            if existing[0] == COMPARATOR.GT:
+                return 1.0 if number > existing[1] else 0.0
+            if existing[0] == COMPARATOR.GTE:
+                return 1.0 if number >= existing[1] else 0.0
+            if existing[0] == COMPARATOR.LT:
+                return 1.0 if number < existing[1] else 0.0
+            if existing[0] == COMPARATOR.LTE:
+                return 1.0 if number <= existing[1] else 0.0
+            if existing[0] == COMPARATOR.BETWEEN:
+                return 1.0 if number > existing[1] and number < existing[2] else 0.0
+            if existing[0] == COMPARATOR.INCLUDE:
+                return 1.0 if number >= existing[1] and number <= existing[2] else 0.0
+        if existing == WILDCARD.ANYNUM:
+            return 1.0
+        return 0.0
+
+    def _evaluate_concept_filler(self, concept: 'Concept', existing) -> float:
+        from ontomem.properties import COMPARATOR, WILDCARD
+
+        if isinstance(existing, Concept):
+            return 1.0 if concept.isa(existing) else 0.0
+        if existing == WILDCARD.ANYTYPE:
+            return 1.0
+        return 0.0
 
     def __repr__(self):
         return "@%s" % self.name
