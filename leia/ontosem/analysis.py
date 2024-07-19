@@ -13,21 +13,25 @@ class Analysis(object):
 
     class LogHandler(Handler):
 
-        def __init__(self, logs: List[LogRecord], level="INFO"):
+        def __init__(self, logs: List[dict], level="INFO"):
             super().__init__(level=level)
             self.logs = logs
 
         def emit(self, record: LogRecord):
-            self.logs.append(record)
+            message = dict(record.msg)
+            message["time"] = record.created
+            message["level"] = record.levelname
+
+            self.logs.append(message)
 
     @classmethod
     def from_dict(cls, input: dict) -> 'Analysis':
         analysis = Analysis()
         analysis.config = OntoSemConfig.from_dict(input["config"])
         analysis.sentences = list(map(lambda s: Sentence.from_dict(s), input["sentences"]))
+        analysis.logs = input["logs"]
 
         # TODO: Parse WMLexicon if present
-        # TODO: Parse logs if present
 
         return analysis
 
@@ -36,7 +40,7 @@ class Analysis(object):
         self.sentences: List[Sentence] = []
         self.lexicon = WMLexicon()
 
-        self.logs: List[LogRecord] = []
+        self.logs: List[dict] = []
         self._logger = Logger(Analysis.__name__, level="INFO")
         self._logger.addHandler(Analysis.LogHandler(self.logs, level="INFO"))
 
@@ -58,11 +62,7 @@ class Analysis(object):
         return {
             "config": self.config.to_dict(),
             "sentences": list(map(lambda s: s.to_dict(), self.sentences)),
-            "logs": list(map(lambda l: {
-                "msg": l.msg,
-                "time": l.created,
-                "level": l.levelname,
-            }, self.logs))
+            "logs": self.logs
         }
 
 
