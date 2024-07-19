@@ -122,6 +122,7 @@ class Concept(object):
         self.local = dict()
         self.block = dict()
         self.private = dict()
+        self._definition = ""
         self._root = root if root is not None else self
         self._parents: Set['Concept'] = set()
 
@@ -133,6 +134,8 @@ class Concept(object):
         self._index()
 
     def _index(self):
+
+        self._definition = self.contents["def"] if "def" in self.contents else ""
 
         self._parents = set()
         self.local = dict()
@@ -155,12 +158,14 @@ class Concept(object):
             self._parents.add(self.memory.ontology.concept(parent[1:]))
 
         for row in self.contents["local"]:
-            self._parse_row(row, self.local)
+            self._parse_row(row, self.local, True)
 
         for row in self.contents["block"]:
-            self._parse_row(row, self.block)
+            self._parse_row(row, self.block, False)
 
-    def _parse_row(self, row: dict, into: dict):
+    def _parse_row(self, row: dict, into: dict, wrap: bool):
+        from leia.ontomem.properties import COMPARATOR
+
         slot = row["slot"]
         facet = row["facet"]
         filler = row["filler"]
@@ -181,20 +186,29 @@ class Concept(object):
                 filler = WILDCARD[filler[1:].upper()]
             elif filler == "^":
                 filler = Concept.INHFLAG
+        elif isinstance(filler, list):
+            if len(filler) == 2:
+                filler = (COMPARATOR(filler[0]), filler[1])
+            if len(filler) == 3:
+                filler = (COMPARATOR(filler[0]), filler[1], filler[2])
 
         if slot not in into:
             into[slot] = dict()
         if facet not in into[slot]:
             into[slot][facet] = list()
 
-        filler = {
-            "value": filler
-        }
+        if wrap:
+            filler = {
+                "value": filler
+            }
 
-        if "meta" in row:
-            filler.update(row["meta"])
+            if "meta" in row:
+                filler.update(row["meta"])
 
         into[slot][facet].append(filler)
+
+    def definition(self) -> str:
+        return self._definition
 
     def add_parent(self, parent: 'Concept') -> 'Concept':
         self._parents.add(parent)

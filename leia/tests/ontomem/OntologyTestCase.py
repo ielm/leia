@@ -149,6 +149,26 @@ class ConceptTestCase(TestCase):
             {"value": Concept.INHFLAG}
         ], concept.local["b"]["sem"])
 
+        # Now, test for comparator tuples in properties
+
+        concept = Concept(self.m, "test", contents={
+            "isa": [],
+            "local": [
+                {"slot": "a", "facet": "sem", "filler": [">", 1]},
+                {"slot": "b", "facet": "sem", "filler": ["><", 0.0, 1.0]},
+            ],
+            "block": [],
+            "private": {}
+        })
+
+        self.assertEqual([
+            {"value": (COMPARATOR.GT, 1)}
+        ], concept.local["a"]["sem"])
+
+        self.assertEqual([
+            {"value": (COMPARATOR.BETWEEN, 0.0, 1.0)}
+        ], concept.local["b"]["sem"])
+
     def test_parse_block_properties(self):
         # First, test that multiple slots, facets, and fillers are parsed
         # Verify that meta data is also attached
@@ -160,27 +180,22 @@ class ConceptTestCase(TestCase):
                 {"slot": "a", "facet": "sem", "filler": "DEF"},
                 {"slot": "b", "facet": "sem", "filler": "GHI"},
                 {"slot": "b", "facet": "relaxable-to", "filler": "JKL"},
-                {"slot": "c", "facet": "sem", "filler": "MNO", "meta": {"measured-in": "something"}},
             ],
             "private": {}
         })
 
         self.assertEqual([
-            {"value": "ABC"},
-            {"value": "DEF"}
+            "ABC",
+            "DEF"
         ], concept.block["a"]["sem"])
 
         self.assertEqual([
-            {"value": "GHI"},
+            "GHI",
         ], concept.block["b"]["sem"])
 
         self.assertEqual([
-            {"value": "JKL"},
+            "JKL",
         ], concept.block["b"]["relaxable-to"])
-
-        self.assertEqual([
-            {"value": "MNO", "measured-in": "something"},
-        ], concept.block["c"]["sem"])
 
         # Now, test that various types are properly connected
         other = self.m.ontology.concept("other")
@@ -198,15 +213,15 @@ class ConceptTestCase(TestCase):
         })
 
         self.assertEqual([
-            {"value": "ABC"},
+            "ABC",
         ], concept.block["a"]["sem"])
 
         self.assertEqual([
-            {"value": other},
+            other,
         ], concept.block["b"]["sem"])
 
         self.assertEqual([
-            {"value": prop},
+            prop,
         ], concept.block["c"]["sem"])
 
     def test_parse_private_frames(self):

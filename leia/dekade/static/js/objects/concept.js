@@ -29,6 +29,7 @@ export class Concept extends LEIAObject {
         element.find("button.concept-del-local").click(this._onDelLocalButtonClicked.bind(this));
         element.find("button.concept-block-inherit").click(this._onBlockInheritButtonClicked.bind(this));
         element.find("button.concept-unblock-block").click(this._onUnblockBlockButtonClicked.bind(this));
+        element.find("input.concept-toggle-inherited-display").change(this._onToggleInheritedDisplayChanged.bind(this));
     }
 
     templateName() {
@@ -93,6 +94,17 @@ export class Concept extends LEIAObject {
         const filler = $(event.currentTarget).data("filler");
 
         console.log("TODO: unblock " + property + "/" + facet + "/" + filler + " in " + concept + " from " + from);
+    }
+
+    _onToggleInheritedDisplayChanged(event) {
+        const show = $(event.currentTarget).is(':checked');
+        const container = $(event.currentTarget).closest(".concept");
+
+        if (show) {
+            container.find("tr.concept-row-inherit").show();
+        } else {
+            container.find("tr.concept-row-inherit").hide();
+        }
     }
 
 }

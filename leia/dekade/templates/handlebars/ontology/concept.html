@@ -9,6 +9,9 @@
     <div class="concept-definition">
         {{definition}}
     </div>
+    <div>
+        <input type="checkbox" class="concept-toggle-inherited-display" checked /> Show Inherited?
+    </div>
     <table class="concept-rows">
         <tr>
             <td>
@@ -33,7 +36,12 @@
                     <td>{{this.property}}</td>
                     <td>{{this.facet}}</td>
                     <td>{{this.filler}}</td>
-                    <td>meta</td>
+                    <td>
+                        {{#each this.meta}}
+                            {{@key}} = {{this}}
+                            {{#unless @last}}, {{/unless}}
+                        {{/each}}
+                    </td>
                     <td></td>
                 </tr>
             {{else if this.inherit}}
@@ -46,7 +54,12 @@
                     <td>{{this.property}}</td>
                     <td>{{this.facet}}</td>
                     <td>{{this.filler}}</td>
-                    <td>meta</td>
+                    <td>
+                        {{#each this.meta}}
+                            {{@key}} = {{this}}
+                            {{#unless @last}}, {{/unless}}
+                        {{/each}}
+                    </td>
                     <td>inherit from <a is="content-link" data-content-id="@{{this.from}}">@{{this.from}}</a></td>
                 </tr>
             {{else if this.block}}
@@ -59,8 +72,8 @@
                     <td>{{this.property}}</td>
                     <td>{{this.facet}}</td>
                     <td>{{this.filler}}</td>
-                    <td>n/a</td>
-                    <td>block from <a is="content-link" data-content-id="@{{this.from}}">@{{this.from}}</a></td>
+                    <td></td>
+                    <td></td>
                 </tr>
             {{/if}}
         {{/each}}

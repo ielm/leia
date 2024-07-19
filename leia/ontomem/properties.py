@@ -21,7 +21,9 @@ class COMPARATOR(Enum):
     BETWEEN = "><"
     GT = ">"
     GTE = ">="
-    INCLUDE = ">=<"
+    GTELT = ">=<"
+    GTLTE = "><="
+    INCLUDE = "=>=<"
     LT = "<"
     LTE = "<="
 

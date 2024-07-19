@@ -3,7 +3,7 @@ from flask_cors import CORS
 from leia.ontoagent.agent import Agent
 from leia.ontomem.memory import Memory
 from leia.ontomem.ontology import Concept
-from leia.ontomem.properties import Property
+from leia.ontomem.properties import Property, WILDCARD
 
 import json
 import mimetypes
@@ -73,20 +73,23 @@ class DEKADEAPIBlueprint(Blueprint):
     def knowledge_ontology_concept(self, concept: str):
 
         def _format_row(row) -> dict:
-            row_type = "local"
-            if isinstance(row, Concept.LocalRow) and row.concept.name != concept:
-                row_type = "inherit"
-            if isinstance(row, Concept.BlockedRow):
-                row_type = "block"
 
-            return {
-                "row": row_type,
-                "from": row.concept.name,
+            output = {
+                "row": "local",
                 "property": row.property,
                 "facet": row.facet,
                 "filler": _format_filler(row.filler),
-                "meta": row.meta
             }
+
+            if isinstance(row, Concept.LocalRow):
+                output["meta"] = row.meta
+                if row.concept != concept:
+                    output["row"] = "inherit"
+                    output["from"] = row.concept.name
+            if isinstance(row, Concept.BlockedRow):
+                output["row"] = "block"
+
+            return output
 
         def _format_filler(filler):
             if isinstance(filler, Concept):
@@ -97,16 +100,18 @@ class DEKADEAPIBlueprint(Blueprint):
                 return filler
             if isinstance(filler, tuple):
                 if len(filler) == 2:
-                    return (filler[0].name, filler[1])
+                    return (filler[0].value, filler[1])
                 if len(filler) == 3:
-                    return (filler[0].name, filler[1], filler[2])
+                    return (filler[0].value, filler[1], filler[2])
+            if isinstance(filler, WILDCARD):
+                return filler.value
 
             raise NotImplementedError("Cannot format filler %s in %s" % (str(filler), concept))
 
         concept = self.app.agent.memory.ontology.concept(concept)
         output = {
             "name": concept.name,
-            "definition": "TODO: get definition",
+            "definition": concept.definition(),
             "parents": list(map(lambda p: p.name, concept.parents())),
             "rows": list(map(lambda r: _format_row(r), concept.rows()))
         }
