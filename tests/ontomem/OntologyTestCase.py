@@ -188,7 +188,69 @@ class ConceptTestCase(TestCase):
         ], concept.block["c"]["sem"])
 
     def test_parse_private_frames(self):
-        fail()
+        # Private frames that are found in the concept dictionary are parsed as normal
+        # They are connected to any relations that attach to them
+        # Their name overrides any matching public names (as it relates to attaching relations)
+        # They can refer to each other
+
+        # Declare two public concepts with the names "p1" and "p2"; these will "conflict" with the private
+        # frames of the same name.
+        public_p1 = self.m.ontology.concept("p1")
+        public_p2 = self.m.ontology.concept("p2")
+
+        # Declare some other frame to act as a parent.
+        other = self.m.ontology.concept("other")
+
+        # Parse a concept; it has two private frames "p1" and "p2"; it has a local property that refers to
+        # p1 (which must choose to refer to the private frame over the public one), and p1 itself has a local
+        # frame that refers to p2 (again, private is preferred).  The private frames do not have a private field
+        # themselves, but are otherwise the same.
+        concept = Concept(self.m, "test", contents={
+            "name": "@test",
+            "isa": [],
+            "def": "test definition",
+            "local": [{"slot": "a", "facet": "sem", "filler": "@p1"}],
+            "block": [],
+            "private": {
+                "@p1": {
+                    "name": "@p1",
+                    "isa": ["@other"],
+                    "def": "private concept 1",
+                    "local": [{"slot": "a", "facet": "sem", "filler": "@p2"}],
+                    "block": [],
+                },
+                "@p2": {
+                    "name": "@p2",
+                    "isa": ["@other"],
+                    "def": "private concept 1",
+                    "local": [{"slot": "a", "facet": "sem", "filler": "ABC"}],
+                    "block": [],
+                }
+            }
+        })
+
+        self.assertEqual(2, len(concept.private))
+
+        private_p1 = concept.private["p1"]
+        private_p2 = concept.private["p2"]
+
+        # Verify the isa field was parsed correctly
+        self.assertTrue(private_p1.isa(other))
+        self.assertTrue(private_p2.isa(other))
+
+        # Verify that the concepts are not the same as the public ones
+        self.assertNotEqual(public_p1, private_p1)
+        self.assertNotEqual(public_p2, private_p2)
+
+        # Even though they share the same name...
+        self.assertEqual(public_p1.name, private_p1.name)
+        self.assertEqual(public_p2.name, private_p2.name)
+
+        # Verify the concept's relation points to the private frame
+        self.assertEqual([private_p1], concept.fillers("a", "sem"))
+
+        # Verify the private concept's relation points to the other private frame
+        self.assertEqual([private_p2], private_p1.fillers("a", "sem"))
 
     def test_parse_sets(self):
         fail()
@@ -520,8 +582,21 @@ class ConceptTestCase(TestCase):
         }, set(concept.fillers("prop", "sem")))
 
     def test_private_frames(self):
-        # Add to parsing above as well (local/block)
-        fail()
+        # Private frames are not registered in the ontology directly; they are only accessible from inside the
+        # root frame that owns them.  Otherwise, they function normally.
+
+        root = self.m.ontology.concept("ROOT")
+        private = Concept(self.m, "PRIVATE")
+        root.private["PRIVATE"] = private
+
+        self.assertIn("ROOT", self.m.ontology.cache)
+        self.assertNotIn("PRIVATE", self.m.ontology.cache)
+        self.assertIn("PRIVATE", root.private)
+
+        # The namespace for private frames is separate from public frames
+
+        public = self.m.ontology.concept("PRIVATE")     # Same literal name as the private frame
+        self.assertNotEqual(public, private)            # But they are different frames
 
     def test_sets(self):
         # Add to parsing above as well (local/block)

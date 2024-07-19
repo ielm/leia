@@ -119,13 +119,14 @@ class Concept(object):
         filler: 'Concept.FILLER'
 
 
-    def __init__(self, memory: Memory, name: str, contents: dict=None):
+    def __init__(self, memory: Memory, name: str, contents: dict=None, root: 'Concept'=None):
         self.memory = memory
         self.name = name
         self.contents = contents
         self.local = dict()
         self.block = dict()
         self.private = dict()
+        self._root = root if root is not None else self
         self._parents: Set['Concept'] = set()
 
         if contents is not None:
@@ -140,6 +141,16 @@ class Concept(object):
         self._parents = set()
         self.local = dict()
         self.block = dict()
+        self.private = dict()
+
+        if self._root == self:
+            # Generate the private concepts, but don't parse them yet
+            for concept in self.contents["private"].keys():
+                self.private[concept[1:]] = Concept(self.memory, concept[1:], root=self)
+
+            # Now that the private concepts all exist, each can be parsed
+            for concept, contents in self.contents["private"].items():
+                self.private[concept[1:]].set_contents(contents)
 
         for parent in self.contents["isa"]:
             self._parents.add(self.memory.ontology.concept(parent[1:]))
@@ -158,8 +169,10 @@ class Concept(object):
         # Parse various filler types
         if isinstance(filler, str):
             if filler[0] == "@":
-                # TODO: this isn't handling private concepts currently; override the namespace if needed
-                filler = self.memory.ontology.concept(filler[1:])
+                if filler[1:] in self._root.private:
+                    filler = self._root.private[filler[1:]]
+                else:
+                    filler = self.memory.ontology.concept(filler[1:])
             elif filler[0] == "$":
                 filler = self.memory.properties.get_property(filler[1:])
             elif filler[0] == "&":
