@@ -14,8 +14,8 @@ class Candidate(object):
         self.id = str(uuid.uuid4())
 
         self.senses = senses
-        self.basic_tmr = TMR(memory, private=True)
-        self.extended_tmr = TMR(memory, private=True)
+        self.basic_tmr = memory.episodic.new_space(space_type=TMR, private=True)
+        self.extended_tmr = memory.episodic.new_space(space_type=TMR, private=True)
         self.constraints: List[Constraint] = []
         self.scores: List[Score] = []
         self.score = 0.0

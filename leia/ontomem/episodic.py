@@ -443,7 +443,8 @@ class Address(object):
     def __repr__(self):
         symbols = {
             "space": "&",
-            "instance": "#"
+            "instance": "#",
+            "property": "$"
         }
 
         return "/".join(map(lambda n: "%s%s" % (symbols[n["type"]], n["id"]), self._path))
