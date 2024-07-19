@@ -259,7 +259,7 @@ class ConceptTestCase(TestCase):
                 "@p2": {
                     "name": "@p2",
                     "isa": ["@other"],
-                    "def": "private concept 1",
+                    "def": "private concept 2",
                     "local": [{"slot": "a", "facet": "sem", "filler": "ABC"}],
                     "block": [],
                 }

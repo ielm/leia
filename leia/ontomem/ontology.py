@@ -118,7 +118,6 @@ class Concept(object):
     def __init__(self, memory: Memory, name: str, contents: dict=None, root: 'Concept'=None):
         self.memory = memory
         self.name = name
-        self.contents = contents
         self.local = dict()
         self.block = dict()
         self.private = dict()
@@ -127,15 +126,14 @@ class Concept(object):
         self._parents: Set['Concept'] = set()
 
         if contents is not None:
-            self._index()
+            self._index(contents)
 
     def set_contents(self, contents: dict):
-        self.contents = contents
-        self._index()
+        self._index(contents)
 
-    def _index(self):
+    def _index(self, contents: dict):
 
-        self._definition = self.contents["def"] if "def" in self.contents else ""
+        self._definition = contents["def"] if "def" in contents else ""
 
         self._parents = set()
         self.local = dict()
@@ -144,23 +142,23 @@ class Concept(object):
 
         if self._root == self:
             # Generate the private concepts, but don't parse them yet
-            for concept in self.contents["private"].keys():
+            for concept in contents["private"].keys():
                 if concept[0] == "@":
                     self.private[concept[1:]] = Concept(self.memory, concept[1:], root=self)
                 elif concept[0] == "&":
                     self.private[concept[1:]] = OSet(self.memory, concept[1:], root=self)
 
             # Now that the private concepts all exist, each can be parsed
-            for concept, contents in self.contents["private"].items():
-                self.private[concept[1:]].set_contents(contents)
+            for concept, inner_contents in contents["private"].items():
+                self.private[concept[1:]].set_contents(inner_contents)
 
-        for parent in self.contents["isa"]:
+        for parent in contents["isa"]:
             self._parents.add(self.memory.ontology.concept(parent[1:]))
 
-        for row in self.contents["local"]:
+        for row in contents["local"]:
             self._parse_row(row, self.local, True)
 
-        for row in self.contents["block"]:
+        for row in contents["block"]:
             self._parse_row(row, self.block, False)
 
     def _parse_row(self, row: dict, into: dict, wrap: bool):
@@ -441,7 +439,6 @@ class OSet(object):
     def __init__(self, memory: Memory, name: str, contents: dict=None, root: 'Concept'=None):
         self.memory = memory
         self.name = name
-        self.contents = contents
         self.root = root
 
         self._type = OSet.Type.CONJUNCTIVE
@@ -449,18 +446,17 @@ class OSet(object):
         self._members = []
 
         if contents is not None:
-            self._index()
+            self._index(contents)
 
     def set_contents(self, contents: dict):
-        self.contents = contents
-        self._index()
+        self._index(contents)
 
-    def _index(self):
-        self._type = OSet.Type[self.contents["type"].upper()]
-        self._cardinality = self.contents["cardinality"]
+    def _index(self, contents: dict):
+        self._type = OSet.Type[contents["type"].upper()]
+        self._cardinality = contents["cardinality"]
 
         self._members = []
-        for m in self.contents["members"]:
+        for m in contents["members"]:
             if m.startswith("@"):
                 if m[1:] in self.root.private:
                     self._members.append(self.root.private[m[1:]])
