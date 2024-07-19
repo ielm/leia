@@ -377,7 +377,7 @@ class Instance(object):
 
 class Address(object):
 
-    def __init__(self, memory: Memory, *start: Union[Space, Instance]):
+    def __init__(self, memory: Memory, *start: Union[Space, Instance, Property]):
         self.memory = memory
         self._path = []
 
@@ -387,25 +387,32 @@ class Address(object):
         for node in start:
             self.append(node)
 
-    def append(self, node: Union[Space, Instance]):
+    def append(self, node: Union[Space, Instance, Property]):
         if isinstance(node, Space):
             # A space can only follow another space (or be the first element)
             if len(self._path) > 0 and self._path[-1]["type"] != "space":
-                raise Exception("A space in a path cannot follow a non-space.")
+                raise Exception("A space in an address cannot follow a non-space.")
 
             node = {"type": "space", "id": node.name()}
         elif isinstance(node, Instance):
             # An instance must follow a space; the id used will be the current id relative to the space
             if not self._path[-1]["type"] == "space":
-                raise Exception("An instance in a path must follow a space.")
+                raise Exception("An instance in an address must follow a space.")
 
             node = {"type": "instance", "id": node.id(space=self.resolve())}
+        elif isinstance(node, Property):
+            # A property can only follow an instance
+            # TODO: improvement - relations can follow relations
+            if not self._path[-1]["type"] == "instance":
+                raise Exception("A property in an address must follow an instance.")
+
+            node = {"type": "property", "id": node.name}
         else:
             raise Exception("Unknown address type: %s." % str(node))
 
         self._path.append(node)
 
-    def resolve(self) -> Union[Space, Instance]:
+    def resolve(self) -> Union[Space, Instance, Property]:
         if len(self._path) == 0:
             raise Exception("Cannot resolve an empty address.")
 
@@ -415,13 +422,21 @@ class Address(object):
 
         return current
 
-    def _resolve_node(self, node: Dict, current: Union[Space, Instance, None]) -> Union[Space, Instance]:
+    def _resolve_node(self, node: Dict, current: Union[Space, Instance, None]) -> Union[Space, Instance, None]:
         if node["type"] == "space":
             if current is None:
                 return self.memory.episodic
             return current.space(node["id"])
         if node["type"] == "instance":
             return current.instance(node["id"])
+        if node["type"] == "property":
+            current: Instance = current
+            value = current.value(node["id"])
+            if value is None:
+                defined = current.concept.fillers(node["id"], "VALUE")
+                if len(defined) == 1:
+                    value = defined[0]
+            return value
 
         raise NotImplementedError
 

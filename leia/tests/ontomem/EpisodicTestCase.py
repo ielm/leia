@@ -372,3 +372,24 @@ class AddressTestCase(TestCase):
         instance = space3.new_instance("C")
 
         self.assertEqual(instance, Address(self.m, self.m.episodic, space1, space3, instance).resolve())
+
+        # An address can resolve to a property on an instance
+        # If no value is present, the VALUE facet of the instance's concept will be used (or None if undefined)
+        # If a value is present, it will be returned
+        # If multiple values are present, an error is raised
+        size = self.m.properties.get_property("SIZE")
+        self.assertIsNone(Address(self.m, self.m.episodic, space1, space3, instance, size).resolve())
+
+        concept = self.m.ontology.concept("C")
+        concept.add_local("SIZE", "SEM", 0.0)
+        self.assertIsNone(Address(self.m, self.m.episodic, space1, space3, instance, size).resolve())
+
+        concept.add_local("SIZE", "VALUE", 1.0)
+        self.assertEqual(1.0, Address(self.m, self.m.episodic, space1, space3, instance, size).resolve())
+
+        instance.add_filler("SIZE", 2.0)
+        self.assertEqual(2.0, Address(self.m, self.m.episodic, space1, space3, instance, size).resolve())
+
+        instance.add_filler("SIZE", 3.0)
+        with self.assertRaises(Exception):
+            Address(self.m, self.m.episodic, space1, space3, instance, size).resolve()
