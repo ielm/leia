@@ -205,8 +205,8 @@ class XMR(Space):
             elif self.memory.ontology.concept("PROPERTY") in ancestors:
                 subtree = "PROPERTY"
 
-            root_scoring[frame.id()] = {
-                "frame_id": frame.id(),
+            root_scoring[frame.id(space=self)] = {
+                "frame_id": frame.id(space=self),
                 "subtree": subtree,
                 "incoming": 0,
                 "outgoing": 0,
@@ -218,11 +218,11 @@ class XMR(Space):
             for property in frame.properties.keys():
                 for filler in frame.values(property):
                     if isinstance(filler, Instance):
-                        root_scoring[frame.id()]["outgoing"] += 1
+                        root_scoring[frame.id(space=self)]["outgoing"] += 1
 
                         # Update incoming only if the instance is part of the XMR's space.
                         if filler in self.instances():
-                            root_scoring[filler.id()]["incoming"] += 1
+                            root_scoring[filler.id(space=self)]["incoming"] += 1
 
         # Now find the best root
         candidates = []
