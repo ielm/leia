@@ -1,11 +1,11 @@
 {
   "name": "Passivization of transitive and optionally transitive verbs",
   "example": "A sandwich was eaten by a chicken.",
-  "syn-struc": {
+  "pattern": {
     "vars": {
       "0": {"pos": ["v"], "tag": ["trans"]}
     },
-    "patterns": [
+    "syn-strucs": [
       [
         {"type": "dependency", "deptype": "nsubjpass", "governor": 0}
       ],
@@ -23,13 +23,12 @@
   The name field can be any string that is unique amongst transformations.
   The example is any human-readable example that demonstrates a sentence that the transformation would trigger on.
 
-  The syn-struc field consists of two subfields:
+  The pattern field consists of two subfields:
     vars: a dictionary whose keys are integers (as strings) and whose values are dictionaries with:
       pos: a list of possible parts of speech for a particular variable
       tag: a list of possible additional tags to match for a particular variable
-    patterns: a list of individual pattern sets, any of which can act as a match for this transformation; each set is
-      <p>: a list of syn-struc elements to match; these follow the same definitions as those found in Words/Senses, except:
-        dependency: may specify the governor or dependent in terms of a variable
+    syn-strucs: a list of individual syn-strucs, any of which can act as a match for this transformation;
+                each entry uses the same format as the lexicon sense's syn-struc (although "root" should be excluded)
 
   The executable is a pointer to the python implementation of this transformation.
     The full module path must be given.

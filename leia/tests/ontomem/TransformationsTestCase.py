@@ -1,6 +1,6 @@
 from leia.ontomem.memory import Memory
 from leia.ontomem.lexicon import SynStruc
-from leia.ontomem.transformations import Transformation, TransformationsCatalogue, TransformationExecutable, TransformationSynStruc
+from leia.ontomem.transformations import Transformation, TransformationsCatalogue, TransformationExecutable
 from unittest import TestCase
 
 
@@ -59,11 +59,11 @@ class TransformationTestCase(TestCase):
         content = {
             "name": "Passivization of transitive and optionally transitive verbs",
             "example": "A sandwich was eaten by a chicken.",
-            "syn-struc": {
+            "pattern": {
                 "vars": {
                     "0": {"pos": ["v"], "tag": ["trans"]}
                 },
-                "patterns": [
+                "syn-strucs": [
                     [
                         {"type": "dependency", "deptype": "nsubjpass", "governor": 0}
                     ],
@@ -80,45 +80,17 @@ class TransformationTestCase(TestCase):
         trans = Transformation(content["name"], contents=content)
 
         self.assertEqual(content["example"], trans.example)
-        self.assertEqual(TransformationSynStruc(content["syn-struc"]), trans.synstruc)
+        self.assertEqual([
+            Transformation.Variable(0, ["v"], ["trans"])
+        ], trans.variables)
+        self.assertEqual([
+            SynStruc(contents=[
+                {"type": "dependency", "deptype": "nsubjpass", "governor": 0}
+            ]),
+            SynStruc(contents=[
+                {"type": "constituency", "contype": "NP", "children": []},
+                {"type": "token", "lemma": ["be"], "pos": None, "morph": {}},
+                {"type": "token", "lemma": [], "pos": ["V"], "var": 0, "morph": {"tense": "past", "verbform": "part"}}
+            ])
+        ], trans.synstrucs)
         self.assertEqual(TestTransformationExecutable.__name__, trans.executable.__name__)
-
-
-class TransformationSynStrucTestCase(TestCase):
-
-    def setUp(self):
-        self.m = Memory("", "", "")
-
-    def test_index(self):
-        content = {
-            "vars": {
-                "0": {"pos": ["v"], "tag": ["trans"]}
-            },
-            "patterns": [
-                [
-                    {"type": "dependency", "deptype": "nsubjpass", "governor": 0}
-                ],
-                [
-                    {"type": "constituency", "contype": "NP", "children": []},
-                    {"type": "token", "lemma": ["be"], "pos": None, "morph": {}},
-                    {"type": "token", "lemma": [], "pos": "V", "var": 0, "morph": {"tense": "past", "verbform": "part"}}
-                ]
-            ]
-        }
-
-        synstruc = TransformationSynStruc(contents=content)
-
-        self.assertEqual([
-            TransformationSynStruc.Variable(0, ["v"], ["trans"])
-        ], synstruc.variables)
-
-        self.assertEqual([
-            [
-                TransformationSynStruc.DependencyElement("nsubjpass", None, False, 0, None)
-            ],
-            [
-                SynStruc.ConstituencyElement("NP", [], None, False),
-                SynStruc.TokenElement({"be"}, None, {}, None, False),
-                SynStruc.TokenElement(set(), "V", {"tense": "past", "verbform": "part"}, 0, False)
-            ]
-        ], synstruc.patterns)

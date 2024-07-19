@@ -47,10 +47,17 @@ class TransformationsCatalogue(object):
 
 class Transformation(object):
 
+    @dataclass
+    class Variable(object):
+        index: int
+        pos: List[str]
+        tags: List[str]
+
     def __init__(self, name: str, contents: dict=None):
         self.name = name
         self.example: str = None
-        self.synstruc: TransformationSynStruc = None
+        self.variables: List[Transformation.Variable] = []
+        self.synstrucs: List[SynStruc] = []
         self.executable: TransformationExecutable = None
 
         if contents is not None:
@@ -58,60 +65,9 @@ class Transformation(object):
 
     def _index(self, contents: dict):
         self.example = contents["example"]
-        self.synstruc = TransformationSynStruc(contents=contents["syn-struc"])
+        self.variables = list(map(lambda var: Transformation.Variable(int(var[0]), var[1]["pos"], var[1]["tag"]), contents["pattern"]["vars"].items()))
+        self.synstrucs = list(map(lambda syn: SynStruc(contents=syn), contents["pattern"]["syn-strucs"]))
         self.executable = import_class(contents["executable"])
-
-
-class TransformationSynStruc(object):
-
-    @dataclass
-    class DependencyElement(SynStruc.Element):
-        type: str
-        variable: Union[int, None]
-        optional: bool
-        governor: Union[int, None]
-        dependent: Union[int, None]
-
-        @classmethod
-        def parse(cls, data: dict) -> 'SynStruc.DependencyElement':
-            return TransformationSynStruc.DependencyElement(
-                data["deptype"],
-                data["var"] if "var" in data else None,
-                data["opt"] if "opt" in data else False,
-                data["governor"] if "governor" in data else None,
-                data["dependent"] if "dependent" in data else None
-            )
-
-        def to_dict(self) -> dict:
-            return {"type": "dependency", "deptype": self.type, "var": self.variable, "opt": self.optional, "gov": self.governor, "dep": self.dependent}
-
-    @dataclass
-    class Variable(object):
-        index: int
-        pos: List[str]
-        tags: List[str]
-
-    def __init__(self, contents: dict=None):
-        self.variables = List[TransformationSynStruc.Variable]
-        self.patterns = List[List[Union[TransformationSynStruc.DependencyElement, SynStruc.TokenElement, SynStruc.ConstituencyElement]]]
-
-        if contents is not None:
-            self._index(contents)
-
-    def _index(self, contents: dict):
-        self.variables = list(map(lambda var: TransformationSynStruc.Variable(int(var[0]), var[1]["pos"], var[1]["tag"]), contents["vars"].items()))
-
-        element_map = {
-            "token": SynStruc.TokenElement,
-            "dependency": TransformationSynStruc.DependencyElement,
-            "constituency": SynStruc.ConstituencyElement
-        }
-
-        self.patterns = list(map(lambda pattern: list(map(lambda element: element_map[element["type"]].parse(element), pattern)), contents["patterns"]))
-
-    def __eq__(self, other):
-        if isinstance(other, TransformationSynStruc):
-            return self.variables == other.variables and self.patterns == other.patterns
 
 
 class TransformationExecutable(object):

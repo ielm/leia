@@ -320,14 +320,21 @@ class SynStrucTestCase(TestCase):
             {"type": "dependency", "deptype": "subject"}
         ])
 
-        self.assertEqual([SynStruc.DependencyElement("subject", None, False)], synstruc.elements)
+        self.assertEqual([SynStruc.DependencyElement("subject", None, None, None, False)], synstruc.elements)
+
+        # Dependencies can specify a governor or dependent.
+        synstruc = SynStruc(contents=[
+            {"type": "dependency", "deptype": "subject", "gov": 1, "dep": 2}
+        ])
+
+        self.assertEqual([SynStruc.DependencyElement("subject", 1, 2, None, False)], synstruc.elements)
 
         # Dependencies can specify a variable or optionality flag.
         synstruc = SynStruc(contents=[
             {"type": "dependency", "deptype": "subject", "var": 3, "opt": True}
         ])
 
-        self.assertEqual([SynStruc.DependencyElement("subject", 3, True)], synstruc.elements)
+        self.assertEqual([SynStruc.DependencyElement("subject", None, None, 3, True)], synstruc.elements)
 
     def test_index_constituency(self):
         # Constituencies must have a type; they can have no children.

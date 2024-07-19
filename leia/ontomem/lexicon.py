@@ -202,6 +202,8 @@ class SynStruc(object):
     class DependencyElement(Element):
 
         type: str
+        governor: Union[int, None]
+        dependent: Union[int, None]
         variable: Union[int, None]
         optional: bool
 
@@ -209,12 +211,14 @@ class SynStruc(object):
         def parse(cls, data: dict) -> 'SynStruc.DependencyElement':
             return SynStruc.DependencyElement(
                 data["deptype"],
+                data["gov"] if "gov" in data else None,
+                data["dep"] if "dep" in data else None,
                 data["var"] if "var" in data else None,
                 data["opt"] if "opt" in data else False
             )
 
         def to_dict(self) -> dict:
-            return {"type": "dependency", "deptype": self.type, "var": self.variable, "opt": self.optional}
+            return {"type": "dependency", "deptype": self.type, "gov": self.governor, "dep": self.dependent, "var": self.variable, "opt": self.optional}
 
     @dataclass
     class ConstituencyElement(Element):

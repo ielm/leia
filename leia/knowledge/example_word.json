@@ -60,8 +60,10 @@
     lemma             a list of lemmas to match against; e.g., ["MAN"]
     pos               a single part of speech or null; e.g., "N"
     morph             a dictionary of arbitrary morphology tags (string -> string)
-  dependency          representing a single dependency where the governor is the root
+  dependency          representing a single dependency where the governor is the root (unless overridden)
     deptype           the type of the dependency; e.g., "subject"
+    gov               an optional variable number pointing to the governor (otherwise root is assumed)
+    dep               an optional variable number pointing to the dependent
   constituency        representing a single constituency
     contype           the type of constituency; e.g., "VP"
     children          an ordered list of constituencies (making the structure recursive) and tokens (as defined above)
