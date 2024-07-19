@@ -1,11 +1,40 @@
 div.concept {
-    padding: 4px;
-    overflow-y: scroll;
+    --fixed-concept-navigation-header-height: 25px;
     height: 100%;
 }
 
-div.concept > .concept-lineage-header > .concept-name {
+div.concept > div.concept-navigation-header {
+    height: var(--fixed-concept-navigation-header-height);
+    padding-top: 2px;
+    padding-left: 0px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    background: var(--ribbon-color-tier-3);
+    border-bottom-color: var(--ribbon-color-tier-1);
+}
+
+div.concept > div.concept-navigation-content {
+    padding: 4px;
+    overflow-y: scroll;
+    height: calc(100% - var(--fixed-concept-navigation-header-height));
+}
+
+div.concept > div.concept-navigation-content > div.concept-definition > .concept-lineage-header > .concept-name {
     font-weight: bold;
+}
+
+div.concept > div.concept-navigation-content > div.concept-ancestry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+}
+
+div.concept > div.concept-navigation-content > div.concept-usage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666;
 }
 
 table.concept-rows > tbody > tr.concept-row-local {

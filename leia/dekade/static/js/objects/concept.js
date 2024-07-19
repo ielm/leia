@@ -1,5 +1,6 @@
 import * as API from "../api.js";
 import { LEIAObject } from "./_default.js";
+import { LEIAFixedTabsViewer } from "../tabs.js";
 
 export class Concept extends LEIAObject {
 
@@ -37,6 +38,8 @@ export class Concept extends LEIAObject {
         element.find("input.concept-add-local-filler").keyup(this._onAddLocalInputChanged.bind(this));
         element.find("input.concept-add-local-meta").keyup(this._onAddLocalInputChanged.bind(this));
         element.find("input.concept-definition-content").keyup(this._onConceptDefinitionChanged.bind(this));
+
+        new LEIAFixedTabsViewer(element.find("div.concept-navigation-header"), element.find("div.concept-navigation-content"));
     }
 
     templateName() {

@@ -56,7 +56,7 @@ class LEIATabsViewer {
 }
 
 
-class LEIAFixedTabsViewer extends LEIATabsViewer {
+export class LEIAFixedTabsViewer extends LEIATabsViewer {
 
     constructor(tabPanel, contentPanel) {
         super(tabPanel, contentPanel);
