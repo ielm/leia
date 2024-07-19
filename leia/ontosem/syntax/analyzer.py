@@ -1,8 +1,9 @@
+from leia.ontomem.grammar import POS
 from leia.ontomem.lexicon import Sense
 from leia.ontosem.analysis import Analysis, WMLexicon
 from leia.ontosem.config import OntoSemConfig
 from leia.ontosem.syntax.results import Syntax, Word
-from typing import List
+from typing import List, Union
 
 import subprocess
 
@@ -112,22 +113,18 @@ class WMLexiconLoader(object):
             "ADV": "PROPERTY",
         }
 
+        def _match_semstruc(pos: POS) -> Union[str, None]:
+            for k, v in semstruc_options.items():
+                if pos.isa(k):
+                    return v
+            return None
+
         semstruc = "ALL"
         for pos in word.pos:
             pos = self.analysis.config.memory().parts_of_speech.get(pos)
-            if pos.isa("NOUN"):
-                pos = "NOUN"
-            elif pos.isa("VERB"):
-                pos = "VERB"
-            elif pos.isa("ADJ"):
-                pos = "ADJ"
-            elif pos.isa("ADV"):
-                pos = "ADV"
-            else:
-                pos = "UNKNOWN"
-
-            if pos in semstruc_options:
-                semstruc = semstruc_options[pos]
+            match = _match_semstruc(pos)
+            if match is not None:
+                semstruc = match
                 break
 
         sense = Sense(self.analysis.config.memory(), id, contents={
