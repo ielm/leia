@@ -15,10 +15,8 @@ div.ontology-sidebar-header {
     border-bottom-color: #775779;
 }
 
-div.ontology-sidebar-tree-viewer {
+div.ontology-sidebar-tree-viewer-container {
     height: calc(100% - var(--fixed-ontology-sidebar-header-height));
-    overflow-y: auto;
-    padding: 2px;
     background-color: #c6a5cc;
 }
 

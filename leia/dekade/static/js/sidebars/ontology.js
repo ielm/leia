@@ -1,6 +1,7 @@
 import * as API from "../api.js";
 import { LEIAObject } from "../objects/_default.js";
 import { OntologyTree } from "../objects/tree.js";
+import { contentTabs } from "../tabs.js";
 
 
 const enterSearchTemplate = `
@@ -26,6 +27,11 @@ $(document).ready(function() {
 
 
 async function _onOntologySidebarTreeClick(event) {
+    if (event.altKey) {
+        contentTabs.addObject(await new OntologyTree());
+        return;
+    }
+
     const treeview = $(".ontology-sidebar-tree-viewer-container");
     const container = $(".ontology-sidebar-search-results");
 
