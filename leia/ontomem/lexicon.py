@@ -161,6 +161,9 @@ class SynStruc(object):
         def parse(cls, data: dict) -> 'SynStruc.Element':
             raise NotImplementedError
 
+        def is_optional(self) -> bool:
+            raise NotImplementedError
+
         def to_dict(self) -> dict:
             raise NotImplementedError
 
@@ -172,6 +175,9 @@ class SynStruc(object):
         @classmethod
         def parse(cls, data: dict) -> 'SynStruc.RootElement':
             return SynStruc.RootElement()
+
+        def is_optional(self) -> bool:
+            return False
 
         def to_dict(self) -> dict:
             return {"type": "root"}
@@ -195,6 +201,9 @@ class SynStruc(object):
                 data["opt"] if "opt" in data else False
             )
 
+        def is_optional(self) -> bool:
+            return self.optional
+
         def to_dict(self) -> dict:
             return {"type": "token", "lemma": list(self.lemmas), "pos": self.pos, "morph": self.morph, "var": self.variable, "opt": self.optional}
 
@@ -216,6 +225,9 @@ class SynStruc(object):
                 data["var"] if "var" in data else None,
                 data["opt"] if "opt" in data else False
             )
+
+        def is_optional(self) -> bool:
+            return self.optional
 
         def to_dict(self) -> dict:
             return {"type": "dependency", "deptype": self.type, "gov": self.governor, "dep": self.dependent, "var": self.variable, "opt": self.optional}
@@ -241,6 +253,9 @@ class SynStruc(object):
                 data["var"] if "var" in data else None,
                 data["opt"] if "opt" in data else False
             )
+
+        def is_optional(self) -> bool:
+            return self.optional
 
         def to_dict(self) -> dict:
             return {"type": "constituency", "children": list(map(lambda child: child.to_dict(), self.children)), "var": self.variable, "opt": self.optional}

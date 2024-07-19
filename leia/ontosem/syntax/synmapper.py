@@ -117,6 +117,13 @@ class SynMatcher(object):
 
     def match(self, elements: List[SynStruc.Element], components: List[Union[Word, Dependency, ConstituencyNode]], root: Union[Word, None]) -> List['SynMatcher.SynMatchResult']:
 
+        # Takes an ordered list of elements from a syn-struc and a flattened list of components from a syntactic parse.
+        # Finds all possible alignments of those elements into the components, allowing for any gaps in between, so
+        # long as ordering is maintained.
+
+        # Elements that are marked as optional will produce a result with a null match, in addition to any results
+        # with actual matching components.
+
         def _get_match_type(element: SynStruc.Element) -> Type[SynMatcher.SynMatch]:
             if isinstance(element, SynStruc.RootElement):
                 return SynMatcher.RootMatch
@@ -129,25 +136,43 @@ class SynMatcher(object):
             raise Exception
 
         def _find_matches(element: SynStruc.Element, components: List[Union[Word, Dependency, ConstituencyNode]]) -> Iterable[Tuple['SynMatcher.SynMatch', List[Union[Word, Dependency, ConstituencyNode]]]]:
+            # Finds all matches of the element from the input list of components, yielding each match in order.
+            # Yielded results include the match, and the remaining components (that is, components which are ordered
+            # after the match, as any further match attempts for this result set must follow in order).
             for i, component in enumerate(components):
                 if self.does_element_match(element, component, root=root):
                     yield _get_match_type(element)(element, component), components[i:]
 
-        def _expand_matches(matches: List[dict]) -> List[dict]:
+        def _expand_matches(matches: List[dict]) -> Iterable[dict]:
+            # Given a list of partial matches (that is, some set of elements -> components), take the next element
+            # (declared in the loop below), and find the next matching component for it starting from the next
+            # available component (per match).  In addition, if the element is optional, add an additional null
+            # match to each current match set.
             for match in matches:
                 for nm in _find_matches(element, match["remaining"]):
                     yield {
                         "match": match["match"] + [nm[0]],
                         "remaining": nm[1]
                     }
+                if element.is_optional():
+                    yield {
+                        "match": match["match"] + [_get_match_type(element)(element, None)],
+                        "remaing": list(match["remaining"])
+                    }
 
+        # Start with the first element.  Find all matches to that element; if the element is optional, add another
+        # "match" to a null component.
         element = elements.pop(0)
         matches = list(map(lambda m: {"match": [m[0]], "remaining": m[1]}, _find_matches(element, components)))
+        if element.is_optional():
+            matches.append({"match": [_get_match_type(element)(element, None)], "remaining": list(components)})
 
+        # Now continue with each element in order, passing in the full list of matches from the prior set of results.
         while len(elements) > 0:
             element = elements.pop(0)
             matches = list(_expand_matches(matches))
 
+        # Convert the results into SynMatchResult objects.
         return list(map(lambda m: SynMatcher.SynMatchResult(m["match"]), matches))
 
     def does_element_match(self, element: SynStruc.Element, component: Union[Word, Dependency, ConstituencyNode], root: Word=None) -> bool:

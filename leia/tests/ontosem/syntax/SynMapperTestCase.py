@@ -412,7 +412,7 @@ class SynMatcherTestCase(LEIATestCase):
         component4 = self.mockWord(4, "word", "N")
 
         # Multiple components can be matched; gapping is allowed
-        results = self.matcher.match([element1, element2], [component1, component2, component3], None)
+        results = self.matcher.match([element1, element2], [component1, component2, component3, component4], None)
 
         self.assertEqual([SynMatcher.SynMatchResult([
             SynMatcher.TokenMatch(element1, component1),
@@ -428,7 +428,7 @@ class SynMatcherTestCase(LEIATestCase):
         component4 = self.mockWord(4, "word", "N")
 
         # Multiple components can be matched; gapping is allowed
-        results = self.matcher.match([element1, element2], [component1, component2, component3], None)
+        results = self.matcher.match([element1, element2], [component1, component2, component3, component4], None)
 
         self.assertEqual([
             SynMatcher.SynMatchResult([
@@ -438,6 +438,32 @@ class SynMatcherTestCase(LEIATestCase):
             SynMatcher.SynMatchResult([
                 SynMatcher.TokenMatch(element1, component2),
                 SynMatcher.TokenMatch(element2, component3),
+            ])
+        ], results)
+
+    def test_match_optional_elements(self):
+        element1 = SynStruc.TokenElement({"word"}, "N", dict(), None, False)
+        element2 = SynStruc.TokenElement({"word"}, "V", dict(), None, True)
+        component1 = self.mockWord(1, "word", "N")
+        component2 = self.mockWord(2, "word", "V")
+        component3 = self.mockWord(3, "word", "N")
+
+        # Optional elements can always be skipped in the match; they will be returned in the result with a null
+        # value in the component field.  Actual matches will be returned as well.
+        results = self.matcher.match([element1, element2], [component1, component2, component3], None)
+
+        self.assertEqual([
+            SynMatcher.SynMatchResult([
+                SynMatcher.TokenMatch(element1, component1),
+                SynMatcher.TokenMatch(element2, component2),
+            ]),
+            SynMatcher.SynMatchResult([
+                SynMatcher.TokenMatch(element1, component1),
+                SynMatcher.TokenMatch(element2, None),
+            ]),
+            SynMatcher.SynMatchResult([
+                SynMatcher.TokenMatch(element1, component3),
+                SynMatcher.TokenMatch(element2, None),
             ])
         ], results)
 
