@@ -2,7 +2,7 @@ from leia.ontomem.lexicon import Sense
 from leia.ontosem.analysis import WMLexicon
 from leia.ontosem.config import OntoSemConfig
 from leia.ontosem.syntax.results import Syntax, Word
-from typing import List, Iterable
+from typing import List
 
 import subprocess
 
@@ -76,10 +76,9 @@ class SpacyAnalyzer(object):
 
 class WMLexiconLoader(object):
 
-    # TODO: This class needs tests
-
     def __init__(self, config: OntoSemConfig):
         self.config = config
+        self._generated_indexes = dict()
 
     def run(self, lexicon: WMLexicon, syntax: List[Syntax]):
         for sentence in syntax:
@@ -87,15 +86,50 @@ class WMLexiconLoader(object):
                 for sense in self.get_senses_for_word(word):
                     lexicon.add_sense(word, sense)
 
-    def get_senses_for_word(self, word: Word) -> Iterable[Sense]:
+    def get_senses_for_word(self, word: Word) -> List[Sense]:
         truth = self.config.lexicon()
         lemma = word.lemma.upper()
 
-        # TODO: This is a bit of a hack; how do we want to handle lemmas that can't match the loaded file name?
-        if lemma == ".":
-            lemma = "*PERIOD*"
+        senses = list(truth.word(lemma).senses())
 
-        return iter(truth.word(lemma).senses())
+        if len(senses) == 0:
+            senses = [self.generate_sense_for_word(word)]
+
+        return senses
+
+    def generate_sense_for_word(self, word: Word) -> Sense:
+        partial_id = "%s-%s" % (word.lemma.upper(), word.pos[0])
+        if partial_id not in self._generated_indexes:
+            self._generated_indexes[partial_id] = 0
+
+        index = self._generated_indexes[partial_id] + 1
+        self._generated_indexes[partial_id] = index
+
+        id = "%s%d?" % (partial_id, index)
+
+        semstruc_options = {
+            "NOUN": "OBJECT",
+            "VERB": "EVENT",
+            "ADJ": "PROPERTY",
+            "ADV": "PROPERTY",
+        }
+
+        semstruc = "ALL"
+        for pos in word.pos:
+            if pos in semstruc_options:
+                semstruc = semstruc_options[pos]
+                break
+
+        sense = Sense(self.config.memory(), id, contents={
+            "SENSE": id,
+            "WORD": word.lemma.upper(),
+            "CAT": word.pos,
+            "SYN-STRUC": [{"type": "root"}],
+            "SEM-STRUC": semstruc,
+            "MEANING-PROCEDURES": []
+        })
+
+        return sense
 
 
 class SyntacticAnalyzer(object):
