@@ -1,9 +1,14 @@
+from dataclasses import dataclass
 from multiprocessing import Pool
 from ontomem.memory import Memory
 from typing import List, Iterable, Set, Tuple, Union
 
 import json
 import os
+
+from typing import TYPE_CHECKING
+if TYPE_CHECKING:
+    from ontomem.properties import Property, WILDCARD
 
 
 # TODO: Following functionalities are needed at a minimum
@@ -48,9 +53,9 @@ class Ontology(object):
             self.cache[c[0]].set_contents(c[1])
 
     def concept(self, name: str) -> Union['Concept', None]:
-        if name in self.cache:
-            return self.cache[name]
-        return None
+        if name not in self.cache:
+            self.cache[name] = Concept(self.memory, name)
+        return self.cache[name]
 
     def usages(self, concept: 'Concept') -> Iterable[Tuple['Concept', str, str]]:
         for c in self.cache.values():
@@ -62,11 +67,39 @@ class Ontology(object):
 
 class Concept(object):
 
+    FILLER = Union[
+        'Concept',
+        'Property',
+        List[str],
+        Tuple['COMPARATOR', Union[int, float]],
+        Tuple['COMPARATOR', Union[int, float], Union[int, float]],
+        'WILDCARD'
+    ]
+
+    @dataclass
+    class LocalRow:
+        concept: 'Concept'
+        property: str
+        facet: str
+        filler: 'Concept.FILLER'
+        meta: dict
+
+    @dataclass
+    class BlockedRow:
+        concept: 'Concept'
+        property: str
+        facet: str
+        filler: 'Concept.FILLER'
+
+
     def __init__(self, memory: Memory, name: str, contents: dict=None):
         self.memory = memory
         self.name = name
         self.contents = contents
-        self.slots = dict()
+        self.local = dict()
+        self.block = dict()
+        self.private = dict()
+        self._parents: Set['Concept'] = set()
 
         if contents is not None:
             self._index()
@@ -77,35 +110,65 @@ class Concept(object):
 
     def _index(self):
 
-        self.slots = dict()
+        self._parents = set()
+        self.local = dict()
+        self.block = dict()
+
+        for parent in self.contents["isa"]:
+            self._parents.add(self.memory.ontology.concept(parent[1:]))
 
         for row in self.contents["local"]:
-            slot = row["slot"]
-            facet = row["facet"]
-            filler = row["filler"]
+            self._parse_row(row, self.local)
 
-            # Parse various filler types
-            if isinstance(filler, str):
-                if filler[0] == "@":
-                    # TODO: this isn't handling private concepts currently; override the namespace if needed
-                    filler = self.memory.ontology.concept(filler[1:])
-                elif filler[0] == "$":
-                    filler = self.memory.properties.get_property(filler[1:])
-                elif filler[0] == "&":
-                    # TODO: get the set
-                    raise NotImplementedError
+        for row in self.contents["block"]:
+            self._parse_row(row, self.block)
 
-            if slot not in self.slots:
-                self.slots[slot] = dict()
-            if facet not in self.slots[slot]:
-                self.slots[slot][facet] = list()
-            self.slots[slot][facet].append(filler)
+    def _parse_row(self, row: dict, into: dict):
+        slot = row["slot"]
+        facet = row["facet"]
+        filler = row["filler"]
+
+        # Parse various filler types
+        if isinstance(filler, str):
+            if filler[0] == "@":
+                # TODO: this isn't handling private concepts currently; override the namespace if needed
+                filler = self.memory.ontology.concept(filler[1:])
+            elif filler[0] == "$":
+                filler = self.memory.properties.get_property(filler[1:])
+            elif filler[0] == "&":
+                # TODO: get the set
+                raise NotImplementedError
+
+        if slot not in into:
+            into[slot] = dict()
+        if facet not in into[slot]:
+            into[slot][facet] = list()
+
+        filler = {
+            "value": filler
+        }
+
+        if "meta" in row:
+            filler.update(row["meta"])
+
+        into[slot][facet].append(filler)
+
+    def add_parent(self, parent: 'Concept'):
+        self._parents.add(parent)
+
+    def remove_parent(self, parent: 'Concept'):
+        if parent in self._parents:
+            self._parents.remove(parent)
 
     def parents(self) -> Set['Concept']:
-        return set(map(lambda p: self.memory.ontology.concept(p[1:]), self.contents["isa"]))
+        return set(self._parents)
 
     def ancestors(self) -> Set['Concept']:
-        raise NotImplementedError
+        a = set(self._parents)
+        for p in self._parents:
+            a.update(p.ancestors())
+
+        return a
 
     def children(self) -> Set['Concept']:
         raise NotImplementedError
@@ -116,12 +179,71 @@ class Concept(object):
     def siblings(self) -> Set['Concept']:
         raise NotImplementedError
 
+    def add_local(self, property: str, facet: str, filler: FILLER, measured_in: str=None):
+        if property not in self.local:
+            self.local[property] = dict()
+        if facet not in self.local[property]:
+            self.local[property][facet] = list()
+
+        filler = {
+            "value": filler,
+        }
+
+        if measured_in is not None:
+            filler["measured-in"] = measured_in
+
+        self.local[property][facet].append(filler)
+
+    def remove_local(self, property: str, facet: str, filler: FILLER):
+        if property not in self.local:
+            return
+        if facet not in self.local[property]:
+            return
+
+        self.local[property][facet] = list(filter(lambda f: f["value"] != filler, self.local[property][facet]))
+
+    def add_block(self, property: str, facet: str, filler: FILLER):
+        if property not in self.block:
+            self.block[property] = dict()
+        if facet not in self.block[property]:
+            self.block[property][facet] = list()
+
+        self.block[property][facet].append(filler)
+
+    def remove_block(self, property: str, facet: str, filler: FILLER):
+        if property not in self.block:
+            return
+        if facet not in self.block[property]:
+            return
+
+        self.block[property][facet] = list(filter(lambda f: f != filler, self.block[property][facet]))
+
+    def rows(self) -> List[FILLER]:
+        out = []
+
+        for slot, facets in self.local.items():
+            for facet, fillers in facets.items():
+                for filler in fillers:
+                    meta = dict(filler)
+                    del meta["value"]
+                    out.append(Concept.LocalRow(self, slot, facet, filler["value"], meta))
+
+        for slot, facets in self.block.items():
+            for facet, fillers in facets.items():
+                for filler in fillers:
+                    out.append(Concept.BlockedRow(self, slot, facet, filler))
+
+        for parent in self.parents():
+            out.extend(parent.rows())
+
+        return out
+
     def fillers(self, slot: str, facet: str) -> List:
         results = []
 
-        if slot in self.slots:
-            if facet in self.slots[slot]:
-                results.extend(self.slots[slot][facet])
+        if slot in self.local:
+            if facet in self.local[slot]:
+                results.extend(self.local[slot][facet])
 
         for parent in self.parents():
             results.extend(parent.fillers(slot, facet))
@@ -144,10 +266,14 @@ if __name__ == "__main__":
 
     memory = Memory("", knowledge_dir)
     ontology = memory.ontology
+
+    import time
+    start = time.time()
     ontology.load()
+    print("Time to load: %s" % str(time.time() - start))
 
     print(ontology.concept("human").contents)
     print(ontology.concept("human").parents())
     print(ontology.concept("human").fillers("has-object-as-part", "sem"))
-    print(ontology.concept("human").fillers("has-object-as-part", "sem")[0].contents)
+    print(ontology.concept("human").fillers("has-object-as-part", "sem")["value"][0].contents)
 
