@@ -127,7 +127,7 @@ class SynMatcher(object):
 
         def _find_matches(element: SynStruc.Element, components: List[Union[Word, Dependency, ConstituencyNode]]) -> Iterable[Tuple['SynMatcher.SynMatch', List[Union[Word, Dependency, ConstituencyNode]]]]:
             for i, component in enumerate(components):
-                if self.does_element_match(element, component):
+                if self.does_element_match(element, component, root=root):
                     yield _get_match_type(element)(element, component), components[i:]
 
         def _expand_matches(matches: List[dict]) -> List[dict]:
@@ -147,42 +147,38 @@ class SynMatcher(object):
 
         return list(map(lambda m: SynMatcher.SynMatchResult(m["match"]), matches))
 
-    def does_element_match(self, element: SynStruc.Element, *args) -> bool:
+    def does_element_match(self, element: SynStruc.Element, component: Union[Word, Dependency, ConstituencyNode], root: Word=None) -> bool:
         # Generic matching of any synstruc element to any syntax component(s).  Essentially, this function verifies
         # type matching and then calls the specific does_x_match function and returns its results.
 
         if isinstance(element, SynStruc.RootElement):
-            if len(args) == 2 and isinstance(args[0], Word) and (isinstance(args[1], Word) or args[1] is None):
-                return self.does_root_match(element, args[0], args[1])
-            return False
+            if isinstance(component, Word):
+                return self.does_root_match(element, component, root=root)
 
         if isinstance(element, SynStruc.TokenElement):
-            if len(args) == 1 and isinstance(args[0], Word):
-                return self.does_token_match(element, args[0])
-            return False
+            if isinstance(component, Word):
+                return self.does_token_match(element, component, root=root)
 
         if isinstance(element, SynStruc.DependencyElement):
-            if len(args) == 2 and isinstance(args[0], Dependency) and (isinstance(args[1], Word) or args[1] is None):
-                return self.does_dependency_match(element, args[0], args[1])
-            return False
+            if isinstance(component, Dependency):
+                return self.does_dependency_match(element, component, root=root)
 
         if isinstance(element, SynStruc.ConstituencyElement):
-            if len(args) == 1 and isinstance(args[0], ConstituencyNode):
-                return self.does_constituency_match(element, args[0])
-            return False
+            if isinstance(component, ConstituencyNode):
+                return self.does_constituency_match(element, component, root=root)
 
         # The type is unknown, return False.
         return False
 
 
-    def does_root_match(self, element: SynStruc.RootElement, word: Word, specified_root: Union[Word, None]) -> bool:
+    def does_root_match(self, element: SynStruc.RootElement, word: Word, root: Union[Word, None]) -> bool:
         # This matching function is trivial; it takes the candidate word and checks to see if the root specified (if any)
         # is the same word.  This primarily exists for consistency (all syn-struc element types can have a corresponding
         # "does_x_match" function), and also as a home for any future complexities if needed.
 
-        return word == specified_root
+        return word == root
 
-    def does_token_match(self, element: SynStruc.TokenElement, word: Word) -> bool:
+    def does_token_match(self, element: SynStruc.TokenElement, word: Word, root: Union[Word, None]) -> bool:
         # If both lemmas and POS are unspecified, no match is allowed
         if len(element.lemmas) == 0 and element.pos is None:
             return False
@@ -221,7 +217,7 @@ class SynMatcher(object):
         # No filtering has occurred; the dependency is considered a match
         return True
 
-    def does_constituency_match(self, element: SynStruc.ConstituencyElement, node: ConstituencyNode) -> bool:
+    def does_constituency_match(self, element: SynStruc.ConstituencyElement, node: ConstituencyNode, root: Union[Word, None]) -> bool:
         # The type must match
         if element.type.lower() != node.label.lower():
             return False
