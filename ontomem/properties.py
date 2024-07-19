@@ -173,6 +173,12 @@ class PropertyInventory(object):
             self.cache[name] = Property(self.memory, name)
         return self.cache[name]
 
+    def relations(self) -> List[Property]:
+        return self.properties_with_type(Property.TYPE.RELATION)
+
+    def properties_with_type(self, type: Property.TYPE) -> List[Property]:
+        return list(filter(lambda p: p.type() == type, self.cache.values()))
+
     def inverses(self) -> Dict[str, str]:
         return dict(
             map(lambda p: (p.inverse(), p.name), filter(lambda p: p.is_relation(), self.cache.values()))

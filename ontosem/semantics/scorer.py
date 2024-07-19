@@ -13,6 +13,7 @@ class SemanticScorer(object):
         self.config = config
         self.ontology = ontology if ontology is not None else self.config.ontology()
         self.lexicon = lexicon if lexicon is not None else self.config.lexicon()
+        self.properties = config.memory().properties
 
     def run(self, candidates: Iterable[Candidate]) -> Iterable[Candidate]:
         for candidate in candidates:
@@ -40,8 +41,11 @@ class SemanticScorer(object):
     def score_relation_ranges(self, candidate: Candidate) -> List[RelationRangeScore]:
         results = []
 
-        relations = set(map(lambda f: f.concept, self.ontology.concept("RELATION").descendants()))
-        relations.add("RELATION")
+        relations = self.properties.relations()
+        relations = set(map(lambda r: r.name, relations))
+
+        # relations = set(map(lambda f: f.concept, self.ontology.concept("RELATION").descendants()))
+        # relations.add("RELATION")
 
         for frame in candidate.basic_tmr.frames.values():
             for property, fillers in frame.properties.items():
@@ -50,11 +54,11 @@ class SemanticScorer(object):
                     continue
 
                 # Extract the ranges (and their descendants); only consider SEM for now
-                ranges = self.ontology.concept(frame.concept)[property]["SEM"]
+                ranges = self.ontology.concept(frame.concept).fillers(property, "SEM")
                 descendants = list(itertools.chain.from_iterable(map(lambda r: r.descendants(), ranges)))
 
-                ranges = set(map(lambda r: r.concept, ranges))
-                descendants = set(map(lambda d: d.concept, descendants))
+                ranges = set(map(lambda r: r.name, ranges))
+                descendants = set(map(lambda d: d.name, descendants))
 
                 for filler in fillers:
                     # Only score relations connected to actual frames
@@ -120,7 +124,7 @@ class SemanticScorer(object):
                         if tmr_frame_concept.isa(expected_concept):
                             scores.append(1.0)
                         elif expected_concept.isa(tmr_frame_concept):
-                            distance = self.ontology.distance_to_ancestor(expected_concept.concept, tmr_frame_concept.concept)
+                            distance = self.ontology.distance_to_ancestor(expected_concept.name, tmr_frame_concept.name)
                             distance = min(distance, 3)
                             score = 1.0 - (distance * 0.3)
                             scores.append(score)

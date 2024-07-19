@@ -60,6 +60,37 @@ class Ontology(object):
                     if concept in fv:
                         yield c, sk, fk
 
+    def common_ancestors(self, a: str, b: str) -> Set[str]:
+        a_ancestors = set(map(lambda f: f.name, self.concept(a).ancestors()))
+        b_ancestors = set(map(lambda f: f.name, self.concept(b).ancestors()))
+
+        ancestors = a_ancestors.intersection(b_ancestors)
+        return ancestors
+
+    def distance_to_ancestor(self, descendant: str, ancestor: str) -> Union[int, None]:
+        if descendant == ancestor:
+            return 0
+
+        ancestor = self.concept(ancestor)
+
+        def _find_ancestor(start: Concept, distance: int) -> Union[int, None]:
+            distances = []
+            for parent in start.parents():
+                if parent == ancestor:
+                    return distance + 1
+                d = _find_ancestor(parent, distance + 1)
+                if d is None:
+                    continue
+                distances.append(d)
+
+            if len(distances) == 0:
+                return None
+
+            return min(distances)
+
+        result = _find_ancestor(self.concept(descendant), 0)
+        return result
+
 
 class Concept(object):
 
@@ -149,12 +180,14 @@ class Concept(object):
 
         into[slot][facet].append(filler)
 
-    def add_parent(self, parent: 'Concept'):
+    def add_parent(self, parent: 'Concept') -> 'Concept':
         self._parents.add(parent)
+        return self
 
-    def remove_parent(self, parent: 'Concept'):
+    def remove_parent(self, parent: 'Concept') -> 'Concept':
         if parent in self._parents:
             self._parents.remove(parent)
+        return self
 
     def parents(self) -> Set['Concept']:
         return set(self._parents)

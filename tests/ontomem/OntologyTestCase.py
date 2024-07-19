@@ -1,11 +1,45 @@
 from ontomem.memory import Memory
-from ontomem.ontology import Concept
+from ontomem.ontology import Concept, Ontology
 from unittest import TestCase
 
 
 class OntologyTestCase(TestCase):
 
-    pass
+    def test_common_ancestors(self):
+        ontology = Memory("", "", "").ontology
+
+        gp = ontology.concept("GRANDPARENT")
+        p1 = ontology.concept("PARENT1").add_parent(gp)
+        p2 = ontology.concept("PARENT2").add_parent(gp)
+        c1 = ontology.concept("CHILD1").add_parent(p1)
+        c2 = ontology.concept("CHILD2").add_parent(p1)
+        c3 = ontology.concept("CHILD3").add_parent(p2)
+
+        self.assertEqual({"GRANDPARENT", "PARENT1"}, ontology.common_ancestors("CHILD1", "CHILD2"))
+        self.assertEqual({"GRANDPARENT"}, ontology.common_ancestors("CHILD1", "CHILD3"))
+        self.assertEqual({"GRANDPARENT"}, ontology.common_ancestors("PARENT1", "PARENT2"))
+
+    def test_distance_to_ancestor(self):
+        ontology = Memory("", "", "").ontology
+
+        gp = ontology.concept("GRANDPARENT")
+        p1 = ontology.concept("PARENT1").add_parent(gp)
+        p2 = ontology.concept("PARENT2").add_parent(gp)
+        c1 = ontology.concept("CHILD1").add_parent(p1)
+        c2 = ontology.concept("CHILD2").add_parent(p1)
+        c3 = ontology.concept("CHILD3").add_parent(p2)
+
+        self.assertEqual(0, ontology.distance_to_ancestor(gp.name, gp.name))
+        self.assertEqual(1, ontology.distance_to_ancestor(p1.name, gp.name))
+        self.assertEqual(1, ontology.distance_to_ancestor(p2.name, gp.name))
+        self.assertEqual(2, ontology.distance_to_ancestor(c1.name, gp.name))
+        self.assertEqual(2, ontology.distance_to_ancestor(c2.name, gp.name))
+        self.assertEqual(2, ontology.distance_to_ancestor(c3.name, gp.name))
+        self.assertEqual(1, ontology.distance_to_ancestor(c1.name, p1.name))
+        self.assertEqual(1, ontology.distance_to_ancestor(c2.name, p1.name))
+        self.assertEqual(1, ontology.distance_to_ancestor(c3.name, p2.name))
+
+        self.assertIsNone(ontology.distance_to_ancestor(c1.name, c2.name))
 
 
 class ConceptTestCase(TestCase):
