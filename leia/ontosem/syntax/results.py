@@ -25,7 +25,7 @@ class Syntax(object):
         enhanced_deps = LispParser.list_key_to_value(stanford, "ENHANCEDDEPS")[1]
         original_sentence = LispParser.list_key_to_value(stanford, "ORIGINALSENTENCE")[1]
         sentence = LispParser.list_key_to_value(stanford, "SENTENCE")[1]
-        parse = LispParser.list_key_to_value(stanford, "PARSE")[1]
+        parse = ConstituencyNode.parse_lisp_results(LispParser.list_key_to_value(stanford, "PARSE")[1], words)
 
         synmap = LispParser.list_key_to_value(lisp, "SYNMAP")
         synmap = SynMap.parse_lisp_results(synmap[1], words)
@@ -41,17 +41,24 @@ class Syntax(object):
         if original_sentence.startswith("\"") and original_sentence.endswith("\""):
             original_sentence = original_sentence[1:-1]
 
-        return Syntax(words, synmap, lex_senses, sentence, original_sentence, parse, basic_deps, enhanced_deps)
+        syntax = Syntax(words, sentence, original_sentence, parse, basic_deps, enhanced_deps)
+        syntax.synmap = synmap
+
+        # TODO: Move lex senses into WM lexicon
+
+        return syntax
 
     @classmethod
     def from_spacy(cls, sentence: Span) -> 'Syntax':
 
+        # Finds the NER type (as a Span) for the token, if any.  Expected 0 or 1, so the first result is returned.
         def _ner_span(token: Token) -> Union[Span, None]:
             for entity in sentence.doc.ents:
                 if token in entity:
                     return entity
             return None
 
+        # Finds the coreference chain for the token, if any.  Expected 0 or 1, so the first results is returned.
         def _coref_chain(token: Token) -> Union[Chain, None]:
             for chain in sentence.doc._.coref_chains:
                 for mention in chain.mentions:
@@ -59,8 +66,16 @@ class Syntax(object):
                         return chain
             return None
 
-        words = list(map(lambda token: Word.from_spacy(token, _ner_span(token), _coref_chain(token)), sentence.subtree))
+        # Parses the constituency string as lisp, and then processes a top level ConstituencyNode.
+        def _parse_constituencies(tree: str, words: List[Word]) -> ConstituencyNode:
 
+            data = OneOrMore(nestedExpr()).parseString(tree)
+            data = data.asList()[0]
+
+            return ConstituencyNode.parse_lisp_results(data, words)
+
+        words = list(map(lambda token: Word.from_spacy(token, _ner_span(token), _coref_chain(token)), sentence.subtree))
+        constituencies = _parse_constituencies(sentence._.parse_string, words)
 
         # print("\nDEPENDENCIES:")
         # for sent in doc.sents:
@@ -72,85 +87,27 @@ class Syntax(object):
         # for chunk in doc.noun_chunks:
         #     print(list(map(lambda token: "%s-%d" % (token.text, token.i), chunk)))
         #
-        # def _format_constituency_parse(node, depth):
-        #     indent = "  ".join(map(lambda i: "", range(depth + 1)))
-        #
-        #     if len(node._.labels) > 0:
-        #         print("%s%s" % (indent, node._.labels[0]))
-        #     else:
-        #         print("%s%s %s-%d" % (indent, node.root.tag_, node.root.text, node.root.i))
-        #     for child in node._.children:
-        #         _format_constituency_parse(child, depth + 1)
-        #
-        # class TreeNode(object):
-        #
-        #     def __init__(self, label: str):
-        #         self.label = label
-        #         self.children = []
-        #
-        #     def pretty_print(self, depth: int = 0):
-        #         indent = "  ".join(map(lambda i: "", range(depth + 1)))
-        #         print("%s%s" % (indent, self.label))
-        #         for child in self.children:
-        #             if isinstance(child, TreeNode):
-        #                 child.pretty_print(depth=depth + 1)
-        #             else:
-        #                 indent = "  ".join(map(lambda i: "", range(depth + 2)))
-        #                 print("%s%s-%d" % (indent, child.text, child.i))
-        #
-        # from pyparsing import OneOrMore, nestedExpr
-        #
-        # def _parse_constituencies(sentence, tree: str):
-        #
-        #     data = OneOrMore(nestedExpr()).parseString(tree)
-        #     data = data.asList()[0]
-        #
-        #     token_index = 0
-        #
-        #     def _to_nodes(parsed, parent):
-        #         nonlocal token_index
-        #
-        #         if len(parsed) > 1 or not isinstance(parsed[0], str):
-        #             for p in parsed:
-        #                 node = TreeNode(p[0])
-        #                 _to_nodes(p[1:], node)
-        #                 parent.children.append(node)
-        #         else:
-        #             parent.children.append(sentence[token_index])
-        #             token_index += 1
-        #
-        #     node = TreeNode(data[0])
-        #     _to_nodes(data[1:], node)
-        #
-        #     return node
-        #
-        # print("\nCONSTITUENCY PARSES:")
-        # for sent in doc.sents:
-        #     print(sent._.parse_string)
-        #     # _format_constituency_parse(sent, 0)
-        #     _parse_constituencies(sent, sent._.parse_string).pretty_print()
 
-        return Syntax(words, None, None, None, None, None, None, None)
+        return Syntax(words, sentence.lemma_, sentence.text, constituencies, None, None)
 
 
-    def __init__(self, words: List['Word'], synmap: 'SynMap', lex_senses: List['Sense'], sentence: str, original_sentence: str, parse: list, basic_deps: list, enhanced_deps: list):
+    def __init__(self, words: List['Word'], sentence: str, original_sentence: str, parse: 'ConstituencyNode', basic_deps: list, enhanced_deps: list):
         self.words = words
-        self.synmap = synmap
-        self.lex_senses = lex_senses
         self.sentence = sentence
         self.original_sentence = original_sentence
         self.parse = parse
         self.basic_deps = basic_deps
         self.enhanced_deps = enhanced_deps
 
+        self.synmap: SynMap = None
+
     def to_dict(self) -> dict:
         return {
             "words": list(map(lambda w: w.to_dict(), self.words)),
             "synmap": self.synmap.to_dict(),
-            "lex-senses": list(map(lambda s: s.to_dict(), self.lex_senses)),
             "sentence": self.sentence,
             "original-sentence": self.original_sentence,
-            "parse": self.parse,
+            "parse": self.parse.to_dict(),
             "basic-deps": self.basic_deps,
             "enhanced-deps": self.enhanced_deps
         }
@@ -218,33 +175,6 @@ class SenseMap(object):
 
 
 class Word(object):
-
-    # class Ner(Enum):
-    #     CAUSE_OF_DEATH = "CAUSE_OF_DEATH"
-    #     CITY = "CITY"
-    #     COUNTRY = "COUNTRY"
-    #     CRIMINAL_CHARGE = "CRIMINAL_CHARGE"
-    #     DATE = "DATE"
-    #     DURATION = "DURATION"
-    #     EMAIL = "EMAIL"
-    #     HANDLE = "HANDLE"
-    #     IDEOLOGY = "IDEOLOGY"
-    #     LOCATION = "LOCATION"
-    #     MISC = "MISC"
-    #     MONEY = "MONEY"
-    #     NONE = "O"
-    #     NATIONALITY = "NATIONALITY"
-    #     NUMBER = "NUMBER"
-    #     ORDINAL = "ORDINAL"
-    #     ORGANIZATION = "ORGANIZATION"
-    #     PERCENT = "PERCENT"
-    #     PERSON = "PERSON"
-    #     RELIGION = "RELIGION"
-    #     SET = "SET"
-    #     STATE_OR_PROVINCE = "STATE_OR_PROVINCE"
-    #     TIME = "TIME"
-    #     TITLE = "TITLE"
-    #     URL = "URL"
 
     class Ner(Enum):
         CARDINAL = "CARDINAL"
@@ -376,6 +306,35 @@ class WordCoreference(object):
         if isinstance(other, WordCoreference):
             return self.sentence == other.sentence and self.word == other.word and self.confidence == other.confidence
         return super().__eq__(other)
+
+
+class ConstituencyNode(object):
+
+    @classmethod
+    def parse_lisp_results(cls, lisp: list, words: List[Word]) -> 'ConstituencyNode':
+
+        token_index = 0
+
+        def _to_nodes(parsed, parent):
+            nonlocal token_index
+
+            if len(parsed) > 1 or not isinstance(parsed[0], str):
+                for p in parsed:
+                    node = ConstituencyNode(p[0])
+                    _to_nodes(p[1:], node)
+                    parent.children.append(node)
+            else:
+                parent.children.append(words[token_index])
+                token_index += 1
+
+        node = ConstituencyNode(lisp[0])
+        _to_nodes(lisp[1:], node)
+
+        return node
+
+    def __init__(self, label: str):
+        self.label = label
+        self.children: List[Union[ConstituencyNode, Word]] = []
 
 
 class LispParser(object):
