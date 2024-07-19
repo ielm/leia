@@ -29,21 +29,21 @@ body {
 
 .page-header {
     grid-column: 1/-1;
-    background: #ffcdd2;
+    background: #3b1a16;
     height: calc(var(--fixed-header-height));
 }
 
 .page-sidenav {
     grid-column: 1/2;
     grid-row: 2/3;
-    background: #8ae8bc;
+    background: #9f8575;
     height: calc(var(--fixed-nav-height));
 }
 
 .page-sidebar {
     grid-column: 1/2;
     grid-row: 3/4;
-    background: #e1bee7;
+    background: #e1cbc2;
     height: calc(
         100vh
         - (2 * var(--fixed-body-padding))
@@ -56,13 +56,13 @@ body {
 
 .page-nav {
     grid-column: 2/3;
-    background: #bbdefb;
+    background: #9f8575;
     height: calc(var(--fixed-nav-height));
 }
 
 .page-main {
     grid-column: 2/3;
-    background: #dcedc8;
+    background: #dbdbdb;
 }
 
 .page-main-content {
@@ -78,7 +78,7 @@ body {
 
 .page-footer {
     grid-column: 1/-1;
-    background: #ffecb3;
+    background: #3b1a16;
     height: calc(var(--fixed-footer-height));
 }
 

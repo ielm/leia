@@ -90,13 +90,16 @@ a[is=content-link]:hover {
 
 #leia-header-image {
     height: 18px;
-    padding: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 4px;
     vertical-align: middle;
 }
 
 #dekade-footer-version {
     vertical-align: middle;
     height: 18px;
-    padding-left: 2px;
+    padding-left: 4px;
     display: inline-block;
+    color: #ccc;
 }
