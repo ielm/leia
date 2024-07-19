@@ -6,8 +6,8 @@ from typing import Any, Type, Union
 
 class TMR(XMR):
 
-    def __init__(self, memory: Memory, name: str=None, private: bool=False, raw: Any=None, timestamp: float=None, speaker: Instance=None, listener: Instance=None):
-        super().__init__(memory, name=name, private=private, raw=raw, timestamp=timestamp)
+    def __init__(self, memory: Memory, name: str=None, parent: Space=None, private: bool=False, raw: Any=None, timestamp: float=None, speaker: Instance=None, listener: Instance=None):
+        super().__init__(memory, name=name, parent=parent, private=private, raw=raw, timestamp=timestamp)
         self._speaker = speaker
         self._listener = listener
 
