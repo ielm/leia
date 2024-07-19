@@ -2,16 +2,15 @@ import { LEIAObject } from "./_default.js";
 
 export class Concept extends LEIAObject {
 
-    constructor(name, parent) {
+    constructor(content) {
         super();
-        this.name = name;
-        this.parent = parent;
+        this.content = content;
     }
 
     prepareData() {
         return {
             ...super.prepareData(),
-            xyz: 123
+            name: this.name(),
         }
     }
 
@@ -23,14 +22,17 @@ export class Concept extends LEIAObject {
         return "leia.knowledge.ontology.concept";
     }
 
-    out() {
-        return this.name + " isa " + this.parent;
+    label() {
+        return "@" + this.name();
+    }
+
+    name() {
+        return this.content.name;
     }
 
     _onButtonClicked(event) {
         console.log(this);
         console.log(this.constructor.name);
-        console.log(this.out());
         console.log(event);
         console.log(event.target);
         console.log($(event.target).val());

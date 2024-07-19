@@ -30,6 +30,11 @@ export class LEIAObject {
         return "leia.default.template";
     }
 
+    label() {
+        // Override to specify a name when displaying this object in a tabbed or list view
+        return "LEIAObject";
+    }
+
     async html() {
         // Acquires the template, renders it with the local data, activates listeners on the element, and returns
         // the rendered element (for use by the calling method).

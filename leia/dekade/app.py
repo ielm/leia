@@ -68,7 +68,7 @@ class DEKADEAPIBlueprint(Blueprint):
         return json.dumps(list(sorted(concepts)))
 
     def knowledge_ontology_concept(self, concept: str):
-        raise NotImplementedError
+        return json.dumps({"name": concept, "def": "some stuff here"})
 
 
 if __name__ == "__main__":

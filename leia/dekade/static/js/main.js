@@ -1,6 +1,8 @@
 export { Concept } from "./objects/concept.js";
 
+import * as API from "./api.js";
 import * as OntologySidebar from "./sidebars/ontology.js";
+import { tabs } from "./tabs.js";
 
 class HelpButton extends HTMLButtonElement {
 
@@ -23,14 +25,12 @@ class ContentLink extends HTMLAnchorElement {
         this.addEventListener("click", e => { this._onClicked(e) });
     }
 
-    _onClicked(event) {
+    async _onClicked(event) {
         const contentId = $(event.currentTarget).data("content-id");
+        const object = await API.contentIdToLEIAObject(contentId);
 
-        if (!event.altKey) {
-            console.log("Open " + contentId + " and display it.");
-        } else {
-            console.log("Open " + contentId + " but do not display it, unless it is the only content.")
-        }
+        // Add the tab, and open it unless the ALT key is held.
+        tabs.addObject(object, !event.altKey);
     }
 
 }
