@@ -194,7 +194,7 @@ class MongoConceptExporter(object):
                         unmapped_onto_instances.remove(oi)
 
         for concept in output_ontology.values():
-            file = "%s/%s.ont" % (output_dir, concept["name"])
+            file = "%s/%s.ont" % (output_dir, concept["name"][1:])
             with open(file, "w") as f:
                 json.dump(concept, f, indent=2)
 

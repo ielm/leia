@@ -166,9 +166,9 @@ class PropertyInventory(object):
         self.cache[property.name] = property
 
     def get_property(self, name: str) -> Union[Property, None]:
-        if name in self.cache:
-            return self.cache[name]
-        return None
+        if name not in self.cache:
+            self.cache[name] = Property(self.memory, name)
+        return self.cache[name]
 
 
 if __name__ == "__main__":

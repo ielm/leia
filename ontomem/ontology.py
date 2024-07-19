@@ -1,6 +1,6 @@
 from multiprocessing import Pool
 from ontomem.memory import Memory
-from typing import Iterable, Set, Tuple, Union
+from typing import List, Iterable, Set, Tuple, Union
 
 import json
 import os
@@ -40,7 +40,7 @@ class Ontology(object):
         files = os.listdir(self.contents_dir)
 
         names = map(lambda f: f[0:-4], files)
-        types = map(lambda n: (n, Concept(self, n, contents=None)), names)
+        types = map(lambda n: (n, Concept(self.memory, n, contents=None)), names)
         self.cache = dict(types)
 
         contents = pool.starmap(_read_concept, map(lambda file: (self.contents_dir, file), files))
@@ -62,8 +62,8 @@ class Ontology(object):
 
 class Concept(object):
 
-    def __init__(self, ontology: 'Ontology', name: str, contents: dict=None):
-        self.ontology = ontology
+    def __init__(self, memory: Memory, name: str, contents: dict=None):
+        self.memory = memory
         self.name = name
         self.contents = contents
         self.slots = dict()
@@ -79,13 +79,21 @@ class Concept(object):
 
         self.slots = dict()
 
-        for row in self.contents["localProperties"]:
+        for row in self.contents["local"]:
             slot = row["slot"]
             facet = row["facet"]
             filler = row["filler"]
 
-            lookup = self.ontology.concept(filler)
-            filler = lookup if lookup is not None else filler
+            # Parse various filler types
+            if isinstance(filler, str):
+                if filler[0] == "@":
+                    # TODO: this isn't handling private concepts currently; override the namespace if needed
+                    filler = self.memory.ontology.concept(filler[1:])
+                elif filler[0] == "$":
+                    filler = self.memory.properties.get_property(filler[1:])
+                elif filler[0] == "&":
+                    # TODO: get the set
+                    raise NotImplementedError
 
             if slot not in self.slots:
                 self.slots[slot] = dict()
@@ -94,7 +102,7 @@ class Concept(object):
             self.slots[slot][facet].append(filler)
 
     def parents(self) -> Set['Concept']:
-        return set(map(lambda p: self.ontology.concept(p), self.contents["parents"]))
+        return set(map(lambda p: self.memory.ontology.concept(p[1:]), self.contents["isa"]))
 
     def ancestors(self) -> Set['Concept']:
         raise NotImplementedError
@@ -108,15 +116,15 @@ class Concept(object):
     def siblings(self) -> Set['Concept']:
         raise NotImplementedError
 
-    def fillers(self, slot: str, facet: str) -> Set:
-        results = set()
+    def fillers(self, slot: str, facet: str) -> List:
+        results = []
 
         if slot in self.slots:
             if facet in self.slots[slot]:
-                results.update(self.slots[slot][facet])
+                results.extend(self.slots[slot][facet])
 
         for parent in self.parents():
-            results.update(parent.fillers(slot, facet))
+            results.extend(parent.fillers(slot, facet))
 
         return results
 
@@ -129,4 +137,17 @@ class Concept(object):
     def __repr__(self):
         return "@%s" % self.name
 
+
+if __name__ == "__main__":
+
+    knowledge_dir = "%s/knowledge/concepts" % os.getcwd()
+
+    memory = Memory("", knowledge_dir)
+    ontology = memory.ontology
+    ontology.load()
+
+    print(ontology.concept("human").contents)
+    print(ontology.concept("human").parents())
+    print(ontology.concept("human").fillers("has-object-as-part", "sem"))
+    print(ontology.concept("human").fillers("has-object-as-part", "sem")[0].contents)
 
