@@ -17,6 +17,27 @@ class LEIATabsViewer {
         return tab;
     }
 
+    removeTab(name) {
+        const tab = this.index[name];
+
+        if (tab.tab.isSelected()) {
+            const index = $(tab.tab).index();
+            const siblings = $(tab.tab).siblings();
+
+            if (siblings.length > index) {
+                const name = $(siblings[index]).data("tab-name");
+                this.select(name);
+            } else if (siblings.length > 0) {
+                const name = $(siblings[siblings.length - 1]).data("tab-name");
+                this.select(name);
+            }
+        }
+
+        tab.tab.remove();
+        tab.contents.remove();
+        delete this.index[name];
+    }
+
     select(name) {
         // Unselect all tabs, and hide all current content
         for (var _tab of Object.values(this.index)) {
@@ -117,6 +138,10 @@ class TabButton extends HTMLButtonElement {
         this.addEventListener("click", e => { this._onClicked(e) });
     }
 
+    isSelected() {
+        return this.classList.contains("selected");
+    }
+
     setSelected(selected) {
         this.selected = selected;
 
@@ -146,8 +171,8 @@ class ObjectTabButton extends TabButton {
     _onRightClicked(event) {
         event.preventDefault();
         const menu = new Widgets.ContextMenu();
-        menu.addOption("Pin", this.pin);
-        menu.addOption("Close", this.close);
+        menu.addOption("Pin", this.pin.bind(this));
+        menu.addOption("Close", this.close.bind(this));
 
         menu.show(event.pageX, event.pageY);
     }
@@ -157,7 +182,7 @@ class ObjectTabButton extends TabButton {
     }
 
     close() {
-        console.log("TODO: CLOSE");
+        this.tabs.removeTab(this.name);
     }
 
 }
