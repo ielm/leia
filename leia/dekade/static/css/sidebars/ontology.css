@@ -34,3 +34,13 @@ div.ontology-sidebar-search-results {
 div.ontology-sidebar-tree-viewer-container.hidden, div.ontology-sidebar-search-results.hidden {
     display: none;
 }
+
+button.ontology-sidebar-add-concept {
+    font-size: 0.7em;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+    margin-top: -2px;
+}

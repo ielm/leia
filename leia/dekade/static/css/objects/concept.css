@@ -13,6 +13,10 @@ div.concept > div.concept-navigation-header {
     border-bottom-color: var(--ribbon-color-tier-1);
 }
 
+div.concept > div.concept-navigation-header > div.concept-navigation-tabs {
+    display: inline;
+}
+
 div.concept > div.concept-navigation-content {
     padding: 4px;
     overflow-y: scroll;
@@ -93,4 +97,14 @@ input.concept-definition-content {
 
 .concept-definition-content.hidden {
     display: none;
+}
+
+button.concept-add-private {
+    font-size: 0.7em;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+    margin-top: -2px;
 }
