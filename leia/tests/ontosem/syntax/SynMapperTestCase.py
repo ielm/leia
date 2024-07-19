@@ -2,7 +2,7 @@ from leia.ontomem.lexicon import SynStruc
 from leia.ontomem.memory import Memory
 from leia.ontosem.analysis import WMLexicon
 from leia.ontosem.config import OntoSemConfig
-from leia.ontosem.syntax.results import ConstituencyNode, Dependency
+from leia.ontosem.syntax.results import ConstituencyNode, Dependency, Syntax
 from leia.ontosem.syntax.synmapper import SynMatcher, SynMapper
 from leia.tests.LEIATestCase import LEIATestCase
 from unittest.mock import MagicMock
@@ -260,6 +260,116 @@ class SynMatcherTestCase(LEIATestCase):
         # The child structure is fully recursive.
         self.assertTrue(self.matcher.does_constituency_match(element, node1))
         self.assertFalse(self.matcher.does_constituency_match(element, node2))
+
+    def test_flatten_syntax_words_only(self):
+        word1 = self.mockWord(1, "w1", "N")
+        word2 = self.mockWord(2, "w2", "N")
+        word3 = self.mockWord(3, "w3", "N")
+
+        syntax = Syntax([word1, word2, word3], "", "", ConstituencyNode(""), [])
+
+        # Flattened words is trivial; the order they are entered is the order they are emitted.
+        # The constituency node should be skipped as it has no inner token (it is essentially empty).
+
+        self.assertEqual([word1, word2, word3], self.matcher.flatten(syntax))
+
+    def test_flatten_syntax_words_with_dependencies(self):
+        word1 = self.mockWord(1, "w1", "N")
+        word2 = self.mockWord(2, "w2", "N")
+        word3 = self.mockWord(3, "w3", "N")
+
+        dep1 = Dependency(word1, word1, "X")
+        dep2 = Dependency(word1, word1, "Y")
+        dep3 = Dependency(word1, word2, "Z")
+
+        syntax = Syntax([word1, word2, word3], "", "", ConstituencyNode(""), [dep1, dep2, dep3])
+
+        # Flattened dependencies are sorted after their dependent words in the order they are entered.
+        # The constituency node should be skipped as it has no inner token (it is essentially empty).
+
+        self.assertEqual([
+            word1,
+            dep1,
+            dep2,
+            word2,
+            dep3,
+            word3
+        ], self.matcher.flatten(syntax))
+
+    def test_flatten_syntax_words_with_consituencies(self):
+        word1 = self.mockWord(1, "w1", "N")
+        word2 = self.mockWord(2, "w2", "N")
+        word3 = self.mockWord(3, "w3", "N")
+        word4 = self.mockWord(4, "w4", "N")
+
+        node0 = ConstituencyNode("0")
+        node1 = ConstituencyNode("1")
+        node2 = ConstituencyNode("2")
+        node3 = ConstituencyNode("3")
+        node4 = ConstituencyNode("4")
+        node5 = ConstituencyNode("5")
+
+        """
+        The constituency tree looks like:
+        
+        N0
+            N1
+                W1
+                N3
+                    W2
+            N2
+                N4
+                    W3
+                N5
+                    W4
+        """
+
+        node0.children = [node1, node2]
+        node1.children = [word1, node3]
+        node3.children = [word2]
+        node2.children = [node4, node5]
+        node4.children = [word3]
+        node5.children = [word4]
+
+        syntax = Syntax([word1, word2, word3, word4], "", "", node0, [])
+
+        # Flattened constituencies are sorted after their leftmost word in the order they appear.
+
+        self.assertEqual([
+            word1,
+            node0,
+            node1,
+            word2,
+            node3,
+            word3,
+            node2,
+            node4,
+            word4,
+            node5,
+        ], self.matcher.flatten(syntax))
+
+    def test_flatten_syntax_all_elements(self):
+        word1 = self.mockWord(1, "w1", "N")
+        word2 = self.mockWord(2, "w2", "N")
+
+        dep1 = Dependency(word1, word1, "X")
+        dep2 = Dependency(word1, word2, "Y")
+
+        node0 = ConstituencyNode("0")
+        node0.children = [word1]
+
+        syntax = Syntax([word1, word2], "", "", node0, [dep1, dep2])
+
+        # All ordering from individual components is maintained.
+        # Words > Dependencies > Constituencies
+
+        self.assertEqual([
+            word1,
+            dep1,
+            node0,
+            word2,
+            dep2,
+        ], self.matcher.flatten(syntax))
 
     """
     TODO: tests to run:

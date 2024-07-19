@@ -65,6 +65,53 @@ class SynMatcher(object):
     def run(self, syntax: Syntax, synstruc: SynStruc, root: Word=None) -> List['SynMatcher.SynMatchResult']:
         raise NotImplementedError
 
+    def flatten(self, syntax: Syntax) -> List[Union[Word, Dependency, ConstituencyNode]]:
+        # This method flattens the main syntactic elements into an ordered list representing their relative
+        # locations in the text.  The three output elements are Words, Dependencies, and Constituencies.
+        # Words are output in their natural order.
+        # Dependencies are output following the word that is their dependent, in the order they were entered.
+        # Constituencies are output following the word that is their left-most leaf, in the order they were entered;
+        #  (this is a recursive output - all nodes in the constituency tree will appear in the output).
+
+        # Organize all non-word elements by word, for easy sorting.
+        dependencies_by_word = dict()
+        constituencies_by_word = dict()
+
+        for word in syntax.words:
+            dependencies_by_word[word] = []
+            constituencies_by_word[word] = []
+
+        # Sort dependencies by their dependent.
+        for dependency in syntax.dependencies:
+            dependencies_by_word[dependency.dependent].append(dependency)
+
+        # Sort constituencies by their leftmost word.
+        def _flatten_node(node):
+            word = node.leftmost_word()
+            if word is not None:
+                constituencies_by_word[word].append(node)
+
+            for child in filter(lambda c: isinstance(c, ConstituencyNode), node.children):
+                _flatten_node(child)
+
+        _flatten_node(syntax.parse)
+
+        # Define and construct the final output.
+        flattened = []
+
+        # Add the words in order
+        # Following each word, add the dependencies and constituencies
+        for word in syntax.words:
+            flattened.append(word)
+
+            for dependency in dependencies_by_word[word]:
+                flattened.append(dependency)
+
+            for constituency in constituencies_by_word[word]:
+                flattened.append(constituency)
+
+        return flattened
+
     def does_element_match(self, element: SynStruc.Element, *args) -> bool:
         # Generic matching of any synstruc element to any syntax component(s).  Essentially, this function verifies
         # type matching and then calls the specific does_x_match function and returns its results.

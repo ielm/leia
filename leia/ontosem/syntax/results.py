@@ -332,6 +332,17 @@ class ConstituencyNode(object):
         self.label = label
         self.children: List[Union[ConstituencyNode, Word]] = []
 
+    def node_children(self) -> List['ConstituencyNode']:
+        return list(filter(lambda c: isinstance(c, ConstituencyNode), self.children))
+
+    def leftmost_word(self) -> Union[Word, None]:
+        if len(self.children) == 0:
+            return None
+
+        if isinstance(self.children[0], Word):
+            return self.children[0]
+        return self.children[0].leftmost_word()
+
 
 class Dependency(object):
 

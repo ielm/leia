@@ -269,6 +269,60 @@ class ConstituencyNodeTestCase(TestCase):
         self.assertEqual("N", parsed.children[1].label)
         self.assertEqual([words[1]], parsed.children[1].children)
 
+    def test_node_children(self):
+        node0 = ConstituencyNode("0")
+        node1 = ConstituencyNode("1")
+        node2 = ConstituencyNode("2")
+
+        word1 = Word(1, "word", [], "word", 0, 0, Word.Ner.NONE, [], {})
+        word2 = Word(2, "word", [], "word", 0, 0, Word.Ner.NONE, [], {})
+
+        node0.children = [node1, word1, node2, word2]
+
+        self.assertEqual([node1, node2], node0.node_children())
+
+    def test_leftmost_word(self):
+        word1 = Word(1, "w1", [], "w1", 0, 0, Word.Ner.NONE, [], {})
+        word2 = Word(2, "w2", [], "w2", 0, 0, Word.Ner.NONE, [], {})
+        word3 = Word(3, "w3", [], "w3", 0, 0, Word.Ner.NONE, [], {})
+        word4 = Word(4, "w4", [], "w4", 0, 0, Word.Ner.NONE, [], {})
+
+        node0 = ConstituencyNode("0")
+        node1 = ConstituencyNode("1")
+        node2 = ConstituencyNode("2")
+        node3 = ConstituencyNode("3")
+        node4 = ConstituencyNode("4")
+        node5 = ConstituencyNode("5")
+
+        """
+        The constituency tree looks like:
+
+        N0
+            N1
+                W1
+                N3
+                    W2
+            N2
+                N4
+                    W3
+                N5
+                    W4
+        """
+
+        node0.children = [node1, node2]
+        node1.children = [word1, node3]
+        node3.children = [word2]
+        node2.children = [node4, node5]
+        node4.children = [word3]
+        node5.children = [word4]
+
+        self.assertEqual(word1, node0.leftmost_word())
+        self.assertEqual(word1, node1.leftmost_word())
+        self.assertEqual(word3, node2.leftmost_word())
+        self.assertEqual(word2, node3.leftmost_word())
+        self.assertEqual(word3, node4.leftmost_word())
+        self.assertEqual(word4, node5.leftmost_word())
+
 
 class LispParserTestCase(TestCase):
 
