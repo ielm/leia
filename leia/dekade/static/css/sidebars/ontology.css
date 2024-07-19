@@ -8,7 +8,8 @@ div.ontology-sidebar {
 
 div.ontology-sidebar-header {
     height: var(--fixed-ontology-sidebar-header-height);
-    padding: 2px;
+    padding-top: 2px;
+    padding-left: 4px;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: #775779;

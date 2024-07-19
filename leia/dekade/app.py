@@ -1,4 +1,4 @@
-from flask import Blueprint, Flask, render_template, send_from_directory
+from flask import abort, Blueprint, Flask, render_template, request, send_from_directory
 from flask_cors import CORS
 from leia.ontoagent.agent import Agent
 from leia.ontomem.memory import Memory
@@ -59,6 +59,9 @@ class DEKADEAPIBlueprint(Blueprint):
         self.add_url_rule("/api/knowledge/ontology/filter/<substring>", endpoint=None, view_func=self.knowledge_ontology_filter, methods=["GET"])
         self.add_url_rule("/api/knowledge/ontology/concept/<concept>", endpoint=None, view_func=self.knowledge_ontology_concept, methods=["GET"])
 
+        # OntoSem API
+        self.add_url_rule("/api/ontosem/analyze", endpoint=None, view_func=self.ontosem_analyze, methods=["POST"])
+
     def knowledge_ontology_list(self):
         return json.dumps(list(sorted(self.app.agent.memory.ontology.names())))
 
@@ -117,6 +120,18 @@ class DEKADEAPIBlueprint(Blueprint):
         }
 
         return json.dumps(output)
+
+    def ontosem_analyze(self):
+        if not request.get_json():
+            abort(400)
+
+        data = request.get_json()
+        if "input" not in data:
+            abort(400)
+
+        input = data["input"]
+
+        return json.dumps({"ONTOSEM": input})
 
 
 if __name__ == "__main__":

@@ -28,3 +28,15 @@ export async function apiKnowledgeOntologyFilter(filter) {
         console.error(error);
     }
 }
+
+
+export async function apiOntoSemAnalyze(input) {
+    try {
+        const response = await axios.post("/api/ontosem/analyze", {
+            input: input
+        });
+        return response.data;
+    } catch (error) {
+        console.log(error);
+    }
+}

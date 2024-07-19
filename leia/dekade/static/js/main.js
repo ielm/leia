@@ -2,6 +2,7 @@ export { Concept } from "./objects/concept.js";
 
 import * as API from "./api.js";
 import * as OntologySidebar from "./sidebars/ontology.js";
+import * as OntoSemSidebar from "./sidebars/ontosem.js";
 import { contentTabs } from "./tabs.js";
 
 class HelpButton extends HTMLButtonElement {
