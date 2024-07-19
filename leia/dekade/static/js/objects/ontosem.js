@@ -87,8 +87,9 @@ export class Analysis extends LEIAObject {
     async _onDependenciesContentLinkClicked(event) {
         const link = $(event.currentTarget);
         const sentence = this.content.sentences[parseInt(link.data("sentence"))];
+        const words = sentence.syntax.words;
 
-        const dependencies = new Dependencies(sentence.syntax.dependencies);
+        const dependencies = new Dependencies(sentence.syntax.dependencies, words);
         await this.showContent(dependencies);
     }
 
@@ -261,15 +262,17 @@ export class Constituencies extends LEIAObject {
 
 export class Dependencies extends LEIAObject {
 
-    constructor(content) {
+    constructor(content, words) {
         super();
         this.content = content;
+        this.words = words;
     }
 
     prepareData() {
         return {
             ...super.prepareData(),
-            dependencies: this.content
+            dependencies: this.content,
+            words: this.words
         }
     }
 

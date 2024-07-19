@@ -308,3 +308,18 @@ div.constituencies-container div.token-node {
     margin-left: 25px;
     margin-bottom: 5px;
 }
+
+/* *** Dependencies *** */
+
+div.dependencies-container table.dependencies {
+    width: 100%;
+    table-layout: fixed;
+}
+
+div.dependencies-container table.dependencies tr {
+    background: #f0f0f0;
+}
+
+div.dependencies-container table.dependencies td:first-child {
+    font-weight: bold;
+}
