@@ -44,6 +44,7 @@ class SynMapper(object):
                 if varmap is not None:
                     bindings[varmap[0]] = varmap[1]
 
+            # TODO: Apply scoring penalties here if the binding set is incomplete
             yield SenseMap(word, sense.id, bindings, 1.0)
 
     def map_variable(self, match: 'SynMatcher.SynMatch') -> Union[Tuple[str, int], None]:
