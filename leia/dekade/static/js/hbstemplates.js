@@ -7,6 +7,7 @@ class LEIAHBSTemplates {
             "leia.knowledge.ontology.sidebar.results": "handlebars/ontology/sidebar_results.html",
             "leia.ontosem.analysis": "handlebars/ontosem/analysis.html",
             "leia.ontosem.candidate": "handlebars/ontosem/candidate.html",
+            "leia.ontosem.syntax": "handlebars/ontosem/syntax.html",
             "leia.ontosem.tmr": "handlebars/ontosem/tmr.html",
         };
     }
