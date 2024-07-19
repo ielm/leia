@@ -17,7 +17,7 @@ class Ontology(object):
     def __init__(self, memory: Memory, contents_dir: str, load_now: bool=True):
         self.memory = memory
         self.contents_dir = contents_dir
-        self.cache = {}
+        self._cache = {}
 
         if load_now:
             self.load()
@@ -28,19 +28,25 @@ class Ontology(object):
 
         names = map(lambda f: f[0:-4], files)
         types = map(lambda n: (n, Concept(self.memory, n, contents=None)), names)
-        self.cache = dict(types)
+        self._cache = dict(types)
 
         contents = pool.starmap(multiprocess_read_json_file, map(lambda file: (self.contents_dir, file, "ont"), files))
         for c in contents:
-            self.cache[c[0]].set_contents(c[1])
+            self._cache[c[0]].set_contents(c[1])
 
     def concept(self, name: str) -> Union['Concept', None]:
-        if name not in self.cache:
-            self.cache[name] = Concept(self.memory, name)
-        return self.cache[name]
+        if name not in self._cache:
+            self._cache[name] = Concept(self.memory, name)
+        return self._cache[name]
+
+    def concepts(self) -> List['Concept']:
+        return list(self._cache.values())
+
+    def names(self) -> Set[str]:
+        return set(self._cache.keys())
 
     def usages(self, concept: 'Concept') -> Iterable[Tuple['Concept', str, str]]:
-        for c in self.cache.values():
+        for c in self._cache.values():
             for sk, sv in c.slots.items():
                 for fk, fv in sv.items():
                     if concept in fv:
@@ -215,7 +221,7 @@ class Concept(object):
     def children(self) -> Set['Concept']:
         out = set()
 
-        for concept in self.memory.ontology.cache.values():
+        for concept in self.memory.ontology.concepts():
             if self in concept.parents():
                 out.add(concept)
 

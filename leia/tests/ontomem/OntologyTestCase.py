@@ -415,16 +415,10 @@ class ConceptTestCase(TestCase):
         self.assertEqual(set(), grandparent3.ancestors())
 
     def test_children(self):
-        grandparent = Concept(self.m, "grandparent")
-        parent = Concept(self.m, "parent")
-        child1 = Concept(self.m, "child1")
-        child2 = Concept(self.m, "child2")
-
-        # They must be in memory to be looked up
-        self.m.ontology.cache[grandparent.name] = grandparent
-        self.m.ontology.cache[parent.name] = parent
-        self.m.ontology.cache[child1.name] = child1
-        self.m.ontology.cache[child2.name] = child2
+        grandparent = self.m.ontology.concept("grandparent")
+        parent = self.m.ontology.concept("parent")
+        child1 = self.m.ontology.concept("child1")
+        child2 = self.m.ontology.concept("child2")
 
         self.assertEqual(set(), grandparent.children())
         self.assertEqual(set(), parent.children())
@@ -441,20 +435,12 @@ class ConceptTestCase(TestCase):
         self.assertEqual(set(), child2.children())
 
     def test_descendants(self):
-        grandparent = Concept(self.m, "grandparent")
-        parent1 = Concept(self.m, "parent1")
-        parent2 = Concept(self.m, "parent2")
-        child1 = Concept(self.m, "child1")
-        child2 = Concept(self.m, "child2")
-        child3 = Concept(self.m, "child3")
-
-        # They must be in memory to be looked up
-        self.m.ontology.cache[grandparent.name] = grandparent
-        self.m.ontology.cache[parent1.name] = parent1
-        self.m.ontology.cache[parent2.name] = parent2
-        self.m.ontology.cache[child1.name] = child1
-        self.m.ontology.cache[child2.name] = child2
-        self.m.ontology.cache[child3.name] = child3
+        grandparent = self.m.ontology.concept("grandparent")
+        parent1 = self.m.ontology.concept("parent1")
+        parent2 = self.m.ontology.concept("parent2")
+        child1 = self.m.ontology.concept("child1")
+        child2 = self.m.ontology.concept("child2")
+        child3 = self.m.ontology.concept("child3")
 
         self.assertEqual(set(), grandparent.descendants())
         self.assertEqual(set(), parent1.descendants())
@@ -476,18 +462,11 @@ class ConceptTestCase(TestCase):
         self.assertEqual(set(), child2.descendants())
 
     def test_siblings(self):
-        parent1 = Concept(self.m, "parent1")
-        parent2 = Concept(self.m, "parent2")
-        child1 = Concept(self.m, "child1")
-        child2 = Concept(self.m, "child2")
-        child3 = Concept(self.m, "child3")
-
-        # They must be in memory to be looked up
-        self.m.ontology.cache[parent1.name] = parent1
-        self.m.ontology.cache[parent2.name] = parent2
-        self.m.ontology.cache[child1.name] = child1
-        self.m.ontology.cache[child2.name] = child2
-        self.m.ontology.cache[child3.name] = child3
+        parent1 = self.m.ontology.concept("parent1")
+        parent2 = self.m.ontology.concept("parent2")
+        child1 = self.m.ontology.concept("child1")
+        child2 = self.m.ontology.concept("child2")
+        child3 = self.m.ontology.concept("child3")
 
         self.assertEqual(set(), parent1.siblings())
         self.assertEqual(set(), parent2.siblings())
@@ -705,8 +684,8 @@ class ConceptTestCase(TestCase):
         private = Concept(self.m, "PRIVATE")
         root.private["PRIVATE"] = private
 
-        self.assertIn("ROOT", self.m.ontology.cache)
-        self.assertNotIn("PRIVATE", self.m.ontology.cache)
+        self.assertIn("ROOT", self.m.ontology.names())
+        self.assertNotIn("PRIVATE", self.m.ontology.names())
         self.assertIn("PRIVATE", root.private)
 
         # The namespace for private frames is separate from public frames
@@ -722,8 +701,8 @@ class ConceptTestCase(TestCase):
         set = OSet(self.m, "SET")
         root.private["SET"] = set
 
-        self.assertIn("ROOT", self.m.ontology.cache)
-        self.assertNotIn("SET", self.m.ontology.cache)
+        self.assertIn("ROOT", self.m.ontology.names())
+        self.assertNotIn("SET", self.m.ontology.names())
         self.assertIn("SET", root.private)
 
         # The namespace for private frames is separate from public frames
