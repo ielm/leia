@@ -72,6 +72,8 @@ class Transformation(object):
 
 class TransformationExecutable(object):
 
+    # TODO: type signatures (avoiding circular imports) for init and run
+
     def __init__(self, analysis):
         self.analysis = analysis
 

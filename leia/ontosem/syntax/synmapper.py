@@ -152,7 +152,7 @@ class SynMatcher(object):
         self.analysis = analysis
 
     def run(self, syntax: Syntax, synstruc: SynStruc, root: Word=None) -> List['SynMatcher.SynMatchResult']:
-        elements = synstruc.elements
+        elements = list(synstruc.elements)
         components = self.flatten(syntax)
 
         return self.match(elements, components, root)
@@ -247,7 +247,7 @@ class SynMatcher(object):
                 if element.is_optional():
                     yield {
                         "match": match["match"] + [_get_match_type(element)(element, None)],
-                        "remaing": list(match["remaining"])
+                        "remaining": list(match["remaining"])
                     }
 
         # Start with the first element.  Find all matches to that element; if the element is optional, add another
