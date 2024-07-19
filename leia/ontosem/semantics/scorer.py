@@ -109,6 +109,16 @@ class SemanticScorer(object):
             for tmr_frame_concept in tmr_frame_concept_options:
 
                 for expected_concept in constraint.concepts:
+                    # In the event that the expected constraint is a property, the matching frame must be an ABSTRACT-OBJECT
+                    # with a matching REPRESENTS filler.
+                    if self.properties.is_property(expected_concept):
+                        if constraint.frame.concept.isa(self.ontology.concept("ABSTRACT-OBJECT")) and constraint.frame.value("REPRESENTS") == expected_concept:
+                            scores.append(1.0)
+                        else:
+                            scores.append(0.0)
+                        continue
+
+
                     expected_concept = self.ontology.concept(expected_concept)
                     # If the constraint is NOT X, either get a 1.0 if it is not, or a 0.1 if it is
                     if constraint.negate:

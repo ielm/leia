@@ -168,6 +168,50 @@ class SemanticScorerTestCase(TestCase):
             LexicalConstraintScore(1.0, c7),    # Maximum score applied if a NOT constraint is passed
         ], scores)
 
+    def test_score_lexical_constraints_on_properties(self):
+        # Lexical constraints may refer to properties by name, but the instances will be of ABSTRACT-OBJECT
+        # with a REPRESENTS field.  This must be accommodated.
+        # Properties must be an exact match (0.0 or 1.0 are the only valid outputs).
+
+        property = self.m.properties.get_property("PROPERTY")
+
+        childprop1 = self.m.properties.get_property("CHILDPROP1")
+        childprop1.set_contents({"container": "$PROPERTY"})
+
+        childprop2 = self.m.properties.get_property("CHILDPROP2")
+        childprop2.set_contents({"container": "$PROPERTY"})
+
+        candidate = Candidate(self.m)
+        frame = candidate.basic_tmr.new_instance("ABSTRACT-OBJECT")
+        frame.add_filler("REPRESENTS", "CHILDPROP1")
+
+        null_sense_map = SenseMap(Word.basic(0), "", {}, 0.5)
+
+        c1 = Constraint(1, frame, "PROPERTY", null_sense_map)
+        c2 = Constraint(2, frame, "CHILDPROP1", null_sense_map)
+        c3 = Constraint(3, frame, "CHILDPROP2", null_sense_map)
+        c4 = Constraint(4, frame, "OBJECT", null_sense_map)
+        c5 = Constraint(5, frame, "ABSTRACT-OBJECT", null_sense_map)
+
+        candidate.constraints.append(c1)
+        candidate.constraints.append(c2)
+        candidate.constraints.append(c3)
+        candidate.constraints.append(c4)
+        candidate.constraints.append(c5)
+
+        scorer = SemanticScorer(self.config)
+
+        scores = scorer.score_lexical_constraints(candidate)
+
+        self.assertEqual([
+            LexicalConstraintScore(0.0, c1),    # It is not a PROPERTY (in that an exact match is required)
+            LexicalConstraintScore(1.0, c2),    # It is a CHILDPROPERTY1
+            LexicalConstraintScore(0.0, c3),    # It is not a CHILDPROPERTY2
+            LexicalConstraintScore(0.1, c4),    # An ABSTRACT-OBJECT is very loosely an OBJECT
+            LexicalConstraintScore(1.0, c5),    # It is an ABSTRACT-OBJECT
+        ], scores)
+
+
     def test_score_lexical_constraints_on_sets(self):
         # TODO: LOOK INTO HOW SETS ARE BEING HANDLED HERE
 

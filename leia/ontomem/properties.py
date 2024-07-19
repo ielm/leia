@@ -170,6 +170,9 @@ class PropertyInventory(object):
         for c in contents:
             self.cache[c[0]].set_contents(c[1])
 
+    def is_property(self, name: str) -> bool:
+        return name in self.cache
+
     def add_property(self, property: Property):
         self.cache[property.name] = property
 
