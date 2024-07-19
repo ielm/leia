@@ -90,6 +90,11 @@ class SynMatcher(object):
         element: SynStruc.Element
         component: Any
 
+        def match_for_var(self, var: int) -> Union['SynMatcher.SynMatch', None]:
+            if self.element.to_variable() == var:
+                return self
+            return None
+
     @dataclass
     class RootMatch(SynMatch):
         element: SynStruc.RootElement
@@ -111,9 +116,37 @@ class SynMatcher(object):
         component: ConstituencyNode
         children: List['SynMatcher.SynMatch']
 
+        def match_for_var(self, var: int) -> Union['SynMatcher.SynMatch', None]:
+            if self.element.to_variable() == var:
+                return self
+            for child in self.children:
+                match = child.match_for_var(var)
+                if match is not None:
+                    return match
+            return None
+
     @dataclass
     class SynMatchResult(object):
         matches: List['SynMatcher.SynMatch']
+
+        def match_for_var(self, var: int) -> Union['SynMatcher.SynMatch', None]:
+            for match in self.matches:
+                m = match.match_for_var(var)
+                if m is not None:
+                    return m
+            return None
+
+        def element_for_var(self, var: int) -> Union[SynStruc.Element, None]:
+            match = self.match_for_var(var)
+            if match is not None:
+                return match.element
+            return None
+
+        def component_for_var(self, var: int) -> Union[Word, Dependency, ConstituencyNode, None]:
+            match = self.match_for_var(var)
+            if match is not None:
+                return match.component
+            return None
 
     def __init__(self, analysis: Analysis):
         self.analysis = analysis

@@ -715,3 +715,77 @@ class SynMatcherTestCase(LEIATestCase):
 
         self.matcher.flatten.assert_called_once_with(syntax)
         self.matcher.match.assert_called_once_with(synstruc.elements, flattened, root)
+
+
+class SynMatchResultTestCase(LEIATestCase):
+
+    def test_match_for_var(self):
+        result = SynMatcher.SynMatchResult([])
+        self.assertIsNone(result.match_for_var(0))
+        self.assertIsNone(result.match_for_var(1))
+
+        result.matches = [
+            SynMatcher.TokenMatch(
+                SynStruc.TokenElement({"A"}, "N", dict(), 0, False),
+                self.mockWord(0, "A", "N"),
+            )
+        ]
+
+        self.assertEqual(result.matches[0], result.match_for_var(0))
+        self.assertIsNone(result.match_for_var(1))
+
+    def test_match_for_var_inside_constituency(self):
+        word1 = self.mockWord(1, "A", "N")
+        word2 = self.mockWord(2, "B", "N")
+
+        element = SynStruc.ConstituencyElement("NP", [
+            SynStruc.TokenElement({"A"}, "N", dict(), 0, False),
+            SynStruc.TokenElement({"B"}, "N", dict(), None, False),
+        ], None, False)
+
+        node = ConstituencyNode("NP")
+        node.children = [
+            word1, word2
+        ]
+
+        result = SynMatcher.SynMatchResult([
+            SynMatcher.ConstituencyMatch(element, node, [
+                SynMatcher.TokenMatch(element.children[0], word1),
+                SynMatcher.TokenMatch(element.children[1], word2),
+            ])
+        ])
+
+        self.assertEqual(result.matches[0].children[0], result.match_for_var(0))
+        self.assertIsNone(result.match_for_var(1))
+
+    def test_element_for_var(self):
+        # element_for_var just wraps match_for_var and pulls out the element
+
+        result = SynMatcher.SynMatchResult([])
+        result.match_for_var = MagicMock(return_value=None)
+
+        self.assertIsNone(result.element_for_var(0))
+        result.match_for_var.assert_called_once_with(0)
+
+        mocked_match = MagicMock()
+        mocked_match.element = 123
+        result.match_for_var = MagicMock(return_value=mocked_match)
+
+        self.assertEqual(123, result.element_for_var(0))
+        result.match_for_var.assert_called_once_with(0)
+
+    def test_component_for_var(self):
+        # component_for_var just wraps match_for_var and pulls out the component
+
+        result = SynMatcher.SynMatchResult([])
+        result.match_for_var = MagicMock(return_value=None)
+
+        self.assertIsNone(result.component_for_var(0))
+        result.match_for_var.assert_called_once_with(0)
+
+        mocked_match = MagicMock()
+        mocked_match.component = 123
+        result.match_for_var = MagicMock(return_value=mocked_match)
+
+        self.assertEqual(123, result.component_for_var(0))
+        result.match_for_var.assert_called_once_with(0)
