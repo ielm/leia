@@ -1,12 +1,12 @@
-from leia.ontosem.analysis import Analysis, Sentence
-from leia.ontosem.config import OntoSemConfig
-from leia.ontosem.semantics.candidate import Candidate
-from leia.ontosem.syntax.results import SynMap, Syntax
-from ontomem.tests.OntoMemTestCase import OntoMemTestCase
+from ontosem.analysis import Analysis, Sentence
+from ontosem.config import OntoSemConfig
+from ontosem.semantics.candidate import Candidate
+from ontosem.syntax.results import SynMap, Syntax
+from unittest import TestCase
 from unittest.mock import MagicMock
 
 
-class AnalysisToMemoryTestCase(OntoMemTestCase):
+class AnalysisToMemoryTestCase(TestCase):
 
     def test_to_memory(self):
         sentence1 = Sentence("S1")
@@ -28,7 +28,7 @@ class AnalysisToMemoryTestCase(OntoMemTestCase):
         sentence2.to_memory.assert_called_once_with(speaker="@SPEAKER.1", listener="@LISTENER.1")
 
 
-class SentenceToMemoryTestCase(OntoMemTestCase):
+class SentenceToMemoryTestCase(TestCase):
 
     def test_to_memory(self):
         candidate1 = Candidate()
