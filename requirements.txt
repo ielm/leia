@@ -1,5 +1,16 @@
+benepar==0.2.0
+coreferee==1.1.0
 flask==2.0.1
 flask-cors==3.0.10
 flask-socketio==5.1.0
 pyparsing==2.4.7
 pyyaml==5.4.1
+spacy==3.1.2
+
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.1.0/en_core_web_sm-3.1.0-py3-none-any.whl#egg=en_core_web_sm
+https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.1.0/en_core_web_lg-3.1.0-py3-none-any.whl#egg=en_core_web_lg
+https://github.com/msg-systems/coreferee/raw/master/models/coreferee_model_en.zip#egg=coreferee_model_en
+
+en_core_web_sm==3.1.0
+en_core_web_lg==3.1.0
+coreferee_model_en==1.0.0

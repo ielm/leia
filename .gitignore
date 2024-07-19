@@ -51,6 +51,9 @@ Thumbs.db
 # Virtual Environments
 .virtualenvs/*
 
+# NLTK Data
+.nltkdata/*
+
 # Temporarily ignore knowledge files
 leia/knowledge/concepts/*
 leia/knowledge/properties/*

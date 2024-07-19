@@ -1,0 +1,27 @@
+LEIA suite Installation instructions:
+
+
+1) All LEIA code required is in this LEIA project repository; no other sources are needed.
+2) Requires Python 3.9+.
+3) Install all libraries and data sources in the requirements.txt file.  It is recommended that you do this in
+   a virtual environment.
+    - python3 -m venv .virtualenvs/leia
+    - source .virtualenvs/leia/bin/activate
+    - pip install -r requirements.txt
+4) The benepar constituency parser requires some NLTK data that cannot be put into the pip installation.
+   Make a location for NLTK data, and then manually install the needed content.
+    - source .virtualenvs/leia/bin/activate
+    - mkdir .nltkdata
+    - export NLTK_DATA=.nltkdata
+    - python3
+        import benepar
+        benepar.download("benepar_en3")
+
+
+When running any process:
+
+
+1) Be sure to switch to the virutal environment (if used):
+    - source .virtualenvs/leia/bin/activate
+2) Be sure to set the NLTK_DATA environment variable if syntax processing is needed:
+    - export NLTK_DATA=.nltkdata
