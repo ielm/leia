@@ -64,9 +64,51 @@ export class Analysis extends LEIAObject {
         if (contentTarget == "basic-tmr") {
             const tmr = new TMR(candidate["basic-tmr"]);
             await this.showContent(tmr);
+        } else if (contentTarget == "extended-tmr") {
+            const tmr = new TMR(candidate["extended-tmr"]);
+            await this.showContent(tmr);
+        } else if (contentTarget == "meta-data") {
+            const cand = new Candidate(candidate);
+            await this.showContent(cand);
         } else {
             console.log("Unhandled content target type: " + contentTarget);
         }
+    }
+
+}
+
+
+export class Candidate extends LEIAObject {
+
+    constructor(content) {
+        super();
+        this.content = content;
+    }
+
+    prepareData() {
+        return {
+            ...super.prepareData(),
+            constraints: this.content.constraints,
+            scores: this.content.scores,
+            finalScore: this.content["final-score"],
+            senseMaps: this.content["sense-maps"]
+        }
+    }
+
+    activateListeners(element) {
+
+    }
+
+    templateName() {
+        return "leia.ontosem.candidate";
+    }
+
+    label() {
+        return "Candidate";
+    }
+
+    name() {
+        return "Candidate";
     }
 
 }

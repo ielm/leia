@@ -117,7 +117,8 @@ class Constraint(object):
             "index": self.index,
             "frame": self.frame.id(),
             "concepts": list(self.concepts),
-            "sense-map": self.sense_map.word.index
+            "sense-map": self.sense_map.word.index,
+            "negate": self.negate
         }
 
     def __eq__(self, other):

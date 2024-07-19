@@ -11,8 +11,8 @@
                         <span class="caret {{#if @first}}caret-down{{/if}}">Candidate {{inc @index}}</span>
                         <ul class="nested {{#if @first}}active{{/if}}">
                             <li><a class="analysis-content-link candidate-content-link" data-sentence="{{@../index}}" data-candidate="{{@index}}" data-content="basic-tmr">Basic TMR</a></li>
-                            <li><a class="analysis-content-link candidate-content-link">Extended TMR</a></li>
-                            <li><a class="analysis-content-link candidate-content-link">Candidate Data</a></li>
+                            <li><a class="analysis-content-link candidate-content-link" data-sentence="{{@../index}}" data-candidate="{{@index}}" data-content="extended-tmr">Extended TMR</a></li>
+                            <li><a class="analysis-content-link candidate-content-link" data-sentence="{{@../index}}" data-candidate="{{@index}}" data-content="meta-data">Candidate Data</a></li>
                         </ul>
                     </li>
                     {{/each}}

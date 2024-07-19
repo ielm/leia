@@ -51,6 +51,74 @@ div.analysis-navigator a.analysis-content-link:hover {
     cursor: pointer;
 }
 
+/* *** Candidate *** */
+
+div.ontosem-candidate {
+
+}
+
+div.ontosem-candidate > div.sense-map {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: gray;
+    margin-top: 4px;
+}
+
+div.ontosem-candidate > div.sense-map > div.header {
+    background-color: darkgray;
+    padding: 2px;
+}
+
+div.ontosem-candidate > div.sense-map > div.preference {
+    font-size: 0.7em;
+    padding: 2px;
+}
+
+div.ontosem-candidate > div.sense-map > div.bindings {
+    font-size: 0.7em;
+    padding: 2px;
+}
+
+div.ontosem-candidate > div.score {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: gray;
+    margin-top: 4px;
+}
+
+div.ontosem-candidate > div.score > div.header {
+    background-color: darkgray;
+    padding: 2px;
+}
+
+div.ontosem-candidate > div.score > div.message {
+    padding: 2px;
+}
+
+div.ontosem-candidate > div.score > div.parameters {
+    font-size: 0.7em;
+    padding: 2px;
+}
+
+div.ontosem-candidate > div.constraint {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: gray;
+    margin-top: 4px;
+}
+
+div.ontosem-candidate > div.constraint > div.header {
+    background-color: darkgray;
+    padding: 2px;
+}
+
+div.ontosem-candidate > div.constraint > div.details {
+    padding: 2px;
+}
+
 /* *** TMR *** */
 
 div.tmr {

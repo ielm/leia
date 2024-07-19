@@ -1,0 +1,58 @@
+<div class="ontosem-candidate">
+    <h2>Sense Maps</h2>
+    {{#each senseMaps}}
+    <div class="sense-map">
+        <div class="header">
+            Word {{this.word}} mapped to <a is="content-link" data-content-id="{{this.sense}}">{{this.sense}}</a>
+        </div>
+        <div class="preference">
+            Preference: {{this.preference}}
+        </div>
+        <div class="bindings">
+        {{#each bindings}}
+            {{@key}} = {{this}}
+            {{#unless @last}},{{/unless}}
+        {{/each}}
+        </div>
+    </div>
+    {{/each}}
+
+    <h2>Scores</h2>
+    <div class="score">
+        <div class="header">Final = {{this.finalScore}}</div>
+        <div class="message"></div>
+        <div class="parameters"></div>
+    </div>
+    {{#each scores}}
+    <div class="score">
+        <div class="header">{{this.type}} = {{this.score}}</div>
+        <div class="message">{{this.message}}</div>
+        <div class="parameters">
+            {{#eachCandidateScoreParameter this}}
+                {{#each this}}
+                {{@key}} = {{this}}
+                {{#unless @last}},{{/unless}}
+                {{/each}}
+            {{/eachCandidateScoreParameter}}
+        </div>
+    </div>
+    {{/each}}
+
+    <h2>Constraints</h2>
+    {{#each constraints}}
+    <div class="constraint">
+        <div class="header">
+            ({{this.index}}) {{this.frame}} is {{#if this.negate}}not{{/if}}
+            {{#each this.concepts}}
+                {{concept}} {{#unless @last}},{{/unless}}
+            {{/each}}
+        </div>
+        <div class="details">
+            From word {{senseMap}}.
+        </div>
+    </div>
+    {{/each}}
+
+
+
+</div>
