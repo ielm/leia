@@ -4,7 +4,19 @@ div.analysis-container {
     display: grid;
     grid-template-columns: 200px auto;
     grid-gap: 5px;
-    margin: 4px;
+    height: 100%;
+}
+
+div.analysis-container > div.analysis-navigator {
+    overflow-y: scroll;
+    height: 100%;
+    padding: 4px;
+}
+
+div.analysis-container > div.analysis-content {
+    overflow-y: scroll;
+    height: 100%;
+    padding: 4px;
 }
 
 div.analysis-navigator ul {
@@ -55,6 +67,10 @@ div.analysis-navigator a.analysis-content-link:hover {
 
 div.ontosem-candidate {
 
+}
+
+div.ontosem-candidate > h2:first-of-type {
+    margin-top: 0px;
 }
 
 div.ontosem-candidate > div.sense-map {

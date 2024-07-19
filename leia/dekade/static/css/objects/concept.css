@@ -1,5 +1,7 @@
 div.concept {
     padding: 4px;
+    overflow-y: scroll;
+    height: 100%;
 }
 
 div.concept > .concept-lineage-header > .concept-name {
