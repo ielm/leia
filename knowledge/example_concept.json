@@ -41,7 +41,7 @@
     &set-1                  A single set; is OR'd with other concepts, private frames, properties, and sets
     $property               A single property; is OR'd with other concepts, private frames, properties, and sets
     [comparator, #, #],     A numeric range; second number is optional (per comparator);
-                            Comparators are: >, >=, <, <=, ><, >=<
+                            Comparators are: >, >=, <, <=, ><, >=<, ><=, =>=<
     ^                       A special character to "inherit from property definition"
     [str, str, ...]         Any list of literals
     !AnyLit                 A special identifier for "any literal is valid"
@@ -52,6 +52,7 @@
     @concept                A single concept
     @private-1              A single private frame
     &set-1                  A single set
+    $property               A single property
     #                       A single number (int or float)
     str                     A single string / literal
     true/false              A single boolean value
