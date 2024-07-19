@@ -1,8 +1,8 @@
 from dataclasses import dataclass
-from multiprocessing.pool import Pool
 from leia.ontomem.memory import Memory
 from leia.utils.formatting import FormatFromLISP
 from leia.utils.threads import multiprocess_read_json_file
+from multiprocessing.pool import Pool
 from typing import Any, Dict, List, Set, Tuple, Union
 
 import itertools
