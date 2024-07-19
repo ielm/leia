@@ -94,8 +94,69 @@ class XMR(Space):
         self.raw = raw
         self.timestmap = timestamp if timestamp is not None else time.time()
 
-    def root(self) -> 'Frame':
-        raise NotImplementedError
+    def root(self) -> Union['Frame', None]:
+        # Finds the current root of the XMR.
+        # The root is the frame that has the least incoming and most outgoing relations.
+        # EVENTs take priority over OBJECTs, who take priority over PROPERTYs (that is, a less good matching EVENT
+        # is still better than any OBJECT).
+        # In the case of a tie, the lower instance number wins.  Further ties = select "the first one".
+
+        if len(self.instances) == 0:
+            return None
+
+        # Setup the scoring index
+        root_scoring = {}
+        for frame in self.instances.values():
+            subtree = None
+            ancestors = frame.concept.ancestors()
+            ancestors.add(frame.concept)
+            if self.memory.ontology.concept("EVENT") in ancestors:
+                subtree = "EVENT"
+            elif self.memory.ontology.concept("OBJECT") in ancestors:
+                subtree = "OBJECT"
+            elif self.memory.ontology.concept("PROPERTY") in ancestors:
+                subtree = "PROPERTY"
+
+            root_scoring[frame.id()] = {
+                "frame_id": frame.id(),
+                "subtree": subtree,
+                "incoming": 0,
+                "outgoing": 0,
+                "instance": frame.index
+            }
+
+        # Now modify each score
+        for frame in self.instances.values():
+            for property in frame.properties.keys():
+                for filler in frame.values(property):
+                    if isinstance(filler, Frame):
+                        root_scoring[frame.id()]["outgoing"] += 1
+                        root_scoring[filler.id()]["incoming"] += 1
+
+        # Now find the best root
+        candidates = []
+        subtrees_present = list(map(lambda s: s["subtree"], root_scoring.values()))
+        if "EVENT" in subtrees_present:
+            candidates = list(filter(lambda s: s["subtree"] == "EVENT", root_scoring.values()))
+        elif "OBJECT" in subtrees_present:
+            candidates = list(filter(lambda s: s["subtree"] == "OBJECT", root_scoring.values()))
+        elif "PROPERTY" in subtrees_present:
+            candidates = list(filter(lambda s: s["subtree"] == "PROPERTY", root_scoring.values()))
+
+        # Calculate the final score for each candidate
+        for candidate in candidates:
+            candidate["score"] = candidate["outgoing"] - candidate["incoming"]
+
+        # Find the best score, then filter to candidates with that score
+        best_score = max(candidates, key=lambda x: x["score"])["score"]
+        candidates = list(filter(lambda c: c["score"] == best_score, candidates))
+
+        # Find the lowest instance number, then filter to candidates with that instance
+        lowest_instance = min(candidates, key=lambda x: x["instance"])["instance"]
+        candidates = list(filter(lambda c: c["instance"] == lowest_instance, candidates))
+
+        # Return the first (ideally only) candidate
+        return self.instances[candidates[0]["frame_id"]]
 
 
 class Frame(object):        # TODO: RENAME TO Instance

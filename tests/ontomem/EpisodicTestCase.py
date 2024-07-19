@@ -1,5 +1,5 @@
 from ontomem.ontology import Concept
-from ontomem.episodic import EpisodicMemory, Filler, Frame, Space
+from ontomem.episodic import EpisodicMemory, Filler, Frame, Space, XMR
 from ontomem.memory import Memory
 from unittest import TestCase
 from unittest.mock import MagicMock, patch
@@ -93,6 +93,55 @@ class SpaceTestCase(TestCase):
         # The instance is still in memory, but no longer indexed in the space
         self.assertEqual(f, self.m.episodic.instance(f.id()))
         self.assertNotIn(f.id(), space.instances)
+
+
+class XMRTestCase(TestCase):
+
+    def setUp(self):
+        self.m = Memory("", "", "")
+
+    def test_root(self):
+        # The root is considered the EVENT with the least incoming relations and most outgoing relations.  In the case
+        # of a tie, the "first" is selected.
+        # If no EVENTs exist, then OBJECTs, and finally PROPERTYs are chosen.
+        # None is returned if no frames exist at all.
+        # Relations to concepts (not instances) are ignored.
+
+        PROPERTY = self.m.ontology.concept("PROPERTY")
+        OBJECT = self.m.ontology.concept("OBJECT")
+        EVENT = self.m.ontology.concept("EVENT")
+
+        xmr = XMR(self.m)
+        self.assertIsNone(xmr.root())
+
+        # Property is chosen as there is no other choice
+        prop1 = xmr.new_instance(PROPERTY)
+        self.assertEqual(prop1, xmr.root())
+
+        # Object is chosen over property
+        object1 = xmr.new_instance(OBJECT)
+        self.assertEqual(object1, xmr.root())
+
+        # Event is chosen over object
+        event1 = xmr.new_instance(EVENT)
+        self.assertEqual(event1, xmr.root())
+
+        # An event with more outgoing relations (tied for incoming) is chosen
+        event2 = xmr.new_instance(EVENT)
+        event2.add_filler("THEME", object1)
+        self.assertEqual(event2, xmr.root())
+
+        # The event with the least incoming is chosen when outgoing is tied
+        event1.add_filler("THEME", event2)
+        self.assertEqual(event1, xmr.root())
+
+        # The first event is chosen in the case of a complete tie
+        prop1.add_filler("SCOPE", event1)
+        self.assertEqual(event1, xmr.root())
+
+        # Relations to concepts are ignored.
+        event2.add_filler("AGENT", OBJECT)
+        self.assertEqual(event1, xmr.root())
 
 
 class FrameTestCase(TestCase):
