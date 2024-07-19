@@ -64,23 +64,23 @@ class OntoSemRunner(object):
         sentences = " ".join(sentences)
 
         with timer("preprocess", self.timed_results):
-            pp = Preprocessor(self.config).run(sentences)
+            pp = Preprocessor(analysis).run(sentences)
 
         with timer("syntax", self.timed_results):
-            syntax = SpacyAnalyzer(self.config).run(pp)
+            syntax = SpacyAnalyzer(analysis).run(pp)
             for s in syntax:
                 sentence = Sentence(s.original_sentence)
                 sentence.syntax = s
                 analysis.sentences.append(sentence)
 
         with timer("build wm-lexicon", self.timed_results):
-            WMLexiconLoader(self.config).run(analysis.lexicon, syntax)
+            WMLexiconLoader(analysis).run(syntax)
 
         # TODO: Transformations here
 
         with timer("synmapping", self.timed_results):
             for sentence in analysis.sentences:
-                synmap = SynMapper(self.config, self.config.memory().ontology, analysis.lexicon).run(sentence.syntax)
+                synmap = SynMapper(analysis).run(sentence.syntax)
                 sentence.syntax.synmap = synmap
 
         with timer("basic semantic analysis", self.timed_results):

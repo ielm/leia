@@ -8,8 +8,8 @@ from typing import Dict, List, Union
 
 class Analysis(object):
 
-    def __init__(self, config: OntoSemConfig):
-        self.config = config
+    def __init__(self, config: OntoSemConfig=None):
+        self.config = config if config is not None else OntoSemConfig()
         self.sentences: List[Sentence] = []
         self.lexicon = WMLexicon()
 

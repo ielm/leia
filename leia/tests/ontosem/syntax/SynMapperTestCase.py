@@ -1,6 +1,6 @@
 from leia.ontomem.lexicon import Sense, SynStruc
 from leia.ontomem.memory import Memory
-from leia.ontosem.analysis import WMLexicon
+from leia.ontosem.analysis import Analysis, WMLexicon
 from leia.ontosem.config import OntoSemConfig
 from leia.ontosem.syntax.results import ConstituencyNode, Dependency, SenseMap, SynMap, Syntax, Word
 from leia.ontosem.syntax.synmapper import SynMatcher, SynMapper
@@ -12,8 +12,9 @@ from unittest.mock import call, MagicMock, patch
 class SynMapperTestCase(LEIATestCase):
 
     def setUp(self):
-        self.m = Memory("", "", "")
-        self.mapper = SynMapper(OntoSemConfig(), self.m.ontology, WMLexicon())
+        self.analysis = Analysis()
+        self.m = self.analysis.config.memory()
+        self.mapper = SynMapper(self.analysis)
 
     @patch("leia.ontosem.syntax.synmapper.SynMatcher.run")
     def test_build_sense_maps(self, mock_matcher: MagicMock):
@@ -175,10 +176,10 @@ class SynMapperTestCase(LEIATestCase):
         w1s1 = Sense(self.m, "man-n1", contents=self.mockSense("man-n1"))
         w1s2 = Sense(self.m, "man-n2", contents=self.mockSense("man-n2"))
 
-        self.mapper.lexicon.add_sense(word0, w0s1)
-        self.mapper.lexicon.add_sense(word0, w0s2)
-        self.mapper.lexicon.add_sense(word1, w1s1)
-        self.mapper.lexicon.add_sense(word1, w1s2)
+        self.mapper.analysis.lexicon.add_sense(word0, w0s1)
+        self.mapper.analysis.lexicon.add_sense(word0, w0s2)
+        self.mapper.analysis.lexicon.add_sense(word1, w1s1)
+        self.mapper.analysis.lexicon.add_sense(word1, w1s2)
 
         # Build the syntax input; only the words matter for this test, as we'll be mocking the results of the matcher.
         syntax = Syntax([word0, word1], "", "", ConstituencyNode(""), [])
@@ -226,8 +227,9 @@ class SynMapperTestCase(LEIATestCase):
 class SynMatcherTestCase(LEIATestCase):
 
     def setUp(self):
-        self.m = Memory("", "", "")
-        self.matcher = SynMatcher(OntoSemConfig(), self.m.ontology, WMLexicon())
+        self.analysis = Analysis()
+        self.m = self.analysis.config.memory()
+        self.matcher = SynMatcher(self.analysis)
 
     def test_attempt_element_match(self):
         # This generic function checks to see if a syn-struc element and any syntax component are a match.

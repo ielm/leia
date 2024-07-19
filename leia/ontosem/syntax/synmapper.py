@@ -1,8 +1,6 @@
 from dataclasses import dataclass
 from leia.ontomem.lexicon import Sense, SynStruc
-from leia.ontomem.ontology import Ontology
-from leia.ontosem.analysis import WMLexicon
-from leia.ontosem.config import OntoSemConfig
+from leia.ontosem.analysis import Analysis
 from leia.ontosem.syntax.results import ConstituencyNode, Dependency, SenseMap, SynMap, Syntax, Word
 from typing import Any, Iterable, List, Tuple, Type, Union
 
@@ -16,17 +14,15 @@ class SynMapper(object):
     can be aligned to a syntactic component).
     """
 
-    def __init__(self, config: OntoSemConfig, ontology: Ontology, lexicon: WMLexicon):
-        self.config = config
-        self.ontology = ontology
-        self.lexicon = lexicon
+    def __init__(self, analysis: Analysis):
+        self.analysis = analysis
 
     def run(self, syntax: Syntax) -> SynMap:
         synmap = SynMap([])
 
         for word in syntax.words:
             word_sense_maps = []
-            for sense in self.lexicon.senses(word):
+            for sense in self.analysis.lexicon.senses(word):
                 sense_maps = list(self.build_sense_maps(syntax, word, sense))
                 word_sense_maps += sense_maps
             synmap.words.append(word_sense_maps)
@@ -34,7 +30,7 @@ class SynMapper(object):
         return synmap
 
     def build_sense_maps(self, syntax: Syntax, word: Word, sense: Sense) -> Iterable[SenseMap]:
-        results = SynMatcher(self.config, self.ontology, self.lexicon).run(syntax, sense.synstruc, root=word)
+        results = SynMatcher(self.analysis).run(syntax, sense.synstruc, root=word)
 
         for result in results:
             bindings = dict()
@@ -118,10 +114,8 @@ class SynMatcher(object):
     class SynMatchResult(object):
         matches: List['SynMatcher.SynMatch']
 
-    def __init__(self, config: OntoSemConfig, ontology: Ontology, lexicon: WMLexicon):
-        self.config = config
-        self.ontology = ontology
-        self.lexicon = lexicon
+    def __init__(self, analysis: Analysis):
+        self.analysis = analysis
 
     def run(self, syntax: Syntax, synstruc: SynStruc, root: Word=None) -> List['SynMatcher.SynMatchResult']:
         elements = synstruc.elements

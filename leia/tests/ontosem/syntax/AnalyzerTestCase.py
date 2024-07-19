@@ -1,5 +1,5 @@
 from leia.ontomem.lexicon import SemStruc, Sense, SynStruc
-from leia.ontosem.analysis import WMLexicon
+from leia.ontosem.analysis import Analysis, WMLexicon
 from leia.ontosem.config import OntoSemConfig
 from leia.ontosem.syntax.analyzer import Preprocessor, SpacyAnalyzer, SyntacticAnalyzer, WMLexiconLoader
 from leia.ontosem.syntax.results import ConstituencyNode, Syntax, Word
@@ -15,7 +15,7 @@ class PreprocessorTestCase(TestCase):
 
     def test_analyze(self):
         text = "He can't do it."
-        self.assertEqual("He can not do it.", Preprocessor(OntoSemConfig()).run(text))
+        self.assertEqual("He can not do it.", Preprocessor(Analysis()).run(text))
 
 
 class SyntacticAnalyzerTestCase(TestCase):
@@ -84,7 +84,7 @@ class SpacyAnalyzerTestCase(TestCase):
         mock_syntax.from_spacy = MagicMock(side_effect=lambda input: "syntax-%s" % input)
 
         # Run the analyzer
-        analyzer = SpacyAnalyzer(OntoSemConfig())
+        analyzer = SpacyAnalyzer(Analysis())
         results = analyzer.run("Test text.")
 
         # The benepar and coreferee plugins should have been added to the nlp pipeline
@@ -110,14 +110,14 @@ class SpacyAnalyzerTestCase(TestCase):
 class WMLexiconLoaderTestCase(LEIATestCase):
 
     def test_get_senses_for_word(self):
-        config = OntoSemConfig()
-        sense1 = Sense(config.memory(), "TEST-N1", contents=self.mockSense("TEST-N1"))
-        sense2 = Sense(config.memory(), "TEST-N2", contents=self.mockSense("TEST-N2"))
+        analysis = Analysis()
+        sense1 = Sense(analysis.config.memory(), "TEST-N1", contents=self.mockSense("TEST-N1"))
+        sense2 = Sense(analysis.config.memory(), "TEST-N2", contents=self.mockSense("TEST-N2"))
 
-        word = config.lexicon().word("TEST")
+        word = analysis.config.lexicon().word("TEST")
         word.senses = MagicMock(return_value=[sense1, sense2])
 
-        loader = WMLexiconLoader(config)
+        loader = WMLexiconLoader(analysis)
 
         # Normally, the loader retrieves all senses returned
         self.assertEqual([sense1, sense2], loader.get_senses_for_word(self.mockWord(0, "TEST", "N")))
@@ -138,8 +138,8 @@ class WMLexiconLoaderTestCase(LEIATestCase):
         # is responsible for making copies).
 
         # First, make a lexicon (mock add_sense so we can detect it was called)
-        lexicon = WMLexicon()
-        lexicon.add_sense = MagicMock()
+        analysis = Analysis()
+        analysis.lexicon.add_sense = MagicMock()
 
         # Next, make a multi-sentence syntactic input
         word1 = self.mockWord(1, "A", "N")
@@ -153,15 +153,14 @@ class WMLexiconLoaderTestCase(LEIATestCase):
         ]
 
         # Next, make a loader (mock get_senses_for_word so we can confirm the senses retrieved from the source lexicon)
-        config = OntoSemConfig()
-        loader = WMLexiconLoader(config)
+        loader = WMLexiconLoader(analysis)
 
-        an1 = Sense(config.memory(), "A-N1")
-        an2 = Sense(config.memory(), "A-N2")
-        bn1 = Sense(config.memory(), "B-N1")
-        cn1 = Sense(config.memory(), "C-N1")
-        dn1 = Sense(config.memory(), "D-N1")
-        en1 = Sense(config.memory(), "D-N1")    # Should not be loaded
+        an1 = Sense(analysis.config.memory(), "A-N1")
+        an2 = Sense(analysis.config.memory(), "A-N2")
+        bn1 = Sense(analysis.config.memory(), "B-N1")
+        cn1 = Sense(analysis.config.memory(), "C-N1")
+        dn1 = Sense(analysis.config.memory(), "D-N1")
+        en1 = Sense(analysis.config.memory(), "D-N1")    # Should not be loaded
 
         def _get_senses(word: Word) -> List[Sense]:
             return {
@@ -176,9 +175,9 @@ class WMLexiconLoaderTestCase(LEIATestCase):
         loader.get_senses_for_word = MagicMock(side_effect=_get_senses)
 
         # Run the loader, and confirm each sense was loaded properly
-        loader.run(lexicon, syntax)
+        loader.run(syntax)
 
-        lexicon.add_sense.assert_has_calls([
+        analysis.lexicon.add_sense.assert_has_calls([
             call(word1, an1),
             call(word1, an2),
             call(word2, bn1),
@@ -188,7 +187,7 @@ class WMLexiconLoaderTestCase(LEIATestCase):
 
     def test_generate_sense_for_word(self):
 
-        loader = WMLexiconLoader(OntoSemConfig())
+        loader = WMLexiconLoader(Analysis())
 
         # Generate sense should create a basic (nearly empty) sense with appropriate word/POS/and generated sense id.
         sense = loader.generate_sense_for_word(self.mockWord(0, "WORD", "NOUN"))

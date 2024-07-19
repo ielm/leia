@@ -1,5 +1,5 @@
 from leia.ontomem.lexicon import Sense
-from leia.ontosem.analysis import WMLexicon
+from leia.ontosem.analysis import Analysis, WMLexicon
 from leia.ontosem.config import OntoSemConfig
 from leia.ontosem.syntax.results import Syntax, Word
 from typing import List
@@ -9,8 +9,8 @@ import subprocess
 
 class Preprocessor(object):
 
-    def __init__(self, config: OntoSemConfig):
-        self.config = config
+    def __init__(self, analysis: Analysis):
+        self.analysis = analysis
 
     def run(self, text: str) -> str:
         return self.split_all_negation_aux_contractions(text.lstrip())
@@ -43,8 +43,8 @@ class Preprocessor(object):
 
 class SpacyAnalyzer(object):
 
-    def __init__(self, config: OntoSemConfig):
-        self.config = config
+    def __init__(self, analysis: Analysis):
+        self.analysis = analysis
 
     def run(self, text: str) -> List[Syntax]:
         # Doing the imports here rather than at the top, as the first-time imports load the data models which can be
@@ -74,18 +74,18 @@ class SpacyAnalyzer(object):
 
 class WMLexiconLoader(object):
 
-    def __init__(self, config: OntoSemConfig):
-        self.config = config
+    def __init__(self, analysis: Analysis):
+        self.analysis = analysis
         self._generated_indexes = dict()
 
-    def run(self, lexicon: WMLexicon, syntax: List[Syntax]):
+    def run(self, syntax: List[Syntax]):
         for sentence in syntax:
             for word in sentence.words:
                 for sense in self.get_senses_for_word(word):
-                    lexicon.add_sense(word, sense)
+                    self.analysis.lexicon.add_sense(word, sense)
 
     def get_senses_for_word(self, word: Word) -> List[Sense]:
-        truth = self.config.lexicon()
+        truth = self.analysis.config.lexicon()
         lemma = word.lemma.upper()
 
         senses = list(truth.word(lemma).senses())
@@ -118,7 +118,7 @@ class WMLexiconLoader(object):
                 semstruc = semstruc_options[pos]
                 break
 
-        sense = Sense(self.config.memory(), id, contents={
+        sense = Sense(self.analysis.config.memory(), id, contents={
             "SENSE": id,
             "WORD": word.lemma.upper(),
             "CAT": word.pos,
