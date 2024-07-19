@@ -14,8 +14,8 @@ mimetypes.add_type("text/javascript", ".js")
 
 class DEKADE(Flask):
 
-    def __init__(self, agent: Agent):
-        super().__init__(__name__, static_folder="static/", template_folder="templates/")
+    def __init__(self, agent: Agent, static_folder: str="static/", template_folder: str="templates/"):
+        super().__init__(__name__, static_folder=static_folder, template_folder=template_folder)
         CORS(self)
 
         self.agent = agent
@@ -42,7 +42,7 @@ class DEKADEBlueprint(Blueprint):
         return send_from_directory(self.static_folder, "favicon.ico", mimetype="image/vnd.microsoft.icon")
 
     def index(self):
-        return render_template("jinja/index.html", thing=123)
+        return render_template("jinja/index.html")
 
     def handlebars_template(self, path):
         return self.read_template("handlebars/%s" % path)
@@ -93,7 +93,7 @@ class DEKADEAPIBlueprint(Blueprint):
                 return str(filler)
             if isinstance(filler, Property):
                 return str(filler)
-            if isinstance(filler, list):
+            if isinstance(filler, str):
                 return filler
             if isinstance(filler, tuple):
                 if len(filler) == 2:
@@ -116,11 +116,18 @@ class DEKADEAPIBlueprint(Blueprint):
 
 if __name__ == "__main__":
 
-    agent = Agent(memory=Memory("../knowledge/properties/", "../knowledge/concepts/", ""))
+    properties_folder = "../knowledge/properties/"
+    concepts_folder = "../knowledge/concepts/"
+    words_folder = "../knowledge/words/"
+    static_folder = "static/"
+    template_folder = "templates/"
+
+    agent = Agent(memory=Memory(properties_folder, concepts_folder, words_folder))
     agent.memory.properties.load()
     agent.memory.ontology.load()
+    # agent.memory.lexicon.load()
 
-    app = DEKADE(agent)
+    app = DEKADE(agent, static_folder=static_folder, template_folder=template_folder)
     app.config.update(
         TEMPLATES_AUTO_RELOAD=True,
     )
