@@ -1,4 +1,68 @@
 <div class="concept">
-    {{name}};
-    <button type="button" value="{{name}}">Click Me!</button>
+    <div class="concept-lineage-header">
+        <span class="concept-name">{{name}}</span> isa
+        {{#each parents}}
+            <a is="content-link" data-content-id="@{{this}}">@{{this}}</a>
+            {{#unless @last}}, {{/unless}}
+        {{/each}}
+    </div>
+    <div class="concept-definition">
+        {{definition}}
+    </div>
+    <table class="concept-rows">
+        <tr>
+            <td>
+                <button class="concept-edit concept-add-local">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </td>
+            <td><input type="text" placeholder="property" /></td>
+            <td><input type="text" placeholder="facet" /></td>
+            <td><input type="text" placeholder="filler" /></td>
+            <td><input type="text" placeholder="meta" /></td>
+            <td></td>
+        </tr>
+        {{#each rows}}
+            {{#if this.local}}
+                <tr class="concept-row-local">
+                    <td>
+                        <button class="concept-edit concept-del-local" data-property="{{this.property}}" data-facet="{{this.facet}}" data-filler="{{this.filler}}">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </td>
+                    <td>{{this.property}}</td>
+                    <td>{{this.facet}}</td>
+                    <td>{{this.filler}}</td>
+                    <td>meta</td>
+                    <td></td>
+                </tr>
+            {{else if this.inherit}}
+                <tr class="concept-row-inherit">
+                    <td>
+                        <button class="concept-edit concept-block-inherit" data-from="{{this.from}}" data-property="{{this.property}}" data-facet="{{this.facet}}" data-filler="{{this.filler}}">
+                            <i class="fas fa-ban"></i>
+                        </button>
+                    </td>
+                    <td>{{this.property}}</td>
+                    <td>{{this.facet}}</td>
+                    <td>{{this.filler}}</td>
+                    <td>meta</td>
+                    <td>inherit from <a is="content-link" data-content-id="@{{this.from}}">@{{this.from}}</a></td>
+                </tr>
+            {{else if this.block}}
+                <tr class="concept-row-block">
+                    <td>
+                        <button class="concept-edit concept-unblock-block" data-from="{{this.from}}" data-property="{{this.property}}" data-facet="{{this.facet}}" data-filler="{{this.filler}}">
+                            <i class="fas fa-undo-alt"></i>
+                        </button>
+                    </td>
+                    <td>{{this.property}}</td>
+                    <td>{{this.facet}}</td>
+                    <td>{{this.filler}}</td>
+                    <td>n/a</td>
+                    <td>block from <a is="content-link" data-content-id="@{{this.from}}">@{{this.from}}</a></td>
+                </tr>
+            {{/if}}
+        {{/each}}
+    </table>
 </div>

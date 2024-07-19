@@ -1,8 +1,29 @@
 div.concept {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 3px;
-    margin: 3px;
-    padding: 2px;
-    background-color: lightblue;
+    padding: 4px;
+}
+
+div.concept > .concept-lineage-header > .concept-name {
+    font-weight: bold;
+}
+
+table.concept-rows > tbody > tr.concept-row-local {
+
+}
+
+table.concept-rows > tbody > tr.concept-row-inherit {
+    color: grey;
+}
+
+table.concept-rows > tbody > tr.concept-row-block {
+    color: darkred;
+}
+
+table.concept-rows > tbody > tr > td > button.concept-edit {
+    font-size: 0.7em;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+    margin-top: -1px;
 }

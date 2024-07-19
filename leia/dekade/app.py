@@ -68,7 +68,29 @@ class DEKADEAPIBlueprint(Blueprint):
         return json.dumps(list(sorted(concepts)))
 
     def knowledge_ontology_concept(self, concept: str):
-        return json.dumps({"name": concept, "def": "some stuff here"})
+        concept = self.app.agent.memory.ontology.concept(concept)
+        output = {
+            "name": concept.name,
+            "definition": "TODO: get definition",
+            "parents": list(map(lambda p: p.name, concept.parents())),
+            "rows": concept.rows()
+        }
+
+        # Mock output
+        output = {
+            "name": concept.name,
+            "definition": "This is an an example definition.",
+            "parents": ["all", "object"],
+            "rows": [
+                {"row": "local", "property": "agent", "facet": "sem", "filler": "@primate", "meta": {}},
+                {"row": "local", "property": "color", "facet": "sem", "filler": "yellow", "meta": {}},
+                {"row": "local", "property": "size", "facet": "sem", "filler": (">", 1.0), "meta": {"measured-in": "inches"}},
+                {"row": "inherit", "from": "object", "property": "name", "facet": "sem", "filler": ["abcd", "defg"], "meta": {}},
+                {"row": "block", "from": "physical-object", "property": "theme", "facet": "sem", "filler": "@all"},
+            ]
+        }
+
+        return json.dumps(output)
 
 
 if __name__ == "__main__":
