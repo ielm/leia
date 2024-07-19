@@ -5,6 +5,8 @@ from leia.ontosem.config import OntoSemConfig
 from leia.ontosem.syntax.results import Syntax, Word
 from typing import List, Union
 
+import warnings
+
 
 class Preprocessor(object):
 
@@ -42,6 +44,10 @@ class Preprocessor(object):
 
 class SpacyAnalyzer(object):
 
+    # A global / singleton for the Spacy NLP pipeline; we only need to load this once, and the cost is high, so we
+    # cache it globally for reuse.
+    nlp = None
+
     def __init__(self, analysis: Analysis):
         self.analysis = analysis
 
@@ -50,21 +56,21 @@ class SpacyAnalyzer(object):
         # very slow.  By keeping it here, that only happens if run is actually called (rather than, say, throughout
         # various tests that don't touch this method).
 
-        import benepar
-        import coreferee
-        import en_core_web_lg
-        import spacy
-        import warnings
+        if SpacyAnalyzer.nlp is None:
+            import benepar
+            import coreferee
+            import en_core_web_lg
+            import spacy
 
-        nlp = en_core_web_lg.load()
-        nlp.add_pipe("benepar", config={"model": "benepar_en3"})
-        nlp.add_pipe("coreferee")
+            SpacyAnalyzer.nlp = en_core_web_lg.load()
+            SpacyAnalyzer.nlp.add_pipe("benepar", config={"model": "benepar_en3"})
+            SpacyAnalyzer.nlp.add_pipe("coreferee")
 
         # Wrap the nlp(text) call in a warning suppression; benepar throws a warning up that doesn't prevent functionality
         # but does write to sys.err; we don't need it (and can't control it), so just suppress it here.
         with warnings.catch_warnings():
             warnings.simplefilter("ignore", category=UserWarning)
-            doc = nlp(text)
+            doc = SpacyAnalyzer.nlp(text)
 
         results = list(map(lambda sent: Syntax.from_spacy(sent), doc.sents))
 
