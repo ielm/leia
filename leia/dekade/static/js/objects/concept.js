@@ -1,3 +1,4 @@
+import * as API from "../api.js";
 import { LEIAObject } from "./_default.js";
 
 export class Concept extends LEIAObject {
@@ -76,14 +77,15 @@ export class Concept extends LEIAObject {
         console.log("TODO: remove " + property + "/" + facet + "/" + filler + " from " + concept);
     }
 
-    _onBlockInheritButtonClicked(event) {
+    async _onBlockInheritButtonClicked(event) {
         const concept = this.name();
         const from = $(event.currentTarget).data("from");
         const property = $(event.currentTarget).data("property");
         const facet = $(event.currentTarget).data("facet");
         const filler = $(event.currentTarget).data("filler");
+        const type = $(event.currentTarget).data("type");
 
-        console.log("TODO: block " + property + "/" + facet + "/" + filler + " in " + concept + " from " + from);
+        console.log(await API.apiKnowledgeOntologyWriteBlockFiller(concept, property, facet, filler, type));
     }
 
     _onUnblockBlockButtonClicked(event) {

@@ -29,7 +29,7 @@
             {{#if this.local}}
                 <tr class="concept-row-local">
                     <td>
-                        <button class="concept-edit concept-del-local" data-property="{{this.property}}" data-facet="{{this.facet}}" data-filler="{{this.filler}}">
+                        <button class="concept-edit concept-del-local" data-property="{{this.property}}" data-facet="{{this.facet}}" data-filler="{{this.filler}}" data-type="{{this.type}}">
                             <i class="fas fa-trash"></i>
                         </button>
                     </td>
@@ -47,7 +47,7 @@
             {{else if this.inherit}}
                 <tr class="concept-row-inherit">
                     <td>
-                        <button class="concept-edit concept-block-inherit" data-from="{{this.from}}" data-property="{{this.property}}" data-facet="{{this.facet}}" data-filler="{{this.filler}}">
+                        <button class="concept-edit concept-block-inherit" data-from="{{this.from}}" data-property="{{this.property}}" data-facet="{{this.facet}}" data-filler="{{this.filler}}" data-type="{{this.type}}">
                             <i class="fas fa-ban"></i>
                         </button>
                     </td>
@@ -65,7 +65,7 @@
             {{else if this.block}}
                 <tr class="concept-row-block">
                     <td>
-                        <button class="concept-edit concept-unblock-block" data-from="{{this.from}}" data-property="{{this.property}}" data-facet="{{this.facet}}" data-filler="{{this.filler}}">
+                        <button class="concept-edit concept-unblock-block" data-from="{{this.from}}" data-property="{{this.property}}" data-facet="{{this.facet}}" data-filler="{{this.filler}}" data-type="{{this.type}}">
                             <i class="fas fa-undo-alt"></i>
                         </button>
                     </td>

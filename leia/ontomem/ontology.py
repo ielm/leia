@@ -477,6 +477,9 @@ class OSet(object):
     def members(self) -> List[Union[Concept, 'Property', 'OSet']]:
         return list(self._members)
 
+    def __repr__(self):
+        return "@%s" % self.name
+
 
 if __name__ == "__main__":
 

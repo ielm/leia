@@ -82,6 +82,21 @@ export async function apiKnowledgeOntologyChildren(concept) {
 }
 
 
+export async function apiKnowledgeOntologyWriteBlockFiller(concept, property, facet, filler, type) {
+    try {
+        const response = await axios.post("/api/knowledge/ontology/concept/" + concept + "/filler/block", {
+            property: property,
+            facet: facet,
+            filler: filler,
+            type: type
+        });
+        return response.data;
+    } catch (error) {
+        return error.data;
+    }
+}
+
+
 export async function apiKnowledgePropertiesChildren(concept) {
     try {
         const response = await axios.get("/api/knowledge/properties/children/" + concept);
