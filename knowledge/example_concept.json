@@ -1,0 +1,74 @@
+{
+  "name": "@example",
+  "isa": ["@parent1", "@parent2"],
+  "def": "this is an example concept to demonstrate the format",
+  "local": [
+    {"slot": "agent", "facet": "sem", "filler": "@cat"},
+    {"slot": "agent", "facet": "sem", "filler": "@dog"},
+    {"slot": "width", "facet": "sem", "filler": ["><", 1, 5], "meta": {"measured-in": "feet"}},
+    {"slot": "color", "facet": "sem", "filler": "^", "meta": {"confidence": 0.5}},
+    {"slot": "color", "facet": "default", "filler": "brown", "meta": {"required": true}},
+    {"slot": "theme", "facet": "sem", "filler": "@private-1"},
+    {"slot": "has-object-as-part", "facet": "sem", "filler": "&set-1"},
+    {"slot": "measures", "facet": "sem", "filler": "$distance"}
+  ],
+  "block": [
+    {"slot": "height", "facet": "sem", "filler": [1, 10]},
+    {"slot": "theme", "facet": "sem", "filler": "*"}
+  ],
+  "private": {
+    "@private-1": {
+      "name": "@private-1",
+      "isa": ["@parent"],
+      "def": "a private frame accessible by the root and other private frames only",
+      "local": [],
+      "block": []
+    },
+    "&set-1": {
+      "name": "&set-1",
+      "type": "conjunctive",
+      "cardinality": 4,
+      "members": ["@paw", "@leg"]
+    }
+  }
+}
+
+/*
+  Valid facets: default, sem, relaxable-to, not
+  Valid local fillers for sem, relaxable-to, not:
+    @concept                A single concept; is OR'd with other concepts, private frames, properties, and sets
+    @private-1              A single private frame; is OR'd with other concepts, private frames, properties, and sets
+    &set-1                  A single set; is OR'd with other concepts, private frames, properties, and sets
+    $property               A single property; is OR'd with other concepts, private frames, properties, and sets
+    [comparator, #, #],     A numeric range; second number is optional (per comparator);
+                            Comparators are: >, >=, <, <=, ><, >=<
+    ^                       A special character to "inherit from property definition"
+    [str, str, ...]         Any list of literals
+    !AnyLit                 A special identifier for "any literal is valid"
+    !AnyNum                 A special identifier for "any number is valid"
+    !AnyType                A special identifier for "any concept or property is valid"
+    !AnyBool                A special identifier for "any boolean is valid"
+  Valid local fillers for default:
+    @concept                A single concept
+    @private-1              A single private frame
+    &set-1                  A single set
+    #                       A single number (int or float)
+    str                     A single string / literal
+    true/false              A single boolean value
+  Valid block fillers:
+    (any of the above)      Any valid filler for any facet above (including default)
+    *                       A special character to "block all fillers"
+  Metadata for fillers:
+    measured-in             Any unit of measure; only for scalar properties
+    precision               Precision identifier for scalar properties; values are "int" or "float" (default)
+    mean, median, mode      Additional values for scalar properties
+    required                Flag for any default facet marking the filler as required for any instance to have
+    confidence              0 - 1 value for any filler
+  Valid fields for private frames:
+    (all but private)       Exact same format as root frames, but without the "private" field
+  Valid fiels for sets:
+    name                    Name is required
+    type                    Either "conjunctive" or "disjunctive"
+    cardinality             A single integer; this field is optional (1 is default)
+    members                 A list of concepts, private frames, and sets
+*/

@@ -1,0 +1,28 @@
+{
+  "name": "$example",
+  "def": "an example property",
+  "type": "relation",
+  "range": ["$object"],
+  "inverse": "$example-of",
+  "measured-in": "@measuring-unit"
+}
+
+/*
+  Valid types:
+    relation        This is a relation; its ranges must be concepts
+    case-role       This is a special set of relations (that are just "more important")
+    literal         This is a literal attribute; its ranges will always be strings
+    scalar          This is a scalar attribute; its ranges will always be numbers
+    boolean         This is a boolean attribute; its ranges will always be booleans
+  Valid ranges:
+    [@object, $prop, ...]   A list of one or more concepts or properties (for relations / case-roles)
+    [str, str, ...]         A list of string values (for literals)
+    [comparator, #, #],     A numeric range; second number is optional (per comparator); for scalars
+                            Comparators are: >, >=, <, <=, ><, >=<
+    !AnyLit                 A special identifier for "any literal is valid"; for literals
+    !AnyNum                 A special identifier for "any number is valid"; for scalars
+    !AnyType                A special identifier for "any concept or property is valid"; for relations / case-roles
+    !AnyBool                A special identifier for "any boolean is valid"; for booleans
+  Inverse:          Valid only on relations / case-roles
+  Measured-in:      Valid only on scalars; must be part of the @measuring-unit concept subtree
+*/
