@@ -71,3 +71,42 @@ class DEKADEAPIOntologyBlueprintTestCase(TestCase):
         self.assertEqual(1.0, bp._parse_filler(concept, "1.0", "number"))
         self.assertEqual(123, bp._parse_filler(concept, "123", "number"))
 
+    def test_guess_filler(self):
+        app = MagicMock()
+        app.static_folder = ""
+        app.template_folder = ""
+        app.agent = MagicMock()
+        app.agent.memory = self.m
+        bp = DEKADEAPIOntologyBlueprint(app)
+        concept = self.m.ontology.concept("TEST")
+
+        # Concepts are guessed by the presence of the @ symbol
+        self.assertEqual(self.m.ontology.concept("OBJECT"), bp._guess_filler(concept, "THEME", "@OBJECT"))
+
+        # Private concepts take precedence
+        concept.private["OBJECT"] = Concept(self.m, "OBJECT", root=concept)
+        self.assertEqual(concept.private["OBJECT"], bp._guess_filler(concept, "THEME", "@OBJECT"))
+
+        # Properties are guessed by the presence of the $ symbol
+        self.assertEqual(self.m.properties.get_property("RELATION"), bp._guess_filler(concept, "THEME", "$RELATION"))
+
+        # Wildcards are guessed by the presence of the ! symbol
+        self.assertEqual(WILDCARD.ANYBOOL, bp._guess_filler(concept, "ATTRIBUTE", "!AnyBool"))
+
+        # Sets also use the @ symbol
+        concept.private["SET.1"] = OSet(self.m, "SET.1", root=concept)
+        self.assertEqual(concept.private["SET.1"], bp._guess_filler(concept, "THEME", "@SET.1"))
+
+        # Comparators start with a comparator symbol pattern, and are comma separated (two or three elements)
+        self.assertEqual((COMPARATOR.GTE, 1.0), bp._guess_filler(concept, "ATTRIBUTE", ">=,1.0"))
+        self.assertEqual((COMPARATOR.GTE, 123), bp._guess_filler(concept, "ATTRIBUTE", ">=,123"))
+        self.assertEqual((COMPARATOR.INCLUDE, 1.0, 2.0), bp._guess_filler(concept, "ATTRIBUTE", "=>=<,1.0,2.0"))
+        self.assertEqual((COMPARATOR.INCLUDE, 123, 456), bp._guess_filler(concept, "ATTRIBUTE", "=>=<,123,456"))
+
+        # Numbers are parsed if discovered
+        self.assertEqual(1.0, bp._guess_filler(concept, "ATTRIBUTE", "1.0"))
+        self.assertEqual(123, bp._guess_filler(concept, "ATTRIBUTE", "123"))
+
+        # All other text is deemed to be a string
+        self.assertEqual("TEST", bp._guess_filler(concept, "ATTRIBUTE", "TEST"))
+

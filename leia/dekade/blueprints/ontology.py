@@ -28,6 +28,40 @@ class DEKADEAPIOntologyBlueprint(Blueprint):
         self.add_url_rule("/api/knowledge/ontology/concept/<concept>/filler/block", endpoint=None, view_func=self.write_filler_block, methods=["POST"])
         self.add_url_rule("/api/knowledge/ontology/concept/<concept>/filler/unblock", endpoint=None, view_func=self.write_filler_unblock, methods=["POST"])
 
+    def _guess_filler(self, concept: Concept, property: str, filler: str) -> Concept.FILLER:
+        # Attempts to parse the filler without being explicitly told the type.
+        # The expectations of the property are leveraged in the cases of ambiguity.
+
+        # TODO: the property is not currently being used (99% coverage from proper input without it)
+
+        if filler.startswith("@"):
+            filler = filler[1:]
+            if filler in concept.private:
+                return concept.private[filler]
+            return self.app.agent.memory.ontology.concept(filler)
+        if filler.startswith("$"):
+            return self.app.agent.memory.properties.get_property(filler[1:])
+        if filler.startswith("!"):
+            return WILDCARD(filler)
+        if "," in filler:
+            try:
+                parts = list(map(lambda p: p.strip(), filler.split(",")))
+                if len(parts) == 2 or len(parts) == 3:
+                    comparator = COMPARATOR(parts[0])
+                    parts = parts[1:]
+                    parts = list(map(lambda p: float(p) if "." in p else int(p), parts))
+                    parts = [comparator] + parts
+                    return tuple(parts)
+            except: pass
+        try:
+            return float(filler)
+        except: pass
+        try:
+            return int(filler)
+        except: pass
+
+        return filler
+
     def _parse_filler(self, concept: Concept, filler: str, type: str) -> Concept.FILLER:
         if type == "concept":
             if filler.startswith("@"):
@@ -144,7 +178,25 @@ class DEKADEAPIOntologyBlueprint(Blueprint):
         raise NotImplementedError
 
     def write_filler_add(self, concept: str):
-        raise NotImplementedError
+        if not request.get_json():
+            abort(400)
+
+        data = request.get_json()
+        property = data["property"]
+        facet = data["facet"]
+        filler = data["filler"]
+        meta = dict()
+        if len(data["meta"]) > 0:
+            meta = dict(map(lambda m: tuple([m[0].strip(), m[1].strip()]), map(lambda m: m.strip().split("="), data["meta"].split(","))))
+
+        concept = self.app.agent.memory.ontology.concept(concept)
+
+        filler = self._guess_filler(concept, property, filler)
+        concept.add_local(property, facet, filler, **meta)
+
+        self.app.agent.memory.edits.ontology.note_edited(concept.name, "DEKADE")
+
+        return "OK"
 
     def write_filler_remove(self, concept: str):
         raise NotImplementedError

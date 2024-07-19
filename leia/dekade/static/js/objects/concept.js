@@ -69,8 +69,20 @@ export class Concept extends LEIAObject {
         this.content = await API.apiKnowledgeOntologyConcept(concept, true);
     }
 
-    _onAddLocalButtonClicked(event) {
-        console.log("TODO: add a local row to " + this.name());
+    async _onAddLocalButtonClicked(event) {
+        const button = $(event.currentTarget);
+        const row = $(button.closest("tr"));
+
+        const concept = this.name();
+        const property = row.find(".concept-add-local-property").val();
+        const facet = row.find(".concept-add-local-facet").val();
+        const filler = row.find(".concept-add-local-filler").val();
+        const meta = row.find(".concept-add-local-meta").val();
+
+        const response = await API.apiKnowledgeOntologyWriteAddFiller(concept, property, facet, filler, meta);
+        if (response == "OK") {
+            await this.refresh();
+        }
     }
 
     _onDelLocalButtonClicked(event) {
