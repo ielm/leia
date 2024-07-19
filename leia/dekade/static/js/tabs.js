@@ -1,14 +1,17 @@
+import * as Widgets from "./widgets.js";
+
 
 class LEIATabsViewer {
 
     constructor(tabPanel, contentPanel) {
+        this.tabPrototype = TabButton;
         this.tabPanel = $(tabPanel);
         this.contentPanel = $(contentPanel);
         this.index = {};
     }
 
     _addTab(name, label) {
-        const tab = new TabButton(this, name, label);
+        const tab = new this.tabPrototype(this, name, label);
         this.tabPanel.append(tab);
 
         return tab;
@@ -58,6 +61,11 @@ class LEIAFixedTabsViewer extends LEIATabsViewer {
 
 
 class LEIAObjectTabsViewer extends LEIATabsViewer {
+
+    constructor(tabPanel, contentPanel) {
+        super(tabPanel, contentPanel);
+        this.tabPrototype = ObjectTabButton;
+    }
 
     async addObject(leiaObject, select=true) {
         // leiaObject must be a LEIAObject type
@@ -127,7 +135,36 @@ class TabButton extends HTMLButtonElement {
 
 }
 
+
+class ObjectTabButton extends TabButton {
+
+    constructor(tabs, name, label) {
+        super(tabs, name, label);
+        this.oncontextmenu = this._onRightClicked;
+    }
+
+    _onRightClicked(event) {
+        event.preventDefault();
+        const menu = new Widgets.ContextMenu();
+        menu.addOption("Pin", this.pin);
+        menu.addOption("Close", this.close);
+
+        menu.show(event.pageX, event.pageY);
+    }
+
+    pin() {
+        console.log("TODO: PIN");
+    }
+
+    close() {
+        console.log("TODO: CLOSE");
+    }
+
+}
+
+
 customElements.define("tab-button", TabButton, { extends: "button" });
+customElements.define("object-tab-button", ObjectTabButton, { extends: "button" });
 
 export const sidebarTabs = new LEIAFixedTabsViewer("#leia-sidebar-tabs", "#leia-sidebar-content");
 export const contentTabs = new LEIAObjectTabsViewer("#leia-tabs-navigator", "#leia-tabs-content");
