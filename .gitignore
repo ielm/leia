@@ -50,3 +50,14 @@ Thumbs.db
 
 # Virtual Environments
 .virtualenvs/*
+
+# Temporarily ignore knowledge files
+leia/knowledge/concepts/*
+leia/knowledge/properties/*
+leia/knowledge/words/*
+
+# Temporarily ignore yaml files
+ontosem.yaml
+
+# Temporarily ignore TODO files
+TODO.txt
