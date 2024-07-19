@@ -47,7 +47,7 @@
   SEM-STRUC:          a single concept (e.g., "HUMAN"), or a complex sem-struc form; documented elsewhere
   TMR-HEAD:           null, or a variable string, e.g. "$VAR1"
   MEANING-PROCEDURES: list of MP calls, each a list containing the call and parameters; e.g., [ ["COREFER", "^$VAR1", "^$VAR0"], [...], ... ]
-  OUTPUT-SYNTAX:      null, or a POS type (e.g., "N"), or a list of POS types (e.g., ["N", "V"])
+  OUTPUT-SYNTAX:      a list of POS types (e.g., ["N", "V"]); the list can be empty
   EXAMPLE-DEPS:       list of triples (dependencies); e.g. [ ["NSUBJ", "$VAR0", "$VAR1"], [...], ... ]
   EXAMPLE-BINDINGS:   list of strings with optional binding variable numbers; e.g, ["THEY-2", "DEPRECIATED-0", "THE", "STOCK-1"]
   TYPES:              list of types, e.g., ["A", "B", "C"]

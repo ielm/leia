@@ -158,9 +158,16 @@
     <hr>
 
     <div class="sense-additional-meaning">
+        <div class="sense-field-label">Output Syntax</div>
+        {{#if outputsyntax}}
+            <div class="sense-field-content full">{{#each outputsyntax}}{{this}}{{#unless @last}} , {{/unless}}{{/each}}</div>
+        {{else}}
+            <div class="sense-field-content empty">None.</div>
+        {{/if}}
+
         <div class="sense-field-label">TMR Head</div>
         {{#if tmrhead}}
-            <div class="sense-field-content">{{tmrhead}}</div>
+            <div class="sense-field-content full">{{tmrhead}}</div>
         {{else}}
             <div class="sense-field-content empty">None.</div>
         {{/if}}

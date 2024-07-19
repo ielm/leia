@@ -99,6 +99,7 @@ class Sense(object):
         self.semstruc: SemStruc = None
         self.meaning_procedures: List[MeaningProcedure] = []
         self.tmr_head: str = None
+        self.output_syntax: List[str] = []
 
         self.definition: str = None
         self.example: str = None
@@ -117,6 +118,7 @@ class Sense(object):
         self.semstruc = SemStruc(contents["SEM-STRUC"])
         self.meaning_procedures = list(map(lambda mp: MeaningProcedure(mp), contents["MEANING-PROCEDURES"]))
         self.tmr_head = contents["TMR-HEAD"]
+        self.output_syntax = contents["OUTPUT-SYNTAX"]
 
         self.definition = contents["DEF"]
         self.example = contents["EX"]
@@ -139,6 +141,7 @@ class Sense(object):
             "SEM-STRUC": self.semstruc.to_dict(),
             "MEANING-PROCEDURES": list(map(lambda mp: mp.to_dict(), self.meaning_procedures)),
             "TMR-HEAD": self.tmr_head,
+            "OUTPUT-SYNTAX": self.output_syntax,
 
             "COMMENTS": self.comments,
             "DEF": self.definition,
@@ -146,7 +149,6 @@ class Sense(object):
 
             "EXAMPLE-BINDINGS": [],
             "EXAMPLE-DEPS": [],
-            "OUTPUT-SYNTAX": [],
             "TYPES": [],
             "USE-WITH-TYPES": []
         }

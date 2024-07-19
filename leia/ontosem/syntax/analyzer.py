@@ -139,6 +139,7 @@ class WMLexiconLoader(object):
             "SYN-STRUC": [{"type": "root"}],
             "SEM-STRUC": semstruc,
             "MEANING-PROCEDURES": [],
+            "OUTPUT-SYNTAX": [],
             "DEF": "generated sense",
             "EX": "",
             "COMMENTS": "generated for unknown word #%s" % word.index

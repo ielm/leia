@@ -23,6 +23,7 @@ export class Sense extends LEIAObject {
             synstruc: this.content["SYN-STRUC"],
             semstruc: this.content["SEM-STRUC"],
             mps: this.content["MEANING-PROCEDURES"],
+            outputsyntax: this.content["OUTPUT-SYNTAX"],
         }
     }
 

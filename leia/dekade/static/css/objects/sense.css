@@ -2,6 +2,7 @@ div.sense {
     padding: 4px;
     overflow-y: scroll;
     height: 100%;
+    --sense-functional-field-background: #eee;
 }
 
 div.sense.imported {
@@ -29,7 +30,7 @@ div.sense div.sense-field-content.empty {
 }
 
 div.sense div.syn-struc-element {
-    background: #eee;
+    background: var(--sense-functional-field-background);
     margin-top: 3px;
 }
 
@@ -56,7 +57,7 @@ div.sense div.syn-struc-element.constituency div.constituency-children {
 
 div.sense div.sem-struc-element {
     font-family: monospace;
-    background: #eee;
+    background: var(--sense-functional-field-background);
     margin-top: 3px;
 }
 
@@ -70,6 +71,11 @@ div.sense div.sem-struc-element-children {
 
 div.sense div.meaning-procedure {
     font-family: monospace;
-    background: #eee;
+    background: var(--sense-functional-field-background);
     margin-top: 3px;
+}
+
+div.sense div.sense-additional-meaning div.sense-field-content.full {
+    font-family: monospace;
+    background: var(--sense-functional-field-background);
 }
