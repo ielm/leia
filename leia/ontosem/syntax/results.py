@@ -348,6 +348,12 @@ class ConstituencyNode(object):
             return self.children[0]
         return self.children[0].leftmost_word()
 
+    def to_dict(self) -> dict:
+        return {
+            "label": self.label,
+            "children": list(map(lambda child: child.to_dict(), self.children))
+        }
+
 
 class Dependency(object):
 
@@ -360,6 +366,13 @@ class Dependency(object):
         if isinstance(other, Dependency):
             return self.governor == other.governor and self.dependent == other.dependent and self.type == other.type
         return super().__eq__(other)
+
+    def to_dict(self) -> dict:
+        return {
+            "type": self.type,
+            "gov": self.governor.index,
+            "dep": self.dependent.index
+        }
 
 
 class LispParser(object):

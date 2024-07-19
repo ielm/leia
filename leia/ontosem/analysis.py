@@ -25,7 +25,7 @@ class Sentence(object):
     def __init__(self, text: str):
         self.text: str = text
         self.syntax: Syntax = None
-        self.semantics: List[Candidate] = None
+        self.semantics: List[Candidate] = []
 
     def to_dict(self) -> dict:
         return {

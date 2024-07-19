@@ -273,7 +273,7 @@ class SynStruc(object):
             return self.optional
 
         def to_dict(self) -> dict:
-            return {"type": "constituency", "children": list(map(lambda child: child.to_dict(), self.children)), "var": self.variable, "opt": self.optional}
+            return {"type": "constituency", "contype": self.type, "children": list(map(lambda child: child.to_dict(), self.children)), "var": self.variable, "opt": self.optional}
 
     def __init__(self, contents: List[dict]=None):
         self.elements = []
@@ -459,6 +459,9 @@ class MeaningProcedure(object):
 
     def parameters(self) -> List[Union[str, List[str]]]:
         return self.data[1:]
+
+    def to_dict(self) -> list:
+        return self.data
 
     def __eq__(self, other):
         if isinstance(other, MeaningProcedure):
