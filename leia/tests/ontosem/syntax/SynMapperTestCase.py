@@ -325,6 +325,11 @@ class SynMatcherTestCase(LEIATestCase):
         element = SynStruc.TokenElement({}, "N", dict(), None, False)
         self.assertEqual(SynMatcher.TokenMatch(element, word), self.matcher.attempt_token_match(element, word, None))
 
+        # An ancestor POS is a match
+        element = SynStruc.TokenElement({}, "ANCESTOR-N", dict(), None, False)
+        self.m.parts_of_speech.get("N").parents = [self.m.parts_of_speech.get("ANCESTOR-N")]
+        self.assertEqual(SynMatcher.TokenMatch(element, word), self.matcher.attempt_token_match(element, word, None))
+
     def test_attempt_token_match_morphology(self):
         word = self.mockWord(0, "word", "N", morphology={"A": 1, "B": 2})
 
