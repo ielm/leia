@@ -5,12 +5,14 @@
 @import "./objects/_default.css";
 @import "./objects/concept.css";
 @import "./objects/ontosem.css";
+@import "./objects/properties.css";
 @import "./objects/sense.css";
 @import "./objects/tree.css";
 
 @import "./sidebars/lexicon.css";
 @import "./sidebars/ontology.css";
 @import "./sidebars/ontosem.css";
+@import "./sidebars/properties.css";
 
 
 h1 {

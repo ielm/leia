@@ -375,7 +375,7 @@ class MongoPropertyExporter(object):
                 skipped.append(name)
                 continue
 
-            if name in {"ATTRIBUTE", "EXTRA-ONTOLOGICAL"}:
+            if name in {"EXTRA-ONTOLOGICAL"}:
                 skipped.append(name)
                 continue
 
@@ -462,6 +462,20 @@ class MongoPropertyExporter(object):
             file = "%s/%s.prop" % (output_dir, name)
             with open(file, "w") as f:
                 json.dump(contents, f, indent=2)
+
+        root_property = {
+            "name": "$PROPERTY",
+            "def": "refers to the properties of entities or their states.",
+            "type": "unknown",
+            "range": "!AnyType",
+            "inverse": "$PROPERTY",
+            "measured-in": [],
+            "container": None
+        }
+
+        file = "%s/PROPERTY.prop" % output_dir
+        with open(file, "w") as f:
+            json.dump(root_property, f, indent=2)
 
         print("======")
         for s in skipped:

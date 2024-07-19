@@ -5,6 +5,7 @@ import * as HBSHelpers from "./hbshelpers.js";
 import * as LexiconSidebar from "./sidebars/lexicon.js";
 import * as OntologySidebar from "./sidebars/ontology.js";
 import * as OntoSemSidebar from "./sidebars/ontosem.js";
+import * as PropertiesSidebar from "./sidebars/properties.js";
 import { contentTabs } from "./tabs.js";
 
 class HelpButton extends HTMLButtonElement {

@@ -66,6 +66,11 @@ class DEKADEAPIBlueprint(Blueprint):
         self.add_url_rule("/api/knowledge/ontology/concept/<concept>", endpoint=None, view_func=self.knowledge_ontology_concept, methods=["GET"])
         self.add_url_rule("/api/knowledge/ontology/children/<concept>", endpoint=None, view_func=self.knowledge_ontology_children, methods=["GET"])
 
+        # Properties API
+        self.add_url_rule("/api/knowledge/properties/children/<property>", endpoint=None, view_func=self.knowledge_properties_children, methods=["GET"])
+        self.add_url_rule("/api/knowledge/properties/filter/<substring>", endpoint=None, view_func=self.knowledge_properties_filter, methods=["GET"])
+        self.add_url_rule("/api/knowledge/properties/property/<property>", endpoint=None, view_func=self.knowledge_properties_property, methods=["GET"])
+
         # OntoSem API
         self.add_url_rule("/api/ontosem/analyze", endpoint=None, view_func=self.ontosem_analyze, methods=["POST"])
 
@@ -148,6 +153,27 @@ class DEKADEAPIBlueprint(Blueprint):
         children = sorted(list(map(lambda c: c.name, children)))
 
         return json.dumps(children)
+
+    def knowledge_properties_children(self, property: str):
+        property = self.app.agent.memory.properties.get_property(property)
+        children = property.contains()
+        children = sorted(list(map(lambda c: c.name, children)))
+
+        return json.dumps(children)
+
+    def knowledge_properties_filter(self, substring: str):
+        substring = substring.lower()
+
+        properties = self.app.agent.memory.properties.all()
+        properties = map(lambda p: p.name, properties)
+        properties = filter(lambda p: substring in p.lower(), properties)
+
+        return json.dumps(list(sorted(properties)))
+
+    def knowledge_properties_property(self, property: str):
+        property = self.app.agent.memory.properties.get_property(property)
+
+        return json.dumps(property.contents)
 
     def ontosem_analyze(self):
         if not request.get_json():

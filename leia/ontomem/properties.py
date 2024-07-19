@@ -83,10 +83,16 @@ class Property(object):
     def definition(self) -> str:
         return self.contents["def"]
 
-    def container(self) -> 'Property':
+    def container(self) -> Union['Property', None]:
+        if self.contents is None or self.contents["container"] is None:
+            return None
+
         c = self.contents["container"][1:]
 
         return self.memory.properties.get_property(c)
+
+    def contains(self) -> List['Property']:
+        return list(filter(lambda p: self == p.container(), self.memory.properties.all()))
 
     def inverse(self) -> Union[str, None]:
         if "inverse" not in self.contents:
@@ -169,6 +175,9 @@ class PropertyInventory(object):
         contents = pool.starmap(_read_property, map(lambda file: (self.contents_dir, file), files))
         for c in contents:
             self.cache[c[0]].set_contents(c[1])
+
+    def all(self) -> List[Property]:
+        return list(self.cache.values())
 
     def is_property(self, name: str) -> bool:
         return name in self.cache
