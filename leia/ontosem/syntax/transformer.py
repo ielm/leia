@@ -21,10 +21,11 @@ class LexicalTransformer(object):
 
                     for sense in self.analysis.lexicon.senses(root):
                         alignment = self.align_syn_strucs(transformation.root_synstruc, sense.synstruc)
-                        if None in set(map(lambda a: a[1], alignment)):
+
+                        if None in list(map(lambda a: a[1], alignment)):
                             continue
 
-                        transformation.executable().run(sense, match, alignment)
+                        transformation.executable(self.analysis).run(sense, match, alignment)
                         self.analysis.log("Transformed $sense (of word $word) with $transformation", type="knowledge", source=self.__class__, word=root.index, sense=sense.id, transformation=transformation.name)
 
     def root_for_match(self, match: SynMatcher.SynMatchResult) -> Union[Word, None]:
@@ -36,7 +37,7 @@ class LexicalTransformer(object):
             return root
         if isinstance(root, Dependency):
             # The dependent is the target word.
-            return root.dependent
+            return root.governor
         if isinstance(root, ConstituencyNode):
             # The leftmost word is the target word.
             return root.leftmost_word()
@@ -96,14 +97,11 @@ class LexicalTransformer(object):
             if v != element2.morph[k]:
                 return False
 
-        if element1.variable != element2.variable:
-            return False
-
         # No filtering occurred, the elements are "close enough"
         return True
 
     def _do_dependency_elements_match(self, element1: SynStruc.DependencyElement, element2: SynStruc.DependencyElement) -> bool:
-        if element1.type != element2.type:
+        if element1.type.lower() != element2.type.lower():
             return False
 
         if element1.governor != element2.governor:
@@ -112,17 +110,11 @@ class LexicalTransformer(object):
         if element1.dependent != element2.dependent:
             return False
 
-        if element1.variable != element2.variable:
-            return False
-
         # No filtering occurred, the elements are "close enough"
         return True
 
     def _do_constituency_elements_match(self, element1: SynStruc.ConstituencyElement, element2: SynStruc.ConstituencyElement) -> bool:
-        if element1.type != element2.type:
-            return False
-
-        if element1.variable != element2.variable:
+        if element1.type.lower() != element2.type.lower():
             return False
 
         candidates = iter(element2.children)

@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from leia.ontomem.lexicon import SynStruc
+from leia.ontomem.lexicon import Sense, SynStruc
 from leia.ontomem.memory import Memory
 from leia.utils.str2py import import_class
 from leia.utils.threads import multiprocess_read_json_file
@@ -72,8 +72,9 @@ class Transformation(object):
 
 class TransformationExecutable(object):
 
-    def run(self):
-        # TODO: Determine standard inputs (e.g., variable mappings, WMLexicon, etc.)
-        # TODO: Determine which of those inputs should be at the __init__ level, rather than the run() level.
+    def __init__(self, analysis):
+        self.analysis = analysis
+
+    def run(self, sense: Sense, synmatch_result, alignment):
         # This method is meant to be overridden by any implementation of this class; this is an abstract.
         raise NotImplementedError

@@ -5,6 +5,7 @@ from leia.ontosem.semantics.extended import BasicSemanticsMPProcessor
 from leia.ontosem.semantics.scorer import SemanticScorer
 from leia.ontosem.syntax.analyzer import Preprocessor, SpacyAnalyzer, WMLexiconLoader
 from leia.ontosem.syntax.synmapper import SynMapper
+from leia.ontosem.syntax.transformer import LexicalTransformer
 from typing import List
 
 import json
@@ -80,7 +81,9 @@ class OntoSemRunner(object):
         with timer(analysis, "build wm-lexicon"):
             WMLexiconLoader(analysis).run(syntax)
 
-        # TODO: Transformations here
+        with timer(analysis, "run transformations"):
+            for s in syntax:
+                LexicalTransformer(analysis).run(s)
 
         with timer(analysis, "run synmapping"):
             for sentence in analysis.sentences:

@@ -129,14 +129,14 @@ class LexicalTransformerTestCase(LEIATestCase):
         )]
         self.assertEqual(word1, transformer.root_for_match(match))
 
-        # If var 0 is a dependency element, then the dependent token is returned
+        # If var 0 is a dependency element, then the governor token is returned
         match.matches = [
             SynMatcher.DependencyMatch(
                 SynStruc.DependencyElement("NSUBJ", None, None, 0, False),
                 Dependency(word1, word2, "NSUBJ")
             )
         ]
-        self.assertEqual(word2, transformer.root_for_match(match))
+        self.assertEqual(word1, transformer.root_for_match(match))
 
         # If var 0 is a constituency element, then the leftmost token is returned
         element = SynStruc.ConstituencyElement("NP", [
@@ -220,6 +220,12 @@ class LexicalTransformerTestCase(LEIATestCase):
             (expectation, match)
         ], transformer.align_syn_strucs(syn1, syn2))
 
+        # Different variables is a match
+        syn2.elements = [SynStruc.TokenElement({"A", "B"}, "N", {"x": 1, "y": 2}, 123, False)]
+        self.assertEqual([
+            (expectation, syn2.elements[0])
+        ], transformer.align_syn_strucs(syn1, syn2))
+
         # Missing lemmas is not a match
         syn2.elements = [SynStruc.TokenElement({"A"}, "N", {"x": 1, "y": 2}, None, False)]
         self.assertEqual([
@@ -234,12 +240,6 @@ class LexicalTransformerTestCase(LEIATestCase):
 
         # Missing morphology is not a match
         syn2.elements = [SynStruc.TokenElement({"A", "B"}, "N", {"x": 1}, None, False)]
-        self.assertEqual([
-            (expectation, None)
-        ], transformer.align_syn_strucs(syn1, syn2))
-
-        # Different variables is not a match
-        syn2.elements = [SynStruc.TokenElement({"A", "B"}, "N", {"x": 1, "y": 2}, 123, False)]
         self.assertEqual([
             (expectation, None)
         ], transformer.align_syn_strucs(syn1, syn2))
@@ -271,6 +271,12 @@ class LexicalTransformerTestCase(LEIATestCase):
             (expectation, match)
         ], transformer.align_syn_strucs(syn1, syn2))
 
+        # Differing variables is a match
+        syn2.elements = [SynStruc.DependencyElement("NSUBJ", None, None, 123, False)]
+        self.assertEqual([
+            (expectation, syn2.elements[0])
+        ], transformer.align_syn_strucs(syn1, syn2))
+
         # Differing types is not a match
         syn2.elements = [SynStruc.DependencyElement("DOBJ", None, None, None, False)]
         self.assertEqual([
@@ -285,12 +291,6 @@ class LexicalTransformerTestCase(LEIATestCase):
 
         # Differing dependents is not a match
         syn2.elements = [SynStruc.DependencyElement("NSUBJ", None, 123, None, False)]
-        self.assertEqual([
-            (expectation, None)
-        ], transformer.align_syn_strucs(syn1, syn2))
-
-        # Differing variables is not a match
-        syn2.elements = [SynStruc.DependencyElement("NSUBJ", None, None, 123, False)]
         self.assertEqual([
             (expectation, None)
         ], transformer.align_syn_strucs(syn1, syn2))
@@ -329,6 +329,14 @@ class LexicalTransformerTestCase(LEIATestCase):
         # Additional children can be found in the second syn-struc
         match.children.append(SynStruc.TokenElement({"C", "D"}, "V", dict(), None, False))
 
+        # Differing variables is a match
+        syn2.elements = [SynStruc.ConstituencyElement("NP", [
+            SynStruc.TokenElement({"A", "B"}, "N", {"x": 1, "y": 2}, None, False)
+        ], 123, False)]
+        self.assertEqual([
+            (expectation, syn2.elements[0])
+        ], transformer.align_syn_strucs(syn1, syn2))
+
         # Differing types is not a match
         syn2.elements = [SynStruc.ConstituencyElement("VP", [
             SynStruc.TokenElement({"A", "B"}, "N", {"x": 1, "y": 2}, None, False)
@@ -339,14 +347,6 @@ class LexicalTransformerTestCase(LEIATestCase):
 
         # Missing children is not a match
         syn2.elements = [SynStruc.ConstituencyElement("VP", [], None, False)]
-        self.assertEqual([
-            (expectation, None)
-        ], transformer.align_syn_strucs(syn1, syn2))
-
-        # Differing variables is not a match
-        syn2.elements = [SynStruc.ConstituencyElement("NP", [
-            SynStruc.TokenElement({"A", "B"}, "N", {"x": 1, "y": 2}, None, False)
-        ], 123, False)]
         self.assertEqual([
             (expectation, None)
         ], transformer.align_syn_strucs(syn1, syn2))

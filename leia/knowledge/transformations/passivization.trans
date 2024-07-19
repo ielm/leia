@@ -1,0 +1,22 @@
+{
+  "name": "Passivization of transitive and optionally transitive verbs",
+  "example": "A sandwich was eaten by a chicken.",
+  "pattern": {
+    "input-syn-strucs": [
+      [
+        {"type": "dependency", "deptype": "nsubjpass", "var": 0}
+      ],
+      [
+        {"type": "constituency", "contype": "NP", "children": []},
+        {"type": "token", "lemma": ["be"], "pos": null, "morph": {}},
+        {"type": "token", "lemma": [], "pos": "V", "var": 0, "morph": {"tense": "past", "verbform": "part"}}
+      ]
+    ],
+    "root-syn-struc": [
+      {"type": "dependency", "deptype": "NSUBJ"},
+      {"type": "root"},
+      {"type": "dependency", "deptype": "DOBJ"}
+    ]
+  },
+  "executable": "*leia.ontosem.syntax.transformations.passivization.PassivizationOfTransVerbs"
+}
