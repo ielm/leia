@@ -8,19 +8,19 @@
       "COMMENTS": "",
       "TMR-HEAD": null,
       "SYN-STRUC": [
-        {"type": "root"}
+        {
+          "type": "root"
+        }
       ],
       "SEM-STRUC": "",
       "MEANING-PROCEDURES": [],
-      "SYNONYMS": ["."],
+      "SYNONYMS": [
+        "."
+      ],
       "HYPONYMS": [],
       "SENSE": "*PERIOD*-PUNCT1",
       "WORD": "*PERIOD*",
-      "TYPES": [],
-      "USE-WITH-TYPES": [],
-      "OUTPUT-SYNTAX": [],
-      "EXAMPLE-BINDINGS": [],
-      "EXAMPLE-DEPS": []
+      "OUTPUT-SYNTAX": []
     }
   }
 }
