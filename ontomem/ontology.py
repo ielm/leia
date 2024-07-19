@@ -12,6 +12,7 @@ import os
 #  - handling metadata (import, process, assign, remove)
 #  - general editing (assign, remove, update)
 #  - listing of a frame by rows (with inh/block) for the editor
+#  - value facet overrides all other facets (and can't be overridden)
 
 
 # This is needed as Pool.starmap cannot access self functions, so we make a public function as a wrapper.

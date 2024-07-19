@@ -52,7 +52,7 @@ class MongoConceptExporter(object):
         h = self.handle()
         entries = list(h.aggregate(aggregation))
 
-        properties = set(map(lambda e: e["name"], filter(lambda e: "property" in e["ancestry"], entries)))
+        properties = set(map(lambda e: e["name"], filter(lambda e: e["name"] == "property" or "property" in e["ancestry"], entries)))
         literals = set(map(lambda e: e["name"], filter(lambda e: "literal-attribute" in e["ancestry"], entries)))
         concepts = list(filter(lambda e: e["name"] != "property" and "property" not in e["ancestry"], entries))
 
@@ -102,31 +102,12 @@ class MongoConceptExporter(object):
                 if slot == "onto-instances":
                     continue
 
-                # Now map each filler into something valid
-                as_scalar_range = self.parse_scalar_range(filler)
-
-                if isinstance(filler, str) and filler in concept_names:
-                    filler = "@%s" % filler
-                elif isinstance(filler, str) and slot in literals:
-                    # Known literals can just be passed through for now; if any of the values are actually out
-                    # of range, we will deal with them later (not a big deal)
-                    pass
-                elif as_scalar_range is not None:
-                    filler = as_scalar_range
-                elif filler == "yes":
-                    # There are only a handful of cases, and for each, both yes and no are present, so just merge them
-                    # into one.
-                    filler = "!AnyBool"
-                elif filler == "no":
-                    # Since we get "yes" above, we can skip the "no" fillers (we only need one)
-                    continue
-                elif slot == "measures-property":
-                    filler = "$%s" % filler
-                elif filler in properties:
-                    filler = "$%s" % filler
-                else:
+                try:
+                    filler = self.parse_filler(slot, filler, concept_names, literals, properties)
+                    if filler is None:
+                        continue
+                except:
                     unknown_fillers.append((name, prop))
-                    continue
 
                 if facet not in {"value", "default", "sem", "relaxable-to", "not"}:
                     unknown_fillers.append((name, prop))
@@ -146,8 +127,35 @@ class MongoConceptExporter(object):
                 contents["local"].append(prop)
 
             for prop in concept["overriddenFillers"]:
-                # TODO: Handle blocked fillers here
-                unknown_blocked.append((name, prop))
+                slot = prop["slot"]
+                facet = prop["facet"]
+                filler = prop["filler"]
+
+                # Skip all default-measures; they are handled elsewhere
+                if facet == "default-measure":
+                    continue
+                # Skip all "onto-instances", this is a pointer that isn't needed
+                if slot == "onto-instances":
+                    continue
+
+                try:
+                    filler = self.parse_filler(slot, filler, concept_names, literals, properties)
+                    if filler is None:
+                        continue
+                except:
+                    unknown_blocked.append((name, prop))
+
+                if facet not in {"value", "default", "sem", "relaxable-to", "not"}:
+                    unknown_blocked.append((name, prop))
+                    continue
+
+                prop = {
+                    "slot": slot,
+                    "facet": facet,
+                    "filler": filler,
+                }
+
+                contents["block"].append(prop)
 
             output_ontology[name] = contents
 
@@ -159,24 +167,45 @@ class MongoConceptExporter(object):
             print("-- %s" % str(uf))
 
         print("Total unknown blocked: %d" % len(unknown_blocked))
-        # for ub in unknown_blocked:
-        #     print("-- %s" % str(ub))
+        for ub in unknown_blocked:
+            print("-- %s" % str(ub))
 
-    def as_number(self, value) -> Union[float, int, None]:
-        if isinstance(value, int):
-            return value
-        if isinstance(value, float):
-            return value
-        if isinstance(value, str):
-            try:
-                return int(value)
-            except: pass
-            try:
-                return float(value)
-            except: pass
-        return None
+    def parse_filler(self, slot: str, filler, concept_names: Set[str], literals: Set[str], properties: Set[str]):
+        # Now map each filler into something valid
+        as_scalar_range = self.parse_scalar_range(filler)
+
+        if isinstance(filler, str) and filler in concept_names:
+            return "@%s" % filler
+        elif isinstance(filler, str) and slot in literals:
+            # Known literals can just be passed through for now; if any of the values are actually out
+            # of range, we will deal with them later (not a big deal)
+            return filler
+        elif as_scalar_range is not None:
+            return as_scalar_range
+        elif filler == "yes":
+            # There are only a handful of cases, and for each, both yes and no are present, so just merge them
+            # into one.
+            return "!AnyBool"
+        elif filler == "no":
+            # Since we get "yes" above, we can skip the "no" fillers (we only need one)
+            return None
+        elif filler in properties:
+            return "$%s" % filler
+        elif filler == "(any-number)":
+            return "!AnyNum"
+        elif slot == "has-sports-activity" and filler == "rise":
+            # This looks like bad data; pruning it here (too many instances in the database)
+            return None
+        else:
+            raise Exception
 
     def parse_scalar_range(self, value) -> Union[Tuple[str, Union[float, int]], Tuple[str, Union[float, int], Union[float, int]], None]:
+        # Handle a few special cases that are too numerous in the database to easily fix
+        if value == "(>0)":
+            return (">", 0)
+        if value == "(>=0)":
+            return (">=", 0)
+
         value_as_number = self.as_number(value)
         if value_as_number is not None:
             return ("=>=<", value_as_number)
@@ -212,6 +241,20 @@ class MongoConceptExporter(object):
 
             return (comparator, value2)
 
+        return None
+
+    def as_number(self, value) -> Union[float, int, None]:
+        if isinstance(value, int):
+            return value
+        if isinstance(value, float):
+            return value
+        if isinstance(value, str):
+            try:
+                return int(value)
+            except: pass
+            try:
+                return float(value)
+            except: pass
         return None
 
 
