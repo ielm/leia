@@ -33,7 +33,9 @@
                             <i class="fas fa-trash"></i>
                         </button>
                     </td>
-                    <td>{{this.property}}</td>
+                    <td>
+                        <a is="content-link" data-content-type="properties.property" data-content-id="${{toUpperCase this.property}}">${{this.property}}</a>
+                    </td>
                     <td>{{this.facet}}</td>
                     <td>
                         {{#ifeq this.type "concept"}}
@@ -57,7 +59,9 @@
                             <i class="fas fa-ban"></i>
                         </button>
                     </td>
-                    <td>{{this.property}}</td>
+                    <td>
+                        <a is="content-link" data-content-type="properties.property" data-content-id="${{toUpperCase this.property}}">${{this.property}}</a>
+                    </td>
                     <td>{{this.facet}}</td>
                     <td>
                         {{#ifeq this.type "concept"}}
@@ -81,7 +85,9 @@
                             <i class="fas fa-undo-alt"></i>
                         </button>
                     </td>
-                    <td>{{this.property}}</td>
+                    <td>
+                        <a is="content-link" data-content-type="properties.property" data-content-id="${{toUpperCase this.property}}">${{this.property}}</a>
+                    </td>
                     <td>{{this.facet}}</td>
                     <td>
                         {{#ifeq this.type "concept"}}

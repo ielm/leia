@@ -10,6 +10,10 @@ Handlebars.registerHelper("ifeq", function(arg1, arg2, options) {
     return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
 });
 
+Handlebars.registerHelper("toUpperCase", function(str) {
+    return str.toUpperCase();
+});
+
 Handlebars.registerHelper("eachCandidateScoreParameter", function(score, options) {
     const copiedScore = {};
     Object.assign(copiedScore, score);
