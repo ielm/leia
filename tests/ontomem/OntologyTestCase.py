@@ -218,13 +218,95 @@ class ConceptTestCase(TestCase):
         self.assertEqual(set(), grandparent3.ancestors())
 
     def test_children(self):
-        fail()
+        grandparent = Concept(self.m, "grandparent")
+        parent = Concept(self.m, "parent")
+        child1 = Concept(self.m, "child1")
+        child2 = Concept(self.m, "child2")
+
+        # They must be in memory to be looked up
+        self.m.ontology.cache[grandparent.name] = grandparent
+        self.m.ontology.cache[parent.name] = parent
+        self.m.ontology.cache[child1.name] = child1
+        self.m.ontology.cache[child2.name] = child2
+
+        self.assertEqual(set(), grandparent.children())
+        self.assertEqual(set(), parent.children())
+        self.assertEqual(set(), child1.children())
+        self.assertEqual(set(), child2.children())
+
+        child1.add_parent(parent)
+        child2.add_parent(parent)
+        parent.add_parent(grandparent)
+
+        self.assertEqual({parent}, grandparent.children())
+        self.assertEqual({child1, child2}, parent.children())
+        self.assertEqual(set(), child1.children())
+        self.assertEqual(set(), child2.children())
 
     def test_descendants(self):
-        fail()
+        grandparent = Concept(self.m, "grandparent")
+        parent1 = Concept(self.m, "parent1")
+        parent2 = Concept(self.m, "parent2")
+        child1 = Concept(self.m, "child1")
+        child2 = Concept(self.m, "child2")
+        child3 = Concept(self.m, "child3")
+
+        # They must be in memory to be looked up
+        self.m.ontology.cache[grandparent.name] = grandparent
+        self.m.ontology.cache[parent1.name] = parent1
+        self.m.ontology.cache[parent2.name] = parent2
+        self.m.ontology.cache[child1.name] = child1
+        self.m.ontology.cache[child2.name] = child2
+        self.m.ontology.cache[child3.name] = child3
+
+        self.assertEqual(set(), grandparent.descendants())
+        self.assertEqual(set(), parent1.descendants())
+        self.assertEqual(set(), parent2.descendants())
+        self.assertEqual(set(), child1.descendants())
+        self.assertEqual(set(), child2.descendants())
+        self.assertEqual(set(), child3.descendants())
+
+        child1.add_parent(parent1)
+        child2.add_parent(parent1)
+        child3.add_parent(parent2)
+        parent1.add_parent(grandparent)
+        parent2.add_parent(grandparent)
+
+        self.assertEqual({parent1, parent2, child1, child2, child3}, grandparent.descendants())
+        self.assertEqual({child1, child2}, parent1.descendants())
+        self.assertEqual({child3}, parent2.descendants())
+        self.assertEqual(set(), child1.descendants())
+        self.assertEqual(set(), child2.descendants())
 
     def test_siblings(self):
-        fail()
+        parent1 = Concept(self.m, "parent1")
+        parent2 = Concept(self.m, "parent2")
+        child1 = Concept(self.m, "child1")
+        child2 = Concept(self.m, "child2")
+        child3 = Concept(self.m, "child3")
+
+        # They must be in memory to be looked up
+        self.m.ontology.cache[parent1.name] = parent1
+        self.m.ontology.cache[parent2.name] = parent2
+        self.m.ontology.cache[child1.name] = child1
+        self.m.ontology.cache[child2.name] = child2
+        self.m.ontology.cache[child3.name] = child3
+
+        self.assertEqual(set(), parent1.siblings())
+        self.assertEqual(set(), parent2.siblings())
+        self.assertEqual(set(), child1.siblings())
+        self.assertEqual(set(), child2.siblings())
+        self.assertEqual(set(), child3.siblings())
+
+        child1.add_parent(parent1)
+        child2.add_parent(parent1)
+        child3.add_parent(parent2)
+
+        self.assertEqual(set(), parent1.siblings())
+        self.assertEqual(set(), parent2.siblings())
+        self.assertEqual({child2}, child1.siblings())
+        self.assertEqual({child1}, child2.siblings())
+        self.assertEqual(set(), child3.siblings())
 
     def test_isa(self):
         grandparent = Concept(self.m, "grandparent")
@@ -377,15 +459,35 @@ class ConceptTestCase(TestCase):
             Concept.BlockedRow(concept, "prop", "sem", "*"),
         ], concept.rows())
 
+    def test_fillers(self):
+        grandparent = Concept(self.m, "grandparent")
+        parent = Concept(self.m, "parent")
+        concept = Concept(self.m, "concept")
+
+        concept.add_parent(parent)
+        parent.add_parent(grandparent)
+
+        self.assertEqual([], concept.rows())
+
+        grandparent.add_local("prop", "sem", "a")
+        parent.add_local("prop", "sem", "b")
+        concept.add_local("prop", "sem", "c")
+        concept.add_local("other", "sem", "d")
+        concept.add_local("prop", "relaxable-to", "e")
+
+        concept.add_block("prop", "sem", "b")
+
+        self.assertEqual({
+            "a",
+            "c"
+        }, set(concept.fillers("prop", "sem")))
+
     def test_private_frames(self):
         # Add to parsing above as well (local/block)
         fail()
 
     def test_sets(self):
         # Add to parsing above as well (local/block)
-        fail()
-
-    def test_fillers(self):
         fail()
 
     def test_evaluate(self):

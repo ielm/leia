@@ -170,13 +170,30 @@ class Concept(object):
         return concept == self or concept in self.ancestors()
 
     def children(self) -> Set['Concept']:
-        raise NotImplementedError
+        out = set()
+
+        for concept in self.memory.ontology.cache.values():
+            if self in concept.parents():
+                out.add(concept)
+
+        return out
 
     def descendants(self) -> Set['Concept']:
-        raise NotImplementedError
+        d = set(self.children())
+        for c in set(d):
+            d.update(c.descendants())
+
+        return d
 
     def siblings(self) -> Set['Concept']:
-        raise NotImplementedError
+        c = set()
+        for p in self.parents():
+            c.update(p.children())
+
+        if self in c:
+            c.remove(self)
+
+        return c
 
     def add_local(self, property: str, facet: str, filler: FILLER, measured_in: str=None):
         if property not in self.local:
@@ -250,16 +267,12 @@ class Concept(object):
         return out
 
     def fillers(self, slot: str, facet: str) -> List:
-        results = []
+        out = self.rows()
+        out = filter(lambda r: not isinstance(r, Concept.BlockedRow), out)
+        out = filter(lambda r: r.property == slot and r.facet == facet, out)
+        out = map(lambda r: r.filler, out)
 
-        if slot in self.local:
-            if facet in self.local[slot]:
-                results.extend(self.local[slot][facet])
-
-        for parent in self.parents():
-            results.extend(parent.fillers(slot, facet))
-
-        return results
+        return list(out)
 
     def allowed(self, slot: str, facet: str, filler) -> bool:
         raise NotImplementedError
@@ -286,5 +299,9 @@ if __name__ == "__main__":
     print(ontology.concept("human").contents)
     print(ontology.concept("human").parents())
     print(ontology.concept("human").fillers("has-object-as-part", "sem"))
-    print(ontology.concept("human").fillers("has-object-as-part", "sem")["value"][0].contents)
+    print(ontology.concept("human").fillers("has-object-as-part", "sem")[0])
+
+    start = time.time()
+    print(ontology.concept("human").rows())
+    print("Time to check rows: %s" % str(time.time() - start))
 
