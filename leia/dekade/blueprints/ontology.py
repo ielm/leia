@@ -199,7 +199,23 @@ class DEKADEAPIOntologyBlueprint(Blueprint):
         return "OK"
 
     def write_filler_remove(self, concept: str):
-        raise NotImplementedError
+        if not request.get_json():
+            abort(400)
+
+        data = request.get_json()
+        property = data["property"]
+        facet = data["facet"]
+        filler = data["filler"]
+        type = data["type"]
+
+        concept = self.app.agent.memory.ontology.concept(concept)
+
+        filler = self._parse_filler(concept, filler, type)
+        concept.remove_local(property, facet, filler)
+
+        self.app.agent.memory.edits.ontology.note_edited(concept.name, "DEKADE")
+
+        return "OK"
 
     def write_filler_block(self, concept: str):
         if not request.get_json():

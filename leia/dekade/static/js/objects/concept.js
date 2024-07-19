@@ -85,13 +85,17 @@ export class Concept extends LEIAObject {
         }
     }
 
-    _onDelLocalButtonClicked(event) {
+    async _onDelLocalButtonClicked(event) {
         const concept = this.name();
         const property = $(event.currentTarget).data("property");
         const facet = $(event.currentTarget).data("facet");
         const filler = $(event.currentTarget).data("filler");
+        const type = $(event.currentTarget).data("type");
 
-        console.log("TODO: remove " + property + "/" + facet + "/" + filler + " from " + concept);
+        const response = await API.apiKnowledgeOntologyWriteRemoveFiller(concept, property, facet, filler, type);
+        if (response == "OK") {
+            await this.refresh();
+        }
     }
 
     async _onBlockInheritButtonClicked(event) {
