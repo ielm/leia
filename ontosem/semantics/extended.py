@@ -61,7 +61,7 @@ class BasicSemanticsMPProcessor(object):
             frames = LispParser.list_key_to_value(tmr_content, "FRAMES")[1]
             scores = LispParser.list_key_to_value(candidate, "SCORES")[1]
 
-            extended_tmr = TMR(self.config.memory())
+            extended_tmr = TMR(self.config.memory(), private=True)
 
             if frames == "NIL":
                 frames = []

@@ -1,4 +1,4 @@
-from ontomem.episodic import Instance, XMR
+from ontomem.episodic import Instance, Space, XMR
 from ontomem.memory import Memory
 from ontomem.ontology import Concept
 from typing import Type, Union
@@ -12,7 +12,7 @@ class TMR(XMR):
 
 class TMRInstance(Instance):
 
-    def __init__(self, memory: Memory, concept: Union[str, Concept], index: int, grounded: bool=False):
+    def __init__(self, memory: Memory, concept: Union[str, Concept], index: int, private_to: Space=None, grounded: bool=False):
         super().__init__(memory, concept, index)
 
         self.resolutions = set()        # List of ids that this frame resolves to

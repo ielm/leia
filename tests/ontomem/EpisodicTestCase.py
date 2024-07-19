@@ -10,7 +10,37 @@ class EpisodicMemoryTestCase(TestCase):
     def setUp(self):
         self.m = Memory("", "", "")
 
-    def test_next_index_for(self):
+    def test_space(self):
+        # If the space does not exist, it is created, registered, and returned
+        space1 = self.m.episodic.space("TEST")
+        self.assertEqual("TEST", space1.name)
+        self.assertFalse(space1.is_private())
+
+        # If the space already exists, it is returned
+        space2 = self.m.episodic.space("TEST")
+        self.assertEqual(space1, space2)
+
+        # The space can even be returned if it was privately registered, so long as the name is known
+        spaceP = Space(self.m, "PRIVATE", private=True)
+        self.assertEqual(spaceP, self.m.episodic.space("PRIVATE"))
+
+    def test_spaces(self):
+        # An empty list is returned
+        self.assertEqual([], self.m.episodic.spaces())
+
+        # Returns all known spaces
+        space1 = Space(self.m, "1")
+        space2 = Space(self.m, "2")
+        self.assertEqual({space1.name, space2.name}, set(map(lambda s: s.name, self.m.episodic.spaces())))
+
+        # Private spaces are not returned by default
+        space3 = Space(self.m, "3", private=True)
+        self.assertEqual({space1.name, space2.name}, set(map(lambda s: s.name, self.m.episodic.spaces())))
+
+        # Private spaces can be included optionally
+        self.assertEqual({space1.name, space2.name, space3.name}, set(map(lambda s: s.name, self.m.episodic.spaces(include_private=True))))
+
+    def test_next_index_for_concept(self):
         c1 = Concept(self.m, "C1")
         c2 = Concept(self.m, "C2")
 
@@ -55,11 +85,71 @@ class EpisodicMemoryTestCase(TestCase):
         self.assertIsNone(self.m.episodic.instance(f.id()))
         self.assertNotIn(f.id(), space.instances)
 
+    def test_instances_of(self):
+        c1 = Concept(self.m, "C1")
+        c2 = Concept(self.m, "C2")
+
+        f1 = self.m.episodic.new_instance(c1)
+        f2 = self.m.episodic.new_instance(c1)
+        f3 = self.m.episodic.new_instance(c1)
+        f4 = self.m.episodic.new_instance(c2)
+        f5 = self.m.episodic.new_instance(c2)
+
+        self.assertEqual([f1, f2, f3], self.m.episodic.instances_of(c1))
+        self.assertEqual([f4, f5], self.m.episodic.instances_of(c2))
+
+        c2.add_parent(c1)
+
+        self.assertEqual([f1, f2, f3], self.m.episodic.instances_of(c1, include_descendants=True))
+        self.assertEqual([f4, f5], self.m.episodic.instances_of(c2, include_descendants=True))
+
 
 class SpaceTestCase(TestCase):
 
     def setUp(self):
         self.m = Memory("", "", "")
+
+    def test_init_registers(self):
+        space = Space(self.m, "TEST")
+
+        self.assertTrue(space.name in self.m.episodic._spaces)
+        self.assertEqual(space, self.m.episodic.space(space.name))
+
+    def test_next_private_index(self):
+        c1 = Concept(self.m, "C1")
+        c2 = Concept(self.m, "C2")
+
+        space = Space(self.m, "SPACE", private=True)
+
+        self.assertEqual(1, space._next_private_index(c1))
+        self.assertEqual(2, space._next_private_index(c1))
+        self.assertEqual(3, space._next_private_index(c1))
+        self.assertEqual(1, space._next_private_index(c2))
+        self.assertEqual(2, space._next_private_index(c2))
+        self.assertEqual(3, space._next_private_index(c2))
+        self.assertEqual(4, space._next_private_index(c1))
+
+        # Confirm that another private space has its own index
+
+        other = Space(self.m, "OTHER", private=True)
+
+        self.assertEqual(1, other._next_private_index(c1))
+        self.assertEqual(2, other._next_private_index(c1))
+        self.assertEqual(3, other._next_private_index(c1))
+        self.assertEqual(1, other._next_private_index(c2))
+        self.assertEqual(2, other._next_private_index(c2))
+        self.assertEqual(3, other._next_private_index(c2))
+        self.assertEqual(4, other._next_private_index(c1))
+
+        # And finally, neither have impacted memory's indexes
+
+        self.assertEqual(1, self.m.episodic._next_instance_for_concept(c1))
+        self.assertEqual(2, self.m.episodic._next_instance_for_concept(c1))
+        self.assertEqual(3, self.m.episodic._next_instance_for_concept(c1))
+        self.assertEqual(1, self.m.episodic._next_instance_for_concept(c2))
+        self.assertEqual(2, self.m.episodic._next_instance_for_concept(c2))
+        self.assertEqual(3, self.m.episodic._next_instance_for_concept(c2))
+        self.assertEqual(4, self.m.episodic._next_instance_for_concept(c1))
 
     def test_new_instance(self):
         c1 = Concept(self.m, "C1")
@@ -75,9 +165,43 @@ class SpaceTestCase(TestCase):
         self.assertEqual("C1.2", f2.id())
         self.assertEqual("C2.1", f3.id())
 
+        self.assertIsNone(f1.private_to())
+        self.assertIsNone(f2.private_to())
+        self.assertIsNone(f3.private_to())
+
         self.assertEqual(f1, space.instances[f1.id()])
         self.assertEqual(f2, space.instances[f2.id()])
         self.assertEqual(f3, space.instances[f3.id()])
+
+        self.assertEqual(f1, self.m.episodic.instance(f1.id()))
+        self.assertEqual(f2, self.m.episodic.instance(f2.id()))
+        self.assertEqual(f3, self.m.episodic.instance(f3.id()))
+
+    def test_new_instance_in_private_space(self):
+        c1 = Concept(self.m, "C1")
+        c2 = Concept(self.m, "C2")
+
+        space = Space(self.m, "TEST", private=True)
+
+        f1 = space.new_instance(c1)
+        f2 = space.new_instance(c1)
+        f3 = space.new_instance(c2)
+
+        self.assertEqual("TEST:C1.1", f1.id())
+        self.assertEqual("TEST:C1.2", f2.id())
+        self.assertEqual("TEST:C2.1", f3.id())
+
+        self.assertEqual(space, f1.private_to())
+        self.assertEqual(space, f2.private_to())
+        self.assertEqual(space, f3.private_to())
+
+        self.assertEqual(f1, space.instances[f1.id()])
+        self.assertEqual(f2, space.instances[f2.id()])
+        self.assertEqual(f3, space.instances[f3.id()])
+
+        self.assertIsNone(self.m.episodic.instance(f1.id()))
+        self.assertIsNone(self.m.episodic.instance(f2.id()))
+        self.assertIsNone(self.m.episodic.instance(f3.id()))
 
     def test_remove_instance(self):
         c = Concept(self.m, "C")
@@ -93,6 +217,78 @@ class SpaceTestCase(TestCase):
         # The instance is still in memory, but no longer indexed in the space
         self.assertEqual(f, self.m.episodic.instance(f.id()))
         self.assertNotIn(f.id(), space.instances)
+
+    def test_remove_instance_in_private_space(self):
+        c = Concept(self.m, "C")
+
+        space = Space(self.m, "TEST", private=True)
+        f = space.new_instance(c)
+
+        self.assertIsNone(self.m.episodic.instance(f.id()))
+        self.assertIn(f.id(), space.instances)
+
+        space.remove_instance(f)
+
+        # Memory is not affected (it was not there to begin with); no errors are thrown
+        self.assertIsNone(self.m.episodic.instance(f.id()))
+        self.assertNotIn(f.id(), space.instances)
+
+    def test_go_public(self):
+        # This method has no effect at all on currently public spaces.
+        # For private spaces, the private toggle is switched (meaning it will show up in EpisodicMemory.spaces() by default).
+        # Further, all instances inside it (which are private_to this space) will no longer have that flag, will have their
+        # ids all updated to the global id space, and will be registered into memory.
+
+        # Make a new concept, and add a few global instances (to take up IDs)
+        concept = Concept(self.m, "C")
+        i1 = self.m.episodic.new_instance(concept)
+        i2 = self.m.episodic.new_instance(concept)
+        i3 = self.m.episodic.new_instance(concept)
+
+        # Make a private space, and add private instances to it
+        space = Space(self.m, "TEST", private=True)
+        f1 = space.new_instance(concept)
+        f2 = space.new_instance(concept)
+        f3 = space.new_instance(concept)
+
+        # Sanity check that everything is currently private
+        self.assertTrue(space.is_private())
+        self.assertEqual(space, f1.private_to())
+        self.assertEqual(space, f2.private_to())
+        self.assertEqual(space, f3.private_to())
+        self.assertEqual("TEST:C.1", f1.id())
+        self.assertEqual("TEST:C.2", f2.id())
+        self.assertEqual("TEST:C.3", f3.id())
+
+        self.assertEqual([], self.m.episodic.spaces())
+        self.assertEqual([i1, i2, i3], self.m.episodic.instances_of(concept))
+        self.assertIsNone(self.m.episodic.instance(f1.id()))
+        self.assertIsNone(self.m.episodic.instance(f2.id()))
+        self.assertIsNone(self.m.episodic.instance(f3.id()))
+
+        # Go public
+        space.go_public()
+
+        # Now verify that the space is public
+        self.assertFalse(space.is_private())
+        self.assertEqual([space], self.m.episodic.spaces())
+
+        # Now verify that the space's instances are public
+        self.assertIsNone(f1.private_to())
+        self.assertIsNone(f2.private_to())
+        self.assertIsNone(f3.private_to())
+        self.assertEqual([i1, i2, i3, f1, f2, f3], self.m.episodic.instances_of(concept))
+        self.assertIsNotNone(self.m.episodic.instance(f1.id()))
+        self.assertIsNotNone(self.m.episodic.instance(f2.id()))
+        self.assertIsNotNone(self.m.episodic.instance(f3.id()))
+
+        # And verify that the space's instances have updated IDs
+        self.assertEqual("C.4", f1.id())
+        self.assertEqual("C.5", f2.id())
+        self.assertEqual("C.6", f3.id())
+        self.assertEqual(f1, space.instances[f1.id()])
+        self.assertEqual(f2, space.instances[f2.id()])
+        self.assertEqual(f3, space.instances[f3.id()])
 
 
 class XMRTestCase(TestCase):
@@ -148,6 +344,16 @@ class InstanceTestCase(TestCase):
 
     def setUp(self):
         self.m = Memory("", "", "")
+
+    def test_id(self):
+        c = Concept(self.m, "C1")
+        f = Instance(self.m, c, 1)
+
+        self.assertEqual("C1.1", f.id())
+
+        f = Space(self.m, "TEST", private=True).new_instance("C1")
+
+        self.assertEqual("TEST:C1.1", f.id())
 
     @patch("ontomem.episodic.time.time")
     def test_fillers(self, mock_time: MagicMock):
