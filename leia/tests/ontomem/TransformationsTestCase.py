@@ -60,18 +60,20 @@ class TransformationTestCase(TestCase):
             "name": "Passivization of transitive and optionally transitive verbs",
             "example": "A sandwich was eaten by a chicken.",
             "pattern": {
-                "vars": {
-                    "0": {"pos": ["v"], "tag": ["trans"]}
-                },
-                "syn-strucs": [
+                "input-syn-strucs": [
                     [
-                        {"type": "dependency", "deptype": "nsubjpass", "governor": 0}
+                        {"type": "dependency", "deptype": "nsubjpass", "var": 0}
                     ],
                     [
                         {"type": "constituency", "contype": "NP", "children": []},
                         {"type": "token", "lemma": ["be"], "pos": None, "morph": {}},
-                        {"type": "token", "lemma": [], "pos": ["V"], "var": 0, "morph": {"tense": "past", "verbform": "part"}}
+                        {"type": "token", "lemma": [], "pos": "V", "var": 0, "morph": {"tense": "past", "verbform": "part"}}
                     ]
+                ],
+                "root-syn-struc": [
+                    {"type": "dependency", "deptype": "nsubj"},
+                    {"type": "root"},
+                    {"type": "dependency", "deptype": "dobj"}
                 ]
             },
             "executable": "*leia.tests.ontomem.TransformationsTestCase.TestTransformationExecutable"
@@ -80,17 +82,20 @@ class TransformationTestCase(TestCase):
         trans = Transformation(content["name"], contents=content)
 
         self.assertEqual(content["example"], trans.example)
-        self.assertEqual([
-            Transformation.Variable(0, ["v"], ["trans"])
-        ], trans.variables)
+
         self.assertEqual([
             SynStruc(contents=[
-                {"type": "dependency", "deptype": "nsubjpass", "governor": 0}
+                {"type": "dependency", "deptype": "nsubjpass", "var": 0}
             ]),
             SynStruc(contents=[
                 {"type": "constituency", "contype": "NP", "children": []},
                 {"type": "token", "lemma": ["be"], "pos": None, "morph": {}},
-                {"type": "token", "lemma": [], "pos": ["V"], "var": 0, "morph": {"tense": "past", "verbform": "part"}}
+                {"type": "token", "lemma": [], "pos": "V", "var": 0, "morph": {"tense": "past", "verbform": "part"}}
             ])
-        ], trans.synstrucs)
+        ], trans.input_synstrucs)
+        self.assertEqual(SynStruc(contents=[
+            {"type": "dependency", "deptype": "nsubj"},
+            {"type": "root"},
+            {"type": "dependency", "deptype": "dobj"}
+        ]), trans.root_synstruc)
         self.assertEqual(TestTransformationExecutable.__name__, trans.executable.__name__)

@@ -2,18 +2,20 @@
   "name": "Passivization of transitive and optionally transitive verbs",
   "example": "A sandwich was eaten by a chicken.",
   "pattern": {
-    "vars": {
-      "0": {"pos": ["v"], "tag": ["trans"]}
-    },
-    "syn-strucs": [
+    "input-syn-strucs": [
       [
-        {"type": "dependency", "deptype": "nsubjpass", "governor": 0}
+        {"type": "dependency", "deptype": "nsubjpass", "var": 0}
       ],
       [
         {"type": "constituency", "contype": "NP", "children": []},
         {"type": "token", "lemma": ["be"], "pos": null, "morph": {}},
         {"type": "token", "lemma": [], "pos": "V", "var": 0, "morph": {"tense": "past", "verbform": "part"}}
       ]
+    ],
+    "root-syn-struc": [
+      {"type": "dependency", "deptype": "nsubj"},
+      {"type": "root"},
+      {"type": "dependency", "deptype": "dobj"}
     ]
   },
   "executable": "*leia.syntax.transformer.PassivizationOfTransVerbs"
@@ -24,11 +26,10 @@
   The example is any human-readable example that demonstrates a sentence that the transformation would trigger on.
 
   The pattern field consists of two subfields:
-    vars: a dictionary whose keys are integers (as strings) and whose values are dictionaries with:
-      pos: a list of possible parts of speech for a particular variable
-      tag: a list of possible additional tags to match for a particular variable
-    syn-strucs: a list of individual syn-strucs, any of which can act as a match for this transformation;
-                each entry uses the same format as the lexicon sense's syn-struc (although "root" should be excluded)
+    input-syn-strucs: a list of individual syn-strucs, any of which can act as a match for this transformation;
+                each entry uses the same format as the lexicon sense's syn-struc (although "root" should be excluded);
+                each entry must specify a var0 (the corresponding token over which the transformation will run)
+    root-syn-struc: a normal syn-struc entry that must align with the a given var0's sense
 
   The executable is a pointer to the python implementation of this transformation.
     The full module path must be given.

@@ -47,17 +47,11 @@ class TransformationsCatalogue(object):
 
 class Transformation(object):
 
-    @dataclass
-    class Variable(object):
-        index: int
-        pos: List[str]
-        tags: List[str]
-
     def __init__(self, name: str, contents: dict=None):
         self.name = name
         self.example: str = None
-        self.variables: List[Transformation.Variable] = []
-        self.synstrucs: List[SynStruc] = []
+        self.input_synstrucs: List[SynStruc] = []
+        self.root_synstruc: SynStruc = None
         self.executable: TransformationExecutable = None
 
         if contents is not None:
@@ -65,8 +59,8 @@ class Transformation(object):
 
     def _index(self, contents: dict):
         self.example = contents["example"]
-        self.variables = list(map(lambda var: Transformation.Variable(int(var[0]), var[1]["pos"], var[1]["tag"]), contents["pattern"]["vars"].items()))
-        self.synstrucs = list(map(lambda syn: SynStruc(contents=syn), contents["pattern"]["syn-strucs"]))
+        self.input_synstrucs = list(map(lambda syn: SynStruc(contents=syn), contents["pattern"]["input-syn-strucs"]))
+        self.root_synstruc = SynStruc(contents=contents["pattern"]["root-syn-struc"])
         self.executable = import_class(contents["executable"])
 
 
