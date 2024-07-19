@@ -3,7 +3,7 @@
     {{#each senseMaps}}
     <div class="sense-map">
         <div class="header">
-            Word {{this.word}} mapped to <a is="content-link" data-content-id="{{this.sense}}">{{this.sense}}</a>
+            Word {{this.word}} mapped to <a is="content-link" data-content-type="lexicon.sense" data-content-id="~{{this.sense}}">~{{this.sense}}</a>
         </div>
         <div class="preference">
             Preference: {{this.preference}}

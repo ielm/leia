@@ -2,7 +2,7 @@
     {{#each instances}}
     <div class="tmr-instance">
         <div class="header">
-            {{this.id}} instance-of <a is="content-link" data-content-id="{{this.concept}}">{{this.concept}}</a>
+            {{this.id}} instance-of <a is="content-link" data-content-type="ontology.concept" data-content-id="{{this.concept}}">{{this.concept}}</a>
         </div>
         <div class="resolutions">
             {{#each this.resolutions}}

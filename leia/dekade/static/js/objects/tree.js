@@ -36,7 +36,7 @@ export class OntologyTree extends LEIAObject {
                 {{#each children}}
                 <li>
                     <span class="caret" data-concept="{{this}}"></span>
-                    <a is="content-link" data-content-id="@{{this}}">@{{this}}</a>
+                    <a is="content-link" data-content-type="ontology.concept" data-content-id="@{{this}}">@{{this}}</a>
                 </li>
                 {{/each}}
             </ul>

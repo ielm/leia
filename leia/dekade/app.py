@@ -56,6 +56,10 @@ class DEKADEAPIBlueprint(Blueprint):
         super().__init__("DEKADE-API", __name__, static_folder=app.static_folder, template_folder=app.template_folder)
         self.app = app
 
+        # Lexicon API
+        self.add_url_rule("/api/knowledge/lexicon/filter/<substring>", endpoint=None, view_func=self.knowledge_lexicon_filter, methods=["GET"])
+        self.add_url_rule("/api/knowledge/lexicon/sense/<sense>", endpoint=None, view_func=self.knowledge_lexicon_sense, methods=["GET"])
+
         # Ontology API
         self.add_url_rule("/api/knowledge/ontology/list", endpoint=None, view_func=self.knowledge_ontology_list, methods=["GET"])
         self.add_url_rule("/api/knowledge/ontology/filter/<substring>", endpoint=None, view_func=self.knowledge_ontology_filter, methods=["GET"])
@@ -64,6 +68,20 @@ class DEKADEAPIBlueprint(Blueprint):
 
         # OntoSem API
         self.add_url_rule("/api/ontosem/analyze", endpoint=None, view_func=self.ontosem_analyze, methods=["POST"])
+
+    def knowledge_lexicon_filter(self, substring: str):
+        substring = substring.lower()
+
+        senses = self.app.agent.memory.lexicon.senses()
+        senses = map(lambda s: s.id, senses)
+        senses = filter(lambda s: substring in s.lower(), senses)
+
+        return json.dumps(list(sorted(senses)))
+
+    def knowledge_lexicon_sense(self, sense: str):
+        sense = self.app.agent.memory.lexicon.sense(sense)
+
+        return json.dumps(sense.contents)
 
     def knowledge_ontology_list(self):
         return json.dumps(list(sorted(self.app.agent.memory.ontology.names())))
@@ -168,7 +186,7 @@ if __name__ == "__main__":
     agent = Agent(memory=Memory(properties_folder, concepts_folder, words_folder))
     agent.memory.properties.load()
     agent.memory.ontology.load()
-    # agent.memory.lexicon.load()
+    agent.memory.lexicon.load()
 
     app = DEKADE(agent, static_folder=static_folder, template_folder=template_folder)
     app.config.update(

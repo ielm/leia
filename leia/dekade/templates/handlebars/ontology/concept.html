@@ -2,7 +2,7 @@
     <div class="concept-lineage-header">
         <span class="concept-name">{{name}}</span> isa
         {{#each parents}}
-            <a is="content-link" data-content-id="@{{this}}">@{{this}}</a>
+            <a is="content-link" data-content-type="ontology.concept" data-content-id="@{{this}}">@{{this}}</a>
             {{#unless @last}}, {{/unless}}
         {{/each}}
     </div>
@@ -60,7 +60,7 @@
                             {{#unless @last}}, {{/unless}}
                         {{/each}}
                     </td>
-                    <td>inherit from <a is="content-link" data-content-id="@{{this.from}}">@{{this.from}}</a></td>
+                    <td>inherit from <a is="content-link" data-content-type="ontology.concept" data-content-id="@{{this.from}}">@{{this.from}}</a></td>
                 </tr>
             {{else if this.block}}
                 <tr class="concept-row-block">

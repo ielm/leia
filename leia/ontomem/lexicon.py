@@ -6,6 +6,7 @@ from leia.utils.formatting import FormatFromLISP
 from leia.utils.threads import multiprocess_read_json_file
 from typing import Any, List, Set, Tuple, Union
 
+import itertools
 import os
 
 
@@ -39,6 +40,9 @@ class Lexicon(object):
 
     def words(self) -> List['Word']:
         return list(self.cache.values())
+
+    def senses(self) -> List['Sense']:
+        return list(itertools.chain.from_iterable(map(lambda w: w.senses(include_synonyms=False), self.words())))
 
     def create_word(self, word: str) -> 'Word':
         return Word(self.memory, word)

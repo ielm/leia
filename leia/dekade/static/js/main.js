@@ -2,6 +2,7 @@ export { Concept } from "./objects/concept.js";
 
 import * as API from "./api.js";
 import * as HBSHelpers from "./hbshelpers.js";
+import * as LexiconSidebar from "./sidebars/lexicon.js";
 import * as OntologySidebar from "./sidebars/ontology.js";
 import * as OntoSemSidebar from "./sidebars/ontosem.js";
 import { contentTabs } from "./tabs.js";
@@ -29,7 +30,8 @@ class ContentLink extends HTMLAnchorElement {
 
     async _onClicked(event) {
         const contentId = $(event.currentTarget).data("content-id");
-        const object = await API.contentIdToLEIAObject(contentId);
+        const contentType = $(event.currentTarget).data("content-type");
+        const object = await API.contentIdToLEIAObject(contentId, contentType);
 
         // Add the tab, and open it unless the ALT key is held.
         contentTabs.addObject(object, !event.altKey);

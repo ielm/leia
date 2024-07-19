@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 
 async function _onOntoSemInputButtonClick(event) {
-    const input = $(event.currentTarget).closest(".ontosem-sidebar").children(".ontosem-input-text").val();
+    const input = $(event.currentTarget).closest(".ontosem-sidebar-header").children(".ontosem-input-text").val();
     const results = await API.apiOntoSemAnalyze(input);
 
     console.log(results);
