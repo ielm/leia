@@ -14,14 +14,18 @@ class OntoSemConfig(object):
     def from_file(cls, filename: str) -> 'OntoSemConfig':
         with open(filename, "r") as config_file:
             config_dict = yaml.load(config_file, Loader=yaml.FullLoader)
-            return OntoSemConfig(
-                knowledge_path=config_dict["knowledge-path"],
-                properties_path=config_dict["properties-path"],
-                ontology_path=config_dict["ontology-path"],
-                lexicon_path=config_dict["lexicon-path"],
-                trans_path=config_dict["trans-path"],
-                pos_file=config_dict["pos-file"],
-            )
+            return OntoSemConfig.from_dict(config_dict)
+
+    @classmethod
+    def from_dict(cls, input: dict) -> 'OntoSemConfig':
+        return OntoSemConfig(
+            knowledge_path=input["knowledge-path"],
+            properties_path=input["properties-path"],
+            ontology_path=input["ontology-path"],
+            lexicon_path=input["lexicon-path"],
+            trans_path=input["trans-path"],
+            pos_file=input["pos-file"],
+        )
 
     def __init__(self,
                  knowledge_path: str=None,

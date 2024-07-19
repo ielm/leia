@@ -47,6 +47,19 @@ class Syntax(object):
 
         return Syntax(words, sentence.lemma_, sentence.text, constituencies, dependencies)
 
+    @classmethod
+    def from_dict(cls, input: dict) -> 'Syntax':
+        words = list(map(lambda w: Word.from_dict(w), input["words"]))
+
+        syntax = Syntax(
+            words,
+            input["sentence"],
+            input["original-sentence"],
+            ConstituencyNode.from_dict(input["parse"], words),
+            list(map(lambda d: Dependency.from_dict(d, words), input["dependencies"]))
+        )
+
+        return syntax
 
     def __init__(self, words: List['Word'], sentence: str, original_sentence: str, parse: 'ConstituencyNode', dependencies: List['Dependency']):
         self.words = words
@@ -175,6 +188,20 @@ class Word(object):
             token.morph.to_dict()
         )
 
+    @classmethod
+    def from_dict(cls, input: dict) -> 'Word':
+        return Word(
+            input["index"],
+            input["lemma"],
+            input["pos"],
+            input["token"],
+            input["char-start"],
+            input["char-end"],
+            Word.Ner(input["ner"]),
+            list(map(lambda cr: WordCoreference.from_dict(cr), input["coref"])),
+            input["morphology"]
+        )
+
     def __init__(self, index: int, lemma: str, pos: List[str], token: str, char_start: int, char_end: int, ner: 'Word.Ner', coref: List['WordCoreference'], morphology: Dict[str, str]):
         self.index = index
         self.lemma = lemma
@@ -204,6 +231,14 @@ class Word(object):
 
 
 class WordCoreference(object):
+
+    @classmethod
+    def from_dict(cls, input: dict) -> 'WordCoreference':
+        return WordCoreference(
+            input["sentence"],
+            input["word"],
+            input["confidence"],
+        )
 
     def __init__(self, sentence: int, word: int, confidence: float):
         self.sentence = sentence
@@ -247,6 +282,17 @@ class ConstituencyNode(object):
 
         return node
 
+    @classmethod
+    def from_dict(cls, input: dict, words: List[Word]) -> 'ConstituencyNode':
+        node = ConstituencyNode(input["label"])
+        for child in input["children"]:
+            if "label" in child:
+                node.children.append(ConstituencyNode.from_dict(child, words))
+            if "word" in child:
+                node.children.append(words[child["word"]])
+
+        return node
+
     def __init__(self, label: str):
         self.label = label
         self.children: List[Union[ConstituencyNode, Word]] = []
@@ -265,11 +311,19 @@ class ConstituencyNode(object):
     def to_dict(self) -> dict:
         return {
             "label": self.label,
-            "children": list(map(lambda child: child.to_dict(), self.children))
+            "children": list(map(lambda child: child.to_dict() if isinstance(child, ConstituencyNode) else {"word": child.index}, self.children))
         }
 
 
 class Dependency(object):
+
+    @classmethod
+    def from_dict(cls, input: dict, words: List[Word]) -> 'Dependency':
+        return Dependency(
+            words[input["gov"]],
+            words[input["dep"]],
+            input["type"]
+        )
 
     def __init__(self, governor: Word, dependent: Word, type: str):
         self.governor = governor

@@ -20,6 +20,17 @@ class Analysis(object):
         def emit(self, record: LogRecord):
             self.logs.append(record)
 
+    @classmethod
+    def from_dict(cls, input: dict) -> 'Analysis':
+        analysis = Analysis()
+        analysis.config = OntoSemConfig.from_dict(input["config"])
+        analysis.sentences = list(map(lambda s: Sentence.from_dict(s), input["sentences"]))
+
+        # TODO: Parse WMLexicon if present
+        # TODO: Parse logs if present
+
+        return analysis
+
     def __init__(self, config: OntoSemConfig=None):
         self.config = config if config is not None else OntoSemConfig()
         self.sentences: List[Sentence] = []
@@ -56,6 +67,15 @@ class Analysis(object):
 
 
 class Sentence(object):
+
+    @classmethod
+    def from_dict(cls, input: dict) -> 'Sentence':
+        sentence = Sentence(input["text"])
+        sentence.syntax = Syntax.from_dict(input["syntax"])
+
+        # TODO: Parse semantics if present
+
+        return sentence
 
     def __init__(self, text: str):
         self.text: str = text
