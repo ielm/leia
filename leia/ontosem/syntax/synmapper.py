@@ -40,36 +40,41 @@ class SynMapper(object):
             bindings = dict()
 
             for match in result.matches:
-                varmap = self.map_variable(match)
-                if varmap is not None:
+                varmaps = self.map_variables(match)
+                for varmap in varmaps:
                     bindings[varmap[0]] = varmap[1]
 
             # TODO: Apply scoring penalties here if the binding set is incomplete
             yield SenseMap(word, sense.id, bindings, 1.0)
 
-    def map_variable(self, match: 'SynMatcher.SynMatch') -> Union[Tuple[str, int], None]:
+    def map_variables(self, match: 'SynMatcher.SynMatch') -> List[Tuple[str, int]]:
         variable = match.element.to_variable()
 
         if variable is None:
-            return None
+            return []
 
         if match.component is None:
-            return None
+            return []
 
         if isinstance(match, SynMatcher.RootMatch) and variable == 0:
-            return ("$VAR%d" % variable, match.component.index)
+            return [("$VAR%d" % variable, match.component.index)]
 
         if isinstance(match, SynMatcher.TokenMatch):
-            return ("$VAR%d" % variable, match.component.index)
+            return [("$VAR%d" % variable, match.component.index)]
 
         if isinstance(match, SynMatcher.DependencyMatch):
-            return ("$VAR%d" % variable, match.component.dependent.index)
+            return [("$VAR%d" % variable, match.component.dependent.index)]
 
         if isinstance(match, SynMatcher.ConstituencyMatch):
-            return ("$VAR%d" % variable, match.component.leftmost_word().index)
+            variables = [("$VAR%d" % variable, match.component.leftmost_word().index)]
+
+            for child in match.children:
+                variables += self.map_variables(child)
+
+            return variables
 
         # If none of the above can be selected, no variable can be mapped.
-        return None
+        return []
 
 
 class SynMatcher(object):
@@ -107,6 +112,7 @@ class SynMatcher(object):
     class ConstituencyMatch(SynMatch):
         element: SynStruc.ConstituencyElement
         component: ConstituencyNode
+        children: List['SynMatcher.SynMatch']
 
     @dataclass
     class SynMatchResult(object):
@@ -195,8 +201,9 @@ class SynMatcher(object):
             # Yielded results include the match, and the remaining components (that is, components which are ordered
             # after the match, as any further match attempts for this result set must follow in order).
             for i, component in enumerate(components):
-                if self.does_element_match(element, component, root=root):
-                    yield _get_match_type(element)(element, component), components[i:]
+                match = self.attempt_element_match(element, component, root=root)
+                if match is not None:
+                    yield match, components[i:]
 
         def _expand_matches(matches: List[dict]) -> Iterable[dict]:
             # Given a list of partial matches (that is, some set of elements -> components), take the next element
@@ -230,92 +237,94 @@ class SynMatcher(object):
         # Convert the results into SynMatchResult objects.
         return list(map(lambda m: SynMatcher.SynMatchResult(m["match"]), matches))
 
-    def does_element_match(self, element: SynStruc.Element, component: Union[Word, Dependency, ConstituencyNode], root: Word=None) -> bool:
+    def attempt_element_match(self, element: SynStruc.Element, component: Union[Word, Dependency, ConstituencyNode], root: Word=None) -> Union['SynMatcher.SynMatch', None]:
         # Generic matching of any synstruc element to any syntax component(s).  Essentially, this function verifies
-        # type matching and then calls the specific does_x_match function and returns its results.
+        # type matching and then calls the specific attempt_x_match function and returns its results.
 
         if isinstance(element, SynStruc.RootElement):
             if isinstance(component, Word):
-                return self.does_root_match(element, component, root=root)
+                return self.attempt_root_match(element, component, root=root)
 
         if isinstance(element, SynStruc.TokenElement):
             if isinstance(component, Word):
-                return self.does_token_match(element, component, root=root)
+                return self.attempt_token_match(element, component, root=root)
 
         if isinstance(element, SynStruc.DependencyElement):
             if isinstance(component, Dependency):
-                return self.does_dependency_match(element, component, root=root)
+                return self.attempt_dependency_match(element, component, root=root)
 
         if isinstance(element, SynStruc.ConstituencyElement):
             if isinstance(component, ConstituencyNode):
-                return self.does_constituency_match(element, component, root=root)
+                return self.attempt_constituency_match(element, component, root=root)
 
-        # The type is unknown, return False.
-        return False
+        # The type is unknown, return None.
+        return None
 
 
-    def does_root_match(self, element: SynStruc.RootElement, word: Word, root: Union[Word, None]) -> bool:
+    def attempt_root_match(self, element: SynStruc.RootElement, word: Word, root: Union[Word, None]) -> Union['SynMatcher.RootMatch', None]:
         # This matching function is trivial; it takes the candidate word and checks to see if the root specified (if any)
         # is the same word.  This primarily exists for consistency (all syn-struc element types can have a corresponding
         # "does_x_match" function), and also as a home for any future complexities if needed.
 
-        return word == root
+        return SynMatcher.RootMatch(element, word) if word == root else None
 
-    def does_token_match(self, element: SynStruc.TokenElement, word: Word, root: Union[Word, None]) -> bool:
+    def attempt_token_match(self, element: SynStruc.TokenElement, word: Word, root: Union[Word, None]) -> Union['SynMatcher.TokenMatch', None]:
         # If both lemmas and POS are unspecified, no match is allowed
         if len(element.lemmas) == 0 and element.pos is None:
-            return False
+            return None
 
         # If lemmas are specified, at least one must be a match; case insensitive
         if len(element.lemmas) > 0:
             if word.lemma.lower() not in set(map(lambda l: l.lower(), element.lemmas)):
-                return False
+                return None
 
         # If POS is specified, at least one must be a match; case insensitive
         # TODO: Possibly use a hierarchy of POS matching here
         if element.pos is not None:
             if element.pos.lower() not in set(map(lambda p: p.lower(), word.pos)):
-                return False
+                return None
 
         # If any morphology is specified, each must be a match; case sensitive
         for k, v in element.morph.items():
             if k not in word.morphology:
-                return False
+                return None
             if word.morphology[k] != v:
-                return False
+                return None
 
         # No filtering has occurred; the token is considered a match
-        return True
+        return SynMatcher.TokenMatch(element, word)
 
-    def does_dependency_match(self, element: SynStruc.DependencyElement, dependency: Dependency, root: Union[Word, None]) -> bool:
+    def attempt_dependency_match(self, element: SynStruc.DependencyElement, dependency: Dependency, root: Union[Word, None]) -> Union['SynMatcher.DependencyMatch', None]:
         # The type must match
         if element.type.lower() != dependency.type.lower():
-            return False
+            return None
 
         # If a root was provided, it must be the governor
         if root is not None:
             if dependency.governor != root:
-                return False
+                return None
 
         # No filtering has occurred; the dependency is considered a match
-        return True
+        return SynMatcher.DependencyMatch(element, dependency)
 
-    def does_constituency_match(self, element: SynStruc.ConstituencyElement, node: ConstituencyNode, root: Union[Word, None]) -> bool:
+    def attempt_constituency_match(self, element: SynStruc.ConstituencyElement, node: ConstituencyNode, root: Union[Word, None]) -> Union['SynMatcher.ConstituencyMatch', None]:
         # The type must match
         if element.type.lower() != node.label.lower():
-            return False
+            return None
 
         # If any children are specified, they must be found, IN ORDER, in the node;
         # valid children are more constituencies, or tokens.
+        matched_children = []
         candidate_children = iter(node.children)
         for child in element.children:
-            found = False
+            match = None
             for candidate_child in candidate_children:
-                if self.does_element_match(child, candidate_child):
-                    found = True
+                match = self.attempt_element_match(child, candidate_child)
+                if match is not None:
                     break
-            if not found:
-                return False
+            if match is None:
+                return None
+            matched_children.append(match)
 
         # No filtering has occurred; the constituency is considered a match
-        return True
+        return SynMatcher.ConstituencyMatch(element, node, matched_children)

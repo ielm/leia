@@ -92,7 +92,7 @@ class SynMapperTestCase(LEIATestCase):
 
         # If an element in a match has no variable assigned to it, then no mapping can occur.  This is true for
         # all match / element types.
-        self.assertIsNone(self.mapper.map_variable(match))
+        self.assertEqual([], self.mapper.map_variables(match))
 
     def test_map_variable_no_matched_component(self):
         element = SynStruc.RootElement()
@@ -100,7 +100,7 @@ class SynMapperTestCase(LEIATestCase):
 
         # If any match object has no component (meaning no match was found by the matcher), then no variable
         # can be mapped.  None is returned.  This is true for all match / element types.
-        self.assertIsNone(self.mapper.map_variable(match))
+        self.assertEqual([], self.mapper.map_variables(match))
 
     def test_map_variable_root_element(self):
         element = SynStruc.RootElement()
@@ -108,7 +108,7 @@ class SynMapperTestCase(LEIATestCase):
         match = SynMatcher.RootMatch(element, component)
 
         # When a root element is matched, variable 0 is always used; the mapping is to the matched token.
-        self.assertEqual(("$VAR0", 123), self.mapper.map_variable(match))
+        self.assertEqual([("$VAR0", 123)], self.mapper.map_variables(match))
 
     def test_map_variable_token_element(self):
         element = SynStruc.TokenElement({"word"}, "N", dict(), 3, False)
@@ -116,7 +116,7 @@ class SynMapperTestCase(LEIATestCase):
         match = SynMatcher.TokenMatch(element, component)
 
         # When a token element is matched, the variable specified on the element is used; the mapping is to the matched token.
-        self.assertEqual(("$VAR3", 123), self.mapper.map_variable(match))
+        self.assertEqual([("$VAR3", 123)], self.mapper.map_variables(match))
 
     def test_map_variable_dependency_element(self):
         element = SynStruc.DependencyElement("NSUBJ", None, None, 3, False)
@@ -124,16 +124,44 @@ class SynMapperTestCase(LEIATestCase):
         match = SynMatcher.DependencyMatch(element, dependency)
 
         # When a dependency element is matched, the variable specified on the element is used; the mapping is to the dependent token.
-        self.assertEqual(("$VAR3", 456), self.mapper.map_variable(match))
+        self.assertEqual([("$VAR3", 456)], self.mapper.map_variables(match))
 
     def test_map_variable_constituency_element(self):
         element = SynStruc.ConstituencyElement("NP", [], 3, False)
         constituency = ConstituencyNode("NP")
         constituency.children = [self.mockWord(123, "word", "V"), self.mockWord(456, "word", "N")]
-        match = SynMatcher.ConstituencyMatch(element, constituency)
+        match = SynMatcher.ConstituencyMatch(element, constituency, [])
 
         # When a constituency element is matched, the variable specified on the element is used; the mapping is to the leftmost token.
-        self.assertEqual(("$VAR3", 123), self.mapper.map_variable(match))
+        self.assertEqual([("$VAR3", 123)], self.mapper.map_variables(match))
+
+    def test_map_variable_constituency_element_with_children(self):
+        element = SynStruc.ConstituencyElement("VP", [
+            SynStruc.ConstituencyElement("NP", [
+                SynStruc.TokenElement({"word"}, "N", dict(), 2, False)
+            ], None, False)
+        ], 1, False)
+
+        vp = ConstituencyNode("VP")
+        np = ConstituencyNode("NP")
+        token1 = self.mockWord(123, "word", "N")
+        token2 = self.mockWord(456, "word", "N")
+
+        vp.children = [token1, np]
+        np.children = [token2]
+
+        match = SynMatcher.ConstituencyMatch(element, vp, [
+            SynMatcher.TokenMatch(element.children[0].children[0], token2)
+        ])
+
+        # When a constituency element is matched, if it has children (recursively) that have variables specified, those
+        # corresponding elements must be mapped to each of their leftmost tokens (or themselves, if they are a token).
+        # At present, constituency child matching (in the matcher) requires a perfect match from parent to child (no
+        # skipping of levels).  That is held true for variable mapping as well.
+        self.assertEqual([
+            ("$VAR1", 123),
+            ("$VAR2", 456),
+        ], self.mapper.map_variables(match))
 
     def test_run(self):
         # First, define some words that will be part of the input
@@ -201,135 +229,135 @@ class SynMatcherTestCase(LEIATestCase):
         self.m = Memory("", "", "")
         self.matcher = SynMatcher(OntoSemConfig(), self.m.ontology, WMLexicon())
 
-    def test_does_element_match(self):
+    def test_attempt_element_match(self):
         # This generic function checks to see if a syn-struc element and any syntax component are a match.
-        # If their core types are not compatible, the result is false.  Otherwise, the corresponding does_x_match
+        # If their core types are not compatible, the result is false.  Otherwise, the corresponding attempt_x_match
         # function is called, and its result is returned.
 
         # Incompatible types do not even call the correct function; they just return false.
-        self.matcher.does_root_match = MagicMock(return_value="a")
-        self.matcher.does_token_match = MagicMock(return_value="b")
-        self.matcher.does_dependency_match = MagicMock(return_value="c")
-        self.matcher.does_constituency_match = MagicMock(return_value="d")
+        self.matcher.attempt_root_match = MagicMock(return_value="a")
+        self.matcher.attempt_token_match = MagicMock(return_value="b")
+        self.matcher.attempt_dependency_match = MagicMock(return_value="c")
+        self.matcher.attempt_constituency_match = MagicMock(return_value="d")
 
-        self.assertFalse(self.matcher.does_element_match(SynStruc.RootElement(), None, None))
-        self.matcher.does_root_match.assert_not_called()
+        self.assertIsNone(self.matcher.attempt_element_match(SynStruc.RootElement(), None, None))
+        self.matcher.attempt_root_match.assert_not_called()
 
-        self.assertFalse(self.matcher.does_element_match(SynStruc.TokenElement(set(), None, dict(), None, False), None, None))
-        self.matcher.does_token_match.assert_not_called()
+        self.assertIsNone(self.matcher.attempt_element_match(SynStruc.TokenElement(set(), None, dict(), None, False), None, None))
+        self.matcher.attempt_token_match.assert_not_called()
 
-        self.assertFalse(self.matcher.does_element_match(SynStruc.DependencyElement("", None, None, None, False), None, None))
-        self.matcher.does_dependency_match.assert_not_called()
+        self.assertIsNone(self.matcher.attempt_element_match(SynStruc.DependencyElement("", None, None, None, False), None, None))
+        self.matcher.attempt_dependency_match.assert_not_called()
 
-        self.assertFalse(self.matcher.does_element_match(SynStruc.ConstituencyElement("", [], None, False), None, None))
-        self.matcher.does_constituency_match.assert_not_called()
+        self.assertIsNone(self.matcher.attempt_element_match(SynStruc.ConstituencyElement("", [], None, False), None, None))
+        self.matcher.attempt_constituency_match.assert_not_called()
 
         # Compatible types call the correct function and return its results.
         kwargs = {"root": None}
 
         args = [SynStruc.RootElement(), self.mockWord(0, "X", "N")]
-        self.assertEqual("a", self.matcher.does_element_match(*args, **kwargs))
-        self.matcher.does_root_match.assert_called_once_with(*args, **kwargs)
+        self.assertEqual("a", self.matcher.attempt_element_match(*args, **kwargs))
+        self.matcher.attempt_root_match.assert_called_once_with(*args, **kwargs)
 
         args = [SynStruc.TokenElement(set(), None, dict(), None, False), self.mockWord(0, "X", "N")]
-        self.assertEqual("b", self.matcher.does_element_match(*args, **kwargs))
-        self.matcher.does_token_match.assert_called_once_with(*args, **kwargs)
+        self.assertEqual("b", self.matcher.attempt_element_match(*args, **kwargs))
+        self.matcher.attempt_token_match.assert_called_once_with(*args, **kwargs)
 
         args = [SynStruc.DependencyElement("", None, None, None, False), Dependency(self.mockWord(1, "A", "N"), self.mockWord(2, "B", "N"), "Z")]
-        self.assertEqual("c", self.matcher.does_element_match(*args, **kwargs))
-        self.matcher.does_dependency_match.assert_called_once_with(*args, **kwargs)
+        self.assertEqual("c", self.matcher.attempt_element_match(*args, **kwargs))
+        self.matcher.attempt_dependency_match.assert_called_once_with(*args, **kwargs)
 
         args = [SynStruc.ConstituencyElement("", [], None, False), ConstituencyNode("NP"),]
-        self.assertEqual("d", self.matcher.does_element_match(*args, **kwargs))
-        self.matcher.does_constituency_match.assert_called_once_with(*args, **kwargs)
+        self.assertEqual("d", self.matcher.attempt_element_match(*args, **kwargs))
+        self.matcher.attempt_constituency_match.assert_called_once_with(*args, **kwargs)
 
-    def test_does_root_match(self):
+    def test_attempt_root_match(self):
         root = self.mockWord(0, "root", "N")
         other = self.mockWord(1, "other", "N")
 
-        # does_root_match is a trivial comparison of the specified input root (if any) against any given token;
+        # attempt_root_match is a trivial comparison of the specified input root (if any) against any given token;
         # it primarily exists for consistency and as a sanity check
         element = SynStruc.RootElement()
 
-        self.assertFalse(self.matcher.does_root_match(element, root, None))
-        self.assertFalse(self.matcher.does_root_match(element, root, other))
-        self.assertTrue(self.matcher.does_root_match(element, root, root))
+        self.assertIsNone(self.matcher.attempt_root_match(element, root, None))
+        self.assertIsNone(self.matcher.attempt_root_match(element, root, other))
+        self.assertEqual(SynMatcher.RootMatch(element, root), self.matcher.attempt_root_match(element, root, root))
 
-    def test_does_token_match_single_lemma(self):
+    def test_attempt_token_match_single_lemma(self):
         word = self.mockWord(0, "word", "N")
 
         # An empty lemma cannot be matched
         element = SynStruc.TokenElement(set(), None, dict(), None, False)
-        self.assertFalse(self.matcher.does_token_match(element, word, None))
+        self.assertIsNone(self.matcher.attempt_token_match(element, word, None))
 
         # An incorrect lemma is not a match
         element = SynStruc.TokenElement({"other"}, None, dict(), None, False)
-        self.assertFalse(self.matcher.does_token_match(element, word, None))
+        self.assertIsNone(self.matcher.attempt_token_match(element, word, None))
 
         # A correct lemma is a match
         element = SynStruc.TokenElement({"word"}, None, dict(), None, False)
-        self.assertTrue(self.matcher.does_token_match(element, word, None))
+        self.assertEqual(SynMatcher.TokenMatch(element, word), self.matcher.attempt_token_match(element, word, None))
 
-    def test_does_token_match_multiple_lemmas(self):
+    def test_attempt_token_match_multiple_lemmas(self):
         word = self.mockWord(0, "word", "N")
 
         # At least one lemma must be a match
         element = SynStruc.TokenElement({"other1", "other2"}, None, dict(), None, False)
-        self.assertFalse(self.matcher.does_token_match(element, word, None))
+        self.assertIsNone(self.matcher.attempt_token_match(element, word, None))
 
         element = SynStruc.TokenElement({"word", "other1", "other2"}, None, dict(), None, False)
-        self.assertTrue(self.matcher.does_token_match(element, word, None))
+        self.assertEqual(SynMatcher.TokenMatch(element, word), self.matcher.attempt_token_match(element, word, None))
 
-    def test_does_token_match_pos(self):
+    def test_attempt_token_match_pos(self):
         word = self.mockWord(0, "word", "N")
 
         # An null POS is cannot be matched
         element = SynStruc.TokenElement(set(), None, dict(), None, False)
-        self.assertFalse(self.matcher.does_token_match(element, word, None))
+        self.assertIsNone(self.matcher.attempt_token_match(element, word, None))
 
         # An incorrect POS is not a match
         element = SynStruc.TokenElement({}, "V", dict(), None, False)
-        self.assertFalse(self.matcher.does_token_match(element, word, None))
+        self.assertIsNone(self.matcher.attempt_token_match(element, word, None))
 
         # A correct POS is a match
         element = SynStruc.TokenElement({}, "N", dict(), None, False)
-        self.assertTrue(self.matcher.does_token_match(element, word, None))
+        self.assertEqual(SynMatcher.TokenMatch(element, word), self.matcher.attempt_token_match(element, word, None))
 
-    def test_does_token_match_morphology(self):
+    def test_attempt_token_match_morphology(self):
         word = self.mockWord(0, "word", "N", morphology={"A": 1, "B": 2})
 
         # An empty morphology is a match
         element = SynStruc.TokenElement({"word"}, None, dict(), None, False)
-        self.assertTrue(self.matcher.does_token_match(element, word, None))
+        self.assertEqual(SynMatcher.TokenMatch(element, word), self.matcher.attempt_token_match(element, word, None))
 
         # A partially matching morphology is a match
         element = SynStruc.TokenElement({"word"}, None, {"A": 1}, None, False)
-        self.assertTrue(self.matcher.does_token_match(element, word, None))
+        self.assertEqual(SynMatcher.TokenMatch(element, word), self.matcher.attempt_token_match(element, word, None))
 
         # A fully matching morphology is a match
         element = SynStruc.TokenElement({"word"}, None, {"A": 1, "B": 2}, None, False)
-        self.assertTrue(self.matcher.does_token_match(element, word, None))
+        self.assertEqual(SynMatcher.TokenMatch(element, word), self.matcher.attempt_token_match(element, word, None))
 
         # Any contradiction in the element is not a match
         element = SynStruc.TokenElement({"word"}, None, {"A": 1, "B": 2, "C": 3}, None, False)
-        self.assertFalse(self.matcher.does_token_match(element, word, None))
+        self.assertIsNone(self.matcher.attempt_token_match(element, word, None))
 
         element = SynStruc.TokenElement({"word"}, None, {"A": 1, "B": 3}, None, False)
-        self.assertFalse(self.matcher.does_token_match(element, word, None))
+        self.assertIsNone(self.matcher.attempt_token_match(element, word, None))
 
-    def test_does_token_match_multiple_criteria(self):
+    def test_attempt_token_match_multiple_criteria(self):
         word = self.mockWord(0, "word", "N", morphology={"A": 1, "B": 2})
 
         element = SynStruc.TokenElement({"word"}, "N", dict(), None, False)
-        self.assertTrue(self.matcher.does_token_match(element, word, None))
+        self.assertEqual(SynMatcher.TokenMatch(element, word), self.matcher.attempt_token_match(element, word, None))
 
         element = SynStruc.TokenElement({"word", "other"}, "N", {"A": 1}, None, False)
-        self.assertTrue(self.matcher.does_token_match(element, word, None))
+        self.assertEqual(SynMatcher.TokenMatch(element, word), self.matcher.attempt_token_match(element, word, None))
 
         element = SynStruc.TokenElement({"word", "other"}, "V", {"A": 1}, None, False)
-        self.assertFalse(self.matcher.does_token_match(element, word, None))
+        self.assertIsNone(self.matcher.attempt_token_match(element, word, None))
 
-    def test_does_dependency_match_no_root(self):
+    def test_attempt_dependency_match_no_root(self):
         gov = self.mockWord(0, "gov", "N")
         dep = self.mockWord(1, "dep", "N")
 
@@ -341,11 +369,11 @@ class SynMatcherTestCase(LEIATestCase):
         # not used here in any way.
         element = SynStruc.DependencyElement("NSUBJ", None, None, None, False)
 
-        self.assertTrue(self.matcher.does_dependency_match(element, dep1, None))
-        self.assertTrue(self.matcher.does_dependency_match(element, dep2, None))
-        self.assertFalse(self.matcher.does_dependency_match(element, dep3, None))
+        self.assertEqual(SynMatcher.DependencyMatch(element, dep1), self.matcher.attempt_dependency_match(element, dep1, None))
+        self.assertEqual(SynMatcher.DependencyMatch(element, dep2), self.matcher.attempt_dependency_match(element, dep2, None))
+        self.assertIsNone(self.matcher.attempt_dependency_match(element, dep3, None))
 
-    def test_does_dependency_match_with_root(self):
+    def test_attempt_dependency_match_with_root(self):
         gov = self.mockWord(0, "gov", "N")
         dep = self.mockWord(1, "dep", "N")
 
@@ -356,21 +384,21 @@ class SynMatcherTestCase(LEIATestCase):
         element = SynStruc.DependencyElement("NSUBJ", None, None, None, False)
 
         # In order to match with a specified root, the root must be the governor.
-        self.assertTrue(self.matcher.does_dependency_match(element, dep1, gov))
-        self.assertFalse(self.matcher.does_dependency_match(element, dep2, gov))
-        self.assertFalse(self.matcher.does_dependency_match(element, dep3, gov))
+        self.assertEqual(SynMatcher.DependencyMatch(element, dep1), self.matcher.attempt_dependency_match(element, dep1, gov))
+        self.assertIsNone(self.matcher.attempt_dependency_match(element, dep2, gov))
+        self.assertIsNone(self.matcher.attempt_dependency_match(element, dep3, gov))
 
-    def test_does_constituency_match_no_children(self):
+    def test_attempt_constituency_match_no_children(self):
         node1 = ConstituencyNode("NP")
         node2 = ConstituencyNode("VP")
 
         element = SynStruc.ConstituencyElement("NP", [], None, False)
 
         # The node type must always be a match, regardless of any children
-        self.assertTrue(self.matcher.does_constituency_match(element, node1, None))
-        self.assertFalse(self.matcher.does_constituency_match(element, node2, None))
+        self.assertEqual(SynMatcher.ConstituencyMatch(element, node1, []), self.matcher.attempt_constituency_match(element, node1, None))
+        self.assertIsNone(self.matcher.attempt_constituency_match(element, node2, None))
 
-    def test_does_constituency_match_with_constituency_children(self):
+    def test_attempt_constituency_match_with_constituency_children(self):
         node1 = ConstituencyNode("NP")
         node1.children = [ConstituencyNode("X")]
 
@@ -380,10 +408,12 @@ class SynMatcherTestCase(LEIATestCase):
         element = SynStruc.ConstituencyElement("NP", [SynStruc.ConstituencyElement("X", [], None, False)], None, False)
 
         # The children must match as well as the outer type.  Children can be other constituency nodes.
-        self.assertTrue(self.matcher.does_constituency_match(element, node1, None))
-        self.assertFalse(self.matcher.does_constituency_match(element, node2, None))
+        self.assertEqual(SynMatcher.ConstituencyMatch(element, node1, [
+            SynMatcher.ConstituencyMatch(element.children[0], node1.children[0], [])
+        ]), self.matcher.attempt_constituency_match(element, node1, None))
+        self.assertIsNone(self.matcher.attempt_constituency_match(element, node2, None))
 
-    def test_does_constituency_match_with_token_children(self):
+    def test_attempt_constituency_match_with_token_children(self):
         node1 = ConstituencyNode("NP")
         node1.children = [self.mockWord(0, "a", "N")]
 
@@ -393,10 +423,12 @@ class SynMatcherTestCase(LEIATestCase):
         element = SynStruc.ConstituencyElement("NP", [SynStruc.TokenElement({"a"}, "N", dict(), None, False)], None, False)
 
         # The children must match as well as the outer type.  Children can be words.
-        self.assertTrue(self.matcher.does_constituency_match(element, node1, None))
-        self.assertFalse(self.matcher.does_constituency_match(element, node2, None))
+        self.assertEqual(SynMatcher.ConstituencyMatch(element, node1, [
+            SynMatcher.TokenMatch(element.children[0], node1.children[0])
+        ]), self.matcher.attempt_constituency_match(element, node1, None))
+        self.assertIsNone(self.matcher.attempt_constituency_match(element, node2, None))
 
-    def test_does_constituency_match_with_multiple_children(self):
+    def test_attempt_constituency_match_with_multiple_children(self):
         node1 = ConstituencyNode("NP")
         node1.children = [ConstituencyNode("X"), ConstituencyNode("Y")]
 
@@ -412,11 +444,14 @@ class SynMatcherTestCase(LEIATestCase):
         ], None, False)
 
         # Multiple children may be required; their ordering matters..
-        self.assertTrue(self.matcher.does_constituency_match(element, node1, None))
-        self.assertFalse(self.matcher.does_constituency_match(element, node2, None))
-        self.assertFalse(self.matcher.does_constituency_match(element, node3, None))
+        self.assertEqual(SynMatcher.ConstituencyMatch(element, node1, [
+            SynMatcher.ConstituencyMatch(element.children[0], node1.children[0], []),
+            SynMatcher.ConstituencyMatch(element.children[1], node1.children[1], []),
+        ]), self.matcher.attempt_constituency_match(element, node1, None))
+        self.assertIsNone(self.matcher.attempt_constituency_match(element, node2, None))
+        self.assertIsNone(self.matcher.attempt_constituency_match(element, node3, None))
 
-    def test_does_constituency_match_recursive_children(self):
+    def test_attempt_constituency_match_recursive_children(self):
         node1 = ConstituencyNode("NP")
         node1a = ConstituencyNode("A")
         node1b = ConstituencyNode("B")
@@ -441,8 +476,13 @@ class SynMatcherTestCase(LEIATestCase):
         ], None, False)
 
         # The child structure is fully recursive.
-        self.assertTrue(self.matcher.does_constituency_match(element, node1, None))
-        self.assertFalse(self.matcher.does_constituency_match(element, node2, None))
+        self.assertEqual(SynMatcher.ConstituencyMatch(element, node1, [
+            SynMatcher.ConstituencyMatch(element.children[0], node1a, [
+                SynMatcher.ConstituencyMatch(element.children[0].children[0], node1c, [])
+            ]),
+            SynMatcher.ConstituencyMatch(element.children[1], node1b, [])
+        ]), self.matcher.attempt_constituency_match(element, node1, None))
+        self.assertIsNone(self.matcher.attempt_constituency_match(element, node2, None))
 
     def test_flatten_syntax_words_only(self):
         word1 = self.mockWord(1, "w1", "N")
