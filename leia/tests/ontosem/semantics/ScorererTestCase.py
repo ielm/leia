@@ -1,5 +1,5 @@
-from leia.ontomem.episodic import Instance
 from leia.ontomem.properties import Property
+from leia.ontosem.analysis import Analysis
 from leia.ontosem.config import OntoSemConfig
 from leia.ontosem.semantics.candidate import Candidate, Constraint, Score
 from leia.ontosem.semantics.candidate import LexicalConstraintScore, RelationRangeScore, SenseMapPreferenceScore
@@ -11,7 +11,8 @@ from unittest import TestCase
 class SemanticScorerTestCase(TestCase):
 
     def setUp(self):
-        self.config = OntoSemConfig()
+        self.analysis = Analysis()
+        self.config = self.analysis.config
         self.m = self.config.memory()
 
     def test_calculate_final_score(self):
@@ -22,7 +23,7 @@ class SemanticScorerTestCase(TestCase):
         candidate.scores.append(Score(3.0))
         candidate.scores.append(Score(4.0))
 
-        scorer = SemanticScorer(OntoSemConfig())
+        scorer = SemanticScorer(self.analysis)
         result = scorer.calculate_final_score(candidate)
 
         self.assertEqual(24.0, result)
@@ -33,7 +34,7 @@ class SemanticScorerTestCase(TestCase):
 
         candidate = Candidate(self.m, sm1, sm2)
 
-        scorer = SemanticScorer(OntoSemConfig())
+        scorer = SemanticScorer(self.analysis)
         scores = scorer.score_extract_sense_map_preferences(candidate)
 
         self.assertEqual([
@@ -73,7 +74,7 @@ class SemanticScorerTestCase(TestCase):
         e1.add_local("REL1", "SEM", o1)
 
         # Set up the scorer.
-        scorer = SemanticScorer(self.config)
+        scorer = SemanticScorer(self.analysis)
 
         # Score a candidate with a perfect match relation.
         candidate = Candidate(self.m)
@@ -154,7 +155,7 @@ class SemanticScorerTestCase(TestCase):
         candidate.constraints.append(c6)
         candidate.constraints.append(c7)
 
-        scorer = SemanticScorer(self.config)
+        scorer = SemanticScorer(self.analysis)
 
         scores = scorer.score_lexical_constraints(candidate)
 
@@ -199,7 +200,7 @@ class SemanticScorerTestCase(TestCase):
         candidate.constraints.append(c4)
         candidate.constraints.append(c5)
 
-        scorer = SemanticScorer(self.config)
+        scorer = SemanticScorer(self.analysis)
 
         scores = scorer.score_lexical_constraints(candidate)
 
@@ -234,7 +235,7 @@ class SemanticScorerTestCase(TestCase):
         candidate.constraints.append(c2)
         candidate.constraints.append(c3)
 
-        scorer = SemanticScorer(self.config)
+        scorer = SemanticScorer(self.analysis)
 
         frame.properties = {
             "MEMBER-TYPE": ["GRANDPARENT"]

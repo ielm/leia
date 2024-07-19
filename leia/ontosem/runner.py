@@ -85,11 +85,8 @@ class OntoSemRunner(object):
 
         with timer("basic semantic analysis", self.timed_results):
             for sentence in analysis.sentences:
-                ontology = self.config.ontology()
-                lexicon = self.config.lexicon()     # TODO: This needs to be updated to the WMLexicon
-
-                candidates = SemanticCompiler(self.config, ontology=ontology, lexicon=lexicon).run(sentence.syntax)
-                candidates = SemanticScorer(self.config, ontology=ontology, lexicon=lexicon).run(candidates)
+                candidates = SemanticCompiler(analysis).run(sentence.syntax)
+                candidates = SemanticScorer(analysis).run(candidates)
 
                 sentence.semantics = list(candidates)
 

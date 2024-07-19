@@ -2,6 +2,7 @@ from leia.ontomem.lexicon import Lexicon, SemStruc, Sense
 from leia.ontomem.memory import Memory
 from leia.ontomem.ontology import Ontology
 from leia.ontomem.properties import Property
+from leia.ontosem.analysis import Analysis
 from leia.ontosem.config import OntoSemConfig
 from leia.ontosem.semantics.candidate import Candidate, Constraint
 from leia.ontosem.semantics.compiler import SemanticCompiler
@@ -14,7 +15,8 @@ from unittest.mock import call, MagicMock
 class SemanticCompilerTestCase(LEIATestCase):
 
     def setUp(self):
-        self.config = OntoSemConfig()
+        self.analysis = Analysis()
+        self.config = self.analysis.config
         self.m = self.config.memory()
 
     def test_run(self):
@@ -29,7 +31,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         c1 = Candidate(self.m)
         c2 = Candidate(self.m)
 
-        analyzer = SemanticCompiler(OntoSemConfig())
+        analyzer = SemanticCompiler(self.analysis)
 
         analyzer.expand_candidates = MagicMock()
         analyzer.expand_candidates.return_value = iter([c1, c2])
@@ -62,7 +64,7 @@ class SemanticCompilerTestCase(LEIATestCase):
             [sm2_N1, sm2_N2, sm2_N3],
         ])
 
-        candidates = list(SemanticCompiler(self.config).expand_candidates(synmap))
+        candidates = list(SemanticCompiler(self.analysis).expand_candidates(synmap))
 
         self.assertEqual([
             Candidate(self.m, sm0_N1, sm1_V1, sm2_N1),
@@ -90,7 +92,7 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         candidate = Candidate(self.m)
 
-        analyzer = SemanticCompiler(OntoSemConfig())
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.generate_frames = MagicMock()
         analyzer.bind_variables = MagicMock()
         analyzer.populate_frames = MagicMock()
@@ -118,7 +120,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         #   4) Variables that act as heads are *not* used to make frames, but any unbound variable's properties are
         #   5) All frames are indexed, and have their resolution ids added locally
 
-        lexicon = self.m.lexicon
+        lexicon = self.analysis.lexicon
 
         s1 = self.mockSense("TEST-T1", semstruc={
             "EVENT": {"RELATION": "$VAR0"},
@@ -137,17 +139,17 @@ class SemanticCompilerTestCase(LEIATestCase):
             "^$VAR4": {"THING": "HUMAN", "AGE": 50},
         })
 
-        lexicon.word("TEST").add_sense(Sense(self.m, "TEST-T1", contents=s1))
-        lexicon.word("TEST").add_sense(Sense(self.m, "TEST-T2", contents=s2))
-        lexicon.word("TEST").add_sense(Sense(self.m, "TEST-T3", contents=s3))
-
         sm1 = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
         sm2 = SenseMap(Word.basic(1), "TEST-T2", {"$VAR1": 123}, 0.5)
         sm3 = SenseMap(Word.basic(2), "TEST-T3", {"$VAR4": None}, 0.5)
 
+        lexicon.add_sense(sm1.word, Sense(self.m, "TEST-T1", contents=s1))
+        lexicon.add_sense(sm2.word, Sense(self.m, "TEST-T2", contents=s2))
+        lexicon.add_sense(sm3.word, Sense(self.m, "TEST-T3", contents=s3))
+
         candidate = Candidate(self.m, sm1, sm2, sm3)
 
-        analyzer = SemanticCompiler(OntoSemConfig(), lexicon=lexicon)
+        analyzer = SemanticCompiler(self.analysis)
         frames = list(analyzer.generate_frames(candidate))
 
         self.assertEqual([
@@ -191,7 +193,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         candidate.bind(1, SemStruc.Head("TEST", {}), f1)
         candidate.bind(7, SemStruc.Head("TEST", {}), f7)
 
-        analyzer = SemanticCompiler(OntoSemConfig())
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.bind_variables(candidate)
 
         self.assertEqual(f0, candidate.resolve(0, SemStruc.Variable(0)))
@@ -211,7 +213,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         # matter, but the order of the words does (most bindings first).
 
         # Create a lexicon with two senses; each semstruc has a head and a single sub element
-        lexicon = self.m.lexicon
+        lexicon = self.analysis.lexicon
 
         s1 = self.mockSense("TEST-T1", semstruc={
             "HEAD": {"head1": "content"},
@@ -223,14 +225,14 @@ class SemanticCompilerTestCase(LEIATestCase):
             "^$VAR1": {"ABC": "content"}
         })
 
-        lexicon.word("TEST").add_sense(Sense(self.m, "TEST-T1", contents=s1))
-        lexicon.word("TEST").add_sense(Sense(self.m, "TEST-T2", contents=s2))
-
         # Create a candidate with two sense maps; word 0 points to TEST-T1 and word 1 points to TEST-T2.
         # The candidate has already bound 0.HEAD, 0.SUB.1, 1.HEAD, and 1.VAR.1.ABC to some frames.
         # (Note that VAR1 is unbound, so its properties evoke as frames.)
         sm1 = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
         sm2 = SenseMap(Word.basic(1), "TEST-T2", {"$VAR1": None}, 0.5)
+
+        lexicon.add_sense(sm1.word, Sense(self.m, "TEST-T1", contents=s1))
+        lexicon.add_sense(sm2.word, Sense(self.m, "TEST-T2", contents=s2))
 
         f1 = TMRInstance(self.m, "TEST", 1)
         f2 = TMRInstance(self.m, "TEST", 2)
@@ -248,7 +250,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         candidate.words_by_binding_count.return_value = [sm1, sm2]
 
         # The analyzer must use the special lexicon; mock the populate_*_properties functions so we can test the calls made to them.
-        analyzer = SemanticCompiler(OntoSemConfig(), lexicon=lexicon)
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.populate_semantic_properties = MagicMock()
         analyzer.populate_syntactic_properties = MagicMock()
 
@@ -283,7 +285,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         self.assertEqual([], frame.fillers("COLOR"))
         self.assertEqual([], frame.fillers("SIZE"))
 
-        analyzer = SemanticCompiler(OntoSemConfig())
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.resolve_embedded_semstruc = MagicMock(side_effect=analyzer.resolve_embedded_semstruc)
         analyzer.populate_semantic_properties(frame, sense_map, element, candidate)
 
@@ -311,7 +313,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         self.assertEqual([], frame.fillers("COLOR"))
         self.assertEqual([], frame.fillers("SIZE"))
 
-        analyzer = SemanticCompiler(OntoSemConfig())
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.populate_semantic_properties(frame, sense_map, element, candidate)
 
         self.assertEqual(["HUMAN"], frame.fillers("AGENT"))
@@ -337,7 +339,7 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         self.assertEqual([], frame.fillers("AGENT"))
 
-        analyzer = SemanticCompiler(OntoSemConfig())
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.populate_semantic_properties(frame, sense_map, element, candidate)
 
         self.assertEqual([f1.id()], frame.fillers("AGENT"))
@@ -361,7 +363,7 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         self.assertEqual([], frame.fillers("AGENT"))
 
-        analyzer = SemanticCompiler(OntoSemConfig())
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.populate_semantic_properties(frame, sense_map, element, candidate)
 
         self.assertEqual(["%s" % f1.id() + "?THEME"], frame.fillers("AGENT"))
@@ -387,7 +389,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         self.assertEqual([], frame.fillers("COLOR"))
         self.assertEqual([], frame.fillers("SIZE"))
 
-        analyzer = SemanticCompiler(OntoSemConfig())
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.populate_semantic_properties(frame, sense_map, element, candidate)
 
         self.assertEqual(["HUMAN"], frame.fillers("AGENT"))
@@ -424,7 +426,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         self.assertEqual([], frame.fillers("AGENT"))
         self.assertEqual([], frame.fillers("THEME"))
 
-        analyzer = SemanticCompiler(OntoSemConfig())
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.populate_semantic_properties(frame, sense_map, element, candidate)
 
         self.assertEqual([f1.id()], frame.fillers("AGENT"))
@@ -460,7 +462,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         self.assertEqual([], frame.fillers("AGENT"))
         self.assertEqual([], frame.fillers("THEME"))
 
-        analyzer = SemanticCompiler(OntoSemConfig())
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.populate_semantic_properties(frame, sense_map, element, candidate)
 
         self.assertEqual(["%s?AGENT" % f1.id()], frame.fillers("AGENT"))
@@ -497,7 +499,7 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         self.assertEqual([], frame.fillers("AGENT"))
 
-        analyzer = SemanticCompiler(OntoSemConfig())
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.populate_semantic_properties(frame, sense_map, element, candidate)
 
         self.assertEqual([f1.id(), f2.id()], frame.fillers("AGENT"))
@@ -525,7 +527,7 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         self.assertEqual([], frame.fillers("AGENT"))
 
-        analyzer = SemanticCompiler(OntoSemConfig())
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.populate_semantic_properties(frame, sense_map, element, candidate)
 
         self.assertEqual([f1.id()], frame.fillers("AGENT"))
@@ -548,7 +550,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         self.assertEqual([], frame.fillers("AGENT"))
         self.assertEqual([], frame.fillers("SEM"))
 
-        analyzer = SemanticCompiler(OntoSemConfig())
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.populate_semantic_properties(frame, sense_map, element, candidate)
 
         self.assertEqual(["HUMAN"], frame.fillers("AGENT"))
@@ -569,7 +571,7 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         self.assertEqual([], frame.fillers("MEMBER-TYPE"))
 
-        analyzer = SemanticCompiler(OntoSemConfig())
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.populate_semantic_properties(frame, sense_map, element, candidate)
 
         self.assertEqual([], frame.fillers("MEMBER-TYPE"))                                                  # This is not added as a property
@@ -592,13 +594,14 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         self.assertEqual([], frame2.fillers("NULL-SEM"))
 
-        analyzer = SemanticCompiler(OntoSemConfig())
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.populate_semantic_properties(frame2, sense_map, element, candidate)
 
         self.assertEqual([frame1.id()], frame2.fillers("NULL-SEM"))
 
+        sense = Sense(self.m, "TEST-T1", contents=self.mockSense("TEST-T1", semstruc={"REFSEM1": {}}))
+
         # If no HEAD exists, the first element can be used instead
-        self.m.lexicon.word("TEST").add_sense(Sense(self.m, "TEST-T1", contents=self.mockSense("TEST-T1", semstruc={"REFSEM1": {}})))
 
         candidate = Candidate(self.m)
         frame1 = TMRInstance(self.m, "TEST", 1)
@@ -607,13 +610,15 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         sense_map = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
 
+        self.analysis.lexicon.add_sense(sense_map.word, sense)
+
         element = SemStruc.Head("^$VAR2", {
             "NULL-SEM": "+"
         })
 
         self.assertEqual([], frame2.fillers("NULL-SEM"))
 
-        analyzer = SemanticCompiler(OntoSemConfig(), lexicon=self.m.lexicon)
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.populate_semantic_properties(frame2, sense_map, element, candidate)
 
         self.assertEqual([frame1.id()], frame2.fillers("NULL-SEM"))
@@ -625,13 +630,15 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         sense_map = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
 
+        self.analysis.lexicon.add_sense(sense_map.word, sense)
+
         element = SemStruc.Head("^$VAR2", {
             "NULL-SEM": "+"
         })
 
         self.assertEqual([], frame2.fillers("NULL-SEM"))
 
-        analyzer = SemanticCompiler(OntoSemConfig(), lexicon=self.m.lexicon)
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.populate_semantic_properties(frame2, sense_map, element, candidate)
 
         self.assertEqual(["+"], frame2.fillers("NULL-SEM"))
@@ -641,7 +648,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         sense_map = SenseMap(Word.basic(0), "TEST-T1", {}, 0.5)
         semstruc = [">", ["X", "Y"], ["Z", [1, 2, 3]]]
 
-        analyzer = SemanticCompiler(OntoSemConfig())
+        analyzer = SemanticCompiler(self.analysis)
 
         # In this simple case, there is nothing to resolve, the semstruc (no matter how complex) is returned
         # in the same state it went in.
@@ -666,7 +673,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         candidate.bind(0, SemStruc.Variable(2), f2)  # This is the binding for VAR2 in word 0, pointing to the head frame for word 5
         candidate.bind(0, SemStruc.Variable(3), f3)  # This is the binding for VAR3 in word 0, pointing to the head frame for word 6 (this should be ignored)
 
-        analyzer = SemanticCompiler(OntoSemConfig())
+        analyzer = SemanticCompiler(self.analysis)
 
         # The variable names are replaced where written.
         self.assertEqual([">", ["VALUE", f1.id()], ["XYZ", ["VALUE", f2.id()]], ["NOSUCH", "$VAR4"]], analyzer.resolve_embedded_semstruc(semstruc, sense_map, candidate))
@@ -688,7 +695,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         candidate.bind(0, SemStruc.RefSem(1), f1)  # This is REFSEM1 in word 1
         candidate.bind(0, SemStruc.RefSem(2), f2)  # This is REFSEM2 in word 1
 
-        analyzer = SemanticCompiler(OntoSemConfig())
+        analyzer = SemanticCompiler(self.analysis)
 
         # The refesem names are replaced where written.
         self.assertEqual([">", ["VALUE", f1.id()], ["XYZ", ["VALUE", f2.id()]], ["NOSUCH", "REFSEM3"]], analyzer.resolve_embedded_semstruc(semstruc, sense_map, candidate))
@@ -713,7 +720,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         element = SemStruc.Head()
 
         # Run the populate method
-        analyzer = SemanticCompiler(self.config)
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.populate_syntactic_properties(frame, sense_map, element, candidate)
 
         # Nothing happens; the frame is not a type of EVENT, and its associated word is not a past-tense verb
@@ -724,7 +731,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         word0.pos = {"V", "PAST"}
 
         # Run the populate method
-        analyzer = SemanticCompiler(self.config)
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.populate_syntactic_properties(frame, sense_map, element, candidate)
 
         self.assertEqual([["<", "FIND-ANCHOR-TIME"]], frame.values("TIME"))
@@ -744,7 +751,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         element = SemStruc.Head()
 
         # Run the populate method
-        analyzer = SemanticCompiler(self.config)
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.populate_syntactic_properties(frame, sense_map, element, candidate)
 
         # Nothing happens; the frame is not a type of EVENT, and its associated word is not a past-tense verb
@@ -755,7 +762,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         word0.pos = {"V", "PRESENT"}
 
         # Run the populate method
-        analyzer = SemanticCompiler(self.config)
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.populate_syntactic_properties(frame, sense_map, element, candidate)
 
         self.assertEqual([["FIND-ANCHOR-TIME"]], frame.fillers("TIME"))
@@ -775,7 +782,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         element = SemStruc.Head()
 
         # Run the populate method
-        analyzer = SemanticCompiler(self.config)
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.populate_syntactic_properties(frame, sense_map, element, candidate)
 
         # Nothing happens; the frame is not a type of EVENT, and its associated word is not an infinitive verb
@@ -786,7 +793,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         word0.pos = {"V", "INFINITIVE"}
 
         # Run the populate method
-        analyzer = SemanticCompiler(self.config)
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.populate_syntactic_properties(frame, sense_map, element, candidate)
 
         self.assertEqual([[">", "FIND-ANCHOR-TIME"]], frame.fillers("TIME"))
@@ -794,7 +801,7 @@ class SemanticCompilerTestCase(LEIATestCase):
     def test_populate_syntatic_properties_with_plural_nouns(self):
         # Declare EVENT and TEST in the ontology; neither are required for this test, but the populate_syntactic_properties
         # method performs other checks that require these concepts to exist.
-        ontology = Ontology(self.m, "", load_now=False)
+        ontology = self.m.ontology
         event = ontology.concept("EVENT")
         test = ontology.concept("TEST")
 
@@ -808,7 +815,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         element = SemStruc.Head()
 
         # Run the populate method
-        analyzer = SemanticCompiler(OntoSemConfig(), ontology=ontology)
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.populate_syntactic_properties(frame, sense_map, element, candidate)
 
         # Nothing happens; the word is not a plural noun
@@ -818,7 +825,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         word0.pos = {"N", "PLURAL"}
 
         # Run the populate method
-        analyzer = SemanticCompiler(OntoSemConfig(), ontology=ontology)
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.populate_syntactic_properties(frame, sense_map, element, candidate)
 
         self.assertEqual([[">", 1]], frame.fillers("CARDINALITY"))
@@ -840,7 +847,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         f4.add_filler("NULL-SEM", "+")                    # f4 is null-semmed by an unknown entity
 
         # Run the redirect method
-        analyzer = SemanticCompiler(OntoSemConfig())
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.redirect_null_sem_relations(candidate)
 
         # Check to see that f2 and f4 have NOT been redirected (a self null-sem, and an unknown null-sem)
@@ -855,7 +862,7 @@ class SemanticCompilerTestCase(LEIATestCase):
 
         f2.add_filler("NULL-SEM", f1.id())
 
-        analyzer = SemanticCompiler(OntoSemConfig())
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.remove_null_sems(candidate)
 
         self.assertEqual(1, len(candidate.basic_tmr.instances()))
@@ -882,7 +889,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         config = OntoSemConfig()
         config._memory = self.m
 
-        analyzer = SemanticCompiler(config)
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.fix_inverses(candidate)
 
         self.assertEqual([], f1.fillers("R-INVERSE"))
@@ -891,7 +898,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         self.assertEqual([f1.id()], f2.fillers("R"))
 
     def test_build_mp_frames(self):
-        lexicon = self.m.lexicon
+        lexicon = self.analysis.lexicon
 
         # Multiple meaning procedures in one sense
         # Meaning procedures can include ["VALUE", "^$VAR#"] to be resolved
@@ -910,13 +917,14 @@ class SemanticCompilerTestCase(LEIATestCase):
             ["TESTMP4", "^$VAR1", ["VALUE", "^$VAR2"]]
         ])
 
-        lexicon.word("TEST").add_sense(Sense(self.m, "TEST-T1", contents=s1))
-        lexicon.word("TEST").add_sense(Sense(self.m, "TEST-T2", contents=s2))
-        lexicon.word("TEST").add_sense(Sense(self.m, "TEST-T3", contents=s3))
-
         sm1 = SenseMap(Word.basic(0), "TEST-T1", {"$VAR1": -1, "$VAR2": -1}, 0.5)
         sm2 = SenseMap(Word.basic(1), "TEST-T2", {"$VAR1": -1, "$VAR2": -1}, 0.5)
         sm3 = SenseMap(Word.basic(2), "TEST-T3", {}, 0.5)
+
+        lexicon.add_sense(sm1.word, Sense(self.m, "TEST-T1", contents=s1))
+        lexicon.add_sense(sm2.word, Sense(self.m, "TEST-T2", contents=s2))
+        lexicon.add_sense(sm3.word, Sense(self.m, "TEST-T3", contents=s3))
+
         candidate = Candidate(self.m, sm1, sm2, sm3)
 
         f1 = candidate.basic_tmr.new_instance("BOUND")
@@ -929,7 +937,7 @@ class SemanticCompilerTestCase(LEIATestCase):
         candidate.bind(1, SemStruc.Variable(1), f3)
         candidate.bind(1, SemStruc.Variable(2), f4)
 
-        analyzer = SemanticCompiler(OntoSemConfig(), lexicon=lexicon)
+        analyzer = SemanticCompiler(self.analysis)
         analyzer.build_mp_frames(candidate)
 
         self.assertEqual(8, len(candidate.basic_tmr.instances()))

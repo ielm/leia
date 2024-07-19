@@ -1,6 +1,5 @@
-from leia.ontomem.lexicon import Lexicon, SemStruc
-from leia.ontomem.ontology import Ontology
-from leia.ontosem.config import OntoSemConfig
+from leia.ontomem.lexicon import SemStruc
+from leia.ontosem.analysis import Analysis
 from leia.ontosem.semantics.candidate import Candidate
 from leia.ontosem.semantics.tmr import TMRInstance
 from leia.ontosem.syntax.results import SenseMap, SynMap, Syntax, Word
@@ -11,13 +10,13 @@ import itertools
 
 class SemanticCompiler(object):
 
-    def __init__(self, config: OntoSemConfig, ontology: Ontology=None, lexicon: Lexicon=None):
-        self.config = config
-        self.memory = config.memory()
+    def __init__(self, analysis: Analysis):
+        self.analysis = analysis
+        self.memory = analysis.config.memory()
 
-        self.ontology = ontology if ontology is not None else self.config.ontology()
-        self.lexicon = lexicon if lexicon is not None else self.config.lexicon()
-        self.properties = self.config.memory().properties
+        self.ontology = analysis.config.memory().ontology
+        self.lexicon = analysis.lexicon
+        self.properties = analysis.config.memory().properties
 
     def run(self, syntax: Syntax) -> Iterable[Candidate]:
         for candidate in self.expand_candidates(syntax.synmap):
@@ -55,7 +54,7 @@ class SemanticCompiler(object):
 
         for sense_map in candidate.senses:
             # Get the sense from the lexicon, and get its head concept
-            sense = self.lexicon.sense(sense_map.sense)
+            sense = self.lexicon.sense(sense_map.word, sense_map.sense)
 
             # Get the head concept, generate a frame, and resolve it (e.g., 0.HEAD).
             # Some senses don't have a HEAD.  (e.g., THE-ART1 which is empty, or FOR-PREP4, which only has vars and refsems).
@@ -115,7 +114,7 @@ class SemanticCompiler(object):
     def populate_frames(self, candidate: Candidate):
         # Go through each sense mapping in binding count order (highest binding first), and populate the frames.
         for sense_map in candidate.words_by_binding_count():
-            sense = self.lexicon.sense(sense_map.sense)
+            sense = self.lexicon.sense(sense_map.word, sense_map.sense)
             bound_variables = set(map(lambda i: i[0], filter(lambda i: i[1] is not None, sense_map.bindings.items())))
             for element in sense.semstruc.elements(bound_variables):
                 # Resolve the element to a frame; if it does not exist, skip it.  This happens for optional variables
@@ -212,7 +211,7 @@ class SemanticCompiler(object):
 
                     # In the case where the sem-struc has no HEAD, use the first element instead
                     if v is None:
-                        sense = self.lexicon.sense(sense_map.sense)
+                        sense = self.lexicon.sense(sense_map.word, sense_map.sense)
                         elements = sense.semstruc.elements()
                         if len(elements) > 0:
                             v = candidate.resolve(sense_map.word.index, elements[0])
@@ -348,7 +347,7 @@ class SemanticCompiler(object):
         # each variable to the VARIABLES field, but resolve any [VALUE "^$VAR#"] (recursively, if needed).
 
         for sense_map in candidate.senses:
-            sense = self.lexicon.sense(sense_map.sense)
+            sense = self.lexicon.sense(sense_map.word, sense_map.sense)
 
             for meaning_procedure in sense.meaning_procedures:
                 mp_frame = candidate.basic_tmr.new_instance("MEANING-PROCEDURE")

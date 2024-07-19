@@ -1,6 +1,4 @@
-from leia.ontomem.lexicon import Lexicon
-from leia.ontomem.ontology import Ontology
-from leia.ontosem.config import OntoSemConfig
+from leia.ontosem.analysis import Analysis
 from leia.ontosem.semantics.candidate import Candidate, LexicalConstraintScore, RelationRangeScore, SenseMapPreferenceScore
 from leia.ontosem.semantics.tmr import TMRInstance
 from typing import Iterable, List
@@ -10,11 +8,12 @@ import itertools
 
 class SemanticScorer(object):
 
-    def __init__(self, config: OntoSemConfig, ontology: Ontology=None, lexicon: Lexicon=None):
-        self.config = config
-        self.ontology = ontology if ontology is not None else self.config.ontology()
-        self.lexicon = lexicon if lexicon is not None else self.config.lexicon()
-        self.properties = config.memory().properties
+    def __init__(self, analysis: Analysis):
+        self.analysis = analysis
+        self.config = self.analysis.config
+        self.ontology = self.config.ontology()
+        self.lexicon = self.analysis.lexicon
+        self.properties = self.config.memory().properties
 
     def run(self, candidates: Iterable[Candidate]) -> Iterable[Candidate]:
         for candidate in candidates:
