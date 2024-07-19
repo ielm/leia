@@ -19,7 +19,7 @@ class PassivizationOfTransVerbs(TransformationExecutable):
                 ], None, False),
                 SynStruc.ConstituencyElement("NP", [
                     SynStruc.ConstituencyElement("NN", [
-                        SynStruc.TokenElement({}, "N", dict(), 1, False)
+                        SynStruc.TokenElement(set(), "N", dict(), 1, False)
                     ], None, False)
                 ], None, False)
             ], None, True)
