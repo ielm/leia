@@ -174,7 +174,11 @@ class ObjectTabButton extends TabButton {
         menu.addOption("Pin", this.pin.bind(this));
         menu.addOption("Close", this.close.bind(this));
 
-        menu.show(event.pageX, event.pageY);
+        const rect = this.getBoundingClientRect();
+        const x = rect.left;
+        const y = rect.bottom;
+
+        menu.show(x, y);
     }
 
     pin() {
